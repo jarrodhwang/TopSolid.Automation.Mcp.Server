@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.RealProperty.-ctor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.RealProperty.-ctor.html",
+  "sha256": "59ba078e87fee9013ac3ba749c9b3e2a8ec226ff84735c02b059403b33c924b2",
+  "text": "# Constructor RealProperty\n\n#### RealProperty(Real)\n\nInitializes a new instance of the RealProperty class.\n\n##### Declaration\n\n```\npublic RealProperty(Real inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  Real |  inValue |  Value.  |\n",
+  "markdown": "markdown/kernel/16d9489f5ac51cadc18004a6.md",
+  "originalHtml": "html/kernel/16d9489f5ac51cadc18004a6.html"
+}

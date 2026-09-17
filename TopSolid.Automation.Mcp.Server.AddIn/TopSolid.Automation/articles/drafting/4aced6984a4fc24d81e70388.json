@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.IDraftings.GetDraftingFormatMargins.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.IDraftings.GetDraftingFormatMargins.html",
+  "sha256": "68ad8e12af536ea15950db4a21eb4b5e40f74c5ce69f35f2b32695ccda9dabb1",
+  "text": "# Method GetDraftingFormatMargins\n\n#### GetDraftingFormatMargins(DocumentId, out Real, out Real, out Real, out Real, out Real, out Real)\n\nGets drafting document format margins\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 255, 0)]\nvoid GetDraftingFormatMargins(DocumentId inDocumentId, out Real outbottomBorderMargin, out Real outTopBorderMargin, out Real outLeftBorderMargin, out Real outRightBorderMargin, out Real outLeftInternalMargin, out Real outRightInternalMargin)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  The drafting document  |  \n \n|  Real |  outbottomBorderMargin |  bottom border margin  |  \n \n|  Real |  outTopBorderMargin |  top border margin  |  \n \n|  Real |  outLeftBorderMargin |  left border margin  |  \n \n|  Real |  outRightBorderMargin |  right border margin  |  \n \n|  Real |  outLeftInternalMargin |  left internal margin  |  \n \n|  Real |  outRightInternalMargin |  right internal margin  |\n",
+  "markdown": "markdown/drafting/4aced6984a4fc24d81e70388.md",
+  "originalHtml": "html/drafting/4aced6984a4fc24d81e70388.html"
+}

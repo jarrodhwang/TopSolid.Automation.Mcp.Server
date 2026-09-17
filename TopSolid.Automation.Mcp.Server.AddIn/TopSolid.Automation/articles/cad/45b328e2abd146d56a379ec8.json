@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMaterials.SetYoungModulus.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMaterials.SetYoungModulus.html",
+  "sha256": "4ce8419e08055ba82d213e933bf825de46122390c4fc5dd332502dad78b56c5b",
+  "text": "# Method SetYoungModulus\n\n#### SetYoungModulus(DocumentId, double)\n\nSets Young Modulus\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 400, 120)]\nvoid SetYoungModulus(DocumentId inDocumentId, double inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Id of the container document  |  \n \n|  double |  inValue |  The value to use  |\n",
+  "markdown": "markdown/cad/45b328e2abd146d56a379ec8.md",
+  "originalHtml": "html/cad/45b328e2abd146d56a379ec8.html"
+}

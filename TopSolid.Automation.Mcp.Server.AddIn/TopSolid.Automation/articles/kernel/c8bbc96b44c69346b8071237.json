@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartPoint3DType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartPoint3DType.html",
+  "sha256": "c69dd8ccb6c3a14d68fff2edeee4e4b71db0905f4a918187b05b425d6da7b581",
+  "text": "# Enum SmartPoint3DType\n\nDefines the various types of 3D smart points.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\npublic enum SmartPoint3DType\n```\n\n##### Remarks\n\nThis enum is available since v7.6.\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  Basic |  Basic.  |  \n \n|  Element |  Provided by an element.  |  \n \n|  Item |  Provided by an element item.  |  \n \n|  None |  Not used.  |  \n \n|  Unclassified |  Unclassified type.  |\n",
+  "markdown": "markdown/kernel/c8bbc96b44c69346b8071237.md",
+  "originalHtml": "html/kernel/c8bbc96b44c69346b8071237.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.SearchDocumentByUniversalId.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.SearchDocumentByUniversalId.html",
+  "sha256": "b0a03fb65597e83781065ccd31b046ce41fb200fb183f09fb38c67b4ecff053d",
+  "text": "# Method SearchDocumentByUniversalId\n\n#### SearchDocumentByUniversalId(PdmObjectId, string, string)\n\nSearches for a document by its universal identifier.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nPdmObjectId SearchDocumentByUniversalId(PdmObjectId inProjectId, string inDomain, string inName)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inProjectId |  Project PDM object identifier, or empty for searching in all projects.  |  \n \n|  string |  inDomain |  Universal domain.  |  \n \n|  string |  inName |  Universal name.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  PdmObjectId |  Document PDM object identifier.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/pdmexplorer/07dc6a47099afa79655dd975.md",
+  "originalHtml": "html/pdmexplorer/07dc6a47099afa79655dd975.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Generic.HostChannel-1.-ctor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Generic.HostChannel-1.-ctor.html",
+  "sha256": "358b23e5d5e0395c0f8f2c1aaff6170364b8ccd3fb3f3723f32aa2bec46784c6",
+  "text": "# Constructor HostChannel\n\n#### HostChannel(TopSolidHostInstance)\n\nInitializes a new instance of the HostChannel<TService> class.\n\n##### Declaration\n\n```\npublic HostChannel(TopSolidHostInstance inHostInstance)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  TopSolidHostInstance |  inHostInstance |  TopSolid host instance.  |\n",
+  "markdown": "markdown/kernel/af23144de928f24a96344319.md",
+  "originalHtml": "html/kernel/af23144de928f24a96344319.html"
+}

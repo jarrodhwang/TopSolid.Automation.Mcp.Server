@@ -1,0 +1,8 @@
+{
+  "path": "api/cae/TopSolid.Cae.Kernel.Automating.TopSolidCaeHostInstance.Documents.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cae/TopSolid.Cae.Kernel.Automating.TopSolidCaeHostInstance.Documents.html",
+  "sha256": "047fc3aa42151516fe1391d7e339fd35600a0d324a7b3590c02852c338b1936b",
+  "text": "# Property Documents\n\n#### Documents\n\nGets access to Cae documents, or null if not connected.\n\n##### Declaration\n\n```\npublic ICAEDocuments Documents { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ICAEDocuments |   |\n",
+  "markdown": "markdown/cae/ee965169a84ea31831efa317.md",
+  "originalHtml": "html/cae/ee965169a84ea31831efa317.html"
+}

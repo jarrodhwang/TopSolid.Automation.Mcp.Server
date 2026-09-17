@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IPrograms.GetComment.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IPrograms.GetComment.html",
+  "sha256": "f8816356794e4880b01efed3b045bf063bcaecb223d12450ed9bca5e4058126c",
+  "text": "# Method GetComment\n\n#### GetComment(ElementId)\n\nGet program comment.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 180)]\nSmartText GetComment(ElementId inProgramId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inProgramId |  Identifier of the NC program to modify.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartText |  Program comment.  |\n",
+  "markdown": "markdown/cam/68864feb0d0f011d690afd57.md",
+  "originalHtml": "html/cam/68864feb0d0f011d690afd57.html"
+}

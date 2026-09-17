@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.GetCodeParameter.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.GetCodeParameter.html",
+  "sha256": "43083df5f4af6cb4084403c2793e2e5b9e51aabace651309d3329b7ffe7261b1",
+  "text": "# Method GetCodeParameter\n\n#### GetCodeParameter(DocumentId)\n\nGets the code parameter entity of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nElementId GetCodeParameter(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the code parameter entity found.  |  \n\n##### Remarks\n\nThe code parameter is a text parameter, its value may be obtained and modified using the GetTextValue(ElementId) and SetTextValue(ElementId, string) methods.\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/4823e37f6f5796a64fea22b8.md",
+  "originalHtml": "html/kernel/4823e37f6f5796a64fea22b8.html"
+}

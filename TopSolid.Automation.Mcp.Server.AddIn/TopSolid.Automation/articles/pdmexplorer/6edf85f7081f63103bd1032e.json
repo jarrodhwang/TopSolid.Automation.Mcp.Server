@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdmWorkflow.GetPossibleActions.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdmWorkflow.GetPossibleActions.html",
+  "sha256": "8427404722f7180c358b0818dc4e69dcdedea7a70cb69c8caaa2b4e9af752517",
+  "text": "# Method GetPossibleActions\n\n#### GetPossibleActions(PdmMajorRevisionId, out List<PdmObjectId>, out List<string>)\n\nGet all workflow actions possible of a major revision.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nvoid GetPossibleActions(PdmMajorRevisionId inMajorRevisionId, out List<PdmObjectId> outActionIds, out List<string> outActionNames)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmMajorRevisionId |  inMajorRevisionId |  Major revision to analyze.  |  \n \n|  List<PdmObjectId> |  outActionIds |  Workflow action identifiers.  |  \n \n|  List<string> |  outActionNames |  Workflow action names.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/pdmexplorer/6edf85f7081f63103bd1032e.md",
+  "originalHtml": "html/pdmexplorer/6edf85f7081f63103bd1032e.html"
+}

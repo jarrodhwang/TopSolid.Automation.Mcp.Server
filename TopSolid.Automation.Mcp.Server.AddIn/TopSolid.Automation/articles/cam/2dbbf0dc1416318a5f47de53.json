@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.INCFiles.UpdateNCCodes.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.INCFiles.UpdateNCCodes.html",
+  "sha256": "411b2f8b2e9bfea3f0fee09a980d076b3d153a3fe5d54014b3646678bffcfbac",
+  "text": "# Method UpdateNCCodes\n\n#### UpdateNCCodes(ElementId, string)\n\nUpdates the NC codes of the given NC file entity in the document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 9, 0, 0)]\nvoid UpdateNCCodes(ElementId inElementId, string inFileName)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the NC file entity to update.  |  \n \n|  string |  inFileName |  Name of a text file containing the full content of the new block file.  |\n",
+  "markdown": "markdown/cam/2dbbf0dc1416318a5f47de53.md",
+  "originalHtml": "html/cam/2dbbf0dc1416318a5f47de53.html"
+}

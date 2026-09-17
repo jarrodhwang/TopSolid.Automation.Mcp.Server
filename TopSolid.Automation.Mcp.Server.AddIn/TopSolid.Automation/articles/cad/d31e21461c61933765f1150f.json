@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMultiLayer.GetHomogeneousParameterValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMultiLayer.GetHomogeneousParameterValue.html",
+  "sha256": "1859f93b8a177a7ffe566c72644093b33ddca644893743cb8ba9e867eaf01653",
+  "text": "# Method GetHomogeneousParameterValue\n\n#### GetHomogeneousParameterValue(DocumentId, out bool?)\n\nGets the multi layer material Homogeneous Parameter\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 0, 0)]\nvoid GetHomogeneousParameterValue(DocumentId inDocumentId, out bool? outValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document.  |  \n \n|  bool? |  outValue |  Value  |  \n\n##### Remarks\n\nThis method is available since v7.19.\n",
+  "markdown": "markdown/cad/d31e21461c61933765f1150f.md",
+  "originalHtml": "html/cad/d31e21461c61933765f1150f.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.DeleteSeveral.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.DeleteSeveral.html",
+  "sha256": "cae6fc3589a588eae18630ab82949ecca14413f55e5322773f87df631b5d3cf1",
+  "text": "# Method DeleteSeveral\n\n#### DeleteSeveral(List<PdmObjectId>)\n\nDeletes several objects.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nvoid DeleteSeveral(List<PdmObjectId> inObjectIds)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  List<PdmObjectId> |  inObjectIds |  Identifiers of objects to delete.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/pdmexplorer/574d2d4583344d4547b6c731.md",
+  "originalHtml": "html/pdmexplorer/574d2d4583344d4547b6c731.html"
+}

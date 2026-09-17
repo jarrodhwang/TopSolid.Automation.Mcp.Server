@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMultiLayer.GetMultiMaterialLayersCount.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMultiLayer.GetMultiMaterialLayersCount.html",
+  "sha256": "9e58013c56a0856054ddfac4d9bcbb33abc852afba64ea1f56330bcc8e08e23f",
+  "text": "# Method GetMultiMaterialLayersCount\n\n#### GetMultiMaterialLayersCount(DocumentId)\n\nGets the multi layer layers count\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 0, 0)]\nint GetMultiMaterialLayersCount(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  int |  the number of layers  |  \n\n##### Remarks\n\nThis method is available since v7.19.\n",
+  "markdown": "markdown/cad/582859fbfcd99dcb82cb92dc.md",
+  "originalHtml": "html/cad/582859fbfcd99dcb82cb92dc.html"
+}

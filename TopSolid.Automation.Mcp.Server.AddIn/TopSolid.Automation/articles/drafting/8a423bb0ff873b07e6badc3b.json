@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.IDraftings.SetDraftingFormatMargins.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.IDraftings.SetDraftingFormatMargins.html",
+  "sha256": "d0e2000adaf927477080fadcce21fd06384e04527b125bf334be12a10cebb422",
+  "text": "# Method SetDraftingFormatMargins\n\n#### SetDraftingFormatMargins(DocumentId, Real?, Real?, Real?, Real?, Real?, Real?)\n\nSets drafting document format margins\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 255, 0)]\nvoid SetDraftingFormatMargins(DocumentId inDocumentId, Real? inbottomBorderMargin, Real? inTopBorderMargin, Real? inLeftBorderMargin, Real? inRightBorderMargin, Real? inLeftInternalMargin, Real? inRightInternalMargin)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  The drafting document  |  \n \n|  Real? |  inbottomBorderMargin |  bottom border margin or null if not to modify  |  \n \n|  Real? |  inTopBorderMargin |  top border margin or null if not to modify  |  \n \n|  Real? |  inLeftBorderMargin |  left border margin or null if not to modify  |  \n \n|  Real? |  inRightBorderMargin |  right border margin or null if not to modify  |  \n \n|  Real? |  inLeftInternalMargin |  left internal margin or null if not to modify  |  \n \n|  Real? |  inRightInternalMargin |  right internal margin or null if not to modify  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n",
+  "markdown": "markdown/drafting/8a423bb0ff873b07e6badc3b.md",
+  "originalHtml": "html/drafting/8a423bb0ff873b07e6badc3b.html"
+}

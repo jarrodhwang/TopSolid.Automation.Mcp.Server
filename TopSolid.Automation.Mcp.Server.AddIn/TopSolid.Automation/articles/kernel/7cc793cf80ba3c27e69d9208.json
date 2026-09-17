@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IApplication.PaperFormats.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IApplication.PaperFormats.html",
+  "sha256": "773c2fef95ecb5614cd6e690feddd4cfa9e4b7d7344061e6ac8bcbe496faa0ae",
+  "text": "# Property PaperFormats\n\n#### PaperFormats\n\nGets the names of the available paper formats for the current printer.\n\n##### Declaration\n\n```\n[AvailableSinceVersion(7, 6, 0, 0)]\nList<string> PaperFormats { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<string> |   |  \n\n##### Remarks\n\nThis property is available since v7.6.\n",
+  "markdown": "markdown/kernel/7cc793cf80ba3c27e69d9208.md",
+  "originalHtml": "html/kernel/7cc793cf80ba3c27e69d9208.html"
+}

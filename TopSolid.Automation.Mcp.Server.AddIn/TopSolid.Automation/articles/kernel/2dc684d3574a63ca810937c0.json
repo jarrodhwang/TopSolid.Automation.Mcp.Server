@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.SetIntegerPublishingDefinition.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.SetIntegerPublishingDefinition.html",
+  "sha256": "d9080752377129a0d8ec7711a3f165e650d0aee9ff2e4f6de3df8246b46e688e",
+  "text": "# Method SetIntegerPublishingDefinition\n\n#### SetIntegerPublishingDefinition(ElementId, SmartInteger)\n\nSets the definition of an integer publishing entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nvoid SetIntegerPublishingDefinition(ElementId inElementId, SmartInteger inDefinition)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the publishing entity to modify.  |  \n \n|  SmartInteger |  inDefinition |  Publishing new definition.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.8.\n",
+  "markdown": "markdown/kernel/2dc684d3574a63ca810937c0.md",
+  "originalHtml": "html/kernel/2dc684d3574a63ca810937c0.html"
+}

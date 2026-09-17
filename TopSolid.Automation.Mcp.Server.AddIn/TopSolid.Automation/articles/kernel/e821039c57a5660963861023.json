@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.CodeProperty.-ctor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.CodeProperty.-ctor.html",
+  "sha256": "571c515015c39c6789ecd3beac121966ba7a759de8f87fbb820c43a91f1bacfb",
+  "text": "# Constructor CodeProperty\n\n#### CodeProperty(string)\n\nInitializes a new instance of the DocumentProperty class.\n\n##### Declaration\n\n```\npublic CodeProperty(string inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  string |  inValue |  Value.  |\n",
+  "markdown": "markdown/kernel/e821039c57a5660963861023.md",
+  "originalHtml": "html/kernel/e821039c57a5660963861023.html"
+}

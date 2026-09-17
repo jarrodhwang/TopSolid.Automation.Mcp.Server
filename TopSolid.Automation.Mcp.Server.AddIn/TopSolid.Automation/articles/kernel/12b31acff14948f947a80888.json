@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IShapes.GetFaceCylinderSurface.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IShapes.GetFaceCylinderSurface.html",
+  "sha256": "d7da63088e98de88819c1c35290c4aa4848bac461dc066bdbb074ac4a268a6fc",
+  "text": "# Method GetFaceCylinderSurface\n\n#### GetFaceCylinderSurface(ElementItemId, out Frame3D, out double)\n\nGets the cylinder surface attached to a face.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nvoid GetFaceCylinderSurface(ElementItemId inFaceId, out Frame3D outFrame, out double outRadius)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementItemId |  inFaceId |  Identifier of the face to analyze.  |  \n \n|  Frame3D |  outFrame |  Cylinder frame.  |  \n \n|  double |  outRadius |  Cylinder radius.  |  \n\n##### Remarks\n\nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/12b31acff14948f947a80888.md",
+  "originalHtml": "html/kernel/12b31acff14948f947a80888.html"
+}

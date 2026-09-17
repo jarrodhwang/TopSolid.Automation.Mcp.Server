@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.TopSolidHost.PdmWorkflow.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.TopSolidHost.PdmWorkflow.html",
+  "sha256": "32c345f07eb21b8cbe50bbb6259b51696bcbbaec154940840818a3e63615d591",
+  "text": "# Property PdmWorkflow\n\n#### PdmWorkflow\n\nGets access to the PDM administration, or null if not available.\n\n##### Declaration\n\n```\npublic static IPdmWorkflow PdmWorkflow { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  IPdmWorkflow |   |\n",
+  "markdown": "markdown/kernel/72633301f5213b6c5269bccb.md",
+  "originalHtml": "html/kernel/72633301f5213b6c5269bccb.html"
+}

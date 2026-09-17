@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.SetDescription.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.SetDescription.html",
+  "sha256": "e493b964ac269537907138183167ed3b711834a3ac19dff62b9a2abcf01066e4",
+  "text": "# Method SetDescription\n\n#### SetDescription(PdmObjectId, string)\n\nSets the description of an object.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nvoid SetDescription(PdmObjectId inObjectId, string inDescription)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  Object identifier.  |  \n \n|  string |  inDescription |  Description.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/pdmexplorer/4a278615e5963b722cc385d5.md",
+  "originalHtml": "html/pdmexplorer/4a278615e5963b722cc385d5.html"
+}

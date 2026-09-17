@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ISimulations.GetForcesDrivingTask.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ISimulations.GetForcesDrivingTask.html",
+  "sha256": "60263103a9b4f0062bf60f580b39e3bcd66227c1b8b385f024ba315f80ea5c73",
+  "text": "# Method GetForcesDrivingTask\n\n#### GetForcesDrivingTask(ElementId, out ForceDrivingInterpolationType, out List<SmartReal>, out List<ElementId>, out List<List<SmartReal>>)\n\nGets a forces driving task.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nvoid GetForcesDrivingTask(ElementId inElementId, out ForceDrivingInterpolationType outInterpolationType, out List<SmartReal> outTimes, out List<ElementId> outForceIds, out List<List<SmartReal>> outValues)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the task to analyze.  |  \n \n|  ForceDrivingInterpolationType |  outInterpolationType |  Interpolation type.  |  \n \n|  List<SmartReal> |  outTimes |  Times.  |  \n \n|  List<ElementId> |  outForceIds |  Identifiers of forces to drive.  |  \n \n|  List<List<SmartReal>> |  outValues |  Forces driving values.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/cad/466c584e80566705c615f5cd.md",
+  "originalHtml": "html/cad/466c584e80566705c615f5cd.html"
+}

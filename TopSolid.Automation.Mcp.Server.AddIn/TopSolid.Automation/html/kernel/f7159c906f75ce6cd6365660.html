@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Constructor SmartReal | TopSolid Automation website </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Constructor SmartReal | TopSolid Automation website ">
+    
+    
+      <link rel="shortcut icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../../styles/docfx.css">
+      <link rel="stylesheet" href="../../styles/main.css">
+      <meta property="docfx:navrel" content="../../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../img/AutomationIcon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="TopSolid.Kernel.Automating.SmartReal.#ctor*">
+
+
+
+<h1 id="TopSolid_Kernel_Automating_SmartReal__ctor_" data-uid="TopSolid.Kernel.Automating.SmartReal.#ctor*">Constructor SmartReal</h1>
+<div class="markdown level0 summary"></div>
+<div class="markdown level0 conceptual"></div>
+
+<a id="TopSolid_Kernel_Automating_SmartReal__ctor_" data-uid="TopSolid.Kernel.Automating.SmartReal.#ctor*"></a>
+<h4 id="TopSolid_Kernel_Automating_SmartReal__ctor_TopSolid_Kernel_Automating_SmartRealType_TopSolid_Kernel_Automating_UnitType_System_String_System_Nullable_System_Double__TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_ItemLabel_System_String_" data-uid="TopSolid.Kernel.Automating.SmartReal.#ctor(TopSolid.Kernel.Automating.SmartRealType,TopSolid.Kernel.Automating.UnitType,System.String,System.Nullable{System.Double},TopSolid.Kernel.Automating.ElementId,TopSolid.Kernel.Automating.ItemLabel,System.String)">SmartReal(SmartRealType, UnitType, string, double?, ElementId, ItemLabel, string)</h4>
+<div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="TopSolid.Kernel.Automating.SmartReal.html">SmartReal</a> class.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+<h5 class="declaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public SmartReal(SmartRealType inType, UnitType inUnitType, string inUnitSymbol, double? inValue, ElementId inElementId, ItemLabel inItemLabel, string inFormula)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a class="xref" href="TopSolid.Kernel.Automating.SmartRealType.html">SmartRealType</a></td>
+      <td><span class="parametername">inType</span></td>
+      <td><p>Type of smart real.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a class="xref" href="TopSolid.Kernel.Automating.UnitType.html">UnitType</a></td>
+      <td><span class="parametername">inUnitType</span></td>
+      <td><p>Type of units, or <a class="xref" href="TopSolid.Kernel.Automating.UnitType.html#TopSolid_Kernel_Automating_UnitType_None">None</a> if unknown.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+      <td><span class="parametername">inUnitSymbol</span></td>
+      <td><p>Unit symbol in English, or null if unknown.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>?</td>
+      <td><span class="parametername">inValue</span></td>
+      <td><p>Value in SI units, or null if unknown.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a class="xref" href="TopSolid.Kernel.Automating.ElementId.html">ElementId</a></td>
+      <td><span class="parametername">inElementId</span></td>
+      <td><p>Identifier of providing element, or <a class="xref" href="TopSolid.Kernel.Automating.ElementId.Empty.html">Empty</a> for none.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a class="xref" href="TopSolid.Kernel.Automating.ItemLabel.html">ItemLabel</a></td>
+      <td><span class="parametername">inItemLabel</span></td>
+      <td><p>Label of providing element item, or <a class="xref" href="TopSolid.Kernel.Automating.ItemLabel.Empty.html">Empty</a> for none.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+      <td><span class="parametername">inFormula</span></td>
+      <td><p>Formula, or null for none.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<a id="TopSolid_Kernel_Automating_SmartReal__ctor_" data-uid="TopSolid.Kernel.Automating.SmartReal.#ctor*"></a>
+<h4 id="TopSolid_Kernel_Automating_SmartReal__ctor_TopSolid_Kernel_Automating_SmartRealType_TopSolid_Kernel_Automating_UnitType_System_String_System_Nullable_System_Double__TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_ItemLabel_System_String_TopSolid_Kernel_Automating_ScriptType_" data-uid="TopSolid.Kernel.Automating.SmartReal.#ctor(TopSolid.Kernel.Automating.SmartRealType,TopSolid.Kernel.Automating.UnitType,System.String,System.Nullable{System.Double},TopSolid.Kernel.Automating.ElementId,TopSolid.Kernel.Automating.ItemLabel,System.String,TopSolid.Kernel.Automating.ScriptType)">SmartReal(SmartRealType, UnitType, string, double?, ElementId, ItemLabel, string, ScriptType)</h4>
+<div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="TopSolid.Kernel.Automating.SmartReal.html">SmartReal</a> class.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+<h5 class="declaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public SmartReal(SmartRealType inType, UnitType inUnitType, string inUnitSymbol, double? inValue, ElementId inElementId, ItemLabel inItemLabel, string inFormula, ScriptType inScriptType)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a class="xref" href="TopSolid.Kernel.Automating.SmartRealType.html">SmartRealType</a></td>
+      <td><span class="parametername">inType</span></td>
+      <td><p>Type of smart real.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a class="xref" href="TopSolid.Kernel.Automating.UnitType.html">UnitType</a></td>
+      <td><span class="parametername">inUnitType</span></td>
+      <td><p>Type of units, or <a class="xref" href="TopSolid.Kernel.Automating.UnitType.html#TopSolid_Kernel_Automating_UnitType_None">None</a> if unknown.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+      <td><span class="parametername">inUnitSymbol</span></td>
+      <td><p>Unit symbol in English, or null if unknown.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>?</td>
+      <td><span class="parametername">inValue</span></td>
+      <td><p>Value in SI units, or null if unknown.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a class="xref" href="TopSolid.Kernel.Automating.ElementId.html">ElementId</a></td>
+      <td><span class="parametername">inElementId</span></td>
+      <td><p>Identifier of providing element, or <a class="xref" href="TopSolid.Kernel.Automating.ElementId.Empty.html">Empty</a> for none.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a class="xref" href="TopSolid.Kernel.Automating.ItemLabel.html">ItemLabel</a></td>
+      <td><span class="parametername">inItemLabel</span></td>
+      <td><p>Label of providing element item, or <a class="xref" href="TopSolid.Kernel.Automating.ItemLabel.Empty.html">Empty</a> for none.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+      <td><span class="parametername">inFormula</span></td>
+      <td><p>Formula, or null for none.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a class="xref" href="TopSolid.Kernel.Automating.ScriptType.html">ScriptType</a></td>
+      <td><span class="parametername">inScriptType</span></td>
+      <td><p>Type of script.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<a id="TopSolid_Kernel_Automating_SmartReal__ctor_" data-uid="TopSolid.Kernel.Automating.SmartReal.#ctor*"></a>
+<h4 id="TopSolid_Kernel_Automating_SmartReal__ctor_TopSolid_Kernel_Automating_UnitType_System_Double_" data-uid="TopSolid.Kernel.Automating.SmartReal.#ctor(TopSolid.Kernel.Automating.UnitType,System.Double)">SmartReal(UnitType, double)</h4>
+<div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="TopSolid.Kernel.Automating.SmartReal.html">SmartReal</a> class of type <a class="xref" href="TopSolid.Kernel.Automating.SmartRealType.html#TopSolid_Kernel_Automating_SmartRealType_Basic">Basic</a>.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+<h5 class="declaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public SmartReal(UnitType inUnitType, double inValue)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a class="xref" href="TopSolid.Kernel.Automating.UnitType.html">UnitType</a></td>
+      <td><span class="parametername">inUnitType</span></td>
+      <td><p>Type of units.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+      <td><span class="parametername">inValue</span></td>
+      <td><p>Value in SI units.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<a id="TopSolid_Kernel_Automating_SmartReal__ctor_" data-uid="TopSolid.Kernel.Automating.SmartReal.#ctor*"></a>
+<h4 id="TopSolid_Kernel_Automating_SmartReal__ctor_TopSolid_Kernel_Automating_UnitType_System_Double_System_String_" data-uid="TopSolid.Kernel.Automating.SmartReal.#ctor(TopSolid.Kernel.Automating.UnitType,System.Double,System.String)">SmartReal(UnitType, double, string)</h4>
+<div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="TopSolid.Kernel.Automating.SmartReal.html">SmartReal</a> class of type <a class="xref" href="TopSolid.Kernel.Automating.SmartRealType.html#TopSolid_Kernel_Automating_SmartRealType_Basic">Basic</a> with tolerance.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+<h5 class="declaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public SmartReal(UnitType inUnitType, double inValue, string inTolerance)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a class="xref" href="TopSolid.Kernel.Automating.UnitType.html">UnitType</a></td>
+      <td><span class="parametername">inUnitType</span></td>
+      <td><p>Type of units.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+      <td><span class="parametername">inValue</span></td>
+      <td><p>Value in SI units.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+      <td><span class="parametername">inTolerance</span></td>
+      <td><p>Tolerance.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<a id="TopSolid_Kernel_Automating_SmartReal__ctor_" data-uid="TopSolid.Kernel.Automating.SmartReal.#ctor*"></a>
+<h4 id="TopSolid_Kernel_Automating_SmartReal__ctor_TopSolid_Kernel_Automating_ElementId_" data-uid="TopSolid.Kernel.Automating.SmartReal.#ctor(TopSolid.Kernel.Automating.ElementId)">SmartReal(ElementId)</h4>
+<div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="TopSolid.Kernel.Automating.SmartReal.html">SmartReal</a> class of type <a class="xref" href="TopSolid.Kernel.Automating.SmartRealType.html#TopSolid_Kernel_Automating_SmartRealType_Element">Element</a>.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+<h5 class="declaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public SmartReal(ElementId inElementId)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a class="xref" href="TopSolid.Kernel.Automating.ElementId.html">ElementId</a></td>
+      <td><span class="parametername">inElementId</span></td>
+      <td><p>Identifier of providing element.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<a id="TopSolid_Kernel_Automating_SmartReal__ctor_" data-uid="TopSolid.Kernel.Automating.SmartReal.#ctor*"></a>
+<h4 id="TopSolid_Kernel_Automating_SmartReal__ctor_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_ItemLabel_" data-uid="TopSolid.Kernel.Automating.SmartReal.#ctor(TopSolid.Kernel.Automating.ElementId,TopSolid.Kernel.Automating.ItemLabel)">SmartReal(ElementId, ItemLabel)</h4>
+<div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="TopSolid.Kernel.Automating.SmartReal.html">SmartReal</a> class of type <a class="xref" href="TopSolid.Kernel.Automating.SmartRealType.html#TopSolid_Kernel_Automating_SmartRealType_Item">Item</a>.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+<h5 class="declaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public SmartReal(ElementId inElementId, ItemLabel inItemLabel)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a class="xref" href="TopSolid.Kernel.Automating.ElementId.html">ElementId</a></td>
+      <td><span class="parametername">inElementId</span></td>
+      <td><p>Identifier of providing element.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a class="xref" href="TopSolid.Kernel.Automating.ItemLabel.html">ItemLabel</a></td>
+      <td><span class="parametername">inItemLabel</span></td>
+      <td><p>Label of providing element item.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<a id="TopSolid_Kernel_Automating_SmartReal__ctor_" data-uid="TopSolid.Kernel.Automating.SmartReal.#ctor*"></a>
+<h4 id="TopSolid_Kernel_Automating_SmartReal__ctor_TopSolid_Kernel_Automating_UnitType_System_String_" data-uid="TopSolid.Kernel.Automating.SmartReal.#ctor(TopSolid.Kernel.Automating.UnitType,System.String)">SmartReal(UnitType, string)</h4>
+<div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="TopSolid.Kernel.Automating.SmartReal.html">SmartReal</a> class of type <a class="xref" href="TopSolid.Kernel.Automating.SmartRealType.html#TopSolid_Kernel_Automating_SmartRealType_Formula">Formula</a>.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+<h5 class="declaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public SmartReal(UnitType inUnitType, string inFormula)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a class="xref" href="TopSolid.Kernel.Automating.UnitType.html">UnitType</a></td>
+      <td><span class="parametername">inUnitType</span></td>
+      <td><p>Type of units.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+      <td><span class="parametername">inFormula</span></td>
+      <td><p>Formula.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<a id="TopSolid_Kernel_Automating_SmartReal__ctor_" data-uid="TopSolid.Kernel.Automating.SmartReal.#ctor*"></a>
+<h4 id="TopSolid_Kernel_Automating_SmartReal__ctor_TopSolid_Kernel_Automating_UnitType_System_String_TopSolid_Kernel_Automating_ScriptType_" data-uid="TopSolid.Kernel.Automating.SmartReal.#ctor(TopSolid.Kernel.Automating.UnitType,System.String,TopSolid.Kernel.Automating.ScriptType)">SmartReal(UnitType, string, ScriptType)</h4>
+<div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="TopSolid.Kernel.Automating.SmartReal.html">SmartReal</a> class of type <a class="xref" href="TopSolid.Kernel.Automating.SmartRealType.html#TopSolid_Kernel_Automating_SmartRealType_Formula">Formula</a>.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+<h5 class="declaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public SmartReal(UnitType inUnitType, string inFormula, ScriptType inScriptType)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a class="xref" href="TopSolid.Kernel.Automating.UnitType.html">UnitType</a></td>
+      <td><span class="parametername">inUnitType</span></td>
+      <td><p>Type of units.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+      <td><span class="parametername">inFormula</span></td>
+      <td><p>Formula.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a class="xref" href="TopSolid.Kernel.Automating.ScriptType.html">ScriptType</a></td>
+      <td><span class="parametername">inScriptType</span></td>
+      <td><p>Type of script.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<a id="TopSolid_Kernel_Automating_SmartReal__ctor_" data-uid="TopSolid.Kernel.Automating.SmartReal.#ctor*"></a>
+<h4 id="TopSolid_Kernel_Automating_SmartReal__ctor_TopSolid_Kernel_Automating_UnitType_System_String_System_String_" data-uid="TopSolid.Kernel.Automating.SmartReal.#ctor(TopSolid.Kernel.Automating.UnitType,System.String,System.String)">SmartReal(UnitType, string, string)</h4>
+<div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="TopSolid.Kernel.Automating.SmartReal.html">SmartReal</a> class of type <a class="xref" href="TopSolid.Kernel.Automating.SmartRealType.html#TopSolid_Kernel_Automating_SmartRealType_Formula">Formula</a> with tolerance.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+<h5 class="declaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public SmartReal(UnitType inUnitType, string inFormula, string inTolerance)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a class="xref" href="TopSolid.Kernel.Automating.UnitType.html">UnitType</a></td>
+      <td><span class="parametername">inUnitType</span></td>
+      <td><p>Type of units.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+      <td><span class="parametername">inFormula</span></td>
+      <td><p>Formula.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+      <td><span class="parametername">inTolerance</span></td>
+      <td><p>Tolerance.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<a id="TopSolid_Kernel_Automating_SmartReal__ctor_" data-uid="TopSolid.Kernel.Automating.SmartReal.#ctor*"></a>
+<h4 id="TopSolid_Kernel_Automating_SmartReal__ctor_TopSolid_Kernel_Automating_UnitType_System_String_System_String_TopSolid_Kernel_Automating_ScriptType_" data-uid="TopSolid.Kernel.Automating.SmartReal.#ctor(TopSolid.Kernel.Automating.UnitType,System.String,System.String,TopSolid.Kernel.Automating.ScriptType)">SmartReal(UnitType, string, string, ScriptType)</h4>
+<div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="TopSolid.Kernel.Automating.SmartReal.html">SmartReal</a> class of type <a class="xref" href="TopSolid.Kernel.Automating.SmartRealType.html#TopSolid_Kernel_Automating_SmartRealType_Formula">Formula</a> with tolerance and script.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+<h5 class="declaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public SmartReal(UnitType inUnitType, string inFormula, string inTolerance, ScriptType inScriptType)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a class="xref" href="TopSolid.Kernel.Automating.UnitType.html">UnitType</a></td>
+      <td><span class="parametername">inUnitType</span></td>
+      <td><p>Type of units.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+      <td><span class="parametername">inFormula</span></td>
+      <td><p>Formula.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+      <td><span class="parametername">inTolerance</span></td>
+      <td><p>Tolerance.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a class="xref" href="TopSolid.Kernel.Automating.ScriptType.html">ScriptType</a></td>
+      <td><span class="parametername">inScriptType</span></td>
+      <td><p>Type of script.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div id="footer-alt">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      			<div id="footer-alt-bottom">
+                      <ul>
+                          <li><a href="https://www.topsolid.com/en/terms-of-use">Term of use</a></li>
+                          <li><a href="https://www.topsolid.com/en/corporate-information">Corporate information</a></li>
+                          <li><a href="https://www.topsolid.com/en/privacy-policy-gdpr">Privacy Policy - GDPR</a></li>
+                      </ul>
+                      <p>Copyright ©2025 TopSolid - All rights reserved.</p>
+                  </div>
+          </div>
+        </div>
+      </footer>    </div>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.CopySeveral.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.CopySeveral.html",
+  "sha256": "66cb1ff229b85ab2c0d9ed177f24b1731517b6236a0a37884ccb6667273b2b9d",
+  "text": "# Method CopySeveral\n\n#### CopySeveral(List<PdmObjectId>, PdmObjectId)\n\nCopies several objects.\n\n##### Declaration\n\n```\n[OperationContract]\n[Obsolete(\"Since v7.20.258.0, CopySeveral is done using CopySeveralWithOptions.\")]\nList<PdmObjectId> CopySeveral(List<PdmObjectId> inObjectIds, PdmObjectId inOwnerId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  List<PdmObjectId> |  inObjectIds |  Identifiers of objects to copy.  |  \n \n|  PdmObjectId |  inOwnerId |  Identifier of project or folder owner where to copy objects.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<PdmObjectId> |  New PDM object identifiers.  |  \n\n##### Remarks\n\nThis method must not be called between StartModification(string, bool) and EndModification(bool, bool) methods calls.\n \nThis method is available since v7.7.201.140.\n",
+  "markdown": "markdown/kernel/d2882ef59ec64a7c64d15929.md",
+  "originalHtml": "html/kernel/d2882ef59ec64a7c64d15929.html"
+}

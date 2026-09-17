@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IOperations.IsActive.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IOperations.IsActive.html",
+  "sha256": "f9bb1877d978c852a24849749daa71da522680305173ee79912a86d5a87ede3a",
+  "text": "# Method IsActive\n\n#### IsActive(ElementId)\n\nTells whether an operation is active.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nbool IsActive(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the operation to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  The operation is active.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/eb8c5e737307f5d544c5165f.md",
+  "originalHtml": "html/kernel/eb8c5e737307f5d544c5165f.html"
+}

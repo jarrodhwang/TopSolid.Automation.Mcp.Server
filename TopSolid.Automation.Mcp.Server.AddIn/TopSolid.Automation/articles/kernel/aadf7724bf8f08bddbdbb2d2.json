@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.GetNameParameter.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.GetNameParameter.html",
+  "sha256": "2fcfbcf17b7efc3915f99d891333d94a52304d730766fda85efa8172ad244f5d",
+  "text": "# Method GetNameParameter\n\n#### GetNameParameter(DocumentId)\n\nGets the name parameter entity of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nElementId GetNameParameter(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the name parameter entity found.  |  \n\n##### Remarks\n\nThe name parameter is a text parameter, its value may be obtained and modified using the GetTextValue(ElementId) and SetTextValue(ElementId, string) methods.\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/aadf7724bf8f08bddbdbb2d2.md",
+  "originalHtml": "html/kernel/aadf7724bf8f08bddbdbb2d2.html"
+}

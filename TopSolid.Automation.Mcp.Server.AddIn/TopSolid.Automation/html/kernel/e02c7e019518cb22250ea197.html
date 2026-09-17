@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Struct Transform2D | TopSolid Automation website </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Struct Transform2D | TopSolid Automation website ">
+    
+    <meta name="description" content="Represents a 2D transformation.">
+      <link rel="shortcut icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../../styles/docfx.css">
+      <link rel="stylesheet" href="../../styles/main.css">
+      <meta property="docfx:navrel" content="../../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../img/AutomationIcon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="TopSolid.Kernel.Automating.Transform2D">
+
+
+
+  <h1 id="TopSolid_Kernel_Automating_Transform2D" data-uid="TopSolid.Kernel.Automating.Transform2D" class="text-break">Struct Transform2D</h1>
+  <div class="markdown level0 summary"><p>Represents a 2D transformation.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.equals">ValueType.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode">ValueType.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.tostring">ValueType.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="TopSolid.html">TopSolid</a>.<a class="xref" href="TopSolid.Kernel.html">Kernel</a>.<a class="xref" href="TopSolid.Kernel.Automating.html">Automating</a></h6>
+  <h6><strong>Assembly</strong>: TopSolid.Kernel.Automating.dll</h6>
+  <h5 id="TopSolid_Kernel_Automating_Transform2D_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataContract]
+[AvailableSinceVersion(7, 6, 0, 0)]
+public struct Transform2D</code></pre>
+  </div>
+  <h5 id="TopSolid_Kernel_Automating_Transform2D_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>The transformation is defined by a 3x3 matrix that operates as multiplier on column vectors
+containing homogeneous coordinates:</p>
+<p><code>[ R00 R01 Tx ]</code></p>
+<p><code>[ R10 R11 Ty ]</code></p>
+<p><code>[ Px Py Si ]</code></p>
+<p>That transforms (X, Y, H) into (X', Y', H') as follows:</p>
+<p><code>X' = R00 * X + R01 * Y + Tx * H</code></p>
+<p><code>Y' = R10 * X + R11 * Y + Ty * H</code></p>
+<p><code>H' = Px * X + Py * Y + Si * H</code></p>
+<p><code>R</code> is a non singular transformation matrix, that contains the rotation, reflection,
+non-uniform scaling and shearing components.</p>
+<p><code>T</code> is a translation vector.</p>
+<p><code>P</code> represents the perspective terms in viewing transformations. It must be zero in
+transformations used for modeling.</p>
+<p><code>Si</code> is the inverse of the global scale factor, it has to be greater than zero.</p>
+<p>In the case of conventional coordinates, H is equal to one, and the coordinates
+of the transformed point are (X'/H', Y'/H').</p>
+<p>For instance here is the transformation matrix corresponding to the rotation of angle "a" around the origin point:</p>
+<p><code>[ cos(a) -sin(a) 0 ]</code></p>
+<p><code>[ sin(a) cos(a) 0 ]</code></p>
+<p><code>[ 0 0 1 ]</code></p>	
+<p>This structure is available since v7.6.</p>
+</div>
+  <h3 id="constructors">Constructors
+</h3>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_Transform2D__ctor_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_" data-uid="TopSolid.Kernel.Automating.Transform2D.#ctor(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">
+          <a class="xref" href="TopSolid.Kernel.Automating.Transform2D.-ctor.html#TopSolid_Kernel_Automating_Transform2D__ctor_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_">Transform2D(double, double, double, double, double, double, double, double, double)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="TopSolid.Kernel.Automating.Transform2D.html">Transform2D</a> structure.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+</h3>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_Transform2D_Identity" data-uid="TopSolid.Kernel.Automating.Transform2D.Identity">
+          <a class="xref" href="TopSolid.Kernel.Automating.Transform2D.Identity.html">Identity</a>
+        </td>
+        <td class="markdown level1 summary"><p>Indentity transformation.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_Transform2D_Px" data-uid="TopSolid.Kernel.Automating.Transform2D.Px">
+          <a class="xref" href="TopSolid.Kernel.Automating.Transform2D.Px.html">Px</a>
+        </td>
+        <td class="markdown level1 summary"><p>Perspective factor along X.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_Transform2D_Py" data-uid="TopSolid.Kernel.Automating.Transform2D.Py">
+          <a class="xref" href="TopSolid.Kernel.Automating.Transform2D.Py.html">Py</a>
+        </td>
+        <td class="markdown level1 summary"><p>Perspective factor along Y.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_Transform2D_R00" data-uid="TopSolid.Kernel.Automating.Transform2D.R00">
+          <a class="xref" href="TopSolid.Kernel.Automating.Transform2D.R00.html">R00</a>
+        </td>
+        <td class="markdown level1 summary"><p>Rotation[0,0].</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_Transform2D_R01" data-uid="TopSolid.Kernel.Automating.Transform2D.R01">
+          <a class="xref" href="TopSolid.Kernel.Automating.Transform2D.R01.html">R01</a>
+        </td>
+        <td class="markdown level1 summary"><p>Rotation[0,1].</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_Transform2D_R10" data-uid="TopSolid.Kernel.Automating.Transform2D.R10">
+          <a class="xref" href="TopSolid.Kernel.Automating.Transform2D.R10.html">R10</a>
+        </td>
+        <td class="markdown level1 summary"><p>Rotation[1,0].</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_Transform2D_R11" data-uid="TopSolid.Kernel.Automating.Transform2D.R11">
+          <a class="xref" href="TopSolid.Kernel.Automating.Transform2D.R11.html">R11</a>
+        </td>
+        <td class="markdown level1 summary"><p>Rotation[1,1].</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_Transform2D_Si" data-uid="TopSolid.Kernel.Automating.Transform2D.Si">
+          <a class="xref" href="TopSolid.Kernel.Automating.Transform2D.Si.html">Si</a>
+        </td>
+        <td class="markdown level1 summary"><p>Inverse of the global scale factor.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_Transform2D_Tx" data-uid="TopSolid.Kernel.Automating.Transform2D.Tx">
+          <a class="xref" href="TopSolid.Kernel.Automating.Transform2D.Tx.html">Tx</a>
+        </td>
+        <td class="markdown level1 summary"><p>Translation along X.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_Transform2D_Ty" data-uid="TopSolid.Kernel.Automating.Transform2D.Ty">
+          <a class="xref" href="TopSolid.Kernel.Automating.Transform2D.Ty.html">Ty</a>
+        </td>
+        <td class="markdown level1 summary"><p>Translation along Y.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_Transform2D_SetRotation_TopSolid_Kernel_Automating_Point3D_System_Double_" data-uid="TopSolid.Kernel.Automating.Transform2D.SetRotation(TopSolid.Kernel.Automating.Point3D,System.Double)">
+          <a class="xref" href="TopSolid.Kernel.Automating.Transform2D.SetRotation.html#TopSolid_Kernel_Automating_Transform2D_SetRotation_TopSolid_Kernel_Automating_Point3D_System_Double_">SetRotation(Point3D, double)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the transformation as the rotation about a specified point with a specified angle.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_Transform2D_SetTranslation_TopSolid_Kernel_Automating_Vector2D_" data-uid="TopSolid.Kernel.Automating.Transform2D.SetTranslation(TopSolid.Kernel.Automating.Vector2D)">
+          <a class="xref" href="TopSolid.Kernel.Automating.Transform2D.SetTranslation.html#TopSolid_Kernel_Automating_Transform2D_SetTranslation_TopSolid_Kernel_Automating_Vector2D_">SetTranslation(Vector2D)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the transformation as the translation along a specified vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div id="footer-alt">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      			<div id="footer-alt-bottom">
+                      <ul>
+                          <li><a href="https://www.topsolid.com/en/terms-of-use">Term of use</a></li>
+                          <li><a href="https://www.topsolid.com/en/corporate-information">Corporate information</a></li>
+                          <li><a href="https://www.topsolid.com/en/privacy-policy-gdpr">Privacy Policy - GDPR</a></li>
+                      </ul>
+                      <p>Copyright ©2025 TopSolid - All rights reserved.</p>
+                  </div>
+          </div>
+        </div>
+      </footer>    </div>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

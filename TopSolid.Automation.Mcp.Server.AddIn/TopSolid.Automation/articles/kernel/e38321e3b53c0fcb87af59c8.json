@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.SetManufacturer.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.SetManufacturer.html",
+  "sha256": "af0ec03656748a1336d839feea384fa82bf6004cca61cc0e935e6c4e9e6786d6",
+  "text": "# Method SetManufacturer\n\n#### SetManufacturer(PdmObjectId, string)\n\nSets the manufacturer of an object.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 303, 100)]\nvoid SetManufacturer(PdmObjectId inObjectId, string inManufacturer)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  Object identifier.  |  \n \n|  string |  inManufacturer |  Manufacturer.  |  \n\n##### Remarks\n\nThis method must not be called between StartModification(string, bool) and EndModification(bool, bool) methods calls.\n \nThis method is available since v7.8.303.100.\n",
+  "markdown": "markdown/kernel/e38321e3b53c0fcb87af59c8.md",
+  "originalHtml": "html/kernel/e38321e3b53c0fcb87af59c8.html"
+}

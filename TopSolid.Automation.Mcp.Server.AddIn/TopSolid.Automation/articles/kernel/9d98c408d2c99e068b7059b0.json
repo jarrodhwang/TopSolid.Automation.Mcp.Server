@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.License.Group.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.License.Group.html",
+  "sha256": "98f704fc9c581cc38ec7a49906c25fe707f6d50411b8eb44404c02a461f0c00d",
+  "text": "# Field Group\n\nGroup number.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic uint Group\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  uint |  Group number. |\n",
+  "markdown": "markdown/kernel/9d98c408d2c99e068b7059b0.md",
+  "originalHtml": "html/kernel/9d98c408d2c99e068b7059b0.html"
+}

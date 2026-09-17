@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.CheckOut.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.CheckOut.html",
+  "sha256": "c4e66992c2f90b54ea3d1feef52ee3137cbaa7a9639fe33791d839bf6d95f7de",
+  "text": "# Method CheckOut\n\n#### CheckOut(PdmObjectId)\n\nChecks-out an object.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nvoid CheckOut(PdmObjectId inObjectId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  PDM object identifier.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/pdmexplorer/f4805eaaf9de3bf20bddbbde.md",
+  "originalHtml": "html/pdmexplorer/f4805eaaf9de3bf20bddbbde.html"
+}

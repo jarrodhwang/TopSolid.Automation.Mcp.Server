@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Generic.HostChannel-1.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Generic.HostChannel-1.html",
+  "sha256": "d7c95e0f71e78a8ba83d4e4274cf72187de01ed74c272f14834c3b779dcbe84e",
+  "text": "# Class HostChannel<TService>\n\nRepresents a channel to a TopSolid host providing a WCF service.\n\n##### Inheritance\n \nobject\n \nHostChannel<TService>\n\n##### Implements\n \nIDisposable\n\n##### Inherited Members\n \n object.ToString() \n \n object.Equals(object) \n \n object.Equals(object, object) \n \n object.ReferenceEquals(object, object) \n \n object.GetHashCode() \n \n object.GetType() \n \n object.MemberwiseClone() \n\n###### Namespace: TopSolid.Kernel.Automating.Generic\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\npublic class HostChannel<TService> : IDisposable\n```\n\n##### Type Parameters\n\n|  Name |  Description |  \n| --- | --- | \n   \n|  TService |  WCF service contract interface.  |  \n\n### Constructors \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   HostChannel(TopSolidHostInstance)  |  Initializes a new instance of the HostChannel<TService> class.  |  \n\n### Properties \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   ChannelFactory  |  Gets the channel factory, or null if none.  |  \n \n|   Service  |  Gets the service, or null if none.  |  \n\n### Methods \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   Dispose()  |   |\n",
+  "markdown": "markdown/kernel/ddfe8623abfe438b4b4006c1.md",
+  "originalHtml": "html/kernel/ddfe8623abfe438b4b4006c1.html"
+}

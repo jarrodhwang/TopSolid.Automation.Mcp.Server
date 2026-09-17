@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMechanisms.GetEquidistantJoint.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMechanisms.GetEquidistantJoint.html",
+  "sha256": "45bbf9e7d186bb8192fdeeed2f1cc4074ff2e504f16668c9dd1516e1e07583be",
+  "text": "# Method GetEquidistantJoint\n\n#### GetEquidistantJoint(ElementId, out ElementId, out ElementId, out ElementId, out SmartPoint3D, out SmartPoint3D, out SmartPoint3D)\n\nGets an equidistant joint.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 18, 400, 260)]\nvoid GetEquidistantJoint(ElementId inElementId, out ElementId outFirstRigidGroupId, out ElementId outSecondRigidGroupId, out ElementId outThirdRigidGroupId, out SmartPoint3D outFirstPoint, out SmartPoint3D outSecondPoint, out SmartPoint3D outThirdPoint)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the joint to analyze.  |  \n \n|  ElementId |  outFirstRigidGroupId |  Identifier of first rigid group.  |  \n \n|  ElementId |  outSecondRigidGroupId |  Identifier of second rigid group.  |  \n \n|  ElementId |  outThirdRigidGroupId |  Identifier of third rigid group.  |  \n \n|  SmartPoint3D |  outFirstPoint |  First point  |  \n \n|  SmartPoint3D |  outSecondPoint |  Second point  |  \n \n|  SmartPoint3D |  outThirdPoint |  Third point  |\n",
+  "markdown": "markdown/cad/d1fa40043bbfe06af3c672e0.md",
+  "originalHtml": "html/cad/d1fa40043bbfe06af3c672e0.html"
+}

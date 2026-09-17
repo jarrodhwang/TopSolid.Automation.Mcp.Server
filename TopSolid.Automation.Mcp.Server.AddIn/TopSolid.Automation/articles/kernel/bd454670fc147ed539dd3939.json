@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.GetTextLocalizedValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.GetTextLocalizedValue.html",
+  "sha256": "9ae07476f7722cae5112c9ebfbff0d9992eecfbd4c69c595597716b62e6b8e70",
+  "text": "# Method GetTextLocalizedValue\n\n#### GetTextLocalizedValue(ElementId)\n\nGets the localized value of a text parameter.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nstring GetTextLocalizedValue(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the parameter to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  Localized value of the parameter.  |  \n\n##### Remarks\n\nIf the text is not localized, this method returns the same value than GetTextValue(ElementId).\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/bd454670fc147ed539dd3939.md",
+  "originalHtml": "html/kernel/bd454670fc147ed539dd3939.html"
+}

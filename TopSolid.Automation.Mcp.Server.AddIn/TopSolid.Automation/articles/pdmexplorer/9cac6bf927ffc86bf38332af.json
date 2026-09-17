@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.BomNode.Images.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.BomNode.Images.html",
+  "sha256": "c444958c1b8d702572bed95d8533d73b5f8a09a094c60c36168959a55d7470c8",
+  "text": "# Property Images\n\n#### Images\n\nGets the images.\n\n##### Declaration\n\n```\npublic List<Bitmap> Images { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<Bitmap> |   |\n",
+  "markdown": "markdown/pdmexplorer/9cac6bf927ffc86bf38332af.md",
+  "originalHtml": "html/pdmexplorer/9cac6bf927ffc86bf38332af.html"
+}

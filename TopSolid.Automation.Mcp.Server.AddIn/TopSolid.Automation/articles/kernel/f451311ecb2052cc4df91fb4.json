@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdmAdmin.UserAccountId.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdmAdmin.UserAccountId.html",
+  "sha256": "7ed4a139a9768db5c73c9a48a349f3bd26ad61547d2f06a3aebe9b74d83a61cc",
+  "text": "# Property UserAccountId\n\n#### UserAccountId\n\nGets connected user account identifier.\n\n##### Declaration\n\n```\n[AvailableSinceVersion(7, 15, 186, 0)]\nstring UserAccountId { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |   |  \n\n##### Remarks\n\nThis property is available since v7.15.186.000.\n",
+  "markdown": "markdown/kernel/f451311ecb2052cc4df91fb4.md",
+  "originalHtml": "html/kernel/f451311ecb2052cc4df91fb4.html"
+}

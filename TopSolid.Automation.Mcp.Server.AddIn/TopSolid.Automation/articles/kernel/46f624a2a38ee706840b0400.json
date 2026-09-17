@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.GetToleranceLowerDeviation.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.GetToleranceLowerDeviation.html",
+  "sha256": "a626cd0ece14dce5dcc6a219da4394476a3ba76706d4f2e8f0675a0ade70f89b",
+  "text": "# Method GetToleranceLowerDeviation\n\n#### GetToleranceLowerDeviation(ElementId)\n\nGets the lower deviation value of a Tolerance parameter.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 14, 0, 0)]\nReal GetToleranceLowerDeviation(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the parameter to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Real |  Lower deviation value of the parameter.  |  \n\n##### Remarks\n\nThis method is available since v7.14.\n",
+  "markdown": "markdown/kernel/46f624a2a38ee706840b0400.md",
+  "originalHtml": "html/kernel/46f624a2a38ee706840b0400.html"
+}

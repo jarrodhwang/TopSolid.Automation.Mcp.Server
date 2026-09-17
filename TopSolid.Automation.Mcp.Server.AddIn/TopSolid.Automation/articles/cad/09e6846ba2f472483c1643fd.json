@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IParts.SetCenterOfMassPropertyManagement.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IParts.SetCenterOfMassPropertyManagement.html",
+  "sha256": "84b4597e5b7dc57667a91dbc5f216549f932c21cb666ff1b7480c2f9e8e2d358",
+  "text": "# Method SetCenterOfMassPropertyManagement\n\n#### SetCenterOfMassPropertyManagement(DocumentId, bool, SmartPoint3D)\n\nSets the center of mass property management of a part.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 13, 300, 220)]\nvoid SetCenterOfMassPropertyManagement(DocumentId inDocumentId, bool inIsCenterOfMassManaged, SmartPoint3D inManualCenterOfMass)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of part document to analyze.  |  \n \n|  bool |  inIsCenterOfMassManaged |  Whether the center of mass is managed. True for automatic or manual, false for not managed.  |  \n \n|  SmartPoint3D |  inManualCenterOfMass |  Manual center of mass, or null if no manual center of mass.  |  \n\n##### Remarks\n\nThis method is available since v7.13.300.220.\n",
+  "markdown": "markdown/cad/09e6846ba2f472483c1643fd.md",
+  "originalHtml": "html/cad/09e6846ba2f472483c1643fd.html"
+}

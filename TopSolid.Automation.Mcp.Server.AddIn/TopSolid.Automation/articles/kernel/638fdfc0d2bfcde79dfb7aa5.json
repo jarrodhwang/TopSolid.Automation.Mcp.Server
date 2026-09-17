@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.TextureImage.Signature.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.TextureImage.Signature.html",
+  "sha256": "d9c6703eb41ce40164873e5b67bc77f762acd59b913b0eecb31fb89c5b5d2764",
+  "text": "# Property Signature\n\n#### Signature\n\nGets the image signature.\n\n##### Declaration\n\n```\npublic string Signature { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |   |\n",
+  "markdown": "markdown/kernel/638fdfc0d2bfcde79dfb7aa5.md",
+  "originalHtml": "html/kernel/638fdfc0d2bfcde79dfb7aa5.html"
+}

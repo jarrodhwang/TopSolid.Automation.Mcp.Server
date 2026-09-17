@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IShapes.GetSmoothEdges.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IShapes.GetSmoothEdges.html",
+  "sha256": "8a6cd39f3c72b4def2e1263059a51a3c6f14cf285700f5f1df1a37b64c97e27f",
+  "text": "# Method GetSmoothEdges\n\n#### GetSmoothEdges(ElementId, double)\n\nGets the smooth edges of a shape.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nList<ElementItemId> GetSmoothEdges(ElementId inElementId, double inAngle)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the shape entity to analyze.  |  \n \n|  double |  inAngle |  Maximum angle between face normals along the edge.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementItemId> |  Identifiers of the smooth edges of the shape.  |  \n\n##### Remarks\n\nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/bc333833ae360f0264eb9d37.md",
+  "originalHtml": "html/kernel/bc333833ae360f0264eb9d37.html"
+}

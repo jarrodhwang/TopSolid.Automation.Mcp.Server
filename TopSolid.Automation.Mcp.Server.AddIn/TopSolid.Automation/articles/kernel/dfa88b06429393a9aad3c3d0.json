@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IShapes.GetLoopEdges.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IShapes.GetLoopEdges.html",
+  "sha256": "341ac5138d347aba61a54528674e9a93e766911ac8eec349ee832ebfb546c894",
+  "text": "# Method GetLoopEdges\n\n#### GetLoopEdges(ElementId, int)\n\nGets the edges of a loop.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nList<ElementItemId> GetLoopEdges(ElementId inElementId, int inLoopId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the shape entity to analyze.  |  \n \n|  int |  inLoopId |  Identifier of the loop to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementItemId> |  Identifiers of the edges of the loop.  |  \n\n##### Remarks\n\nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/dfa88b06429393a9aad3c3d0.md",
+  "originalHtml": "html/kernel/dfa88b06429393a9aad3c3d0.html"
+}

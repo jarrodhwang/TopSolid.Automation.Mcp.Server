@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.TopSolidHost.AngularPrecision.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.TopSolidHost.AngularPrecision.html",
+  "sha256": "277cd8506c1feff1015a674cc186c10eafa30d3b10e849e4d473b5df5d764eae",
+  "text": "# Field AngularPrecision\n\nGeometric angular precision (in radians): two lines which make an angle of less than this value are considered parallel.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\npublic const double AngularPrecision = 1E-08\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double |  Geometric angular precision (in radians): two lines which make an angle of less than this value are considered parallel. |\n",
+  "markdown": "markdown/kernel/15b53141f910312bd5fdc703.md",
+  "originalHtml": "html/kernel/15b53141f910312bd5fdc703.html"
+}

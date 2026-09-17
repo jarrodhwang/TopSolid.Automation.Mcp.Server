@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.BomPropertyDefinitions.Index.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.BomPropertyDefinitions.Index.html",
+  "sha256": "50a7cbdddecc8d64bc3e189b3cc24a88eb2f5f9b7de1766f11be839521178b99",
+  "text": "# Field Index\n\nBOM index property definition (Text).\n\n###### Namespace: TopSolid.Cad.Design.Automating\n\n###### Assembly: TopSolid.Cad.Design.Automating.dll\n\n##### Syntax\n\n```\npublic static readonly PropertyDefinition Index\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  PropertyDefinition |  BOM index property definition (). |\n",
+  "markdown": "markdown/cad/02b034aca4a12f331947bcef.md",
+  "originalHtml": "html/cad/02b034aca4a12f331947bcef.html"
+}

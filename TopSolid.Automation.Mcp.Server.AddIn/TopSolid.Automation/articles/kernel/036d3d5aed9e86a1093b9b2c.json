@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IFamilies.GetCodes.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IFamilies.GetCodes.html",
+  "sha256": "9aa096e5b712b8d1f4cfeacdf6696e33dc7710566a16162695951ce7d41edf41",
+  "text": "# Method GetCodes\n\n#### GetCodes(DocumentId)\n\nGets the codes of a family document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nList<string> GetCodes(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the family document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<string> |  Codes found.  |  \n\n##### Remarks\n\nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/036d3d5aed9e86a1093b9b2c.md",
+  "originalHtml": "html/kernel/036d3d5aed9e86a1093b9b2c.html"
+}

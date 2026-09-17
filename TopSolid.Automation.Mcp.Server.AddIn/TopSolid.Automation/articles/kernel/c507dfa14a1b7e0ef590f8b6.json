@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IGeometries3D.PublishSection.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IGeometries3D.PublishSection.html",
+  "sha256": "62726478f6eaa32e5f478fe7438278ce57fee8b6968801328a1fc1169642e317",
+  "text": "# Method PublishSection\n\n#### PublishSection(DocumentId, string, SmartSection3D)\n\nCreates a section publishing entity in a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 302, 80)]\nElementId PublishSection(DocumentId inDocumentId, string inDescription, SmartSection3D inDefinition)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  string |  inDescription |  Publishing description.  |  \n \n|  SmartSection3D |  inDefinition |  Publishing definition.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the created publishing entity.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.8.302.80.\n",
+  "markdown": "markdown/kernel/c507dfa14a1b7e0ef590f8b6.md",
+  "originalHtml": "html/kernel/c507dfa14a1b7e0ef590f8b6.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.ITools.IsTool.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.ITools.IsTool.html",
+  "sha256": "5b55b9fb8c08689b5c7f6a44e32d5e1c328f407784b42d960ecbc7f291a3b0c1",
+  "text": "# Method IsTool\n\n#### IsTool(ElementId)\n\nTells whether an element is a tool.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 192, 0)]\nbool IsTool(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  True if the element is a tool.  |\n",
+  "markdown": "markdown/cam/c4e0f8a801cd18ead1c9d6a3.md",
+  "originalHtml": "html/cam/c4e0f8a801cd18ead1c9d6a3.html"
+}

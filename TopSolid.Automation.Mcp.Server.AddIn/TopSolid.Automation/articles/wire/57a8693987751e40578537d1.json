@@ -1,0 +1,8 @@
+{
+  "path": "api/wire/TopSolid.Cam.NC.Wire.Automating.IWireCc.SetCorrectorNumber.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/wire/TopSolid.Cam.NC.Wire.Automating.IWireCc.SetCorrectorNumber.html",
+  "sha256": "63932c3bdb0edda462529b8aa4cb1decd40bcf9a1bf1442d2240c8bf623a7fba",
+  "text": "# Method SetCorrectorNumber\n\n#### SetCorrectorNumber(ElementId, SmartInteger)\n\nSet corrector number.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 160)]\nvoid SetCorrectorNumber(ElementId inElementId, SmartInteger inCorrectorNumber)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to modify.  |  \n \n|  SmartInteger |  inCorrectorNumber |  Corrector number.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n",
+  "markdown": "markdown/wire/57a8693987751e40578537d1.md",
+  "originalHtml": "html/wire/57a8693987751e40578537d1.html"
+}

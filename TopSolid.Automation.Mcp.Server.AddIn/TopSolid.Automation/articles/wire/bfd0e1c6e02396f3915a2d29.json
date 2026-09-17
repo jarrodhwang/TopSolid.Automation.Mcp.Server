@@ -1,0 +1,8 @@
+{
+  "path": "api/wire/TopSolid.Cam.NC.Wire.Automating.TopSolidWireTechnologyHostInstance.Disconnect.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/wire/TopSolid.Cam.NC.Wire.Automating.TopSolidWireTechnologyHostInstance.Disconnect.html",
+  "sha256": "1795502b39fe3e2b4012a7966ee49b3e83bb293da0dda1e1b5fdef7849b7e13a",
+  "text": "# Method Disconnect\n\n#### Disconnect()\n\nDisconnect from TopSolid application.\n\n##### Declaration\n\n```\npublic void Disconnect()\n```\n",
+  "markdown": "markdown/wire/bfd0e1c6e02396f3915a2d29.md",
+  "originalHtml": "html/wire/bfd0e1c6e02396f3915a2d29.html"
+}

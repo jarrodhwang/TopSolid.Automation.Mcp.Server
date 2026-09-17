@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.SearchObjectsWithProperties.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.SearchObjectsWithProperties.html",
+  "sha256": "f2b942b475a1f7502e781c8fddd3d4dd0df48a6f8df097badce23c34f0a25bcc",
+  "text": "# Method SearchObjectsWithProperties\n\n#### SearchObjectsWithProperties(List<PdmObjectId>, bool, List<string>, bool, int)\n\nSearches PDM objects with several properties.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 15, 400, 220)]\nList<PdmObjectId> SearchObjectsWithProperties(List<PdmObjectId> inProjects, bool inSearchInReferencedProjects, List<string> inExtensions, bool inSkipDeletedObjects, int inMaxResultCount)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  List<PdmObjectId> |  inProjects |  Projects in which to search or null in order to search in all projects.  |  \n \n|  bool |  inSearchInReferencedProjects |  Search in referenced projects of specified projets.  |  \n \n|  List<string> |  inExtensions |  Document types to search for or null for all.  |  \n \n|  bool |  inSkipDeletedObjects |  Skip deleted objects.  |  \n \n|  int |  inMaxResultCount |  Maximum result count allowed, or -1 if no limit.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<PdmObjectId> |  Founded objects.  |  \n\n##### Remarks\n\nThis method is available since v7.15.400.220.\n",
+  "markdown": "markdown/kernel/994bba555cf5560d4d791c0f.md",
+  "originalHtml": "html/kernel/994bba555cf5560d4d791c0f.html"
+}

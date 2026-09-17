@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ShapeCategoryType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ShapeCategoryType.html",
+  "sha256": "2b8bc03c10adf6e8cc7aa9c8faaaef91f3e3414ed4cc6b7d5fd53d315da438eb",
+  "text": "# Enum ShapeCategoryType\n\nDefines the various categories of shapes\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 19, 400, 100)]\npublic enum ShapeCategoryType\n```\n\n##### Remarks\n\nThis enum is available since v7.19.\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  Exact |  The geometry is exact.  |  \n \n|  Faceted |  The geometry is faceted.  |  \n \n|  None |  No curve attached.  |  \n \n|  Unclassified |  Unclassified type.  |\n",
+  "markdown": "markdown/kernel/714b2ca1b81d2c1f12e409a1.md",
+  "originalHtml": "html/kernel/714b2ca1b81d2c1f12e409a1.html"
+}

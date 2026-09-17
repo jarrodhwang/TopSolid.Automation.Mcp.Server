@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IGeometries2D.GetFramePublishingDefinition.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IGeometries2D.GetFramePublishingDefinition.html",
+  "sha256": "93438056022c6aa405f4d6689c3145a6c0e91db6f416e11b78b2f8aba9659341",
+  "text": "# Method GetFramePublishingDefinition\n\n#### GetFramePublishingDefinition(ElementId)\n\nGets the definition of a frame publishing entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nSmartFrame2D GetFramePublishingDefinition(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the publishing entity to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartFrame2D |   |  \n\n##### Remarks\n\nThe geometry of the publishing entity may be obtained with the GetFrameGeometry(ElementId) method.\n \nThis method is available since v7.8.\n",
+  "markdown": "markdown/kernel/7dec8844f2e59280fc5b8c5c.md",
+  "originalHtml": "html/kernel/7dec8844f2e59280fc5b8c5c.html"
+}

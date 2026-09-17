@@ -1,0 +1,8 @@
+{
+  "path": "api/cae/TopSolid.Cae.Kernel.Automating.NaturalFrequencyResult.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cae/TopSolid.Cae.Kernel.Automating.NaturalFrequencyResult.html",
+  "sha256": "f566da8ee5267e81cf15324a1a23debd4af563f413d1184d0860462bdee3da9d",
+  "text": "# Class NaturalFrequencyResult\n\nRepresents a natural frequency Result\n\n##### Inheritance\n \nobject\n \nNaturalFrequencyResult\n\n##### Inherited Members\n \n object.ToString() \n \n object.Equals(object) \n \n object.Equals(object, object) \n \n object.ReferenceEquals(object, object) \n \n object.GetHashCode() \n \n object.GetType() \n \n object.MemberwiseClone() \n\n###### Namespace: TopSolid.Cae.Kernel.Automating\n\n###### Assembly: TopSolid.Cae.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 20, 400, 100)]\npublic class NaturalFrequencyResult\n```\n\n##### Remarks\n\nThis structure is available since v7.20\n\n### Properties \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   FrequencyNumber  |  Gets the Mode number  |  \n \n|   LoadResult  |  Gets the Result  |  \n \n|   NaturalFrequency  |  Gets the Critical Load  |\n",
+  "markdown": "markdown/cae/80201557393013082a8f6575.md",
+  "originalHtml": "html/cae/80201557393013082a8f6575.html"
+}

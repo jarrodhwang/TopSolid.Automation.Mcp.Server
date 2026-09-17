@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.HasRealParameterConstraints.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.HasRealParameterConstraints.html",
+  "sha256": "b861aa3c1c6f51e6a98760a126714dca6ca5760d7016d94c6062f6b9769c1758",
+  "text": "# Method HasRealParameterConstraints\n\n#### HasRealParameterConstraints(ElementId)\n\nDetermines whether the paramter has contraints.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 17, 0, 0)]\nbool HasRealParameterConstraints(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the parameter.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Whether the parameter has constraints.  |  \n\n##### Remarks\n\nThis method is available since v7.17.000.000.\n",
+  "markdown": "markdown/kernel/bff4afd7e5e59c0ac2974578.md",
+  "originalHtml": "html/kernel/bff4afd7e5e59c0ac2974578.html"
+}

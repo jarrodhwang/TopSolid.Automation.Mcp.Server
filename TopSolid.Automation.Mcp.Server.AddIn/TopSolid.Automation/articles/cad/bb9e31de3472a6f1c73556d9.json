@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ICoatings.SetNormalFactor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ICoatings.SetNormalFactor.html",
+  "sha256": "20ba1425fbb2249a8b5bfa7e80947dfc884ad5c277471fcacb4ba7a1cdfa6921",
+  "text": "# Method SetNormalFactor\n\n#### SetNormalFactor(DocumentId, double)\n\nSets the Normal factor.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 0, 0)]\nvoid SetNormalFactor(DocumentId inDocumentId, double inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  double |  inValue |  Wanted value.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.16.\n",
+  "markdown": "markdown/cad/bb9e31de3472a6f1c73556d9.md",
+  "originalHtml": "html/cad/bb9e31de3472a6f1c73556d9.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Vector3D.VX.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Vector3D.VX.html",
+  "sha256": "6aa22b88138bb81bfc039630810377e1839af57f47dd94ea11e85abb194b89b5",
+  "text": "# Field VX\n\nPositive X unit vector, i.e. (1,0,0).\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\npublic static readonly Vector3D VX\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Vector3D |  Positive X unit vector, i.e. (1,0,0). |\n",
+  "markdown": "markdown/kernel/b561c2890641f9afc2276317.md",
+  "originalHtml": "html/kernel/b561c2890641f9afc2276317.html"
+}

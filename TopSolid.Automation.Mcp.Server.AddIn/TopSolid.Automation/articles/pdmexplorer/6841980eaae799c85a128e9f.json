@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IApplication.Version.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IApplication.Version.html",
+  "sha256": "4b78e6f4ef666e74794b1e15ddbe095c6dfea8e22483b0deadec4d7d38f598b5",
+  "text": "# Property Version\n\n#### Version\n\nGets the version of the application.\n\n##### Declaration\n\n```\n[AvailableSinceVersion(7, 11, 300, 80)]\nint Version { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  int |   |  \n\n##### Remarks\n\nThe value returned is defined by: Major * 100000000 + Minor * 1000000 + Build * 1000 + Revision.\n \nFor example, v7.5.200.100 is returned as: 705200100.\n \nThis method returns 0 if the application has just been started and is not ready yet.\n \nThis property is available since v7.10.\n",
+  "markdown": "markdown/pdmexplorer/6841980eaae799c85a128e9f.md",
+  "originalHtml": "html/pdmexplorer/6841980eaae799c85a128e9f.html"
+}

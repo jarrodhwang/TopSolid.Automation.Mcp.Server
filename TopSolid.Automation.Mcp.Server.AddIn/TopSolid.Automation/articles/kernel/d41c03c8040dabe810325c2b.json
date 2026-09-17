@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.PropertyDefinition.-ctor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.PropertyDefinition.-ctor.html",
+  "sha256": "cedfdc07d9723e575a504f590cb1859036e9de52863cc1deb07f313a4206dae9",
+  "text": "# Constructor PropertyDefinition\n\n#### PropertyDefinition(string, string)\n\nInitializes a new instance of the PropertyDefinition structure.\n\n##### Declaration\n\n```\npublic PropertyDefinition(string inDomain, string inName)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  string |  inDomain |  Property domain.  |  \n \n|  string |  inName |  Property name.  |\n",
+  "markdown": "markdown/kernel/d41c03c8040dabe810325c2b.md",
+  "originalHtml": "html/kernel/d41c03c8040dabe810325c2b.html"
+}

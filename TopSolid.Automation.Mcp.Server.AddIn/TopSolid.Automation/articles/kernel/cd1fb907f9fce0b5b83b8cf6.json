@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.UserQuestion.Label.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.UserQuestion.Label.html",
+  "sha256": "097ba496106fc945420dd6e9a5a642d3d6468aa69ac8f366ce5aee33774da75b",
+  "text": "# Field Label\n\nLabel.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic string Label\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  Label. |\n",
+  "markdown": "markdown/kernel/cd1fb907f9fce0b5b83b8cf6.md",
+  "originalHtml": "html/kernel/cd1fb907f9fce0b5b83b8cf6.html"
+}

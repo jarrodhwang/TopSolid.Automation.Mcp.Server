@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.IDraftings.IsDraftingBundle.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.IDraftings.IsDraftingBundle.html",
+  "sha256": "ab63c1640fabc50175f1807f5ec959c4348a7d50f5c0e7ee2dbf60593332c486",
+  "text": "# Method IsDraftingBundle\n\n#### IsDraftingBundle(DocumentId)\n\nTells whether a document is a drafting bundle document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 255, 0)]\nbool IsDraftingBundle(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  The document is a drafting bundle document.  |  \n\n##### Remarks\n\nThis method is available since v7.20.\n",
+  "markdown": "markdown/drafting/df11c7528b649122dc7affc3.md",
+  "originalHtml": "html/drafting/df11c7528b649122dc7affc3.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ISketches3D.CreateProfile.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ISketches3D.CreateProfile.html",
+  "sha256": "e9b6da4ee8bb179c4821c2ba10ddf81def28967c8ccfb0fcf77c0acb0d64759a",
+  "text": "# Method CreateProfile\n\n#### CreateProfile(List<ElementItemId>)\n\nCreates a new profile into the ModifiedSketch.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 201, 80)]\nElementItemId CreateProfile(List<ElementItemId> inSegmentIds)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  List<ElementItemId> |  inSegmentIds |  Identifiers of the segments of the profile.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementItemId |  Identifier of the created profile.  |  \n\n##### Remarks\n\nThe end vertex of each segment must be the same than the start vertex of the following one.\n \nStartModification(ElementId) must be called before calling this method.\n \nThis method is available since v7.7.201.80.\n",
+  "markdown": "markdown/kernel/0bfa446e8d1b36c81f05e0e7.md",
+  "originalHtml": "html/kernel/0bfa446e8d1b36c81f05e0e7.html"
+}

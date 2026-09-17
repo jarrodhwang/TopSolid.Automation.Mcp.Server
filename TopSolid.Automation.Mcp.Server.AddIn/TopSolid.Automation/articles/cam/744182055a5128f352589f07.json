@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IOperations.IsLinkOutMovementMethodModifiable.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IOperations.IsLinkOutMovementMethodModifiable.html",
+  "sha256": "906ee2230b9a30f69f45907d7a77eb9658746a720e195aba3f51328e101ddc7e",
+  "text": "# Method IsLinkOutMovementMethodModifiable\n\n#### IsLinkOutMovementMethodModifiable(ElementExId)\n\nTest if link out movement of an operation can be edited.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 160, 0)]\nbool IsLinkOutMovementMethodModifiable(ElementExId inElementExId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementExId |  inElementExId |  Identifier of the operation to analyse  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  True if can be set, false either  |\n",
+  "markdown": "markdown/cam/744182055a5128f352589f07.md",
+  "originalHtml": "html/cam/744182055a5128f352589f07.html"
+}

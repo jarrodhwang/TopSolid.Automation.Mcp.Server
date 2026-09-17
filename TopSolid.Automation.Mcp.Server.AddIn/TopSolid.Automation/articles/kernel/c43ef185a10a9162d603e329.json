@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Axis3D.Origin.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Axis3D.Origin.html",
+  "sha256": "f0263a598da9f6ec575b7e7b7c5833bca7ff25f5453727e8ed180c48684859d2",
+  "text": "# Field Origin\n\nAxis origin.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic Point3D Origin\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Point3D |  Axis origin. |\n",
+  "markdown": "markdown/kernel/c43ef185a10a9162d603e329.md",
+  "originalHtml": "html/kernel/c43ef185a10a9162d603e329.html"
+}

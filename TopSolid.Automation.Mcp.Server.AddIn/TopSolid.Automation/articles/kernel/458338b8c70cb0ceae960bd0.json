@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IFamilies.SetCatalogCellColorValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IFamilies.SetCatalogCellColorValue.html",
+  "sha256": "66bce03f4c0d9a75dd1f4cd99c2da37884940dd69104235f1e34ab87075a4a59",
+  "text": "# Method SetCatalogCellColorValue\n\n#### SetCatalogCellColorValue(ElementId, ElementId, Color)\n\nSets the color value of the catalog cell.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 18, 400, 160)]\nvoid SetCatalogCellColorValue(ElementId inRow, ElementId inParameterId, Color inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inRow |  Identifier of the row.  |  \n \n|  ElementId |  inParameterId |  Identifier of the parameter of the column.  |  \n \n|  Color |  inValue |  Value of the cell.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.18.\n",
+  "markdown": "markdown/kernel/458338b8c70cb0ceae960bd0.md",
+  "originalHtml": "html/kernel/458338b8c70cb0ceae960bd0.html"
+}

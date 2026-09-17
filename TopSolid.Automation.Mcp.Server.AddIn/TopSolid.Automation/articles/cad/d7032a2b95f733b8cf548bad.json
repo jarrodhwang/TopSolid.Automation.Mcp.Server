@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IFeatures.GetFeatureType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IFeatures.GetFeatureType.html",
+  "sha256": "658c8fbc4759e004e6f4bd2a2a697ed28ba146bf1b6591498de698d1fc59b481",
+  "text": "# Method GetFeatureType\n\n#### GetFeatureType(ElementId)\n\nGets the type of a feature entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 14, 0, 0)]\nFeatureType GetFeatureType(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  FeatureType |  Type of the feature, or None if the element is not a feature entity.  |  \n\n##### Remarks\n\nThis method is available since v7.14.\n",
+  "markdown": "markdown/cad/d7032a2b95f733b8cf548bad.md",
+  "originalHtml": "html/cad/d7032a2b95f733b8cf548bad.html"
+}

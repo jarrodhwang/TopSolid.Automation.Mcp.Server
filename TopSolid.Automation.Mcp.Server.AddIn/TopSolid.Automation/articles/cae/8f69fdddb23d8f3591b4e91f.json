@@ -1,0 +1,8 @@
+{
+  "path": "api/cae/TopSolid.Cae.Kernel.Automating.NaturalFrequencyResult.LoadResult.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cae/TopSolid.Cae.Kernel.Automating.NaturalFrequencyResult.LoadResult.html",
+  "sha256": "fd27614c335473030d5312373000bb39a2d08ff2488a974395e7e232b8f04d6d",
+  "text": "# Property LoadResult\n\n#### LoadResult\n\nGets the Result\n\n##### Declaration\n\n```\npublic ElementId LoadResult { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |   |\n",
+  "markdown": "markdown/cae/8f69fdddb23d8f3591b4e91f.md",
+  "originalHtml": "html/cae/8f69fdddb23d8f3591b4e91f.html"
+}

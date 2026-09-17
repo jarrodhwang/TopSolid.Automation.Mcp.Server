@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ICoatings.SetHomogeneousParameterValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ICoatings.SetHomogeneousParameterValue.html",
+  "sha256": "e991b583b98e0ba6a942e4aae545cc84353b497d5ba3d887c6762a3a64146984",
+  "text": "# Method SetHomogeneousParameterValue\n\n#### SetHomogeneousParameterValue(DocumentId, bool?)\n\nSets the Homogeneous Parameter\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 400, 100)]\nbool SetHomogeneousParameterValue(DocumentId inDocumentId, bool? inBool)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  bool? |  inBool |  Value  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  True if value is correctly set.  |  \n\n##### Remarks\n\nThis method is available since v7.20.\n",
+  "markdown": "markdown/cad/5fe11879f2767178ab27da52.md",
+  "originalHtml": "html/cad/5fe11879f2767178ab27da52.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Axis3D.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Axis3D.html",
+  "sha256": "be6c5b4e88d42237ed640aa24f18861fe0c5b0fdf7dad7fa48804f3bac45a467",
+  "text": "# Struct Axis3D\n\nRepresents a geometric 3D axis.\n\n##### Inherited Members\n \n ValueType.Equals(object) \n \n ValueType.GetHashCode() \n \n ValueType.ToString() \n \n object.Equals(object, object) \n \n object.ReferenceEquals(object, object) \n \n object.GetType() \n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\npublic struct Axis3D\n```\n\n##### Remarks\n\nThis structure is available since v7.6.\n\n### Constructors \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   Axis3D(Point3D, Direction3D)  |  Initializes a new instance of the Axis3D structure with a specified origin and direction.  |  \n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   Direction  |  Axis direction.  |  \n \n|   OX  |  (O,+X) absolute axis.  |  \n \n|   OY  |  (O,+Y) absolute axis.  |  \n \n|   OZ  |  (O,+Z) absolute axis.  |  \n \n|   Origin  |  Axis origin.  |\n",
+  "markdown": "markdown/kernel/ae700b5f2c87d28d77fc02d1.md",
+  "originalHtml": "html/kernel/ae700b5f2c87d28d77fc02d1.html"
+}

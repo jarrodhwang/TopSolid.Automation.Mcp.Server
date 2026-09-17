@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IShapes.GetEdgeNormal.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IShapes.GetEdgeNormal.html",
+  "sha256": "aa3eab09608389ab0d7c83454b09a8bbf17dd095189680f76f59687e2747f3cc",
+  "text": "# Method GetEdgeNormal\n\n#### GetEdgeNormal(ElementItemId, double)\n\nGets the normal to an edge at a specified parametric value.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nDirection3D GetEdgeNormal(ElementItemId inEdgeId, double inT)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementItemId |  inEdgeId |  Identifier of the edge to analyze.  |  \n \n|  double |  inT |  Parameter within edge parametric range.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Direction3D |  Normal to the edge at the specified parametric value.  |  \n\n##### Remarks\n\nThe edge normal is the average of the edge faces normal.\n \nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/fa6059372b5b04ad946fa97c.md",
+  "originalHtml": "html/kernel/fa6059372b5b04ad946fa97c.html"
+}

@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Interface IAssemblies | TopSolid Automation website </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Interface IAssemblies | TopSolid Automation website ">
+    
+    <meta name="description" content="Gives access to assemblies.">
+      <link rel="shortcut icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../../styles/docfx.css">
+      <link rel="stylesheet" href="../../styles/main.css">
+      <meta property="docfx:navrel" content="../../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../img/AutomationIcon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="TopSolid.Cad.Design.Automating.IAssemblies">
+
+
+
+  <h1 id="TopSolid_Cad_Design_Automating_IAssemblies" data-uid="TopSolid.Cad.Design.Automating.IAssemblies" class="text-break">Interface IAssemblies</h1>
+  <div class="markdown level0 summary"><p>Gives access to assemblies.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="TopSolid.html">TopSolid</a>.<a class="xref" href="TopSolid.Cad.html">Cad</a>.<a class="xref" href="TopSolid.Cad.Design.html">Design</a>.<a class="xref" href="TopSolid.Cad.Design.Automating.html">Automating</a></h6>
+  <h6><strong>Assembly</strong>: TopSolid.Cad.Design.Automating.dll</h6>
+  <h5 id="TopSolid_Cad_Design_Automating_IAssemblies_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ServiceContract]
+[AvailableSinceVersion(7, 6, 0, 0)]
+public interface IAssemblies</code></pre>
+  </div>
+  <h5 id="TopSolid_Cad_Design_Automating_IAssemblies_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>This interface is available since v7.6.</p>
+</div>
+  <h3 id="methods">Methods
+</h3>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IAssemblies_AskOccurrence_TopSolid_Kernel_Automating_UserQuestion_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_ElementId__" data-uid="TopSolid.Cad.Design.Automating.IAssemblies.AskOccurrence(TopSolid.Kernel.Automating.UserQuestion,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,TopSolid.Kernel.Automating.ElementId,TopSolid.Kernel.Automating.ElementId@)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IAssemblies.AskOccurrence.html#TopSolid_Cad_Design_Automating_IAssemblies_AskOccurrence_TopSolid_Kernel_Automating_UserQuestion_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_ElementId__">AskOccurrence(UserQuestion, bool, bool, bool, bool, bool, ElementId, out ElementId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Asks the user for a part or an assembly occurrence.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IAssemblies_AskOccurrenceList_TopSolid_Kernel_Automating_UserQuestion_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Collections_Generic_List_TopSolid_Kernel_Automating_ElementId__System_Collections_Generic_List_TopSolid_Kernel_Automating_ElementId___" data-uid="TopSolid.Cad.Design.Automating.IAssemblies.AskOccurrenceList(TopSolid.Kernel.Automating.UserQuestion,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Collections.Generic.List{TopSolid.Kernel.Automating.ElementId},System.Collections.Generic.List{TopSolid.Kernel.Automating.ElementId}@)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IAssemblies.AskOccurrenceList.html#TopSolid_Cad_Design_Automating_IAssemblies_AskOccurrenceList_TopSolid_Kernel_Automating_UserQuestion_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Collections_Generic_List_TopSolid_Kernel_Automating_ElementId__System_Collections_Generic_List_TopSolid_Kernel_Automating_ElementId___">AskOccurrenceList(UserQuestion, bool, bool, bool, bool, bool, List&lt;ElementId&gt;, out List&lt;ElementId&gt;)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Asks the user for a part or an assembly occurrence List .</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IAssemblies_CreateDisassembly_TopSolid_Kernel_Automating_ElementId_System_Boolean_" data-uid="TopSolid.Cad.Design.Automating.IAssemblies.CreateDisassembly(TopSolid.Kernel.Automating.ElementId,System.Boolean)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IAssemblies.CreateDisassembly.html#TopSolid_Cad_Design_Automating_IAssemblies_CreateDisassembly_TopSolid_Kernel_Automating_ElementId_System_Boolean_">CreateDisassembly(ElementId, bool)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Creates the disassembly operation of an assembly entity.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IAssemblies_CreateFixedConstraint_TopSolid_Kernel_Automating_ElementId_" data-uid="TopSolid.Cad.Design.Automating.IAssemblies.CreateFixedConstraint(TopSolid.Kernel.Automating.ElementId)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IAssemblies.CreateFixedConstraint.html#TopSolid_Cad_Design_Automating_IAssemblies_CreateFixedConstraint_TopSolid_Kernel_Automating_ElementId_">CreateFixedConstraint(ElementId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Creates a fixed constraint of a positioning.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IAssemblies_CreateFrameOnFrameConstraint_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_SmartFrame3D_TopSolid_Kernel_Automating_SmartFrame3D_TopSolid_Kernel_Automating_SmartReal_System_Boolean_TopSolid_Kernel_Automating_SmartReal_System_Boolean_TopSolid_Kernel_Automating_SmartReal_System_Boolean_TopSolid_Kernel_Automating_SmartReal_System_Boolean_System_Boolean_" data-uid="TopSolid.Cad.Design.Automating.IAssemblies.CreateFrameOnFrameConstraint(TopSolid.Kernel.Automating.ElementId,TopSolid.Kernel.Automating.SmartFrame3D,TopSolid.Kernel.Automating.SmartFrame3D,TopSolid.Kernel.Automating.SmartReal,System.Boolean,TopSolid.Kernel.Automating.SmartReal,System.Boolean,TopSolid.Kernel.Automating.SmartReal,System.Boolean,TopSolid.Kernel.Automating.SmartReal,System.Boolean,System.Boolean)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IAssemblies.CreateFrameOnFrameConstraint.html#TopSolid_Cad_Design_Automating_IAssemblies_CreateFrameOnFrameConstraint_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_SmartFrame3D_TopSolid_Kernel_Automating_SmartFrame3D_TopSolid_Kernel_Automating_SmartReal_System_Boolean_TopSolid_Kernel_Automating_SmartReal_System_Boolean_TopSolid_Kernel_Automating_SmartReal_System_Boolean_TopSolid_Kernel_Automating_SmartReal_System_Boolean_System_Boolean_">CreateFrameOnFrameConstraint(ElementId, SmartFrame3D, SmartFrame3D, SmartReal, bool, SmartReal, bool, SmartReal, bool, SmartReal, bool, bool)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Creates a &quot;frame on frame&quot; positioning constraint.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IAssemblies_CreateFrameOnFrameConstraintWithXYOffsets_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_SmartFrame3D_TopSolid_Kernel_Automating_SmartFrame3D_TopSolid_Kernel_Automating_SmartReal_System_Boolean_TopSolid_Kernel_Automating_SmartReal_System_Boolean_TopSolid_Kernel_Automating_SmartReal_System_Boolean_TopSolid_Kernel_Automating_SmartReal_System_Boolean_TopSolid_Kernel_Automating_SmartReal_System_Boolean_TopSolid_Kernel_Automating_SmartReal_System_Boolean_System_Boolean_" data-uid="TopSolid.Cad.Design.Automating.IAssemblies.CreateFrameOnFrameConstraintWithXYOffsets(TopSolid.Kernel.Automating.ElementId,TopSolid.Kernel.Automating.SmartFrame3D,TopSolid.Kernel.Automating.SmartFrame3D,TopSolid.Kernel.Automating.SmartReal,System.Boolean,TopSolid.Kernel.Automating.SmartReal,System.Boolean,TopSolid.Kernel.Automating.SmartReal,System.Boolean,TopSolid.Kernel.Automating.SmartReal,System.Boolean,TopSolid.Kernel.Automating.SmartReal,System.Boolean,TopSolid.Kernel.Automating.SmartReal,System.Boolean,System.Boolean)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IAssemblies.CreateFrameOnFrameConstraintWithXYOffsets.html#TopSolid_Cad_Design_Automating_IAssemblies_CreateFrameOnFrameConstraintWithXYOffsets_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_SmartFrame3D_TopSolid_Kernel_Automating_SmartFrame3D_TopSolid_Kernel_Automating_SmartReal_System_Boolean_TopSolid_Kernel_Automating_SmartReal_System_Boolean_TopSolid_Kernel_Automating_SmartReal_System_Boolean_TopSolid_Kernel_Automating_SmartReal_System_Boolean_TopSolid_Kernel_Automating_SmartReal_System_Boolean_TopSolid_Kernel_Automating_SmartReal_System_Boolean_System_Boolean_">CreateFrameOnFrameConstraintWithXYOffsets(ElementId, SmartFrame3D, SmartFrame3D, SmartReal, bool, SmartReal, bool, SmartReal, bool, SmartReal, bool, SmartReal, bool, SmartReal, bool, bool)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Creates a &quot;frame on frame&quot; positioning constraint with X and Y offsets.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IAssemblies_CreateInclusion_TopSolid_Kernel_Automating_DocumentId_TopSolid_Kernel_Automating_ElementId_System_String_TopSolid_Kernel_Automating_DocumentId_System_String_System_Collections_Generic_List_System_String__System_Collections_Generic_List_TopSolid_Kernel_Automating_SmartObject__System_Boolean_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_ElementId_System_Boolean_System_Boolean_System_Boolean_System_Boolean_TopSolid_Kernel_Automating_Transform3D_System_Boolean_" data-uid="TopSolid.Cad.Design.Automating.IAssemblies.CreateInclusion(TopSolid.Kernel.Automating.DocumentId,TopSolid.Kernel.Automating.ElementId,System.String,TopSolid.Kernel.Automating.DocumentId,System.String,System.Collections.Generic.List{System.String},System.Collections.Generic.List{TopSolid.Kernel.Automating.SmartObject},System.Boolean,TopSolid.Kernel.Automating.ElementId,TopSolid.Kernel.Automating.ElementId,System.Boolean,System.Boolean,System.Boolean,System.Boolean,TopSolid.Kernel.Automating.Transform3D,System.Boolean)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IAssemblies.CreateInclusion.html#TopSolid_Cad_Design_Automating_IAssemblies_CreateInclusion_TopSolid_Kernel_Automating_DocumentId_TopSolid_Kernel_Automating_ElementId_System_String_TopSolid_Kernel_Automating_DocumentId_System_String_System_Collections_Generic_List_System_String__System_Collections_Generic_List_TopSolid_Kernel_Automating_SmartObject__System_Boolean_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_ElementId_System_Boolean_System_Boolean_System_Boolean_System_Boolean_TopSolid_Kernel_Automating_Transform3D_System_Boolean_">CreateInclusion(DocumentId, ElementId, string, DocumentId, string, List&lt;string&gt;, List&lt;SmartObject&gt;, bool, ElementId, ElementId, bool, bool, bool, bool, Transform3D, bool)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Creates an inclusion operation in a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IAssemblies_CreateInclusion2_TopSolid_Kernel_Automating_DocumentId_TopSolid_Kernel_Automating_ElementId_System_String_TopSolid_Kernel_Automating_DocumentId_System_String_System_Collections_Generic_List_System_String__System_Collections_Generic_List_TopSolid_Kernel_Automating_SmartObject__System_Collections_Generic_List_System_String__System_Collections_Generic_List_TopSolid_Cad_Design_Automating_SmartDesignObject__System_Boolean_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_ElementId_System_Boolean_System_Boolean_System_Boolean_System_Boolean_TopSolid_Kernel_Automating_Transform3D_System_Boolean_" data-uid="TopSolid.Cad.Design.Automating.IAssemblies.CreateInclusion2(TopSolid.Kernel.Automating.DocumentId,TopSolid.Kernel.Automating.ElementId,System.String,TopSolid.Kernel.Automating.DocumentId,System.String,System.Collections.Generic.List{System.String},System.Collections.Generic.List{TopSolid.Kernel.Automating.SmartObject},System.Collections.Generic.List{System.String},System.Collections.Generic.List{TopSolid.Cad.Design.Automating.SmartDesignObject},System.Boolean,TopSolid.Kernel.Automating.ElementId,TopSolid.Kernel.Automating.ElementId,System.Boolean,System.Boolean,System.Boolean,System.Boolean,TopSolid.Kernel.Automating.Transform3D,System.Boolean)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IAssemblies.CreateInclusion2.html#TopSolid_Cad_Design_Automating_IAssemblies_CreateInclusion2_TopSolid_Kernel_Automating_DocumentId_TopSolid_Kernel_Automating_ElementId_System_String_TopSolid_Kernel_Automating_DocumentId_System_String_System_Collections_Generic_List_System_String__System_Collections_Generic_List_TopSolid_Kernel_Automating_SmartObject__System_Collections_Generic_List_System_String__System_Collections_Generic_List_TopSolid_Cad_Design_Automating_SmartDesignObject__System_Boolean_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_ElementId_System_Boolean_System_Boolean_System_Boolean_System_Boolean_TopSolid_Kernel_Automating_Transform3D_System_Boolean_">CreateInclusion2(DocumentId, ElementId, string, DocumentId, string, List&lt;string&gt;, List&lt;SmartObject&gt;, List&lt;string&gt;, List&lt;SmartDesignObject&gt;, bool, ElementId, ElementId, bool, bool, bool, bool, Transform3D, bool)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Creates an inclusion operation in a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IAssemblies_CreatePositioning_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Cad.Design.Automating.IAssemblies.CreatePositioning(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IAssemblies.CreatePositioning.html#TopSolid_Cad_Design_Automating_IAssemblies_CreatePositioning_TopSolid_Kernel_Automating_DocumentId_">CreatePositioning(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Creates a positioning operation in a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IAssemblies_DerivePartForModification_TopSolid_Kernel_Automating_ElementId_System_Boolean_" data-uid="TopSolid.Cad.Design.Automating.IAssemblies.DerivePartForModification(TopSolid.Kernel.Automating.ElementId,System.Boolean)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IAssemblies.DerivePartForModification.html#TopSolid_Cad_Design_Automating_IAssemblies_DerivePartForModification_TopSolid_Kernel_Automating_ElementId_System_Boolean_">DerivePartForModification(ElementId, bool)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Derives a part for modification in an assembly.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IAssemblies_GetAssemblyCenterOfMassManagement_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Cad.Design.Automating.IAssemblies.GetAssemblyCenterOfMassManagement(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IAssemblies.GetAssemblyCenterOfMassManagement.html#TopSolid_Cad_Design_Automating_IAssemblies_GetAssemblyCenterOfMassManagement_TopSolid_Kernel_Automating_DocumentId_">GetAssemblyCenterOfMassManagement(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Tells whether the physical property management of an assembly is center of mass managed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IAssemblies_GetAssemblyMassManagement_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Cad.Design.Automating.IAssemblies.GetAssemblyMassManagement(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IAssemblies.GetAssemblyMassManagement.html#TopSolid_Cad_Design_Automating_IAssemblies_GetAssemblyMassManagement_TopSolid_Kernel_Automating_DocumentId_">GetAssemblyMassManagement(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Tells whether the physical property management of an assembly is mass managed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IAssemblies_GetAssemblyMomentsOfInertiaManagement_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Cad.Design.Automating.IAssemblies.GetAssemblyMomentsOfInertiaManagement(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IAssemblies.GetAssemblyMomentsOfInertiaManagement.html#TopSolid_Cad_Design_Automating_IAssemblies_GetAssemblyMomentsOfInertiaManagement_TopSolid_Kernel_Automating_DocumentId_">GetAssemblyMomentsOfInertiaManagement(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Tells whether the physical property management of an assembly is moments of inertia managed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IAssemblies_GetAssemblyStrictMode_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Cad.Design.Automating.IAssemblies.GetAssemblyStrictMode(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IAssemblies.GetAssemblyStrictMode.html#TopSolid_Cad_Design_Automating_IAssemblies_GetAssemblyStrictMode_TopSolid_Kernel_Automating_DocumentId_">GetAssemblyStrictMode(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Tells whether the physical property management of an assembly is strict.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IAssemblies_GetAssemblySurfaceAreaManagement_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Cad.Design.Automating.IAssemblies.GetAssemblySurfaceAreaManagement(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IAssemblies.GetAssemblySurfaceAreaManagement.html#TopSolid_Cad_Design_Automating_IAssemblies_GetAssemblySurfaceAreaManagement_TopSolid_Kernel_Automating_DocumentId_">GetAssemblySurfaceAreaManagement(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Tells whether the physical property management of an assembly is surface area managed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IAssemblies_GetAssemblyVolumeManagement_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Cad.Design.Automating.IAssemblies.GetAssemblyVolumeManagement(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IAssemblies.GetAssemblyVolumeManagement.html#TopSolid_Cad_Design_Automating_IAssemblies_GetAssemblyVolumeManagement_TopSolid_Kernel_Automating_DocumentId_">GetAssemblyVolumeManagement(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Tells whether the physical property management of an assembly is volume managed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IAssemblies_GetCollisionsManagement_TopSolid_Kernel_Automating_DocumentId_TopSolid_Kernel_Automating_ElementId__System_Boolean__System_Boolean__System_Boolean__" data-uid="TopSolid.Cad.Design.Automating.IAssemblies.GetCollisionsManagement(TopSolid.Kernel.Automating.DocumentId,TopSolid.Kernel.Automating.ElementId@,System.Boolean@,System.Boolean@,System.Boolean@)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IAssemblies.GetCollisionsManagement.html#TopSolid_Cad_Design_Automating_IAssemblies_GetCollisionsManagement_TopSolid_Kernel_Automating_DocumentId_TopSolid_Kernel_Automating_ElementId__System_Boolean__System_Boolean__System_Boolean__">GetCollisionsManagement(DocumentId, out ElementId, out bool, out bool, out bool)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the collisions management of an assembly.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IAssemblies_GetConditionedDriversVisibilityStatus_TopSolid_Kernel_Automating_ElementId_System_Collections_Generic_List_System_String__System_Collections_Generic_List_TopSolid_Kernel_Automating_SmartObject__System_Collections_Generic_List_System_String__System_Collections_Generic_List_TopSolid_Cad_Design_Automating_SmartDesignObject__System_Collections_Generic_List_System_String___System_Collections_Generic_List_System_String___" data-uid="TopSolid.Cad.Design.Automating.IAssemblies.GetConditionedDriversVisibilityStatus(TopSolid.Kernel.Automating.ElementId,System.Collections.Generic.List{System.String},System.Collections.Generic.List{TopSolid.Kernel.Automating.SmartObject},System.Collections.Generic.List{System.String},System.Collections.Generic.List{TopSolid.Cad.Design.Automating.SmartDesignObject},System.Collections.Generic.List{System.String}@,System.Collections.Generic.List{System.String}@)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IAssemblies.GetConditionedDriversVisibilityStatus.html#TopSolid_Cad_Design_Automating_IAssemblies_GetConditionedDriversVisibilityStatus_TopSolid_Kernel_Automating_ElementId_System_Collections_Generic_List_System_String__System_Collections_Generic_List_TopSolid_Kernel_Automating_SmartObject__System_Collections_Generic_List_System_String__System_Collections_Generic_List_TopSolid_Cad_Design_Automating_SmartDesignObject__System_Collections_Generic_List_System_String___System_Collections_Generic_List_System_String___">GetConditionedDriversVisibilityStatus(ElementId, List&lt;string&gt;, List&lt;SmartObject&gt;, List&lt;string&gt;, List&lt;SmartDesignObject&gt;, out List&lt;string&gt;, out List&lt;string&gt;)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Method to get drivers visibility status after a driver value change.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IAssemblies_GetDriverSubFolderName_TopSolid_Kernel_Automating_ElementId_System_String_" data-uid="TopSolid.Cad.Design.Automating.IAssemblies.GetDriverSubFolderName(TopSolid.Kernel.Automating.ElementId,System.String)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IAssemblies.GetDriverSubFolderName.html#TopSolid_Cad_Design_Automating_IAssemblies_GetDriverSubFolderName_TopSolid_Kernel_Automating_ElementId_System_String_">GetDriverSubFolderName(ElementId, string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the name of the driver sub folder.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IAssemblies_GetDriversFromFamily_TopSolid_Kernel_Automating_DocumentId_System_String__System_Collections_Generic_List_System_String___System_Collections_Generic_List_TopSolid_Kernel_Automating_SmartObject___System_Collections_Generic_List_System_String___System_Collections_Generic_List_TopSolid_Cad_Design_Automating_SmartDesignObject___" data-uid="TopSolid.Cad.Design.Automating.IAssemblies.GetDriversFromFamily(TopSolid.Kernel.Automating.DocumentId,System.String@,System.Collections.Generic.List{System.String}@,System.Collections.Generic.List{TopSolid.Kernel.Automating.SmartObject}@,System.Collections.Generic.List{System.String}@,System.Collections.Generic.List{TopSolid.Cad.Design.Automating.SmartDesignObject}@)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IAssemblies.GetDriversFromFamily.html#TopSolid_Cad_Design_Automating_IAssemblies_GetDriversFromFamily_TopSolid_Kernel_Automating_DocumentId_System_String__System_Collections_Generic_List_System_String___System_Collections_Generic_List_TopSolid_Kernel_Automating_SmartObject___System_Collections_Generic_List_System_String___System_Collections_Generic_List_TopSolid_Cad_Design_Automating_SmartDesignObject___">GetDriversFromFamily(DocumentId, out string, out List&lt;string&gt;, out List&lt;SmartObject&gt;, out List&lt;string&gt;, out List&lt;SmartDesignObject&gt;)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Get code and  drivers from a family document</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IAssemblies_GetFamilyDriverRelatedToCodeDriver_TopSolid_Kernel_Automating_ElementId_System_String_System_String__" data-uid="TopSolid.Cad.Design.Automating.IAssemblies.GetFamilyDriverRelatedToCodeDriver(TopSolid.Kernel.Automating.ElementId,System.String,System.String@)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IAssemblies.GetFamilyDriverRelatedToCodeDriver.html#TopSolid_Cad_Design_Automating_IAssemblies_GetFamilyDriverRelatedToCodeDriver_TopSolid_Kernel_Automating_ElementId_System_String_System_String__">GetFamilyDriverRelatedToCodeDriver(ElementId, string, out string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>This Method fetchs the name of family driver related to a code driver.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IAssemblies_GetFunctionsInheritingOperation_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_ElementId__System_Collections_Generic_List_TopSolid_Kernel_Automating_ElementId___System_Collections_Generic_List_TopSolid_Kernel_Automating_ElementId___" data-uid="TopSolid.Cad.Design.Automating.IAssemblies.GetFunctionsInheritingOperation(TopSolid.Kernel.Automating.ElementId,TopSolid.Kernel.Automating.ElementId@,System.Collections.Generic.List{TopSolid.Kernel.Automating.ElementId}@,System.Collections.Generic.List{TopSolid.Kernel.Automating.ElementId}@)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IAssemblies.GetFunctionsInheritingOperation.html#TopSolid_Cad_Design_Automating_IAssemblies_GetFunctionsInheritingOperation_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_ElementId__System_Collections_Generic_List_TopSolid_Kernel_Automating_ElementId___System_Collections_Generic_List_TopSolid_Kernel_Automating_ElementId___">GetFunctionsInheritingOperation(ElementId, out ElementId, out List&lt;ElementId&gt;, out List&lt;ElementId&gt;)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets a functions inheriting operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IAssemblies_GetInclusionChildOccurrence_TopSolid_Kernel_Automating_ElementId_" data-uid="TopSolid.Cad.Design.Automating.IAssemblies.GetInclusionChildOccurrence(TopSolid.Kernel.Automating.ElementId)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IAssemblies.GetInclusionChildOccurrence.html#TopSolid_Cad_Design_Automating_IAssemblies_GetInclusionChildOccurrence_TopSolid_Kernel_Automating_ElementId_">GetInclusionChildOccurrence(ElementId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the part or assembly occurrence entity generated by an inclusion operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IAssemblies_GetInclusionCodeAndDrivers_TopSolid_Kernel_Automating_ElementId_System_String__System_Collections_Generic_List_System_String___System_Collections_Generic_List_TopSolid_Kernel_Automating_SmartObject___" data-uid="TopSolid.Cad.Design.Automating.IAssemblies.GetInclusionCodeAndDrivers(TopSolid.Kernel.Automating.ElementId,System.String@,System.Collections.Generic.List{System.String}@,System.Collections.Generic.List{TopSolid.Kernel.Automating.SmartObject}@)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IAssemblies.GetInclusionCodeAndDrivers.html#TopSolid_Cad_Design_Automating_IAssemblies_GetInclusionCodeAndDrivers_TopSolid_Kernel_Automating_ElementId_System_String__System_Collections_Generic_List_System_String___System_Collections_Generic_List_TopSolid_Kernel_Automating_SmartObject___">GetInclusionCodeAndDrivers(ElementId, out string, out List&lt;string&gt;, out List&lt;SmartObject&gt;)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the code and drivers of a family inclusion operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IAssemblies_GetInclusionCodeAndDrivers2_TopSolid_Kernel_Automating_ElementId_System_String__System_Collections_Generic_List_System_String___System_Collections_Generic_List_TopSolid_Kernel_Automating_SmartObject___System_Collections_Generic_List_System_String___System_Collections_Generic_List_TopSolid_Cad_Design_Automating_SmartDesignObject___" data-uid="TopSolid.Cad.Design.Automating.IAssemblies.GetInclusionCodeAndDrivers2(TopSolid.Kernel.Automating.ElementId,System.String@,System.Collections.Generic.List{System.String}@,System.Collections.Generic.List{TopSolid.Kernel.Automating.SmartObject}@,System.Collections.Generic.List{System.String}@,System.Collections.Generic.List{TopSolid.Cad.Design.Automating.SmartDesignObject}@)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IAssemblies.GetInclusionCodeAndDrivers2.html#TopSolid_Cad_Design_Automating_IAssemblies_GetInclusionCodeAndDrivers2_TopSolid_Kernel_Automating_ElementId_System_String__System_Collections_Generic_List_System_String___System_Collections_Generic_List_TopSolid_Kernel_Automating_SmartObject___System_Collections_Generic_List_System_String___System_Collections_Generic_List_TopSolid_Cad_Design_Automating_SmartDesignObject___">GetInclusionCodeAndDrivers2(ElementId, out string, out List&lt;string&gt;, out List&lt;SmartObject&gt;, out List&lt;string&gt;, out List&lt;SmartDesignObject&gt;)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the code and drivers of a family inclusion operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IAssemblies_GetInclusionDefinitionDocument_TopSolid_Kernel_Automating_ElementId_" data-uid="TopSolid.Cad.Design.Automating.IAssemblies.GetInclusionDefinitionDocument(TopSolid.Kernel.Automating.ElementId)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IAssemblies.GetInclusionDefinitionDocument.html#TopSolid_Cad_Design_Automating_IAssemblies_GetInclusionDefinitionDocument_TopSolid_Kernel_Automating_ElementId_">GetInclusionDefinitionDocument(ElementId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the definition document of an inclusion operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IAssemblies_GetLocalizedDriverName_TopSolid_Kernel_Automating_ElementId_System_String_System_Globalization_CultureInfo_" data-uid="TopSolid.Cad.Design.Automating.IAssemblies.GetLocalizedDriverName(TopSolid.Kernel.Automating.ElementId,System.String,System.Globalization.CultureInfo)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IAssemblies.GetLocalizedDriverName.html#TopSolid_Cad_Design_Automating_IAssemblies_GetLocalizedDriverName_TopSolid_Kernel_Automating_ElementId_System_String_System_Globalization_CultureInfo_">GetLocalizedDriverName(ElementId, string, CultureInfo)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets localized driver name in target culture.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IAssemblies_GetNodeBomIndex_TopSolid_Kernel_Automating_ElementId_" data-uid="TopSolid.Cad.Design.Automating.IAssemblies.GetNodeBomIndex(TopSolid.Kernel.Automating.ElementId)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IAssemblies.GetNodeBomIndex.html#TopSolid_Cad_Design_Automating_IAssemblies_GetNodeBomIndex_TopSolid_Kernel_Automating_ElementId_">GetNodeBomIndex(ElementId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the bill of material index attached to a specified assembly node entity.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IAssemblies_GetNodeProperties_TopSolid_Kernel_Automating_ElementId_System_Collections_Generic_List_TopSolid_Kernel_Automating_PropertyDefinition___System_Collections_Generic_List_TopSolid_Kernel_Automating_Property___" data-uid="TopSolid.Cad.Design.Automating.IAssemblies.GetNodeProperties(TopSolid.Kernel.Automating.ElementId,System.Collections.Generic.List{TopSolid.Kernel.Automating.PropertyDefinition}@,System.Collections.Generic.List{TopSolid.Kernel.Automating.Property}@)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IAssemblies.GetNodeProperties.html#TopSolid_Cad_Design_Automating_IAssemblies_GetNodeProperties_TopSolid_Kernel_Automating_ElementId_System_Collections_Generic_List_TopSolid_Kernel_Automating_PropertyDefinition___System_Collections_Generic_List_TopSolid_Kernel_Automating_Property___">GetNodeProperties(ElementId, out List&lt;PropertyDefinition&gt;, out List&lt;Property&gt;)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the properties attached to a specified assembly node entity.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IAssemblies_GetOccurrenceDefinition_TopSolid_Kernel_Automating_ElementId_" data-uid="TopSolid.Cad.Design.Automating.IAssemblies.GetOccurrenceDefinition(TopSolid.Kernel.Automating.ElementId)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IAssemblies.GetOccurrenceDefinition.html#TopSolid_Cad_Design_Automating_IAssemblies_GetOccurrenceDefinition_TopSolid_Kernel_Automating_ElementId_">GetOccurrenceDefinition(ElementId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the definition document of a part or assembly occurrence entity.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IAssemblies_GetOccurrencePublishing_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_ElementId_" data-uid="TopSolid.Cad.Design.Automating.IAssemblies.GetOccurrencePublishing(TopSolid.Kernel.Automating.ElementId,TopSolid.Kernel.Automating.ElementId)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IAssemblies.GetOccurrencePublishing.html#TopSolid_Cad_Design_Automating_IAssemblies_GetOccurrencePublishing_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_ElementId_">GetOccurrencePublishing(ElementId, ElementId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the constituent of an occurrence corresponding to a specified publishing entity.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IAssemblies_GetOptionalDriverDefaultValue_TopSolid_Kernel_Automating_ElementId_System_String_" data-uid="TopSolid.Cad.Design.Automating.IAssemblies.GetOptionalDriverDefaultValue(TopSolid.Kernel.Automating.ElementId,System.String)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IAssemblies.GetOptionalDriverDefaultValue.html#TopSolid_Cad_Design_Automating_IAssemblies_GetOptionalDriverDefaultValue_TopSolid_Kernel_Automating_ElementId_System_String_">GetOptionalDriverDefaultValue(ElementId, string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets optional driver default value</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IAssemblies_GetParts_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Cad.Design.Automating.IAssemblies.GetParts(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IAssemblies.GetParts.html#TopSolid_Cad_Design_Automating_IAssemblies_GetParts_TopSolid_Kernel_Automating_DocumentId_">GetParts(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the part or assembly entities that are in the parts folder of an asssembly document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IAssemblies_HasDriverSubFolderOwner_TopSolid_Kernel_Automating_ElementId_System_String_" data-uid="TopSolid.Cad.Design.Automating.IAssemblies.HasDriverSubFolderOwner(TopSolid.Kernel.Automating.ElementId,System.String)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IAssemblies.HasDriverSubFolderOwner.html#TopSolid_Cad_Design_Automating_IAssemblies_HasDriverSubFolderOwner_TopSolid_Kernel_Automating_ElementId_System_String_">HasDriverSubFolderOwner(ElementId, string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Determines whether the driver is inside the sub-folder inside the driver folder of the family document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IAssemblies_HasOptionalDrivers_TopSolid_Kernel_Automating_ElementId_" data-uid="TopSolid.Cad.Design.Automating.IAssemblies.HasOptionalDrivers(TopSolid.Kernel.Automating.ElementId)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IAssemblies.HasOptionalDrivers.html#TopSolid_Cad_Design_Automating_IAssemblies_HasOptionalDrivers_TopSolid_Kernel_Automating_ElementId_">HasOptionalDrivers(ElementId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Tells if an inclusion has optional drivers.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IAssemblies_InheritOccurrenceFunctions_TopSolid_Kernel_Automating_ElementId_System_Collections_Generic_List_TopSolid_Kernel_Automating_ElementId__" data-uid="TopSolid.Cad.Design.Automating.IAssemblies.InheritOccurrenceFunctions(TopSolid.Kernel.Automating.ElementId,System.Collections.Generic.List{TopSolid.Kernel.Automating.ElementId})">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IAssemblies.InheritOccurrenceFunctions.html#TopSolid_Cad_Design_Automating_IAssemblies_InheritOccurrenceFunctions_TopSolid_Kernel_Automating_ElementId_System_Collections_Generic_List_TopSolid_Kernel_Automating_ElementId__">InheritOccurrenceFunctions(ElementId, List&lt;ElementId&gt;)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Provides functions by inheriting from the ones provided in a part or assembly occurrence.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IAssemblies_IsAssembly_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Cad.Design.Automating.IAssemblies.IsAssembly(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IAssemblies.IsAssembly.html#TopSolid_Cad_Design_Automating_IAssemblies_IsAssembly_TopSolid_Kernel_Automating_DocumentId_">IsAssembly(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Tells whether a document is an assembly document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IAssemblies_IsAssemblyOccurrence_TopSolid_Kernel_Automating_ElementId_" data-uid="TopSolid.Cad.Design.Automating.IAssemblies.IsAssemblyOccurrence(TopSolid.Kernel.Automating.ElementId)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IAssemblies.IsAssemblyOccurrence.html#TopSolid_Cad_Design_Automating_IAssemblies_IsAssemblyOccurrence_TopSolid_Kernel_Automating_ElementId_">IsAssemblyOccurrence(ElementId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Tells whether an element is an assembly occurrence entity.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IAssemblies_IsCollisionsManagementCheckingMechanisms_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Cad.Design.Automating.IAssemblies.IsCollisionsManagementCheckingMechanisms(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IAssemblies.IsCollisionsManagementCheckingMechanisms.html#TopSolid_Cad_Design_Automating_IAssemblies_IsCollisionsManagementCheckingMechanisms_TopSolid_Kernel_Automating_DocumentId_">IsCollisionsManagementCheckingMechanisms(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Tells whether the collisions management of an assembly is checking for collisions between rigid groups of articulated subassemblies.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IAssemblies_IsInclusion_TopSolid_Kernel_Automating_ElementId_" data-uid="TopSolid.Cad.Design.Automating.IAssemblies.IsInclusion(TopSolid.Kernel.Automating.ElementId)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IAssemblies.IsInclusion.html#TopSolid_Cad_Design_Automating_IAssemblies_IsInclusion_TopSolid_Kernel_Automating_ElementId_">IsInclusion(ElementId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Tells whether an element is an inclusion operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IAssemblies_IsLocalPartOrLocalAssembly_TopSolid_Kernel_Automating_ElementId_" data-uid="TopSolid.Cad.Design.Automating.IAssemblies.IsLocalPartOrLocalAssembly(TopSolid.Kernel.Automating.ElementId)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IAssemblies.IsLocalPartOrLocalAssembly.html#TopSolid_Cad_Design_Automating_IAssemblies_IsLocalPartOrLocalAssembly_TopSolid_Kernel_Automating_ElementId_">IsLocalPartOrLocalAssembly(ElementId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Tells whether an element is a local part or a local assembly entity.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IAssemblies_IsOptionalDriver_TopSolid_Kernel_Automating_ElementId_System_String_" data-uid="TopSolid.Cad.Design.Automating.IAssemblies.IsOptionalDriver(TopSolid.Kernel.Automating.ElementId,System.String)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IAssemblies.IsOptionalDriver.html#TopSolid_Cad_Design_Automating_IAssemblies_IsOptionalDriver_TopSolid_Kernel_Automating_ElementId_System_String_">IsOptionalDriver(ElementId, string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Tells if a driver is optional</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IAssemblies_IsPartOccurrence_TopSolid_Kernel_Automating_ElementId_" data-uid="TopSolid.Cad.Design.Automating.IAssemblies.IsPartOccurrence(TopSolid.Kernel.Automating.ElementId)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IAssemblies.IsPartOccurrence.html#TopSolid_Cad_Design_Automating_IAssemblies_IsPartOccurrence_TopSolid_Kernel_Automating_ElementId_">IsPartOccurrence(ElementId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Tells whether an element is a part occurrence entity.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IAssemblies_IsPositioningUnderconstrained_TopSolid_Kernel_Automating_ElementId_" data-uid="TopSolid.Cad.Design.Automating.IAssemblies.IsPositioningUnderconstrained(TopSolid.Kernel.Automating.ElementId)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IAssemblies.IsPositioningUnderconstrained.html#TopSolid_Cad_Design_Automating_IAssemblies_IsPositioningUnderconstrained_TopSolid_Kernel_Automating_ElementId_">IsPositioningUnderconstrained(ElementId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Tells if a positioning operation is underconstrained.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IAssemblies_IsWizardInclusion_TopSolid_Kernel_Automating_ElementId_" data-uid="TopSolid.Cad.Design.Automating.IAssemblies.IsWizardInclusion(TopSolid.Kernel.Automating.ElementId)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IAssemblies.IsWizardInclusion.html#TopSolid_Cad_Design_Automating_IAssemblies_IsWizardInclusion_TopSolid_Kernel_Automating_ElementId_">IsWizardInclusion(ElementId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Tells whether an element is a wizard operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IAssemblies_RedirectInclusion_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Cad.Design.Automating.IAssemblies.RedirectInclusion(TopSolid.Kernel.Automating.ElementId,TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IAssemblies.RedirectInclusion.html#TopSolid_Cad_Design_Automating_IAssemblies_RedirectInclusion_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_DocumentId_">RedirectInclusion(ElementId, DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Redirects an inclusion operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IAssemblies_RedirectInclusionWithCodeAndDrivers_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_DocumentId_System_String_System_Collections_Generic_List_System_String__System_Collections_Generic_List_TopSolid_Kernel_Automating_SmartObject__" data-uid="TopSolid.Cad.Design.Automating.IAssemblies.RedirectInclusionWithCodeAndDrivers(TopSolid.Kernel.Automating.ElementId,TopSolid.Kernel.Automating.DocumentId,System.String,System.Collections.Generic.List{System.String},System.Collections.Generic.List{TopSolid.Kernel.Automating.SmartObject})">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IAssemblies.RedirectInclusionWithCodeAndDrivers.html#TopSolid_Cad_Design_Automating_IAssemblies_RedirectInclusionWithCodeAndDrivers_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_DocumentId_System_String_System_Collections_Generic_List_System_String__System_Collections_Generic_List_TopSolid_Kernel_Automating_SmartObject__">RedirectInclusionWithCodeAndDrivers(ElementId, DocumentId, string, List&lt;string&gt;, List&lt;SmartObject&gt;)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Redirects an inclusion operation to a family with specified code and drivers.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IAssemblies_RedirectInclusionWithCodeAndDrivers2_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_DocumentId_System_String_System_Collections_Generic_List_System_String__System_Collections_Generic_List_TopSolid_Kernel_Automating_SmartObject__System_Collections_Generic_List_System_String__System_Collections_Generic_List_TopSolid_Cad_Design_Automating_SmartDesignObject__" data-uid="TopSolid.Cad.Design.Automating.IAssemblies.RedirectInclusionWithCodeAndDrivers2(TopSolid.Kernel.Automating.ElementId,TopSolid.Kernel.Automating.DocumentId,System.String,System.Collections.Generic.List{System.String},System.Collections.Generic.List{TopSolid.Kernel.Automating.SmartObject},System.Collections.Generic.List{System.String},System.Collections.Generic.List{TopSolid.Cad.Design.Automating.SmartDesignObject})">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IAssemblies.RedirectInclusionWithCodeAndDrivers2.html#TopSolid_Cad_Design_Automating_IAssemblies_RedirectInclusionWithCodeAndDrivers2_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_DocumentId_System_String_System_Collections_Generic_List_System_String__System_Collections_Generic_List_TopSolid_Kernel_Automating_SmartObject__System_Collections_Generic_List_System_String__System_Collections_Generic_List_TopSolid_Cad_Design_Automating_SmartDesignObject__">RedirectInclusionWithCodeAndDrivers2(ElementId, DocumentId, string, List&lt;string&gt;, List&lt;SmartObject&gt;, List&lt;string&gt;, List&lt;SmartDesignObject&gt;)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Redirects an inclusion operation to a family with specified code and drivers.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IAssemblies_SetAssemblyCenterOfMassManagement_TopSolid_Kernel_Automating_DocumentId_System_Boolean_" data-uid="TopSolid.Cad.Design.Automating.IAssemblies.SetAssemblyCenterOfMassManagement(TopSolid.Kernel.Automating.DocumentId,System.Boolean)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IAssemblies.SetAssemblyCenterOfMassManagement.html#TopSolid_Cad_Design_Automating_IAssemblies_SetAssemblyCenterOfMassManagement_TopSolid_Kernel_Automating_DocumentId_System_Boolean_">SetAssemblyCenterOfMassManagement(DocumentId, bool)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the center of mass management of the physical property management of an assembly.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IAssemblies_SetAssemblyMassManagement_TopSolid_Kernel_Automating_DocumentId_System_Boolean_" data-uid="TopSolid.Cad.Design.Automating.IAssemblies.SetAssemblyMassManagement(TopSolid.Kernel.Automating.DocumentId,System.Boolean)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IAssemblies.SetAssemblyMassManagement.html#TopSolid_Cad_Design_Automating_IAssemblies_SetAssemblyMassManagement_TopSolid_Kernel_Automating_DocumentId_System_Boolean_">SetAssemblyMassManagement(DocumentId, bool)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the mass management of the physical property management of an assembly.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IAssemblies_SetAssemblyMomentsOfInertiaManagement_TopSolid_Kernel_Automating_DocumentId_System_Boolean_" data-uid="TopSolid.Cad.Design.Automating.IAssemblies.SetAssemblyMomentsOfInertiaManagement(TopSolid.Kernel.Automating.DocumentId,System.Boolean)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IAssemblies.SetAssemblyMomentsOfInertiaManagement.html#TopSolid_Cad_Design_Automating_IAssemblies_SetAssemblyMomentsOfInertiaManagement_TopSolid_Kernel_Automating_DocumentId_System_Boolean_">SetAssemblyMomentsOfInertiaManagement(DocumentId, bool)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the moments of inertia management of the physical property management of an assembly.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IAssemblies_SetAssemblyStrictMode_TopSolid_Kernel_Automating_DocumentId_System_Boolean_" data-uid="TopSolid.Cad.Design.Automating.IAssemblies.SetAssemblyStrictMode(TopSolid.Kernel.Automating.DocumentId,System.Boolean)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IAssemblies.SetAssemblyStrictMode.html#TopSolid_Cad_Design_Automating_IAssemblies_SetAssemblyStrictMode_TopSolid_Kernel_Automating_DocumentId_System_Boolean_">SetAssemblyStrictMode(DocumentId, bool)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the strict mode of the physical property management of an assembly.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IAssemblies_SetAssemblySurfaceAreaManagement_TopSolid_Kernel_Automating_DocumentId_System_Boolean_" data-uid="TopSolid.Cad.Design.Automating.IAssemblies.SetAssemblySurfaceAreaManagement(TopSolid.Kernel.Automating.DocumentId,System.Boolean)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IAssemblies.SetAssemblySurfaceAreaManagement.html#TopSolid_Cad_Design_Automating_IAssemblies_SetAssemblySurfaceAreaManagement_TopSolid_Kernel_Automating_DocumentId_System_Boolean_">SetAssemblySurfaceAreaManagement(DocumentId, bool)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the surface area management of the physical property management of an assembly.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IAssemblies_SetAssemblyVolumeManagement_TopSolid_Kernel_Automating_DocumentId_System_Boolean_" data-uid="TopSolid.Cad.Design.Automating.IAssemblies.SetAssemblyVolumeManagement(TopSolid.Kernel.Automating.DocumentId,System.Boolean)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IAssemblies.SetAssemblyVolumeManagement.html#TopSolid_Cad_Design_Automating_IAssemblies_SetAssemblyVolumeManagement_TopSolid_Kernel_Automating_DocumentId_System_Boolean_">SetAssemblyVolumeManagement(DocumentId, bool)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the volume management of the physical property management of an assembly.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IAssemblies_SetCollisionsManagement_TopSolid_Kernel_Automating_DocumentId_TopSolid_Kernel_Automating_ElementId_System_Boolean_System_Boolean_System_Boolean_" data-uid="TopSolid.Cad.Design.Automating.IAssemblies.SetCollisionsManagement(TopSolid.Kernel.Automating.DocumentId,TopSolid.Kernel.Automating.ElementId,System.Boolean,System.Boolean,System.Boolean)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IAssemblies.SetCollisionsManagement.html#TopSolid_Cad_Design_Automating_IAssemblies_SetCollisionsManagement_TopSolid_Kernel_Automating_DocumentId_TopSolid_Kernel_Automating_ElementId_System_Boolean_System_Boolean_System_Boolean_">SetCollisionsManagement(DocumentId, ElementId, bool, bool, bool)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the collisions management of an assembly.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IAssemblies_SetCollisionsManagementCheckingMechanisms_TopSolid_Kernel_Automating_DocumentId_System_Boolean_" data-uid="TopSolid.Cad.Design.Automating.IAssemblies.SetCollisionsManagementCheckingMechanisms(TopSolid.Kernel.Automating.DocumentId,System.Boolean)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IAssemblies.SetCollisionsManagementCheckingMechanisms.html#TopSolid_Cad_Design_Automating_IAssemblies_SetCollisionsManagementCheckingMechanisms_TopSolid_Kernel_Automating_DocumentId_System_Boolean_">SetCollisionsManagementCheckingMechanisms(DocumentId, bool)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets whether the collisions management of an assembly is checking for collisions between rigid groups of articulated subassemblies.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IAssemblies_SetCollisionsManagementInvalidWhenColliding_TopSolid_Kernel_Automating_DocumentId_System_Boolean_" data-uid="TopSolid.Cad.Design.Automating.IAssemblies.SetCollisionsManagementInvalidWhenColliding(TopSolid.Kernel.Automating.DocumentId,System.Boolean)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IAssemblies.SetCollisionsManagementInvalidWhenColliding.html#TopSolid_Cad_Design_Automating_IAssemblies_SetCollisionsManagementInvalidWhenColliding_TopSolid_Kernel_Automating_DocumentId_System_Boolean_">SetCollisionsManagementInvalidWhenColliding(DocumentId, bool)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets whether the collisions management of an assembly is invalid if collisions are found between rigid groups of articulated subassemblies.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IAssemblies_SetInclusionCodeAndDrivers_TopSolid_Kernel_Automating_ElementId_System_String_System_Collections_Generic_List_System_String__System_Collections_Generic_List_TopSolid_Kernel_Automating_SmartObject__" data-uid="TopSolid.Cad.Design.Automating.IAssemblies.SetInclusionCodeAndDrivers(TopSolid.Kernel.Automating.ElementId,System.String,System.Collections.Generic.List{System.String},System.Collections.Generic.List{TopSolid.Kernel.Automating.SmartObject})">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IAssemblies.SetInclusionCodeAndDrivers.html#TopSolid_Cad_Design_Automating_IAssemblies_SetInclusionCodeAndDrivers_TopSolid_Kernel_Automating_ElementId_System_String_System_Collections_Generic_List_System_String__System_Collections_Generic_List_TopSolid_Kernel_Automating_SmartObject__">SetInclusionCodeAndDrivers(ElementId, string, List&lt;string&gt;, List&lt;SmartObject&gt;)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the code and drivers of a family inclusion operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IAssemblies_SetInclusionCodeAndDrivers2_TopSolid_Kernel_Automating_ElementId_System_String_System_Collections_Generic_List_System_String__System_Collections_Generic_List_TopSolid_Kernel_Automating_SmartObject__System_Collections_Generic_List_System_String__System_Collections_Generic_List_TopSolid_Cad_Design_Automating_SmartDesignObject__" data-uid="TopSolid.Cad.Design.Automating.IAssemblies.SetInclusionCodeAndDrivers2(TopSolid.Kernel.Automating.ElementId,System.String,System.Collections.Generic.List{System.String},System.Collections.Generic.List{TopSolid.Kernel.Automating.SmartObject},System.Collections.Generic.List{System.String},System.Collections.Generic.List{TopSolid.Cad.Design.Automating.SmartDesignObject})">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IAssemblies.SetInclusionCodeAndDrivers2.html#TopSolid_Cad_Design_Automating_IAssemblies_SetInclusionCodeAndDrivers2_TopSolid_Kernel_Automating_ElementId_System_String_System_Collections_Generic_List_System_String__System_Collections_Generic_List_TopSolid_Kernel_Automating_SmartObject__System_Collections_Generic_List_System_String__System_Collections_Generic_List_TopSolid_Cad_Design_Automating_SmartDesignObject__">SetInclusionCodeAndDrivers2(ElementId, string, List&lt;string&gt;, List&lt;SmartObject&gt;, List&lt;string&gt;, List&lt;SmartDesignObject&gt;)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the code and drivers of a family inclusion operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IAssemblies_SetNodeBomIndex_TopSolid_Kernel_Automating_ElementId_System_String_" data-uid="TopSolid.Cad.Design.Automating.IAssemblies.SetNodeBomIndex(TopSolid.Kernel.Automating.ElementId,System.String)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IAssemblies.SetNodeBomIndex.html#TopSolid_Cad_Design_Automating_IAssemblies_SetNodeBomIndex_TopSolid_Kernel_Automating_ElementId_System_String_">SetNodeBomIndex(ElementId, string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the bill of material index attached to a specified assembly node entity.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IAssemblies_TransformInclusion_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_Transform3D_" data-uid="TopSolid.Cad.Design.Automating.IAssemblies.TransformInclusion(TopSolid.Kernel.Automating.ElementId,TopSolid.Kernel.Automating.Transform3D)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IAssemblies.TransformInclusion.html#TopSolid_Cad_Design_Automating_IAssemblies_TransformInclusion_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_Transform3D_">TransformInclusion(ElementId, Transform3D)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Transforms an inclusion operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div id="footer-alt">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      			<div id="footer-alt-bottom">
+                      <ul>
+                          <li><a href="https://www.topsolid.com/en/terms-of-use">Term of use</a></li>
+                          <li><a href="https://www.topsolid.com/en/corporate-information">Corporate information</a></li>
+                          <li><a href="https://www.topsolid.com/en/privacy-policy-gdpr">Privacy Policy - GDPR</a></li>
+                      </ul>
+                      <p>Copyright ©2025 TopSolid - All rights reserved.</p>
+                  </div>
+          </div>
+        </div>
+      </footer>    </div>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

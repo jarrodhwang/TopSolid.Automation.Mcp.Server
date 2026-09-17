@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.GetRealParameterConstraintsDiscretizationOrigin.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.GetRealParameterConstraintsDiscretizationOrigin.html",
+  "sha256": "cea6849e690a395d80f88bb9df41fd5fe3d0f5552e4d8a6c63319fa33f790e62",
+  "text": "# Method GetRealParameterConstraintsDiscretizationOrigin\n\n#### GetRealParameterConstraintsDiscretizationOrigin(ElementId)\n\nGets the real parameter constraint discretization origin.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 17, 0, 0)]\nRealProperty GetRealParameterConstraintsDiscretizationOrigin(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the parameter.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  RealProperty |  The parameter constraints discretization origin.  |  \n\n##### Remarks\n\nThis method is available since v7.17.000.000.\n",
+  "markdown": "markdown/kernel/0bff4584dd6a0a14b353739e.md",
+  "originalHtml": "html/kernel/0bff4584dd6a0a14b353739e.html"
+}

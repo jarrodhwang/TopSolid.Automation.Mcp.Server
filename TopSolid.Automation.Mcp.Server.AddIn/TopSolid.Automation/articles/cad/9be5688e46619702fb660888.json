@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ICoatings.SetCategory.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ICoatings.SetCategory.html",
+  "sha256": "08ab6c7df17503018873ce5148b7effb8bc491d8dcba77977dc9726181993826",
+  "text": "# Method SetCategory\n\n#### SetCategory(DocumentId, CoatingCategoryType)\n\nSets the coating category of a coating document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 0, 0)]\nvoid SetCategory(DocumentId inDocumentId, CoatingCategoryType inCoatingCategoryType)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  CoatingCategoryType |  inCoatingCategoryType |  The coating category.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.16.\n",
+  "markdown": "markdown/cad/9be5688e46619702fb660888.md",
+  "originalHtml": "html/cad/9be5688e46619702fb660888.html"
+}

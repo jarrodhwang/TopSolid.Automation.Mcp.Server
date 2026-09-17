@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ICoatings.SetRoughnessTextureDocument.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ICoatings.SetRoughnessTextureDocument.html",
+  "sha256": "07bb75e31faa7878d43182a607fc54979d8ac60ed1d77cacf15ec5fce95ec32d",
+  "text": "# Method SetRoughnessTextureDocument\n\n#### SetRoughnessTextureDocument(DocumentId, DocumentId)\n\nSets the Roughness texture document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 0, 0)]\nvoid SetRoughnessTextureDocument(DocumentId inDocumentId, DocumentId inTextureDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  DocumentId |  inTextureDocumentId |  Texture document.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.16.\n",
+  "markdown": "markdown/cad/09f189614c868fd5d4ac4497.md",
+  "originalHtml": "html/cad/09f189614c868fd5d4ac4497.html"
+}

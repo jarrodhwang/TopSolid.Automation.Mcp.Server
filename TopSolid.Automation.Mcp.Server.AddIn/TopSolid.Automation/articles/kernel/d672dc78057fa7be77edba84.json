@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.GetExportedObjectIds.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.GetExportedObjectIds.html",
+  "sha256": "1a4d4a313b9b7e8f48efe0b4023506d6f65bf460275bfa5769d075dde2b2bd36",
+  "text": "# Method GetExportedObjectIds\n\n#### GetExportedObjectIds(string)\n\nGet the list of the object identifiers selected during the export of given package file.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 18, 321, 0)]\nList<PdmObjectId> GetExportedObjectIds(string inPackageFileFullPath)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  string |  inPackageFileFullPath |  Full path of the package file, with \".TopPkg\" extension.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<PdmObjectId> |  The list of the object identifiers selected during the export of given package file.  |\n",
+  "markdown": "markdown/kernel/d672dc78057fa7be77edba84.md",
+  "originalHtml": "html/kernel/d672dc78057fa7be77edba84.html"
+}

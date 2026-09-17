@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IGeometries3D.GetAxisPublishingDefinition.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IGeometries3D.GetAxisPublishingDefinition.html",
+  "sha256": "0e1275e2128ce05f04042c3b170d6183e19e30cb09c520477ec7dadcc4312be5",
+  "text": "# Method GetAxisPublishingDefinition\n\n#### GetAxisPublishingDefinition(ElementId)\n\nGets the definition of an axis publishing entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nSmartAxis3D GetAxisPublishingDefinition(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the publishing entity to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartAxis3D |   |  \n\n##### Remarks\n\nThe geometry of the publishing entity may be obtained with the GetAxisGeometry(ElementId) method.\n \nThis method is available since v7.8.\n",
+  "markdown": "markdown/kernel/0b290f12631a37838423f50a.md",
+  "originalHtml": "html/kernel/0b290f12631a37838423f50a.html"
+}

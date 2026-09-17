@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Transform3D.SetTranslation.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Transform3D.SetTranslation.html",
+  "sha256": "fb9fda357419dac05312298ae27448b0a01e3312e793609f01d9d6a5f1c5c457",
+  "text": "# Method SetTranslation\n\n#### SetTranslation(Vector3D)\n\nSets the transformation as the translation along a specified vector.\n\n##### Declaration\n\n```\npublic void SetTranslation(Vector3D inVector)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  Vector3D |  inVector |  Translation vector.  |\n",
+  "markdown": "markdown/kernel/0c653086b28bb66533589ef1.md",
+  "originalHtml": "html/kernel/0c653086b28bb66533589ef1.html"
+}

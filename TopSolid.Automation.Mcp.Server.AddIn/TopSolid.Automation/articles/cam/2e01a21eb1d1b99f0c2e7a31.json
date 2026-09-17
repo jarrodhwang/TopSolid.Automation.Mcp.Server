@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.ITools.GetParameters.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.ITools.GetParameters.html",
+  "sha256": "ae7d5dfe85554a5d339c1a5d24479298590cfd5a210a07a5429ca5b7f95b88ef",
+  "text": "# Method GetParameters\n\n#### GetParameters(ElementId)\n\nGets the parameters of the given tool.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nList<ParameterId> GetParameters(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the tool to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ParameterId> |  Tool parameters found.  |\n",
+  "markdown": "markdown/cam/2e01a21eb1d1b99f0c2e7a31.md",
+  "originalHtml": "html/cam/2e01a21eb1d1b99f0c2e7a31.html"
+}

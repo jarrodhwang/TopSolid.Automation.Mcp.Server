@@ -1,0 +1,8 @@
+{
+  "path": "api/cae/TopSolid.Cae.Kernel.Automating.IResults.GetMeasureResults.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cae/TopSolid.Cae.Kernel.Automating.IResults.GetMeasureResults.html",
+  "sha256": "ddfc65329b774bdaa081623c2d8cdfade563267698d48283980d0e60b40b4bf9",
+  "text": "# Method GetMeasureResults\n\n#### GetMeasureResults(ElementId)\n\nGets measure results\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 212, 0)]\nMeasureResults GetMeasureResults(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  measure to analyze  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  MeasureResults |  node measure results  |\n",
+  "markdown": "markdown/cae/86fae95b98ec29a26f18a980.md",
+  "originalHtml": "html/cae/86fae95b98ec29a26f18a980.html"
+}

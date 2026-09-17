@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.TopSolidHostInstance.Sketches2D.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.TopSolidHostInstance.Sketches2D.html",
+  "sha256": "f96b97ad3c17bc5da457c121ef578291f7cdbd27ced387839d45b110929ceb74",
+  "text": "# Property Sketches2D\n\n#### Sketches2D\n\nGets access to 2D sketches, or null if not available.\n\n##### Declaration\n\n```\npublic ISketches2D Sketches2D { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ISketches2D |   |\n",
+  "markdown": "markdown/kernel/a66608a7b83c7992d8e6632c.md",
+  "originalHtml": "html/kernel/a66608a7b83c7992d8e6632c.html"
+}

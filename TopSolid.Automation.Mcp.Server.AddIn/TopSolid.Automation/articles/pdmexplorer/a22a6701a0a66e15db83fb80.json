@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdmAdmin.ChangeUserPassword.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdmAdmin.ChangeUserPassword.html",
+  "sha256": "54f4728bd5501cbf69b35e7d64af1145516be4037a901e05e4f32e260b038b9f",
+  "text": "# Method ChangeUserPassword\n\n#### ChangeUserPassword(string, string, string)\n\nSets the password of a user.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 142, 0)]\nbool ChangeUserPassword(string inAccountId, string inOldPassword, string inNewPassword)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  string |  inAccountId |  User account identifier.  |  \n \n|  string |  inOldPassword |  User current password.  |  \n \n|  string |  inNewPassword |  User new password.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |   |  \n\n##### Remarks\n\nThis method is available since v7.16.\n",
+  "markdown": "markdown/pdmexplorer/a22a6701a0a66e15db83fb80.md",
+  "originalHtml": "html/pdmexplorer/a22a6701a0a66e15db83fb80.html"
+}

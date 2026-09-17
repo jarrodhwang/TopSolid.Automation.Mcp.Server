@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IOperations.ResetInsertionOperation.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IOperations.ResetInsertionOperation.html",
+  "sha256": "55768e047ffceecd7c174d7e84e1ae0298245f631367294d09c00941ecb30ea9",
+  "text": "# Method ResetInsertionOperation\n\n#### ResetInsertionOperation(DocumentId)\n\nResets the insertion operation of a document to its natural place.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nvoid ResetInsertionOperation(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n\n##### Remarks\n\nNew operations are created before the insertion operation.\n \nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.8.\n",
+  "markdown": "markdown/kernel/c9c0f2530d07f80415f04a9b.md",
+  "originalHtml": "html/kernel/c9c0f2530d07f80415f04a9b.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IParts.IsPart.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IParts.IsPart.html",
+  "sha256": "a61a2f8cd12f4b6bdc0255a487e74f610054f18f0a5e27da93b1fef285cb8109",
+  "text": "# Method IsPart\n\n#### IsPart(DocumentId)\n\nTells whether a document is a part document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nbool IsPart(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  The document is a part document.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/cad/cb77fb2ada527187ecdbefb8.md",
+  "originalHtml": "html/cad/cb77fb2ada527187ecdbefb8.html"
+}

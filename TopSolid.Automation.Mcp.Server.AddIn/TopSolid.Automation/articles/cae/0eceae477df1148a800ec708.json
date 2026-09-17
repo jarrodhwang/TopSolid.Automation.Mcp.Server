@@ -1,0 +1,8 @@
+{
+  "path": "api/cae/TopSolid.Cae.Kernel.Automating.ICAEDocuments.IsAnalysisPreparationDocument.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cae/TopSolid.Cae.Kernel.Automating.ICAEDocuments.IsAnalysisPreparationDocument.html",
+  "sha256": "d7571c3369502aceaeb3328fef414498c75b2c9652c498389c9d1998e7d2653c",
+  "text": "# Method IsAnalysisPreparationDocument\n\n#### IsAnalysisPreparationDocument(DocumentId)\n\nTells whether a document is an analysis preparation document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 15, 0)]\nbool IsAnalysisPreparationDocument(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  The document is an analysis preparation document.  |  \n\n##### Remarks\n\nThis method is available since v7.19.\n\n##### Examples\n \n```\nDocumentId docId = TopSolidHost.Documents.EditedDocument;\nstring isAnalysisPreparationDocument = TopSolidCaeHost.Documents.IsAnalysisPreparationDocument(docId);\n```\n",
+  "markdown": "markdown/cae/0eceae477df1148a800ec708.md",
+  "originalHtml": "html/cae/0eceae477df1148a800ec708.html"
+}

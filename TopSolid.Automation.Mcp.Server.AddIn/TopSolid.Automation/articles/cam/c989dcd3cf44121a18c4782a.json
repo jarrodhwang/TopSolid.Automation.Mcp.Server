@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IToolPath.StartToolPath.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IToolPath.StartToolPath.html",
+  "sha256": "9db8e775a15e65f3060011615ab99662c0c4231847e877c217117173dc1d812d",
+  "text": "# Method StartToolPath\n\n#### StartToolPath(ElementId)\n\nGets the tool path table columns of the given operation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nList<string> StartToolPath(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the Cam operation to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<string> |  Tool path table columns found or null if no tool path is available.  |\n",
+  "markdown": "markdown/cam/c989dcd3cf44121a18c4782a.md",
+  "originalHtml": "html/cam/c989dcd3cf44121a18c4782a.html"
+}

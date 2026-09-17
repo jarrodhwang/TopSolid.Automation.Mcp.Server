@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ITextures.GetWoodRingWidth.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ITextures.GetWoodRingWidth.html",
+  "sha256": "5db1ad4d8a6ad6f45aadbc7dd8773ef178f4015c2a310278e85c5880ac92b6a6",
+  "text": "# Method GetWoodRingWidth\n\n#### GetWoodRingWidth(DocumentId)\n\nGets the wood ring width.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 400, 100)]\ndouble GetWoodRingWidth(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyse.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double |   |  \n\n##### Remarks\n\nThis method is available since v7.16.\n",
+  "markdown": "markdown/kernel/c8111e49f326b968c0507b2d.md",
+  "originalHtml": "html/kernel/c8111e49f326b968c0507b2d.html"
+}

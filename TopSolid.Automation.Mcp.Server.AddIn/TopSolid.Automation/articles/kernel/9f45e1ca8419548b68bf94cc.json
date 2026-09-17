@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ITextures.SetPicture.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ITextures.SetPicture.html",
+  "sha256": "bd30a0dd884cf35d23c539e3508f67d0c4e36e9d63283006d9311736122e95d1",
+  "text": "# Method SetPicture\n\n#### SetPicture(DocumentId, string)\n\nSets the texture picture.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 0, 0)]\nvoid SetPicture(DocumentId inDocumentId, string inPictureFullPath)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  string |  inPictureFullPath |  File path of the picture.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.16.\n",
+  "markdown": "markdown/kernel/9f45e1ca8419548b68bf94cc.md",
+  "originalHtml": "html/kernel/9f45e1ca8419548b68bf94cc.html"
+}

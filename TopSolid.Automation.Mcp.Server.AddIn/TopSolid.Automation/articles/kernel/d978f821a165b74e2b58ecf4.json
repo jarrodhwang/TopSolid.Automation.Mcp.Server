@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IElements.SetColor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IElements.SetColor.html",
+  "sha256": "707db713ab55e32731649da940f9c78807072579d824d85b4471cf47e42def7d",
+  "text": "# Method SetColor\n\n#### SetColor(ElementId, Color)\n\nSets the color of an element.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nvoid SetColor(ElementId inElementId, Color inColor)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to modify.  |  \n \n|  Color |  inColor |  New color of the element.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/d978f821a165b74e2b58ecf4.md",
+  "originalHtml": "html/kernel/d978f821a165b74e2b58ecf4.html"
+}

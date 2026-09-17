@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.TopSolidCamHost.PartSettingDocuments.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.TopSolidCamHost.PartSettingDocuments.html",
+  "sha256": "a285db0c58e0aaa130fcc00f31a3f7a8be32859a2db4acfb9dbbac233228ac0f",
+  "text": "# Property PartSettingDocuments\n\n#### PartSettingDocuments\n\nGets access to part setting documents, or null if not connected.\n\n##### Declaration\n\n```\npublic static IPartSettingDocument PartSettingDocuments { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  IPartSettingDocument |   |\n",
+  "markdown": "markdown/cam/c3dd4307d026fb5943b7c566.md",
+  "originalHtml": "html/cam/c3dd4307d026fb5943b7c566.html"
+}

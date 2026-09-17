@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.GetSelectedPdmObjectIds.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.GetSelectedPdmObjectIds.html",
+  "sha256": "ab184f86565b43fbf1af2f68347283dbc54bffe7a2c11a319d446ffcc82ba78d",
+  "text": "# Method GetSelectedPdmObjectIds\n\n#### GetSelectedPdmObjectIds()\n\nGets selected PDM objects ids of the current project.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 14, 300, 140)]\nList<PdmObjectId> GetSelectedPdmObjectIds()\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<PdmObjectId> |  PDM object identifiers of selected objects of the PDM tree view.  |  \n\n##### Remarks\n\nThis method is available since v7.14.300.140.\n",
+  "markdown": "markdown/kernel/36276c871539aa4113fa28f8.md",
+  "originalHtml": "html/kernel/36276c871539aa4113fa28f8.html"
+}

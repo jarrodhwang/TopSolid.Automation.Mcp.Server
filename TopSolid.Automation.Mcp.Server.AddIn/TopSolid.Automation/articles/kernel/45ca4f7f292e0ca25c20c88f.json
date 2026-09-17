@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.GetToleranceUnit.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.GetToleranceUnit.html",
+  "sha256": "977390d3be90ba3efc27c98049689b9357ed04ef25d813530a2f9d7cd6c5c416",
+  "text": "# Method GetToleranceUnit\n\n#### GetToleranceUnit(ElementId)\n\nGets the unit of a Tolerance parameter.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 14, 0, 0)]\nUnitType GetToleranceUnit(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the parameter to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  UnitType |  Unit of the parameter.  |  \n\n##### Remarks\n\nThis method is available since v7.14.\n",
+  "markdown": "markdown/kernel/45ca4f7f292e0ca25c20c88f.md",
+  "originalHtml": "html/kernel/45ca4f7f292e0ca25c20c88f.html"
+}

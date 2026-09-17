@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ICoatings.SetGlossinessFactor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ICoatings.SetGlossinessFactor.html",
+  "sha256": "6fb08f09700f33b65203c74ffeae47dc1f65d5682a1c753d1c36363800547fc6",
+  "text": "# Method SetGlossinessFactor\n\n#### SetGlossinessFactor(DocumentId, double)\n\nSets the Glossiness factor.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 18, 0, 0)]\nvoid SetGlossinessFactor(DocumentId inDocumentId, double inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  double |  inValue |  Wanted value.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.18.\n",
+  "markdown": "markdown/cad/1b0e183aeff34b5e56a5f40c.md",
+  "originalHtml": "html/cad/1b0e183aeff34b5e56a5f40c.html"
+}

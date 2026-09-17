@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IAssemblies.InheritOccurrenceFunctions.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IAssemblies.InheritOccurrenceFunctions.html",
+  "sha256": "9220ff4c2ddf7c859070c3899cca28feb43a5b7c8514b07738861a4c418384ce",
+  "text": "# Method InheritOccurrenceFunctions\n\n#### InheritOccurrenceFunctions(ElementId, List<ElementId>)\n\nProvides functions by inheriting from the ones provided in a part or assembly occurrence.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nElementId InheritOccurrenceFunctions(ElementId inOccurrenceId, List<ElementId> inFunctionIds)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inOccurrenceId |  Identifier of the occurrence of the part or assembly providing the functions to inherit.  |  \n \n|  List<ElementId> |  inFunctionIds |  Identifiers of the specified function entities to inherit from in the occurrence definition document.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the created functions inheriting operation.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.8.\n",
+  "markdown": "markdown/cad/6a36bc9de9862aeefbf024ab.md",
+  "originalHtml": "html/cad/6a36bc9de9862aeefbf024ab.html"
+}

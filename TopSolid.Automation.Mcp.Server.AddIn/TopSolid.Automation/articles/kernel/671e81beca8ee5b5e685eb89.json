@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.TextureMappingType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.TextureMappingType.html",
+  "sha256": "bc8f649f8b4e930aebf83cca79e3e91b20efed71e50e4d659ee58cb2fcbba126",
+  "text": "# Enum TextureMappingType\n\nDefines the various types of texture mapping.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 16, 0, 0)]\npublic enum TextureMappingType\n```\n\n##### Remarks\n\nThis enum is available since v7.16.\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  AutoAxis |  Auto-Axis.  |  \n \n|  Cylindrical |  Cylindrical.  |  \n \n|  Edge |  Edge.  |  \n \n|  Inherited |  Inherited.  |  \n \n|  None |  No mapping defined.  |  \n \n|  Parametric |  Parametric.  |  \n \n|  Planar |  Planar.  |  \n \n|  Spherical |  Spherical.  |  \n \n|  Unclassified |  Unclassified type.  |\n",
+  "markdown": "markdown/kernel/671e81beca8ee5b5e685eb89.md",
+  "originalHtml": "html/kernel/671e81beca8ee5b5e685eb89.html"
+}

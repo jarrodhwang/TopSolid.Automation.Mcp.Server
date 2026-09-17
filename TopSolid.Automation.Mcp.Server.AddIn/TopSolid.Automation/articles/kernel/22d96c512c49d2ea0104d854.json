@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IGeometries3D.SetPointPublishingDefinition.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IGeometries3D.SetPointPublishingDefinition.html",
+  "sha256": "ea6094451852efa1ce46dd6838e7f9926f03cb715a99524bd630d4b4afe4a996",
+  "text": "# Method SetPointPublishingDefinition\n\n#### SetPointPublishingDefinition(ElementId, SmartPoint3D)\n\nSets the definition of a point publishing entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nvoid SetPointPublishingDefinition(ElementId inElementId, SmartPoint3D inDefinition)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the publishing entity to modify.  |  \n \n|  SmartPoint3D |  inDefinition |  Publishing new definition.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.8.\n",
+  "markdown": "markdown/kernel/22d96c512c49d2ea0104d854.md",
+  "originalHtml": "html/kernel/22d96c512c49d2ea0104d854.html"
+}

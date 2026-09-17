@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.TopSolidCamHost.CamSketch.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.TopSolidCamHost.CamSketch.html",
+  "sha256": "6b2a17113468100e510e20b106e94d1bf07655c92a50ad582bd32e4d3e1657ac",
+  "text": "# Property CamSketch\n\n#### CamSketch\n\nGets access to Cam sketches, or null if not connected.\n\n##### Declaration\n\n```\npublic static ICamSketch CamSketch { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ICamSketch |   |\n",
+  "markdown": "markdown/cam/47d1603599a84bd59f5a1ada.md",
+  "originalHtml": "html/cam/47d1603599a84bd59f5a1ada.html"
+}

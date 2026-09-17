@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IShapes.FindNearestPointToPoint.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IShapes.FindNearestPointToPoint.html",
+  "sha256": "874a4bf037e26bbdf994f76030b1789b2494f0079c4bbc92b43c332006cd8492",
+  "text": "# Method FindNearestPointToPoint\n\n#### FindNearestPointToPoint(ElementId, Point3D, out ElementItemId, out double, out double, out bool)\n\nFinds the nearest point on a shape to a specified reference point.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 300, 60)]\nPoint3D FindNearestPointToPoint(ElementId inElementId, Point3D inPoint, out ElementItemId outItemId, out double outU, out double outV, out bool outIsInside)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the shape entity to analyze.  |  \n \n|  Point3D |  inPoint |  Reference point.  |  \n \n|  ElementItemId |  outItemId |  Identifier of the item of the shape where the nearest point is found (face, edge or vertex as defined by outItemId.ItemType).  |  \n \n|  double |  outU |  Edge parameter of face U-parameter.  |  \n \n|  double |  outV |  Face V-parameter.  |  \n \n|  bool |  outIsInside |  Whether the reference point is inside the shape.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Point3D |  Nearest point on shape to the specified reference point.  |  \n\n##### Remarks\n\nThis method is available since v7.10.300.60.\n",
+  "markdown": "markdown/kernel/299781ea9ff9891c5f0a7d19.md",
+  "originalHtml": "html/kernel/299781ea9ff9891c5f0a7d19.html"
+}

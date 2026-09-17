@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ICoatings.GetGlossinessFactor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ICoatings.GetGlossinessFactor.html",
+  "sha256": "2f26ef4a4a5336955b6d3b437ec606980583ce34b3dacd1fcc6bc4c2868d3f28",
+  "text": "# Method GetGlossinessFactor\n\n#### GetGlossinessFactor(DocumentId)\n\nGets the Glossiness factor.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 18, 0, 0)]\ndouble GetGlossinessFactor(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double |   |  \n\n##### Remarks\n\nThis method is available since v7.18.\n",
+  "markdown": "markdown/cad/afa7d458386261471aedbdac.md",
+  "originalHtml": "html/cad/afa7d458386261471aedbdac.html"
+}

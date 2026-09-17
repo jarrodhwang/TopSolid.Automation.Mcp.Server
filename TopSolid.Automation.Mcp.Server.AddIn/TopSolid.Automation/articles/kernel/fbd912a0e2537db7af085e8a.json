@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.SetSmartTextParameterCreation.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.SetSmartTextParameterCreation.html",
+  "sha256": "bb2d015b49092dddceab9442d9da218c46da84a49d450dc1e553b8768fc4519d",
+  "text": "# Method SetSmartTextParameterCreation\n\n#### SetSmartTextParameterCreation(ElementId, SmartText)\n\nSets a smart text parameter creation operation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nvoid SetSmartTextParameterCreation(ElementId inElementId, SmartText inSmartText)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the smart text parameter creation operation to modify.  |  \n \n|  SmartText |  inSmartText |  Smart text value.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.10.\n",
+  "markdown": "markdown/kernel/fbd912a0e2537db7af085e8a.md",
+  "originalHtml": "html/kernel/fbd912a0e2537db7af085e8a.html"
+}

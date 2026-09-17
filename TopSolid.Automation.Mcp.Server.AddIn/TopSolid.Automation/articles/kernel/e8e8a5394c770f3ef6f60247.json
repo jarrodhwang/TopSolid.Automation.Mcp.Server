@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IMaterials.GetTextureSignatures.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IMaterials.GetTextureSignatures.html",
+  "sha256": "7bbe7c2a2afe2e6bd35c18445ece8c74dd21ccbe507f78447d4aa318b47f46a3",
+  "text": "# Method GetTextureSignatures\n\n#### GetTextureSignatures(Guid, IEnumerable<string>, int, string)\n\nGets texture signatures from all texture documents.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 17, 400, 0)]\nList<string> GetTextureSignatures(Guid inSessionId, IEnumerable<string> inAlreadyKnownSignatures, int inMaxTextureSize, string inFolderPath)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  Guid |  inSessionId |  Identifier of the session.  |  \n \n|  IEnumerable<string> |  inAlreadyKnownSignatures |  List of already known signatures.  |  \n \n|  int |  inMaxTextureSize |  Maximum size of the textures (width or length, in rectangle format).  |  \n \n|  string |  inFolderPath |  Folder where the textures files will be saved.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<string> |  Texture signatures.  |  \n\n##### Remarks\n\nThe file are saved in PNG format in the specified folder path, named signature.png.\n \nThis method is available since v7.17.\n",
+  "markdown": "markdown/kernel/e8e8a5394c770f3ef6f60247.md",
+  "originalHtml": "html/kernel/e8e8a5394c770f3ef6f60247.html"
+}

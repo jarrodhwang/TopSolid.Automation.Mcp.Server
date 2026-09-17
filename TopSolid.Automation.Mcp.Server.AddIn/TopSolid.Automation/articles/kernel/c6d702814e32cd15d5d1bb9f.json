@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.SetRealParameterConstraintsMode.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.SetRealParameterConstraintsMode.html",
+  "sha256": "b6c6f391ed57cfa6fa4bf8c295b1ed90338890d151dea6ef77ade99875d4b423",
+  "text": "# Method SetRealParameterConstraintsMode\n\n#### SetRealParameterConstraintsMode(ElementId, RealParameterConstraintsMode)\n\nSets the real parameter constraints mode.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 17, 0, 0)]\nvoid SetRealParameterConstraintsMode(ElementId inElementId, RealParameterConstraintsMode inConstraintsMode)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the parameter.  |  \n \n|  RealParameterConstraintsMode |  inConstraintsMode |  Wanted constraints mode.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.17.000.000.\n",
+  "markdown": "markdown/kernel/c6d702814e32cd15d5d1bb9f.md",
+  "originalHtml": "html/kernel/c6d702814e32cd15d5d1bb9f.html"
+}

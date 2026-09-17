@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IParts.IsFinishingDerived.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IParts.IsFinishingDerived.html",
+  "sha256": "656bfcdb5325e5d28115fead6ce7b1c5fb59f650e316b046cdb0b29c65221310",
+  "text": "# Method IsFinishingDerived\n\n#### IsFinishingDerived(DocumentId)\n\nTells whether the finishing of a derived part is derived from the base part.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 12, 0, 0)]\nbool IsFinishingDerived(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the part document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  The finishing of the derived part is derived from the base part.  |  \n\n##### Remarks\n\nThis method is available since v7.12.\n",
+  "markdown": "markdown/cad/12fc2d3807363eefc730955f.md",
+  "originalHtml": "html/cad/12fc2d3807363eefc730955f.html"
+}

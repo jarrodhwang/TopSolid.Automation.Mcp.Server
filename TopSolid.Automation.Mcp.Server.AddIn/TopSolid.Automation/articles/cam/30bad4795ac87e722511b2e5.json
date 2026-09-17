@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IDocuments.IsCam.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IDocuments.IsCam.html",
+  "sha256": "d158311b0bda69f1842c4e37a608ef9773f3b2947110adc5a1342b3da6d8bb0e",
+  "text": "# Method IsCam\n\n#### IsCam(DocumentId)\n\nTells whether a document is a Cam document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nbool IsCam(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  The document is a Cam document.  |\n",
+  "markdown": "markdown/cam/30bad4795ac87e722511b2e5.md",
+  "originalHtml": "html/cam/30bad4795ac87e722511b2e5.html"
+}

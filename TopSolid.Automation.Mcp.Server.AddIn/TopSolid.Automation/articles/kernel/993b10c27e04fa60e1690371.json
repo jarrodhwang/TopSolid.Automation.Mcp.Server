@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IEntities.GetFunctions.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IEntities.GetFunctions.html",
+  "sha256": "36cbcfb9617af763aa928ec30cb99b374e79263aa93575ffde590f9d332194e3",
+  "text": "# Method GetFunctions\n\n#### GetFunctions(DocumentId)\n\nGets the function entities that are in the functions folder of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nList<ElementId> GetFunctions(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementId> |  Function entities found.  |  \n\n##### Remarks\n\nThis method is available since v7.8.\n",
+  "markdown": "markdown/kernel/993b10c27e04fa60e1690371.md",
+  "originalHtml": "html/kernel/993b10c27e04fa60e1690371.html"
+}

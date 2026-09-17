@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.GetRealValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.GetRealValue.html",
+  "sha256": "884f0b2f0f848d72149d0ea5a38df0db82e03274e69ce885348c7c125f8c379e",
+  "text": "# Method GetRealValue\n\n#### GetRealValue(ElementId)\n\nGets the value of a real parameter.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\ndouble GetRealValue(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the parameter to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double |  Value of the parameter in SI units.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/9651fd8616ea544b3be7a344.md",
+  "originalHtml": "html/kernel/9651fd8616ea544b3be7a344.html"
+}

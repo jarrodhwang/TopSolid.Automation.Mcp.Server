@@ -1,0 +1,15 @@
+{
+  "projectName": "AI Studio MCP Validation 2026-09-15",
+  "documents": ["MCP Contour and Extrusion", "MCP Revolution", "MCP Loft", "MCP Assembly"],
+  "geometry": {
+    "extrusion": "80 x 50 mm rectangular XY contour, extruded 20 mm in +Z; expected volume 80000 cubic mm",
+    "arc": "Open counterclockwise quarter circle, radius 10 mm, in a separate XY sketch at X=120 mm",
+    "revolution": "XZ rectangle from radius 10 to 20 mm and height 0 to 30 mm, revolved 360 degrees about world Z",
+    "loft": "Circular XY profiles of radii 10 and 20 mm at Z=0 and Z=30 mm; solid loft without guides",
+    "assembly": "Fixed inclusions of the extrusion at the origin and revolved part translated +120 mm in X",
+    "aiCircle": "One additional circle of radius 7 mm at world X=200, Y=0, Z=0 in the extrusion part; native XY sketch named AI Circle"
+  },
+  "actions": "Create one new working project and four documents. Open these documents, create the listed native geometry and assembly inclusions, rename the extrusion sketch after saving to check revision handling, and save the four test documents. Retain all results for review.",
+  "scope": "Only this newly created project and its newly created documents may be changed. Existing projects/documents are read only. No deletion, check-in, CAM changes, NC output or machine execution.",
+  "failure": "Stop on the first failure, preserve receipts and inspect the native result. No automatic retry of a failed or uncertain mutation."
+}

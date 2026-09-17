@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMultiLayer.GetMultiMaterialLayers.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMultiLayer.GetMultiMaterialLayers.html",
+  "sha256": "e930add90e92ea7c2b636549673f120eda594c544d3b152ee761ad61e2d79247",
+  "text": "# Method GetMultiMaterialLayers\n\n#### GetMultiMaterialLayers(DocumentId, out List<SmartMaterial>, out List<SmartReal>, out List<SmartReal>)\n\nGets the multi layer layers\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 0, 0)]\nbool GetMultiMaterialLayers(DocumentId inDocumentId, out List<SmartMaterial> outMaterials, out List<SmartReal> outThicknesses, out List<SmartReal> outOrientations)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document  |  \n \n|  List<SmartMaterial> |  outMaterials |  Materials, from top to bottom  |  \n \n|  List<SmartReal> |  outThicknesses |  Thicknesses, from top to bottom  |  \n \n|  List<SmartReal> |  outOrientations |  Orientations, from top to bottom  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  True if data has been collected with success.  |  \n\n##### Remarks\n\nThis method is available since v7.19.\n",
+  "markdown": "markdown/cad/99a9594da6739a5bf9e5d04a.md",
+  "originalHtml": "html/cad/99a9594da6739a5bf9e5d04a.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IGeometries3D.CreatePlaneWithExtent.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IGeometries3D.CreatePlaneWithExtent.html",
+  "sha256": "c90deed7ac24f897107f5c7275da25a7413946d8e2fbfc07aecc221087c76642",
+  "text": "# Method CreatePlaneWithExtent\n\n#### CreatePlaneWithExtent(DocumentId, Plane3D, double, double, double, double)\n\nCreates a plane entity with specified extent in a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 201, 100)]\nElementId CreatePlaneWithExtent(DocumentId inDocumentId, Plane3D inGeometry, double inXMin, double inXMax, double inYMin, double inYMax)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  Plane3D |  inGeometry |  Plane geometry.  |  \n \n|  double |  inXMin |  Minimum X plane coordinate of extent.  |  \n \n|  double |  inXMax |  Maximum X plane coordinate of extent.  |  \n \n|  double |  inYMin |  Minimum Y plane coordinate of extent.  |  \n \n|  double |  inYMax |  Maximum Y plane coordinate of extent.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the created plane entity.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.7.201.100.\n",
+  "markdown": "markdown/kernel/b9c7da61572982b121318aa1.md",
+  "originalHtml": "html/kernel/b9c7da61572982b121318aa1.html"
+}

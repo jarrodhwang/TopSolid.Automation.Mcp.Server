@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartSection3D.ElementId.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartSection3D.ElementId.html",
+  "sha256": "303ff6cc196a1fcc5b748be2018792a2ad94ba9befb3d96cfe77f2a27ecd4c6d",
+  "text": "# Field ElementId\n\nProviding element identifier, or empty if none.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic ElementId ElementId\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Providing element identifier, or empty if none. |\n",
+  "markdown": "markdown/kernel/ca2f96b73d99b58a528a11d5.md",
+  "originalHtml": "html/kernel/ca2f96b73d99b58a528a11d5.html"
+}

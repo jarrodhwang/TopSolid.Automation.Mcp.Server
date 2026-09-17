@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IParameters.GetNamedValueSpindleRateValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IParameters.GetNamedValueSpindleRateValue.html",
+  "sha256": "ad075037182e5b06e86436fe0866bdca254545cf83e08777b7806bd5e6a284fb",
+  "text": "# Method GetNamedValueSpindleRateValue\n\n#### GetNamedValueSpindleRateValue(ElementExId, string)\n\nFrom a spindle rate parameter, get a SmartReal with the computed spindle rate value. Use GetValue(ParameterId) to get the spindle rate type.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 15, 400, 200)]\nSmartReal GetNamedValueSpindleRateValue(ElementExId inElementId, string inName)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementExId |  inElementId |  Element owner of the parameter.  |  \n \n|  string |  inName |  Full or partial name of the parameter to get.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartReal |  A new SmartReal with the computed value of the parameter.  |\n",
+  "markdown": "markdown/cam/6217e588dcf15891f5eddde1.md",
+  "originalHtml": "html/cam/6217e588dcf15891f5eddde1.html"
+}

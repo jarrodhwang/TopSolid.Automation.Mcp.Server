@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.PdmMajorRevisionId.-ctor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.PdmMajorRevisionId.-ctor.html",
+  "sha256": "e5a3f04aa4f6b9f138936894661a2408b051f40461562e772a965cc052a27beb",
+  "text": "# Constructor PdmMajorRevisionId\n\n#### PdmMajorRevisionId(string)\n\nInitializes a new instance of the PdmMajorRevisionId structure.\n\n##### Declaration\n\n```\npublic PdmMajorRevisionId(string inPdmMajorRevisionId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  string |  inPdmMajorRevisionId |  PDM major revision identifier, or null if empty.  |\n",
+  "markdown": "markdown/kernel/b52e93a2e469849d498733fa.md",
+  "originalHtml": "html/kernel/b52e93a2e469849d498733fa.html"
+}

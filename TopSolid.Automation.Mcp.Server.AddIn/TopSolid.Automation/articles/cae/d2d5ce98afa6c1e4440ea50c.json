@@ -1,0 +1,8 @@
+{
+  "path": "api/cae/TopSolid.Cae.Kernel.Automating.IResults.GetMeasureResultType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cae/TopSolid.Cae.Kernel.Automating.IResults.GetMeasureResultType.html",
+  "sha256": "25da4d48caeaa975257b58ceb75e1ddf4fdf23ba482afff9c04d6fcc94c8ddba",
+  "text": "# Method GetMeasureResultType\n\n#### GetMeasureResultType(ElementId)\n\nGets Measure Result Type\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 212, 0)]\nMeasureResultType GetMeasureResultType(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Id of the measure  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  MeasureResultType |  Measure result type  |\n",
+  "markdown": "markdown/cae/d2d5ce98afa6c1e4440ea50c.md",
+  "originalHtml": "html/cae/d2d5ce98afa6c1e4440ea50c.html"
+}

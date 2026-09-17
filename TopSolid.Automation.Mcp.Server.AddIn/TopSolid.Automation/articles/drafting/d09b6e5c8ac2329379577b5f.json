@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.SurfaceFinishTools.SurfaceFinishSymbolType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.SurfaceFinishTools.SurfaceFinishSymbolType.html",
+  "sha256": "53e9565e78c55415203682ff0153524ddc507f93ad1c0b7b8fc1e0fa251c6c8f",
+  "text": "# Enum SurfaceFinishSymbolType\n\nDefines the various types of symbol of a surface finish entity.\n\n###### Namespace: TopSolid.Cad.Drafting.Automating.SurfaceFinishTools\n\n###### Assembly: TopSolid.Cad.Drafting.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 17, 0, 0)]\npublic enum SurfaceFinishSymbolType\n```\n\n##### Remarks\n\nThis enum is available since v7.17.000.000.\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  AnyProcessAllowed |  Indicates that any process allowed.  |  \n \n|  Delta |  JIS delta symbol.  |  \n \n|  MaterialRemovalRequired |  Indicates that machining by material removal is used.  |  \n \n|  NoMaterialRemoved |  Indicates that it is forbidden to use machining material removal.  |  \n \n|  None |  None.  |  \n \n|  Unclassified |  Unclassified type.  |  \n \n|  Wave |  JIS wave symbol.  |\n",
+  "markdown": "markdown/drafting/d09b6e5c8ac2329379577b5f.md",
+  "originalHtml": "html/drafting/d09b6e5c8ac2329379577b5f.html"
+}

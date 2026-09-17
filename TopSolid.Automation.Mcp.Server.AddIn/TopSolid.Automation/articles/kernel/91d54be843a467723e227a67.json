@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IVisualization3D.GetViewRenderMode.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IVisualization3D.GetViewRenderMode.html",
+  "sha256": "07a7eb73ec83ed560d0a94d15a651c0d1d70c40fdf1d845d9690334f3091cc9d",
+  "text": "# Method GetViewRenderMode\n\n#### GetViewRenderMode(DocumentId, int)\n\nGets the render mode of a graphic view of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nRenderMode GetViewRenderMode(DocumentId inDocumentId, int inViewId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n \n|  int |  inViewId |  Identifier of the graphic view to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  RenderMode |  View render mode.  |  \n\n##### Remarks\n\nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/91d54be843a467723e227a67.md",
+  "originalHtml": "html/kernel/91d54be843a467723e227a67.html"
+}

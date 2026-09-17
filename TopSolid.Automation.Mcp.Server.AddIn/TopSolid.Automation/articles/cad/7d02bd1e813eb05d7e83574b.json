@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IBoms.SetSourceRepresentation.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IBoms.SetSourceRepresentation.html",
+  "sha256": "1a34bd35f200cdcc995bda80982f4769a3d0009b24a38015abcb4647e5f423a0",
+  "text": "# Method SetSourceRepresentation\n\n#### SetSourceRepresentation(DocumentId, ElementId)\n\nSets the source representation of a BOM.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 12, 0, 0)]\nvoid SetSourceRepresentation(DocumentId inDocumentId, ElementId inRepresentationId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the BOM document to modify.  |  \n \n|  ElementId |  inRepresentationId |  Identifier of the representation of the source assembly document.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.12.\n",
+  "markdown": "markdown/cad/7d02bd1e813eb05d7e83574b.md",
+  "originalHtml": "html/cad/7d02bd1e813eb05d7e83574b.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.TopSolidHostInstance.Parameters.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.TopSolidHostInstance.Parameters.html",
+  "sha256": "015f263727d06a156056f60c8db770309232db1ad6ce715203dd822d0897a79f",
+  "text": "# Property Parameters\n\n#### Parameters\n\nGets access to parameter entities, or null if not available.\n\n##### Declaration\n\n```\npublic IParameters Parameters { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  IParameters |   |\n",
+  "markdown": "markdown/kernel/20f86d304535b1e0017a8272.md",
+  "originalHtml": "html/kernel/20f86d304535b1e0017a8272.html"
+}

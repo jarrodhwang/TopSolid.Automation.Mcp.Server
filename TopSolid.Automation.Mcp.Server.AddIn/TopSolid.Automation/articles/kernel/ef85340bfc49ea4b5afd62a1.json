@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IOptions.SetUpdateModes.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IOptions.SetUpdateModes.html",
+  "sha256": "bc2240447d074fab550ba480c341c11d86d8a1ae29bca8074f15bfc090e8d422",
+  "text": "# Method SetUpdateModes\n\n#### SetUpdateModes(DocumentId, bool, bool)\n\nSets the update modes of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 12, 300, 160)]\nvoid SetUpdateModes(DocumentId inDocumentId, bool inIsHealing, bool inIsTolerant)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  bool |  inIsHealing |  Whether update automatically heals damaged operations.  |  \n \n|  bool |  inIsTolerant |  Whether update ignores modifications that are less than standard precision.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.12.300.160.\n",
+  "markdown": "markdown/kernel/ef85340bfc49ea4b5afd62a1.md",
+  "originalHtml": "html/kernel/ef85340bfc49ea4b5afd62a1.html"
+}

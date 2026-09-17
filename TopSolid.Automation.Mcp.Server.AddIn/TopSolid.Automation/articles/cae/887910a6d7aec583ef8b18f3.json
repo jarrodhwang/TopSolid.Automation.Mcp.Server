@@ -1,0 +1,8 @@
+{
+  "path": "api/cae/TopSolid.Cae.Kernel.Automating.TopSolidCaeHost.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cae/TopSolid.Cae.Kernel.Automating.TopSolidCaeHost.html",
+  "sha256": "37e371f860a5c96caac03f248863efceec75b618616a412d87fc6fbd31453a94",
+  "text": "# Class TopSolidCaeHost\n\nRepresents TopSolid'Cae host providing WCF services for automating.\n\n##### Inheritance\n \nobject\n \nTopSolidCaeHost\n\n##### Inherited Members\n \n object.ToString() \n \n object.Equals(object) \n \n object.Equals(object, object) \n \n object.ReferenceEquals(object, object) \n \n object.GetHashCode() \n \n object.GetType() \n \n object.MemberwiseClone() \n\n###### Namespace: TopSolid.Cae.Kernel.Automating\n\n###### Assembly: TopSolid.Cae.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[AvailableSinceVersion(7, 19, 15, 0)]\npublic static class TopSolidCaeHost\n```\n\n##### Remarks\n\nThis class is available since v7.17.\n\n### Properties \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   Documents  |  Gets access to Cae documents, or null if not connected.  |  \n \n|   HostInstance  |  Gets the host instance.  |  \n \n|   IsConnected  |  Tells whether TopSolid is connected.  |  \n \n|   Results  |  Gets access to Cae results, or null if not connected.  |  \n\n### Methods \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   Connect()  |  Connects to TopSolid application.  |  \n \n|   Disconnect()  |  Disconnect from TopSolid application.  |\n",
+  "markdown": "markdown/cae/887910a6d7aec583ef8b18f3.md",
+  "originalHtml": "html/cae/887910a6d7aec583ef8b18f3.html"
+}

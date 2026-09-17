@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.ErpPdmId.MinorRevisionId.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.ErpPdmId.MinorRevisionId.html",
+  "sha256": "6b611ddf6d8f167acf3984e1297782ddac39d4400c170b0054f07c225e764a5f",
+  "text": "# Property MinorRevisionId\n\n#### MinorRevisionId\n\nGets the PDM object minor revision Id\n\n##### Declaration\n\n```\npublic PdmMinorRevisionId MinorRevisionId { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  PdmMinorRevisionId |   |\n",
+  "markdown": "markdown/pdmexplorer/d1407c14bd94724ce3dc1349.md",
+  "originalHtml": "html/pdmexplorer/d1407c14bd94724ce3dc1349.html"
+}

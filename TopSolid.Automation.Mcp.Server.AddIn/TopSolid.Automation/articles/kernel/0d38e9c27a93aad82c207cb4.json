@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdmSecurity.GetPermissions.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdmSecurity.GetPermissions.html",
+  "sha256": "390e6e74cdfc5729ba9b9875009a8633d8f5ebbb0bea3562386982b8e3fb2cd0",
+  "text": "# Method GetPermissions\n\n#### GetPermissions(PdmObjectId)\n\nRetrieves security of a project, folder or document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 302, 60)]\nList<PdmSecurityUserOrGroupPermissions> GetPermissions(PdmObjectId inObjectId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  Project, folder or document identifier to retrieve permissions or empty for system permissions.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<PdmSecurityUserOrGroupPermissions> |  Security permissions.  |  \n\n##### Remarks\n\nThis method is available since v7.8.302.060.\n",
+  "markdown": "markdown/kernel/0d38e9c27a93aad82c207cb4.md",
+  "originalHtml": "html/kernel/0d38e9c27a93aad82c207cb4.html"
+}

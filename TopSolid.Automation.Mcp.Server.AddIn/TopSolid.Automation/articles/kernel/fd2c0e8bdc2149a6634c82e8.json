@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IGeometries3D.SetPointGeometry.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IGeometries3D.SetPointGeometry.html",
+  "sha256": "d35851cc7db3311ff9c125076fef9fe1c678e8129f9f2f77b2fedb052caf97be",
+  "text": "# Method SetPointGeometry\n\n#### SetPointGeometry(ElementId, Point3D)\n\nSets the geometry of a point entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nvoid SetPointGeometry(ElementId inElementId, Point3D inGeometry)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the point entity to modify.  |  \n \n|  Point3D |  inGeometry |  New point geometry.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/fd2c0e8bdc2149a6634c82e8.md",
+  "originalHtml": "html/kernel/fd2c0e8bdc2149a6634c82e8.html"
+}

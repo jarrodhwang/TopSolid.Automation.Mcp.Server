@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.CreateProject.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.CreateProject.html",
+  "sha256": "afc65ba6c25a5b3eecc55548ff132863dc6df480e2b064bd5bd90491c80a8849",
+  "text": "# Method CreateProject\n\n#### CreateProject(string, bool)\n\nCreates a project.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nPdmObjectId CreateProject(string inProjectName, bool inIsLibrary)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  string |  inProjectName |  Project name.  |  \n \n|  bool |  inIsLibrary |  Whether it is a library to create or a working project.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  PdmObjectId |  PDM object identifier of the created project.  |  \n\n##### Remarks\n\nIf creation fails, the returned PDM object identifier is empty.\n \nThis method must not be called between StartModification(string, bool) and EndModification(bool, bool) methods calls.\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/93272df5029c03f26e2e1e68.md",
+  "originalHtml": "html/kernel/93272df5029c03f26e2e1e68.html"
+}

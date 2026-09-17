@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.Signature.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.Signature.html",
+  "sha256": "ca8f7ad501171008fc7220dc1b82482d3ed555afab46e82a70784da1e5f4a629",
+  "text": "# Property Signature\n\n#### Signature\n\nGets the signature of PDM.\n\n##### Declaration\n\n```\n[AvailableSinceVersion(7, 18, 400, 60)]\nstring Signature { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |   |  \n\n##### Remarks\n\nThis property is available since v7.18 SP7.\n",
+  "markdown": "markdown/pdmexplorer/c1a4f94db36b106b4d2b0db9.md",
+  "originalHtml": "html/pdmexplorer/c1a4f94db36b106b4d2b0db9.html"
+}

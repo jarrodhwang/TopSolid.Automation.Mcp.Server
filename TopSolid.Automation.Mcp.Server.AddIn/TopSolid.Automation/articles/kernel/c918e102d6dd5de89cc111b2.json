@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IDocuments.GetPropertyLocalizedDomainName.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IDocuments.GetPropertyLocalizedDomainName.html",
+  "sha256": "9421debbbbf207bec12144865b72f41185ff548e9a109826e06aae6919d669ca",
+  "text": "# Method GetPropertyLocalizedDomainName\n\n#### GetPropertyLocalizedDomainName(DocumentId, string)\n\nGets the localized domain name of a document property.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 300, 60)]\nstring GetPropertyLocalizedDomainName(DocumentId inDocumentId, string inFullName)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n \n|  string |  inFullName |  Full name of the document property to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  Localized domain name of the property.  |  \n\n##### Remarks\n\nThis method is available since v7.8.300.60.\n",
+  "markdown": "markdown/kernel/c918e102d6dd5de89cc111b2.md",
+  "originalHtml": "html/kernel/c918e102d6dd5de89cc111b2.html"
+}

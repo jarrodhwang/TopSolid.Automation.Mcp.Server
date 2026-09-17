@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.TopSolidDraftingHost.Draftings.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.TopSolidDraftingHost.Draftings.html",
+  "sha256": "ab9d59fe9444d0819dda6b0eae07ae5d8aa2ade0ad29e509dd5bb0014a5c7f34",
+  "text": "# Property Draftings\n\n#### Draftings\n\nGets access to drafting documents, or null if not connected.\n\n##### Declaration\n\n```\npublic static IDraftings Draftings { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  IDraftings |   |\n",
+  "markdown": "markdown/drafting/2b18accdb0bb53f1ab194801.md",
+  "originalHtml": "html/drafting/2b18accdb0bb53f1ab194801.html"
+}

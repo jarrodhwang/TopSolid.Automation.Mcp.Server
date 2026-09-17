@@ -1,0 +1,8 @@
+{
+  "path": "api/cae/TopSolid.Cae.Kernel.Automating.TopSolidCaeHostInstance.Disconnect.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cae/TopSolid.Cae.Kernel.Automating.TopSolidCaeHostInstance.Disconnect.html",
+  "sha256": "88b7d5032b4eede2cf2186d0f8fac23aef50dc1c73c275ea89b576ad48e95a85",
+  "text": "# Method Disconnect\n\n#### Disconnect()\n\nDisconnect from TopSolid application.\n\n##### Declaration\n\n```\npublic void Disconnect()\n```\n",
+  "markdown": "markdown/cae/69d2e653e6ffc220f02d6ecd.md",
+  "originalHtml": "html/cae/69d2e653e6ffc220f02d6ecd.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.SearchMinorRevisionReferences.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.SearchMinorRevisionReferences.html",
+  "sha256": "9faaa2ee02021ee8a299f79ac926e906166b75114961e2aef170c7060a98949d",
+  "text": "# Method SearchMinorRevisionReferences\n\n#### SearchMinorRevisionReferences(PdmMinorRevisionId)\n\nSearches all references of a document minor revision.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nList<PdmMinorRevisionId> SearchMinorRevisionReferences(PdmMinorRevisionId inMinorRevisionId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmMinorRevisionId |  inMinorRevisionId |  Identifier of the document minor revision to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<PdmMinorRevisionId> |  Referenced minor revisions.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/kernel/4241b366912e85160d1aaaa7.md",
+  "originalHtml": "html/kernel/4241b366912e85160d1aaaa7.html"
+}

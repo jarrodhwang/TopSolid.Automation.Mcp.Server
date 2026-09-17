@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IApplication.ActiveCommandName.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IApplication.ActiveCommandName.html",
+  "sha256": "42bcabdb2bbaa48da4e3fe11503ec55ed737f087d6d1dfbcbce55c4a21d60286",
+  "text": "# Property ActiveCommandName\n\n#### ActiveCommandName\n\nGets the localized name of the active command, as it appears to the user in the menu.\n\n##### Declaration\n\n```\n[AvailableSinceVersion(7, 6, 0, 0)]\nstring ActiveCommandName { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |   |  \n\n##### Remarks\n\nIf there is no active command, null is returned.\n \nThis property is available since v7.6.\n",
+  "markdown": "markdown/kernel/cc6d200d44f58aefb8a37a4e.md",
+  "originalHtml": "html/kernel/cc6d200d44f58aefb8a37a4e.html"
+}

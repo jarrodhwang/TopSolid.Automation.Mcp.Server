@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.DocumentId.op_Equality.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.DocumentId.op_Equality.html",
+  "sha256": "ab2641df5cb7dbf6ac2e806b30f0e6ce7215ddaba246f696901ac9de28761334",
+  "text": "# Operator operator ==\n\n#### operator ==(DocumentId, DocumentId)\n\nTells whether two document identifiers are equal.\n\n##### Declaration\n\n```\npublic static bool operator ==(DocumentId inDocumentId1, DocumentId inDocumentId2)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId1 |  First document identifier.  |  \n \n|  DocumentId |  inDocumentId2 |  Second document identifier.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Document identifiers are equal.  |\n",
+  "markdown": "markdown/kernel/2164357f64ec3b41b550834e.md",
+  "originalHtml": "html/kernel/2164357f64ec3b41b550834e.html"
+}

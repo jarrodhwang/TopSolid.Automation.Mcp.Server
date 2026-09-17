@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ILayers.IsLayerFolder.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ILayers.IsLayerFolder.html",
+  "sha256": "a1373d7907b6fc30b655f85016cc4a8c80fcd664575135c920361fb764e5e853",
+  "text": "# Method IsLayerFolder\n\n#### IsLayerFolder(ElementId)\n\nTells whether an Element is a layer folder.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 18, 0, 0)]\nbool IsLayerFolder(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the Element to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  true if element is actually a layer folder  |  \n\n##### Remarks\n\nThis method is available since v7.18.\n",
+  "markdown": "markdown/kernel/2a4b5f89708224827dee5580.md",
+  "originalHtml": "html/kernel/2a4b5f89708224827dee5580.html"
+}

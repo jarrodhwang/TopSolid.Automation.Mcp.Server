@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IOperations.SetModelingTolerances.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IOperations.SetModelingTolerances.html",
+  "sha256": "0689736a41718152ea92cabd15214b11a9ac77f0d1bf97c5c260467b54aba403",
+  "text": "# Method SetModelingTolerances\n\n#### SetModelingTolerances(ElementId, double, double)\n\nSets the modeling tolerances of an operation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nvoid SetModelingTolerances(ElementId inElementId, double inLinearTolerance, double inAngularTolerance)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the operation to modify.  |  \n \n|  double |  inLinearTolerance |  Linear tolerance (in meters, within [0.0001mm,0.1mm]), or 0 for unchanged.  |  \n \n|  double |  inAngularTolerance |  Angular tolerance (in radians, within [0.01°,10°]), or 0 for unchanged.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.8.\n",
+  "markdown": "markdown/kernel/e587364aafe8988b9ff9859f.md",
+  "originalHtml": "html/kernel/e587364aafe8988b9ff9859f.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.ErpProperty.ToString.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.ErpProperty.ToString.html",
+  "sha256": "89b109c5ae3d1a6b081dd5007a4216d828d03192e264d8cc459e2735a8b9e244",
+  "text": "# Method ToString\n\n#### ToString()\n\n##### Declaration\n\n```\npublic override string ToString()\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |   |  \n\n##### Overrides\n \nValueType.ToString()\n",
+  "markdown": "markdown/pdmexplorer/4dac6209321a9e2bdb2b2e49.md",
+  "originalHtml": "html/pdmexplorer/4dac6209321a9e2bdb2b2e49.html"
+}

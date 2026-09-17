@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IOperations.IsStrongTuningOperation.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IOperations.IsStrongTuningOperation.html",
+  "sha256": "e7774b5363bf1f7bc2a6d0329bf8fab036b62c36a9714c2a8f08dd7ac4fd374d",
+  "text": "# Method IsStrongTuningOperation\n\n#### IsStrongTuningOperation(ElementExId)\n\nTells whether an operation is a strong tuning operation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nbool IsStrongTuningOperation(ElementExId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementExId |  inElementId |  Identifier of the operation to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  The operation is a string tuning operation.  |\n",
+  "markdown": "markdown/cam/2ef70d181d05abb1ba09fa72.md",
+  "originalHtml": "html/cam/2ef70d181d05abb1ba09fa72.html"
+}

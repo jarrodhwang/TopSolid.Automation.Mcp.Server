@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.INCFiles.GetNCCodes.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.INCFiles.GetNCCodes.html",
+  "sha256": "9a2979d711e0b12e3df46944b10d5aed4ea5bab8841c607a0484e4aabc80f1df",
+  "text": "# Method GetNCCodes\n\n#### GetNCCodes(ElementId)\n\nGet the NC Codes of the given NC file entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 9, 0, 0)]\nList<string> GetNCCodes(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  The NC file Element Id.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<string> |  The NC Codes of this element  |  \n\n##### Remarks\n\nThe total number of strings can be lower than the real number, depending of the quota of messages Com protocol can handle. To get the real number of strings, use a loop of the other GetNCCodes function.\n",
+  "markdown": "markdown/cam/d219123a965f952a21e2606e.md",
+  "originalHtml": "html/cam/d219123a965f952a21e2606e.html"
+}

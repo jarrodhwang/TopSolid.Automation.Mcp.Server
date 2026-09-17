@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.TopSolidHost.ParseVersion.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.TopSolidHost.ParseVersion.html",
+  "sha256": "36b1335e4fc32feb0449509fdd11923c300e67896b1a7fb8d3ed7f4a1312219a",
+  "text": "# Method ParseVersion\n\n#### ParseVersion(string)\n\nParses a string version (i.e. \"7.8.200.0\" to get the corresponding integer version (i.e. 708200000).\n\n##### Declaration\n\n```\npublic static int ParseVersion(string inVersion)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  string |  inVersion |  String version.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  int |  Integer version.  |\n",
+  "markdown": "markdown/kernel/13e621b6b021bc6e9c011dd8.md",
+  "originalHtml": "html/kernel/13e621b6b021bc6e9c011dd8.html"
+}

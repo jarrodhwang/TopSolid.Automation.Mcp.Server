@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.PdmSecurityPermission.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.PdmSecurityPermission.html",
+  "sha256": "032e4212bd2819c5680c3c638f82a5a3cc402bf3b1d6b139643c05ba133b71c7",
+  "text": "# Enum PdmSecurityPermission\n\nDefines the various permissions of a security.\n\n###### Namespace: TopSolid.Pdm.Explorer.Automating\n\n###### Assembly: TopSolid.Pdm.Explorer.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\npublic enum PdmSecurityPermission\n```\n\n##### Remarks\n\nThis enum is available since v7.8.\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  Denied |  Denied.  |  \n \n|  Granted |  Granted.  |  \n \n|  Unspecified |  Unspecified.  |\n",
+  "markdown": "markdown/pdmexplorer/063417a7489953799e583e51.md",
+  "originalHtml": "html/pdmexplorer/063417a7489953799e583e51.html"
+}

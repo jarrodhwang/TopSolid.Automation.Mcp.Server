@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ISimulations.GetSimulations.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ISimulations.GetSimulations.html",
+  "sha256": "6deb65566de33c741431cdb02c99b09c51a234537d13c2815b0106d9599c72a0",
+  "text": "# Method GetSimulations\n\n#### GetSimulations(DocumentId)\n\nGets the simulation entities that are in the simulations folder of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nList<ElementId> GetSimulations(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementId> |  Simulation entities found.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/cad/ee4ebf08a6153c43f58097b2.md",
+  "originalHtml": "html/cad/ee4ebf08a6153c43f58097b2.html"
+}

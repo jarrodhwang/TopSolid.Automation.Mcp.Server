@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.PdmProjectFolderId.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.PdmProjectFolderId.html",
+  "sha256": "740e348253a1146801bd311127ed99dc79fc4a5f01636bad5d55fa12ed08ee88",
+  "text": "# Struct PdmProjectFolderId\n\nRepresents a PDM project folder identifier.\n\n##### Inherited Members\n \n ValueType.Equals(object) \n \n ValueType.GetHashCode() \n \n ValueType.ToString() \n \n object.Equals(object, object) \n \n object.ReferenceEquals(object, object) \n \n object.GetType() \n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 9, 0, 0)]\npublic struct PdmProjectFolderId\n```\n\n##### Remarks\n\nThis structure is available since v7.9.\n\n### Constructors \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   PdmProjectFolderId(string)  |  Initializes a new instance of the PdmProjectFolderId structure.  |  \n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   Empty  |  Empty identifier.  |  \n\n### Properties \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   Id  |  Gets the PDM project folder identifier.  |  \n \n|   IsEmpty  |  Tells whether the identifier is empty.  |\n",
+  "markdown": "markdown/kernel/5117ea64990bbf43ce9478d8.md",
+  "originalHtml": "html/kernel/5117ea64990bbf43ce9478d8.html"
+}

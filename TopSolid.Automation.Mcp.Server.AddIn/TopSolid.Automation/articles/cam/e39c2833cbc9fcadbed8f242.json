@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.TopSolidCamHostInstance.Parts.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.TopSolidCamHostInstance.Parts.html",
+  "sha256": "e3e597de01b91eac27c9cb3fee0e8316b727284dfad55cba32dcbcaa6acb9a1e",
+  "text": "# Property Parts\n\n#### Parts\n\nGets access to Cam parts, or null if not connected.\n\n##### Declaration\n\n```\npublic IParts Parts { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  IParts |   |\n",
+  "markdown": "markdown/cam/e39c2833cbc9fcadbed8f242.md",
+  "originalHtml": "html/cam/e39c2833cbc9fcadbed8f242.html"
+}

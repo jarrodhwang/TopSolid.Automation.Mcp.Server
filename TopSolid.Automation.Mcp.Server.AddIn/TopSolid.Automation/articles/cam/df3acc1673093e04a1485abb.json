@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IParameters.GetNamedValueFeedRateValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IParameters.GetNamedValueFeedRateValue.html",
+  "sha256": "210f55b0cd5b2c67b28c89252f75620cfe4e914cdfb733ed6e3d8b4b3d716275",
+  "text": "# Method GetNamedValueFeedRateValue\n\n#### GetNamedValueFeedRateValue(ElementExId, string)\n\nFrom a feedrate parameter, get a SmartReal with the computed feedrate value. Use GetValue(ParameterId) to get the feedrate type.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 15, 400, 200)]\nSmartReal GetNamedValueFeedRateValue(ElementExId inElementId, string inName)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementExId |  inElementId |  Element owner of the parameter.  |  \n \n|  string |  inName |  Full or partial name of the parameter to get.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartReal |  A new SmartReal with the computed value of the parameter.  |\n",
+  "markdown": "markdown/cam/df3acc1673093e04a1485abb.md",
+  "originalHtml": "html/cam/df3acc1673093e04a1485abb.html"
+}

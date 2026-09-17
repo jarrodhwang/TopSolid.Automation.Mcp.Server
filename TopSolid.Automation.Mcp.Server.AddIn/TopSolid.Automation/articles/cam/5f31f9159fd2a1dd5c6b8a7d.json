@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IOperations.GetPart.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IOperations.GetPart.html",
+  "sha256": "35cc5869b3e78057b0440d40d35eb76d26b5044025a832c41da0aa56212cc243",
+  "text": "# Method GetPart\n\n#### GetPart(ElementExId)\n\nGets the part entity from the given operation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nElementId GetPart(ElementExId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementExId |  inElementId |  Identifier of the operation to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Part entity.  |\n",
+  "markdown": "markdown/cam/5f31f9159fd2a1dd5c6b8a7d.md",
+  "originalHtml": "html/cam/5f31f9159fd2a1dd5c6b8a7d.html"
+}

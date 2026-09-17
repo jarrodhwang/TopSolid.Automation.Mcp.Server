@@ -1,0 +1,8 @@
+{
+  "path": "api/wire/TopSolid.Cam.NC.Wire.Automating.TopSolidWireTechnologyHostInstance.IsConnected.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/wire/TopSolid.Cam.NC.Wire.Automating.TopSolidWireTechnologyHostInstance.IsConnected.html",
+  "sha256": "65a8d94353d517e3ea327a9b5f857e6fbbf7914697583124380653f6e17e989e",
+  "text": "# Property IsConnected\n\n#### IsConnected\n\nTells whether TopSolid is connected.\n\n##### Declaration\n\n```\npublic bool IsConnected { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |   |\n",
+  "markdown": "markdown/wire/49f2dae9410ec677f9c6b670.md",
+  "originalHtml": "html/wire/49f2dae9410ec677f9c6b670.html"
+}

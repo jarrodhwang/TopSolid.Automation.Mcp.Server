@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IMaterials.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IMaterials.html",
+  "sha256": "31b216c68e1affdcb2ec28a7b7fb60eb66f1928f02870905c80c0eb9431cac2b",
+  "text": "# Interface IMaterials\n\nGives access to methods to read and interact with materials and textures.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[ServiceContract]\n[AvailableSinceVersion(7, 17, 400, 0)]\npublic interface IMaterials\n```\n\n##### Remarks\n\nThis interface is available since v7.17.\n\n### Methods \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   CloseTextureRetrievalSession(Guid)  |  Closes a texture retrieval session.  |  \n \n|   GetTextureImage(Guid, string)  |  Gets the texture image of an image signature.  |  \n \n|   GetTextureSignatures(Guid, IEnumerable<string>, int, string)  |  Gets texture signatures from all texture documents.  |  \n \n|   OpenTextureRetrievalSession()  |  Opens a texture retrieval session.  |\n",
+  "markdown": "markdown/kernel/6380f18fedc26b1a450195a1.md",
+  "originalHtml": "html/kernel/6380f18fedc26b1a450195a1.html"
+}

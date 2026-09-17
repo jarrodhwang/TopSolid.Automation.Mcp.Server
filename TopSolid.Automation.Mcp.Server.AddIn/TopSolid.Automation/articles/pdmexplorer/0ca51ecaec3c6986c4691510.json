@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.GetCustomerContact.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.GetCustomerContact.html",
+  "sha256": "eea8432b5e8a6a7b4e872c1be06a76c2e503ae07212048ec2f810e1308f2545b",
+  "text": "# Method GetCustomerContact\n\n#### GetCustomerContact(PdmObjectId)\n\nGets the customer contact of an object.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nstring GetCustomerContact(PdmObjectId inObjectId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  Object identifier.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  Object customer contact.  |  \n\n##### Remarks\n\nThis method is available since v7.10.300.120.\n",
+  "markdown": "markdown/pdmexplorer/0ca51ecaec3c6986c4691510.md",
+  "originalHtml": "html/pdmexplorer/0ca51ecaec3c6986c4691510.html"
+}

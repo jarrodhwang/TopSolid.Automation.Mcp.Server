@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Property.Type.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Property.Type.html",
+  "sha256": "0d7c4f86c03098c74d74c2a857120282a790a3cba2410fbfb1fb8801c28b2307",
+  "text": "# Property Type\n\n#### Type\n\nGets the property type.\n\n##### Declaration\n\n```\npublic abstract PropertyType Type { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  PropertyType |   |\n",
+  "markdown": "markdown/kernel/aea46a2b737e28c2f74c3bfd.md",
+  "originalHtml": "html/kernel/aea46a2b737e28c2f74c3bfd.html"
+}

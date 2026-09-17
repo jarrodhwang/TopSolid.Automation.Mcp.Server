@@ -1,0 +1,8 @@
+{
+  "path": "api/wire/TopSolid.Cam.NC.Wire.Automating.IWireTechnologies.GetDepthCutting.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/wire/TopSolid.Cam.NC.Wire.Automating.IWireTechnologies.GetDepthCutting.html",
+  "sha256": "e09a605ef8243fc824ea6fa9d91c68f101a3745b40b7dce5f73f6e01a0c1f50d",
+  "text": "# Method GetDepthCutting\n\n#### GetDepthCutting(ElementId)\n\nGet depth cutting.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 160)]\nSmartReal GetDepthCutting(ElementId inTechnologyId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inTechnologyId |  Identifier of the element to modify.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartReal |  Depth cutting in SI units.  |\n",
+  "markdown": "markdown/wire/7a72bad8c65883797e370a36.md",
+  "originalHtml": "html/wire/7a72bad8c65883797e370a36.html"
+}

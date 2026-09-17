@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartCode.-ctor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartCode.-ctor.html",
+  "sha256": "a2fbefd90de53230711b483bf5cb1a2d8f7385828d154ae01879ce833eb7b74d",
+  "text": "# Constructor SmartCode\n\n#### SmartCode(string)\n\nInitializes a new instance of the SmartCode class of type Basic.\n\n##### Declaration\n\n```\npublic SmartCode(string inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  string |  inValue |  The value.  |  \n\n#### SmartCode(ElementId)\n\nInitializes a new instance of the SmartCode class of type Element.\n\n##### Declaration\n\n```\npublic SmartCode(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of providing element.  |\n",
+  "markdown": "markdown/kernel/00dca035797be7c4bfe985b9.md",
+  "originalHtml": "html/kernel/00dca035797be7c4bfe985b9.html"
+}

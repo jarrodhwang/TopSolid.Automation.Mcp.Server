@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.UndoCheckOut.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.UndoCheckOut.html",
+  "sha256": "d6bb633d8374b96f5643c9744b4725508ec3192d5a6e8f6ba0f8f05388c63e2d",
+  "text": "# Method UndoCheckOut\n\n#### UndoCheckOut(PdmObjectId)\n\nUndoes the check-out of an object.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nvoid UndoCheckOut(PdmObjectId inObjectId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  Object identifier.  |  \n\n##### Remarks\n\nThis method must not be called between StartModification(string, bool) and EndModification(bool, bool) methods calls.\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/5a77bca9a1200e8a70c37879.md",
+  "originalHtml": "html/kernel/5a77bca9a1200e8a70c37879.html"
+}

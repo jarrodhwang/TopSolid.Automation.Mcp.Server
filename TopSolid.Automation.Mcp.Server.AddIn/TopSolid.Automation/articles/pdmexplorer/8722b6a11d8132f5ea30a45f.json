@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.TopSolidPdmExplorerHostInstance.Disconnect.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.TopSolidPdmExplorerHostInstance.Disconnect.html",
+  "sha256": "83efc308005c55844f2f7b31dab0a00297c3b63937ff656de950f74ba4d202a1",
+  "text": "# Method Disconnect\n\n#### Disconnect()\n\nDisconnects from TopSolid application.\n\n##### Declaration\n\n```\npublic void Disconnect()\n```\n",
+  "markdown": "markdown/pdmexplorer/8722b6a11d8132f5ea30a45f.md",
+  "originalHtml": "html/pdmexplorer/8722b6a11d8132f5ea30a45f.html"
+}

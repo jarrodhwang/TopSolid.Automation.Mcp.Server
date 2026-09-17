@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IElements.GetDescription.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IElements.GetDescription.html",
+  "sha256": "c325d1263d5413210cf7dbe787f215c656bc51262ec3eee4aeb629a69f9dea91",
+  "text": "# Method GetDescription\n\n#### GetDescription(ElementId)\n\nGets the description of an element.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nstring GetDescription(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  Description of the element, or null if the element has no description.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/5855f9a332e88d0e65cce0e4.md",
+  "originalHtml": "html/kernel/5855f9a332e88d0e65cce0e4.html"
+}

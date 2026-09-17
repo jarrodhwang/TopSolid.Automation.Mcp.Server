@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.ImportFile.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.ImportFile.html",
+  "sha256": "c9df889243aa3ebc35d798c4d85c355262ae4b044007ccd6dc302460adc1caff",
+  "text": "# Method ImportFile\n\n#### ImportFile(string, PdmObjectId, string)\n\nImports a file without conversion.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nPdmObjectId ImportFile(string inFullName, PdmObjectId inContainerId, string inDocumentName)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  string |  inFullName |  Full name of the file to import.  |  \n \n|  PdmObjectId |  inContainerId |  PDM object identifier of project or folder container where imported file is to be stored.  |  \n \n|  string |  inDocumentName |  Name of the new document.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  PdmObjectId |  Identifier of the created document.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/pdmexplorer/19135d41a1717991f1bcf113.md",
+  "originalHtml": "html/pdmexplorer/19135d41a1717991f1bcf113.html"
+}

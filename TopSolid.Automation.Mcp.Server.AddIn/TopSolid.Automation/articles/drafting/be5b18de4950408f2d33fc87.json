@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.IDimensions.GetDimensions.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.IDimensions.GetDimensions.html",
+  "sha256": "18b7acf85d6497d62c6a652103978d68f132214c86b3ac9dcfd80d4a50268710",
+  "text": "# Method GetDimensions\n\n#### GetDimensions(ElementId)\n\nGets dimension annotations from a drawing view\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 255, 0)]\nList<ElementId> GetDimensions(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  View to analyze  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementId> |  The list of dimensions.  |\n",
+  "markdown": "markdown/drafting/be5b18de4950408f2d33fc87.md",
+  "originalHtml": "html/drafting/be5b18de4950408f2d33fc87.html"
+}

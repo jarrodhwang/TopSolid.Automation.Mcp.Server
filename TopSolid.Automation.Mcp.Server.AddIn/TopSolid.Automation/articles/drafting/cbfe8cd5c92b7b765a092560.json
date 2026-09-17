@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.TopSolidDraftingHostInstance.Annotations.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.TopSolidDraftingHostInstance.Annotations.html",
+  "sha256": "9ff39618cf20edf41310adf2286e46524d84dfc6f5c7731be195be76924e0384",
+  "text": "# Property Annotations\n\n#### Annotations\n\nGets access to tables in drafting documents, or null if not connected.\n\n##### Declaration\n\n```\npublic IAnnotations Annotations { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  IAnnotations |   |\n",
+  "markdown": "markdown/drafting/cbfe8cd5c92b7b765a092560.md",
+  "originalHtml": "html/drafting/cbfe8cd5c92b7b765a092560.html"
+}

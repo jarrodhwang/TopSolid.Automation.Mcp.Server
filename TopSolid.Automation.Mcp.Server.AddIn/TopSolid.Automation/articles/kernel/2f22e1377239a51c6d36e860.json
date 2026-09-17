@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Frame2D.OXY.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Frame2D.OXY.html",
+  "sha256": "c2d2f89d0a0dd76b47f76130f887ed2580bc76339adc450f672f5604eb495cb4",
+  "text": "# Field OXY\n\n(O,+X,+Y) absolute frame.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\npublic static readonly Frame2D OXY\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Frame2D |  (O,+X,+Y) absolute frame. |\n",
+  "markdown": "markdown/kernel/2f22e1377239a51c6d36e860.md",
+  "originalHtml": "html/kernel/2f22e1377239a51c6d36e860.html"
+}

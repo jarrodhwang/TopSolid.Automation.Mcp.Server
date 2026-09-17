@@ -1,0 +1,8 @@
+{
+  "path": "api/cae/TopSolid.Cae.Kernel.Automating.TopSolidCaeHost.Results.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cae/TopSolid.Cae.Kernel.Automating.TopSolidCaeHost.Results.html",
+  "sha256": "e96dc1246541a3cdc955930d2b7bcb12bc3eb0e71aaeb7bb21e0cc46440241fb",
+  "text": "# Property Results\n\n#### Results\n\nGets access to Cae results, or null if not connected.\n\n##### Declaration\n\n```\npublic static IResults Results { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  IResults |   |\n",
+  "markdown": "markdown/cae/c4222b8612ddb85358dd402d.md",
+  "originalHtml": "html/cae/c4222b8612ddb85358dd402d.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ElementItemId.-ctor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ElementItemId.-ctor.html",
+  "sha256": "5c081ca7f9fe7f8c4716697e05469380d2ff33882be88bed468f13354f4ef465",
+  "text": "# Constructor ElementItemId\n\n#### ElementItemId(ElementId, ItemLabel)\n\nInitializes a new instance of the ElementItemId structure.\n\n##### Declaration\n\n```\npublic ElementItemId(ElementId inElementId, ItemLabel inItemLabel)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element.  |  \n \n|  ItemLabel |  inItemLabel |  Label of the item within its element.  |\n",
+  "markdown": "markdown/kernel/edd37e1c42b934204f9f289d.md",
+  "originalHtml": "html/kernel/edd37e1c42b934204f9f289d.html"
+}

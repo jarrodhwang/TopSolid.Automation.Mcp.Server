@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.GetRealParameterConstraintsDiscretizationStep.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.GetRealParameterConstraintsDiscretizationStep.html",
+  "sha256": "bb64511773a4b2010b024153d5a91d5efde9c34c264d8c51ad02081eeab3f852",
+  "text": "# Method GetRealParameterConstraintsDiscretizationStep\n\n#### GetRealParameterConstraintsDiscretizationStep(ElementId)\n\nGets the real parameter constraint discretization step.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 17, 0, 0)]\nRealProperty GetRealParameterConstraintsDiscretizationStep(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the parameter.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  RealProperty |  The parameter constraints discretization step.  |  \n\n##### Remarks\n\nThis method is available since v7.17.000.000.\n",
+  "markdown": "markdown/kernel/02172ea02ea913f4821edb09.md",
+  "originalHtml": "html/kernel/02172ea02ea913f4821edb09.html"
+}

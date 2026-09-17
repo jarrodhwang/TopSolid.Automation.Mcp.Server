@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.ErpPdmId.Empty.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.ErpPdmId.Empty.html",
+  "sha256": "79cc0c38cd7046fd0e1a43f25d7aeedbf7ccde30f3eeaf5efbb323e394209e4b",
+  "text": "# Field Empty\n\nEmpty identifier.\n\n###### Namespace: TopSolid.Pdm.Explorer.Automating\n\n###### Assembly: TopSolid.Pdm.Explorer.Automating.dll\n\n##### Syntax\n\n```\npublic static readonly ErpPdmId Empty\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ErpPdmId |  Empty identifier. |\n",
+  "markdown": "markdown/pdmexplorer/87896846423c1aff86db2c9c.md",
+  "originalHtml": "html/pdmexplorer/87896846423c1aff86db2c9c.html"
+}

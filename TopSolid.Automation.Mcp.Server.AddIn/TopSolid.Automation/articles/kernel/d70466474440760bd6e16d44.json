@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.Exists.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.Exists.html",
+  "sha256": "b4c0089910f7aef4673ec9e5c4849c9e993d28548d1b06a2001fa805678307a4",
+  "text": "# Method Exists\n\n#### Exists(PdmObjectId)\n\nTells whether a PDM object still exists.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 301, 120)]\nbool Exists(PdmObjectId inObjectId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  Identifier of the PDM object to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  The PDM object still exists.  |  \n\n##### Remarks\n\nThis method is available since v7.6.301.120.\n",
+  "markdown": "markdown/kernel/d70466474440760bd6e16d44.md",
+  "originalHtml": "html/kernel/d70466474440760bd6e16d44.html"
+}

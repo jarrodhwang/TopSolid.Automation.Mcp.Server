@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IShapes.GetLoopType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IShapes.GetLoopType.html",
+  "sha256": "7c8a16a27212feff28da05d5bd026d3b66cd2ed06f609cf7f85eac594feb96b8",
+  "text": "# Method GetLoopType\n\n#### GetLoopType(ElementId, int)\n\nGets the type of a loop.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nLoopType GetLoopType(ElementId inElementId, int inLoopId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the shape entity to analyze.  |  \n \n|  int |  inLoopId |  Identifier of the loop to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  LoopType |  Type of loop.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/26d3abe4b225842df1c65bf4.md",
+  "originalHtml": "html/kernel/26d3abe4b225842df1c65bf4.html"
+}

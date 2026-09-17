@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IParts.SetPhysicalPropertiesManagementRefreshAuto.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IParts.SetPhysicalPropertiesManagementRefreshAuto.html",
+  "sha256": "6dcbaaf11f649e5bec483f3a4ba255ece74b30918271b579072394f699216f71",
+  "text": "# Method SetPhysicalPropertiesManagementRefreshAuto\n\n#### SetPhysicalPropertiesManagementRefreshAuto(DocumentId, bool)\n\nSets the refresh auto of the physical property management of a part.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 13, 300, 220)]\nvoid SetPhysicalPropertiesManagementRefreshAuto(DocumentId inDocumentId, bool inIsRefreshAuto)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of part document to analyze.  |  \n \n|  bool |  inIsRefreshAuto |  Tells whether the physical property management of a part is refresh auto.  |  \n\n##### Remarks\n\nThis method is available since v7.13.300.220.\n",
+  "markdown": "markdown/cad/27d8f939ff55be4ce47ecd3b.md",
+  "originalHtml": "html/cad/27d8f939ff55be4ce47ecd3b.html"
+}

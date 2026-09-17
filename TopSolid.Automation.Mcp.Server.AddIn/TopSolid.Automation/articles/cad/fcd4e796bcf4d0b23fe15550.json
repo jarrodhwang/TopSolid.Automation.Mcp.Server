@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.TopSolidDesignHost.Representations.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.TopSolidDesignHost.Representations.html",
+  "sha256": "08c421bcb2c22dc58cdbbad2ce26d58939aa0c8ecbbd091d3d127e3e6bdc3035",
+  "text": "# Property Representations\n\n#### Representations\n\nGets access to representations, or null if not connected.\n\n##### Declaration\n\n```\npublic static IRepresentations Representations { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  IRepresentations |   |\n",
+  "markdown": "markdown/cad/fcd4e796bcf4d0b23fe15550.md",
+  "originalHtml": "html/cad/fcd4e796bcf4d0b23fe15550.html"
+}

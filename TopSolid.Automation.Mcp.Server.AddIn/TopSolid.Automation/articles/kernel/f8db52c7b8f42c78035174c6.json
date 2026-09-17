@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.GetMinorRevisionParameter.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.GetMinorRevisionParameter.html",
+  "sha256": "93711e1d44fc53143569e7ddd4632f097e471d1c5fcbcd8ff8300a5751f17ecb",
+  "text": "# Method GetMinorRevisionParameter\n\n#### GetMinorRevisionParameter(DocumentId)\n\nGets the minor revision parameter entity of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nElementId GetMinorRevisionParameter(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the minor revision parameter entity found.  |  \n\n##### Remarks\n\nThe minor revision parameter is a text parameter, its value may be obtained and modified using the GetTextValue(ElementId) and SetTextValue(ElementId, string) methods.\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/f8db52c7b8f42c78035174c6.md",
+  "originalHtml": "html/kernel/f8db52c7b8f42c78035174c6.html"
+}

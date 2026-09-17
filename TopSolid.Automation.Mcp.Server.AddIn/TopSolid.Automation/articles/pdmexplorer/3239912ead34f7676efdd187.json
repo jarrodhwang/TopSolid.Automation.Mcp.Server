@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.TopSolidPdmExplorerHost.HostPort.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.TopSolidPdmExplorerHost.HostPort.html",
+  "sha256": "6101205d5a60dcaa7c8ae0ab74511d107bbe1921d93d2bafe24b9b26c0063b73",
+  "text": "# Property HostPort\n\n#### HostPort\n\nGets the host port, or 0 if not using TCP.\n\n##### Declaration\n\n```\npublic static int HostPort { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  int |   |\n",
+  "markdown": "markdown/pdmexplorer/3239912ead34f7676efdd187.md",
+  "originalHtml": "html/pdmexplorer/3239912ead34f7676efdd187.html"
+}

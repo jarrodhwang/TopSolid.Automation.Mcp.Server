@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IShapes.GetFaceArea.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IShapes.GetFaceArea.html",
+  "sha256": "ee9c50bf066004eb102f1df2e400364b4b9e63f05330636f363bbf1cd84fdcd5",
+  "text": "# Method GetFaceArea\n\n#### GetFaceArea(ElementItemId)\n\nGets the area of a face.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 13, 0, 0)]\ndouble GetFaceArea(ElementItemId inFaceId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementItemId |  inFaceId |  Identifier of the face to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double |  Area of the face in SI units.  |  \n\n##### Remarks\n\nIf the face is reversed, the orientation of the normal is the opposite to the cross product of the U and V parametric first derivatives.\n \nThis method is available since v7.13.\n",
+  "markdown": "markdown/kernel/a4d6254d41dd24b3d8ce8fdc.md",
+  "originalHtml": "html/kernel/a4d6254d41dd24b3d8ce8fdc.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Transform2D.Tx.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Transform2D.Tx.html",
+  "sha256": "7f0003e68b4b7b62a8d501391b719b2df24bd581ae5817ed66c87aea82c381b7",
+  "text": "# Field Tx\n\nTranslation along X.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic double Tx\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double |  Translation along X. |\n",
+  "markdown": "markdown/kernel/0cb72a6bcfda396b96e0f48d.md",
+  "originalHtml": "html/kernel/0cb72a6bcfda396b96e0f48d.html"
+}

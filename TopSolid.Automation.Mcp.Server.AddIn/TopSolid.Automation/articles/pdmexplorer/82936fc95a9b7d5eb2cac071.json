@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.CheckInSeveral.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.CheckInSeveral.html",
+  "sha256": "013c94da1345eb0028ce8733a99ebea80511febcc39f19fa3f2ba4e719582e77",
+  "text": "# Method CheckInSeveral\n\n#### CheckInSeveral(List<PdmObjectId>, bool)\n\nChecks-in several objects.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nvoid CheckInSeveral(List<PdmObjectId> inObjectIds, bool inRecurses)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  List<PdmObjectId> |  inObjectIds |  PDM object identifiers.  |  \n \n|  bool |  inRecurses |  Tells if to recurse on objects contained.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/pdmexplorer/82936fc95a9b7d5eb2cac071.md",
+  "originalHtml": "html/pdmexplorer/82936fc95a9b7d5eb2cac071.html"
+}

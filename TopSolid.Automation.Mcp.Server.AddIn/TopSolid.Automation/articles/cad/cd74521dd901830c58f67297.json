@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IParts.IsMachiningProcessOperation.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IParts.IsMachiningProcessOperation.html",
+  "sha256": "2152a20391dfa047146110f72c2d8f06423ac75148054b5df3e46162b7769112",
+  "text": "# Method IsMachiningProcessOperation\n\n#### IsMachiningProcessOperation(ElementId)\n\nTells whether element is a machining process operation\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 0, 0)]\nbool IsMachiningProcessOperation(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Existing machining Process Operation  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  True if element is a machining process operation.  |  \n\n##### Remarks\n\nThis method is available since v7.19.\n",
+  "markdown": "markdown/cad/cd74521dd901830c58f67297.md",
+  "originalHtml": "html/cad/cd74521dd901830c58f67297.html"
+}

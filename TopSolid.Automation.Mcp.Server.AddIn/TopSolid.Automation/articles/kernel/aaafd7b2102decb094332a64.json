@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IApplication.Quit.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IApplication.Quit.html",
+  "sha256": "08072b2bce9431fe2c8ffff1b6da0421c6c8a7dfc5493b8f8a9326005ec86c86",
+  "text": "# Method Quit\n\n#### Quit(bool, bool)\n\nTerminates the applicaton.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 201, 160)]\nvoid Quit(bool inAsksUser, bool inSaves)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  bool |  inAsksUser |  Whether to ask the user for confirmation if some documents need to be saved.  |  \n \n|  bool |  inSaves |  Whether to automatically save the documents that need it when the user is not asked for confirmation.  |  \n\n##### Remarks\n\nThis method is available since v7.7.201.160.\n",
+  "markdown": "markdown/kernel/aaafd7b2102decb094332a64.md",
+  "originalHtml": "html/kernel/aaafd7b2102decb094332a64.html"
+}

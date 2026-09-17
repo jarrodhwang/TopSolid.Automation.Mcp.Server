@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.NoStockType.-ctor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.NoStockType.-ctor.html",
+  "sha256": "c4f563ec614add0bda81a9bcb761d0072c4551c373d08f426b299176452f700c",
+  "text": "# Constructor NoStockType\n\n#### NoStockType()\n\nInitializes a new instance of a NoStockType class.\n\n##### Declaration\n\n```\npublic NoStockType()\n```\n",
+  "markdown": "markdown/cam/d1bf1202519a1e36c1ac506a.md",
+  "originalHtml": "html/cam/d1bf1202519a1e36c1ac506a.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ILayers.GetLayer.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ILayers.GetLayer.html",
+  "sha256": "a0d1983b7866e25822922bfc6ff28ce482d1474a1212489ff70d9d7d0fbc9800",
+  "text": "# Method GetLayer\n\n#### GetLayer(DocumentId, ElementId)\n\nRetrieves layer from an element. Returns Empty if no layer defined.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 18, 0, 0)]\nElementId GetLayer(DocumentId inDocumentId, ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document.  |  \n \n|  ElementId |  inElementId |  Identifier of the element.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the Layer.  |\n",
+  "markdown": "markdown/kernel/ada1f0a01ce518cd959647ef.md",
+  "originalHtml": "html/kernel/ada1f0a01ce518cd959647ef.html"
+}

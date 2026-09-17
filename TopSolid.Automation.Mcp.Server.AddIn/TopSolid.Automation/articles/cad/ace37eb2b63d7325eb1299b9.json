@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMaterials.SetShrinkageFactor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMaterials.SetShrinkageFactor.html",
+  "sha256": "1be0d32b479b79cf33ff55992c2fa2cf574eb3b371f58f5c117ddcdc775ae531",
+  "text": "# Method SetShrinkageFactor\n\n#### SetShrinkageFactor(DocumentId, double)\n\nSets Shrinkage Factor\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 400, 120)]\nvoid SetShrinkageFactor(DocumentId inDocumentId, double inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Id of the container document  |  \n \n|  double |  inValue |  The value to use  |\n",
+  "markdown": "markdown/cad/ace37eb2b63d7325eb1299b9.md",
+  "originalHtml": "html/cad/ace37eb2b63d7325eb1299b9.html"
+}

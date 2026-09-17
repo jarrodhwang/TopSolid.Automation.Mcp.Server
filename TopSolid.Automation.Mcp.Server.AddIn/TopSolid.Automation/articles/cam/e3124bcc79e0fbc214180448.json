@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.MethodExecutionOptions.KeepAssociativity.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.MethodExecutionOptions.KeepAssociativity.html",
+  "sha256": "50ee1eec214f7363696c693e31f316ad7165ff45e89c3adc1bf9ede6b6c83d18",
+  "text": "# Field KeepAssociativity\n\nKeep associativity between method and generated operations.\n\n###### Namespace: TopSolid.Cam.NC.Kernel.Automating\n\n###### Assembly: TopSolid.Cam.NC.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic bool KeepAssociativity\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Keep associativity between method and generated operations. |\n",
+  "markdown": "markdown/cam/e3124bcc79e0fbc214180448.md",
+  "originalHtml": "html/cam/e3124bcc79e0fbc214180448.html"
+}

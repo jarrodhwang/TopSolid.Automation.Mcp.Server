@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IPrograms.GetFileName.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IPrograms.GetFileName.html",
+  "sha256": "832cfe59b8110f4e6e2c489ccea0d482b35959f909700762c2378c0d0210a4be",
+  "text": "# Method GetFileName\n\n#### GetFileName(ElementId)\n\nGet program file name.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 180)]\nstring GetFileName(ElementId inProgramId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inProgramId |  Identifier of the NC program to modify.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  Program file name.  |\n",
+  "markdown": "markdown/cam/2c713218a2edb7df55c1bc86.md",
+  "originalHtml": "html/cam/2c713218a2edb7df55c1bc86.html"
+}

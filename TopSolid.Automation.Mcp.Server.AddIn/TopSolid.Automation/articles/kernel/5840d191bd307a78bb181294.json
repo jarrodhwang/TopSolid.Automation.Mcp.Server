@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.EnumerationProperty.-ctor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.EnumerationProperty.-ctor.html",
+  "sha256": "2405f096b377f88bc3ac02976f5b489df9162fcb01e8ea211bc92dd775e9011e",
+  "text": "# Constructor EnumerationProperty\n\n#### EnumerationProperty(Guid, int)\n\nInitializes a new instance of the EnumerationProperty class.\n\n##### Declaration\n\n```\npublic EnumerationProperty(Guid inEnumGuid, int inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  Guid |  inEnumGuid |  GUID of the enumeration class.  |  \n \n|  int |  inValue |  Value.  |\n",
+  "markdown": "markdown/kernel/5840d191bd307a78bb181294.md",
+  "originalHtml": "html/kernel/5840d191bd307a78bb181294.html"
+}

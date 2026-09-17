@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IParameters.GetParameters.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IParameters.GetParameters.html",
+  "sha256": "cb817249cf8d1930e7a53eb2d01bba243099488c8c50ab4d1d1f63599e0e6b67",
+  "text": "# Method GetParameters\n\n#### GetParameters(ElementExId)\n\nGets the parameters of the given operation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nList<ParameterId> GetParameters(ElementExId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementExId |  inElementId |  Identifier of the Cam operation to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ParameterId> |  Operation parameters found.  |  \n\n##### Remarks\n\nParameters come from all the operations inside the main one. A new category is automatically added to specify from which kind of operation is extracted the parameter... The categories are \"NCOperation\", \"SetupOperation\", \"WeakTuningOperation\", \"StrongTuningOperation\"\n",
+  "markdown": "markdown/cam/32a0a765717079fad2de41fa.md",
+  "originalHtml": "html/cam/32a0a765717079fad2de41fa.html"
+}

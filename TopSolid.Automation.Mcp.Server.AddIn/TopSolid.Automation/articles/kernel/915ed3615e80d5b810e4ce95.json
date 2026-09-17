@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.PdmSecurityUserOrGroupPermissions.PrintPermission.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.PdmSecurityUserOrGroupPermissions.PrintPermission.html",
+  "sha256": "fb8159583a12199765ad8f715e33c7db26bc7807129cceb685bf1dee41eaa155",
+  "text": "# Field PrintPermission\n\nEnable user to print a document.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic PdmSecurityPermission PrintPermission\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  PdmSecurityPermission |  Enable user to print a document. |\n",
+  "markdown": "markdown/kernel/915ed3615e80d5b810e4ce95.md",
+  "originalHtml": "html/kernel/915ed3615e80d5b810e4ce95.html"
+}

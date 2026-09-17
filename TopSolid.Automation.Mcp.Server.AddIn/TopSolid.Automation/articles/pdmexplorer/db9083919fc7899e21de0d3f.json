@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.TopSolidPdmExplorerHost.ClientPort.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.TopSolidPdmExplorerHost.ClientPort.html",
+  "sha256": "9f36781175a69a097c94d047993d150c2cd22c0604c8ce48a7639ee4611d5cbe",
+  "text": "# Property ClientPort\n\n#### ClientPort\n\nGets the client port used for receiving events when using TCP, or 0 for not managing events.\n\n##### Declaration\n\n```\npublic static int ClientPort { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  int |   |\n",
+  "markdown": "markdown/pdmexplorer/db9083919fc7899e21de0d3f.md",
+  "originalHtml": "html/pdmexplorer/db9083919fc7899e21de0d3f.html"
+}

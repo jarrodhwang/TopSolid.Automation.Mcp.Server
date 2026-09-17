@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.MachineWorksSolidType.AngularTolerance.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.MachineWorksSolidType.AngularTolerance.html",
+  "sha256": "37ea4cc620e36de0bea5d0d6367751bb002e7d83228c810001b61b6e8a12ce71",
+  "text": "# Field AngularTolerance\n\nAngular Tolerance.\n\n###### Namespace: TopSolid.Cam.NC.Kernel.Automating\n\n###### Assembly: TopSolid.Cam.NC.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic SmartReal AngularTolerance\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartReal |  Angular Tolerance. |\n",
+  "markdown": "markdown/cam/cf52df9ec4c4819169a0d01b.md",
+  "originalHtml": "html/cam/cf52df9ec4c4819169a0d01b.html"
+}

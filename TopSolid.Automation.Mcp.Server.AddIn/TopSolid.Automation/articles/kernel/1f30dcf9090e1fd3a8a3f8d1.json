@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.GetMinorRevisionText.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.GetMinorRevisionText.html",
+  "sha256": "f2d39a6d7f2bf3631d36cd6d6df3d68afb74f35755031dce6cf7a46a260f30f4",
+  "text": "# Method GetMinorRevisionText\n\n#### GetMinorRevisionText(PdmMinorRevisionId)\n\nGets the text of a minor revision.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nstring GetMinorRevisionText(PdmMinorRevisionId inMinorRevisionId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmMinorRevisionId |  inMinorRevisionId |  Identifier of the minor revision.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  Text of the minor revision.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/1f30dcf9090e1fd3a8a3f8d1.md",
+  "originalHtml": "html/kernel/1f30dcf9090e1fd3a8a3f8d1.html"
+}

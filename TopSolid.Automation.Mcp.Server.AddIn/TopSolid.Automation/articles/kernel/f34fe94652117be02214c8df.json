@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Transform3D.SetRotation.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Transform3D.SetRotation.html",
+  "sha256": "18b2a932c3e5256aa2596f76e1e8238e14e05043aa7a7b5cf98acd01e158ecc0",
+  "text": "# Method SetRotation\n\n#### SetRotation(Axis3D, double)\n\nSets the transformation as the rotation about a specified axis with a specified angle.\n\n##### Declaration\n\n```\npublic void SetRotation(Axis3D inAxis, double inAngle)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  Axis3D |  inAxis |  Rotation axis.  |  \n \n|  double |  inAngle |  Rotation angle, in radians.  |\n",
+  "markdown": "markdown/kernel/f34fe94652117be02214c8df.md",
+  "originalHtml": "html/kernel/f34fe94652117be02214c8df.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Point3D.op_Multiply.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Point3D.op_Multiply.html",
+  "sha256": "d3c0dab5c929d5389feadc3cf1926f3560c1830b187b2f9b08cd8966aab6ff83",
+  "text": "# Operator operator *\n\n#### operator *(double, Point3D)\n\nMultiplies a double value and a point.\n\n##### Declaration\n\n```\npublic static Point3D operator *(double inD, Point3D inPoint)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  double |  inD |  Left hand side double value.  |  \n \n|  Point3D |  inPoint |  Right hand side point.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Point3D |  Multiplied point.  |  \n\n#### operator *(Point3D, double)\n\nMultiplies a point and a double value.\n\n##### Declaration\n\n```\npublic static Point3D operator *(Point3D inPoint, double inD)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  Point3D |  inPoint |  Left hand side point.  |  \n \n|  double |  inD |  Right hand side double value.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Point3D |  Multiplied point.  |\n",
+  "markdown": "markdown/kernel/992eeb3a1e8e3213af496c55.md",
+  "originalHtml": "html/kernel/992eeb3a1e8e3213af496c55.html"
+}

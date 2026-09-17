@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IWorldCoordinateSystems.IsWorldCoordinateSystem.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IWorldCoordinateSystems.IsWorldCoordinateSystem.html",
+  "sha256": "d4f207e7f9d6b242a2209d5cdf6264db6fd7cb20aa7c647122a8e3e1b3bbb881",
+  "text": "# Method IsWorldCoordinateSystem\n\n#### IsWorldCoordinateSystem(ElementId)\n\nTells whether an element is a WCS.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nbool IsWorldCoordinateSystem(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  True if the element is a WCS.  |\n",
+  "markdown": "markdown/cam/589be388759e94ee1f7ce638.md",
+  "originalHtml": "html/cam/589be388759e94ee1f7ce638.html"
+}

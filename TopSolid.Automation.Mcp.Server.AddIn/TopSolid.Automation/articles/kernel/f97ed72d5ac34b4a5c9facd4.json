@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.SetRealParameterConstraintsMaximumLimit.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.SetRealParameterConstraintsMaximumLimit.html",
+  "sha256": "d03059fbd31b9a60e1e69c986ea1ebcbf6efee5ac7abd580a4fbed0f72ac02c9",
+  "text": "# Method SetRealParameterConstraintsMaximumLimit\n\n#### SetRealParameterConstraintsMaximumLimit(ElementId, RealProperty)\n\nSets the real parameter constraint maximum limit.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 17, 0, 0)]\nvoid SetRealParameterConstraintsMaximumLimit(ElementId inElementId, RealProperty inProperty)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the parameter.  |  \n \n|  RealProperty |  inProperty |  The new value.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.17.000.000.\n",
+  "markdown": "markdown/kernel/f97ed72d5ac34b4a5c9facd4.md",
+  "originalHtml": "html/kernel/f97ed72d5ac34b4a5c9facd4.html"
+}

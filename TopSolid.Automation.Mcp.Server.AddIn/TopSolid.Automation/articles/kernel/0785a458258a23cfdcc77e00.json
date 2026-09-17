@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.BooleanProperty.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.BooleanProperty.html",
+  "sha256": "81310179cafa498cf0e02fae45a47596d18175a95bd01741ca0fd2703124679b",
+  "text": "# Class BooleanProperty\n\nRepresents a Boolean property.\n\n##### Inheritance\n \nobject\n \nProperty\n \nBooleanProperty\n\n##### Inherited Members\n \n object.ToString() \n \n object.Equals(object) \n \n object.Equals(object, object) \n \n object.ReferenceEquals(object, object) \n \n object.GetHashCode() \n \n object.GetType() \n \n object.MemberwiseClone() \n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 12, 0, 0)]\npublic class BooleanProperty : Property\n```\n\n##### Remarks\n\nThis class is available since v7.12.\n\n### Constructors \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   BooleanProperty(bool)  |  Initializes a new instance of the BooleanProperty class.  |  \n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   Value  |  Value.  |  \n\n### Properties \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   Type  |  Gets the property type.  |\n",
+  "markdown": "markdown/kernel/0785a458258a23cfdcc77e00.md",
+  "originalHtml": "html/kernel/0785a458258a23cfdcc77e00.html"
+}

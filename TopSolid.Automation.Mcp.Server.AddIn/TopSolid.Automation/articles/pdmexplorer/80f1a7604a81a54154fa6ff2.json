@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.PdmObjectType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.PdmObjectType.html",
+  "sha256": "c4db903173b4ce36f0376bbc38f474c2cd8dcf720d468967527c17d093625cd6",
+  "text": "# Enum PdmObjectType\n\nDefines the various types of PDM objects.\n\n###### Namespace: TopSolid.Pdm.Explorer.Automating\n\n###### Assembly: TopSolid.Pdm.Explorer.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\npublic enum PdmObjectType\n```\n\n##### Remarks\n\nThis enum is available since v7.10.301.120.\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  FavoritesDefaultFolder |  Favorites default folder.  |  \n \n|  FavoritesFolder |  Favorites folder.  |  \n \n|  Folder |  Folder.  |  \n \n|  LibraryProject |  Library project.  |  \n \n|  RecycleBinFolder |  Recycle bin folder.  |  \n \n|  ResourceProject |  Resource project.  |  \n \n|  Shortcut |  Shortcut.  |  \n \n|  TemplatesDefaultFolder |  Templates default folder.  |  \n \n|  TemplatesFolder |  Templates folder.  |  \n \n|  TopSolidDocument |  TopSolid document.  |  \n \n|  Unknown |  Unknown type.  |  \n \n|  UnknownDocument |  Unknown type of document.  |  \n \n|  WorkingProject |  Working project.  |\n",
+  "markdown": "markdown/pdmexplorer/80f1a7604a81a54154fa6ff2.md",
+  "originalHtml": "html/pdmexplorer/80f1a7604a81a54154fa6ff2.html"
+}

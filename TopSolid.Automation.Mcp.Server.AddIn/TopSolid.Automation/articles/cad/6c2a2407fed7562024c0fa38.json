@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.TopSolidDesignHostInstance.MultiLayers.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.TopSolidDesignHostInstance.MultiLayers.html",
+  "sha256": "bc53b6fb8ff625b4f50df1b83e4e755a2cfd74483b760978658b41793f99d2e9",
+  "text": "# Property MultiLayers\n\n#### MultiLayers\n\nGets access to multi Layer, or null if not connected.\n\n##### Declaration\n\n```\npublic IMultiLayer MultiLayers { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  IMultiLayer |   |\n",
+  "markdown": "markdown/cad/6c2a2407fed7562024c0fa38.md",
+  "originalHtml": "html/cad/6c2a2407fed7562024c0fa38.html"
+}

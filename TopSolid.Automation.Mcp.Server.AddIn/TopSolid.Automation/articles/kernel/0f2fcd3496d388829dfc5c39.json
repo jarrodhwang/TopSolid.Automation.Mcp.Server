@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IGeometries2D.GetAbsoluteXAxis.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IGeometries2D.GetAbsoluteXAxis.html",
+  "sha256": "5df374512287f4627cf83373554a0d9ba4d1d8dced1b87d494a58f743dc4e931",
+  "text": "# Method GetAbsoluteXAxis\n\n#### GetAbsoluteXAxis(DocumentId)\n\nGets the absolute X axis entity of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 201, 100)]\nElementId GetAbsoluteXAxis(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the absolute X axis entity found.  |  \n\n##### Remarks\n\nThis method is available since v7.7.201.100.\n",
+  "markdown": "markdown/kernel/0f2fcd3496d388829dfc5c39.md",
+  "originalHtml": "html/kernel/0f2fcd3496d388829dfc5c39.html"
+}

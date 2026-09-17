@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ISimulations.GetGripChangeTask.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ISimulations.GetGripChangeTask.html",
+  "sha256": "3c29b47265447348a077fff2fc1c38e6d78d423e090f2f625e58b8e2af2ae78c",
+  "text": "# Method GetGripChangeTask\n\n#### GetGripChangeTask(ElementId, out bool, out ElementId, out List<ElementId>)\n\nGets a grip change task.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nvoid GetGripChangeTask(ElementId inElementId, out bool outIsGripping, out ElementId outGrippingRigidGroupId, out List<ElementId> outRigidGroupIds)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the task to analyze.  |  \n \n|  bool |  outIsGripping |  Whether the task is gripping, or otherwise dropping.  |  \n \n|  ElementId |  outGrippingRigidGroupId |  Identifier of gripping rigid group.  |  \n \n|  List<ElementId> |  outRigidGroupIds |  Identifiers of rigid groups that are gripped or dropped.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/cad/20bfb40406a8a664c277dfa1.md",
+  "originalHtml": "html/cad/20bfb40406a8a664c277dfa1.html"
+}

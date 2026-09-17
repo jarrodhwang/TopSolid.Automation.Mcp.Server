@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IApplication.PaperSources.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IApplication.PaperSources.html",
+  "sha256": "08d3526660857eb1d25476d5d7fa18c70e1b9b076d92b8309927aea052447e64",
+  "text": "# Property PaperSources\n\n#### PaperSources\n\nGets the names of the available paper sources for the current printer.\n\n##### Declaration\n\n```\n[AvailableSinceVersion(7, 6, 0, 0)]\nList<string> PaperSources { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<string> |   |  \n\n##### Remarks\n\nThis property is available since v7.6.\n",
+  "markdown": "markdown/kernel/0cb40d9ab75b0eeee11d8bf8.md",
+  "originalHtml": "html/kernel/0cb40d9ab75b0eeee11d8bf8.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdmAdmin.CreateUser.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdmAdmin.CreateUser.html",
+  "sha256": "5870f8ab9b22ffb9d9a90801b6be2d1930382f7682cc1d7af440f59a44c79dd7",
+  "text": "# Method CreateUser\n\n#### CreateUser(string, string, string, string, string)\n\nCreates a new user.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 301, 160)]\nvoid CreateUser(string inFirstName, string inLastName, string inInitials, string inAccountIdentifier, string inPassword)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  string |  inFirstName |  User first name.  |  \n \n|  string |  inLastName |  User last name.  |  \n \n|  string |  inInitials |  User initials.  |  \n \n|  string |  inAccountIdentifier |  User account identifier.  |  \n \n|  string |  inPassword |  User password.  |  \n\n##### Remarks\n\nIf the IsAdmin property returns false, this method cannot be called (an exception will be thrown otherwise).\n \nThis method is available since v7.6.301.160.\n",
+  "markdown": "markdown/kernel/59a584be5099651919ac90c6.md",
+  "originalHtml": "html/kernel/59a584be5099651919ac90c6.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.UndoCheckOut.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.UndoCheckOut.html",
+  "sha256": "9b4013c175de5c3eb5d9e1656a06f18250eb5ed4fa3e69549188b92268c9c4ef",
+  "text": "# Method UndoCheckOut\n\n#### UndoCheckOut(PdmObjectId)\n\nUndoes the check-out of an object.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nvoid UndoCheckOut(PdmObjectId inObjectId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  Object identifier.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/pdmexplorer/a9780e55a31761949bde796b.md",
+  "originalHtml": "html/pdmexplorer/a9780e55a31761949bde796b.html"
+}

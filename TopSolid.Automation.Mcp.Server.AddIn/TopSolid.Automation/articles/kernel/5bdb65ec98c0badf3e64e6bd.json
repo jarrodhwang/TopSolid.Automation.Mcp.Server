@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Vector3D.VZ.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Vector3D.VZ.html",
+  "sha256": "27c4365a70a3c7fb670c85e360b383a308c8b078ef308df71d902ad9fe7b39d6",
+  "text": "# Field VZ\n\nPositive Z unit vector, i.e. (0,0,1).\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\npublic static readonly Vector3D VZ\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Vector3D |  Positive Z unit vector, i.e. (0,0,1). |\n",
+  "markdown": "markdown/kernel/5bdb65ec98c0badf3e64e6bd.md",
+  "originalHtml": "html/kernel/5bdb65ec98c0badf3e64e6bd.html"
+}

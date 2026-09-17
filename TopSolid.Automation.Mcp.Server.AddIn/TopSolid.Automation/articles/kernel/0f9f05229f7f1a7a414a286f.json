@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ISketches3D.CreateBSplineSegment.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ISketches3D.CreateBSplineSegment.html",
+  "sha256": "306bd1d436589907259f7d2fbde06c3b9644f2b213edc8a045798f19f217699e",
+  "text": "# Method CreateBSplineSegment\n\n#### CreateBSplineSegment(List<ElementItemId>, bool)\n\nCreates a new uniform cubic B-spline segment into the ModifiedSketch.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nElementItemId CreateBSplineSegment(List<ElementItemId> inVertexIds, bool inIsPeriodic)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  List<ElementItemId> |  inVertexIds |  Identifiers of the vertices defining the B-spline control points.  |  \n \n|  bool |  inIsPeriodic |  Whether the B-spline is periodic.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementItemId |  Identifier of the created segment.  |  \n\n##### Remarks\n\nStartModification(ElementId) must be called before calling this method.\n \nThis method is available since v7.8.\n",
+  "markdown": "markdown/kernel/0f9f05229f7f1a7a414a286f.md",
+  "originalHtml": "html/kernel/0f9f05229f7f1a7a414a286f.html"
+}

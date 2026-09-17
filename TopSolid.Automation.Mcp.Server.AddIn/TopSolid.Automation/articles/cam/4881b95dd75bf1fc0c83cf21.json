@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IPrograms.SetComment.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IPrograms.SetComment.html",
+  "sha256": "208002af075a967261d12f3f93a92d556f9888dce821765b3e71dc805f3cba4c",
+  "text": "# Method SetComment\n\n#### SetComment(ElementId, SmartText)\n\nSet program comment.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 180)]\nvoid SetComment(ElementId inProgramId, SmartText inComment)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inProgramId |  Identifier of the NC program to modify.  |  \n \n|  SmartText |  inComment |  Program comment.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n",
+  "markdown": "markdown/cam/4881b95dd75bf1fc0c83cf21.md",
+  "originalHtml": "html/cam/4881b95dd75bf1fc0c83cf21.html"
+}

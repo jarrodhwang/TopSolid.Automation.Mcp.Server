@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.CreateColorRelayedParameter.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.CreateColorRelayedParameter.html",
+  "sha256": "ff3ccd59787cf6443d29022d405e29d220d18aca77b625f33c0c19503aae4940",
+  "text": "# Method CreateColorRelayedParameter\n\n#### CreateColorRelayedParameter(DocumentId, ElementId, ParameterRelayType)\n\nCreates a color relayed parameter entity in a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 18, 400, 100)]\nElementId CreateColorRelayedParameter(DocumentId inDocumentId, ElementId inElementId, ParameterRelayType inRelayParameterType)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  ElementId |  inElementId |  Identifier of the color parameter entity to relay.  |  \n \n|  ParameterRelayType |  inRelayParameterType |  Type of relay.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |   |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.18.400.100.\n",
+  "markdown": "markdown/kernel/0664eb03c7da8e720fd3c0da.md",
+  "originalHtml": "html/kernel/0664eb03c7da8e720fd3c0da.html"
+}

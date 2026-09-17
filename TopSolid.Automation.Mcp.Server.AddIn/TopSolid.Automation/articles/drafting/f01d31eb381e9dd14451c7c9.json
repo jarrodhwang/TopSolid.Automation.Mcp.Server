@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.IDraftings.GetDraftingViews.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.IDraftings.GetDraftingViews.html",
+  "sha256": "d9d24f817f5675f95b4ac77a931feacd69216699990effaaee4289e4a74a9c1b",
+  "text": "# Method GetDraftingViews\n\n#### GetDraftingViews(DocumentId)\n\nGets the views from a drafting document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 180, 0)]\nList<ElementId> GetDraftingViews(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Drafting document.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementId> |   |  \n\n##### Remarks\n\nThis method is available since v7.19.\n",
+  "markdown": "markdown/drafting/f01d31eb381e9dd14451c7c9.md",
+  "originalHtml": "html/drafting/f01d31eb381e9dd14451c7c9.html"
+}

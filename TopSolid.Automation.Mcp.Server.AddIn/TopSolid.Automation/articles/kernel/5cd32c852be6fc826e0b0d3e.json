@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IOperations.Activate.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IOperations.Activate.html",
+  "sha256": "476a12f97efb60abfedb7dce4ea9463b73ed586d59443305db36cd88bb6b7444",
+  "text": "# Method Activate\n\n#### Activate(ElementId)\n\nActivates an operation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 12, 0, 0)]\nvoid Activate(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the operation to modify.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.12.\n",
+  "markdown": "markdown/kernel/5cd32c852be6fc826e0b0d3e.md",
+  "originalHtml": "html/kernel/5cd32c852be6fc826e0b0d3e.html"
+}

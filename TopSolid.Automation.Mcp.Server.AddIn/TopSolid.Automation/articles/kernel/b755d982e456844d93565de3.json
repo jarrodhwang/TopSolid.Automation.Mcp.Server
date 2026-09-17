@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ItemLabel.Frame3DOrigin.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ItemLabel.Frame3DOrigin.html",
+  "sha256": "8c1d8fd88ecd9df5b4bade2115b44b6366c2fed242cbf7b4adb2bc2c87d8b1b5",
+  "text": "# Field Frame3DOrigin\n\nLabel of 3D frame origin.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\npublic static readonly ItemLabel Frame3DOrigin\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ItemLabel |  Label of 3D frame origin. |\n",
+  "markdown": "markdown/kernel/b755d982e456844d93565de3.md",
+  "originalHtml": "html/kernel/b755d982e456844d93565de3.html"
+}

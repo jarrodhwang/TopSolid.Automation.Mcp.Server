@@ -1,0 +1,8 @@
+{
+  "path": "api/electrode/TopSolid.Cad.Electrode.Automating.TopSolidElectrodeHostInstance.Connect.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/electrode/TopSolid.Cad.Electrode.Automating.TopSolidElectrodeHostInstance.Connect.html",
+  "sha256": "ccb27a3dabc57c4168a9b43d01424d0d12bd5e59172881a0b4577445d9ab48fc",
+  "text": "# Method Connect\n\n#### Connect()\n\nConnects to TopSolid application.\n\n##### Declaration\n\n```\npublic void Connect()\n```\n",
+  "markdown": "markdown/electrode/58a93578c1d06828f0b7e0bf.md",
+  "originalHtml": "html/electrode/58a93578c1d06828f0b7e0bf.html"
+}

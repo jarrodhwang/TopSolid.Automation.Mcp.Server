@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.ITables.GetDraftTables.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.ITables.GetDraftTables.html",
+  "sha256": "eb7f856336d1751380b6f6b07a744216fd6c07835b45d55622efa6b292fc1174",
+  "text": "# Method GetDraftTables\n\n#### GetDraftTables(DocumentId)\n\nGet draft tables of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 14, 300, 140)]\nList<ElementId> GetDraftTables(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementId> |  Draft tables of the document.  |  \n\n##### Remarks\n\nThis method is available since v7.14.300.140.\n",
+  "markdown": "markdown/drafting/f3c791ed1f215f167b88c030.md",
+  "originalHtml": "html/drafting/f3c791ed1f215f167b88c030.html"
+}

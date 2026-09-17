@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.PropertyDefinition.op_Inequality.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.PropertyDefinition.op_Inequality.html",
+  "sha256": "25761a97e07315f324b19db95c425c34350bca801172ee0ea55f7b86745538d6",
+  "text": "# Operator operator !=\n\n#### operator !=(PropertyDefinition, PropertyDefinition)\n\nTells whether two property definitions are different.\n\n##### Declaration\n\n```\npublic static bool operator !=(PropertyDefinition inPropertyDefinition1, PropertyDefinition inPropertyDefinition2)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PropertyDefinition |  inPropertyDefinition1 |  First property definition.  |  \n \n|  PropertyDefinition |  inPropertyDefinition2 |  Second property definition.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Property definitions are different.  |\n",
+  "markdown": "markdown/kernel/c142e49a15b9848278bef7b6.md",
+  "originalHtml": "html/kernel/c142e49a15b9848278bef7b6.html"
+}

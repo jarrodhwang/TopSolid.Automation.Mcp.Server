@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.OpenProject.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.OpenProject.html",
+  "sha256": "d4ede6a9a430ad3141b2d9a781dd7863e93d4e2001c056453ad0d374e871f55d",
+  "text": "# Method OpenProject\n\n#### OpenProject(PdmObjectId)\n\nOpens a project.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nvoid OpenProject(PdmObjectId inProjectId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inProjectId |  Project identifier.  |  \n\n##### Remarks\n\nThis method is available since v7.9.300.100.\n",
+  "markdown": "markdown/pdmexplorer/a1788e0b8eeebcad9b2ce041.md",
+  "originalHtml": "html/pdmexplorer/a1788e0b8eeebcad9b2ce041.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IGeometries2D.PublishFrame.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IGeometries2D.PublishFrame.html",
+  "sha256": "769c268fe8b5bacc3331cd46a1b0348e43c3bbacfd2d7272d586c880d96c99aa",
+  "text": "# Method PublishFrame\n\n#### PublishFrame(DocumentId, string, SmartFrame2D)\n\nCreates a frame publishing entity in a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nElementId PublishFrame(DocumentId inDocumentId, string inDescription, SmartFrame2D inDefinition)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  string |  inDescription |  Publishing description.  |  \n \n|  SmartFrame2D |  inDefinition |  Publishing definition.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the created publishing entity.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.8.\n",
+  "markdown": "markdown/kernel/7e6d4d2ca0d0f97b5a9a92a3.md",
+  "originalHtml": "html/kernel/7e6d4d2ca0d0f97b5a9a92a3.html"
+}

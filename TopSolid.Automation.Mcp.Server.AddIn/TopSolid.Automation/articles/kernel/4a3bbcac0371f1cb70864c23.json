@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.NeedsUpdating.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.NeedsUpdating.html",
+  "sha256": "539bade129280f30c11be4a0073403eb16cd3fced15f86aaeee9b25ebe813b9f",
+  "text": "# Method NeedsUpdating\n\n#### NeedsUpdating(PdmObjectId)\n\nTells whether specified object needs updating.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nbool NeedsUpdating(PdmObjectId inObjectId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  Identifier of document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Specified object needs updating.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/kernel/4a3bbcac0371f1cb70864c23.md",
+  "originalHtml": "html/kernel/4a3bbcac0371f1cb70864c23.html"
+}

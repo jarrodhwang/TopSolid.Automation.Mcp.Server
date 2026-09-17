@@ -1,0 +1,8 @@
+{
+  "path": "api/cae/TopSolid.Cae.Kernel.Automating.ICAEDocuments.GetMeshTargetSize.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cae/TopSolid.Cae.Kernel.Automating.ICAEDocuments.GetMeshTargetSize.html",
+  "sha256": "297b6e08b196e5386a877d9b7f87a174bcd1da15e5248a01252a6441f2e0080d",
+  "text": "# Method GetMeshTargetSize\n\n#### GetMeshTargetSize(DocumentId)\n\nGets target size of mesh into an analysis preparation document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 15, 0)]\nSmartReal GetMeshTargetSize(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the preparation document.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartReal |  The target size of the mesh.  |  \n\n##### Remarks\n\nThis method is available since v7.19.\n\n##### Examples\n \n```\nDocumentId docId = TopSolidHost.Documents.EditedDocument;\nSmartReal meshSize =TopSolidCaeHost.Documents.GetMeshTargetSize(docId);\n```\n",
+  "markdown": "markdown/cae/b8c983a3a9f4e0dd03a2e850.md",
+  "originalHtml": "html/cae/b8c983a3a9f4e0dd03a2e850.html"
+}

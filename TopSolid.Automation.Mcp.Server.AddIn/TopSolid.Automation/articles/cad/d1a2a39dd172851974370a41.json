@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IAssemblies.CreateDisassembly.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IAssemblies.CreateDisassembly.html",
+  "sha256": "5f659f86e7392b28c75b22f690b5d38455ed8754b0c7665b9a78f12a8f3f1861",
+  "text": "# Method CreateDisassembly\n\n#### CreateDisassembly(ElementId, bool)\n\nCreates the disassembly operation of an assembly entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 17, 300, 80)]\nElementId CreateDisassembly(ElementId inAssemblyId, bool inInheritsAuxiliaryElements)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inAssemblyId |  Identifier of the assembly entity to modify.  |  \n \n|  bool |  inInheritsAuxiliaryElements |  Tells wehter auxiliary elements must be inherited.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  The created disassembly operation.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.17.\n",
+  "markdown": "markdown/cad/d1a2a39dd172851974370a41.md",
+  "originalHtml": "html/cad/d1a2a39dd172851974370a41.html"
+}

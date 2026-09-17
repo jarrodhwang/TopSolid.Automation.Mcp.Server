@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IElements.HasUniqueName.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IElements.HasUniqueName.html",
+  "sha256": "6b512af48de03f6b031bcd6db34106c40475099c349316a43de415392ac819d6",
+  "text": "# Method HasUniqueName\n\n#### HasUniqueName(ElementId)\n\nTells whether an element has a name that is unique in its document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nbool HasUniqueName(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Whether the element has a name that is unique in its document.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/8a9c0532bd4fa87b003c604c.md",
+  "originalHtml": "html/kernel/8a9c0532bd4fa87b003c604c.html"
+}

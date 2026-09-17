@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartAxis3D.ExtentMin.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartAxis3D.ExtentMin.html",
+  "sha256": "8273b31355036a1826e0b15d145032e31acf11891a2bab12aca696d45aab8c8a",
+  "text": "# Field ExtentMin\n\nMinimum axis coordinate of extent, or null if unknown.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic double? ExtentMin\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double? |  Minimum axis coordinate of extent, or null if unknown. |\n",
+  "markdown": "markdown/kernel/cc33699e27a75666a9ba5c62.md",
+  "originalHtml": "html/kernel/cc33699e27a75666a9ba5c62.html"
+}

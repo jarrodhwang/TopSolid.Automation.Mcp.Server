@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.FinishingCategoryType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.FinishingCategoryType.html",
+  "sha256": "dcdf56dcec025f4a9b5aa13ba8cb8f1b4ebf471f060629e9ecabedefde61d8ba",
+  "text": "# Enum FinishingCategoryType\n\nDefines the various types of finishing categories.\n\n###### Namespace: TopSolid.Cad.Design.Automating\n\n###### Assembly: TopSolid.Cad.Design.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 20, 296, 0)]\npublic enum FinishingCategoryType\n```\n\n##### Remarks\n\nThis enum is available since v7.20.\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  Dye |  Dye.  |  \n \n|  None |  No material category defined.  |  \n \n|  Oil |  Unclassified metallic alloy.  |  \n \n|  Unclassified |  Unclassified material category.  |  \n \n|  Varnish |  Varnish.  |  \n \n|  Wax |  Cast iron.  |\n",
+  "markdown": "markdown/cad/8ba8b7333477827aa2476685.md",
+  "originalHtml": "html/cad/8ba8b7333477827aa2476685.html"
+}

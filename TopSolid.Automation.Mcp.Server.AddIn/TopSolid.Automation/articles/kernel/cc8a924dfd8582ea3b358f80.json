@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IDocuments.Open.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IDocuments.Open.html",
+  "sha256": "0ff7aa69d0d75d8379c2a32747a931680e1fd462e5da0716cce744dc515a266c",
+  "text": "# Method Open\n\n#### Open(ref DocumentId)\n\nOpens a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nvoid Open(ref DocumentId ioDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  ioDocumentId |  Identifier of the document to open.  |  \n\n##### Remarks\n\nBeware the document can be modified if it is updated during opening process.\n \nThis method must not be called between StartModification(string, bool) and EndModification(bool, bool) methods calls.\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/cc8a924dfd8582ea3b358f80.md",
+  "originalHtml": "html/kernel/cc8a924dfd8582ea3b358f80.html"
+}

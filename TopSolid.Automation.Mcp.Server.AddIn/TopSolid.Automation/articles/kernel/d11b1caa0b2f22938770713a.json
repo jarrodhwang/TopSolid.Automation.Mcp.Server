@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.SetFamilyValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.SetFamilyValue.html",
+  "sha256": "488f615f794d83cc688c9c7d9ad3d8d33df255c3025f945643b88c6bcb7ba335",
+  "text": "# Method SetFamilyValue\n\n#### SetFamilyValue(ElementId, DocumentId)\n\nSets the value of a family parameter.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nvoid SetFamilyValue(ElementId inElementId, DocumentId inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the parameter to modify.  |  \n \n|  DocumentId |  inValue |  New value, as a family definition document identifier.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/d11b1caa0b2f22938770713a.md",
+  "originalHtml": "html/kernel/d11b1caa0b2f22938770713a.html"
+}

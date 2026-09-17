@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IDocuments.DoDiagnostic.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IDocuments.DoDiagnostic.html",
+  "sha256": "5a56cade35bff396e9a66bdeb0584c8120bf7735a52f034f553567f22dd63743",
+  "text": "# Method DoDiagnostic\n\n#### DoDiagnostic(Guid, out string)\n\nCheck TopSolid Cam application. Do not use. Internal purpose only.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 14, 274, 0)]\nbool DoDiagnostic(Guid inId, out string outResults)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  Guid |  inId |  Diagnostic Id.  |  \n \n|  string |  outResults |  Results.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  True if checked.  |  \n\n##### Remarks\n\nDo not use. Internal purpose only.\n",
+  "markdown": "markdown/cam/fcd9c33de5e714ca37e9b867.md",
+  "originalHtml": "html/cam/fcd9c33de5e714ca37e9b867.html"
+}

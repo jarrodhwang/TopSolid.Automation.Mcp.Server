@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.UserStockType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.UserStockType.html",
+  "sha256": "d2bd2f4fca122660c70e092e718a12ef55866d6b8b46b9797d94a9ce6982d7ee",
+  "text": "# Class UserStockType\n\nRepresents a User Stock Type.\n\n##### Inheritance\n \nobject\n \nStockType\n \nUserStockType\n\n##### Inherited Members\n \n object.ToString() \n \n object.Equals(object) \n \n object.Equals(object, object) \n \n object.ReferenceEquals(object, object) \n \n object.GetHashCode() \n \n object.GetType() \n \n object.MemberwiseClone() \n\n###### Namespace: TopSolid.Cam.NC.Kernel.Automating\n\n###### Assembly: TopSolid.Cam.NC.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 15, 0, 0)]\npublic class UserStockType : StockType\n```\n\n##### Remarks\n\nThis class is available since v7.15.\n\n### Constructors \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   UserStockType(List<ElementId>)  |  Initializes a new instance of a UserStockType class.  |  \n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   Stocks  |  Stocks.  |\n",
+  "markdown": "markdown/cam/4c1a52ec3f3e7ce82ce4b3bd.md",
+  "originalHtml": "html/cam/4c1a52ec3f3e7ce82ce4b3bd.html"
+}

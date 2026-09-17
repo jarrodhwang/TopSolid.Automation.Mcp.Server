@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IOperations.GetWeakTuningOperation.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IOperations.GetWeakTuningOperation.html",
+  "sha256": "0b8d7aa939d2afdc85780f18624cf0b4798108f3e4a42637fdcc16e23fb1387a",
+  "text": "# Method GetWeakTuningOperation\n\n#### GetWeakTuningOperation(ElementExId)\n\nGets the weak tuning operation from the given operation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nElementExId GetWeakTuningOperation(ElementExId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementExId |  inElementId |  Identifier of the operation to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementExId |  Weak tuning operation found.  |\n",
+  "markdown": "markdown/cam/dd74019b969301c929123ac4.md",
+  "originalHtml": "html/cam/dd74019b969301c929123ac4.html"
+}

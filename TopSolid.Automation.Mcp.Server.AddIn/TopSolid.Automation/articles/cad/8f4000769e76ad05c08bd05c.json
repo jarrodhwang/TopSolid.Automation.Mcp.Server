@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IParts.GetCoating.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IParts.GetCoating.html",
+  "sha256": "c12f454f1860c4cd0853b6b59c6522cefa9bf984b9698f17117abfb735de2305",
+  "text": "# Method GetCoating\n\n#### GetCoating(DocumentId)\n\nGets the coating of a part.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 301, 40)]\nDocumentId GetCoating(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the part document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  DocumentId |  Coating document identifier, or empty if the part does not have a coating.  |  \n\n##### Remarks\n\nThis method is available since v7.6.301.40.\n",
+  "markdown": "markdown/cad/8f4000769e76ad05c08bd05c.md",
+  "originalHtml": "html/cad/8f4000769e76ad05c08bd05c.html"
+}

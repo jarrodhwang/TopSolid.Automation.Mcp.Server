@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.GetIntegerValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.GetIntegerValue.html",
+  "sha256": "deef904e7d6c027adb9b3f4d1ad0da395892d9728bbaad3e910fe84fa0a87a0e",
+  "text": "# Method GetIntegerValue\n\n#### GetIntegerValue(ElementId)\n\nGets the value of an integer parameter.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nint GetIntegerValue(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the parameter to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  int |  Value of the parameter.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/8383c0841dd47e92d80a8afd.md",
+  "originalHtml": "html/kernel/8383c0841dd47e92d80a8afd.html"
+}

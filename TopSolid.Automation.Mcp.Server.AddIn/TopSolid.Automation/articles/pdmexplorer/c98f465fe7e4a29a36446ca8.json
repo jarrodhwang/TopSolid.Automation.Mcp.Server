@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IApplication.StartModification.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IApplication.StartModification.html",
+  "sha256": "96a100216186bd2160b7e6270f43c3cc0d8a2a668bbc4f7728f912843089a125",
+  "text": "# Method StartModification\n\n#### StartModification(string, bool)\n\nStarts performing modifications.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nbool StartModification(string inUndoSequenceName, bool inIsUndoSequenceGhost)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  string |  inUndoSequenceName |  Name of the undo sequence.  |  \n \n|  bool |  inIsUndoSequenceGhost |  Whether the undo sequence is hidden from the user.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Modifications can be performed.  |  \n\n##### Remarks\n\nThis method must be called before any modification is attempted.\n \nThis method is available since v7.6.\n\n##### Examples\n \n```\nif (TopSolidHost.Application.StartModification(\"My Modification\", false)) \n{\n\ttry\n\t{\n\t\t// Perform my modification.\n\n\t\tTopSolidHost.Application.EndModification(true, true);\n\t}\n\tcatch\n\t{\n\t\tTopSolidHost.Application.EndModification(false, false);\n\t}\n}\n```\n",
+  "markdown": "markdown/pdmexplorer/c98f465fe7e4a29a36446ca8.md",
+  "originalHtml": "html/pdmexplorer/c98f465fe7e4a29a36446ca8.html"
+}

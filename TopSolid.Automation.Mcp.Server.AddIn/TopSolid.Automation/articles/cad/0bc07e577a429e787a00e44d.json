@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMechanisms.GetPrismaticJoint.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMechanisms.GetPrismaticJoint.html",
+  "sha256": "87b5e2457cc110981dfb2b3d0fe7cacf75c45a66f026d008177830a4fc04ecd1",
+  "text": "# Method GetPrismaticJoint\n\n#### GetPrismaticJoint(ElementId, out ElementId, out ElementId, out SmartDirection3D, out SmartReal, out SmartReal, out SmartReal)\n\nGets a prismatic joint.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nvoid GetPrismaticJoint(ElementId inElementId, out ElementId outFirstRigidGroupId, out ElementId outSecondRigidGroupId, out SmartDirection3D outTranslationDirection, out SmartReal outInitialDistance, out SmartReal outMinimumDistance, out SmartReal outMaximumDistance)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the joint to analyze.  |  \n \n|  ElementId |  outFirstRigidGroupId |  Identifier of first rigid group.  |  \n \n|  ElementId |  outSecondRigidGroupId |  Identifier of second rigid group.  |  \n \n|  SmartDirection3D |  outTranslationDirection |  Translation direction.  |  \n \n|  SmartReal |  outInitialDistance |  Initial distance.  |  \n \n|  SmartReal |  outMinimumDistance |  Minimum distance, or null if no limits.  |  \n \n|  SmartReal |  outMaximumDistance |  Maximum distance, or null if no limits.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/cad/0bc07e577a429e787a00e44d.md",
+  "originalHtml": "html/cad/0bc07e577a429e787a00e44d.html"
+}

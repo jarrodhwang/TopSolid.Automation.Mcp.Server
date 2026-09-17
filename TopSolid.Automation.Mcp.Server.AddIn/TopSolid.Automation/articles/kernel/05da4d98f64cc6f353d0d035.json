@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IGeometries3D.SetPlanePublishingDefinition.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IGeometries3D.SetPlanePublishingDefinition.html",
+  "sha256": "3110263168b065369e765c11e81a6223386afe50f8b8ad0e698571c761ea71fa",
+  "text": "# Method SetPlanePublishingDefinition\n\n#### SetPlanePublishingDefinition(ElementId, SmartPlane3D)\n\nSets the definition of a plane publishing entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nvoid SetPlanePublishingDefinition(ElementId inElementId, SmartPlane3D inDefinition)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the publishing entity to modify.  |  \n \n|  SmartPlane3D |  inDefinition |  Publishing new definition.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.8.\n",
+  "markdown": "markdown/kernel/05da4d98f64cc6f353d0d035.md",
+  "originalHtml": "html/kernel/05da4d98f64cc6f353d0d035.html"
+}

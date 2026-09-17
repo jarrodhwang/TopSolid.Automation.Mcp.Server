@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMaterials.GetSpecificHeatCapacity.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMaterials.GetSpecificHeatCapacity.html",
+  "sha256": "97188a8e0374797a5c3d824f2339ffd4a050a3e5ac0463a7c4a02038a37b8a3c",
+  "text": "# Method GetSpecificHeatCapacity\n\n#### GetSpecificHeatCapacity(DocumentId, out double)\n\nGets Specific Heat Capacity\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 400, 120)]\nbool GetSpecificHeatCapacity(DocumentId inDocumentId, out double outValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Id of the container document  |  \n \n|  double |  outValue |  The value  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  true if a parameter has been fetched with success  |\n",
+  "markdown": "markdown/cad/b3f4644f7aea66e8d5b10ef3.md",
+  "originalHtml": "html/cad/b3f4644f7aea66e8d5b10ef3.html"
+}

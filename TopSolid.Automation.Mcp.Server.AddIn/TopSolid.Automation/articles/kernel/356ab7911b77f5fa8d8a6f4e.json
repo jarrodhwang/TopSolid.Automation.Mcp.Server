@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IFamilies.GetCatalogRow.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IFamilies.GetCatalogRow.html",
+  "sha256": "453e3d703cb30529df6157446b6976d966e4ff3b34bd9def2135f42c1679cdd0",
+  "text": "# Method GetCatalogRow\n\n#### GetCatalogRow(DocumentId, string)\n\nGets the catalog row.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 15, 0, 60)]\nElementId GetCatalogRow(DocumentId inDocumentId, string inCode)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the family document to analyze.  |  \n \n|  string |  inCode |  The row code.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Row identifier.  |  \n\n##### Remarks\n\nThis method is available since v7.15.\n",
+  "markdown": "markdown/kernel/356ab7911b77f5fa8d8a6f4e.md",
+  "originalHtml": "html/kernel/356ab7911b77f5fa8d8a6f4e.html"
+}

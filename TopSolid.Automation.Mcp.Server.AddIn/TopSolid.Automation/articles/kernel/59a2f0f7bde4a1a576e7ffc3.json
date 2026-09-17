@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IElements.HasSystemName.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IElements.HasSystemName.html",
+  "sha256": "17d73e0a10ea8d7ea8f683d58d061649adc06aa09adad668c43e5ad10730052a",
+  "text": "# Method HasSystemName\n\n#### HasSystemName(ElementId)\n\nTells whether an element has a system name.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nbool HasSystemName(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Whether the element has a system name.  |  \n\n##### Remarks\n\nSystem names start with '$' and are translated before being exposed to the user.\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/59a2f0f7bde4a1a576e7ffc3.md",
+  "originalHtml": "html/kernel/59a2f0f7bde4a1a576e7ffc3.html"
+}

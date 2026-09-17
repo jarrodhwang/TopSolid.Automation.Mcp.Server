@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.INCFiles.GetOtherNCFileBufferPartial.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.INCFiles.GetOtherNCFileBufferPartial.html",
+  "sha256": "0462b90b045ad251e2e5990fd95a737200823b7303ffaa90476ab931d0f03eae",
+  "text": "# Method GetOtherNCFileBufferPartial\n\n#### GetOtherNCFileBufferPartial(PdmMinorRevisionId, int, int, ref int)\n\nGet buffer of NC Code file.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nchar[] GetOtherNCFileBufferPartial(PdmMinorRevisionId inMinorRevisionId, int inBufferSize, int inStartingIndex, ref int outNbCharRead)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmMinorRevisionId |  inMinorRevisionId |  Identifier of the minor revision.  |  \n \n|  int |  inBufferSize |   |  \n \n|  int |  inStartingIndex |   |  \n \n|  int |  outNbCharRead |   |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  char[] |  From line inStartingIndex to inStartingIndex+inBufferSize of the file.  |\n",
+  "markdown": "markdown/cam/b2e877543c168ef59531b85c.md",
+  "originalHtml": "html/cam/b2e877543c168ef59531b85c.html"
+}

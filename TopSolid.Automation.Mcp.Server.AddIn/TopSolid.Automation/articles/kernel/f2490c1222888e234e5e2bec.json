@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.GetSmartIntegerParameterCreation.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.GetSmartIntegerParameterCreation.html",
+  "sha256": "ddc662a10e9c459dd4f0995e14c4ca6a0eccf463529ebb76b2679d2eeeb5f628",
+  "text": "# Method GetSmartIntegerParameterCreation\n\n#### GetSmartIntegerParameterCreation(ElementId, out SmartInteger)\n\nGets a smart integer parameter creation operation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 17, 400, 220)]\nvoid GetSmartIntegerParameterCreation(ElementId inElementId, out SmartInteger outSmartInteger)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the smart integer parameter creation operation to analyze.  |  \n \n|  SmartInteger |  outSmartInteger |  Smart integer value.  |  \n\n##### Remarks\n\nThis method is available since v7.17.\n",
+  "markdown": "markdown/kernel/f2490c1222888e234e5e2bec.md",
+  "originalHtml": "html/kernel/f2490c1222888e234e5e2bec.html"
+}

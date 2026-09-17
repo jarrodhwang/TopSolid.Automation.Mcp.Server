@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.IsLibraryProject.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.IsLibraryProject.html",
+  "sha256": "ccb54a1e3651e18f3583fcdcf9541e101c2cf9298124592a4c463f9ef375237d",
+  "text": "# Method IsLibraryProject\n\n#### IsLibraryProject(PdmObjectId)\n\nTells if a project is a library.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nbool IsLibraryProject(PdmObjectId inProjectId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inProjectId |  Project PDM object identifier.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  The project is a library.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/98b5554cd2ea07ca4ce3cc2f.md",
+  "originalHtml": "html/kernel/98b5554cd2ea07ca4ce3cc2f.html"
+}

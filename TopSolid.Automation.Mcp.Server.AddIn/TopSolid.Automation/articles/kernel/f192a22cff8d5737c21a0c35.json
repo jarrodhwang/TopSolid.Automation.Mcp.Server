@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.SetRealValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.SetRealValue.html",
+  "sha256": "739b76c3a26029701779f8392aeead3c6d611222fb8102efafa312c234a255a4",
+  "text": "# Method SetRealValue\n\n#### SetRealValue(ElementId, double)\n\nSets the value of a real parameter.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nvoid SetRealValue(ElementId inElementId, double inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the parameter to modify.  |  \n \n|  double |  inValue |  New value in SI units.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/f192a22cff8d5737c21a0c35.md",
+  "originalHtml": "html/kernel/f192a22cff8d5737c21a0c35.html"
+}

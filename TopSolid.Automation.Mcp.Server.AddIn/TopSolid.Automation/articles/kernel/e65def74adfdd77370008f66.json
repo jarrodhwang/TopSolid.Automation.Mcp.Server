@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.HasUserEnumerationPossibleValues.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.HasUserEnumerationPossibleValues.html",
+  "sha256": "f6997bbbbd44a6621ca49740c44f2cbe05d24e33db8f42affc5099f7eb6e2a73",
+  "text": "# Method HasUserEnumerationPossibleValues\n\n#### HasUserEnumerationPossibleValues(ElementId)\n\nTells wether the user enumeration parameter has possible values.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 17, 0, 0)]\nbool HasUserEnumerationPossibleValues(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the parameter.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Wether the parameter has possible values.  |  \n\n##### Remarks\n\nThis method is available since v7.17.000.000.\n",
+  "markdown": "markdown/kernel/e65def74adfdd77370008f66.md",
+  "originalHtml": "html/kernel/e65def74adfdd77370008f66.html"
+}

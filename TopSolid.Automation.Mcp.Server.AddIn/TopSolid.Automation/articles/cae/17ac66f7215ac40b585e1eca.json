@@ -1,0 +1,8 @@
+{
+  "path": "api/cae/TopSolid.Cae.Kernel.Automating.TopSolidCaeHostInstance.-ctor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cae/TopSolid.Cae.Kernel.Automating.TopSolidCaeHostInstance.-ctor.html",
+  "sha256": "fad2b4cc414ba5f341e2e6bd73aa2336585a9d6bd9eaf42530d26c275449cbc7",
+  "text": "# Constructor TopSolidCaeHostInstance\n\n#### TopSolidCaeHostInstance(TopSolidHostInstance)\n\nInitializes a new instance of the TopSolidCaeHostInstance class.\n\n##### Declaration\n\n```\npublic TopSolidCaeHostInstance(TopSolidHostInstance inTopSolidHostInstance)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  TopSolidHostInstance |  inTopSolidHostInstance |  TopSolid host instance.  |\n",
+  "markdown": "markdown/cae/17ac66f7215ac40b585e1eca.md",
+  "originalHtml": "html/cae/17ac66f7215ac40b585e1eca.html"
+}

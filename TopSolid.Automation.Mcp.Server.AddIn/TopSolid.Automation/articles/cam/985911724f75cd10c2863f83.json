@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IParameters.GetValueBoundValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IParameters.GetValueBoundValue.html",
+  "sha256": "2adbb967abc5695fc952811de559b5516bf331e614f85b6dde90bd7641416dc8",
+  "text": "# Method GetValueBoundValue\n\n#### GetValueBoundValue(ParameterId)\n\nFrom a bound parameter, get a SmartReal with the bound value. Use GetValue(ParameterId) to get the bound type, and GetValueBoundElement(ParameterId) to get the limitation element.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nSmartReal GetValueBoundValue(ParameterId inParameterId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ParameterId |  inParameterId |  Parameter to get.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartReal |  A new SmartReal with the current value of the parameter.  |\n",
+  "markdown": "markdown/cam/985911724f75cd10c2863f83.md",
+  "originalHtml": "html/cam/985911724f75cd10c2863f83.html"
+}

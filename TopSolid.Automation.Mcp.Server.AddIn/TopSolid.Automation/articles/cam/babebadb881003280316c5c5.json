@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.TopSolidCamHost.Simulation.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.TopSolidCamHost.Simulation.html",
+  "sha256": "ae939ce68b2e97798bd34e2f874fe4e45c23e8f37c5c2f90845fff2f79cdf7bf",
+  "text": "# Property Simulation\n\n#### Simulation\n\nGets access to simulation, or null if not connected.\n\n##### Declaration\n\n```\npublic static ISimulation Simulation { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ISimulation |   |\n",
+  "markdown": "markdown/cam/babebadb881003280316c5c5.md",
+  "originalHtml": "html/cam/babebadb881003280316c5c5.html"
+}

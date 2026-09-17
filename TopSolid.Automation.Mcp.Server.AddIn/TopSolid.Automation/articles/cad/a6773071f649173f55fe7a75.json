@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IAssemblies.SetAssemblyMomentsOfInertiaManagement.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IAssemblies.SetAssemblyMomentsOfInertiaManagement.html",
+  "sha256": "c3a7b2e9b6bce21bfe2731dea8885043e503bd8781ac2e9f7a54ecb12506e79b",
+  "text": "# Method SetAssemblyMomentsOfInertiaManagement\n\n#### SetAssemblyMomentsOfInertiaManagement(DocumentId, bool)\n\nSets the moments of inertia management of the physical property management of an assembly.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 13, 300, 220)]\nvoid SetAssemblyMomentsOfInertiaManagement(DocumentId inDocumentId, bool inIsInertiaManaged)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of assembly document to analyze.  |  \n \n|  bool |  inIsInertiaManaged |  Tells whether the physical property management of an assembly is moments of inertia managed.  |  \n\n##### Remarks\n\nThis method is available since v7.13.300.220.\n",
+  "markdown": "markdown/cad/a6773071f649173f55fe7a75.md",
+  "originalHtml": "html/cad/a6773071f649173f55fe7a75.html"
+}

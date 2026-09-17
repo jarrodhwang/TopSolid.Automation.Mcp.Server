@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartPattern2D.ElementId.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartPattern2D.ElementId.html",
+  "sha256": "a78f141f6c77b7bdc542c9d98461f30569292cee824bf0a5f27306cc2bb645a0",
+  "text": "# Field ElementId\n\nProviding element identifier, or empty if none.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic ElementId ElementId\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Providing element identifier, or empty if none. |\n",
+  "markdown": "markdown/kernel/3b9062a423a69e541fdec226.md",
+  "originalHtml": "html/kernel/3b9062a423a69e541fdec226.html"
+}

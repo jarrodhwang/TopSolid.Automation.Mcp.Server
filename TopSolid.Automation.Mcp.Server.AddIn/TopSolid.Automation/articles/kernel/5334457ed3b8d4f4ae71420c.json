@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.GetSmartRealParameterCreation.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.GetSmartRealParameterCreation.html",
+  "sha256": "033e6708020f3e6c4df3742910d274de9449236a0933173e393a8f9c7aaad656",
+  "text": "# Method GetSmartRealParameterCreation\n\n#### GetSmartRealParameterCreation(ElementId, out SmartReal)\n\nGets a smart real parameter creation operation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nvoid GetSmartRealParameterCreation(ElementId inElementId, out SmartReal outSmartReal)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the smart real parameter creation operation to analyze.  |  \n \n|  SmartReal |  outSmartReal |  Smart real value.  |  \n\n##### Remarks\n\nThis method is available since v7.8.\n",
+  "markdown": "markdown/kernel/5334457ed3b8d4f4ae71420c.md",
+  "originalHtml": "html/kernel/5334457ed3b8d4f4ae71420c.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Frame3D.ZDirection.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Frame3D.ZDirection.html",
+  "sha256": "9d85563ce5157a85ced628d487a93acd3e8908ea0008d55e5c554e5c0adb83bf",
+  "text": "# Field ZDirection\n\nFrame Z direction, equal to XDirection ^ YDirection.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic Direction3D ZDirection\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Direction3D |  Frame Z direction, equal to XDirection ^ YDirection. |\n",
+  "markdown": "markdown/kernel/bf35ef0cc94543fe3136f79f.md",
+  "originalHtml": "html/kernel/bf35ef0cc94543fe3136f79f.html"
+}

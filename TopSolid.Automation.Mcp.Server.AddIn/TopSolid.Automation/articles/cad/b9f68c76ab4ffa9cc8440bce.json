@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ISubstitutions.GetCurrentSubstitutionRule.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ISubstitutions.GetCurrentSubstitutionRule.html",
+  "sha256": "dd325be19352bac6dbb4e5d5269986a0d19716905b01ee701b685da20d29ca48",
+  "text": "# Method GetCurrentSubstitutionRule\n\n#### GetCurrentSubstitutionRule(ElementId)\n\nGets current substitution rule\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 0, 0)]\nElementId GetCurrentSubstitutionRule(ElementId inOperationId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inOperationId |  Identifier of the operation holding substitutions.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  The substitution rules.  |  \n\n##### Remarks\n\nThis method is available since v7.19.\n",
+  "markdown": "markdown/cad/b9f68c76ab4ffa9cc8440bce.md",
+  "originalHtml": "html/cad/b9f68c76ab4ffa9cc8440bce.html"
+}

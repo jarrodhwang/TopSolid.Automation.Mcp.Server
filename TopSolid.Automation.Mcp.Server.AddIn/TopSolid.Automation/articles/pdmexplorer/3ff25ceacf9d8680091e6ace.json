@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.SetComment.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.SetComment.html",
+  "sha256": "96773b1cccdcacb1bce87522af2c5a961b21401a02e133510bdc28fa77d60b02",
+  "text": "# Method SetComment\n\n#### SetComment(PdmObjectId, string)\n\nSets the comment of an object.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nvoid SetComment(PdmObjectId inObjectId, string inComment)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  Object identifier.  |  \n \n|  string |  inComment |  Comment.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/pdmexplorer/3ff25ceacf9d8680091e6ace.md",
+  "originalHtml": "html/pdmexplorer/3ff25ceacf9d8680091e6ace.html"
+}

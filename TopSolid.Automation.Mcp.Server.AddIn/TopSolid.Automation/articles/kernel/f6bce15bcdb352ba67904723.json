@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartProfile3D.ElementId.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartProfile3D.ElementId.html",
+  "sha256": "12b9657bb3fd606349ed2b1e7ecc0facb108a624438687ed6efa6774c0ac174e",
+  "text": "# Field ElementId\n\nProviding element identifier, or empty if none.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic ElementId ElementId\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Providing element identifier, or empty if none. |\n",
+  "markdown": "markdown/kernel/f6bce15bcdb352ba67904723.md",
+  "originalHtml": "html/kernel/f6bce15bcdb352ba67904723.html"
+}

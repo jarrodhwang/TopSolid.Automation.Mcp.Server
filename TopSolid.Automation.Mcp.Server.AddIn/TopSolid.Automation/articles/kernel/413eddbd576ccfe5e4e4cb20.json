@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ItemLabel.Frame2DXAxis.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ItemLabel.Frame2DXAxis.html",
+  "sha256": "2fb3c473d907201a8a128eeec974435cea2da5ce4a889a0ff47f3fba3fecccf2",
+  "text": "# Field Frame2DXAxis\n\nLabel of 2D frame X axis.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\npublic static readonly ItemLabel Frame2DXAxis\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ItemLabel |  Label of 2D frame X axis. |\n",
+  "markdown": "markdown/kernel/413eddbd576ccfe5e4e4cb20.md",
+  "originalHtml": "html/kernel/413eddbd576ccfe5e4e4cb20.html"
+}

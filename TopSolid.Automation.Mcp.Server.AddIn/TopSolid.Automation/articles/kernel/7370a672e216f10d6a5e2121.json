@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IFamilies.SetAsExplicit.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IFamilies.SetAsExplicit.html",
+  "sha256": "c5d3eb1a886867f4b1bd6ba56f99ef4c19c4586fbb587011bc8f12c06e082cc3",
+  "text": "# Method SetAsExplicit\n\n#### SetAsExplicit(DocumentId)\n\nSets family document as an explicit family document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 18, 400, 160)]\nvoid SetAsExplicit(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the family document to use.  |  \n\n##### Remarks\n\nThis method is available since v7.18.\n",
+  "markdown": "markdown/kernel/7370a672e216f10d6a5e2121.md",
+  "originalHtml": "html/kernel/7370a672e216f10d6a5e2121.html"
+}

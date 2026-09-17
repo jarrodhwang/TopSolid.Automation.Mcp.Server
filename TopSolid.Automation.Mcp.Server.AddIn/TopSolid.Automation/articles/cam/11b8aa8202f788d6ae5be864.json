@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.ICamSketch.IsSketchDeferred.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.ICamSketch.IsSketchDeferred.html",
+  "sha256": "62ebc22774f8ff2cc7ed18b4a52a5ae1789cf0f140043ac885a688fce5a71bb9",
+  "text": "# Method IsSketchDeferred\n\n#### IsSketchDeferred(ElementId)\n\nChecks if the sketch operation is deferred.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 18, 400, 200)]\nbool IsSketchDeferred(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  sketch operation to check.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  True if the given element is a deferred sketch operation.  |\n",
+  "markdown": "markdown/cam/11b8aa8202f788d6ae5be864.md",
+  "originalHtml": "html/cam/11b8aa8202f788d6ae5be864.html"
+}

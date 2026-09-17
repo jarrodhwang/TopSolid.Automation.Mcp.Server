@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IShapes.GetFaceCylinderDirection.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IShapes.GetFaceCylinderDirection.html",
+  "sha256": "b7f6c5b68f8c3aa68eff4404dea77d64e4b640a671404f857603b7614c49c010",
+  "text": "# Method GetFaceCylinderDirection\n\n#### GetFaceCylinderDirection(ElementItemId)\n\nGets the direction of a cylinder face.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 14, 0, 0)]\nDirection3D GetFaceCylinderDirection(ElementItemId inFaceId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementItemId |  inFaceId |  Identifier of the face to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Direction3D |  Direction of the specified cylinder face.  |  \n\n##### Remarks\n\nThis method is available since v7.14.\n",
+  "markdown": "markdown/kernel/0cbe9f0bf36178c09a181d3d.md",
+  "originalHtml": "html/kernel/0cbe9f0bf36178c09a181d3d.html"
+}

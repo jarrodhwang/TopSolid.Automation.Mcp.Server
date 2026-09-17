@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.Save.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.Save.html",
+  "sha256": "a9eb6f0a352cc3875a8a2da668ef439cc365a363b77f4fe75127fee87e3e9231",
+  "text": "# Method Save\n\n#### Save(PdmObjectId, bool)\n\nSaves an object.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nvoid Save(PdmObjectId inObjectId, bool inRecurses)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  PDM object identifier.  |  \n \n|  bool |  inRecurses |  Tells if to recurse on objects contained.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/pdmexplorer/9eacc3f96602a7a51298f1cf.md",
+  "originalHtml": "html/pdmexplorer/9eacc3f96602a7a51298f1cf.html"
+}

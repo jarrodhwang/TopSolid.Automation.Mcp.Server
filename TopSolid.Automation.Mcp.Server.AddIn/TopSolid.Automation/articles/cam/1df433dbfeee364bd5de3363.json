@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IParts.IsPart.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IParts.IsPart.html",
+  "sha256": "85dd6853f1c6f080926bfeb11deb8e1187ab2ec34a649fe249ec71b9c5cca524",
+  "text": "# Method IsPart\n\n#### IsPart(ElementId)\n\nTells whether an element is a Cam part.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nbool IsPart(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  True if the element is a Cam part.  |\n",
+  "markdown": "markdown/cam/1df433dbfeee364bd5de3363.md",
+  "originalHtml": "html/cam/1df433dbfeee364bd5de3363.html"
+}

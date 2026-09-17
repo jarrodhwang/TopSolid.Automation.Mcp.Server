@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IEntities.MoveEntity.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IEntities.MoveEntity.html",
+  "sha256": "34b8088d8e1723e27ddfc7687458669e7a08ba7600728274ca6709607f629f0f",
+  "text": "# Method MoveEntity\n\n#### MoveEntity(ElementId, ElementId, int)\n\nMoves an entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nvoid MoveEntity(ElementId inElementId, ElementId inOwnerId, int inIndex)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the entity to move.  |  \n \n|  ElementId |  inOwnerId |  Identifier of the new owner folder entity.  |  \n \n|  int |  inIndex |  Index of the entity in the new owner, or -1 for last.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.10.\n",
+  "markdown": "markdown/kernel/9a3c51042d6b6acaf97d8375.md",
+  "originalHtml": "html/kernel/9a3c51042d6b6acaf97d8375.html"
+}

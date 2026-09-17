@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IUnits.ConvertFromSI.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IUnits.ConvertFromSI.html",
+  "sha256": "10504f0edc3748dde42e7c08e957071f0e53816707f8848ea5d98ae6b23c026d",
+  "text": "# Method ConvertFromSI\n\n#### ConvertFromSI(UnitType, int, double)\n\nConverts a value from SI unit to a specified unit.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\ndouble ConvertFromSI(UnitType inUnitType, int inUnitIndex, double inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  UnitType |  inUnitType |  Unit type.  |  \n \n|  int |  inUnitIndex |  Unit index.  |  \n \n|  double |  inValue |  Value in SI to convert into the specified unit.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double |  Converted value.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/cc47b64cc066a9d9b69a4791.md",
+  "originalHtml": "html/kernel/cc47b64cc066a9d9b69a4791.html"
+}

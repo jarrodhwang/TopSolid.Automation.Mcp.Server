@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMaterials.GetMeltingTemperature.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMaterials.GetMeltingTemperature.html",
+  "sha256": "17b1713f003aba39991d4132faf420edf4bcfabe19da6e2f060cd8feb5478312",
+  "text": "# Method GetMeltingTemperature\n\n#### GetMeltingTemperature(DocumentId, out double)\n\nGets Melting Temperature\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 400, 120)]\nbool GetMeltingTemperature(DocumentId inDocumentId, out double outValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Id of the container document  |  \n \n|  double |  outValue |  The value  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  true if a parameter has been fetched with success  |\n",
+  "markdown": "markdown/cad/cc84a2259e058cc3b80b994e.md",
+  "originalHtml": "html/cad/cc84a2259e058cc3b80b994e.html"
+}

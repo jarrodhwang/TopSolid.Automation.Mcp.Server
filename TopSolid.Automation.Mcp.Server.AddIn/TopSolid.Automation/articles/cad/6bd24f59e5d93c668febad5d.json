@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ITools.CreatePlaneSymmetry.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ITools.CreatePlaneSymmetry.html",
+  "sha256": "69a24d03aabb3fb28fe26271ae6b7893a0fdb12c1e3302914bfeeab7f411a6ac",
+  "text": "# Method CreatePlaneSymmetry\n\n#### CreatePlaneSymmetry(DocumentId, SmartPlane3D)\n\nCreates a plane symmetry.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nElementId CreatePlaneSymmetry(DocumentId inDocumentId, SmartPlane3D inPlane)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  SmartPlane3D |  inPlane |  Symmetry plane.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the created symmetry entity.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.10.\n",
+  "markdown": "markdown/cad/6bd24f59e5d93c668febad5d.md",
+  "originalHtml": "html/cad/6bd24f59e5d93c668febad5d.html"
+}

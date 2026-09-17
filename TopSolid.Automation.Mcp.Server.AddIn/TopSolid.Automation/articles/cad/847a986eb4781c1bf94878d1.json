@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMaterials.SetRefractiveIndex.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMaterials.SetRefractiveIndex.html",
+  "sha256": "157d95d2d872a264732c0a52fd5087bb34fe208ca9581aaef0999b92ea66b278",
+  "text": "# Method SetRefractiveIndex\n\n#### SetRefractiveIndex(DocumentId, double)\n\nSets the refractive index.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 0, 0)]\nvoid SetRefractiveIndex(DocumentId inDocumentId, double inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  double |  inValue |  Wanted value.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.16.\n",
+  "markdown": "markdown/cad/847a986eb4781c1bf94878d1.md",
+  "originalHtml": "html/cad/847a986eb4781c1bf94878d1.html"
+}

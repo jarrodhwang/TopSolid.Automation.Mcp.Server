@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartDirection3D.Type.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartDirection3D.Type.html",
+  "sha256": "d0bb739ed53421e60b27fcf2d2bcde54bf535e4486ce2287c233a5d570333d42",
+  "text": "# Field Type\n\nType of smart direction.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic SmartDirection3DType Type\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartDirection3DType |  Type of smart direction. |\n",
+  "markdown": "markdown/kernel/9b31d3d3913ed46ba8240966.md",
+  "originalHtml": "html/kernel/9b31d3d3913ed46ba8240966.html"
+}

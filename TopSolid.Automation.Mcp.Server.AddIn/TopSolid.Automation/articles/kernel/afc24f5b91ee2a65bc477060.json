@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdmAdmin.IsAdmin.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdmAdmin.IsAdmin.html",
+  "sha256": "c55cf7527b99500d09f49595e6e6df626b6bf695e9aa77ca1847431448473055",
+  "text": "# Property IsAdmin\n\n#### IsAdmin\n\nTells whether the connected TopSolid user has PDM administration rights.\n\n##### Declaration\n\n```\n[AvailableSinceVersion(7, 6, 301, 160)]\nbool IsAdmin { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |   |  \n\n##### Remarks\n\nThis property is available since v7.6.301.160.\n",
+  "markdown": "markdown/kernel/afc24f5b91ee2a65bc477060.md",
+  "originalHtml": "html/kernel/afc24f5b91ee2a65bc477060.html"
+}

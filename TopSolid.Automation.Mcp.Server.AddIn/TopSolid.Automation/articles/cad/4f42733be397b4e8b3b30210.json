@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IParts.GetEnclosingCylinderAxis.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IParts.GetEnclosingCylinderAxis.html",
+  "sha256": "f77633c644bc86ed81f3e51071ba28679241ee6181ae6384dc410ddfbeefae8f",
+  "text": "# Method GetEnclosingCylinderAxis\n\n#### GetEnclosingCylinderAxis(DocumentId)\n\nGets the enclosing cylinder axis entity of a part.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nElementId GetEnclosingCylinderAxis(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of part document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the enclosing cylinder axis entity found, or empty if not managed.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/cad/4f42733be397b4e8b3b30210.md",
+  "originalHtml": "html/cad/4f42733be397b4e8b3b30210.html"
+}

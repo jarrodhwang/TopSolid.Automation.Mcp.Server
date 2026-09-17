@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IApplication.GetExporterFileType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IApplication.GetExporterFileType.html",
+  "sha256": "cc36470c3b733252e2ecc63757c2a292de42b1f328a1768bd090732240d4d1ae",
+  "text": "# Method GetExporterFileType\n\n#### GetExporterFileType(int, out string, out string[])\n\nGets the type of files managed by an exporter.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nvoid GetExporterFileType(int inExporterIx, out string outFileTypeName, out string[] outFileExtensions)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  int |  inExporterIx |  Index of exporter to analyze, within [0, ExporterCount-1].  |  \n \n|  string |  outFileTypeName |  Name of the type of the managed files (ex: \"Parasolid\", for Parasolid files).  |  \n \n|  string[] |  outFileExtensions |  Extensions of the managed files, with the leading '.' character (ex: { \".x_t\", \".xmt_txt\", \".x_b\", \".xmt_bin\" } for Parasolid files).  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/c00ae0209452d2e79d592c01.md",
+  "originalHtml": "html/kernel/c00ae0209452d2e79d592c01.html"
+}

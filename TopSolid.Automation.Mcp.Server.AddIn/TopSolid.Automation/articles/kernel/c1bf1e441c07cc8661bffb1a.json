@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartEnumeration.Value.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartEnumeration.Value.html",
+  "sha256": "015ceb97116f3a04a7b0f26689a992106c65ae3b6e9437ac392bf926bad388e1",
+  "text": "# Field Value\n\nValue, or null if unknown.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic int? Value\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  int? |  Value, or null if unknown. |\n",
+  "markdown": "markdown/kernel/c1bf1e441c07cc8661bffb1a.md",
+  "originalHtml": "html/kernel/c1bf1e441c07cc8661bffb1a.html"
+}

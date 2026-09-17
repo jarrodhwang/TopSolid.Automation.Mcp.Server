@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.CreateDocumentWithTemplate.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.CreateDocumentWithTemplate.html",
+  "sha256": "85190cfea435c537e23bdb343117cc864e916da44e49b298acc3ef3124bd0ac7",
+  "text": "# Method CreateDocumentWithTemplate\n\n#### CreateDocumentWithTemplate(PdmObjectId, PdmObjectId)\n\nCreates a TopSolid document with a template.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nPdmObjectId CreateDocumentWithTemplate(PdmObjectId inOwnerId, PdmObjectId inTemplateObjectId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inOwnerId |  Identifier of owner.  |  \n \n|  PdmObjectId |  inTemplateObjectId |  Identifier of the template.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  PdmObjectId |  Identifier of the created document.  |  \n\n##### Remarks\n\nThis method must not be called between StartModification(string, bool) and EndModification(bool, bool) methods calls.\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/801a8ada64aa3ec9234a264e.md",
+  "originalHtml": "html/kernel/801a8ada64aa3ec9234a264e.html"
+}

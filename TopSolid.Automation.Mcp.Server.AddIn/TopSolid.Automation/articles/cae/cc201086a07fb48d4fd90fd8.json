@@ -1,0 +1,8 @@
+{
+  "path": "api/cae/TopSolid.Cae.Kernel.Automating.MeasureResults.Material.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cae/TopSolid.Cae.Kernel.Automating.MeasureResults.Material.html",
+  "sha256": "a13d69e3e98f9ac9881c723867c47d06a47d4c9b15531b2a082555a316cea879",
+  "text": "# Property Material\n\n#### Material\n\nGets the material Values\n\n##### Declaration\n\n```\npublic string[] Material { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string[] |   |\n",
+  "markdown": "markdown/cae/cc201086a07fb48d4fd90fd8.md",
+  "originalHtml": "html/cae/cc201086a07fb48d4fd90fd8.html"
+}

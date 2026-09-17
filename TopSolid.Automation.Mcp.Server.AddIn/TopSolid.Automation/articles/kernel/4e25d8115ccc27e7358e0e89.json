@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IShapes.MakeShapeItemGeometryAnalysis.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IShapes.MakeShapeItemGeometryAnalysis.html",
+  "sha256": "31456973b7696ebbfebfb964d3d642840410b0eb228509b2697c4ce45f4b2cdd",
+  "text": "# Method MakeShapeItemGeometryAnalysis\n\n#### MakeShapeItemGeometryAnalysis(ElementItemId, int, out List<string>, out List<string>)\n\nMake the geometry analysis of a shape item.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 14, 0, 0)]\nvoid MakeShapeItemGeometryAnalysis(ElementItemId inItemId, int inDecimalDigits, out List<string> outNames, out List<string> outResults)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementItemId |  inItemId |  Identifier of the shape item to analyze.  |  \n \n|  int |  inDecimalDigits |  Maximum number of digits after the decimal separator for unit-less values.  |  \n \n|  List<string> |  outNames |  Analyses localized names (i.e. \"Radius\", \"Length\", ...).  |  \n \n|  List<string> |  outResults |  Analyses localized corresponding results.  |  \n\n##### Remarks\n\nAll units of results are in the unit defined by the document.\n \nThis method is available since v7.14.\n",
+  "markdown": "markdown/kernel/4e25d8115ccc27e7358e0e89.md",
+  "originalHtml": "html/kernel/4e25d8115ccc27e7358e0e89.html"
+}

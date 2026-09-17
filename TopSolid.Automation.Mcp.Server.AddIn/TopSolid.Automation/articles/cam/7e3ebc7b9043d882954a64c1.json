@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.CylinderStockType.Zminus.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.CylinderStockType.Zminus.html",
+  "sha256": "a675e2c31c678429ca40477bcf1c8209e6c294fdf9850764494158e75293389b",
+  "text": "# Field Zminus\n\nZ-.\n\n###### Namespace: TopSolid.Cam.NC.Kernel.Automating\n\n###### Assembly: TopSolid.Cam.NC.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic SmartReal Zminus\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartReal |  Z-. |\n",
+  "markdown": "markdown/cam/7e3ebc7b9043d882954a64c1.md",
+  "originalHtml": "html/cam/7e3ebc7b9043d882954a64c1.html"
+}

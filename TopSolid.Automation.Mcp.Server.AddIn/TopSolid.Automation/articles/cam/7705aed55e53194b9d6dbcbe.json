@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IPrograms.SetName.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IPrograms.SetName.html",
+  "sha256": "0b82badabbd11ecaa6b9c4c766a09d9822743127ef31ac3fbc64709501bd7c85",
+  "text": "# Method SetName\n\n#### SetName(ElementId, string, out string)\n\nSet program name.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 180)]\nvoid SetName(ElementId inProgramId, string inName, out string outError)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inProgramId |  Identifier of the NC program to modify.  |  \n \n|  string |  inName |  Program name.  |  \n \n|  string |  outError |  Error message, or null if name is allowed.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n",
+  "markdown": "markdown/cam/7705aed55e53194b9d6dbcbe.md",
+  "originalHtml": "html/cam/7705aed55e53194b9d6dbcbe.html"
+}

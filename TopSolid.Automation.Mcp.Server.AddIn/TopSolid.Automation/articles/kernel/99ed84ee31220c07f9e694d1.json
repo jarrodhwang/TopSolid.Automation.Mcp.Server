@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.ExportPackage.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.ExportPackage.html",
+  "sha256": "8696e54b8d9c2b8b88a02cc0320ff50d13db0d5c34bd9ac82ca03f512076a970",
+  "text": "# Method ExportPackage\n\n#### ExportPackage(List<PdmObjectId>, bool, bool, string)\n\nExports a package.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nvoid ExportPackage(List<PdmObjectId> inObjectIds, bool inExportsForDelivery, bool inExportsIncrementalPackage, string inFileFullPath)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  List<PdmObjectId> |  inObjectIds |  PDM object identifiers.  |  \n \n|  bool |  inExportsForDelivery |  Whether exports for delivery.  |  \n \n|  bool |  inExportsIncrementalPackage |  Whether exports an incremental package.  |  \n \n|  string |  inFileFullPath |  Full path of the exported package, with \".TopPkg\" extension.  |  \n\n##### Remarks\n\nThis method must not be called between StartModification(string, bool) and EndModification(bool, bool) methods calls.\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/99ed84ee31220c07f9e694d1.md",
+  "originalHtml": "html/kernel/99ed84ee31220c07f9e694d1.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.PdmObjectId.IsEmpty.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.PdmObjectId.IsEmpty.html",
+  "sha256": "e70e0cb61288c628f88a1c93566caf9339c7e69e92baf6a89f816ce425d8f1e5",
+  "text": "# Property IsEmpty\n\n#### IsEmpty\n\nTells whether the identifier is empty.\n\n##### Declaration\n\n```\npublic bool IsEmpty { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |   |\n",
+  "markdown": "markdown/kernel/9fcfdfd2cc9447b18f553dcd.md",
+  "originalHtml": "html/kernel/9fcfdfd2cc9447b18f553dcd.html"
+}

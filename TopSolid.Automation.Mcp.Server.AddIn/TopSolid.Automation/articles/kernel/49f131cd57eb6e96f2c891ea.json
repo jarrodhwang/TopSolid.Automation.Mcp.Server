@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Direction3D.Z.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Direction3D.Z.html",
+  "sha256": "87027170353ed704bb90612d8f674a20d122e4617b0b4ed31612acd520e8df1c",
+  "text": "# Field Z\n\nZ component.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic double Z\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double |  Z component. |\n",
+  "markdown": "markdown/kernel/49f131cd57eb6e96f2c891ea.md",
+  "originalHtml": "html/kernel/49f131cd57eb6e96f2c891ea.html"
+}

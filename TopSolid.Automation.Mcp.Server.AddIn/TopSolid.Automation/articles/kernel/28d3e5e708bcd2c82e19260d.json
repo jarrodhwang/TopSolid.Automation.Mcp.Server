@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Color.G.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Color.G.html",
+  "sha256": "dfeb9d4babb1a66bcad83e2ba431ebf52ab0549f4853ad9be41ba5317eea72d5",
+  "text": "# Property G\n\n#### G\n\nGets the color green intensity.\n\n##### Declaration\n\n```\npublic byte G { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  byte |   |\n",
+  "markdown": "markdown/kernel/28d3e5e708bcd2c82e19260d.md",
+  "originalHtml": "html/kernel/28d3e5e708bcd2c82e19260d.html"
+}

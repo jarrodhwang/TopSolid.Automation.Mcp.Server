@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IShapes.GetFaceConnectedFaces.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IShapes.GetFaceConnectedFaces.html",
+  "sha256": "39ae15dfcf03d3e5599b02ea4fda467588e665d0a050a285bd68a0ab068b4239",
+  "text": "# Method GetFaceConnectedFaces\n\n#### GetFaceConnectedFaces(ElementItemId)\n\nGets the face connected faces.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 13, 0, 0)]\nList<ElementItemId> GetFaceConnectedFaces(ElementItemId inFaceId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementItemId |  inFaceId |  Identifier of the face to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementItemId> |  Identifiers of the connected faces of the face.  |  \n\n##### Remarks\n\nThis method is available since v7.13.\n",
+  "markdown": "markdown/kernel/2957232779a26b6ba0e8c783.md",
+  "originalHtml": "html/kernel/2957232779a26b6ba0e8c783.html"
+}

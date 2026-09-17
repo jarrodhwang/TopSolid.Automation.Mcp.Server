@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IVisualization3D.GetDocumentPreviewMode.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IVisualization3D.GetDocumentPreviewMode.html",
+  "sha256": "add25ae2eb100799bfc4dd0ab3aebe1ceea9ec23ef6b3ca9a94e7a428bc2a386",
+  "text": "# Method GetDocumentPreviewMode\n\n#### GetDocumentPreviewMode(DocumentId)\n\nGets the document preview mode.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 14, 300, 140)]\nPreviewMode GetDocumentPreviewMode(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  PreviewMode |  Preview mode of the document.  |  \n\n##### Remarks\n\nThis method is available since v7.14.300.140.\n",
+  "markdown": "markdown/kernel/f0e873cb2063ae80c1a4ef9e.md",
+  "originalHtml": "html/kernel/f0e873cb2063ae80c1a4ef9e.html"
+}

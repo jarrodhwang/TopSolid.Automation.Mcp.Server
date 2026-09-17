@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.IAnnotations.GetGeometricToleranceDatumSystemGroupValues.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.IAnnotations.GetGeometricToleranceDatumSystemGroupValues.html",
+  "sha256": "cac785cc26bcc1cf9ee9f9d0930c60a3bdfce4290afc15c636dcf5749fc3abe4",
+  "text": "# Method GetGeometricToleranceDatumSystemGroupValues\n\n#### GetGeometricToleranceDatumSystemGroupValues(ElementId, int, int, int, out List<string>, out List<ModifierType>)\n\nGets the geometric tolerance datum system group values.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 17, 0, 0)]\nvoid GetGeometricToleranceDatumSystemGroupValues(ElementId inGeometricTolerance, int inToleranceFrameIndex, int inDatumSystemGroupIndex, int inGroupOfDatumIndex, out List<string> outText, out List<ModifierType> outModifiers)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inGeometricTolerance |  Identifier of the element to analyze.  |  \n \n|  int |  inToleranceFrameIndex |  Index of the tolerance frame.  |  \n \n|  int |  inDatumSystemGroupIndex |  Index of the datum feature system.  |  \n \n|  int |  inGroupOfDatumIndex |  Index of the group of datum.  |  \n \n|  List<string> |  outText |  The texts.  |  \n \n|  List<ModifierType> |  outModifiers |  The modifiers.  |  \n\n##### Remarks\n\nThis method is available since v7.17.\n",
+  "markdown": "markdown/drafting/482d7970fe230b3a1e6ba4c8.md",
+  "originalHtml": "html/drafting/482d7970fe230b3a1e6ba4c8.html"
+}

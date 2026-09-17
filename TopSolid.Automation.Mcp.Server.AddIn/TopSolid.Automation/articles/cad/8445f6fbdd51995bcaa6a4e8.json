@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.MachiningDriverType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.MachiningDriverType.html",
+  "sha256": "9f5bcdf28ea45af2e5618d832e6143bbe23c0b9471c89848970123ed63ceae8d",
+  "text": "# Enum MachiningDriverType\n\nDefines the various types of machining process drivers\n\n###### Namespace: TopSolid.Cad.Design.Automating\n\n###### Assembly: TopSolid.Cad.Design.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 19, 0, 0)]\npublic enum MachiningDriverType\n```\n\n##### Remarks\n\nThis enum is available since v7.19.\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  Boolean |  Boolean.  |  \n \n|  Face |  Face.  |  \n \n|  Integer |  Integer.  |  \n \n|  Point |  Point.  |  \n \n|  Real |  Real.  |  \n \n|  Text |  Text.  |  \n \n|  Tolerance |  Tolerance.  |\n",
+  "markdown": "markdown/cad/8445f6fbdd51995bcaa6a4e8.md",
+  "originalHtml": "html/cad/8445f6fbdd51995bcaa6a4e8.html"
+}

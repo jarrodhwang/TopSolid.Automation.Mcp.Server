@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.TopSolidPdmExplorerHost.ClientAddress.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.TopSolidPdmExplorerHost.ClientAddress.html",
+  "sha256": "83aecfb41f8dab9993e6ab3674c3fc1ceb823362cf78d51b6dad98294fef4ba3",
+  "text": "# Property ClientAddress\n\n#### ClientAddress\n\nGets the client IP address used for receiving events when using TCP, or null for not managing events.\n\n##### Declaration\n\n```\npublic static string ClientAddress { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |   |\n",
+  "markdown": "markdown/pdmexplorer/55d9b5641e23304457373dc6.md",
+  "originalHtml": "html/pdmexplorer/55d9b5641e23304457373dc6.html"
+}

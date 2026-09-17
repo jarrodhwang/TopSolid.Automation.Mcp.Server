@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IToolPath.EndToolPath.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IToolPath.EndToolPath.html",
+  "sha256": "eb9f69423d193fb33e83224a8263c0dc21616c444e617631b6f823aff246b43f",
+  "text": "# Method EndToolPath\n\n#### EndToolPath(ElementId)\n\nEnds the scan of the given operation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nvoid EndToolPath(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the Cam operation to analyze.  |  \n\n##### Remarks\n\nThe use of this method is optionnal. Its only target is to free memory. If not called, the memory will be also freed, of course, but only when the application exits.\n",
+  "markdown": "markdown/cam/bb9c816a5b3f3d3e1f250c36.md",
+  "originalHtml": "html/cam/bb9c816a5b3f3d3e1f250c36.html"
+}

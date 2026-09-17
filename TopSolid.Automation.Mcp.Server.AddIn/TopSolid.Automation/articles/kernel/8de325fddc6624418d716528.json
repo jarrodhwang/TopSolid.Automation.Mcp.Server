@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IShapes.CreateRevolvedShape.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IShapes.CreateRevolvedShape.html",
+  "sha256": "ee4333680c275ee507ef0b7a67863637b1f54bdc8a823bcf8a0569d2a23139ab",
+  "text": "# Method CreateRevolvedShape\n\n#### CreateRevolvedShape(DocumentId, SmartSection3D, SmartAxis3D, SmartReal, bool, bool)\n\nCreates a revolved shape operation in a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 201, 80)]\nElementId CreateRevolvedShape(DocumentId inDocumentId, SmartSection3D inSection, SmartAxis3D inAxis, SmartReal inAngle, bool inIsCentered, bool inIsSurface)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  SmartSection3D |  inSection |  Section to revolve.  |  \n \n|  SmartAxis3D |  inAxis |  Revolution axis.  |  \n \n|  SmartReal |  inAngle |  Revolution angle, or null if 360°.  |  \n \n|  bool |  inIsCentered |  Revolution is centered.  |  \n \n|  bool |  inIsSurface |  Makes a surface instead of a solid.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the created shape entity.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.7.201.80.\n",
+  "markdown": "markdown/kernel/8de325fddc6624418d716528.md",
+  "originalHtml": "html/kernel/8de325fddc6624418d716528.html"
+}

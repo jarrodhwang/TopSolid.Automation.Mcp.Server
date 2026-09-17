@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.ITables.ExportDraftTableCellValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.ITables.ExportDraftTableCellValue.html",
+  "sha256": "b9e831c3c05a52315d487c271a8f0323623fd0079a4725035d6f3cd11ff94c4b",
+  "text": "# Method ExportDraftTableCellValue\n\n#### ExportDraftTableCellValue(ElementId, int, int, int, string)\n\nExports the draft table cell value.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 17, 0, 0)]\nstring ExportDraftTableCellValue(ElementId inElementId, int inColumnIdx, int inRowIdx, int inSplitColumnIdx, string inSeparator)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the entity to analyze.  |  \n \n|  int |  inColumnIdx |  Index of the column.  |  \n \n|  int |  inRowIdx |  Index of the row.  |  \n \n|  int |  inSplitColumnIdx |  Index of the split column. 0 if default.  |  \n \n|  string |  inSeparator |  The separator.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  The exported text value.  |  \n\n##### Remarks\n\nThis method is available since v7.17.\n",
+  "markdown": "markdown/drafting/674392c2d01932d0fbbb73b0.md",
+  "originalHtml": "html/drafting/674392c2d01932d0fbbb73b0.html"
+}

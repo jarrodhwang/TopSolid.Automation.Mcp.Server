@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IWorldCoordinateSystems.GetWcsFrameGeometry.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IWorldCoordinateSystems.GetWcsFrameGeometry.html",
+  "sha256": "298b1a2f1f3f0e39234ef4710e3ce587585247485baecc551f499384a0c77693",
+  "text": "# Method GetWcsFrameGeometry\n\n#### GetWcsFrameGeometry(ElementId)\n\nGets the WCS frame geometry.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 400, 80)]\nFrame3D GetWcsFrameGeometry(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the WCS to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Frame3D |  The geometry of the frame.  |\n",
+  "markdown": "markdown/cam/e93b961150eb33e6c0621266.md",
+  "originalHtml": "html/cam/e93b961150eb33e6c0621266.html"
+}

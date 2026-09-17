@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartShapeType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartShapeType.html",
+  "sha256": "234a17b39f9a8293ec120445f34366fd29aa5e2ec1b56e4e0f62dce3542b812d",
+  "text": "# Enum SmartShapeType\n\nDefines the various types of smart shapes.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 8, 302, 80)]\npublic enum SmartShapeType\n```\n\n##### Remarks\n\nThis enum is available since v7.8.302.80.\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  Basic |  Basic.  |  \n \n|  Element |  Provided by an element.  |  \n \n|  None |  Not used.  |  \n \n|  Unclassified |  Unclassified type.  |\n",
+  "markdown": "markdown/kernel/c0557cf535c3640c45a28854.md",
+  "originalHtml": "html/kernel/c0557cf535c3640c45a28854.html"
+}

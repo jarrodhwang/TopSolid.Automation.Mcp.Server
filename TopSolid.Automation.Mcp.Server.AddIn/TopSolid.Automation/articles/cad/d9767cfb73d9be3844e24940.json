@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IBoms.UnforceColumnTitle.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IBoms.UnforceColumnTitle.html",
+  "sha256": "12f30d1a79b56a9c8f77e579d46edbf379de4abd21f2d0141aa9255bd7bcb486",
+  "text": "# Method UnforceColumnTitle\n\n#### UnforceColumnTitle(DocumentId, int)\n\nUnforces the title of a column of a BOM.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 12, 0, 0)]\nvoid UnforceColumnTitle(DocumentId inDocumentId, int inColumnIx)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the BOM document to modify.  |  \n \n|  int |  inColumnIx |  Index of the column to modify, within [0,GetColumnCount(DocumentId)-1].  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.12.\n",
+  "markdown": "markdown/cad/d9767cfb73d9be3844e24940.md",
+  "originalHtml": "html/cad/d9767cfb73d9be3844e24940.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IAssemblies.GetParts.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IAssemblies.GetParts.html",
+  "sha256": "ca87289a8b0149514b746015f4785f1baa61714d392f87674339fd1d1694a473",
+  "text": "# Method GetParts\n\n#### GetParts(DocumentId)\n\nGets the part or assembly entities that are in the parts folder of an asssembly document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nList<ElementId> GetParts(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the assembly document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementId> |  Part or assembly entities found.  |  \n\n##### Remarks\n\nThis method is available since v7.8.\n",
+  "markdown": "markdown/cad/5e9f20d938b49fc673d61fae.md",
+  "originalHtml": "html/cad/5e9f20d938b49fc673d61fae.html"
+}

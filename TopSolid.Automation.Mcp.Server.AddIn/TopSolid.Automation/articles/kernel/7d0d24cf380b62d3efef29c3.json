@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IApplication.MaximizeWindow.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IApplication.MaximizeWindow.html",
+  "sha256": "055b555fd7ebbefa2f9bde390718d87d8b648a56ea48ae0c4d2102eba3aa78b1",
+  "text": "# Method MaximizeWindow\n\n#### MaximizeWindow()\n\nMaximizes the application window.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nvoid MaximizeWindow()\n```\n\n##### Remarks\n\nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/7d0d24cf380b62d3efef29c3.md",
+  "originalHtml": "html/kernel/7d0d24cf380b62d3efef29c3.html"
+}

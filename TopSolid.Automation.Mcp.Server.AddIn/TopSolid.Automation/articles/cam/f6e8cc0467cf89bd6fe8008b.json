@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IMachineTools.GetToolHolders.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IMachineTools.GetToolHolders.html",
+  "sha256": "b037deb817591dd584b650480406d3dbc0c0935c86ed817dd2c085f468339214",
+  "text": "# Method GetToolHolders\n\n#### GetToolHolders(ElementId)\n\nGet the list of tool holders of the given machine.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nList<ElementId> GetToolHolders(ElementId inMachineId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inMachineId |  Identifier of the machine tool to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementId> |  List of all tool holders.  |\n",
+  "markdown": "markdown/cam/f6e8cc0467cf89bd6fe8008b.md",
+  "originalHtml": "html/cam/f6e8cc0467cf89bd6fe8008b.html"
+}

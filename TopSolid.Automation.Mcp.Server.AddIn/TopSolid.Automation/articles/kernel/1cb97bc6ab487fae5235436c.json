@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IUser.SelectedEntity.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IUser.SelectedEntity.html",
+  "sha256": "f9a49a0263fb1de53aa4c130e348f4fd8fbcb76e0552a1f5e8ef87992ba77374",
+  "text": "# Property SelectedEntity\n\n#### SelectedEntity\n\nGets the entity selected by the user.\n\n##### Declaration\n\n```\n[AvailableSinceVersion(7, 9, 300, 80)]\nElementId SelectedEntity { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |   |  \n\n##### Remarks\n\nIf one (and only one) entity is selected by the user, this property returns its identifier, otherwise Empty is returned.\n \nThis property is available since v7.9.300.80.\n",
+  "markdown": "markdown/kernel/1cb97bc6ab487fae5235436c.md",
+  "originalHtml": "html/kernel/1cb97bc6ab487fae5235436c.html"
+}

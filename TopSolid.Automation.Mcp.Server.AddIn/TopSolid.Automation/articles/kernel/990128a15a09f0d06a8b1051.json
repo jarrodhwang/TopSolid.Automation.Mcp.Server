@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.GetMajorRevisionText.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.GetMajorRevisionText.html",
+  "sha256": "69778305549284fe32d8ca36f18126bd348cc989285fdd0f34f991532c1bee00",
+  "text": "# Method GetMajorRevisionText\n\n#### GetMajorRevisionText(PdmMajorRevisionId)\n\nGets the text of a major revision.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nstring GetMajorRevisionText(PdmMajorRevisionId inMajorRevisionId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmMajorRevisionId |  inMajorRevisionId |  Identifier of the major revision.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  Text of the major revision.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/990128a15a09f0d06a8b1051.md",
+  "originalHtml": "html/kernel/990128a15a09f0d06a8b1051.html"
+}

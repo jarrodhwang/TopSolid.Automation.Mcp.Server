@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IVisualization3D.GetCameraDefinition.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IVisualization3D.GetCameraDefinition.html",
+  "sha256": "06a6e4776e66b8c0af297121ebce96e782e003b71235692c106468894070d59f",
+  "text": "# Method GetCameraDefinition\n\n#### GetCameraDefinition(ElementId, out Point3D, out Direction3D, out Direction3D, out double, out double)\n\nGets the definition of a camera entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nvoid GetCameraDefinition(ElementId inElementId, out Point3D outEyePosition, out Direction3D outLookAtDirection, out Direction3D outUpDirection, out double outFieldAngle, out double outFieldRadius)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the camera entity to analyze.  |  \n \n|  Point3D |  outEyePosition |  Eye position.  |  \n \n|  Direction3D |  outLookAtDirection |   |  \n \n|  Direction3D |  outUpDirection |   |  \n \n|  double |  outFieldAngle |  Field angle for perspective projection, or 0 if orthographic projection.  |  \n \n|  double |  outFieldRadius |  Field radius for orthographic projection, or distance between camera origin and projection plane if perspective projection.  |  \n\n##### Remarks\n\nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/594e1dda0f4d2ccd7c4c2d84.md",
+  "originalHtml": "html/kernel/594e1dda0f4d2ccd7c4c2d84.html"
+}

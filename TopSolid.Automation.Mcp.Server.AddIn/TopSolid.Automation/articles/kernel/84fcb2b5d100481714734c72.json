@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdmWorkflow.RefuseAction.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdmWorkflow.RefuseAction.html",
+  "sha256": "c63ed4691fee45db812295d09bf9a9625ef57ac56f0d1f385502f84f0841f657",
+  "text": "# Method RefuseAction\n\n#### RefuseAction(PdmMajorRevisionId, string, List<string>)\n\nRefuses the last pending workflow action of a major revision.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 14, 248, 0)]\nvoid RefuseAction(PdmMajorRevisionId inMajorRevisionId, string inComment, List<string> inEmailAddresses)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmMajorRevisionId |  inMajorRevisionId |  Major revision to refuse action on.  |  \n \n|  string |  inComment |  Comment.  |  \n \n|  List<string> |  inEmailAddresses |  Additional e-mail addresses to notify.  |  \n\n##### Remarks\n\nThis method is available since v7.14.248.000.\n",
+  "markdown": "markdown/kernel/84fcb2b5d100481714734c72.md",
+  "originalHtml": "html/kernel/84fcb2b5d100481714734c72.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IClassifications.CreateLevel.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IClassifications.CreateLevel.html",
+  "sha256": "e254f23e2742f1e23dab1dffb36aaf7c9d4ed8679ca2f0c773e0846540d02524",
+  "text": "# Method CreateLevel\n\n#### CreateLevel(DocumentId, string)\n\nCreates a level entity in a classification document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nElementId CreateLevel(DocumentId inDocumentId, string inDescription)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the classification document to modify.  |  \n \n|  string |  inDescription |  Level description.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the created level entity.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.10.\n",
+  "markdown": "markdown/kernel/c423205678141c5bce924a4b.md",
+  "originalHtml": "html/kernel/c423205678141c5bce924a4b.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.TopSolidDraftingHost.Dimensions.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.TopSolidDraftingHost.Dimensions.html",
+  "sha256": "fac28aac4637215c44ec37f4699777cab2cb23faa1523cb34486a3ab63dcece0",
+  "text": "# Property Dimensions\n\n#### Dimensions\n\nGets access to drafting documents dimensions, or null if not connected.\n\n##### Declaration\n\n```\npublic static IDimensions Dimensions { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  IDimensions |   |\n",
+  "markdown": "markdown/drafting/5742b27e70b6a164a054408a.md",
+  "originalHtml": "html/drafting/5742b27e70b6a164a054408a.html"
+}

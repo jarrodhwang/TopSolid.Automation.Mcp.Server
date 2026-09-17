@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IElements.GetPropertyRealValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IElements.GetPropertyRealValue.html",
+  "sha256": "a2e3db48a6e297bfb7f4300fca480d801969946835269d4737d52ccd3a3471f7",
+  "text": "# Method GetPropertyRealValue\n\n#### GetPropertyRealValue(ElementId, string)\n\nGets the value of an element real property.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 300, 60)]\ndouble GetPropertyRealValue(ElementId inElementId, string inFullName)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to analyze.  |  \n \n|  string |  inFullName |  Full name of the element real property to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double |  Value of the property.  |  \n\n##### Remarks\n\nThis method is available since v7.8.300.60.\n",
+  "markdown": "markdown/kernel/8a82508164338a2a988113b3.md",
+  "originalHtml": "html/kernel/8a82508164338a2a988113b3.html"
+}

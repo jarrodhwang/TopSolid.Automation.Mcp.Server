@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IShapes.GetFaceCylinderRadius.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IShapes.GetFaceCylinderRadius.html",
+  "sha256": "f2e6ad16eb42bad609ed15deee37fcf59447ba98de2d30385154f3c8f338ea48",
+  "text": "# Method GetFaceCylinderRadius\n\n#### GetFaceCylinderRadius(ElementItemId)\n\nGets the radius of a cylinder face.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 14, 0, 0)]\ndouble GetFaceCylinderRadius(ElementItemId inFaceId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementItemId |  inFaceId |  Identifier of the face to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double |  Radius of the specified cylinder face.  |  \n\n##### Remarks\n\nThis method is available since v7.14.\n",
+  "markdown": "markdown/kernel/948749c43ee64a603d520e64.md",
+  "originalHtml": "html/kernel/948749c43ee64a603d520e64.html"
+}

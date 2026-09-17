@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IDocuments.GetProperties.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IDocuments.GetProperties.html",
+  "sha256": "e19e747a81834eb1b17ca03beb63c3e9e3062a49998c86612a2a3a057cba4630",
+  "text": "# Method GetProperties\n\n#### GetProperties(DocumentId)\n\nGets the full names of the properties of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 300, 60)]\nList<string> GetProperties(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<string> |  Full names of the document properties.  |  \n\n##### Remarks\n\nThis method is available since v7.8.300.60.\n",
+  "markdown": "markdown/kernel/dd98ca0f3cfb29198c04810e.md",
+  "originalHtml": "html/kernel/dd98ca0f3cfb29198c04810e.html"
+}

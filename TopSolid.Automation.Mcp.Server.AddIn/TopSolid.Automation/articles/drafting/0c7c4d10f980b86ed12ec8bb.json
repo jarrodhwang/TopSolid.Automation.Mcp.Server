@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.ITables.GetDraftTableColumnCount.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.ITables.GetDraftTableColumnCount.html",
+  "sha256": "091a6bcb6c853aeec7856c3142c9b28e4a16abbeae80ade037ee04c0dcdd2978",
+  "text": "# Method GetDraftTableColumnCount\n\n#### GetDraftTableColumnCount(ElementId)\n\nGets the draft table column count.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 14, 300, 140)]\nint GetDraftTableColumnCount(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the entity to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  int |  Count of column.  |  \n\n##### Remarks\n\nThis method is available since v7.14.300.140.\n",
+  "markdown": "markdown/drafting/0c7c4d10f980b86ed12ec8bb.md",
+  "originalHtml": "html/drafting/0c7c4d10f980b86ed12ec8bb.html"
+}

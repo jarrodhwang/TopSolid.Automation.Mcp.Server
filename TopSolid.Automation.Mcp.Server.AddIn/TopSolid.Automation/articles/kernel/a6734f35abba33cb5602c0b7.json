@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IVisualization3D.GetBackCamera.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IVisualization3D.GetBackCamera.html",
+  "sha256": "87d24689e2b342589207f7027210b57f0b508ee74a0469cee948bb4acb482901",
+  "text": "# Method GetBackCamera\n\n#### GetBackCamera(DocumentId)\n\nGets the back camera entity of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nElementId GetBackCamera(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the back camera entity found.  |  \n\n##### Remarks\n\nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/a6734f35abba33cb5602c0b7.md",
+  "originalHtml": "html/kernel/a6734f35abba33cb5602c0b7.html"
+}

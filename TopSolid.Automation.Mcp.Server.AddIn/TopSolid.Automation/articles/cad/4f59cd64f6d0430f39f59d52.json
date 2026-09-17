@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IAssemblies.GetDriversFromFamily.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IAssemblies.GetDriversFromFamily.html",
+  "sha256": "7552f74a440abeab915e32b250031e6ddf07dc0f5b1c90674c9d27eee4248ef5",
+  "text": "# Method GetDriversFromFamily\n\n#### GetDriversFromFamily(DocumentId, out string, out List<string>, out List<SmartObject>, out List<string>, out List<SmartDesignObject>)\n\nGet code and drivers from a family document\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 0, 0)]\nvoid GetDriversFromFamily(DocumentId inDocumentId, out string outCode, out List<string> outKernelDriverNames, out List<SmartObject> outKernelDriverValues, out List<string> outDesignDriverNames, out List<SmartDesignObject> outDesignDriverValues)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the family document.  |  \n \n|  string |  outCode |  Default code, or null if none.  |  \n \n|  List<string> |  outKernelDriverNames |  Generic document kernel driver names, or null if none.  |  \n \n|  List<SmartObject> |  outKernelDriverValues |  Generic document kernel driver values, or null if none.  |  \n \n|  List<string> |  outDesignDriverNames |  Generic document design driver names, or null if none.  |  \n \n|  List<SmartDesignObject> |  outDesignDriverValues |  Generic document design driver values, or null if none.  |  \n\n##### Remarks\n\nThis method is available since v7.19.\n",
+  "markdown": "markdown/cad/4f59cd64f6d0430f39f59d52.md",
+  "originalHtml": "html/cad/4f59cd64f6d0430f39f59d52.html"
+}

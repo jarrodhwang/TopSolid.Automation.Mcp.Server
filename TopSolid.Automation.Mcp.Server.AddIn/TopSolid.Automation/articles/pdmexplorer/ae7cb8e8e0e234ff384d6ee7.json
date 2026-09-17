@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IApplication.RestoreWindow.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IApplication.RestoreWindow.html",
+  "sha256": "f4981ad0084379157abf24444e55c45f65ef7ae1b1b58025d17828208f7b44ed",
+  "text": "# Method RestoreWindow\n\n#### RestoreWindow()\n\nRestores the application window that has been minimized or maximized.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 222, 0)]\nvoid RestoreWindow()\n```\n\n##### Remarks\n\nThis method is available since v7.20.\n",
+  "markdown": "markdown/pdmexplorer/ae7cb8e8e0e234ff384d6ee7.md",
+  "originalHtml": "html/pdmexplorer/ae7cb8e8e0e234ff384d6ee7.html"
+}

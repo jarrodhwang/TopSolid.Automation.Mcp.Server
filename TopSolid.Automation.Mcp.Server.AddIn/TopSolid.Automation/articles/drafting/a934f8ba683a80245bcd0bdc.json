@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.ITables.GetDraftTableCellParameter.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.ITables.GetDraftTableCellParameter.html",
+  "sha256": "b1d4e966b00005ebb004b3ead40f1f3c8633a4d026c8b851403157e3e1da0e76",
+  "text": "# Method GetDraftTableCellParameter\n\n#### GetDraftTableCellParameter(ElementId, int, int, int)\n\nGets the parameter of a cell.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 14, 300, 140)]\nSmartText GetDraftTableCellParameter(ElementId inElementId, int inColumnIdx, int inRowIdx, int inSplitColumnIdx)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the entity to analyze.  |  \n \n|  int |  inColumnIdx |  Index of the column.  |  \n \n|  int |  inRowIdx |  Index of the row.  |  \n \n|  int |  inSplitColumnIdx |  Index of the split column. 0 if default.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartText |  SmartText parameter of a cell.  |  \n\n##### Remarks\n\nThis method is available since v7.14.300.140.\n",
+  "markdown": "markdown/drafting/a934f8ba683a80245bcd0bdc.md",
+  "originalHtml": "html/drafting/a934f8ba683a80245bcd0bdc.html"
+}

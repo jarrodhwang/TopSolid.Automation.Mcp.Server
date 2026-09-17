@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.GetProjects.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.GetProjects.html",
+  "sha256": "2f643954d087dcb44054b5f8046498ab29e8edea7b80e70c4e49ea80986d0ae0",
+  "text": "# Method GetProjects\n\n#### GetProjects(bool, bool)\n\nGets all the projects.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nList<PdmObjectId> GetProjects(bool inGetsWorkingProjects, bool inGetsLibraryProjects)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  bool |  inGetsWorkingProjects |  Gets working projects.  |  \n \n|  bool |  inGetsLibraryProjects |  Gets library projects.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<PdmObjectId> |  List of projects PDM object identifiers.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/pdmexplorer/38318d025d1648c6b159e302.md",
+  "originalHtml": "html/pdmexplorer/38318d025d1648c6b159e302.html"
+}

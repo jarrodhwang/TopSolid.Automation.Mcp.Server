@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.SetMajorRevisionLifeCycleMainState.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.SetMajorRevisionLifeCycleMainState.html",
+  "sha256": "18061b7973c9018d7bbfa3b9a567fc6e404425c72c1946588bd8b443a12ca8ca",
+  "text": "# Method SetMajorRevisionLifeCycleMainState\n\n#### SetMajorRevisionLifeCycleMainState(PdmMajorRevisionId, PdmLifeCycleMainState)\n\nChanges the life cycle main state of a major revision.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nvoid SetMajorRevisionLifeCycleMainState(PdmMajorRevisionId inMajorRevisionId, PdmLifeCycleMainState inLifeCycle)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmMajorRevisionId |  inMajorRevisionId |  Identifier of major revision to change life cycle main state.  |  \n \n|  PdmLifeCycleMainState |  inLifeCycle |  Life cycle to apply (None and Design life cycles are not supported).  |  \n\n##### Remarks\n\nThis method must not be called between StartModification(string, bool) and EndModification(bool, bool) methods calls.\n \nThis method is available since v7.10.\n",
+  "markdown": "markdown/kernel/ee4ca656b1251b2dc988c1aa.md",
+  "originalHtml": "html/kernel/ee4ca656b1251b2dc988c1aa.html"
+}

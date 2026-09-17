@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.IDraftings.GetPageCount.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.IDraftings.GetPageCount.html",
+  "sha256": "e65c5895fa0e958c41a59d0f5ad30136bbbc90398bb3a0bb0e577e527f4f48d5",
+  "text": "# Method GetPageCount\n\n#### GetPageCount(DocumentId)\n\nGets the number of pages of a drafting document\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 255, 0)]\nint GetPageCount(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  The drafting document  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  int |  the number of pages of the drawing  |\n",
+  "markdown": "markdown/drafting/260995c30b52ba6a1612d103.md",
+  "originalHtml": "html/drafting/260995c30b52ba6a1612d103.html"
+}

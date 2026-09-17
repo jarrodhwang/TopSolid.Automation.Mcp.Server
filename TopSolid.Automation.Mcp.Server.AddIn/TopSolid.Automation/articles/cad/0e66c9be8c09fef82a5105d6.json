@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.JointDrivingInterpolationType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.JointDrivingInterpolationType.html",
+  "sha256": "2ea2643726a7ef6701b7b81022ba2f6f952eaaecfca4e2c3dc7c30fd156d7d5b",
+  "text": "# Enum JointDrivingInterpolationType\n\nDefines the various types of interpolation for joint driving.\n\n###### Namespace: TopSolid.Cad.Design.Automating\n\n###### Assembly: TopSolid.Cad.Design.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\npublic enum JointDrivingInterpolationType\n```\n\n##### Remarks\n\nThis enum is available since v7.6.\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  ConstantAcceleration |  Constant acceleration.  |  \n \n|  ConstantVelocity |  Constant velocity.  |  \n \n|  None |  No interpolation.  |  \n \n|  VariableAcceleration |  Variable acceleration.  |\n",
+  "markdown": "markdown/cad/0e66c9be8c09fef82a5105d6.md",
+  "originalHtml": "html/cad/0e66c9be8c09fef82a5105d6.html"
+}

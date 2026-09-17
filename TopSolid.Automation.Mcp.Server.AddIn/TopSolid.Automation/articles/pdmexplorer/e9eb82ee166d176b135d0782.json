@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.SetPartNumber.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.SetPartNumber.html",
+  "sha256": "47799b3f6b42a85abb5a82c15bfc7d72f7ed63a4bf83b97ffadd006735b3ab9c",
+  "text": "# Method SetPartNumber\n\n#### SetPartNumber(PdmObjectId, string)\n\nSets the part number of an object.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nvoid SetPartNumber(PdmObjectId inObjectId, string inPartNumber)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  Object identifier.  |  \n \n|  string |  inPartNumber |  Part number.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/pdmexplorer/e9eb82ee166d176b135d0782.md",
+  "originalHtml": "html/pdmexplorer/e9eb82ee166d176b135d0782.html"
+}

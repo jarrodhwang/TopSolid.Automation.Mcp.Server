@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IAssemblies.SetAssemblySurfaceAreaManagement.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IAssemblies.SetAssemblySurfaceAreaManagement.html",
+  "sha256": "989dde8eb358a1f010b36e128aa6b60a64b422127546fed73074b8ac25152a4e",
+  "text": "# Method SetAssemblySurfaceAreaManagement\n\n#### SetAssemblySurfaceAreaManagement(DocumentId, bool)\n\nSets the surface area management of the physical property management of an assembly.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 13, 300, 220)]\nvoid SetAssemblySurfaceAreaManagement(DocumentId inDocumentId, bool inIsSurfaceAreaManaged)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of assembly document to analyze.  |  \n \n|  bool |  inIsSurfaceAreaManaged |  Tells whether the physical property management of an assembly is surface area managed.  |  \n\n##### Remarks\n\nThis method is available since v7.13.300.220.\n",
+  "markdown": "markdown/cad/9642a7dc7533cfc4be714716.md",
+  "originalHtml": "html/cad/9642a7dc7533cfc4be714716.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartAxis2D.OX.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartAxis2D.OX.html",
+  "sha256": "81fc72813adc62f598b6aede45a2f3a801467ae2bc0e751ca4813311d3195fcc",
+  "text": "# Field OX\n\n(O,+X) absolute axis.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\npublic static readonly SmartAxis2D OX\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartAxis2D |  (O,+X) absolute axis. |\n",
+  "markdown": "markdown/kernel/4726b55a37d0e742193edef9.md",
+  "originalHtml": "html/kernel/4726b55a37d0e742193edef9.html"
+}

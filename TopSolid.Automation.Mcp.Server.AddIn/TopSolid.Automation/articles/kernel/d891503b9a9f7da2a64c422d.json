@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartReal.ElementId.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartReal.ElementId.html",
+  "sha256": "5e2cf8c3cdfe915c8c4a043588e409fb3604907dbcf2370623a72daa86a903f1",
+  "text": "# Field ElementId\n\nProviding element identifier, or empty if none.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic ElementId ElementId\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Providing element identifier, or empty if none. |\n",
+  "markdown": "markdown/kernel/d891503b9a9f7da2a64c422d.md",
+  "originalHtml": "html/kernel/d891503b9a9f7da2a64c422d.html"
+}

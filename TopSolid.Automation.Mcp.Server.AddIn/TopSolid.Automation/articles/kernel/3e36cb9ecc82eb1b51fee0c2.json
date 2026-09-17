@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Color.Blue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Color.Blue.html",
+  "sha256": "f56f3025d35c6f45c800189f056f0f629e9ef7e0796fdcc8c5d71d16bb800ed9",
+  "text": "# Field Blue\n\nBlue color.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\npublic static readonly Color Blue\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Color |  Blue color. |\n",
+  "markdown": "markdown/kernel/3e36cb9ecc82eb1b51fee0c2.md",
+  "originalHtml": "html/kernel/3e36cb9ecc82eb1b51fee0c2.html"
+}

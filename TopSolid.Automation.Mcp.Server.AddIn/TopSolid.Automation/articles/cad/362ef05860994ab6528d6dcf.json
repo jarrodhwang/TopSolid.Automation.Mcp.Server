@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMultiLayer.GetEnveloppeMaterial.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMultiLayer.GetEnveloppeMaterial.html",
+  "sha256": "607680f1e9c2049d56b32a208122cfa807201abcfbc61d5fc63a7acb8e9c7f16",
+  "text": "# Method GetEnveloppeMaterial\n\n#### GetEnveloppeMaterial(DocumentId)\n\nGets the multi layer enveloppe material\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 0, 0)]\nSmartMaterial GetEnveloppeMaterial(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartMaterial |   |  \n\n##### Remarks\n\nThis method is available since v7.19.\n",
+  "markdown": "markdown/cad/362ef05860994ab6528d6dcf.md",
+  "originalHtml": "html/cad/362ef05860994ab6528d6dcf.html"
+}

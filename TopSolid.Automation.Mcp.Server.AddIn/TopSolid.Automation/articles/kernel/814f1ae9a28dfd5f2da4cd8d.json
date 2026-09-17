@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.GetCurrentProject.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.GetCurrentProject.html",
+  "sha256": "63aaac1d20885ee44601353a73c8f3ca35e997ce99ddfcd7f66b86aea8227c27",
+  "text": "# Method GetCurrentProject\n\n#### GetCurrentProject()\n\nGets the current projects.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 14, 300, 140)]\nPdmObjectId GetCurrentProject()\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  PdmObjectId |  Current project PDM object identifier.  |  \n\n##### Remarks\n\nIf there is no current project, the returned PDM object identifier is empty.\n \nThis method is available since v7.14.\n",
+  "markdown": "markdown/kernel/814f1ae9a28dfd5f2da4cd8d.md",
+  "originalHtml": "html/kernel/814f1ae9a28dfd5f2da4cd8d.html"
+}

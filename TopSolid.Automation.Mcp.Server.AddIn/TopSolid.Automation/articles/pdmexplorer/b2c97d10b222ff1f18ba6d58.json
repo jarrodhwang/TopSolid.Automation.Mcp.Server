@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.GetCreationDate.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.GetCreationDate.html",
+  "sha256": "6e6cf4dec5e8de19d036919630f35adaf686a48451fb285d8e214bdad4fea047",
+  "text": "# Method GetCreationDate\n\n#### GetCreationDate(PdmObjectId)\n\nGets the creation date of an object.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nstring GetCreationDate(PdmObjectId inObjectId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  Object identifier.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  Object creation date.  |  \n\n##### Remarks\n\nThis method is available since v7.10.300.140.\n",
+  "markdown": "markdown/pdmexplorer/b2c97d10b222ff1f18ba6d58.md",
+  "originalHtml": "html/pdmexplorer/b2c97d10b222ff1f18ba6d58.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IElements.GetPropertyTextValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IElements.GetPropertyTextValue.html",
+  "sha256": "ebf396a1ffd8d8abd87de69beda8e9ba728ac427febb84d27c4aab1321de217c",
+  "text": "# Method GetPropertyTextValue\n\n#### GetPropertyTextValue(ElementId, string)\n\nGets the value of an element text property.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 300, 60)]\nstring GetPropertyTextValue(ElementId inElementId, string inFullName)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to analyze.  |  \n \n|  string |  inFullName |  Full name of the element text property to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  Value of the property.  |  \n\n##### Remarks\n\nThis method is available since v7.8.300.60.\n",
+  "markdown": "markdown/kernel/6ca1df167dc2a3dc939b5df8.md",
+  "originalHtml": "html/kernel/6ca1df167dc2a3dc939b5df8.html"
+}

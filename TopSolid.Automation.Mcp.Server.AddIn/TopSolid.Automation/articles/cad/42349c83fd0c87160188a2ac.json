@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.TopSolidDesignHost.Finishings.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.TopSolidDesignHost.Finishings.html",
+  "sha256": "9d1bde099671e1cc2eaeb5a534e2564cecd5f610e467228f65a885152edbea7d",
+  "text": "# Property Finishings\n\n#### Finishings\n\nGets access to finishings, or null if not connected.\n\n##### Declaration\n\n```\npublic static IFinishings Finishings { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  IFinishings |   |\n",
+  "markdown": "markdown/cad/42349c83fd0c87160188a2ac.md",
+  "originalHtml": "html/cad/42349c83fd0c87160188a2ac.html"
+}

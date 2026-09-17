@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.DocumentId.PdmDocumentId.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.DocumentId.PdmDocumentId.html",
+  "sha256": "f8f26912cd1704e6ebd856eb686b422d6588474e44af12686670d8a2eefa9e5c",
+  "text": "# Property PdmDocumentId\n\n#### PdmDocumentId\n\nGets the PDM document identifier.\n\n##### Declaration\n\n```\npublic string PdmDocumentId { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |   |\n",
+  "markdown": "markdown/kernel/d0fba7a08687b54a5ab00f71.md",
+  "originalHtml": "html/kernel/d0fba7a08687b54a5ab00f71.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IOptions.GetFileCompressionType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IOptions.GetFileCompressionType.html",
+  "sha256": "c126797afc030171df488329eb14d1dce657efb0e5934cbb79b53a7adc0e6019",
+  "text": "# Method GetFileCompressionType\n\n#### GetFileCompressionType(DocumentId)\n\nGets the compression type of a document file.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 12, 300, 160)]\nCompressionType GetFileCompressionType(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  CompressionType |  Compression type of the document file.  |  \n\n##### Remarks\n\nThis method is available since v7.12.300.160.\n",
+  "markdown": "markdown/kernel/2be2b40b263e6d4b7219b6da.md",
+  "originalHtml": "html/kernel/2be2b40b263e6d4b7219b6da.html"
+}

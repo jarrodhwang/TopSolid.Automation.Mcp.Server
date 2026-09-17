@@ -1,0 +1,8 @@
+{
+  "path": "api/wire/TopSolid.Cam.NC.Wire.Automating.IWireCc.IsWireCc.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/wire/TopSolid.Cam.NC.Wire.Automating.IWireCc.IsWireCc.html",
+  "sha256": "62c994d903140e044e8fbf7674e3d3485aa7b908b3bd9b5c87d5f408185cc2e1",
+  "text": "# Method IsWireCc\n\n#### IsWireCc(ElementId)\n\nTells whether an element is an wire cutting condition.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 160)]\nbool IsWireCc(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  True if the element is an origin.  |\n",
+  "markdown": "markdown/wire/6f931eccfb96c72bee73e049.md",
+  "originalHtml": "html/wire/6f931eccfb96c72bee73e049.html"
+}

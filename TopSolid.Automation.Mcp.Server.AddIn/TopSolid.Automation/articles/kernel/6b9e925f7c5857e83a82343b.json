@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IShapes.GetEdgeCount.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IShapes.GetEdgeCount.html",
+  "sha256": "db56802ce1b4de10d483bb080284c2b4762fd92be304939c3299724a4eee9054",
+  "text": "# Method GetEdgeCount\n\n#### GetEdgeCount(ElementId)\n\nGets the number of edges of a shape.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nint GetEdgeCount(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the shape entity to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  int |  Number of edges of the shape.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/6b9e925f7c5857e83a82343b.md",
+  "originalHtml": "html/kernel/6b9e925f7c5857e83a82343b.html"
+}

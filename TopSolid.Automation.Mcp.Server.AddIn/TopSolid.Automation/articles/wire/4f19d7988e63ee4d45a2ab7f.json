@@ -1,0 +1,8 @@
+{
+  "path": "api/wire/TopSolid.Cam.NC.Wire.Automating.IWireCc.GetOffset.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/wire/TopSolid.Cam.NC.Wire.Automating.IWireCc.GetOffset.html",
+  "sha256": "ee9b69b8b70b1661df6fc142d57ee2510996d508fbe8822ef3ba037d2af36518",
+  "text": "# Method GetOffset\n\n#### GetOffset(ElementId)\n\nGet offset.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 160)]\nSmartReal GetOffset(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to modify.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartReal |  Offset in SI units.  |\n",
+  "markdown": "markdown/wire/4f19d7988e63ee4d45a2ab7f.md",
+  "originalHtml": "html/wire/4f19d7988e63ee4d45a2ab7f.html"
+}

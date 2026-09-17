@@ -1,0 +1,8 @@
+{
+  "path": "api/electrode/TopSolid.Cad.Electrode.Automating.IElectrodes.GetElectrodeMandrels.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/electrode/TopSolid.Cad.Electrode.Automating.IElectrodes.GetElectrodeMandrels.html",
+  "sha256": "7f8c592ef84e91caf691d20e800251f8bf61c70256ee7292f77d1200856ced1f",
+  "text": "# Method GetElectrodeMandrels\n\n#### GetElectrodeMandrels(ElementId)\n\nGets mandrels of an electrode.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 12, 0, 0)]\nList<ElementId> GetElectrodeMandrels(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the electrode to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementId> |  Mandrel entities found.  |  \n\n##### Remarks\n\nThis method is available since v7.12.\n",
+  "markdown": "markdown/electrode/f9f7f3a7ae7ac858b6ada8dc.md",
+  "originalHtml": "html/electrode/f9f7f3a7ae7ac858b6ada8dc.html"
+}

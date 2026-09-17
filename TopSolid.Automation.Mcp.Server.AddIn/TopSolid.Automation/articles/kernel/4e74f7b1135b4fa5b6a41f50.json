@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartUserEnumeration.ElementId.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartUserEnumeration.ElementId.html",
+  "sha256": "425bf06f7b7e228955ba289e681cc5cefd4804e7d291cf3d67b548e39d3c00f6",
+  "text": "# Field ElementId\n\nProviding element identifier, or empty if none.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic ElementId ElementId\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Providing element identifier, or empty if none. |\n",
+  "markdown": "markdown/kernel/4e74f7b1135b4fa5b6a41f50.md",
+  "originalHtml": "html/kernel/4e74f7b1135b4fa5b6a41f50.html"
+}

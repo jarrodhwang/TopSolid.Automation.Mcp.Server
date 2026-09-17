@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IMaterials.GetTextureImage.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IMaterials.GetTextureImage.html",
+  "sha256": "fa69c3f35ef118d5ac2603443a79969181099259fcef9629e12dd36a1ee807fb",
+  "text": "# Method GetTextureImage\n\n#### GetTextureImage(Guid, string)\n\nGets the texture image of an image signature.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 17, 400, 0)]\nTextureImage GetTextureImage(Guid inSessionId, string inImageSignature)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  Guid |  inSessionId |  Identifier of the session.  |  \n \n|  string |  inImageSignature |  Image signature.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  TextureImage |  Material image of the image signature.  |  \n\n##### Remarks\n\nThis method is available since v7.17.\n",
+  "markdown": "markdown/kernel/0781f0214b19c9b2dc7afc18.md",
+  "originalHtml": "html/kernel/0781f0214b19c9b2dc7afc18.html"
+}

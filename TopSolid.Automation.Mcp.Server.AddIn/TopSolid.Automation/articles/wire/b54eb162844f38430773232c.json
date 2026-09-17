@@ -1,0 +1,8 @@
+{
+  "path": "api/wire/TopSolid.Cam.NC.Wire.Automating.IWireTechnologyDocuments.GetTableName.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/wire/TopSolid.Cam.NC.Wire.Automating.IWireTechnologyDocuments.GetTableName.html",
+  "sha256": "709ef190318c4d69f8fda368eb40aaa4c678ac8c6487d4d5654b36a08e9a6360",
+  "text": "# Method GetTableName\n\n#### GetTableName(DocumentId)\n\nGet table name.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 160)]\nstring GetTableName(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  Table name.  |\n",
+  "markdown": "markdown/wire/b54eb162844f38430773232c.md",
+  "originalHtml": "html/wire/b54eb162844f38430773232c.html"
+}

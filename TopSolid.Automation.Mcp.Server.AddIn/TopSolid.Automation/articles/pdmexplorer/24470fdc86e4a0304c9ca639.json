@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.TopSolidPdmExplorerHostInstance.MakeClientHost.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.TopSolidPdmExplorerHostInstance.MakeClientHost.html",
+  "sha256": "d6e25be1860e1a6bf3684fdcdb0143335fce31b0ba155ca5838cdd1587a0bc32",
+  "text": "# Method MakeClientHost\n\n#### MakeClientHost(Type, Type)\n\nMakes a TopSolid client WCF host.\n\n##### Declaration\n\n```\npublic ServiceHost MakeClientHost(Type inClassType, Type inInterfaceType)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  Type |  inClassType |  Class type, implementing the inInterfaceType interface.  |  \n \n|  Type |  inInterfaceType |  Interface type.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ServiceHost |  Host.  |\n",
+  "markdown": "markdown/pdmexplorer/24470fdc86e4a0304c9ca639.md",
+  "originalHtml": "html/pdmexplorer/24470fdc86e4a0304c9ca639.html"
+}

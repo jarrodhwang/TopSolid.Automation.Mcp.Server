@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.ErpPdmId.MajorRevisionId.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.ErpPdmId.MajorRevisionId.html",
+  "sha256": "c4dbd01a75f50626abdee3bfcb87f54b52d9fe7b1260008787d29a1c57e967c7",
+  "text": "# Property MajorRevisionId\n\n#### MajorRevisionId\n\nGets the PDM object major revision Id\n\n##### Declaration\n\n```\npublic PdmMajorRevisionId MajorRevisionId { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  PdmMajorRevisionId |   |\n",
+  "markdown": "markdown/pdmexplorer/e88144c235eee97d63970f5a.md",
+  "originalHtml": "html/pdmexplorer/e88144c235eee97d63970f5a.html"
+}

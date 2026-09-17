@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.INCPostProcessor.GetNCPostProcessorId.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.INCPostProcessor.GetNCPostProcessorId.html",
+  "sha256": "6665f2088967b3885cb6bf128d91cf8797fe564b0d948d727d9583827c6a73b0",
+  "text": "# Method GetNCPostProcessorId\n\n#### GetNCPostProcessorId(DocumentId)\n\nGet a post-processor identifier in CAM document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 12, 300, 180)]\nstring GetNCPostProcessorId(DocumentId inCAMDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inCAMDocumentId |  Identifier of the CAM document.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  Identifier post-processor.  |\n",
+  "markdown": "markdown/cam/72dc951b16dd1594eced3361.md",
+  "originalHtml": "html/cam/72dc951b16dd1594eced3361.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IElements.IsVisible.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IElements.IsVisible.html",
+  "sha256": "9ced63bdc423f808eb6bf76d722a4ed587dcca140ef501183a30cce35e3180d2",
+  "text": "# Method IsVisible\n\n#### IsVisible(ElementId)\n\nTells whether an element is visible.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nbool IsVisible(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Whether the element is visible.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/b51c4d02ec718e1249f2e98f.md",
+  "originalHtml": "html/kernel/b51c4d02ec718e1249f2e98f.html"
+}

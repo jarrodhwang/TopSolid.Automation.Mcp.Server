@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IApplication.CurrentPaperFormat.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IApplication.CurrentPaperFormat.html",
+  "sha256": "2d1704fcb76a053514bd4b2e8a44ad1d13d0cfc2e529ea00014c6a8d42195ee7",
+  "text": "# Property CurrentPaperFormat\n\n#### CurrentPaperFormat\n\nGets or sets the name of the current paper format.\n\n##### Declaration\n\n```\n[AvailableSinceVersion(7, 6, 0, 0)]\nstring CurrentPaperFormat { get; set; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |   |  \n\n##### Remarks\n\nThis property is available since v7.6.\n",
+  "markdown": "markdown/kernel/3d5584809bab20f3236dbada.md",
+  "originalHtml": "html/kernel/3d5584809bab20f3236dbada.html"
+}

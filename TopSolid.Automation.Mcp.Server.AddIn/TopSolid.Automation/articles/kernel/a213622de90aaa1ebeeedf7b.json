@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IDocuments.UnsubscribeFromEventsTcp.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IDocuments.UnsubscribeFromEventsTcp.html",
+  "sha256": "4eb4e44b58926b82972147a55d2deb1c30ff1ac4817c3f09199d5f71baf0ff09",
+  "text": "# Method UnsubscribeFromEventsTcp\n\n#### UnsubscribeFromEventsTcp(string, string, int)\n\nUnsubscribes from documents events using TCP connection.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 9, 0, 0)]\nvoid UnsubscribeFromEventsTcp(string inClientName, string inClientAddress, int inClientPort)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  string |  inClientName |  Client name.  |  \n \n|  string |  inClientAddress |  Client IP address or \"localhost\" for local machine.  |  \n \n|  int |  inClientPort |  Client port used.  |  \n\n##### Remarks\n\nThis method is available since v7.9.\n",
+  "markdown": "markdown/kernel/a213622de90aaa1ebeeedf7b.md",
+  "originalHtml": "html/kernel/a213622de90aaa1ebeeedf7b.html"
+}

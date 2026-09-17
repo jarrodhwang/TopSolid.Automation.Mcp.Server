@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.DrillingCounterSinkingPrimitive.-ctor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.DrillingCounterSinkingPrimitive.-ctor.html",
+  "sha256": "282d2dfc20f3b7e3004ee43d1fc7023197860a3ac60ed938946e90b177c0a1e4",
+  "text": "# Constructor DrillingCounterSinkingPrimitive\n\n#### DrillingCounterSinkingPrimitive()\n\nInitializes a new instance of the DrillingSpotFacingPrimitive class.\n\n##### Declaration\n\n```\npublic DrillingCounterSinkingPrimitive()\n```\n",
+  "markdown": "markdown/cad/a2bf5e3859f3b3233a8554b5.md",
+  "originalHtml": "html/cad/a2bf5e3859f3b3233a8554b5.html"
+}

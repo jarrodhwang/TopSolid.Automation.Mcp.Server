@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.GetTextUserProperty.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.GetTextUserProperty.html",
+  "sha256": "cf92213028e407f4fef7f9afb3653caa9ae8ce4688c1d630a8400ef879725184",
+  "text": "# Method GetTextUserProperty\n\n#### GetTextUserProperty(PdmObjectId, PdmObjectId)\n\nGets the value of a specified text user property of an object.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 9, 300, 40)]\nstring GetTextUserProperty(PdmObjectId inObjectId, PdmObjectId inPropertyObjectId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  Object identifier.  |  \n \n|  PdmObjectId |  inPropertyObjectId |  Object identifier of property definition document.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  Property value, or null if none.  |  \n\n##### Remarks\n\nIf the object to analyze does not have a property corresponding to the specified type (i.e. corresponding to the specified property definition document), this method returns null without throwing any exception.\n \nThis method is available since v7.9.300.040.\n",
+  "markdown": "markdown/kernel/021c2c5add13070a9421dcfa.md",
+  "originalHtml": "html/kernel/021c2c5add13070a9421dcfa.html"
+}

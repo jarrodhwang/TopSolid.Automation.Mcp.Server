@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IParts.SetMachiningProcessOperationEntryPoints.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IParts.SetMachiningProcessOperationEntryPoints.html",
+  "sha256": "39aab294dac1f518ac36393d6ad3b56938e9e1c59d80b11ee0cedacf6279fff6",
+  "text": "# Method SetMachiningProcessOperationEntryPoints\n\n#### SetMachiningProcessOperationEntryPoints(ElementId, SmartReal, SmartDirection3D, List<SmartPoint3D>)\n\nSet Entry Points of a machining process operation\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 0, 0)]\nvoid SetMachiningProcessOperationEntryPoints(ElementId inElementId, SmartReal inDiameter, SmartDirection3D inDirection, List<SmartPoint3D> inPoints)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Existing machining Process Operation  |  \n \n|  SmartReal |  inDiameter |  Diameter  |  \n \n|  SmartDirection3D |  inDirection |  Direction  |  \n \n|  List<SmartPoint3D> |  inPoints |  Entry points  |  \n\n##### Remarks\n\nThis method is available since v7.19.\n",
+  "markdown": "markdown/cad/58547e1409f75f55c90cd002.md",
+  "originalHtml": "html/cad/58547e1409f75f55c90cd002.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Real.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Real.html",
+  "sha256": "f850660578ca18a45d05a364faf82c8089da63e6e48037fcdab75eb6c3e4ab46",
+  "text": "# Struct Real\n\nRepresents a real value with units.\n\n##### Inherited Members\n \n ValueType.Equals(object) \n \n ValueType.GetHashCode() \n \n ValueType.ToString() \n \n object.Equals(object, object) \n \n object.ReferenceEquals(object, object) \n \n object.GetType() \n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 9, 0, 0)]\npublic struct Real\n```\n\n##### Remarks\n\nThis structure is available since v7.9.\n\n### Constructors \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   Real(UnitType, string, double)  |  Initializes a new instance of the Real structure.  |  \n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   UnitSymbol  |  Unit symbol in English.  |  \n \n|   UnitType  |  Unit type.  |  \n \n|   Value  |  Value in SI units.  |\n",
+  "markdown": "markdown/kernel/1b5c660064d06ade313fd041.md",
+  "originalHtml": "html/kernel/1b5c660064d06ade313fd041.html"
+}

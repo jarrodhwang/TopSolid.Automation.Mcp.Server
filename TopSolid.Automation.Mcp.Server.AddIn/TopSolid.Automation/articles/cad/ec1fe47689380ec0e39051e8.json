@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.DrillingSpotFacingPrimitive.-ctor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.DrillingSpotFacingPrimitive.-ctor.html",
+  "sha256": "06a71b063e596554fffdedfe0aa2a2d9d4ea61dd5c697d66ff89a0c30f5e4049",
+  "text": "# Constructor DrillingSpotFacingPrimitive\n\n#### DrillingSpotFacingPrimitive(SmartReal, SmartReal, bool)\n\nInitializes a new instance of the DrillingSpotFacingPrimitive class.\n\n##### Declaration\n\n```\npublic DrillingSpotFacingPrimitive(SmartReal inDiameter, SmartReal inDepth, bool inIsOpposed)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  SmartReal |  inDiameter |   |  \n \n|  SmartReal |  inDepth |   |  \n \n|  bool |  inIsOpposed |   |\n",
+  "markdown": "markdown/cad/ec1fe47689380ec0e39051e8.md",
+  "originalHtml": "html/cad/ec1fe47689380ec0e39051e8.html"
+}

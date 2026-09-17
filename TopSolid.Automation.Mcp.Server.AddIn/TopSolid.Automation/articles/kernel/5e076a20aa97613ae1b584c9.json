@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IEntities.GetFunctionOccurrenceName.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IEntities.GetFunctionOccurrenceName.html",
+  "sha256": "99195b24d8f5d27bb3f06a72411b048a85f2962870383e05da21198a2068d2b9",
+  "text": "# Method GetFunctionOccurrenceName\n\n#### GetFunctionOccurrenceName(ElementId)\n\nGets the occurrence name of a function entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nstring GetFunctionOccurrenceName(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the function entity to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  Function occurrence name, or null if this type of function cannot be provided several times..  |  \n\n##### Remarks\n\nThis method is available since v7.8.\n",
+  "markdown": "markdown/kernel/5e076a20aa97613ae1b584c9.md",
+  "originalHtml": "html/kernel/5e076a20aa97613ae1b584c9.html"
+}

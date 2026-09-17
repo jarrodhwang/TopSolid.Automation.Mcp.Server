@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IGeometries3D.GetGeometryType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IGeometries3D.GetGeometryType.html",
+  "sha256": "96440de1d7722802f853513311d71cbfd89da15b707574d13983aa359dbc8b2f",
+  "text": "# Method GetGeometryType\n\n#### GetGeometryType(ElementId)\n\nGets the type of a geometric entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nGeometryType GetGeometryType(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  GeometryType |  Type of the geometric entity, or None if the element is not a 3D geometric entity.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/31e21814486808694eea88a3.md",
+  "originalHtml": "html/kernel/31e21814486808694eea88a3.html"
+}

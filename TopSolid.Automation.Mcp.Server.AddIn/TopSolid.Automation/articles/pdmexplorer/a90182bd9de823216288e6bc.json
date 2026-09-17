@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.ReimportFile.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.ReimportFile.html",
+  "sha256": "b03322d21b295d902e2dff26d61a7b98cf7e21eeede9c025ec6683a81fcba65a",
+  "text": "# Method ReimportFile\n\n#### ReimportFile(string, PdmObjectId)\n\nReimports a file without conversion.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nPdmMinorRevisionId ReimportFile(string inFullName, PdmObjectId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  string |  inFullName |  Full name of the file to import.  |  \n \n|  PdmObjectId |  inDocumentId |  PDM object identifier of the document containing previous revisions of the file.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  PdmMinorRevisionId |  Identifier of the created new revision.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/pdmexplorer/a90182bd9de823216288e6bc.md",
+  "originalHtml": "html/pdmexplorer/a90182bd9de823216288e6bc.html"
+}

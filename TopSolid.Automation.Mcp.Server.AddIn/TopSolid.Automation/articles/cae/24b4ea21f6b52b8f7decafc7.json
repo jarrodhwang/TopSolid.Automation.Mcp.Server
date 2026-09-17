@@ -1,0 +1,8 @@
+{
+  "path": "api/cae/TopSolid.Cae.Kernel.Automating.ICAEDocuments.MeshNeedsRefreshing.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cae/TopSolid.Cae.Kernel.Automating.ICAEDocuments.MeshNeedsRefreshing.html",
+  "sha256": "713691a37382c556aa62fd251e4c78ae18de426e9f063040e54d0aa2a53d7062",
+  "text": "# Method MeshNeedsRefreshing\n\n#### MeshNeedsRefreshing(DocumentId)\n\nTells whether the mesh of an analysis preparation document needs to be refreshed.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 15, 0)]\nbool MeshNeedsRefreshing(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Whether mesh needs to be refreshed.  |  \n\n##### Remarks\n\nThis method is available since v7.19.\n\n##### Examples\n \n```\nDocumentId docId = TopSolidHost.Documents.EditedDocument;\nstring needsRefreshing = TopSolidCaeHost.Documents.MeshNeedsRefreshing(docId);\n```\n",
+  "markdown": "markdown/cae/24b4ea21f6b52b8f7decafc7.md",
+  "originalHtml": "html/cae/24b4ea21f6b52b8f7decafc7.html"
+}

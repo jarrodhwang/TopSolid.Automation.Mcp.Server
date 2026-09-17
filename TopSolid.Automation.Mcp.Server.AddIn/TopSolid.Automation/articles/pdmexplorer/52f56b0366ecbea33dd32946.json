@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.GetLatestRevision.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.GetLatestRevision.html",
+  "sha256": "6bdd66512770ed75352578914ae1ceb6fce2a5d7387e80a9840e50e0d4ef2f64",
+  "text": "# Method GetLatestRevision\n\n#### GetLatestRevision(PdmObjectId)\n\nGets latest revision of specified object and of its children.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nvoid GetLatestRevision(PdmObjectId inObjectId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  Identifier of object to update.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/pdmexplorer/52f56b0366ecbea33dd32946.md",
+  "originalHtml": "html/pdmexplorer/52f56b0366ecbea33dd32946.html"
+}

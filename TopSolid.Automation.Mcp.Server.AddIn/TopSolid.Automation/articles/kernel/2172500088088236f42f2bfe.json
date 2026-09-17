@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartPoint3D.Type.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartPoint3D.Type.html",
+  "sha256": "a53afa1221ff8c22dab94d1b89db0fc3c65deeae0b8d648788533329a823d8a8",
+  "text": "# Field Type\n\nType of point.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic SmartPoint3DType Type\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartPoint3DType |  Type of point. |\n",
+  "markdown": "markdown/kernel/2172500088088236f42f2bfe.md",
+  "originalHtml": "html/kernel/2172500088088236f42f2bfe.html"
+}

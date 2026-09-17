@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ISketches2D.FixItem.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ISketches2D.FixItem.html",
+  "sha256": "fb31690640f9ba45994b47ff72cd39c0816dfda31a92cc8ae8db0d548da216be",
+  "text": "# Method FixItem\n\n#### FixItem(ElementItemId)\n\nFix a segment or a vertex in the ModifiedSketch.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 201, 80)]\nvoid FixItem(ElementItemId inItemId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementItemId |  inItemId |  Identifier of the segment or the vertex to fix.  |  \n\n##### Remarks\n\nStartModification(ElementId) must be called before calling this method.\n \nThis method is available since v7.7.201.80.\n",
+  "markdown": "markdown/kernel/795ae4d9231150d607087f08.md",
+  "originalHtml": "html/kernel/795ae4d9231150d607087f08.html"
+}

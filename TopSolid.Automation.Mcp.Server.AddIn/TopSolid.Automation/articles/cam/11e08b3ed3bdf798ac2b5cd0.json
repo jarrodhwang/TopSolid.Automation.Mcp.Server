@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.TopSolidCamHostInstance.Parameters.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.TopSolidCamHostInstance.Parameters.html",
+  "sha256": "5cf33a2a1ee2eec600500381ba69719fb7df8f3c8110a4a8919eaa9623c11b53",
+  "text": "# Property Parameters\n\n#### Parameters\n\nGets access to operation parameters, or null if not connected.\n\n##### Declaration\n\n```\npublic IParameters Parameters { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  IParameters |   |\n",
+  "markdown": "markdown/cam/11e08b3ed3bdf798ac2b5cd0.md",
+  "originalHtml": "html/cam/11e08b3ed3bdf798ac2b5cd0.html"
+}

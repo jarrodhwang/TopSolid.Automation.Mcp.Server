@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.DrillingTappedHolePrimitive.IsStandard.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.DrillingTappedHolePrimitive.IsStandard.html",
+  "sha256": "0ffb27993974c7b209542492cce5563a02f7c1ec78e30bcefd73c060b4ed1500",
+  "text": "# Field IsStandard\n\nTells wether the tapped hole comes from a document.\n\n###### Namespace: TopSolid.Cad.Design.Automating\n\n###### Assembly: TopSolid.Cad.Design.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic bool IsStandard\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Tells wether the tapped hole comes from a document. |\n",
+  "markdown": "markdown/cad/5eca16970876a56f1c486659.md",
+  "originalHtml": "html/cad/5eca16970876a56f1c486659.html"
+}

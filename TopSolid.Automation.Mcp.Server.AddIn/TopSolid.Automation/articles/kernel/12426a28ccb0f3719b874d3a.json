@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdmAdmin.SetUserName.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdmAdmin.SetUserName.html",
+  "sha256": "2d7ce370ee5cdbf9622ab55506788bc8027cc8fbd8326457a2992054f847be15",
+  "text": "# Method SetUserName\n\n#### SetUserName(string, string, string, string)\n\nSets the name of a user.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 301, 160)]\nvoid SetUserName(string inAccountId, string inFirstName, string inLastName, string inInitials)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  string |  inAccountId |  User account identifier.  |  \n \n|  string |  inFirstName |  User first name.  |  \n \n|  string |  inLastName |  User last name.  |  \n \n|  string |  inInitials |  User initials.  |  \n\n##### Remarks\n\nIf the IsAdmin property returns false, this method cannot be called (an exception will be thrown otherwise).\n \nThis method is available since v7.6.301.160.\n",
+  "markdown": "markdown/kernel/12426a28ccb0f3719b874d3a.md",
+  "originalHtml": "html/kernel/12426a28ccb0f3719b874d3a.html"
+}

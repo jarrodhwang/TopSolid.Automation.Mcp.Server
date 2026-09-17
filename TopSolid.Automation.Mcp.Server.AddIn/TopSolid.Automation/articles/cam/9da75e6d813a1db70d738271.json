@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.PathPoint.Point.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.PathPoint.Point.html",
+  "sha256": "14d7a8116acd61084e5d3bf574f8a811212185494275401cadde447386e9a4ff",
+  "text": "# Property Point\n\n#### Point\n\nGets the point.\n\n##### Declaration\n\n```\npublic Point3D Point { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Point3D |   |\n",
+  "markdown": "markdown/cam/9da75e6d813a1db70d738271.md",
+  "originalHtml": "html/cam/9da75e6d813a1db70d738271.html"
+}

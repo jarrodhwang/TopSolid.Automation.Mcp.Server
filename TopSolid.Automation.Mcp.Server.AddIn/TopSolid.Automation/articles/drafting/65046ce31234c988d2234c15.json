@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.IAnnotations.GetAnnotationType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.IAnnotations.GetAnnotationType.html",
+  "sha256": "92334e86f64f586de738f24d5a00cf95bd60e6d377d38192134489924a9aaf69",
+  "text": "# Method GetAnnotationType\n\n#### GetAnnotationType(ElementId)\n\nGets the annotation type of an annotation entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 17, 0, 0)]\nAnnotationType GetAnnotationType(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  AnnotationType |  The annotation type.  |  \n\n##### Remarks\n\nThis method is available since v7.17.\n",
+  "markdown": "markdown/drafting/65046ce31234c988d2234c15.md",
+  "originalHtml": "html/drafting/65046ce31234c988d2234c15.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IVerify.Close.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IVerify.Close.html",
+  "sha256": "3006af9631a63d09bbecc2f0145be76168f1bcc692edb2240d328a7ebe3b19dd",
+  "text": "# Method Close\n\n#### Close()\n\nCloses the verification view.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nvoid Close()\n```\n",
+  "markdown": "markdown/cam/efc94f914ec8e27c32792d34.md",
+  "originalHtml": "html/cam/efc94f914ec8e27c32792d34.html"
+}

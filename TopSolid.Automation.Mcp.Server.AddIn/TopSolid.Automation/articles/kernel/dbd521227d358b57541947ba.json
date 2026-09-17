@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IVisualization3D.GetBottomCamera.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IVisualization3D.GetBottomCamera.html",
+  "sha256": "82e9b6e12b52a22ea2c11fc3758a4223509e6888274b035c73f45a3d634db1ac",
+  "text": "# Method GetBottomCamera\n\n#### GetBottomCamera(DocumentId)\n\nGets the bottom camera entity of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nElementId GetBottomCamera(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the bottom camera entity found.  |  \n\n##### Remarks\n\nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/dbd521227d358b57541947ba.md",
+  "originalHtml": "html/kernel/dbd521227d358b57541947ba.html"
+}

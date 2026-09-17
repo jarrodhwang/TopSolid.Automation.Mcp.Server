@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.ParameterType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.ParameterType.html",
+  "sha256": "3b9605fb4baaec24a53814bf6c58560599ac6b67f16965af5be03091e8a97ad7",
+  "text": "# Enum ParameterType\n\nDefines the various types of parameters attached to a Cam operation.\n\n###### Namespace: TopSolid.Cam.NC.Kernel.Automating\n\n###### Assembly: TopSolid.Cam.NC.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\npublic enum ParameterType\n```\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  AxisPosition |  Axis position.  |  \n \n|  Boolean |  Boolean.  |  \n \n|  Bound |  A bound is a way to compute a coordinate, instead of simply give an absolute value. Inside a bound, there is a BoundType, and, according to this type, a real value, a point reference or nothing.  |  \n \n|  Element |  Reference to an element.  |  \n \n|  FeedRate |  A feedrate is a way to compute a feed, instead of simply absolute value. Inside a feedrate, there is a FeedRate, and, according to this type, a real value or nothing.  |  \n \n|  Geometry |  Geometry.  |  \n \n|  Integer |  integer.  |  \n \n|  Real |  Real.  |  \n \n|  SpindleRate |  A spindle rate is a way to compute an angular velocity, instead of simply absolute value. Inside a spindle rate, there is a SpindleRate, and, according to this type, a real value or nothing.  |  \n \n|  Text |  Text.  |  \n \n|  Tool |  Tool.  |  \n \n|  Unclassified |  Unclassified type.  |  \n \n|  Untyped |  Untyped parameter.  |\n",
+  "markdown": "markdown/cam/7bdc542b437a6580624632c0.md",
+  "originalHtml": "html/cam/7bdc542b437a6580624632c0.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IOptions.GetUpdateModes.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IOptions.GetUpdateModes.html",
+  "sha256": "62f63fd692dc22ed64f8866b14b8c57783380ca3e4c76ec673169bca60b427b0",
+  "text": "# Method GetUpdateModes\n\n#### GetUpdateModes(DocumentId, out bool, out bool)\n\nGets the update modes of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 12, 300, 160)]\nvoid GetUpdateModes(DocumentId inDocumentId, out bool outIsHealing, out bool outIsTolerant)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n \n|  bool |  outIsHealing |  Whether update automatically heals damaged operations.  |  \n \n|  bool |  outIsTolerant |  Whether update ignores modifications that are less than standard precision.  |  \n\n##### Remarks\n\nThis method is available since v7.12.300.160.\n",
+  "markdown": "markdown/kernel/6bb14f48bf55d5e3521d8a13.md",
+  "originalHtml": "html/kernel/6bb14f48bf55d5e3521d8a13.html"
+}

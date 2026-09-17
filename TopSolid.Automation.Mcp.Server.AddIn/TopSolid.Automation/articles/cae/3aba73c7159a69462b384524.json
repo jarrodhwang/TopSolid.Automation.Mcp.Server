@@ -1,0 +1,8 @@
+{
+  "path": "api/cae/TopSolid.Cae.Kernel.Automating.IResults.GetNaturalFrequencyResult.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cae/TopSolid.Cae.Kernel.Automating.IResults.GetNaturalFrequencyResult.html",
+  "sha256": "37eedf9846498a19a6420ef01ddf1f93f4b2889ea5df4b7e9e6491093bf72d55",
+  "text": "# Method GetNaturalFrequencyResult\n\n#### GetNaturalFrequencyResult(DocumentId, int)\n\nGets a specific Natural Frequency result\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 400, 100)]\nNaturalFrequencyResult GetNaturalFrequencyResult(DocumentId inDocumentId, int inFrequencyNumber)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Id of the document  |  \n \n|  int |  inFrequencyNumber |  Target frequency number  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  NaturalFrequencyResult |  the natural frequency result  |\n",
+  "markdown": "markdown/cae/3aba73c7159a69462b384524.md",
+  "originalHtml": "html/cae/3aba73c7159a69462b384524.html"
+}

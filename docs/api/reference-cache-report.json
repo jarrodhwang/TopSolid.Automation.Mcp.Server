@@ -1,0 +1,17 @@
+{
+  "source": "https://help.topsolid.com/7.20/en/TopSolid'Automation/",
+  "symbolCount": 6898,
+  "pageCount": 3335,
+  "cachedPages": 3335,
+  "failures": [],
+  "modules": {
+    "kernel": 1825,
+    "cad": 643,
+    "drafting": 121,
+    "cam": 304,
+    "pdmexplorer": 280,
+    "electrode": 29,
+    "wire": 71,
+    "cae": 62
+  }
+}

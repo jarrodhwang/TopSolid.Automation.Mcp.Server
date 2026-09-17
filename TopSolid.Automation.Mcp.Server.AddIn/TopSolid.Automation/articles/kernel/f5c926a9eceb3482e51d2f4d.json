@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.GetObjectsFromRecycleBin.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.GetObjectsFromRecycleBin.html",
+  "sha256": "29a2809e861ab165f01cee560c446384febbb7e1c8d906b80be7c142ba142fc1",
+  "text": "# Method GetObjectsFromRecycleBin\n\n#### GetObjectsFromRecycleBin(PdmObjectId)\n\nGets the objects from the recycle bin.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 15, 400, 220)]\nList<PdmObjectId> GetObjectsFromRecycleBin(PdmObjectId inProjectId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inProjectId |  Project PDM object identifier.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<PdmObjectId> |  The objects from the recycle bin.  |  \n\n##### Remarks\n\nThis method is available since v7.15.400.220.\n",
+  "markdown": "markdown/kernel/f5c926a9eceb3482e51d2f4d.md",
+  "originalHtml": "html/kernel/f5c926a9eceb3482e51d2f4d.html"
+}

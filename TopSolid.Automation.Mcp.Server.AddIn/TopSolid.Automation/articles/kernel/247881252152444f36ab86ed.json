@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IEntities.GetClassifyingClass.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IEntities.GetClassifyingClass.html",
+  "sha256": "ad07da20d58525ad71ceaef3cfdcd91e117176d65219b94af5a9286fc7bcb9dc",
+  "text": "# Method GetClassifyingClass\n\n#### GetClassifyingClass(ElementId)\n\nGets the classification class entity of a specified classifying entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nElementId GetClassifyingClass(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the classifying entity to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the classifying class definition entity.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/kernel/247881252152444f36ab86ed.md",
+  "originalHtml": "html/kernel/247881252152444f36ab86ed.html"
+}

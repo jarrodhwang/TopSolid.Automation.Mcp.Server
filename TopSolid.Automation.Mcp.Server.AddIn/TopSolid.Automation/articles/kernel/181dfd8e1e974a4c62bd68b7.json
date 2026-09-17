@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IOperations.UpgradeOperation.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IOperations.UpgradeOperation.html",
+  "sha256": "ac31afe4caba0e1a2961afd383f472488ca2688155cfdcc2445e22945e2019e9",
+  "text": "# Method UpgradeOperation\n\n#### UpgradeOperation(ElementId)\n\nUpgrades an operation\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 400, 121)]\nbool UpgradeOperation(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |   |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  true if the operation has been upgraded.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nExecute this method at your own risks.\n",
+  "markdown": "markdown/kernel/181dfd8e1e974a4c62bd68b7.md",
+  "originalHtml": "html/kernel/181dfd8e1e974a4c62bd68b7.html"
+}

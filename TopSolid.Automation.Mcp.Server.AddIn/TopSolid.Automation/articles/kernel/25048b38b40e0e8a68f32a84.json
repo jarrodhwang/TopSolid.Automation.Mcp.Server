@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.HasProjectFolderConstituents.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.HasProjectFolderConstituents.html",
+  "sha256": "0b393c4cbd251a5aba1f2790e6b3a890fb402ce8f8e9d907ed6826170b0eef97",
+  "text": "# Method HasProjectFolderConstituents\n\n#### HasProjectFolderConstituents(PdmProjectFolderId)\n\nTells whether a project folder has constituents.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 9, 0, 0)]\nbool HasProjectFolderConstituents(PdmProjectFolderId inProjectFolderdId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmProjectFolderId |  inProjectFolderdId |  Project folder identifier.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  The project folder has constituents, i.e. GetProjectFolderConstituents(PdmProjectFolderId, out List<PdmProjectFolderId>, out List<PdmObjectId>) would not return only empty lists.  |  \n\n##### Remarks\n\nThis method is available since v7.9.\n",
+  "markdown": "markdown/kernel/25048b38b40e0e8a68f32a84.md",
+  "originalHtml": "html/kernel/25048b38b40e0e8a68f32a84.html"
+}

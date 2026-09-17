@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ICoatings.GetRotation.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ICoatings.GetRotation.html",
+  "sha256": "7042e2cdb529dd7f895e85cb5d6358642a9311e4317ddf051c7f712b156005d4",
+  "text": "# Method GetRotation\n\n#### GetRotation(DocumentId)\n\nGets the rotation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 400, 100)]\ndouble GetRotation(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double |   |  \n\n##### Remarks\n\nThis method is available since v7.16.\n",
+  "markdown": "markdown/cad/93151b15de2aa0ebae6b6917.md",
+  "originalHtml": "html/cad/93151b15de2aa0ebae6b6917.html"
+}

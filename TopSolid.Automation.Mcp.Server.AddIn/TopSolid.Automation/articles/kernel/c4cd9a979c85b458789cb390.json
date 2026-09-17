@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.TopSolidHost.Families.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.TopSolidHost.Families.html",
+  "sha256": "0938c61de8d3bd74b95eef8f7a5f467ea443031aae6897111d53f8320fd8f0c6",
+  "text": "# Property Families\n\n#### Families\n\nGets access to families, or null if not available.\n\n##### Declaration\n\n```\npublic static IFamilies Families { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  IFamilies |   |\n",
+  "markdown": "markdown/kernel/c4cd9a979c85b458789cb390.md",
+  "originalHtml": "html/kernel/c4cd9a979c85b458789cb390.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IOperations.SetUpToDateState.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IOperations.SetUpToDateState.html",
+  "sha256": "cb4d6b63adcaea7c964b6c19ba8bb94d434647ccd145ce694c2fd58a483e0f0d",
+  "text": "# Method SetUpToDateState\n\n#### SetUpToDateState(ElementId, bool)\n\nChanges the state of the given operation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nbool SetUpToDateState(ElementId inElementId, bool inState)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the operation to modify.  |  \n \n|  bool |  inState |  True if the operation will be up to date, otherwise false.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Returns the old value of the flag.  |\n",
+  "markdown": "markdown/cam/2cd611cf33986989b2044c89.md",
+  "originalHtml": "html/cam/2cd611cf33986989b2044c89.html"
+}

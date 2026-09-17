@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IElements.GetPropertyLocalizedName.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IElements.GetPropertyLocalizedName.html",
+  "sha256": "5fa2bdf8d682926c8f3e3a6d6123fe8d2a49eca95311b13b7d900807c2ea276b",
+  "text": "# Method GetPropertyLocalizedName\n\n#### GetPropertyLocalizedName(ElementId, string)\n\nGets the localized name of an element property.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 300, 60)]\nstring GetPropertyLocalizedName(ElementId inElementId, string inFullName)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to analyze.  |  \n \n|  string |  inFullName |  Full name of the element property to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  Localized name of the property.  |  \n\n##### Remarks\n\nThis method is available since v7.8.300.60.\n",
+  "markdown": "markdown/kernel/3ca56b5ce57bafc3b3b89f66.md",
+  "originalHtml": "html/kernel/3ca56b5ce57bafc3b3b89f66.html"
+}

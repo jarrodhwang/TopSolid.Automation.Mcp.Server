@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ICoatings.SetVerticalScale.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ICoatings.SetVerticalScale.html",
+  "sha256": "4a1595d9082c053137d8b00a5cbd21f9e22a1aff0650f3d0ccfd916223e06c41",
+  "text": "# Method SetVerticalScale\n\n#### SetVerticalScale(DocumentId, double)\n\nSets the vertical scale.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 0, 0)]\nvoid SetVerticalScale(DocumentId inDocumentId, double inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  double |  inValue |  Wanted value.  |  \n\n##### Remarks\n\nThis method must be called for Cylindrical or RedWay type.\n \nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.16.\n",
+  "markdown": "markdown/cad/6da7fc387cd6a851a97d6d58.md",
+  "originalHtml": "html/cad/6da7fc387cd6a851a97d6d58.html"
+}

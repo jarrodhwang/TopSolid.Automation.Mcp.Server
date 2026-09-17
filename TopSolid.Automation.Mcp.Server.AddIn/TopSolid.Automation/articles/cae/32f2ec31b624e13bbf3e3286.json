@@ -1,0 +1,8 @@
+{
+  "path": "api/cae/TopSolid.Cae.Kernel.Automating.NaturalFrequencyResult.NaturalFrequency.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cae/TopSolid.Cae.Kernel.Automating.NaturalFrequencyResult.NaturalFrequency.html",
+  "sha256": "ccd329cf3e28f39ecdd7901906acc1d5e2bc8b5bfbd623e4edaaab41d3310a32",
+  "text": "# Property NaturalFrequency\n\n#### NaturalFrequency\n\nGets the Critical Load\n\n##### Declaration\n\n```\npublic double NaturalFrequency { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double |   |\n",
+  "markdown": "markdown/cae/32f2ec31b624e13bbf3e3286.md",
+  "originalHtml": "html/cae/32f2ec31b624e13bbf3e3286.html"
+}

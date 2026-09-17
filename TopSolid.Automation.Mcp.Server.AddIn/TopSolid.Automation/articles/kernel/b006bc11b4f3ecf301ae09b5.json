@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdmSecurity.IsSecurityActive.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdmSecurity.IsSecurityActive.html",
+  "sha256": "14a3b7349011597c683864251ef78e391ceba5325384a2288f594f849980f952",
+  "text": "# Method IsSecurityActive\n\n#### IsSecurityActive()\n\nTells if a security is globally activated.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 302, 60)]\nbool IsSecurityActive()\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Global security is activated.  |  \n\n##### Remarks\n\nThis method is available since v7.8.302.060.\n",
+  "markdown": "markdown/kernel/b006bc11b4f3ecf301ae09b5.md",
+  "originalHtml": "html/kernel/b006bc11b4f3ecf301ae09b5.html"
+}

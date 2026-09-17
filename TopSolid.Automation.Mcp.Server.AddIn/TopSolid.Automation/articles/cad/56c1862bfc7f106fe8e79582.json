@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ICoatings.GetAnisotropyAngleTextureDocument.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ICoatings.GetAnisotropyAngleTextureDocument.html",
+  "sha256": "58f339de40d4f1e4e62d7b0e5c704ba87ea8bb050115ed9d112cca77d254a7a1",
+  "text": "# Method GetAnisotropyAngleTextureDocument\n\n#### GetAnisotropyAngleTextureDocument(DocumentId)\n\nGets the Anisotropy texture document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 18, 0, 0)]\nDocumentId GetAnisotropyAngleTextureDocument(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  DocumentId |   |  \n\n##### Remarks\n\nThis method is available since v7.18.\n",
+  "markdown": "markdown/cad/56c1862bfc7f106fe8e79582.md",
+  "originalHtml": "html/cad/56c1862bfc7f106fe8e79582.html"
+}

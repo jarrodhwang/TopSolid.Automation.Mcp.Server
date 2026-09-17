@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdmAdmin.GetUsers.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdmAdmin.GetUsers.html",
+  "sha256": "46148f62e3c7a86b8987516a44362ba47b0566eafb4e2d480fc5c16a68c96e14",
+  "text": "# Method GetUsers\n\n#### GetUsers(bool, bool)\n\nGets all the users.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 301, 160)]\nList<string> GetUsers(bool inGetsActiveUsers, bool inGetsInactiveUsers)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  bool |  inGetsActiveUsers |  Gets active users.  |  \n \n|  bool |  inGetsInactiveUsers |  Gets inactive users.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<string> |  Users account identifiers.  |  \n\n##### Remarks\n\nThis method is available since v7.6.301.160.\n",
+  "markdown": "markdown/kernel/69a875e353c4731c30e2c6be.md",
+  "originalHtml": "html/kernel/69a875e353c4731c30e2c6be.html"
+}

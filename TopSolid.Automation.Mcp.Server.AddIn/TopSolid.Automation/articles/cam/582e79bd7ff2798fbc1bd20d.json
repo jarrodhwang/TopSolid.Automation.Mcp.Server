@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IParameters.ToInvariantStringValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IParameters.ToInvariantStringValue.html",
+  "sha256": "c00d8e1ef540dbeabae65d4cacbcfc03f23d14f4ac4ffeda19c6395d656245b1",
+  "text": "# Method ToInvariantStringValue\n\n#### ToInvariantStringValue(ParameterId)\n\nGets the text corresponding to the parameter value, without translation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nstring ToInvariantStringValue(ParameterId inParameterId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ParameterId |  inParameterId |  Identifier of the parameter to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  Text corresponding to the parameter value. The invariant culture is used.  |  \n\n##### Remarks\n\nThe numerical values are given in meters and radians without any unit.\n",
+  "markdown": "markdown/cam/582e79bd7ff2798fbc1bd20d.md",
+  "originalHtml": "html/cam/582e79bd7ff2798fbc1bd20d.html"
+}

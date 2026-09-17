@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.SetManufacturerPartNumber.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.SetManufacturerPartNumber.html",
+  "sha256": "87fbb7f922c10ec9347be46bdddb818e792ab4c5162087b1d2e2d2cc60b49b71",
+  "text": "# Method SetManufacturerPartNumber\n\n#### SetManufacturerPartNumber(PdmObjectId, string)\n\nSets the manufacturer part number of an object.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 303, 100)]\nvoid SetManufacturerPartNumber(PdmObjectId inObjectId, string inManufacturerPartNumber)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  Object identifier.  |  \n \n|  string |  inManufacturerPartNumber |  Manufacturer part number.  |  \n\n##### Remarks\n\nThis method must not be called between StartModification(string, bool) and EndModification(bool, bool) methods calls.\n \nThis method is available since v7.8.303.100.\n",
+  "markdown": "markdown/kernel/44105c4e57a7ab7de25950f3.md",
+  "originalHtml": "html/kernel/44105c4e57a7ab7de25950f3.html"
+}

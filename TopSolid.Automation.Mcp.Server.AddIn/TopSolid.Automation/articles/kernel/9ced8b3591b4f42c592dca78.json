@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.CompressionType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.CompressionType.html",
+  "sha256": "34849b06208a302cde0a5fa672cd0a2acf2c265ccc00cebd840be5e76c6c8b48",
+  "text": "# Enum CompressionType\n\nDefines the various types of compressions.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 12, 300, 160)]\npublic enum CompressionType\n```\n\n##### Remarks\n\nThis enum is available since v7.12.300.160.\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  Fast |  Fast compression.  |  \n \n|  None |  No compression.  |  \n \n|  Strong |  Strong compression.  |\n",
+  "markdown": "markdown/kernel/9ced8b3591b4f42c592dca78.md",
+  "originalHtml": "html/kernel/9ced8b3591b4f42c592dca78.html"
+}

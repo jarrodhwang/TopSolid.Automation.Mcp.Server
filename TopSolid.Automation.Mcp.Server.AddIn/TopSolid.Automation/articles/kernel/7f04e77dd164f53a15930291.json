@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ITextures.GetWoodColor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ITextures.GetWoodColor.html",
+  "sha256": "3c4a42e1a370f68f28b66651c8e27738714c8d510976306d15c9a8d90f27af3f",
+  "text": "# Method GetWoodColor\n\n#### GetWoodColor(DocumentId)\n\nGets the wood color.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 400, 100)]\nColor GetWoodColor(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyse.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Color |   |  \n\n##### Remarks\n\nThis method is available since v7.16.\n",
+  "markdown": "markdown/kernel/7f04e77dd164f53a15930291.md",
+  "originalHtml": "html/kernel/7f04e77dd164f53a15930291.html"
+}

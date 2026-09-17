@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.TextureImage.ImageFilePath.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.TextureImage.ImageFilePath.html",
+  "sha256": "0ccda50aae44ba40fff51bcb6fc5ef6075a20b8f3d0b0d051c359a283c000d46",
+  "text": "# Property ImageFilePath\n\n#### ImageFilePath\n\nGets the image.\n\n##### Declaration\n\n```\npublic string ImageFilePath { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |   |\n",
+  "markdown": "markdown/kernel/20a84c30d685c3dd353c5621.md",
+  "originalHtml": "html/kernel/20a84c30d685c3dd353c5621.html"
+}

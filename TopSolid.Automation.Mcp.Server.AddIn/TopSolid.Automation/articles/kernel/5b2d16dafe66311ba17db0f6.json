@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Point3D.PX.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Point3D.PX.html",
+  "sha256": "99fa82503969dfd80e64ae4c0ea16e3026b5ccf4c68b7bd62122fe8758d34d76",
+  "text": "# Field PX\n\nX unit point, i.e. (1,0,0).\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\npublic static readonly Point3D PX\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Point3D |  X unit point, i.e. (1,0,0). |\n",
+  "markdown": "markdown/kernel/5b2d16dafe66311ba17db0f6.md",
+  "originalHtml": "html/kernel/5b2d16dafe66311ba17db0f6.html"
+}

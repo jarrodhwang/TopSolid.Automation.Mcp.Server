@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IDocuments.IsVirtualDocument.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IDocuments.IsVirtualDocument.html",
+  "sha256": "1b561428c389a3465f955ff2034a9594c26d281be21a56c91725c86e9b963700",
+  "text": "# Method IsVirtualDocument\n\n#### IsVirtualDocument(DocumentId)\n\nDetermines whether the document is virtual.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 17, 0, 0)]\nbool IsVirtualDocument(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyse.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Tells wether the document is virtual.  |  \n\n##### Remarks\n\nThis method is available since v7.17.\n",
+  "markdown": "markdown/kernel/8b839d208279defe090b5c06.md",
+  "originalHtml": "html/kernel/8b839d208279defe090b5c06.html"
+}

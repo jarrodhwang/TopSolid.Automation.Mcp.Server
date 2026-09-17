@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.GetProjectCategory.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.GetProjectCategory.html",
+  "sha256": "5982087aa1d20814fabc1a91e4ef3eaf8aea87640b66b02c9b77e26c9c49c350",
+  "text": "# Method GetProjectCategory\n\n#### GetProjectCategory(PdmObjectId)\n\nGets the project category of an object.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nstring GetProjectCategory(PdmObjectId inObjectId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  Object identifier.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  Object category.  |  \n\n##### Remarks\n\nThis method is available since v7.10.300.140.\n",
+  "markdown": "markdown/pdmexplorer/454ed5588bd4979e271b9648.md",
+  "originalHtml": "html/pdmexplorer/454ed5588bd4979e271b9648.html"
+}

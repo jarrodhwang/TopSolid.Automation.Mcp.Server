@@ -1,0 +1,8 @@
+{
+  "path": "api/wire/TopSolid.Cam.NC.Wire.Automating.IWireCc.AddParameterOffset.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/wire/TopSolid.Cam.NC.Wire.Automating.IWireCc.AddParameterOffset.html",
+  "sha256": "8de2880af82ffe4bbaaff87cff8325a6cae591ea6984a66ed0a27178a2f44958",
+  "text": "# Method AddParameterOffset\n\n#### AddParameterOffset(ElementId, SmartReal)\n\nAdd parameter stock to leave.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 160)]\nvoid AddParameterOffset(ElementId inElementId, SmartReal inOffset)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to modify.  |  \n \n|  SmartReal |  inOffset |  Offset in SI units.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n",
+  "markdown": "markdown/wire/d8d3d52ce1c4e89f77818b67.md",
+  "originalHtml": "html/wire/d8d3d52ce1c4e89f77818b67.html"
+}

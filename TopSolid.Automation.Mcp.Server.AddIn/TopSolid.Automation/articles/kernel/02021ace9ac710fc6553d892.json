@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.CreateToleranceParameter.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.CreateToleranceParameter.html",
+  "sha256": "953e105e98b9490deb167dcedf3adb60c7c0a73f22d8bf5d7db3ce6b615792cd",
+  "text": "# Method CreateToleranceParameter\n\n#### CreateToleranceParameter(DocumentId, UnitType, string, Real, Real)\n\nCreates a tolerance parameter entity in a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 14, 0, 0)]\nElementId CreateToleranceParameter(DocumentId inDocumentId, UnitType inUnitType, string inName, Real inUpperDeviation, Real inLowerDeviation)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  UnitType |  inUnitType |  Unit type.  |  \n \n|  string |  inName |  Name of the tolerance parameter.  |  \n \n|  Real |  inUpperDeviation |  Upper value.  |  \n \n|  Real |  inLowerDeviation |  Lower value.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the created parameter entity.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.14.\n",
+  "markdown": "markdown/kernel/02021ace9ac710fc6553d892.md",
+  "originalHtml": "html/kernel/02021ace9ac710fc6553d892.html"
+}

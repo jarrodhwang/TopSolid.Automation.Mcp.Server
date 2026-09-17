@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ITextures.GetMapping.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ITextures.GetMapping.html",
+  "sha256": "8b843544680646ab0ec091324844465c67c4c624e14df8c2c3186832e2ca341d",
+  "text": "# Method GetMapping\n\n#### GetMapping(DocumentId)\n\nGets the texture mapping type of a texture document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 0, 0)]\nTextureMappingType GetMapping(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  TextureMappingType |  The texture mapping type.  |  \n\n##### Remarks\n\nThis method is available since v7.16.\n",
+  "markdown": "markdown/kernel/aad01705a860fa4795d59f92.md",
+  "originalHtml": "html/kernel/aad01705a860fa4795d59f92.html"
+}

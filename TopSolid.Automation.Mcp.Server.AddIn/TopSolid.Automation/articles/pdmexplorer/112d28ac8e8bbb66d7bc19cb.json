@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.BomNode.Name.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.BomNode.Name.html",
+  "sha256": "a52df811e4920d2cf64397d9ea361662a725e562ed90f000a7aad41457a99225",
+  "text": "# Property Name\n\n#### Name\n\nGets the name.\n\n##### Declaration\n\n```\npublic string Name { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |   |\n",
+  "markdown": "markdown/pdmexplorer/112d28ac8e8bbb66d7bc19cb.md",
+  "originalHtml": "html/pdmexplorer/112d28ac8e8bbb66d7bc19cb.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IShapes.GetFaceColor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IShapes.GetFaceColor.html",
+  "sha256": "cccea774bf8e1a947a9f089f55089c35f4ce1a45c72c8f9cce72efd17491a61c",
+  "text": "# Method GetFaceColor\n\n#### GetFaceColor(ElementItemId)\n\nGets the color of a face.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 12, 0, 0)]\nColor GetFaceColor(ElementItemId inFaceId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementItemId |  inFaceId |  Identifier of the face to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Color |  Color of the face, or Empty if the face has no color.  |  \n\n##### Remarks\n\nThis method is available since v7.12.\n",
+  "markdown": "markdown/kernel/7dd98aabc11d4e7dc53df031.md",
+  "originalHtml": "html/kernel/7dd98aabc11d4e7dc53df031.html"
+}

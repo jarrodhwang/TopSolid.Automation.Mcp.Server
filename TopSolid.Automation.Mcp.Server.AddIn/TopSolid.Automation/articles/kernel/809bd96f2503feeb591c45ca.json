@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ItemLabel.Frame3DYAxis.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ItemLabel.Frame3DYAxis.html",
+  "sha256": "57915dd4222b1cdfba950c50861f486ef934654f3544e40790f5423822a60cf0",
+  "text": "# Field Frame3DYAxis\n\nLabel of 3D frame Y axis.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\npublic static readonly ItemLabel Frame3DYAxis\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ItemLabel |  Label of 3D frame Y axis. |\n",
+  "markdown": "markdown/kernel/809bd96f2503feeb591c45ca.md",
+  "originalHtml": "html/kernel/809bd96f2503feeb591c45ca.html"
+}

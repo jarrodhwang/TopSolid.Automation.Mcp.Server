@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.IDraftings.GetViewScaleFactor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.IDraftings.GetViewScaleFactor.html",
+  "sha256": "11064c708c4127ec571a5d94c8ff2d1411794de92fa086d76cebb1058b145693",
+  "text": "# Method GetViewScaleFactor\n\n#### GetViewScaleFactor(ElementId, out bool, out double, out double, out double)\n\nGets the view scale factor.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 255, 0)]\nvoid GetViewScaleFactor(ElementId inElementId, out bool isRelative, out double outRelativeValue, out double outAbsoluteValue, out double outReferenceValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  The view to analyze  |  \n \n|  bool |  isRelative |   |  \n \n|  double |  outRelativeValue |  the view scale factor relative value.  |  \n \n|  double |  outAbsoluteValue |  the view scale factor absolute value.  |  \n \n|  double |  outReferenceValue |  the view scale factor reference value.  |\n",
+  "markdown": "markdown/drafting/8020f8ec1282fa0494532ca3.md",
+  "originalHtml": "html/drafting/8020f8ec1282fa0494532ca3.html"
+}

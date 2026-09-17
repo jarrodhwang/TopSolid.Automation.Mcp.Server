@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdmWorkflow.CancelAction.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdmWorkflow.CancelAction.html",
+  "sha256": "742ae01bd932d13326ab7b8f6a7e59d37af6168d739f5e99d92464283b3dfca6",
+  "text": "# Method CancelAction\n\n#### CancelAction(PdmMajorRevisionId)\n\nCancels a workflow action of a major revision.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 14, 248, 0)]\nvoid CancelAction(PdmMajorRevisionId inMajorRevisionId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmMajorRevisionId |  inMajorRevisionId |  Major revision to cancel action on.  |  \n\n##### Remarks\n\nThis method is available since v7.14.248.000.\n",
+  "markdown": "markdown/kernel/9d95b325dc7990d854404c90.md",
+  "originalHtml": "html/kernel/9d95b325dc7990d854404c90.html"
+}

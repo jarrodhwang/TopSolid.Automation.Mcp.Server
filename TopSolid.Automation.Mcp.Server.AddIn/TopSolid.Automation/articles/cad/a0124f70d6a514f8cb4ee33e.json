@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IUnfoldings.GetPartToUnfold.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IUnfoldings.GetPartToUnfold.html",
+  "sha256": "e97ddf77343c19bc41a3c495a8fa723bbc9a5b9a9c9af1d6a046b27c36e116cd",
+  "text": "# Method GetPartToUnfold\n\n#### GetPartToUnfold(DocumentId, out DocumentId, out ElementId, out ElementId)\n\nGets the part to unfold.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 300, 60)]\nvoid GetPartToUnfold(DocumentId inDocumentId, out DocumentId outPartDocumentId, out ElementId outRepresentationId, out ElementId outShapeId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the unfolding document to analyze.  |  \n \n|  DocumentId |  outPartDocumentId |  Identifier of the part document that contains the unfolded part.  |  \n \n|  ElementId |  outRepresentationId |  Identifier of the representation that contains the unfolded shape.  |  \n \n|  ElementId |  outShapeId |  Unfolded shape.  |  \n\n##### Remarks\n\nThis method is available since v7.10.300.60.\n",
+  "markdown": "markdown/cad/a0124f70d6a514f8cb4ee33e.md",
+  "originalHtml": "html/cad/a0124f70d6a514f8cb4ee33e.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Transform2D.SetRotation.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Transform2D.SetRotation.html",
+  "sha256": "59a0b740128618eda374d635af89a851845920215b6963c20a431f4601f47d27",
+  "text": "# Method SetRotation\n\n#### SetRotation(Point3D, double)\n\nSets the transformation as the rotation about a specified point with a specified angle.\n\n##### Declaration\n\n```\npublic void SetRotation(Point3D inCenter, double inAngle)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  Point3D |  inCenter |  Rotation center.  |  \n \n|  double |  inAngle |  Rotation angle, in radians.  |\n",
+  "markdown": "markdown/kernel/c28d71fa224f27e7e8474a37.md",
+  "originalHtml": "html/kernel/c28d71fa224f27e7e8474a37.html"
+}

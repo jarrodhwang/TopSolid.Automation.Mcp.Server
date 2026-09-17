@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartPlane3D.IsReversed.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartPlane3D.IsReversed.html",
+  "sha256": "482476de6f056c54503fb56c97e4f6a73443a183c49d93ff1733943fb4d398e9",
+  "text": "# Field IsReversed\n\nWhether the provided plane Z direction is to be reversed.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic bool IsReversed\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Whether the provided plane Z direction is to be reversed. |\n",
+  "markdown": "markdown/kernel/a3376c3e7cad03317f322316.md",
+  "originalHtml": "html/kernel/a3376c3e7cad03317f322316.html"
+}

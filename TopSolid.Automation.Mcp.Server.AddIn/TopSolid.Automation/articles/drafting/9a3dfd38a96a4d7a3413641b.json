@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.CellValueType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.CellValueType.html",
+  "sha256": "99033204f941fab6f04976e76c6bcc4b8880eb72b7cdc72686a431df82de4a44",
+  "text": "# Enum CellValueType\n\nDefines the various types of values for a cell.\n\n###### Namespace: TopSolid.Cad.Drafting.Automating\n\n###### Assembly: TopSolid.Cad.Drafting.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 14, 300, 140)]\npublic enum CellValueType\n```\n\n##### Remarks\n\nThis enum is available since v7.14.300.140.\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  Element |  Element value. This can be a Tolerance entity.  |  \n \n|  ElementItem |  Element item value.  |  \n \n|  Image |  Image value.  |  \n \n|  None |  Not a cell.  |  \n \n|  Parameter |  Parameter value.  |  \n \n|  Text |  Text value.  |  \n \n|  Unclassified |  Unclassified type.  |\n",
+  "markdown": "markdown/drafting/9a3dfd38a96a4d7a3413641b.md",
+  "originalHtml": "html/drafting/9a3dfd38a96a4d7a3413641b.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IErp.GetErpIds.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IErp.GetErpIds.html",
+  "sha256": "662771244fe0912ce9e35b97ce0a1de6ef683bf2659e0e3bee74be90d583e636",
+  "text": "# Method GetErpIds\n\n#### GetErpIds(List<PdmMinorRevisionId>)\n\nGets a list of erp pdm objects from a list of PdmMinorRevisionId\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 222, 80)]\nList<ErpPdmId> GetErpIds(List<PdmMinorRevisionId> inMinorRevisionIds)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  List<PdmMinorRevisionId> |  inMinorRevisionIds |  List of PdmMinorRevisionId  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ErpPdmId> |  List of Erp Pdm Objects  |\n",
+  "markdown": "markdown/pdmexplorer/cce9cb9de576c30d2918d2a9.md",
+  "originalHtml": "html/pdmexplorer/cce9cb9de576c30d2918d2a9.html"
+}

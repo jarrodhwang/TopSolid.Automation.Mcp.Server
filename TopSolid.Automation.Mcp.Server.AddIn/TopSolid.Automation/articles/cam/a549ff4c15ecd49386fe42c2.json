@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.TopSolidCamHostInstance.Verify.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.TopSolidCamHostInstance.Verify.html",
+  "sha256": "02bde2b01b1b55836792fc5871f5701d9ac18aa40622e13e99fc2e7db50f370b",
+  "text": "# Property Verify\n\n#### Verify\n\nGets access to verification, or null if not connected.\n\n##### Declaration\n\n```\npublic IVerify Verify { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  IVerify |   |\n",
+  "markdown": "markdown/cam/a549ff4c15ecd49386fe42c2.md",
+  "originalHtml": "html/cam/a549ff4c15ecd49386fe42c2.html"
+}

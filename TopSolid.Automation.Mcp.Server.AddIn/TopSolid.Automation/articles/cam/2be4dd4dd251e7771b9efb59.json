@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.INCPostProcessor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.INCPostProcessor.html",
+  "sha256": "9ff32ba7976b88f371caa641da755e058dc24cee418ce8e135f8d18ed643e2d0",
+  "text": "# Interface INCPostProcessor\n\nObtain the NC codes of a CAM document.\n\n###### Namespace: TopSolid.Cam.NC.Kernel.Automating\n\n###### Assembly: TopSolid.Cam.NC.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[ServiceContract]\n[AvailableSinceVersion(7, 12, 300, 180)]\npublic interface INCPostProcessor\n```\n\n### Methods \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   GenerateNCCodesForSelectionWithOptions(DocumentId, string, List<KeyValue>, List<ElementExId>, out List<string>)  |  Get the NC codes from the given CAM operations of given CAM document.  |  \n \n|   GenerateNCCodesWithOptions(DocumentId, string, List<KeyValue>, out List<string>)  |  Get the NC codes from the given CAM document.  |  \n \n|   GetNCPostProcessorId(DocumentId)  |  Get a post-processor identifier in CAM document.  |\n",
+  "markdown": "markdown/cam/2be4dd4dd251e7771b9efb59.md",
+  "originalHtml": "html/cam/2be4dd4dd251e7771b9efb59.html"
+}

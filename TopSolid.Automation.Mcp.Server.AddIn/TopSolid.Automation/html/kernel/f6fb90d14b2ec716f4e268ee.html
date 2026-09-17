@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Interface IOptions | TopSolid Automation website </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Interface IOptions | TopSolid Automation website ">
+    
+    <meta name="description" content="Gives access to the options of a document.">
+      <link rel="shortcut icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../../styles/docfx.css">
+      <link rel="stylesheet" href="../../styles/main.css">
+      <meta property="docfx:navrel" content="../../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../img/AutomationIcon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="TopSolid.Kernel.Automating.IOptions">
+
+
+
+  <h1 id="TopSolid_Kernel_Automating_IOptions" data-uid="TopSolid.Kernel.Automating.IOptions" class="text-break">Interface IOptions</h1>
+  <div class="markdown level0 summary"><p>Gives access to the options of a document.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="TopSolid.html">TopSolid</a>.<a class="xref" href="TopSolid.Kernel.html">Kernel</a>.<a class="xref" href="TopSolid.Kernel.Automating.html">Automating</a></h6>
+  <h6><strong>Assembly</strong>: TopSolid.Kernel.Automating.dll</h6>
+  <h5 id="TopSolid_Kernel_Automating_IOptions_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ServiceContract]
+[AvailableSinceVersion(7, 8, 0, 0)]
+public interface IOptions</code></pre>
+  </div>
+  <h5 id="TopSolid_Kernel_Automating_IOptions_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>This interface is available since v7.8.</p>
+</div>
+  <h3 id="methods">Methods
+</h3>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IOptions_GetFileCompressionType_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Kernel.Automating.IOptions.GetFileCompressionType(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IOptions.GetFileCompressionType.html#TopSolid_Kernel_Automating_IOptions_GetFileCompressionType_TopSolid_Kernel_Automating_DocumentId_">GetFileCompressionType(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the compression type of a document file.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IOptions_GetModelingTolerances_TopSolid_Kernel_Automating_DocumentId_System_Double__System_Double__" data-uid="TopSolid.Kernel.Automating.IOptions.GetModelingTolerances(TopSolid.Kernel.Automating.DocumentId,System.Double@,System.Double@)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IOptions.GetModelingTolerances.html#TopSolid_Kernel_Automating_IOptions_GetModelingTolerances_TopSolid_Kernel_Automating_DocumentId_System_Double__System_Double__">GetModelingTolerances(DocumentId, out double, out double)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the modeling tolerances of a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IOptions_GetUpdateModes_TopSolid_Kernel_Automating_DocumentId_System_Boolean__System_Boolean__" data-uid="TopSolid.Kernel.Automating.IOptions.GetUpdateModes(TopSolid.Kernel.Automating.DocumentId,System.Boolean@,System.Boolean@)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IOptions.GetUpdateModes.html#TopSolid_Kernel_Automating_IOptions_GetUpdateModes_TopSolid_Kernel_Automating_DocumentId_System_Boolean__System_Boolean__">GetUpdateModes(DocumentId, out bool, out bool)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the update modes of a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IOptions_GetVisualizationTolerances_TopSolid_Kernel_Automating_DocumentId_System_Double__System_Double__" data-uid="TopSolid.Kernel.Automating.IOptions.GetVisualizationTolerances(TopSolid.Kernel.Automating.DocumentId,System.Double@,System.Double@)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IOptions.GetVisualizationTolerances.html#TopSolid_Kernel_Automating_IOptions_GetVisualizationTolerances_TopSolid_Kernel_Automating_DocumentId_System_Double__System_Double__">GetVisualizationTolerances(DocumentId, out double, out double)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the visualization tolerances of a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IOptions_SetFileCompressionType_TopSolid_Kernel_Automating_DocumentId_TopSolid_Kernel_Automating_CompressionType_" data-uid="TopSolid.Kernel.Automating.IOptions.SetFileCompressionType(TopSolid.Kernel.Automating.DocumentId,TopSolid.Kernel.Automating.CompressionType)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IOptions.SetFileCompressionType.html#TopSolid_Kernel_Automating_IOptions_SetFileCompressionType_TopSolid_Kernel_Automating_DocumentId_TopSolid_Kernel_Automating_CompressionType_">SetFileCompressionType(DocumentId, CompressionType)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the compression type of a document file.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IOptions_SetModelingTolerances_TopSolid_Kernel_Automating_DocumentId_System_Double_System_Double_" data-uid="TopSolid.Kernel.Automating.IOptions.SetModelingTolerances(TopSolid.Kernel.Automating.DocumentId,System.Double,System.Double)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IOptions.SetModelingTolerances.html#TopSolid_Kernel_Automating_IOptions_SetModelingTolerances_TopSolid_Kernel_Automating_DocumentId_System_Double_System_Double_">SetModelingTolerances(DocumentId, double, double)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the modeling tolerances of a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IOptions_SetUpdateModes_TopSolid_Kernel_Automating_DocumentId_System_Boolean_System_Boolean_" data-uid="TopSolid.Kernel.Automating.IOptions.SetUpdateModes(TopSolid.Kernel.Automating.DocumentId,System.Boolean,System.Boolean)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IOptions.SetUpdateModes.html#TopSolid_Kernel_Automating_IOptions_SetUpdateModes_TopSolid_Kernel_Automating_DocumentId_System_Boolean_System_Boolean_">SetUpdateModes(DocumentId, bool, bool)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the update modes of a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IOptions_SetVisualizationTolerances_TopSolid_Kernel_Automating_DocumentId_System_Double_System_Double_" data-uid="TopSolid.Kernel.Automating.IOptions.SetVisualizationTolerances(TopSolid.Kernel.Automating.DocumentId,System.Double,System.Double)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IOptions.SetVisualizationTolerances.html#TopSolid_Kernel_Automating_IOptions_SetVisualizationTolerances_TopSolid_Kernel_Automating_DocumentId_System_Double_System_Double_">SetVisualizationTolerances(DocumentId, double, double)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the visualization tolerances of a document.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div id="footer-alt">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      			<div id="footer-alt-bottom">
+                      <ul>
+                          <li><a href="https://www.topsolid.com/en/terms-of-use">Term of use</a></li>
+                          <li><a href="https://www.topsolid.com/en/corporate-information">Corporate information</a></li>
+                          <li><a href="https://www.topsolid.com/en/privacy-policy-gdpr">Privacy Policy - GDPR</a></li>
+                      </ul>
+                      <p>Copyright ©2025 TopSolid - All rights reserved.</p>
+                  </div>
+          </div>
+        </div>
+      </footer>    </div>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

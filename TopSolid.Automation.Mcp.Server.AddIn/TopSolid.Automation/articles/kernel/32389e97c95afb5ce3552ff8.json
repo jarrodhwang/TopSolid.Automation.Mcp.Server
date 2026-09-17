@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IClassifications.FindClassificationDepth.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IClassifications.FindClassificationDepth.html",
+  "sha256": "46c399dd5a76065a9e46f7df72ed52eab58a75a7de93cdb467c1503a965b6196",
+  "text": "# Method FindClassificationDepth\n\n#### FindClassificationDepth(DocumentId)\n\nFinds the depth of the classification defined in a specified classification document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nint FindClassificationDepth(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the classification document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  int |  Depth of the classification defined in a specified classification document, or 0 if there are no classes.  |  \n\n##### Remarks\n\nThe depth of a classification is defined by the maximum number of classes in a \"class - subclass - ... - subclass\" chain.\n \nThis method is available since v7.10.\n",
+  "markdown": "markdown/kernel/32389e97c95afb5ce3552ff8.md",
+  "originalHtml": "html/kernel/32389e97c95afb5ce3552ff8.html"
+}

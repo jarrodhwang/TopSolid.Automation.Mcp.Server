@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartPoint3D.Geometry.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartPoint3D.Geometry.html",
+  "sha256": "6f89d9053403c20dcd92042c6d75d93a26047da5f24fbb1f2b813e6d622766d4",
+  "text": "# Field Geometry\n\nGeometry, or null if unknown.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic Point3D? Geometry\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Point3D? |  Geometry, or null if unknown. |\n",
+  "markdown": "markdown/kernel/9091f30cd301c7585ed8beb7.md",
+  "originalHtml": "html/kernel/9091f30cd301c7585ed8beb7.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.GetFamilyValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.GetFamilyValue.html",
+  "sha256": "f6c9cbde30a5311c99ee2a368f239a247f06bdd7379b6209a86084ef84254148",
+  "text": "# Method GetFamilyValue\n\n#### GetFamilyValue(ElementId)\n\nGets the value of a family parameter.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nDocumentId GetFamilyValue(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the parameter to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  DocumentId |  Value of the parameter, as a family definition document identifier.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/24cca14f429047ffa0d5277a.md",
+  "originalHtml": "html/kernel/24cca14f429047ffa0d5277a.html"
+}

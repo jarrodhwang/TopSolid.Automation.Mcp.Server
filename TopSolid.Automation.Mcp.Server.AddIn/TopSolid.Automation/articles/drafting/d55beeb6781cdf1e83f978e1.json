@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.SurfaceFinishTools.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.SurfaceFinishTools.html",
+  "sha256": "4f1334b33d2f373e7c8302746806129d2ede582cab6e10f924271f2f3e882356",
+  "text": "# Namespace TopSolid.Cad.Drafting.Automating.SurfaceFinishTools\n\n###  Enums \n\n#### SurfaceFinishItemValueType\n \nDefines the various types of value of a surface finish item.\n\n#### SurfaceFinishStriaOrientation\n \nDefines the various types of items of a surface finish entity.\n\n#### SurfaceFinishSymbolType\n \nDefines the various types of symbol of a surface finish entity.\n",
+  "markdown": "markdown/drafting/d55beeb6781cdf1e83f978e1.md",
+  "originalHtml": "html/drafting/d55beeb6781cdf1e83f978e1.html"
+}

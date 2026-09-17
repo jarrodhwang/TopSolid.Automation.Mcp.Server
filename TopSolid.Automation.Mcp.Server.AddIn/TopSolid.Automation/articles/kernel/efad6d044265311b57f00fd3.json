@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Direction3D.DX.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Direction3D.DX.html",
+  "sha256": "3d46fad0200e304cb17bd4f5b5d78152b771479fe4afc1ef92441eae78d68a0e",
+  "text": "# Field DX\n\nPositive X direction, i.e. (1,0,0).\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\npublic static readonly Direction3D DX\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Direction3D |  Positive X direction, i.e. (1,0,0). |\n",
+  "markdown": "markdown/kernel/efad6d044265311b57f00fd3.md",
+  "originalHtml": "html/kernel/efad6d044265311b57f00fd3.html"
+}

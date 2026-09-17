@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IApplication.IsExporterValid.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IApplication.IsExporterValid.html",
+  "sha256": "38f3243bdd39bdf2e2714e8044486c689f4f2ee0d9705d83835f453165fe6f59",
+  "text": "# Method IsExporterValid\n\n#### IsExporterValid(int)\n\nTells whether a valid license is available for an exporter.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nbool IsExporterValid(int inExporterIx)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  int |  inExporterIx |  Index of exporter to analyze, within [0, ExporterCount-1].  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Whether a valid license is available for the exporter.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/1fba0e4df72e2fd50036ea9f.md",
+  "originalHtml": "html/kernel/1fba0e4df72e2fd50036ea9f.html"
+}

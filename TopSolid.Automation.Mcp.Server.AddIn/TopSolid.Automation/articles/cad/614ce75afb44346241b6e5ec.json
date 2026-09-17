@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMaterials.GetBumpRotation.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMaterials.GetBumpRotation.html",
+  "sha256": "58663daf1c9f35622d1582fd5e29f1b31f13b0da65d7f66b6c7d886df2ba8e87",
+  "text": "# Method GetBumpRotation\n\n#### GetBumpRotation(DocumentId)\n\nGets the rotation for bump texture.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 400, 120)]\ndouble GetBumpRotation(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double |   |  \n\n##### Remarks\n\nThis method is available since v7.20.\n",
+  "markdown": "markdown/cad/614ce75afb44346241b6e5ec.md",
+  "originalHtml": "html/cad/614ce75afb44346241b6e5ec.html"
+}

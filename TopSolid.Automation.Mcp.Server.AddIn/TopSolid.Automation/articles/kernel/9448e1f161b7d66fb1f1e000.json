@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IShapes.GetShapeCategoryType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IShapes.GetShapeCategoryType.html",
+  "sha256": "ffd03bcf7e947e08d38e480ef8775539da74314d68563ee5ab3d92e07103f6b1",
+  "text": "# Method GetShapeCategoryType\n\n#### GetShapeCategoryType(ElementId)\n\nGets shape category type\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 400, 100)]\nShapeCategoryType GetShapeCategoryType(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  the shape entity to study  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ShapeCategoryType |  the shape category.  |  \n\n##### Remarks\n\nThis method is available since v7.19.400.100.\n",
+  "markdown": "markdown/kernel/9448e1f161b7d66fb1f1e000.md",
+  "originalHtml": "html/kernel/9448e1f161b7d66fb1f1e000.html"
+}

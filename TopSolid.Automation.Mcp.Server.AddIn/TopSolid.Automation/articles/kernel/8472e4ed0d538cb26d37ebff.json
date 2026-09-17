@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartAxis2D.IsReversed.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartAxis2D.IsReversed.html",
+  "sha256": "3a6ba6d1b0586be7b93b4352810920bf07c464f7a923304766b293373ed75bc0",
+  "text": "# Field IsReversed\n\nWhether the provided axis direction is to be reversed.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic bool IsReversed\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Whether the provided axis direction is to be reversed. |\n",
+  "markdown": "markdown/kernel/8472e4ed0d538cb26d37ebff.md",
+  "originalHtml": "html/kernel/8472e4ed0d538cb26d37ebff.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.MotionType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.MotionType.html",
+  "sha256": "f43855165d3d5666b8eb23580e2bd4eab05e98af48a7f1bc1435fb783e0f6f95",
+  "text": "# Enum MotionType\n\nDefines the various types of motions available in a Cam operation.\n\n###### Namespace: TopSolid.Cam.NC.Kernel.Automating\n\n###### Assembly: TopSolid.Cam.NC.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\npublic enum MotionType\n```\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  FiveAxis |  Five axis type.  |  \n \n|  FourAxisAxial |  Axial four axis type.  |  \n \n|  FourAxisRadial |  Radial four axis type.  |  \n \n|  None |  No specific type.  |  \n \n|  ThreeAxis |  Three axis type.  |\n",
+  "markdown": "markdown/cam/c770f9fa69f5c883de17a00e.md",
+  "originalHtml": "html/cam/c770f9fa69f5c883de17a00e.html"
+}

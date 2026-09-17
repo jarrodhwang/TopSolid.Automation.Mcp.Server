@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IApplication.MaximizeWindow.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IApplication.MaximizeWindow.html",
+  "sha256": "700cd0b65315cb947e2663fb73ff3fb22d57931e1a210cdfcc95cc3d4ca10466",
+  "text": "# Method MaximizeWindow\n\n#### MaximizeWindow()\n\nMaximizes the application window.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 222, 0)]\nvoid MaximizeWindow()\n```\n\n##### Remarks\n\nThis method is available since v7.20.\n",
+  "markdown": "markdown/pdmexplorer/67a5d0844e2df42f2a48da22.md",
+  "originalHtml": "html/pdmexplorer/67a5d0844e2df42f2a48da22.html"
+}

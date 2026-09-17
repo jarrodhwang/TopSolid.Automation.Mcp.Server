@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.PdmObjectId.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.PdmObjectId.html",
+  "sha256": "2e04a1ea57e97b1d2d9a70d9bbe3f642ade6cd84b4e8296ef5b9fecece4ecadc",
+  "text": "# Struct PdmObjectId\n\nRepresents a PDM object identifier.\n\n##### Inherited Members\n \n ValueType.Equals(object) \n \n ValueType.GetHashCode() \n \n ValueType.ToString() \n \n object.Equals(object, object) \n \n object.ReferenceEquals(object, object) \n \n object.GetType() \n\n###### Namespace: TopSolid.Pdm.Explorer.Automating\n\n###### Assembly: TopSolid.Pdm.Explorer.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\npublic struct PdmObjectId\n```\n\n##### Remarks\n\nThis structure is available since v7.10.\n\n### Constructors \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   PdmObjectId(string)  |  Initializes a new instance of the PdmObjectId structure.  |  \n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   Empty  |  Empty identifier.  |  \n\n### Properties \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   Id  |  Gets the PDM object identifier.  |  \n \n|   IsEmpty  |  Tells whether the identifier is empty.  |\n",
+  "markdown": "markdown/pdmexplorer/de39101f35195bae488ea912.md",
+  "originalHtml": "html/pdmexplorer/de39101f35195bae488ea912.html"
+}

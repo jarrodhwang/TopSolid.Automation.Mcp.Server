@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IOperations.IsOperation.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IOperations.IsOperation.html",
+  "sha256": "bbb8ea67aa1cb256fd5daa120de7ad286b163ef9cf6377602d7cc0e76eae9488",
+  "text": "# Method IsOperation\n\n#### IsOperation(ElementId)\n\nTells whether an element is an operation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nbool IsOperation(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  The element is an operation.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/d5396b21d69290f8b756991b.md",
+  "originalHtml": "html/kernel/d5396b21d69290f8b756991b.html"
+}

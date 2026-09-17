@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdmAdmin.GetUserGroupUserAccountIds.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdmAdmin.GetUserGroupUserAccountIds.html",
+  "sha256": "2840856e848d536a196b2fa8115ee2d315678a1a1d61b324ad9808525b41d42b",
+  "text": "# Method GetUserGroupUserAccountIds\n\n#### GetUserGroupUserAccountIds(PdmObjectId)\n\nGets the users account identifiers of a user group.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 302, 60)]\nList<string> GetUserGroupUserAccountIds(PdmObjectId inUserGroupId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inUserGroupId |  User group identifiers.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<string> |  Users account identifiers.  |  \n\n##### Remarks\n\nThis method is available since v7.8.302.060.\n",
+  "markdown": "markdown/kernel/b07c382aef65f965f3bae9c9.md",
+  "originalHtml": "html/kernel/b07c382aef65f965f3bae9c9.html"
+}

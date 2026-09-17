@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMaterials.CreateMaterialParameter.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMaterials.CreateMaterialParameter.html",
+  "sha256": "2b03649f5bebf09c2464f5a6756710c0eb9ac9cccc8a0dfe941cde92d678c7a6",
+  "text": "# Method CreateMaterialParameter\n\n#### CreateMaterialParameter(DocumentId, PdmMinorRevisionId)\n\nCreates a material parameter into a document\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 400, 160)]\nElementId CreateMaterialParameter(DocumentId inDocumentId, PdmMinorRevisionId inPdmMinorRevisionId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Id of the container document  |  \n \n|  PdmMinorRevisionId |  inPdmMinorRevisionId |  Minor revision of the material document to reference  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Id of the created parameter.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.19.400.160\n",
+  "markdown": "markdown/cad/729d777fad66b1eff48ddfd0.md",
+  "originalHtml": "html/cad/729d777fad66b1eff48ddfd0.html"
+}

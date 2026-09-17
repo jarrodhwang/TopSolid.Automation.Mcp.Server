@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.GetProjectFolderName.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.GetProjectFolderName.html",
+  "sha256": "06dc6cff47f9aa514ea18c41f96dd673350ef45f2e264068dcdd1ab31790076f",
+  "text": "# Method GetProjectFolderName\n\n#### GetProjectFolderName(PdmProjectFolderId)\n\nGets the name of a project folder.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 9, 0, 0)]\nstring GetProjectFolderName(PdmProjectFolderId inProjectFolderId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmProjectFolderId |  inProjectFolderId |  Project folder identifier.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  Project folder name.  |  \n\n##### Remarks\n\nThis method is available since v7.9.\n",
+  "markdown": "markdown/kernel/89a20f4ef3357f0efc54e53c.md",
+  "originalHtml": "html/kernel/89a20f4ef3357f0efc54e53c.html"
+}

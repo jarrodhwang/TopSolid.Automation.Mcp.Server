@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.MachineWorksSolidType.-ctor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.MachineWorksSolidType.-ctor.html",
+  "sha256": "d84080bb056bd178ab7a3091595dddd651c7a012fb7b9a39d0a05d482fadeed5",
+  "text": "# Constructor MachineWorksSolidType\n\n#### MachineWorksSolidType(bool, SmartReal, SmartReal)\n\nInitializes a new instance of a MachineWorksSolidType class.\n\n##### Declaration\n\n```\npublic MachineWorksSolidType(bool inEliminateWeakPortionsOfStock, SmartReal inFacettingTolerance, SmartReal inAngularTolerance)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  bool |  inEliminateWeakPortionsOfStock |  Tells wether the weak portions of stock is eliminated.  |  \n \n|  SmartReal |  inFacettingTolerance |  The facetting tolerance.  |  \n \n|  SmartReal |  inAngularTolerance |  The angular tolerance.  |\n",
+  "markdown": "markdown/cam/88626a6b7de522d7bb3b24c4.md",
+  "originalHtml": "html/cam/88626a6b7de522d7bb3b24c4.html"
+}

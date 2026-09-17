@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.TopSolidCamHostInstance.Origins.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.TopSolidCamHostInstance.Origins.html",
+  "sha256": "18cff4af50ddafc7546e8f800deaa2dbd3c52bc039a3875424c2fe91397b9ea0",
+  "text": "# Property Origins\n\n#### Origins\n\nGets access to originstools, or null if not connected.\n\n##### Declaration\n\n```\npublic IOrigins Origins { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  IOrigins |   |\n",
+  "markdown": "markdown/cam/798d9a126207f03adf3345d5.md",
+  "originalHtml": "html/cam/798d9a126207f03adf3345d5.html"
+}

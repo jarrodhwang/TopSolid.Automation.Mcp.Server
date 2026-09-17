@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.PrintMode.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.PrintMode.html",
+  "sha256": "363d74ee74c4a1e57acf4c45080fd7a231b58aa566d2ae31d12bd25c93c76cc0",
+  "text": "# Enum PrintMode\n\nDefines the print mode of drafting documents.\n\n###### Namespace: TopSolid.Cad.Drafting.Automating\n\n###### Assembly: TopSolid.Cad.Drafting.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\npublic enum PrintMode\n```\n\n##### Remarks\n\nThis enum is available since v7.6.\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  FitPaper |  Prints document to fit paper size.  |  \n \n|  PrintToScale |  Prints document to scale.  |\n",
+  "markdown": "markdown/drafting/027e5a34266963504d4e72ab.md",
+  "originalHtml": "html/drafting/027e5a34266963504d4e72ab.html"
+}

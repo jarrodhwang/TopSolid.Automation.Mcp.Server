@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.IDraftings.GetDraftingFormatName.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.IDraftings.GetDraftingFormatName.html",
+  "sha256": "1ef2f97ddcfad0d6e41055b09ec04a8294a25dedf9dbc3525f4a72d88e32fcfd",
+  "text": "# Method GetDraftingFormatName\n\n#### GetDraftingFormatName(DocumentId)\n\nGets the drafting format name of a drafting document\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 255, 0)]\nstring GetDraftingFormatName(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  The drafting document  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  the name of the drafting format of the drawing  |\n",
+  "markdown": "markdown/drafting/5ef408073cd008e5bc724821.md",
+  "originalHtml": "html/drafting/5ef408073cd008e5bc724821.html"
+}

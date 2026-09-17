@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IClassifications.IsClassification.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IClassifications.IsClassification.html",
+  "sha256": "e7accfb0c3b32f4338e5fad9f9fda7ec7040eceec461b62702e4442f8c5f3e01",
+  "text": "# Method IsClassification\n\n#### IsClassification(DocumentId)\n\nTells whether a document is a classification document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nbool IsClassification(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  The document is a classification document.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/kernel/53ae4ffae084834d302cfde4.md",
+  "originalHtml": "html/kernel/53ae4ffae084834d302cfde4.html"
+}

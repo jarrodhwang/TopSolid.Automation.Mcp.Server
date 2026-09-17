@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdmSecurity.SetPermissions.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdmSecurity.SetPermissions.html",
+  "sha256": "3c25632b88f360a5c06d907dc3896dac792238729b51b7d4c5bc31e847e68122",
+  "text": "# Method SetPermissions\n\n#### SetPermissions(PdmObjectId, List<PdmSecurityUserOrGroupPermissions>)\n\nSets security of a project, folder or document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nvoid SetPermissions(PdmObjectId inObjectId, List<PdmSecurityUserOrGroupPermissions> inPermissions)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  Project, folder or document identifier to set permissions.  |  \n \n|  List<PdmSecurityUserOrGroupPermissions> |  inPermissions |  Security permissions to set.  |  \n\n##### Remarks\n\nThis method is available since v7.8.302.060.\n",
+  "markdown": "markdown/pdmexplorer/ab6eba445a20e63a66756f62.md",
+  "originalHtml": "html/pdmexplorer/ab6eba445a20e63a66756f62.html"
+}

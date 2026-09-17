@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IBoms.GetForcedCells.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IBoms.GetForcedCells.html",
+  "sha256": "6f7fc2d8e6e1b49cc58afd2b9c4c7170f554bc366674f5cc4367bed88e946221",
+  "text": "# Method GetForcedCells\n\n#### GetForcedCells(DocumentId, out List<int>, out List<int>)\n\nGets the cells of a BOM which property value has been forced.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 12, 0, 0)]\nvoid GetForcedCells(DocumentId inDocumentId, out List<int> inRowIds, out List<int> inColumnIxs)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the BOM document to analyze.  |  \n \n|  List<int> |  inRowIds |  Row identifiers of cells.  |  \n \n|  List<int> |  inColumnIxs |  Column indexes of cells.  |  \n\n##### Remarks\n\nIf there is not any forced cell, the returned lists are empty.\n \nThis method is available since v7.12.\n",
+  "markdown": "markdown/cad/3c61a5385c9e868043661b17.md",
+  "originalHtml": "html/cad/3c61a5385c9e868043661b17.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Real.UnitType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Real.UnitType.html",
+  "sha256": "8cc0c43618bf88f376a41eac69e1f0ed84f50e3000ac823ff3544616e5a796c7",
+  "text": "# Field UnitType\n\nUnit type.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic UnitType UnitType\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  UnitType |  Unit type. |\n",
+  "markdown": "markdown/kernel/187267a924d5e840af695959.md",
+  "originalHtml": "html/kernel/187267a924d5e840af695959.html"
+}

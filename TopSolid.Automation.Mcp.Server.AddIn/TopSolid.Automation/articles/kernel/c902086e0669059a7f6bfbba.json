@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.GetOwner.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.GetOwner.html",
+  "sha256": "0f160d8467c32d607f1fc48dacef4fade32835e97a20ede93135ab25cee4470f",
+  "text": "# Method GetOwner\n\n#### GetOwner(PdmObjectId)\n\nGets the owner of an object.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nPdmObjectId GetOwner(PdmObjectId inObjectId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  PDM object identifier.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  PdmObjectId |  PDM object identifier of the owner, or empty if none.  |  \n\n##### Remarks\n\nIf there is no owner, the returned PDM object identifier is empty.\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/c902086e0669059a7f6bfbba.md",
+  "originalHtml": "html/kernel/c902086e0669059a7f6bfbba.html"
+}

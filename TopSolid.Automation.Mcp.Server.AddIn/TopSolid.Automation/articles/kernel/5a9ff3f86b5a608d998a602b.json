@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IApplication.CurrentPrinterName.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IApplication.CurrentPrinterName.html",
+  "sha256": "70ae11699830c0edd63b084f85c822f913a28495063d3dd5364cb469c64b4c34",
+  "text": "# Property CurrentPrinterName\n\n#### CurrentPrinterName\n\nGets or sets the name of the current printer.\n\n##### Declaration\n\n```\n[AvailableSinceVersion(7, 6, 0, 0)]\nstring CurrentPrinterName { get; set; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |   |  \n\n##### Remarks\n\nThis property is available since v7.6.\n",
+  "markdown": "markdown/kernel/5a9ff3f86b5a608d998a602b.md",
+  "originalHtml": "html/kernel/5a9ff3f86b5a608d998a602b.html"
+}

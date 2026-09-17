@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.ExactSolidType.-ctor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.ExactSolidType.-ctor.html",
+  "sha256": "9f9557e382608412ab34c09208d495bf38dc8a83c89f876116a23738d6b73b53",
+  "text": "# Constructor ExactSolidType\n\n#### ExactSolidType(bool, bool)\n\nInitializes a new instance of a ExactSolidType class.\n\n##### Declaration\n\n```\npublic ExactSolidType(bool inEliminateWeakPortionsOfStock, bool inCheckGeometryOfStock)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  bool |  inEliminateWeakPortionsOfStock |  Tells wether the weak portions of stock is eliminated.  |  \n \n|  bool |  inCheckGeometryOfStock |  Tells wether the geometry of stock is checked.  |\n",
+  "markdown": "markdown/cam/5f6d529867aac2d387215a60.md",
+  "originalHtml": "html/cam/5f6d529867aac2d387215a60.html"
+}

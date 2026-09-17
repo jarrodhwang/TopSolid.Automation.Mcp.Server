@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartAxis2D.ExtentMax.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartAxis2D.ExtentMax.html",
+  "sha256": "19d03483c1d4fc34cd957a50db94672b5d49ef2fe405e7184459e350849262b6",
+  "text": "# Field ExtentMax\n\nMaximum axis coordinate of extent, or null if unknown.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic double? ExtentMax\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double? |  Maximum axis coordinate of extent, or null if unknown. |\n",
+  "markdown": "markdown/kernel/97e29ba652308a6aea108317.md",
+  "originalHtml": "html/kernel/97e29ba652308a6aea108317.html"
+}

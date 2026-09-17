@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMaterials.SetElasticLimit.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMaterials.SetElasticLimit.html",
+  "sha256": "f588b81e64ec80c4ea92e48e29740e7ea715ba5f64b2409f28d8a3fa4d384b09",
+  "text": "# Method SetElasticLimit\n\n#### SetElasticLimit(DocumentId, double)\n\nSets Elastic Limit\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 400, 120)]\nvoid SetElasticLimit(DocumentId inDocumentId, double inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Id of the container document  |  \n \n|  double |  inValue |  The value to use  |\n",
+  "markdown": "markdown/cad/31d03586253bbd9603b9cb65.md",
+  "originalHtml": "html/cad/31d03586253bbd9603b9cb65.html"
+}

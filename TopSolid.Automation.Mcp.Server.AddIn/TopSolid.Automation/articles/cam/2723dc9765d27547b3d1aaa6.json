@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.INCFiles.GetOtherNCFileCodesPartial.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.INCFiles.GetOtherNCFileCodesPartial.html",
+  "sha256": "6998e59e80b2cef3445d347970e567e2334068f1d27e41356d0fa221e781a87d",
+  "text": "# Method GetOtherNCFileCodesPartial\n\n#### GetOtherNCFileCodesPartial(PdmMinorRevisionId, int, int)\n\nGet some NC Code lines of the given of the given other NC file document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nList<string> GetOtherNCFileCodesPartial(PdmMinorRevisionId inMinorRevisionId, int inLinesNumber, int inStartingLine)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmMinorRevisionId |  inMinorRevisionId |  Identifier of the minor revision.  |  \n \n|  int |  inLinesNumber |   |  \n \n|  int |  inStartingLine |   |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<string> |  From line inStartingLine to inStartingLine+inNumberOfLines of the file.  |\n",
+  "markdown": "markdown/cam/2723dc9765d27547b3d1aaa6.md",
+  "originalHtml": "html/cam/2723dc9765d27547b3d1aaa6.html"
+}

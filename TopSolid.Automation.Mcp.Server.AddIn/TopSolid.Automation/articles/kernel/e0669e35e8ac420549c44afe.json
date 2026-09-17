@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IntegerProperty.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IntegerProperty.html",
+  "sha256": "c4af1768a09571de8bc76a70b823b614187218adb4a5ffa846077407a5d4ea44",
+  "text": "# Class IntegerProperty\n\nRepresents a integer property.\n\n##### Inheritance\n \nobject\n \nProperty\n \nIntegerProperty\n\n##### Inherited Members\n \n object.ToString() \n \n object.Equals(object) \n \n object.Equals(object, object) \n \n object.ReferenceEquals(object, object) \n \n object.GetHashCode() \n \n object.GetType() \n \n object.MemberwiseClone() \n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 12, 0, 0)]\npublic class IntegerProperty : Property\n```\n\n##### Remarks\n\nThis class is available since v7.12.\n\n### Constructors \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   IntegerProperty(int)  |  Initializes a new instance of the IntegerProperty class.  |  \n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   Value  |  Value.  |  \n\n### Properties \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   Type  |  Gets the property type.  |\n",
+  "markdown": "markdown/kernel/e0669e35e8ac420549c44afe.md",
+  "originalHtml": "html/kernel/e0669e35e8ac420549c44afe.html"
+}

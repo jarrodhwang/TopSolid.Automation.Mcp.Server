@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IOperations.GetAllCuttingConditionsAbacus.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IOperations.GetAllCuttingConditionsAbacus.html",
+  "sha256": "da960bf768ef09ad0f11f9da484be741c839ffcd830759c84cf1ce06b7c1cc95",
+  "text": "# Method GetAllCuttingConditionsAbacus\n\n#### GetAllCuttingConditionsAbacus(ElementId, DocumentId)\n\nGets all cutting condition abacus available for an operation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 14, 300, 144)]\nList<ElementId> GetAllCuttingConditionsAbacus(ElementId inElementId, DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the operation to analyze.  |  \n \n|  DocumentId |  inDocumentId |  Identifier of the cutting condition document.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementId> |  All cutting condition entities.  |\n",
+  "markdown": "markdown/cam/f93345663f4367e06064c0e8.md",
+  "originalHtml": "html/cam/f93345663f4367e06064c0e8.html"
+}

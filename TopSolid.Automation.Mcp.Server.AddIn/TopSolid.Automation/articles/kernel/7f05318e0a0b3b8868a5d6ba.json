@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartObject.-ctor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartObject.-ctor.html",
+  "sha256": "de132203eca97ab3c4bc9487b2efd78e91259e54562c26f01a2cc3b53446f2b4",
+  "text": "# Constructor SmartObject\n\n#### SmartObject()\n\n##### Declaration\n\n```\nprotected SmartObject()\n```\n",
+  "markdown": "markdown/kernel/7f05318e0a0b3b8868a5d6ba.md",
+  "originalHtml": "html/kernel/7f05318e0a0b3b8868a5d6ba.html"
+}

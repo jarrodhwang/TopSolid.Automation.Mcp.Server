@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdmWorkflow.StartAction.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdmWorkflow.StartAction.html",
+  "sha256": "6f979f3f29973067255e50d8e893fb738a402047229f5bc5738ca1c7af96bec7",
+  "text": "# Method StartAction\n\n#### StartAction(PdmMajorRevisionId, PdmObjectId)\n\nStarts a workflow action of a major revision.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nvoid StartAction(PdmMajorRevisionId inMajorRevisionId, PdmObjectId inWorkflowActionId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmMajorRevisionId |  inMajorRevisionId |  Major revision to start action on.  |  \n \n|  PdmObjectId |  inWorkflowActionId |  Workflow action to start.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/pdmexplorer/b1469fa9edcb0659aed44563.md",
+  "originalHtml": "html/pdmexplorer/b1469fa9edcb0659aed44563.html"
+}

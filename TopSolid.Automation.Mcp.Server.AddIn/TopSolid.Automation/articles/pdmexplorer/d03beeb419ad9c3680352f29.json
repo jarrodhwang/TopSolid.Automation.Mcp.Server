@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.BomNode.-ctor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.BomNode.-ctor.html",
+  "sha256": "5523f9dd735337c0527b509a7d2a25145b3984a01599a17b1a66a65e656582b4",
+  "text": "# Constructor BomNode\n\n#### BomNode(int, string, IList<string>, IList<int>, IList<Bitmap>)\n\nInitializes a new instance of the BomNode class.\n\n##### Declaration\n\n```\npublic BomNode(int inLevel, string inName, IList<string> inValues, IList<int> inForcedValues, IList<Bitmap> inImages)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  int |  inLevel |  Level.  |  \n \n|  string |  inName |  Name.  |  \n \n|  IList<string> |  inValues |  Values.  |  \n \n|  IList<int> |  inForcedValues |  Indexes of the forced values.  |  \n \n|  IList<Bitmap> |  inImages |  Images (copied).  |\n",
+  "markdown": "markdown/pdmexplorer/d03beeb419ad9c3680352f29.md",
+  "originalHtml": "html/pdmexplorer/d03beeb419ad9c3680352f29.html"
+}

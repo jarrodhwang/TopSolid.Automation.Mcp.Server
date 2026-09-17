@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Frame2D.Origin.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Frame2D.Origin.html",
+  "sha256": "93eaf7cf7c6e94d128e7867dd5a942f2c9b233477e4dd70086d51e3f83ff0ddb",
+  "text": "# Field Origin\n\nFrame origin.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic Point2D Origin\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Point2D |  Frame origin. |\n",
+  "markdown": "markdown/kernel/24f1655eedf73070eacb8034.md",
+  "originalHtml": "html/kernel/24f1655eedf73070eacb8034.html"
+}

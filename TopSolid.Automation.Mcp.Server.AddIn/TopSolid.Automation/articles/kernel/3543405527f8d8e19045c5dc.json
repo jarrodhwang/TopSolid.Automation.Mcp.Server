@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ITextures.SetTransparentColor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ITextures.SetTransparentColor.html",
+  "sha256": "dde0a7f3b7700fb3045562fa6d11409ceb0eb064a87379aed5b63bed466b04ff",
+  "text": "# Method SetTransparentColor\n\n#### SetTransparentColor(DocumentId, Color)\n\nSets the texture transparent color.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 0, 0)]\nvoid SetTransparentColor(DocumentId inDocumentId, Color inColor)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  Color |  inColor |  Wanted color.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.16.\n",
+  "markdown": "markdown/kernel/3543405527f8d8e19045c5dc.md",
+  "originalHtml": "html/kernel/3543405527f8d8e19045c5dc.html"
+}

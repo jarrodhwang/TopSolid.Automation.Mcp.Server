@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IOrigins.IsOrigin.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IOrigins.IsOrigin.html",
+  "sha256": "f82004d922e58700357f8a9bac7faeb2097d4d85d5dc418c987763ecb73ab7e3",
+  "text": "# Method IsOrigin\n\n#### IsOrigin(ElementId)\n\nTells whether an element is an origin.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nbool IsOrigin(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  True if the element is an origin.  |\n",
+  "markdown": "markdown/cam/8ab0a932046d3d88f39d45c9.md",
+  "originalHtml": "html/cam/8ab0a932046d3d88f39d45c9.html"
+}

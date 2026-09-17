@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.ITables.GetDraftTableRowCount.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.ITables.GetDraftTableRowCount.html",
+  "sha256": "167cf4fdef17de794c9d7fc1497de301a436bcb2291376596126cf4d42d00cfa",
+  "text": "# Method GetDraftTableRowCount\n\n#### GetDraftTableRowCount(ElementId)\n\nGets the draft table row count.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 14, 300, 140)]\nint GetDraftTableRowCount(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the entity to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  int |  Count of rows.  |  \n\n##### Remarks\n\nThis method is available since v7.14.300.140.\n",
+  "markdown": "markdown/drafting/921bc43ef32167b864d19737.md",
+  "originalHtml": "html/drafting/921bc43ef32167b864d19737.html"
+}

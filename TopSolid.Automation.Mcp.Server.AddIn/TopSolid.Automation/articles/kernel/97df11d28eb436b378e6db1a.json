@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IEntities.Transform.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IEntities.Transform.html",
+  "sha256": "b347ec33abe086ff1312fe3efdc281a9a53341ad86d872947ff148fc978bb8a7",
+  "text": "# Method Transform\n\n#### Transform(ElementId, Transform3D)\n\nCreates a transform operation in a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 13, 300, 0)]\nElementId Transform(ElementId inElementId, Transform3D inTransform)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the entity to modify.  |  \n \n|  Transform3D |  inTransform |  Transform to apply.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the transform operation.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.13.300.00.\n",
+  "markdown": "markdown/kernel/97df11d28eb436b378e6db1a.md",
+  "originalHtml": "html/kernel/97df11d28eb436b378e6db1a.html"
+}

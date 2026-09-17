@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IFamilies.GetCatalogCellFamilyValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IFamilies.GetCatalogCellFamilyValue.html",
+  "sha256": "8a8bde260270e53ca0d3a02e638b759a0b86dfc73d8ae1a6c979f456afc1033f",
+  "text": "# Method GetCatalogCellFamilyValue\n\n#### GetCatalogCellFamilyValue(ElementId, ElementId)\n\nGets the family value of the catalog cell.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 15, 0, 60)]\nPdmMinorRevisionId GetCatalogCellFamilyValue(ElementId inRow, ElementId inParameterId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inRow |  Identifier of the row.  |  \n \n|  ElementId |  inParameterId |  Identifier of the parameter of the column.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  PdmMinorRevisionId |  Value of the cell.  |  \n\n##### Remarks\n\nThis method is available since v7.15.\n",
+  "markdown": "markdown/kernel/e05e42803a1fca131a86b6dc.md",
+  "originalHtml": "html/kernel/e05e42803a1fca131a86b6dc.html"
+}

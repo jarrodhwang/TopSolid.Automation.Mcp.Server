@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.SetAuthor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.SetAuthor.html",
+  "sha256": "1fefbec43a22701e9465f5681069cc75558e5b9be1255313ae25865b16d1d9d6",
+  "text": "# Method SetAuthor\n\n#### SetAuthor(PdmObjectId, string)\n\nSets the author of an object.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nvoid SetAuthor(PdmObjectId inObjectId, string inAuthor)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  Object identifier.  |  \n \n|  string |  inAuthor |  Author.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/pdmexplorer/0370a184a7a803eee9e08950.md",
+  "originalHtml": "html/pdmexplorer/0370a184a7a803eee9e08950.html"
+}

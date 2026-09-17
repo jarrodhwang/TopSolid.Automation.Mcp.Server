@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IOperations.GetDescription.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IOperations.GetDescription.html",
+  "sha256": "81672b4f0126cc762c2099b82578f0538bf21f9198065aef80447faecaf79666",
+  "text": "# Method GetDescription\n\n#### GetDescription(ElementExId)\n\nGets a Cam operation description.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nstring GetDescription(ElementExId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementExId |  inElementId |  Identifier of the operation to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  Operation description.  |\n",
+  "markdown": "markdown/cam/2017529c190053f14ab37ad1.md",
+  "originalHtml": "html/cam/2017529c190053f14ab37ad1.html"
+}

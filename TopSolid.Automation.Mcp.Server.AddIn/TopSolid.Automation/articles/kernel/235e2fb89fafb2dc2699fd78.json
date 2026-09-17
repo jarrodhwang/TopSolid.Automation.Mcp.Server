@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ISketches2D.IsSegmentReversed.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ISketches2D.IsSegmentReversed.html",
+  "sha256": "13b92a8a69f899620a6ff6d9bd8a7de215390ddb206f2f53107271a100393bc5",
+  "text": "# Method IsSegmentReversed\n\n#### IsSegmentReversed(ElementItemId)\n\nTells whether a segment is reversed.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nbool IsSegmentReversed(ElementItemId inSegmentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementItemId |  inSegmentId |  Identifier of the segment to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Whether the orientation of the segment is the opposite to the parametric orientation of its attached curve.  |  \n\n##### Remarks\n\nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/235e2fb89fafb2dc2699fd78.md",
+  "originalHtml": "html/kernel/235e2fb89fafb2dc2699fd78.html"
+}

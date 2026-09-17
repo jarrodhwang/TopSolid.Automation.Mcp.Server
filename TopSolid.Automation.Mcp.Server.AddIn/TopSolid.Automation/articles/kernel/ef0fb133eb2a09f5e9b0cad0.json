@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ISketches2D.CreateRevolvedSilhouette.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ISketches2D.CreateRevolvedSilhouette.html",
+  "sha256": "8a94f37a9d92e1f1c3ce11c5940d3ee09751438cec371f047f4f9b51da8f5b44",
+  "text": "# Method CreateRevolvedSilhouette\n\n#### CreateRevolvedSilhouette(SmartShape, SmartAxis3D, bool)\n\nCreates the revolved silhouette of a shape.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 15, 400, 100)]\nElementId CreateRevolvedSilhouette(SmartShape inShape, SmartAxis3D inAxis, bool inMerge)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  SmartShape |  inShape |  Identifier of the shape to analyze.  |  \n \n|  SmartAxis3D |  inAxis |  Identifier of the revolution axis.  |  \n \n|  bool |  inMerge |  Tells whether the silhouette must be merged.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the revolved silhouette operation.  |  \n\n##### Remarks\n\nStartModification(ElementId) must be called before calling this method.\n \nThis method must be called inside a Building Operation.\n \nThis method is available since v7.15.400.100.\n",
+  "markdown": "markdown/kernel/ef0fb133eb2a09f5e9b0cad0.md",
+  "originalHtml": "html/kernel/ef0fb133eb2a09f5e9b0cad0.html"
+}

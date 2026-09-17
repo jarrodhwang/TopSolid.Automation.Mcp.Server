@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IShapes.GetFaceEnclosingCoordinates.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IShapes.GetFaceEnclosingCoordinates.html",
+  "sha256": "9ac8850c1ed8f4e4ac210f9c4f9812180e7cf51afe911add2ca208ba44f5d5a8",
+  "text": "# Method GetFaceEnclosingCoordinates\n\n#### GetFaceEnclosingCoordinates(ElementItemId, out double, out double, out double, out double, out double, out double)\n\nGets the face enclosing coordinates in the absolute frame coordinates.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 13, 0, 0)]\nvoid GetFaceEnclosingCoordinates(ElementItemId inFaceId, out double outXmin, out double outXmax, out double outYmin, out double outYmax, out double outZmin, out double outZmax)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementItemId |  inFaceId |  Identifier of the face to analyze.  |  \n \n|  double |  outXmin |  Xmin.  |  \n \n|  double |  outXmax |  Xmax.  |  \n \n|  double |  outYmin |  Ymin.  |  \n \n|  double |  outYmax |  Ymax.  |  \n \n|  double |  outZmin |  Zmin.  |  \n \n|  double |  outZmax |  Zmax.  |  \n\n##### Remarks\n\nThis method is available since v7.13.\n",
+  "markdown": "markdown/kernel/39fe5a2f683966dd6267452b.md",
+  "originalHtml": "html/kernel/39fe5a2f683966dd6267452b.html"
+}

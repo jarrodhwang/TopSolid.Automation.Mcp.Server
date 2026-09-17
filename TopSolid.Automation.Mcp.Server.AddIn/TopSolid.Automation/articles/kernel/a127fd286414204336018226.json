@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.GetReferencedProjects.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.GetReferencedProjects.html",
+  "sha256": "69b8d1124dfaabb113a2af7e3753b758d48df2e624dfa43f17b7364d1500be34",
+  "text": "# Method GetReferencedProjects\n\n#### GetReferencedProjects(PdmObjectId)\n\nGets the referenced projects of a project.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nList<PdmObjectId> GetReferencedProjects(PdmObjectId inProjectId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inProjectId |  Project identifier.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<PdmObjectId> |  Referenced projects identifiers.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/a127fd286414204336018226.md",
+  "originalHtml": "html/kernel/a127fd286414204336018226.html"
+}

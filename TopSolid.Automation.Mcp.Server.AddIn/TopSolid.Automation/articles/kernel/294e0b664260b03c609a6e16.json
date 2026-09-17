@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IFamilies.IsExplicit.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IFamilies.IsExplicit.html",
+  "sha256": "db306192b7bf8f016fa8302d97f2def1691f203b83b170cdce65bdee45c5f237",
+  "text": "# Method IsExplicit\n\n#### IsExplicit(DocumentId)\n\nTells whether a family document is an explicit family document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nbool IsExplicit(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the family document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  The family is an explicit family.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/kernel/294e0b664260b03c609a6e16.md",
+  "originalHtml": "html/kernel/294e0b664260b03c609a6e16.html"
+}

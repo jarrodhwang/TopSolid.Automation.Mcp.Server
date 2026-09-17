@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IShapes.GetFaceLoops.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IShapes.GetFaceLoops.html",
+  "sha256": "c198cc6e14fd4e55baaab30c4edc6b107790ddf4cbf334eaaceff16fe620117f",
+  "text": "# Method GetFaceLoops\n\n#### GetFaceLoops(ElementItemId)\n\nGets the loops of a face.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nList<int> GetFaceLoops(ElementItemId inFaceId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementItemId |  inFaceId |  Identifier of the face to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<int> |  Identifiers of the loops of the face.  |  \n\n##### Remarks\n\nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/5b66beba15e4e4ce48e75611.md",
+  "originalHtml": "html/kernel/5b66beba15e4e4ce48e75611.html"
+}

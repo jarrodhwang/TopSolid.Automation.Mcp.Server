@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ISketches3D.GetVertices.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ISketches3D.GetVertices.html",
+  "sha256": "a133cdb37e5549173c552febc261716f596666a305a03ec79700bb54a9f9daf8",
+  "text": "# Method GetVertices\n\n#### GetVertices(ElementId)\n\nGets the vertices of a sketch.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nList<ElementItemId> GetVertices(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the sketch entity to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementItemId> |  Identifiers of the vertices of the sketch.  |  \n\n##### Remarks\n\nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/d4764297811b81276e22697c.md",
+  "originalHtml": "html/kernel/d4764297811b81276e22697c.html"
+}

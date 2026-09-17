@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.TopSolidDraftingHost.Tables.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.TopSolidDraftingHost.Tables.html",
+  "sha256": "e9865ee5cb1a8f972b6baa0d224df229b0db0c58554a81196b37cadada68d755",
+  "text": "# Property Tables\n\n#### Tables\n\nGets access to tables in drafting documents, or null if not connected.\n\n##### Declaration\n\n```\npublic static ITables Tables { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ITables |   |\n",
+  "markdown": "markdown/drafting/d04470cbe17ab3b739d2365a.md",
+  "originalHtml": "html/drafting/d04470cbe17ab3b739d2365a.html"
+}

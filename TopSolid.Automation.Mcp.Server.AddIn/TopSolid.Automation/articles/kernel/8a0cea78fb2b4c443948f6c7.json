@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.TopSolidHostInstance.Materials.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.TopSolidHostInstance.Materials.html",
+  "sha256": "22c9d6b7ee6d03d9f6ea367dda72c9224ef0213ed8be95a135f2362a5528292b",
+  "text": "# Property Materials\n\n#### Materials\n\nGets access to materials, or null if not available.\n\n##### Declaration\n\n```\npublic IMaterials Materials { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  IMaterials |   |\n",
+  "markdown": "markdown/kernel/8a0cea78fb2b4c443948f6c7.md",
+  "originalHtml": "html/kernel/8a0cea78fb2b4c443948f6c7.html"
+}

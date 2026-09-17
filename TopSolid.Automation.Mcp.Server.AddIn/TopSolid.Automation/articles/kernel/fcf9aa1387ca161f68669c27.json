@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Color.Magenta.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Color.Magenta.html",
+  "sha256": "824b602ae2569b020ccdc1c27984cbcc353168c6b7c8ee55da55eb919ef85f51",
+  "text": "# Field Magenta\n\nMagenta color.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\npublic static readonly Color Magenta\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Color |  Magenta color. |\n",
+  "markdown": "markdown/kernel/fcf9aa1387ca161f68669c27.md",
+  "originalHtml": "html/kernel/fcf9aa1387ca161f68669c27.html"
+}

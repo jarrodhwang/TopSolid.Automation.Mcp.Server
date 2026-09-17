@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.DrillingCounterSinkingPrimitive.SetDiameterAngleMode.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.DrillingCounterSinkingPrimitive.SetDiameterAngleMode.html",
+  "sha256": "fdbb9f4460299ad83800a5cfea9d1c816060534fbf8b2821ecf0c02ea75dc78a",
+  "text": "# Method SetDiameterAngleMode\n\n#### SetDiameterAngleMode(SmartReal, SmartReal)\n\nSet the DiameterAngle mode.\n\n##### Declaration\n\n```\npublic void SetDiameterAngleMode(SmartReal inDiameter, SmartReal inAngle)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  SmartReal |  inDiameter |   |  \n \n|  SmartReal |  inAngle |   |\n",
+  "markdown": "markdown/cad/c28a99ed53c89caea957409e.md",
+  "originalHtml": "html/cad/c28a99ed53c89caea957409e.html"
+}

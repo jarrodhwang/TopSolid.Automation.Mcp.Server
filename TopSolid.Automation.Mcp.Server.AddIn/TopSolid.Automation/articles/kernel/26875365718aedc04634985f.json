@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.TopSolidHostInstance.Shapes.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.TopSolidHostInstance.Shapes.html",
+  "sha256": "3f22cee523cf056d199a7f84293e8b43ffd5a80a53346d50da678fc616afc519",
+  "text": "# Property Shapes\n\n#### Shapes\n\nGets access to shape entities, or null if not available.\n\n##### Declaration\n\n```\npublic IShapes Shapes { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  IShapes |   |\n",
+  "markdown": "markdown/kernel/26875365718aedc04634985f.md",
+  "originalHtml": "html/kernel/26875365718aedc04634985f.html"
+}

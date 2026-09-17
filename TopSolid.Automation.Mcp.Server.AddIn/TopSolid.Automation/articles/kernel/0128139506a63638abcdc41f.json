@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ISketches2D.DeleteItems.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ISketches2D.DeleteItems.html",
+  "sha256": "5c23776b83ee1e3244d5a0e727d20245e817e6167f1c72d5696edd7c3dcf440d",
+  "text": "# Method DeleteItems\n\n#### DeleteItems(List<ElementItemId>)\n\nDeletes items of the ModifiedSketch.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 201, 80)]\nvoid DeleteItems(List<ElementItemId> inItemIds)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  List<ElementItemId> |  inItemIds |  Identifiers of the items to delete.  |  \n\n##### Remarks\n\nStartModification(ElementId) must be called before calling this method.\n \nThis method is available since v7.7.201.80.\n",
+  "markdown": "markdown/kernel/0128139506a63638abcdc41f.md",
+  "originalHtml": "html/kernel/0128139506a63638abcdc41f.html"
+}

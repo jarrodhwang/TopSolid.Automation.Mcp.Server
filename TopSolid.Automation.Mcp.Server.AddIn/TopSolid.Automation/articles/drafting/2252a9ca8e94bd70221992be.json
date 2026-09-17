@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.IDraftings.SetViewProjectionSet.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.IDraftings.SetViewProjectionSet.html",
+  "sha256": "36bda7f0437d64b964fc1a33e33ca5a2b88aef1e5d616f89a07e80f5f1d8ca28",
+  "text": "# Method SetViewProjectionSet\n\n#### SetViewProjectionSet(ElementId, ElementId, bool)\n\nRedirect projection set\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 255, 0)]\nvoid SetViewProjectionSet(ElementId inElementId, ElementId inViewId, bool inIncludesAuxiliaries)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Projection set to modify  |  \n \n|  ElementId |  inViewId |  View to modify  |  \n \n|  bool |  inIncludesAuxiliaries |  Whether to treat auxiliary views.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nIf some other views are linked to the selected projection set (auxiliary views), they will be modified too.\n",
+  "markdown": "markdown/drafting/2252a9ca8e94bd70221992be.md",
+  "originalHtml": "html/drafting/2252a9ca8e94bd70221992be.html"
+}

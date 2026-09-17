@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Direction3D.Y.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Direction3D.Y.html",
+  "sha256": "7ccb04ae5881c8fa6aaaf8cabf7679f9e62960fb4f6b352509329c85bf9a814c",
+  "text": "# Field Y\n\nY component.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic double Y\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double |  Y component. |\n",
+  "markdown": "markdown/kernel/c4adaf6be3b02921f2a0f2fe.md",
+  "originalHtml": "html/kernel/c4adaf6be3b02921f2a0f2fe.html"
+}

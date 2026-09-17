@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IFamilies.GetCompleteConstraintData.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IFamilies.GetCompleteConstraintData.html",
+  "sha256": "d8f53fc7938ea08166a5d6416a32bd2516cc8f22d073143bce160d513fb829a6",
+  "text": "# Method GetCompleteConstraintData\n\n#### GetCompleteConstraintData(ElementId)\n\nGet the whole constraint data from a constraint entity\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 0, 0)]\nList<ConstraintDriverData> GetCompleteConstraintData(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the constraint entity.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ConstraintDriverData> |  List of constraint data holding their children constraint data.  |  \n\n##### Remarks\n\nThis method is available since v7.19.\n",
+  "markdown": "markdown/kernel/efe067f29e1f28ac56138d4f.md",
+  "originalHtml": "html/kernel/efe067f29e1f28ac56138d4f.html"
+}

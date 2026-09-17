@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IOperations.RefreshOperations.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IOperations.RefreshOperations.html",
+  "sha256": "bc58dbc48387b75e8e9cd9c84de14d941d1555edc82f8a710ddc83eb3076d916",
+  "text": "# Method RefreshOperations\n\n#### RefreshOperations(ElementExId, ElementExId)\n\nRefresh operations from given start operation to given end operation. If only one operation to refresh, start and end operations are the same operation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 160, 0)]\nvoid RefreshOperations(ElementExId inStartOperationId, ElementExId inEndOperationId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementExId |  inStartOperationId |  Identifier of the operation from witch start the refresh  |  \n \n|  ElementExId |  inEndOperationId |  Identifier of the operation to which do the refresh  |\n",
+  "markdown": "markdown/cam/c2a31719bb1657056b8e6609.md",
+  "originalHtml": "html/cam/c2a31719bb1657056b8e6609.html"
+}

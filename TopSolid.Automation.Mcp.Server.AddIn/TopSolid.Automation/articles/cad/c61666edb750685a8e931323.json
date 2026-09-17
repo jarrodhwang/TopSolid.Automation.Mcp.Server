@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ICoatings.GetVickersHardnessFactor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ICoatings.GetVickersHardnessFactor.html",
+  "sha256": "ed47c622836be9c2a31f831e6d08bbcc3a83d132fb82d7907f462e3f38547124",
+  "text": "# Method GetVickersHardnessFactor\n\n#### GetVickersHardnessFactor(DocumentId)\n\nGet Vickers Hardness factor\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 400, 121)]\ndouble GetVickersHardnessFactor(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Id of the container document  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double |  The value  |\n",
+  "markdown": "markdown/cad/c61666edb750685a8e931323.md",
+  "originalHtml": "html/cad/c61666edb750685a8e931323.html"
+}

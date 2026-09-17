@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.TopSolidDesignHostInstance.Features.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.TopSolidDesignHostInstance.Features.html",
+  "sha256": "7546abc4567307a3044205b48958e212c33981a7e129efd9572c7ffa4427ce51",
+  "text": "# Property Features\n\n#### Features\n\nGets access to features, or null if not connected.\n\n##### Declaration\n\n```\npublic IFeatures Features { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  IFeatures |   |\n",
+  "markdown": "markdown/cad/dbee3669d8cc1adfcbf82ca5.md",
+  "originalHtml": "html/cad/dbee3669d8cc1adfcbf82ca5.html"
+}

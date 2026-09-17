@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.CoatingCategoryType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.CoatingCategoryType.html",
+  "sha256": "f2b5858c64b65bb30f4c8ad5a318ed750a4fc9ca427c482c9d1c579960e7711f",
+  "text": "# Enum CoatingCategoryType\n\nDefines the various types of coating categories.\n\n###### Namespace: TopSolid.Cad.Design.Automating\n\n###### Assembly: TopSolid.Cad.Design.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 16, 0, 0)]\npublic enum CoatingCategoryType\n```\n\n##### Remarks\n\nThis enum is available since v7.16.\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  Conversion |  Conversion.  |  \n \n|  Finish |  Finish.  |  \n \n|  None |  No coating category defined.  |  \n \n|  Paint |  Paint.  |  \n \n|  Plating |  Plating.  |  \n \n|  Unclassified |  Unclassified coating category.  |\n",
+  "markdown": "markdown/cad/2771de49c0465b3a2130095e.md",
+  "originalHtml": "html/cad/2771de49c0465b3a2130095e.html"
+}

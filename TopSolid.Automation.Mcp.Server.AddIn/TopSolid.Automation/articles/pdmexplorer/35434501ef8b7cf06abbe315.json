@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.ErpProperty.LocalizedName.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.ErpProperty.LocalizedName.html",
+  "sha256": "00c7dbc59929fbc5cca0122005167d10ec5221ce869b38ab965a85868fee3334",
+  "text": "# Property LocalizedName\n\n#### LocalizedName\n\nGets or sets property localized name.\n\n##### Declaration\n\n```\npublic string LocalizedName { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |   |\n",
+  "markdown": "markdown/pdmexplorer/35434501ef8b7cf06abbe315.md",
+  "originalHtml": "html/pdmexplorer/35434501ef8b7cf06abbe315.html"
+}

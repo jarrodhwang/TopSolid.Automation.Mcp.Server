@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.ElementExId.Empty.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.ElementExId.Empty.html",
+  "sha256": "b1fdb8971f9e2ccf7f776e799f4c10d49088e7bc903038169d7486f870bf3840",
+  "text": "# Field Empty\n\nEmpty identifier.\n\n###### Namespace: TopSolid.Cam.NC.Kernel.Automating\n\n###### Assembly: TopSolid.Cam.NC.Kernel.Automating.dll\n\n##### Syntax\n\n```\npublic static readonly ElementExId Empty\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementExId |  Empty identifier. |\n",
+  "markdown": "markdown/cam/fdeb52cb733a44907a4d8daf.md",
+  "originalHtml": "html/cam/fdeb52cb733a44907a4d8daf.html"
+}

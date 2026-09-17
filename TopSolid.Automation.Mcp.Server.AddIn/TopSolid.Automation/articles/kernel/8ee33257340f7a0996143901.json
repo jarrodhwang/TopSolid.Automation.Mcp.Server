@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IFamilies.GetCatalogCellUserEnumerationValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IFamilies.GetCatalogCellUserEnumerationValue.html",
+  "sha256": "eee243a1e556b49a6f1334954afdd629e475ef2faacdc8e86ccdd2bca1f17d0e",
+  "text": "# Method GetCatalogCellUserEnumerationValue\n\n#### GetCatalogCellUserEnumerationValue(ElementId, ElementId)\n\nGets the user enumeration value of the catalog cell.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 15, 0, 60)]\nint GetCatalogCellUserEnumerationValue(ElementId inRow, ElementId inParameterId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inRow |  Identifier of the row.  |  \n \n|  ElementId |  inParameterId |  Identifier of the parameter of the column.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  int |  Value of the cell.  |  \n\n##### Remarks\n\nThis method is available since v7.15.\n",
+  "markdown": "markdown/kernel/8ee33257340f7a0996143901.md",
+  "originalHtml": "html/kernel/8ee33257340f7a0996143901.html"
+}

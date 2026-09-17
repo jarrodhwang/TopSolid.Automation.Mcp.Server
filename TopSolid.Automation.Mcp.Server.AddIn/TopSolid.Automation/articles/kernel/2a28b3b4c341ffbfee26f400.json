@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.EnumerationProperty.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.EnumerationProperty.html",
+  "sha256": "2b8a8d180f74e259141d938b2be50d8a8706677b31ee71167fd40b3e6423829d",
+  "text": "# Class EnumerationProperty\n\nRepresents an enumeration property.\n\n##### Inheritance\n \nobject\n \nProperty\n \nEnumerationProperty\n\n##### Inherited Members\n \n object.ToString() \n \n object.Equals(object) \n \n object.Equals(object, object) \n \n object.ReferenceEquals(object, object) \n \n object.GetHashCode() \n \n object.GetType() \n \n object.MemberwiseClone() \n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 12, 0, 0)]\npublic class EnumerationProperty : Property\n```\n\n##### Remarks\n\nThis class is available since v7.12.\n\n### Constructors \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   EnumerationProperty(Guid, int)  |  Initializes a new instance of the EnumerationProperty class.  |  \n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   EnumGuid  |  GUID of the enumeration class.  |  \n \n|   Value  |  Value.  |  \n\n### Properties \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   Type  |  Gets the property type.  |\n",
+  "markdown": "markdown/kernel/2a28b3b4c341ffbfee26f400.md",
+  "originalHtml": "html/kernel/2a28b3b4c341ffbfee26f400.html"
+}

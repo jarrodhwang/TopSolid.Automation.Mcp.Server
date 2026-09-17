@@ -1,0 +1,8 @@
+{
+  "path": "api/wire/TopSolid.Cam.NC.Wire.Automating.TechnologyType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/wire/TopSolid.Cam.NC.Wire.Automating.TechnologyType.html",
+  "sha256": "09321cc3c934e869d1d45466abd2d1eebaf2650e212fd3e1d671fb06edef2577",
+  "text": "# Enum TechnologyType\n\nDefines the various technology type.\n\n###### Namespace: TopSolid.Cam.NC.Wire.Automating\n\n###### Assembly: TopSolid.Cam.NC.Wire.Automating.dll\n\n##### Syntax\n\n```\npublic enum TechnologyType\n```\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  Finishing |  Finishing.  |  \n \n|  Roughing |  Roughing.  |\n",
+  "markdown": "markdown/wire/f64a8b75b20a2497e8b72e8c.md",
+  "originalHtml": "html/wire/f64a8b75b20a2497e8b72e8c.html"
+}

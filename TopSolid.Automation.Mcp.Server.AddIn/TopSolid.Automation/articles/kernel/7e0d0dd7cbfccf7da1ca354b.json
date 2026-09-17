@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Frame3D.-ctor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Frame3D.-ctor.html",
+  "sha256": "67a5b752eca71a4c740b2eb3d869e466f0e9655f1314484541ee45e88048b095",
+  "text": "# Constructor Frame3D\n\n#### Frame3D(Point3D, Direction3D, Direction3D, Direction3D)\n\nInitializes a new instance of the Frame3D structure with a specified origin and directions.\n\n##### Declaration\n\n```\npublic Frame3D(Point3D inOrigin, Direction3D inXDirection, Direction3D inYDirection, Direction3D inZDirection)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  Point3D |  inOrigin |  Frame origin.  |  \n \n|  Direction3D |  inXDirection |  Frame X direction.  |  \n \n|  Direction3D |  inYDirection |  Frame Y direction, orthogonal to inXDirection.  |  \n \n|  Direction3D |  inZDirection |  Frame Z direction, equal to inXDirection ^ inYDirection.  |\n",
+  "markdown": "markdown/kernel/7e0d0dd7cbfccf7da1ca354b.md",
+  "originalHtml": "html/kernel/7e0d0dd7cbfccf7da1ca354b.html"
+}

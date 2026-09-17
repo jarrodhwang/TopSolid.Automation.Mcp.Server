@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMechanisms.CreateRigidGroup.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMechanisms.CreateRigidGroup.html",
+  "sha256": "b3b4a566d8ef93335f6dbb2a2aaaa7ff90cbacacce9c917e95764c15f1609756",
+  "text": "# Method CreateRigidGroup\n\n#### CreateRigidGroup(DocumentId, List<ElementId>, bool)\n\nCreates a rigid group entity in a specified document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nElementId CreateRigidGroup(DocumentId inDocumentId, List<ElementId> inConstituentIds, bool inIsInvalidWhenEmpty)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  List<ElementId> |  inConstituentIds |  Identifiers of the rigid group constituent entities.  |  \n \n|  bool |  inIsInvalidWhenEmpty |  Whether the rigid group is invalid when it is empty.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the created rigid group entity.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.8.\n",
+  "markdown": "markdown/cad/489c76345ed64ade5168825c.md",
+  "originalHtml": "html/cad/489c76345ed64ade5168825c.html"
+}

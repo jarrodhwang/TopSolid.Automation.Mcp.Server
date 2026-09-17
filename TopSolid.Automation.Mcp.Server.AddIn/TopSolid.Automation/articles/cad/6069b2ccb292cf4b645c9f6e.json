@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ISubstitutions.SetSubstitutionRules.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ISubstitutions.SetSubstitutionRules.html",
+  "sha256": "7109933c0bfe2e2e4538d907b74f48a2145facdba4066f6b4baf3488d3d37e9f",
+  "text": "# Method SetSubstitutionRules\n\n#### SetSubstitutionRules(ElementId, ElementId)\n\nSets current substitution rules to use with the the inclusion operation\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 0, 0)]\nvoid SetSubstitutionRules(ElementId inOperationId, ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inOperationId |  Identifier of the operation holding substitutions.  |  \n \n|  ElementId |  inElementId |  Identifier of the substitution rules to use.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.19.\n",
+  "markdown": "markdown/cad/6069b2ccb292cf4b645c9f6e.md",
+  "originalHtml": "html/cad/6069b2ccb292cf4b645c9f6e.html"
+}

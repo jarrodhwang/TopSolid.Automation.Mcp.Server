@@ -1,0 +1,8 @@
+{
+  "path": "api/cae/TopSolid.Cae.Kernel.Automating.MeasureResults.Moments.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cae/TopSolid.Cae.Kernel.Automating.MeasureResults.Moments.html",
+  "sha256": "2a728a837229ccfa6bbe22ca2e116560d32fef1d815952fe7464476098851d2e",
+  "text": "# Property Moments\n\n#### Moments\n\nGets the Moments\n\n##### Declaration\n\n```\npublic string[] Moments { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string[] |   |\n",
+  "markdown": "markdown/cae/2a1c5d570dd694b11843de5f.md",
+  "originalHtml": "html/cae/2a1c5d570dd694b11843de5f.html"
+}

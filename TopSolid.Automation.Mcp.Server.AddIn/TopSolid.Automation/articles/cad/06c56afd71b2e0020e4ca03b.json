@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.DrillingPrimitive.MachiningProcessDocument.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.DrillingPrimitive.MachiningProcessDocument.html",
+  "sha256": "7a50ad693e0ece2f55c95b6de5ba212f3dd1c1cfdda59e5303e61ebcb4b0b612",
+  "text": "# Property MachiningProcessDocument\n\n#### MachiningProcessDocument\n\nMachining process document\n\n##### Declaration\n\n```\npublic PdmObjectId MachiningProcessDocument { get; set; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  PdmObjectId |   |\n",
+  "markdown": "markdown/cad/06c56afd71b2e0020e4ca03b.md",
+  "originalHtml": "html/cad/06c56afd71b2e0020e4ca03b.html"
+}

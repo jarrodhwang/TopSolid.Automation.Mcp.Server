@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.SetDateTimeValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.SetDateTimeValue.html",
+  "sha256": "df86ff840c3368cd97d98214cb3d98a923dd4b4eb26b8e3e34c2937b7de584e7",
+  "text": "# Method SetDateTimeValue\n\n#### SetDateTimeValue(ElementId, DateTime)\n\nSets the value of a date time parameter.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nvoid SetDateTimeValue(ElementId inElementId, DateTime inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the parameter to modify.  |  \n \n|  DateTime |  inValue |  New value.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/0ac39f7f1fd23b14645c1d23.md",
+  "originalHtml": "html/kernel/0ac39f7f1fd23b14645c1d23.html"
+}

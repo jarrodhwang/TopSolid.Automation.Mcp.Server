@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IDocuments.Exists.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IDocuments.Exists.html",
+  "sha256": "1bb1d61fdbcae4d9fa5f5f6c88c97248fb8f78730f21e873f13b6cb2113d9259",
+  "text": "# Method Exists\n\n#### Exists(DocumentId)\n\nTells whether a document still exists.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nbool Exists(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  The document still exists.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/f5ca8708c8820a4c6b14bf0b.md",
+  "originalHtml": "html/kernel/f5ca8708c8820a4c6b14bf0b.html"
+}

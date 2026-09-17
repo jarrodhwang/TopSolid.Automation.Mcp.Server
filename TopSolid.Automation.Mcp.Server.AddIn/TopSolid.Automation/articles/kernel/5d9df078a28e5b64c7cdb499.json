@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IShapes.GetFaceSphereSurface.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IShapes.GetFaceSphereSurface.html",
+  "sha256": "b75a5c8c9756d2e82460afa46f51571d7f578b5182c70e35921578c086824331",
+  "text": "# Method GetFaceSphereSurface\n\n#### GetFaceSphereSurface(ElementItemId, out Frame3D, out double)\n\nGets the sphere surface attached to a face.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nvoid GetFaceSphereSurface(ElementItemId inFaceId, out Frame3D outFrame, out double outRadius)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementItemId |  inFaceId |  Identifier of the face to analyze.  |  \n \n|  Frame3D |  outFrame |  Sphere frame.  |  \n \n|  double |  outRadius |  Sphere radius.  |  \n\n##### Remarks\n\nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/5d9df078a28e5b64c7cdb499.md",
+  "originalHtml": "html/kernel/5d9df078a28e5b64c7cdb499.html"
+}

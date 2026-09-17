@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IDocuments.CreateNCPartInclusion.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IDocuments.CreateNCPartInclusion.html",
+  "sha256": "8ca9e7d5c38236e4ac54f06cd8a07a51a7616d17fbe6038e5b93e257fcc9f5c9",
+  "text": "# Method CreateNCPartInclusion\n\n#### CreateNCPartInclusion(DocumentId, DocumentId, SolidType, ElementId)\n\nCreates an NC part inside the target millturn document\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 15, 400, 60)]\nElementId CreateNCPartInclusion(DocumentId inPartSetupSourceDocument, DocumentId inMillTurnTargetDocument, SolidType inSolidType, ElementId inPartHolder)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inPartSetupSourceDocument |  Source part setup document.  |  \n \n|  DocumentId |  inMillTurnTargetDocument |  Target millturn document.  |  \n \n|  SolidType |  inSolidType |  The solid type.  |  \n \n|  ElementId |  inPartHolder |  Tells wether it eliminates the weak portions of stock.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Returns the inclusion operation.  |\n",
+  "markdown": "markdown/cam/dec1d1af36e018b93a39177e.md",
+  "originalHtml": "html/cam/dec1d1af36e018b93a39177e.html"
+}

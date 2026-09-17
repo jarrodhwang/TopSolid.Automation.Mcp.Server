@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Color.GetHashCode.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Color.GetHashCode.html",
+  "sha256": "bdfae23603aa017fcd583e8c6bbfc6723ee0c2933f42ba4e08f9bf26da94b43b",
+  "text": "# Method GetHashCode\n\n#### GetHashCode()\n\n##### Declaration\n\n```\npublic override int GetHashCode()\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  int |   |  \n\n##### Overrides\n \nValueType.GetHashCode()\n",
+  "markdown": "markdown/kernel/8ef872f0ac60f419f558b737.md",
+  "originalHtml": "html/kernel/8ef872f0ac60f419f558b737.html"
+}

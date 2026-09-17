@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.PdmMajorRevisionId.IsEmpty.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.PdmMajorRevisionId.IsEmpty.html",
+  "sha256": "adfd1c173b2f639658e2fdfbdbd9d0c2f0f5194f7dfbb363e42785e7f3057deb",
+  "text": "# Property IsEmpty\n\n#### IsEmpty\n\nTells whether the major revision identifier is empty.\n\n##### Declaration\n\n```\npublic bool IsEmpty { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |   |\n",
+  "markdown": "markdown/kernel/baad3270f57732403be89c1f.md",
+  "originalHtml": "html/kernel/baad3270f57732403be89c1f.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.PdmSecurityUserOrGroupPermissions.ModifyReferencesPermission.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.PdmSecurityUserOrGroupPermissions.ModifyReferencesPermission.html",
+  "sha256": "8098f4c1a310c561c6223afb0d6100e69b71b03073ffd5be0d7f74a077f4c63d",
+  "text": "# Field ModifyReferencesPermission\n\nEnable user to modify project references, Unspecified must be left for folder and document permissions.\n\n###### Namespace: TopSolid.Pdm.Explorer.Automating\n\n###### Assembly: TopSolid.Pdm.Explorer.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic PdmSecurityPermission ModifyReferencesPermission\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  PdmSecurityPermission |  Enable user to modify project references, must be left for folder and document permissions. |\n",
+  "markdown": "markdown/pdmexplorer/e293f67fd06bb979cd4960ec.md",
+  "originalHtml": "html/pdmexplorer/e293f67fd06bb979cd4960ec.html"
+}

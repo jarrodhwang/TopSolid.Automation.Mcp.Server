@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Point2D.op_Subtraction.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Point2D.op_Subtraction.html",
+  "sha256": "1cefad6d9e42dd48f59d63164a1b2942cdc6db56052b4c1c77913a5faac08714",
+  "text": "# Operator operator -\n\n#### operator -(Point2D, Vector2D)\n\nSubtracts a point and a vector.\n\n##### Declaration\n\n```\npublic static Point2D operator -(Point2D inPoint, Vector2D inVector)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  Point2D |  inPoint |  Left hand side point.  |  \n \n|  Vector2D |  inVector |  Right hand side vector.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Point2D |  Translated point.  |\n",
+  "markdown": "markdown/kernel/a6b868a02dc4989b1c2eda45.md",
+  "originalHtml": "html/kernel/a6b868a02dc4989b1c2eda45.html"
+}

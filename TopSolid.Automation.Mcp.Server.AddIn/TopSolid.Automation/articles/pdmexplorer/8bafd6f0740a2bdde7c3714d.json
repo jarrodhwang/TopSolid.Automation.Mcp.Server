@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.GetCustomerProjectDescription.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.GetCustomerProjectDescription.html",
+  "sha256": "2eb885d9be6edd10e0b98b5505a34943c8dcfddf789b94350ee43b3dcb7167a2",
+  "text": "# Method GetCustomerProjectDescription\n\n#### GetCustomerProjectDescription(PdmObjectId)\n\nGets the customer project description of an object.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nstring GetCustomerProjectDescription(PdmObjectId inObjectId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  Object identifier.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  Object customer project description.  |  \n\n##### Remarks\n\nThis method is available since v7.10.300.120.\n",
+  "markdown": "markdown/pdmexplorer/8bafd6f0740a2bdde7c3714d.md",
+  "originalHtml": "html/pdmexplorer/8bafd6f0740a2bdde7c3714d.html"
+}

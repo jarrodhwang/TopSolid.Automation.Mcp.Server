@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IMachineTools.GetBodyRigidGroup.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IMachineTools.GetBodyRigidGroup.html",
+  "sha256": "736e1f4089ca7a50be3431021325c6e10bdff7b2cbeb2a426bf3135e91607598",
+  "text": "# Method GetBodyRigidGroup\n\n#### GetBodyRigidGroup(ElementId)\n\nGet the body rigid group of the given machine.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nElementId GetBodyRigidGroup(ElementId inMachineId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inMachineId |  Identifier of the machine tool to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Id of the body rigid group.  |\n",
+  "markdown": "markdown/cam/e555efa073384c523b835512.md",
+  "originalHtml": "html/cam/e555efa073384c523b835512.html"
+}

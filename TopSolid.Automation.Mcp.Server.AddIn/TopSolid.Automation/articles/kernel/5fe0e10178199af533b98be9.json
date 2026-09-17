@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IEntities.GetSets.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IEntities.GetSets.html",
+  "sha256": "f3b14411f5e94bd9c79c1dea5ac97a330e7351baf2e4840b190c5e74041c10d5",
+  "text": "# Method GetSets\n\n#### GetSets(DocumentId)\n\nGets the set definition entities that are in the sets folder of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 12, 0, 0)]\nList<ElementId> GetSets(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementId> |  Set definition entities found.  |  \n\n##### Remarks\n\nThe method GetConstituents(ElementId) may be used to explore the contents of a set definition.\n \nSet definition constituents may be other set definition entities or shortcut entities which target entity may be obtained using the GetShortcutTarget(ElementId) method.\n \nThis method is available since v7.12.\n",
+  "markdown": "markdown/kernel/5fe0e10178199af533b98be9.md",
+  "originalHtml": "html/kernel/5fe0e10178199af533b98be9.html"
+}

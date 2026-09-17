@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.TopSolidHost.IsConnected.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.TopSolidHost.IsConnected.html",
+  "sha256": "152439124424eae030f7ce3e84dfd6a7503cb1c2ea190c4f1676b3a0e2599232",
+  "text": "# Property IsConnected\n\n#### IsConnected\n\nTells whether TopSolid is connected.\n\n##### Declaration\n\n```\npublic static bool IsConnected { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |   |\n",
+  "markdown": "markdown/kernel/9fa6eec26bad4df72ced0f40.md",
+  "originalHtml": "html/kernel/9fa6eec26bad4df72ced0f40.html"
+}

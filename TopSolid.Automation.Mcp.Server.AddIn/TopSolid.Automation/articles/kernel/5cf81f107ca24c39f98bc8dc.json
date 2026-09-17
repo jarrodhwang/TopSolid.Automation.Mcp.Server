@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.SetRevisionTexts.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.SetRevisionTexts.html",
+  "sha256": "e0b5e588510bb08c48f970400fb6722d704b82561277b15dbbb0e9b82ad85f8d",
+  "text": "# Method SetRevisionTexts\n\n#### SetRevisionTexts(PdmObjectId, string, string)\n\nSets the major and minor revision texts of an object.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 9, 300, 80)]\nvoid SetRevisionTexts(PdmObjectId inObjectId, string inMajorText, string inMinorText)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  Object identifier.  |  \n \n|  string |  inMajorText |  Major revision text.  |  \n \n|  string |  inMinorText |  Minor revision text.  |  \n\n##### Remarks\n\nThis method must not be called between StartModification(string, bool) and EndModification(bool, bool) methods calls.\n \nThis method is available since v7.9.300.80.\n",
+  "markdown": "markdown/kernel/5cf81f107ca24c39f98bc8dc.md",
+  "originalHtml": "html/kernel/5cf81f107ca24c39f98bc8dc.html"
+}

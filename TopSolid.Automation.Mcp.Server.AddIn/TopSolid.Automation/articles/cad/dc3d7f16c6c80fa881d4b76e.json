@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMultiLayer.SetIsotropicParameterValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMultiLayer.SetIsotropicParameterValue.html",
+  "sha256": "6e1172cc4e44f8f562869d0656e1a3cf3949a111bae983082a75399b3dc01348",
+  "text": "# Method SetIsotropicParameterValue\n\n#### SetIsotropicParameterValue(DocumentId, bool)\n\nSets the multi layer material Isotropic Parameter\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 0, 0)]\nbool SetIsotropicParameterValue(DocumentId inDocumentId, bool isIsotroPic)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  bool |  isIsotroPic |  Value  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  True if value is correctly set.  |  \n\n##### Remarks\n\nThis method is available since v7.19.\n",
+  "markdown": "markdown/cad/dc3d7f16c6c80fa881d4b76e.md",
+  "originalHtml": "html/cad/dc3d7f16c6c80fa881d4b76e.html"
+}

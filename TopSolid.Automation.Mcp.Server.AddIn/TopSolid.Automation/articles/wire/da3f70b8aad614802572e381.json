@@ -1,0 +1,8 @@
+{
+  "path": "api/wire/TopSolid.Cam.NC.Wire.Automating.IWireTechnologyDocuments.GetWireDiameter.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/wire/TopSolid.Cam.NC.Wire.Automating.IWireTechnologyDocuments.GetWireDiameter.html",
+  "sha256": "47c862163697871dc819a5bc6805d1c1c3c608b686b33b72a01ae41540f11704",
+  "text": "# Method GetWireDiameter\n\n#### GetWireDiameter(DocumentId)\n\nGet wire diameter.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 160)]\ndouble? GetWireDiameter(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double? |  Wire diameter in SI units.  |\n",
+  "markdown": "markdown/wire/da3f70b8aad614802572e381.md",
+  "originalHtml": "html/wire/da3f70b8aad614802572e381.html"
+}

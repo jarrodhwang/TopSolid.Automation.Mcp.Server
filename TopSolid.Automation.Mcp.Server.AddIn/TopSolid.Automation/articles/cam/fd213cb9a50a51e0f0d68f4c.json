@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.TopSolidCamHostInstance.Disconnect.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.TopSolidCamHostInstance.Disconnect.html",
+  "sha256": "427cb1c86b747c1aa86c4a32b74eb57d6edb8ccf8a100fd08d5e253df6435498",
+  "text": "# Method Disconnect\n\n#### Disconnect()\n\nDisconnect from TopSolid application.\n\n##### Declaration\n\n```\npublic void Disconnect()\n```\n",
+  "markdown": "markdown/cam/fd213cb9a50a51e0f0d68f4c.md",
+  "originalHtml": "html/cam/fd213cb9a50a51e0f0d68f4c.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IOperations.GetStages.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IOperations.GetStages.html",
+  "sha256": "731b274692c525e45c878ef97b16e15f4d5b36d80008ca23923bd0cd8bdc6c91",
+  "text": "# Method GetStages\n\n#### GetStages(DocumentId)\n\nGets the stage operations of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nList<ElementId> GetStages(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementId> |  Stage operations found.  |  \n\n##### Remarks\n\nThe stage operations are sorted in chronological order.\n \nThis method is available since v7.8.\n",
+  "markdown": "markdown/kernel/97e72166d14db42eab454ade.md",
+  "originalHtml": "html/kernel/97e72166d14db42eab454ade.html"
+}

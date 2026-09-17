@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.ElementExId.op_Equality.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.ElementExId.op_Equality.html",
+  "sha256": "ec9fbd0d5284ea4f9e86ea4273a7c4460fed0759de62aefac34698103ddf4565",
+  "text": "# Operator operator ==\n\n#### operator ==(ElementExId, ElementExId)\n\nTells whether two parameter identifiers are equal.\n\n##### Declaration\n\n```\npublic static bool operator ==(ElementExId inParameterId1, ElementExId inParameterId2)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementExId |  inParameterId1 |  First parameter identifier.  |  \n \n|  ElementExId |  inParameterId2 |  Second parameter identifier.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Parameter identifiers are equal.  |\n",
+  "markdown": "markdown/cam/ae0da0743094074fe5cbf5dd.md",
+  "originalHtml": "html/cam/ae0da0743094074fe5cbf5dd.html"
+}

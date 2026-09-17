@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.GetProjectFolderOwner.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.GetProjectFolderOwner.html",
+  "sha256": "1d46a4ac0eb2b62aab94865d3f2e94e5d31308371b643ba8ab876fd74237dbe8",
+  "text": "# Method GetProjectFolderOwner\n\n#### GetProjectFolderOwner(PdmProjectFolderId)\n\nGets the project folder containing a specified project folder.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 9, 0, 0)]\nPdmProjectFolderId GetProjectFolderOwner(PdmProjectFolderId inProjectFolderId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmProjectFolderId |  inProjectFolderId |  Project folder identifier.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  PdmProjectFolderId |  Identifier of the project folder containing the specified project folder, or empty if none.  |  \n\n##### Remarks\n\nIf there is no owner, i.e. the specified project folder was a root, the returned identifier is empty.\n \nThis method is available since v7.9.\n",
+  "markdown": "markdown/kernel/db0635b16df169fafd5939f0.md",
+  "originalHtml": "html/kernel/db0635b16df169fafd5939f0.html"
+}

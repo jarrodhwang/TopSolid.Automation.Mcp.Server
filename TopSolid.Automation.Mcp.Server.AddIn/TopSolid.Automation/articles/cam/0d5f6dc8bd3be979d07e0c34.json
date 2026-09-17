@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.ElementExId.ElementId.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.ElementExId.ElementId.html",
+  "sha256": "247da4033b206dd5e6a3e00df8b7159d7409d6ca7360e77bbc765c7f320e2373",
+  "text": "# Property ElementId\n\n#### ElementId\n\nGets the identifier of the owner element. Id is empty in this ElementId is not empty.\n\n##### Declaration\n\n```\npublic ElementId ElementId { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |   |\n",
+  "markdown": "markdown/cam/0d5f6dc8bd3be979d07e0c34.md",
+  "originalHtml": "html/cam/0d5f6dc8bd3be979d07e0c34.html"
+}

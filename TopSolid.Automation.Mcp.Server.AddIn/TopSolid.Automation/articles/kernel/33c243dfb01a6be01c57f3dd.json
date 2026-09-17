@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.PdmSecurityUserOrGroupPermissions.UserAccountId.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.PdmSecurityUserOrGroupPermissions.UserAccountId.html",
+  "sha256": "80a92e8f5914f502e27ce54eccd35e761b3fac6d7db2ae2de1c32f0cd701035b",
+  "text": "# Field UserAccountId\n\nUser account identifier, string empty when user group is selected.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic string UserAccountId\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  User account identifier, string empty when user group is selected. |\n",
+  "markdown": "markdown/kernel/33c243dfb01a6be01c57f3dd.md",
+  "originalHtml": "html/kernel/33c243dfb01a6be01c57f3dd.html"
+}

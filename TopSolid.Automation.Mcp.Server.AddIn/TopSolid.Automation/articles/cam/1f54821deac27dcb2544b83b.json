@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.MethodExecutionOptions.ManualExecution.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.MethodExecutionOptions.ManualExecution.html",
+  "sha256": "27df0bc565bcce2ce31e1710e5bda75630ba5675027daeaa4ce5a3a5bebd5205",
+  "text": "# Field ManualExecution\n\nManual execution.\n\n###### Namespace: TopSolid.Cam.NC.Kernel.Automating\n\n###### Assembly: TopSolid.Cam.NC.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic bool ManualExecution\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Manual execution. |\n",
+  "markdown": "markdown/cam/1f54821deac27dcb2544b83b.md",
+  "originalHtml": "html/cam/1f54821deac27dcb2544b83b.html"
+}

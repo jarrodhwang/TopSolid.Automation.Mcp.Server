@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IVisualization3D.GetViews.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IVisualization3D.GetViews.html",
+  "sha256": "daf33cdbc3d34a4001013f4747fb533621165eacb92be709c1079948adc65717",
+  "text": "# Method GetViews\n\n#### GetViews(DocumentId)\n\nGets the graphic views of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nList<int> GetViews(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<int> |  Identifiers of the graphic views of the document.  |  \n\n##### Remarks\n\nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/f289bacf8606f4363136fab2.md",
+  "originalHtml": "html/kernel/f289bacf8606f4363136fab2.html"
+}

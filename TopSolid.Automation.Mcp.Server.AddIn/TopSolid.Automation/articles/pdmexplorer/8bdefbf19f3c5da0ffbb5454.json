@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.GetCustomerProjectIdentificationNumber.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.GetCustomerProjectIdentificationNumber.html",
+  "sha256": "518bf6a563d357877579f62034ebbca284baf8bb5322db00532c85522afa1d86",
+  "text": "# Method GetCustomerProjectIdentificationNumber\n\n#### GetCustomerProjectIdentificationNumber(PdmObjectId)\n\nGets the project customer identification number of an object.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nstring GetCustomerProjectIdentificationNumber(PdmObjectId inObjectId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  Object identifier.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  Object customer identification number.  |  \n\n##### Remarks\n\nThis method is available since v7.10.300.120.\n",
+  "markdown": "markdown/pdmexplorer/8bdefbf19f3c5da0ffbb5454.md",
+  "originalHtml": "html/pdmexplorer/8bdefbf19f3c5da0ffbb5454.html"
+}

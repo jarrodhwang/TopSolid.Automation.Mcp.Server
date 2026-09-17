@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IEntities.AddSetTargets.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IEntities.AddSetTargets.html",
+  "sha256": "ec3c04fc46fbbad0dc75ef7ad64cf9b40a14e649619e0f142635b82e5cb259d0",
+  "text": "# Method AddSetTargets\n\n#### AddSetTargets(ElementId, List<ElementId>)\n\nAdd targets to the set definition entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 14, 300, 140)]\nvoid AddSetTargets(ElementId inElementId, List<ElementId> inTargetIds)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifiers of the set definition entity.  |  \n \n|  List<ElementId> |  inTargetIds |  Identifiers of targets to add to the set definition entity.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.14.300.140.\n",
+  "markdown": "markdown/kernel/387a810521e92aee4ad191de.md",
+  "originalHtml": "html/kernel/387a810521e92aee4ad191de.html"
+}

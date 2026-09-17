@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.CloseMinorRevision.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.CloseMinorRevision.html",
+  "sha256": "aed8a2e6bac9b58135ed7ea859034eeb636adc54c4880715e29ae0a4c7340bc6",
+  "text": "# Method CloseMinorRevision\n\n#### CloseMinorRevision(PdmMinorRevisionId)\n\nCloses a minor revision\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 222, 80)]\nbool CloseMinorRevision(PdmMinorRevisionId inMinorRevisionId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmMinorRevisionId |  inMinorRevisionId |  Identifier of document minor revision.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |   |  \n\n##### Remarks\n\nThis method is available since v7.20.222.0.\n",
+  "markdown": "markdown/pdmexplorer/820dc5c711d97d67c7fd9bf6.md",
+  "originalHtml": "html/pdmexplorer/820dc5c711d97d67c7fd9bf6.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.GetTextParameterizedValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.GetTextParameterizedValue.html",
+  "sha256": "03afd7fa01ec857afe65ca5f89a7e755de86d7ad7eb357e49fc422fa105c2377",
+  "text": "# Method GetTextParameterizedValue\n\n#### GetTextParameterizedValue(ElementId)\n\nGets the parameterized value of a parameterized text parameter.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 201, 200)]\nstring GetTextParameterizedValue(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the parameter to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  Parameterized value of the parameter (ex: \"Hexagon Bolt ISO 4014 - [$Code]\").  |  \n\n##### Remarks\n\nIf the text is not parameterized, this method returns null.\n \nThis method is available since v7.7.201.200.\n",
+  "markdown": "markdown/kernel/cc8eb4ce8ed6927487ee9aad.md",
+  "originalHtml": "html/kernel/cc8eb4ce8ed6927487ee9aad.html"
+}

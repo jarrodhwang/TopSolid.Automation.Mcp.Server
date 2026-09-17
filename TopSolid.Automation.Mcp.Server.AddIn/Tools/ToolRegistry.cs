@@ -1,0 +1,134 @@
+using System;
+using System.Collections.Generic;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using TopSolid.Automation.Mcp.Server.AddIn.Automation;
+using TopSolid.Automation.Mcp.Server.AddIn.Protocol;
+using TopSolid.Automation.Mcp.Server.AddIn.Tools.Documents;
+using TopSolid.Automation.Mcp.Server.AddIn.Tools.System;
+
+namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
+{
+    internal sealed class ToolRegistry
+    {
+        private readonly Dictionary<string, ToolDefinition> tools = new Dictionary<string, ToolDefinition>(StringComparer.Ordinal);
+        private readonly ConfirmationStore confirmations = new ConfirmationStore();
+        private readonly Func<JObject, JObject> preview;
+        public ToolRegistry(AutomationGateway automation)
+        {
+            preview = automation.PreviewModeling;
+            Register(StatusTools.Create(automation));
+            Register(DocumentTools.Active(automation));
+            Register(DocumentTools.Info(automation));
+            DomainReadTools.Register(automation, Register);
+            DocumentBatchReadTools.Register(automation, Register);
+            ObjectModelTools.Register(Register);
+            DocumentIdentityTools.Register(automation, Register);
+            PdmIdentityTools.Register(automation, Register);
+            PdmLifecycleTools.Register(automation, Register);
+            PdmPersistenceTools.Register(automation, Register);
+            EntityIdentityTools.Register(automation, Register);
+            PdmBatchReadTools.Register(automation, Register);
+            EntityBatchReadTools.Register(automation, Register);
+            ShapeBatchReadTools.Register(automation, Register);
+            AssemblyBatchReadTools.Register(automation, Register);
+            CamBatchReadTools.Register(automation, Register);
+            SketchBatchReadTools.Register(automation, Register);
+            EntityBatchActionTools.Register(automation, Register);
+            ParameterBatchTools.Register(automation, Register);
+            PointBatchTools.Register(automation, Register);
+            SketchBatchActionTools.Register(automation, Register);
+            SketchPlanTools.Register(automation, Register);
+            ShapeBatchActionTools.Register(automation, Register);
+            PdmDetailsTools.Register(automation, Register);
+            LicenseTools.Register(automation, Register);
+            EntityDetailsTools.Register(automation, Register);
+            DocumentPropertyTools.Register(automation, Register);
+            CamDetailTools.Register(automation, Register);
+            NcDetailsTools.Register(automation, Register);
+            DraftingDetailsTools.Register(automation, Register);
+            CaeDetailsTools.Register(automation, Register);
+            DocumentActionTools.Register(automation, Register);
+            PdmActionTools.Register(automation, Register);
+            PdmCreationContextTools.Register(automation, Register);
+            EntityActionTools.Register(automation, Register);
+            SketchWorkflowTools.Register(automation, Register);
+            ShapeWorkflowTools.Register(automation, Register);
+            AssemblyActionTools.Register(automation, Register);
+            CamActionTools.Register(automation, Register);
+            CamToolPathTools.Register(automation, Register);
+            Sketch2DModelingTools.Register(automation, Register);
+            Sketch3DModelingTools.Register(automation, Register);
+            Design3DModelingTools.Register(automation, Register);
+            ReferenceTools.Register(() => tools.Values, Register);
+        }
+        internal ToolRegistry(IEnumerable<ToolDefinition> definitions, Func<JObject, JObject> preview)
+        { this.preview = preview; foreach (var definition in definitions) Register(definition); }
+        private void Register(ToolDefinition tool) { tools.Add(tool.Name, tool); }
+        public JArray List()
+        {
+            var list = new JArray();
+            foreach (var tool in tools.Values) list.Add(tool.Definition.DeepClone());
+            return list;
+        }
+        public JObject Prepare(string name, JObject arguments)
+        {
+            var tool = Validate(name, arguments);
+            if (tool.ReadOnly) throw new RpcException(-32602, "This inspection tool does not require confirmation.");
+            try { return confirmations.Prepare(tool, arguments, (tool.Preview ?? preview)(arguments)); }
+            catch (RpcException) { throw; }
+            catch (Exception ex) { throw new RpcException(-32011, "Could not prepare this action: " + AutomationGateway.Describe(ex)); }
+        }
+        private ToolDefinition Validate(string name, JObject arguments)
+        {
+            if (!tools.TryGetValue(name, out var tool)) throw new RpcException(-32602, "Unknown tool: " + name);
+            Schema.Validate(arguments, (JObject)tool.Definition["inputSchema"]);
+            try { tool.ValidateArguments?.Invoke(arguments); }
+            catch (ArgumentException ex) { throw new RpcException(-32602, ex.Message); }
+            return tool;
+        }
+        public JObject Call(string name, JObject arguments, string confirmationToken = null)
+        {
+            var tool = Validate(name, arguments);
+            var approvedTarget = tool.ReadOnly ? null : confirmations.Consume(confirmationToken, name, arguments);
+            try
+            {
+                if (approvedTarget != null)
+                {
+                    var currentTarget = (tool.Preview ?? preview)(arguments);
+                    if (!JToken.DeepEquals(approvedTarget, currentTarget))
+                        throw new InvalidOperationException("The target state or synchronized document group changed after the preview. No action was executed. Review a new proposal.");
+                    // Batch persistence uses this exact rechecked scope instead
+                    // of enumerating a potentially larger set a third time.
+                    if (tool.ExecutePrepared != null) return Content(tool.ExecutePrepared(arguments, currentTarget), false);
+                }
+                return Content(tool.Execute(arguments), false);
+            }
+            catch (Exception ex)
+            {
+                Console.Error.WriteLine("Tool " + name + " failed: " + AutomationGateway.Describe(ex));
+                return Content(new JObject
+                {
+                    ["message"] = tool.ReadOnly ? "The TopSolid query failed. Check the document type, IDs, module availability, and TopSolid connection." :
+                        "The TopSolid action failed. Undoable document modifications attempt rollback; persistent PDM actions (creation, metadata, deletion, restoration), opening and saving cannot be rolled back by this server. Inspect any partial receipt and TopSolid before another change; do not automatically retry.",
+                    ["detail"] = AutomationGateway.Describe(ex),
+                    ["partialChange"] = (ex as PartialChangeException)?.Receipt
+                }, true);
+            }
+        }
+        private static JObject Content(JObject value, bool isError)
+        {
+            var text = value.ToString(Formatting.None);
+            if (text.Length > 60000)
+            {
+                text = new JObject { ["message"] = "Result exceeded 60,000 characters. Request a smaller page or narrower query." }.ToString(Formatting.None);
+                isError = true;
+            }
+            return new JObject
+            {
+                ["content"] = new JArray(new JObject { ["type"] = "text", ["text"] = text }),
+                ["isError"] = isError
+            };
+        }
+    }
+}

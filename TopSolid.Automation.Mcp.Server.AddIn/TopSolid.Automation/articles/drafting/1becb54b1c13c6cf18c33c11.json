@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.EntityItems.SurfaceFinishItemType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.EntityItems.SurfaceFinishItemType.html",
+  "sha256": "b2cde26dbbf3d0d9c47ed2ce456893465a8c61c962b73e038112bdfa8bc7d712",
+  "text": "# Enum SurfaceFinishItemType\n\nDefines the various types of items of a surface finish entity.\n\n###### Namespace: TopSolid.Cad.Drafting.Automating.EntityItems\n\n###### Assembly: TopSolid.Cad.Drafting.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 17, 0, 0)]\npublic enum SurfaceFinishItemType\n```\n\n##### Remarks\n\nThis enum is available since v7.17.000.000.\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  AnchorLines |  Anchor Lines.  |  \n \n|  FirstConstraint |  First Constraint.  |  \n \n|  FourthConstraint |  Fourth Constraint.  |  \n \n|  JisComment |  Jis Comment.  |  \n \n|  MachiningProcess |  Machining Process.  |  \n \n|  MaximumRoughness |  Maximum Roughness.  |  \n \n|  MinimumRoughness |  Minimum Roughness.  |  \n \n|  None |  Not an annotation.  |  \n \n|  Overthickness |  Overthickness.  |  \n \n|  SecondConstraint |  Second Constraint.  |  \n \n|  StriaOrientation |  Stria Orientation.  |  \n \n|  SymbolLines |  Symbol Lines.  |  \n \n|  ThirdConstraint |  Third Constraint.  |  \n \n|  Unclassified |  Unclassified type.  |\n",
+  "markdown": "markdown/drafting/1becb54b1c13c6cf18c33c11.md",
+  "originalHtml": "html/drafting/1becb54b1c13c6cf18c33c11.html"
+}

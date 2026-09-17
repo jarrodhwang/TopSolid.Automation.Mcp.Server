@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IShapes.GetEdgeCircleCurve.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IShapes.GetEdgeCircleCurve.html",
+  "sha256": "4db7d078d8ec48f23043309a07d68443181a0881e35025867331c0098b64dccf",
+  "text": "# Method GetEdgeCircleCurve\n\n#### GetEdgeCircleCurve(ElementItemId, out Plane3D, out double)\n\nGets the circle curve attached to an edge.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nvoid GetEdgeCircleCurve(ElementItemId inEdgeId, out Plane3D outPlane, out double outRadius)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementItemId |  inEdgeId |  Identifier of the edge to analyze.  |  \n \n|  Plane3D |  outPlane |  Circle plane.  |  \n \n|  double |  outRadius |  Circle radius.  |  \n\n##### Remarks\n\nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/14a6f0f6eb9029d5dc96f0d1.md",
+  "originalHtml": "html/kernel/14a6f0f6eb9029d5dc96f0d1.html"
+}

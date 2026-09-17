@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IAssemblies.IsAssembly.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IAssemblies.IsAssembly.html",
+  "sha256": "00d801475505cd06a2644a842176b260d8bcd7a336034c3a9fd1a26f5d13160a",
+  "text": "# Method IsAssembly\n\n#### IsAssembly(DocumentId)\n\nTells whether a document is an assembly document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nbool IsAssembly(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  The document is an assembly document.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/cad/c84dd9c8f978b5c79ba8429c.md",
+  "originalHtml": "html/cad/c84dd9c8f978b5c79ba8429c.html"
+}

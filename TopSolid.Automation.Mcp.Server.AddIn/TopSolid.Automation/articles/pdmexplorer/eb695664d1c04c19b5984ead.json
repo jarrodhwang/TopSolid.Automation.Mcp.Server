@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdmVisualization.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdmVisualization.html",
+  "sha256": "044ba66f6ad3cf97110095d6c0b1ae7ace4c0a4457d424e433033ef959ddef46",
+  "text": "# Interface IPdmVisualization\n\nGives access to the Visualization.\n\n###### Namespace: TopSolid.Pdm.Explorer.Automating\n\n###### Assembly: TopSolid.Pdm.Explorer.Automating.dll\n\n##### Syntax\n\n```\n[ServiceContract]\n[AvailableSinceVersion(7, 20, 222, 0)]\npublic interface IPdmVisualization\n```\n\n##### Remarks\n\nThis interface is available since v7.20.\n\n### Methods \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   GetViews(PdmMinorRevisionId)  |  Gets the graphic views of a PdmObject.  |  \n \n|   SetViewCameraOrientation(PdmMinorRevisionId, int, CameraViewOrientation, bool)  |  Sets top camera for this document view  |  \n \n|   ZoomToFit(PdmMinorRevisionId, int)  |  Method to zoom to fit view  |\n",
+  "markdown": "markdown/pdmexplorer/eb695664d1c04c19b5984ead.md",
+  "originalHtml": "html/pdmexplorer/eb695664d1c04c19b5984ead.html"
+}

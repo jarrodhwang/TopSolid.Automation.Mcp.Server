@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.ISimulation.Close.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.ISimulation.Close.html",
+  "sha256": "52275f77ec6efd56ad5e9ba5ff882c3f9f169513f2c7a4a430308c035ffb3357",
+  "text": "# Method Close\n\n#### Close()\n\nCloses the simulation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nvoid Close()\n```\n",
+  "markdown": "markdown/cam/54f988a0bbedaee88368a222.md",
+  "originalHtml": "html/cam/54f988a0bbedaee88368a222.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.GetMinorRevisionText.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.GetMinorRevisionText.html",
+  "sha256": "9751b96b774d4bee77105c4c1b139920aae4c1e979e386b0b757623232021818",
+  "text": "# Method GetMinorRevisionText\n\n#### GetMinorRevisionText(PdmMinorRevisionId)\n\nGets the text of a minor revision.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nstring GetMinorRevisionText(PdmMinorRevisionId inMinorRevisionId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmMinorRevisionId |  inMinorRevisionId |  Identifier of the minor revision.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  Text of the minor revision.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/pdmexplorer/13bbc8a1eb1b72abd78cf17b.md",
+  "originalHtml": "html/pdmexplorer/13bbc8a1eb1b72abd78cf17b.html"
+}

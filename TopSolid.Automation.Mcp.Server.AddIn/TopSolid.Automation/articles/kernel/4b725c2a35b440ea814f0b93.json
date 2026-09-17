@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartShape.Type.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartShape.Type.html",
+  "sha256": "3fcbc13738ac7fbc87f20de7f61b68c50592da433da8614af183d6b6375c93bc",
+  "text": "# Field Type\n\nType of shape.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic SmartShapeType Type\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartShapeType |  Type of shape. |\n",
+  "markdown": "markdown/kernel/4b725c2a35b440ea814f0b93.md",
+  "originalHtml": "html/kernel/4b725c2a35b440ea814f0b93.html"
+}

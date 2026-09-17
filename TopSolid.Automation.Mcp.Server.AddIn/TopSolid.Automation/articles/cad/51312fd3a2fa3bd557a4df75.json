@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMultiLayer.SetTopCoating.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMultiLayer.SetTopCoating.html",
+  "sha256": "8fc2252cfb1aa9438328574bcaf68d854b65c75285412dc4676050304c5a2df1",
+  "text": "# Method SetTopCoating\n\n#### SetTopCoating(DocumentId, SmartCoating)\n\nSets the multi layer top coating\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 0, 0)]\nbool SetTopCoating(DocumentId inDocumentId, SmartCoating inSmartCoating)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document  |  \n \n|  SmartCoating |  inSmartCoating |  Smart Coating  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  True if value is correctly set.  |  \n\n##### Remarks\n\nThis method is available since v7.19.\n",
+  "markdown": "markdown/cad/51312fd3a2fa3bd557a4df75.md",
+  "originalHtml": "html/cad/51312fd3a2fa3bd557a4df75.html"
+}

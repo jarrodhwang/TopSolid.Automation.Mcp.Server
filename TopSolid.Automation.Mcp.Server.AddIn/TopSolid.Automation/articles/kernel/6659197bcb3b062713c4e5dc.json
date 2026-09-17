@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.TopSolidHostInstance.Options.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.TopSolidHostInstance.Options.html",
+  "sha256": "f77a36affd7b12a128400d92a45f4c2d9177055370f4f319773474804c9fc68a",
+  "text": "# Property Options\n\n#### Options\n\nGets access to documents options, or null if not available.\n\n##### Declaration\n\n```\npublic IOptions Options { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  IOptions |   |\n",
+  "markdown": "markdown/kernel/6659197bcb3b062713c4e5dc.md",
+  "originalHtml": "html/kernel/6659197bcb3b062713c4e5dc.html"
+}

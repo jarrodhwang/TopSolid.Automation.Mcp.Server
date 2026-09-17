@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.LibraryProjectsRootFolder.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.LibraryProjectsRootFolder.html",
+  "sha256": "6b71e20029402b3e77ebd364f3feb34dbb2cd78bcd62b965ecdf6efa0bdc55fe",
+  "text": "# Property LibraryProjectsRootFolder\n\n#### LibraryProjectsRootFolder\n\nGets the library projects root folder.\n\n##### Declaration\n\n```\n[AvailableSinceVersion(7, 9, 0, 0)]\nPdmProjectFolderId LibraryProjectsRootFolder { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  PdmProjectFolderId |   |  \n\n##### Remarks\n\nThis property is available since v7.9.\n",
+  "markdown": "markdown/kernel/8e6812bd1ad80a7fb8080d62.md",
+  "originalHtml": "html/kernel/8e6812bd1ad80a7fb8080d62.html"
+}

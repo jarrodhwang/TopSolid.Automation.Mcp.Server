@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartFrame3D.ExtentZMin.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartFrame3D.ExtentZMin.html",
+  "sha256": "59ec85c3b3fcc814b3d4317c34a806037c4a3298b620061053b21189ab2e5ee4",
+  "text": "# Field ExtentZMin\n\nMinimum Z frame coordinate of extent, or null if unknown.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic double? ExtentZMin\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double? |  Minimum Z frame coordinate of extent, or null if unknown. |\n",
+  "markdown": "markdown/kernel/46adbffbcd96364e57ab4e20.md",
+  "originalHtml": "html/kernel/46adbffbcd96364e57ab4e20.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cae/TopSolid.Cae.Kernel.Automating.TopSolidCaeHost.Connect.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cae/TopSolid.Cae.Kernel.Automating.TopSolidCaeHost.Connect.html",
+  "sha256": "9bc9f97286092ec90e3dc22f4974442f90b3b64a1cbd841697860061aa84e2f4",
+  "text": "# Method Connect\n\n#### Connect()\n\nConnects to TopSolid application.\n\n##### Declaration\n\n```\npublic static void Connect()\n```\n",
+  "markdown": "markdown/cae/6d9ffe77da07750ac1bd6834.md",
+  "originalHtml": "html/cae/6d9ffe77da07750ac1bd6834.html"
+}

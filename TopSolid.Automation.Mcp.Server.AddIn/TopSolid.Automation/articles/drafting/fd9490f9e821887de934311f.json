@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.IDraftings.SetViewScaleFactor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.IDraftings.SetViewScaleFactor.html",
+  "sha256": "137b6f2a8462e8136bff3aa82df3ea87bcaa9936c02364e4da521b038dcaecb9",
+  "text": "# Method SetViewScaleFactor\n\n#### SetViewScaleFactor(ElementId, double)\n\nSets the view scale factor.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 255, 0)]\nvoid SetViewScaleFactor(ElementId inElementId, double inScaleFactorAbsoluteValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  The view  |  \n \n|  double |  inScaleFactorAbsoluteValue |  the view scale factor absolute value.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n",
+  "markdown": "markdown/drafting/fd9490f9e821887de934311f.md",
+  "originalHtml": "html/drafting/fd9490f9e821887de934311f.html"
+}

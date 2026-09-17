@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IAssemblies.IsInclusion.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IAssemblies.IsInclusion.html",
+  "sha256": "cfb6a0a740d30e012b5dcaa51d478d6173113d961544f4b556948a01c1f0f239",
+  "text": "# Method IsInclusion\n\n#### IsInclusion(ElementId)\n\nTells whether an element is an inclusion operation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nbool IsInclusion(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  The element is an inclusion operation.  |  \n\n##### Remarks\n\nThis method is available since v7.8.\n",
+  "markdown": "markdown/cad/86a3ea214b961caaf33c37e1.md",
+  "originalHtml": "html/cad/86a3ea214b961caaf33c37e1.html"
+}

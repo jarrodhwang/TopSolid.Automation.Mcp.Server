@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.DateTimeProperty.-ctor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.DateTimeProperty.-ctor.html",
+  "sha256": "c66284ba0285ec1ef08fbe9cb3a72034717e261e17d6894f4985d79c4281fcca",
+  "text": "# Constructor DateTimeProperty\n\n#### DateTimeProperty(DateTime)\n\nInitializes a new instance of the DateTimeProperty class.\n\n##### Declaration\n\n```\npublic DateTimeProperty(DateTime inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DateTime |  inValue |  Value.  |\n",
+  "markdown": "markdown/kernel/9c33e44f20c6ce739dc89f8c.md",
+  "originalHtml": "html/kernel/9c33e44f20c6ce739dc89f8c.html"
+}

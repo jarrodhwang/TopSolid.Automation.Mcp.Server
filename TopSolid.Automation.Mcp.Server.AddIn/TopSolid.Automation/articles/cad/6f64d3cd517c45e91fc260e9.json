@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMaterials.SetAngularScale.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMaterials.SetAngularScale.html",
+  "sha256": "c55526190d9bed3c67afe4313c815703413460ae0960dab2c889a162ae470101",
+  "text": "# Method SetAngularScale\n\n#### SetAngularScale(DocumentId, double)\n\nSets the angular scale.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 0, 0)]\nvoid SetAngularScale(DocumentId inDocumentId, double inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  double |  inValue |  Wanted value.  |  \n\n##### Remarks\n\nThis method must be called for Cylindrical or Spherical type.\n \nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.16.\n",
+  "markdown": "markdown/cad/6f64d3cd517c45e91fc260e9.md",
+  "originalHtml": "html/cad/6f64d3cd517c45e91fc260e9.html"
+}

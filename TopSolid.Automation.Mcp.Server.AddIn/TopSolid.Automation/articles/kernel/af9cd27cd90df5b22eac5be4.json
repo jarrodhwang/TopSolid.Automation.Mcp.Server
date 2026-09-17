@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartProfile3D.IsReversed.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartProfile3D.IsReversed.html",
+  "sha256": "4079b00bb554daede012aa286a71ef31f34a71a474dc086611f4aeb5bae2fb57",
+  "text": "# Field IsReversed\n\nWhether the provided profile orientation is to be reversed.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic bool IsReversed\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Whether the provided profile orientation is to be reversed. |\n",
+  "markdown": "markdown/kernel/af9cd27cd90df5b22eac5be4.md",
+  "originalHtml": "html/kernel/af9cd27cd90df5b22eac5be4.html"
+}

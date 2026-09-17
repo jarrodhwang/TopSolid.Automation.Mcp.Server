@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartAxis2D.Geometry.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartAxis2D.Geometry.html",
+  "sha256": "1cd9fa30608be823514a6bd04330955826909ba2a7fa7108a30db1baf41d21ae",
+  "text": "# Field Geometry\n\nGeometry, or null if unknown.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic Axis2D? Geometry\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Axis2D? |  Geometry, or null if unknown. |\n",
+  "markdown": "markdown/kernel/b6664096cd02b7ea69396a7e.md",
+  "originalHtml": "html/kernel/b6664096cd02b7ea69396a7e.html"
+}

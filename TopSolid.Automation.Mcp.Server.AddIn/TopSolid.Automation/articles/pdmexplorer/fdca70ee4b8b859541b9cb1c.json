@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdmSecurity.ActivateProjectSecurity.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdmSecurity.ActivateProjectSecurity.html",
+  "sha256": "ad743df3f0466bf82e50b6f72da68791bba488a9ffb6e3aba7eb44d99f06bb88",
+  "text": "# Method ActivateProjectSecurity\n\n#### ActivateProjectSecurity(PdmObjectId)\n\nActivates security of a project.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nvoid ActivateProjectSecurity(PdmObjectId inProjectId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inProjectId |  Project identifier to activate.  |  \n\n##### Remarks\n\nThis method is available since v7.8.302.060.\n",
+  "markdown": "markdown/pdmexplorer/fdca70ee4b8b859541b9cb1c.md",
+  "originalHtml": "html/pdmexplorer/fdca70ee4b8b859541b9cb1c.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/wire/TopSolid.Cam.NC.Wire.Automating.IWireTechnologies.SetType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/wire/TopSolid.Cam.NC.Wire.Automating.IWireTechnologies.SetType.html",
+  "sha256": "c8c46b60e4699577dccbce804d6043b069061188a5638d324f5943ede208a3e4",
+  "text": "# Method SetType\n\n#### SetType(ElementId, TechnologyType)\n\nSet technology type.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 160)]\nvoid SetType(ElementId inTechnologyId, TechnologyType inTechnoType)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inTechnologyId |  Identifier of the technology to modify.  |  \n \n|  TechnologyType |  inTechnoType |  Technology type.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n",
+  "markdown": "markdown/wire/2ed100faeaa5983c3c36dba3.md",
+  "originalHtml": "html/wire/2ed100faeaa5983c3c36dba3.html"
+}

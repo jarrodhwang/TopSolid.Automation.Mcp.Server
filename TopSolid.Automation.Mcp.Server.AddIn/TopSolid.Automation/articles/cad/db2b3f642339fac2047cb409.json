@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ICoatings.GetMetalnessFactor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ICoatings.GetMetalnessFactor.html",
+  "sha256": "a00e38d1b27103543468922ca29b5815962c13e3dd0c080a05584544385cdcf2",
+  "text": "# Method GetMetalnessFactor\n\n#### GetMetalnessFactor(DocumentId)\n\nGets the Metalness factor.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 400, 100)]\ndouble GetMetalnessFactor(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double |   |  \n\n##### Remarks\n\nThis method is available since v7.16.\n",
+  "markdown": "markdown/cad/db2b3f642339fac2047cb409.md",
+  "originalHtml": "html/cad/db2b3f642339fac2047cb409.html"
+}

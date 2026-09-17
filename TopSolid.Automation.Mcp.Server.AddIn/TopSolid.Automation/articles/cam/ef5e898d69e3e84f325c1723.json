@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IPrograms.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IPrograms.html",
+  "sha256": "e8ef6bf978e6124fbacaf95a55c53fd1e5ab6ecd7e1d58ec53043bcf6c0b1e72",
+  "text": "# Interface IPrograms\n\nGives access to programs.\n\n###### Namespace: TopSolid.Cam.NC.Kernel.Automating\n\n###### Assembly: TopSolid.Cam.NC.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[ServiceContract]\n[AvailableSinceVersion(7, 11, 300, 180)]\npublic interface IPrograms\n```\n\n### Methods \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   GetComment(ElementId)  |  Get program comment.  |  \n \n|   GetEnding(ElementId)  |  Get program ending.  |  \n \n|   GetFileName(ElementId)  |  Get program file name.  |  \n \n|   GetHeader(ElementId)  |  Get program header.  |  \n \n|   GetName(ElementId)  |  Get program name.  |  \n \n|   GetProgram(ElementExId)  |  Gets the NC program from the given operation.  |  \n \n|   GetPrograms(DocumentId)  |  Get the list of NC programs in the document.  |  \n \n|   IsProgram(ElementId)  |  Tells whether an element is a program.  |  \n \n|   SetComment(ElementId, SmartText)  |  Set program comment.  |  \n \n|   SetEnding(ElementId, SmartText)  |  Set program ending.  |  \n \n|   SetFileName(ElementId, SmartText)  |  Set program file name.  |  \n \n|   SetHeader(ElementId, SmartText)  |  Set program header.  |  \n \n|   SetName(ElementId, string, out string)  |  Set program name.  |\n",
+  "markdown": "markdown/cam/ef5e898d69e3e84f325c1723.md",
+  "originalHtml": "html/cam/ef5e898d69e3e84f325c1723.html"
+}

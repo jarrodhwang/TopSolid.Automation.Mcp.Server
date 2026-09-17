@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.TopSolidPdmExplorerHostInstance.ClientName.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.TopSolidPdmExplorerHostInstance.ClientName.html",
+  "sha256": "0eb3fff6ddab99a096b8464e2da59545241ff6d09fc3643d86024820bc3dfa63",
+  "text": "# Property ClientName\n\n#### ClientName\n\nGets the client name, or null if anonymous.\n\n##### Declaration\n\n```\npublic string ClientName { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |   |\n",
+  "markdown": "markdown/pdmexplorer/638dbce0a751d47e51125353.md",
+  "originalHtml": "html/pdmexplorer/638dbce0a751d47e51125353.html"
+}

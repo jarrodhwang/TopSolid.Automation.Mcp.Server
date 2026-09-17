@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Interface IClassifications | TopSolid Automation website </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Interface IClassifications | TopSolid Automation website ">
+    
+    <meta name="description" content="Gives access to classifications.">
+      <link rel="shortcut icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../../styles/docfx.css">
+      <link rel="stylesheet" href="../../styles/main.css">
+      <meta property="docfx:navrel" content="../../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../img/AutomationIcon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="TopSolid.Kernel.Automating.IClassifications">
+
+
+
+  <h1 id="TopSolid_Kernel_Automating_IClassifications" data-uid="TopSolid.Kernel.Automating.IClassifications" class="text-break">Interface IClassifications</h1>
+  <div class="markdown level0 summary"><p>Gives access to classifications.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="TopSolid.html">TopSolid</a>.<a class="xref" href="TopSolid.Kernel.html">Kernel</a>.<a class="xref" href="TopSolid.Kernel.Automating.html">Automating</a></h6>
+  <h6><strong>Assembly</strong>: TopSolid.Kernel.Automating.dll</h6>
+  <h5 id="TopSolid_Kernel_Automating_IClassifications_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ServiceContract]
+[AvailableSinceVersion(7, 10, 0, 0)]
+public interface IClassifications</code></pre>
+  </div>
+  <h5 id="TopSolid_Kernel_Automating_IClassifications_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>This interface is available since v7.10.</p>
+</div>
+  <h3 id="methods">Methods
+</h3>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IClassifications_CreateClass_TopSolid_Kernel_Automating_DocumentId_System_String_System_String_System_String_" data-uid="TopSolid.Kernel.Automating.IClassifications.CreateClass(TopSolid.Kernel.Automating.DocumentId,System.String,System.String,System.String)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IClassifications.CreateClass.html#TopSolid_Kernel_Automating_IClassifications_CreateClass_TopSolid_Kernel_Automating_DocumentId_System_String_System_String_System_String_">CreateClass(DocumentId, string, string, string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Creates a first level class entity in a classification document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IClassifications_CreateLevel_TopSolid_Kernel_Automating_DocumentId_System_String_" data-uid="TopSolid.Kernel.Automating.IClassifications.CreateLevel(TopSolid.Kernel.Automating.DocumentId,System.String)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IClassifications.CreateLevel.html#TopSolid_Kernel_Automating_IClassifications_CreateLevel_TopSolid_Kernel_Automating_DocumentId_System_String_">CreateLevel(DocumentId, string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Creates a level entity in a classification document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IClassifications_CreateSubclass_TopSolid_Kernel_Automating_ElementId_System_String_System_String_System_String_" data-uid="TopSolid.Kernel.Automating.IClassifications.CreateSubclass(TopSolid.Kernel.Automating.ElementId,System.String,System.String,System.String)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IClassifications.CreateSubclass.html#TopSolid_Kernel_Automating_IClassifications_CreateSubclass_TopSolid_Kernel_Automating_ElementId_System_String_System_String_System_String_">CreateSubclass(ElementId, string, string, string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Creates a class entity as a subclass of a higher level class entity.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IClassifications_DeleteLevel_TopSolid_Kernel_Automating_ElementId_" data-uid="TopSolid.Kernel.Automating.IClassifications.DeleteLevel(TopSolid.Kernel.Automating.ElementId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IClassifications.DeleteLevel.html#TopSolid_Kernel_Automating_IClassifications_DeleteLevel_TopSolid_Kernel_Automating_ElementId_">DeleteLevel(ElementId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Deletes a level entity.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IClassifications_FindClassificationDepth_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Kernel.Automating.IClassifications.FindClassificationDepth(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IClassifications.FindClassificationDepth.html#TopSolid_Kernel_Automating_IClassifications_FindClassificationDepth_TopSolid_Kernel_Automating_DocumentId_">FindClassificationDepth(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Finds the depth of the classification defined in a specified classification document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IClassifications_GetClassCode_TopSolid_Kernel_Automating_ElementId_" data-uid="TopSolid.Kernel.Automating.IClassifications.GetClassCode(TopSolid.Kernel.Automating.ElementId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IClassifications.GetClassCode.html#TopSolid_Kernel_Automating_IClassifications_GetClassCode_TopSolid_Kernel_Automating_ElementId_">GetClassCode(ElementId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the code of a specified class entity.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IClassifications_GetClassErpId_TopSolid_Kernel_Automating_ElementId_" data-uid="TopSolid.Kernel.Automating.IClassifications.GetClassErpId(TopSolid.Kernel.Automating.ElementId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IClassifications.GetClassErpId.html#TopSolid_Kernel_Automating_IClassifications_GetClassErpId_TopSolid_Kernel_Automating_ElementId_">GetClassErpId(ElementId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the ERP identifier of a specified class entity.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IClassifications_GetClasses_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Kernel.Automating.IClassifications.GetClasses(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IClassifications.GetClasses.html#TopSolid_Kernel_Automating_IClassifications_GetClasses_TopSolid_Kernel_Automating_DocumentId_">GetClasses(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the first level classes entities that are in the classes folder of a classification document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IClassifications_GetLevels_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Kernel.Automating.IClassifications.GetLevels(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IClassifications.GetLevels.html#TopSolid_Kernel_Automating_IClassifications_GetLevels_TopSolid_Kernel_Automating_DocumentId_">GetLevels(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the level entities that are in the levels folder of a classification document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IClassifications_GetMultipleClassifyingParameter_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Kernel.Automating.IClassifications.GetMultipleClassifyingParameter(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IClassifications.GetMultipleClassifyingParameter.html#TopSolid_Kernel_Automating_IClassifications_GetMultipleClassifyingParameter_TopSolid_Kernel_Automating_DocumentId_">GetMultipleClassifyingParameter(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the multiple classifying parameter entity of a classification document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IClassifications_GetSubclasses_TopSolid_Kernel_Automating_ElementId_" data-uid="TopSolid.Kernel.Automating.IClassifications.GetSubclasses(TopSolid.Kernel.Automating.ElementId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IClassifications.GetSubclasses.html#TopSolid_Kernel_Automating_IClassifications_GetSubclasses_TopSolid_Kernel_Automating_ElementId_">GetSubclasses(ElementId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the classes entities that are subclasses of a specified class entity.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IClassifications_IsClassification_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Kernel.Automating.IClassifications.IsClassification(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IClassifications.IsClassification.html#TopSolid_Kernel_Automating_IClassifications_IsClassification_TopSolid_Kernel_Automating_DocumentId_">IsClassification(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Tells whether a document is a classification document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IClassifications_SetClassCode_TopSolid_Kernel_Automating_ElementId_System_String_" data-uid="TopSolid.Kernel.Automating.IClassifications.SetClassCode(TopSolid.Kernel.Automating.ElementId,System.String)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IClassifications.SetClassCode.html#TopSolid_Kernel_Automating_IClassifications_SetClassCode_TopSolid_Kernel_Automating_ElementId_System_String_">SetClassCode(ElementId, string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the code of a specified class entity.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IClassifications_SetClassErpId_TopSolid_Kernel_Automating_ElementId_System_String_" data-uid="TopSolid.Kernel.Automating.IClassifications.SetClassErpId(TopSolid.Kernel.Automating.ElementId,System.String)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IClassifications.SetClassErpId.html#TopSolid_Kernel_Automating_IClassifications_SetClassErpId_TopSolid_Kernel_Automating_ElementId_System_String_">SetClassErpId(ElementId, string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the ERP identifier of a specified class entity.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div id="footer-alt">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      			<div id="footer-alt-bottom">
+                      <ul>
+                          <li><a href="https://www.topsolid.com/en/terms-of-use">Term of use</a></li>
+                          <li><a href="https://www.topsolid.com/en/corporate-information">Corporate information</a></li>
+                          <li><a href="https://www.topsolid.com/en/privacy-policy-gdpr">Privacy Policy - GDPR</a></li>
+                      </ul>
+                      <p>Copyright ©2025 TopSolid - All rights reserved.</p>
+                  </div>
+          </div>
+        </div>
+      </footer>    </div>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

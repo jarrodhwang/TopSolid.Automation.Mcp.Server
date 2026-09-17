@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IApplication.GetMachineIds.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IApplication.GetMachineIds.html",
+  "sha256": "aab7a15496034deea3dd0de7447c88e44ce4efce3ae68975cd0a21a6df2b38aa",
+  "text": "# Method GetMachineIds\n\n#### GetMachineIds(out string, out string)\n\nGets the machine identifiers that may be used for fixed licenses.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 0, 0)]\nvoid GetMachineIds(out string outProtectionKeyId, out string outNetworkAdaptersId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  string |  outProtectionKeyId |  Identifier based on protection key, or empty string if none detected.  |  \n \n|  string |  outNetworkAdaptersId |  Identifier based on main network adapters, or empty string if none detected.  |  \n\n##### Remarks\n\nThis method is available since v7.11.\n",
+  "markdown": "markdown/kernel/9e2291dc8fe83e31ea20f31e.md",
+  "originalHtml": "html/kernel/9e2291dc8fe83e31ea20f31e.html"
+}

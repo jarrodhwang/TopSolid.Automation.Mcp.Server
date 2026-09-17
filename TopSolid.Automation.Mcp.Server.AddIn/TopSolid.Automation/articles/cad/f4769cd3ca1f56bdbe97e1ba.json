@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IAssemblies.SetAssemblyVolumeManagement.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IAssemblies.SetAssemblyVolumeManagement.html",
+  "sha256": "782726430e23902cd70182795fe6a36ee861e5c8c9fc0ea3421318c4bb32b2b6",
+  "text": "# Method SetAssemblyVolumeManagement\n\n#### SetAssemblyVolumeManagement(DocumentId, bool)\n\nSets the volume management of the physical property management of an assembly.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 13, 300, 220)]\nvoid SetAssemblyVolumeManagement(DocumentId inDocumentId, bool inIsVolumeManaged)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of assembly document to analyze.  |  \n \n|  bool |  inIsVolumeManaged |  Tells whether the physical property management of an assembly is volume managed.  |  \n\n##### Remarks\n\nThis method is available since v7.13.300.220.\n",
+  "markdown": "markdown/cad/f4769cd3ca1f56bdbe97e1ba.md",
+  "originalHtml": "html/cad/f4769cd3ca1f56bdbe97e1ba.html"
+}

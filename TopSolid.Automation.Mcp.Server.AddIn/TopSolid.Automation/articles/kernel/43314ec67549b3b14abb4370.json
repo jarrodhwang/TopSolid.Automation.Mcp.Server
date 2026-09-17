@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.IncludePackageAsReplication.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.IncludePackageAsReplication.html",
+  "sha256": "011aaab21198d0eeac055badd53ac000737004e814dd06e4d62c5b363189b7a6",
+  "text": "# Method IncludePackageAsReplication\n\n#### IncludePackageAsReplication(string, PdmObjectId, bool)\n\nImports a package with replication into an existing folder.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 39, 0)]\nList<PdmObjectId> IncludePackageAsReplication(string inFileFullPath, PdmObjectId inOwnerId, bool inUpdatesEvenIfConflict)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  string |  inFileFullPath |  Full path of the package file, with \".TopPkg\" extension.  |  \n \n|  PdmObjectId |  inOwnerId |  Pdm object id of folder owner where imported file is to be stored or empty to import in root project.  |  \n \n|  bool |  inUpdatesEvenIfConflict |  Whether updates with imported version even if there is a conflict.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<PdmObjectId> |  List of imported projects PDM object identifiers.  |  \n\n##### Remarks\n\nThis method must not be called between StartModification(string, bool) and EndModification(bool, bool) methods calls.\n \nThis method is available since v7.19.039.000.\n",
+  "markdown": "markdown/kernel/43314ec67549b3b14abb4370.md",
+  "originalHtml": "html/kernel/43314ec67549b3b14abb4370.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Transform2D.Si.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Transform2D.Si.html",
+  "sha256": "930c614b775914412b727932347d486ca31518f0f3f70b22c819eb26cd2b40b4",
+  "text": "# Field Si\n\nInverse of the global scale factor.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic double Si\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double |  Inverse of the global scale factor. |\n",
+  "markdown": "markdown/kernel/76157aa4237f3bb8952bb330.md",
+  "originalHtml": "html/kernel/76157aa4237f3bb8952bb330.html"
+}

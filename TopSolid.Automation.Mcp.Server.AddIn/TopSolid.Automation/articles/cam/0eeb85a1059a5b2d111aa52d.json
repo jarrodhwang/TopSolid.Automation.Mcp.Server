@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IMachineTools.GetPartHolders.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IMachineTools.GetPartHolders.html",
+  "sha256": "c7661d10e10511920c2aa8266dda53e354bc448017d7b7c7f8e2f290aa559922",
+  "text": "# Method GetPartHolders\n\n#### GetPartHolders(ElementId)\n\nGet the list of part holders of the given machine.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nList<ElementId> GetPartHolders(ElementId inMachineId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inMachineId |  Identifier of the machine tool to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementId> |  List of all part holders.  |\n",
+  "markdown": "markdown/cam/0eeb85a1059a5b2d111aa52d.md",
+  "originalHtml": "html/cam/0eeb85a1059a5b2d111aa52d.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.CopySeveral2.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.CopySeveral2.html",
+  "sha256": "42b54fb0164fb7caac18dcf7c958a33a25cf08e5219ef8a3536ed43705999b48",
+  "text": "# Method CopySeveral2\n\n#### CopySeveral2(List<PdmObjectId>, PdmObjectId, bool)\n\nCopies several objects.\n\n##### Declaration\n\n```\n[OperationContract]\n[Obsolete(\"Since v7.20.258.0, CopySeveral is done using CopySeveralWithOptions.\")]\nList<PdmObjectId> CopySeveral2(List<PdmObjectId> inObjectIds, PdmObjectId inOwnerId, bool inKeepPartNumber)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  List<PdmObjectId> |  inObjectIds |  Identifiers of objects to copy.  |  \n \n|  PdmObjectId |  inOwnerId |  Identifier of project or folder owner where to copy objects.  |  \n \n|  bool |  inKeepPartNumber |  Whether keeps the same part number  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<PdmObjectId> |  New PDM object identifiers.  |  \n\n##### Remarks\n\nThis method must not be called between StartModification(string, bool) and EndModification(bool, bool) methods calls.\n \nThis method is available since v7.15.400.240.\n",
+  "markdown": "markdown/kernel/9eda58211b2126b47a45603d.md",
+  "originalHtml": "html/kernel/9eda58211b2126b47a45603d.html"
+}

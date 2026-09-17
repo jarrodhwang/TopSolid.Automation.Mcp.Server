@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IEntities.IsShortcut.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IEntities.IsShortcut.html",
+  "sha256": "409a9a9fdb58c31ec2804fe76d00b4674c39df775e518557708b38da5b274848",
+  "text": "# Method IsShortcut\n\n#### IsShortcut(ElementId)\n\nTells whether an entity is a shortcut.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 12, 0, 0)]\nbool IsShortcut(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the entity to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  The entity is a shortcut.  |  \n\n##### Remarks\n\nThis method is available since v7.12.\n",
+  "markdown": "markdown/kernel/903c7809a1beb059f75caa31.md",
+  "originalHtml": "html/kernel/903c7809a1beb059f75caa31.html"
+}

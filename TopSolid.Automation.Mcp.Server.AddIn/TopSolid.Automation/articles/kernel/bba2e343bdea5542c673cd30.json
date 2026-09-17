@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IVisualization3D.GetViewCount.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IVisualization3D.GetViewCount.html",
+  "sha256": "e9dc3f517d0e33c6fa7f20a2b71ef6102943f034921c03a5592248fde6c4100f",
+  "text": "# Method GetViewCount\n\n#### GetViewCount(DocumentId)\n\nGets the number of graphic views of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nint GetViewCount(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  int |  Number of graphic views of the document.  |  \n\n##### Remarks\n\nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/bba2e343bdea5542c673cd30.md",
+  "originalHtml": "html/kernel/bba2e343bdea5542c673cd30.html"
+}

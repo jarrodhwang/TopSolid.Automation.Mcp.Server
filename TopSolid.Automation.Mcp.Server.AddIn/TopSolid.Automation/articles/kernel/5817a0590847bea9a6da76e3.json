@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IGeometries2D.SetAxisPublishingDefinition.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IGeometries2D.SetAxisPublishingDefinition.html",
+  "sha256": "0ba1d1dcdde67e74b91181b65cf60cef674c9d189ed3a6be61218f83ceb34e91",
+  "text": "# Method SetAxisPublishingDefinition\n\n#### SetAxisPublishingDefinition(ElementId, SmartAxis2D)\n\nSets the definition of an axis publishing entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nvoid SetAxisPublishingDefinition(ElementId inElementId, SmartAxis2D inDefinition)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the publishing entity to modify.  |  \n \n|  SmartAxis2D |  inDefinition |  Publishing new definition.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.8.\n",
+  "markdown": "markdown/kernel/5817a0590847bea9a6da76e3.md",
+  "originalHtml": "html/kernel/5817a0590847bea9a6da76e3.html"
+}

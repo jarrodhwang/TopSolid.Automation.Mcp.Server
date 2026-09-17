@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IOperations.GetWorkingStage.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IOperations.GetWorkingStage.html",
+  "sha256": "d29f0e60a8f198563959b96fd82b733c8c597dbe6183d62f3c18716203779c9d",
+  "text": "# Method GetWorkingStage\n\n#### GetWorkingStage(DocumentId)\n\nGets the working stage operation of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nElementId GetWorkingStage(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the working stage operation.  |  \n\n##### Remarks\n\nThis method is available since v7.8.\n",
+  "markdown": "markdown/kernel/95752e06892d31542eb7b59c.md",
+  "originalHtml": "html/kernel/95752e06892d31542eb7b59c.html"
+}

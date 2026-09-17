@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.CurveType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.CurveType.html",
+  "sha256": "0baf9c5df865cb7cc2588849f91092a8acd272d98b3471fdef80827dc0da451a",
+  "text": "# Enum CurveType\n\nDefines the various types of curves attached to shape edges or sketch segments.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\npublic enum CurveType\n```\n\n##### Remarks\n\nThis enum is available since v7.6.\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  BSpline |  B-spline.  |  \n \n|  Circle |  Circular arc.  |  \n \n|  Ellipse |  Elliptic arc.  |  \n \n|  Intersection |  Intersection curve (intersection between two surfaces, available since v7.12).  |  \n \n|  Line |  Straight line.  |  \n \n|  None |  No curve attached.  |  \n \n|  Polyline |  Polyline (available since v7.12).  |  \n \n|  SPCurve |  Surface parameter curve (defined by a 2D curve in a surface parameter space, available since v7.12).  |  \n \n|  Unclassified |  Unclassified type.  |\n",
+  "markdown": "markdown/kernel/fc529211109bb73c1b6e161b.md",
+  "originalHtml": "html/kernel/fc529211109bb73c1b6e161b.html"
+}

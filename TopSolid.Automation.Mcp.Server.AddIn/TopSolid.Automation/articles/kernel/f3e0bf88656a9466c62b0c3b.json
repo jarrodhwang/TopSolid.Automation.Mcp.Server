@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.CreateProjectFolder.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.CreateProjectFolder.html",
+  "sha256": "d11aeff7216699023ce785108e5e5fa989f2559019183d1a4729fb2e286e0644",
+  "text": "# Method CreateProjectFolder\n\n#### CreateProjectFolder(PdmProjectFolderId, string)\n\nCreates a project folder.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 9, 0, 0)]\nPdmProjectFolderId CreateProjectFolder(PdmProjectFolderId inProjectFolderId, string inFolderName)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmProjectFolderId |  inProjectFolderId |  Identifier of the project folder where the new project folder is to be created.  |  \n \n|  string |  inFolderName |  Name of the new project folder.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  PdmProjectFolderId |  Identifier of the created project folder.  |  \n\n##### Remarks\n\nIf creation fails, the returned identifier is empty.\n \nThis method must not be called between StartModification(string, bool) and EndModification(bool, bool) methods calls.\n \nThis method is available since v7.9.\n",
+  "markdown": "markdown/kernel/f3e0bf88656a9466c62b0c3b.md",
+  "originalHtml": "html/kernel/f3e0bf88656a9466c62b0c3b.html"
+}

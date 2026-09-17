@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IVisualization3D.GetDefaultDocumentPreviewParameters.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IVisualization3D.GetDefaultDocumentPreviewParameters.html",
+  "sha256": "94e61a19f17127899ec927008ca42804b74fa5cc0c64ba949ea459cd3b7b8e3c",
+  "text": "# Method GetDefaultDocumentPreviewParameters\n\n#### GetDefaultDocumentPreviewParameters(DocumentId, out int, out ElementId, out RenderMode)\n\nGets the document's default preview parameters.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 14, 300, 140)]\nvoid GetDefaultDocumentPreviewParameters(DocumentId inDocumentId, out int outSizeOfPreview, out ElementId outPreviewCamera, out RenderMode outPreviewRenderMode)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n \n|  int |  outSizeOfPreview |  Size of the preview.  |  \n \n|  ElementId |  outPreviewCamera |  Preview camera if the document is of Geometric type.  |  \n \n|  RenderMode |  outPreviewRenderMode |  Preview render mode if the document is of Geometric type.  |  \n\n##### Remarks\n\nThis method is available since v7.14.300.140.\n",
+  "markdown": "markdown/kernel/cd8a13fc6b8c32141694e3ff.md",
+  "originalHtml": "html/kernel/cd8a13fc6b8c32141694e3ff.html"
+}

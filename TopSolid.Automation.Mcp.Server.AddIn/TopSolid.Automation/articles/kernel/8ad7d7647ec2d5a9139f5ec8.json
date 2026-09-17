@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IApplication.EndJournaling.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IApplication.EndJournaling.html",
+  "sha256": "e5e98622324773389987713972be5022f431f2d16c79c1d7748595340ac3e75e",
+  "text": "# Method EndJournaling\n\n#### EndJournaling()\n\nEnds journaling.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nvoid EndJournaling()\n```\n\n##### Remarks\n\nThis method is available since v7.8.\n",
+  "markdown": "markdown/kernel/8ad7d7647ec2d5a9139f5ec8.md",
+  "originalHtml": "html/kernel/8ad7d7647ec2d5a9139f5ec8.html"
+}

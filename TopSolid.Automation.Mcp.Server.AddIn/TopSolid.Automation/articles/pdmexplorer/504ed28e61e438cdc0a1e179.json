@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.GetProjectFolderOwner.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.GetProjectFolderOwner.html",
+  "sha256": "44d75bd421065ff7aedbd2845534ac3e1edd3bddfa809a20cfc3e8cfb4b87746",
+  "text": "# Method GetProjectFolderOwner\n\n#### GetProjectFolderOwner(PdmProjectFolderId)\n\nGets the project folder containing a specified project folder.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nPdmProjectFolderId GetProjectFolderOwner(PdmProjectFolderId inProjectFolderId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmProjectFolderId |  inProjectFolderId |  Project folder identifier.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  PdmProjectFolderId |  Identifier of the project folder containing the specified project folder, or empty if none.  |  \n\n##### Remarks\n\nIf there is no owner, i.e. the specified project folder was a root, the returned identifier is empty.\n \nThis method is available since v7.10.\n",
+  "markdown": "markdown/pdmexplorer/504ed28e61e438cdc0a1e179.md",
+  "originalHtml": "html/pdmexplorer/504ed28e61e438cdc0a1e179.html"
+}

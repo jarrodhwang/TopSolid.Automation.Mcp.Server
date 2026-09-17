@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IOperations.GetCurrentCuttingConditionsAbacus.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IOperations.GetCurrentCuttingConditionsAbacus.html",
+  "sha256": "2120b534bdea8cbe143f2eced10c12adc70cfd731196dbb0141fb090a412ad37",
+  "text": "# Method GetCurrentCuttingConditionsAbacus\n\n#### GetCurrentCuttingConditionsAbacus(ElementId)\n\nGets the current cutting condition abacus of an operation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 14, 300, 144)]\nElementId GetCurrentCuttingConditionsAbacus(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the operation to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  The current cutting condition entity.  |\n",
+  "markdown": "markdown/cam/55bc0f196bb84369325a5946.md",
+  "originalHtml": "html/cam/55bc0f196bb84369325a5946.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.KeyValue.Empty.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.KeyValue.Empty.html",
+  "sha256": "29fc1833e6226ef03ea137f6617c7ba5af9cedcd8fb4a01f26e54830d044cab2",
+  "text": "# Field Empty\n\nEmpty key-value pair.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\npublic static readonly KeyValue Empty\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  KeyValue |  Empty key-value pair. |\n",
+  "markdown": "markdown/kernel/7f2ca22427f505caf6440ed8.md",
+  "originalHtml": "html/kernel/7f2ca22427f505caf6440ed8.html"
+}

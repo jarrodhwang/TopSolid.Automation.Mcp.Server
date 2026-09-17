@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartProfile2D.ItemLabel.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartProfile2D.ItemLabel.html",
+  "sha256": "8af992491dc7a3d61405dad5cfafb628d42d1fe31dbcfd7ee2c36db2cd41794b",
+  "text": "# Field ItemLabel\n\nProviding element item label, or empty if none.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic ItemLabel ItemLabel\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ItemLabel |  Providing element item label, or empty if none. |\n",
+  "markdown": "markdown/kernel/6aadd0268d13aafee4414726.md",
+  "originalHtml": "html/kernel/6aadd0268d13aafee4414726.html"
+}

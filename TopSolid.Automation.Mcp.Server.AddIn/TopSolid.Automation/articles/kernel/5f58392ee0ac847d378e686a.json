@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartFrame2D.ExtentYMin.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartFrame2D.ExtentYMin.html",
+  "sha256": "bd7300c786c7e72d275ad5151b511d5019139ecf4941f4d3cff69f5e020c599e",
+  "text": "# Field ExtentYMin\n\nMinimum Y frame coordinate of extent, or null if unknown.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic double? ExtentYMin\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double? |  Minimum Y frame coordinate of extent, or null if unknown. |\n",
+  "markdown": "markdown/kernel/5f58392ee0ac847d378e686a.md",
+  "originalHtml": "html/kernel/5f58392ee0ac847d378e686a.html"
+}

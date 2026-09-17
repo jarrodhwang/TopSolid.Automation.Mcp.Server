@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.PdmMinorRevisionId.Id.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.PdmMinorRevisionId.Id.html",
+  "sha256": "e4ad231081e6e1541725e7e6011df5b7ad44adf22e45877202e819e7bb95eb56",
+  "text": "# Property Id\n\n#### Id\n\nGets the PDM minor revision id.\n\n##### Declaration\n\n```\npublic string Id { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |   |\n",
+  "markdown": "markdown/kernel/8af679469f329d4c270ac228.md",
+  "originalHtml": "html/kernel/8af679469f329d4c270ac228.html"
+}

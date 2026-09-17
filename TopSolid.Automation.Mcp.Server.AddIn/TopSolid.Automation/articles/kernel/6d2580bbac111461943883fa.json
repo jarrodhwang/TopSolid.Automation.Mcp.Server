@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartPlane3D.OXY.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartPlane3D.OXY.html",
+  "sha256": "239fccbb745db8791912c79f6010022648c53779d3d75ce8ea75b9ec8f13b0f8",
+  "text": "# Field OXY\n\n(O,+X,+Y) absolute plane.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\npublic static readonly SmartPlane3D OXY\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartPlane3D |  (O,+X,+Y) absolute plane. |\n",
+  "markdown": "markdown/kernel/6d2580bbac111461943883fa.md",
+  "originalHtml": "html/kernel/6d2580bbac111461943883fa.html"
+}

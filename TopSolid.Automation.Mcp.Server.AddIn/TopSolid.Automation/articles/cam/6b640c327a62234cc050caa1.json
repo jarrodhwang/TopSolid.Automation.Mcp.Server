@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.ISimulation.StartAnimation.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.ISimulation.StartAnimation.html",
+  "sha256": "9a84af031795c9638d6b738a116a38298d3f5c798f16c98dc38962748975733d",
+  "text": "# Method StartAnimation\n\n#### StartAnimation()\n\nRun the animation on operations.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nvoid StartAnimation()\n```\n",
+  "markdown": "markdown/cam/6b640c327a62234cc050caa1.md",
+  "originalHtml": "html/cam/6b640c327a62234cc050caa1.html"
+}

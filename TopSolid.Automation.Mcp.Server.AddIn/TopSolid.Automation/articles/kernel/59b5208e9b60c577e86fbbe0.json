@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.DocumentProperty.Value.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.DocumentProperty.Value.html",
+  "sha256": "d44065a132be0d817af001d71e07c38e760606c112e04c697f6f03b5251d2829",
+  "text": "# Field Value\n\nThe value\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic DocumentId Value\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  DocumentId |  The value |\n",
+  "markdown": "markdown/kernel/59b5208e9b60c577e86fbbe0.md",
+  "originalHtml": "html/kernel/59b5208e9b60c577e86fbbe0.html"
+}

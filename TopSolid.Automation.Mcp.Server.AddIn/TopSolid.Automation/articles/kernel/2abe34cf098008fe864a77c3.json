@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IDocuments.EditedDocument.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IDocuments.EditedDocument.html",
+  "sha256": "b8a987ef99144a8af5c13a1e85d06c9dff4b9f68612699b16f92d8fba91613d7",
+  "text": "# Property EditedDocument\n\n#### EditedDocument\n\nGets or sets the document being edited.\n\n##### Declaration\n\n```\n[AvailableSinceVersion(7, 6, 0, 0)]\nDocumentId EditedDocument { get; set; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  DocumentId |   |  \n\n##### Remarks\n\nIf there is no document being edited, Empty is returned.\n \nThis property is available since v7.6.\n",
+  "markdown": "markdown/kernel/2abe34cf098008fe864a77c3.md",
+  "originalHtml": "html/kernel/2abe34cf098008fe864a77c3.html"
+}

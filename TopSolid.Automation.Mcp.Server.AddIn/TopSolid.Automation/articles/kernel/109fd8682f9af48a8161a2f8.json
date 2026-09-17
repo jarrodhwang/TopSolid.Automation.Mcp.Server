@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ITextures.SetWoodRingColor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ITextures.SetWoodRingColor.html",
+  "sha256": "2d2cacf18d0c4c0499bb743564a6d27b304f7c43bb5d61d1d08ce4c9af33d11c",
+  "text": "# Method SetWoodRingColor\n\n#### SetWoodRingColor(DocumentId, Color)\n\nSets the wood ring color.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 0, 0)]\nvoid SetWoodRingColor(DocumentId inDocumentId, Color inColor)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  Color |  inColor |  Wanted color.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.16.\n",
+  "markdown": "markdown/kernel/109fd8682f9af48a8161a2f8.md",
+  "originalHtml": "html/kernel/109fd8682f9af48a8161a2f8.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.SearchMinorRevisionBackReferences.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.SearchMinorRevisionBackReferences.html",
+  "sha256": "c91c86d419263ec6118dabb587bcc92fcd18f73df16c2bf5dcf44b1aaa498c22",
+  "text": "# Method SearchMinorRevisionBackReferences\n\n#### SearchMinorRevisionBackReferences(PdmObjectId, PdmMinorRevisionId)\n\nSearches all back references of a document minor revision.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 201, 140)]\nList<PdmMinorRevisionId> SearchMinorRevisionBackReferences(PdmObjectId inProjectId, PdmMinorRevisionId inMinorRevisionId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inProjectId |  Identifier of project to search inside, or empty for searching in all projects.  |  \n \n|  PdmMinorRevisionId |  inMinorRevisionId |  Identifier of the document minor revision to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<PdmMinorRevisionId> |  Back referenced minor revisions.  |  \n\n##### Remarks\n\nThis method is available since v7.7.201.140.\n",
+  "markdown": "markdown/kernel/df41fe541d425e0e6f779cc9.md",
+  "originalHtml": "html/kernel/df41fe541d425e0e6f779cc9.html"
+}

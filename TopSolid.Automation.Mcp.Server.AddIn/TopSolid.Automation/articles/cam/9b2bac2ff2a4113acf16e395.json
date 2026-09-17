@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.BlockStockType.Yplus.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.BlockStockType.Yplus.html",
+  "sha256": "592f64a3d3f8b6cf57e261d285ea58c4aab63b32119404ae607ab99b78fed517",
+  "text": "# Field Yplus\n\nY+.\n\n###### Namespace: TopSolid.Cam.NC.Kernel.Automating\n\n###### Assembly: TopSolid.Cam.NC.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic SmartReal Yplus\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartReal |  Y+. |\n",
+  "markdown": "markdown/cam/9b2bac2ff2a4113acf16e395.md",
+  "originalHtml": "html/cam/9b2bac2ff2a4113acf16e395.html"
+}

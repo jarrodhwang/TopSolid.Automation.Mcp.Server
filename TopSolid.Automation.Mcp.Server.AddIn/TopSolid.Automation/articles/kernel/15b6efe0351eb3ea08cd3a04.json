@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IEntities.GetFunctionDefinition.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IEntities.GetFunctionDefinition.html",
+  "sha256": "6c539cc58add5769d4584a7b461b7199b88b3ab65a787cb27834a99f593ba29e",
+  "text": "# Method GetFunctionDefinition\n\n#### GetFunctionDefinition(ElementId)\n\nGets the definition of a function entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nDocumentId GetFunctionDefinition(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the function entity to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  DocumentId |  Identifier of the corresponding function definition document.  |  \n\n##### Remarks\n\nThis method is available since v7.8.\n",
+  "markdown": "markdown/kernel/15b6efe0351eb3ea08cd3a04.md",
+  "originalHtml": "html/kernel/15b6efe0351eb3ea08cd3a04.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IStaticOperations.AddPoint.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IStaticOperations.AddPoint.html",
+  "sha256": "05467cff8c1f57f24530deaa5f074b4265498d469c7bd3e7aedc5cd99b62b4e5",
+  "text": "# Method AddPoint\n\n#### AddPoint(ElementExId, PathPoint)\n\nAdds one point to the tool path.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nvoid AddPoint(ElementExId inOperation, PathPoint inPoint)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementExId |  inOperation |  Operation to modify.  |  \n \n|  PathPoint |  inPoint |   |\n",
+  "markdown": "markdown/cam/2d485549e0db7f6873d6f018.md",
+  "originalHtml": "html/cam/2d485549e0db7f6873d6f018.html"
+}

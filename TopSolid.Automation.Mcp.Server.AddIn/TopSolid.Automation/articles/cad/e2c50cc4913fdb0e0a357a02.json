@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMultiLayer.IsBottomCoatingLikeTop.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMultiLayer.IsBottomCoatingLikeTop.html",
+  "sha256": "18fd76aea2e2e8d47ee695e18bb5a115db04f3645dc84d38ffc0b63a00ee2b2a",
+  "text": "# Method IsBottomCoatingLikeTop\n\n#### IsBottomCoatingLikeTop(DocumentId)\n\nTells if bottom coating is like top\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 0, 0)]\nbool? IsBottomCoatingLikeTop(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool? |  True if bottom is like top, otherwise false  |  \n\n##### Remarks\n\nThis method is available since v7.19.\n",
+  "markdown": "markdown/cad/e2c50cc4913fdb0e0a357a02.md",
+  "originalHtml": "html/cad/e2c50cc4913fdb0e0a357a02.html"
+}

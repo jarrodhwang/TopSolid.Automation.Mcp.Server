@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ILayers.IsLayer.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ILayers.IsLayer.html",
+  "sha256": "367aa4843ced92044e75e929752feb6ede7d4020dde21e3679b9c75ab14766be",
+  "text": "# Method IsLayer\n\n#### IsLayer(ElementId)\n\nTells whether an Element is a layer.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 18, 0, 0)]\nbool IsLayer(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the Element to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  true if element is actually a layer  |  \n\n##### Remarks\n\nThis method is available since v7.18.\n",
+  "markdown": "markdown/kernel/cde806dfc0b02b784195a42d.md",
+  "originalHtml": "html/kernel/cde806dfc0b02b784195a42d.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.TopSolidDesignHostInstance.Tools.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.TopSolidDesignHostInstance.Tools.html",
+  "sha256": "5679eb06f70d49103940bba14a2ef007c8b725706cbdf4a102893fa6aec401bd",
+  "text": "# Property Tools\n\n#### Tools\n\nGets access to tools, or null if not connected.\n\n##### Declaration\n\n```\npublic ITools Tools { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ITools |   |\n",
+  "markdown": "markdown/cad/b969cabc5d2f15c4d1b85820.md",
+  "originalHtml": "html/cad/b969cabc5d2f15c4d1b85820.html"
+}

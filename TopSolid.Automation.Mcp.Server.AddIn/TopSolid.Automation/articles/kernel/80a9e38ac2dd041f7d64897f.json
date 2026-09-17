@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.SearchDocumentByName.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.SearchDocumentByName.html",
+  "sha256": "41f08cb6921319dcfa7a7d929ba0753f7623df6487e4a37bbb23c079c3123cf5",
+  "text": "# Method SearchDocumentByName\n\n#### SearchDocumentByName(PdmObjectId, string)\n\nSearches for a document by its name.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nList<PdmObjectId> SearchDocumentByName(PdmObjectId inProjectId, string inDocumentName)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inProjectId |  Project PDM object identifier, or empty for searching in all projects.  |  \n \n|  string |  inDocumentName |  Document name.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<PdmObjectId> |  PDM object identifiers of documents corresponding to the searched name.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/80a9e38ac2dd041f7d64897f.md",
+  "originalHtml": "html/kernel/80a9e38ac2dd041f7d64897f.html"
+}

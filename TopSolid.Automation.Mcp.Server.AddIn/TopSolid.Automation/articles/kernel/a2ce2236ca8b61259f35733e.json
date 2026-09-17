@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Vector2D.Norm.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Vector2D.Norm.html",
+  "sha256": "3cb0dbe8820db7310e9aff35728148d089befcafe2b2531d145dc84028738a33",
+  "text": "# Property Norm\n\n#### Norm\n\nGets the vector's norm.\n\n##### Declaration\n\n```\npublic double Norm { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double |  Vector's norm.  |\n",
+  "markdown": "markdown/kernel/a2ce2236ca8b61259f35733e.md",
+  "originalHtml": "html/kernel/a2ce2236ca8b61259f35733e.html"
+}

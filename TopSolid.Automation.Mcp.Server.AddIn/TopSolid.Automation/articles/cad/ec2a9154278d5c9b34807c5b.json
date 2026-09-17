@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IAssemblies.IsPositioningUnderconstrained.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IAssemblies.IsPositioningUnderconstrained.html",
+  "sha256": "50ef3885a977508c15590c8878eaf3b5de47affabe8c042a624e51bd7fc47452",
+  "text": "# Method IsPositioningUnderconstrained\n\n#### IsPositioningUnderconstrained(ElementId)\n\nTells if a positioning operation is underconstrained.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 400, 121)]\nbool IsPositioningUnderconstrained(ElementId inPositioning)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inPositioning |  Positioning Operation  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  true if underconstrained.  |\n",
+  "markdown": "markdown/cad/ec2a9154278d5c9b34807c5b.md",
+  "originalHtml": "html/cad/ec2a9154278d5c9b34807c5b.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/electrode/TopSolid.Cad.Electrode.Automating.IElectrodes.GetElectrodeGaps.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/electrode/TopSolid.Cad.Electrode.Automating.IElectrodes.GetElectrodeGaps.html",
+  "sha256": "3f586b5f6d356a94445d6fcd494c09c811afdb834bb3f597b7fcaaea8ff3d124",
+  "text": "# Method GetElectrodeGaps\n\n#### GetElectrodeGaps(ElementId)\n\nGets gap parameter entities of an electrode.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 12, 0, 0)]\nList<ElementId> GetElectrodeGaps(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the electrode to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementId> |  Gap parameter entities found.  |  \n\n##### Remarks\n\nThis method is available since v7.12.\n",
+  "markdown": "markdown/electrode/20850a3d162cbd55ccc9d8dc.md",
+  "originalHtml": "html/electrode/20850a3d162cbd55ccc9d8dc.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IAssemblies.DerivePartForModification.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IAssemblies.DerivePartForModification.html",
+  "sha256": "8acafdf5e2c4270556c085b9e589ee36e13ea82fedcfbb4e85eb7e9dbca4d11f",
+  "text": "# Method DerivePartForModification\n\n#### DerivePartForModification(ElementId, bool)\n\nDerives a part for modification in an assembly.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nDocumentId DerivePartForModification(ElementId inOccurrenceId, bool inUseDefaultTemplate)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inOccurrenceId |  Identifier of the occurrence of the part to derive in the assembly document.  |  \n \n|  bool |  inUseDefaultTemplate |  Tells whether to use the default template if present.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  DocumentId |  Derived part document identifier.  |  \n\n##### Remarks\n\nThe occurrence of the part must be in the parts folder of the assembly, or at the first level of an assembly occurrence that is in the parts folder of the assembly (in which case a derived sub-assembly will also be created).\n \nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.10.\n",
+  "markdown": "markdown/cad/834730fbbc2dfbef7ec0b61f.md",
+  "originalHtml": "html/cad/834730fbbc2dfbef7ec0b61f.html"
+}

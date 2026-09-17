@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IEntities.GetOccurrenceDefinition.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IEntities.GetOccurrenceDefinition.html",
+  "sha256": "53bf6dd1503c93f3bf51d80957c9234ab03fa93279efe8b721c69ba817625678",
+  "text": "# Method GetOccurrenceDefinition\n\n#### GetOccurrenceDefinition(ElementId)\n\nGets the definition entity of an occurrence entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nElementId GetOccurrenceDefinition(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the entity to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the definition entity of the occurrence.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/a29a948697df617669d3c20b.md",
+  "originalHtml": "html/kernel/a29a948697df617669d3c20b.html"
+}

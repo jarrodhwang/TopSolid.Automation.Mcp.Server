@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IApplication.GetImporterOptions.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IApplication.GetImporterOptions.html",
+  "sha256": "b60cf819a51cc85f6b4313762ca30962e458519680366c43ada9cac334cf837c",
+  "text": "# Method GetImporterOptions\n\n#### GetImporterOptions(int)\n\nGets the options of an importer.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nList<KeyValue> GetImporterOptions(int inImporterIx)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  int |  inImporterIx |  Index of importer to analyze, within [0, ImporterCount-1].  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<KeyValue> |  Importer options.  |  \n\n##### Remarks\n\nThis method is available since v7.8.\n",
+  "markdown": "markdown/kernel/e1411ccd934aa13b617ec9d5.md",
+  "originalHtml": "html/kernel/e1411ccd934aa13b617ec9d5.html"
+}

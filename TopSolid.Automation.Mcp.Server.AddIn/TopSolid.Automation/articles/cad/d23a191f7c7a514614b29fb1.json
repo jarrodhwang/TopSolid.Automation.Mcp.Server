@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMaterials.GetCategory.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMaterials.GetCategory.html",
+  "sha256": "cac9b1fedf7e25516b646ae2af1a932b8e0eab1785b194e19c0fb0ed94d0025d",
+  "text": "# Method GetCategory\n\n#### GetCategory(DocumentId)\n\nGets the material category of a material document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 0, 0)]\nMaterialCategoryType GetCategory(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  MaterialCategoryType |  The material category.  |  \n\n##### Remarks\n\nThis method is available since v7.16.\n",
+  "markdown": "markdown/cad/d23a191f7c7a514614b29fb1.md",
+  "originalHtml": "html/cad/d23a191f7c7a514614b29fb1.html"
+}

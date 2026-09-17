@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IPrograms.SetEnding.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IPrograms.SetEnding.html",
+  "sha256": "b969546c51e727674b409fc78d41b2295e48c9434c54b53bd9605b414ab9d718",
+  "text": "# Method SetEnding\n\n#### SetEnding(ElementId, SmartText)\n\nSet program ending.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 180)]\nvoid SetEnding(ElementId inProgramId, SmartText inEnding)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inProgramId |  Identifier of the NC program to modify.  |  \n \n|  SmartText |  inEnding |  Program ending.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n",
+  "markdown": "markdown/cam/d1c9374d4c9fb0d46f7a37db.md",
+  "originalHtml": "html/cam/d1c9374d4c9fb0d46f7a37db.html"
+}

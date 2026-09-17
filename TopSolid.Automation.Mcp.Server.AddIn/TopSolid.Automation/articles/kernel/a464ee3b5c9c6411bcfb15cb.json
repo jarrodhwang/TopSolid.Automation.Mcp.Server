@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.PdmMinorRevisionId.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.PdmMinorRevisionId.html",
+  "sha256": "83482b9460897efee3a6332d83a9fb6103e693cea5b39abb1c34760c5ec50d54",
+  "text": "# Struct PdmMinorRevisionId\n\nRepresents a PDM minor revision id.\n\n##### Inherited Members\n \n ValueType.Equals(object) \n \n ValueType.GetHashCode() \n \n ValueType.ToString() \n \n object.Equals(object, object) \n \n object.ReferenceEquals(object, object) \n \n object.GetType() \n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\npublic struct PdmMinorRevisionId\n```\n\n##### Remarks\n\nThis structure is available since v7.6.\n\n### Constructors \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   PdmMinorRevisionId(string)  |  Initializes a new instance of the PdmMinorRevisionId structure.  |  \n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   Empty  |  Empty identifier.  |  \n\n### Properties \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   Id  |  Gets the PDM minor revision id.  |  \n \n|   IsEmpty  |  Tells whether the minor revision id is empty.  |\n",
+  "markdown": "markdown/kernel/a464ee3b5c9c6411bcfb15cb.md",
+  "originalHtml": "html/kernel/a464ee3b5c9c6411bcfb15cb.html"
+}

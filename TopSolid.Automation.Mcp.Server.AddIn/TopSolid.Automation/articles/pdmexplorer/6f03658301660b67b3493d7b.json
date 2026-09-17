@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.PdmLifeCycleMainState.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.PdmLifeCycleMainState.html",
+  "sha256": "692457a3ef20e6156852cf2a0782ddb627e771f8b54f901a3379e658043fa1c7",
+  "text": "# Enum PdmLifeCycleMainState\n\nThis enumeration represents the different life cycle main states of an item major revision.\n\n###### Namespace: TopSolid.Pdm.Explorer.Automating\n\n###### Assembly: TopSolid.Pdm.Explorer.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\npublic enum PdmLifeCycleMainState : byte\n```\n\n##### Remarks\n\nThis enum is available since v7.7.\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  Deleted |  Deleted state.  |  \n \n|  Design |  Design state.  |  \n \n|  None |  No state.  |  \n \n|  Obsolete |  Obsolete state.  |  \n \n|  Validated |  Validated state.  |\n",
+  "markdown": "markdown/pdmexplorer/6f03658301660b67b3493d7b.md",
+  "originalHtml": "html/pdmexplorer/6f03658301660b67b3493d7b.html"
+}

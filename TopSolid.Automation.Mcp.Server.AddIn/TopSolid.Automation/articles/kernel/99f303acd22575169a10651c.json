@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartProfile2D.Type.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartProfile2D.Type.html",
+  "sha256": "10a659a427f3084d268a8f271227df67e6869deaff61b4672d01787f04b712bf",
+  "text": "# Field Type\n\nType of profile.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic SmartProfile2DType Type\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartProfile2DType |  Type of profile. |\n",
+  "markdown": "markdown/kernel/99f303acd22575169a10651c.md",
+  "originalHtml": "html/kernel/99f303acd22575169a10651c.html"
+}

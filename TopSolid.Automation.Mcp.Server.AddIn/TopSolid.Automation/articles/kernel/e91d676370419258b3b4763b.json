@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ISketches2D.GetSections.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ISketches2D.GetSections.html",
+  "sha256": "d4e9427a205a0fb58b21bffa9c95fc4f0cfa88df239f5a82a16255005babee31",
+  "text": "# Method GetSections\n\n#### GetSections(ElementId)\n\nGets the sections of a sketch.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nList<ElementItemId> GetSections(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the sketch entity to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementItemId> |  Identifiers of the sections of the sketch.  |  \n\n##### Remarks\n\nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/e91d676370419258b3b4763b.md",
+  "originalHtml": "html/kernel/e91d676370419258b3b4763b.html"
+}

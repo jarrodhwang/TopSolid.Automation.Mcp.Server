@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.AnnotationType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.AnnotationType.html",
+  "sha256": "da34827cbe2f97bd1675bbd3df10f2e813d630c07dd4651ec416d9e1e130ff2b",
+  "text": "# Enum AnnotationType\n\nDefines the various types of annotations.\n\n###### Namespace: TopSolid.Cad.Drafting.Automating\n\n###### Assembly: TopSolid.Cad.Drafting.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 17, 0, 0)]\npublic enum AnnotationType\n```\n\n##### Remarks\n\nThis enum is available since v7.17.000.000.\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  AngularDimension |  Angular Dimension .  |  \n \n|  ArcLengthDimension |  Arc Length Dimension.  |  \n \n|  ChamferDimension |  Chamfer Dimension.  |  \n \n|  CircleDimension |  Circle Dimension .  |  \n \n|  ConeNote |  Cone Note.  |  \n \n|  CoordinateDimension |  Coordinate Dimension .  |  \n \n|  CurvatureDimension |  Curvature Dimension .  |  \n \n|  DrillingNote |  Drilling Note.  |  \n \n|  EdgeState |  Edge State.  |  \n \n|  LinearDimension |  Linear Dimension .  |  \n \n|  None |  Not an annotation.  |  \n \n|  SurfaceFinish |  Surface Finish.  |  \n \n|  Unclassified |  Unclassified type.  |\n",
+  "markdown": "markdown/drafting/32fa68516072494708472b71.md",
+  "originalHtml": "html/drafting/32fa68516072494708472b71.html"
+}

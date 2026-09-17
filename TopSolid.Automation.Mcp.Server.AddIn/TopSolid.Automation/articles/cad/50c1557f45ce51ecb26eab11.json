@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IAssemblies.GetLocalizedDriverName.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IAssemblies.GetLocalizedDriverName.html",
+  "sha256": "e08070d7009b83e5794463b736a858281781f0a7cf061e0ef97d5227f8367471",
+  "text": "# Method GetLocalizedDriverName\n\n#### GetLocalizedDriverName(ElementId, string, CultureInfo)\n\nGets localized driver name in target culture.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 400, 121)]\nstring GetLocalizedDriverName(ElementId inOperationId, string inDriverName, CultureInfo inCultureInfo)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inOperationId |  Inclusion operation  |  \n \n|  string |  inDriverName |  Name of the driver to localize  |  \n \n|  CultureInfo |  inCultureInfo |  Culture information  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  the localized driver name. If no localized name is found, the original driver name is returned.  |\n",
+  "markdown": "markdown/cad/50c1557f45ce51ecb26eab11.md",
+  "originalHtml": "html/cad/50c1557f45ce51ecb26eab11.html"
+}

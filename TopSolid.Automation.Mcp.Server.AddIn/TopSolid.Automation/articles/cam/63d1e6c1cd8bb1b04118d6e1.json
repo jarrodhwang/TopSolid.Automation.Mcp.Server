@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.TopSolidCamHost.Connect.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.TopSolidCamHost.Connect.html",
+  "sha256": "0d9c27c16b1cf43025d3c43c11a02d6c4daf8b3364d9d0716446389e19d9edb1",
+  "text": "# Method Connect\n\n#### Connect()\n\nConnects to TopSolid Cam application.\n\n##### Declaration\n\n```\npublic static void Connect()\n```\n",
+  "markdown": "markdown/cam/63d1e6c1cd8bb1b04118d6e1.md",
+  "originalHtml": "html/cam/63d1e6c1cd8bb1b04118d6e1.html"
+}

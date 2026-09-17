@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.GetDocumentParameterPossibleValues.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.GetDocumentParameterPossibleValues.html",
+  "sha256": "eb7da5bda565b832a04ac7374329bedea8a7475d8556c167b0fa236b32c7f749",
+  "text": "# Method GetDocumentParameterPossibleValues\n\n#### GetDocumentParameterPossibleValues(ElementId)\n\nGets the document parameter possibles values.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 17, 0, 0)]\nList<DocumentProperty> GetDocumentParameterPossibleValues(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the parameter.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<DocumentProperty> |  The possibles values.  |  \n\n##### Remarks\n\nThis method must be used for Document parameter such as Material or Coating documents.\n \nThis method is available since v7.17.000.000.\n",
+  "markdown": "markdown/kernel/648d6c8688e291034fd4d903.md",
+  "originalHtml": "html/kernel/648d6c8688e291034fd4d903.html"
+}

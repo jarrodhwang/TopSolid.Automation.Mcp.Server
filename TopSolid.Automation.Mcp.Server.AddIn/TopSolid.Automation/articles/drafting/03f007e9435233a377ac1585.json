@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.IDimensions.GetDimensionNormalStyle.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.IDimensions.GetDimensionNormalStyle.html",
+  "sha256": "1220548d72a3192c99d454d54877dac4840df450370101cd1badc08b6fad4a9a",
+  "text": "# Method GetDimensionNormalStyle\n\n#### GetDimensionNormalStyle(ElementId)\n\nGets the normal style dedicated to the specified dimension entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 255, 0)]\nElementId GetDimensionNormalStyle(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Dimension to get the normal style of.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Dimension normal style entity.  |\n",
+  "markdown": "markdown/drafting/03f007e9435233a377ac1585.md",
+  "originalHtml": "html/drafting/03f007e9435233a377ac1585.html"
+}

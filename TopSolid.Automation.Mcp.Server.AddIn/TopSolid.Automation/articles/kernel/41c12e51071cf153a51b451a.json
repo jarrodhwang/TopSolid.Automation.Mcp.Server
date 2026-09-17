@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.GetManufacturerParameter.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.GetManufacturerParameter.html",
+  "sha256": "c13a00f2ec08a30bb280588ce84a0ece4ddc12603f629fea0207762159b4e3b1",
+  "text": "# Method GetManufacturerParameter\n\n#### GetManufacturerParameter(DocumentId)\n\nGets the manufacturer parameter entity of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nElementId GetManufacturerParameter(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the manufacturer parameter entity found.  |  \n\n##### Remarks\n\nThe manufacturer parameter is a text parameter, its value may be obtained and modified using the GetTextValue(ElementId) and SetTextValue(ElementId, string) methods.\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/41c12e51071cf153a51b451a.md",
+  "originalHtml": "html/kernel/41c12e51071cf153a51b451a.html"
+}

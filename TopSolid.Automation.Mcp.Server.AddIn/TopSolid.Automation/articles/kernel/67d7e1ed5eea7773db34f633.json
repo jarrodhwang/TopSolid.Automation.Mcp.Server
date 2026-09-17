@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.PublishReal.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.PublishReal.html",
+  "sha256": "938ff754295d8401c7c8848e281214f71907a6f4e7aa7c91e6edc0a0c1a21e16",
+  "text": "# Method PublishReal\n\n#### PublishReal(DocumentId, string, SmartReal)\n\nCreates a real publishing entity in a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nElementId PublishReal(DocumentId inDocumentId, string inDescription, SmartReal inDefinition)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  string |  inDescription |  Publishing description.  |  \n \n|  SmartReal |  inDefinition |  Publishing definition.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the created publishing entity.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.8.\n",
+  "markdown": "markdown/kernel/67d7e1ed5eea7773db34f633.md",
+  "originalHtml": "html/kernel/67d7e1ed5eea7773db34f633.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartPoint2D.P0.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartPoint2D.P0.html",
+  "sha256": "6ac29164ac56f5add8e5c35320d134379bcef0b30886d68fd49f49516f75cc21",
+  "text": "# Field P0\n\nOrigin point, i.e. (0,0).\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\npublic static readonly SmartPoint2D P0\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartPoint2D |  Origin point, i.e. (0,0). |\n",
+  "markdown": "markdown/kernel/2ae280ece22f5555d7c8310e.md",
+  "originalHtml": "html/kernel/2ae280ece22f5555d7c8310e.html"
+}

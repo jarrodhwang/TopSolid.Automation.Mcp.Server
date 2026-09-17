@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.GetBOMData.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.GetBOMData.html",
+  "sha256": "1f94a5d78c6c0797961621df9f788648ef726bfc578216196da461a900b89577",
+  "text": "# Method GetBOMData\n\n#### GetBOMData(PdmObjectId, out List<string>, out List<int>, out List<BomNode>)\n\nExports a document to a Babylon file.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nvoid GetBOMData(PdmObjectId inDocumentId, out List<string> outBomColumns, out List<int> outBomColumnWidths, out List<BomNode> outBomNodes)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inDocumentId |  Document identifier.  |  \n \n|  List<string> |  outBomColumns |  BOM columns.  |  \n \n|  List<int> |  outBomColumnWidths |  Widths of BOM columns.  |  \n \n|  List<BomNode> |  outBomNodes |  BOM nodes.  |  \n\n##### Remarks\n\nThis method is available since v7.10.300.080.\n",
+  "markdown": "markdown/pdmexplorer/7c0705b4b63e4801d62d5857.md",
+  "originalHtml": "html/pdmexplorer/7c0705b4b63e4801d62d5857.html"
+}

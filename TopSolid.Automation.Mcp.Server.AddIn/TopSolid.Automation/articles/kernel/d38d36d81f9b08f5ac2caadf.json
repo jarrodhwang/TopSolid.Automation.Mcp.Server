@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.TopSolidHostInstance.HandleDocumentsEvents.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.TopSolidHostInstance.HandleDocumentsEvents.html",
+  "sha256": "4db076d299ae58ebf7257ff90f866a8169545a1ee74594c683e4d8553c17ff0f",
+  "text": "# Method HandleDocumentsEvents\n\n#### HandleDocumentsEvents(Type)\n\nStarts documents events handling.\n\n##### Declaration\n\n```\npublic void HandleDocumentsEvents(Type inClassType)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  Type |  inClassType |  Type of class implementing IDocumentsEvents interface.  |  \n\n##### Remarks\n\nTo handle documents events, one needs to make a class implementing IDocumentsEvents interface, and call this method with that type in the inClassType argument.\n \nThis method creates a new service host, returned afterwards by the DocumentsEventsHost property.\n \nThis method then subscribes to documents events using the SubscribeToEvents(int, string) method.\n \nThis method may only be called when connected to TopSolid, otherwise an exception is thrown.\n",
+  "markdown": "markdown/kernel/d38d36d81f9b08f5ac2caadf.md",
+  "originalHtml": "html/kernel/d38d36d81f9b08f5ac2caadf.html"
+}

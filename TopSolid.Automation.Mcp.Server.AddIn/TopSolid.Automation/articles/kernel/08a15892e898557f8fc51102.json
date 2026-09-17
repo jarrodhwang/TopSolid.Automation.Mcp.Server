@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IOperations.HasInactiveOwner.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IOperations.HasInactiveOwner.html",
+  "sha256": "df4f4a2d74feb42dd78f4db6102c940275def0c8cf3ae68734f5fa8f902b53ab",
+  "text": "# Method HasInactiveOwner\n\n#### HasInactiveOwner(ElementId)\n\nTells whether an operation owner is not active, or the owner of its owner,...\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 12, 0, 0)]\nbool HasInactiveOwner(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the operation to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  The operation has a direct or indirect inactive owner.  |  \n\n##### Remarks\n\nThis method is available since v7.12.\n",
+  "markdown": "markdown/kernel/08a15892e898557f8fc51102.md",
+  "originalHtml": "html/kernel/08a15892e898557f8fc51102.html"
+}

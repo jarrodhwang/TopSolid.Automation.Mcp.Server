@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IGeometries2D.PublishAxis.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IGeometries2D.PublishAxis.html",
+  "sha256": "5b1b6e845d719bc57553f2c468bac914ce88c485d4c3f62bac2324ac9c4e1658",
+  "text": "# Method PublishAxis\n\n#### PublishAxis(DocumentId, string, SmartAxis2D)\n\nCreates an axis publishing entity in a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nElementId PublishAxis(DocumentId inDocumentId, string inDescription, SmartAxis2D inDefinition)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  string |  inDescription |  Publishing description.  |  \n \n|  SmartAxis2D |  inDefinition |  Publishing definition.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the created publishing entity.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.8.\n",
+  "markdown": "markdown/kernel/168d5c497ac32dfca5b89827.md",
+  "originalHtml": "html/kernel/168d5c497ac32dfca5b89827.html"
+}

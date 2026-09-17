@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.TopSolidPdmExplorerHost.PdmWorkflow.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.TopSolidPdmExplorerHost.PdmWorkflow.html",
+  "sha256": "ff239caa169ebe750ca02993fb9bc3797eeb9e025a119754d2c610592dd449e9",
+  "text": "# Property PdmWorkflow\n\n#### PdmWorkflow\n\nGets access to the PDM administration, or null if not available.\n\n##### Declaration\n\n```\npublic static IPdmWorkflow PdmWorkflow { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  IPdmWorkflow |   |\n",
+  "markdown": "markdown/pdmexplorer/1527552e1dbf1b3ba7cbaeea.md",
+  "originalHtml": "html/pdmexplorer/1527552e1dbf1b3ba7cbaeea.html"
+}

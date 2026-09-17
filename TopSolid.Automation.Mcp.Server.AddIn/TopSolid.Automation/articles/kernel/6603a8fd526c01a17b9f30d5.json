@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Frame2D.YDirection.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Frame2D.YDirection.html",
+  "sha256": "d5b937523452d3829968d750a9afcc1e9d8b6c7afe831887799ce9162656149e",
+  "text": "# Field YDirection\n\nFrame Y direction, orthogonal to XDirection.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic Direction2D YDirection\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Direction2D |  Frame Y direction, orthogonal to XDirection. |\n",
+  "markdown": "markdown/kernel/6603a8fd526c01a17b9f30d5.md",
+  "originalHtml": "html/kernel/6603a8fd526c01a17b9f30d5.html"
+}

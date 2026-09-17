@@ -1,0 +1,8 @@
+{
+  "path": "api/wire/TopSolid.Cam.NC.Wire.Automating.IWireTechnologies.SetRegimeNumber.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/wire/TopSolid.Cam.NC.Wire.Automating.IWireTechnologies.SetRegimeNumber.html",
+  "sha256": "d6149c98e03c23574725761a1e4613a8830ded4e925ffe2e575ca45b1fefdb55",
+  "text": "# Method SetRegimeNumber\n\n#### SetRegimeNumber(ElementId, SmartInteger)\n\nSet regime number.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 160)]\nvoid SetRegimeNumber(ElementId inTechnologyId, SmartInteger inRegimeNumber)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inTechnologyId |  Identifier of the technology to modify.  |  \n \n|  SmartInteger |  inRegimeNumber |  Regime number.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n",
+  "markdown": "markdown/wire/fd9e189e6241793769cc68a2.md",
+  "originalHtml": "html/wire/fd9e189e6241793769cc68a2.html"
+}

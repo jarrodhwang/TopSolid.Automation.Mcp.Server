@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.GetEnumerationDefinitions.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.GetEnumerationDefinitions.html",
+  "sha256": "7917390d6d14e4ff61e3652c35a0de199d8026558e673d81bca8f42ed8347976",
+  "text": "# Method GetEnumerationDefinitions\n\n#### GetEnumerationDefinitions(out List<Guid>, out List<string>)\n\nGets the available enumeration definitions.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nvoid GetEnumerationDefinitions(out List<Guid> outGuids, out List<string> outNames)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  List<Guid> |  outGuids |  GUIDs of the available classes defining an enumeration.  |  \n \n|  List<string> |  outNames |  Localized names of the classes.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/0f62ba5941b0fc0001307779.md",
+  "originalHtml": "html/kernel/0f62ba5941b0fc0001307779.html"
+}

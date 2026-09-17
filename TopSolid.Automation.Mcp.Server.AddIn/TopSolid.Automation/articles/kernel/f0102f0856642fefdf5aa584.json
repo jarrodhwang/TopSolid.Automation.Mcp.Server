@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ITextures.SetTextureScale.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ITextures.SetTextureScale.html",
+  "sha256": "c72b79714b5eeb13ec6330856def938efb700a278276de8a4dab47341c527780",
+  "text": "# Method SetTextureScale\n\n#### SetTextureScale(DocumentId, double)\n\nSets the texture scale.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 0, 0)]\nvoid SetTextureScale(DocumentId inDocumentId, double inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  double |  inValue |  Wanted value.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.16.\n",
+  "markdown": "markdown/kernel/f0102f0856642fefdf5aa584.md",
+  "originalHtml": "html/kernel/f0102f0856642fefdf5aa584.html"
+}

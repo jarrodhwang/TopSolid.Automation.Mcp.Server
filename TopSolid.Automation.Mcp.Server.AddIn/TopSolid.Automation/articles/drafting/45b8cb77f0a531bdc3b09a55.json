@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.IDraftings.CreateLinearDimensionBetweenTwoPoints.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.IDraftings.CreateLinearDimensionBetweenTwoPoints.html",
+  "sha256": "eefa9e7f40b0fdfd7f6fbfc99f88341edcc8274cd8987cc2d9efd10e39bb8ce8",
+  "text": "# Method CreateLinearDimensionBetweenTwoPoints\n\n#### CreateLinearDimensionBetweenTwoPoints(ElementId, Point2D, Point2D, Direction2D, string, string)\n\nOBSOLETE - Creates a linear dimension using two points.\n\n##### Declaration\n\n```\n[Obsolete(\"Since v7.20.255.0, linear dimension creation is done using IDimensions interface.\")]\nElementId CreateLinearDimensionBetweenTwoPoints(ElementId inElementId, Point2D inFirstPoint, Point2D inSecondPoint, Direction2D inDirection, string inPrefix, string inSuffix)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Drafting view id.  |  \n \n|  Point2D |  inFirstPoint |  First point of the dimension.  |  \n \n|  Point2D |  inSecondPoint |  Second point of the dimension.  |  \n \n|  Direction2D |  inDirection |  Display vector of the dimension.  |  \n \n|  string |  inPrefix |  Prefix to add, or empty if no prefix.  |  \n \n|  string |  inSuffix |  Suffix to add, or empty if no suffix.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |   |  \n\n##### Remarks\n\nThis method is available since v7.19.\n",
+  "markdown": "markdown/drafting/45b8cb77f0a531bdc3b09a55.md",
+  "originalHtml": "html/drafting/45b8cb77f0a531bdc3b09a55.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ITextures.GetVerticalScale.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ITextures.GetVerticalScale.html",
+  "sha256": "879161579c7c092e5b356d21086e4e9ff8b48b3f69bc95244cd396e348ec90d7",
+  "text": "# Method GetVerticalScale\n\n#### GetVerticalScale(DocumentId)\n\nGets the vertical scale.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 400, 100)]\ndouble GetVerticalScale(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyse.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double |   |  \n\n##### Remarks\n\nThis method must be called for Cylindrical or RedWay type.\n \nThis method is available since v7.16.\n",
+  "markdown": "markdown/kernel/98fc79b2985de6ac115dfd0b.md",
+  "originalHtml": "html/kernel/98fc79b2985de6ac115dfd0b.html"
+}

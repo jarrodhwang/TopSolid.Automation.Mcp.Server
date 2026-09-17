@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IParts.SetMachiningProcessOperationDrivers.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IParts.SetMachiningProcessOperationDrivers.html",
+  "sha256": "5a180b7e4c522bbde859a6a69e991f951e2c142db64c900b5fbab1af848abde8",
+  "text": "# Method SetMachiningProcessOperationDrivers\n\n#### SetMachiningProcessOperationDrivers(ElementId, List<string>, List<SmartObject>, List<ElementItemId>, List<SmartPoint3D>, List<ElementId>)\n\nSets the machining process with driver values.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 0, 0)]\nvoid SetMachiningProcessOperationDrivers(ElementId inElementId, List<string> inDriverDesignations, List<SmartObject> inDriverValues, List<ElementItemId> inFaceIdValues, List<SmartPoint3D> inPointValues, List<ElementId> inToleranceValues)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Existing machining Process Operation to modify  |  \n \n|  List<string> |  inDriverDesignations |  Driver designations.  |  \n \n|  List<SmartObject> |  inDriverValues |  Smart Object Driver values.  |  \n \n|  List<ElementItemId> |  inFaceIdValues |  Face ids  |  \n \n|  List<SmartPoint3D> |  inPointValues |  Smart Points values.  |  \n \n|  List<ElementId> |  inToleranceValues |  Tolerance drivers values.  |  \n\n##### Remarks\n\nThis method is available since v7.19.\n",
+  "markdown": "markdown/cad/51dd6e5165d8ec7fbab8c150.md",
+  "originalHtml": "html/cad/51dd6e5165d8ec7fbab8c150.html"
+}

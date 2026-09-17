@@ -1,0 +1,8 @@
+{
+  "path": "api/cae/TopSolid.Cae.Kernel.Automating.IResults.GetMaterialName.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cae/TopSolid.Cae.Kernel.Automating.IResults.GetMaterialName.html",
+  "sha256": "e6a4211ac0fc0b2f23b078f40b0fa8e0d8289ad00fc5a787c999f8b66e54ec56",
+  "text": "# Method GetMaterialName\n\n#### GetMaterialName(DocumentId)\n\nGets the material name from a result document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 15, 0)]\nstring GetMaterialName(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  The name of the material.  |  \n\n##### Remarks\n\nThis method is available since v7.19.\n\n##### Examples\n \n```\nDocumentId docId = TopSolidHost.Documents.EditedDocument;\nstring materialName = TopSolidCaeHost.Results.GetMaterialName(docId);\n```\n",
+  "markdown": "markdown/cae/c32ace0be4c5f7cc789b0ed6.md",
+  "originalHtml": "html/cae/c32ace0be4c5f7cc789b0ed6.html"
+}

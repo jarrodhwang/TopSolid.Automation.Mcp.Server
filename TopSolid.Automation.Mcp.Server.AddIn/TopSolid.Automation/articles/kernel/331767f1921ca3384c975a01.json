@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IDocuments.CanPrint.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IDocuments.CanPrint.html",
+  "sha256": "cdb9ff19bac3fc5197d4f1e4057d2d6960ca80f8a72137fcf3da03f9e22ec080",
+  "text": "# Method CanPrint\n\n#### CanPrint(DocumentId)\n\nTells whether a document can be printed.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nbool CanPrint(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Document to print.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Document can be printed.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/331767f1921ca3384c975a01.md",
+  "originalHtml": "html/kernel/331767f1921ca3384c975a01.html"
+}

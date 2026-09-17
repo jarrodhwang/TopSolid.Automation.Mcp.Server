@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartPattern3D.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartPattern3D.html",
+  "sha256": "5511d94220f7850c30fd219874d7d47295d08f81aeadf9459595139aeb06643d",
+  "text": "# Class SmartPattern3D\n\nRepresents a smart pattern.\n\n##### Inheritance\n \nobject\n \nSmartObject\n \nSmartPattern3D\n\n##### Inherited Members\n \n object.ToString() \n \n object.Equals(object) \n \n object.Equals(object, object) \n \n object.ReferenceEquals(object, object) \n \n object.GetHashCode() \n \n object.GetType() \n \n object.MemberwiseClone() \n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 20, 40, 100)]\npublic class SmartPattern3D : SmartObject\n```\n\n##### Remarks\n\nThis class is available since v7.20.\n\n### Constructors \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   SmartPattern3D(ElementId)  |  Initializes a new instance of the SmartPattern3D class of type Element.  |  \n \n|   SmartPattern3D(ElementId, ItemLabel)  |  Initializes a new instance of the SmartPattern3D class of type Item.  |  \n \n|   SmartPattern3D(SmartPattern3DType, ElementId, ItemLabel)  |  Initializes a new instance of the SmartPattern3D class.  |  \n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   ElementId  |  Providing element identifier, or empty if none.  |  \n \n|   ItemLabel  |  Providing element item label, or empty if none.  |  \n \n|   Type  |  Type of pattern.  |\n",
+  "markdown": "markdown/kernel/97b1ee541e473282385d2c64.md",
+  "originalHtml": "html/kernel/97b1ee541e473282385d2c64.html"
+}

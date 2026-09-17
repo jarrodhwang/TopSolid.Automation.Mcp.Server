@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IFamilies.GetConstrainedEntityCount.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IFamilies.GetConstrainedEntityCount.html",
+  "sha256": "a687e30984501c39f2de51f2de6721a9d929146658b0fb9ae8257deba58f0839",
+  "text": "# Method GetConstrainedEntityCount\n\n#### GetConstrainedEntityCount(ElementId)\n\nGet the number of entities constrained by a constraint entity\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 0, 0)]\nint GetConstrainedEntityCount(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the constraint entity.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  int |  The number of entities constrained  |  \n\n##### Remarks\n\nThis method is available since v7.17.\n",
+  "markdown": "markdown/kernel/3ca5344c7028f9be953399ea.md",
+  "originalHtml": "html/kernel/3ca5344c7028f9be953399ea.html"
+}

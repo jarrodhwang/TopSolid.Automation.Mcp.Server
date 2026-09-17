@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IPrograms.GetProgram.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IPrograms.GetProgram.html",
+  "sha256": "3df41938bbb852f4ea7a942cbc5df2eab25e784c06cb5bf862846f868cbb83b8",
+  "text": "# Method GetProgram\n\n#### GetProgram(ElementExId)\n\nGets the NC program from the given operation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 180)]\nElementId GetProgram(ElementExId inOperationId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementExId |  inOperationId |  Identifier of the operation to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Program entity.  |\n",
+  "markdown": "markdown/cam/4b40df6e44c65ded401aaeb9.md",
+  "originalHtml": "html/cam/4b40df6e44c65ded401aaeb9.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Real.Value.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Real.Value.html",
+  "sha256": "cdec1101094a6d4c7618a74f42e9751c36f62ccd33dc067feb06cf1753503e30",
+  "text": "# Field Value\n\nValue in SI units.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic double Value\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double |  Value in SI units. |\n",
+  "markdown": "markdown/kernel/e3575d23481d7b01976e2fec.md",
+  "originalHtml": "html/kernel/e3575d23481d7b01976e2fec.html"
+}

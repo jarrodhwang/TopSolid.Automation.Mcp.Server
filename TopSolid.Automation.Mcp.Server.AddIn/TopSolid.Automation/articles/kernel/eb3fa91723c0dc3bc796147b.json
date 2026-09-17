@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IUser.AskDirection3D.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IUser.AskDirection3D.html",
+  "sha256": "e58b5ae3afb4abc515e7f10138cc595eb5e3896cb2fd80e1f2b14e574ddbad55",
+  "text": "# Method AskDirection3D\n\n#### AskDirection3D(UserQuestion, bool, SmartDirection3D, out SmartDirection3D)\n\nAsks the user for a 3D direction.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nUserAnswerType AskDirection3D(UserQuestion inQuestion, bool inIsOriented, SmartDirection3D inSuggestion, out SmartDirection3D outAnswer)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  UserQuestion |  inQuestion |  Question asked to the user.  |  \n \n|  bool |  inIsOriented |  Whether to ask for orientation.  |  \n \n|  SmartDirection3D |  inSuggestion |  Suggested answer, or null if none.  |  \n \n|  SmartDirection3D |  outAnswer |  User answer, or null if none.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  UserAnswerType |  Type of user answer.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) may be called before calling this method to allow the user to create or modify entities during the interaction.\n \nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/eb3fa91723c0dc3bc796147b.md",
+  "originalHtml": "html/kernel/eb3fa91723c0dc3bc796147b.html"
+}

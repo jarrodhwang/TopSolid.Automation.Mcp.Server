@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.BlockStockType.Xplus.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.BlockStockType.Xplus.html",
+  "sha256": "2a0937d1111a148f0ecf26818e00f74291a6b4ae23284e7c6152febef79bdc5b",
+  "text": "# Field Xplus\n\nX+.\n\n###### Namespace: TopSolid.Cam.NC.Kernel.Automating\n\n###### Assembly: TopSolid.Cam.NC.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic SmartReal Xplus\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartReal |  X+. |\n",
+  "markdown": "markdown/cam/d37994a2e1542d95ec0e7385.md",
+  "originalHtml": "html/cam/d37994a2e1542d95ec0e7385.html"
+}

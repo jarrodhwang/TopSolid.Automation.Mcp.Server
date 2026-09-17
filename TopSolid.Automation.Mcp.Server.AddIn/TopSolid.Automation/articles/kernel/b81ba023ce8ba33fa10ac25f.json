@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Color.ToString.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Color.ToString.html",
+  "sha256": "2fb66e4714da2926935bdd9eaa5fdef6806258d25ea2aa7003aa51ab4989e478",
+  "text": "# Method ToString\n\n#### ToString()\n\n##### Declaration\n\n```\npublic override string ToString()\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |   |  \n\n##### Overrides\n \nValueType.ToString()\n",
+  "markdown": "markdown/kernel/b81ba023ce8ba33fa10ac25f.md",
+  "originalHtml": "html/kernel/b81ba023ce8ba33fa10ac25f.html"
+}

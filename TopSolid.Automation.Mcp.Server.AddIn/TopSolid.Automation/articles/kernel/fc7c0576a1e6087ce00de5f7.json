@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.GetAuthor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.GetAuthor.html",
+  "sha256": "2ba0eb2fd263c865780fac7dc9e9299bfad7f781c7fdbdbe961c0826c158e233",
+  "text": "# Method GetAuthor\n\n#### GetAuthor(PdmObjectId)\n\nGets the author of an object.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 303, 100)]\nstring GetAuthor(PdmObjectId inObjectId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  Object identifier.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  Object author.  |  \n\n##### Remarks\n\nThis method is available since v7.8.303.100.\n",
+  "markdown": "markdown/kernel/fc7c0576a1e6087ce00de5f7.md",
+  "originalHtml": "html/kernel/fc7c0576a1e6087ce00de5f7.html"
+}

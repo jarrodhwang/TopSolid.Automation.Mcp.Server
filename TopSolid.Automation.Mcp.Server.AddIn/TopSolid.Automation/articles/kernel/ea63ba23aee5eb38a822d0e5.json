@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.SetDocumentParameterPossibleValues.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.SetDocumentParameterPossibleValues.html",
+  "sha256": "9726da0a62b65eba1c6e299a6f94c4b821354b497b05c3a6603d20fd3492935a",
+  "text": "# Method SetDocumentParameterPossibleValues\n\n#### SetDocumentParameterPossibleValues(ElementId, List<DocumentProperty>)\n\nSets the document parameter possibles values.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 17, 0, 0)]\nvoid SetDocumentParameterPossibleValues(ElementId inElementId, List<DocumentProperty> inProperties)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the parameter.  |  \n \n|  List<DocumentProperty> |  inProperties |  The wanted possibles values.  |  \n\n##### Remarks\n\nThis method must be used for Document parameter such as Material or Coating documents.\n \nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.17.000.000.\n",
+  "markdown": "markdown/kernel/ea63ba23aee5eb38a822d0e5.md",
+  "originalHtml": "html/kernel/ea63ba23aee5eb38a822d0e5.html"
+}

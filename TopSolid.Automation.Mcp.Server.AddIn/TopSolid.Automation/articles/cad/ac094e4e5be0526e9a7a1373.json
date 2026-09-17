@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMultiLayer.SetEnveloppeMaterial.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMultiLayer.SetEnveloppeMaterial.html",
+  "sha256": "377fc4ac26455c95625130c39288cf27869815b37368bfca685923391ab8ebc1",
+  "text": "# Method SetEnveloppeMaterial\n\n#### SetEnveloppeMaterial(DocumentId, SmartMaterial)\n\nSets the multi layer enveloppe material\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 0, 0)]\nbool SetEnveloppeMaterial(DocumentId inDocumentId, SmartMaterial inSmartMaterial)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document  |  \n \n|  SmartMaterial |  inSmartMaterial |  Smart Material  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  True if value is correctly set.  |  \n\n##### Remarks\n\nThis method is available since v7.19.\n",
+  "markdown": "markdown/cad/ac094e4e5be0526e9a7a1373.md",
+  "originalHtml": "html/cad/ac094e4e5be0526e9a7a1373.html"
+}

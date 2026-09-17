@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IClassifications.GetClasses.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IClassifications.GetClasses.html",
+  "sha256": "6cc3d71ac72a2ec9fa55bf4c07f6c32fda8b8983b97f2d0b4b9a3387a8c20376",
+  "text": "# Method GetClasses\n\n#### GetClasses(DocumentId)\n\nGets the first level classes entities that are in the classes folder of a classification document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nList<ElementId> GetClasses(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the classification document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementId> |  Classes entities found.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/kernel/19c6d1183e5f224450340485.md",
+  "originalHtml": "html/kernel/19c6d1183e5f224450340485.html"
+}

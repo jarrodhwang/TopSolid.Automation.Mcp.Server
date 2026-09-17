@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.SearchProjectByName.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.SearchProjectByName.html",
+  "sha256": "b6941206bf92dd1e885a55d2d42558c1546dc6288b9723f159a72d7b9323f333",
+  "text": "# Method SearchProjectByName\n\n#### SearchProjectByName(string)\n\nSearches for a project by its name.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nList<PdmObjectId> SearchProjectByName(string inProjectName)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  string |  inProjectName |  Project name.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<PdmObjectId> |  PDM object identifiers of projects corresponding to the searched name.  |  \n\n##### Remarks\n\nThe project name is the localized name in the current culture of TopSolid.\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/8d6c532c94add8bc67d290c0.md",
+  "originalHtml": "html/kernel/8d6c532c94add8bc67d290c0.html"
+}

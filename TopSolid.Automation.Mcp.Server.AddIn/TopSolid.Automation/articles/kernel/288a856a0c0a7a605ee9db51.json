@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.TextureImage.IsGrayscale.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.TextureImage.IsGrayscale.html",
+  "sha256": "1e905638bdc29eb5511b594a709fb1b371e6f13b7ee514cf43525e35a7d1a35e",
+  "text": "# Property IsGrayscale\n\n#### IsGrayscale\n\nTells whether the image is in grey colors (grayscale).\n\n##### Declaration\n\n```\npublic bool IsGrayscale { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |   |\n",
+  "markdown": "markdown/kernel/288a856a0c0a7a605ee9db51.md",
+  "originalHtml": "html/kernel/288a856a0c0a7a605ee9db51.html"
+}

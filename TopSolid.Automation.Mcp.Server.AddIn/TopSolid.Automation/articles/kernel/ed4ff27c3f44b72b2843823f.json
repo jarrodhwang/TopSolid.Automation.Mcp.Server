@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.ShowInProjectTree.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.ShowInProjectTree.html",
+  "sha256": "957f28599f2c02ca0577688ad406dcd46201a0cc733260fcc6173fd389b4d2aa",
+  "text": "# Method ShowInProjectTree\n\n#### ShowInProjectTree(PdmObjectId)\n\nShow the object in the project tree.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 13, 0, 0)]\nvoid ShowInProjectTree(PdmObjectId inObjectId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  Identifier of object to show.  |  \n\n##### Remarks\n\nThis method is available since v7.13.\n",
+  "markdown": "markdown/kernel/ed4ff27c3f44b72b2843823f.md",
+  "originalHtml": "html/kernel/ed4ff27c3f44b72b2843823f.html"
+}

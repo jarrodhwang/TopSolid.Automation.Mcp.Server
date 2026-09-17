@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ITools.SearchMirrorDocument.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ITools.SearchMirrorDocument.html",
+  "sha256": "37221074595230567566df9a44730d774c3a3731655ced82d3db7f429bd2e70a",
+  "text": "# Method SearchMirrorDocument\n\n#### SearchMirrorDocument(DocumentId)\n\nSearches for the derived mirror part or assembly of a specified part or assembly.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nDocumentId SearchMirrorDocument(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the part or assembly document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  DocumentId |  Derived mirror part or assembly found, or Empty if not found.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/cad/d287e9a9f5680fb35a9ab0b6.md",
+  "originalHtml": "html/cad/d287e9a9f5680fb35a9ab0b6.html"
+}

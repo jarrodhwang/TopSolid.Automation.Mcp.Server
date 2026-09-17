@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IDocuments.GetTypeGuid.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IDocuments.GetTypeGuid.html",
+  "sha256": "3d150b573e65d4dae3e2523bf051893ee4f4e55847da04e330efa6258cc1ae74",
+  "text": "# Method GetTypeGuid\n\n#### GetTypeGuid(DocumentId)\n\nGets the GUID of the type of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nGuid GetTypeGuid(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Guid |  GUID of the type of the document.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/fe665cdc794696c2100f224c.md",
+  "originalHtml": "html/kernel/fe665cdc794696c2100f224c.html"
+}

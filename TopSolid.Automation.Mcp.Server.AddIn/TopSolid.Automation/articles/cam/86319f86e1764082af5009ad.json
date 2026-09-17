@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.BlockStockType.Zplus.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.BlockStockType.Zplus.html",
+  "sha256": "5c354706ffd01486a974925dac6db764a4ce8a4be75bc7390d7bfb1d4c1dc120",
+  "text": "# Field Zplus\n\nZ+.\n\n###### Namespace: TopSolid.Cam.NC.Kernel.Automating\n\n###### Assembly: TopSolid.Cam.NC.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic SmartReal Zplus\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartReal |  Z+. |\n",
+  "markdown": "markdown/cam/86319f86e1764082af5009ad.md",
+  "originalHtml": "html/cam/86319f86e1764082af5009ad.html"
+}

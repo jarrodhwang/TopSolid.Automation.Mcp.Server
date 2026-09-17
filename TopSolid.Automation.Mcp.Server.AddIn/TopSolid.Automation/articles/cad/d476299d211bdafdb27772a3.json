@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IFeatures.IsFeaturesCreationOn.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IFeatures.IsFeaturesCreationOn.html",
+  "sha256": "f653683614d5ab7c1bf4c7e0c44ccc3505dd746a75d7951490cdce54dd4577ef",
+  "text": "# Method IsFeaturesCreationOn\n\n#### IsFeaturesCreationOn(DocumentId)\n\nTells wether the feature creation mode is on.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 14, 0, 0)]\nbool IsFeaturesCreationOn(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  The document handle features.  |  \n\n##### Remarks\n\nThis method is available since v7.14.\n",
+  "markdown": "markdown/cad/d476299d211bdafdb27772a3.md",
+  "originalHtml": "html/cad/d476299d211bdafdb27772a3.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMaterials.GetCuttingForceIncrement.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMaterials.GetCuttingForceIncrement.html",
+  "sha256": "6a1ad422ad9f70712494373fba2aa0e9f08f5122c77777273b32397aa37f42a9",
+  "text": "# Method GetCuttingForceIncrement\n\n#### GetCuttingForceIncrement(DocumentId, out double)\n\nGets Cutting Force Increment\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 400, 120)]\nbool GetCuttingForceIncrement(DocumentId inDocumentId, out double outValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Id of the container document  |  \n \n|  double |  outValue |  The value  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  true if a parameter has been fetched with success  |\n",
+  "markdown": "markdown/cad/c8d2ffcbca25c353dbfb2313.md",
+  "originalHtml": "html/cad/c8d2ffcbca25c353dbfb2313.html"
+}

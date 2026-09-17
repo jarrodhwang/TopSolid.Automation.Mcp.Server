@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMaterials.SetThermalConductivity.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMaterials.SetThermalConductivity.html",
+  "sha256": "0e72c3ed603f3446e2530c47a406871d64f859e81e8accfa15b5278f0bc44cc3",
+  "text": "# Method SetThermalConductivity\n\n#### SetThermalConductivity(DocumentId, double)\n\nSets Thermal Conductivity\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 400, 120)]\nvoid SetThermalConductivity(DocumentId inDocumentId, double inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Id of the container document  |  \n \n|  double |  inValue |  The value to use  |\n",
+  "markdown": "markdown/cad/9ab9a40a5f453f006935446e.md",
+  "originalHtml": "html/cad/9ab9a40a5f453f006935446e.html"
+}

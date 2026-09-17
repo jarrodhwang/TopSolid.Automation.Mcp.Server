@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Transform3D.-ctor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Transform3D.-ctor.html",
+  "sha256": "22373e92023c4787a218623ce2c2c87854d6a9929ea2a2783b0772bee643ef71",
+  "text": "# Constructor Transform3D\n\n#### Transform3D(double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double)\n\nInitializes a new instance of the Transform3D structure.\n\n##### Declaration\n\n```\npublic Transform3D(double inR00, double inR01, double inR02, double inTx, double inR10, double inR11, double inR12, double inTy, double inR20, double inR21, double inR22, double inTz, double inPx, double inPy, double inPz, double inSi)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  double |  inR00 |   |  \n \n|  double |  inR01 |   |  \n \n|  double |  inR02 |   |  \n \n|  double |  inTx |   |  \n \n|  double |  inR10 |   |  \n \n|  double |  inR11 |   |  \n \n|  double |  inR12 |   |  \n \n|  double |  inTy |   |  \n \n|  double |  inR20 |   |  \n \n|  double |  inR21 |   |  \n \n|  double |  inR22 |   |  \n \n|  double |  inTz |   |  \n \n|  double |  inPx |   |  \n \n|  double |  inPy |   |  \n \n|  double |  inPz |   |  \n \n|  double |  inSi |   |\n",
+  "markdown": "markdown/kernel/71a9fbb222e191355938209c.md",
+  "originalHtml": "html/kernel/71a9fbb222e191355938209c.html"
+}

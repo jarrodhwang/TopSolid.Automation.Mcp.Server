@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IApplication.BringToFrontWindow.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IApplication.BringToFrontWindow.html",
+  "sha256": "3d7c7005464d393dc39eda2d0c2f2d3133da8b30afdb011113b4d609fa424b4e",
+  "text": "# Method BringToFrontWindow\n\n#### BringToFrontWindow()\n\nBrings the application window to the front.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 222, 0)]\nvoid BringToFrontWindow()\n```\n\n##### Remarks\n\nThis method is available since v7.20.\n",
+  "markdown": "markdown/pdmexplorer/46dcbcb786a8b061f13a6b48.md",
+  "originalHtml": "html/pdmexplorer/46dcbcb786a8b061f13a6b48.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.SetIntegerValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.SetIntegerValue.html",
+  "sha256": "9045a7bda4828807437bf8ef59241721afed993f4c6fb61cb74644a2d4b3330d",
+  "text": "# Method SetIntegerValue\n\n#### SetIntegerValue(ElementId, int)\n\nSets the value of an integer parameter.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nvoid SetIntegerValue(ElementId inElementId, int inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the parameter to modify.  |  \n \n|  int |  inValue |  New value.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/8e4b04d8154e72e1ff4d12dd.md",
+  "originalHtml": "html/kernel/8e4b04d8154e72e1ff4d12dd.html"
+}

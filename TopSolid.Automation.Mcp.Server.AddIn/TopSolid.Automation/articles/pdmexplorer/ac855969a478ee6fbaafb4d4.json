@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.TopSolidPdmExplorerHostInstance.PipeName.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.TopSolidPdmExplorerHostInstance.PipeName.html",
+  "sha256": "d67088e485a24cea75001d41ac43dad068004a841ae077c5ff708ffdfbf0bfb7",
+  "text": "# Property PipeName\n\n#### PipeName\n\nGets or sets the name used to make named pipe, or null for default.\n\n##### Declaration\n\n```\npublic string PipeName { get; set; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |   |  \n\n##### Remarks\n\nThis property can be changed before connecting to a TopSolid host on the same machine using named pipes if the default name is not convenient (in particular when several TopSolid processes are running at the same time), it is not needed to change it otherwize.\n \nThis property cannot be set once connected to TopSolid, i.e. when IsConnected is true.\n",
+  "markdown": "markdown/pdmexplorer/ac855969a478ee6fbaafb4d4.md",
+  "originalHtml": "html/pdmexplorer/ac855969a478ee6fbaafb4d4.html"
+}

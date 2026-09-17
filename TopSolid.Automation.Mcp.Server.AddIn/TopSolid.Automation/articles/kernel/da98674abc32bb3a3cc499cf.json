@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartReal.ScriptType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartReal.ScriptType.html",
+  "sha256": "fa13985f78e3525b4cb5c418f746ea5f5d1bf26f5c1b7bfa3b5ec19bd420a1b6",
+  "text": "# Field ScriptType\n\nType of script.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic ScriptType ScriptType\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ScriptType |  Type of script. |\n",
+  "markdown": "markdown/kernel/da98674abc32bb3a3cc499cf.md",
+  "originalHtml": "html/kernel/da98674abc32bb3a3cc499cf.html"
+}

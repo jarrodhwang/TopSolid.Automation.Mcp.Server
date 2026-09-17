@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IOperations.HasFrozenOwner.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IOperations.HasFrozenOwner.html",
+  "sha256": "d353eec0e1f8ade9bf1b5997503c550c2abd4e9b81b2849c6f24796e0940eaec",
+  "text": "# Method HasFrozenOwner\n\n#### HasFrozenOwner(ElementId)\n\nTells whether an operation owner is frozen, or the owner of its owner,...\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 12, 0, 0)]\nbool HasFrozenOwner(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the operation to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  The operation has a direct or indirect frozen owner.  |  \n\n##### Remarks\n\nThis method is available since v7.12.\n",
+  "markdown": "markdown/kernel/0e0da197622afa20bc0898d8.md",
+  "originalHtml": "html/kernel/0e0da197622afa20bc0898d8.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cae/TopSolid.Cae.Kernel.Automating.IResults.GetMaterialElasticLimit.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cae/TopSolid.Cae.Kernel.Automating.IResults.GetMaterialElasticLimit.html",
+  "sha256": "86642a8418019ed384e06b46c6dbb8a1431378385ed27e0b53626ebc3d6268c1",
+  "text": "# Method GetMaterialElasticLimit\n\n#### GetMaterialElasticLimit(DocumentId)\n\nGets the material elastic limit from a result document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 15, 0)]\nReal GetMaterialElasticLimit(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Real |  The value of the elastic limit.  |  \n\n##### Remarks\n\nThis method is available since v7.19.\n\n##### Examples\n \n```\nDocumentId docId = TopSolidHost.Documents.EditedDocument;\nReal elasticLimit = TopSolidCaeHost.Results.GetMaterialElasticLimit(docId);\n```\n",
+  "markdown": "markdown/cae/b50bbc27de532a53e8ae9332.md",
+  "originalHtml": "html/cae/b50bbc27de532a53e8ae9332.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMaterials.SetMaterialParameterValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMaterials.SetMaterialParameterValue.html",
+  "sha256": "4f8f4245cffbaaf695649c661a332a8138a264295281fb6fe87c02fe310ff7ee",
+  "text": "# Method SetMaterialParameterValue\n\n#### SetMaterialParameterValue(ElementId, PdmMinorRevisionId)\n\nSets value of a Material Parameter\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 400, 160)]\nvoid SetMaterialParameterValue(ElementId inParameterId, PdmMinorRevisionId inPdmMinorRevisionId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inParameterId |  The Id of the parameter  |  \n \n|  PdmMinorRevisionId |  inPdmMinorRevisionId |  MinorRevision of the document to use  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.19.400.160\n",
+  "markdown": "markdown/cad/79b10377db858517ba4e5981.md",
+  "originalHtml": "html/cad/79b10377db858517ba4e5981.html"
+}

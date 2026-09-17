@@ -1,0 +1,8 @@
+{
+  "path": "api/wire/TopSolid.Cam.NC.Wire.Automating.IWireCc.AddParameterInt.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/wire/TopSolid.Cam.NC.Wire.Automating.IWireCc.AddParameterInt.html",
+  "sha256": "1025982231610c86a9c598002b8ec51e42093f23058fc0273fe3b0a4af361ebe",
+  "text": "# Method AddParameterInt\n\n#### AddParameterInt(ElementId, string, SmartInteger)\n\nAdd parameter integer.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 160)]\nvoid AddParameterInt(ElementId inElementId, string inParameterName, SmartInteger inParameterValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to modify.  |  \n \n|  string |  inParameterName |  Parameter name.  |  \n \n|  SmartInteger |  inParameterValue |  Parameter value.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n",
+  "markdown": "markdown/wire/ae70d645eb9a0b538d36865a.md",
+  "originalHtml": "html/wire/ae70d645eb9a0b538d36865a.html"
+}

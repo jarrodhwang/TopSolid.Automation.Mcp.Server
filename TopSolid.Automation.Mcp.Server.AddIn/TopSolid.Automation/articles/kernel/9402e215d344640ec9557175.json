@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IClassifications.GetSubclasses.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IClassifications.GetSubclasses.html",
+  "sha256": "f6c2c50f089eefaa1425def635ba2282177cf526836456d5b14c38ced7a77864",
+  "text": "# Method GetSubclasses\n\n#### GetSubclasses(ElementId)\n\nGets the classes entities that are subclasses of a specified class entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nList<ElementId> GetSubclasses(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the class entity to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementId> |  Classes entities found as subclasses of the specified class entity.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/kernel/9402e215d344640ec9557175.md",
+  "originalHtml": "html/kernel/9402e215d344640ec9557175.html"
+}

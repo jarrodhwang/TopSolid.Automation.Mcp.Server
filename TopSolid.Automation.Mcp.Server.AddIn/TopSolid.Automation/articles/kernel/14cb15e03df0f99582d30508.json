@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.SetRealParameterPossibleValuesStrictMode.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.SetRealParameterPossibleValuesStrictMode.html",
+  "sha256": "68880cb958c68e61eba3e4e290cd961e9cdee3bd1109d57d0c18836d96e7b059",
+  "text": "# Method SetRealParameterPossibleValuesStrictMode\n\n#### SetRealParameterPossibleValuesStrictMode(ElementId, bool)\n\nSets the real parameter possible values strict mode.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 17, 0, 0)]\nvoid SetRealParameterPossibleValuesStrictMode(ElementId inElementId, bool isOn)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the parameter.  |  \n \n|  bool |  isOn |  Wether the strict mode is activated.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.17.000.000.\n",
+  "markdown": "markdown/kernel/14cb15e03df0f99582d30508.md",
+  "originalHtml": "html/kernel/14cb15e03df0f99582d30508.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.TopSolidDesignHost.Simulations.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.TopSolidDesignHost.Simulations.html",
+  "sha256": "17123c2a47e85584709e3cd9f3b58fdb199a6d785d84e905042f4a5732d6f8f9",
+  "text": "# Property Simulations\n\n#### Simulations\n\nGets access to simulations, or null if not connected.\n\n##### Declaration\n\n```\npublic static ISimulations Simulations { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ISimulations |   |\n",
+  "markdown": "markdown/cad/886f5883e3db3c8277892cac.md",
+  "originalHtml": "html/cad/886f5883e3db3c8277892cac.html"
+}

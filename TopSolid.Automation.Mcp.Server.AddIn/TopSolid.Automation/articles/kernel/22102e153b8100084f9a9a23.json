@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.ExportLocalizations.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.ExportLocalizations.html",
+  "sha256": "04573f3c16fefd5ab8a6d8223a99a239331277f456786017d3543242131d73c2",
+  "text": "# Method ExportLocalizations\n\n#### ExportLocalizations(List<PdmObjectId>, CultureInfo[], string, string, bool)\n\nExports localizations (.TopDic or .xliff file).\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 55, 0)]\nvoid ExportLocalizations(List<PdmObjectId> inProjectIds, CultureInfo[] inCultures, string inDirectoryPath, string inFileExtension, bool inCreateFolderPath)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  List<PdmObjectId> |  inProjectIds |  Identifiers of projects to export.  |  \n \n|  CultureInfo[] |  inCultures |  Cultures to export.  |  \n \n|  string |  inDirectoryPath |  Directory path where translation files are stored.  |  \n \n|  string |  inFileExtension |  File extension (must be .TopDic or .xliff).  |  \n \n|  bool |  inCreateFolderPath |  Create folders reproducing the full path of the projects.  |\n",
+  "markdown": "markdown/kernel/22102e153b8100084f9a9a23.md",
+  "originalHtml": "html/kernel/22102e153b8100084f9a9a23.html"
+}

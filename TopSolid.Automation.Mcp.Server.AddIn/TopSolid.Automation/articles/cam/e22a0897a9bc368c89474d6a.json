@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IOperations.IsOperation.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IOperations.IsOperation.html",
+  "sha256": "6974e7015cfefd19f131fae5e566bd664dfdfdc2bbde73a48e7690e8b0b52f44",
+  "text": "# Method IsOperation\n\n#### IsOperation(ElementExId)\n\nTells whether an operation is a Cam operation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nbool IsOperation(ElementExId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementExId |  inElementId |  Identifier of the operation to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  The operation is a Cam operation.  |\n",
+  "markdown": "markdown/cam/e22a0897a9bc368c89474d6a.md",
+  "originalHtml": "html/cam/e22a0897a9bc368c89474d6a.html"
+}

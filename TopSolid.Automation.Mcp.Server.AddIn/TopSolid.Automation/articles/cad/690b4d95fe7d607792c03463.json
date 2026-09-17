@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMaterials.GetShearModulus.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMaterials.GetShearModulus.html",
+  "sha256": "6765396e7578b242e33a73cf9602f5f47ffe5c9a1e50f8095c34ae4109261697",
+  "text": "# Method GetShearModulus\n\n#### GetShearModulus(DocumentId, out double)\n\nGets Shear Modulus\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 400, 120)]\nbool GetShearModulus(DocumentId inDocumentId, out double outValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Id of the container document  |  \n \n|  double |  outValue |  The value  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  true if a parameter has been fetched with success  |\n",
+  "markdown": "markdown/cad/690b4d95fe7d607792c03463.md",
+  "originalHtml": "html/cad/690b4d95fe7d607792c03463.html"
+}

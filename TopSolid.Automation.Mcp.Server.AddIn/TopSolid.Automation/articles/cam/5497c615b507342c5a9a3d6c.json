@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.ISimulation.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.ISimulation.html",
+  "sha256": "c6297d1cf707d011f8b6cb09ab458cf3315496cd98c6e2d3c19e2441714c96f3",
+  "text": "# Interface ISimulation\n\nGives access to simulation screen.\n\n###### Namespace: TopSolid.Cam.NC.Kernel.Automating\n\n###### Assembly: TopSolid.Cam.NC.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[ServiceContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\npublic interface ISimulation\n```\n\n### Methods \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   Close()  |  Closes the simulation.  |  \n \n|   GetAnimationSpeed()  |  Gets the animation speed.  |  \n \n|   IsSimulationComplete()  |  Tells wether the simulation is complete.  |  \n \n|   Open(ElementId)  |  Simulate only the given operation.  |  \n \n|   SetAnimationSpeed(int)  |  Sets the animation speed.  |  \n \n|   StartAnimation()  |  Run the animation on operations.  |\n",
+  "markdown": "markdown/cam/5497c615b507342c5a9a3d6c.md",
+  "originalHtml": "html/cam/5497c615b507342c5a9a3d6c.html"
+}

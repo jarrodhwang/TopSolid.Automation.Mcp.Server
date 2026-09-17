@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.TopSolidHost.Pdm.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.TopSolidHost.Pdm.html",
+  "sha256": "a9b719340e202474cdd31ffee163a15fef31c416ff481043dccd113a2cc5ba60",
+  "text": "# Property Pdm\n\n#### Pdm\n\nGets access to the PDM, or null if not available.\n\n##### Declaration\n\n```\npublic static IPdm Pdm { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  IPdm |   |\n",
+  "markdown": "markdown/kernel/455083e1855089fd8062d79e.md",
+  "originalHtml": "html/kernel/455083e1855089fd8062d79e.html"
+}

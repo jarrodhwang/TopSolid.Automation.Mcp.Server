@@ -1,0 +1,8 @@
+{
+  "path": "api/wire/TopSolid.Cam.NC.Wire.Automating.TopSolidWireTechnologyHostInstance.-ctor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/wire/TopSolid.Cam.NC.Wire.Automating.TopSolidWireTechnologyHostInstance.-ctor.html",
+  "sha256": "32da376b64d2e73a965739f032579d9a3be3ec20817eb348193db5a81e9b726f",
+  "text": "# Constructor TopSolidWireTechnologyHostInstance\n\n#### TopSolidWireTechnologyHostInstance(TopSolidHostInstance)\n\nInitializes a new instance of the TopSolidWireTechnologyHostInstance class.\n\n##### Declaration\n\n```\npublic TopSolidWireTechnologyHostInstance(TopSolidHostInstance inTopSolidHostInstance)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  TopSolidHostInstance |  inTopSolidHostInstance |  TopSolid host instance.  |\n",
+  "markdown": "markdown/wire/dfdcbba591047c9e9c80adce.md",
+  "originalHtml": "html/wire/dfdcbba591047c9e9c80adce.html"
+}

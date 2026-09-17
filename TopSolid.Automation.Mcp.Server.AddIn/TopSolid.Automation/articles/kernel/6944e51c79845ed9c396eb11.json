@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IShapes.GetFaceVertices.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IShapes.GetFaceVertices.html",
+  "sha256": "40bde8b2b41af2ff8fb7028c322f807263729f7c2bee3ec1490fcf31960fabce",
+  "text": "# Method GetFaceVertices\n\n#### GetFaceVertices(ElementItemId)\n\nGets the vertices of a face.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nList<ElementItemId> GetFaceVertices(ElementItemId inFaceId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementItemId |  inFaceId |  Identifier of the face to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementItemId> |  Identifiers of the vertices of the face.  |  \n\n##### Remarks\n\nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/6944e51c79845ed9c396eb11.md",
+  "originalHtml": "html/kernel/6944e51c79845ed9c396eb11.html"
+}

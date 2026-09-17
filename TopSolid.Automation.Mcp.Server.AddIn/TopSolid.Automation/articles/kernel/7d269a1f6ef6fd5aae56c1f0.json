@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.CloseProject.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.CloseProject.html",
+  "sha256": "fee229550b82c9a8e86a9bb642bd1ca4fda289951dbcf7cd080d2216e98650c4",
+  "text": "# Method CloseProject\n\n#### CloseProject(PdmObjectId)\n\nCloses a project.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 0, 0)]\nvoid CloseProject(PdmObjectId inProjectId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inProjectId |  Project identifier.  |  \n\n##### Remarks\n\nThis method is available since v7.11.\n",
+  "markdown": "markdown/kernel/7d269a1f6ef6fd5aae56c1f0.md",
+  "originalHtml": "html/kernel/7d269a1f6ef6fd5aae56c1f0.html"
+}

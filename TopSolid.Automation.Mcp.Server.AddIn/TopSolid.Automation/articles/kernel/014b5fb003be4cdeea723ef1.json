@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IDocuments.GetSynchronizedDocuments.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IDocuments.GetSynchronizedDocuments.html",
+  "sha256": "480e8e2be55c68faed8cb145715263271404ca5874a0258220a98e2cfc8aead7",
+  "text": "# Method GetSynchronizedDocuments\n\n#### GetSynchronizedDocuments(DocumentId)\n\nGets the documents synchronized with a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nList<DocumentId> GetSynchronizedDocuments(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<DocumentId> |  Synchronized documents found.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/014b5fb003be4cdeea723ef1.md",
+  "originalHtml": "html/kernel/014b5fb003be4cdeea723ef1.html"
+}

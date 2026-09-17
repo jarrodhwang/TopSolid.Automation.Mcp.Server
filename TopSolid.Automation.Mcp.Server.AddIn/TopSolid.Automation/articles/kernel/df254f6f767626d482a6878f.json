@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IShapes.GetEdgeTangent.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IShapes.GetEdgeTangent.html",
+  "sha256": "9a28dcb4fffddd35b5b04dcf94d9943b2cc6ed2de97d6e1789d5f322dc9fec6f",
+  "text": "# Method GetEdgeTangent\n\n#### GetEdgeTangent(ElementItemId, double)\n\nGets the tangent to the curve attached to an edge at a specified parametric value.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nDirection3D GetEdgeTangent(ElementItemId inEdgeId, double inT)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementItemId |  inEdgeId |  Identifier of the edge to analyze.  |  \n \n|  double |  inT |  Parameter within edge curve parametric range.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Direction3D |  Tangent to the edge curve at the specified parametric value.  |  \n\n##### Remarks\n\nIf the edge is reversed, the orientation of the tangent is the opposite to the parametric first derivative.\n \nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/df254f6f767626d482a6878f.md",
+  "originalHtml": "html/kernel/df254f6f767626d482a6878f.html"
+}

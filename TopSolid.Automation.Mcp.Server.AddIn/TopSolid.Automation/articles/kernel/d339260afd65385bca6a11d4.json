@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IEntities.IsFolder.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IEntities.IsFolder.html",
+  "sha256": "9d7dbc16c1da8bcf540bc22b9a9e36c61fb313bbfd36aba2a302041df7a3a584",
+  "text": "# Method IsFolder\n\n#### IsFolder(ElementId)\n\nTells whether an element is a folder entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nbool IsFolder(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  The element is a folder entity.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/kernel/d339260afd65385bca6a11d4.md",
+  "originalHtml": "html/kernel/d339260afd65385bca6a11d4.html"
+}

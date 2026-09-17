@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IBoms.SetSourceSets.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IBoms.SetSourceSets.html",
+  "sha256": "5f7a031391c456df783e9052704a99ca99b7e0c69aeafb58d610baec47a4a8f0",
+  "text": "# Method SetSourceSets\n\n#### SetSourceSets(DocumentId, List<ElementId>)\n\nSets the source sets of a BOM.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 12, 0, 0)]\nvoid SetSourceSets(DocumentId inDocumentId, List<ElementId> inSetIds)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the BOM document to modify.  |  \n \n|  List<ElementId> |  inSetIds |  Identifiers of the sets of the source assembly document, or empty if none.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.12.\n",
+  "markdown": "markdown/cad/b19bae29eb20cab6487396b4.md",
+  "originalHtml": "html/cad/b19bae29eb20cab6487396b4.html"
+}

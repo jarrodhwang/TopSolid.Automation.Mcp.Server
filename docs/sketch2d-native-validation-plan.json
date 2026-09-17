@@ -1,0 +1,13 @@
+{
+  "project": "AI Made this project",
+  "newPart": "Sketch2D validation 0.5.3 - 20260916",
+  "actions": [
+    "Create and open this dedicated new part using the verified default part template.",
+    "Create Reference sketch on XY: circle center (10,20) mm, radius 10 mm; open polyline (50,0),(60,10),(70,0) mm.",
+    "In the same batch create Parabola sketch on XY: vertex (-30,-20) mm, focal length 12.5 mm, x range -20 to 20 mm, rotation 0 degrees.",
+    "Create Linked sketch with a native associative reference to Reference sketch's circle-center vertex and sketch axes; offset (20,30,0) mm, rotation 90 degrees; local circle radius 2.5 mm.",
+    "Translate only Reference sketch by (10,0,0) mm; read back Linked sketch and verify that its origin follows by 10 mm.",
+    "Keep the dedicated test part open for review. Do not save, check in, delete or modify any pre-existing document. Stop after any failure; keep receipts."
+  ],
+  "permission": "Requires explicit user approval of this exact test plan. Supplying a hash is not authorization by itself."
+}

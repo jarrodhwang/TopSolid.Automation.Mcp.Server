@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.TopSolidPdmExplorerHost.HostAddress.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.TopSolidPdmExplorerHost.HostAddress.html",
+  "sha256": "1247245b9dee2b1f4f6b4be6a76362312eafd66b7ea0073f7a774bd05698942c",
+  "text": "# Property HostAddress\n\n#### HostAddress\n\nGets the host IP address, or null if not using TCP.\n\n##### Declaration\n\n```\npublic static string HostAddress { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |   |\n",
+  "markdown": "markdown/pdmexplorer/e9a4ddea088dc348c2ff46b4.md",
+  "originalHtml": "html/pdmexplorer/e9a4ddea088dc348c2ff46b4.html"
+}

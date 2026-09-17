@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.GetStandardParameter.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.GetStandardParameter.html",
+  "sha256": "1058dd212f9b719d6faad6c2e083d3cc6cc439c27a40e52e7e03c988995dfc6d",
+  "text": "# Method GetStandardParameter\n\n#### GetStandardParameter(DocumentId)\n\nGets the standard parameter entity of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 201, 100)]\nElementId GetStandardParameter(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the standard parameter entity found.  |  \n\n##### Remarks\n\nThe standard parameter is an enumeration parameter, its value may be obtained and modified using the GetEnumerationValue(ElementId) and SetEnumerationValue(ElementId, int) methods.\n \nThis method is available since v7.7.201.100.\n",
+  "markdown": "markdown/kernel/3e9507f22935203874c595eb.md",
+  "originalHtml": "html/kernel/3e9507f22935203874c595eb.html"
+}

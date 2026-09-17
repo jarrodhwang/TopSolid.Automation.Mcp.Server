@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ISketches2D.HighlightSketchSegment.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ISketches2D.HighlightSketchSegment.html",
+  "sha256": "3146d9c9499a5aac6c0e2e71a155f76c2b6e7c3e9c8151689e412abf7430275f",
+  "text": "# Method HighlightSketchSegment\n\n#### HighlightSketchSegment(ElementItemId)\n\nHighlights a 2D sketch segment.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 326, 0)]\nvoid HighlightSketchSegment(ElementItemId inSegmentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementItemId |  inSegmentId |  Id of the segment to highlight.  |  \n\n##### Remarks\n\nSketch container document needs to be active. Sketch has to be displayed in the window.\n \nThis method is available since v7.20.326.0.\n",
+  "markdown": "markdown/kernel/65902f76dc7de2165ad2b5e8.md",
+  "originalHtml": "html/kernel/65902f76dc7de2165ad2b5e8.html"
+}

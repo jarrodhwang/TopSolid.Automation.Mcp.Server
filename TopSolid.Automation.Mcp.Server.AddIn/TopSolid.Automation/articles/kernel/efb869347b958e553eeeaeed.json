@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.GetRealParameterConstraintsMode.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.GetRealParameterConstraintsMode.html",
+  "sha256": "b4468373260bb927f379fed37b15e1f5fde221e6e0f1e58b64c39b62725da191",
+  "text": "# Method GetRealParameterConstraintsMode\n\n#### GetRealParameterConstraintsMode(ElementId)\n\nGets the real parameter constraints mode.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 17, 0, 0)]\nRealParameterConstraintsMode GetRealParameterConstraintsMode(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the parameter.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  RealParameterConstraintsMode |  The parameter constraints mode.  |  \n\n##### Remarks\n\nThis method is available since v7.17.000.000.\n",
+  "markdown": "markdown/kernel/efb869347b958e553eeeaeed.md",
+  "originalHtml": "html/kernel/efb869347b958e553eeeaeed.html"
+}

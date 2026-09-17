@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IGeometries3D.GetOccurrenceSourceTransform.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IGeometries3D.GetOccurrenceSourceTransform.html",
+  "sha256": "9e7b65271912df9d68f0bb2cc676f3317cd18a16628fdcbcc46e9d105d0b41a8",
+  "text": "# Method GetOccurrenceSourceTransform\n\n#### GetOccurrenceSourceTransform(ElementId)\n\nGets the source transform of an occurrence entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nTransform3D GetOccurrenceSourceTransform(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the entity to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Transform3D |  Identifier of the source transform of the occurrence.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/84abff6db0f4d4add962194e.md",
+  "originalHtml": "html/kernel/84abff6db0f4d4add962194e.html"
+}

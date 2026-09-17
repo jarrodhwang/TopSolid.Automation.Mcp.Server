@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IShapes.GetSharpEdges.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IShapes.GetSharpEdges.html",
+  "sha256": "11bd53b64be475c3b6c34722ad18ebb7fecd314679b4988b9a9cad7aabdcbb5e",
+  "text": "# Method GetSharpEdges\n\n#### GetSharpEdges(ElementId, double)\n\nGets the sharp edges of a shape.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nList<ElementItemId> GetSharpEdges(ElementId inElementId, double inAngle)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the shape entity to analyze.  |  \n \n|  double |  inAngle |  Minimum angle between face normals along the edge.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementItemId> |  Identifiers of the sharp edges of the shape.  |  \n\n##### Remarks\n\nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/6ec17101fca574008bc56f72.md",
+  "originalHtml": "html/kernel/6ec17101fca574008bc56f72.html"
+}

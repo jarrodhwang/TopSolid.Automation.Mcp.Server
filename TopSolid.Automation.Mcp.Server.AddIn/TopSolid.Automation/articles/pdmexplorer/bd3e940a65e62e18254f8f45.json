@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.GetPartNumber.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.GetPartNumber.html",
+  "sha256": "656c94593809b81f8581db2f30b3fdb5e3e5d7111829ae81f441320d6f608358",
+  "text": "# Method GetPartNumber\n\n#### GetPartNumber(PdmObjectId)\n\nGets the part number of an object.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nstring GetPartNumber(PdmObjectId inObjectId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  Object identifier.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  Object part number.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/pdmexplorer/bd3e940a65e62e18254f8f45.md",
+  "originalHtml": "html/pdmexplorer/bd3e940a65e62e18254f8f45.html"
+}

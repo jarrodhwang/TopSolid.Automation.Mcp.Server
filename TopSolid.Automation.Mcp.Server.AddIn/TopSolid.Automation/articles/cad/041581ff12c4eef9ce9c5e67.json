@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IRepresentations.CreateRepresentation.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IRepresentations.CreateRepresentation.html",
+  "sha256": "e9b53f6718c8d99900c8051a3fba0058dfaa22dcc926bd494589ba3ef2c61f01",
+  "text": "# Method CreateRepresentation\n\n#### CreateRepresentation(DocumentId)\n\nCreates a representation entity in a specified document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 300, 120)]\nElementId CreateRepresentation(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the created representation entity.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.10.300.120.\n",
+  "markdown": "markdown/cad/041581ff12c4eef9ce9c5e67.md",
+  "originalHtml": "html/cad/041581ff12c4eef9ce9c5e67.html"
+}

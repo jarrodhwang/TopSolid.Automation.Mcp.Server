@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartText.Value.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartText.Value.html",
+  "sha256": "f5c4998be7209c20a8ba9b3fd2bcaab0632b09afc1b7510d55a5ed2eb00b555d",
+  "text": "# Field Value\n\nValue, or null if unknown.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic string Value\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  Value, or null if unknown. |\n",
+  "markdown": "markdown/kernel/070b2a663f1b37868ffec327.md",
+  "originalHtml": "html/kernel/070b2a663f1b37868ffec327.html"
+}

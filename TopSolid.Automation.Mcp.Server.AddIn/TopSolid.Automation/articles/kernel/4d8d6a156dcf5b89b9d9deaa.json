@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.KeyValue.Key.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.KeyValue.Key.html",
+  "sha256": "d18c3773546781077bc0b822088ba9f9f7aafafba7b2e9edc510e1527700b101",
+  "text": "# Field Key\n\nKey, or null if empty.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic string Key\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  Key, or null if empty. |\n",
+  "markdown": "markdown/kernel/4d8d6a156dcf5b89b9d9deaa.md",
+  "originalHtml": "html/kernel/4d8d6a156dcf5b89b9d9deaa.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.SetRealTableParameterPossibleValues.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.SetRealTableParameterPossibleValues.html",
+  "sha256": "603c3b11a95a031a1b90dbdb33918659361ed3e4a5f3cac26386ff402e460846",
+  "text": "# Method SetRealTableParameterPossibleValues\n\n#### SetRealTableParameterPossibleValues(ElementId, DocumentId, List<SmartReal>, List<SmartReal>)\n\nSets possible values for real table parameter creation operation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 18, 0, 0)]\nvoid SetRealTableParameterPossibleValues(ElementId inElementId, DocumentId inDocumentId, List<SmartReal> inSourceSmartRealList, List<SmartReal> inResultSmartRealList)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the smart real table parameter creation operation to modify.  |  \n \n|  DocumentId |  inDocumentId |  Identifier of the document.  |  \n \n|  List<SmartReal> |  inSourceSmartRealList |  Source values.  |  \n \n|  List<SmartReal> |  inResultSmartRealList |  Result values.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.18.\n",
+  "markdown": "markdown/kernel/335ae5225e06686761773acf.md",
+  "originalHtml": "html/kernel/335ae5225e06686761773acf.html"
+}

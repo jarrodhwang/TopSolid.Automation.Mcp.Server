@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ITools.CreateMirrorDocument.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ITools.CreateMirrorDocument.html",
+  "sha256": "50db24e9ccef8cc3a7befdbcd1d29365daeee4338aac9f2a6aed2f03f097a7a5",
+  "text": "# Method CreateMirrorDocument\n\n#### CreateMirrorDocument(PdmObjectId, DocumentId, bool)\n\nCreates the derived mirror part or assembly of a specified part or assembly.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nDocumentId CreateMirrorDocument(PdmObjectId inOwnerId, DocumentId inDocumentId, bool inUseDefaultTemplate)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inOwnerId |  Identifier of owner.  |  \n \n|  DocumentId |  inDocumentId |  Identifier of the part or assembly document to derive.  |  \n \n|  bool |  inUseDefaultTemplate |  Tells whether to use the default template if present.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  DocumentId |  Derived mirror part or assembly document identifier.  |  \n\n##### Remarks\n\nIf the specified part or assembly already has a symmetrical document (i.e. the method SearchSymmetricalDocument(DocumentId) does not return Empty), it is not allowed to create a derived mirror document, and this method throws an exception.\n \nThis method must not be called between StartModification(string, bool) and EndModification(bool, bool) methods calls.\n \nThis method is available since v7.10.\n",
+  "markdown": "markdown/cad/b77863ca0d2117f55a7dbcc7.md",
+  "originalHtml": "html/cad/b77863ca0d2117f55a7dbcc7.html"
+}

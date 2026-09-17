@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IApplication.ActiveCommandFullName.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IApplication.ActiveCommandFullName.html",
+  "sha256": "da6b75c1f77f76019bf4d091b91e4435f0150be4a5ac8d55ae2bf158f1953868",
+  "text": "# Property ActiveCommandFullName\n\n#### ActiveCommandFullName\n\nGets the full name of the active command (i.e. \"TopSolid.Kernel.UI.D3.Shapes.Creations.BlockCommand\").\n\n##### Declaration\n\n```\n[AvailableSinceVersion(7, 12, 0, 0)]\nstring ActiveCommandFullName { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |   |  \n\n##### Remarks\n\nIf there is no active command, null is returned.\n \nThis property is available since v7.12.\n",
+  "markdown": "markdown/kernel/d794c82a55da79be2c759f9b.md",
+  "originalHtml": "html/kernel/d794c82a55da79be2c759f9b.html"
+}

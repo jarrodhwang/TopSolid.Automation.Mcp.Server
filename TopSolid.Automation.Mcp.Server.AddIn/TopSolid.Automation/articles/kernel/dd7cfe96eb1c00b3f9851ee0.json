@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdmAdmin.ChangeUserPassword.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdmAdmin.ChangeUserPassword.html",
+  "sha256": "4fa844fdc14abb1d1ae7b2e9c0fcfb78ee2036836e7bb8cf164d02b1393bef8e",
+  "text": "# Method ChangeUserPassword\n\n#### ChangeUserPassword(string, string, string)\n\nWhen current client is admin, changes user password.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 142, 0)]\nvoid ChangeUserPassword(string inAccountId, string inOldPassword, string inNewPassword)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  string |  inAccountId |  User account identifier.  |  \n \n|  string |  inOldPassword |  Old password.  |  \n \n|  string |  inNewPassword |  New password.  |\n",
+  "markdown": "markdown/kernel/dd7cfe96eb1c00b3f9851ee0.md",
+  "originalHtml": "html/kernel/dd7cfe96eb1c00b3f9851ee0.html"
+}

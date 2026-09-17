@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.IsSmartRealParameterCreationUnitAuto.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.IsSmartRealParameterCreationUnitAuto.html",
+  "sha256": "b380f0bbcdc63df159866f7ace26e104432745e82c4bcde170e447d773c37b78",
+  "text": "# Method IsSmartRealParameterCreationUnitAuto\n\n#### IsSmartRealParameterCreationUnitAuto(ElementId)\n\nTells whether a smart real parameter creation operation is in unit auto mode.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nbool IsSmartRealParameterCreationUnitAuto(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the smart real parameter creation operation to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Whether the unit of the child parameter entity is automatically set to the unit of the smart real.  |  \n\n##### Remarks\n\nThis method is available since v7.8.\n",
+  "markdown": "markdown/kernel/0c7e0ad462c4aaf04dcbb862.md",
+  "originalHtml": "html/kernel/0c7e0ad462c4aaf04dcbb862.html"
+}

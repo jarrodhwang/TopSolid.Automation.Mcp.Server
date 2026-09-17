@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.PdmMinorRevisionId.IsEmpty.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.PdmMinorRevisionId.IsEmpty.html",
+  "sha256": "ef5c7762e75d56935c5bc98cbc40d4648f0f11b77d2b1c0985de05514bc4594b",
+  "text": "# Property IsEmpty\n\n#### IsEmpty\n\nTells whether the minor revision id is empty.\n\n##### Declaration\n\n```\npublic bool IsEmpty { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |   |\n",
+  "markdown": "markdown/pdmexplorer/5f8cf78ef2f3a69c7226ac8d.md",
+  "originalHtml": "html/pdmexplorer/5f8cf78ef2f3a69c7226ac8d.html"
+}

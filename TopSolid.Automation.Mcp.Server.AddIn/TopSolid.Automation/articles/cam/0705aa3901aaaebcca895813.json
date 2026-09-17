@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.INCFiles.UpdateNCCodesPartial.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.INCFiles.UpdateNCCodesPartial.html",
+  "sha256": "bdd10abc96d4ad663785eb360383d970c01fdce7a8b9b313e38a427cce2ae717",
+  "text": "# Method UpdateNCCodesPartial\n\n#### UpdateNCCodesPartial(ElementId, bool, List<string>)\n\nUpdates the NC codes partialy of the given NC file entity in the document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 9, 0, 0)]\nvoid UpdateNCCodesPartial(ElementId inElementId, bool inClear, List<string> inNCCodes)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the NC file entity to update.  |  \n \n|  bool |  inClear |  Indicate if NC file list is cleared before.  |  \n \n|  List<string> |  inNCCodes |  List of strings to add in NC file.  |\n",
+  "markdown": "markdown/cam/0705aa3901aaaebcca895813.md",
+  "originalHtml": "html/cam/0705aa3901aaaebcca895813.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IParameters.GetName.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IParameters.GetName.html",
+  "sha256": "227805b9241dd88173890c9a59b192096b6d8e7312f9d073446c1fe09a39a8f9",
+  "text": "# Method GetName\n\n#### GetName(ParameterId)\n\nGets the name of a Cam operation parameter.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nstring GetName(ParameterId inParameterId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ParameterId |  inParameterId |  Identifier of the parameter to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  Name of the parameter, without categories.  |\n",
+  "markdown": "markdown/cam/dcfbfea956e3650d9811d8b6.md",
+  "originalHtml": "html/cam/dcfbfea956e3650d9811d8b6.html"
+}

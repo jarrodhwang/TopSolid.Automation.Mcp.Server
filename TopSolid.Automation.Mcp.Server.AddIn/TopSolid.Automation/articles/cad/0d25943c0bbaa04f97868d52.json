@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ICoatings.SetAlbedoTextureDocument.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ICoatings.SetAlbedoTextureDocument.html",
+  "sha256": "47aaa646f4d72f4132998db9c43710e8ef283ef6e734a11d790af3def3c911b1",
+  "text": "# Method SetAlbedoTextureDocument\n\n#### SetAlbedoTextureDocument(DocumentId, DocumentId)\n\nSets the Albedo texture document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 0, 0)]\nvoid SetAlbedoTextureDocument(DocumentId inDocumentId, DocumentId inTextureDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  DocumentId |  inTextureDocumentId |  Texture document.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.16.\n",
+  "markdown": "markdown/cad/0d25943c0bbaa04f97868d52.md",
+  "originalHtml": "html/cad/0d25943c0bbaa04f97868d52.html"
+}

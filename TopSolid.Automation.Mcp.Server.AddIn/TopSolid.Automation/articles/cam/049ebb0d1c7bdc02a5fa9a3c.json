@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.ISimulation.Open.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.ISimulation.Open.html",
+  "sha256": "69dbee412dc642505581edea5ba155e7159058d0d0ae4cd6113900749989ff96",
+  "text": "# Method Open\n\n#### Open(ElementId)\n\nSimulate only the given operation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nvoid Open(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the operation to verify.  |\n",
+  "markdown": "markdown/cam/049ebb0d1c7bdc02a5fa9a3c.md",
+  "originalHtml": "html/cam/049ebb0d1c7bdc02a5fa9a3c.html"
+}

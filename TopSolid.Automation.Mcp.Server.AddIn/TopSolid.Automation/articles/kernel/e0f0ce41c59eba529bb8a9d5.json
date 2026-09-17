@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ISketches2D.CreateSketchIn2D.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ISketches2D.CreateSketchIn2D.html",
+  "sha256": "fbd89d35f11b7115c2a22169fe3964e240b9effb664f23695cd3c8ae845c82ba",
+  "text": "# Method CreateSketchIn2D\n\n#### CreateSketchIn2D(DocumentId, SmartPoint2D, bool, SmartDirection2D)\n\nCreates a sketch in a 2D document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 201, 80)]\nElementId CreateSketchIn2D(DocumentId inDocumentId, SmartPoint2D inOrigin, bool inDefinesXDirection, SmartDirection2D inDirection)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  SmartPoint2D |  inOrigin |  Origin point.  |  \n \n|  bool |  inDefinesXDirection |  Defines the X direction if true, otherwise defines the Y direction if false.  |  \n \n|  SmartDirection2D |  inDirection |  Reference X or Y direction.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the created sketch entity.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.7.201.80.\n \nThis method does not create a building operation anymore since v7.11.\n",
+  "markdown": "markdown/kernel/e0f0ce41c59eba529bb8a9d5.md",
+  "originalHtml": "html/kernel/e0f0ce41c59eba529bb8a9d5.html"
+}

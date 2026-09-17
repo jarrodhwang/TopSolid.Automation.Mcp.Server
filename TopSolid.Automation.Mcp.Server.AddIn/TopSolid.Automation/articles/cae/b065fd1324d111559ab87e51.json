@@ -1,0 +1,8 @@
+{
+  "path": "api/cae/TopSolid.Cae.Kernel.Automating.LoadFactorResult.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cae/TopSolid.Cae.Kernel.Automating.LoadFactorResult.html",
+  "sha256": "b36791024fa5af88a0c9123a1434320493af120d30643b8edbc64b2d268d9e57",
+  "text": "# Class LoadFactorResult\n\nRepresents a load factor Result\n\n##### Inheritance\n \nobject\n \nLoadFactorResult\n\n##### Inherited Members\n \n object.ToString() \n \n object.Equals(object) \n \n object.Equals(object, object) \n \n object.ReferenceEquals(object, object) \n \n object.GetHashCode() \n \n object.GetType() \n \n object.MemberwiseClone() \n\n###### Namespace: TopSolid.Cae.Kernel.Automating\n\n###### Assembly: TopSolid.Cae.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 20, 400, 100)]\npublic class LoadFactorResult\n```\n\n##### Remarks\n\nThis structure is available since v7.20\n\n### Properties \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   CriticalLoad  |  Gets the Critical Load  |  \n \n|   LoadResult  |  Gets the Result  |  \n \n|   ModeNumber  |  Gets the Mode number  |\n",
+  "markdown": "markdown/cae/b065fd1324d111559ab87e51.md",
+  "originalHtml": "html/cae/b065fd1324d111559ab87e51.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.ITools.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.ITools.html",
+  "sha256": "442a14258cb80b0316f7354cf1d45a22e71f04a63314fec48c03cfa439718632",
+  "text": "# Interface ITools\n\nGives access to machining tools.\n\n###### Namespace: TopSolid.Cam.NC.Kernel.Automating\n\n###### Assembly: TopSolid.Cam.NC.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[ServiceContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\npublic interface ITools\n```\n\n### Methods \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   GetParameters(ElementId)  |  Gets the parameters of the given tool.  |  \n \n|   GetPdmId(ElementId)  |  Gets the PDM identifier.  |  \n \n|   IsTool(ElementId)  |  Tells whether an element is a tool.  |\n",
+  "markdown": "markdown/cam/795ba1f28aeeb1c7562a0991.md",
+  "originalHtml": "html/cam/795ba1f28aeeb1c7562a0991.html"
+}

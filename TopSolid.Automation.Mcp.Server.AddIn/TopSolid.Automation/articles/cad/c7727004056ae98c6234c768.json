@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMechanisms.RemoveRigidGroupConstituent.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMechanisms.RemoveRigidGroupConstituent.html",
+  "sha256": "d6e79cb5e54126af337ff5b589c08f5eec66f7151344337840137ac074f33231",
+  "text": "# Method RemoveRigidGroupConstituent\n\n#### RemoveRigidGroupConstituent(ElementId, ElementId)\n\nRemoves a constituent from a rigid group entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nvoid RemoveRigidGroupConstituent(ElementId inElementId, ElementId inConstituentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the rigid group entity to modify.  |  \n \n|  ElementId |  inConstituentId |  Identifier of the entity to removre from the rigid group.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.8.\n",
+  "markdown": "markdown/cad/c7727004056ae98c6234c768.md",
+  "originalHtml": "html/cad/c7727004056ae98c6234c768.html"
+}

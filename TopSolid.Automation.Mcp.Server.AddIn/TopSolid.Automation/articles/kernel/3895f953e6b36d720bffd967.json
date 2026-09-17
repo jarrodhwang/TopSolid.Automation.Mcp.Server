@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IGeometries3D.GetProfilesFolder.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IGeometries3D.GetProfilesFolder.html",
+  "sha256": "00a2fc0a8baa7ebec14a30d50e3737ee451504b6825d588991b327dfe1ee7780",
+  "text": "# Method GetProfilesFolder\n\n#### GetProfilesFolder(DocumentId)\n\nGets the profile folder entity of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 400, 180)]\nElementId GetProfilesFolder(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the profile folder entity found.  |\n",
+  "markdown": "markdown/kernel/3895f953e6b36d720bffd967.md",
+  "originalHtml": "html/kernel/3895f953e6b36d720bffd967.html"
+}

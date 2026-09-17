@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMechanisms.GetJointsFolder.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMechanisms.GetJointsFolder.html",
+  "sha256": "8cabec08558262915aab30bfef46073ca5c3b51269eea17794299388ca103ede",
+  "text": "# Method GetJointsFolder\n\n#### GetJointsFolder(DocumentId)\n\nGets the joints folder entity of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nElementId GetJointsFolder(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the joints folder entity found.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/cad/5d19ecbe8b24efaa17881470.md",
+  "originalHtml": "html/cad/5d19ecbe8b24efaa17881470.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.ImportPackageAsReplication.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.ImportPackageAsReplication.html",
+  "sha256": "84d77908f537bbe60ac476ce5f803b58e579fb8f88a46f3fe503050e1213d7b4",
+  "text": "# Method ImportPackageAsReplication\n\n#### ImportPackageAsReplication(string)\n\nImports a package with replication.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 303, 200)]\nList<PdmObjectId> ImportPackageAsReplication(string inFileFullPath)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  string |  inFileFullPath |  Full path of the package file, with \".TopPkg\" extension.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<PdmObjectId> |  List of imported projects PDM object identifiers.  |  \n\n##### Remarks\n\nThis method must not be called between StartModification(string, bool) and EndModification(bool, bool) methods calls.\n \nThis method is available since v7.8.303.200.\n",
+  "markdown": "markdown/kernel/80490ebe2415cfa1a59493dc.md",
+  "originalHtml": "html/kernel/80490ebe2415cfa1a59493dc.html"
+}

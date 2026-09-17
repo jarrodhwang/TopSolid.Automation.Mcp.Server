@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IntegerProperty.Type.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IntegerProperty.Type.html",
+  "sha256": "3fdbeee1978238126ce21e7671d882f65dfa2c7797d31a00b5b749ab0b25969a",
+  "text": "# Property Type\n\n#### Type\n\nGets the property type.\n\n##### Declaration\n\n```\npublic override PropertyType Type { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  PropertyType |   |  \n\n##### Overrides\n \nProperty.Type\n",
+  "markdown": "markdown/kernel/55734ddfda6abff62b5caf0e.md",
+  "originalHtml": "html/kernel/55734ddfda6abff62b5caf0e.html"
+}

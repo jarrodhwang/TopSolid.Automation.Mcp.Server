@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.GetEnumerationValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.GetEnumerationValue.html",
+  "sha256": "ec06fdc3a3c72c6af45eab4787e2cb799e50c250a3e2308ea00ecd294c75bade",
+  "text": "# Method GetEnumerationValue\n\n#### GetEnumerationValue(ElementId)\n\nGets the value of an enumeration parameter.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nint GetEnumerationValue(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the parameter to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  int |  Value of the parameter.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/3e0ef40615441f948b4abf8f.md",
+  "originalHtml": "html/kernel/3e0ef40615441f948b4abf8f.html"
+}

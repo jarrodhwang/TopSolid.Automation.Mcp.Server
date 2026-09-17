@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.ExportExecutablePackage.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.ExportExecutablePackage.html",
+  "sha256": "8875510dad341ff26ee51e027806e011382c6daf05d8596df49ceaef20529713",
+  "text": "# Method ExportExecutablePackage\n\n#### ExportExecutablePackage(List<PdmObjectId>, bool, bool, bool, string)\n\nExports an executable package.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 303, 200)]\nvoid ExportExecutablePackage(List<PdmObjectId> inObjectIds, bool inExportsForDelivery, bool inExportsIncrementalPackage, bool inAllowsMeasurement, string inFileFullPath)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  List<PdmObjectId> |  inObjectIds |  PDM object identifiers.  |  \n \n|  bool |  inExportsForDelivery |  Whether exports for delivery.  |  \n \n|  bool |  inExportsIncrementalPackage |  Whether exports an incremental package.  |  \n \n|  bool |  inAllowsMeasurement |  Whether allows measurement.  |  \n \n|  string |  inFileFullPath |  Full path of the exported package, with \".exe\" extension.  |  \n\n##### Remarks\n\nThis method produces Windows 32-bit executable that allows viewing the specified objects without installing TopSolid'Viewer.\n \nThis method must not be called between StartModification(string, bool) and EndModification(bool, bool) methods calls.\n \nThis method is available since v7.8.303.200.\n",
+  "markdown": "markdown/kernel/48ef6f6c5686f825261c0749.md",
+  "originalHtml": "html/kernel/48ef6f6c5686f825261c0749.html"
+}

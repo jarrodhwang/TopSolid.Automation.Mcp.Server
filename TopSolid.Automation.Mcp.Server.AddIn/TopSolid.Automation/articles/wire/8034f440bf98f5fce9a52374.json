@@ -1,0 +1,8 @@
+{
+  "path": "api/wire/TopSolid.Cam.NC.Wire.Automating.IWireTechnologyDocuments.GetTechnologies.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/wire/TopSolid.Cam.NC.Wire.Automating.IWireTechnologyDocuments.GetTechnologies.html",
+  "sha256": "5a68bad38fae51c4b35deceb1f0d8adcd8a10fbf6db31638ec12c25960d7da08",
+  "text": "# Method GetTechnologies\n\n#### GetTechnologies(DocumentId)\n\nGet the list of wire technology in the document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 160)]\nList<ElementId> GetTechnologies(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementId> |  List of all wire technology.  |\n",
+  "markdown": "markdown/wire/8034f440bf98f5fce9a52374.md",
+  "originalHtml": "html/wire/8034f440bf98f5fce9a52374.html"
+}

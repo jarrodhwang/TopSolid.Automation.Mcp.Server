@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ITextures.SetRedWayTransparencyFile.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ITextures.SetRedWayTransparencyFile.html",
+  "sha256": "135a4affe5a630969a80ea05954ce6eceb8608aed64d5e857942b0dd85824f33",
+  "text": "# Method SetRedWayTransparencyFile\n\n#### SetRedWayTransparencyFile(DocumentId, string)\n\nSets the redway transparency file.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 0, 0)]\nvoid SetRedWayTransparencyFile(DocumentId inDocumentId, string inFullPath)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  string |  inFullPath |  File path of the picture.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.16.\n",
+  "markdown": "markdown/kernel/778e7d392085f2e1fa0867c2.md",
+  "originalHtml": "html/kernel/778e7d392085f2e1fa0867c2.html"
+}

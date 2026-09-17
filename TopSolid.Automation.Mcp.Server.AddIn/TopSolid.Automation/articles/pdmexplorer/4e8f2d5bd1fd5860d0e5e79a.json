@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.TopSolidPdmExplorerHostInstance.Application.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.TopSolidPdmExplorerHostInstance.Application.html",
+  "sha256": "5a5fa53febc73cfaf1e1b43f9bf507cc4c66da80d97fa5a731b64580eead679e",
+  "text": "# Property Application\n\n#### Application\n\nGets access to the application, or null if not available.\n\n##### Declaration\n\n```\npublic IApplication Application { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  IApplication |   |\n",
+  "markdown": "markdown/pdmexplorer/4e8f2d5bd1fd5860d0e5e79a.md",
+  "originalHtml": "html/pdmexplorer/4e8f2d5bd1fd5860d0e5e79a.html"
+}

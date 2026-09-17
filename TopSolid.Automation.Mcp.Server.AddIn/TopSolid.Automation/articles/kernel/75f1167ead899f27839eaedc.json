@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.TopSolidHostInstance.ClientAddress.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.TopSolidHostInstance.ClientAddress.html",
+  "sha256": "5bef0af2b1ff7bd8ecb431f40ea022132b063ffbbfd1b3dfa3143a0ec00a34d1",
+  "text": "# Property ClientAddress\n\n#### ClientAddress\n\nGets the client IP address used for receiving events when using TCP, or null for not managing events.\n\n##### Declaration\n\n```\npublic string ClientAddress { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |   |\n",
+  "markdown": "markdown/kernel/75f1167ead899f27839eaedc.md",
+  "originalHtml": "html/kernel/75f1167ead899f27839eaedc.html"
+}

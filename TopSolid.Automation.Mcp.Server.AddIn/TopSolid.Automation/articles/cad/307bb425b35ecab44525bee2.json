@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ICoatings.GetGlossinessTextureDocument.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ICoatings.GetGlossinessTextureDocument.html",
+  "sha256": "6b97d9df41f792a574b93f27cdcf4fdfa935b46b1e7c19f47981acd66b8727e4",
+  "text": "# Method GetGlossinessTextureDocument\n\n#### GetGlossinessTextureDocument(DocumentId)\n\nGets the Glossiness texture document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 18, 0, 0)]\nDocumentId GetGlossinessTextureDocument(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  DocumentId |   |  \n\n##### Remarks\n\nThis method is available since v7.18.\n",
+  "markdown": "markdown/cad/307bb425b35ecab44525bee2.md",
+  "originalHtml": "html/cad/307bb425b35ecab44525bee2.html"
+}

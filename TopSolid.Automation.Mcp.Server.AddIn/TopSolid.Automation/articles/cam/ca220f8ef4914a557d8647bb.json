@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IWorldCoordinateSystems.GetWcsToolHolder.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IWorldCoordinateSystems.GetWcsToolHolder.html",
+  "sha256": "9b52bc7ac9519b25c6ca6cedfccd4ba2b9a36171fd88a1e016efdcf51f4cc5d1",
+  "text": "# Method GetWcsToolHolder\n\n#### GetWcsToolHolder(ElementId)\n\nGets the WCS tool holder.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 400, 80)]\nElementId GetWcsToolHolder(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the WCS to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  The tool holder.  |\n",
+  "markdown": "markdown/cam/ca220f8ef4914a557d8647bb.md",
+  "originalHtml": "html/cam/ca220f8ef4914a557d8647bb.html"
+}

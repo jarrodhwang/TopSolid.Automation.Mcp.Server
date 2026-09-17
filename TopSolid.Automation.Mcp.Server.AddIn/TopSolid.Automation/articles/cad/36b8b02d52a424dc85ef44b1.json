@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IProcesses.FindFunctionProcesses.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IProcesses.FindFunctionProcesses.html",
+  "sha256": "8838a1d6a78765ed89062e04cf463bba9944950c0414e35cdc8e8d76f21afb75",
+  "text": "# Method FindFunctionProcesses\n\n#### FindFunctionProcesses(DocumentId)\n\nFinds available processes from a function document\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 400, 140)]\nList<PdmObjectId> FindFunctionProcesses(DocumentId inFunctionDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inFunctionDocumentId |  Function document to analyze  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<PdmObjectId> |  List of available processes  |\n",
+  "markdown": "markdown/cad/36b8b02d52a424dc85ef44b1.md",
+  "originalHtml": "html/cad/36b8b02d52a424dc85ef44b1.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ISubstitutions.ClearGlobalSubstitutions.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ISubstitutions.ClearGlobalSubstitutions.html",
+  "sha256": "58d7ca5e9077900faa064f12cb6d84574a4aa13f7efce7439d61ed17928ffb73",
+  "text": "# Method ClearGlobalSubstitutions\n\n#### ClearGlobalSubstitutions(ElementId)\n\nClears global substitutions (rules excepted)\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 0, 0)]\nvoid ClearGlobalSubstitutions(ElementId inOperationId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inOperationId |  Identifier of the operation holding substitutions.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.19.\n",
+  "markdown": "markdown/cad/771bb18944316a0c6df440f9.md",
+  "originalHtml": "html/cad/771bb18944316a0c6df440f9.html"
+}

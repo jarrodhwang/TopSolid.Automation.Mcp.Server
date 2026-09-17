@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMechanisms.GetConfigurations.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMechanisms.GetConfigurations.html",
+  "sha256": "65a6bdcb366ccaa8fbc73fd8952f8f52fddb7ad6296d51a820ba6f23e910cb86",
+  "text": "# Method GetConfigurations\n\n#### GetConfigurations(DocumentId)\n\nGets the configuration entities that are in the configurations folder of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nList<ElementId> GetConfigurations(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementId> |  Configuration entities found.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/cad/d4690d197f90530e4d53ac54.md",
+  "originalHtml": "html/cad/d4690d197f90530e4d53ac54.html"
+}

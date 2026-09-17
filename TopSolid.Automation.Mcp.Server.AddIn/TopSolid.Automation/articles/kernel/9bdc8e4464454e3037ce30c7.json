@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Point3D.Z.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Point3D.Z.html",
+  "sha256": "ee0a471b36331419eec325480646cc9caa5845213d23e4dd778f1fe51310cf6a",
+  "text": "# Field Z\n\nZ coordinate.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic double Z\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double |  Z coordinate. |\n",
+  "markdown": "markdown/kernel/9bdc8e4464454e3037ce30c7.md",
+  "originalHtml": "html/kernel/9bdc8e4464454e3037ce30c7.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IDocuments.IsUnsynchronizableDocument.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IDocuments.IsUnsynchronizableDocument.html",
+  "sha256": "9bbef0cf1cb8728748233808da2dd8d3f24bc0863e2610346faa317fec09f591",
+  "text": "# Method IsUnsynchronizableDocument\n\n#### IsUnsynchronizableDocument(DocumentId)\n\nDetermines whether the document is unsynchronizable.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 400, 180)]\nbool IsUnsynchronizableDocument(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyse.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Tells wether the document is unsynchronizable.  |  \n\n##### Remarks\n\nThis method is available since v7.19.\n",
+  "markdown": "markdown/kernel/c2a57086292027fe36bdb59b.md",
+  "originalHtml": "html/kernel/c2a57086292027fe36bdb59b.html"
+}

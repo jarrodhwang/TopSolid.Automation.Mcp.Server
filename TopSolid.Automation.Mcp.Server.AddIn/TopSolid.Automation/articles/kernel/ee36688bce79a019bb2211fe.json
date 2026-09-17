@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.ExportDictionaries.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.ExportDictionaries.html",
+  "sha256": "a6cefabcd29aebe6606e094766111e657ac2048f6c8cb9a612103dd084ba98ba",
+  "text": "# Method ExportDictionaries\n\n#### ExportDictionaries(List<PdmObjectId>, CultureInfo[], string[])\n\nExports dictionaries (.TopDic file).\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 15, 300, 0)]\nvoid ExportDictionaries(List<PdmObjectId> inProjects, CultureInfo[] inCultures, string[] inFileFullNames)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  List<PdmObjectId> |  inProjects |  Identifiers of projects to export.  |  \n \n|  CultureInfo[] |  inCultures |  Cultures to export.  |  \n \n|  string[] |  inFileFullNames |  Dictionnaries files full names.  |  \n\n##### Remarks\n\nThis method is available since v7.15.300.000.\n",
+  "markdown": "markdown/kernel/ee36688bce79a019bb2211fe.md",
+  "originalHtml": "html/kernel/ee36688bce79a019bb2211fe.html"
+}

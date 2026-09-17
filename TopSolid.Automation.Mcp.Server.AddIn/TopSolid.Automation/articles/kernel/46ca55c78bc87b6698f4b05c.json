@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IGeometries3D.Publish3DProfile.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IGeometries3D.Publish3DProfile.html",
+  "sha256": "27eacd109cd01e6009f0e0c7b237b59d527a423f868ae61998983e78027d59ae",
+  "text": "# Method Publish3DProfile\n\n#### Publish3DProfile(DocumentId, string, SmartProfile3D)\n\nCreates a 3d profile publishing entity in a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 400, 180)]\nElementId Publish3DProfile(DocumentId inDocumentId, string inDescription, SmartProfile3D inDefinition)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  string |  inDescription |  Publishing description.  |  \n \n|  SmartProfile3D |  inDefinition |  Publishing definition.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the created publishing entity.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.20.100.100.\n",
+  "markdown": "markdown/kernel/46ca55c78bc87b6698f4b05c.md",
+  "originalHtml": "html/kernel/46ca55c78bc87b6698f4b05c.html"
+}

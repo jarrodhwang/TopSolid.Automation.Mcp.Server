@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Vector3D.op_Subtraction.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Vector3D.op_Subtraction.html",
+  "sha256": "dae21a829d02fc65e9c907b27d604e39377b1d37cf137789da50ab23ec43f560",
+  "text": "# Operator operator -\n\n#### operator -(Vector3D, Vector3D)\n\nSubtracts two vectors.\n\n##### Declaration\n\n```\npublic static Vector3D operator -(Vector3D inVector1, Vector3D inVector2)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  Vector3D |  inVector1 |  Left hand side vector.  |  \n \n|  Vector3D |  inVector2 |  Right hand side vector.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Vector3D |  Vectors' subtraction.  |\n",
+  "markdown": "markdown/kernel/7dbaba80f0f8873c40f0aa8c.md",
+  "originalHtml": "html/kernel/7dbaba80f0f8873c40f0aa8c.html"
+}

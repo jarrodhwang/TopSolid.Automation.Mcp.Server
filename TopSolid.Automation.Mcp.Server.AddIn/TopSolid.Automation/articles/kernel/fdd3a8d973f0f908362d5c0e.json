@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.GetProjects.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.GetProjects.html",
+  "sha256": "45687d9c44954f4fbe630fba7973f4f600273373b14025d93011b8653ebb9c03",
+  "text": "# Method GetProjects\n\n#### GetProjects(bool, bool)\n\nGets all the projects.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nList<PdmObjectId> GetProjects(bool inGetsWorkingProjects, bool inGetsLibraryProjects)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  bool |  inGetsWorkingProjects |  Gets working projects.  |  \n \n|  bool |  inGetsLibraryProjects |  Gets library projects.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<PdmObjectId> |  List of projects PDM object identifiers.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/fdd3a8d973f0f908362d5c0e.md",
+  "originalHtml": "html/kernel/fdd3a8d973f0f908362d5c0e.html"
+}

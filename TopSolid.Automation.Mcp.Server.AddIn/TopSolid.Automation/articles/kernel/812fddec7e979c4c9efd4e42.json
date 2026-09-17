@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.RealParameterConstraintsMode.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.RealParameterConstraintsMode.html",
+  "sha256": "f2e36587b2ae8d9b7bb578420c05da85fa295daba25a33d86a970f0556957d62",
+  "text": "# Enum RealParameterConstraintsMode\n\nDefines the various modes of real parameter constraints.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 17, 0, 0)]\npublic enum RealParameterConstraintsMode\n```\n\n##### Remarks\n\nThis enum is available since v7.17.000.000.\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  Check |  Check that the constraints are satisfied at specified tolerance.  |  \n \n|  CheckAndAdjust |  Check that the constraints are satisfied at specified tolerance and adjust at zero tolerance.  |  \n \n|  None |  Not used.  |  \n \n|  Solve |  Solve the constraints.  |\n",
+  "markdown": "markdown/kernel/812fddec7e979c4c9efd4e42.md",
+  "originalHtml": "html/kernel/812fddec7e979c4c9efd4e42.html"
+}

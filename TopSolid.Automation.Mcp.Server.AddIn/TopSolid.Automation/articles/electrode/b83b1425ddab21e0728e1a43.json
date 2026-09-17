@@ -1,0 +1,8 @@
+{
+  "path": "api/electrode/TopSolid.Cad.Electrode.Automating.IElectrodes.GetElectrodeZPosition.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/electrode/TopSolid.Cad.Electrode.Automating.IElectrodes.GetElectrodeZPosition.html",
+  "sha256": "6e1017471f20825a5092f8458af3755c3eb774bf9fc60c887b76592b1fabe981",
+  "text": "# Method GetElectrodeZPosition\n\n#### GetElectrodeZPosition(ElementId, int)\n\nGet the Z position of an electrode at a given position index.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 12, 0, 0)]\ndouble GetElectrodeZPosition(ElementId inElementId, int inPositionIndex)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the electrode to analyze.  |  \n \n|  int |  inPositionIndex |  Position index.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double |  Z position.  |  \n\n##### Remarks\n\nThis method is available since v7.12.\n",
+  "markdown": "markdown/electrode/b83b1425ddab21e0728e1a43.md",
+  "originalHtml": "html/electrode/b83b1425ddab21e0728e1a43.html"
+}

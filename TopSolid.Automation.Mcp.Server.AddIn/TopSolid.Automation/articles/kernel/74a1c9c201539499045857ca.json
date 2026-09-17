@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.SetTextPublishingDefinition.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.SetTextPublishingDefinition.html",
+  "sha256": "d033f1ec8eaddd0d8a96c9eeb3ea3620da69da0f7ee9280e4b5f8dd001f17f69",
+  "text": "# Method SetTextPublishingDefinition\n\n#### SetTextPublishingDefinition(ElementId, SmartText)\n\nSets the definition of a text publishing entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nvoid SetTextPublishingDefinition(ElementId inElementId, SmartText inDefinition)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the publishing entity to modify.  |  \n \n|  SmartText |  inDefinition |  Publishing new definition.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.8.\n",
+  "markdown": "markdown/kernel/74a1c9c201539499045857ca.md",
+  "originalHtml": "html/kernel/74a1c9c201539499045857ca.html"
+}

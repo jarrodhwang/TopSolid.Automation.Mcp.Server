@@ -1,0 +1,8 @@
+{
+  "path": "api/cae/TopSolid.Cae.Kernel.Automating.MeasureResults.Structural.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cae/TopSolid.Cae.Kernel.Automating.MeasureResults.Structural.html",
+  "sha256": "69520b6af9589bf6dcf7c4b26b24d0cf11d160ccb9697804b1952133cd96db1b",
+  "text": "# Property Structural\n\n#### Structural\n\nGets the structural Values\n\n##### Declaration\n\n```\npublic string[] Structural { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string[] |   |\n",
+  "markdown": "markdown/cae/002c2af9fd9059d61626b682.md",
+  "originalHtml": "html/cae/002c2af9fd9059d61626b682.html"
+}

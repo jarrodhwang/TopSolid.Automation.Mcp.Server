@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Generic.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Generic.html",
+  "sha256": "da727aee39b7a96de58847a1766a1408f064957499b10911b7e2648480759ef1",
+  "text": "# Namespace TopSolid.Kernel.Automating.Generic\n\n###  Classes \n\n#### HostChannel<TService>\n \nRepresents a channel to a TopSolid host providing a WCF service.\n",
+  "markdown": "markdown/kernel/35e15748c56a010462dbd14e.md",
+  "originalHtml": "html/kernel/35e15748c56a010462dbd14e.html"
+}

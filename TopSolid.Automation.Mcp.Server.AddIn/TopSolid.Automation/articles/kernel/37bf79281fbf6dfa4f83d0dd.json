@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.EnsureIsDirty.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.EnsureIsDirty.html",
+  "sha256": "d1909bd826b60edbcb665cf84d6b84213aa321667869c6c8e995eb80d8319599",
+  "text": "# Method EnsureIsDirty\n\n#### EnsureIsDirty(PdmObjectId)\n\nEnsures that an object is dirty to allow further modifications.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 9, 300, 80)]\nvoid EnsureIsDirty(PdmObjectId inObjectId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  PDM object identifier.  |  \n\n##### Remarks\n\nThis method must not be called between StartModification(string, bool) and EndModification(bool, bool) methods calls.\n \nThis method is available since v7.9.300.80.\n",
+  "markdown": "markdown/kernel/37bf79281fbf6dfa4f83d0dd.md",
+  "originalHtml": "html/kernel/37bf79281fbf6dfa4f83d0dd.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.GetSavingDate.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.GetSavingDate.html",
+  "sha256": "7da3384d3593217d8675fa93f623d3dcdb4f918d093e87f3412c38cd2f6b4484",
+  "text": "# Method GetSavingDate\n\n#### GetSavingDate(PdmObjectId)\n\nGets the saving date of an object.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nstring GetSavingDate(PdmObjectId inObjectId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  Object identifier.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  Object saving date.  |  \n\n##### Remarks\n\nThis method is available since v7.10.300.140.\n",
+  "markdown": "markdown/pdmexplorer/fe3b8d67599be39cf322c160.md",
+  "originalHtml": "html/pdmexplorer/fe3b8d67599be39cf322c160.html"
+}

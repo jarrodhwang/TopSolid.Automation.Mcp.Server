@@ -1,0 +1,8 @@
+{
+  "path": "api/wire/TopSolid.Cam.NC.Wire.Automating.IWireCc.SetGeneratorRegulatorNumber.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/wire/TopSolid.Cam.NC.Wire.Automating.IWireCc.SetGeneratorRegulatorNumber.html",
+  "sha256": "86d79c0a008676403d32588507c2a9406c0bad27dbeff90389a70227a1157910",
+  "text": "# Method SetGeneratorRegulatorNumber\n\n#### SetGeneratorRegulatorNumber(ElementId, SmartInteger)\n\nSet generator regulator number.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 160)]\nvoid SetGeneratorRegulatorNumber(ElementId inElementId, SmartInteger inGeneratorRegulatorNumber)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to modify.  |  \n \n|  SmartInteger |  inGeneratorRegulatorNumber |  Generator regulator number.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n",
+  "markdown": "markdown/wire/08b21971a2616b96953eb04a.md",
+  "originalHtml": "html/wire/08b21971a2616b96953eb04a.html"
+}

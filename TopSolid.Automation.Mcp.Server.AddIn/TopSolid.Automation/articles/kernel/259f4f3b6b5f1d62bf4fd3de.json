@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Transform2D.R11.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Transform2D.R11.html",
+  "sha256": "40c7b7f70c33367bf0356f0345aabad17ee5d31323b72eb4fd13dd58b561c9aa",
+  "text": "# Field R11\n\nRotation[1,1].\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic double R11\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double |  Rotation[1,1]. |\n",
+  "markdown": "markdown/kernel/259f4f3b6b5f1d62bf4fd3de.md",
+  "originalHtml": "html/kernel/259f4f3b6b5f1d62bf4fd3de.html"
+}

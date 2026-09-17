@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.CylinderStockType.Diameter.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.CylinderStockType.Diameter.html",
+  "sha256": "b897792c3704757dbfc9715f83e9da5826420d35e842547f464a8773f3d8f2df",
+  "text": "# Field Diameter\n\nRadius.\n\n###### Namespace: TopSolid.Cam.NC.Kernel.Automating\n\n###### Assembly: TopSolid.Cam.NC.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic SmartReal Diameter\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartReal |  Radius. |\n",
+  "markdown": "markdown/cam/4d4620404a71dd64a734c29d.md",
+  "originalHtml": "html/cam/4d4620404a71dd64a734c29d.html"
+}

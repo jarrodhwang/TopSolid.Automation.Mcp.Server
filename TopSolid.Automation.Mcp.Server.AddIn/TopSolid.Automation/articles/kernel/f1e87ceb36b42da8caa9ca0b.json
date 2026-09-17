@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IDocuments.GetName.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IDocuments.GetName.html",
+  "sha256": "5087826060925c748b824b3692811abaf1077f4d92f42b61d5cef0d5293092cd",
+  "text": "# Method GetName\n\n#### GetName(DocumentId)\n\nGets the name of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nstring GetName(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  Name of the document.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/f1e87ceb36b42da8caa9ca0b.md",
+  "originalHtml": "html/kernel/f1e87ceb36b42da8caa9ca0b.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMaterials.SetHatchingDocument.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMaterials.SetHatchingDocument.html",
+  "sha256": "22f543b24700afa189aafffd5e68d432458b184d7a8eaec87788920f17888148",
+  "text": "# Method SetHatchingDocument\n\n#### SetHatchingDocument(DocumentId, DocumentId)\n\nSets the hatching document to a material document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 0, 0)]\nvoid SetHatchingDocument(DocumentId inDocumentId, DocumentId inHatchingDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  DocumentId |  inHatchingDocumentId |  The hatching document.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.16.\n",
+  "markdown": "markdown/cad/e7fee53300234203c086b756.md",
+  "originalHtml": "html/cad/e7fee53300234203c086b756.html"
+}

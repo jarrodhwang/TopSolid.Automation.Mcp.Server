@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.CreateRealRelayedParameter.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.CreateRealRelayedParameter.html",
+  "sha256": "6a4aeb86b9e919191e79bff3389db9869afdba2bb32ace233a7d87ff0357f891",
+  "text": "# Method CreateRealRelayedParameter\n\n#### CreateRealRelayedParameter(DocumentId, ElementId, ParameterRelayType)\n\nCreates a real relayed parameter entity in a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 18, 400, 100)]\nElementId CreateRealRelayedParameter(DocumentId inDocumentId, ElementId inElementId, ParameterRelayType inRelayParameterType)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  ElementId |  inElementId |  Identifier of the real parameter entity to relay.  |  \n \n|  ParameterRelayType |  inRelayParameterType |  Type of relay.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |   |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.18.400.100.\n",
+  "markdown": "markdown/kernel/4efa15ac11053fc73c591f7f.md",
+  "originalHtml": "html/kernel/4efa15ac11053fc73c591f7f.html"
+}

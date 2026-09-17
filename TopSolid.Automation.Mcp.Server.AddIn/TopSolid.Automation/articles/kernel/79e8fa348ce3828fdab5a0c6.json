@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IShapes.GetFaceCount.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IShapes.GetFaceCount.html",
+  "sha256": "00da9c1e846e96bc2d6cd2d2fac441eb6045d09edfdb250b49e9ff09cca92299",
+  "text": "# Method GetFaceCount\n\n#### GetFaceCount(ElementId)\n\nGets the number of faces of a shape.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nint GetFaceCount(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the shape entity to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  int |  Number of faces of the shape.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/79e8fa348ce3828fdab5a0c6.md",
+  "originalHtml": "html/kernel/79e8fa348ce3828fdab5a0c6.html"
+}

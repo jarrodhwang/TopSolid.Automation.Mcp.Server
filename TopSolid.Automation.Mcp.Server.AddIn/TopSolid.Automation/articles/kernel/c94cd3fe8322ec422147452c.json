@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IShapes.GetEdgeLineCurve.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IShapes.GetEdgeLineCurve.html",
+  "sha256": "b4ec8fc41cc39ca032c6e1771a410380eca9d3ff9bab1e17bb07efe2033cd54d",
+  "text": "# Method GetEdgeLineCurve\n\n#### GetEdgeLineCurve(ElementItemId, out Axis3D)\n\nGets the line curve attached to an edge.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nvoid GetEdgeLineCurve(ElementItemId inEdgeId, out Axis3D outAxis)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementItemId |  inEdgeId |  Identifier of the edge to analyze.  |  \n \n|  Axis3D |  outAxis |  Line axis.  |  \n\n##### Remarks\n\nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/c94cd3fe8322ec422147452c.md",
+  "originalHtml": "html/kernel/c94cd3fe8322ec422147452c.html"
+}

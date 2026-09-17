@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.DrillingTappedHolePrimitive.IsHoleTotalDepth.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.DrillingTappedHolePrimitive.IsHoleTotalDepth.html",
+  "sha256": "0beaeba74ffd77f5449a9f2c26714ab32715d5fa445c5d4221cd0e5dd91beaa1",
+  "text": "# Field IsHoleTotalDepth\n\nTells or sets whether is total depth, i.e from the drill origin to the hole extremity.\n\n###### Namespace: TopSolid.Cad.Design.Automating\n\n###### Assembly: TopSolid.Cad.Design.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic bool IsHoleTotalDepth\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Tells or sets whether is total depth, i.e from the drill origin to the hole extremity. |\n",
+  "markdown": "markdown/cad/63607c7728536e35337b972e.md",
+  "originalHtml": "html/cad/63607c7728536e35337b972e.html"
+}

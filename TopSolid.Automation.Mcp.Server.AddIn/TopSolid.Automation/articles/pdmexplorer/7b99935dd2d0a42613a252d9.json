@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.CreateProjectFolder.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.CreateProjectFolder.html",
+  "sha256": "c8bce4277eda522bcda890ceddce87fb083113427c2cae994cb1d6dbff1fca4a",
+  "text": "# Method CreateProjectFolder\n\n#### CreateProjectFolder(PdmProjectFolderId, string)\n\nCreates a project folder.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nPdmProjectFolderId CreateProjectFolder(PdmProjectFolderId inProjectFolderId, string inFolderName)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmProjectFolderId |  inProjectFolderId |  Identifier of the project folder where the new project folder is to be created.  |  \n \n|  string |  inFolderName |  Name of the new project folder.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  PdmProjectFolderId |  Identifier of the created project folder.  |  \n\n##### Remarks\n\nIf creation fails, the returned identifier is empty.\n \nThis method is available since v7.10.\n",
+  "markdown": "markdown/pdmexplorer/7b99935dd2d0a42613a252d9.md",
+  "originalHtml": "html/pdmexplorer/7b99935dd2d0a42613a252d9.html"
+}

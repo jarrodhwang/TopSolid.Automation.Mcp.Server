@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.IDraftings.Print.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.IDraftings.Print.html",
+  "sha256": "fb40b4ca6141b8838a89fff053272b3b0228b2b71221ba5a3f6244bc77e8cf68",
+  "text": "# Method Print\n\n#### Print(DocumentId, PrintMode, PrintColorMapping, int, int, int)\n\nPrints a document to the active printer.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nvoid Print(DocumentId inDocumentId, PrintMode inMode, PrintColorMapping inColorMapping, int inResolution, int inFromPage, int inToPage)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Document to print.  |  \n \n|  PrintMode |  inMode |  Print mode.  |  \n \n|  PrintColorMapping |  inColorMapping |  Color conversion mode.  |  \n \n|  int |  inResolution |  Print resolution in dot-per-inch.  |  \n \n|  int |  inFromPage |  Start page to print (or -1 to print all pages).  |  \n \n|  int |  inToPage |  End page to print.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/drafting/181740fd07e36c95994ae48c.md",
+  "originalHtml": "html/drafting/181740fd07e36c95994ae48c.html"
+}

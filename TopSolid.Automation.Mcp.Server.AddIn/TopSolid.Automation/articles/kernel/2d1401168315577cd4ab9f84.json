@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartFrame2D.Type.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartFrame2D.Type.html",
+  "sha256": "6d996634f33f9b8d00c2f0a3d23bb9c5404d36dfec18e3592b252481ff0b3849",
+  "text": "# Field Type\n\nType of smart frame.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic SmartFrame2DType Type\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartFrame2DType |  Type of smart frame. |\n",
+  "markdown": "markdown/kernel/2d1401168315577cd4ab9f84.md",
+  "originalHtml": "html/kernel/2d1401168315577cd4ab9f84.html"
+}

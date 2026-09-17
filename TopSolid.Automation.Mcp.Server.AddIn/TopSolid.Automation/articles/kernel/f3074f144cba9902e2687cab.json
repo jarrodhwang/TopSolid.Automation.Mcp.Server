@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ConstraintDriverData.Driver.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ConstraintDriverData.Driver.html",
+  "sha256": "691f4a49da5fa6b534c65846be5fb72fc32e125906a77068f1106f8db96d1bbc",
+  "text": "# Property Driver\n\n#### Driver\n\nGets the Property\n\n##### Declaration\n\n```\npublic ElementId Driver { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |   |\n",
+  "markdown": "markdown/kernel/f3074f144cba9902e2687cab.md",
+  "originalHtml": "html/kernel/f3074f144cba9902e2687cab.html"
+}

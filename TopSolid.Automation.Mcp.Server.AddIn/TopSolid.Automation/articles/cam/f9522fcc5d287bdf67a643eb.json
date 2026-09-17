@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.CylinderStockType.Axis.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.CylinderStockType.Axis.html",
+  "sha256": "28b2377d8c4003f49a4c2f38d1fde1e5503fb6f650eead1d3d99ca0d5fb3eda5",
+  "text": "# Field Axis\n\nAxis.\n\n###### Namespace: TopSolid.Cam.NC.Kernel.Automating\n\n###### Assembly: TopSolid.Cam.NC.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic SmartAxis3D Axis\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartAxis3D |  Axis. |\n",
+  "markdown": "markdown/cam/f9522fcc5d287bdf67a643eb.md",
+  "originalHtml": "html/cam/f9522fcc5d287bdf67a643eb.html"
+}

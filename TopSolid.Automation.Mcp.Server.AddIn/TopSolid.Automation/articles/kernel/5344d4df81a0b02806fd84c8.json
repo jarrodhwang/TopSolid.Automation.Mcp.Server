@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Transform3D.Px.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Transform3D.Px.html",
+  "sha256": "916b0e166424906e99d5db705deedd645f066e1e502f0880583594d53096128e",
+  "text": "# Field Px\n\nPerspective factor along X.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic double Px\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double |  Perspective factor along X. |\n",
+  "markdown": "markdown/kernel/5344d4df81a0b02806fd84c8.md",
+  "originalHtml": "html/kernel/5344d4df81a0b02806fd84c8.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.TopSolidCamHost.IsConnected.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.TopSolidCamHost.IsConnected.html",
+  "sha256": "4acc54812d07fd4e633d7ee173096ced96eae3447068b892dfad37c129a8bf22",
+  "text": "# Property IsConnected\n\n#### IsConnected\n\nTells whether TopSolid is connected.\n\n##### Declaration\n\n```\npublic static bool IsConnected { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |   |\n",
+  "markdown": "markdown/cam/31bd3288b5e3689c0ca0d694.md",
+  "originalHtml": "html/cam/31bd3288b5e3689c0ca0d694.html"
+}

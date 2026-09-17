@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Color.op_Inequality.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Color.op_Inequality.html",
+  "sha256": "4d45f311a7586774163be9e8b93e027a6b46ad28e7e463f122642bdd8482cb03",
+  "text": "# Operator operator !=\n\n#### operator !=(Color, Color)\n\nCompares two colors.\n\n##### Declaration\n\n```\npublic static bool operator !=(Color inC1, Color inC2)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  Color |  inC1 |  Left hand side color.  |  \n \n|  Color |  inC2 |  Right hand side color.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Colors are different.  |\n",
+  "markdown": "markdown/kernel/3f6265e7fa187b390d8e79b4.md",
+  "originalHtml": "html/kernel/3f6265e7fa187b390d8e79b4.html"
+}

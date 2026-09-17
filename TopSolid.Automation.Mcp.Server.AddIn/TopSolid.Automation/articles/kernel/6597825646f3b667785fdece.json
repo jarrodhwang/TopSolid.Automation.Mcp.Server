@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.CodeProperty.Type.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.CodeProperty.Type.html",
+  "sha256": "9b0be636c8f9f76c1ccc8ffe84e70de2823ada22407675e2f6575774cb03d779",
+  "text": "# Property Type\n\n#### Type\n\nGets the property type.\n\n##### Declaration\n\n```\npublic override PropertyType Type { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  PropertyType |   |  \n\n##### Overrides\n \nProperty.Type\n",
+  "markdown": "markdown/kernel/6597825646f3b667785fdece.md",
+  "originalHtml": "html/kernel/6597825646f3b667785fdece.html"
+}

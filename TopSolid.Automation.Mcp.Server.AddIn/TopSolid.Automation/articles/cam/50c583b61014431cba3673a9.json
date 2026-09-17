@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IParameters.GetCategories.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IParameters.GetCategories.html",
+  "sha256": "9cc3568bcf5430131b8a9649e6ffccdea207ca9b87d1c347ac54503d72466300",
+  "text": "# Method GetCategories\n\n#### GetCategories(string)\n\nGets the categories, of a Cam operation parameter.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 0, 0)]\nstring[] GetCategories(string inFullName)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  string |  inFullName |  Identifier of the parameter to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string[] |  Categories. is added as a new category.  |\n",
+  "markdown": "markdown/cam/50c583b61014431cba3673a9.md",
+  "originalHtml": "html/cam/50c583b61014431cba3673a9.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.AddReferencedProjects.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.AddReferencedProjects.html",
+  "sha256": "5055f3a4d6f6f89f1de64ed20fc6ec51f0ce83c87a7aa40c6868a14ec00b4449",
+  "text": "# Method AddReferencedProjects\n\n#### AddReferencedProjects(PdmObjectId, List<PdmObjectId>)\n\nAdds referenced projects to a project.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nvoid AddReferencedProjects(PdmObjectId inProjectId, List<PdmObjectId> inReferencedProjectIds)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inProjectId |  Project identifier.  |  \n \n|  List<PdmObjectId> |  inReferencedProjectIds |  Referenced project identifiers to add.  |  \n\n##### Remarks\n\nProject is saved automatically after adding a reference.\n \nThis method must not be called between StartModification(string, bool) and EndModification(bool, bool) methods calls.\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/359c980d8f8d5ee32afcd647.md",
+  "originalHtml": "html/kernel/359c980d8f8d5ee32afcd647.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Vector3D.Z.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Vector3D.Z.html",
+  "sha256": "040a84340b0486237d8c9318f567f6c456ffafe08391860903388563ae4cd351",
+  "text": "# Field Z\n\nZ component.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic double Z\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double |  Z component. |\n",
+  "markdown": "markdown/kernel/4422389254cd2c6a17699eb2.md",
+  "originalHtml": "html/kernel/4422389254cd2c6a17699eb2.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.GetUserEnumerationPossibleValues.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.GetUserEnumerationPossibleValues.html",
+  "sha256": "4f71156c101d916a9486d701dc733a87fc1ee84a3dca0efea1eab53da6abd80b",
+  "text": "# Method GetUserEnumerationPossibleValues\n\n#### GetUserEnumerationPossibleValues(ElementId)\n\nGets the user enumeration parameter possibles values.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 17, 0, 0)]\nList<UserEnumerationProperty> GetUserEnumerationPossibleValues(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the parameter.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<UserEnumerationProperty> |  The possibles values.  |  \n\n##### Remarks\n\nThis method is available since v7.17.000.000.\n",
+  "markdown": "markdown/kernel/c370cf000f1ab3a828e11e6c.md",
+  "originalHtml": "html/kernel/c370cf000f1ab3a828e11e6c.html"
+}

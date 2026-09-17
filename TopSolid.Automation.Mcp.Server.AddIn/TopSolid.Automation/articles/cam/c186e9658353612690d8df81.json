@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IPrograms.IsProgram.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IPrograms.IsProgram.html",
+  "sha256": "f3181933033a96ecadd8d08fda5244a888d3f0e50188055c0c89f87fbf771bbd",
+  "text": "# Method IsProgram\n\n#### IsProgram(ElementId)\n\nTells whether an element is a program.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 180)]\nbool IsProgram(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  True if the element is a program.  |\n",
+  "markdown": "markdown/cam/c186e9658353612690d8df81.md",
+  "originalHtml": "html/cam/c186e9658353612690d8df81.html"
+}

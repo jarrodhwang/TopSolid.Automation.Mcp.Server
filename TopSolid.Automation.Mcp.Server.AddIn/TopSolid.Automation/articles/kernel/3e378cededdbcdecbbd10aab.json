@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.SetPartNumber.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.SetPartNumber.html",
+  "sha256": "a55445b6fd29e33c7d3376ad5ba53f50d851c0d5522f7e2287f36551ed464429",
+  "text": "# Method SetPartNumber\n\n#### SetPartNumber(PdmObjectId, string)\n\nSets the part number of an object.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 303, 100)]\nvoid SetPartNumber(PdmObjectId inObjectId, string inPartNumber)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  Object identifier.  |  \n \n|  string |  inPartNumber |  Part number.  |  \n\n##### Remarks\n\nThis method must not be called between StartModification(string, bool) and EndModification(bool, bool) methods calls.\n \nThis method is available since v7.8.303.100.\n",
+  "markdown": "markdown/kernel/3e378cededdbcdecbbd10aab.md",
+  "originalHtml": "html/kernel/3e378cededdbcdecbbd10aab.html"
+}

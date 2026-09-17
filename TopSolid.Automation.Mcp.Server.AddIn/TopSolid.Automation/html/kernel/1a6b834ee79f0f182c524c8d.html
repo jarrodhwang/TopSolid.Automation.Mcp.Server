@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Method CreateLoftedShape | TopSolid Automation website </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Method CreateLoftedShape | TopSolid Automation website ">
+    
+    
+      <link rel="shortcut icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../../styles/docfx.css">
+      <link rel="stylesheet" href="../../styles/main.css">
+      <meta property="docfx:navrel" content="../../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../img/AutomationIcon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="TopSolid.Kernel.Automating.IShapes.CreateLoftedShape*">
+
+
+
+<h1 id="TopSolid_Kernel_Automating_IShapes_CreateLoftedShape_" data-uid="TopSolid.Kernel.Automating.IShapes.CreateLoftedShape*">Method CreateLoftedShape</h1>
+<div class="markdown level0 summary"></div>
+<div class="markdown level0 conceptual"></div>
+
+<a id="TopSolid_Kernel_Automating_IShapes_CreateLoftedShape_" data-uid="TopSolid.Kernel.Automating.IShapes.CreateLoftedShape*"></a>
+<h4 id="TopSolid_Kernel_Automating_IShapes_CreateLoftedShape_TopSolid_Kernel_Automating_DocumentId_System_Boolean_TopSolid_Kernel_Automating_SmartPoint3D_System_Collections_Generic_List_TopSolid_Kernel_Automating_SmartProfile3D__System_Collections_Generic_List_TopSolid_Kernel_Automating_SmartPoint3D__TopSolid_Kernel_Automating_SmartPoint3D_TopSolid_Kernel_Automating_CurveParametricApproximationType_System_Collections_Generic_List_TopSolid_Kernel_Automating_SmartProfile3D__TopSolid_Kernel_Automating_CurveParametricApproximationType_TopSolid_Kernel_Automating_SmartReal_TopSolid_Kernel_Automating_FacesDivisionType_System_Boolean_System_Boolean_System_Boolean_" data-uid="TopSolid.Kernel.Automating.IShapes.CreateLoftedShape(TopSolid.Kernel.Automating.DocumentId,System.Boolean,TopSolid.Kernel.Automating.SmartPoint3D,System.Collections.Generic.List{TopSolid.Kernel.Automating.SmartProfile3D},System.Collections.Generic.List{TopSolid.Kernel.Automating.SmartPoint3D},TopSolid.Kernel.Automating.SmartPoint3D,TopSolid.Kernel.Automating.CurveParametricApproximationType,System.Collections.Generic.List{TopSolid.Kernel.Automating.SmartProfile3D},TopSolid.Kernel.Automating.CurveParametricApproximationType,TopSolid.Kernel.Automating.SmartReal,TopSolid.Kernel.Automating.FacesDivisionType,System.Boolean,System.Boolean,System.Boolean)">CreateLoftedShape(DocumentId, bool, SmartPoint3D, List&lt;SmartProfile3D&gt;, List&lt;SmartPoint3D&gt;, SmartPoint3D, CurveParametricApproximationType, List&lt;SmartProfile3D&gt;, CurveParametricApproximationType, SmartReal, FacesDivisionType, bool, bool, bool)</h4>
+<div class="markdown level1 summary"><p>Creates a lofted shape operation in a document.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+<h5 class="declaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">[OperationContract]
+[AvailableSinceVersion(7, 10, 301, 180)]
+ElementId CreateLoftedShape(DocumentId inDocumentId, bool inIsPeriodic, SmartPoint3D inStartPoint, List&lt;SmartProfile3D&gt; inLoftedProfiles, List&lt;SmartPoint3D&gt; inLoftedProfilesOrigins, SmartPoint3D inEndPoint, CurveParametricApproximationType inLoftedProfilesSynchronization, List&lt;SmartProfile3D&gt; inGuideProfiles, CurveParametricApproximationType inGuideProfilesSynchronization, SmartReal inIntersectionTolerance, FacesDivisionType inFacesDivision, bool inMatchesSegmentToSegment, bool inSimplifiesGeometry, bool inIsSurface)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a class="xref" href="TopSolid.Kernel.Automating.DocumentId.html">DocumentId</a></td>
+      <td><span class="parametername">inDocumentId</span></td>
+      <td><p>Identifier of the document to modify.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+      <td><span class="parametername">inIsPeriodic</span></td>
+      <td><p>Makes a periodic lofted shape (i.e. without start and end).</p>
+</td>
+    </tr>
+    <tr>
+      <td><a class="xref" href="TopSolid.Kernel.Automating.SmartPoint3D.html">SmartPoint3D</a></td>
+      <td><span class="parametername">inStartPoint</span></td>
+      <td><p>Start point, or null if not degenerated to a point at start.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TopSolid.Kernel.Automating.SmartProfile3D.html">SmartProfile3D</a>&gt;</td>
+      <td><span class="parametername">inLoftedProfiles</span></td>
+      <td><p>Lofted profiles.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TopSolid.Kernel.Automating.SmartPoint3D.html">SmartPoint3D</a>&gt;</td>
+      <td><span class="parametername">inLoftedProfilesOrigins</span></td>
+      <td><p>Origins on closed lofted profiles, or null if not closed or use profile start point.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a class="xref" href="TopSolid.Kernel.Automating.SmartPoint3D.html">SmartPoint3D</a></td>
+      <td><span class="parametername">inEndPoint</span></td>
+      <td><p>End point, or null if not degenerated to a point at end.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a class="xref" href="TopSolid.Kernel.Automating.CurveParametricApproximationType.html">CurveParametricApproximationType</a></td>
+      <td><span class="parametername">inLoftedProfilesSynchronization</span></td>
+      <td><p>Lofted profiles synchronization.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TopSolid.Kernel.Automating.SmartProfile3D.html">SmartProfile3D</a>&gt;</td>
+      <td><span class="parametername">inGuideProfiles</span></td>
+      <td><p>Guide profiles, or null if none.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a class="xref" href="TopSolid.Kernel.Automating.CurveParametricApproximationType.html">CurveParametricApproximationType</a></td>
+      <td><span class="parametername">inGuideProfilesSynchronization</span></td>
+      <td><p>Guide profiles synchronization.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a class="xref" href="TopSolid.Kernel.Automating.SmartReal.html">SmartReal</a></td>
+      <td><span class="parametername">inIntersectionTolerance</span></td>
+      <td><p>Tolerance used to search intersections between lofted and guide profiles.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a class="xref" href="TopSolid.Kernel.Automating.FacesDivisionType.html">FacesDivisionType</a></td>
+      <td><span class="parametername">inFacesDivision</span></td>
+      <td><p>Faces division type.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+      <td><span class="parametername">inMatchesSegmentToSegment</span></td>
+      <td><p>Matches segment to segment instead of profile to profile.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+      <td><span class="parametername">inSimplifiesGeometry</span></td>
+      <td><p>Simplifies the geometry when possible.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+      <td><span class="parametername">inIsSurface</span></td>
+      <td><p>Makes a surface instead of a solid.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="returns">Returns</h5>
+<table class="table table-bordered table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a class="xref" href="TopSolid.Kernel.Automating.ElementId.html">ElementId</a></td>
+      <td><p>Identifier of the created shape entity.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 id="TopSolid_Kernel_Automating_IShapes_CreateLoftedShape_TopSolid_Kernel_Automating_DocumentId_System_Boolean_TopSolid_Kernel_Automating_SmartPoint3D_System_Collections_Generic_List_TopSolid_Kernel_Automating_SmartProfile3D__System_Collections_Generic_List_TopSolid_Kernel_Automating_SmartPoint3D__TopSolid_Kernel_Automating_SmartPoint3D_TopSolid_Kernel_Automating_CurveParametricApproximationType_System_Collections_Generic_List_TopSolid_Kernel_Automating_SmartProfile3D__TopSolid_Kernel_Automating_CurveParametricApproximationType_TopSolid_Kernel_Automating_SmartReal_TopSolid_Kernel_Automating_FacesDivisionType_System_Boolean_System_Boolean_System_Boolean__remarks">Remarks</h5>
+<div class="markdown level1 remarks"><p><a class="xref" href="TopSolid.Kernel.Automating.IApplication.StartModification.html#TopSolid_Kernel_Automating_IApplication_StartModification_System_String_System_Boolean_">StartModification(string, bool)</a> and <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.EnsureIsDirty.html#TopSolid_Kernel_Automating_IDocuments_EnsureIsDirty_TopSolid_Kernel_Automating_DocumentId__">EnsureIsDirty(ref DocumentId)</a> must be called before calling this method.</p>
+<p>This method is available since v7.10.301.180.</p>
+</div>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div id="footer-alt">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      			<div id="footer-alt-bottom">
+                      <ul>
+                          <li><a href="https://www.topsolid.com/en/terms-of-use">Term of use</a></li>
+                          <li><a href="https://www.topsolid.com/en/corporate-information">Corporate information</a></li>
+                          <li><a href="https://www.topsolid.com/en/privacy-policy-gdpr">Privacy Policy - GDPR</a></li>
+                      </ul>
+                      <p>Copyright ©2025 TopSolid - All rights reserved.</p>
+                  </div>
+          </div>
+        </div>
+      </footer>    </div>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

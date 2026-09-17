@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.License.LicenseType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.License.LicenseType.html",
+  "sha256": "4f8fcd0751ae3114ff9180beae3c0d546f10c4f53c94e45844b39e494bf5579c",
+  "text": "# Field LicenseType\n\nLicense type (Standalone, floating, user).\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic LicenseType LicenseType\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  LicenseType |  License type (Standalone, floating, user). |\n",
+  "markdown": "markdown/kernel/fdd9242629a2760153fd51bd.md",
+  "originalHtml": "html/kernel/fdd9242629a2760153fd51bd.html"
+}

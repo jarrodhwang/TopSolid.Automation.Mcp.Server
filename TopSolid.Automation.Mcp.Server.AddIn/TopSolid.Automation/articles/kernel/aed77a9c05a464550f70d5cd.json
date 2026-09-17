@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.HasValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.HasValue.html",
+  "sha256": "063b656a147ac6a98702dd2f0bd2b3e3680b7401b0c48be6b2e9fedeaa3d632c",
+  "text": "# Method HasValue\n\n#### HasValue(ElementId)\n\nTells whether a parameter has a value.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nbool HasValue(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the parameter to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  The parameter has a value.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/aed77a9c05a464550f70d5cd.md",
+  "originalHtml": "html/kernel/aed77a9c05a464550f70d5cd.html"
+}

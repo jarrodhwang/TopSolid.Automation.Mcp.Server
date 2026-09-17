@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IHealing.CheckShape.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IHealing.CheckShape.html",
+  "sha256": "1fde0e320b47120b050cf8bb6f8bb831984accc35a267c0e5cd9798b3d1a5baf",
+  "text": "# Method CheckShape\n\n#### CheckShape(ElementId, out List<ElementItemId>)\n\nChecks shape.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 205, 0)]\nvoid CheckShape(ElementId inElementId, out List<ElementItemId> outDefects)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Shape Entity to check  |  \n \n|  List<ElementItemId> |  outDefects |  list of found defects  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.20\n",
+  "markdown": "markdown/kernel/68f47e005ac59e2974524181.md",
+  "originalHtml": "html/kernel/68f47e005ac59e2974524181.html"
+}

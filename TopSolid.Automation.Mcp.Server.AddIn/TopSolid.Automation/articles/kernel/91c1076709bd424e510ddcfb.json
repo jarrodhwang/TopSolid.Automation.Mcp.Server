@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ConstraintDriverData.IsEmpty.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ConstraintDriverData.IsEmpty.html",
+  "sha256": "be354938a5c3d4307307aaa585c119c53792bf23688db409a4892c534635f33c",
+  "text": "# Property IsEmpty\n\n#### IsEmpty\n\nTells whether the Constraint data is empty (no possible property).\n\n##### Declaration\n\n```\npublic bool IsEmpty { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |   |\n",
+  "markdown": "markdown/kernel/91c1076709bd424e510ddcfb.md",
+  "originalHtml": "html/kernel/91c1076709bd424e510ddcfb.html"
+}

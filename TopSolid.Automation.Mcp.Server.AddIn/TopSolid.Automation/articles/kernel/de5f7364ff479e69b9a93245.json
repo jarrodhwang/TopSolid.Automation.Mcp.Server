@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IGeometries3D.GetSectionPublishingDefinition.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IGeometries3D.GetSectionPublishingDefinition.html",
+  "sha256": "033b1cc429c37690bc45b90c080c9adbb1e3efa86a3b1bd0bf0c2d45e3d11616",
+  "text": "# Method GetSectionPublishingDefinition\n\n#### GetSectionPublishingDefinition(ElementId)\n\nGets the definition of a section publishing entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 302, 80)]\nSmartSection3D GetSectionPublishingDefinition(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the publishing entity to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartSection3D |   |  \n\n##### Remarks\n\nThis method is available since v7.8.302.80.\n",
+  "markdown": "markdown/kernel/de5f7364ff479e69b9a93245.md",
+  "originalHtml": "html/kernel/de5f7364ff479e69b9a93245.html"
+}

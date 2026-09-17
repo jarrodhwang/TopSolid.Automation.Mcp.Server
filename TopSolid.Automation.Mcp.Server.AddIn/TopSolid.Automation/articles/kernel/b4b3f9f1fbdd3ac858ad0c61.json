@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IApplication.InvokeCommand.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IApplication.InvokeCommand.html",
+  "sha256": "a27e9069ee5351426dbde6de64ea5a0839a814198816762267950d242b2cdf56",
+  "text": "# Method InvokeCommand\n\n#### InvokeCommand(string)\n\nInvokes a specified menu command.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 12, 0, 0)]\nbool InvokeCommand(string inFullName)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  string |  inFullName |  Full name of the command to invoke (i.e. \"TopSolid.Kernel.UI.D3.Shapes.Creations.BlockCommand\").  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  The command has been found and invoked.  |  \n\n##### Remarks\n\nThis method is available since v7.12.\n",
+  "markdown": "markdown/kernel/b4b3f9f1fbdd3ac858ad0c61.md",
+  "originalHtml": "html/kernel/b4b3f9f1fbdd3ac858ad0c61.html"
+}

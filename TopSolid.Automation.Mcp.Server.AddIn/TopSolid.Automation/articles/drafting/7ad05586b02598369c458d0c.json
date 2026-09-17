@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.ITables.SetDraftTableCellParameter.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.ITables.SetDraftTableCellParameter.html",
+  "sha256": "2a0f600371fda3f9fa031bf1ca91fb01700932951721b1295cf35b6c949804b3",
+  "text": "# Method SetDraftTableCellParameter\n\n#### SetDraftTableCellParameter(ElementId, int, int, int, SmartText)\n\nSets the parameter value of a cell.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 14, 300, 140)]\nvoid SetDraftTableCellParameter(ElementId inElementId, int inColumnIdx, int inRowIdx, int inSplitColumnIdx, SmartText inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the entity to modify.  |  \n \n|  int |  inColumnIdx |  Index of the column.  |  \n \n|  int |  inRowIdx |  Index of the row.  |  \n \n|  int |  inSplitColumnIdx |  Index of the split column. 0 if default.  |  \n \n|  SmartText |  inValue |  Value of the cell.  |  \n\n##### Remarks\n\nThis method is available since v7.14.300.140.\n",
+  "markdown": "markdown/drafting/7ad05586b02598369c458d0c.md",
+  "originalHtml": "html/drafting/7ad05586b02598369c458d0c.html"
+}

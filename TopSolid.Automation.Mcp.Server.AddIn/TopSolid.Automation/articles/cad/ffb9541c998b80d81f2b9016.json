@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.TopSolidDesignHost.Coatings.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.TopSolidDesignHost.Coatings.html",
+  "sha256": "c58df3fc967a244beb6edcdad2175783d70329d43ec84e574edadc6858410f44",
+  "text": "# Property Coatings\n\n#### Coatings\n\nGets access to coatings, or null if not connected.\n\n##### Declaration\n\n```\npublic static ICoatings Coatings { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ICoatings |   |\n",
+  "markdown": "markdown/cad/ffb9541c998b80d81f2b9016.md",
+  "originalHtml": "html/cad/ffb9541c998b80d81f2b9016.html"
+}

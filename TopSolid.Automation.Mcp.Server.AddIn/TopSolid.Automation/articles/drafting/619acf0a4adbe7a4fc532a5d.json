@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.IDraftings.GetViewProjectionSet.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.IDraftings.GetViewProjectionSet.html",
+  "sha256": "b450b9c288b64c9c4bcebb0339a62a620e42ee75a20ddf566eafc4261406623e",
+  "text": "# Method GetViewProjectionSet\n\n#### GetViewProjectionSet(ElementId, out DocumentId, out ElementId)\n\nGets view projection set\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 255, 0)]\nElementId GetViewProjectionSet(ElementId inElementId, out DocumentId outViewProjectionSet, out ElementId outViewRepresentationId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  The view  |  \n \n|  DocumentId |  outViewProjectionSet |  drawing set document used or empty  |  \n \n|  ElementId |  outViewRepresentationId |  representation used or empty  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |   |\n",
+  "markdown": "markdown/drafting/619acf0a4adbe7a4fc532a5d.md",
+  "originalHtml": "html/drafting/619acf0a4adbe7a4fc532a5d.html"
+}

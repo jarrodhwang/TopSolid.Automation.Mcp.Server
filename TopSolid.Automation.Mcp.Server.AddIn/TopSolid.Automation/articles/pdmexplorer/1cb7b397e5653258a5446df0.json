@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.PurgeSeveral.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.PurgeSeveral.html",
+  "sha256": "fc7545f5173439e007bbec514c2d7370b26d12cf5b5b7571675ae3190135cfc7",
+  "text": "# Method PurgeSeveral\n\n#### PurgeSeveral(List<PdmObjectId>)\n\nPurges several deleted objects.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nvoid PurgeSeveral(List<PdmObjectId> inObjectIds)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  List<PdmObjectId> |  inObjectIds |  Identifiers of objects to purge.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/pdmexplorer/1cb7b397e5653258a5446df0.md",
+  "originalHtml": "html/pdmexplorer/1cb7b397e5653258a5446df0.html"
+}

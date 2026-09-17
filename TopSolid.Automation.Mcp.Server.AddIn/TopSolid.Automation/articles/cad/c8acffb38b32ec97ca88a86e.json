@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IAssemblies.GetFunctionsInheritingOperation.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IAssemblies.GetFunctionsInheritingOperation.html",
+  "sha256": "4560d1b055dd36c6d7159a28609edf34313e783781cf7bc822d31d42ae81ebf8",
+  "text": "# Method GetFunctionsInheritingOperation\n\n#### GetFunctionsInheritingOperation(ElementId, out ElementId, out List<ElementId>, out List<ElementId>)\n\nGets a functions inheriting operation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nvoid GetFunctionsInheritingOperation(ElementId inOperationId, out ElementId outOccurrenceId, out List<ElementId> outFunctionIds, out List<ElementId> outChildIds)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inOperationId |  Identifier of the functions inheriting operation to analyze.  |  \n \n|  ElementId |  outOccurrenceId |  Identifier of the occurrence of the part or assembly providing the functions to inherit.  |  \n \n|  List<ElementId> |  outFunctionIds |  Identifiers of the specified function entities to inherit from in the occurrence definition document.  |  \n \n|  List<ElementId> |  outChildIds |  Identifiers of the children provided functions.  |  \n\n##### Remarks\n\nThis method is available since v7.8.\n",
+  "markdown": "markdown/cad/c8acffb38b32ec97ca88a86e.md",
+  "originalHtml": "html/cad/c8acffb38b32ec97ca88a86e.html"
+}

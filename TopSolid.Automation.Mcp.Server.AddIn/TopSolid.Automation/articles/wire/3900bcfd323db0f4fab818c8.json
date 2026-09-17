@@ -1,0 +1,8 @@
+{
+  "path": "api/wire/TopSolid.Cam.NC.Wire.Automating.IWireCc.SetMaterialHeight.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/wire/TopSolid.Cam.NC.Wire.Automating.IWireCc.SetMaterialHeight.html",
+  "sha256": "6f0572be75653867bd8d73af99957edf836147632feb77b20f8225a7af319f0b",
+  "text": "# Method SetMaterialHeight\n\n#### SetMaterialHeight(ElementId, SmartReal)\n\nSet material height.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 160)]\nvoid SetMaterialHeight(ElementId inElementId, SmartReal inMaterialHeight)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to modify.  |  \n \n|  SmartReal |  inMaterialHeight |  Material height in SI units.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n",
+  "markdown": "markdown/wire/3900bcfd323db0f4fab818c8.md",
+  "originalHtml": "html/wire/3900bcfd323db0f4fab818c8.html"
+}

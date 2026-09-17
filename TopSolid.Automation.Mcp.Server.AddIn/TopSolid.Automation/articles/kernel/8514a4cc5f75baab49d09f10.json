@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdmAdmin.GetUserGroupName.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdmAdmin.GetUserGroupName.html",
+  "sha256": "fca879014e97c7d78a530029bba0337002c849811e26dad9d3c11dd275972d1d",
+  "text": "# Method GetUserGroupName\n\n#### GetUserGroupName(PdmObjectId, out string, out string)\n\nGets the name of a user group.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 302, 60)]\nvoid GetUserGroupName(PdmObjectId inUserGroupId, out string outName, out string outDescription)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inUserGroupId |  User Group identifier.  |  \n \n|  string |  outName |  User group name.  |  \n \n|  string |  outDescription |  User group description.  |  \n\n##### Remarks\n\nThis method is available since v7.8.302.060.\n",
+  "markdown": "markdown/kernel/8514a4cc5f75baab49d09f10.md",
+  "originalHtml": "html/kernel/8514a4cc5f75baab49d09f10.html"
+}

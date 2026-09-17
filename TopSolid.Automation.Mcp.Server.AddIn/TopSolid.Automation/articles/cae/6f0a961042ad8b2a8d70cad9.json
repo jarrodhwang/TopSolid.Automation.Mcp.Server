@@ -1,0 +1,8 @@
+{
+  "path": "api/cae/TopSolid.Cae.Kernel.Automating.TopSolidCaeHost.IsConnected.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cae/TopSolid.Cae.Kernel.Automating.TopSolidCaeHost.IsConnected.html",
+  "sha256": "2ec8b5e7b284e163d2eed1558d8901b872df1368c413f9c01d04e3f327a90c04",
+  "text": "# Property IsConnected\n\n#### IsConnected\n\nTells whether TopSolid is connected.\n\n##### Declaration\n\n```\npublic static bool IsConnected { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |   |\n",
+  "markdown": "markdown/cae/6f0a961042ad8b2a8d70cad9.md",
+  "originalHtml": "html/cae/6f0a961042ad8b2a8d70cad9.html"
+}

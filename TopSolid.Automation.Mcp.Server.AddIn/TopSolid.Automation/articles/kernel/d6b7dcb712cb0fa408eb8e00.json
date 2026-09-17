@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IEntities.IsOccurrence.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IEntities.IsOccurrence.html",
+  "sha256": "f99251994a65a120f9467bfa94400140c51d2186c5a8dabf78f3e9e8e783c052",
+  "text": "# Method IsOccurrence\n\n#### IsOccurrence(ElementId)\n\nTells whether an entity is an occurrence.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nbool IsOccurrence(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the entity to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  The entity is an occurrence.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/d6b7dcb712cb0fa408eb8e00.md",
+  "originalHtml": "html/kernel/d6b7dcb712cb0fa408eb8e00.html"
+}

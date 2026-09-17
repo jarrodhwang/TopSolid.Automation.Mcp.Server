@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IVisualization3D.GetFrontCamera.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IVisualization3D.GetFrontCamera.html",
+  "sha256": "039cd926a8dfea09931cd1173b95d3ac5693d3e632154260e7806036ce46e846",
+  "text": "# Method GetFrontCamera\n\n#### GetFrontCamera(DocumentId)\n\nGets the front camera entity of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nElementId GetFrontCamera(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the front camera entity found.  |  \n\n##### Remarks\n\nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/c663fdf097e1175f261a1650.md",
+  "originalHtml": "html/kernel/c663fdf097e1175f261a1650.html"
+}

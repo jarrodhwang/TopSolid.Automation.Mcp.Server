@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IGeometries3D.PublishPlane.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IGeometries3D.PublishPlane.html",
+  "sha256": "5183797af6729e919ed229f2e069f02aaf846daad34ba784fe9a169476b2428c",
+  "text": "# Method PublishPlane\n\n#### PublishPlane(DocumentId, string, SmartPlane3D)\n\nCreates a plane publishing entity in a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nElementId PublishPlane(DocumentId inDocumentId, string inDescription, SmartPlane3D inDefinition)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  string |  inDescription |  Publishing description.  |  \n \n|  SmartPlane3D |  inDefinition |  Publishing definition.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the created publishing entity.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.8.\n",
+  "markdown": "markdown/kernel/4c91d337b7f96f2a3239b23e.md",
+  "originalHtml": "html/kernel/4c91d337b7f96f2a3239b23e.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.ITables.GetDraftTableCellType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.ITables.GetDraftTableCellType.html",
+  "sha256": "1f8864a4b9c207783f974e2a417a28d9fe1fea1885c541de4677e83b9d11ab01",
+  "text": "# Method GetDraftTableCellType\n\n#### GetDraftTableCellType(ElementId, int, int)\n\nGets the draft table cell type at a specified column and row.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 14, 300, 140)]\nCellType GetDraftTableCellType(ElementId inElementId, int inColumnIdx, int inRowIdx)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the entity to analyze.  |  \n \n|  int |  inColumnIdx |  Index of the column.  |  \n \n|  int |  inRowIdx |  Index of the row.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  CellType |  The cell type.  |  \n\n##### Remarks\n\nThis method is available since v7.14.300.140.\n",
+  "markdown": "markdown/drafting/70f1f1b69dd4a5e9c3b3d792.md",
+  "originalHtml": "html/drafting/70f1f1b69dd4a5e9c3b3d792.html"
+}

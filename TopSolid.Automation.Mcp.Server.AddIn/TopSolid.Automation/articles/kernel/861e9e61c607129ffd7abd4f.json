@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Transform3D.Pz.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Transform3D.Pz.html",
+  "sha256": "ea22e8d644e5530ffded2908c606450b7ecb84faa12731d2efea9af1f726216a",
+  "text": "# Field Pz\n\nPerspective factor along Z.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic double Pz\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double |  Perspective factor along Z. |\n",
+  "markdown": "markdown/kernel/861e9e61c607129ffd7abd4f.md",
+  "originalHtml": "html/kernel/861e9e61c607129ffd7abd4f.html"
+}

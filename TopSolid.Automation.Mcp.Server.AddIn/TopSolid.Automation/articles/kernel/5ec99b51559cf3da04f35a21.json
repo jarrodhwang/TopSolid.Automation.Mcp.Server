@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IVisualization3D.GetViewCamera.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IVisualization3D.GetViewCamera.html",
+  "sha256": "f198ffc86b67634847ca6b2b272f71c63ad1c6a2ab0c882ab6efca8d08851888",
+  "text": "# Method GetViewCamera\n\n#### GetViewCamera(DocumentId, int, out Point3D, out Direction3D, out Direction3D, out double, out double)\n\nGets the camera of a graphic view of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nvoid GetViewCamera(DocumentId inDocumentId, int inViewId, out Point3D outEyePosition, out Direction3D outLookAtDirection, out Direction3D outUpDirection, out double outFieldAngle, out double outFieldRadius)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n \n|  int |  inViewId |  Identifier of the graphic view to analyze.  |  \n \n|  Point3D |  outEyePosition |  Position of the eye.  |  \n \n|  Direction3D |  outLookAtDirection |  Eye looking direction.  |  \n \n|  Direction3D |  outUpDirection |  Vertical upwards direction.  |  \n \n|  double |  outFieldAngle |  Field angle for perspective projection, or 0 if orthographic projection.  |  \n \n|  double |  outFieldRadius |  Field radius for orthographic projection, or distance between camera origin and projection plane if perspective projection.  |  \n\n##### Remarks\n\nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/5ec99b51559cf3da04f35a21.md",
+  "originalHtml": "html/kernel/5ec99b51559cf3da04f35a21.html"
+}

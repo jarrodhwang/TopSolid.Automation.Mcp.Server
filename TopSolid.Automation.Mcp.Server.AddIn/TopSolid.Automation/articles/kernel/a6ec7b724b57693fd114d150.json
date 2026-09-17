@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ISketches2D.GetSectionProfiles.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ISketches2D.GetSectionProfiles.html",
+  "sha256": "1423cdaed5097e3eb14cafe0c7be711afa24b074d97d4984a035ab9ced1fad3c",
+  "text": "# Method GetSectionProfiles\n\n#### GetSectionProfiles(ElementItemId)\n\nGets the profiles of a section.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nList<ElementItemId> GetSectionProfiles(ElementItemId inSectionId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementItemId |  inSectionId |  Identifier of the section to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementItemId> |  Identifiers of the profiles of the section.  |  \n\n##### Remarks\n\nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/a6ec7b724b57693fd114d150.md",
+  "originalHtml": "html/kernel/a6ec7b724b57693fd114d150.html"
+}

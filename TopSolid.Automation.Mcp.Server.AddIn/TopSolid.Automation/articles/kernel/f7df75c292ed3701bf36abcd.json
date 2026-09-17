@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IOperations.GetOperations.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IOperations.GetOperations.html",
+  "sha256": "7d28925332b67fefad06a206170d5dec450ef13dca2fbe0f8c1466305e3b5ee3",
+  "text": "# Method GetOperations\n\n#### GetOperations(DocumentId)\n\nGets the operations of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nList<ElementId> GetOperations(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementId> |  Operations found.  |  \n\n##### Remarks\n\nThe operations are sorted in chronological order (i.e. first operation of the list is executed first).\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/f7df75c292ed3701bf36abcd.md",
+  "originalHtml": "html/kernel/f7df75c292ed3701bf36abcd.html"
+}

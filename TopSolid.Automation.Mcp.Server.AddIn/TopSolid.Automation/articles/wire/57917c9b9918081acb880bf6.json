@@ -1,0 +1,8 @@
+{
+  "path": "api/wire/TopSolid.Cam.NC.Wire.Automating.IWireTechnologyDocuments.GetMachines.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/wire/TopSolid.Cam.NC.Wire.Automating.IWireTechnologyDocuments.GetMachines.html",
+  "sha256": "cf2f1ed6a653fb4ba54919609b1b8ce17db85a512aebb2439904e22d2003555f",
+  "text": "# Method GetMachines\n\n#### GetMachines(DocumentId)\n\nSet machine list.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 160)]\nList<PdmObjectId> GetMachines(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<PdmObjectId> |  Identifier list of machine document.  |\n",
+  "markdown": "markdown/wire/57917c9b9918081acb880bf6.md",
+  "originalHtml": "html/wire/57917c9b9918081acb880bf6.html"
+}

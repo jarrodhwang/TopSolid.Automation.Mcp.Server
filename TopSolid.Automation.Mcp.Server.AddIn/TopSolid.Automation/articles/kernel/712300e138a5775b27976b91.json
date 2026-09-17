@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Axis3D.-ctor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Axis3D.-ctor.html",
+  "sha256": "e4e97ac6721dcbb00568019d7977679f59dd834a53d7f0868f00d2b1d6559f93",
+  "text": "# Constructor Axis3D\n\n#### Axis3D(Point3D, Direction3D)\n\nInitializes a new instance of the Axis3D structure with a specified origin and direction.\n\n##### Declaration\n\n```\npublic Axis3D(Point3D inOrigin, Direction3D inDirection)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  Point3D |  inOrigin |  Axis origin.  |  \n \n|  Direction3D |  inDirection |  Axis direction.  |\n",
+  "markdown": "markdown/kernel/712300e138a5775b27976b91.md",
+  "originalHtml": "html/kernel/712300e138a5775b27976b91.html"
+}

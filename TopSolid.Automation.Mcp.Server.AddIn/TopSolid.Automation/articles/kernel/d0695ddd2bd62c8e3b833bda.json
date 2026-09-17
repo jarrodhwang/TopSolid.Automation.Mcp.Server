@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IApplication.RestoreWindow.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IApplication.RestoreWindow.html",
+  "sha256": "b9af4a51629ff175b59c2b57deb832fde1d612e5bcadd4b74b5c19defc017421",
+  "text": "# Method RestoreWindow\n\n#### RestoreWindow()\n\nRestores the application window that has been minimized or maximized.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nvoid RestoreWindow()\n```\n\n##### Remarks\n\nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/d0695ddd2bd62c8e3b833bda.md",
+  "originalHtml": "html/kernel/d0695ddd2bd62c8e3b833bda.html"
+}

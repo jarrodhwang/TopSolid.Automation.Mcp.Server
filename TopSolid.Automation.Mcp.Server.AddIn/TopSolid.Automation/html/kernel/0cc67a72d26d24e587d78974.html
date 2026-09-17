@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Interface ISketches3D | TopSolid Automation website </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Interface ISketches3D | TopSolid Automation website ">
+    
+    <meta name="description" content="Gives access to 3D sketch entities.">
+      <link rel="shortcut icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../../styles/docfx.css">
+      <link rel="stylesheet" href="../../styles/main.css">
+      <meta property="docfx:navrel" content="../../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../img/AutomationIcon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="TopSolid.Kernel.Automating.ISketches3D">
+
+
+
+  <h1 id="TopSolid_Kernel_Automating_ISketches3D" data-uid="TopSolid.Kernel.Automating.ISketches3D" class="text-break">Interface ISketches3D</h1>
+  <div class="markdown level0 summary"><p>Gives access to 3D sketch entities.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="TopSolid.html">TopSolid</a>.<a class="xref" href="TopSolid.Kernel.html">Kernel</a>.<a class="xref" href="TopSolid.Kernel.Automating.html">Automating</a></h6>
+  <h6><strong>Assembly</strong>: TopSolid.Kernel.Automating.dll</h6>
+  <h5 id="TopSolid_Kernel_Automating_ISketches3D_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ServiceContract]
+[AvailableSinceVersion(7, 6, 0, 0)]
+public interface ISketches3D</code></pre>
+  </div>
+  <h5 id="TopSolid_Kernel_Automating_ISketches3D_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>This interface is available since v7.6.</p>
+</div>
+  <h3 id="properties">Properties
+</h3>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_ISketches3D_ModifiedSketch" data-uid="TopSolid.Kernel.Automating.ISketches3D.ModifiedSketch">
+          <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.ModifiedSketch.html#TopSolid_Kernel_Automating_ISketches3D_ModifiedSketch">ModifiedSketch</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the sketch being modified.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_ISketches3D_CleanSketch" data-uid="TopSolid.Kernel.Automating.ISketches3D.CleanSketch">
+          <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.CleanSketch.html#TopSolid_Kernel_Automating_ISketches3D_CleanSketch">CleanSketch()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Cleans current sketch segments (creates profiles, etc.)</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_ISketches3D_CreateArcSegment_TopSolid_Kernel_Automating_ElementItemId_TopSolid_Kernel_Automating_ElementItemId_TopSolid_Kernel_Automating_Point3D_TopSolid_Kernel_Automating_Direction3D_" data-uid="TopSolid.Kernel.Automating.ISketches3D.CreateArcSegment(TopSolid.Kernel.Automating.ElementItemId,TopSolid.Kernel.Automating.ElementItemId,TopSolid.Kernel.Automating.Point3D,TopSolid.Kernel.Automating.Direction3D)">
+          <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.CreateArcSegment.html#TopSolid_Kernel_Automating_ISketches3D_CreateArcSegment_TopSolid_Kernel_Automating_ElementItemId_TopSolid_Kernel_Automating_ElementItemId_TopSolid_Kernel_Automating_Point3D_TopSolid_Kernel_Automating_Direction3D_">CreateArcSegment(ElementItemId, ElementItemId, Point3D, Direction3D)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Creates a new circular arc segment into the <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.ModifiedSketch.html#TopSolid_Kernel_Automating_ISketches3D_ModifiedSketch">ModifiedSketch</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_ISketches3D_CreateBSplineSegment_System_Collections_Generic_List_TopSolid_Kernel_Automating_ElementItemId__System_Boolean_" data-uid="TopSolid.Kernel.Automating.ISketches3D.CreateBSplineSegment(System.Collections.Generic.List{TopSolid.Kernel.Automating.ElementItemId},System.Boolean)">
+          <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.CreateBSplineSegment.html#TopSolid_Kernel_Automating_ISketches3D_CreateBSplineSegment_System_Collections_Generic_List_TopSolid_Kernel_Automating_ElementItemId__System_Boolean_">CreateBSplineSegment(List&lt;ElementItemId&gt;, bool)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Creates a new uniform cubic B-spline segment into the <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.ModifiedSketch.html#TopSolid_Kernel_Automating_ISketches3D_ModifiedSketch">ModifiedSketch</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_ISketches3D_CreateBuildingOperation_TopSolid_Kernel_Automating_ElementId_" data-uid="TopSolid.Kernel.Automating.ISketches3D.CreateBuildingOperation(TopSolid.Kernel.Automating.ElementId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.CreateBuildingOperation.html#TopSolid_Kernel_Automating_ISketches3D_CreateBuildingOperation_TopSolid_Kernel_Automating_ElementId_">CreateBuildingOperation(ElementId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Creates the building operation of a sketch entity.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_ISketches3D_CreateCircleSegment_TopSolid_Kernel_Automating_ElementItemId_TopSolid_Kernel_Automating_Direction3D_System_Double_" data-uid="TopSolid.Kernel.Automating.ISketches3D.CreateCircleSegment(TopSolid.Kernel.Automating.ElementItemId,TopSolid.Kernel.Automating.Direction3D,System.Double)">
+          <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.CreateCircleSegment.html#TopSolid_Kernel_Automating_ISketches3D_CreateCircleSegment_TopSolid_Kernel_Automating_ElementItemId_TopSolid_Kernel_Automating_Direction3D_System_Double_">CreateCircleSegment(ElementItemId, Direction3D, double)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Creates a new circle segment into the <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.ModifiedSketch.html#TopSolid_Kernel_Automating_ISketches3D_ModifiedSketch">ModifiedSketch</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_ISketches3D_CreateLineSegment_TopSolid_Kernel_Automating_ElementItemId_TopSolid_Kernel_Automating_ElementItemId_" data-uid="TopSolid.Kernel.Automating.ISketches3D.CreateLineSegment(TopSolid.Kernel.Automating.ElementItemId,TopSolid.Kernel.Automating.ElementItemId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.CreateLineSegment.html#TopSolid_Kernel_Automating_ISketches3D_CreateLineSegment_TopSolid_Kernel_Automating_ElementItemId_TopSolid_Kernel_Automating_ElementItemId_">CreateLineSegment(ElementItemId, ElementItemId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Creates a new line segment into the <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.ModifiedSketch.html#TopSolid_Kernel_Automating_ISketches3D_ModifiedSketch">ModifiedSketch</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_ISketches3D_CreateProfile_System_Collections_Generic_List_TopSolid_Kernel_Automating_ElementItemId__" data-uid="TopSolid.Kernel.Automating.ISketches3D.CreateProfile(System.Collections.Generic.List{TopSolid.Kernel.Automating.ElementItemId})">
+          <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.CreateProfile.html#TopSolid_Kernel_Automating_ISketches3D_CreateProfile_System_Collections_Generic_List_TopSolid_Kernel_Automating_ElementItemId__">CreateProfile(List&lt;ElementItemId&gt;)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Creates a new profile into the <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.ModifiedSketch.html#TopSolid_Kernel_Automating_ISketches3D_ModifiedSketch">ModifiedSketch</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_ISketches3D_CreateSketch_TopSolid_Kernel_Automating_DocumentId_TopSolid_Kernel_Automating_SmartPlane3D_TopSolid_Kernel_Automating_SmartPoint3D_System_Boolean_TopSolid_Kernel_Automating_SmartDirection3D_" data-uid="TopSolid.Kernel.Automating.ISketches3D.CreateSketch(TopSolid.Kernel.Automating.DocumentId,TopSolid.Kernel.Automating.SmartPlane3D,TopSolid.Kernel.Automating.SmartPoint3D,System.Boolean,TopSolid.Kernel.Automating.SmartDirection3D)">
+          <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.CreateSketch.html#TopSolid_Kernel_Automating_ISketches3D_CreateSketch_TopSolid_Kernel_Automating_DocumentId_TopSolid_Kernel_Automating_SmartPlane3D_TopSolid_Kernel_Automating_SmartPoint3D_System_Boolean_TopSolid_Kernel_Automating_SmartDirection3D_">CreateSketch(DocumentId, SmartPlane3D, SmartPoint3D, bool, SmartDirection3D)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Creates a sketch.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_ISketches3D_CreateVertex_TopSolid_Kernel_Automating_Point3D_" data-uid="TopSolid.Kernel.Automating.ISketches3D.CreateVertex(TopSolid.Kernel.Automating.Point3D)">
+          <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.CreateVertex.html#TopSolid_Kernel_Automating_ISketches3D_CreateVertex_TopSolid_Kernel_Automating_Point3D_">CreateVertex(Point3D)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Creates a new vertex into the <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.ModifiedSketch.html#TopSolid_Kernel_Automating_ISketches3D_ModifiedSketch">ModifiedSketch</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_ISketches3D_DeleteItem_TopSolid_Kernel_Automating_ElementItemId_" data-uid="TopSolid.Kernel.Automating.ISketches3D.DeleteItem(TopSolid.Kernel.Automating.ElementItemId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.DeleteItem.html#TopSolid_Kernel_Automating_ISketches3D_DeleteItem_TopSolid_Kernel_Automating_ElementItemId_">DeleteItem(ElementItemId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Deletes an item of the <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.ModifiedSketch.html#TopSolid_Kernel_Automating_ISketches3D_ModifiedSketch">ModifiedSketch</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_ISketches3D_DeleteItems_System_Collections_Generic_List_TopSolid_Kernel_Automating_ElementItemId__" data-uid="TopSolid.Kernel.Automating.ISketches3D.DeleteItems(System.Collections.Generic.List{TopSolid.Kernel.Automating.ElementItemId})">
+          <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.DeleteItems.html#TopSolid_Kernel_Automating_ISketches3D_DeleteItems_System_Collections_Generic_List_TopSolid_Kernel_Automating_ElementItemId__">DeleteItems(List&lt;ElementItemId&gt;)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Deletes items of the <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.ModifiedSketch.html#TopSolid_Kernel_Automating_ISketches3D_ModifiedSketch">ModifiedSketch</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_ISketches3D_EndModification" data-uid="TopSolid.Kernel.Automating.ISketches3D.EndModification">
+          <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.EndModification.html#TopSolid_Kernel_Automating_ISketches3D_EndModification">EndModification()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Ends performing modifications on a sketch.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_ISketches3D_FixItem_TopSolid_Kernel_Automating_ElementItemId_" data-uid="TopSolid.Kernel.Automating.ISketches3D.FixItem(TopSolid.Kernel.Automating.ElementItemId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.FixItem.html#TopSolid_Kernel_Automating_ISketches3D_FixItem_TopSolid_Kernel_Automating_ElementItemId_">FixItem(ElementItemId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Fix a segment or a vertex in the <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.ModifiedSketch.html#TopSolid_Kernel_Automating_ISketches3D_ModifiedSketch">ModifiedSketch</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_ISketches3D_GetBuildingOperation_TopSolid_Kernel_Automating_ElementId_" data-uid="TopSolid.Kernel.Automating.ISketches3D.GetBuildingOperation(TopSolid.Kernel.Automating.ElementId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.GetBuildingOperation.html#TopSolid_Kernel_Automating_ISketches3D_GetBuildingOperation_TopSolid_Kernel_Automating_ElementId_">GetBuildingOperation(ElementId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the building operation of a sketch entity.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_ISketches3D_GetFrame_TopSolid_Kernel_Automating_ElementId_" data-uid="TopSolid.Kernel.Automating.ISketches3D.GetFrame(TopSolid.Kernel.Automating.ElementId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.GetFrame.html#TopSolid_Kernel_Automating_ISketches3D_GetFrame_TopSolid_Kernel_Automating_ElementId_">GetFrame(ElementId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the definition frame of a sketch.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_ISketches3D_GetProfileCount_TopSolid_Kernel_Automating_ElementId_" data-uid="TopSolid.Kernel.Automating.ISketches3D.GetProfileCount(TopSolid.Kernel.Automating.ElementId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.GetProfileCount.html#TopSolid_Kernel_Automating_ISketches3D_GetProfileCount_TopSolid_Kernel_Automating_ElementId_">GetProfileCount(ElementId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the number of profiles of a sketch.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_ISketches3D_GetProfileSegments_TopSolid_Kernel_Automating_ElementItemId_" data-uid="TopSolid.Kernel.Automating.ISketches3D.GetProfileSegments(TopSolid.Kernel.Automating.ElementItemId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.GetProfileSegments.html#TopSolid_Kernel_Automating_ISketches3D_GetProfileSegments_TopSolid_Kernel_Automating_ElementItemId_">GetProfileSegments(ElementItemId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the segments of a profile.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_ISketches3D_GetProfiles_TopSolid_Kernel_Automating_ElementId_" data-uid="TopSolid.Kernel.Automating.ISketches3D.GetProfiles(TopSolid.Kernel.Automating.ElementId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.GetProfiles.html#TopSolid_Kernel_Automating_ISketches3D_GetProfiles_TopSolid_Kernel_Automating_ElementId_">GetProfiles(ElementId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the profiles of a sketch.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_ISketches3D_GetSegmentCenter_TopSolid_Kernel_Automating_ElementItemId_" data-uid="TopSolid.Kernel.Automating.ISketches3D.GetSegmentCenter(TopSolid.Kernel.Automating.ElementItemId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.GetSegmentCenter.html#TopSolid_Kernel_Automating_ISketches3D_GetSegmentCenter_TopSolid_Kernel_Automating_ElementItemId_">GetSegmentCenter(ElementItemId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the center of a segment.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_ISketches3D_GetSegmentCircleCurve_TopSolid_Kernel_Automating_ElementItemId_TopSolid_Kernel_Automating_Plane3D__System_Double__" data-uid="TopSolid.Kernel.Automating.ISketches3D.GetSegmentCircleCurve(TopSolid.Kernel.Automating.ElementItemId,TopSolid.Kernel.Automating.Plane3D@,System.Double@)">
+          <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.GetSegmentCircleCurve.html#TopSolid_Kernel_Automating_ISketches3D_GetSegmentCircleCurve_TopSolid_Kernel_Automating_ElementItemId_TopSolid_Kernel_Automating_Plane3D__System_Double__">GetSegmentCircleCurve(ElementItemId, out Plane3D, out double)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the circle curve attached to a segment.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_ISketches3D_GetSegmentCount_TopSolid_Kernel_Automating_ElementId_" data-uid="TopSolid.Kernel.Automating.ISketches3D.GetSegmentCount(TopSolid.Kernel.Automating.ElementId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.GetSegmentCount.html#TopSolid_Kernel_Automating_ISketches3D_GetSegmentCount_TopSolid_Kernel_Automating_ElementId_">GetSegmentCount(ElementId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the number of segments of a sketch.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_ISketches3D_GetSegmentCurveRange_TopSolid_Kernel_Automating_ElementItemId_System_Double__System_Double__" data-uid="TopSolid.Kernel.Automating.ISketches3D.GetSegmentCurveRange(TopSolid.Kernel.Automating.ElementItemId,System.Double@,System.Double@)">
+          <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.GetSegmentCurveRange.html#TopSolid_Kernel_Automating_ISketches3D_GetSegmentCurveRange_TopSolid_Kernel_Automating_ElementItemId_System_Double__System_Double__">GetSegmentCurveRange(ElementItemId, out double, out double)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the parametric range of the curve attached to a segment.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_ISketches3D_GetSegmentCurveType_TopSolid_Kernel_Automating_ElementItemId_" data-uid="TopSolid.Kernel.Automating.ISketches3D.GetSegmentCurveType(TopSolid.Kernel.Automating.ElementItemId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.GetSegmentCurveType.html#TopSolid_Kernel_Automating_ISketches3D_GetSegmentCurveType_TopSolid_Kernel_Automating_ElementItemId_">GetSegmentCurveType(ElementItemId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the type of the curve attached to a segment.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_ISketches3D_GetSegmentEllipseCurve_TopSolid_Kernel_Automating_ElementItemId_TopSolid_Kernel_Automating_Plane3D__System_Double__System_Double__" data-uid="TopSolid.Kernel.Automating.ISketches3D.GetSegmentEllipseCurve(TopSolid.Kernel.Automating.ElementItemId,TopSolid.Kernel.Automating.Plane3D@,System.Double@,System.Double@)">
+          <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.GetSegmentEllipseCurve.html#TopSolid_Kernel_Automating_ISketches3D_GetSegmentEllipseCurve_TopSolid_Kernel_Automating_ElementItemId_TopSolid_Kernel_Automating_Plane3D__System_Double__System_Double__">GetSegmentEllipseCurve(ElementItemId, out Plane3D, out double, out double)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the ellipse curve attached to a segment.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_ISketches3D_GetSegmentLineCurve_TopSolid_Kernel_Automating_ElementItemId_TopSolid_Kernel_Automating_Axis3D__" data-uid="TopSolid.Kernel.Automating.ISketches3D.GetSegmentLineCurve(TopSolid.Kernel.Automating.ElementItemId,TopSolid.Kernel.Automating.Axis3D@)">
+          <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.GetSegmentLineCurve.html#TopSolid_Kernel_Automating_ISketches3D_GetSegmentLineCurve_TopSolid_Kernel_Automating_ElementItemId_TopSolid_Kernel_Automating_Axis3D__">GetSegmentLineCurve(ElementItemId, out Axis3D)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the line curve attached to a segment.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_ISketches3D_GetSegmentMiddle_TopSolid_Kernel_Automating_ElementItemId_" data-uid="TopSolid.Kernel.Automating.ISketches3D.GetSegmentMiddle(TopSolid.Kernel.Automating.ElementItemId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.GetSegmentMiddle.html#TopSolid_Kernel_Automating_ISketches3D_GetSegmentMiddle_TopSolid_Kernel_Automating_ElementItemId_">GetSegmentMiddle(ElementItemId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the middle of a segment.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_ISketches3D_GetSegmentPoint_TopSolid_Kernel_Automating_ElementItemId_System_Double_" data-uid="TopSolid.Kernel.Automating.ISketches3D.GetSegmentPoint(TopSolid.Kernel.Automating.ElementItemId,System.Double)">
+          <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.GetSegmentPoint.html#TopSolid_Kernel_Automating_ISketches3D_GetSegmentPoint_TopSolid_Kernel_Automating_ElementItemId_System_Double_">GetSegmentPoint(ElementItemId, double)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets a point on a segment at a specified parametric value.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_ISketches3D_GetSegmentRange_TopSolid_Kernel_Automating_ElementItemId_System_Double__System_Double__" data-uid="TopSolid.Kernel.Automating.ISketches3D.GetSegmentRange(TopSolid.Kernel.Automating.ElementItemId,System.Double@,System.Double@)">
+          <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.GetSegmentRange.html#TopSolid_Kernel_Automating_ISketches3D_GetSegmentRange_TopSolid_Kernel_Automating_ElementItemId_System_Double__System_Double__">GetSegmentRange(ElementItemId, out double, out double)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the parametric range of a segment.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_ISketches3D_GetSegmentTangent_TopSolid_Kernel_Automating_ElementItemId_System_Double_" data-uid="TopSolid.Kernel.Automating.ISketches3D.GetSegmentTangent(TopSolid.Kernel.Automating.ElementItemId,System.Double)">
+          <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.GetSegmentTangent.html#TopSolid_Kernel_Automating_ISketches3D_GetSegmentTangent_TopSolid_Kernel_Automating_ElementItemId_System_Double_">GetSegmentTangent(ElementItemId, double)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the tangent of a segment at a specified parametric value.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_ISketches3D_GetSegmentVertices_TopSolid_Kernel_Automating_ElementItemId_TopSolid_Kernel_Automating_ElementItemId__TopSolid_Kernel_Automating_ElementItemId__" data-uid="TopSolid.Kernel.Automating.ISketches3D.GetSegmentVertices(TopSolid.Kernel.Automating.ElementItemId,TopSolid.Kernel.Automating.ElementItemId@,TopSolid.Kernel.Automating.ElementItemId@)">
+          <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.GetSegmentVertices.html#TopSolid_Kernel_Automating_ISketches3D_GetSegmentVertices_TopSolid_Kernel_Automating_ElementItemId_TopSolid_Kernel_Automating_ElementItemId__TopSolid_Kernel_Automating_ElementItemId__">GetSegmentVertices(ElementItemId, out ElementItemId, out ElementItemId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the vertices of a segment.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_ISketches3D_GetSegments_TopSolid_Kernel_Automating_ElementId_" data-uid="TopSolid.Kernel.Automating.ISketches3D.GetSegments(TopSolid.Kernel.Automating.ElementId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.GetSegments.html#TopSolid_Kernel_Automating_ISketches3D_GetSegments_TopSolid_Kernel_Automating_ElementId_">GetSegments(ElementId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the segments of a sketch.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_ISketches3D_GetSketches_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Kernel.Automating.ISketches3D.GetSketches(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.GetSketches.html#TopSolid_Kernel_Automating_ISketches3D_GetSketches_TopSolid_Kernel_Automating_DocumentId_">GetSketches(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the sketches entities that are in the sketches folder of a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_ISketches3D_GetSketchesFolder_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Kernel.Automating.ISketches3D.GetSketchesFolder(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.GetSketchesFolder.html#TopSolid_Kernel_Automating_ISketches3D_GetSketchesFolder_TopSolid_Kernel_Automating_DocumentId_">GetSketchesFolder(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the sketches folder entity of a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_ISketches3D_GetVertexCount_TopSolid_Kernel_Automating_ElementId_" data-uid="TopSolid.Kernel.Automating.ISketches3D.GetVertexCount(TopSolid.Kernel.Automating.ElementId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.GetVertexCount.html#TopSolid_Kernel_Automating_ISketches3D_GetVertexCount_TopSolid_Kernel_Automating_ElementId_">GetVertexCount(ElementId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the number of vertices of a sketch.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_ISketches3D_GetVertexPoint_TopSolid_Kernel_Automating_ElementItemId_" data-uid="TopSolid.Kernel.Automating.ISketches3D.GetVertexPoint(TopSolid.Kernel.Automating.ElementItemId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.GetVertexPoint.html#TopSolid_Kernel_Automating_ISketches3D_GetVertexPoint_TopSolid_Kernel_Automating_ElementItemId_">GetVertexPoint(ElementItemId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the point attached to a vertex.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_ISketches3D_GetVertices_TopSolid_Kernel_Automating_ElementId_" data-uid="TopSolid.Kernel.Automating.ISketches3D.GetVertices(TopSolid.Kernel.Automating.ElementId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.GetVertices.html#TopSolid_Kernel_Automating_ISketches3D_GetVertices_TopSolid_Kernel_Automating_ElementId_">GetVertices(ElementId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the vertices of a sketch.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_ISketches3D_HighlightSketchProfile_TopSolid_Kernel_Automating_ElementItemId_" data-uid="TopSolid.Kernel.Automating.ISketches3D.HighlightSketchProfile(TopSolid.Kernel.Automating.ElementItemId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.HighlightSketchProfile.html#TopSolid_Kernel_Automating_ISketches3D_HighlightSketchProfile_TopSolid_Kernel_Automating_ElementItemId_">HighlightSketchProfile(ElementItemId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Highlights a 3D sketch profile.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_ISketches3D_HighlightSketchSegment_TopSolid_Kernel_Automating_ElementItemId_" data-uid="TopSolid.Kernel.Automating.ISketches3D.HighlightSketchSegment(TopSolid.Kernel.Automating.ElementItemId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.HighlightSketchSegment.html#TopSolid_Kernel_Automating_ISketches3D_HighlightSketchSegment_TopSolid_Kernel_Automating_ElementItemId_">HighlightSketchSegment(ElementItemId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Highlights a 3D sketch segment.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_ISketches3D_IsItemFixed_TopSolid_Kernel_Automating_ElementItemId_" data-uid="TopSolid.Kernel.Automating.ISketches3D.IsItemFixed(TopSolid.Kernel.Automating.ElementItemId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.IsItemFixed.html#TopSolid_Kernel_Automating_ISketches3D_IsItemFixed_TopSolid_Kernel_Automating_ElementItemId_">IsItemFixed(ElementItemId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Tells whether a segment or a vertex is fixed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_ISketches3D_IsItemInternal_TopSolid_Kernel_Automating_ElementItemId_" data-uid="TopSolid.Kernel.Automating.ISketches3D.IsItemInternal(TopSolid.Kernel.Automating.ElementItemId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.IsItemInternal.html#TopSolid_Kernel_Automating_ISketches3D_IsItemInternal_TopSolid_Kernel_Automating_ElementItemId_">IsItemInternal(ElementItemId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Tells whether a segment or a vertex is internal.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_ISketches3D_IsProfileClosed_TopSolid_Kernel_Automating_ElementItemId_" data-uid="TopSolid.Kernel.Automating.ISketches3D.IsProfileClosed(TopSolid.Kernel.Automating.ElementItemId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.IsProfileClosed.html#TopSolid_Kernel_Automating_ISketches3D_IsProfileClosed_TopSolid_Kernel_Automating_ElementItemId_">IsProfileClosed(ElementItemId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Tells whether a profile is closed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_ISketches3D_IsSegmentConstruction_TopSolid_Kernel_Automating_ElementItemId_" data-uid="TopSolid.Kernel.Automating.ISketches3D.IsSegmentConstruction(TopSolid.Kernel.Automating.ElementItemId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.IsSegmentConstruction.html#TopSolid_Kernel_Automating_ISketches3D_IsSegmentConstruction_TopSolid_Kernel_Automating_ElementItemId_">IsSegmentConstruction(ElementItemId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Tells whether a segment is construction.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_ISketches3D_IsSegmentReversed_TopSolid_Kernel_Automating_ElementItemId_" data-uid="TopSolid.Kernel.Automating.ISketches3D.IsSegmentReversed(TopSolid.Kernel.Automating.ElementItemId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.IsSegmentReversed.html#TopSolid_Kernel_Automating_ISketches3D_IsSegmentReversed_TopSolid_Kernel_Automating_ElementItemId_">IsSegmentReversed(ElementItemId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Tells whether a segment is reversed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_ISketches3D_IsSketch_TopSolid_Kernel_Automating_ElementId_" data-uid="TopSolid.Kernel.Automating.ISketches3D.IsSketch(TopSolid.Kernel.Automating.ElementId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.IsSketch.html#TopSolid_Kernel_Automating_ISketches3D_IsSketch_TopSolid_Kernel_Automating_ElementId_">IsSketch(ElementId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Tells whether an element is a sketch entity.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_ISketches3D_IsVertexTemporary_TopSolid_Kernel_Automating_ElementItemId_" data-uid="TopSolid.Kernel.Automating.ISketches3D.IsVertexTemporary(TopSolid.Kernel.Automating.ElementItemId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.IsVertexTemporary.html#TopSolid_Kernel_Automating_ISketches3D_IsVertexTemporary_TopSolid_Kernel_Automating_ElementItemId_">IsVertexTemporary(ElementItemId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Tells whether a vertex is temporary.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_ISketches3D_MakeItemInternal_TopSolid_Kernel_Automating_ElementItemId_" data-uid="TopSolid.Kernel.Automating.ISketches3D.MakeItemInternal(TopSolid.Kernel.Automating.ElementItemId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.MakeItemInternal.html#TopSolid_Kernel_Automating_ISketches3D_MakeItemInternal_TopSolid_Kernel_Automating_ElementItemId_">MakeItemInternal(ElementItemId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Makes a segment or a vertex internal in the <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.ModifiedSketch.html#TopSolid_Kernel_Automating_ISketches3D_ModifiedSketch">ModifiedSketch</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_ISketches3D_MakeItemNotInternal_TopSolid_Kernel_Automating_ElementItemId_" data-uid="TopSolid.Kernel.Automating.ISketches3D.MakeItemNotInternal(TopSolid.Kernel.Automating.ElementItemId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.MakeItemNotInternal.html#TopSolid_Kernel_Automating_ISketches3D_MakeItemNotInternal_TopSolid_Kernel_Automating_ElementItemId_">MakeItemNotInternal(ElementItemId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Makes a segment or a vertex not internal in the <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.ModifiedSketch.html#TopSolid_Kernel_Automating_ISketches3D_ModifiedSketch">ModifiedSketch</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_ISketches3D_MakeSegmentConstruction_TopSolid_Kernel_Automating_ElementItemId_" data-uid="TopSolid.Kernel.Automating.ISketches3D.MakeSegmentConstruction(TopSolid.Kernel.Automating.ElementItemId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.MakeSegmentConstruction.html#TopSolid_Kernel_Automating_ISketches3D_MakeSegmentConstruction_TopSolid_Kernel_Automating_ElementItemId_">MakeSegmentConstruction(ElementItemId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Makes a segment construction in the <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.ModifiedSketch.html#TopSolid_Kernel_Automating_ISketches3D_ModifiedSketch">ModifiedSketch</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_ISketches3D_MakeSegmentNotConstruction_TopSolid_Kernel_Automating_ElementItemId_" data-uid="TopSolid.Kernel.Automating.ISketches3D.MakeSegmentNotConstruction(TopSolid.Kernel.Automating.ElementItemId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.MakeSegmentNotConstruction.html#TopSolid_Kernel_Automating_ISketches3D_MakeSegmentNotConstruction_TopSolid_Kernel_Automating_ElementItemId_">MakeSegmentNotConstruction(ElementItemId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Makes a segment not construction in the <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.ModifiedSketch.html#TopSolid_Kernel_Automating_ISketches3D_ModifiedSketch">ModifiedSketch</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_ISketches3D_MakeVertexNotTemporary_TopSolid_Kernel_Automating_ElementItemId_" data-uid="TopSolid.Kernel.Automating.ISketches3D.MakeVertexNotTemporary(TopSolid.Kernel.Automating.ElementItemId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.MakeVertexNotTemporary.html#TopSolid_Kernel_Automating_ISketches3D_MakeVertexNotTemporary_TopSolid_Kernel_Automating_ElementItemId_">MakeVertexNotTemporary(ElementItemId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Makes a vertex not temporary in the <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.ModifiedSketch.html#TopSolid_Kernel_Automating_ISketches3D_ModifiedSketch">ModifiedSketch</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_ISketches3D_MakeVertexTemporary_TopSolid_Kernel_Automating_ElementItemId_" data-uid="TopSolid.Kernel.Automating.ISketches3D.MakeVertexTemporary(TopSolid.Kernel.Automating.ElementItemId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.MakeVertexTemporary.html#TopSolid_Kernel_Automating_ISketches3D_MakeVertexTemporary_TopSolid_Kernel_Automating_ElementItemId_">MakeVertexTemporary(ElementItemId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Makes a vertex temporary in the <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.ModifiedSketch.html#TopSolid_Kernel_Automating_ISketches3D_ModifiedSketch">ModifiedSketch</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_ISketches3D_SetSegmentCenter_TopSolid_Kernel_Automating_ElementItemId_TopSolid_Kernel_Automating_ElementItemId_" data-uid="TopSolid.Kernel.Automating.ISketches3D.SetSegmentCenter(TopSolid.Kernel.Automating.ElementItemId,TopSolid.Kernel.Automating.ElementItemId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.SetSegmentCenter.html#TopSolid_Kernel_Automating_ISketches3D_SetSegmentCenter_TopSolid_Kernel_Automating_ElementItemId_TopSolid_Kernel_Automating_ElementItemId_">SetSegmentCenter(ElementItemId, ElementItemId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the center of a segment in the <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.ModifiedSketch.html#TopSolid_Kernel_Automating_ISketches3D_ModifiedSketch">ModifiedSketch</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_ISketches3D_SetSegmentMiddle_TopSolid_Kernel_Automating_ElementItemId_TopSolid_Kernel_Automating_ElementItemId_" data-uid="TopSolid.Kernel.Automating.ISketches3D.SetSegmentMiddle(TopSolid.Kernel.Automating.ElementItemId,TopSolid.Kernel.Automating.ElementItemId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.SetSegmentMiddle.html#TopSolid_Kernel_Automating_ISketches3D_SetSegmentMiddle_TopSolid_Kernel_Automating_ElementItemId_TopSolid_Kernel_Automating_ElementItemId_">SetSegmentMiddle(ElementItemId, ElementItemId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the middle of a segment in the <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.ModifiedSketch.html#TopSolid_Kernel_Automating_ISketches3D_ModifiedSketch">ModifiedSketch</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_ISketches3D_StartModification_TopSolid_Kernel_Automating_ElementId_" data-uid="TopSolid.Kernel.Automating.ISketches3D.StartModification(TopSolid.Kernel.Automating.ElementId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.StartModification.html#TopSolid_Kernel_Automating_ISketches3D_StartModification_TopSolid_Kernel_Automating_ElementId_">StartModification(ElementId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Starts performing modifications on a sketch.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_ISketches3D_UnfixItem_TopSolid_Kernel_Automating_ElementItemId_" data-uid="TopSolid.Kernel.Automating.ISketches3D.UnfixItem(TopSolid.Kernel.Automating.ElementItemId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.UnfixItem.html#TopSolid_Kernel_Automating_ISketches3D_UnfixItem_TopSolid_Kernel_Automating_ElementItemId_">UnfixItem(ElementItemId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Unfix a segment or a vertex in the <a class="xref" href="TopSolid.Kernel.Automating.ISketches3D.ModifiedSketch.html#TopSolid_Kernel_Automating_ISketches3D_ModifiedSketch">ModifiedSketch</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div id="footer-alt">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      			<div id="footer-alt-bottom">
+                      <ul>
+                          <li><a href="https://www.topsolid.com/en/terms-of-use">Term of use</a></li>
+                          <li><a href="https://www.topsolid.com/en/corporate-information">Corporate information</a></li>
+                          <li><a href="https://www.topsolid.com/en/privacy-policy-gdpr">Privacy Policy - GDPR</a></li>
+                      </ul>
+                      <p>Copyright ©2025 TopSolid - All rights reserved.</p>
+                  </div>
+          </div>
+        </div>
+      </footer>    </div>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

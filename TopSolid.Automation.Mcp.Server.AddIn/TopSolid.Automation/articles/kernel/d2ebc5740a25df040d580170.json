@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartFrame3D.ExtentXMin.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartFrame3D.ExtentXMin.html",
+  "sha256": "172cfdc7574b5781a39ec22877d39c86d5b4b57a3d55dbe32301a28b87af4101",
+  "text": "# Field ExtentXMin\n\nMinimum X frame coordinate of extent, or null if unknown.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic double? ExtentXMin\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double? |  Minimum X frame coordinate of extent, or null if unknown. |\n",
+  "markdown": "markdown/kernel/d2ebc5740a25df040d580170.md",
+  "originalHtml": "html/kernel/d2ebc5740a25df040d580170.html"
+}

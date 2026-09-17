@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IElements.Exists.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IElements.Exists.html",
+  "sha256": "1896b254ca30e087e6eba010d6fba480e46a49a9859321419589df528474a670",
+  "text": "# Method Exists\n\n#### Exists(ElementId)\n\nTells whether an element still exists.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nbool Exists(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  The element still exists.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/f6b7adb8a5f74cd2fec15db0.md",
+  "originalHtml": "html/kernel/f6b7adb8a5f74cd2fec15db0.html"
+}

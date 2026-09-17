@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.TopSolidDraftingHost.Connect.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.TopSolidDraftingHost.Connect.html",
+  "sha256": "32dc1485448be3821b9ef30b8d938b0e8753fccbf6cd040e267e66c15f01f8e6",
+  "text": "# Method Connect\n\n#### Connect()\n\nConnects to TopSolid application.\n\n##### Declaration\n\n```\npublic static void Connect()\n```\n",
+  "markdown": "markdown/drafting/7e7370e992dff499a9afe009.md",
+  "originalHtml": "html/drafting/7e7370e992dff499a9afe009.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.MachineWorksSolidType.FacettingTolerance.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.MachineWorksSolidType.FacettingTolerance.html",
+  "sha256": "f20b411813d4bbca86cf17acac363567230923717f88d7c0ad740a8abd17721d",
+  "text": "# Field FacettingTolerance\n\nFacetting Tolerance.\n\n###### Namespace: TopSolid.Cam.NC.Kernel.Automating\n\n###### Assembly: TopSolid.Cam.NC.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic SmartReal FacettingTolerance\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartReal |  Facetting Tolerance. |\n",
+  "markdown": "markdown/cam/083040a84e333844912f91f6.md",
+  "originalHtml": "html/cam/083040a84e333844912f91f6.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IDocuments.ExportMachineToGlTF.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IDocuments.ExportMachineToGlTF.html",
+  "sha256": "986ece1e1df4198acaa1d40e0c3c7a583cea7b273ecafd2aa9f39a17e3b492dd",
+  "text": "# Method ExportMachineToGlTF\n\n#### ExportMachineToGlTF(DocumentId, string, bool, bool, bool, bool, out string)\n\nExports a glTF with organized elements.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 400, 140)]\nbool ExportMachineToGlTF(DocumentId inDocumentId, string inFullName, bool inUseGlBFormat, bool inExportSets, bool inExportsLights, bool inExportMaterials, out string outLog)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  the document to export  |  \n \n|  string |  inFullName |  the file path  |  \n \n|  bool |  inUseGlBFormat |  whether to use glb (true) or glTF (false) format.  |  \n \n|  bool |  inExportSets |  true to export sets.  |  \n \n|  bool |  inExportsLights |  true to export lights  |  \n \n|  bool |  inExportMaterials |  true to export materials  |  \n \n|  string |  outLog |  log  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  true if export is a success.  |  \n\n##### Remarks\n\nThis method must not be called between StartModification(string, bool) and EndModification(bool, bool) methods calls.\n \nThis method is available since v7.20.\n",
+  "markdown": "markdown/kernel/93c39bd7df1f9aff4788b167.md",
+  "originalHtml": "html/kernel/93c39bd7df1f9aff4788b167.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IOperations.IsSetupOperation.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IOperations.IsSetupOperation.html",
+  "sha256": "735bb0c9a93293a475261fb2a6b1a4fbfeba025e878b5c8dd872991b15c626b7",
+  "text": "# Method IsSetupOperation\n\n#### IsSetupOperation(ElementExId)\n\nTells whether an operation is a Cam geometry setup operation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nbool IsSetupOperation(ElementExId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementExId |  inElementId |  Identifier of the operation to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  The operation is a Cam geometry setup operation.  |\n",
+  "markdown": "markdown/cam/1cd7e2014f293bdbbb48e2d1.md",
+  "originalHtml": "html/cam/1cd7e2014f293bdbbb48e2d1.html"
+}

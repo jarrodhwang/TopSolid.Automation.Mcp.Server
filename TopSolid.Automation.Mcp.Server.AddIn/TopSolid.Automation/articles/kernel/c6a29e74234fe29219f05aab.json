@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IDocuments.GetPropertyLocalizedName.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IDocuments.GetPropertyLocalizedName.html",
+  "sha256": "aad70b7ecc89e30c58ebbd650d8bf394f8ece1a07d20c41070447edb04a44c0f",
+  "text": "# Method GetPropertyLocalizedName\n\n#### GetPropertyLocalizedName(DocumentId, string)\n\nGets the localized name of a document property.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 300, 60)]\nstring GetPropertyLocalizedName(DocumentId inDocumentId, string inFullName)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n \n|  string |  inFullName |  Full name of the document property to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  Localized name of the property.  |  \n\n##### Remarks\n\nThis method is available since v7.8.300.60.\n",
+  "markdown": "markdown/kernel/c6a29e74234fe29219f05aab.md",
+  "originalHtml": "html/kernel/c6a29e74234fe29219f05aab.html"
+}

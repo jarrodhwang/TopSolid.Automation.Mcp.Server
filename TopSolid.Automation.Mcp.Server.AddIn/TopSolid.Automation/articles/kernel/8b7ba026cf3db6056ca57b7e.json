@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.RestoreLastSave.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.RestoreLastSave.html",
+  "sha256": "5aac1da55938d869cfccbd151277d15b6cf1c9547ffe9e0c5f78df1d27b01233",
+  "text": "# Method RestoreLastSave\n\n#### RestoreLastSave(PdmObjectId)\n\nCancels the modification of an object.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nvoid RestoreLastSave(PdmObjectId inObjectId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  Object identifier.  |  \n\n##### Remarks\n\nThis method must not be called between StartModification(string, bool) and EndModification(bool, bool) methods calls.\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/8b7ba026cf3db6056ca57b7e.md",
+  "originalHtml": "html/kernel/8b7ba026cf3db6056ca57b7e.html"
+}

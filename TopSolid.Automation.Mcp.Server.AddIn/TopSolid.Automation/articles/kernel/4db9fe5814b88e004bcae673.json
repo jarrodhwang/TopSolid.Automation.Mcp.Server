@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartUserEnumeration.EnumId.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartUserEnumeration.EnumId.html",
+  "sha256": "20df9d1ff1f6534bae3422fbf550191397781100c0199e65a26480fee9b7e127",
+  "text": "# Field EnumId\n\nEnumeration definition document identifier.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic DocumentId EnumId\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  DocumentId |  Enumeration definition document identifier. |\n",
+  "markdown": "markdown/kernel/4db9fe5814b88e004bcae673.md",
+  "originalHtml": "html/kernel/4db9fe5814b88e004bcae673.html"
+}

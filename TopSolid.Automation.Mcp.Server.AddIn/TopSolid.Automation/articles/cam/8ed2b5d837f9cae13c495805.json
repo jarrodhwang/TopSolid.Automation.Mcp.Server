@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.LastConfigType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.LastConfigType.html",
+  "sha256": "d10eaf9db81e8e7b2cbb48d7717a86153fdd98a2482d9278b5c7e3ac2a9c7f78",
+  "text": "# Class LastConfigType\n\nRepresents an Inherited Stock Type.\n\n##### Inheritance\n \nobject\n \nStockType\n \nLastConfigType\n\n##### Inherited Members\n \n object.ToString() \n \n object.Equals(object) \n \n object.Equals(object, object) \n \n object.ReferenceEquals(object, object) \n \n object.GetHashCode() \n \n object.GetType() \n \n object.MemberwiseClone() \n\n###### Namespace: TopSolid.Cam.NC.Kernel.Automating\n\n###### Assembly: TopSolid.Cam.NC.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 19, 0, 0)]\npublic class LastConfigType : StockType\n```\n\n##### Remarks\n\nThis class is available since v7.15.\n\n### Constructors \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   LastConfigType()  |  Initializes a new instance of a LastConfigType class.  |\n",
+  "markdown": "markdown/cam/8ed2b5d837f9cae13c495805.md",
+  "originalHtml": "html/cam/8ed2b5d837f9cae13c495805.html"
+}

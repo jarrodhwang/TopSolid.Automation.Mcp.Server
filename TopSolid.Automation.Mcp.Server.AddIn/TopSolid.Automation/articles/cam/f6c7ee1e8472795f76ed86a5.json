@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.INCFiles.GetNCCodesSize.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.INCFiles.GetNCCodesSize.html",
+  "sha256": "56063f72dba13e33511dbd6bc346de99d2b90b4fa5f960eebb002d72fb4f39d6",
+  "text": "# Method GetNCCodesSize\n\n#### GetNCCodesSize(ElementId)\n\nGet the NC Codes lines number of the given NC file entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 9, 0, 0)]\nint GetNCCodesSize(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  The NC file Element Id.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  int |  The total number of NC Codes lines.  |\n",
+  "markdown": "markdown/cam/f6c7ee1e8472795f76ed86a5.md",
+  "originalHtml": "html/cam/f6c7ee1e8472795f76ed86a5.html"
+}

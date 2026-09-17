@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.DocumentId.Empty.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.DocumentId.Empty.html",
+  "sha256": "77f40805643245b43447690bfbbeeb2834249e23f9020cd2b73e25ec64e972e6",
+  "text": "# Field Empty\n\nEmpty identifier.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\npublic static readonly DocumentId Empty\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  DocumentId |  Empty identifier. |\n",
+  "markdown": "markdown/kernel/75838f0a691646bc987db06f.md",
+  "originalHtml": "html/kernel/75838f0a691646bc987db06f.html"
+}

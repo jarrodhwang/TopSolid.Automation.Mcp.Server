@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IFamilies.SetCatalogCellUserEnumerationValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IFamilies.SetCatalogCellUserEnumerationValue.html",
+  "sha256": "db1eff2f49744c66fa81ab28df42a0225d0afcde64a7e304016045acb7265c1f",
+  "text": "# Method SetCatalogCellUserEnumerationValue\n\n#### SetCatalogCellUserEnumerationValue(ElementId, ElementId, int)\n\nSets the user enumeration value of the catalog cell.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 15, 0, 60)]\nvoid SetCatalogCellUserEnumerationValue(ElementId inRow, ElementId inParameterId, int inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inRow |  Identifier of the row.  |  \n \n|  ElementId |  inParameterId |  Identifier of the parameter of the column.  |  \n \n|  int |  inValue |  Value of the cell.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.15.\n",
+  "markdown": "markdown/kernel/3f8039d6cf98e37611a99be2.md",
+  "originalHtml": "html/kernel/3f8039d6cf98e37611a99be2.html"
+}

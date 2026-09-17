@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMaterials.SetBumpRotation.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMaterials.SetBumpRotation.html",
+  "sha256": "23c68dc68a32b7414e2dd02f48a2aa34fdd35655da613afb3fec5f046fd82cb9",
+  "text": "# Method SetBumpRotation\n\n#### SetBumpRotation(DocumentId, double)\n\nSets the rotation for bump texture.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 400, 120)]\nvoid SetBumpRotation(DocumentId inDocumentId, double inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  double |  inValue |  Wanted value.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.20.\n",
+  "markdown": "markdown/cad/f52d7975e935a4f3677fc721.md",
+  "originalHtml": "html/cad/f52d7975e935a4f3677fc721.html"
+}

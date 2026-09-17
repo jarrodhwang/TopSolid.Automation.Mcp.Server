@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IApplication.CurrentUICultureName.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IApplication.CurrentUICultureName.html",
+  "sha256": "298c8e2d8d3f22340672c8fde0f1d56665561d2c80c5bcfc28a2d074a14c58e9",
+  "text": "# Property CurrentUICultureName\n\n#### CurrentUICultureName\n\nGets the name of the current UI culture of the application.\n\n##### Declaration\n\n```\n[AvailableSinceVersion(7, 6, 0, 0)]\nstring CurrentUICultureName { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |   |  \n\n##### Remarks\n\nThe culture name is in the format \"[languagecode2]-[country/regioncode2]\", where [languagecode2] is a lowercase two-letter code derived from ISO 639-1 and [country/regioncode2] is an uppercase two-letter code derived from ISO 3166.\n \nThis property is available since v7.7.\n\n##### Examples\n \n\"en-US\" for English (United States), \"fr-FR\" for French (France), \"fr-BE\" for French (Belgium), ...\n",
+  "markdown": "markdown/kernel/6804717d0c476e006852672e.md",
+  "originalHtml": "html/kernel/6804717d0c476e006852672e.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.TopSolidDesignHost.Mechanisms.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.TopSolidDesignHost.Mechanisms.html",
+  "sha256": "9bc3e40c45abe987267be101e525ecc9dc4fc0d5b2e10626be1edd45556fcf7c",
+  "text": "# Property Mechanisms\n\n#### Mechanisms\n\nGets access to mechanisms, or null if not connected.\n\n##### Declaration\n\n```\npublic static IMechanisms Mechanisms { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  IMechanisms |   |\n",
+  "markdown": "markdown/cad/169447d8d77811bcccc90eb3.md",
+  "originalHtml": "html/cad/169447d8d77811bcccc90eb3.html"
+}

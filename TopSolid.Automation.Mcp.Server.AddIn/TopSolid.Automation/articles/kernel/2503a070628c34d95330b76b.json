@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IEntities.IsBasifiable.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IEntities.IsBasifiable.html",
+  "sha256": "e0964d50c454014557de000daa037994dc53bce0ebaa8b47e0b6acf52f250a43",
+  "text": "# Method IsBasifiable\n\n#### IsBasifiable(ElementId)\n\nTells whether an entity may be basified.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 201, 200)]\nbool IsBasifiable(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the entity to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Whether the entity may be basified.  |  \n\n##### Remarks\n\nThis method is available since v7.7.201.200.\n",
+  "markdown": "markdown/kernel/2503a070628c34d95330b76b.md",
+  "originalHtml": "html/kernel/2503a070628c34d95330b76b.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ICoatings.SetCoatingParameterValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ICoatings.SetCoatingParameterValue.html",
+  "sha256": "75b3bb4d318d6db479a9fa1133160ad718e5cca882d4acbf93cf3cc8a6b80e44",
+  "text": "# Method SetCoatingParameterValue\n\n#### SetCoatingParameterValue(ElementId, PdmMinorRevisionId)\n\nSets value of a Coating Parameter\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 400, 160)]\nvoid SetCoatingParameterValue(ElementId inParameterId, PdmMinorRevisionId inPdmMinorRevisionId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inParameterId |  The Id of the parameter  |  \n \n|  PdmMinorRevisionId |  inPdmMinorRevisionId |  MinorRevision of the document to use  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.19.400.160\n",
+  "markdown": "markdown/cad/2e0182d87235160346a25e4b.md",
+  "originalHtml": "html/cad/2e0182d87235160346a25e4b.html"
+}

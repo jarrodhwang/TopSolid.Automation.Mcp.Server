@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.ImportDictionaryPackage.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.ImportDictionaryPackage.html",
+  "sha256": "889a8df527940b8da8f31b1033f864d2de46cce24350ab7f6bd500717763c859",
+  "text": "# Method ImportDictionaryPackage\n\n#### ImportDictionaryPackage(string)\n\nImport dictionary package (.TopDicPkg).\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 21, 55, 0)]\nvoid ImportDictionaryPackage(string inPackageFileFullPath)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  string |  inPackageFileFullPath |  Dictionary package file full name.  |\n",
+  "markdown": "markdown/kernel/f969a3f67fda6b1ce9bc1bf5.md",
+  "originalHtml": "html/kernel/f969a3f67fda6b1ce9bc1bf5.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IProcesses.FindLocalProcesses.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IProcesses.FindLocalProcesses.html",
+  "sha256": "cbf68ab83d6efc795da8a5f4c8372c1fef8018c1456173b1f48084623676e178",
+  "text": "# Method FindLocalProcesses\n\n#### FindLocalProcesses(DocumentId)\n\nFinds local processes of a document\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 400, 140)]\nList<PdmObjectId> FindLocalProcesses(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<PdmObjectId> |  List of local available processes  |\n",
+  "markdown": "markdown/cad/d9b6eedbdb5066c63e6c4c11.md",
+  "originalHtml": "html/cad/d9b6eedbdb5066c63e6c4c11.html"
+}

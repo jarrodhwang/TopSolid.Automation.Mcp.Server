@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IShapes.GetEdgeLength.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IShapes.GetEdgeLength.html",
+  "sha256": "d063b2609a7f0eb0c3ea2d382f3fea2dfc832dc811d05383e51d35415f2d0dbc",
+  "text": "# Method GetEdgeLength\n\n#### GetEdgeLength(ElementItemId)\n\nGets the length of an edge.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\ndouble GetEdgeLength(ElementItemId inEdgeId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementItemId |  inEdgeId |  Identifier of the edge to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double |  Length of the edge.  |  \n\n##### Remarks\n\nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/669010c423406e8442b09994.md",
+  "originalHtml": "html/kernel/669010c423406e8442b09994.html"
+}

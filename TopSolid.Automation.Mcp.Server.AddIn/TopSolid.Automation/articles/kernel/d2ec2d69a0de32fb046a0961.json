@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdmSecurity.SetPermissions.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdmSecurity.SetPermissions.html",
+  "sha256": "0e02bf60f1739d6f5b1cc11cb363db3009c71a86ffc6372888bd2c978cc81462",
+  "text": "# Method SetPermissions\n\n#### SetPermissions(PdmObjectId, List<PdmSecurityUserOrGroupPermissions>)\n\nSets security of a project, folder or document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 302, 60)]\nvoid SetPermissions(PdmObjectId inObjectId, List<PdmSecurityUserOrGroupPermissions> inPermissions)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  Project, folder or document identifier to set permissions or empty for system permissions.  |  \n \n|  List<PdmSecurityUserOrGroupPermissions> |  inPermissions |  Security permissions to set.  |  \n\n##### Remarks\n\nThis method is available since v7.8.302.060.\n",
+  "markdown": "markdown/kernel/d2ec2d69a0de32fb046a0961.md",
+  "originalHtml": "html/kernel/d2ec2d69a0de32fb046a0961.html"
+}

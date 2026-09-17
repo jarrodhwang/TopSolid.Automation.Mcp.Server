@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ITools.CreateAuxiliairyElement.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ITools.CreateAuxiliairyElement.html",
+  "sha256": "b4f0153d43da0c4af64d47492f6c8b1f4971b24b98eed4186eda543ebd33e499",
+  "text": "# Method CreateAuxiliairyElement\n\n#### CreateAuxiliairyElement(DocumentId, List<ElementId>)\n\nCreates an auxiliairy element in a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 13, 0, 0)]\nElementId CreateAuxiliairyElement(DocumentId inDocumentId, List<ElementId> inConstituents)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  List<ElementId> |  inConstituents |  Identifiers of constituents of the auxiliairy element.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the created auxiliairy entity.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.13.300.128.\n",
+  "markdown": "markdown/cad/9c5e6e5a119a67367db97882.md",
+  "originalHtml": "html/cad/9c5e6e5a119a67367db97882.html"
+}

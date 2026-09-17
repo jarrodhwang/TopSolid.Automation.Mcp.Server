@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IFamilies.IsDerived.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IFamilies.IsDerived.html",
+  "sha256": "42a21cc385f8101eb97422530b450f4e249264c3f757db4520fd38d27120d410",
+  "text": "# Method IsDerived\n\n#### IsDerived(DocumentId)\n\nTells whether a family document is a derived family document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nbool IsDerived(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the family document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  The family is a derived family.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/kernel/f3f63c7fbb542d2d2c1b1ca2.md",
+  "originalHtml": "html/kernel/f3f63c7fbb542d2d2c1b1ca2.html"
+}

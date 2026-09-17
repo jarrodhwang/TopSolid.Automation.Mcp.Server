@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ICoatings.SetAnisotropyAngleFactor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ICoatings.SetAnisotropyAngleFactor.html",
+  "sha256": "95e79131df64f34e083ad52bb698f6c5119bdc29a003b9acffebe64b9bf41334",
+  "text": "# Method SetAnisotropyAngleFactor\n\n#### SetAnisotropyAngleFactor(DocumentId, double)\n\nSets the Anisotropy factor.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 18, 0, 0)]\nvoid SetAnisotropyAngleFactor(DocumentId inDocumentId, double inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  double |  inValue |  Wanted value.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.18.\n",
+  "markdown": "markdown/cad/f77eba256e4a425240a6f42b.md",
+  "originalHtml": "html/cad/f77eba256e4a425240a6f42b.html"
+}

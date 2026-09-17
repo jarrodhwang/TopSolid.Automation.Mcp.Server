@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.GetEnumerationDefinition.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.GetEnumerationDefinition.html",
+  "sha256": "7fd4d9d2455c67ff696e1edbc7ec9bf9d51a5a4ad00ae80a218496b4f2e828fc",
+  "text": "# Method GetEnumerationDefinition\n\n#### GetEnumerationDefinition(ElementId)\n\nGets the GUID of the class defining the enumeration of an enumeration parameter.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nGuid GetEnumerationDefinition(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the parameter to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Guid |  Enumeration GUID.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/a1ffcf0a1e2e0ca5fa8723a8.md",
+  "originalHtml": "html/kernel/a1ffcf0a1e2e0ca5fa8723a8.html"
+}

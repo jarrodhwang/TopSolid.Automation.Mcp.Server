@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IShapes.IsEdgeSmooth.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IShapes.IsEdgeSmooth.html",
+  "sha256": "6118205161a5cd75b6b4267fd6bb4503d65f11799b0287eb56338a29f586ea49",
+  "text": "# Method IsEdgeSmooth\n\n#### IsEdgeSmooth(ElementItemId, double)\n\nTells whether an edge is smooth.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nbool IsEdgeSmooth(ElementItemId inEdgeId, double inAngle)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementItemId |  inEdgeId |  Identifier of the edge to analyze.  |  \n \n|  double |  inAngle |  Maximum angle between face normals along the edge.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Whether the edge is smooth at the specified angle tolerance.  |  \n\n##### Remarks\n\nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/c841a883ea963e16610b2b3d.md",
+  "originalHtml": "html/kernel/c841a883ea963e16610b2b3d.html"
+}

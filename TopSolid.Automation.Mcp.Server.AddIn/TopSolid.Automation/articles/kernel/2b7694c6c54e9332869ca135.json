@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ItemLabel.Type.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ItemLabel.Type.html",
+  "sha256": "9d80528daf9703e06fdbc80993d82d06a7b00fddcafbdd13afedc81a46df8f59",
+  "text": "# Property Type\n\n#### Type\n\nGets the type of the item, or 0 if none.\n\n##### Declaration\n\n```\npublic byte Type { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  byte |   |  \n\n##### Remarks\n\nSome types are defined in the ItemType enum.\n",
+  "markdown": "markdown/kernel/2b7694c6c54e9332869ca135.md",
+  "originalHtml": "html/kernel/2b7694c6c54e9332869ca135.html"
+}

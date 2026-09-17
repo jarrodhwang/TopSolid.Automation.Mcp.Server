@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdmVisualization.SetViewCameraOrientation.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdmVisualization.SetViewCameraOrientation.html",
+  "sha256": "d301259aae3eede310ec0c00b337484079be4b528e07bf0d3ea086dd0d52c86e",
+  "text": "# Method SetViewCameraOrientation\n\n#### SetViewCameraOrientation(PdmMinorRevisionId, int, CameraViewOrientation, bool)\n\nSets top camera for this document view\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 222, 0)]\nvoid SetViewCameraOrientation(PdmMinorRevisionId inMinorRevisionId, int viewId, CameraViewOrientation inViewOrientation, bool inZoomToFit)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmMinorRevisionId |  inMinorRevisionId |  document minor revision identifier  |  \n \n|  int |  viewId |  id of the view, or -1 to apply to all document views  |  \n \n|  CameraViewOrientation |  inViewOrientation |  orientation of the view  |  \n \n|  bool |  inZoomToFit |  zoom to fit option  |\n",
+  "markdown": "markdown/pdmexplorer/d4044dea9b02c3752a37d43d.md",
+  "originalHtml": "html/pdmexplorer/d4044dea9b02c3752a37d43d.html"
+}

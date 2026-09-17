@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Plane3D.OXZ.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Plane3D.OXZ.html",
+  "sha256": "6d035118e2e438d8a8d6f4f25858fe36bd15ca9b2e508746c5b1d0481ce95837",
+  "text": "# Field OXZ\n\n(O,+X,+Z) absolute plane.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\npublic static readonly Plane3D OXZ\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Plane3D |  (O,+X,+Z) absolute plane. |\n",
+  "markdown": "markdown/kernel/2c2573e1b868e1e2ceeacc04.md",
+  "originalHtml": "html/kernel/2c2573e1b868e1e2ceeacc04.html"
+}

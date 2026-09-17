@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ILicenses.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ILicenses.html",
+  "sha256": "6e57f504df966dff6fcf2c506fbd91040360a7babd52e892ec07f1c951f4c21e",
+  "text": "# Interface ILicenses\n\nGives access to methods to read and interact with licenses.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[ServiceContract]\n[AvailableSinceVersion(7, 16, 400, 20)]\npublic interface ILicenses\n```\n\n##### Remarks\n\nThis interface is available since v7.16.\n\n### Methods \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   ActivateLicense(License)  |  Activates a license.  |  \n \n|   AddFloatingLicense(License)  |  Adds a floating license.  |  \n \n|   DeactivateLicense(License)  |  Deactivates a license.  |  \n \n|   GetActveLicenses()  |  Gets the active licenses.  |  \n \n|   GetFloatingLicenseServers()  |  Gets the floating license servers.  |  \n \n|   GetLicenses()  |  Gets all licenses.  |  \n \n|   GetUsedFloatingLicenses()  |  Gets used floating licenses.  |  \n \n|   SetFloatingLicenseServer(string)  |  Sets the floating license server.  |\n",
+  "markdown": "markdown/kernel/36ca97c32e28b73072c87ec1.md",
+  "originalHtml": "html/kernel/36ca97c32e28b73072c87ec1.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IGeometries3D.SetPatternPublishingDefinition.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IGeometries3D.SetPatternPublishingDefinition.html",
+  "sha256": "030f3d36dcf7ece678dbe35c0df787cb033fef7c98f5a91eec2fd36952bed7d1",
+  "text": "# Method SetPatternPublishingDefinition\n\n#### SetPatternPublishingDefinition(ElementId, SmartPattern3D)\n\nSets the definition of a pattern publishing entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 400, 180)]\nvoid SetPatternPublishingDefinition(ElementId inElementId, SmartPattern3D inDefinition)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the publishing entity to analyze.  |  \n \n|  SmartPattern3D |  inDefinition |  The definition to use.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n",
+  "markdown": "markdown/kernel/e1bc70992c4e114d6c0e9ac7.md",
+  "originalHtml": "html/kernel/e1bc70992c4e114d6c0e9ac7.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.SurfaceFinishTools.SurfaceFinishItemValueType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.SurfaceFinishTools.SurfaceFinishItemValueType.html",
+  "sha256": "4b6b1cc5373e44333c8ebe700d89a6a20408ee6f7945d94cffab2b5c93c2ec30",
+  "text": "# Enum SurfaceFinishItemValueType\n\nDefines the various types of value of a surface finish item.\n\n###### Namespace: TopSolid.Cad.Drafting.Automating.SurfaceFinishTools\n\n###### Assembly: TopSolid.Cad.Drafting.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 17, 0, 0)]\npublic enum SurfaceFinishItemValueType\n```\n\n##### Remarks\n\nThis enum is available since v7.17.000.000.\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  None |  None.  |  \n \n|  StriaOrientation |  Stria Orientation.  |  \n \n|  SymbolType |  Symbol Type.  |  \n \n|  Text |  Text.  |  \n \n|  Unclassified |  Unclassified type.  |\n",
+  "markdown": "markdown/drafting/41ca0bc999eb585f5f99a3c2.md",
+  "originalHtml": "html/drafting/41ca0bc999eb585f5f99a3c2.html"
+}

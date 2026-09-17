@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMaterials.SetNormalTextureDocument.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMaterials.SetNormalTextureDocument.html",
+  "sha256": "0e1b0fe1e7d5a4602fece5fdb9ece20852217ea38f0d5dfce88b3197f86e53c9",
+  "text": "# Method SetNormalTextureDocument\n\n#### SetNormalTextureDocument(DocumentId, DocumentId)\n\nSets the Normal texture document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 0, 0)]\nvoid SetNormalTextureDocument(DocumentId inDocumentId, DocumentId inTextureDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  DocumentId |  inTextureDocumentId |  Texture document.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.16.\n",
+  "markdown": "markdown/cad/2e59b98328cd28e613683481.md",
+  "originalHtml": "html/cad/2e59b98328cd28e613683481.html"
+}

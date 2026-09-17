@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ILicenses.GetLicenses.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ILicenses.GetLicenses.html",
+  "sha256": "452fe2618ca4b432c045772430c08b75539ffa312dc971e3b326b393fc441912",
+  "text": "# Method GetLicenses\n\n#### GetLicenses()\n\nGets all licenses.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 400, 20)]\nList<License> GetLicenses()\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<License> |  All licenses.  |  \n\n##### Remarks\n\nThis method is available since v7.16.\n",
+  "markdown": "markdown/kernel/6ca4ef9318728cc520713fb8.md",
+  "originalHtml": "html/kernel/6ca4ef9318728cc520713fb8.html"
+}

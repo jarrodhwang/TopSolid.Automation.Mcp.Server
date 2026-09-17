@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.IAnnotations.GetAnnotations.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.IAnnotations.GetAnnotations.html",
+  "sha256": "909a2672370313609b53c558e7a61d9d84d1b3632ef17095d10307bf776461a4",
+  "text": "# Method GetAnnotations\n\n#### GetAnnotations(ElementId)\n\nGets all annotations from a drawing view\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 400, 100)]\nList<ElementId> GetAnnotations(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  The identifier of the view.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementId> |  The list of all detailing annotations.  |  \n\n##### Remarks\n\nThis method is available since v7.19.400.100\n",
+  "markdown": "markdown/drafting/b0558ada5a6925b2f49408b4.md",
+  "originalHtml": "html/drafting/b0558ada5a6925b2f49408b4.html"
+}

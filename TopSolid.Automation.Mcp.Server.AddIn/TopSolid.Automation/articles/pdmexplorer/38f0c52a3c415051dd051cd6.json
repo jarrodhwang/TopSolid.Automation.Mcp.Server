@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdmAdmin.SetUserName.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdmAdmin.SetUserName.html",
+  "sha256": "1e40c786d62293f525c2aff235842644d211c92fe45c16215cb8d00b23ac0139",
+  "text": "# Method SetUserName\n\n#### SetUserName(string, string, string, string)\n\nSets the name of a user.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nvoid SetUserName(string inAccountId, string inFirstName, string inLastName, string inInitials)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  string |  inAccountId |  User account identifier.  |  \n \n|  string |  inFirstName |  User first name.  |  \n \n|  string |  inLastName |  User last name.  |  \n \n|  string |  inInitials |  User initials.  |  \n\n##### Remarks\n\nIf the IsAdmin property returns false, this method cannot be called (an exception will be thrown otherwise).\n \nThis method is available since v7.10.\n",
+  "markdown": "markdown/pdmexplorer/38f0c52a3c415051dd051cd6.md",
+  "originalHtml": "html/pdmexplorer/38f0c52a3c415051dd051cd6.html"
+}

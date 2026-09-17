@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IMaterials.CloseTextureRetrievalSession.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IMaterials.CloseTextureRetrievalSession.html",
+  "sha256": "299dabd3fd3239443c7ef9f7816066a185007dacb6c19ebcbe845c30e9724d16",
+  "text": "# Method CloseTextureRetrievalSession\n\n#### CloseTextureRetrievalSession(Guid)\n\nCloses a texture retrieval session.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 17, 400, 0)]\nvoid CloseTextureRetrievalSession(Guid inSessionId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  Guid |  inSessionId |  Identifier of the session to close.  |  \n\n##### Remarks\n\nThis method is available since v7.17.\n",
+  "markdown": "markdown/kernel/6b294c9627f775c1bd5d3a5c.md",
+  "originalHtml": "html/kernel/6b294c9627f775c1bd5d3a5c.html"
+}

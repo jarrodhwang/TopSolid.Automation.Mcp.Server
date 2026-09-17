@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IOrigins.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IOrigins.html",
+  "sha256": "d93e7045daa67ac10da5f7f860a057e9b5654e20fe094b5807db42b83bad1426",
+  "text": "# Interface IOrigins\n\nGives access to origins.\n\n###### Namespace: TopSolid.Cam.NC.Kernel.Automating\n\n###### Assembly: TopSolid.Cam.NC.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[ServiceContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\npublic interface IOrigins\n```\n\n### Methods \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   CreateOrigin(DocumentId, SmartText, ElementId, SmartBoolean, ElementId, ElementId, SmartText)  |  Creates an origin entity in a document.  |  \n \n|   GetOriginFrameGeometry(ElementId)  |  Gets the origin frame geometry.  |  \n \n|   GetOriginPart(ElementId)  |  Gets the origin part.  |  \n \n|   GetOriginRigidGroup(ElementId)  |  Gets the origin rigid group.  |  \n \n|   GetOrigins(DocumentId)  |  Gets the origins in a document.  |  \n \n|   IsOrigin(ElementId)  |  Tells whether an element is an origin.  |  \n \n|   UpdateOrigin(ElementId, ElementId, ElementId, SmartText)  |  Updates an existing Origin entity.  |\n",
+  "markdown": "markdown/cam/a7eda8821a6532fdd5d7dd78.md",
+  "originalHtml": "html/cam/a7eda8821a6532fdd5d7dd78.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMechanisms.GetJointRigidGroups.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMechanisms.GetJointRigidGroups.html",
+  "sha256": "e58039d09fe300232543cc5a4414bcd3b9f35d4eb073f1e8aa3145a7af8e1153",
+  "text": "# Method GetJointRigidGroups\n\n#### GetJointRigidGroups(ElementId)\n\nGets the rigid groups involved in a joint.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nList<ElementId> GetJointRigidGroups(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the joint to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementId> |  Identifiers of joint rigid group entities.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/cad/8a9696b3ba9c5a3dc05b0850.md",
+  "originalHtml": "html/cad/8a9696b3ba9c5a3dc05b0850.html"
+}

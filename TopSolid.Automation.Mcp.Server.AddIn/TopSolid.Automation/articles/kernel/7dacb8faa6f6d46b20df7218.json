@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ILayers.GetLayers.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ILayers.GetLayers.html",
+  "sha256": "faca534acc1f305fd7a313a1272d44c40613869898389187711bbe8e233c3361",
+  "text": "# Method GetLayers\n\n#### GetLayers(DocumentId)\n\nGets the parameters entities that are in the parameters folder of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 18, 0, 0)]\nList<ElementId> GetLayers(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementId> |  Parameters entities found.  |  \n\n##### Remarks\n\nThis method is available since v7.18.\n\n##### Examples\n \n```\nList<ElementId>= TopSolidHost.Layers.GetLayers(currentDocument);\n```\n",
+  "markdown": "markdown/kernel/7dacb8faa6f6d46b20df7218.md",
+  "originalHtml": "html/kernel/7dacb8faa6f6d46b20df7218.html"
+}

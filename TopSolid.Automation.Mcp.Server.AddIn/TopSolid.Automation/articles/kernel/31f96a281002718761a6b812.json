@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Vector2D.op_UnaryNegation.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Vector2D.op_UnaryNegation.html",
+  "sha256": "fae98aa73dd1e702c5392df400dda8a2128f86eaa43e9bcb89e8ff70dabdfce6",
+  "text": "# Operator operator -\n\n#### operator -(Vector2D)\n\nNegates a vector.\n\n##### Declaration\n\n```\npublic static Vector2D operator -(Vector2D inVector)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  Vector2D |  inVector |  Vector to negate.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Vector2D |  Negated vector.  |\n",
+  "markdown": "markdown/kernel/31f96a281002718761a6b812.md",
+  "originalHtml": "html/kernel/31f96a281002718761a6b812.html"
+}

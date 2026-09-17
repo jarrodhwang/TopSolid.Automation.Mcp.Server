@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IAssemblies.GetCollisionsManagement.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IAssemblies.GetCollisionsManagement.html",
+  "sha256": "cb08c21d6c2633da4ebc36d68512bd2025c080f12fb44ca21028aa42f6f99454",
+  "text": "# Method GetCollisionsManagement\n\n#### GetCollisionsManagement(DocumentId, out ElementId, out bool, out bool, out bool)\n\nGets the collisions management of an assembly.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nvoid GetCollisionsManagement(DocumentId inDocumentId, out ElementId outRepresentationId, out bool outFindsIntersections, out bool outExcludesThreadingTapping, out bool outIsRefreshAuto)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of assembly document to analyze.  |  \n \n|  ElementId |  outRepresentationId |  Identifier of the analyzed representation entity, or empty if there is no collisions management.  |  \n \n|  bool |  outFindsIntersections |  Whether to find collisions intersections.  |  \n \n|  bool |  outExcludesThreadingTapping |  Whether to exclude threading-tapping collisions.  |  \n \n|  bool |  outIsRefreshAuto |  Whether refresh is automatic.  |  \n\n##### Remarks\n\nThis method is available since v7.8.\n",
+  "markdown": "markdown/cad/e0e573512442d5d7146d2522.md",
+  "originalHtml": "html/cad/e0e573512442d5d7146d2522.html"
+}

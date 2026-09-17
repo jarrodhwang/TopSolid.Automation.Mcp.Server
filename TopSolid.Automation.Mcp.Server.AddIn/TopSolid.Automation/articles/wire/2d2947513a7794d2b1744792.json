@@ -1,0 +1,8 @@
+{
+  "path": "api/wire/TopSolid.Cam.NC.Wire.Automating.IWireCc.AddParameterText.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/wire/TopSolid.Cam.NC.Wire.Automating.IWireCc.AddParameterText.html",
+  "sha256": "8923770e28db92166db7309cc203d250936448c250ad630bf08806c79b259120",
+  "text": "# Method AddParameterText\n\n#### AddParameterText(ElementId, string, SmartText)\n\nAdd parameter text.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 160)]\nvoid AddParameterText(ElementId inElementId, string inParameterName, SmartText inParameterValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to modify.  |  \n \n|  string |  inParameterName |  Parameter name.  |  \n \n|  SmartText |  inParameterValue |  Parameter value.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n",
+  "markdown": "markdown/wire/2d2947513a7794d2b1744792.md",
+  "originalHtml": "html/wire/2d2947513a7794d2b1744792.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IApplication.IsLicenseValid.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IApplication.IsLicenseValid.html",
+  "sha256": "d32a3083e81c05869302a2a4c149966c728d8b2b26193b1235f78b671d79c88a",
+  "text": "# Method IsLicenseValid\n\n#### IsLicenseValid(int)\n\nTells whether a valid TopSolid license is available.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nbool IsLicenseValid(int inModuleId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  int |  inModuleId |  TopSolid module identifier.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |   |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/pdmexplorer/03e79d0ca5daddbfb9ce80b1.md",
+  "originalHtml": "html/pdmexplorer/03e79d0ca5daddbfb9ce80b1.html"
+}

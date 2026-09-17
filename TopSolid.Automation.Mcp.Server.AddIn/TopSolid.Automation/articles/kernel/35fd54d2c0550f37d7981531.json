@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ILayers.CreateLayer.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ILayers.CreateLayer.html",
+  "sha256": "fd91e4e781c069273039ede9dce9f971435b9d54d4054e4c3839f27870b2d6c5",
+  "text": "# Method CreateLayer\n\n#### CreateLayer(DocumentId, string, int)\n\nCreates a real parameter entity in a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 18, 0, 0)]\nElementId CreateLayer(DocumentId inDocumentId, string inName, int inNumber = 0)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  string |  inName |  Name of the layer.  |  \n \n|  int |  inNumber |  Index of the layer.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the created parameter entity.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.18.\n",
+  "markdown": "markdown/kernel/35fd54d2c0550f37d7981531.md",
+  "originalHtml": "html/kernel/35fd54d2c0550f37d7981531.html"
+}

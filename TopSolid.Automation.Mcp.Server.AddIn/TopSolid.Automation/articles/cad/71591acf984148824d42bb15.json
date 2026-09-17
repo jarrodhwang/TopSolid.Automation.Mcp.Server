@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ICoatings.SetColorMode.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ICoatings.SetColorMode.html",
+  "sha256": "d853f243177b2d487a97eeb637d216fe4d49ba4923536c1562ab5f2916ccb5f7",
+  "text": "# Method SetColorMode\n\n#### SetColorMode(DocumentId, MaterialModelType)\n\nSets the color mode of a coating document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 18, 0, 0)]\nvoid SetColorMode(DocumentId inDocumentId, MaterialModelType inModel)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  MaterialModelType |  inModel |  The color mode.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.17.\n",
+  "markdown": "markdown/cad/71591acf984148824d42bb15.md",
+  "originalHtml": "html/cad/71591acf984148824d42bb15.html"
+}

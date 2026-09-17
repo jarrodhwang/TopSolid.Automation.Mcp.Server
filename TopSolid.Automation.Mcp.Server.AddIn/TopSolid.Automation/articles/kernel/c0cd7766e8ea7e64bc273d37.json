@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.TopSolidHost.Entities.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.TopSolidHost.Entities.html",
+  "sha256": "db5f902572f6bb0a8e0a3a1e3698e93bcda71a818c0d5a749a77213dcdd5f242",
+  "text": "# Property Entities\n\n#### Entities\n\nGets access to entities, or null if not available.\n\n##### Declaration\n\n```\npublic static IEntities Entities { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  IEntities |   |\n",
+  "markdown": "markdown/kernel/c0cd7766e8ea7e64bc273d37.md",
+  "originalHtml": "html/kernel/c0cd7766e8ea7e64bc273d37.html"
+}

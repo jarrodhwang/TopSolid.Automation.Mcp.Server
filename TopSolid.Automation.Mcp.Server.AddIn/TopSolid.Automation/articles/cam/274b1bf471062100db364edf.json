@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.INCFiles.GetNCFiles.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.INCFiles.GetNCFiles.html",
+  "sha256": "e70f709b115b3845d766ce883813def2a74ae8ec2f57df0fccae7fc5a6afbb54",
+  "text": "# Method GetNCFiles\n\n#### GetNCFiles(DocumentId)\n\nGet the programs contained in the given Iso file.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 9, 0, 0)]\nList<ElementId> GetNCFiles(DocumentId inIsoDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inIsoDocumentId |  Identifier of the Cam document to scan.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementId> |  List of NC programs.  |\n",
+  "markdown": "markdown/cam/274b1bf471062100db364edf.md",
+  "originalHtml": "html/cam/274b1bf471062100db364edf.html"
+}

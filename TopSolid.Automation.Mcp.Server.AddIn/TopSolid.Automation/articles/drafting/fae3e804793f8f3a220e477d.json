@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.IDraftings.CreateNewProjectionSet.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.IDraftings.CreateNewProjectionSet.html",
+  "sha256": "86c2c51fd9e3ba1a4a86aa6143d25ccc902e51e1d4b945fe7353cfb914bf8134",
+  "text": "# Method CreateNewProjectionSet\n\n#### CreateNewProjectionSet(DocumentId, ElementId)\n\nCreates a new projection set for document using another document representation\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 255, 0)]\nElementId CreateNewProjectionSet(DocumentId inDocumentId, ElementId inRepresentationId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  The drafting document  |  \n \n|  ElementId |  inRepresentationId |  the representation to use, in the source document  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |   |\n",
+  "markdown": "markdown/drafting/fae3e804793f8f3a220e477d.md",
+  "originalHtml": "html/drafting/fae3e804793f8f3a220e477d.html"
+}

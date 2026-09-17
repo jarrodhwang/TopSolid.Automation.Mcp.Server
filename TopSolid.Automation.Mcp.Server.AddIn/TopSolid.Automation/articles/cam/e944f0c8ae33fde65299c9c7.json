@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.BlockStockType.-ctor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.BlockStockType.-ctor.html",
+  "sha256": "76d3777c2dd9351e831154593c51fbe6a886bca974589c50db8cc7305939ad34",
+  "text": "# Constructor BlockStockType\n\n#### BlockStockType(SmartFrame3D, SmartReal, SmartReal, SmartReal, SmartReal, SmartReal, SmartReal)\n\nInitializes a new instance of a BlockStockType class.\n\n##### Declaration\n\n```\npublic BlockStockType(SmartFrame3D inFrame, SmartReal inXminus, SmartReal inXplus, SmartReal inYminus, SmartReal inYplus, SmartReal inZminus, SmartReal inZplus)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  SmartFrame3D |  inFrame |  The frame.  |  \n \n|  SmartReal |  inXminus |  X- offset.  |  \n \n|  SmartReal |  inXplus |  X+ offset.  |  \n \n|  SmartReal |  inYminus |  Y- offset.  |  \n \n|  SmartReal |  inYplus |  Y+ offset.  |  \n \n|  SmartReal |  inZminus |  Z- offset.  |  \n \n|  SmartReal |  inZplus |  Z+ offset.  |\n",
+  "markdown": "markdown/cam/e944f0c8ae33fde65299c9c7.md",
+  "originalHtml": "html/cam/e944f0c8ae33fde65299c9c7.html"
+}

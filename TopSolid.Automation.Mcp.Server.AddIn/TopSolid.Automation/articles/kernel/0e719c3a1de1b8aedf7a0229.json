@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IUser.AskFaceWithPickingAxis.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IUser.AskFaceWithPickingAxis.html",
+  "sha256": "6fa0c033f8b914d1d01002e24056c872b5fa1153d58647cbd3940c6d33316407",
+  "text": "# Method AskFaceWithPickingAxis\n\n#### AskFaceWithPickingAxis(UserQuestion, ElementItemId, out ElementItemId, out Axis3D)\n\nAsks the user for a face with picking axis.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 300, 60)]\nUserAnswerType AskFaceWithPickingAxis(UserQuestion inQuestion, ElementItemId inSuggestion, out ElementItemId outAnswer, out Axis3D outPickingAxis)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  UserQuestion |  inQuestion |  Question asked to the user.  |  \n \n|  ElementItemId |  inSuggestion |  Suggested answer, or Empty if none.  |  \n \n|  ElementItemId |  outAnswer |  User answer, or Empty if none.  |  \n \n|  Axis3D |  outPickingAxis |  User picking axis when answer is not empty and not equal to suggestion.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  UserAnswerType |  Type of user answer.  |  \n\n##### Remarks\n\nThis method is available since v7.10.300.60.\n",
+  "markdown": "markdown/kernel/0e719c3a1de1b8aedf7a0229.md",
+  "originalHtml": "html/kernel/0e719c3a1de1b8aedf7a0229.html"
+}

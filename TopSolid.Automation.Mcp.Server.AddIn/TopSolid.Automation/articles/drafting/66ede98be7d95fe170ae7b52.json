@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.IDraftings.GetMainView.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.IDraftings.GetMainView.html",
+  "sha256": "0dab18198728b886c364da6f677abdfe3cae34af66f04b1b6c7c05927bf64def",
+  "text": "# Method GetMainView\n\n#### GetMainView(ElementId)\n\nGets main view related to a view. This method can return the view itself.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 255, 0)]\nElementId GetMainView(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  the view to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Main view of the set  |\n",
+  "markdown": "markdown/drafting/66ede98be7d95fe170ae7b52.md",
+  "originalHtml": "html/drafting/66ede98be7d95fe170ae7b52.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IRepresentations.GetDesignRepresentation.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IRepresentations.GetDesignRepresentation.html",
+  "sha256": "1a1d803abaad61920385427400ea8877664a6af2881b9e4c135fd2a9f5a890ee",
+  "text": "# Method GetDesignRepresentation\n\n#### GetDesignRepresentation(DocumentId)\n\nGets the design representation entity of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 201, 100)]\nElementId GetDesignRepresentation(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the design representation entity found.  |  \n\n##### Remarks\n\nThis method is available since v7.7.201.100.\n",
+  "markdown": "markdown/cad/d273dc62983d518af07dd54e.md",
+  "originalHtml": "html/cad/d273dc62983d518af07dd54e.html"
+}

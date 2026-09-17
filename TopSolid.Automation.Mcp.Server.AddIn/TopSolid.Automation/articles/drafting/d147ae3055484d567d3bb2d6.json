@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.ITables.GetDraftTableCellValueType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.ITables.GetDraftTableCellValueType.html",
+  "sha256": "88b0f93935409f4de13f16e0e977ed0b1e9a907f8c7ad467b3f00fb3ecbb3041",
+  "text": "# Method GetDraftTableCellValueType\n\n#### GetDraftTableCellValueType(ElementId, int, int, int)\n\nGets the value type of a cell.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 14, 300, 140)]\nCellValueType GetDraftTableCellValueType(ElementId inElementId, int inColumnIdx, int inRowIdx, int inSplitColumnIdxIdx)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the entity to analyze.  |  \n \n|  int |  inColumnIdx |  Index of the column.  |  \n \n|  int |  inRowIdx |  Index of the row.  |  \n \n|  int |  inSplitColumnIdxIdx |  Index of the split column. 0 if default.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  CellValueType |  Cell value type.  |  \n\n##### Remarks\n\nThis method is available since v7.14.300.140.\n",
+  "markdown": "markdown/drafting/d147ae3055484d567d3bb2d6.md",
+  "originalHtml": "html/drafting/d147ae3055484d567d3bb2d6.html"
+}

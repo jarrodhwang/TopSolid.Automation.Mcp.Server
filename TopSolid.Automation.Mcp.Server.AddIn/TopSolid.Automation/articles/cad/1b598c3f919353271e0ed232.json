@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IAssemblies.GetAssemblyMassManagement.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IAssemblies.GetAssemblyMassManagement.html",
+  "sha256": "708c2bdd8808253e90611381a4b9f450d4423331a7e33fb3debae1e6c1ab5f50",
+  "text": "# Method GetAssemblyMassManagement\n\n#### GetAssemblyMassManagement(DocumentId)\n\nTells whether the physical property management of an assembly is mass managed.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 13, 300, 220)]\nbool GetAssemblyMassManagement(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of assembly document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  The physical property management is mass managed.  |  \n\n##### Remarks\n\nThis method is available since v7.13.300.220.\n",
+  "markdown": "markdown/cad/1b598c3f919353271e0ed232.md",
+  "originalHtml": "html/cad/1b598c3f919353271e0ed232.html"
+}

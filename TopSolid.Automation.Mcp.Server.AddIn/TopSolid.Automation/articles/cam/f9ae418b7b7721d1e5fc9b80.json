@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IWorldCoordinateSystems.GetWcsSolutionsCount.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IWorldCoordinateSystems.GetWcsSolutionsCount.html",
+  "sha256": "de8e5be551b31e3875579754328398c1bcbb6c6e1859a8dd5ab1ed47f077e48b",
+  "text": "# Method GetWcsSolutionsCount\n\n#### GetWcsSolutionsCount(ElementId)\n\nGets the WCS solutions count.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 400, 80)]\nint GetWcsSolutionsCount(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the WCS to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  int |  The count of solutions.  |\n",
+  "markdown": "markdown/cam/f9ae418b7b7721d1e5fc9b80.md",
+  "originalHtml": "html/cam/f9ae418b7b7721d1e5fc9b80.html"
+}

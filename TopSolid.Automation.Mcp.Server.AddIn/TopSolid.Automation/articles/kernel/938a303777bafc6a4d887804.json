@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IApplication.SetSilentMode.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IApplication.SetSilentMode.html",
+  "sha256": "7ea4d71dde0fd38e9819df83b482c779fb29cfbc40d7e51ee7221ef8aedb12d0",
+  "text": "# Method SetSilentMode\n\n#### SetSilentMode(bool)\n\nSets the silent mode.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 15, 400, 100)]\nvoid SetSilentMode(bool inIsSilent)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  bool |  inIsSilent |  Tells wether the silent mode is activated.  |  \n\n##### Remarks\n\nThis method is available since v7.15.\n",
+  "markdown": "markdown/kernel/938a303777bafc6a4d887804.md",
+  "originalHtml": "html/kernel/938a303777bafc6a4d887804.html"
+}

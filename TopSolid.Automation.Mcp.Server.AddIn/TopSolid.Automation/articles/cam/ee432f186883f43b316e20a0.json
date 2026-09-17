@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.ISimulation.SetAnimationSpeed.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.ISimulation.SetAnimationSpeed.html",
+  "sha256": "5f2436623faad75fd3718db858141816df78a6603ca5576eef54d26e5408f0cd",
+  "text": "# Method SetAnimationSpeed\n\n#### SetAnimationSpeed(int)\n\nSets the animation speed.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 15, 0, 0)]\nvoid SetAnimationSpeed(int inAnimationSpeed)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  int |  inAnimationSpeed |  Animation speed defined on [0;100].  |\n",
+  "markdown": "markdown/cam/ee432f186883f43b316e20a0.md",
+  "originalHtml": "html/cam/ee432f186883f43b316e20a0.html"
+}

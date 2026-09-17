@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IParts.SetMachiningProcessOperationFaceDriverValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IParts.SetMachiningProcessOperationFaceDriverValue.html",
+  "sha256": "504afddae36d00b637af045481a32a6104b02f37af0a17cede597ff5c835d51b",
+  "text": "# Method SetMachiningProcessOperationFaceDriverValue\n\n#### SetMachiningProcessOperationFaceDriverValue(ElementId, string, ElementItemId)\n\nSets a machining process face driver value\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 0, 0)]\nvoid SetMachiningProcessOperationFaceDriverValue(ElementId inElementId, string inDesignation, ElementItemId inFaceIdValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Existing machining Process Operation  |  \n \n|  string |  inDesignation |  Driver designations  |  \n \n|  ElementItemId |  inFaceIdValue |  Face ids  |  \n\n##### Remarks\n\nThis method is available since v7.19.\n",
+  "markdown": "markdown/cad/7589cd5163b147a2ebd1767a.md",
+  "originalHtml": "html/cad/7589cd5163b147a2ebd1767a.html"
+}

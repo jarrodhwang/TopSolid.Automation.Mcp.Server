@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.GetToleranceUpperDeviation.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.GetToleranceUpperDeviation.html",
+  "sha256": "48f2bce38535b5160dd9f6c11e1bfdefb28f78a03f9e6363c1216f3577a4ce12",
+  "text": "# Method GetToleranceUpperDeviation\n\n#### GetToleranceUpperDeviation(ElementId)\n\nGets the upper deviation value of a Tolerance parameter.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 14, 0, 0)]\nReal GetToleranceUpperDeviation(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the parameter to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Real |  Upper deviation value of the parameter.  |  \n\n##### Remarks\n\nThis method is available since v7.14.\n",
+  "markdown": "markdown/kernel/a79e0154ba26abfa4a3ea2bf.md",
+  "originalHtml": "html/kernel/a79e0154ba26abfa4a3ea2bf.html"
+}

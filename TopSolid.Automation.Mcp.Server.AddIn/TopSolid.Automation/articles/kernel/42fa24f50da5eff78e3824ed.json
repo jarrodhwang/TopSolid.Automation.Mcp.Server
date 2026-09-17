@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IDocuments.IsIsUnexportableDocument.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IDocuments.IsIsUnexportableDocument.html",
+  "sha256": "b6fc54297f34e9bcf91e7215562e2b6db011f694062858c289fd384e873364f8",
+  "text": "# Method IsIsUnexportableDocument\n\n#### IsIsUnexportableDocument(DocumentId)\n\nDetermines whether the document is unexportable.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 400, 180)]\nbool IsIsUnexportableDocument(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyse.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Tells wether the document is unexportable.  |  \n\n##### Remarks\n\nThis method is available since v7.19.\n",
+  "markdown": "markdown/kernel/42fa24f50da5eff78e3824ed.md",
+  "originalHtml": "html/kernel/42fa24f50da5eff78e3824ed.html"
+}

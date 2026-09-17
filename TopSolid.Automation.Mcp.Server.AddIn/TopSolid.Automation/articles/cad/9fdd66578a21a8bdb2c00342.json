@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IFeatures.SetFeaturesCreationMode.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IFeatures.SetFeaturesCreationMode.html",
+  "sha256": "cf538acb56bb73f01eab5819ac07397bff3e39ddca8ddf53d0a50ac7c2de7899",
+  "text": "# Method SetFeaturesCreationMode\n\n#### SetFeaturesCreationMode(DocumentId, bool)\n\nSets the features creation mode of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 14, 0, 0)]\nvoid SetFeaturesCreationMode(DocumentId inDocumentId, bool isOn)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to set the feature creation mode.  |  \n \n|  bool |  isOn |  Tells wether the feature creation mode is on.  |  \n\n##### Remarks\n\nThis method is available since v7.14.\n",
+  "markdown": "markdown/cad/9fdd66578a21a8bdb2c00342.md",
+  "originalHtml": "html/cad/9fdd66578a21a8bdb2c00342.html"
+}

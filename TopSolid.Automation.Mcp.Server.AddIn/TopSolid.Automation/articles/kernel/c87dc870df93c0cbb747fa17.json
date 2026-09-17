@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IClassifications.DeleteLevel.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IClassifications.DeleteLevel.html",
+  "sha256": "40a608413c6de4c98faa0ffc7dc7e0158b0654eb3b3d33281bbeccf926a69893",
+  "text": "# Method DeleteLevel\n\n#### DeleteLevel(ElementId)\n\nDeletes a level entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nvoid DeleteLevel(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the level entity to delete.  |  \n\n##### Remarks\n\nLevel entities cannot be deleted using the usual Delete(ElementId) method, this method must be used instead.\n \nThe number of levels must always be at least equal to the classification depth as returned by FindClassificationDepth(DocumentId). An exception will be thrown when attemting to delete a level entity that would result in breaking that condition.\n \nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.10.\n",
+  "markdown": "markdown/kernel/c87dc870df93c0cbb747fa17.md",
+  "originalHtml": "html/kernel/c87dc870df93c0cbb747fa17.html"
+}

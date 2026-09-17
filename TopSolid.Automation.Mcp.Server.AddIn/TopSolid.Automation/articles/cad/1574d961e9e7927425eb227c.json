@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ITools.GetPlaneSymmetry.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ITools.GetPlaneSymmetry.html",
+  "sha256": "74f1b3a5c97a5968b7ca52f550aba479fa55a4fbeee4929bc0094259cc066b81",
+  "text": "# Method GetPlaneSymmetry\n\n#### GetPlaneSymmetry(ElementId, out SmartPlane3D)\n\nGets a plane symmetry.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nvoid GetPlaneSymmetry(ElementId inElementId, out SmartPlane3D outPlane)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the symmetry to analyze.  |  \n \n|  SmartPlane3D |  outPlane |  Symmetry plane.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/cad/1574d961e9e7927425eb227c.md",
+  "originalHtml": "html/cad/1574d961e9e7927425eb227c.html"
+}

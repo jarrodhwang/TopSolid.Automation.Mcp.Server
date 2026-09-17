@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ISketches2D.MakeSegmentConstruction.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ISketches2D.MakeSegmentConstruction.html",
+  "sha256": "e86e7da5a39baa90f249dc186b0abb782fb9906bcc73cc8cbbc9e81fd1699c23",
+  "text": "# Method MakeSegmentConstruction\n\n#### MakeSegmentConstruction(ElementItemId)\n\nMakes a segment construction in the ModifiedSketch.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 201, 80)]\nvoid MakeSegmentConstruction(ElementItemId inSegmentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementItemId |  inSegmentId |  Identifier of the segment to modify.  |  \n\n##### Remarks\n\nStartModification(ElementId) must be called before calling this method.\n \nThis method is available since v7.7.201.80.\n",
+  "markdown": "markdown/kernel/1481a6745ef5c73cedb306af.md",
+  "originalHtml": "html/kernel/1481a6745ef5c73cedb306af.html"
+}

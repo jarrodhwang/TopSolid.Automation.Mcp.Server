@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMaterials.GetElasticLimit.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMaterials.GetElasticLimit.html",
+  "sha256": "f44bf302304872b24af74137bfda8561435a03c54d94b71f7ef1c7743efd4dea",
+  "text": "# Method GetElasticLimit\n\n#### GetElasticLimit(DocumentId, out double)\n\nGets Elastic Limit\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 400, 120)]\nbool GetElasticLimit(DocumentId inDocumentId, out double outValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Id of the container document  |  \n \n|  double |  outValue |  The value  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  true if a parameter has been fetched with success  |\n",
+  "markdown": "markdown/cad/d37600a8015d492f598148a7.md",
+  "originalHtml": "html/cad/d37600a8015d492f598148a7.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IClassifications.CreateClass.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IClassifications.CreateClass.html",
+  "sha256": "edcbb0abb371d7f9ca93f3924aaec258801c7e213c47bef2ae7a0dbaaa1ae9f5",
+  "text": "# Method CreateClass\n\n#### CreateClass(DocumentId, string, string, string)\n\nCreates a first level class entity in a classification document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nElementId CreateClass(DocumentId inDocumentId, string inDescription, string inCode, string inComment)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the classification document to modify.  |  \n \n|  string |  inDescription |  Class description.  |  \n \n|  string |  inCode |  Class code, or empty string if none.  |  \n \n|  string |  inComment |  Class comment, or empty string if none.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the created class entity.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThe classification document must contain at least one level entity otherwise an exception is thrown.\n \nThis method is available since v7.10.\n",
+  "markdown": "markdown/kernel/015377a7f3120ce173138083.md",
+  "originalHtml": "html/kernel/015377a7f3120ce173138083.html"
+}

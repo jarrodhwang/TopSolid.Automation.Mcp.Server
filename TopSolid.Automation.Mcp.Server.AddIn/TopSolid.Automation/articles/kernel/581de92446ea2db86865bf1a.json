@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.TextureImage.-ctor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.TextureImage.-ctor.html",
+  "sha256": "2820f7adb1fab62c1911572c01f48e99c81564345578446eab375bde1671b413",
+  "text": "# Constructor TextureImage\n\n#### TextureImage(string, string, string, bool)\n\nInitializes a new instance of the TextureImage structure.\n\n##### Declaration\n\n```\npublic TextureImage(string inImageFilePath, string inMinorRevisionId, string inSignature, bool inIsGrayscale)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  string |  inImageFilePath |  File path of the image in PNG format.  |  \n \n|  string |  inMinorRevisionId |  Texture document minor revision identifier.  |  \n \n|  string |  inSignature |  Signature.  |  \n \n|  bool |  inIsGrayscale |  Is grayscale image.  |\n",
+  "markdown": "markdown/kernel/581de92446ea2db86865bf1a.md",
+  "originalHtml": "html/kernel/581de92446ea2db86865bf1a.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartDirection2DType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartDirection2DType.html",
+  "sha256": "fb2ea51cbfa9f9386989fc277cd0a55a045486ef83062df9f04a5a076e8f507b",
+  "text": "# Enum SmartDirection2DType\n\nDefines the various types of 2D smart directions.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\npublic enum SmartDirection2DType\n```\n\n##### Remarks\n\nThis enum is available since v7.7.\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  Basic |  Basic.  |  \n \n|  Element |  Provided by an element.  |  \n \n|  Item |  Provided by an element item.  |  \n \n|  None |  Not used.  |  \n \n|  Unclassified |  Unclassified type.  |\n",
+  "markdown": "markdown/kernel/6b1e23d51940bc5dd6356e52.md",
+  "originalHtml": "html/kernel/6b1e23d51940bc5dd6356e52.html"
+}

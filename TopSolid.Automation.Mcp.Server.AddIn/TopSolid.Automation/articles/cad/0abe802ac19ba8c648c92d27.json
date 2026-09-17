@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMaterials.SetRoughnessFactor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMaterials.SetRoughnessFactor.html",
+  "sha256": "5382a51e56c0ae0da79e0953d48efb728ecef53e9e087ac63520bb9cb369e9f4",
+  "text": "# Method SetRoughnessFactor\n\n#### SetRoughnessFactor(DocumentId, double)\n\nSets the Roughness factor.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 0, 0)]\nvoid SetRoughnessFactor(DocumentId inDocumentId, double inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  double |  inValue |  Wanted value.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.16.\n",
+  "markdown": "markdown/cad/0abe802ac19ba8c648c92d27.md",
+  "originalHtml": "html/cad/0abe802ac19ba8c648c92d27.html"
+}

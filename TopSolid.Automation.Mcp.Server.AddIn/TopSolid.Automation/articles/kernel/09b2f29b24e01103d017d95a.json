@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.TopSolidHostInstance.Geometries2D.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.TopSolidHostInstance.Geometries2D.html",
+  "sha256": "362cfbe18934c314dbe4e217c5e73e5507bfdcd8d3ad65a0922bef1ee18b8c20",
+  "text": "# Property Geometries2D\n\n#### Geometries2D\n\nGets access to 2D geometric entities, or null if not available.\n\n##### Declaration\n\n```\npublic IGeometries2D Geometries2D { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  IGeometries2D |   |\n",
+  "markdown": "markdown/kernel/09b2f29b24e01103d017d95a.md",
+  "originalHtml": "html/kernel/09b2f29b24e01103d017d95a.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.DateTimeProperty.Type.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.DateTimeProperty.Type.html",
+  "sha256": "37589c960fddf285424a704520a9f88a76641b5a5ec04023cf23d94c1ea07631",
+  "text": "# Property Type\n\n#### Type\n\nGets the property type.\n\n##### Declaration\n\n```\npublic override PropertyType Type { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  PropertyType |   |  \n\n##### Overrides\n \nProperty.Type\n",
+  "markdown": "markdown/kernel/ee1eff56cdb56455aa652f99.md",
+  "originalHtml": "html/kernel/ee1eff56cdb56455aa652f99.html"
+}

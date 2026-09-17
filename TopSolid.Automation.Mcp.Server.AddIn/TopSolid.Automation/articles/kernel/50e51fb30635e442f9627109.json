@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartShape.-ctor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartShape.-ctor.html",
+  "sha256": "1582338776936378723a3743bb1e39501f1ddbe7bf83355a60f4ae300009ab73",
+  "text": "# Constructor SmartShape\n\n#### SmartShape(SmartShapeType, ElementId)\n\nInitializes a new instance of the SmartShape class.\n\n##### Declaration\n\n```\npublic SmartShape(SmartShapeType inType, ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  SmartShapeType |  inType |  Type of smart shape.  |  \n \n|  ElementId |  inElementId |  Identifier of providing element, or Empty if none.  |  \n\n#### SmartShape(ElementId)\n\nInitializes a new instance of the SmartShape class of type Element.\n\n##### Declaration\n\n```\npublic SmartShape(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of providing element.  |\n",
+  "markdown": "markdown/kernel/50e51fb30635e442f9627109.md",
+  "originalHtml": "html/kernel/50e51fb30635e442f9627109.html"
+}

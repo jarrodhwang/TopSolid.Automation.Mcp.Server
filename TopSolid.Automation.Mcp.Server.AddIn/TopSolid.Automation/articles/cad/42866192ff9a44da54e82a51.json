@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IParts.GetEnclosingCylinderParameters.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IParts.GetEnclosingCylinderParameters.html",
+  "sha256": "844928a2c58035543183f896f2680ab7ae57ad016fbd9ed0bcc98c447431df66",
+  "text": "# Method GetEnclosingCylinderParameters\n\n#### GetEnclosingCylinderParameters(DocumentId, out ElementId, out ElementId)\n\nGets the enclosing cylinder parameters of a part.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nvoid GetEnclosingCylinderParameters(DocumentId inDocumentId, out ElementId outCylinderDiameter, out ElementId outCylinderLength)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of part document to analyze.  |  \n \n|  ElementId |  outCylinderDiameter |  Enclosing cylinder diameter real parameter entity identifier, or empty if not managed.  |  \n \n|  ElementId |  outCylinderLength |  Enclosing cylinder length real parameter entity identifier, or empty if not managed.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/cad/42866192ff9a44da54e82a51.md",
+  "originalHtml": "html/cad/42866192ff9a44da54e82a51.html"
+}

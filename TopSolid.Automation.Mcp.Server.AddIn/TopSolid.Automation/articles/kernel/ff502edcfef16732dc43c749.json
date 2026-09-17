@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IDocuments.Refresh.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IDocuments.Refresh.html",
+  "sha256": "161015ac9ea7de44f1f6718abd655aa16cf4f02d22c5ddbb4e3a97756bf4cc06",
+  "text": "# Method Refresh\n\n#### Refresh(DocumentId)\n\nRefreshes a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nvoid Refresh(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to refresh.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.8.\n",
+  "markdown": "markdown/kernel/ff502edcfef16732dc43c749.md",
+  "originalHtml": "html/kernel/ff502edcfef16732dc43c749.html"
+}

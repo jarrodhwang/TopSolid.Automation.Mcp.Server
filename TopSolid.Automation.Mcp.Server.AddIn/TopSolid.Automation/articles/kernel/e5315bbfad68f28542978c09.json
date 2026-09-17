@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartColor.Type.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartColor.Type.html",
+  "sha256": "c988cdf83deb3da410961b7791812f55ae26fc12ae11784c282d8b22ab915144",
+  "text": "# Field Type\n\nType of smart color.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic SmartColorType Type\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartColorType |  Type of smart color. |\n",
+  "markdown": "markdown/kernel/e5315bbfad68f28542978c09.md",
+  "originalHtml": "html/kernel/e5315bbfad68f28542978c09.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.PdmObjectType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.PdmObjectType.html",
+  "sha256": "b286fcb737883f8452ed0616f600d0927abcb646947de40a1dcb0c9f990c2374",
+  "text": "# Enum PdmObjectType\n\nDefines the various types of PDM objects.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 6, 301, 120)]\npublic enum PdmObjectType\n```\n\n##### Remarks\n\nThis enum is available since v7.6.301.120.\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  FavoritesDefaultFolder |  Favorites default folder.  |  \n \n|  FavoritesFolder |  Favorites folder.  |  \n \n|  Folder |  Folder.  |  \n \n|  LibraryProject |  Library project.  |  \n \n|  RecycleBinFolder |  Recycle bin folder.  |  \n \n|  ResourceProject |  Resource project.  |  \n \n|  Shortcut |  Shortcut.  |  \n \n|  TemplatesDefaultFolder |  Templates default folder.  |  \n \n|  TemplatesFolder |  Templates folder.  |  \n \n|  TopSolidDocument |  TopSolid document.  |  \n \n|  Unknown |  Unknown type.  |  \n \n|  UnknownDocument |  Unknown type of document.  |  \n \n|  WorkingProject |  Working project.  |\n",
+  "markdown": "markdown/kernel/569192186a5ec1be2e9255b2.md",
+  "originalHtml": "html/kernel/569192186a5ec1be2e9255b2.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdmAdmin.UserName.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdmAdmin.UserName.html",
+  "sha256": "f23ad050d8483e5a8329faa50cfe99ffd2ef726b5cd1577ebb0f011559222b01",
+  "text": "# Property UserName\n\n#### UserName\n\nGets connected user name.\n\n##### Declaration\n\n```\n[AvailableSinceVersion(7, 15, 186, 0)]\nstring UserName { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |   |  \n\n##### Remarks\n\nThis property is available since v7.15.186.000.\n",
+  "markdown": "markdown/kernel/02c4a3c122d2dc33770177bc.md",
+  "originalHtml": "html/kernel/02c4a3c122d2dc33770177bc.html"
+}

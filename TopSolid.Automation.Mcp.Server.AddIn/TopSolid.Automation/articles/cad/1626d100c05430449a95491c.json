@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IBoms.UnforceCell.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IBoms.UnforceCell.html",
+  "sha256": "f45a23ed25d0031e0ab82dc6bcdb460fb7d9c3a5b22daccf449328ff6fc5462d",
+  "text": "# Method UnforceCell\n\n#### UnforceCell(DocumentId, int, int)\n\nUnforces the property value of a cell of a BOM.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 12, 0, 0)]\nvoid UnforceCell(DocumentId inDocumentId, int inRowId, int inColumnIx)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the BOM document to modify.  |  \n \n|  int |  inRowId |  Identifier of the row of the cell to modify.  |  \n \n|  int |  inColumnIx |  Index of the column of the cell to modify, within [0,GetColumnCount(DocumentId)-1].  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.12.\n",
+  "markdown": "markdown/cad/1626d100c05430449a95491c.md",
+  "originalHtml": "html/cad/1626d100c05430449a95491c.html"
+}

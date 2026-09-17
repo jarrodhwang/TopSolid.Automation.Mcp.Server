@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.TopSolidHostInstance.Version.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.TopSolidHostInstance.Version.html",
+  "sha256": "96bb9ced697eef2c8f4af5864b8de544a4e3b52ef3972ba2bcec904f616976c5",
+  "text": "# Property Version\n\n#### Version\n\nGets the version of TopSolid host, or 0 if not connected.\n\n##### Declaration\n\n```\npublic int Version { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  int |   |  \n\n##### Remarks\n\nThe value returned is defined by: Major * 100000000 + Minor * 1000000 + Build * 1000 + Revision.\n \nFor example, v7.5.200.100 is returned as: 705200100.\n",
+  "markdown": "markdown/kernel/bbf07b7463b09cdefb594cab.md",
+  "originalHtml": "html/kernel/bbf07b7463b09cdefb594cab.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IFinishings.SetFinishingCategory.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IFinishings.SetFinishingCategory.html",
+  "sha256": "da93459843ac4e069b992a7468aa23e416297d943eba921bb9cdb31154afbf4f",
+  "text": "# Method SetFinishingCategory\n\n#### SetFinishingCategory(DocumentId, FinishingCategoryType)\n\nSets the finishing category of a finishing document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 296, 0)]\nvoid SetFinishingCategory(DocumentId inDocumentId, FinishingCategoryType inFinishingCategoryType)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  FinishingCategoryType |  inFinishingCategoryType |  The finishing category.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.20.\n",
+  "markdown": "markdown/cad/f0e3e106c324d500f8a92622.md",
+  "originalHtml": "html/cad/f0e3e106c324d500f8a92622.html"
+}

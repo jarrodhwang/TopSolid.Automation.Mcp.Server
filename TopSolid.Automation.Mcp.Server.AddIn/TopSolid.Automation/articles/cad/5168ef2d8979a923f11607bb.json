@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ITools.GetInstanceFamilyDocument.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ITools.GetInstanceFamilyDocument.html",
+  "sha256": "4e5dc734dcb329c797b76185b5e10dd7056bada716cb46c769e347c5c157eabb",
+  "text": "# Method GetInstanceFamilyDocument\n\n#### GetInstanceFamilyDocument(DocumentId)\n\nGets the family document of an instance.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 17, 0, 0)]\nDocumentId GetInstanceFamilyDocument(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the instance document.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  DocumentId |  The family document, return Empty if there is no family document or if inDOcument is not an instance.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.17.\n",
+  "markdown": "markdown/cad/5168ef2d8979a923f11607bb.md",
+  "originalHtml": "html/cad/5168ef2d8979a923f11607bb.html"
+}

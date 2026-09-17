@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.PublishUserEnumeration.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.PublishUserEnumeration.html",
+  "sha256": "6b12c4b7e77d0cd14f740f70b96cb2dec615a355c0ec80f9eb278ee615cdba23",
+  "text": "# Method PublishUserEnumeration\n\n#### PublishUserEnumeration(DocumentId, string, SmartUserEnumeration)\n\nCreates a user enumeration publishing entity in a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nElementId PublishUserEnumeration(DocumentId inDocumentId, string inDescription, SmartUserEnumeration inDefinition)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  string |  inDescription |  Publishing description.  |  \n \n|  SmartUserEnumeration |  inDefinition |  Publishing definition.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the created publishing entity.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.8.\n",
+  "markdown": "markdown/kernel/3a581be7a18c8517c9e0fb68.md",
+  "originalHtml": "html/kernel/3a581be7a18c8517c9e0fb68.html"
+}

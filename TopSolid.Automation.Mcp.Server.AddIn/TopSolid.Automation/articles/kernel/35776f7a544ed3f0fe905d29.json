@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ITextures.SetRedWayRealisticFile.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ITextures.SetRedWayRealisticFile.html",
+  "sha256": "7efe11ceceb6d52defcfd837ee232b090c9bf26b9091d9304f2cd1e7a6fe929c",
+  "text": "# Method SetRedWayRealisticFile\n\n#### SetRedWayRealisticFile(DocumentId, string)\n\nSets the redway realistic file.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 0, 0)]\nvoid SetRedWayRealisticFile(DocumentId inDocumentId, string inFullPath)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  string |  inFullPath |  File path of the picture.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.16.\n",
+  "markdown": "markdown/kernel/35776f7a544ed3f0fe905d29.md",
+  "originalHtml": "html/kernel/35776f7a544ed3f0fe905d29.html"
+}

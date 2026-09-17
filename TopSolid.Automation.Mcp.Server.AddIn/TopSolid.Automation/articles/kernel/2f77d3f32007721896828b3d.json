@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.CreateDocument.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.CreateDocument.html",
+  "sha256": "c721cfdf5d06526578a76a66e007c0dae89b491ae99f02f36bf7a96ac76825b6",
+  "text": "# Method CreateDocument\n\n#### CreateDocument(PdmObjectId, string, bool)\n\nCreates a TopSolid document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nPdmObjectId CreateDocument(PdmObjectId inOwnerId, string inExtension, bool inUseDefaultTemplate)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inOwnerId |  Identifier of owner.  |  \n \n|  string |  inExtension |  File extension of the document to create, starting with the '.' character.  |  \n \n|  bool |  inUseDefaultTemplate |  Tells whether to use the default template if present.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  PdmObjectId |  PDM object identifier of the created document.  |  \n\n##### Remarks\n\nTo obtain the extension corresponding to a TopSolid document, one must create such a document in TopSolid, select it in the projet tree and use the \"Document Type...\" command in the contextual \"Tools\" menu (TopSolid must be started with the \"-a\" command line option as this command is only available in the advanced mode).\n \nThis method must not be called between StartModification(string, bool) and EndModification(bool, bool) methods calls.\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/2f77d3f32007721896828b3d.md",
+  "originalHtml": "html/kernel/2f77d3f32007721896828b3d.html"
+}

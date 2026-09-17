@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IEntities.CreateClassifying.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IEntities.CreateClassifying.html",
+  "sha256": "dc5a12ff5ba3a9c9accc2b7c8e4073142bf0ca14b736cde23d27b664acf69463",
+  "text": "# Method CreateClassifying\n\n#### CreateClassifying(DocumentId, ElementId)\n\nCreates a classifying entity in a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nElementId CreateClassifying(DocumentId inDocumentId, ElementId inClassId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  ElementId |  inClassId |  Identifier of a class entity in a classification document.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Classifying entity created identifier.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.10.\n",
+  "markdown": "markdown/kernel/4eb0368bc1d6c814f6881978.md",
+  "originalHtml": "html/kernel/4eb0368bc1d6c814f6881978.html"
+}

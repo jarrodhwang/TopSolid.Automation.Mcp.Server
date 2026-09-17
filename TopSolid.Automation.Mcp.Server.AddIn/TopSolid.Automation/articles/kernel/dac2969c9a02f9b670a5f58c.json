@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.TopSolidHost.Exited.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.TopSolidHost.Exited.html",
+  "sha256": "ca21b407ce843aabde2fa84029539fcc04cdb8749a05a281311ba49309da2fae",
+  "text": "# Event Exited\n\nThis event is raised when the host process was running on the local machine and has exited.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\npublic static event EventHandler Exited\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  EventHandler |  This event is raised when the host process was running on the local machine and has exited. |\n",
+  "markdown": "markdown/kernel/dac2969c9a02f9b670a5f58c.md",
+  "originalHtml": "html/kernel/dac2969c9a02f9b670a5f58c.html"
+}

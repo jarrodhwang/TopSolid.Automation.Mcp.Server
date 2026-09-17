@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ISimulations.SetVisibilityChangeTask.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ISimulations.SetVisibilityChangeTask.html",
+  "sha256": "634c438fb8b9c2ee7c4d9b97a82cc85d3cba0e8a768328a3bd690c0346614211",
+  "text": "# Method SetVisibilityChangeTask\n\n#### SetVisibilityChangeTask(ElementId, bool, List<ElementId>)\n\nSets a visibility change task.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nvoid SetVisibilityChangeTask(ElementId inElementId, bool inIsHiding, List<ElementId> inRigidGroupIds)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the task to modify.  |  \n \n|  bool |  inIsHiding |  Whether the task is hiding, or otherwise showing.  |  \n \n|  List<ElementId> |  inRigidGroupIds |  Identifiers of rigid groups that are changing.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/cad/bbf9e78c44a55de72b1043c9.md",
+  "originalHtml": "html/cad/bbf9e78c44a55de72b1043c9.html"
+}

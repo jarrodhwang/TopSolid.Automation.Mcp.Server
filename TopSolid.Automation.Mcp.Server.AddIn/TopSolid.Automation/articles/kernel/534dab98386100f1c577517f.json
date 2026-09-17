@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IUser.AskEdge.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IUser.AskEdge.html",
+  "sha256": "41df504d215d5d0aa698240d1e63fa36fa0777c09053b891d75cab610ffe11da",
+  "text": "# Method AskEdge\n\n#### AskEdge(UserQuestion, ElementItemId, out ElementItemId)\n\nAsks the user for an edge.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nUserAnswerType AskEdge(UserQuestion inQuestion, ElementItemId inSuggestion, out ElementItemId outAnswer)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  UserQuestion |  inQuestion |  Question asked to the user.  |  \n \n|  ElementItemId |  inSuggestion |  Suggested answer, or Empty if none.  |  \n \n|  ElementItemId |  outAnswer |  User answer, or Empty if none.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  UserAnswerType |  Type of user answer.  |  \n\n##### Remarks\n\nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/534dab98386100f1c577517f.md",
+  "originalHtml": "html/kernel/534dab98386100f1c577517f.html"
+}

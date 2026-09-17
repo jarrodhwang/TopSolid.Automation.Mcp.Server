@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IVisualization3D.SetDefaultDocumentPreviewParameters.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IVisualization3D.SetDefaultDocumentPreviewParameters.html",
+  "sha256": "d7ee17401c8a800d570ef144ade9b26eaaedb357521d044dbff320d6af6b8d40",
+  "text": "# Method SetDefaultDocumentPreviewParameters\n\n#### SetDefaultDocumentPreviewParameters(DocumentId, int, ElementId, RenderMode)\n\nSets the document's default preview parameters.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 14, 300, 140)]\nvoid SetDefaultDocumentPreviewParameters(DocumentId inDocumentId, int inSizeOfPreview, ElementId inPreviewCamera, RenderMode inPreviewRenderMode)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  int |  inSizeOfPreview |  Size of the preview.  |  \n \n|  ElementId |  inPreviewCamera |  Preview camera.  |  \n \n|  RenderMode |  inPreviewRenderMode |  Preview render mode. Only Realistic, RealisticWithEdges and GouraudWithEdges are available for this method.  |  \n\n##### Remarks\n\nThis method is available since v7.14.300.140.\n",
+  "markdown": "markdown/kernel/7ece30ae08b591f9643d09fa.md",
+  "originalHtml": "html/kernel/7ece30ae08b591f9643d09fa.html"
+}

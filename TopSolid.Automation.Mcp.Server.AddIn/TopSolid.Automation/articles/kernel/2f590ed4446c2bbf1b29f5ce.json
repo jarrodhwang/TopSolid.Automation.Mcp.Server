@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.TopSolidHostInstance.Geometries3D.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.TopSolidHostInstance.Geometries3D.html",
+  "sha256": "18fb0618fc8d6a40bad12b874d052dde2bfda87d8cbddfc81c0b525fb4b53407",
+  "text": "# Property Geometries3D\n\n#### Geometries3D\n\nGets access to 3D geometric entities, or null if not available.\n\n##### Declaration\n\n```\npublic IGeometries3D Geometries3D { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  IGeometries3D |   |\n",
+  "markdown": "markdown/kernel/2f590ed4446c2bbf1b29f5ce.md",
+  "originalHtml": "html/kernel/2f590ed4446c2bbf1b29f5ce.html"
+}

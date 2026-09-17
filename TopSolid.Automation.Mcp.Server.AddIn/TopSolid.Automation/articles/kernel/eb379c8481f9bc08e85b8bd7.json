@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartBoolean.Value.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartBoolean.Value.html",
+  "sha256": "0a565189de5f3518c35add5efe8ca01fe62c213d18a7f3d06ebb998ffaf5914a",
+  "text": "# Field Value\n\nValue, or null if unknown.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic bool? Value\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool? |  Value, or null if unknown. |\n",
+  "markdown": "markdown/kernel/eb379c8481f9bc08e85b8bd7.md",
+  "originalHtml": "html/kernel/eb379c8481f9bc08e85b8bd7.html"
+}

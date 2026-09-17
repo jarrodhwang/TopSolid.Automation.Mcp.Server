@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMaterials.SetShearModulus.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMaterials.SetShearModulus.html",
+  "sha256": "a1a616fc5f0abb598704562dd89bbb22b0f8397912a262f35e7997623bfb98d4",
+  "text": "# Method SetShearModulus\n\n#### SetShearModulus(DocumentId, double)\n\nSets Shear Modulus\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 400, 120)]\nvoid SetShearModulus(DocumentId inDocumentId, double inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Id of the container document  |  \n \n|  double |  inValue |  The value to use  |\n",
+  "markdown": "markdown/cad/f7c7199390d3c5f778100323.md",
+  "originalHtml": "html/cad/f7c7199390d3c5f778100323.html"
+}

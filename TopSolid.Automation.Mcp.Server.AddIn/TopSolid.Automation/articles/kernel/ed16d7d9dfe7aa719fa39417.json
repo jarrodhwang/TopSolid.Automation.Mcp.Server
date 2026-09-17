@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Color.IsEmpty.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Color.IsEmpty.html",
+  "sha256": "0f95b87ea8f63f0095c24c798d23e32004bd37185114f40c19a1ec058ef76f2b",
+  "text": "# Property IsEmpty\n\n#### IsEmpty\n\nTells whether the color is empty.\n\n##### Declaration\n\n```\npublic bool IsEmpty { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |   |\n",
+  "markdown": "markdown/kernel/ed16d7d9dfe7aa719fa39417.md",
+  "originalHtml": "html/kernel/ed16d7d9dfe7aa719fa39417.html"
+}

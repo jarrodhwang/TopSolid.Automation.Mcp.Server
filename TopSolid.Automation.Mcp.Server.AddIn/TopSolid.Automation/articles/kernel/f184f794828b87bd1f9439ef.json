@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IElements.IsAlive.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IElements.IsAlive.html",
+  "sha256": "bd02c0cf2d6d0a8e776b93b6857ffe584cee8a38a8bd52276cd70e66a1c7c686",
+  "text": "# Method IsAlive\n\n#### IsAlive(ElementId)\n\nTells whether an element is alive.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nbool IsAlive(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Whether the element is alive.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/f184f794828b87bd1f9439ef.md",
+  "originalHtml": "html/kernel/f184f794828b87bd1f9439ef.html"
+}

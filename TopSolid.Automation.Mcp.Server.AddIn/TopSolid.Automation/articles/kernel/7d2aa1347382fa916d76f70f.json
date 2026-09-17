@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IApplication.GetExporterOptions.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IApplication.GetExporterOptions.html",
+  "sha256": "2cd8e5a8cc311784308dc27effdf5936ad524d38625576485ccec95e044b3146",
+  "text": "# Method GetExporterOptions\n\n#### GetExporterOptions(int)\n\nGets the options of an exporter.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nList<KeyValue> GetExporterOptions(int inExporterIx)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  int |  inExporterIx |  Index of exporter to analyze, within [0, ExporterCount-1].  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<KeyValue> |  Exporter options.  |  \n\n##### Remarks\n\nThis method is available since v7.8.\n",
+  "markdown": "markdown/kernel/7d2aa1347382fa916d76f70f.md",
+  "originalHtml": "html/kernel/7d2aa1347382fa916d76f70f.html"
+}

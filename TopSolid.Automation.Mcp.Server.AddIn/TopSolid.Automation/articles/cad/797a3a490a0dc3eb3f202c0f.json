@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ICoatings.SetTransmissionScatteringLength.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ICoatings.SetTransmissionScatteringLength.html",
+  "sha256": "75feb9d35552a48fb5f7faa2a8a0a8fcc4ae4b06167ed8fb108aa201a4c9394c",
+  "text": "# Method SetTransmissionScatteringLength\n\n#### SetTransmissionScatteringLength(DocumentId, double)\n\nSets the Transmission Scattering length.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 0, 0)]\nvoid SetTransmissionScatteringLength(DocumentId inDocumentId, double inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  double |  inValue |  Wanted value.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.16.\n",
+  "markdown": "markdown/cad/797a3a490a0dc3eb3f202c0f.md",
+  "originalHtml": "html/cad/797a3a490a0dc3eb3f202c0f.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.DrillingTappedHolePrimitive.HoleBottomAngle.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.DrillingTappedHolePrimitive.HoleBottomAngle.html",
+  "sha256": "c8fe18e1860f86e684502d21c8e06b956207834e0518bb3dad7245ceda5e6054",
+  "text": "# Field HoleBottomAngle\n\nPrimitive Hole Bottom Angle.\n\n###### Namespace: TopSolid.Cad.Design.Automating\n\n###### Assembly: TopSolid.Cad.Design.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic SmartReal HoleBottomAngle\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartReal |  Primitive Hole Bottom Angle. |\n",
+  "markdown": "markdown/cad/b00652580f2891374dfdbecb.md",
+  "originalHtml": "html/cad/b00652580f2891374dfdbecb.html"
+}

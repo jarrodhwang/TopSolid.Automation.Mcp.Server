@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Color.op_Equality.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Color.op_Equality.html",
+  "sha256": "7a5b7c54d39b85a723dda178c92a682090376f902e0ca9d3af3b2ce598e5bac1",
+  "text": "# Operator operator ==\n\n#### operator ==(Color, Color)\n\nCompares two colors.\n\n##### Declaration\n\n```\npublic static bool operator ==(Color inC1, Color inC2)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  Color |  inC1 |  Left hand side color.  |  \n \n|  Color |  inC2 |  Right hand side color.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Colors are equal.  |\n",
+  "markdown": "markdown/kernel/06ee8977dbd6ea4766e5702d.md",
+  "originalHtml": "html/kernel/06ee8977dbd6ea4766e5702d.html"
+}

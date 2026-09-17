@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IOperations.MoveOperations.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IOperations.MoveOperations.html",
+  "sha256": "5eeb3c8c4ec09b4efa3baf76568baf24f4d6ed7f9aec6fc2a45d0c6846070590",
+  "text": "# Method MoveOperations\n\n#### MoveOperations(List<ElementId>, ElementId, bool)\n\nMoves the list of specified operations before or after the given reference operation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 14, 300, 160)]\nvoid MoveOperations(List<ElementId> inSortedOperations, ElementId inReferenceOperation, bool inBefore)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  List<ElementId> |  inSortedOperations |  Identifiers of operations to move.  |  \n \n|  ElementId |  inReferenceOperation |  Identifier of the reference operation.  |  \n \n|  bool |  inBefore |  Whether specified operations are before the reference operation.  |\n",
+  "markdown": "markdown/cam/1039328acdbb1a68b89519c0.md",
+  "originalHtml": "html/cam/1039328acdbb1a68b89519c0.html"
+}

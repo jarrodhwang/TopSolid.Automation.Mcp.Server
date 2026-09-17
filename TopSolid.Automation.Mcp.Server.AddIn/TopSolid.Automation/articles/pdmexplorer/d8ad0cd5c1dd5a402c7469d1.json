@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.BomNode.ForcedValues.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.BomNode.ForcedValues.html",
+  "sha256": "e80ea66290636383fd4dac4911d71096cce4b80bd952e9128fa8b6b44e8a27e3",
+  "text": "# Property ForcedValues\n\n#### ForcedValues\n\nGets the indexes of the forced values.\n\n##### Declaration\n\n```\npublic List<int> ForcedValues { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<int> |   |\n",
+  "markdown": "markdown/pdmexplorer/d8ad0cd5c1dd5a402c7469d1.md",
+  "originalHtml": "html/pdmexplorer/d8ad0cd5c1dd5a402c7469d1.html"
+}

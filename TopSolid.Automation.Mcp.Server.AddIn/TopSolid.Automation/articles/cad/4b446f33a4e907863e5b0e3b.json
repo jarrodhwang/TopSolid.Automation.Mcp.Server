@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMaterials.SetAmbientOcclusionFactor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMaterials.SetAmbientOcclusionFactor.html",
+  "sha256": "7daf4d6a519b3cd1f3479fbe1a9630ce37714baa63e5e4b1f79bb6ae213fc9b7",
+  "text": "# Method SetAmbientOcclusionFactor\n\n#### SetAmbientOcclusionFactor(DocumentId, double)\n\nSets the Ambient Occlusion factor.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 0, 0)]\nvoid SetAmbientOcclusionFactor(DocumentId inDocumentId, double inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  double |  inValue |  Wanted value.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.16.\n",
+  "markdown": "markdown/cad/4b446f33a4e907863e5b0e3b.md",
+  "originalHtml": "html/cad/4b446f33a4e907863e5b0e3b.html"
+}

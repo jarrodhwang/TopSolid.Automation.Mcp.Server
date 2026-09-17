@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IBoms.GetSourceRepresentation.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IBoms.GetSourceRepresentation.html",
+  "sha256": "4cfbd1158bd424caccf2c17d39748d6b18640db1255fea2b396505a31a08a0dc",
+  "text": "# Method GetSourceRepresentation\n\n#### GetSourceRepresentation(DocumentId)\n\nGets the source representation of a BOM.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 12, 0, 0)]\nElementId GetSourceRepresentation(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the BOM document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the representation of the source assembly document, or Empty if none.  |  \n\n##### Remarks\n\nThis method is available since v7.12.\n",
+  "markdown": "markdown/cad/2c5bd0bafb99968ed179af35.md",
+  "originalHtml": "html/cad/2c5bd0bafb99968ed179af35.html"
+}

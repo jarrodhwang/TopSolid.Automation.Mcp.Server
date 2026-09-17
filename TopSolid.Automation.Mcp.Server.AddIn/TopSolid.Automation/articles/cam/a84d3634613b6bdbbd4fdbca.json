@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IStaticOperations.AddPointRange.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IStaticOperations.AddPointRange.html",
+  "sha256": "dcbb12438a189c8f062a23567d3ed542773a55c170eec16d84fec4d6d8de62ca",
+  "text": "# Method AddPointRange\n\n#### AddPointRange(ElementExId, List<PathPoint>)\n\nAdds a point list to the tool path\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nvoid AddPointRange(ElementExId inOperation, List<PathPoint> inPoints)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementExId |  inOperation |  Operation to modify.  |  \n \n|  List<PathPoint> |  inPoints |   |\n",
+  "markdown": "markdown/cam/a84d3634613b6bdbbd4fdbca.md",
+  "originalHtml": "html/cam/a84d3634613b6bdbbd4fdbca.html"
+}

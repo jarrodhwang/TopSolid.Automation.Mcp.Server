@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IGeometries3D.GetAbsoluteYZPlane.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IGeometries3D.GetAbsoluteYZPlane.html",
+  "sha256": "60588370da22fbfedcaee6a5add2a929d07e96aeb88ed8c2d682efe198c3bfb1",
+  "text": "# Method GetAbsoluteYZPlane\n\n#### GetAbsoluteYZPlane(DocumentId)\n\nGets the absolute YZ plane entity of a document.\n\n##### Declaration\n\n```\n[OperationContract]\nElementId GetAbsoluteYZPlane(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the absolute YZ plane entity found.  |\n",
+  "markdown": "markdown/kernel/ea7910fecc354e00d10fbde7.md",
+  "originalHtml": "html/kernel/ea7910fecc354e00d10fbde7.html"
+}

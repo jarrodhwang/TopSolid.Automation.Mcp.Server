@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.TopSolidHost.Classifications.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.TopSolidHost.Classifications.html",
+  "sha256": "015fe1e4e8169cd690cc503a3f6aec307e084f0669d0e0c12dc9b57058879337",
+  "text": "# Property Classifications\n\n#### Classifications\n\nGets access to classifications, or null if not available.\n\n##### Declaration\n\n```\npublic static IClassifications Classifications { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  IClassifications |   |\n",
+  "markdown": "markdown/kernel/c5951f25c97b23c74cf49e5d.md",
+  "originalHtml": "html/kernel/c5951f25c97b23c74cf49e5d.html"
+}

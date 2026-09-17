@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.UserQuestion.AcceptsAuto.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.UserQuestion.AcceptsAuto.html",
+  "sha256": "e567782bb195951f77621e58bfcf670558f0f0425c0a94021074bfd8858aa569",
+  "text": "# Property AcceptsAuto\n\n#### AcceptsAuto\n\nTells or sets whether to automatically answer \"Ok\" when a valid input or selection is made (available since v7.11).\n\n##### Declaration\n\n```\npublic bool AcceptsAuto { get; set; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |   |\n",
+  "markdown": "markdown/kernel/1aa31374f2fd47d998542097.md",
+  "originalHtml": "html/kernel/1aa31374f2fd47d998542097.html"
+}

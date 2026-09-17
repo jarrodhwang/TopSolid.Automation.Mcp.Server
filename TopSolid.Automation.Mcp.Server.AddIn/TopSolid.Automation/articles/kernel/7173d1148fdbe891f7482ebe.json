@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ItemLabel.-ctor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ItemLabel.-ctor.html",
+  "sha256": "5911f8e78e4eb524ebbf53b74cdc5430d1f6647d1e2325d17733bc7a02931627",
+  "text": "# Constructor ItemLabel\n\n#### ItemLabel(byte, int, string, string)\n\nInitializes a new instance of the ItemLabel structure.\n\n##### Declaration\n\n```\npublic ItemLabel(byte inType, int inId, string inMoniker, string inName)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  byte |  inType |  Type of item, or 0 if none.  |  \n \n|  int |  inId |  Identifier of the item within its element, or 0 if empty.  |  \n \n|  string |  inMoniker |  Moniker associated to the item that will survive some modification.  |  \n \n|  string |  inName |  Item name, or null if none.  |\n",
+  "markdown": "markdown/kernel/7173d1148fdbe891f7482ebe.md",
+  "originalHtml": "html/kernel/7173d1148fdbe891f7482ebe.html"
+}

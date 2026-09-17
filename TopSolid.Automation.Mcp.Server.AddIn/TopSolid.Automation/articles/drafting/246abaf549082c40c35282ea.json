@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.IDraftings.SetProjectionMode.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.IDraftings.SetProjectionMode.html",
+  "sha256": "d9692596b95740bb3779fbb8422b0213652fb4634ed5a7a0a23e7f5a0d4c67e8",
+  "text": "# Method SetProjectionMode\n\n#### SetProjectionMode(DocumentId, ProjectionMode)\n\nSets the projection mode of a drafting document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nvoid SetProjectionMode(DocumentId inDocumentId, ProjectionMode inProjectionMode)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Document to modify.  |  \n \n|  ProjectionMode |  inProjectionMode |  New projection mode.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/drafting/246abaf549082c40c35282ea.md",
+  "originalHtml": "html/drafting/246abaf549082c40c35282ea.html"
+}

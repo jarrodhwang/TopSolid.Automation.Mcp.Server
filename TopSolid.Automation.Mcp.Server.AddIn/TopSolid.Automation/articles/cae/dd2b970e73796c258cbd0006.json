@@ -1,0 +1,8 @@
+{
+  "path": "api/cae/TopSolid.Cae.Kernel.Automating.NaturalFrequencyResult.FrequencyNumber.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cae/TopSolid.Cae.Kernel.Automating.NaturalFrequencyResult.FrequencyNumber.html",
+  "sha256": "88db310b21e05dddf5d3f5487c6d3359d673cbf30be3d2ca5aa1b7eaa7577710",
+  "text": "# Property FrequencyNumber\n\n#### FrequencyNumber\n\nGets the Mode number\n\n##### Declaration\n\n```\npublic int FrequencyNumber { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  int |   |\n",
+  "markdown": "markdown/cae/dd2b970e73796c258cbd0006.md",
+  "originalHtml": "html/cae/dd2b970e73796c258cbd0006.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IParts.GetFinishing.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IParts.GetFinishing.html",
+  "sha256": "6e405fa0d5989720bdd3425d05d6c48a87454a2c671a539c236a9596f72af051",
+  "text": "# Method GetFinishing\n\n#### GetFinishing(DocumentId)\n\nGets the finishing of a part.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 12, 0, 0)]\nDocumentId GetFinishing(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the part document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  DocumentId |  Finishing document identifier, or empty if the part does not have a finishing.  |  \n\n##### Remarks\n\nThis method is available since v7.12.\n",
+  "markdown": "markdown/cad/1eacdb63a286ef9e651fc8c1.md",
+  "originalHtml": "html/cad/1eacdb63a286ef9e651fc8c1.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ISketches3D.GetSegmentCount.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ISketches3D.GetSegmentCount.html",
+  "sha256": "b86fc14d7c10da42017071dff73d12487799e582dadd21710853d9539198c5ae",
+  "text": "# Method GetSegmentCount\n\n#### GetSegmentCount(ElementId)\n\nGets the number of segments of a sketch.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nint GetSegmentCount(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the sketch entity to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  int |  Number of segments of the sketch.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/ae1cfa00457b6e6f41df4545.md",
+  "originalHtml": "html/kernel/ae1cfa00457b6e6f41df4545.html"
+}

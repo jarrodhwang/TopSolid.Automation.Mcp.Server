@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ISketches3D.GetProfileCount.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ISketches3D.GetProfileCount.html",
+  "sha256": "8502d89a8e1966816e48685d316423eb5d9bb41796256f193d4f4597b57af70e",
+  "text": "# Method GetProfileCount\n\n#### GetProfileCount(ElementId)\n\nGets the number of profiles of a sketch.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nint GetProfileCount(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the sketch entity to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  int |  Number of profiles of the sketch.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/54bc9208c23f71613641b1f3.md",
+  "originalHtml": "html/kernel/54bc9208c23f71613641b1f3.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.SetComplementaryPartNumber.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.SetComplementaryPartNumber.html",
+  "sha256": "408290086cadc7c86097695147143508bdd0f325b362d293f79c3454a8a71a18",
+  "text": "# Method SetComplementaryPartNumber\n\n#### SetComplementaryPartNumber(PdmObjectId, string)\n\nSets the complementary part number of an object.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nvoid SetComplementaryPartNumber(PdmObjectId inObjectId, string inComplementaryPartNumber)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  Object identifier.  |  \n \n|  string |  inComplementaryPartNumber |  Complementary part number.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/pdmexplorer/1ccf240f4cb08f01bac37402.md",
+  "originalHtml": "html/pdmexplorer/1ccf240f4cb08f01bac37402.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.GetMajorRevisions.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.GetMajorRevisions.html",
+  "sha256": "33b82bf91ae84f07a6a989b098987b8563a57e7af543df6aa2ac1ef23b820c2d",
+  "text": "# Method GetMajorRevisions\n\n#### GetMajorRevisions(PdmObjectId)\n\nGets the major revisions contained in a PDM object.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nList<PdmMajorRevisionId> GetMajorRevisions(PdmObjectId inObjectId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  Identifier of the PDM object.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<PdmMajorRevisionId> |  Identifiers of the contained major revisions.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/pdmexplorer/aa328d780bb814c93a374730.md",
+  "originalHtml": "html/pdmexplorer/aa328d780bb814c93a374730.html"
+}

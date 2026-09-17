@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ITools.GetRevolutionSymmetry.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ITools.GetRevolutionSymmetry.html",
+  "sha256": "ffb082c32c5e61773085017b7b4b2c612074eb452e79c17c7f06573f77e7a3d4",
+  "text": "# Method GetRevolutionSymmetry\n\n#### GetRevolutionSymmetry(ElementId, out SmartAxis3D)\n\nGets a revolution symmetry.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nvoid GetRevolutionSymmetry(ElementId inElementId, out SmartAxis3D outAxis)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the symmetry to analyze.  |  \n \n|  SmartAxis3D |  outAxis |  Symmetry axis.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/cad/1bd33f654ed5b674161c6a99.md",
+  "originalHtml": "html/cad/1bd33f654ed5b674161c6a99.html"
+}

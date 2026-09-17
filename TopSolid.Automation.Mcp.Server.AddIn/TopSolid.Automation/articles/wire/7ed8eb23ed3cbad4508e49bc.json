@@ -1,0 +1,8 @@
+{
+  "path": "api/wire/TopSolid.Cam.NC.Wire.Automating.IWireTechnologies.GetName.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/wire/TopSolid.Cam.NC.Wire.Automating.IWireTechnologies.GetName.html",
+  "sha256": "c9bcd81ac6f9df11a6c88e5be0f8fae387b0254cf4592996567587972c503d05",
+  "text": "# Method GetName\n\n#### GetName(ElementId)\n\nGet technology name.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 160)]\nSmartText GetName(ElementId inTechnologyId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inTechnologyId |  Identifier of the technology to modify.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartText |  Technology name.  |\n",
+  "markdown": "markdown/wire/7ed8eb23ed3cbad4508e49bc.md",
+  "originalHtml": "html/wire/7ed8eb23ed3cbad4508e49bc.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.INCFiles.IsNCFile.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.INCFiles.IsNCFile.html",
+  "sha256": "94f708e4bef695c4833b6702fb6aacaf60866791bf215b3e30c0a96ea5e60d82",
+  "text": "# Method IsNCFile\n\n#### IsNCFile(ElementId)\n\nTells whether an element is a NC file.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 9, 0, 0)]\nbool IsNCFile(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  True if the element is a NC file.  |\n",
+  "markdown": "markdown/cam/3efb150b646882c72183aa7f.md",
+  "originalHtml": "html/cam/3efb150b646882c72183aa7f.html"
+}

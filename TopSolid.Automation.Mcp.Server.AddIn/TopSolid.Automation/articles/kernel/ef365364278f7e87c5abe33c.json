@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IGeometries3D.GetAbsoluteOriginPoint.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IGeometries3D.GetAbsoluteOriginPoint.html",
+  "sha256": "bf9dc23345be79a7ddaa3048585051872e1dd2a288268b1695455b74c05f32fc",
+  "text": "# Method GetAbsoluteOriginPoint\n\n#### GetAbsoluteOriginPoint(DocumentId)\n\nGets the absolute origin point entity of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nElementId GetAbsoluteOriginPoint(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the absolute origin point entity found.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/ef365364278f7e87c5abe33c.md",
+  "originalHtml": "html/kernel/ef365364278f7e87c5abe33c.html"
+}

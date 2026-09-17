@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.IDimensions.GetDimensionData.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.IDimensions.GetDimensionData.html",
+  "sha256": "25bee324b8da56bc38f4394d30c73978055ea80a399cd32759f9d52c411d4260",
+  "text": "# Method GetDimensionData\n\n#### GetDimensionData(ElementId, out List<Point2D>, out List<Vector2D>, out string, out string, out string, out double, out UnitType, out string)\n\nMethod to get dimensions data\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 255, 0)]\nvoid GetDimensionData(ElementId inElementId, out List<Point2D> outGeometries, out List<Vector2D> outVectors, out string outPrefix, out string outSuffix, out string outDisplayedText, out double outValue, out UnitType outUnitType, out string outUnitSymbol)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  The dimension  |  \n \n|  List<Point2D> |  outGeometries |  Geometries  |  \n \n|  List<Vector2D> |  outVectors |  Direction  |  \n \n|  string |  outPrefix |  Prefix  |  \n \n|  string |  outSuffix |  Suffix  |  \n \n|  string |  outDisplayedText |  Main displayed text  |  \n \n|  double |  outValue |  Main value  |  \n \n|  UnitType |  outUnitType |  Unit Type of the main value  |  \n \n|  string |  outUnitSymbol |  Unit Symbol of the main value  |\n",
+  "markdown": "markdown/drafting/b2aca28c8ee6a87fcc237a71.md",
+  "originalHtml": "html/drafting/b2aca28c8ee6a87fcc237a71.html"
+}

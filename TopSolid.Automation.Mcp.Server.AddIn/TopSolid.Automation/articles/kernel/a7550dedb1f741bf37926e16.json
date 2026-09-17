@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartInteger.Type.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartInteger.Type.html",
+  "sha256": "95f369759b25dd63935343b7fcfa7bb09683bb708a9d97253f0bf4636799282a",
+  "text": "# Field Type\n\nType of smart integer.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic SmartIntegerType Type\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartIntegerType |  Type of smart integer. |\n",
+  "markdown": "markdown/kernel/a7550dedb1f741bf37926e16.md",
+  "originalHtml": "html/kernel/a7550dedb1f741bf37926e16.html"
+}

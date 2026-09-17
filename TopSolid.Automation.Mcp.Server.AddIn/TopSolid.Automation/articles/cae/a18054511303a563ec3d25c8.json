@@ -1,0 +1,8 @@
+{
+  "path": "api/cae/TopSolid.Cae.Kernel.Automating.IResults.GetVonMisesMaxAndNodePosition.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cae/TopSolid.Cae.Kernel.Automating.IResults.GetVonMisesMaxAndNodePosition.html",
+  "sha256": "deb3ad02f42f5f2ca36af562fdbd0b97547822f4d87a05c7442509e2897f37f9",
+  "text": "# Method GetVonMisesMaxAndNodePosition\n\n#### GetVonMisesMaxAndNodePosition(DocumentId, out Point3D, out double, out string)\n\nGets the Von Mises maximum and node position in a result document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 400, 100)]\nvoid GetVonMisesMaxAndNodePosition(DocumentId inDocumentId, out Point3D outPointPosition, out double outMax, out string outTitle)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n \n|  Point3D |  outPointPosition |  Maximum point.  |  \n \n|  double |  outMax |  Maximum value.  |  \n \n|  string |  outTitle |  Title for the point.  |\n",
+  "markdown": "markdown/cae/a18054511303a563ec3d25c8.md",
+  "originalHtml": "html/cae/a18054511303a563ec3d25c8.html"
+}

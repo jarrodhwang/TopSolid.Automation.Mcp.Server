@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.UpdateDocumentReferences.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.UpdateDocumentReferences.html",
+  "sha256": "60c0f681689866e59c99df8d6740c3575ddfdeae925c7cd77b1ca4b0b294981e",
+  "text": "# Method UpdateDocumentReferences\n\n#### UpdateDocumentReferences(PdmMinorRevisionId)\n\nUpdates the references of a document minor revision.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 13, 0, 0)]\nvoid UpdateDocumentReferences(PdmMinorRevisionId inMinorRevisionId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmMinorRevisionId |  inMinorRevisionId |  Identifier of the document minor revision.  |  \n\n##### Remarks\n\nThis method is available since v7.13.\n",
+  "markdown": "markdown/kernel/21dbffe39744732c6f7c01df.md",
+  "originalHtml": "html/kernel/21dbffe39744732c6f7c01df.html"
+}

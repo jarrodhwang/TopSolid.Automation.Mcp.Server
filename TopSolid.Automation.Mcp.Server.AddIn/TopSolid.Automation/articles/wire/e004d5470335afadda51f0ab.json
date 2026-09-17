@@ -1,0 +1,8 @@
+{
+  "path": "api/wire/TopSolid.Cam.NC.Wire.Automating.IWireTechnologies.GetWireCuttingConditions.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/wire/TopSolid.Cam.NC.Wire.Automating.IWireTechnologies.GetWireCuttingConditions.html",
+  "sha256": "afc8916275db4cc23471b278e584bc8fb01a6f5b761bd5d267e600a88740fb74",
+  "text": "# Method GetWireCuttingConditions\n\n#### GetWireCuttingConditions(ElementId)\n\nGet the list of wire cutting condition in the technology entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 160)]\nList<ElementId> GetWireCuttingConditions(ElementId inTechnologyId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inTechnologyId |  Identifier of the wire technology to analyse.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementId> |  List of all wire technology.  |\n",
+  "markdown": "markdown/wire/e004d5470335afadda51f0ab.md",
+  "originalHtml": "html/wire/e004d5470335afadda51f0ab.html"
+}

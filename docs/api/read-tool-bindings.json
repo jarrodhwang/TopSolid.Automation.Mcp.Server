@@ -1,0 +1,916 @@
+[
+  {
+    "category": "Documents",
+    "name": "topsolid_list_documents",
+    "module": "kernel",
+    "expression": "TopSolidHost.Documents.GetOpenDocuments()",
+    "shape": "none",
+    "paged": true,
+    "description": "List open documents. IDs identify exact revisions.",
+    "apis": [
+      "TopSolid.Kernel.Automating.IDocuments.GetOpenDocuments"
+    ]
+  },
+  {
+    "category": "Documents",
+    "name": "topsolid_list_loaded_documents",
+    "module": "kernel",
+    "expression": "TopSolidHost.Documents.GetDocuments()",
+    "shape": "none",
+    "paged": true,
+    "description": "List loaded documents.",
+    "apis": [
+      "TopSolid.Kernel.Automating.IDocuments.GetDocuments"
+    ]
+  },
+  {
+    "category": "Documents",
+    "name": "topsolid_get_document_references",
+    "module": "kernel",
+    "expression": "TopSolidHost.Documents.GetReferencedDocuments(a.Document(p), false)",
+    "shape": "doc",
+    "paged": true,
+    "description": "Get document references.",
+    "apis": [
+      "TopSolid.Kernel.Automating.IDocuments.GetReferencedDocuments"
+    ]
+  },
+  {
+    "category": "Documents",
+    "name": "topsolid_list_document_properties",
+    "module": "kernel",
+    "expression": "TopSolidHost.Documents.GetProperties(a.Document(p))",
+    "shape": "doc",
+    "paged": true,
+    "description": "List document properties.",
+    "apis": [
+      "TopSolid.Kernel.Automating.IDocuments.GetProperties"
+    ]
+  },
+  {
+    "category": "Pdm",
+    "name": "topsolid_list_projects",
+    "module": "kernel",
+    "expression": "TopSolidHost.Pdm.GetProjects(true, false)",
+    "shape": "none",
+    "paged": true,
+    "description": "List working projects with friendly name and pdmObjectId in each item. Names are included; do not fetch each object again. Use limit=100 and follow hasMore with offset to list all. Libraries have a separate tool. Names only by default. Set includeCreationDates=true only when dates are requested; unavailable dates are explicit. Never group or omit rows.",
+    "apis": [
+      "TopSolid.Kernel.Automating.IPdm.GetProjects",
+      "TopSolid.Kernel.Automating.IPdm.GetName"
+    ]
+  },
+  {
+    "category": "Pdm",
+    "name": "topsolid_list_libraries",
+    "module": "kernel",
+    "expression": "TopSolidHost.Pdm.GetProjects(false, true)",
+    "shape": "none",
+    "paged": true,
+    "description": "List library projects with friendly name and pdmObjectId in each item. Names are included; do not fetch each object again. Use limit=100 and follow hasMore with offset to list all. Names only by default. Set includeCreationDates=true only when dates are requested; unavailable dates are explicit. Never group or omit rows.",
+    "apis": [
+      "TopSolid.Kernel.Automating.IPdm.GetProjects",
+      "TopSolid.Kernel.Automating.IPdm.GetName"
+    ]
+  },
+  {
+    "category": "Pdm",
+    "name": "topsolid_get_current_project",
+    "module": "kernel",
+    "expression": "TopSolidHost.Pdm.GetCurrentProject()",
+    "shape": "none",
+    "paged": false,
+    "description": "Get current project.",
+    "apis": [
+      "TopSolid.Kernel.Automating.IPdm.GetCurrentProject"
+    ]
+  },
+  {
+    "category": "Pdm",
+    "name": "topsolid_get_selected_pdm_objects",
+    "module": "kernel",
+    "expression": "TopSolidHost.Pdm.GetSelectedPdmObjectIds()",
+    "shape": "none",
+    "paged": true,
+    "description": "Get selected pdm objects.",
+    "apis": [
+      "TopSolid.Kernel.Automating.IPdm.GetSelectedPdmObjectIds"
+    ]
+  },
+  {
+    "category": "Pdm",
+    "name": "topsolid_search_projects",
+    "module": "kernel",
+    "expression": "TopSolidHost.Pdm.SearchProjectByName((string)p[\"name\"])",
+    "shape": "name",
+    "paged": true,
+    "description": "Search projects.",
+    "apis": [
+      "TopSolid.Kernel.Automating.IPdm.SearchProjectByName"
+    ]
+  },
+  {
+    "category": "Pdm",
+    "name": "topsolid_search_documents",
+    "module": "kernel",
+    "expression": "TopSolidHost.Pdm.SearchDocumentByName(a.Pdm(p), (string)p[\"name\"])",
+    "shape": "pdmname",
+    "paged": true,
+    "description": "Search documents.",
+    "apis": [
+      "TopSolid.Kernel.Automating.IPdm.SearchDocumentByName"
+    ]
+  },
+  {
+    "category": "Pdm",
+    "name": "topsolid_list_major_revisions",
+    "module": "kernel",
+    "expression": "TopSolidHost.Pdm.GetMajorRevisions(a.Pdm(p))",
+    "shape": "pdm",
+    "paged": true,
+    "description": "List major revisions.",
+    "apis": [
+      "TopSolid.Kernel.Automating.IPdm.GetMajorRevisions"
+    ]
+  },
+  {
+    "category": "Pdm",
+    "name": "topsolid_list_minor_revisions",
+    "module": "kernel",
+    "expression": "TopSolidHost.Pdm.GetMinorRevisions(new PdmMajorRevisionId((string)p[\"majorRevisionId\"]))",
+    "shape": "major",
+    "paged": true,
+    "description": "List minor revisions.",
+    "apis": [
+      "TopSolid.Kernel.Automating.IPdm.GetMinorRevisions"
+    ]
+  },
+  {
+    "category": "Pdm",
+    "name": "topsolid_resolve_pdm_document",
+    "module": "kernel",
+    "expression": "TopSolidHost.Documents.GetDocument(a.Pdm(p))",
+    "shape": "pdm",
+    "paged": false,
+    "description": "Resolve pdm document.",
+    "apis": [
+      "TopSolid.Kernel.Automating.IDocuments.GetDocument"
+    ]
+  },
+  {
+    "category": "Entities",
+    "name": "topsolid_list_elements",
+    "module": "kernel",
+    "expression": "TopSolidHost.Elements.GetElements(a.Document(p))",
+    "shape": "doc",
+    "paged": true,
+    "description": "List elements.",
+    "apis": [
+      "TopSolid.Kernel.Automating.IElements.GetElements"
+    ]
+  },
+  {
+    "category": "Entities",
+    "name": "topsolid_find_element",
+    "module": "kernel",
+    "expression": "TopSolidHost.Elements.SearchByName(a.Document(p), (string)p[\"name\"])",
+    "shape": "docname",
+    "paged": false,
+    "description": "Find an element with a unique name. Elements without unique names are not found by this API.",
+    "apis": [
+      "TopSolid.Kernel.Automating.IElements.SearchByName"
+    ]
+  },
+  {
+    "category": "Entities",
+    "name": "topsolid_list_parameters",
+    "module": "kernel",
+    "expression": "TopSolidHost.Parameters.GetParameters(a.Document(p))",
+    "shape": "doc",
+    "paged": true,
+    "description": "List parameters.",
+    "apis": [
+      "TopSolid.Kernel.Automating.IParameters.GetParameters"
+    ]
+  },
+  {
+    "category": "Entities",
+    "name": "topsolid_list_functions",
+    "module": "kernel",
+    "expression": "TopSolidHost.Entities.GetFunctions(a.Document(p))",
+    "shape": "doc",
+    "paged": true,
+    "description": "List functions.",
+    "apis": [
+      "TopSolid.Kernel.Automating.IEntities.GetFunctions"
+    ]
+  },
+  {
+    "category": "Entities",
+    "name": "topsolid_list_publishings",
+    "module": "kernel",
+    "expression": "TopSolidHost.Entities.GetPublishings(a.Document(p))",
+    "shape": "doc",
+    "paged": true,
+    "description": "List publishings.",
+    "apis": [
+      "TopSolid.Kernel.Automating.IEntities.GetPublishings"
+    ]
+  },
+  {
+    "category": "Sketch2D",
+    "name": "topsolid_list_sketches2d",
+    "module": "kernel",
+    "expression": "TopSolidHost.Sketches2D.GetSketches(a.Document(p))",
+    "shape": "doc",
+    "paged": true,
+    "description": "List sketches2d.",
+    "apis": [
+      "TopSolid.Kernel.Automating.ISketches2D.GetSketches"
+    ]
+  },
+  {
+    "category": "Sketch2D",
+    "name": "topsolid_list_sketch2d_profiles",
+    "module": "kernel",
+    "expression": "TopSolidHost.Sketches2D.GetProfiles(a.Element(p))",
+    "shape": "element",
+    "paged": true,
+    "description": "List sketch2d profiles.",
+    "apis": [
+      "TopSolid.Kernel.Automating.ISketches2D.GetProfiles"
+    ]
+  },
+  {
+    "category": "Sketch2D",
+    "name": "topsolid_list_sketch2d_segments",
+    "module": "kernel",
+    "expression": "TopSolidHost.Sketches2D.GetSegments(a.Element(p))",
+    "shape": "element",
+    "paged": true,
+    "description": "List sketch2d segments.",
+    "apis": [
+      "TopSolid.Kernel.Automating.ISketches2D.GetSegments"
+    ]
+  },
+  {
+    "category": "Sketch2D",
+    "name": "topsolid_list_sketch2d_vertices",
+    "module": "kernel",
+    "expression": "TopSolidHost.Sketches2D.GetVertices(a.Element(p))",
+    "shape": "element",
+    "paged": true,
+    "description": "List sketch2d vertices.",
+    "apis": [
+      "TopSolid.Kernel.Automating.ISketches2D.GetVertices"
+    ]
+  },
+  {
+    "category": "Sketch2D",
+    "name": "topsolid_get_sketch2d_vertex_point",
+    "module": "kernel",
+    "expression": "TopSolidHost.Sketches2D.GetVertexPoint(a.Item(p))",
+    "shape": "item",
+    "paged": false,
+    "description": "Get sketch2d vertex point.",
+    "apis": [
+      "TopSolid.Kernel.Automating.ISketches2D.GetVertexPoint"
+    ]
+  },
+  {
+    "category": "Sketch2D",
+    "name": "topsolid_get_sketch2d_profile_segments",
+    "module": "kernel",
+    "expression": "TopSolidHost.Sketches2D.GetProfileSegments(a.Item(p))",
+    "shape": "item",
+    "paged": true,
+    "description": "Get sketch2d profile segments.",
+    "apis": [
+      "TopSolid.Kernel.Automating.ISketches2D.GetProfileSegments"
+    ]
+  },
+  {
+    "category": "Sketch2D",
+    "name": "topsolid_get_sketch2d_profile_closed",
+    "module": "kernel",
+    "expression": "TopSolidHost.Sketches2D.IsProfileClosed(a.Item(p))",
+    "shape": "item",
+    "paged": false,
+    "description": "Get sketch2d profile closed.",
+    "apis": [
+      "TopSolid.Kernel.Automating.ISketches2D.IsProfileClosed"
+    ]
+  },
+  {
+    "category": "Sketch2D",
+    "name": "topsolid_get_sketch2d_segment_curve_type",
+    "module": "kernel",
+    "expression": "TopSolidHost.Sketches2D.GetSegmentCurveType(a.Item(p))",
+    "shape": "item",
+    "paged": false,
+    "description": "Get sketch2d segment curve type.",
+    "apis": [
+      "TopSolid.Kernel.Automating.ISketches2D.GetSegmentCurveType"
+    ]
+  },
+  {
+    "category": "Design2D",
+    "name": "topsolid_list_points2d",
+    "module": "kernel",
+    "expression": "TopSolidHost.Geometries2D.GetPoints(a.Document(p))",
+    "shape": "doc",
+    "paged": true,
+    "description": "List points2d.",
+    "apis": [
+      "TopSolid.Kernel.Automating.IGeometries2D.GetPoints"
+    ]
+  },
+  {
+    "category": "Design2D",
+    "name": "topsolid_get_point2d",
+    "module": "kernel",
+    "expression": "TopSolidHost.Geometries2D.GetPointGeometry(a.Element(p))",
+    "shape": "element",
+    "paged": false,
+    "description": "Read point coordinates in metres.",
+    "apis": [
+      "TopSolid.Kernel.Automating.IGeometries2D.GetPointGeometry"
+    ]
+  },
+  {
+    "category": "Sketch3D",
+    "name": "topsolid_list_sketches3d",
+    "module": "kernel",
+    "expression": "TopSolidHost.Sketches3D.GetSketches(a.Document(p))",
+    "shape": "doc",
+    "paged": true,
+    "description": "List sketches3d.",
+    "apis": [
+      "TopSolid.Kernel.Automating.ISketches3D.GetSketches"
+    ]
+  },
+  {
+    "category": "Sketch3D",
+    "name": "topsolid_list_sketch3d_profiles",
+    "module": "kernel",
+    "expression": "TopSolidHost.Sketches3D.GetProfiles(a.Element(p))",
+    "shape": "element",
+    "paged": true,
+    "description": "List sketch3d profiles.",
+    "apis": [
+      "TopSolid.Kernel.Automating.ISketches3D.GetProfiles"
+    ]
+  },
+  {
+    "category": "Sketch3D",
+    "name": "topsolid_list_sketch3d_segments",
+    "module": "kernel",
+    "expression": "TopSolidHost.Sketches3D.GetSegments(a.Element(p))",
+    "shape": "element",
+    "paged": true,
+    "description": "List sketch3d segments.",
+    "apis": [
+      "TopSolid.Kernel.Automating.ISketches3D.GetSegments"
+    ]
+  },
+  {
+    "category": "Sketch3D",
+    "name": "topsolid_list_sketch3d_vertices",
+    "module": "kernel",
+    "expression": "TopSolidHost.Sketches3D.GetVertices(a.Element(p))",
+    "shape": "element",
+    "paged": true,
+    "description": "List sketch3d vertices.",
+    "apis": [
+      "TopSolid.Kernel.Automating.ISketches3D.GetVertices"
+    ]
+  },
+  {
+    "category": "Sketch3D",
+    "name": "topsolid_get_sketch3d_vertex_point",
+    "module": "kernel",
+    "expression": "TopSolidHost.Sketches3D.GetVertexPoint(a.Item(p))",
+    "shape": "item",
+    "paged": false,
+    "description": "Get sketch3d vertex point.",
+    "apis": [
+      "TopSolid.Kernel.Automating.ISketches3D.GetVertexPoint"
+    ]
+  },
+  {
+    "category": "Sketch3D",
+    "name": "topsolid_get_sketch3d_profile_segments",
+    "module": "kernel",
+    "expression": "TopSolidHost.Sketches3D.GetProfileSegments(a.Item(p))",
+    "shape": "item",
+    "paged": true,
+    "description": "Get sketch3d profile segments.",
+    "apis": [
+      "TopSolid.Kernel.Automating.ISketches3D.GetProfileSegments"
+    ]
+  },
+  {
+    "category": "Sketch3D",
+    "name": "topsolid_get_sketch3d_profile_closed",
+    "module": "kernel",
+    "expression": "TopSolidHost.Sketches3D.IsProfileClosed(a.Item(p))",
+    "shape": "item",
+    "paged": false,
+    "description": "Get sketch3d profile closed.",
+    "apis": [
+      "TopSolid.Kernel.Automating.ISketches3D.IsProfileClosed"
+    ]
+  },
+  {
+    "category": "Sketch3D",
+    "name": "topsolid_get_sketch3d_segment_curve_type",
+    "module": "kernel",
+    "expression": "TopSolidHost.Sketches3D.GetSegmentCurveType(a.Item(p))",
+    "shape": "item",
+    "paged": false,
+    "description": "Get sketch3d segment curve type.",
+    "apis": [
+      "TopSolid.Kernel.Automating.ISketches3D.GetSegmentCurveType"
+    ]
+  },
+  {
+    "category": "Design3D",
+    "name": "topsolid_list_points3d",
+    "module": "kernel",
+    "expression": "TopSolidHost.Geometries3D.GetPoints(a.Document(p))",
+    "shape": "doc",
+    "paged": true,
+    "description": "List points3d.",
+    "apis": [
+      "TopSolid.Kernel.Automating.IGeometries3D.GetPoints"
+    ]
+  },
+  {
+    "category": "Design3D",
+    "name": "topsolid_get_point3d",
+    "module": "kernel",
+    "expression": "TopSolidHost.Geometries3D.GetPointGeometry(a.Element(p))",
+    "shape": "element",
+    "paged": false,
+    "description": "Read point coordinates in metres.",
+    "apis": [
+      "TopSolid.Kernel.Automating.IGeometries3D.GetPointGeometry"
+    ]
+  },
+  {
+    "category": "Design3D",
+    "name": "topsolid_list_shapes",
+    "module": "kernel",
+    "expression": "TopSolidHost.Shapes.GetShapes(a.Document(p))",
+    "shape": "doc",
+    "paged": true,
+    "description": "List shapes.",
+    "apis": [
+      "TopSolid.Kernel.Automating.IShapes.GetShapes"
+    ]
+  },
+  {
+    "category": "Design3D",
+    "name": "topsolid_get_shape_volume",
+    "module": "kernel",
+    "expression": "TopSolidHost.Shapes.GetShapeVolume(a.Element(p))",
+    "shape": "element",
+    "paged": false,
+    "description": "Read shape volume. Length, area and volume use SI metres, square metres and cubic metres.",
+    "apis": [
+      "TopSolid.Kernel.Automating.IShapes.GetShapeVolume"
+    ]
+  },
+  {
+    "category": "Design3D",
+    "name": "topsolid_get_shape_type",
+    "module": "kernel",
+    "expression": "TopSolidHost.Shapes.GetShapeType(a.Element(p))",
+    "shape": "element",
+    "paged": false,
+    "description": "Read shape type. Length, area and volume use SI metres, square metres and cubic metres.",
+    "apis": [
+      "TopSolid.Kernel.Automating.IShapes.GetShapeType"
+    ]
+  },
+  {
+    "category": "Design3D",
+    "name": "topsolid_get_shape_vertex_point",
+    "module": "kernel",
+    "expression": "TopSolidHost.Shapes.GetVertexPoint(a.Item(p))",
+    "shape": "item",
+    "paged": false,
+    "description": "Read shape vertex point. Length, area and volume use SI metres, square metres and cubic metres.",
+    "apis": [
+      "TopSolid.Kernel.Automating.IShapes.GetVertexPoint"
+    ]
+  },
+  {
+    "category": "Design3D",
+    "name": "topsolid_get_face_area",
+    "module": "kernel",
+    "expression": "TopSolidHost.Shapes.GetFaceArea(a.Item(p))",
+    "shape": "item",
+    "paged": false,
+    "description": "Read face area. Length, area and volume use SI metres, square metres and cubic metres.",
+    "apis": [
+      "TopSolid.Kernel.Automating.IShapes.GetFaceArea"
+    ]
+  },
+  {
+    "category": "Design3D",
+    "name": "topsolid_get_edge_curve_type",
+    "module": "kernel",
+    "expression": "TopSolidHost.Shapes.GetEdgeCurveType(a.Item(p))",
+    "shape": "item",
+    "paged": false,
+    "description": "Read edge curve type. Length, area and volume use SI metres, square metres and cubic metres.",
+    "apis": [
+      "TopSolid.Kernel.Automating.IShapes.GetEdgeCurveType"
+    ]
+  },
+  {
+    "category": "Design3D",
+    "name": "topsolid_list_shape_faces",
+    "module": "kernel",
+    "expression": "TopSolidHost.Shapes.GetFaces(a.Element(p))",
+    "shape": "element",
+    "paged": true,
+    "description": "List shape faces.",
+    "apis": [
+      "TopSolid.Kernel.Automating.IShapes.GetFaces"
+    ]
+  },
+  {
+    "category": "Design3D",
+    "name": "topsolid_list_shape_edges",
+    "module": "kernel",
+    "expression": "TopSolidHost.Shapes.GetEdges(a.Element(p))",
+    "shape": "element",
+    "paged": true,
+    "description": "List shape edges.",
+    "apis": [
+      "TopSolid.Kernel.Automating.IShapes.GetEdges"
+    ]
+  },
+  {
+    "category": "Design3D",
+    "name": "topsolid_list_shape_vertices",
+    "module": "kernel",
+    "expression": "TopSolidHost.Shapes.GetVertices(a.Element(p))",
+    "shape": "element",
+    "paged": true,
+    "description": "List shape vertices.",
+    "apis": [
+      "TopSolid.Kernel.Automating.IShapes.GetVertices"
+    ]
+  },
+  {
+    "category": "Assembly",
+    "name": "topsolid_list_assembly_parts",
+    "module": "cad",
+    "expression": "TopSolidDesignHost.Assemblies.GetParts(a.Document(p))",
+    "shape": "doc",
+    "paged": true,
+    "description": "List assembly parts.",
+    "apis": [
+      "TopSolid.Cad.Design.Automating.IAssemblies.GetParts"
+    ]
+  },
+  {
+    "category": "Assembly",
+    "name": "topsolid_get_occurrence_document",
+    "module": "cad",
+    "expression": "TopSolidDesignHost.Assemblies.GetOccurrenceDefinition(a.Element(p))",
+    "shape": "element",
+    "paged": false,
+    "description": "Get occurrence document.",
+    "apis": [
+      "TopSolid.Cad.Design.Automating.IAssemblies.GetOccurrenceDefinition"
+    ]
+  },
+  {
+    "category": "Assembly",
+    "name": "topsolid_get_occurrence_transform",
+    "module": "kernel",
+    "expression": "TopSolidHost.Geometries3D.GetOccurrenceDefinitionTransform(a.Element(p))",
+    "shape": "element",
+    "paged": false,
+    "description": "Get occurrence transform.",
+    "apis": [
+      "TopSolid.Kernel.Automating.IGeometries3D.GetOccurrenceDefinitionTransform"
+    ]
+  },
+  {
+    "category": "Tooling",
+    "name": "topsolid_get_part_material",
+    "module": "cad",
+    "expression": "TopSolidDesignHost.Parts.GetMaterial(a.Document(p))",
+    "shape": "doc",
+    "paged": false,
+    "description": "Get part material.",
+    "apis": [
+      "TopSolid.Cad.Design.Automating.IParts.GetMaterial"
+    ]
+  },
+  {
+    "category": "Tooling",
+    "name": "topsolid_get_base_document",
+    "module": "cad",
+    "expression": "TopSolidDesignHost.Tools.GetBaseDocument(a.Document(p))",
+    "shape": "doc",
+    "paged": false,
+    "description": "Get base document.",
+    "apis": [
+      "TopSolid.Cad.Design.Automating.ITools.GetBaseDocument"
+    ]
+  },
+  {
+    "category": "Drafting",
+    "name": "topsolid_list_drafting_views",
+    "module": "drafting",
+    "expression": "TopSolidDraftingHost.Draftings.GetDraftingViews(a.Document(p))",
+    "shape": "doc",
+    "paged": true,
+    "description": "List drafting views.",
+    "apis": [
+      "TopSolid.Cad.Drafting.Automating.IDraftings.GetDraftingViews"
+    ]
+  },
+  {
+    "category": "Drafting",
+    "name": "topsolid_get_drafting_view_title",
+    "module": "drafting",
+    "expression": "TopSolidDraftingHost.Draftings.GetViewTitle(a.Element(p))",
+    "shape": "element",
+    "paged": false,
+    "description": "Get drafting view title.",
+    "apis": [
+      "TopSolid.Cad.Drafting.Automating.IDraftings.GetViewTitle"
+    ]
+  },
+  {
+    "category": "Electrode",
+    "name": "topsolid_list_electrodes",
+    "module": "electrode",
+    "expression": "TopSolidElectrodeHost.Electrodes.GetElectrodes(a.Document(p), false)",
+    "shape": "doc",
+    "paged": true,
+    "description": "List electrodes.",
+    "apis": [
+      "TopSolid.Cad.Electrode.Automating.IElectrodes.GetElectrodes"
+    ]
+  },
+  {
+    "category": "Electrode",
+    "name": "topsolid_list_electrode_mandrels",
+    "module": "electrode",
+    "expression": "TopSolidElectrodeHost.Electrodes.GetElectrodeMandrels(a.Element(p))",
+    "shape": "element",
+    "paged": true,
+    "description": "List electrode mandrels.",
+    "apis": [
+      "TopSolid.Cad.Electrode.Automating.IElectrodes.GetElectrodeMandrels"
+    ]
+  },
+  {
+    "category": "Cam/PartSetup",
+    "name": "topsolid_list_cam_parts",
+    "module": "cam",
+    "expression": "TopSolidCamHost.Documents.GetParts(a.Document(p))",
+    "shape": "doc",
+    "paged": true,
+    "description": "List cam parts.",
+    "apis": [
+      "TopSolid.Cam.NC.Kernel.Automating.IDocuments.GetParts"
+    ]
+  },
+  {
+    "category": "Cam/PartSetup",
+    "name": "topsolid_is_part_setup_document",
+    "module": "cam",
+    "expression": "TopSolidCamHost.PartSettingDocuments.IsPartSetting(a.Document(p))",
+    "shape": "doc",
+    "paged": false,
+    "description": "Is part setup document.",
+    "apis": [
+      "TopSolid.Cam.NC.Kernel.Automating.IPartSettingDocument.IsPartSetting"
+    ]
+  },
+  {
+    "category": "Cam/Machine",
+    "name": "topsolid_get_cam_machine",
+    "module": "cam",
+    "expression": "TopSolidCamHost.Documents.GetMachine(a.Document(p))",
+    "shape": "doc",
+    "paged": false,
+    "description": "Get cam machine.",
+    "apis": [
+      "TopSolid.Cam.NC.Kernel.Automating.IDocuments.GetMachine"
+    ]
+  },
+  {
+    "category": "Cam/Machine",
+    "name": "topsolid_list_machine_tool_holders",
+    "module": "cam",
+    "expression": "TopSolidCamHost.Machines.GetToolHolders(a.Element(p))",
+    "shape": "element",
+    "paged": true,
+    "description": "List machine tool holders.",
+    "apis": [
+      "TopSolid.Cam.NC.Kernel.Automating.IMachineTools.GetToolHolders"
+    ]
+  },
+  {
+    "category": "Cam/Machine",
+    "name": "topsolid_list_machine_part_holders",
+    "module": "cam",
+    "expression": "TopSolidCamHost.Machines.GetPartHolders(a.Element(p))",
+    "shape": "element",
+    "paged": true,
+    "description": "List machine part holders.",
+    "apis": [
+      "TopSolid.Cam.NC.Kernel.Automating.IMachineTools.GetPartHolders"
+    ]
+  },
+  {
+    "category": "Cam/Machine",
+    "name": "topsolid_list_machine_magazines",
+    "module": "cam",
+    "expression": "TopSolidCamHost.Machines.GetMagazines(a.Element(p))",
+    "shape": "element",
+    "paged": true,
+    "description": "List machine magazines.",
+    "apis": [
+      "TopSolid.Cam.NC.Kernel.Automating.IMachineTools.GetMagazines"
+    ]
+  },
+  {
+    "category": "Cam/Machine",
+    "name": "topsolid_list_machine_pockets",
+    "module": "cam",
+    "expression": "TopSolidCamHost.Machines.GetPockets(a.Element(p))",
+    "shape": "element",
+    "paged": true,
+    "description": "List machine pockets.",
+    "apis": [
+      "TopSolid.Cam.NC.Kernel.Automating.IMachineTools.GetPockets"
+    ]
+  },
+  {
+    "category": "Cam/Operation",
+    "name": "topsolid_list_cam_operations",
+    "module": "cam",
+    "expression": "TopSolidCamHost.Operations.GetOperations(a.Document(p))",
+    "shape": "doc",
+    "paged": true,
+    "description": "List cam operations.",
+    "apis": [
+      "TopSolid.Cam.NC.Kernel.Automating.IOperations.GetOperations"
+    ]
+  },
+  {
+    "category": "Cam/Operation",
+    "name": "topsolid_list_cam_scenario",
+    "module": "cam",
+    "expression": "TopSolidCamHost.Operations.GetScenarioOperations(a.Document(p))",
+    "shape": "doc",
+    "paged": true,
+    "description": "List cam scenario.",
+    "apis": [
+      "TopSolid.Cam.NC.Kernel.Automating.IOperations.GetScenarioOperations"
+    ]
+  },
+  {
+    "category": "Cam/Operation",
+    "name": "topsolid_list_cam_parameters",
+    "module": "cam",
+    "expression": "TopSolidCamHost.Parameters.GetParameters(a.CamElement(p))",
+    "shape": "camElement",
+    "paged": true,
+    "description": "List cam parameters.",
+    "apis": [
+      "TopSolid.Cam.NC.Kernel.Automating.IParameters.GetParameters"
+    ]
+  },
+  {
+    "category": "Cam/CuttingConditions",
+    "name": "topsolid_get_cutting_conditions_document",
+    "module": "cam",
+    "expression": "TopSolidCamHost.Operations.GetCurrentCuttingConditionsDocument(a.Element(p))",
+    "shape": "element",
+    "paged": false,
+    "description": "Get cutting conditions document.",
+    "apis": [
+      "TopSolid.Cam.NC.Kernel.Automating.IOperations.GetCurrentCuttingConditionsDocument"
+    ]
+  },
+  {
+    "category": "Cam/CuttingConditions",
+    "name": "topsolid_get_cutting_conditions_abacus",
+    "module": "cam",
+    "expression": "TopSolidCamHost.Operations.GetCurrentCuttingConditionsAbacus(a.Element(p))",
+    "shape": "element",
+    "paged": false,
+    "description": "Get cutting conditions abacus.",
+    "apis": [
+      "TopSolid.Cam.NC.Kernel.Automating.IOperations.GetCurrentCuttingConditionsAbacus"
+    ]
+  },
+  {
+    "category": "Cam/CuttingConditions",
+    "name": "topsolid_list_cutting_conditions_documents",
+    "module": "cam",
+    "expression": "TopSolidCamHost.Operations.GetAllCuttingConditionsDocuments(a.Element(p))",
+    "shape": "element",
+    "paged": true,
+    "description": "List cutting conditions documents.",
+    "apis": [
+      "TopSolid.Cam.NC.Kernel.Automating.IOperations.GetAllCuttingConditionsDocuments"
+    ]
+  },
+  {
+    "category": "Cam/Postprocessor",
+    "name": "topsolid_get_postprocessor_id",
+    "module": "cam",
+    "expression": "TopSolidCamHost.NCPostProcessor.GetNCPostProcessorId(a.Document(p))",
+    "shape": "doc",
+    "paged": false,
+    "description": "Get postprocessor id.",
+    "apis": [
+      "TopSolid.Cam.NC.Kernel.Automating.INCPostProcessor.GetNCPostProcessorId"
+    ]
+  },
+  {
+    "category": "Cam/Nc",
+    "name": "topsolid_list_nc_files",
+    "module": "cam",
+    "expression": "TopSolidCamHost.NCFiles.GetNCFiles(a.Document(p))",
+    "shape": "doc",
+    "paged": true,
+    "description": "List nc files.",
+    "apis": [
+      "TopSolid.Cam.NC.Kernel.Automating.INCFiles.GetNCFiles"
+    ]
+  },
+  {
+    "category": "Cam/Nc",
+    "name": "topsolid_list_cam_programs",
+    "module": "cam",
+    "expression": "TopSolidCamHost.Programs.GetPrograms(a.Document(p))",
+    "shape": "doc",
+    "paged": true,
+    "description": "List cam programs.",
+    "apis": [
+      "TopSolid.Cam.NC.Kernel.Automating.IPrograms.GetPrograms"
+    ]
+  },
+  {
+    "category": "Tooling",
+    "name": "topsolid_list_cam_tools",
+    "module": "cam",
+    "expression": "TopSolidCamHost.Documents.GetTools(a.Document(p), false)",
+    "shape": "doc",
+    "paged": true,
+    "description": "List cam tools.",
+    "apis": [
+      "TopSolid.Cam.NC.Kernel.Automating.IDocuments.GetTools"
+    ]
+  },
+  {
+    "category": "Cam/PartSetup",
+    "name": "topsolid_list_cam_coordinate_systems",
+    "module": "cam",
+    "expression": "TopSolidCamHost.Documents.GetWCSs(a.Document(p))",
+    "shape": "doc",
+    "paged": true,
+    "description": "List cam coordinate systems.",
+    "apis": [
+      "TopSolid.Cam.NC.Kernel.Automating.IDocuments.GetWCSs"
+    ]
+  },
+  {
+    "category": "Cam/Simulation",
+    "name": "topsolid_is_simulation_complete",
+    "module": "cam",
+    "expression": "TopSolidCamHost.Simulation.IsSimulationComplete()",
+    "shape": "none",
+    "paged": false,
+    "description": "Is simulation complete.",
+    "apis": [
+      "TopSolid.Cam.NC.Kernel.Automating.ISimulation.IsSimulationComplete"
+    ]
+  },
+  {
+    "category": "Cae",
+    "name": "topsolid_list_cae_measures",
+    "module": "cae",
+    "expression": "TopSolidCaeHost.Results.GetMeasures(a.Document(p))",
+    "shape": "doc",
+    "paged": true,
+    "description": "List cae measures.",
+    "apis": [
+      "TopSolid.Cae.Kernel.Automating.IResults.GetMeasures"
+    ]
+  }
+]

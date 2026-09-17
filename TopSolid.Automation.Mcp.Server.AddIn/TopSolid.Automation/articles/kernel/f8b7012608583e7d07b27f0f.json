@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.PdmObjectId.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.PdmObjectId.html",
+  "sha256": "1f72f813f2f88f0fe2fc165a1f27e2ec5dfa5f10fe7aa3f00f08ef2a95fade90",
+  "text": "# Struct PdmObjectId\n\nRepresents a PDM object identifier.\n\n##### Inherited Members\n \n ValueType.Equals(object) \n \n ValueType.GetHashCode() \n \n ValueType.ToString() \n \n object.Equals(object, object) \n \n object.ReferenceEquals(object, object) \n \n object.GetType() \n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\npublic struct PdmObjectId\n```\n\n##### Remarks\n\nThis structure is available since v7.6.\n\n### Constructors \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   PdmObjectId(string)  |  Initializes a new instance of the PdmObjectId structure.  |  \n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   Empty  |  Empty identifier.  |  \n\n### Properties \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   Id  |  Gets the PDM object identifier.  |  \n \n|   IsEmpty  |  Tells whether the identifier is empty.  |\n",
+  "markdown": "markdown/kernel/f8b7012608583e7d07b27f0f.md",
+  "originalHtml": "html/kernel/f8b7012608583e7d07b27f0f.html"
+}

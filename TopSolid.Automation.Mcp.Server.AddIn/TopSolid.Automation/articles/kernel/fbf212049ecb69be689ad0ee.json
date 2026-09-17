@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.GetCreationDateParameter.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.GetCreationDateParameter.html",
+  "sha256": "efffd316651889180859f09135d98129541067aac6aedfe0c44bd731a505c6a9",
+  "text": "# Method GetCreationDateParameter\n\n#### GetCreationDateParameter(DocumentId)\n\nGets the creation date parameter entity of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nElementId GetCreationDateParameter(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the creation date parameter entity found.  |  \n\n##### Remarks\n\nThe creation date parameter is a date parameter, its value may be obtained and modified using the GetDateTimeValue(ElementId) and SetDateTimeValue(ElementId, DateTime) methods.\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/fbf212049ecb69be689ad0ee.md",
+  "originalHtml": "html/kernel/fbf212049ecb69be689ad0ee.html"
+}

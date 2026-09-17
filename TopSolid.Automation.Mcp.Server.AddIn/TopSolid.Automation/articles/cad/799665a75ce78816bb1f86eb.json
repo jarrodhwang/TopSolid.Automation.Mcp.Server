@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IParts.GetMassPropertyManagement.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IParts.GetMassPropertyManagement.html",
+  "sha256": "d168405dfdbdee3d3f5740696760375e7c7a916c7b6e742aed874b3bfd529f9c",
+  "text": "# Method GetMassPropertyManagement\n\n#### GetMassPropertyManagement(DocumentId, out bool, out SmartReal)\n\nGets the mass property management of a part.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 13, 300, 220)]\nvoid GetMassPropertyManagement(DocumentId inDocumentId, out bool outIsMassManaged, out SmartReal outManualMass)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of part document to analyze.  |  \n \n|  bool |  outIsMassManaged |  Whether the mass is managed. True for automatic or manual, false for not managed.  |  \n \n|  SmartReal |  outManualMass |  Manual mass, or null if no manual mass.  |  \n\n##### Remarks\n\nThis method is available since v7.13.300.220.\n",
+  "markdown": "markdown/cad/799665a75ce78816bb1f86eb.md",
+  "originalHtml": "html/cad/799665a75ce78816bb1f86eb.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.UserQuestion.Prompt.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.UserQuestion.Prompt.html",
+  "sha256": "b02dfa874406a8d6d7368931619e98b15c363332470f51d1ebbd34473ad462ae",
+  "text": "# Field Prompt\n\nPrompt.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic string Prompt\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  Prompt. |\n",
+  "markdown": "markdown/kernel/c47d8d2bbe86c83ce05283cf.md",
+  "originalHtml": "html/kernel/c47d8d2bbe86c83ce05283cf.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMaterials.GetUltimateStress.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMaterials.GetUltimateStress.html",
+  "sha256": "1ac9356a955454f58711c7a99eb56aa3e82fac4cbc51a864a3855f8521b298ed",
+  "text": "# Method GetUltimateStress\n\n#### GetUltimateStress(DocumentId, out double)\n\nGets Ultimate Stress\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 400, 120)]\nbool GetUltimateStress(DocumentId inDocumentId, out double outValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Id of the container document  |  \n \n|  double |  outValue |  The value  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  true if a parameter has been fetched with success  |\n",
+  "markdown": "markdown/cad/4aaac6b58fd7a66d3b8ab2d2.md",
+  "originalHtml": "html/cad/4aaac6b58fd7a66d3b8ab2d2.html"
+}

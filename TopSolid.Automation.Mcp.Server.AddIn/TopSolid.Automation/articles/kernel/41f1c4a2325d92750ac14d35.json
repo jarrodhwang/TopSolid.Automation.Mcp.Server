@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.PdmSecurityUserOrGroupPermissions.-ctor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.PdmSecurityUserOrGroupPermissions.-ctor.html",
+  "sha256": "ceb3accb2a730f870890750bc69cad1bad29eaf08b632322a88c992a78602ab5",
+  "text": "# Constructor PdmSecurityUserOrGroupPermissions\n\n#### PdmSecurityUserOrGroupPermissions(string)\n\nInitializes a new instance of the Plane3D structure with a specified user.\n\n##### Declaration\n\n```\npublic PdmSecurityUserOrGroupPermissions(string inUserAccountId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  string |  inUserAccountId |  User account identifier to create permissions on.  |  \n\n#### PdmSecurityUserOrGroupPermissions(PdmObjectId)\n\nInitializes a new instance of the PdmSecurityUserOrGroupPermissions structure with a specified user group.\n\n##### Declaration\n\n```\npublic PdmSecurityUserOrGroupPermissions(PdmObjectId inUserGroupId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inUserGroupId |  User group identifier to create permissions on.  |\n",
+  "markdown": "markdown/kernel/41f1c4a2325d92750ac14d35.md",
+  "originalHtml": "html/kernel/41f1c4a2325d92750ac14d35.html"
+}

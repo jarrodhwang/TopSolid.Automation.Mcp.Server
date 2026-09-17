@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IPockets.LoadToolInPocket.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IPockets.LoadToolInPocket.html",
+  "sha256": "c842f81633f3ac97b78bf49e7c186a461346dac3a07da6d72d54bec57965af1f",
+  "text": "# Method LoadToolInPocket\n\n#### LoadToolInPocket(DocumentId, ElementId)\n\nLoad tool from document inside a pocket.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nList<ElementId> LoadToolInPocket(DocumentId inToolDocumentId, ElementId inPocketId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inToolDocumentId |  The in tool document identifier.  |  \n \n|  ElementId |  inPocketId |  Pocket identifier.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementId> |   |\n",
+  "markdown": "markdown/cam/287f7da90ef575b6a245be86.md",
+  "originalHtml": "html/cam/287f7da90ef575b6a245be86.html"
+}

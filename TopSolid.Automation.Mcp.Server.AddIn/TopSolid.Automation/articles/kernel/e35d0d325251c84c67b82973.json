@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IUser.AskEdgeWithPickingAxis.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IUser.AskEdgeWithPickingAxis.html",
+  "sha256": "cdb0fe7666b15b3e50971ee705186260c0f739c4846694bb924775d3d5339bb5",
+  "text": "# Method AskEdgeWithPickingAxis\n\n#### AskEdgeWithPickingAxis(UserQuestion, ElementItemId, out ElementItemId, out Axis3D)\n\nAsks the user for an edge with picking axis.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 300, 60)]\nUserAnswerType AskEdgeWithPickingAxis(UserQuestion inQuestion, ElementItemId inSuggestion, out ElementItemId outAnswer, out Axis3D outPickingAxis)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  UserQuestion |  inQuestion |  Question asked to the user.  |  \n \n|  ElementItemId |  inSuggestion |  Suggested answer, or Empty if none.  |  \n \n|  ElementItemId |  outAnswer |  User answer, or Empty if none.  |  \n \n|  Axis3D |  outPickingAxis |  User picking axis when answer is not empty and not equal to suggestion.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  UserAnswerType |  Type of user answer.  |  \n\n##### Remarks\n\nThis method is available since v7.10.300.60.\n",
+  "markdown": "markdown/kernel/e35d0d325251c84c67b82973.md",
+  "originalHtml": "html/kernel/e35d0d325251c84c67b82973.html"
+}

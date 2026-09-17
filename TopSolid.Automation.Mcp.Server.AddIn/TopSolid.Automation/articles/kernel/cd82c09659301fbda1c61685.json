@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.SetUserEnumerationPublishingDefinition.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.SetUserEnumerationPublishingDefinition.html",
+  "sha256": "5c578810ea2d05c4ea8c20933be930801c014397a1d60fd14d1cefd783bce5b1",
+  "text": "# Method SetUserEnumerationPublishingDefinition\n\n#### SetUserEnumerationPublishingDefinition(ElementId, SmartUserEnumeration)\n\nSets the definition of a user enumeration publishing entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nvoid SetUserEnumerationPublishingDefinition(ElementId inElementId, SmartUserEnumeration inDefinition)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the publishing entity to modify.  |  \n \n|  SmartUserEnumeration |  inDefinition |  Publishing new definition.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.8.\n",
+  "markdown": "markdown/kernel/cd82c09659301fbda1c61685.md",
+  "originalHtml": "html/kernel/cd82c09659301fbda1c61685.html"
+}

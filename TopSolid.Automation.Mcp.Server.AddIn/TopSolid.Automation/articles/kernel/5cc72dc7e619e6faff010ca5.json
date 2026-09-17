@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.SetBooleanValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.SetBooleanValue.html",
+  "sha256": "beb7e4b5e525755193ec3cf94d12994ae992eb376abcf7b5c6b8be58af2829de",
+  "text": "# Method SetBooleanValue\n\n#### SetBooleanValue(ElementId, bool)\n\nSets the value of a Boolean parameter.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nvoid SetBooleanValue(ElementId inElementId, bool inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the parameter to modify.  |  \n \n|  bool |  inValue |  New value.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/5cc72dc7e619e6faff010ca5.md",
+  "originalHtml": "html/kernel/5cc72dc7e619e6faff010ca5.html"
+}

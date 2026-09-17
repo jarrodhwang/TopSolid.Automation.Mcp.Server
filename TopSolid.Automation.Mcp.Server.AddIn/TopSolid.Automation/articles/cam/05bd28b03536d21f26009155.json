@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IParameters.GetValueFeedRateValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IParameters.GetValueFeedRateValue.html",
+  "sha256": "3f8c52e801f99c39081d7b538a054bd7f8837beb9ab86953dc011a0d7e306768",
+  "text": "# Method GetValueFeedRateValue\n\n#### GetValueFeedRateValue(ParameterId)\n\nFrom a feedrate parameter, get a SmartReal with the type value. Use GetValue(ParameterId) to get the feedrate type.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nSmartReal GetValueFeedRateValue(ParameterId inParameterId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ParameterId |  inParameterId |  Parameter to get.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartReal |  A new SmartReal with the current value of the parameter.  |\n",
+  "markdown": "markdown/cam/05bd28b03536d21f26009155.md",
+  "originalHtml": "html/cam/05bd28b03536d21f26009155.html"
+}

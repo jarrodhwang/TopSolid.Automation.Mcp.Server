@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IDocuments.Consult.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IDocuments.Consult.html",
+  "sha256": "02667046b4e8fb2533560dc9b6e61ac8b9dfff7f2d4894d5844c4d0c121bd39b",
+  "text": "# Method Consult\n\n#### Consult(DocumentId)\n\nOpens a document in read only.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 201, 140)]\nvoid Consult(DocumentId ioDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  ioDocumentId |  Identifier of the document to consult.  |  \n\n##### Remarks\n\nThis method is available since v7.7.201.140.\n",
+  "markdown": "markdown/kernel/b4d965eba5172ae6e440b500.md",
+  "originalHtml": "html/kernel/b4d965eba5172ae6e440b500.html"
+}

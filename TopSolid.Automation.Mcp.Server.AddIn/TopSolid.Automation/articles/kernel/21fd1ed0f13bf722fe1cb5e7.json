@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Frame3D.OXYZ.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Frame3D.OXYZ.html",
+  "sha256": "fbe370588399aed7447bbb9803a440a26798b0c1c1f30d3b61688b2eaa6970d0",
+  "text": "# Field OXYZ\n\n(O,+X,+Y,+Z) absolute frame.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\npublic static readonly Frame3D OXYZ\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Frame3D |  (O,+X,+Y,+Z) absolute frame. |\n",
+  "markdown": "markdown/kernel/21fd1ed0f13bf722fe1cb5e7.md",
+  "originalHtml": "html/kernel/21fd1ed0f13bf722fe1cb5e7.html"
+}

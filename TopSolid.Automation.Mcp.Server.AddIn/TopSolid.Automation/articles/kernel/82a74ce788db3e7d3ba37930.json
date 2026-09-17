@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IGeometries2D.GetPointsFolder.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IGeometries2D.GetPointsFolder.html",
+  "sha256": "f0006d62bbe1b9db9c34e392dd760dee102c2dac2ea47aafb61ba8fabd12cca6",
+  "text": "# Method GetPointsFolder\n\n#### GetPointsFolder(DocumentId)\n\nGets the points folder entity of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nElementId GetPointsFolder(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the points folder entity found.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/kernel/82a74ce788db3e7d3ba37930.md",
+  "originalHtml": "html/kernel/82a74ce788db3e7d3ba37930.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.ElementExId.IsPreparation.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.ElementExId.IsPreparation.html",
+  "sha256": "95aa31b5389cc2f1f9ee77d9e86e3a523ed6c40f439b7d7424ec33b427bf043e",
+  "text": "# Property IsPreparation\n\n#### IsPreparation\n\nChecks if the operation is in preparation, and defined by a Guid.\n\n##### Declaration\n\n```\npublic bool IsPreparation { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |   |\n",
+  "markdown": "markdown/cam/4a6388b1b86d3daeba7b1e6c.md",
+  "originalHtml": "html/cam/4a6388b1b86d3daeba7b1e6c.html"
+}

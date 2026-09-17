@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.ITables.SetDraftTableCellImageFromPath.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.ITables.SetDraftTableCellImageFromPath.html",
+  "sha256": "1cc4908087c2b5f0580e2d1903fecaaa4714c8962584ff229b382fd2f45216c2",
+  "text": "# Method SetDraftTableCellImageFromPath\n\n#### SetDraftTableCellImageFromPath(ElementId, int, int, int, string)\n\nSets the image of a cell from a path.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 14, 300, 140)]\nvoid SetDraftTableCellImageFromPath(ElementId inElementId, int inColumnIdx, int inRowIdx, int inSplitColumnIdx, string inPath)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the entity to modify.  |  \n \n|  int |  inColumnIdx |  Index of the column.  |  \n \n|  int |  inRowIdx |  Index of the row.  |  \n \n|  int |  inSplitColumnIdx |  Index of the split column. 0 if default.  |  \n \n|  string |  inPath |  Path of the image.  |  \n\n##### Remarks\n\nThis method is available since v7.14.300.140.\n",
+  "markdown": "markdown/drafting/8293b8aadb88ec63004cb34f.md",
+  "originalHtml": "html/drafting/8293b8aadb88ec63004cb34f.html"
+}

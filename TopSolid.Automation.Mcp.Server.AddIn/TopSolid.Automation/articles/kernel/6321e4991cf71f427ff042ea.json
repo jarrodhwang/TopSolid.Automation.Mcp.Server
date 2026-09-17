@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.TopSolidHost.Operations.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.TopSolidHost.Operations.html",
+  "sha256": "b2334d3ffa3f68f2e70802942ab5d4e796fbe0981386827643fac2f3659a7d72",
+  "text": "# Property Operations\n\n#### Operations\n\nGets access to operations, or null if not available.\n\n##### Declaration\n\n```\npublic static IOperations Operations { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  IOperations |   |\n",
+  "markdown": "markdown/kernel/6321e4991cf71f427ff042ea.md",
+  "originalHtml": "html/kernel/6321e4991cf71f427ff042ea.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.DeleteSeveral.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.DeleteSeveral.html",
+  "sha256": "872c44d4436f5f0f08406cde4ef0f006819a34650a7c137d8ec2730986aaf1ea",
+  "text": "# Method DeleteSeveral\n\n#### DeleteSeveral(List<PdmObjectId>)\n\nDeletes several objects.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 201, 140)]\nvoid DeleteSeveral(List<PdmObjectId> inObjectIds)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  List<PdmObjectId> |  inObjectIds |  Identifiers of objects to delete.  |  \n\n##### Remarks\n\nThis method must not be called between StartModification(string, bool) and EndModification(bool, bool) methods calls.\n \nThis method is available since v7.7.201.140.\n",
+  "markdown": "markdown/kernel/30071ab7e44b70ed6cd47f39.md",
+  "originalHtml": "html/kernel/30071ab7e44b70ed6cd47f39.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.GetUserEnumerationPublishingDefinition.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.GetUserEnumerationPublishingDefinition.html",
+  "sha256": "5cbbb240fcc0f49679aa49fb3287d3c1accb4b7dc32348baa0bbcc233531367b",
+  "text": "# Method GetUserEnumerationPublishingDefinition\n\n#### GetUserEnumerationPublishingDefinition(ElementId)\n\nGets the definition of a user enumeration publishing entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nSmartUserEnumeration GetUserEnumerationPublishingDefinition(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the publishing entity to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartUserEnumeration |   |  \n\n##### Remarks\n\nThe value of the publishing entity may be obtained with the GetUserEnumerationValue(ElementId) method.\n \nThis method is available since v7.8.\n",
+  "markdown": "markdown/kernel/1c5fd05220f08606861a9304.md",
+  "originalHtml": "html/kernel/1c5fd05220f08606861a9304.html"
+}

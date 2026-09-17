@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMaterials.GetOpacityColor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMaterials.GetOpacityColor.html",
+  "sha256": "d792161b362dbd9b0d46cdfbcf603f3a25903f236cecf8dc4d4f401851f98028",
+  "text": "# Method GetOpacityColor\n\n#### GetOpacityColor(DocumentId)\n\nGets the Opacity color.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 400, 100)]\nColor GetOpacityColor(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Color |   |  \n\n##### Remarks\n\nThis method is available since v7.16.\n",
+  "markdown": "markdown/cad/8e90ccb4616ee764c905f236.md",
+  "originalHtml": "html/cad/8e90ccb4616ee764c905f236.html"
+}

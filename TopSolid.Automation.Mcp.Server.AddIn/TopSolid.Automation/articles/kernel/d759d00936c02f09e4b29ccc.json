@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ModifierType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ModifierType.html",
+  "sha256": "f02fbb4fb184266e7e54c7f3bcad44cbac2e75980c98bc5366d639522888aa49",
+  "text": "# Enum ModifierType\n\nDefines the various types of modifier.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 17, 0, 0)]\npublic enum ModifierType\n```\n\n##### Remarks\n\nThis enum is available since v7.17.000.000.\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  AnyCrossSection |  Any cross section [ACS]  |  \n \n|  AnyLongitudinalSection |  Any longitudinal section [ALS]  |  \n \n|  CommonZone |  Common zone (CZ)  |  \n \n|  ContactFeature |  Contact Feature [CF]  |  \n \n|  FreeState |  Free state condition (F).  |  \n \n|  LeastMaterial |  Least material condition (L).  |  \n \n|  MajorDiameter |  Major Diameter [MD]  |  \n \n|  Manual |  Manual modifier.  |  \n \n|  MaximumMaterial |  Maximum material condition (M).  |  \n \n|  MinorDiameter |  Minor Diameter [LD]  |  \n \n|  None |  No modifier.  |  \n \n|  OrientationOnly |  Orientation constraint only  |  \n \n|  PitchDiameter |  Pitch Diameter [PD]  |  \n \n|  Plane |  Plane [PL]  |  \n \n|  Point |  Point [PT]  |  \n \n|  ProjectedTolerance |  Projected tolerance (P).  |  \n \n|  StraightLine |  Straight Line [SL]  |  \n \n|  VariableDistance |  Variable Distance [DV]  |\n",
+  "markdown": "markdown/kernel/d759d00936c02f09e4b29ccc.md",
+  "originalHtml": "html/kernel/d759d00936c02f09e4b29ccc.html"
+}

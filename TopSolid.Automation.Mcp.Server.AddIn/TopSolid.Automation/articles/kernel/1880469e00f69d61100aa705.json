@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ITextures.GetCategory.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ITextures.GetCategory.html",
+  "sha256": "9e8bcefda617559b280525bd8b92f44ae4b783c47c4a2d6c26358e87bdfb2520",
+  "text": "# Method GetCategory\n\n#### GetCategory(DocumentId)\n\nGets the texture category of a texture document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 0, 0)]\nTextureCategoryType GetCategory(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  TextureCategoryType |  The texture category.  |  \n\n##### Remarks\n\nThis method is available since v7.16.\n",
+  "markdown": "markdown/kernel/1880469e00f69d61100aa705.md",
+  "originalHtml": "html/kernel/1880469e00f69d61100aa705.html"
+}

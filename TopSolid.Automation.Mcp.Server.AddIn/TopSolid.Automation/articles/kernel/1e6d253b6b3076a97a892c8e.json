@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.UserQuestion.AllowsNext.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.UserQuestion.AllowsNext.html",
+  "sha256": "d6c03f94c80bd6dd676dd11f1629302b4784343e4b9b0d49fad740b90ee1daa9",
+  "text": "# Property AllowsNext\n\n#### AllowsNext\n\nTells or sets whether the user can answer \"Next\".\n\n##### Declaration\n\n```\npublic bool AllowsNext { get; set; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |   |\n",
+  "markdown": "markdown/kernel/1e6d253b6b3076a97a892c8e.md",
+  "originalHtml": "html/kernel/1e6d253b6b3076a97a892c8e.html"
+}

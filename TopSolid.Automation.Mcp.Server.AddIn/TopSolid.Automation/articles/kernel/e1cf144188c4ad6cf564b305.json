@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Point3D.CoincidesWith.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Point3D.CoincidesWith.html",
+  "sha256": "29629270f2c3159175e5599f335f0e1f6c0eae994963e76be0c51f5607b7d7b9",
+  "text": "# Method CoincidesWith\n\n#### CoincidesWith(Point3D)\n\nTells whether this point coincides with another point.\n\n##### Declaration\n\n```\npublic bool CoincidesWith(Point3D inPoint)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  Point3D |  inPoint |  Point to compare with.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  This point coincides with the specified point.  |  \n\n##### Remarks\n\nTwo points are considered coincident if they are less than LinearPrecision apart.\n",
+  "markdown": "markdown/kernel/e1cf144188c4ad6cf564b305.md",
+  "originalHtml": "html/kernel/e1cf144188c4ad6cf564b305.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.IsTextParameterized.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.IsTextParameterized.html",
+  "sha256": "a55d4412cf65c15c5489b0292d7e0545b003b32bf812340a8ab77f9a9f124f7c",
+  "text": "# Method IsTextParameterized\n\n#### IsTextParameterized(ElementId)\n\nTells whether a text parameter is parameterized.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 201, 200)]\nbool IsTextParameterized(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the parameter to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Whether the text parameter is parameterized.  |  \n\n##### Remarks\n\nThis method is available since v7.7.201.200.\n",
+  "markdown": "markdown/kernel/4db790360c88c6d2983af899.md",
+  "originalHtml": "html/kernel/4db790360c88c6d2983af899.html"
+}

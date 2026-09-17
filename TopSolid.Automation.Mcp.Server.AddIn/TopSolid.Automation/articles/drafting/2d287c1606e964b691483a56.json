@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.html",
+  "sha256": "61ebbd7062359a170e9028fdb475efeed7d6d98e9b8876ec1ee90f29456282ce",
+  "text": "# Namespace TopSolid.Cad.Drafting.Automating\n\n###  Classes \n\n#### TopSolidDraftingHost\n \nRepresents TopSolid'Drafting host providing WCF services for automating.\n\n#### TopSolidDraftingHostInstance\n \nRepresents a TopSolid'Drafting host instance providing WCF services for automating.\n\n###  Interfaces \n\n#### IAnnotations\n \nGives access to annotations in drafting documents.\n\n#### IDimensions\n \nGives access to drafting documents dimensions.\n\n#### IDraftings\n \nGives access to drafting documents.\n\n#### IStyles\n \nGives access to styles of drafting documents.\n\n#### ITables\n \nGives access to tables in drafting documents.\n\n###  Enums \n\n#### AnnotationType\n \nDefines the various types of annotations.\n\n#### CellType\n \nDefines the various types of cells.\n\n#### CellValueType\n \nDefines the various types of values for a cell.\n\n#### CoordinateDimensionItemType\n \nDefines the various types of items of a linear dimension entity.\n\n#### LinearDimensionItemType\n \nDefines the various types of items of a linear dimension entity.\n\n#### PrintMode\n \nDefines the print mode of drafting documents.\n\n#### ProjectionMode\n \nDefines the projection mode of drafting documents.\n\n#### TableType\n \nDefines the various types of tables.\n",
+  "markdown": "markdown/drafting/2d287c1606e964b691483a56.md",
+  "originalHtml": "html/drafting/2d287c1606e964b691483a56.html"
+}

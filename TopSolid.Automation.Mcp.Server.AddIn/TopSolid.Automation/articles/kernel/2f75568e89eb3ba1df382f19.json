@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ISketches2D.StartModification.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ISketches2D.StartModification.html",
+  "sha256": "bb4a2794f913267d3987c2dd21d790904369bca6be598d0f27ae924f0232ad5f",
+  "text": "# Method StartModification\n\n#### StartModification(ElementId)\n\nStarts performing modifications on a sketch.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 201, 80)]\nvoid StartModification(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the sketch entity to modify.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.7.201.80.\n",
+  "markdown": "markdown/kernel/2f75568e89eb3ba1df382f19.md",
+  "originalHtml": "html/kernel/2f75568e89eb3ba1df382f19.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IDocuments.SetCurrentCulture.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IDocuments.SetCurrentCulture.html",
+  "sha256": "0e4637106654d06231b9b20873313384b92d66358dae31117075bce6edf93751",
+  "text": "# Method SetCurrentCulture\n\n#### SetCurrentCulture(DocumentId, CultureInfo)\n\nSets the document current culture.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 400, 0)]\nvoid SetCurrentCulture(DocumentId inDocumentId, CultureInfo inWantedCulture)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  CultureInfo |  inWantedCulture |  The wanted culture.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.16.\n",
+  "markdown": "markdown/kernel/5c6ed6287bebc7416b7f558b.md",
+  "originalHtml": "html/kernel/5c6ed6287bebc7416b7f558b.html"
+}

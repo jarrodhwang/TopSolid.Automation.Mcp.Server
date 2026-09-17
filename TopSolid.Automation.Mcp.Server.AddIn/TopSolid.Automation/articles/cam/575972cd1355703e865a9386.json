@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.TopSolidCamHost.Programs.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.TopSolidCamHost.Programs.html",
+  "sha256": "7b0b9cc8f87d5d628185f897480db6ac38fce561d79c792d8de06083fe2eaf8d",
+  "text": "# Property Programs\n\n#### Programs\n\nGets access to Cam programs, or null if not connected.\n\n##### Declaration\n\n```\npublic static IPrograms Programs { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  IPrograms |   |\n",
+  "markdown": "markdown/cam/575972cd1355703e865a9386.md",
+  "originalHtml": "html/cam/575972cd1355703e865a9386.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ITextures.GetWoodRingFuzzIn.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ITextures.GetWoodRingFuzzIn.html",
+  "sha256": "12bf546026eba3e49eef388c4e6254608f415c2c2b448828db26ea69583a7232",
+  "text": "# Method GetWoodRingFuzzIn\n\n#### GetWoodRingFuzzIn(DocumentId)\n\nGets the wood ring Fuzz-In.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 400, 100)]\ndouble GetWoodRingFuzzIn(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyse.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double |   |  \n\n##### Remarks\n\nThis method is available since v7.16.\n",
+  "markdown": "markdown/kernel/f310226347602c2a6b4e1375.md",
+  "originalHtml": "html/kernel/f310226347602c2a6b4e1375.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IOperations.Freeze.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IOperations.Freeze.html",
+  "sha256": "3adc73cc91634522811bbf70d1d6e1f45a7148493990aa9337d76c552ceb7539",
+  "text": "# Method Freeze\n\n#### Freeze(ElementId)\n\nFreezes an operation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 12, 0, 0)]\nvoid Freeze(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the operation to modify.  |  \n\n##### Remarks\n\nAn exception will be thrown when trying to freeze an operation that is not freezable.\n \nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.12.\n",
+  "markdown": "markdown/kernel/a3886afa8929591be48b185e.md",
+  "originalHtml": "html/kernel/a3886afa8929591be48b185e.html"
+}

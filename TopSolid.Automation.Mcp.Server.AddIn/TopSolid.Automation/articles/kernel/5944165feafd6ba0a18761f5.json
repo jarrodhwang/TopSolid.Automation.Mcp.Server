@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IElements.SetTransparency.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IElements.SetTransparency.html",
+  "sha256": "ce91c4d5c31a312cb5e1dda202172494e256db363629c9ef8664882ae08658f7",
+  "text": "# Method SetTransparency\n\n#### SetTransparency(ElementId, double)\n\nSets the transparency of an element.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nvoid SetTransparency(ElementId inElementId, double inTransparency)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to modify.  |  \n \n|  double |  inTransparency |  New transparency of the element within [0,1].  |  \n\n##### Remarks\n\nWhen the transparency is equal to 0, the element is fully opaque.\n \nWhen the transparency is equal to 1, the element is fully transparent.\n \nThe transparency is internally rounded to discrete values, so getting the transparency afterwards will not necessarily return the same value than the one provided when setting it.\n \nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/5944165feafd6ba0a18761f5.md",
+  "originalHtml": "html/kernel/5944165feafd6ba0a18761f5.html"
+}

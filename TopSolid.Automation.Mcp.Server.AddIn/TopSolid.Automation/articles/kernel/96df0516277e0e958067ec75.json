@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.SetRelayedParameter.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.SetRelayedParameter.html",
+  "sha256": "5b3a802d611712ff9948ce9a33f28e24e2dd07db8fbebee66d15ac5fae49dafa",
+  "text": "# Method SetRelayedParameter\n\n#### SetRelayedParameter(ElementId, ElementId)\n\nSets the parameter entity relayed by a relay parameter entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 303, 120)]\nvoid SetRelayedParameter(ElementId inElementId, ElementId inRelayedId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the relay parameter entity to modify.  |  \n \n|  ElementId |  inRelayedId |  Identifier of the parameter entity to relay.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.8.303.120.\n",
+  "markdown": "markdown/kernel/96df0516277e0e958067ec75.md",
+  "originalHtml": "html/kernel/96df0516277e0e958067ec75.html"
+}

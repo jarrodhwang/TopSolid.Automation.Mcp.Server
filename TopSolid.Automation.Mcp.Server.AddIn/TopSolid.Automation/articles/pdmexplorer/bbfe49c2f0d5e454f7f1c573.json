@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.PdmProjectFolderId.-ctor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.PdmProjectFolderId.-ctor.html",
+  "sha256": "ab8b279147dd547bdb0e8918ff6a7f2e4afe291f634aa69390d12f16bc6a40b3",
+  "text": "# Constructor PdmProjectFolderId\n\n#### PdmProjectFolderId(string)\n\nInitializes a new instance of the PdmProjectFolderId structure.\n\n##### Declaration\n\n```\npublic PdmProjectFolderId(string pdmProjectFolderId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  string |  pdmProjectFolderId |  PDM project folder identifier, or null if empty.  |\n",
+  "markdown": "markdown/pdmexplorer/bbfe49c2f0d5e454f7f1c573.md",
+  "originalHtml": "html/pdmexplorer/bbfe49c2f0d5e454f7f1c573.html"
+}

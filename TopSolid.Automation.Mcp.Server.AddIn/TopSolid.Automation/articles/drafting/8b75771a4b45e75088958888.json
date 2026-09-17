@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.IDimensions.CreateLinearDimension.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.IDimensions.CreateLinearDimension.html",
+  "sha256": "1c8509f922a20d06d1bcfd716aa768fe7e434038d7988141b187fc860914e85e",
+  "text": "# Method CreateLinearDimension\n\n#### CreateLinearDimension(ElementId, Point2D, Point2D, Direction2D, string, string)\n\nCreates a linear dimension using two points.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 255, 0)]\nElementId CreateLinearDimension(ElementId inElementId, Point2D inFirstPoint, Point2D inSecondPoint, Direction2D inDirection, string inPrefix, string inSuffix)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Drafting view id.  |  \n \n|  Point2D |  inFirstPoint |  First point of the dimension.  |  \n \n|  Point2D |  inSecondPoint |  Second point of the dimension.  |  \n \n|  Direction2D |  inDirection |  Display vector of the dimension.  |  \n \n|  string |  inPrefix |  Prefix to add, or empty if no prefix.  |  \n \n|  string |  inSuffix |  Suffix to add, or empty if no suffix.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |   |  \n\n##### Remarks\n\nThis method is available since v7.19.\n",
+  "markdown": "markdown/drafting/8b75771a4b45e75088958888.md",
+  "originalHtml": "html/drafting/8b75771a4b45e75088958888.html"
+}

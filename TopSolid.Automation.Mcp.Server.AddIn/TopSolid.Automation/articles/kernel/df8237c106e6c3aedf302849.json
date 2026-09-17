@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.CreateSmartRealParameter.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.CreateSmartRealParameter.html",
+  "sha256": "8f7f55a6d2364835a63458ccb061916d33d52ca07fa68537a34df78e08f260f0",
+  "text": "# Method CreateSmartRealParameter\n\n#### CreateSmartRealParameter(DocumentId, SmartReal)\n\nCreates a smart real parameter creation operation in a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nElementId CreateSmartRealParameter(DocumentId inDocumentId, SmartReal inSmartReal)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  SmartReal |  inSmartReal |  Smart real value.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the created operation child parameter entity.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThe smart real parameter creation operation created is in \"unit auto\" mode set to false, it may be changed using the SetSmartRealParameterCreationUnitAuto(ElementId, bool) method.\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/df8237c106e6c3aedf302849.md",
+  "originalHtml": "html/kernel/df8237c106e6c3aedf302849.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IParameters.GetValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IParameters.GetValue.html",
+  "sha256": "38ad7bc5929632b2587f5d80fc3e8c32f5944967176535e9fbd86d98998f3013",
+  "text": "# Method GetValue\n\n#### GetValue(ParameterId)\n\nGets the value of the given parameter. The kind of SmartObject is fixed by the ParameterType: SmartInteger for integer parameter, SmartReal for real parameter, et caetera... If the parameter is a composite, like bound or feedrate, the returned object is a SmartInteger with the type. Use GetValueBoundValue(ParameterId) and GetValueBoundElement(ParameterId) to get other items of the bound parameter.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nSmartObject GetValue(ParameterId inParameterId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ParameterId |  inParameterId |  Parameter to get.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartObject |  A new SmartObject with the current value of the parameter. A SmartInteger with the type for a bound parameter.  |\n",
+  "markdown": "markdown/cam/938999cf4bc7d466491370b4.md",
+  "originalHtml": "html/cam/938999cf4bc7d466491370b4.html"
+}

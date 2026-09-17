@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ISketches2D.GetSegmentPoint.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ISketches2D.GetSegmentPoint.html",
+  "sha256": "2709ac73d8c6878338dbd568bbaa78a4be68b1c6fe8944af12e4e481f6e39bf8",
+  "text": "# Method GetSegmentPoint\n\n#### GetSegmentPoint(ElementItemId, double)\n\nGets a point on a segment at a specified parametric value.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nPoint2D GetSegmentPoint(ElementItemId inSegmentId, double inT)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementItemId |  inSegmentId |  Identifier of the segment to analyze.  |  \n \n|  double |  inT |  Parameter within segment parametric range.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Point2D |  Point on the segment at the specified parametric value.  |  \n\n##### Remarks\n\nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/dc64b6e4fdecfe5fd3d2eb18.md",
+  "originalHtml": "html/kernel/dc64b6e4fdecfe5fd3d2eb18.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.GetRelayType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.GetRelayType.html",
+  "sha256": "7a2c3a569a7fe6d0bdc78b790ccec3b6fb402ef7094e11b99d78db1b343e4d04",
+  "text": "# Method GetRelayType\n\n#### GetRelayType(ElementId)\n\nGets the type of relay of the parameter.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 303, 120)]\nParameterRelayType GetRelayType(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ParameterRelayType |  Type of relay of the parameter, or None if the element is not a relay parameter entity.  |  \n\n##### Remarks\n\nThis method is available since v7.8.303.120.\n",
+  "markdown": "markdown/kernel/94a5723bf369efe224b7785e.md",
+  "originalHtml": "html/kernel/94a5723bf369efe224b7785e.html"
+}

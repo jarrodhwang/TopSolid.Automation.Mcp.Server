@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IDocuments.SubscribeToEvents.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IDocuments.SubscribeToEvents.html",
+  "sha256": "e8602cfad37ea19a977d5a670bd734f04e42000151a91a18219d30132ad2d441",
+  "text": "# Method SubscribeToEvents\n\n#### SubscribeToEvents(int, string)\n\nSubscribes to documents events.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nvoid SubscribeToEvents(int inClientVersion, string inClientName)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  int |  inClientVersion |  Version of TopSolid used to build the client application.  |  \n \n|  string |  inClientName |  Client name.  |  \n\n##### Remarks\n\nThe version is defined by: Major * 100000000 + Minor * 1000000 + Build * 1000 + Revision.\n \nFor example, v7.5.200.100 is represented by: 705200100.\n \nThis method is available since v7.8.\n",
+  "markdown": "markdown/kernel/c94d53a682d2713b08ee167c.md",
+  "originalHtml": "html/kernel/c94d53a682d2713b08ee167c.html"
+}

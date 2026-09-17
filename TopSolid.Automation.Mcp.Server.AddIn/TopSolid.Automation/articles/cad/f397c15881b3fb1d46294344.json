@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.EntityCopyNameMode.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.EntityCopyNameMode.html",
+  "sha256": "5767e71d0a099910d650414b657fc02b22c0136b20e72432ae18bd67217946dc",
+  "text": "# Enum EntityCopyNameMode\n\nDefines the various types of entity copy name mode.\n\n###### Namespace: TopSolid.Cad.Design.Automating\n\n###### Assembly: TopSolid.Cad.Design.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 16, 0, 0)]\npublic enum EntityCopyNameMode\n```\n\n##### Remarks\n\nThis enum is available since v7.16.\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  PrefixedByCustomPrefix |  Name prefixed by custom prefix.  |  \n \n|  PrefixedByOccurrenceName |  Name prefixed by occurrence name.  |  \n \n|  SameName |  Same name.  |\n",
+  "markdown": "markdown/cad/f397c15881b3fb1d46294344.md",
+  "originalHtml": "html/cad/f397c15881b3fb1d46294344.html"
+}

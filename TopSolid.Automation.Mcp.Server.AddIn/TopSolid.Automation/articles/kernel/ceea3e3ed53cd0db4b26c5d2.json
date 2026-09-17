@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IFamilies.AddExplicitInstance.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IFamilies.AddExplicitInstance.html",
+  "sha256": "c9fa4fab7112cb6a1d087f1b9c57e04bf3eca7b582ae2860b60998a6cef35524",
+  "text": "# Method AddExplicitInstance\n\n#### AddExplicitInstance(DocumentId, string, DocumentId)\n\nAdds an explicit instance to a family document catalog\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 18, 400, 160)]\nvoid AddExplicitInstance(DocumentId inDocumentId, string inCode, DocumentId instanceDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Family document  |  \n \n|  string |  inCode |  Code to add  |  \n \n|  DocumentId |  instanceDocumentId |  Document used as an instance  |\n",
+  "markdown": "markdown/kernel/ceea3e3ed53cd0db4b26c5d2.md",
+  "originalHtml": "html/kernel/ceea3e3ed53cd0db4b26c5d2.html"
+}

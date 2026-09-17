@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ICoatings.GetSpecularColor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ICoatings.GetSpecularColor.html",
+  "sha256": "805d31f40b48f91c104b96bc512105acf9dca70483b1f48377da3da13749756b",
+  "text": "# Method GetSpecularColor\n\n#### GetSpecularColor(DocumentId)\n\nGets the Specular color.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 18, 0, 0)]\nColor GetSpecularColor(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Color |   |  \n\n##### Remarks\n\nThis method is available since v7.18.\n",
+  "markdown": "markdown/cad/4e000a3d5190a73ca4eeb1db.md",
+  "originalHtml": "html/cad/4e000a3d5190a73ca4eeb1db.html"
+}

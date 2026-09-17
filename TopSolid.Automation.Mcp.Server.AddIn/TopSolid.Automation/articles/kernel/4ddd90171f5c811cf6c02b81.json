@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IClassifications.GetMultipleClassifyingParameter.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IClassifications.GetMultipleClassifyingParameter.html",
+  "sha256": "0958b21e68ae80a70d9f6c149c4c8fac1eca48c54853f0379223b46f037ce1a7",
+  "text": "# Method GetMultipleClassifyingParameter\n\n#### GetMultipleClassifyingParameter(DocumentId)\n\nGets the multiple classifying parameter entity of a classification document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nElementId GetMultipleClassifyingParameter(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the classification document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the multiple classifying parameter entity found.  |  \n\n##### Remarks\n\nThe multiple classifying parameter is a Boolean parameter, its value may be obtained and modified using the GetBooleanValue(ElementId) and SetBooleanValue(ElementId, bool) methods.\n \nThis method is available since v7.10.\n",
+  "markdown": "markdown/kernel/4ddd90171f5c811cf6c02b81.md",
+  "originalHtml": "html/kernel/4ddd90171f5c811cf6c02b81.html"
+}

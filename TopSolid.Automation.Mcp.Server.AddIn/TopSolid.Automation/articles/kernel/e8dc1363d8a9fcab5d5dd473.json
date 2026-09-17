@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Transform2D.Identity.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Transform2D.Identity.html",
+  "sha256": "14f3d10c9071a76ad3de60f4975b7964b4086bd853570cf4c41c03b3d86d5a44",
+  "text": "# Field Identity\n\nIndentity transformation.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\npublic static readonly Transform2D Identity\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Transform2D |  Indentity transformation. |\n",
+  "markdown": "markdown/kernel/e8dc1363d8a9fcab5d5dd473.md",
+  "originalHtml": "html/kernel/e8dc1363d8a9fcab5d5dd473.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Real.UnitSymbol.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Real.UnitSymbol.html",
+  "sha256": "533d386830eb0f6b30d21669125dddd1a0fad96e1ef80ad1b00c6a54480f340f",
+  "text": "# Field UnitSymbol\n\nUnit symbol in English.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic string UnitSymbol\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  Unit symbol in English. |\n",
+  "markdown": "markdown/kernel/a7c56df520612a3f265e252e.md",
+  "originalHtml": "html/kernel/a7c56df520612a3f265e252e.html"
+}

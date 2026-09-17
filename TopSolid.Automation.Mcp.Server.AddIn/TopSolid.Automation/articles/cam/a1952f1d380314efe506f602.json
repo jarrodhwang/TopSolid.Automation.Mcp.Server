@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IPartSettingDocument.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IPartSettingDocument.html",
+  "sha256": "819c27dfa6357ddfa8c38f1efc22aee81897960099682347a4b027a1c1822e10",
+  "text": "# Interface IPartSettingDocument\n\nGives access to Part Setting documents.\n\n###### Namespace: TopSolid.Cam.NC.Kernel.Automating\n\n###### Assembly: TopSolid.Cam.NC.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[ServiceContract]\n[AvailableSinceVersion(7, 15, 0, 0)]\npublic interface IPartSettingDocument\n```\n\n##### Remarks\n\nThis interface is available since v7.15.\n\n### Methods \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   CreatePartSetupManagementOperation(DocumentId, List<ElementId>, StockType, List<ElementId>)  |  Creates the part setup management operation in a document.  |  \n \n|   IsPartSetting(DocumentId)  |  Tells whether a document is a part setting document.  |\n",
+  "markdown": "markdown/cam/a1952f1d380314efe506f602.md",
+  "originalHtml": "html/cam/a1952f1d380314efe506f602.html"
+}

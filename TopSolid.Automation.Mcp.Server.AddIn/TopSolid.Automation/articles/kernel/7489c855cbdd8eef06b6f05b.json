@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.License.LicensedTo.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.License.LicensedTo.html",
+  "sha256": "ac2104449bbcfb58a3d95c55fb1e3e8d6d480b2a4f3f2d4dc3c335893220daf9",
+  "text": "# Field LicensedTo\n\nLicensed to.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic string LicensedTo\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  Licensed to. |\n",
+  "markdown": "markdown/kernel/7489c855cbdd8eef06b6f05b.md",
+  "originalHtml": "html/kernel/7489c855cbdd8eef06b6f05b.html"
+}

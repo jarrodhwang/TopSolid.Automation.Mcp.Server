@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMaterials.GetRockwellFactors.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMaterials.GetRockwellFactors.html",
+  "sha256": "bd96e8c3039310800b93ac30da6fb481833b0e8300b3ea1f8390b9a034336fb5",
+  "text": "# Method GetRockwellFactors\n\n#### GetRockwellFactors(DocumentId, out double, out double, out double)\n\nGets Rockwell factors\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 400, 120)]\nvoid GetRockwellFactors(DocumentId inDocumentId, out double outValueA, out double outValueB, out double outValueC)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Id of the container document  |  \n \n|  double |  outValueA |  Rockwell A factor value  |  \n \n|  double |  outValueB |  Rockwell B factor value  |  \n \n|  double |  outValueC |  Rockwell C factor value  |\n",
+  "markdown": "markdown/cad/0899b017d1233f468742b507.md",
+  "originalHtml": "html/cad/0899b017d1233f468742b507.html"
+}

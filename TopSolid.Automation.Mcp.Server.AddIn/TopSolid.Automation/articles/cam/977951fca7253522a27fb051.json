@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IParts.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IParts.html",
+  "sha256": "1a3f8bbd9eb40e776d170feba1915bb763574fec81277d19fe0a2fa8e02f541d",
+  "text": "# Interface IParts\n\nGives access to Cam parts.\n\n###### Namespace: TopSolid.Cam.NC.Kernel.Automating\n\n###### Assembly: TopSolid.Cam.NC.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[ServiceContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\npublic interface IParts\n```\n\n### Methods \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   GetParameters(ElementId)  |  Gets the parameters of the given Cam part.  |  \n \n|   IsPart(ElementId)  |  Tells whether an element is a Cam part.  |\n",
+  "markdown": "markdown/cam/977951fca7253522a27fb051.md",
+  "originalHtml": "html/cam/977951fca7253522a27fb051.html"
+}

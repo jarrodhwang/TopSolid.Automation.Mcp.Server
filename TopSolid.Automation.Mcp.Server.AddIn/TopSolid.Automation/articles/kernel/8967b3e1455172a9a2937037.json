@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IMaterials.OpenTextureRetrievalSession.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IMaterials.OpenTextureRetrievalSession.html",
+  "sha256": "23c616a164fc4932355b3aadb2252f9451e20631709741b3940e68f72533faf7",
+  "text": "# Method OpenTextureRetrievalSession\n\n#### OpenTextureRetrievalSession()\n\nOpens a texture retrieval session.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 17, 400, 0)]\nGuid OpenTextureRetrievalSession()\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Guid |  Identifier of the opened session.  |  \n\n##### Remarks\n\nThis method is available since v7.17.\n",
+  "markdown": "markdown/kernel/8967b3e1455172a9a2937037.md",
+  "originalHtml": "html/kernel/8967b3e1455172a9a2937037.html"
+}

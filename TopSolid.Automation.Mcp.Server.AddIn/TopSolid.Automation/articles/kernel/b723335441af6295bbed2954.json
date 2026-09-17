@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdmAdmin.GetUserGroups.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdmAdmin.GetUserGroups.html",
+  "sha256": "aa8e11a3093d58b82a79cd184fe952775da95ad134650b88bbf3515a9c18913e",
+  "text": "# Method GetUserGroups\n\n#### GetUserGroups(bool, bool)\n\nOBSOLETE - Gets all the users groups.\n\n##### Declaration\n\n```\n[Obsolete(\"Since v7.20.323.10, getting user groups is done using GetGroupsOfUsers method.\")]\nList<PdmObjectId> GetUserGroups(bool inGetsActiveUserGroups, bool inGetsInactiveUserGroups)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  bool |  inGetsActiveUserGroups |  Gets active user groups.  |  \n \n|  bool |  inGetsInactiveUserGroups |  Gets inactive user groups.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<PdmObjectId> |  User group identifiers.  |  \n\n##### Remarks\n\nThis method is available since v7.8.302.060.\n",
+  "markdown": "markdown/kernel/b723335441af6295bbed2954.md",
+  "originalHtml": "html/kernel/b723335441af6295bbed2954.html"
+}

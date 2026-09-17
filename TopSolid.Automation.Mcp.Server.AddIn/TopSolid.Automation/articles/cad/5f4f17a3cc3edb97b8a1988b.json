@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IAssemblies.GetDriverSubFolderName.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IAssemblies.GetDriverSubFolderName.html",
+  "sha256": "3197dee359240a6d883eb593cb6e07d27ea0e4f03d41cb17f9081a56a5e8e49f",
+  "text": "# Method GetDriverSubFolderName\n\n#### GetDriverSubFolderName(ElementId, string)\n\nGets the name of the driver sub folder.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 17, 0, 0)]\nstring GetDriverSubFolderName(ElementId inElementId, string inDriverName)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the inclusion operation.  |  \n \n|  string |  inDriverName |  Instance driver names.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  The name of the sub-folder.  |  \n\n##### Remarks\n\nThis method is available since v7.17.\n",
+  "markdown": "markdown/cad/5f4f17a3cc3edb97b8a1988b.md",
+  "originalHtml": "html/cad/5f4f17a3cc3edb97b8a1988b.html"
+}

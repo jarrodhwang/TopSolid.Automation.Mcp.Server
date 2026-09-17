@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ParameterType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ParameterType.html",
+  "sha256": "74fba9db06c8d9e261852f5b8884b270a1f48d2ffce6d9e1e5253dc125701a2d",
+  "text": "# Enum ParameterType\n\nDefines the various types of parameter entities.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\npublic enum ParameterType\n```\n\n##### Remarks\n\nThis enum is available since v7.6.\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  Boolean |  Boolean.  |  \n \n|  Code |  Code.  |  \n \n|  Color |  Color.  |  \n \n|  DateTime |  Date.  |  \n \n|  Enumeration |  Enumeration.  |  \n \n|  Family |  Family.  |  \n \n|  Integer |  Integer.  |  \n \n|  None |  Not a parameter.  |  \n \n|  Real |  Real.  |  \n \n|  Text |  Text.  |  \n \n|  Tolerance |  User enumeration.  |  \n \n|  Unclassified |  Unclassified type.  |  \n \n|  UserEnumeration |  User enumeration.  |\n",
+  "markdown": "markdown/kernel/9f43ddb472d516846b4751d8.md",
+  "originalHtml": "html/kernel/9f43ddb472d516846b4751d8.html"
+}

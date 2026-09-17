@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IDocuments.Print.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IDocuments.Print.html",
+  "sha256": "d60ff5e2c4c579e30d66cbc9b530f749bad997193008c8fa699c5237a89ecfdc",
+  "text": "# Method Print\n\n#### Print(DocumentId, PrintColorMapping, int)\n\nPrints a document to the active printer.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nvoid Print(DocumentId inDocumentId, PrintColorMapping inColorMapping, int inResolution)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Document to print.  |  \n \n|  PrintColorMapping |  inColorMapping |  Color conversion mode.  |  \n \n|  int |  inResolution |  Print resolution in dot-per-inch.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/febdb84eb7994b385ad25fd1.md",
+  "originalHtml": "html/kernel/febdb84eb7994b385ad25fd1.html"
+}

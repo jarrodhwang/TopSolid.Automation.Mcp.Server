@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IParts.IsCoatingDerived.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IParts.IsCoatingDerived.html",
+  "sha256": "b4ef087fdcc6c81698a74e0a94a3c03ccf0792958b736e7b861b6796ffe50ffa",
+  "text": "# Method IsCoatingDerived\n\n#### IsCoatingDerived(DocumentId)\n\nTells whether the coating of a derived part is derived from the base part.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 301, 40)]\nbool IsCoatingDerived(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the part document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  The coating of the derived part is derived from the base part.  |  \n\n##### Remarks\n\nThis method is available since v7.6.301.40.\n",
+  "markdown": "markdown/cad/43a90f44e50686c6de19776b.md",
+  "originalHtml": "html/cad/43a90f44e50686c6de19776b.html"
+}

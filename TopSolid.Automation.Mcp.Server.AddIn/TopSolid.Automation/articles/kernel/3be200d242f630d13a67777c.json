@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.GetColorTableParameterPossibleValues.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.GetColorTableParameterPossibleValues.html",
+  "sha256": "6225a8442e0b2ce2ee1e5409cff46bf099ff12de752f058b18f65c960d7a5d16",
+  "text": "# Method GetColorTableParameterPossibleValues\n\n#### GetColorTableParameterPossibleValues(ElementId, out List<SmartReal>, out List<SmartColor>)\n\nGets possible values from color table parameter creation operation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 18, 0, 0)]\nvoid GetColorTableParameterPossibleValues(ElementId inElementId, out List<SmartReal> outSourceSmartRealList, out List<SmartColor> outResultSmartColorList)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the smart color table parameter creation operation.  |  \n \n|  List<SmartReal> |  outSourceSmartRealList |  Source values.  |  \n \n|  List<SmartColor> |  outResultSmartColorList |  Result values.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.18.\n",
+  "markdown": "markdown/kernel/3be200d242f630d13a67777c.md",
+  "originalHtml": "html/kernel/3be200d242f630d13a67777c.html"
+}

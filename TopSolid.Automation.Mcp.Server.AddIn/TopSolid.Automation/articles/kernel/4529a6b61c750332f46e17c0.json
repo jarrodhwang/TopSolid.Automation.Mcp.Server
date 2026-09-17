@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Plane3D.-ctor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Plane3D.-ctor.html",
+  "sha256": "c0f0b205fe51ddf3fe7c7afc8f3fa0e95514d9da52b97780dc1581546fa7d155",
+  "text": "# Constructor Plane3D\n\n#### Plane3D(Point3D, Direction3D, Direction3D)\n\nInitializes a new instance of the Plane3D structure with a specified origin and directions.\n\n##### Declaration\n\n```\npublic Plane3D(Point3D inOrigin, Direction3D inXDirection, Direction3D inYDirection)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  Point3D |  inOrigin |  Plane origin.  |  \n \n|  Direction3D |  inXDirection |  Plane X direction.  |  \n \n|  Direction3D |  inYDirection |  Plane Y direction, orthogonal to inXDirection.  |\n",
+  "markdown": "markdown/kernel/4529a6b61c750332f46e17c0.md",
+  "originalHtml": "html/kernel/4529a6b61c750332f46e17c0.html"
+}

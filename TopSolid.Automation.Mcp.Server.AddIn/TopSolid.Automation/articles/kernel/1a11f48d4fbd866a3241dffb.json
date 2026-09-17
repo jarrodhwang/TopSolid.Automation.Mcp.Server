@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IFamilies.GetCatalogCellRealValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IFamilies.GetCatalogCellRealValue.html",
+  "sha256": "2e958f09dbad40028249b42d77e8daf67dc837e72fa803dbe4768b032bf8e62d",
+  "text": "# Method GetCatalogCellRealValue\n\n#### GetCatalogCellRealValue(ElementId, ElementId)\n\nGets the real value of the catalog cell.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 15, 0, 60)]\ndouble GetCatalogCellRealValue(ElementId inRow, ElementId inParameterId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inRow |  Identifier of the row.  |  \n \n|  ElementId |  inParameterId |  Identifier of the parameter of the column.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double |  Value of the cell.  |  \n\n##### Remarks\n\nThis method is available since v7.15.\n",
+  "markdown": "markdown/kernel/1a11f48d4fbd866a3241dffb.md",
+  "originalHtml": "html/kernel/1a11f48d4fbd866a3241dffb.html"
+}

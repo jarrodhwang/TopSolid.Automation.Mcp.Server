@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.RestoreMinorRevision.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.RestoreMinorRevision.html",
+  "sha256": "bdf6b631fd77f9ebf12458bdff20c80f67f691c26dcef386d7a524b8fe06e8a7",
+  "text": "# Method RestoreMinorRevision\n\n#### RestoreMinorRevision(PdmMinorRevisionId)\n\nRestores a minor revision as the last minor revision.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nvoid RestoreMinorRevision(PdmMinorRevisionId inMinorRevisionId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmMinorRevisionId |  inMinorRevisionId |  Minor revision identifier.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/kernel/41a5e85a73c9551baef050a1.md",
+  "originalHtml": "html/kernel/41a5e85a73c9551baef050a1.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.TopSolidCamHostInstance.Machines.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.TopSolidCamHostInstance.Machines.html",
+  "sha256": "f3a53c96147af4812144bdfcb12a302d3d0a5454e3ba650b46578343a7f92a49",
+  "text": "# Property Machines\n\n#### Machines\n\nGets access to machine tools, or null if not connected.\n\n##### Declaration\n\n```\npublic IMachineTools Machines { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  IMachineTools |   |\n",
+  "markdown": "markdown/cam/b9f8f9caed26f4faf9ffa0a7.md",
+  "originalHtml": "html/cam/b9f8f9caed26f4faf9ffa0a7.html"
+}

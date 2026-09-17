@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IElements.IsInvalid.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IElements.IsInvalid.html",
+  "sha256": "74bc35e17a1d7004a4b4b81000127986494f2ffefa6d3e9cc5e31a9e80100942",
+  "text": "# Method IsInvalid\n\n#### IsInvalid(ElementId)\n\nTells whether an element is invalid.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nbool IsInvalid(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Whether the element is invalid.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/00b820e598130c7565bb31a4.md",
+  "originalHtml": "html/kernel/00b820e598130c7565bb31a4.html"
+}

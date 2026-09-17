@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.IAnnotations.GetGeometricToleranceFrameDatumFeatureSystemCount.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.IAnnotations.GetGeometricToleranceFrameDatumFeatureSystemCount.html",
+  "sha256": "93dbac8896b6ca75dba6b1ef4c3cc4ded3f5c81b748cb64cc3c15c06b341d09f",
+  "text": "# Method GetGeometricToleranceFrameDatumFeatureSystemCount\n\n#### GetGeometricToleranceFrameDatumFeatureSystemCount(ElementId, int)\n\nGets the datum features system count of a geometric tolerance frame.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 17, 0, 0)]\nint GetGeometricToleranceFrameDatumFeatureSystemCount(ElementId inGeometricTolerance, int inToleranceFrameIndex)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inGeometricTolerance |  Identifier of the element to analyze.  |  \n \n|  int |  inToleranceFrameIndex |  Index of the tolerance frame.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  int |  The count of datum features system.  |  \n\n##### Remarks\n\nThis method is available since v7.17.\n",
+  "markdown": "markdown/drafting/cc3c5ec4c2998da60cae85a8.md",
+  "originalHtml": "html/drafting/cc3c5ec4c2998da60cae85a8.html"
+}

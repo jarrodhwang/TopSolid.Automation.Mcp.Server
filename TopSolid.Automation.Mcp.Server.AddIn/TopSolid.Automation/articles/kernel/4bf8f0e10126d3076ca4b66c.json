@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IOptions.GetVisualizationTolerances.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IOptions.GetVisualizationTolerances.html",
+  "sha256": "dcfe52e70958ba706cb1337a6da3dec897af515ad91d2a549b3b80a2addb276a",
+  "text": "# Method GetVisualizationTolerances\n\n#### GetVisualizationTolerances(DocumentId, out double, out double)\n\nGets the visualization tolerances of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nvoid GetVisualizationTolerances(DocumentId inDocumentId, out double outLinearTolerance, out double outAngularTolerance)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n \n|  double |  outLinearTolerance |  Linear tolerance (in meters).  |  \n \n|  double |  outAngularTolerance |  Angular tolerance (in radians).  |  \n\n##### Remarks\n\nThis method is available since v7.8.\n",
+  "markdown": "markdown/kernel/4bf8f0e10126d3076ca4b66c.md",
+  "originalHtml": "html/kernel/4bf8f0e10126d3076ca4b66c.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IShapes.GetShapePublishingDefinition.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IShapes.GetShapePublishingDefinition.html",
+  "sha256": "789212410299a28a034f83412a5ac6f08be96a97f071ffe40bf1169fa54789a6",
+  "text": "# Method GetShapePublishingDefinition\n\n#### GetShapePublishingDefinition(ElementId)\n\nGets the definition of a shape publishing entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 302, 80)]\nSmartShape GetShapePublishingDefinition(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the publishing entity to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartShape |   |  \n\n##### Remarks\n\nThis method is available since v7.8.302.80.\n",
+  "markdown": "markdown/kernel/762921c56ed02cfa6cb5a512.md",
+  "originalHtml": "html/kernel/762921c56ed02cfa6cb5a512.html"
+}

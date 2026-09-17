@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMaterials.SetMetalnessFactor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMaterials.SetMetalnessFactor.html",
+  "sha256": "0ac252101e9e0105241bbd4e0234662bfa762b10c196ea650bd27e4fb25a1f6a",
+  "text": "# Method SetMetalnessFactor\n\n#### SetMetalnessFactor(DocumentId, double)\n\nSets the Metalness factor.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 0, 0)]\nvoid SetMetalnessFactor(DocumentId inDocumentId, double inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  double |  inValue |  Wanted value.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.16.\n",
+  "markdown": "markdown/cad/a4e6e152d9e122e4a92465f6.md",
+  "originalHtml": "html/cad/a4e6e152d9e122e4a92465f6.html"
+}

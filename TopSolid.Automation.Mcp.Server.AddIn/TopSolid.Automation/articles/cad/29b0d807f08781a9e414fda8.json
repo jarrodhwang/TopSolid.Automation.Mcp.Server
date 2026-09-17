@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.BomPropertyDefinitions.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.BomPropertyDefinitions.html",
+  "sha256": "8c258967411a053cd4c98584cdf129d9c7c2c4520749b56cfd39ad3e5a750c07",
+  "text": "# Class BomPropertyDefinitions\n\nContains the special BOM property definitions.\n\n##### Inheritance\n \nobject\n \nBomPropertyDefinitions\n\n##### Inherited Members\n \n object.ToString() \n \n object.Equals(object) \n \n object.Equals(object, object) \n \n object.ReferenceEquals(object, object) \n \n object.GetHashCode() \n \n object.GetType() \n \n object.MemberwiseClone() \n\n###### Namespace: TopSolid.Cad.Design.Automating\n\n###### Assembly: TopSolid.Cad.Design.Automating.dll\n\n##### Syntax\n\n```\npublic static class BomPropertyDefinitions\n```\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   Image  |  BOM image property definition (Unclassified).  |  \n \n|   Index  |  BOM index property definition (Text).  |  \n \n|   Quantity  |  BOM quantity property definition (Integer).  |\n",
+  "markdown": "markdown/cad/29b0d807f08781a9e414fda8.md",
+  "originalHtml": "html/cad/29b0d807f08781a9e414fda8.html"
+}

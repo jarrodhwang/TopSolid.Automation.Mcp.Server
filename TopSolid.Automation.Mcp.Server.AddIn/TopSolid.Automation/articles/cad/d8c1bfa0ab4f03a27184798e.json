@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IAssemblies.SetNodeBomIndex.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IAssemblies.SetNodeBomIndex.html",
+  "sha256": "ef3a0a7ec75c19b0a3d356c9c47cc2a87ccd34c7563b9a18e1e7276bb838b8b4",
+  "text": "# Method SetNodeBomIndex\n\n#### SetNodeBomIndex(ElementId, string)\n\nSets the bill of material index attached to a specified assembly node entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 12, 0, 0)]\nvoid SetNodeBomIndex(ElementId inNodeId, string inBomIndex)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inNodeId |  Identifier of the assembly node entity (assembly or part occurrence, local part, ...) to modify.  |  \n \n|  string |  inBomIndex |  Bill of material index to attach, or null if none.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.12.\n",
+  "markdown": "markdown/cad/d8c1bfa0ab4f03a27184798e.md",
+  "originalHtml": "html/cad/d8c1bfa0ab4f03a27184798e.html"
+}

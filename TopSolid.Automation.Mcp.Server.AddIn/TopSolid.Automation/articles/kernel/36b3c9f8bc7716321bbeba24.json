@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Transform3D.Ty.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Transform3D.Ty.html",
+  "sha256": "c3629bfa9a948b803d0f97d3d76b5ddbcc0c4970713015b107aa03d3957ab40f",
+  "text": "# Field Ty\n\nTranslation along Y.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic double Ty\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double |  Translation along Y. |\n",
+  "markdown": "markdown/kernel/36b3c9f8bc7716321bbeba24.md",
+  "originalHtml": "html/kernel/36b3c9f8bc7716321bbeba24.html"
+}

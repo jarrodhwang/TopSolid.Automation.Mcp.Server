@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.GetTextPublishingDefinition.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.GetTextPublishingDefinition.html",
+  "sha256": "d6c5266259eea16a3fd7906368fb2354c792fc7413d4356d6372ea0f9a40490a",
+  "text": "# Method GetTextPublishingDefinition\n\n#### GetTextPublishingDefinition(ElementId)\n\nGets the definition of a text publishing entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nSmartText GetTextPublishingDefinition(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the publishing entity to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartText |   |  \n\n##### Remarks\n\nThe value of the publishing entity may be obtained with the GetTextValue(ElementId) method.\n \nThis method is available since v7.8.\n",
+  "markdown": "markdown/kernel/693946bed4a0780353b2da92.md",
+  "originalHtml": "html/kernel/693946bed4a0780353b2da92.html"
+}

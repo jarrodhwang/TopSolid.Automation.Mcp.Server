@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Color.Black.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Color.Black.html",
+  "sha256": "96315fb836be8e2d053342702d190c4beff2bd74f3409c6a0eebb2c94b3c70b3",
+  "text": "# Field Black\n\nBlack color.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\npublic static readonly Color Black\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Color |  Black color. |\n",
+  "markdown": "markdown/kernel/a69e023699ed4f45dc70dd36.md",
+  "originalHtml": "html/kernel/a69e023699ed4f45dc70dd36.html"
+}

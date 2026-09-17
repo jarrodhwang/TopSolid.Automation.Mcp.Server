@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.TopSolidDesignHost.HostInstance.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.TopSolidDesignHost.HostInstance.html",
+  "sha256": "a1479daccb9034b09e73a7359fdcf84faa0888d6bd1a368de73f1eb094e2d737",
+  "text": "# Property HostInstance\n\n#### HostInstance\n\nGets the host instance.\n\n##### Declaration\n\n```\npublic static TopSolidDesignHostInstance HostInstance { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  TopSolidDesignHostInstance |   |\n",
+  "markdown": "markdown/cad/01af43f525889e160e0ffb5f.md",
+  "originalHtml": "html/cad/01af43f525889e160e0ffb5f.html"
+}

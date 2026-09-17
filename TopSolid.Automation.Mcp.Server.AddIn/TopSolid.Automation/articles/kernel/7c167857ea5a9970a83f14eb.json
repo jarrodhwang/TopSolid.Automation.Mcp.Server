@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IApplication.SetJournalingMethodCall.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IApplication.SetJournalingMethodCall.html",
+  "sha256": "eab3187dce656b2a46d98002673eaaebdca17ab3e02d6535c81289f52504763e",
+  "text": "# Method SetJournalingMethodCall\n\n#### SetJournalingMethodCall(bool, bool, bool)\n\nSets the format of the journaling of method calls.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nvoid SetJournalingMethodCall(bool inWritesHost, bool inWritesHostMember, bool inWritesArgumentName)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  bool |  inWritesHost |  Whether to write the name of the host.  |  \n \n|  bool |  inWritesHostMember |  Whether to write the name of the host member.  |  \n \n|  bool |  inWritesArgumentName |  Whether to write the name of the argument.  |  \n\n##### Remarks\n\nThe format of a method call is: [Host Name].[Host Member Name].[Method Name]([Argument Name] = value, ...).\n \nExample: TopSolidHost.Documents.SetName(inDocumentId = ..., inName = ...).\n \nThis method is available since v7.8.\n",
+  "markdown": "markdown/kernel/7c167857ea5a9970a83f14eb.md",
+  "originalHtml": "html/kernel/7c167857ea5a9970a83f14eb.html"
+}

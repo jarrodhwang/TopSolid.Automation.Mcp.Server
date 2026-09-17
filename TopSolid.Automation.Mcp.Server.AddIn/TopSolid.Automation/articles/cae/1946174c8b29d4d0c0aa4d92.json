@@ -1,0 +1,8 @@
+{
+  "path": "api/cae/TopSolid.Cae.Kernel.Automating.IResults.GetScaleFactorCalculatedValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cae/TopSolid.Cae.Kernel.Automating.IResults.GetScaleFactorCalculatedValue.html",
+  "sha256": "f5e81f8ac11d09cc3677aee8f75499207ffb652077e21abee702358ca7e2d21e",
+  "text": "# Method GetScaleFactorCalculatedValue\n\n#### GetScaleFactorCalculatedValue(DocumentId)\n\nGets the scale factor calculated value from an analysis result document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 15, 0)]\ndouble GetScaleFactorCalculatedValue(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double |  The value of the scale factor.  |  \n\n##### Remarks\n\nThis method is available since v7.19.\n\n##### Examples\n \n```\nDocumentId docId = TopSolidHost.Documents.EditedDocument;\ndouble valueOfScaleFactor = TopSolidCaeHost.Results.GetScaleFactorCalculatedValue(docId);\n```\n",
+  "markdown": "markdown/cae/1946174c8b29d4d0c0aa4d92.md",
+  "originalHtml": "html/cae/1946174c8b29d4d0c0aa4d92.html"
+}

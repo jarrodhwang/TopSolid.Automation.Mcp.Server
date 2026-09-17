@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartFrame2D.ExtentYMax.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartFrame2D.ExtentYMax.html",
+  "sha256": "903ab8166d3977ae3134268581a48f2a720b5152010782d47ce2ba84917af228",
+  "text": "# Field ExtentYMax\n\nMaximum Y frame coordinate of extent, or null if unknown.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic double? ExtentYMax\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double? |  Maximum Y frame coordinate of extent, or null if unknown. |\n",
+  "markdown": "markdown/kernel/560e66bfea61955fa8fa8db3.md",
+  "originalHtml": "html/kernel/560e66bfea61955fa8fa8db3.html"
+}

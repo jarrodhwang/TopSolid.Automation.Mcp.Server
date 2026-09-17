@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IGeometries3D.GetAbsoluteXZPlane.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IGeometries3D.GetAbsoluteXZPlane.html",
+  "sha256": "0a5a4031b61b4dfece286d9d500f9118e7fceaee323cb867514ed8453917c4ec",
+  "text": "# Method GetAbsoluteXZPlane\n\n#### GetAbsoluteXZPlane(DocumentId)\n\nGets the absolute XZ plane entity of a document.\n\n##### Declaration\n\n```\n[OperationContract]\nElementId GetAbsoluteXZPlane(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the absolute XZ plane entity found.  |\n",
+  "markdown": "markdown/kernel/284d15acc0fcbfd484585841.md",
+  "originalHtml": "html/kernel/284d15acc0fcbfd484585841.html"
+}

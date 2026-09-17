@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.BoundType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.BoundType.html",
+  "sha256": "6b4c7e02631a01edc4127b128dc570b9e38bc94270f2184b6267b94193dfd31a",
+  "text": "# Enum BoundType\n\nDefines the various types of coordinate computing for machinings.\n\n###### Namespace: TopSolid.Cam.NC.Kernel.Automating\n\n###### Assembly: TopSolid.Cam.NC.Kernel.Automating.dll\n\n##### Syntax\n\n```\npublic enum BoundType\n```\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  Automatic |  Automatic computation of altitude.  |  \n \n|  Direct |  Direct mode used only on five axis.  |  \n \n|  Finish |  The value is the altitude of the finish.  |  \n \n|  IncrementalValue |  The value is incremental and given by the smart value.  |  \n \n|  None |  The computing is not enabled.  |  \n \n|  Point |  The value is given by the given point.  |  \n \n|  SafetyShape |  Safety Shape computation of altitude.  |  \n \n|  Stock |  The value is the altitude of the stock.  |  \n \n|  Value |  The value is absolute and given by the smart bound value.  |\n",
+  "markdown": "markdown/cam/db964a8e6ca4b03f5e5fb51c.md",
+  "originalHtml": "html/cam/db964a8e6ca4b03f5e5fb51c.html"
+}

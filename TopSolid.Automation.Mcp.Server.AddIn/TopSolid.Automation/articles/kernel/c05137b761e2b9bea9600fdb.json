@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IElements.GetComment.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IElements.GetComment.html",
+  "sha256": "e5135221381880e4731c06ff6c8688bc3b600ce83ee6e21d55a816fa08c60e24",
+  "text": "# Method GetComment\n\n#### GetComment(ElementId)\n\nGets the comment of an element.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nstring GetComment(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  Comment of the element, or null if the element has no comment.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/c05137b761e2b9bea9600fdb.md",
+  "originalHtml": "html/kernel/c05137b761e2b9bea9600fdb.html"
+}

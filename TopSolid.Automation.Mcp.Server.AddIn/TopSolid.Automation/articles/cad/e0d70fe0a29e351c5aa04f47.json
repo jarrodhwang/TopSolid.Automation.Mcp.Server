@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ICoatings.GetCategory.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ICoatings.GetCategory.html",
+  "sha256": "aee46dd187b11aeb2ba31b8edd251526c6690977b79d4542188e355470940c18",
+  "text": "# Method GetCategory\n\n#### GetCategory(DocumentId)\n\nGets the coating category of a coating document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 0, 0)]\nCoatingCategoryType GetCategory(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  CoatingCategoryType |  The coating category.  |  \n\n##### Remarks\n\nThis method is available since v7.16.\n",
+  "markdown": "markdown/cad/e0d70fe0a29e351c5aa04f47.md",
+  "originalHtml": "html/cad/e0d70fe0a29e351c5aa04f47.html"
+}

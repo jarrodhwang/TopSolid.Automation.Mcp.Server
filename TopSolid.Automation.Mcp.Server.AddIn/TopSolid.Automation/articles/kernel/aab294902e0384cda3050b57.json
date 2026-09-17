@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.BooleanProperty.Type.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.BooleanProperty.Type.html",
+  "sha256": "a96ba24e59948f01481f51fdf3e320e0998aa4f08c709a0cb7567607825a7628",
+  "text": "# Property Type\n\n#### Type\n\nGets the property type.\n\n##### Declaration\n\n```\npublic override PropertyType Type { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  PropertyType |   |  \n\n##### Overrides\n \nProperty.Type\n",
+  "markdown": "markdown/kernel/aab294902e0384cda3050b57.md",
+  "originalHtml": "html/kernel/aab294902e0384cda3050b57.html"
+}

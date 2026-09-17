@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMaterials.SetElongationAtBreak.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMaterials.SetElongationAtBreak.html",
+  "sha256": "8fa44da20dfa8605f4a0ad1b196d1302b346eecbbac86ad7483b912997475040",
+  "text": "# Method SetElongationAtBreak\n\n#### SetElongationAtBreak(DocumentId, double)\n\nSets Elongation at break\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 400, 120)]\nvoid SetElongationAtBreak(DocumentId inDocumentId, double inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Id of the container document  |  \n \n|  double |  inValue |  The value to use  |\n",
+  "markdown": "markdown/cad/c83d3645ea533c1940fc5536.md",
+  "originalHtml": "html/cad/c83d3645ea533c1940fc5536.html"
+}

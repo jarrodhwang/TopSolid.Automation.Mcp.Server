@@ -1,0 +1,8 @@
+{
+  "path": "api/electrode/TopSolid.Cad.Electrode.Automating.TopSolidElectrodeHostInstance.Electrodes.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/electrode/TopSolid.Cad.Electrode.Automating.TopSolidElectrodeHostInstance.Electrodes.html",
+  "sha256": "493a29b2431a88775a4b8bf426516e12eef6ce08d2bc5474fa4037b9e4ff7e82",
+  "text": "# Property Electrodes\n\n#### Electrodes\n\nGets access to electrodes, or null if not connected.\n\n##### Declaration\n\n```\npublic IElectrodes Electrodes { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  IElectrodes |   |\n",
+  "markdown": "markdown/electrode/76b8276b33b641d0b28ba582.md",
+  "originalHtml": "html/electrode/76b8276b33b641d0b28ba582.html"
+}

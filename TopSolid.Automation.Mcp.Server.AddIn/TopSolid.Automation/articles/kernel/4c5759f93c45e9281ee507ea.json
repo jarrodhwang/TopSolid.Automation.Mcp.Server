@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartReal.UnitType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartReal.UnitType.html",
+  "sha256": "b0c29508926d86a893b8f454538a0a4311038bb646e98d777368eeacf5f0c3bc",
+  "text": "# Field UnitType\n\nUnit type, or None if unknown.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic UnitType UnitType\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  UnitType |  Unit type, or if unknown. |\n",
+  "markdown": "markdown/kernel/4c5759f93c45e9281ee507ea.md",
+  "originalHtml": "html/kernel/4c5759f93c45e9281ee507ea.html"
+}

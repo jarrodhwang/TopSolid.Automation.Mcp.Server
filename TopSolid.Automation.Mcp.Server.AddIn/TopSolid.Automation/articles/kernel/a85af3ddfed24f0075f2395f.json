@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IGeometries2D.SetAxisGeometryWithExtent.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IGeometries2D.SetAxisGeometryWithExtent.html",
+  "sha256": "0f6a3ef93c9f39afed2350c216f340b1c4c4d0c30197a7888b231b67f75e9802",
+  "text": "# Method SetAxisGeometryWithExtent\n\n#### SetAxisGeometryWithExtent(ElementId, Axis2D, double, double)\n\nSets the geometry and the extent of an axis entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 201, 100)]\nvoid SetAxisGeometryWithExtent(ElementId inElementId, Axis2D inGeometry, double inXMin, double inXMax)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the axis entity to modify.  |  \n \n|  Axis2D |  inGeometry |  New axis geometry.  |  \n \n|  double |  inXMin |  Minimum X axis coordinate of extent.  |  \n \n|  double |  inXMax |  Maximum X axis coordinate of extent.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.7.201.100.\n",
+  "markdown": "markdown/kernel/a85af3ddfed24f0075f2395f.md",
+  "originalHtml": "html/kernel/a85af3ddfed24f0075f2395f.html"
+}

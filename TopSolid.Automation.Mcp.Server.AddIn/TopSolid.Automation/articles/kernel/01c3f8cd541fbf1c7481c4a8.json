@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ItemLabel.Id.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ItemLabel.Id.html",
+  "sha256": "6dda294416b5bc75030d6bbcff54cad063ea90244f4eb97e12b0054613f1c777",
+  "text": "# Property Id\n\n#### Id\n\nGets the identifier of the item within its element, or 0 if empty.\n\n##### Declaration\n\n```\npublic int Id { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  int |   |\n",
+  "markdown": "markdown/kernel/01c3f8cd541fbf1c7481c4a8.md",
+  "originalHtml": "html/kernel/01c3f8cd541fbf1c7481c4a8.html"
+}

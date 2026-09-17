@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IDocuments.GetMinorRevisionDocument.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IDocuments.GetMinorRevisionDocument.html",
+  "sha256": "337b808f40fa9f5e61474bb0d0857914471f056bc39099d5cad13712701d4352",
+  "text": "# Method GetMinorRevisionDocument\n\n#### GetMinorRevisionDocument(PdmMinorRevisionId)\n\nGets the document corresponding to a PDM minor revision.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nDocumentId GetMinorRevisionDocument(PdmMinorRevisionId inMinorRevisionId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmMinorRevisionId |  inMinorRevisionId |  Identifier of the PDM minor revision to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  DocumentId |  Identifier of the corresponding document.  |  \n\n##### Remarks\n\nIf the PDM minor revision is not a TopSolid document, this method returns Empty.\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/1828deed0278236b0ce4d57f.md",
+  "originalHtml": "html/kernel/1828deed0278236b0ce4d57f.html"
+}

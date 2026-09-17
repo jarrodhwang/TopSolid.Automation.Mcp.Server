@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IElements.SetDescription.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IElements.SetDescription.html",
+  "sha256": "686affd455d68b1fc8503734735c01b16acb0db558aae36404d7a3ee6131d462",
+  "text": "# Method SetDescription\n\n#### SetDescription(ElementId, string)\n\nSets the description of an element.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nvoid SetDescription(ElementId inElementId, string inDescription)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to modify.  |  \n \n|  string |  inDescription |  New description of the element.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/13f557f097ca4c995c3984cf.md",
+  "originalHtml": "html/kernel/13f557f097ca4c995c3984cf.html"
+}

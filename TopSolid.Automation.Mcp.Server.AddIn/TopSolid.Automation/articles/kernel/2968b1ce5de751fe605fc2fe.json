@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Real.-ctor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Real.-ctor.html",
+  "sha256": "8243885558067d55093b717358620a34177087f3d9365090f34b21cdc38b786f",
+  "text": "# Constructor Real\n\n#### Real(UnitType, string, double)\n\nInitializes a new instance of the Real structure.\n\n##### Declaration\n\n```\npublic Real(UnitType inUnitType, string inUnitSymbol, double inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  UnitType |  inUnitType |  Type of units.  |  \n \n|  string |  inUnitSymbol |  Unit symbol in English.  |  \n \n|  double |  inValue |  Value in SI units.  |\n",
+  "markdown": "markdown/kernel/2968b1ce5de751fe605fc2fe.md",
+  "originalHtml": "html/kernel/2968b1ce5de751fe605fc2fe.html"
+}

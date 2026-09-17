@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ICoatings.GetRoughnessTextureDocument.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ICoatings.GetRoughnessTextureDocument.html",
+  "sha256": "032ebfb1aacc81a689f19e81dfd083467e5d6a242950a9deb47f5111453c8d88",
+  "text": "# Method GetRoughnessTextureDocument\n\n#### GetRoughnessTextureDocument(DocumentId)\n\nGets the Roughness texture document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 400, 100)]\nDocumentId GetRoughnessTextureDocument(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  DocumentId |   |  \n\n##### Remarks\n\nThis method is available since v7.16.\n",
+  "markdown": "markdown/cad/01beb3ece9fec292c9926c0b.md",
+  "originalHtml": "html/cad/01beb3ece9fec292c9926c0b.html"
+}

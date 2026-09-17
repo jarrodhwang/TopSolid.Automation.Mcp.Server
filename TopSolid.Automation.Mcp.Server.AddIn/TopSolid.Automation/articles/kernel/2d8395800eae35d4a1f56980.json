@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.SetRealParameterConstraintsDiscretizationStep.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.SetRealParameterConstraintsDiscretizationStep.html",
+  "sha256": "a43a8bc7bce3d8013875e7277fab5647534588e98e433eaac6f0b4bdb2620929",
+  "text": "# Method SetRealParameterConstraintsDiscretizationStep\n\n#### SetRealParameterConstraintsDiscretizationStep(ElementId, RealProperty)\n\nSets the real parameter constraint discretization step.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 17, 0, 0)]\nvoid SetRealParameterConstraintsDiscretizationStep(ElementId inElementId, RealProperty inProperty)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the parameter.  |  \n \n|  RealProperty |  inProperty |  The new value.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.17.000.000.\n",
+  "markdown": "markdown/kernel/2d8395800eae35d4a1f56980.md",
+  "originalHtml": "html/kernel/2d8395800eae35d4a1f56980.html"
+}

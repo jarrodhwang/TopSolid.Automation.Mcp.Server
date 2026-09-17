@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Direction3D.op_ExclusiveOr.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Direction3D.op_ExclusiveOr.html",
+  "sha256": "00742ec9a6609b956229d8ccc99b5ab563289bbc3c9a9eb2a5906c0f18d4d486",
+  "text": "# Operator operator ^\n\n#### operator ^(Direction3D, Direction3D)\n\nComputes the cross product of two directions.\n\n##### Declaration\n\n```\npublic static Vector3D operator ^(Direction3D inDirection1, Direction3D inDirection2)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  Direction3D |  inDirection1 |  Left hand side direction.  |  \n \n|  Direction3D |  inDirection2 |  Right hand side direction.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Vector3D |  Vectors' cross product.  |\n",
+  "markdown": "markdown/kernel/9ed8485942845acfd4790c30.md",
+  "originalHtml": "html/kernel/9ed8485942845acfd4790c30.html"
+}

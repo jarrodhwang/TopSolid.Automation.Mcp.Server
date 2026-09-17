@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IPartSettingDocument.IsPartSetting.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IPartSettingDocument.IsPartSetting.html",
+  "sha256": "8725becb4732ddcb79b92b78021b644617a4760917cbf75642c79adc3700576b",
+  "text": "# Method IsPartSetting\n\n#### IsPartSetting(DocumentId)\n\nTells whether a document is a part setting document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 15, 0, 0)]\nbool IsPartSetting(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  The document is a part setting document.  |\n",
+  "markdown": "markdown/cam/2c1ac0d726c2199f2caec3fd.md",
+  "originalHtml": "html/cam/2c1ac0d726c2199f2caec3fd.html"
+}

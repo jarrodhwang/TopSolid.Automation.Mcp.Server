@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.UserQuestion.AllowsPrevious.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.UserQuestion.AllowsPrevious.html",
+  "sha256": "b21aae534bbc87e81ea29d3c03d07efeadb6d7d21672922ea88d8dce40418a8c",
+  "text": "# Property AllowsPrevious\n\n#### AllowsPrevious\n\nTells or sets whether the user can answer \"Previous\".\n\n##### Declaration\n\n```\npublic bool AllowsPrevious { get; set; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |   |\n",
+  "markdown": "markdown/kernel/00f6e34d10157c3369810229.md",
+  "originalHtml": "html/kernel/00f6e34d10157c3369810229.html"
+}

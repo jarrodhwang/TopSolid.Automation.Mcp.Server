@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IParts.IsMaterialDerived.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IParts.IsMaterialDerived.html",
+  "sha256": "eb86b9d716e6293d374afca6451dbeda0c0e1c35ca38134fd3d1a7631293e449",
+  "text": "# Method IsMaterialDerived\n\n#### IsMaterialDerived(DocumentId)\n\nTells whether the material of a derived part is derived from the base part.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 301, 40)]\nbool IsMaterialDerived(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the part document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  The material of the derived part is derived from the base part.  |  \n\n##### Remarks\n\nThis method is available since v7.6.301.40.\n",
+  "markdown": "markdown/cad/b008a73102550aeaf1e944cd.md",
+  "originalHtml": "html/cad/b008a73102550aeaf1e944cd.html"
+}

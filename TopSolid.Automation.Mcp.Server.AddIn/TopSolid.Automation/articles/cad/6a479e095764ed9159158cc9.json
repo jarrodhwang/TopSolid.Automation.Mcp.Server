@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ICoatings.IsCoatingParameter.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ICoatings.IsCoatingParameter.html",
+  "sha256": "5930b53a2e10e9172911321e1eadfef68a900287c5a048994633ae2bb7940795",
+  "text": "# Method IsCoatingParameter\n\n#### IsCoatingParameter(ElementId)\n\nTells if an element is a Coating Parameter\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 400, 160)]\nbool IsCoatingParameter(ElementId inParameterId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inParameterId |  The Id of the parameter  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  true if it is a coating parameter  |\n",
+  "markdown": "markdown/cad/6a479e095764ed9159158cc9.md",
+  "originalHtml": "html/cad/6a479e095764ed9159158cc9.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/electrode/TopSolid.Cad.Electrode.Automating.IElectrodes.IsElectrodes.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/electrode/TopSolid.Cad.Electrode.Automating.IElectrodes.IsElectrodes.html",
+  "sha256": "aff1fca98215c4c7b380ab4119c842b86418f1d4a5073374be5e8cdf191ca9bc",
+  "text": "# Method IsElectrodes\n\n#### IsElectrodes(DocumentId)\n\nTells whether a document is an electrodes document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 12, 0, 0)]\nbool IsElectrodes(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  The document is an electrodes document.  |  \n\n##### Remarks\n\nThis method is available since v7.12.\n",
+  "markdown": "markdown/electrode/b2af614999977918c59ca032.md",
+  "originalHtml": "html/electrode/b2af614999977918c59ca032.html"
+}

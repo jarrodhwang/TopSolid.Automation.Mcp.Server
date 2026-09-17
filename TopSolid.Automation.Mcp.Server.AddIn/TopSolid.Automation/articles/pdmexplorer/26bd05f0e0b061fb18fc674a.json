@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IErp.GetReferencingDocuments.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IErp.GetReferencingDocuments.html",
+  "sha256": "3c5176af22b5e8221555db41cd986d94e3e920fa58e63d9355d543c5dec5b309",
+  "text": "# Method GetReferencingDocuments\n\n#### GetReferencingDocuments(ErpPdmId, string)\n\nGets all referencing documents of an erp pdm object of a specific type\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 222, 80)]\nList<ErpPdmId> GetReferencingDocuments(ErpPdmId inPdmId, string inFileExtension)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ErpPdmId |  inPdmId |  Erp identifier of the object  |  \n \n|  string |  inFileExtension |  file extension of the type  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ErpPdmId> |  referecing documents with extension type, as Erp pdm Objects.  |\n",
+  "markdown": "markdown/pdmexplorer/26bd05f0e0b061fb18fc674a.md",
+  "originalHtml": "html/pdmexplorer/26bd05f0e0b061fb18fc674a.html"
+}

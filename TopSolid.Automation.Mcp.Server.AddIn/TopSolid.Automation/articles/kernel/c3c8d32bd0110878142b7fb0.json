@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.License.LicenseUser.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.License.LicenseUser.html",
+  "sha256": "a02dda3c27da737d5c55fa4dd81166d792b6b9ce43f943d9de721470eae70d78",
+  "text": "# Field LicenseUser\n\nLicense user (for floating).\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic string LicenseUser\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  License user (for floating). |\n",
+  "markdown": "markdown/kernel/c3c8d32bd0110878142b7fb0.md",
+  "originalHtml": "html/kernel/c3c8d32bd0110878142b7fb0.html"
+}

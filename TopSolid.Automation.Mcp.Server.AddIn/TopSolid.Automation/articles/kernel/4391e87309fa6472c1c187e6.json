@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Vector2D.op_Division.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Vector2D.op_Division.html",
+  "sha256": "391e6f647ff89f3e3075938ddc71b29d86db4cd3627120937c04d770cc5dd450",
+  "text": "# Operator operator /\n\n#### operator /(Vector2D, double)\n\nDivides a vector by a double value.\n\n##### Declaration\n\n```\npublic static Vector2D operator /(Vector2D inVector, double inD)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  Vector2D |  inVector |  Left hand side vector.  |  \n \n|  double |  inD |  Right hand side double.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Vector2D |  Scaled vector.  |\n",
+  "markdown": "markdown/kernel/4391e87309fa6472c1c187e6.md",
+  "originalHtml": "html/kernel/4391e87309fa6472c1c187e6.html"
+}

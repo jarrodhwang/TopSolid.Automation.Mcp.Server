@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.IsLocal.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.IsLocal.html",
+  "sha256": "79843b396b94c615052a3bac88922374b662d653555047192acb09a45d6d5892",
+  "text": "# Property IsLocal\n\n#### IsLocal\n\nReturns true if current PDM is local\n\n##### Declaration\n\n```\n[AvailableSinceVersion(7, 18, 400, 60)]\nbool IsLocal { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |   |  \n\n##### Remarks\n\nThis property is available since v7.18 SP7.\n",
+  "markdown": "markdown/pdmexplorer/12726168a03be217714263b3.md",
+  "originalHtml": "html/pdmexplorer/12726168a03be217714263b3.html"
+}

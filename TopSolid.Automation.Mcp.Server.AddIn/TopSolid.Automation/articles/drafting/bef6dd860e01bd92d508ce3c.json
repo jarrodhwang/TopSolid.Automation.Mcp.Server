@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.IDraftings.MultiplePrint.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.IDraftings.MultiplePrint.html",
+  "sha256": "90c5203fa9b5f0389fc70b620781b8751193613314a2e8453cbf39db25f3e920",
+  "text": "# Method MultiplePrint\n\n#### MultiplePrint(List<DocumentId>, PrintMode, PrintColorMapping, int)\n\nPrints a list of documents to the printers according to the draft formats.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nvoid MultiplePrint(List<DocumentId> inDocumentIds, PrintMode inMode, PrintColorMapping inColorMapping, int inResolution)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  List<DocumentId> |  inDocumentIds |  Documents to print.  |  \n \n|  PrintMode |  inMode |  Print mode.  |  \n \n|  PrintColorMapping |  inColorMapping |  Color conversion mode.  |  \n \n|  int |  inResolution |  Print resolution in dot-per-inch.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/drafting/bef6dd860e01bd92d508ce3c.md",
+  "originalHtml": "html/drafting/bef6dd860e01bd92d508ce3c.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IRepresentations.GetRepresentationConstituents.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IRepresentations.GetRepresentationConstituents.html",
+  "sha256": "f22d3a934a51df3e544196e54d97c55da81ab8de84ebfcbde9139cf12a655229",
+  "text": "# Method GetRepresentationConstituents\n\n#### GetRepresentationConstituents(ElementId)\n\nGets the constituents of a representation entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 201, 100)]\nList<ElementId> GetRepresentationConstituents(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the representation entity to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementId> |  Constituent elements found.  |  \n\n##### Remarks\n\nThis method is available since v7.7.201.100.\n",
+  "markdown": "markdown/cad/847e732a5e270d6a287a1426.md",
+  "originalHtml": "html/cad/847e732a5e270d6a287a1426.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.IDraftings.GetDraftingFormatDimensions.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.IDraftings.GetDraftingFormatDimensions.html",
+  "sha256": "7205519b438eec968475c32791457ae8b8e6f3fb169697463410514644a35737",
+  "text": "# Method GetDraftingFormatDimensions\n\n#### GetDraftingFormatDimensions(DocumentId, out Real, out Real)\n\nGets drafting format dimensions\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 255, 0)]\nvoid GetDraftingFormatDimensions(DocumentId inDocumentId, out Real outWidth, out Real outHeight)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  The drafting document  |  \n \n|  Real |  outWidth |  drafting format with  |  \n \n|  Real |  outHeight |  drafting format height  |\n",
+  "markdown": "markdown/drafting/50743d463d90548ae372aa44.md",
+  "originalHtml": "html/drafting/50743d463d90548ae372aa44.html"
+}

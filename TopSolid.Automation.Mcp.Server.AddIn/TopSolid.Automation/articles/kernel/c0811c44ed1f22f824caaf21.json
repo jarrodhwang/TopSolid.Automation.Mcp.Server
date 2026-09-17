@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IOperations.GetModelingTolerances.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IOperations.GetModelingTolerances.html",
+  "sha256": "37d970ebefb78069ca537a577aaac8dcd09464461e7c111b4f292d5823f332ba",
+  "text": "# Method GetModelingTolerances\n\n#### GetModelingTolerances(ElementId, out double, out double)\n\nGets the modeling tolerances of an operation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nvoid GetModelingTolerances(ElementId inElementId, out double outLinearTolerance, out double outAngularTolerance)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the operation to analyze.  |  \n \n|  double |  outLinearTolerance |  Linear tolerance (in meters), or 0 if the operation does not have a linear modeling tolerance.  |  \n \n|  double |  outAngularTolerance |  Angular tolerance (in radians), or 0 if the operation does not have an angular modeling tolerance.  |  \n\n##### Remarks\n\nThis method is available since v7.8.\n",
+  "markdown": "markdown/kernel/c0811c44ed1f22f824caaf21.md",
+  "originalHtml": "html/kernel/c0811c44ed1f22f824caaf21.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.ImportDictionnaries.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.ImportDictionnaries.html",
+  "sha256": "efb9cdab47054809db3cb5a59656b999db66d901fa7465a30c1b3118445a2d16",
+  "text": "# Method ImportDictionnaries\n\n#### ImportDictionnaries(List<PdmObjectId>, string[], Dictionary<string, string>)\n\nImports dictionnaries documents from specified files if they correspond to specified project identifiers.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 15, 300, 0)]\nvoid ImportDictionnaries(List<PdmObjectId> inProjects, string[] inFileFullNames, Dictionary<string, string> ioErrorMessages)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  List<PdmObjectId> |  inProjects |  Identifiers of projects.  |  \n \n|  string[] |  inFileFullNames |  Dictionnaries files full names.  |  \n \n|  Dictionary<string, string> |  ioErrorMessages |  Error messages.  |  \n\n##### Remarks\n\nThis method is available since v7.15.300.000.\n",
+  "markdown": "markdown/kernel/a884abd085e0d208e1eb5fbc.md",
+  "originalHtml": "html/kernel/a884abd085e0d208e1eb5fbc.html"
+}

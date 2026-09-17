@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IWorldCoordinateSystems.GetWcsOrigin.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IWorldCoordinateSystems.GetWcsOrigin.html",
+  "sha256": "59376494755fad6cbf43027e31c488abc0d52c2f25f3244d5f1a51eff1543f47",
+  "text": "# Method GetWcsOrigin\n\n#### GetWcsOrigin(ElementId)\n\nGets the WCS origin.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 400, 80)]\nElementId GetWcsOrigin(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the WCS to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  The origin.  |\n",
+  "markdown": "markdown/cam/c07596d90b979d4247eacc21.md",
+  "originalHtml": "html/cam/c07596d90b979d4247eacc21.html"
+}

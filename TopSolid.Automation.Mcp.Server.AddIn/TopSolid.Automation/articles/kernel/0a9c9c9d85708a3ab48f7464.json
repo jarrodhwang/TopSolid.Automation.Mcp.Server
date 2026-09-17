@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IElements.IsColorModifiable.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IElements.IsColorModifiable.html",
+  "sha256": "6972e953f353f8eaf44b3dcd2948e264e441557c2fc45af93cc259dd516883d0",
+  "text": "# Method IsColorModifiable\n\n#### IsColorModifiable(ElementId)\n\nTells whether the color of an element is modifiable.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nbool IsColorModifiable(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  The color of the element is modifiable.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/0a9c9c9d85708a3ab48f7464.md",
+  "originalHtml": "html/kernel/0a9c9c9d85708a3ab48f7464.html"
+}

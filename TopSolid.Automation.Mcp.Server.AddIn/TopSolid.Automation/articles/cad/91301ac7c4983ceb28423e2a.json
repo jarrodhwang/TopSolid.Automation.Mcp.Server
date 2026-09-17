@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ITools.GetStockParameters.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ITools.GetStockParameters.html",
+  "sha256": "529b91c54436e2f4083b615093b55a0f8f32d2e5b0e546d796ddf25b7702c46f",
+  "text": "# Method GetStockParameters\n\n#### GetStockParameters(DocumentId, out ElementId, out ElementId, out ElementId, out ElementId)\n\nSuperseeded by GetStockParameters2(DocumentId, out ElementId, out ElementId, out ElementId, out ElementId, out ElementId).\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nvoid GetStockParameters(DocumentId inDocumentId, out ElementId outStockName, out ElementId outStockDescription, out ElementId outStockPartNumber, out ElementId outStockMajorRevision)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of part or assembly document to analyze.  |  \n \n|  ElementId |  outStockName |  Stock name text parameter entity identifier, or empty if not managed.  |  \n \n|  ElementId |  outStockDescription |  Stock description text parameter entity identifier, or empty if not managed.  |  \n \n|  ElementId |  outStockPartNumber |  Stock part number text parameter entity identifier, or empty if not managed.  |  \n \n|  ElementId |  outStockMajorRevision |  Stock major revision text parameter entity identifier, or empty if not managed.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/cad/91301ac7c4983ceb28423e2a.md",
+  "originalHtml": "html/cad/91301ac7c4983ceb28423e2a.html"
+}

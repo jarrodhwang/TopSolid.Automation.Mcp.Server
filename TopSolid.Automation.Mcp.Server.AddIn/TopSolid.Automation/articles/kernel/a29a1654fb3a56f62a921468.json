@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IElements.GetTransparency.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IElements.GetTransparency.html",
+  "sha256": "6edb442efd85d0360178e017702301ed7907e58dea47748b76f71431b08a34e4",
+  "text": "# Method GetTransparency\n\n#### GetTransparency(ElementId)\n\nGets the transparency of an element.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\ndouble GetTransparency(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double |  Transparency of the element within [0,1], or -1 if the element has no transparency.  |  \n\n##### Remarks\n\nWhen the transparency is equal to 0, the element is fully opaque.\n \nWhen the transparency is equal to 1, the element is fully transparent.\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/a29a1654fb3a56f62a921468.md",
+  "originalHtml": "html/kernel/a29a1654fb3a56f62a921468.html"
+}

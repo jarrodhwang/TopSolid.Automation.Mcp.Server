@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ITools.GetCatalogCellMaterialValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ITools.GetCatalogCellMaterialValue.html",
+  "sha256": "7aabb94c3b5ff626028a50ac97b300733efee98b7ec10075027543062b6163fa",
+  "text": "# Method GetCatalogCellMaterialValue\n\n#### GetCatalogCellMaterialValue(ElementId, ElementId)\n\nGets the material value of the catalog cell.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 18, 400, 160)]\nPdmObjectId GetCatalogCellMaterialValue(ElementId inRow, ElementId inParameterId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inRow |  Identifier of the row.  |  \n \n|  ElementId |  inParameterId |  Identifier of the parameter of the column.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  PdmObjectId |  Value of the cell.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.18.\n",
+  "markdown": "markdown/cad/802ea977c91d14a832131f21.md",
+  "originalHtml": "html/cad/802ea977c91d14a832131f21.html"
+}

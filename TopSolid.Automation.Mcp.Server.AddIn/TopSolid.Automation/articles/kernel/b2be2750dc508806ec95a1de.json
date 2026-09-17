@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IDocuments.IsSynchronized.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IDocuments.IsSynchronized.html",
+  "sha256": "e0be29b6929f8228cbaac6fa943ba14c41c01563024028ebdc86f8b9827e2e72",
+  "text": "# Method IsSynchronized\n\n#### IsSynchronized(DocumentId)\n\nTells whether a document is synchronized with other documents.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nbool IsSynchronized(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  The document is synchronized with other documents.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/b2be2750dc508806ec95a1de.md",
+  "originalHtml": "html/kernel/b2be2750dc508806ec95a1de.html"
+}

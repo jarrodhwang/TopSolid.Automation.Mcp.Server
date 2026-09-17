@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMultiLayer.GetMultiLayerMaterialDocumentDetailedBitmap.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMultiLayer.GetMultiLayerMaterialDocumentDetailedBitmap.html",
+  "sha256": "1361163b0b1533de4fc94c67e4227bd9d851118e27fa8605b7460322a9e46eb0",
+  "text": "# Method GetMultiLayerMaterialDocumentDetailedBitmap\n\n#### GetMultiLayerMaterialDocumentDetailedBitmap(DocumentId, int, int)\n\nGets multi layer document layer preview bitmap\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 0, 0)]\nBitmap GetMultiLayerMaterialDocumentDetailedBitmap(DocumentId inDocumentId, int inWidth, int inHeight)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document  |  \n \n|  int |  inWidth |  Bitmap width in pixels  |  \n \n|  int |  inHeight |  Bitmap height in pixels  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Bitmap |  preview bitmap.  |  \n\n##### Remarks\n\nThis method is available since v7.19.\n",
+  "markdown": "markdown/cad/614459286da9cef65b80162f.md",
+  "originalHtml": "html/cad/614459286da9cef65b80162f.html"
+}

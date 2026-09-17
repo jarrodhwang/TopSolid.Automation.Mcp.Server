@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.TopSolidCamHostInstance.StaticOperations.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.TopSolidCamHostInstance.StaticOperations.html",
+  "sha256": "b7a45dc292134f312c5982645efb8a82fd3d93188bb1942be971457272787b1f",
+  "text": "# Property StaticOperations\n\n#### StaticOperations\n\nGets access to static operations, or null if not connected.\n\n##### Declaration\n\n```\npublic IStaticOperations StaticOperations { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  IStaticOperations |   |\n",
+  "markdown": "markdown/cam/283714a630558f630a38e6aa.md",
+  "originalHtml": "html/cam/283714a630558f630a38e6aa.html"
+}

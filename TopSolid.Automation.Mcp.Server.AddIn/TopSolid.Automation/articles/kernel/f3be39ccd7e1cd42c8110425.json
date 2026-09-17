@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.GetMajorRevisionLifeCycleMainState.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.GetMajorRevisionLifeCycleMainState.html",
+  "sha256": "aaff59fe3b4e03efdf7ac15a92f5fa943e34313c0ed223b669a870e4720096b8",
+  "text": "# Method GetMajorRevisionLifeCycleMainState\n\n#### GetMajorRevisionLifeCycleMainState(PdmMajorRevisionId)\n\nGets the life cycle main state of a major revision.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nPdmLifeCycleMainState GetMajorRevisionLifeCycleMainState(PdmMajorRevisionId inMajorRevisionId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmMajorRevisionId |  inMajorRevisionId |  Identifier of major revision to get life cycle main state.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  PdmLifeCycleMainState |  Life cycle of the document.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/kernel/f3be39ccd7e1cd42c8110425.md",
+  "originalHtml": "html/kernel/f3be39ccd7e1cd42c8110425.html"
+}

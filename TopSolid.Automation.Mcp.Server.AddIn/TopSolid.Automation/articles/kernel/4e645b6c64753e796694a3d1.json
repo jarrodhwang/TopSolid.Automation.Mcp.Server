@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Point2D.CoincidesWith.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Point2D.CoincidesWith.html",
+  "sha256": "f9fd7fac2a0095fde9c2cd2a96b14a9f28c1cbe9c2dd89b93c356f37e07bd87a",
+  "text": "# Method CoincidesWith\n\n#### CoincidesWith(Point2D)\n\nTells whether this point coincides with another point.\n\n##### Declaration\n\n```\npublic bool CoincidesWith(Point2D inPoint)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  Point2D |  inPoint |  Point to compare with.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  This point coincides with the specified point.  |  \n\n##### Remarks\n\nTwo points are considered coincident if they are less than LinearPrecision apart.\n",
+  "markdown": "markdown/kernel/4e645b6c64753e796694a3d1.md",
+  "originalHtml": "html/kernel/4e645b6c64753e796694a3d1.html"
+}

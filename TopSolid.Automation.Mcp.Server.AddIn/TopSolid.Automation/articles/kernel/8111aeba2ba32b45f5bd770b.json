@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ToleranceZoneType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ToleranceZoneType.html",
+  "sha256": "55e0a9b6d3a6ca1921dc4a070f6db1494fc99232628147c505985c17ee171637",
+  "text": "# Enum ToleranceZoneType\n\nDefines the various types of tolerance zone.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 17, 0, 0)]\npublic enum ToleranceZoneType\n```\n\n##### Remarks\n\nThis enum is available since v7.17.000.000.\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  Box |  The tolerance zone is a box.  |  \n \n|  Cylinder |  The tolerance zone is a cylinder.  |  \n \n|  GraphicCylinder |  The tolerance zone is a cylinder, with a graphic Ø symbol.  |  \n \n|  GraphicSphere |  The tolerance zone is a sphere, with a graphic SØ symbol.  |  \n \n|  None |  Unknown tolerance zone (general case).  |  \n \n|  Sphere |  The tolerance zone is a sphere.  |\n",
+  "markdown": "markdown/kernel/8111aeba2ba32b45f5bd770b.md",
+  "originalHtml": "html/kernel/8111aeba2ba32b45f5bd770b.html"
+}

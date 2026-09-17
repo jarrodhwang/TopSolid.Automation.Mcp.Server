@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.ErpProperty.PropertyType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.ErpProperty.PropertyType.html",
+  "sha256": "b18283b9cc15f712e262f2f9c82fd3f6b91516c1c21f739075f480bb36abfc40",
+  "text": "# Property PropertyType\n\n#### PropertyType\n\nGets the PDM Property type\n\n##### Declaration\n\n```\npublic PropertyType PropertyType { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  PropertyType |   |\n",
+  "markdown": "markdown/pdmexplorer/cbe2b771c4893dc0a6be7608.md",
+  "originalHtml": "html/pdmexplorer/cbe2b771c4893dc0a6be7608.html"
+}

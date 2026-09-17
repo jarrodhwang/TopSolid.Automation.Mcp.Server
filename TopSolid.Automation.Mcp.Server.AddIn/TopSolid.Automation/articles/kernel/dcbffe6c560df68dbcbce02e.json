@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.SetColorValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.SetColorValue.html",
+  "sha256": "9639626414c072a5a686c1b6f6bc184e8bdc0a79ee288a9e3c119e8fe2c9e2fb",
+  "text": "# Method SetColorValue\n\n#### SetColorValue(ElementId, Color)\n\nSets the value of a Color parameter.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 15, 400, 100)]\nvoid SetColorValue(ElementId inElementId, Color inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the parameter to modify.  |  \n \n|  Color |  inValue |  New value.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.15.400.100.\n",
+  "markdown": "markdown/kernel/dcbffe6c560df68dbcbce02e.md",
+  "originalHtml": "html/kernel/dcbffe6c560df68dbcbce02e.html"
+}

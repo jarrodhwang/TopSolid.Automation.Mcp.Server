@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.ISimulation.GetAnimationSpeed.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.ISimulation.GetAnimationSpeed.html",
+  "sha256": "d2f16a209ce16544acf22bf219f48cb6bf61869d29e6f2f68565f7e768889950",
+  "text": "# Method GetAnimationSpeed\n\n#### GetAnimationSpeed()\n\nGets the animation speed.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 15, 0, 0)]\nint GetAnimationSpeed()\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  int |  The animation speed defined on [0;100].  |\n",
+  "markdown": "markdown/cam/9aa721aeaaa41198712534ab.md",
+  "originalHtml": "html/cam/9aa721aeaaa41198712534ab.html"
+}

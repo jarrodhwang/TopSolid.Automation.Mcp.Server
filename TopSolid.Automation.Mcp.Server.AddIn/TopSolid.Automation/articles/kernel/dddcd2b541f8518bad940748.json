@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartDirection2D.Geometry.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartDirection2D.Geometry.html",
+  "sha256": "33bfd9e2250a6bb2baffcc5382c88bb32e6ea81ce0adb0198b97e1bf9e241ce0",
+  "text": "# Field Geometry\n\nDirection geometry, or null if unknown.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic Direction2D? Geometry\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Direction2D? |  Direction geometry, or null if unknown. |\n",
+  "markdown": "markdown/kernel/dddcd2b541f8518bad940748.md",
+  "originalHtml": "html/kernel/dddcd2b541f8518bad940748.html"
+}

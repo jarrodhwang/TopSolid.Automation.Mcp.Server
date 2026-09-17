@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ISketches3D.GetVertexPoint.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ISketches3D.GetVertexPoint.html",
+  "sha256": "ee101ec20d50aa0c106263c7149055fbc01a4ff58ca01066f97b27fc996bf18c",
+  "text": "# Method GetVertexPoint\n\n#### GetVertexPoint(ElementItemId)\n\nGets the point attached to a vertex.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nPoint3D GetVertexPoint(ElementItemId inVertexId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementItemId |  inVertexId |  Identifier of the vertex to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Point3D |  Vertex point.  |  \n\n##### Remarks\n\nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/df162e5105f002b272a2bad3.md",
+  "originalHtml": "html/kernel/df162e5105f002b272a2bad3.html"
+}

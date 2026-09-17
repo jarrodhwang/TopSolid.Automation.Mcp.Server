@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IClassifications.GetLevels.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IClassifications.GetLevels.html",
+  "sha256": "f15b0debdb17fd4ee76dffac391d54b0e3aa29f24890bd4a15a038c0acceb025",
+  "text": "# Method GetLevels\n\n#### GetLevels(DocumentId)\n\nGets the level entities that are in the levels folder of a classification document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nList<ElementId> GetLevels(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the classification document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementId> |  Level entities found.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/kernel/f229e08f7e06b8fd6d1d5c15.md",
+  "originalHtml": "html/kernel/f229e08f7e06b8fd6d1d5c15.html"
+}

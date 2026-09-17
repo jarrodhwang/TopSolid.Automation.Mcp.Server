@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.TopSolidDesignHost.Substitutions.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.TopSolidDesignHost.Substitutions.html",
+  "sha256": "8dd8b6978d7c47040a512c1dce60a28b873b8bb9591649d7bfe330d965411d7e",
+  "text": "# Property Substitutions\n\n#### Substitutions\n\nGets access to substitutions, or null if not connected.\n\n##### Declaration\n\n```\npublic static ISubstitutions Substitutions { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ISubstitutions |   |\n",
+  "markdown": "markdown/cad/8015e78c6cec1d7c76f50a52.md",
+  "originalHtml": "html/cad/8015e78c6cec1d7c76f50a52.html"
+}

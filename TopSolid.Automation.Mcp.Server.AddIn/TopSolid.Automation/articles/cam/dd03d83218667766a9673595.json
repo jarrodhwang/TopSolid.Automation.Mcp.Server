@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.OffsetStockType.Offset.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.OffsetStockType.Offset.html",
+  "sha256": "1d24f83ceac23f7a0c441067b0ef2e88b67764b74a35eb057c970cdcd5660df9",
+  "text": "# Field Offset\n\nStocks.\n\n###### Namespace: TopSolid.Cam.NC.Kernel.Automating\n\n###### Assembly: TopSolid.Cam.NC.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic SmartReal Offset\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartReal |  Stocks. |\n",
+  "markdown": "markdown/cam/dd03d83218667766a9673595.md",
+  "originalHtml": "html/cam/dd03d83218667766a9673595.html"
+}

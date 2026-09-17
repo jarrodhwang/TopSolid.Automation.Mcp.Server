@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.TopSolidCamHostInstance.Documents.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.TopSolidCamHostInstance.Documents.html",
+  "sha256": "c344567570d1c958beac2319743d4d4a3c83206a45805be63a88cdf77e9b3706",
+  "text": "# Property Documents\n\n#### Documents\n\nGets access to documents, or null if not connected.\n\n##### Declaration\n\n```\npublic IDocuments Documents { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  IDocuments |   |\n",
+  "markdown": "markdown/cam/bee04d8c8b6bf0428e108089.md",
+  "originalHtml": "html/cam/bee04d8c8b6bf0428e108089.html"
+}

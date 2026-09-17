@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IApplication.IsLicenseValid.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IApplication.IsLicenseValid.html",
+  "sha256": "8cfef038775843dcdd6dee7adcf8ae52c17d01ff01b929d6a1ff864e270e1622",
+  "text": "# Method IsLicenseValid\n\n#### IsLicenseValid(int)\n\nTells whether a valid TopSolid license is available.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 303, 100)]\nbool IsLicenseValid(int inModuleId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  int |  inModuleId |  TopSolid module identifier.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |   |  \n\n##### Remarks\n\nThis method is available since v7.8.303.100.\n",
+  "markdown": "markdown/kernel/b49940f2b43c657f1507fdaf.md",
+  "originalHtml": "html/kernel/b49940f2b43c657f1507fdaf.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IErp.NotifyDocumentsNotImportedByErp.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IErp.NotifyDocumentsNotImportedByErp.html",
+  "sha256": "b1f02fd542500e7f1ec0f1ecb71764fb91d7bbc05dc784ac0d185cd22d3811ce",
+  "text": "# Method NotifyDocumentsNotImportedByErp\n\n#### NotifyDocumentsNotImportedByErp(List<ErpPdmId>)\n\nNotifies documents have not been imported by Erp.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 222, 80)]\nbool NotifyDocumentsNotImportedByErp(List<ErpPdmId> inPdmIds)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  List<ErpPdmId> |  inPdmIds |  PDM document identifiers.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Success or failure.  |\n",
+  "markdown": "markdown/pdmexplorer/db0af91a200bbf98a7b137cd.md",
+  "originalHtml": "html/pdmexplorer/db0af91a200bbf98a7b137cd.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.GetRealTableParameterPossibleValues.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.GetRealTableParameterPossibleValues.html",
+  "sha256": "65d4b2e8b591dc528c61c36b37eb24eff51bae28105f912d4d8a9c9cb895511c",
+  "text": "# Method GetRealTableParameterPossibleValues\n\n#### GetRealTableParameterPossibleValues(ElementId, out List<SmartReal>, out List<SmartReal>)\n\nGets possible values from real table parameter creation operation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 18, 0, 0)]\nvoid GetRealTableParameterPossibleValues(ElementId inElementId, out List<SmartReal> outSourceSmartRealList, out List<SmartReal> outResultSmartRealList)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the smart real table parameter creation operation.  |  \n \n|  List<SmartReal> |  outSourceSmartRealList |  Source values.  |  \n \n|  List<SmartReal> |  outResultSmartRealList |  Result values.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.18.\n",
+  "markdown": "markdown/kernel/947ca58ea61f13b0c7863297.md",
+  "originalHtml": "html/kernel/947ca58ea61f13b0c7863297.html"
+}

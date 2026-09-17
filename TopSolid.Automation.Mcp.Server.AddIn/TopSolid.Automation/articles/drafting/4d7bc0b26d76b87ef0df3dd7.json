@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.ITables.SetDraftTableCellImageFromBitmap.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.ITables.SetDraftTableCellImageFromBitmap.html",
+  "sha256": "39b68e9511d0f35db168d672c2a0110ebe57139c3757561474be82fb0fc57a5c",
+  "text": "# Method SetDraftTableCellImageFromBitmap\n\n#### SetDraftTableCellImageFromBitmap(ElementId, int, int, int, Bitmap)\n\nSets the image of a cell from a bitmap.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 14, 300, 140)]\nvoid SetDraftTableCellImageFromBitmap(ElementId inElementId, int inColumnIdx, int inRowIdx, int inSplitColumnIdx, Bitmap inBitmap)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the entity to modify.  |  \n \n|  int |  inColumnIdx |  Index of the column.  |  \n \n|  int |  inRowIdx |  Index of the row.  |  \n \n|  int |  inSplitColumnIdx |  Index of the split column. 0 if default.  |  \n \n|  Bitmap |  inBitmap |  Image of the cell.  |  \n\n##### Remarks\n\nThis method is available since v7.14.300.140.\n",
+  "markdown": "markdown/drafting/4d7bc0b26d76b87ef0df3dd7.md",
+  "originalHtml": "html/drafting/4d7bc0b26d76b87ef0df3dd7.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IOperations.GetScenarioOperations.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IOperations.GetScenarioOperations.html",
+  "sha256": "ed0da275f4e32cca3ec091d13eb114bd503850ac2c65ce9bd5c92ec2ef0cb97a",
+  "text": "# Method GetScenarioOperations\n\n#### GetScenarioOperations(DocumentId)\n\nGets the Cam scenario operations of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 12, 300, 160)]\nList<ElementId> GetScenarioOperations(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementId> |  Cam operations found.  |  \n\n##### Remarks\n\nThe operations are sorted in chronological order of the scenario (i.e. first operation of the list is executed first).\n",
+  "markdown": "markdown/cam/d584f025d464d7e464cb07b7.md",
+  "originalHtml": "html/cam/d584f025d464d7e464cb07b7.html"
+}

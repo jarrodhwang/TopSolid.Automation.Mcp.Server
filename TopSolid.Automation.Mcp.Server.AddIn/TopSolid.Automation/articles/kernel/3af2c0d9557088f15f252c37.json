@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IEntities.CreateSet.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IEntities.CreateSet.html",
+  "sha256": "106bac4880bbc2cdae5e1653ee4d06856c21cfb108a5e776a4fcbe97ad41f064",
+  "text": "# Method CreateSet\n\n#### CreateSet(DocumentId, List<ElementId>)\n\nCreates a set definition entity in a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 14, 300, 120)]\nElementId CreateSet(DocumentId inDocumentId, List<ElementId> inTargetIds)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  List<ElementId> |  inTargetIds |  Identifiers of targets of the set definition entity.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the created set definition entity.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.14.300.120.\n",
+  "markdown": "markdown/kernel/3af2c0d9557088f15f252c37.md",
+  "originalHtml": "html/kernel/3af2c0d9557088f15f252c37.html"
+}

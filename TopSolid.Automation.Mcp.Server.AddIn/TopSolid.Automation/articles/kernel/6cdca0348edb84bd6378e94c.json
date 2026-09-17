@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IOperations.SetWorkingStage.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IOperations.SetWorkingStage.html",
+  "sha256": "64a232b39e248eadbf47651e2dbf17dbf526ee78a2c154c3b45f1310c54a1cba",
+  "text": "# Method SetWorkingStage\n\n#### SetWorkingStage(ElementId)\n\nSets the working stage operation of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nvoid SetWorkingStage(ElementId inOperationId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inOperationId |  Identifier of new working stage operation.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.8.\n",
+  "markdown": "markdown/kernel/6cdca0348edb84bd6378e94c.md",
+  "originalHtml": "html/kernel/6cdca0348edb84bd6378e94c.html"
+}

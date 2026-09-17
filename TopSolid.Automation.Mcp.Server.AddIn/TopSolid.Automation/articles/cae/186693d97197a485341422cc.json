@@ -1,0 +1,8 @@
+{
+  "path": "api/cae/TopSolid.Cae.Kernel.Automating.LoadFactorResult.ModeNumber.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cae/TopSolid.Cae.Kernel.Automating.LoadFactorResult.ModeNumber.html",
+  "sha256": "feb14fc9d3be0bfdd3e357c4a81e40db0b75a1bd91d0d56c674b2aa6cbcac119",
+  "text": "# Property ModeNumber\n\n#### ModeNumber\n\nGets the Mode number\n\n##### Declaration\n\n```\npublic int ModeNumber { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  int |   |\n",
+  "markdown": "markdown/cae/186693d97197a485341422cc.md",
+  "originalHtml": "html/cae/186693d97197a485341422cc.html"
+}

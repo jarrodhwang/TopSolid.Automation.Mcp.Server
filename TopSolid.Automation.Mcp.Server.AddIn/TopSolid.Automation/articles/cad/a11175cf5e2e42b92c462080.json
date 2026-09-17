@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.DrillingPrimitive.PrimitiveDepthType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.DrillingPrimitive.PrimitiveDepthType.html",
+  "sha256": "f6bdd1d98e802a5ba3d809e57e6b14e9bf094869340c2756a9045c949a058cf3",
+  "text": "# Property PrimitiveDepthType\n\n#### PrimitiveDepthType\n\nPrimitive Depth Type.\n\n##### Declaration\n\n```\npublic DrillingPrimitiveDepthType PrimitiveDepthType { get; set; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  DrillingPrimitiveDepthType |   |\n",
+  "markdown": "markdown/cad/a11175cf5e2e42b92c462080.md",
+  "originalHtml": "html/cad/a11175cf5e2e42b92c462080.html"
+}

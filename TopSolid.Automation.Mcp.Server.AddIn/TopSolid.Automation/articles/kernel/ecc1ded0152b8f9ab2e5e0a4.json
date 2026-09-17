@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.UserQuestion.AllowsCreation.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.UserQuestion.AllowsCreation.html",
+  "sha256": "aa9e024bb0c56c0784ebb7ebb1fe72f2e29e314ed4ee3b710b9878381854fdbd",
+  "text": "# Property AllowsCreation\n\n#### AllowsCreation\n\nTells or sets whether the user can create new entities to answer the question.\n\n##### Declaration\n\n```\npublic bool AllowsCreation { get; set; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |   |\n",
+  "markdown": "markdown/kernel/ecc1ded0152b8f9ab2e5e0a4.md",
+  "originalHtml": "html/kernel/ecc1ded0152b8f9ab2e5e0a4.html"
+}

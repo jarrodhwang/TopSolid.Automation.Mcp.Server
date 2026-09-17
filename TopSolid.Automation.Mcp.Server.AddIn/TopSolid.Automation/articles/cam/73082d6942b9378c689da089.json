@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.INCFiles.GetNCCodesPartial.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.INCFiles.GetNCCodesPartial.html",
+  "sha256": "189751f215493b38f8824a4415d4c265ae8721df5296c1dfb8843c719147b7eb",
+  "text": "# Method GetNCCodesPartial\n\n#### GetNCCodesPartial(ElementId, int, int)\n\nGet some NC Code lines of the given NC file entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 9, 0, 0)]\nList<string> GetNCCodesPartial(ElementId inElementId, int inLinesNumber, int inStartingLine)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  The NC file Element Id.  |  \n \n|  int |  inLinesNumber |   |  \n \n|  int |  inStartingLine |   |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<string> |  From line inStartingLine to inStartingLine+inNumberOfLines of this element.  |\n",
+  "markdown": "markdown/cam/73082d6942b9378c689da089.md",
+  "originalHtml": "html/cam/73082d6942b9378c689da089.html"
+}

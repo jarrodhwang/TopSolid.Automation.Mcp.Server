@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.GetTemplates.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.GetTemplates.html",
+  "sha256": "daefc9e0f010e360382f6eb5cef3576166ff1351bda6fc84a4713814090a60b0",
+  "text": "# Method GetTemplates\n\n#### GetTemplates(out PdmObjectId, out PdmObjectId, out PdmObjectId, out PdmObjectId)\n\nGets all the templates.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nvoid GetTemplates(out PdmObjectId outUserDocumentTemplatesProjectId, out PdmObjectId outCompanyDocumentTemplatesProjectId, out PdmObjectId outUserProjectTemplatesProjectId, out PdmObjectId outCompanyProjectTemplatesProjectId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  outUserDocumentTemplatesProjectId |  PDM object identifier of user document templates project.  |  \n \n|  PdmObjectId |  outCompanyDocumentTemplatesProjectId |  PDM object identifier of company document templates project.  |  \n \n|  PdmObjectId |  outUserProjectTemplatesProjectId |  PDM object identifier of user project templates project.  |  \n \n|  PdmObjectId |  outCompanyProjectTemplatesProjectId |  PDM object identifier of company project templates project.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/63c2776a003647b3c5894373.md",
+  "originalHtml": "html/kernel/63c2776a003647b3c5894373.html"
+}

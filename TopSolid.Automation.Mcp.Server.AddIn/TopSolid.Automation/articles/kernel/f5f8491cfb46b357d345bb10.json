@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.CreateBooleanParameter.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.CreateBooleanParameter.html",
+  "sha256": "2ec795905dc12bd8db2bcf864f3a7ba542fb50002c44e319f210a0df9685d16d",
+  "text": "# Method CreateBooleanParameter\n\n#### CreateBooleanParameter(DocumentId, bool)\n\nCreates a Boolean parameter entity in a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 301, 40)]\nElementId CreateBooleanParameter(DocumentId inDocumentId, bool inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  bool |  inValue |  Value.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the created parameter entity.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.6.301.40.\n",
+  "markdown": "markdown/kernel/f5f8491cfb46b357d345bb10.md",
+  "originalHtml": "html/kernel/f5f8491cfb46b357d345bb10.html"
+}

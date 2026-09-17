@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IErp.NotifyDocumentsImportedByErp.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IErp.NotifyDocumentsImportedByErp.html",
+  "sha256": "cf42c74bc5057638193df2a377161a3ba5bd38d34b7d67b43a2dea730ed52824",
+  "text": "# Method NotifyDocumentsImportedByErp\n\n#### NotifyDocumentsImportedByErp(ErpPdmId, int, List<ErpPdmId>, List<int>, List<ErpPdmId>)\n\nNotifies documents have been imported by Erp.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 222, 0)]\nbool NotifyDocumentsImportedByErp(ErpPdmId inRootPdmId, int inRootErpItemIdentifier, List<ErpPdmId> inPdmIds, List<int> inErpItemIdentifiers, List<ErpPdmId> inStillPublishedPdmIds)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ErpPdmId |  inRootPdmId |  Root PDM document identifier.  |  \n \n|  int |  inRootErpItemIdentifier |  ERP item identifiers corresponding to other documents.  |  \n \n|  List<ErpPdmId> |  inPdmIds |  Other PDM document identifiers.  |  \n \n|  List<int> |  inErpItemIdentifiers |  ERP item identifiers.  |  \n \n|  List<ErpPdmId> |  inStillPublishedPdmIds |  Still published documents (case of a part published by Asm1 and Asm2 and only Asm1 is imported).  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Success or failure.  |\n",
+  "markdown": "markdown/pdmexplorer/eb880f55944017de3c2a13b0.md",
+  "originalHtml": "html/pdmexplorer/eb880f55944017de3c2a13b0.html"
+}

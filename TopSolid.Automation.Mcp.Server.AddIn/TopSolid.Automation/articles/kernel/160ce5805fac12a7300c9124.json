@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartDirection2D.DY.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartDirection2D.DY.html",
+  "sha256": "0fdb9c287183271b132042e0db316188e1e79b20559ec4a3265f377b3755386b",
+  "text": "# Field DY\n\nPositive Y direction, i.e. (0,1).\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\npublic static readonly SmartDirection2D DY\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartDirection2D |  Positive Y direction, i.e. (0,1). |\n",
+  "markdown": "markdown/kernel/160ce5805fac12a7300c9124.md",
+  "originalHtml": "html/kernel/160ce5805fac12a7300c9124.html"
+}

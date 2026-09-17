@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IProcesses.GetProcess.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IProcesses.GetProcess.html",
+  "sha256": "dbdec80e6cab68bc389c720aef43a73370bd8b10a4ffd3fc19e369d422b3a281",
+  "text": "# Method GetProcess\n\n#### GetProcess(DocumentId)\n\nGets process associated to a document\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 400, 140)]\nElementId GetProcess(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  document to analyze  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  process or empty if no process associated.  |\n",
+  "markdown": "markdown/cad/6300dfcf49ccf9e3de130d00.md",
+  "originalHtml": "html/cad/6300dfcf49ccf9e3de130d00.html"
+}

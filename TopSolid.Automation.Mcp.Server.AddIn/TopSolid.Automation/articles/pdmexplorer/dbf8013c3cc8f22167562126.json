@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.ErpPdmId.IsEmpty.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.ErpPdmId.IsEmpty.html",
+  "sha256": "8cc138610fd69ef2b86214f9cdc599746b95bb1479335aeae1d0fcab0cb85286",
+  "text": "# Property IsEmpty\n\n#### IsEmpty\n\nTells whether the object is empty.\n\n##### Declaration\n\n```\npublic bool IsEmpty { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |   |\n",
+  "markdown": "markdown/pdmexplorer/dbf8013c3cc8f22167562126.md",
+  "originalHtml": "html/pdmexplorer/dbf8013c3cc8f22167562126.html"
+}

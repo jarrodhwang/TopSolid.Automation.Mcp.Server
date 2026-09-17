@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.SetAuthor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.SetAuthor.html",
+  "sha256": "45e4b6371e8a838b7b245ffc8c63c35b335929e7150d852c42d6dd3c684292b6",
+  "text": "# Method SetAuthor\n\n#### SetAuthor(PdmObjectId, string)\n\nSets the author of an object.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 303, 100)]\nvoid SetAuthor(PdmObjectId inObjectId, string inAuthor)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  Object identifier.  |  \n \n|  string |  inAuthor |  Author.  |  \n\n##### Remarks\n\nThis method must not be called between StartModification(string, bool) and EndModification(bool, bool) methods calls.\n \nThis method is available since v7.8.303.100.\n",
+  "markdown": "markdown/kernel/ac8188e961ad0de8da056fc7.md",
+  "originalHtml": "html/kernel/ac8188e961ad0de8da056fc7.html"
+}

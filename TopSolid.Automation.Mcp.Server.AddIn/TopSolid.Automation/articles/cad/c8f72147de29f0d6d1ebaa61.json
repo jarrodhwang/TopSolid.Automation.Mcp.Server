@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IFeatures.GetDrillingPrimitiveType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IFeatures.GetDrillingPrimitiveType.html",
+  "sha256": "56cc8c6afd5fd37fac6ebab08f815056c910ebce6add8c4e600cf03f52563adc",
+  "text": "# Method GetDrillingPrimitiveType\n\n#### GetDrillingPrimitiveType(ElementId, int)\n\nGets the type of a drilling feature entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 14, 0, 0)]\nDrillingPrimitiveType GetDrillingPrimitiveType(ElementId inFeatureId, int inIndex)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inFeatureId |  Identifier of the element of the primitive to analyse.  |  \n \n|  int |  inIndex |  Idex of the primitive to analyse.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  DrillingPrimitiveType |  Type of the drilling feature, or None if the primitive is not a drilling primitive.  |  \n\n##### Remarks\n\nThis method is available since v7.14.\n",
+  "markdown": "markdown/cad/c8f72147de29f0d6d1ebaa61.md",
+  "originalHtml": "html/cad/c8f72147de29f0d6d1ebaa61.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.GetRevisionTexts.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.GetRevisionTexts.html",
+  "sha256": "576e536347e9678c3a9f46dd343d76f5bb4000347823542628ace9b57e3e771c",
+  "text": "# Method GetRevisionTexts\n\n#### GetRevisionTexts(PdmObjectId, out string, out string)\n\nGets the major and minor revision texts of an object.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 9, 300, 80)]\nvoid GetRevisionTexts(PdmObjectId inObjectId, out string outMajorText, out string outMinorText)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  Object identifier.  |  \n \n|  string |  outMajorText |  Major revision text.  |  \n \n|  string |  outMinorText |  Minor revision text.  |  \n\n##### Remarks\n\nThis method is available since v7.9.300.80.\n",
+  "markdown": "markdown/kernel/6b616d6e7b4650f6e62f4a14.md",
+  "originalHtml": "html/kernel/6b616d6e7b4650f6e62f4a14.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartFrame3D.ItemLabel.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartFrame3D.ItemLabel.html",
+  "sha256": "48c15956895682a0fb646bd2e204a22eb09702f7d1979eddfc99140b8f2e8b38",
+  "text": "# Field ItemLabel\n\nProviding element item label, or empty if none.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic ItemLabel ItemLabel\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ItemLabel |  Providing element item label, or empty if none. |\n",
+  "markdown": "markdown/kernel/d59d03a4e2faf1fa6fcecbc2.md",
+  "originalHtml": "html/kernel/d59d03a4e2faf1fa6fcecbc2.html"
+}

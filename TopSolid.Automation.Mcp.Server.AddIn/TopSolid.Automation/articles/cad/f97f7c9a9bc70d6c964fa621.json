@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IParts.SetMachiningProcessOperationFaces.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IParts.SetMachiningProcessOperationFaces.html",
+  "sha256": "01047ff4cf45f2596c1ac35c4330a629997709f583394cfdea82332ede176200",
+  "text": "# Method SetMachiningProcessOperationFaces\n\n#### SetMachiningProcessOperationFaces(ElementId, List<ElementItemId>)\n\nSet Faces to a machining process operation\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 0, 0)]\nvoid SetMachiningProcessOperationFaces(ElementId inElementId, List<ElementItemId> inFaceIds)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Existing machining Process Operation  |  \n \n|  List<ElementItemId> |  inFaceIds |  Face Ids  |  \n\n##### Remarks\n\nThis method is available since v7.19.\n",
+  "markdown": "markdown/cad/f97f7c9a9bc70d6c964fa621.md",
+  "originalHtml": "html/cad/f97f7c9a9bc70d6c964fa621.html"
+}

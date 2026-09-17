@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Axis3D.OX.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Axis3D.OX.html",
+  "sha256": "21bb1e868dad0e44b041b5ece21a414e8160024d1a2495fe7114639cba32d51d",
+  "text": "# Field OX\n\n(O,+X) absolute axis.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\npublic static readonly Axis3D OX\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Axis3D |  (O,+X) absolute axis. |\n",
+  "markdown": "markdown/kernel/9978118e588617ee8b110f3e.md",
+  "originalHtml": "html/kernel/9978118e588617ee8b110f3e.html"
+}

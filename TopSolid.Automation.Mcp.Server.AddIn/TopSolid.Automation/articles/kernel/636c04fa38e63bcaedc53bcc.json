@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.PdmObjectState.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.PdmObjectState.html",
+  "sha256": "5b4291be3149d10addd448582f60a1bfd0032aa76ead84270dd7ae1f876d0e17",
+  "text": "# Enum PdmObjectState\n\nDefines the various states of a PDM object.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\npublic enum PdmObjectState\n```\n\n##### Remarks\n\nThis enum is available since v7.6.\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  CheckedIn |  CheckedIn state.  |  \n \n|  Default |  Default state.  |  \n \n|  Deleted |  Object is deleted.  |  \n \n|  ExclusiveModification |  Exclusive modification state.  |  \n \n|  IsLockedBecauseModifiedData |  Locked because data modified.  |  \n \n|  LockedBecauseToAnnihilate |  Locked because to annihilate state.  |  \n \n|  LockedBecauseToDelete |  Locked because to delete state.  |  \n \n|  MultipleModification |  Multiple modification state.  |  \n \n|  New |  New state.  |  \n \n|  NotUpToDateBecauseDraggedAndDropped |  Position in treeview is not up-to-date because object has been dragged and dropped somewhere else.  |  \n \n|  Obsolete |  Obsolete (last major revision is obsolete).  |  \n \n|  ToAnnihilate |  To annihilate state.  |  \n \n|  ToDelete |  To delete state.  |  \n \n|  Validated |  Validated (last major revision is validated).  |\n",
+  "markdown": "markdown/kernel/636c04fa38e63bcaedc53bcc.md",
+  "originalHtml": "html/kernel/636c04fa38e63bcaedc53bcc.html"
+}

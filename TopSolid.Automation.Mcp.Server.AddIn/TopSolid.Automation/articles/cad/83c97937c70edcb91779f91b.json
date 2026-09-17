@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMaterials.GetAlbedoColor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMaterials.GetAlbedoColor.html",
+  "sha256": "30677f48e8dcb20513f0258c9e726a3d93159cbef0eec20266b63ef544ea3dd9",
+  "text": "# Method GetAlbedoColor\n\n#### GetAlbedoColor(DocumentId)\n\nGets the Albado color.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 400, 100)]\nColor GetAlbedoColor(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Color |   |  \n\n##### Remarks\n\nThis method is available since v7.16.\n",
+  "markdown": "markdown/cad/83c97937c70edcb91779f91b.md",
+  "originalHtml": "html/cad/83c97937c70edcb91779f91b.html"
+}

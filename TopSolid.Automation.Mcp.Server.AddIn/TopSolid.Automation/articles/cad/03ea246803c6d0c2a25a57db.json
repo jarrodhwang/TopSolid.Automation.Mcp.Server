@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IBoms.IsColumnVisible.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IBoms.IsColumnVisible.html",
+  "sha256": "c889c5b373525d2636bc75c65c7a5935afee2aba81770d25e319c180c7c387ad",
+  "text": "# Method IsColumnVisible\n\n#### IsColumnVisible(DocumentId, int)\n\nTells whether a column of a BOM is visible.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 12, 0, 0)]\nbool IsColumnVisible(DocumentId inDocumentId, int inColumnIx)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the BOM document to analyze.  |  \n \n|  int |  inColumnIx |  Index of the column to analyze, within [0,GetColumnCount(DocumentId)-1].  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Whether the column is visible.  |  \n\n##### Remarks\n\nThis method is available since v7.12.\n",
+  "markdown": "markdown/cad/03ea246803c6d0c2a25a57db.md",
+  "originalHtml": "html/cad/03ea246803c6d0c2a25a57db.html"
+}

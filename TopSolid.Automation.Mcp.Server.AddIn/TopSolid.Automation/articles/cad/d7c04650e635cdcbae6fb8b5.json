@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IAssemblies.HasDriverSubFolderOwner.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IAssemblies.HasDriverSubFolderOwner.html",
+  "sha256": "d512a8a44e1835cffe66793603e878e647ce512b1a0a6e7ba40817e3af398db4",
+  "text": "# Method HasDriverSubFolderOwner\n\n#### HasDriverSubFolderOwner(ElementId, string)\n\nDetermines whether the driver is inside the sub-folder inside the driver folder of the family document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 17, 0, 0)]\nbool HasDriverSubFolderOwner(ElementId inElementId, string inDriverName)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the inclusion operation.  |  \n \n|  string |  inDriverName |  Instance driver names.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  The driver is inside a sub-folder.  |  \n\n##### Remarks\n\nThis method is available since v7.17.\n",
+  "markdown": "markdown/cad/d7c04650e635cdcbae6fb8b5.md",
+  "originalHtml": "html/cad/d7c04650e635cdcbae6fb8b5.html"
+}

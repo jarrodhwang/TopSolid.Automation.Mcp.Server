@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IElements.IsModifiable.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IElements.IsModifiable.html",
+  "sha256": "5c6a86e9f692bbe2c29f3531ea58f088c013a4dad6aac9b491f6869a4df53ac8",
+  "text": "# Method IsModifiable\n\n#### IsModifiable(ElementId)\n\nTells whether an element is modifiable.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nbool IsModifiable(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  The element is modifiable.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/4e68b6f8594d008c2122aabf.md",
+  "originalHtml": "html/kernel/4e68b6f8594d008c2122aabf.html"
+}

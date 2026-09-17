@@ -1,0 +1,8 @@
+{
+  "path": "api/cae/TopSolid.Cae.Kernel.Automating.MeasureResults.Coordinates.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cae/TopSolid.Cae.Kernel.Automating.MeasureResults.Coordinates.html",
+  "sha256": "57692022931df6ee6dff95daefca2b3f64bd8271ae3693eb06b270ed024f9f60",
+  "text": "# Property Coordinates\n\n#### Coordinates\n\nGets the coordinates Values\n\n##### Declaration\n\n```\npublic string[] Coordinates { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string[] |   |\n",
+  "markdown": "markdown/cae/925a3ef81aafeec3996c9353.md",
+  "originalHtml": "html/cae/925a3ef81aafeec3996c9353.html"
+}

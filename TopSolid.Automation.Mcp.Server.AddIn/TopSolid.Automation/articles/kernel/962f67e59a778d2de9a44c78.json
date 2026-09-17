@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartText.Formula.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartText.Formula.html",
+  "sha256": "9b87441a891242c359fa4c97269894836653f6eb5378f68e8da8656c1cf7f128",
+  "text": "# Field Formula\n\nFormula, or null if none.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic string Formula\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  Formula, or null if none. |\n",
+  "markdown": "markdown/kernel/962f67e59a778d2de9a44c78.md",
+  "originalHtml": "html/kernel/962f67e59a778d2de9a44c78.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ITextures.SetCategory.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ITextures.SetCategory.html",
+  "sha256": "ad227a0cb1c9fbc89fa90ce4a61494378fc9a5eaa4aa3741fb5a2061058bd863",
+  "text": "# Method SetCategory\n\n#### SetCategory(DocumentId, TextureCategoryType)\n\nSets the texture category of a texture document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 0, 0)]\nvoid SetCategory(DocumentId inDocumentId, TextureCategoryType inTextureCategoryType)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  TextureCategoryType |  inTextureCategoryType |  The texture category.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.16.\n",
+  "markdown": "markdown/kernel/f3b1384660a28e7a0d626470.md",
+  "originalHtml": "html/kernel/f3b1384660a28e7a0d626470.html"
+}

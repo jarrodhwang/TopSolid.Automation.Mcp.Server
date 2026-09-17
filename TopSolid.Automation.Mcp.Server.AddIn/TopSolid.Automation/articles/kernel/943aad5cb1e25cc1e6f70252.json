@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.IsTextLocalized.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.IsTextLocalized.html",
+  "sha256": "609300c4bca1dd6de8b3d03bc7d1369f787a622e909c563d88d9dd24454fc5be",
+  "text": "# Method IsTextLocalized\n\n#### IsTextLocalized(ElementId)\n\nTells whether a text parameter is localized.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nbool IsTextLocalized(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the parameter to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Whether the text parameter is localized.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/943aad5cb1e25cc1e6f70252.md",
+  "originalHtml": "html/kernel/943aad5cb1e25cc1e6f70252.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IApplication.ProcessId.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IApplication.ProcessId.html",
+  "sha256": "b9530f06484914c4c34d6b249864bca5520afc14ab866cae07cd6950c53172bb",
+  "text": "# Property ProcessId\n\n#### ProcessId\n\nGets the identifier of application process.\n\n##### Declaration\n\n```\n[AvailableSinceVersion(7, 11, 300, 80)]\nint ProcessId { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  int |   |\n",
+  "markdown": "markdown/pdmexplorer/6a9416a21a191b272c5c7cea.md",
+  "originalHtml": "html/pdmexplorer/6a9416a21a191b272c5c7cea.html"
+}

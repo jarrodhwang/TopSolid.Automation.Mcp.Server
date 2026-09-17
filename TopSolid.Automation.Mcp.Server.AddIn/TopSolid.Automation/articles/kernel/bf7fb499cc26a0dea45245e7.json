@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Frame2D.-ctor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Frame2D.-ctor.html",
+  "sha256": "4b5be6d9256732d6a8757bd8a9be68e4c6bc9c99a2b85b5ea8317101ab564408",
+  "text": "# Constructor Frame2D\n\n#### Frame2D(Point2D, Direction2D, Direction2D)\n\nInitializes a new instance of the Frame2D structure with a specified origin and directions.\n\n##### Declaration\n\n```\npublic Frame2D(Point2D inOrigin, Direction2D inXDirection, Direction2D inYDirection)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  Point2D |  inOrigin |  Frame origin.  |  \n \n|  Direction2D |  inXDirection |  Frame X direction.  |  \n \n|  Direction2D |  inYDirection |  Frame Y direction, orthogonal to inXDirection.  |\n",
+  "markdown": "markdown/kernel/bf7fb499cc26a0dea45245e7.md",
+  "originalHtml": "html/kernel/bf7fb499cc26a0dea45245e7.html"
+}

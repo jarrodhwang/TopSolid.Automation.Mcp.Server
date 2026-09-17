@@ -1,0 +1,8 @@
+{
+  "path": "api/wire/TopSolid.Cam.NC.Wire.Automating.IWireTechnologyDocuments.GetPartMaterial.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/wire/TopSolid.Cam.NC.Wire.Automating.IWireTechnologyDocuments.GetPartMaterial.html",
+  "sha256": "e807a5798f36eb297f2629bf19d2afa2e26e7c0e6beb2a26e0ebb08520ed735c",
+  "text": "# Method GetPartMaterial\n\n#### GetPartMaterial(DocumentId)\n\nSet part material.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 160)]\nPdmObjectId GetPartMaterial(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  PdmObjectId |  Identifier of part material document.  |\n",
+  "markdown": "markdown/wire/c0b292b999aa7d9af9ccd08d.md",
+  "originalHtml": "html/wire/c0b292b999aa7d9af9ccd08d.html"
+}

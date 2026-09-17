@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.GetConstituents.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.GetConstituents.html",
+  "sha256": "44688124439edefd512404db84a21316f7806534a5fca6e5f3db07999b2f94cc",
+  "text": "# Method GetConstituents\n\n#### GetConstituents(PdmObjectId, out List<PdmObjectId>, out List<PdmObjectId>)\n\nGets the constituents of an object.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 301, 120)]\nvoid GetConstituents(PdmObjectId inObjectId, out List<PdmObjectId> outFolderIds, out List<PdmObjectId> outDocumentObjectIds)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  PDM object identifier of a project, a folder or a document.  |  \n \n|  List<PdmObjectId> |  outFolderIds |  List of folders identifiers.  |  \n \n|  List<PdmObjectId> |  outDocumentObjectIds |  List of documents identifiers.  |  \n\n##### Remarks\n\nThis method is available since v7.6.301.120.\n",
+  "markdown": "markdown/kernel/9613f7d97ce6e10e2438c8e4.md",
+  "originalHtml": "html/kernel/9613f7d97ce6e10e2438c8e4.html"
+}

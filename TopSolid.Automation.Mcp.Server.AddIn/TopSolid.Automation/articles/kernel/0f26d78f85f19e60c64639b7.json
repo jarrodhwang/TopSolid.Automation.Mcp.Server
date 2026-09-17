@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IShapes.GetFacePoint.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IShapes.GetFacePoint.html",
+  "sha256": "f3d612ddb2c685bd7453e92f7c5963c9a8ff773f3968d4d324981c73954bc06d",
+  "text": "# Method GetFacePoint\n\n#### GetFacePoint(ElementItemId, double, double)\n\nGets a point on the surface attached to a face at specified parametric values.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nPoint3D GetFacePoint(ElementItemId inFaceId, double inU, double inV)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementItemId |  inFaceId |  Identifier of the face to analyze.  |  \n \n|  double |  inU |  U parameter within face surface parametric range.  |  \n \n|  double |  inV |  V parameter within face surface parametric range.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Point3D |  Point on the face surface at the specified parametric values.  |  \n\n##### Remarks\n\nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/0f26d78f85f19e60c64639b7.md",
+  "originalHtml": "html/kernel/0f26d78f85f19e60c64639b7.html"
+}

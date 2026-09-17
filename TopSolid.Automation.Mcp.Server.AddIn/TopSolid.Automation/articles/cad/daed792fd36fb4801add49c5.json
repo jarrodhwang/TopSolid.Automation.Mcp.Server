@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ISubstitutions.GetSimilarFamilyDocuments.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ISubstitutions.GetSimilarFamilyDocuments.html",
+  "sha256": "29717d6c1b434cff2d53f26c7e5ca111dfd2ed0fa1c969d1a910640925959b22",
+  "text": "# Method GetSimilarFamilyDocuments\n\n#### GetSimilarFamilyDocuments(ElementId)\n\nGets the same fonctions family documents from a substitutable element.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 0, 0)]\nList<PdmMinorRevisionId> GetSimilarFamilyDocuments(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the substitutable element to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<PdmMinorRevisionId> |  Compatible family documents found as PdmMinorRevisionId list.  |  \n\n##### Remarks\n\nThis method is available since v7.19.\n",
+  "markdown": "markdown/cad/daed792fd36fb4801add49c5.md",
+  "originalHtml": "html/cad/daed792fd36fb4801add49c5.html"
+}

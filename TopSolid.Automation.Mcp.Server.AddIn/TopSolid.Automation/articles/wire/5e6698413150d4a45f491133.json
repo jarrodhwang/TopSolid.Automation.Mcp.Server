@@ -1,0 +1,8 @@
+{
+  "path": "api/wire/TopSolid.Cam.NC.Wire.Automating.IWireTechnologies.GetMaterialDepthMaxi.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/wire/TopSolid.Cam.NC.Wire.Automating.IWireTechnologies.GetMaterialDepthMaxi.html",
+  "sha256": "937c2026c524a91dcfb217dc14cdd036300928a178081379399e3b9dfafe293c",
+  "text": "# Method GetMaterialDepthMaxi\n\n#### GetMaterialDepthMaxi(ElementId)\n\nSet material depth maxi.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 160)]\nSmartReal GetMaterialDepthMaxi(ElementId inTechnologyId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inTechnologyId |  Identifier of the technology to modify.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartReal |  Material depth maxi in SI units.  |\n",
+  "markdown": "markdown/wire/5e6698413150d4a45f491133.md",
+  "originalHtml": "html/wire/5e6698413150d4a45f491133.html"
+}

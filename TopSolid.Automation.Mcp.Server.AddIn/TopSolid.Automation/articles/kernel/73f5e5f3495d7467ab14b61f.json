@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IEntities.BasifySeveral.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IEntities.BasifySeveral.html",
+  "sha256": "687f4201cb1a24039369b4a464ea7d3c04b5d78d684bf883dc7fe2e214832728",
+  "text": "# Method BasifySeveral\n\n#### BasifySeveral(List<ElementId>)\n\nBasifies several entities.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 201, 200)]\nvoid BasifySeveral(List<ElementId> inElementIds)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  List<ElementId> |  inElementIds |  Identifiers of the entities to basify.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.7.201.200.\n",
+  "markdown": "markdown/kernel/73f5e5f3495d7467ab14b61f.md",
+  "originalHtml": "html/kernel/73f5e5f3495d7467ab14b61f.html"
+}

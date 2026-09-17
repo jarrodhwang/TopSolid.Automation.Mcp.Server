@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IAssemblies.HasOptionalDrivers.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IAssemblies.HasOptionalDrivers.html",
+  "sha256": "b1eb7dbdca0e3dea3fa2d73e6482ac7d64320d6c3eff8dc78f807a27f8813438",
+  "text": "# Method HasOptionalDrivers\n\n#### HasOptionalDrivers(ElementId)\n\nTells if an inclusion has optional drivers.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 400, 80)]\nbool HasOptionalDrivers(ElementId inOperationId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inOperationId |   |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |   |\n",
+  "markdown": "markdown/cad/b9fc4f8190f2e11036874618.md",
+  "originalHtml": "html/cad/b9fc4f8190f2e11036874618.html"
+}

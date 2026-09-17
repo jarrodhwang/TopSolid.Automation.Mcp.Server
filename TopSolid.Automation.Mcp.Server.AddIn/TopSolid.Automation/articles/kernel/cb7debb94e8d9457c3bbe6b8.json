@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Direction3D.X.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Direction3D.X.html",
+  "sha256": "fef46b68c59c8245709f72ec8a6991617b080634de16be440c1f0428d8108618",
+  "text": "# Field X\n\nX component.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic double X\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double |  X component. |\n",
+  "markdown": "markdown/kernel/cb7debb94e8d9457c3bbe6b8.md",
+  "originalHtml": "html/kernel/cb7debb94e8d9457c3bbe6b8.html"
+}

@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Interface IDocuments | TopSolid Automation website </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Interface IDocuments | TopSolid Automation website ">
+    
+    <meta name="description" content="Gives access to documents.">
+      <link rel="shortcut icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../../styles/docfx.css">
+      <link rel="stylesheet" href="../../styles/main.css">
+      <meta property="docfx:navrel" content="../../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../img/AutomationIcon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="TopSolid.Kernel.Automating.IDocuments">
+
+
+
+  <h1 id="TopSolid_Kernel_Automating_IDocuments" data-uid="TopSolid.Kernel.Automating.IDocuments" class="text-break">Interface IDocuments</h1>
+  <div class="markdown level0 summary"><p>Gives access to documents.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="TopSolid.html">TopSolid</a>.<a class="xref" href="TopSolid.Kernel.html">Kernel</a>.<a class="xref" href="TopSolid.Kernel.Automating.html">Automating</a></h6>
+  <h6><strong>Assembly</strong>: TopSolid.Kernel.Automating.dll</h6>
+  <h5 id="TopSolid_Kernel_Automating_IDocuments_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ServiceContract]
+[AvailableSinceVersion(7, 6, 0, 0)]
+public interface IDocuments</code></pre>
+  </div>
+  <h5 id="TopSolid_Kernel_Automating_IDocuments_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>This interface is available since v7.6.</p>
+</div>
+  <h3 id="properties">Properties
+</h3>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_EditedDocument" data-uid="TopSolid.Kernel.Automating.IDocuments.EditedDocument">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.EditedDocument.html#TopSolid_Kernel_Automating_IDocuments_EditedDocument">EditedDocument</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets or sets the document being edited.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_EditingContextDocument" data-uid="TopSolid.Kernel.Automating.IDocuments.EditingContextDocument">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.EditingContextDocument.html#TopSolid_Kernel_Automating_IDocuments_EditingContextDocument">EditingContextDocument</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the context document in which the edited document is being edited.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_CanExport_System_Int32_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Kernel.Automating.IDocuments.CanExport(System.Int32,TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.CanExport.html#TopSolid_Kernel_Automating_IDocuments_CanExport_System_Int32_TopSolid_Kernel_Automating_DocumentId_">CanExport(int, DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Tells whether an exporter can export a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_CanInclude_System_Int32_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Kernel.Automating.IDocuments.CanInclude(System.Int32,TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.CanInclude.html#TopSolid_Kernel_Automating_IDocuments_CanInclude_System_Int32_TopSolid_Kernel_Automating_DocumentId_">CanInclude(int, DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Tells whether an importer can include into a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_CanPrint_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Kernel.Automating.IDocuments.CanPrint(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.CanPrint.html#TopSolid_Kernel_Automating_IDocuments_CanPrint_TopSolid_Kernel_Automating_DocumentId_">CanPrint(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Tells whether a document can be printed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_Close_TopSolid_Kernel_Automating_DocumentId_System_Boolean_System_Boolean_" data-uid="TopSolid.Kernel.Automating.IDocuments.Close(TopSolid.Kernel.Automating.DocumentId,System.Boolean,System.Boolean)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.Close.html#TopSolid_Kernel_Automating_IDocuments_Close_TopSolid_Kernel_Automating_DocumentId_System_Boolean_System_Boolean_">Close(DocumentId, bool, bool)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Closes a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_CloseAll_System_Boolean_System_Boolean_" data-uid="TopSolid.Kernel.Automating.IDocuments.CloseAll(System.Boolean,System.Boolean)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.CloseAll.html#TopSolid_Kernel_Automating_IDocuments_CloseAll_System_Boolean_System_Boolean_">CloseAll(bool, bool)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Closes all documents.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_Consult_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Kernel.Automating.IDocuments.Consult(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.Consult.html#TopSolid_Kernel_Automating_IDocuments_Consult_TopSolid_Kernel_Automating_DocumentId_">Consult(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Opens a document in read only.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_Drop_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Kernel.Automating.IDocuments.Drop(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.Drop.html#TopSolid_Kernel_Automating_IDocuments_Drop_TopSolid_Kernel_Automating_DocumentId_">Drop(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Drops a document into the document being edited.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_EnsureIsDirty_TopSolid_Kernel_Automating_DocumentId__" data-uid="TopSolid.Kernel.Automating.IDocuments.EnsureIsDirty(TopSolid.Kernel.Automating.DocumentId@)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.EnsureIsDirty.html#TopSolid_Kernel_Automating_IDocuments_EnsureIsDirty_TopSolid_Kernel_Automating_DocumentId__">EnsureIsDirty(ref DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Ensures that a document is dirty before performing modifications.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_Exists_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Kernel.Automating.IDocuments.Exists(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.Exists.html#TopSolid_Kernel_Automating_IDocuments_Exists_TopSolid_Kernel_Automating_DocumentId_">Exists(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Tells whether a document still exists.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_Export_System_Int32_TopSolid_Kernel_Automating_DocumentId_System_String_" data-uid="TopSolid.Kernel.Automating.IDocuments.Export(System.Int32,TopSolid.Kernel.Automating.DocumentId,System.String)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.Export.html#TopSolid_Kernel_Automating_IDocuments_Export_System_Int32_TopSolid_Kernel_Automating_DocumentId_System_String_">Export(int, DocumentId, string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Exports a document to a file with conversion.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_ExportMachineToGlTF_TopSolid_Kernel_Automating_DocumentId_System_String_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_String__" data-uid="TopSolid.Kernel.Automating.IDocuments.ExportMachineToGlTF(TopSolid.Kernel.Automating.DocumentId,System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.String@)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.ExportMachineToGlTF.html#TopSolid_Kernel_Automating_IDocuments_ExportMachineToGlTF_TopSolid_Kernel_Automating_DocumentId_System_String_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_String__">ExportMachineToGlTF(DocumentId, string, bool, bool, bool, bool, out string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Exports a glTF with organized elements.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_ExportWithOptions_System_Int32_System_Collections_Generic_List_TopSolid_Kernel_Automating_KeyValue__TopSolid_Kernel_Automating_DocumentId_System_String_" data-uid="TopSolid.Kernel.Automating.IDocuments.ExportWithOptions(System.Int32,System.Collections.Generic.List{TopSolid.Kernel.Automating.KeyValue},TopSolid.Kernel.Automating.DocumentId,System.String)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.ExportWithOptions.html#TopSolid_Kernel_Automating_IDocuments_ExportWithOptions_System_Int32_System_Collections_Generic_List_TopSolid_Kernel_Automating_KeyValue__TopSolid_Kernel_Automating_DocumentId_System_String_">ExportWithOptions(int, List&lt;KeyValue&gt;, DocumentId, string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Exports a document to a file with conversion using specified options.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_Freeze_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Kernel.Automating.IDocuments.Freeze(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.Freeze.html#TopSolid_Kernel_Automating_IDocuments_Freeze_TopSolid_Kernel_Automating_DocumentId_">Freeze(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Freezes a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_GetCurrentCulture_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Kernel.Automating.IDocuments.GetCurrentCulture(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.GetCurrentCulture.html#TopSolid_Kernel_Automating_IDocuments_GetCurrentCulture_TopSolid_Kernel_Automating_DocumentId_">GetCurrentCulture(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the document current culture.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_GetDocument_TopSolid_Kernel_Automating_PdmObjectId_" data-uid="TopSolid.Kernel.Automating.IDocuments.GetDocument(TopSolid.Kernel.Automating.PdmObjectId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.GetDocument.html#TopSolid_Kernel_Automating_IDocuments_GetDocument_TopSolid_Kernel_Automating_PdmObjectId_">GetDocument(PdmObjectId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the document corresponding to the last minor revision of a document PDM object.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_GetDocuments" data-uid="TopSolid.Kernel.Automating.IDocuments.GetDocuments">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.GetDocuments.html#TopSolid_Kernel_Automating_IDocuments_GetDocuments">GetDocuments()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets all the documents loaded into memory.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_GetMinorRevisionDocument_TopSolid_Kernel_Automating_PdmMinorRevisionId_" data-uid="TopSolid.Kernel.Automating.IDocuments.GetMinorRevisionDocument(TopSolid.Kernel.Automating.PdmMinorRevisionId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.GetMinorRevisionDocument.html#TopSolid_Kernel_Automating_IDocuments_GetMinorRevisionDocument_TopSolid_Kernel_Automating_PdmMinorRevisionId_">GetMinorRevisionDocument(PdmMinorRevisionId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the document corresponding to a PDM minor revision.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_GetName_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Kernel.Automating.IDocuments.GetName(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.GetName.html#TopSolid_Kernel_Automating_IDocuments_GetName_TopSolid_Kernel_Automating_DocumentId_">GetName(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the name of a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_GetOpenDocuments" data-uid="TopSolid.Kernel.Automating.IDocuments.GetOpenDocuments">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.GetOpenDocuments.html#TopSolid_Kernel_Automating_IDocuments_GetOpenDocuments">GetOpenDocuments()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the open documents.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_GetPdmMinorRevision_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Kernel.Automating.IDocuments.GetPdmMinorRevision(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.GetPdmMinorRevision.html#TopSolid_Kernel_Automating_IDocuments_GetPdmMinorRevision_TopSolid_Kernel_Automating_DocumentId_">GetPdmMinorRevision(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the PDM minor revision corresponding to a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_GetPdmObject_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Kernel.Automating.IDocuments.GetPdmObject(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.GetPdmObject.html#TopSolid_Kernel_Automating_IDocuments_GetPdmObject_TopSolid_Kernel_Automating_DocumentId_">GetPdmObject(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the PDM object corresponding to a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_GetProperties_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Kernel.Automating.IDocuments.GetProperties(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.GetProperties.html#TopSolid_Kernel_Automating_IDocuments_GetProperties_TopSolid_Kernel_Automating_DocumentId_">GetProperties(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the full names of the properties of a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_GetPropertyBooleanValue_TopSolid_Kernel_Automating_DocumentId_System_String_" data-uid="TopSolid.Kernel.Automating.IDocuments.GetPropertyBooleanValue(TopSolid.Kernel.Automating.DocumentId,System.String)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.GetPropertyBooleanValue.html#TopSolid_Kernel_Automating_IDocuments_GetPropertyBooleanValue_TopSolid_Kernel_Automating_DocumentId_System_String_">GetPropertyBooleanValue(DocumentId, string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the value of a document Boolean property.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_GetPropertyDateTimeValue_TopSolid_Kernel_Automating_DocumentId_System_String_" data-uid="TopSolid.Kernel.Automating.IDocuments.GetPropertyDateTimeValue(TopSolid.Kernel.Automating.DocumentId,System.String)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.GetPropertyDateTimeValue.html#TopSolid_Kernel_Automating_IDocuments_GetPropertyDateTimeValue_TopSolid_Kernel_Automating_DocumentId_System_String_">GetPropertyDateTimeValue(DocumentId, string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the value of a document date and time property.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_GetPropertyIntegerValue_TopSolid_Kernel_Automating_DocumentId_System_String_" data-uid="TopSolid.Kernel.Automating.IDocuments.GetPropertyIntegerValue(TopSolid.Kernel.Automating.DocumentId,System.String)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.GetPropertyIntegerValue.html#TopSolid_Kernel_Automating_IDocuments_GetPropertyIntegerValue_TopSolid_Kernel_Automating_DocumentId_System_String_">GetPropertyIntegerValue(DocumentId, string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the value of a document integer property.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_GetPropertyLocalizedDomainName_TopSolid_Kernel_Automating_DocumentId_System_String_" data-uid="TopSolid.Kernel.Automating.IDocuments.GetPropertyLocalizedDomainName(TopSolid.Kernel.Automating.DocumentId,System.String)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.GetPropertyLocalizedDomainName.html#TopSolid_Kernel_Automating_IDocuments_GetPropertyLocalizedDomainName_TopSolid_Kernel_Automating_DocumentId_System_String_">GetPropertyLocalizedDomainName(DocumentId, string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the localized domain name of a document property.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_GetPropertyLocalizedName_TopSolid_Kernel_Automating_DocumentId_System_String_" data-uid="TopSolid.Kernel.Automating.IDocuments.GetPropertyLocalizedName(TopSolid.Kernel.Automating.DocumentId,System.String)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.GetPropertyLocalizedName.html#TopSolid_Kernel_Automating_IDocuments_GetPropertyLocalizedName_TopSolid_Kernel_Automating_DocumentId_System_String_">GetPropertyLocalizedName(DocumentId, string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the localized name of a document property.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_GetPropertyRealUnit_TopSolid_Kernel_Automating_DocumentId_System_String_TopSolid_Kernel_Automating_UnitType__System_String__" data-uid="TopSolid.Kernel.Automating.IDocuments.GetPropertyRealUnit(TopSolid.Kernel.Automating.DocumentId,System.String,TopSolid.Kernel.Automating.UnitType@,System.String@)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.GetPropertyRealUnit.html#TopSolid_Kernel_Automating_IDocuments_GetPropertyRealUnit_TopSolid_Kernel_Automating_DocumentId_System_String_TopSolid_Kernel_Automating_UnitType__System_String__">GetPropertyRealUnit(DocumentId, string, out UnitType, out string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the unit of a document real property.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_GetPropertyRealValue_TopSolid_Kernel_Automating_DocumentId_System_String_" data-uid="TopSolid.Kernel.Automating.IDocuments.GetPropertyRealValue(TopSolid.Kernel.Automating.DocumentId,System.String)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.GetPropertyRealValue.html#TopSolid_Kernel_Automating_IDocuments_GetPropertyRealValue_TopSolid_Kernel_Automating_DocumentId_System_String_">GetPropertyRealValue(DocumentId, string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the value of a document real property.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_GetPropertyTextValue_TopSolid_Kernel_Automating_DocumentId_System_String_" data-uid="TopSolid.Kernel.Automating.IDocuments.GetPropertyTextValue(TopSolid.Kernel.Automating.DocumentId,System.String)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.GetPropertyTextValue.html#TopSolid_Kernel_Automating_IDocuments_GetPropertyTextValue_TopSolid_Kernel_Automating_DocumentId_System_String_">GetPropertyTextValue(DocumentId, string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the value of a document text property.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_GetPropertyType_TopSolid_Kernel_Automating_DocumentId_System_String_" data-uid="TopSolid.Kernel.Automating.IDocuments.GetPropertyType(TopSolid.Kernel.Automating.DocumentId,System.String)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.GetPropertyType.html#TopSolid_Kernel_Automating_IDocuments_GetPropertyType_TopSolid_Kernel_Automating_DocumentId_System_String_">GetPropertyType(DocumentId, string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the type of a document property.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_GetReferencedDocuments_TopSolid_Kernel_Automating_DocumentId_System_Boolean_" data-uid="TopSolid.Kernel.Automating.IDocuments.GetReferencedDocuments(TopSolid.Kernel.Automating.DocumentId,System.Boolean)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.GetReferencedDocuments.html#TopSolid_Kernel_Automating_IDocuments_GetReferencedDocuments_TopSolid_Kernel_Automating_DocumentId_System_Boolean_">GetReferencedDocuments(DocumentId, bool)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the documents referenced by a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_GetSynchronizedDocuments_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Kernel.Automating.IDocuments.GetSynchronizedDocuments(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.GetSynchronizedDocuments.html#TopSolid_Kernel_Automating_IDocuments_GetSynchronizedDocuments_TopSolid_Kernel_Automating_DocumentId_">GetSynchronizedDocuments(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the documents synchronized with a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_GetTypeFullName_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Kernel.Automating.IDocuments.GetTypeFullName(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.GetTypeFullName.html#TopSolid_Kernel_Automating_IDocuments_GetTypeFullName_TopSolid_Kernel_Automating_DocumentId_">GetTypeFullName(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the full name of the type of a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_GetTypeGuid_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Kernel.Automating.IDocuments.GetTypeGuid(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.GetTypeGuid.html#TopSolid_Kernel_Automating_IDocuments_GetTypeGuid_TopSolid_Kernel_Automating_DocumentId_">GetTypeGuid(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the GUID of the type of a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_GetUniversalId_TopSolid_Kernel_Automating_DocumentId_System_String__System_String__" data-uid="TopSolid.Kernel.Automating.IDocuments.GetUniversalId(TopSolid.Kernel.Automating.DocumentId,System.String@,System.String@)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.GetUniversalId.html#TopSolid_Kernel_Automating_IDocuments_GetUniversalId_TopSolid_Kernel_Automating_DocumentId_System_String__System_String__">GetUniversalId(DocumentId, out string, out string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the universal identifier of a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_Import_System_Int32_System_String_TopSolid_Kernel_Automating_PdmObjectId_System_Collections_Generic_List_System_String___System_Collections_Generic_List_TopSolid_Kernel_Automating_DocumentId___" data-uid="TopSolid.Kernel.Automating.IDocuments.Import(System.Int32,System.String,TopSolid.Kernel.Automating.PdmObjectId,System.Collections.Generic.List{System.String}@,System.Collections.Generic.List{TopSolid.Kernel.Automating.DocumentId}@)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.Import.html#TopSolid_Kernel_Automating_IDocuments_Import_System_Int32_System_String_TopSolid_Kernel_Automating_PdmObjectId_System_Collections_Generic_List_System_String___System_Collections_Generic_List_TopSolid_Kernel_Automating_DocumentId___">Import(int, string, PdmObjectId, out List&lt;string&gt;, out List&lt;DocumentId&gt;)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Imports a file with conversion into a project or one of its folders.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_ImportWithOptions_System_Int32_System_Collections_Generic_List_TopSolid_Kernel_Automating_KeyValue__System_String_TopSolid_Kernel_Automating_PdmObjectId_System_Collections_Generic_List_System_String___System_Collections_Generic_List_TopSolid_Kernel_Automating_DocumentId___" data-uid="TopSolid.Kernel.Automating.IDocuments.ImportWithOptions(System.Int32,System.Collections.Generic.List{TopSolid.Kernel.Automating.KeyValue},System.String,TopSolid.Kernel.Automating.PdmObjectId,System.Collections.Generic.List{System.String}@,System.Collections.Generic.List{TopSolid.Kernel.Automating.DocumentId}@)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.ImportWithOptions.html#TopSolid_Kernel_Automating_IDocuments_ImportWithOptions_System_Int32_System_Collections_Generic_List_TopSolid_Kernel_Automating_KeyValue__System_String_TopSolid_Kernel_Automating_PdmObjectId_System_Collections_Generic_List_System_String___System_Collections_Generic_List_TopSolid_Kernel_Automating_DocumentId___">ImportWithOptions(int, List&lt;KeyValue&gt;, string, PdmObjectId, out List&lt;string&gt;, out List&lt;DocumentId&gt;)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Imports a file with conversion into a project or one of its folders using specified options.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_Include_System_Int32_System_String_TopSolid_Kernel_Automating_DocumentId_System_Collections_Generic_List_System_String___System_Collections_Generic_List_TopSolid_Kernel_Automating_DocumentId___" data-uid="TopSolid.Kernel.Automating.IDocuments.Include(System.Int32,System.String,TopSolid.Kernel.Automating.DocumentId,System.Collections.Generic.List{System.String}@,System.Collections.Generic.List{TopSolid.Kernel.Automating.DocumentId}@)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.Include.html#TopSolid_Kernel_Automating_IDocuments_Include_System_Int32_System_String_TopSolid_Kernel_Automating_DocumentId_System_Collections_Generic_List_System_String___System_Collections_Generic_List_TopSolid_Kernel_Automating_DocumentId___">Include(int, string, DocumentId, out List&lt;string&gt;, out List&lt;DocumentId&gt;)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Imports a file with conversion into an existing document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_IncludeWithOptions_System_Int32_System_Collections_Generic_List_TopSolid_Kernel_Automating_KeyValue__System_String_TopSolid_Kernel_Automating_DocumentId_System_Collections_Generic_List_System_String___System_Collections_Generic_List_TopSolid_Kernel_Automating_DocumentId___" data-uid="TopSolid.Kernel.Automating.IDocuments.IncludeWithOptions(System.Int32,System.Collections.Generic.List{TopSolid.Kernel.Automating.KeyValue},System.String,TopSolid.Kernel.Automating.DocumentId,System.Collections.Generic.List{System.String}@,System.Collections.Generic.List{TopSolid.Kernel.Automating.DocumentId}@)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.IncludeWithOptions.html#TopSolid_Kernel_Automating_IDocuments_IncludeWithOptions_System_Int32_System_Collections_Generic_List_TopSolid_Kernel_Automating_KeyValue__System_String_TopSolid_Kernel_Automating_DocumentId_System_Collections_Generic_List_System_String___System_Collections_Generic_List_TopSolid_Kernel_Automating_DocumentId___">IncludeWithOptions(int, List&lt;KeyValue&gt;, string, DocumentId, out List&lt;string&gt;, out List&lt;DocumentId&gt;)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Imports a file with conversion into an existing document using specified options.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_IsDirty_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Kernel.Automating.IDocuments.IsDirty(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.IsDirty.html#TopSolid_Kernel_Automating_IDocuments_IsDirty_TopSolid_Kernel_Automating_DocumentId_">IsDirty(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Tells whether a document is dirty.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_IsFreezable_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Kernel.Automating.IDocuments.IsFreezable(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.IsFreezable.html#TopSolid_Kernel_Automating_IDocuments_IsFreezable_TopSolid_Kernel_Automating_DocumentId_">IsFreezable(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Tells whether a document may be frozen.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_IsFrozen_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Kernel.Automating.IDocuments.IsFrozen(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.IsFrozen.html#TopSolid_Kernel_Automating_IDocuments_IsFrozen_TopSolid_Kernel_Automating_DocumentId_">IsFrozen(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Tells whether a document is frozen.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_IsInvalid_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Kernel.Automating.IDocuments.IsInvalid(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.IsInvalid.html#TopSolid_Kernel_Automating_IDocuments_IsInvalid_TopSolid_Kernel_Automating_DocumentId_">IsInvalid(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Tells whether a document is invalid.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_IsIsUnexportableDocument_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Kernel.Automating.IDocuments.IsIsUnexportableDocument(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.IsIsUnexportableDocument.html#TopSolid_Kernel_Automating_IDocuments_IsIsUnexportableDocument_TopSolid_Kernel_Automating_DocumentId_">IsIsUnexportableDocument(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Determines whether the document is unexportable.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_IsSynchronized_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Kernel.Automating.IDocuments.IsSynchronized(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.IsSynchronized.html#TopSolid_Kernel_Automating_IDocuments_IsSynchronized_TopSolid_Kernel_Automating_DocumentId_">IsSynchronized(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Tells whether a document is synchronized with other documents.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_IsUnmovableDocument_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Kernel.Automating.IDocuments.IsUnmovableDocument(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.IsUnmovableDocument.html#TopSolid_Kernel_Automating_IDocuments_IsUnmovableDocument_TopSolid_Kernel_Automating_DocumentId_">IsUnmovableDocument(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Determines whether the document is movable.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_IsUnsynchronizableDocument_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Kernel.Automating.IDocuments.IsUnsynchronizableDocument(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.IsUnsynchronizableDocument.html#TopSolid_Kernel_Automating_IDocuments_IsUnsynchronizableDocument_TopSolid_Kernel_Automating_DocumentId_">IsUnsynchronizableDocument(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Determines whether the document is unsynchronizable.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_IsVirtualDocument_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Kernel.Automating.IDocuments.IsVirtualDocument(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.IsVirtualDocument.html#TopSolid_Kernel_Automating_IDocuments_IsVirtualDocument_TopSolid_Kernel_Automating_DocumentId_">IsVirtualDocument(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Determines whether the document is virtual.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_NeedsRefreshing_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Kernel.Automating.IDocuments.NeedsRefreshing(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.NeedsRefreshing.html#TopSolid_Kernel_Automating_IDocuments_NeedsRefreshing_TopSolid_Kernel_Automating_DocumentId_">NeedsRefreshing(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Tells whether a document needs refreshing.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_Open_TopSolid_Kernel_Automating_DocumentId__" data-uid="TopSolid.Kernel.Automating.IDocuments.Open(TopSolid.Kernel.Automating.DocumentId@)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.Open.html#TopSolid_Kernel_Automating_IDocuments_Open_TopSolid_Kernel_Automating_DocumentId__">Open(ref DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Opens a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_Print_TopSolid_Kernel_Automating_DocumentId_TopSolid_Kernel_Automating_PrintColorMapping_System_Int32_" data-uid="TopSolid.Kernel.Automating.IDocuments.Print(TopSolid.Kernel.Automating.DocumentId,TopSolid.Kernel.Automating.PrintColorMapping,System.Int32)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.Print.html#TopSolid_Kernel_Automating_IDocuments_Print_TopSolid_Kernel_Automating_DocumentId_TopSolid_Kernel_Automating_PrintColorMapping_System_Int32_">Print(DocumentId, PrintColorMapping, int)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Prints a document to the active printer.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_Rebuild_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Kernel.Automating.IDocuments.Rebuild(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.Rebuild.html#TopSolid_Kernel_Automating_IDocuments_Rebuild_TopSolid_Kernel_Automating_DocumentId_">Rebuild(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Rebuilds a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_Refresh_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Kernel.Automating.IDocuments.Refresh(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.Refresh.html#TopSolid_Kernel_Automating_IDocuments_Refresh_TopSolid_Kernel_Automating_DocumentId_">Refresh(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Refreshes a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_Save_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Kernel.Automating.IDocuments.Save(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.Save.html#TopSolid_Kernel_Automating_IDocuments_Save_TopSolid_Kernel_Automating_DocumentId_">Save(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Saves a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_SaveAs_TopSolid_Kernel_Automating_DocumentId_TopSolid_Kernel_Automating_PdmObjectId_System_String_" data-uid="TopSolid.Kernel.Automating.IDocuments.SaveAs(TopSolid.Kernel.Automating.DocumentId,TopSolid.Kernel.Automating.PdmObjectId,System.String)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.SaveAs.html#TopSolid_Kernel_Automating_IDocuments_SaveAs_TopSolid_Kernel_Automating_DocumentId_TopSolid_Kernel_Automating_PdmObjectId_System_String_">SaveAs(DocumentId, PdmObjectId, string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Saves a document as a new document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_SetCurrentCulture_TopSolid_Kernel_Automating_DocumentId_System_Globalization_CultureInfo_" data-uid="TopSolid.Kernel.Automating.IDocuments.SetCurrentCulture(TopSolid.Kernel.Automating.DocumentId,System.Globalization.CultureInfo)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.SetCurrentCulture.html#TopSolid_Kernel_Automating_IDocuments_SetCurrentCulture_TopSolid_Kernel_Automating_DocumentId_System_Globalization_CultureInfo_">SetCurrentCulture(DocumentId, CultureInfo)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the document current culture.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_SetName_TopSolid_Kernel_Automating_DocumentId_System_String_" data-uid="TopSolid.Kernel.Automating.IDocuments.SetName(TopSolid.Kernel.Automating.DocumentId,System.String)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.SetName.html#TopSolid_Kernel_Automating_IDocuments_SetName_TopSolid_Kernel_Automating_DocumentId_System_String_">SetName(DocumentId, string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the name of a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_SetUnexportableDocumentMode_TopSolid_Kernel_Automating_DocumentId_System_Boolean_" data-uid="TopSolid.Kernel.Automating.IDocuments.SetUnexportableDocumentMode(TopSolid.Kernel.Automating.DocumentId,System.Boolean)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.SetUnexportableDocumentMode.html#TopSolid_Kernel_Automating_IDocuments_SetUnexportableDocumentMode_TopSolid_Kernel_Automating_DocumentId_System_Boolean_">SetUnexportableDocumentMode(DocumentId, bool)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the unexportable document mode.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_SetUniversalId_TopSolid_Kernel_Automating_DocumentId_System_String_System_String_" data-uid="TopSolid.Kernel.Automating.IDocuments.SetUniversalId(TopSolid.Kernel.Automating.DocumentId,System.String,System.String)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.SetUniversalId.html#TopSolid_Kernel_Automating_IDocuments_SetUniversalId_TopSolid_Kernel_Automating_DocumentId_System_String_System_String_">SetUniversalId(DocumentId, string, string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the universal identifier of a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_SetUnmovableDocumentMode_TopSolid_Kernel_Automating_DocumentId_System_Boolean_" data-uid="TopSolid.Kernel.Automating.IDocuments.SetUnmovableDocumentMode(TopSolid.Kernel.Automating.DocumentId,System.Boolean)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.SetUnmovableDocumentMode.html#TopSolid_Kernel_Automating_IDocuments_SetUnmovableDocumentMode_TopSolid_Kernel_Automating_DocumentId_System_Boolean_">SetUnmovableDocumentMode(DocumentId, bool)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the unmovable document mode.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_SetUnsynchronizableDocumentMode_TopSolid_Kernel_Automating_DocumentId_System_Boolean_" data-uid="TopSolid.Kernel.Automating.IDocuments.SetUnsynchronizableDocumentMode(TopSolid.Kernel.Automating.DocumentId,System.Boolean)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.SetUnsynchronizableDocumentMode.html#TopSolid_Kernel_Automating_IDocuments_SetUnsynchronizableDocumentMode_TopSolid_Kernel_Automating_DocumentId_System_Boolean_">SetUnsynchronizableDocumentMode(DocumentId, bool)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the unsynchronizable document mode.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_SetVirtualDocumentMode_TopSolid_Kernel_Automating_DocumentId_System_Boolean_" data-uid="TopSolid.Kernel.Automating.IDocuments.SetVirtualDocumentMode(TopSolid.Kernel.Automating.DocumentId,System.Boolean)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.SetVirtualDocumentMode.html#TopSolid_Kernel_Automating_IDocuments_SetVirtualDocumentMode_TopSolid_Kernel_Automating_DocumentId_System_Boolean_">SetVirtualDocumentMode(DocumentId, bool)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the virtual document mode.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_SubscribeToEvents_System_Int32_System_String_" data-uid="TopSolid.Kernel.Automating.IDocuments.SubscribeToEvents(System.Int32,System.String)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.SubscribeToEvents.html#TopSolid_Kernel_Automating_IDocuments_SubscribeToEvents_System_Int32_System_String_">SubscribeToEvents(int, string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Subscribes to documents events.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_SubscribeToEventsTcp_System_Int32_System_String_System_String_System_Int32_" data-uid="TopSolid.Kernel.Automating.IDocuments.SubscribeToEventsTcp(System.Int32,System.String,System.String,System.Int32)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.SubscribeToEventsTcp.html#TopSolid_Kernel_Automating_IDocuments_SubscribeToEventsTcp_System_Int32_System_String_System_String_System_Int32_">SubscribeToEventsTcp(int, string, string, int)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Subscribes to documents events using TCP connection.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_Unfreeze_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Kernel.Automating.IDocuments.Unfreeze(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.Unfreeze.html#TopSolid_Kernel_Automating_IDocuments_Unfreeze_TopSolid_Kernel_Automating_DocumentId_">Unfreeze(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Unfreezes a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_UnsubscribeFromEvents_System_String_" data-uid="TopSolid.Kernel.Automating.IDocuments.UnsubscribeFromEvents(System.String)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.UnsubscribeFromEvents.html#TopSolid_Kernel_Automating_IDocuments_UnsubscribeFromEvents_System_String_">UnsubscribeFromEvents(string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Unsubscribes from documents events.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_UnsubscribeFromEventsTcp_System_String_System_String_System_Int32_" data-uid="TopSolid.Kernel.Automating.IDocuments.UnsubscribeFromEventsTcp(System.String,System.String,System.Int32)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.UnsubscribeFromEventsTcp.html#TopSolid_Kernel_Automating_IDocuments_UnsubscribeFromEventsTcp_System_String_System_String_System_Int32_">UnsubscribeFromEventsTcp(string, string, int)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Unsubscribes from documents events using TCP connection.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_Update_TopSolid_Kernel_Automating_DocumentId_System_Boolean_" data-uid="TopSolid.Kernel.Automating.IDocuments.Update(TopSolid.Kernel.Automating.DocumentId,System.Boolean)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.Update.html#TopSolid_Kernel_Automating_IDocuments_Update_TopSolid_Kernel_Automating_DocumentId_System_Boolean_">Update(DocumentId, bool)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Updates a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_zExportToTopglTF_TopSolid_Kernel_Automating_DocumentId_System_String_System_String_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Int32_TopSolid_Kernel_Automating_Color_" data-uid="TopSolid.Kernel.Automating.IDocuments.zExportToTopglTF(TopSolid.Kernel.Automating.DocumentId,System.String,System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Int32,TopSolid.Kernel.Automating.Color)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.zExportToTopglTF.html#TopSolid_Kernel_Automating_IDocuments_zExportToTopglTF_TopSolid_Kernel_Automating_DocumentId_System_String_System_String_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Int32_TopSolid_Kernel_Automating_Color_">zExportToTopglTF(DocumentId, string, string, bool, bool, bool, bool, bool, bool, bool, int, Color)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Exports the document to TopgltF.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IDocuments_zExportToTopglTFWithRepresentation_TopSolid_Kernel_Automating_DocumentId_System_String_System_String_System_String_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Int32_TopSolid_Kernel_Automating_Color_" data-uid="TopSolid.Kernel.Automating.IDocuments.zExportToTopglTFWithRepresentation(TopSolid.Kernel.Automating.DocumentId,System.String,System.String,System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Int32,TopSolid.Kernel.Automating.Color)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.zExportToTopglTFWithRepresentation.html#TopSolid_Kernel_Automating_IDocuments_zExportToTopglTFWithRepresentation_TopSolid_Kernel_Automating_DocumentId_System_String_System_String_System_String_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Int32_TopSolid_Kernel_Automating_Color_">zExportToTopglTFWithRepresentation(DocumentId, string, string, string, bool, bool, bool, bool, bool, bool, int, Color)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Exports the document to TopgltF.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div id="footer-alt">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      			<div id="footer-alt-bottom">
+                      <ul>
+                          <li><a href="https://www.topsolid.com/en/terms-of-use">Term of use</a></li>
+                          <li><a href="https://www.topsolid.com/en/corporate-information">Corporate information</a></li>
+                          <li><a href="https://www.topsolid.com/en/privacy-policy-gdpr">Privacy Policy - GDPR</a></li>
+                      </ul>
+                      <p>Copyright ©2025 TopSolid - All rights reserved.</p>
+                  </div>
+          </div>
+        </div>
+      </footer>    </div>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

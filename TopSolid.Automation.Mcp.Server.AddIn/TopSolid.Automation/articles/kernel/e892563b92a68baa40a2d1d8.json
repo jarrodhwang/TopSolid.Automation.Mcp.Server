@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ITextures.GetWoodPerturbation.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ITextures.GetWoodPerturbation.html",
+  "sha256": "7189cec46009fb00b22f71b1440b48bec08c0dde3fa10c6d15d2f31ac0831037",
+  "text": "# Method GetWoodPerturbation\n\n#### GetWoodPerturbation(DocumentId)\n\nGets the wood perturbation or also called Gnarl.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 400, 100)]\ndouble GetWoodPerturbation(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyse.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double |   |  \n\n##### Remarks\n\nThis method is available since v7.16.\n",
+  "markdown": "markdown/kernel/e892563b92a68baa40a2d1d8.md",
+  "originalHtml": "html/kernel/e892563b92a68baa40a2d1d8.html"
+}

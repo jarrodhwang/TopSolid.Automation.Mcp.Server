@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IApplication.CurrentPaperSource.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IApplication.CurrentPaperSource.html",
+  "sha256": "260b734b1401e65d84175aca0724b38077dae1b5808513873912e7559d586bb8",
+  "text": "# Property CurrentPaperSource\n\n#### CurrentPaperSource\n\nGets or sets the name of the current paper source.\n\n##### Declaration\n\n```\n[AvailableSinceVersion(7, 6, 0, 0)]\nstring CurrentPaperSource { get; set; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |   |  \n\n##### Remarks\n\nThis property is available since v7.6.\n",
+  "markdown": "markdown/kernel/d68723741c6d79cdcb72bd52.md",
+  "originalHtml": "html/kernel/d68723741c6d79cdcb72bd52.html"
+}

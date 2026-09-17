@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IEntities.GetPublishings.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IEntities.GetPublishings.html",
+  "sha256": "8b17e3669aebafb12c0a8f58fea07a4d4cd26af3e5e159f0b84debfecdb8533d",
+  "text": "# Method GetPublishings\n\n#### GetPublishings(DocumentId)\n\nGets the publishing entities that are in the publishings folder of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nList<ElementId> GetPublishings(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementId> |  Publishing entities found.  |  \n\n##### Remarks\n\nThis method is available since v7.8.\n",
+  "markdown": "markdown/kernel/800934bba78f2b4bb9a77d24.md",
+  "originalHtml": "html/kernel/800934bba78f2b4bb9a77d24.html"
+}

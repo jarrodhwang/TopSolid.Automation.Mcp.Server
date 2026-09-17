@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IOperations.GetCurrentCuttingConditionsDocument.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IOperations.GetCurrentCuttingConditionsDocument.html",
+  "sha256": "309af8bc65c558697dc3bc19abec55622106262d5db1e357b5a8cb35a15406a7",
+  "text": "# Method GetCurrentCuttingConditionsDocument\n\n#### GetCurrentCuttingConditionsDocument(ElementId)\n\nGets the current cutting condition document of an operation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 14, 300, 144)]\nDocumentId GetCurrentCuttingConditionsDocument(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the operation to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  DocumentId |  The current cutting condition document.  |\n",
+  "markdown": "markdown/cam/f0a20778835684395482669f.md",
+  "originalHtml": "html/cam/f0a20778835684395482669f.html"
+}

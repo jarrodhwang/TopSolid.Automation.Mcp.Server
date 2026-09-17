@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IElements.GetColor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IElements.GetColor.html",
+  "sha256": "e54ab9c0a1f22e45039785b0f91c252c0b6f9d8f62410d777a1e878f2dc2659f",
+  "text": "# Method GetColor\n\n#### GetColor(ElementId)\n\nGets the color of an element.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nColor GetColor(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Color |  Color of the element, or Empty if the element has no color.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/5a9040bcae119d78e7b61162.md",
+  "originalHtml": "html/kernel/5a9040bcae119d78e7b61162.html"
+}

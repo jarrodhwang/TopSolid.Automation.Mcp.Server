@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IAssemblies.TransformInclusion.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IAssemblies.TransformInclusion.html",
+  "sha256": "34be02dd78df162710d6a017381c2c118b225d8bc61af9f998fcfe1c39c22c9f",
+  "text": "# Method TransformInclusion\n\n#### TransformInclusion(ElementId, Transform3D)\n\nTransforms an inclusion operation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 201, 100)]\nvoid TransformInclusion(ElementId inElementId, Transform3D inTransform)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the inclusion operation to modify.  |  \n \n|  Transform3D |  inTransform |  Transformation to apply.  |  \n\n##### Remarks\n\nThe inclusion operation must be constituent of a positioning operation (this method may not be used on in-place parts inclusions).\n \nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.7.201.100.\n",
+  "markdown": "markdown/cad/96143c246be39caa9dd6fd1d.md",
+  "originalHtml": "html/cad/96143c246be39caa9dd6fd1d.html"
+}

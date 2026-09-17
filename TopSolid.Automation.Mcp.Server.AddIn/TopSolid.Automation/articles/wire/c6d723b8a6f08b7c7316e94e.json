@@ -1,0 +1,8 @@
+{
+  "path": "api/wire/TopSolid.Cam.NC.Wire.Automating.IWireTechnologyDocuments.GetMachiningRange.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/wire/TopSolid.Cam.NC.Wire.Automating.IWireTechnologyDocuments.GetMachiningRange.html",
+  "sha256": "960abb390ade014c98d11bcd164069d37682bcea27e26c429f6931e77beab3fc",
+  "text": "# Method GetMachiningRange\n\n#### GetMachiningRange(DocumentId)\n\nSet machining range state.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 160)]\nbool GetMachiningRange(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Machining range state.  |\n",
+  "markdown": "markdown/wire/c6d723b8a6f08b7c7316e94e.md",
+  "originalHtml": "html/wire/c6d723b8a6f08b7c7316e94e.html"
+}

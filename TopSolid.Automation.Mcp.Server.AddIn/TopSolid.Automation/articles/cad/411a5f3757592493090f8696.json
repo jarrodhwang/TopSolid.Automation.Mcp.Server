@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ITools.CreateDerivedDocument.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ITools.CreateDerivedDocument.html",
+  "sha256": "ab04fc4a61173a27b16f480af0c5b1d5137b015b543cab79565bd271a901801c",
+  "text": "# Method CreateDerivedDocument\n\n#### CreateDerivedDocument(PdmObjectId, DocumentId, bool)\n\nCreates a new derived part or assembly of a specified part or assembly.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nDocumentId CreateDerivedDocument(PdmObjectId inOwnerId, DocumentId inDocumentId, bool inUseDefaultTemplate)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inOwnerId |  Identifier of owner.  |  \n \n|  DocumentId |  inDocumentId |  Identifier of the part or assembly document to derive.  |  \n \n|  bool |  inUseDefaultTemplate |  Tells whether to use the default template if present.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  DocumentId |  Derived part or assembly document identifier.  |  \n\n##### Remarks\n\nThis method must not be called between StartModification(string, bool) and EndModification(bool, bool) methods calls.\n \nThis method is available since v7.10.\n",
+  "markdown": "markdown/cad/411a5f3757592493090f8696.md",
+  "originalHtml": "html/cad/411a5f3757592493090f8696.html"
+}

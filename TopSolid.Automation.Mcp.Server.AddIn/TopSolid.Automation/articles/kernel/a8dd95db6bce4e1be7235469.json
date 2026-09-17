@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.SetColorParameterPossibleValuesStrictMode.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.SetColorParameterPossibleValuesStrictMode.html",
+  "sha256": "4e4c4b2402c26008a8d512d4bf8338eff8c865580600bd3ddd1981fad659deb7",
+  "text": "# Method SetColorParameterPossibleValuesStrictMode\n\n#### SetColorParameterPossibleValuesStrictMode(ElementId, bool)\n\nSets the color parameter possible values strict mode.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 18, 0, 0)]\nvoid SetColorParameterPossibleValuesStrictMode(ElementId inElementId, bool isOn)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the parameter.  |  \n \n|  bool |  isOn |  Wether the strict mode is activated.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.18\n",
+  "markdown": "markdown/kernel/a8dd95db6bce4e1be7235469.md",
+  "originalHtml": "html/kernel/a8dd95db6bce4e1be7235469.html"
+}

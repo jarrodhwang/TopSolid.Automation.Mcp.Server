@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.ICamSketch.GetDeferredSketches.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.ICamSketch.GetDeferredSketches.html",
+  "sha256": "de7a18aef69f337dace7a783961c264f0513122432f1ecfd549ed2a98b3f510f",
+  "text": "# Method GetDeferredSketches\n\n#### GetDeferredSketches(DocumentId)\n\nGets the deferred sketches\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 18, 400, 200)]\nList<ElementId> GetDeferredSketches(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  NC Document.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementId> |  List of sketch deferred operations.  |\n",
+  "markdown": "markdown/cam/9861b8c8b00667892ddf7162.md",
+  "originalHtml": "html/cam/9861b8c8b00667892ddf7162.html"
+}

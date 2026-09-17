@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ItemLabel.op_Equality.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ItemLabel.op_Equality.html",
+  "sha256": "c09e4368b07d0251cc8b28cb901402958ac9440a8a6ee570e841e7ecc4517665",
+  "text": "# Operator operator ==\n\n#### operator ==(ItemLabel, ItemLabel)\n\nTells whether two item labels are equal.\n\n##### Declaration\n\n```\npublic static bool operator ==(ItemLabel inItemLabel1, ItemLabel inItemLabel2)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ItemLabel |  inItemLabel1 |  First item label.  |  \n \n|  ItemLabel |  inItemLabel2 |  Second item label.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Item labels are equal.  |\n",
+  "markdown": "markdown/kernel/6eb26f2b2d7460232a59aae1.md",
+  "originalHtml": "html/kernel/6eb26f2b2d7460232a59aae1.html"
+}

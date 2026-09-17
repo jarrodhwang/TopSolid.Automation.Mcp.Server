@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ISketches2D.CreateBuildingOperation.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ISketches2D.CreateBuildingOperation.html",
+  "sha256": "1bc99f236bf471bc25ae623f5c994b8a678e47d053007a57681265a7122d9f51",
+  "text": "# Method CreateBuildingOperation\n\n#### CreateBuildingOperation(ElementId)\n\nCreates the building operation of a sketch entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 0, 0)]\nElementId CreateBuildingOperation(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the sketch entity.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the created building operation.  |  \n\n##### Remarks\n\nIf the sketch entity has already got a building operation, this method does nothing and returns the identifier of the existing building operation.\n \nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.11.\n",
+  "markdown": "markdown/kernel/0f3a62f7332a7ae0634e593b.md",
+  "originalHtml": "html/kernel/0f3a62f7332a7ae0634e593b.html"
+}

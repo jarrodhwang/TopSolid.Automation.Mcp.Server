@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IParts.GetEnclosingBoxParameters.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IParts.GetEnclosingBoxParameters.html",
+  "sha256": "ca0bfea97e1c12429845db298ee7bb4cb3c026b8575256e7644faeae0d445db2",
+  "text": "# Method GetEnclosingBoxParameters\n\n#### GetEnclosingBoxParameters(DocumentId, out ElementId, out ElementId, out ElementId)\n\nGets the enclosing box parameters of a part.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nvoid GetEnclosingBoxParameters(DocumentId inDocumentId, out ElementId outBoxXSize, out ElementId outBoxYSize, out ElementId outBoxZSize)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of part document to analyze.  |  \n \n|  ElementId |  outBoxXSize |  Enclosing box size in X direction real parameter entity identifier, or empty if not managed.  |  \n \n|  ElementId |  outBoxYSize |  Enclosing box size in Y direction real parameter entity identifier, or empty if not managed.  |  \n \n|  ElementId |  outBoxZSize |  Enclosing box size in Z direction real parameter entity identifier, or empty if not managed.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/cad/e0c0ca2fc197e846f88f0dbe.md",
+  "originalHtml": "html/cad/e0c0ca2fc197e846f88f0dbe.html"
+}

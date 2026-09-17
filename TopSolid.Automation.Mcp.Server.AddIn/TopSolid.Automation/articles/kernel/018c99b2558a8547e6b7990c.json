@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IGeometries3D.GetFramesFolder.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IGeometries3D.GetFramesFolder.html",
+  "sha256": "ea23fae9fc4373f9282afc7368da172846da8e3cee1755422ee3ecb80c4672ad",
+  "text": "# Method GetFramesFolder\n\n#### GetFramesFolder(DocumentId)\n\nGets the frames folder entity of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nElementId GetFramesFolder(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the frames folder entity found.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/kernel/018c99b2558a8547e6b7990c.md",
+  "originalHtml": "html/kernel/018c99b2558a8547e6b7990c.html"
+}

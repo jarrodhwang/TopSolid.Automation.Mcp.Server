@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IMachineTools.SetPartHolder.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IMachineTools.SetPartHolder.html",
+  "sha256": "342ae56cf8fd3083f7e54854a306d57b25dc1a7fd92bdb0ab6d86d6d65bdca85",
+  "text": "# Method SetPartHolder\n\n#### SetPartHolder(ElementId, ElementId)\n\nSet the part to the part holder on the current machine.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 15, 400, 100)]\nvoid SetPartHolder(ElementId inPartId, ElementId inPartHolderId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inPartId |  Identifier of the part.  |  \n \n|  ElementId |  inPartHolderId |  Identifier of the part holder.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.15.400.100.\n",
+  "markdown": "markdown/cam/9fa07b6737008a67d147242c.md",
+  "originalHtml": "html/cam/9fa07b6737008a67d147242c.html"
+}

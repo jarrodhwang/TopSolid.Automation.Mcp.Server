@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.ITables.GetDraftTableCellImage.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.ITables.GetDraftTableCellImage.html",
+  "sha256": "c5e007501c2a334a335dfa9a39f0efb4cfb6f34b465ef5ca38f6ebecdc5b6f82",
+  "text": "# Method GetDraftTableCellImage\n\n#### GetDraftTableCellImage(ElementId, int, int, int)\n\nGets the image value of a cell.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 14, 300, 140)]\nBitmap GetDraftTableCellImage(ElementId inElementId, int inColumnIdx, int inRowIdx, int inSplitColumnIdx)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the entity to analyze.  |  \n \n|  int |  inColumnIdx |  Index of the column.  |  \n \n|  int |  inRowIdx |  Index of the row.  |  \n \n|  int |  inSplitColumnIdx |  Index of the split column. 0 if default.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Bitmap |  Image of a cell.  |  \n\n##### Remarks\n\nThis method is available since v7.14.300.140.\n",
+  "markdown": "markdown/drafting/f14a8a629b81a09da29b71f2.md",
+  "originalHtml": "html/drafting/f14a8a629b81a09da29b71f2.html"
+}

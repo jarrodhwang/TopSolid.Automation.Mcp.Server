@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.CopySeveralWithOptions.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.CopySeveralWithOptions.html",
+  "sha256": "442a94453d8fce6ff46f3ea778e1c390b007f04736f734de6b664890e7dcc0f0",
+  "text": "# Method CopySeveralWithOptions\n\n#### CopySeveralWithOptions(List<PdmObjectId>, PdmObjectId, bool, bool)\n\nCopies several objects.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 258, 0)]\nList<PdmObjectId> CopySeveralWithOptions(List<PdmObjectId> inObjectIds, PdmObjectId inOwnerId, bool inKeepPartNumber, bool inCopyWithoutSaving)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  List<PdmObjectId> |  inObjectIds |  Identifiers of objects to copy.  |  \n \n|  PdmObjectId |  inOwnerId |  Identifier of project or folder owner where to copy objects.  |  \n \n|  bool |  inKeepPartNumber |  Whether keeps the same part number  |  \n \n|  bool |  inCopyWithoutSaving |  Whether copies without saving.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<PdmObjectId> |  New PDM object identifiers.  |  \n\n##### Remarks\n\nThis method must not be called between StartModification(string, bool) and EndModification(bool, bool) methods calls.\n \nThis method is available since v7.20.258.000.\n \nThis method is for internal use of TopSolid.\n",
+  "markdown": "markdown/kernel/86b79eb323855460a1708bbb.md",
+  "originalHtml": "html/kernel/86b79eb323855460a1708bbb.html"
+}

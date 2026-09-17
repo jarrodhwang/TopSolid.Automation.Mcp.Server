@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.GetManufacturerPartNumberParameter.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.GetManufacturerPartNumberParameter.html",
+  "sha256": "cb5e486b91186cc7b6cbeae81be2fee60c63356d7d336eedb583cf2ec32bdd62",
+  "text": "# Method GetManufacturerPartNumberParameter\n\n#### GetManufacturerPartNumberParameter(DocumentId)\n\nGets the manufacturer part number parameter entity of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nElementId GetManufacturerPartNumberParameter(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the manufacturer part number parameter entity found.  |  \n\n##### Remarks\n\nThe manufacturer part number parameter is a text parameter, its value may be obtained and modified using the GetTextValue(ElementId) and SetTextValue(ElementId, string) methods.\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/bd5246cf07407b385b8d2082.md",
+  "originalHtml": "html/kernel/bd5246cf07407b385b8d2082.html"
+}

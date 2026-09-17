@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.PdmMinorRevisionId.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.PdmMinorRevisionId.html",
+  "sha256": "81ce9fa6f35bc92997a1e536fe955724b09cdc0ce00741fe57e30ce38ddd9391",
+  "text": "# Struct PdmMinorRevisionId\n\nRepresents a PDM minor revision id.\n\n##### Inherited Members\n \n ValueType.Equals(object) \n \n ValueType.GetHashCode() \n \n ValueType.ToString() \n \n object.Equals(object, object) \n \n object.ReferenceEquals(object, object) \n \n object.GetType() \n\n###### Namespace: TopSolid.Pdm.Explorer.Automating\n\n###### Assembly: TopSolid.Pdm.Explorer.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\npublic struct PdmMinorRevisionId\n```\n\n##### Remarks\n\nThis structure is available since v7.10.\n\n### Constructors \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   PdmMinorRevisionId(string)  |  Initializes a new instance of the PdmMinorRevisionId structure.  |  \n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   Empty  |  Empty identifier.  |  \n\n### Properties \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   Id  |  Gets the PDM minor revision id.  |  \n \n|   IsEmpty  |  Tells whether the minor revision id is empty.  |\n",
+  "markdown": "markdown/pdmexplorer/e5b1b53bc0986324662e5087.md",
+  "originalHtml": "html/pdmexplorer/e5b1b53bc0986324662e5087.html"
+}

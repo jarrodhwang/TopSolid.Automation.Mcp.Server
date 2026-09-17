@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IOperations.ExecuteMethodWithPredefinedSelection.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IOperations.ExecuteMethodWithPredefinedSelection.html",
+  "sha256": "15ec0acad981bff9d0cb6277c270e7cf8ed553aa5f6bc001b6c827e87ef98243",
+  "text": "# Method ExecuteMethodWithPredefinedSelection\n\n#### ExecuteMethodWithPredefinedSelection(DocumentId, DocumentId, MethodExecutionOptions, List<ElementItemId>)\n\nExecute the method document in the target document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 15, 300, 40)]\nList<ElementId> ExecuteMethodWithPredefinedSelection(DocumentId inTargetDocument, DocumentId inMethodDocument, MethodExecutionOptions inExecutionOptions, List<ElementItemId> inSelections)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inTargetDocument |  The target document to modify.  |  \n \n|  DocumentId |  inMethodDocument |  The method document to execute.  |  \n \n|  MethodExecutionOptions |  inExecutionOptions |  Execution options for the method.  |  \n \n|  List<ElementItemId> |  inSelections |  Execution options for the method.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementId> |  All created tasks operations.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.15.\n",
+  "markdown": "markdown/cam/7004c6f10c53c60c4e301818.md",
+  "originalHtml": "html/cam/7004c6f10c53c60c4e301818.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.PdmMinorRevisionId.-ctor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.PdmMinorRevisionId.-ctor.html",
+  "sha256": "8021193e0ef9efe4a88b2d71d7c922c4a197e697c2f876619e76bdf45225fd82",
+  "text": "# Constructor PdmMinorRevisionId\n\n#### PdmMinorRevisionId(string)\n\nInitializes a new instance of the PdmMinorRevisionId structure.\n\n##### Declaration\n\n```\npublic PdmMinorRevisionId(string inPdmMinorRevisionId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  string |  inPdmMinorRevisionId |  PDM minor revision id, or null if empty.  |\n",
+  "markdown": "markdown/kernel/7729b19a4938d99c0b0874b8.md",
+  "originalHtml": "html/kernel/7729b19a4938d99c0b0874b8.html"
+}

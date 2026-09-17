@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.UserEnumerationProperty.Type.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.UserEnumerationProperty.Type.html",
+  "sha256": "c99753636eb4b868a4ab011116460207bf553e30a8e47f20d44d492c75af8a36",
+  "text": "# Property Type\n\n#### Type\n\nGets the property type.\n\n##### Declaration\n\n```\npublic override PropertyType Type { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  PropertyType |   |  \n\n##### Overrides\n \nProperty.Type\n",
+  "markdown": "markdown/kernel/b4cb69a413633ae63a807c93.md",
+  "originalHtml": "html/kernel/b4cb69a413633ae63a807c93.html"
+}

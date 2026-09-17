@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IVisualization3D.GetPerspectiveCamera.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IVisualization3D.GetPerspectiveCamera.html",
+  "sha256": "eaf18faa516ae5375283c62d3676a33f3e3f773b71bfd23982e7eae89d7a16c3",
+  "text": "# Method GetPerspectiveCamera\n\n#### GetPerspectiveCamera(DocumentId)\n\nGets the perspective camera entity of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nElementId GetPerspectiveCamera(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the perspective camera entity found.  |  \n\n##### Remarks\n\nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/f57ab47f7244e82dfd20bb1c.md",
+  "originalHtml": "html/kernel/f57ab47f7244e82dfd20bb1c.html"
+}

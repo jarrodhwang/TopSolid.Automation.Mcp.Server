@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ISketches2D.CreateVertex.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ISketches2D.CreateVertex.html",
+  "sha256": "2c2c5f700b7c90f0fc75e83cfe560900db88f5c11098d29d6415f4a47a672ef2",
+  "text": "# Method CreateVertex\n\n#### CreateVertex(Point2D)\n\nCreates a new vertex into the ModifiedSketch.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 201, 80)]\nElementItemId CreateVertex(Point2D inPoint)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  Point2D |  inPoint |  Vertex point.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementItemId |  Identifier of the created vertex.  |  \n\n##### Remarks\n\nStartModification(ElementId) must be called before calling this method.\n \nThis method is available since v7.7.201.80.\n",
+  "markdown": "markdown/kernel/a3e4796e43c9822eb000c269.md",
+  "originalHtml": "html/kernel/a3e4796e43c9822eb000c269.html"
+}

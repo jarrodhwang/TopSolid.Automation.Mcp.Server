@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IEntities.SetFunctionOccurrenceName.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IEntities.SetFunctionOccurrenceName.html",
+  "sha256": "c531001ef1ef09439c5990c3dafb24b0a42fd4bb11234d35fa1a16536cae09ec",
+  "text": "# Method SetFunctionOccurrenceName\n\n#### SetFunctionOccurrenceName(ElementId, string)\n\nSets the occurrence name of a function entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nvoid SetFunctionOccurrenceName(ElementId inElementId, string inOccurrenceName)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the function entity to modify.  |  \n \n|  string |  inOccurrenceName |  Occurrence name.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.8.\n",
+  "markdown": "markdown/kernel/a50ff437557ca63127022deb.md",
+  "originalHtml": "html/kernel/a50ff437557ca63127022deb.html"
+}

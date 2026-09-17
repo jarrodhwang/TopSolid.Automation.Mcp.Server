@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.ITables.GetDraftTableType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.ITables.GetDraftTableType.html",
+  "sha256": "76e3a361185e239c3f02cd6bcf9c564a1f827350166029ed17106fc9e4960ea8",
+  "text": "# Method GetDraftTableType\n\n#### GetDraftTableType(ElementId)\n\nGet the draft table type of an element.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 14, 300, 140)]\nTableType GetDraftTableType(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the entity to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  TableType |  Draft table type.  |  \n\n##### Remarks\n\nThis method is available since v7.14.300.140.\n",
+  "markdown": "markdown/drafting/c3637b766c62311a654d174e.md",
+  "originalHtml": "html/drafting/c3637b766c62311a654d174e.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IPartSettingDocument.CreatePartSetupManagementOperation.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IPartSettingDocument.CreatePartSetupManagementOperation.html",
+  "sha256": "f8e58fada6dbae0a3e45c4db0265b8726f08b575f4639880fd480a45199d4c5f",
+  "text": "# Method CreatePartSetupManagementOperation\n\n#### CreatePartSetupManagementOperation(DocumentId, List<ElementId>, StockType, List<ElementId>)\n\nCreates the part setup management operation in a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 15, 0, 0)]\nElementId CreatePartSetupManagementOperation(DocumentId inDocumentId, List<ElementId> inFinishes, StockType inStockType, List<ElementId> inEnvironments)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  List<ElementId> |  inFinishes |  Identifiers of targets of the finishes parts.  |  \n \n|  StockType |  inStockType |  Type of the enclosing stock.  |  \n \n|  List<ElementId> |  inEnvironments |  Identifiers of targets of the environments.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the part setup management operation.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.15.\n",
+  "markdown": "markdown/cam/331f0ec5929eb7699e70a4c9.md",
+  "originalHtml": "html/cam/331f0ec5929eb7699e70a4c9.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.PdmRight.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.PdmRight.html",
+  "sha256": "3196b9b51d9c9808c3516a3195219b193d52b999010d953f8d4d22452bddcc2e",
+  "text": "# Enum PdmRight\n\nDefines the various PDM rights.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\npublic enum PdmRight\n```\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  Administrate |  Administrate right.  |  \n \n|  Create |  Create right.  |  \n \n|  Delete |  Delete right  |  \n \n|  Export |  Export right.  |  \n \n|  ExportForDelivery |  Export for delivery.  |  \n \n|  LifeCycleStateChange |  Life cycle state change right  |  \n \n|  Modify |  Modify right.  |  \n \n|  ModifyReferences |  Modify references right.  |  \n \n|  Print |  Print right  |  \n \n|  PublishToERP |  Publish to ERP right  |  \n \n|  Read |  Read right.  |\n",
+  "markdown": "markdown/kernel/0eb865b28006f9626b9f0a05.md",
+  "originalHtml": "html/kernel/0eb865b28006f9626b9f0a05.html"
+}

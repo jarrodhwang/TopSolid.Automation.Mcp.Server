@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.DrillingHolePrimitive.BottomType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.DrillingHolePrimitive.BottomType.html",
+  "sha256": "bd76596eedff5b197c0a701caf89957e16e56ff58417ba32a14f4c1bc8cfe089",
+  "text": "# Field BottomType\n\nPrimitive Bottom Type.\n\n###### Namespace: TopSolid.Cad.Design.Automating\n\n###### Assembly: TopSolid.Cad.Design.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic DrillingHolePrimitiveBottomType BottomType\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  DrillingHolePrimitiveBottomType |  Primitive Bottom Type. |\n",
+  "markdown": "markdown/cad/7dd8331bae6a2a2d6e2d9864.md",
+  "originalHtml": "html/cad/7dd8331bae6a2a2d6e2d9864.html"
+}

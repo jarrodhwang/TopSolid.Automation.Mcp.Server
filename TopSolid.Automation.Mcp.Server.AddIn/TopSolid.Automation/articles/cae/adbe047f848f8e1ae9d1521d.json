@@ -1,0 +1,8 @@
+{
+  "path": "api/cae/TopSolid.Cae.Kernel.Automating.IResults.GetLoadFactorResult.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cae/TopSolid.Cae.Kernel.Automating.IResults.GetLoadFactorResult.html",
+  "sha256": "c5da90b6d0336fca7ea657a3418c627de37487eafc28e9608fc705fd5555a547",
+  "text": "# Method GetLoadFactorResult\n\n#### GetLoadFactorResult(DocumentId, int)\n\nGets a specific Load Factor result\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 400, 100)]\nLoadFactorResult GetLoadFactorResult(DocumentId inDocumentId, int inModeNumber)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Id of the document  |  \n \n|  int |  inModeNumber |  Target mode number  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  LoadFactorResult |  the load result  |\n",
+  "markdown": "markdown/cae/adbe047f848f8e1ae9d1521d.md",
+  "originalHtml": "html/cae/adbe047f848f8e1ae9d1521d.html"
+}

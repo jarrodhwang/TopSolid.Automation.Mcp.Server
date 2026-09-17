@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IFamilies.SetInheritedCodes.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IFamilies.SetInheritedCodes.html",
+  "sha256": "602dde298d6fbf18bfbd79f58ee77159d6da88a089264217cb2774a5c6fc8f20",
+  "text": "# Method SetInheritedCodes\n\n#### SetInheritedCodes(DocumentId, List<string>)\n\nSets the inherited codes of a derived family.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nvoid SetInheritedCodes(DocumentId inDocumentId, List<string> inCodes)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the derived family document to modify.  |  \n \n|  List<string> |  inCodes |  Base family codes to inherit in the derived family.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.10.\n",
+  "markdown": "markdown/kernel/426b8f2c916082bb6091a531.md",
+  "originalHtml": "html/kernel/426b8f2c916082bb6091a531.html"
+}

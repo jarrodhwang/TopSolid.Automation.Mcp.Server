@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IEntities.IsSetDefinition.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IEntities.IsSetDefinition.html",
+  "sha256": "c367568fa091f30d7f1c38b0894eb9849e3710b330e45d215d834185c0fc781c",
+  "text": "# Method IsSetDefinition\n\n#### IsSetDefinition(ElementId)\n\nTells whether an element is a set definition entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 12, 0, 0)]\nbool IsSetDefinition(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  The element is a set definition entity.  |  \n\n##### Remarks\n\nThis method is available since v7.12.\n",
+  "markdown": "markdown/kernel/c59c0bed05a087a1555f19f2.md",
+  "originalHtml": "html/kernel/c59c0bed05a087a1555f19f2.html"
+}

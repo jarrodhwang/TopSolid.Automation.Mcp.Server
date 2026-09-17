@@ -1,0 +1,8 @@
+{
+  "path": "api/cae/TopSolid.Cae.Kernel.Automating.MeasureResults.Reactions.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cae/TopSolid.Cae.Kernel.Automating.MeasureResults.Reactions.html",
+  "sha256": "45f9c4259b784407093d9a9c4d009497bcb0cc48d15d16a6d3e1093ac4c1a441",
+  "text": "# Property Reactions\n\n#### Reactions\n\nGets the Reactions\n\n##### Declaration\n\n```\npublic string[] Reactions { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string[] |   |\n",
+  "markdown": "markdown/cae/4fdf5c934f72d84b72dfc765.md",
+  "originalHtml": "html/cae/4fdf5c934f72d84b72dfc765.html"
+}

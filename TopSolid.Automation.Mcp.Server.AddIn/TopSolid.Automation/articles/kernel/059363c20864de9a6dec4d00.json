@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ITextures.GetVerticalAngularScale.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ITextures.GetVerticalAngularScale.html",
+  "sha256": "7eb5f0fdb331976590ad338dc5cf7fba3a382807835900c2e7a625284756afba",
+  "text": "# Method GetVerticalAngularScale\n\n#### GetVerticalAngularScale(DocumentId)\n\nGets the vertical angular scale.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 400, 100)]\ndouble GetVerticalAngularScale(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyse.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double |   |  \n\n##### Remarks\n\nThis method must be called for Cylindrical or Spherical type.\n \nThis method is available since v7.16.\n",
+  "markdown": "markdown/kernel/059363c20864de9a6dec4d00.md",
+  "originalHtml": "html/kernel/059363c20864de9a6dec4d00.html"
+}

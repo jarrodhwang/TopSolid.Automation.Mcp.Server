@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.SearchDocumentByPartNumber.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.SearchDocumentByPartNumber.html",
+  "sha256": "67b43d3bc558665e213db46c6eb5c05cc6a0a994b0e0fb0578135d879a234d88",
+  "text": "# Method SearchDocumentByPartNumber\n\n#### SearchDocumentByPartNumber(PdmObjectId, string)\n\nSearches for a document by its part number.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nList<PdmObjectId> SearchDocumentByPartNumber(PdmObjectId inProjectId, string inPartNumber)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inProjectId |  Project PDM object identifier, or empty for searching in all projects.  |  \n \n|  string |  inPartNumber |  Part number.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<PdmObjectId> |  PDM object identifiers of documents corresponding to the searched part number.  |  \n\n##### Remarks\n\nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/c5f5d15c2ca756bcca309da4.md",
+  "originalHtml": "html/kernel/c5f5d15c2ca756bcca309da4.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IApplication.BringToFrontWindow.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IApplication.BringToFrontWindow.html",
+  "sha256": "d3b6d3390b7b95b18dd5b86b3a123bb89025aef3f92b7e07cd055e971219db80",
+  "text": "# Method BringToFrontWindow\n\n#### BringToFrontWindow()\n\nBrings the application window to the front.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nvoid BringToFrontWindow()\n```\n\n##### Remarks\n\nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/01f9b1dd04d76ef8c262be88.md",
+  "originalHtml": "html/kernel/01f9b1dd04d76ef8c262be88.html"
+}

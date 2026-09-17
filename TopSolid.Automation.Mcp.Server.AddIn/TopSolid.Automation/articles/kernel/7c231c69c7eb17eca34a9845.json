@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ItemType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ItemType.html",
+  "sha256": "852b642efe863c4584bb25bcedc7a9a8e5ab2dc122ad97a63a6930e2e9c02d60",
+  "text": "# Enum ItemType\n\nDefines various types of element items.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 10, 300, 60)]\npublic enum ItemType\n```\n\n##### Remarks\n\nThis enum is available since v7.10.300.60.\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  None |  No element item.  |  \n \n|  ShapeEdge |  Shape edge.  |  \n \n|  ShapeFace |  Shape face.  |  \n \n|  ShapeVertex |  Shape vertex.  |  \n \n|  SketchBlock |  Sketch block.  |  \n \n|  SketchGroup |  Sketch group.  |  \n \n|  SketchProfile |  Sketch profile.  |  \n \n|  SketchSection |  Sketch section.  |  \n \n|  SketchSegment |  Sketch segment.  |  \n \n|  SketchSurface |  Sketch surface.  |  \n \n|  SketchVertex |  Sketch vertex.  |\n",
+  "markdown": "markdown/kernel/7c231c69c7eb17eca34a9845.md",
+  "originalHtml": "html/kernel/7c231c69c7eb17eca34a9845.html"
+}

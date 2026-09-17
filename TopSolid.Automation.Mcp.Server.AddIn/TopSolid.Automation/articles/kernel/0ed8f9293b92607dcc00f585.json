@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.GetDescription.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.GetDescription.html",
+  "sha256": "91d7e0c17072e440a075ef645c3be2e28c2f70b4da97f2f5ca391add0961a364",
+  "text": "# Method GetDescription\n\n#### GetDescription(PdmObjectId)\n\nGets the description of an object.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 303, 100)]\nstring GetDescription(PdmObjectId inObjectId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  Object identifier.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  Object description.  |  \n\n##### Remarks\n\nThis method is available since v7.8.303.100.\n",
+  "markdown": "markdown/kernel/0ed8f9293b92607dcc00f585.md",
+  "originalHtml": "html/kernel/0ed8f9293b92607dcc00f585.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.GetTextTableParameterPossibleValues.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.GetTextTableParameterPossibleValues.html",
+  "sha256": "d95617937797fa3c6e33ef830d50b726f6b63561ec1ab618868e8583f0294f42",
+  "text": "# Method GetTextTableParameterPossibleValues\n\n#### GetTextTableParameterPossibleValues(ElementId, out List<SmartReal>, out List<SmartText>)\n\nGets possible values from text table parameter creation operation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 18, 0, 0)]\nvoid GetTextTableParameterPossibleValues(ElementId inElementId, out List<SmartReal> outSourceSmartRealList, out List<SmartText> outResultSmartTextList)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the smart text table parameter creation operation.  |  \n \n|  List<SmartReal> |  outSourceSmartRealList |  Source values.  |  \n \n|  List<SmartText> |  outResultSmartTextList |  Result values.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.18.\n",
+  "markdown": "markdown/kernel/47af5c32a37cf354e10159ed.md",
+  "originalHtml": "html/kernel/47af5c32a37cf354e10159ed.html"
+}

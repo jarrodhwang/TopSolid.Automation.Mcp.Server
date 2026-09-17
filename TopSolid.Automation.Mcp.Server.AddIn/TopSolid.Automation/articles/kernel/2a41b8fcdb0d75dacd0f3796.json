@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.SearchUserEnumerationLocalizedText.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.SearchUserEnumerationLocalizedText.html",
+  "sha256": "eba721d9699b283266a71416d8709cd3e505dd3a15941688478bfa9340771666",
+  "text": "# Method SearchUserEnumerationLocalizedText\n\n#### SearchUserEnumerationLocalizedText(PropertyDefinition, int)\n\nSearches for the localized text corresponding to a specified user enumeration property value.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 12, 0, 0)]\nstring SearchUserEnumerationLocalizedText(PropertyDefinition inPropertyDefinition, int inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PropertyDefinition |  inPropertyDefinition |  Property definition of type UserEnumeration.  |  \n \n|  int |  inValue |  User enumeration value.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  Corresponding localized text, or null if not found.  |  \n\n##### Remarks\n\nThis method is available since v7.12.\n",
+  "markdown": "markdown/kernel/2a41b8fcdb0d75dacd0f3796.md",
+  "originalHtml": "html/kernel/2a41b8fcdb0d75dacd0f3796.html"
+}

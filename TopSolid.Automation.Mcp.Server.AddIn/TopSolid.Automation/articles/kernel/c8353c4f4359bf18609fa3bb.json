@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.DocumentId.-ctor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.DocumentId.-ctor.html",
+  "sha256": "bfc70d15b7c99028b00eb117237f13500420b4f08cfb098045a0a8176d21411f",
+  "text": "# Constructor DocumentId\n\n#### DocumentId(string)\n\nInitializes a new instance of the DocumentId structure.\n\n##### Declaration\n\n```\npublic DocumentId(string inPdmDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  string |  inPdmDocumentId |  PDM document identifier, or null if empty.  |\n",
+  "markdown": "markdown/kernel/c8353c4f4359bf18609fa3bb.md",
+  "originalHtml": "html/kernel/c8353c4f4359bf18609fa3bb.html"
+}

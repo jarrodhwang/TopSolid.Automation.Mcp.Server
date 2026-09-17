@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMaterials.SetAlbedoColor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMaterials.SetAlbedoColor.html",
+  "sha256": "64c9090806462fb9a0e98149c1f7cd64ef79a30cb04cc742ba1307c2c66c9208",
+  "text": "# Method SetAlbedoColor\n\n#### SetAlbedoColor(DocumentId, Color)\n\nSets the Albedo color.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 0, 0)]\nvoid SetAlbedoColor(DocumentId inDocumentId, Color inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  Color |  inValue |  Wanted value.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.16.\n",
+  "markdown": "markdown/cad/da146ef4f82d2aee80d9a52f.md",
+  "originalHtml": "html/cad/da146ef4f82d2aee80d9a52f.html"
+}

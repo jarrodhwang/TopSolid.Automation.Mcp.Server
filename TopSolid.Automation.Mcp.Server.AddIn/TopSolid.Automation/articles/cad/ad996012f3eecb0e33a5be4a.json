@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IProcesses.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IProcesses.html",
+  "sha256": "bb0d56fdf4519b4ac686aee79ea5863b89b525613d5af1ed669f8fc12da4f925",
+  "text": "# Interface IProcesses\n\nGives access to processes.\n\n###### Namespace: TopSolid.Cad.Design.Automating\n\n###### Assembly: TopSolid.Cad.Design.Automating.dll\n\n##### Syntax\n\n```\n[ServiceContract]\n[AvailableSinceVersion(7, 19, 400, 140)]\npublic interface IProcesses\n```\n\n##### Remarks\n\nThis interface is available since v7.19.400.140\n\n### Methods \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   DefineProcess(DocumentId, ElementId, DocumentId, bool)  |  Method to define a process  |  \n \n|   FindFunctionProcesses(DocumentId)  |  Finds available processes from a function document  |  \n \n|   FindLocalProcesses(DocumentId)  |  Finds local processes of a document  |  \n \n|   GetProcess(DocumentId)  |  Gets process associated to a document  |  \n \n|   GetProcessDefinitionDocument(ElementId)  |  Gets process definition document  |\n",
+  "markdown": "markdown/cad/ad996012f3eecb0e33a5be4a.md",
+  "originalHtml": "html/cad/ad996012f3eecb0e33a5be4a.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/wire/TopSolid.Cam.NC.Wire.Automating.IWireCc.GetParameterValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/wire/TopSolid.Cam.NC.Wire.Automating.IWireCc.GetParameterValue.html",
+  "sha256": "2bee6cc8cfeb6ec2ac0999d00c1ca5fd0c1a39b22c88cd2d808c3784f5f534e6",
+  "text": "# Method GetParameterValue\n\n#### GetParameterValue(ElementId, string)\n\nGet parameter value.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 160)]\nSmartObject GetParameterValue(ElementId inElementId, string inParameterName)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to modify.  |  \n \n|  string |  inParameterName |  Parameter name.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartObject |  Get parameter value.  |\n",
+  "markdown": "markdown/wire/7f5dec195d73a11db3fa0c3c.md",
+  "originalHtml": "html/wire/7f5dec195d73a11db3fa0c3c.html"
+}

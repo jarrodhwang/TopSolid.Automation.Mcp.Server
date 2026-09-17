@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartEnumeration.Type.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartEnumeration.Type.html",
+  "sha256": "6d0c92c1972b347faddfa63c20b135252c83d922512cdaf1cda6a6552a98fbad",
+  "text": "# Field Type\n\nType of smart enumeration.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic SmartEnumerationType Type\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartEnumerationType |  Type of smart enumeration. |\n",
+  "markdown": "markdown/kernel/3a6d258a2be203ab3e026d1d.md",
+  "originalHtml": "html/kernel/3a6d258a2be203ab3e026d1d.html"
+}

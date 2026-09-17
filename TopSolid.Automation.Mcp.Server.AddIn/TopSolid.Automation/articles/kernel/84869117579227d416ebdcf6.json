@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ISketches2D.EndModification.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ISketches2D.EndModification.html",
+  "sha256": "205dccc4b60248eccd79290e9b87b9163d0bf9ff8db20e88b0c65caa176731d7",
+  "text": "# Method EndModification\n\n#### EndModification()\n\nEnds performing modifications on a sketch.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 201, 80)]\nvoid EndModification()\n```\n\n##### Remarks\n\nThis method must be called after the StartModification(ElementId) method has been called.\n \nThis method is available since v7.7.201.80.\n",
+  "markdown": "markdown/kernel/84869117579227d416ebdcf6.md",
+  "originalHtml": "html/kernel/84869117579227d416ebdcf6.html"
+}

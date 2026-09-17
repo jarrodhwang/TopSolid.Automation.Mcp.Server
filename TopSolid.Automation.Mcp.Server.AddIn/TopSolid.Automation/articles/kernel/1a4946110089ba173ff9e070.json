@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.UserQuestion.AllowsEmpty.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.UserQuestion.AllowsEmpty.html",
+  "sha256": "8a945b0273e4a59b49d0e68f21285b2377a51e2f25f0afd70a4e8ddf490662d3",
+  "text": "# Property AllowsEmpty\n\n#### AllowsEmpty\n\nTells or sets whether the user can answer \"nothing\".\n\n##### Declaration\n\n```\npublic bool AllowsEmpty { get; set; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |   |\n",
+  "markdown": "markdown/kernel/1a4946110089ba173ff9e070.md",
+  "originalHtml": "html/kernel/1a4946110089ba173ff9e070.html"
+}

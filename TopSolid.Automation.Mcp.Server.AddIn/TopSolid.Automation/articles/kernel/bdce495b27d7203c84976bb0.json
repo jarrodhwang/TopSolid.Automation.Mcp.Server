@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartReal.Tolerance.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartReal.Tolerance.html",
+  "sha256": "3bd8665e992c31bdc3ef8adbfa0d7d1b365b6e7ca5e7da934fbb438f061a235c",
+  "text": "# Field Tolerance\n\nTolerance, or null if none.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic string Tolerance\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  Tolerance, or null if none. |\n",
+  "markdown": "markdown/kernel/bdce495b27d7203c84976bb0.md",
+  "originalHtml": "html/kernel/bdce495b27d7203c84976bb0.html"
+}

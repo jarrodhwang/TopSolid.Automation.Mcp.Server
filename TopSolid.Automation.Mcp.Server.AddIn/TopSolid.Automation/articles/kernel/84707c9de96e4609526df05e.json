@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.SetRealParameterConstraintsDiscretizationOrigin.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.SetRealParameterConstraintsDiscretizationOrigin.html",
+  "sha256": "6a0fcf59a4ae5815031bd8ccc5ee3d4ceccca29091814fd739d115a5fc8f6a68",
+  "text": "# Method SetRealParameterConstraintsDiscretizationOrigin\n\n#### SetRealParameterConstraintsDiscretizationOrigin(ElementId, RealProperty)\n\nSets the real parameter constraint discretization origin.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 17, 0, 0)]\nvoid SetRealParameterConstraintsDiscretizationOrigin(ElementId inElementId, RealProperty inProperty)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the parameter.  |  \n \n|  RealProperty |  inProperty |  The new value.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.17.000.000.\n",
+  "markdown": "markdown/kernel/84707c9de96e4609526df05e.md",
+  "originalHtml": "html/kernel/84707c9de96e4609526df05e.html"
+}

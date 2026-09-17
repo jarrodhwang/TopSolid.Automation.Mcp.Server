@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdmAdmin.GetGroupsOfUsers.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdmAdmin.GetGroupsOfUsers.html",
+  "sha256": "d83c1230aa5dcab16e4bec72c83f900aa211e1b5d2db0ab8c54cbf7c03a30d5a",
+  "text": "# Method GetGroupsOfUsers\n\n#### GetGroupsOfUsers()\n\nGets all the users groups.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 323, 10)]\nList<PdmObjectId> GetGroupsOfUsers()\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<PdmObjectId> |  User group identifiers.  |  \n\n##### Remarks\n\nThis method is available since v7.20.323.010.\n",
+  "markdown": "markdown/kernel/db9a54696c694f371c1883e8.md",
+  "originalHtml": "html/kernel/db9a54696c694f371c1883e8.html"
+}

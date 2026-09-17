@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.PathPoint.Empty.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.PathPoint.Empty.html",
+  "sha256": "a82fcc33a9720be8e8777fab2d1830642a494c6ccccf39dd7e4e9b9e005ac1f6",
+  "text": "# Field Empty\n\nEmpty identifier.\n\n###### Namespace: TopSolid.Cam.NC.Kernel.Automating\n\n###### Assembly: TopSolid.Cam.NC.Kernel.Automating.dll\n\n##### Syntax\n\n```\npublic static readonly PathPoint Empty\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  PathPoint |  Empty identifier. |\n",
+  "markdown": "markdown/cam/94692bdbf0128a8476944f59.md",
+  "originalHtml": "html/cam/94692bdbf0128a8476944f59.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.KeyValue.IsEmpty.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.KeyValue.IsEmpty.html",
+  "sha256": "e428dd1e8054ae02ff9a5fd33f1c14eb4e039003fd958369bcb33d4d3ffabd6b",
+  "text": "# Property IsEmpty\n\n#### IsEmpty\n\nTells whether the key-value pair is empty.\n\n##### Declaration\n\n```\npublic bool IsEmpty { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |   |\n",
+  "markdown": "markdown/kernel/294e5ce023461fd06e6737da.md",
+  "originalHtml": "html/kernel/294e5ce023461fd06e6737da.html"
+}

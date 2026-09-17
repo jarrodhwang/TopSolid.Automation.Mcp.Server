@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IOperations.IsNCOperation.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IOperations.IsNCOperation.html",
+  "sha256": "63410352552527699500b1775a179e2346af6eaa83340d7b3b82982974bc2ebb",
+  "text": "# Method IsNCOperation\n\n#### IsNCOperation(ElementExId)\n\nTells whether an operation is a path computing operation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nbool IsNCOperation(ElementExId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementExId |  inElementId |  Identifier of the operation to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  The operation is a path operation.  |\n",
+  "markdown": "markdown/cam/76e69aaca7621da71d9f6ecf.md",
+  "originalHtml": "html/cam/76e69aaca7621da71d9f6ecf.html"
+}

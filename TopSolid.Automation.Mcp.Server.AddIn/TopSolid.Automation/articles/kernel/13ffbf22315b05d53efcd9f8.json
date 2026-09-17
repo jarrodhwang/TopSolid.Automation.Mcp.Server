@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartAxis2DType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartAxis2DType.html",
+  "sha256": "fbcbd9a2d204d7c67275d411b9c2d4e391a5a5c4e67e149d1a8bfdc65a7f0218",
+  "text": "# Enum SmartAxis2DType\n\nDefines the various types of 2D smart axes.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\npublic enum SmartAxis2DType\n```\n\n##### Remarks\n\nThis enum is available since v7.7.\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  Basic |  Basic.  |  \n \n|  Element |  Provided by an element.  |  \n \n|  Item |  Provided by an element item.  |  \n \n|  None |  Not used.  |  \n \n|  Unclassified |  Unclassified type.  |\n",
+  "markdown": "markdown/kernel/13ffbf22315b05d53efcd9f8.md",
+  "originalHtml": "html/kernel/13ffbf22315b05d53efcd9f8.html"
+}

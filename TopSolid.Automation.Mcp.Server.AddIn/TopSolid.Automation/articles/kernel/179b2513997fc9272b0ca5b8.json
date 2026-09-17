@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.SearchFolderByName.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.SearchFolderByName.html",
+  "sha256": "af29324d4b6faf4d86148ef5800b537eea8c00635966a701574d176660dcf99e",
+  "text": "# Method SearchFolderByName\n\n#### SearchFolderByName(PdmObjectId, string)\n\nSearches for a folder by its name.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 13, 0, 0)]\nList<PdmObjectId> SearchFolderByName(PdmObjectId inProjectId, string inFolderName)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inProjectId |  Project PDM object identifier, or empty for searching in all projects.  |  \n \n|  string |  inFolderName |  Folder name.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<PdmObjectId> |  PDM object identifiers of documents corresponding to the searched name.  |  \n\n##### Remarks\n\nThis method is available since v7.13.\n",
+  "markdown": "markdown/kernel/179b2513997fc9272b0ca5b8.md",
+  "originalHtml": "html/kernel/179b2513997fc9272b0ca5b8.html"
+}

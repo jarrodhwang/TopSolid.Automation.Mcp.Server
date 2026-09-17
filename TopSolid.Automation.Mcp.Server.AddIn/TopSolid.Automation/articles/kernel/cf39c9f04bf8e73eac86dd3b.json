@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartPoint2DType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartPoint2DType.html",
+  "sha256": "2226856c2f7734068b8b58ca48dc83f058493b1e9751b27f0574fecd6c030666",
+  "text": "# Enum SmartPoint2DType\n\nDefines the various types of 2D smart points.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\npublic enum SmartPoint2DType\n```\n\n##### Remarks\n\nThis enum is available since v7.7.\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  Basic |  Basic.  |  \n \n|  Element |  Provided by an element.  |  \n \n|  Item |  Provided by an element item.  |  \n \n|  None |  Not used.  |  \n \n|  Unclassified |  Unclassified type.  |\n",
+  "markdown": "markdown/kernel/cf39c9f04bf8e73eac86dd3b.md",
+  "originalHtml": "html/kernel/cf39c9f04bf8e73eac86dd3b.html"
+}

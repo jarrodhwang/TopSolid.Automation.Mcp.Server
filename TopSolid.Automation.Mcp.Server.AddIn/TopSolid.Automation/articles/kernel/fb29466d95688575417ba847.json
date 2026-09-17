@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdmAdmin.SetUserEmailAddress.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdmAdmin.SetUserEmailAddress.html",
+  "sha256": "6763553c365eb3263e71e6b7802567b01cb35a1d31e763e64b7dd3276e8f4d45",
+  "text": "# Method SetUserEmailAddress\n\n#### SetUserEmailAddress(string, string)\n\nSets the e-mail address of a user.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nvoid SetUserEmailAddress(string inAccountId, string inEmailAddress)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  string |  inAccountId |  User account identifier.  |  \n \n|  string |  inEmailAddress |  User e-mail address.  |  \n\n##### Remarks\n\nIf the IsAdmin property returns false, this method cannot be called (an exception will be thrown otherwise).\n \nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/fb29466d95688575417ba847.md",
+  "originalHtml": "html/kernel/fb29466d95688575417ba847.html"
+}

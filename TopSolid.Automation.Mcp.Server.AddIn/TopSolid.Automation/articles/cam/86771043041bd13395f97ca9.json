@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IOperations.IsStockUpdateOperation.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IOperations.IsStockUpdateOperation.html",
+  "sha256": "ed28753fbdfcbd630e63cee4652ad27ae76a269e49d65db91c29112d3522d699",
+  "text": "# Method IsStockUpdateOperation\n\n#### IsStockUpdateOperation(ElementExId)\n\nTells whether an operation is a stock update operation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nbool IsStockUpdateOperation(ElementExId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementExId |  inElementId |  Identifier of the operation to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  The operation is a stock update operation.  |\n",
+  "markdown": "markdown/cam/86771043041bd13395f97ca9.md",
+  "originalHtml": "html/cam/86771043041bd13395f97ca9.html"
+}

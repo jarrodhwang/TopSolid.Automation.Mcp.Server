@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IDocuments.IsFreezable.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IDocuments.IsFreezable.html",
+  "sha256": "a6619d3230f19e6ae59dda01b3c8c1bf1095156bdf1085b486f418e6bc0c2a09",
+  "text": "# Method IsFreezable\n\n#### IsFreezable(DocumentId)\n\nTells whether a document may be frozen.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 12, 0, 0)]\nbool IsFreezable(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  The document may be frozen.  |  \n\n##### Remarks\n\nThis method is available since v7.12.\n",
+  "markdown": "markdown/kernel/b6f411ad6755902956705f2c.md",
+  "originalHtml": "html/kernel/b6f411ad6755902956705f2c.html"
+}

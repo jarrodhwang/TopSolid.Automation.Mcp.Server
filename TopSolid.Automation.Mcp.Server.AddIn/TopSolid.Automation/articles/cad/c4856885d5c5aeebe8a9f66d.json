@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IParts.SetFinishing.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IParts.SetFinishing.html",
+  "sha256": "7a7fcc401e7c782d68f281500d33b648057117ff1607a402d535d76fc772d354",
+  "text": "# Method SetFinishing\n\n#### SetFinishing(DocumentId, DocumentId)\n\nSets the finishing of a part.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 12, 0, 0)]\nvoid SetFinishing(DocumentId inDocumentId, DocumentId inFinishingDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the part document to modify.  |  \n \n|  DocumentId |  inFinishingDocumentId |  Finishing document identifier, or empty if the part does not have a finishing.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.12.\n",
+  "markdown": "markdown/cad/c4856885d5c5aeebe8a9f66d.md",
+  "originalHtml": "html/cad/c4856885d5c5aeebe8a9f66d.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IApplication.IsProviderLicenseValid.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IApplication.IsProviderLicenseValid.html",
+  "sha256": "f67d970d439ae210f3a634179470e9cb81356bbcc2b2c937462172757fdf817a",
+  "text": "# Method IsProviderLicenseValid\n\n#### IsProviderLicenseValid(string, string, int, int, int)\n\nTells whether a valid license is available from a specified provider.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nbool IsProviderLicenseValid(string inProvider, string inPublicKey, int inVersionMajor, int inVersionMinor, int inModuleId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  string |  inProvider |  License provider name.  |  \n \n|  string |  inPublicKey |  License public key.  |  \n \n|  int |  inVersionMajor |  Version major number within [0,20].  |  \n \n|  int |  inVersionMinor |  Version minor number within [0,99].  |  \n \n|  int |  inModuleId |  Module identifier.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |   |  \n\n##### Remarks\n\nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/661c996e391967f3859a8d25.md",
+  "originalHtml": "html/kernel/661c996e391967f3859a8d25.html"
+}

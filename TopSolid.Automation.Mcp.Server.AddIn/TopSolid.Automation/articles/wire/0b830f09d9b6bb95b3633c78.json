@@ -1,0 +1,8 @@
+{
+  "path": "api/wire/TopSolid.Cam.NC.Wire.Automating.IWireTechnologyDocuments.SetWireMaterial.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/wire/TopSolid.Cam.NC.Wire.Automating.IWireTechnologyDocuments.SetWireMaterial.html",
+  "sha256": "24126386c577ec8a8bc71b5f4d3a85fe885e7d182cc5a4548f61c3a5bfe8c48e",
+  "text": "# Method SetWireMaterial\n\n#### SetWireMaterial(DocumentId, DocumentId)\n\nSet wire material name.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 160)]\nvoid SetWireMaterial(DocumentId inDocumentId, DocumentId inMaterialDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  DocumentId |  inMaterialDocumentId |  Identifier of wire material document.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n",
+  "markdown": "markdown/wire/0b830f09d9b6bb95b3633c78.md",
+  "originalHtml": "html/wire/0b830f09d9b6bb95b3633c78.html"
+}

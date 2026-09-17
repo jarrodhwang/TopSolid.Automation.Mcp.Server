@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.GetCodePossibleValues.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.GetCodePossibleValues.html",
+  "sha256": "f28b9f1b30d3eae152f8bbe42c920f33f1d7ae18e0e7a44507e38c9c248613bb",
+  "text": "# Method GetCodePossibleValues\n\n#### GetCodePossibleValues(ElementId)\n\nGets the code parameter possibles values.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 17, 0, 0)]\nList<CodeProperty> GetCodePossibleValues(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the parameter.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<CodeProperty> |  The possibles values.  |  \n\n##### Remarks\n\nThis method is available since v7.17.000.000.\n",
+  "markdown": "markdown/kernel/9e5101ecb14db7f7e799b01d.md",
+  "originalHtml": "html/kernel/9e5101ecb14db7f7e799b01d.html"
+}

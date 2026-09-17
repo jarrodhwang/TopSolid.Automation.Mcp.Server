@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IElements.SearchByName.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IElements.SearchByName.html",
+  "sha256": "ca22fa93477d0f5f90b0863131ab28baf4290c7f53509054dbc7f50498c2896c",
+  "text": "# Method SearchByName\n\n#### SearchByName(DocumentId, string)\n\nSearches for an element with a specified name in a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nElementId SearchByName(DocumentId inDocument, string inName)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocument |  Document to analyze.  |  \n \n|  string |  inName |  Name of the element to search.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Element found, or empty if not found.  |  \n\n##### Remarks\n\nOnly elements with unique name (i.e. HasUniqueName(ElementId) returns true on that element) are found.\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/0e9a79e14a77f317bc86ab7f.md",
+  "originalHtml": "html/kernel/0e9a79e14a77f317bc86ab7f.html"
+}

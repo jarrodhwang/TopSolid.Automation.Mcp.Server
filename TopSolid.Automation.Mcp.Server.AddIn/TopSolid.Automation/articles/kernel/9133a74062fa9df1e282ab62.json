@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.SetRealPublishingDefinition.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.SetRealPublishingDefinition.html",
+  "sha256": "4fec968477aa5f08d9a2c1167050995acbba88f2c4c95ef876b2daa5ddc4926e",
+  "text": "# Method SetRealPublishingDefinition\n\n#### SetRealPublishingDefinition(ElementId, SmartReal)\n\nSets the definition of a real publishing entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nvoid SetRealPublishingDefinition(ElementId inElementId, SmartReal inDefinition)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the publishing entity to modify.  |  \n \n|  SmartReal |  inDefinition |  Publishing new definition.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.8.\n",
+  "markdown": "markdown/kernel/9133a74062fa9df1e282ab62.md",
+  "originalHtml": "html/kernel/9133a74062fa9df1e282ab62.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IWorldCoordinateSystems.GetWcsSolution.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IWorldCoordinateSystems.GetWcsSolution.html",
+  "sha256": "6050a78b3cd0a6aaa3e2f758cc51127d0085f1506039f2975b76b0de366cc490",
+  "text": "# Method GetWcsSolution\n\n#### GetWcsSolution(ElementId, int)\n\nGets the WCS solution.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 400, 80)]\nElementId GetWcsSolution(ElementId inElementId, int inIndex)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the WCS to analyze.  |  \n \n|  int |  inIndex |  Index of the solution.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  The solution.  |\n",
+  "markdown": "markdown/cam/94fbeb220a4e05fc9cf23efa.md",
+  "originalHtml": "html/cam/94fbeb220a4e05fc9cf23efa.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IShapes.SetShapePublishingDefinition.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IShapes.SetShapePublishingDefinition.html",
+  "sha256": "449e48b5f7e3f32fd3547e4aaadad3ebf827fc343a826f06b5d05190be57c2ca",
+  "text": "# Method SetShapePublishingDefinition\n\n#### SetShapePublishingDefinition(ElementId, SmartShape)\n\nSets the definition of a shape publishing entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 302, 80)]\nvoid SetShapePublishingDefinition(ElementId inElementId, SmartShape inDefinition)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the publishing entity to modify.  |  \n \n|  SmartShape |  inDefinition |  Publishing new definition.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.8.302.80.\n",
+  "markdown": "markdown/kernel/0e99927b7d48003bf6d7e65b.md",
+  "originalHtml": "html/kernel/0e99927b7d48003bf6d7e65b.html"
+}

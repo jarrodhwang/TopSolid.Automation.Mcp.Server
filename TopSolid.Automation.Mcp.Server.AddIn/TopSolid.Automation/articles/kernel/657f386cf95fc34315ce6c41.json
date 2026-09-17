@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.TopSolidHost.Healing.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.TopSolidHost.Healing.html",
+  "sha256": "60ecaad1fe2c7f635476b6e0a266a0c1d0c21baff0dfd414ad188aa52eb22d91",
+  "text": "# Property Healing\n\n#### Healing\n\nGets access to layer entities, or null if not available.\n\n##### Declaration\n\n```\npublic static IHealing Healing { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  IHealing |   |\n",
+  "markdown": "markdown/kernel/657f386cf95fc34315ce6c41.md",
+  "originalHtml": "html/kernel/657f386cf95fc34315ce6c41.html"
+}

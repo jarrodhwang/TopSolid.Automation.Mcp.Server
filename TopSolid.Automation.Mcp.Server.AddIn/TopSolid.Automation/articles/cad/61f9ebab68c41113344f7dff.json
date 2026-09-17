@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMultiLayer.GetDescription.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMultiLayer.GetDescription.html",
+  "sha256": "2dd2dafc3059737d52389a060960345b562d148ad34b1ab1c10a50bee3963dd9",
+  "text": "# Method GetDescription\n\n#### GetDescription(DocumentId)\n\nGets the multi layer material document description\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 0, 0)]\nstring GetDescription(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  The multi layer material description.  |  \n\n##### Remarks\n\nThis method is available since v7.19.\n",
+  "markdown": "markdown/cad/61f9ebab68c41113344f7dff.md",
+  "originalHtml": "html/cad/61f9ebab68c41113344f7dff.html"
+}

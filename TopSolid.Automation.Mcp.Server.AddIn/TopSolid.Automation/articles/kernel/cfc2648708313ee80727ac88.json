@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.UserAnswerType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.UserAnswerType.html",
+  "sha256": "e7bcca784ba5d811d280918ad06c6638ebb5e8be464884b3eb40786cda00e545",
+  "text": "# Enum UserAnswerType\n\nDefines the various types of user answers.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\npublic enum UserAnswerType\n```\n\n##### Remarks\n\nThis enum is available since v7.7.\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  Cancel |  Cancel.  |  \n \n|  Ok |  Ok.  |  \n \n|  Previous |  Previous.  |\n",
+  "markdown": "markdown/kernel/cfc2648708313ee80727ac88.md",
+  "originalHtml": "html/kernel/cfc2648708313ee80727ac88.html"
+}

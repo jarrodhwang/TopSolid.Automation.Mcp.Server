@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.IAnnotations.GetGeometricToleranceFrameToleranceSymbolType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.IAnnotations.GetGeometricToleranceFrameToleranceSymbolType.html",
+  "sha256": "cbe57944866e82491ae6c7e1b9f57ca9efe9af43afdc2299f16fc7fd795fd4c5",
+  "text": "# Method GetGeometricToleranceFrameToleranceSymbolType\n\n#### GetGeometricToleranceFrameToleranceSymbolType(ElementId, int)\n\nGets the tolerance symbol type of a geometric tolerance frame.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 17, 0, 0)]\nToleranceSymbolType? GetGeometricToleranceFrameToleranceSymbolType(ElementId inGeometricTolerance, int inToleranceFrameIndex)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inGeometricTolerance |  Identifier of the element to analyze.  |  \n \n|  int |  inToleranceFrameIndex |  Index of the tolerance frame.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ToleranceSymbolType? |  The tolerance symbol type.  |  \n\n##### Remarks\n\nThis method is available since v7.17.\n",
+  "markdown": "markdown/drafting/8c1e25b6e4e3cf1217ba34ea.md",
+  "originalHtml": "html/drafting/8c1e25b6e4e3cf1217ba34ea.html"
+}

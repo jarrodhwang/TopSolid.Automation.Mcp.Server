@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Color.White.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Color.White.html",
+  "sha256": "a07fe43f67a474777e7cd771225f4403a8b19096ec98d390acde1da8599c5d77",
+  "text": "# Field White\n\nWhite color.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\npublic static readonly Color White\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Color |  White color. |\n",
+  "markdown": "markdown/kernel/a09eb12ee619d2a172317e58.md",
+  "originalHtml": "html/kernel/a09eb12ee619d2a172317e58.html"
+}

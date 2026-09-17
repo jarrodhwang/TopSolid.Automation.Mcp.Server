@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.UserQuestionFlags.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.UserQuestionFlags.html",
+  "sha256": "a9de89e887bf8846d26f95535f3aa449248e3afb4e89cf04d082d35f32853418",
+  "text": "# Enum UserQuestionFlags\n\nDefines the various flags associated to the user question.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[Flags]\n[DataContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\npublic enum UserQuestionFlags\n```\n\n##### Remarks\n\nThis enum is available since v7.7.\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  AcceptsAuto |  Automatically answers \"Ok\" when a valid input or selection is made (available since v7.11).  |  \n \n|  AllowsCreation |  Allows the user to create new entities to answer the question.  |  \n \n|  AllowsEmpty |  Allows the user to answer \"nothing\".  |  \n \n|  AllowsNext |  Allows the user to answer \"Next\" instead of \"Ok\".  |  \n \n|  AllowsPrevious |  Allows the user to answer \"Previous\".  |  \n \n|  None |  No flag used.  |\n",
+  "markdown": "markdown/kernel/c91159ccd92a601f5e557a28.md",
+  "originalHtml": "html/kernel/c91159ccd92a601f5e557a28.html"
+}

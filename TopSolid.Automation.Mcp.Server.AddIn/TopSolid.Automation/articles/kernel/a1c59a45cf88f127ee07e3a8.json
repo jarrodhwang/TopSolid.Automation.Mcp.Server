@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ILayers.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ILayers.html",
+  "sha256": "22c130a42a2e34a39d91a4abffc222086a40c3d930a4fb5ff8d05123c0c3ac4c",
+  "text": "# Interface ILayers\n\nGives access to parameter entities.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[ServiceContract]\n[AvailableSinceVersion(7, 18, 0, 0)]\npublic interface ILayers\n```\n\n##### Remarks\n\nThis interface is available since v7.18.\n\n### Methods \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   CreateLayer(DocumentId, string, int)  |  Creates a real parameter entity in a document.  |  \n \n|   GetLayer(DocumentId, ElementId)  |  Retrieves layer from an element. Returns Empty if no layer defined.  |  \n \n|   GetLayers(DocumentId)  |  Gets the parameters entities that are in the parameters folder of a document.  |  \n \n|   GetLayersFolder(DocumentId)  |  Gets the parameters folder entity of a document.  |  \n \n|   IsLayer(ElementId)  |  Tells whether an Element is a layer.  |  \n \n|   IsLayerFolder(ElementId)  |  Tells whether an Element is a layer folder.  |  \n \n|   IsShowable(ElementId)  |  Tells whether a parameter has a value.  |  \n \n|   SetLayer(ElementId, ElementId)  |  Sets the Layer of a document  |\n",
+  "markdown": "markdown/kernel/a1c59a45cf88f127ee07e3a8.md",
+  "originalHtml": "html/kernel/a1c59a45cf88f127ee07e3a8.html"
+}

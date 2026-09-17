@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMaterials.GetMetalnessTextureDocument.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMaterials.GetMetalnessTextureDocument.html",
+  "sha256": "6f8e95795e7745402d58d1f380104322325a4a28e329e30c85734c8f64561186",
+  "text": "# Method GetMetalnessTextureDocument\n\n#### GetMetalnessTextureDocument(DocumentId)\n\nGets the Metalness texture document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 400, 100)]\nDocumentId GetMetalnessTextureDocument(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  DocumentId |   |  \n\n##### Remarks\n\nThis method is available since v7.16.\n",
+  "markdown": "markdown/cad/087c4d40eb32e0221ef792fe.md",
+  "originalHtml": "html/cad/087c4d40eb32e0221ef792fe.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IDocuments.GetTools.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IDocuments.GetTools.html",
+  "sha256": "21e3dd106a2d8579221c48cbc2b7ede2c9f93adaaa1477ec1312c06c59da0119",
+  "text": "# Method GetTools\n\n#### GetTools(DocumentId, bool)\n\nGet the list of mounted tools in the document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nList<ElementId> GetTools(DocumentId inDocumentId, bool inUsed)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n \n|  bool |  inUsed |  True if the tools in the list are used by operations.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementId> |  List of all mounted tools, used of not.  |\n",
+  "markdown": "markdown/cam/ff4f9e39a21888063a175535.md",
+  "originalHtml": "html/cam/ff4f9e39a21888063a175535.html"
+}

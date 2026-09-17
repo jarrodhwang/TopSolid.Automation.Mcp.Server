@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IShapes.GetFaceSurfaceParameters.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IShapes.GetFaceSurfaceParameters.html",
+  "sha256": "2d8cd49233d0194ea2928c1800ad5e34b4cfc8305574bf0ef8d1d7a16eb9474b",
+  "text": "# Method GetFaceSurfaceParameters\n\n#### GetFaceSurfaceParameters(ElementItemId, Point3D, out double, out double)\n\nGets the parametric values of a specified point on the surface attached to a face.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 300, 60)]\nPoint3D GetFaceSurfaceParameters(ElementItemId inFaceId, Point3D inPoint, out double outU, out double outV)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementItemId |  inFaceId |  Identifier of the face to analyze.  |  \n \n|  Point3D |  inPoint |  Point near face surface.  |  \n \n|  double |  outU |  U parameter of nearest point on face surface.  |  \n \n|  double |  outV |  V parameter of nearest point on face surface.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Point3D |  Nearest point to specified point on face surface.  |  \n\n##### Remarks\n\nThis method is available since v7.10.300.60.\n",
+  "markdown": "markdown/kernel/acb0177c63ead7800f912689.md",
+  "originalHtml": "html/kernel/acb0177c63ead7800f912689.html"
+}

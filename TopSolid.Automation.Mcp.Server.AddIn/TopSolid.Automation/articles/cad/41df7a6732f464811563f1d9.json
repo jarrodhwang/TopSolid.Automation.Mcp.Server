@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMechanisms.GetRigidGroupConstituents.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMechanisms.GetRigidGroupConstituents.html",
+  "sha256": "67c308ad3541053fb64cec776e878178147f545bd41b8e4d63ae7ff9a0e50043",
+  "text": "# Method GetRigidGroupConstituents\n\n#### GetRigidGroupConstituents(ElementId)\n\nGets the constituents of a rigid group entity.\n\n##### Declaration\n\n```\n[AvailableSinceVersion(7, 8, 0, 0)]\n[OperationContract]\nList<ElementId> GetRigidGroupConstituents(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the rigid group entity to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementId> |  Contituent elements found.  |  \n\n##### Remarks\n\nThis method is available since v7.8.\n",
+  "markdown": "markdown/cad/41df7a6732f464811563f1d9.md",
+  "originalHtml": "html/cad/41df7a6732f464811563f1d9.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IOperations.GetStrongTuningOperation.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IOperations.GetStrongTuningOperation.html",
+  "sha256": "d80fb35b76101521497dbe552b246d7d590b63b099931c7a76f3b47f11ebd80b",
+  "text": "# Method GetStrongTuningOperation\n\n#### GetStrongTuningOperation(ElementExId)\n\nGets the strong tuning operation from the given operation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nElementExId GetStrongTuningOperation(ElementExId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementExId |  inElementId |  Identifier of the operation to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementExId |  Strong tuning operation found.  |\n",
+  "markdown": "markdown/cam/408a4222210b7063e049510f.md",
+  "originalHtml": "html/cam/408a4222210b7063e049510f.html"
+}

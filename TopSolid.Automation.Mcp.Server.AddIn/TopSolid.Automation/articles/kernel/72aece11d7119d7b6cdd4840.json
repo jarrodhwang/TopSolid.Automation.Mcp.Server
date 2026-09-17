@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IElements.GetPropertyLocalizedDomainName.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IElements.GetPropertyLocalizedDomainName.html",
+  "sha256": "433cf6ad8ec506f28b3a0a5d05851d6adde671e52e2b2c1eb721bc999e663eb2",
+  "text": "# Method GetPropertyLocalizedDomainName\n\n#### GetPropertyLocalizedDomainName(ElementId, string)\n\nGets the localized domain name of an element property.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 300, 60)]\nstring GetPropertyLocalizedDomainName(ElementId inElementId, string inFullName)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to analyze.  |  \n \n|  string |  inFullName |  Full name of the element property to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  Localized domain name of the property.  |  \n\n##### Remarks\n\nThis method is available since v7.8.300.60.\n",
+  "markdown": "markdown/kernel/72aece11d7119d7b6cdd4840.md",
+  "originalHtml": "html/kernel/72aece11d7119d7b6cdd4840.html"
+}

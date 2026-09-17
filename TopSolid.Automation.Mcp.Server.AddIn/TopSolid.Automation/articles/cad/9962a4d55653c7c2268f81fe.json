@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IParts.SetMaterial.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IParts.SetMaterial.html",
+  "sha256": "c78787a4414da0f469cb8b66eda8604bfb25f1485ede5146466d7e1325a1c8e7",
+  "text": "# Method SetMaterial\n\n#### SetMaterial(DocumentId, DocumentId)\n\nSets the material of a part.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 301, 40)]\nvoid SetMaterial(DocumentId inDocumentId, DocumentId inMaterialDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the part document to modify.  |  \n \n|  DocumentId |  inMaterialDocumentId |  Material document identifier, or empty if the material of the part is not defined.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.6.301.40.\n",
+  "markdown": "markdown/cad/9962a4d55653c7c2268f81fe.md",
+  "originalHtml": "html/cad/9962a4d55653c7c2268f81fe.html"
+}

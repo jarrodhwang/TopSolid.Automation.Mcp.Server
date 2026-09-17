@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Generic.HostChannel-1.ChannelFactory.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Generic.HostChannel-1.ChannelFactory.html",
+  "sha256": "ded40ba10ce34b0bf4561c7b164c670c2221790e3fe3d47dae0f96f2bb3f9bdf",
+  "text": "# Property ChannelFactory\n\n#### ChannelFactory\n\nGets the channel factory, or null if none.\n\n##### Declaration\n\n```\npublic ChannelFactory<TService> ChannelFactory { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ChannelFactory<TService> |   |\n",
+  "markdown": "markdown/kernel/298d9d9181a654a115ea8f19.md",
+  "originalHtml": "html/kernel/298d9d9181a654a115ea8f19.html"
+}

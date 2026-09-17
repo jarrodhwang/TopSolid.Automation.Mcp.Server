@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMultiLayer.GetMultiLayerTotalThickness.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMultiLayer.GetMultiLayerTotalThickness.html",
+  "sha256": "e86d971b5aa8be59519f541b1774808532ff40ff7756a275b925446ea2dd20ba",
+  "text": "# Method GetMultiLayerTotalThickness\n\n#### GetMultiLayerTotalThickness(DocumentId)\n\nGets the multi layer total thickness\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 0, 0)]\nReal GetMultiLayerTotalThickness(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Real |  total thickness  |  \n\n##### Remarks\n\nThis method is available since v7.19.\n",
+  "markdown": "markdown/cad/f6fb6db14ca9fe265c86cc0b.md",
+  "originalHtml": "html/cad/f6fb6db14ca9fe265c86cc0b.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IDocuments.GetMachine.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IDocuments.GetMachine.html",
+  "sha256": "f20b79483c519fcf4c1663a348373b01374a104d324e7d77eb03986aea82cdc1",
+  "text": "# Method GetMachine\n\n#### GetMachine(DocumentId)\n\nGet the machine in the document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nElementId GetMachine(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Machine of the Cam document.  |\n",
+  "markdown": "markdown/cam/bc2e1cb66a66d4e82b5846a6.md",
+  "originalHtml": "html/cam/bc2e1cb66a66d4e82b5846a6.html"
+}

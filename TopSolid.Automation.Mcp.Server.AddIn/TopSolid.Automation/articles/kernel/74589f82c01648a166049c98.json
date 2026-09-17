@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IDocuments.GetCurrentCulture.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IDocuments.GetCurrentCulture.html",
+  "sha256": "9f46112506a6f3de74b6b4cf763dac64f386dea4e7acd8b19ae155c8bcf26ea4",
+  "text": "# Method GetCurrentCulture\n\n#### GetCurrentCulture(DocumentId)\n\nGets the document current culture.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 400, 0)]\nCultureInfo GetCurrentCulture(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  CultureInfo |  The culture of the document.  |  \n\n##### Remarks\n\nThis method is available since v7.16.\n",
+  "markdown": "markdown/kernel/74589f82c01648a166049c98.md",
+  "originalHtml": "html/kernel/74589f82c01648a166049c98.html"
+}

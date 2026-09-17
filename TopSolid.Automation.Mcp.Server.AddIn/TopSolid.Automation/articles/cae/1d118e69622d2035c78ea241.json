@@ -1,0 +1,8 @@
+{
+  "path": "api/cae/TopSolid.Cae.Kernel.Automating.ICAEDocuments.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cae/TopSolid.Cae.Kernel.Automating.ICAEDocuments.html",
+  "sha256": "23cca836740347e66405dcb1bd0ef6f87ca71f764f4af4288ff4114230a1b568",
+  "text": "# Interface ICAEDocuments\n\nGives access to Cae documents.\n\n###### Namespace: TopSolid.Cae.Kernel.Automating\n\n###### Assembly: TopSolid.Cae.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[ServiceContract]\n[AvailableSinceVersion(7, 19, 15, 0)]\npublic interface ICAEDocuments\n```\n\n##### Remarks\n\nThis interface is available since v7.17.\n\n### Methods \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   GetMeshTargetSize(DocumentId)  |  Gets target size of mesh into an analysis preparation document.  |  \n \n|   IsAnalysisPreparationDocument(DocumentId)  |  Tells whether a document is an analysis preparation document.  |  \n \n|   IsAnalysisResultsDocument(DocumentId)  |  Tells whether a document is an analysis results document.  |  \n \n|   MeshNeedsRefreshing(DocumentId)  |  Tells whether the mesh of an analysis preparation document needs to be refreshed.  |  \n \n|   RefreshMesh(DocumentId)  |  Refresh the mesh of an analysis preparation document.  |  \n \n|   SetMeshTargetSize(DocumentId, SmartReal)  |  Sets target size for a mesh of an analysis preparation document.  |  \n \n|   Solve(DocumentId, out string)  |  Launch resolution of an analysis preparation document.  |\n",
+  "markdown": "markdown/cae/1d118e69622d2035c78ea241.md",
+  "originalHtml": "html/cae/1d118e69622d2035c78ea241.html"
+}

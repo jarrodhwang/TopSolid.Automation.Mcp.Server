@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IDocuments.Close.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IDocuments.Close.html",
+  "sha256": "1ae8b7f910896942f1fb197eebfc15956222d4245858146fe17e9a636ea1c7f2",
+  "text": "# Method Close\n\n#### Close(DocumentId, bool, bool)\n\nCloses a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nvoid Close(DocumentId inDocumentId, bool inAsksUser, bool inSaves)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to close.  |  \n \n|  bool |  inAsksUser |  Whether to ask the user for confirmation if the document needs to be saved.  |  \n \n|  bool |  inSaves |  Whether to automatically save the document if it needs it when the user is not asked for confirmation.  |  \n\n##### Remarks\n\nThis method must not be called between StartModification(string, bool) and EndModification(bool, bool) methods calls.\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/671cfcd72a641b3fe89188f9.md",
+  "originalHtml": "html/kernel/671cfcd72a641b3fe89188f9.html"
+}

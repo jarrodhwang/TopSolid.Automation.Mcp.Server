@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdmSecurity.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdmSecurity.html",
+  "sha256": "75fd3079748743aafd1df94c6c9cc1f00b99e477f1f58af5abc1b40d760f0eba",
+  "text": "# Interface IPdmSecurity\n\nGives access to the PDM security.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[ServiceContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\npublic interface IPdmSecurity\n```\n\n##### Remarks\n\nThis interface is available since v7.8.\n\n### Methods \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   ActivateProjectSecurity(PdmObjectId)  |  Activates security of a project.  |  \n \n|   ActivateSecurity()  |  Activates system security.  |  \n \n|   DeactivateProjectSecurity(PdmObjectId)  |  Deactivates security of a project.  |  \n \n|   DeactivateSecurity()  |  Deactivates system security.  |  \n \n|   GetPermissions(PdmObjectId)  |  Retrieves security of a project, folder or document.  |  \n \n|   HasRight(PdmObjectId, PdmRight)  |  Tells whether the current user has a specific right on an object.  |  \n \n|   IsProjectSecurityActive(PdmObjectId)  |  Tells if a security is activated on a project.  |  \n \n|   IsSecurityActive()  |  Tells if a security is globally activated.  |  \n \n|   SetPermissions(PdmObjectId, List<PdmSecurityUserOrGroupPermissions>)  |  Sets security of a project, folder or document.  |\n",
+  "markdown": "markdown/kernel/493f807438f9425893fdfe7d.md",
+  "originalHtml": "html/kernel/493f807438f9425893fdfe7d.html"
+}

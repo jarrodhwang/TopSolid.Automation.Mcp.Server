@@ -1,0 +1,8 @@
+{
+  "path": "api/electrode/TopSolid.Cad.Electrode.Automating.IElectrodes.GetElectrodePositionCount.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/electrode/TopSolid.Cad.Electrode.Automating.IElectrodes.GetElectrodePositionCount.html",
+  "sha256": "543fb3c3f3d0d735a66fca6e56cf9755a3f60d6eb46b33ec06f3a80adece73a2",
+  "text": "# Method GetElectrodePositionCount\n\n#### GetElectrodePositionCount(ElementId)\n\nGet the position count of an electrode.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 12, 0, 0)]\nint GetElectrodePositionCount(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the electrode to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  int |  Theoretical position count.  |  \n\n##### Remarks\n\nThis method is available since v7.12.\n",
+  "markdown": "markdown/electrode/ef8b965d75026c264a33f264.md",
+  "originalHtml": "html/electrode/ef8b965d75026c264a33f264.html"
+}

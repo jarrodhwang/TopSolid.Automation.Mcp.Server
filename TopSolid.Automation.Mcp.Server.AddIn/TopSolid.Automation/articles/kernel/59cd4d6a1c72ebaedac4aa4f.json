@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IFamilies.GetCatalogColumnParameters.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IFamilies.GetCatalogColumnParameters.html",
+  "sha256": "57d7b831436f70e4aee9beeee7cbfe1b9775c7016c9c3dac69db8cfcf6b90c5f",
+  "text": "# Method GetCatalogColumnParameters\n\n#### GetCatalogColumnParameters(DocumentId)\n\nGets the catalog column parameters.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 15, 0, 60)]\nList<ElementId> GetCatalogColumnParameters(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the family document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementId> |  Column parameter identifiers.  |  \n\n##### Remarks\n\nThis method is available since v7.15.\n",
+  "markdown": "markdown/kernel/59cd4d6a1c72ebaedac4aa4f.md",
+  "originalHtml": "html/kernel/59cd4d6a1c72ebaedac4aa4f.html"
+}

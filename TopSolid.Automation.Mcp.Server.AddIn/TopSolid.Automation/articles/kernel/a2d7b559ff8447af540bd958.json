@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.SetToleranceFromDocument.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.SetToleranceFromDocument.html",
+  "sha256": "1d38ed4199b411e40fda17e9bd77cac208e1774ab2bc5502334ecc1b93892257",
+  "text": "# Method SetToleranceFromDocument\n\n#### SetToleranceFromDocument(ElementId, DocumentId, string)\n\nSets the tolerance values of a Tolerance parameter from a tolerance document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 14, 0, 0)]\nvoid SetToleranceFromDocument(ElementId inElementId, DocumentId inToleranceDocumentId, string inClass)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the parameter to modify.  |  \n \n|  DocumentId |  inToleranceDocumentId |  Identifier of the tolerance document.  |  \n \n|  string |  inClass |  Class tolerance.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.14.\n",
+  "markdown": "markdown/kernel/a2d7b559ff8447af540bd958.md",
+  "originalHtml": "html/kernel/a2d7b559ff8447af540bd958.html"
+}

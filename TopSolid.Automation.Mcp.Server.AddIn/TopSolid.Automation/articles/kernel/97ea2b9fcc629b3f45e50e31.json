@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.GetFinalMinorRevision.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.GetFinalMinorRevision.html",
+  "sha256": "a585dd3f676b159a4ec4f1e66d18ecc289cec722c4e5437ff6fb0ac3e57a6445",
+  "text": "# Method GetFinalMinorRevision\n\n#### GetFinalMinorRevision(PdmObjectId)\n\nGets the last minor revision contained in the last major revision contained in a PDM object.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 9, 0, 0)]\nPdmMinorRevisionId GetFinalMinorRevision(PdmObjectId inObjectId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  Identifier of the PDM object.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  PdmMinorRevisionId |  Identifier of the last minor revision of the last major revision.  |  \n\n##### Remarks\n\nThis method is available since v7.9.\n",
+  "markdown": "markdown/kernel/97ea2b9fcc629b3f45e50e31.md",
+  "originalHtml": "html/kernel/97ea2b9fcc629b3f45e50e31.html"
+}

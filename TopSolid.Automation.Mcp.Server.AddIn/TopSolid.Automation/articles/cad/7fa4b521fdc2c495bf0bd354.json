@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMaterials.SetSectionReductionAtBreak.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMaterials.SetSectionReductionAtBreak.html",
+  "sha256": "b98a6f409740a860cb64fcb6a477a0d5ad3466cfbf49a71a4beffd264d077681",
+  "text": "# Method SetSectionReductionAtBreak\n\n#### SetSectionReductionAtBreak(DocumentId, double)\n\nSets Section Reduction At Break\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 400, 120)]\nvoid SetSectionReductionAtBreak(DocumentId inDocumentId, double inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Id of the container document  |  \n \n|  double |  inValue |  The value to use  |\n",
+  "markdown": "markdown/cad/7fa4b521fdc2c495bf0bd354.md",
+  "originalHtml": "html/cad/7fa4b521fdc2c495bf0bd354.html"
+}

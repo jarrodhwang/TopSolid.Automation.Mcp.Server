@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.GetModificationDate.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.GetModificationDate.html",
+  "sha256": "cf7b4cb8b9f263ed8f79f9bcb2f810e64ba55c3d368656bb39b5e30b79670747",
+  "text": "# Method GetModificationDate\n\n#### GetModificationDate(PdmObjectId)\n\nGets the modification date of an object.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nstring GetModificationDate(PdmObjectId inObjectId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  Object identifier.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  Object modification date.  |  \n\n##### Remarks\n\nThis method is available since v7.10.300.140.\n",
+  "markdown": "markdown/pdmexplorer/4af81fa8dc3cd7ad71a22f84.md",
+  "originalHtml": "html/pdmexplorer/4af81fa8dc3cd7ad71a22f84.html"
+}

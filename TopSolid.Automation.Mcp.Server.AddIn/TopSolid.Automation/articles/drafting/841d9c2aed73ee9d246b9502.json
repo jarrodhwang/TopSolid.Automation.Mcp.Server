@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.IAnnotations.GetSurfaceFinishItemStriaOrientationValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.IAnnotations.GetSurfaceFinishItemStriaOrientationValue.html",
+  "sha256": "1091dd5697f6514ed8b352b9d08a4d6cdca16d79ccc5b930e74df11ac43928ac",
+  "text": "# Method GetSurfaceFinishItemStriaOrientationValue\n\n#### GetSurfaceFinishItemStriaOrientationValue(ElementItemId)\n\nGets the surface finish item stria orientation value of an item of a surface finish annotation entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 17, 0, 0)]\nSurfaceFinishStriaOrientation GetSurfaceFinishItemStriaOrientationValue(ElementItemId inElementItemId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementItemId |  inElementItemId |  Identifier of the element item to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SurfaceFinishStriaOrientation |  The stria orientation value.  |  \n\n##### Remarks\n\nThis method is available since v7.17.\n",
+  "markdown": "markdown/drafting/841d9c2aed73ee9d246b9502.md",
+  "originalHtml": "html/drafting/841d9c2aed73ee9d246b9502.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/electrode/TopSolid.Cad.Electrode.Automating.TopSolidElectrodeHostInstance.-ctor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/electrode/TopSolid.Cad.Electrode.Automating.TopSolidElectrodeHostInstance.-ctor.html",
+  "sha256": "a5de74d492df49a1e8d64abdf265cd2b84ee97870b6f12a0a5adc15427feab62",
+  "text": "# Constructor TopSolidElectrodeHostInstance\n\n#### TopSolidElectrodeHostInstance(TopSolidHostInstance)\n\nInitializes a new instance of the TopSolidElectrodeHostInstance class.\n\n##### Declaration\n\n```\npublic TopSolidElectrodeHostInstance(TopSolidHostInstance inTopSolidHostInstance)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  TopSolidHostInstance |  inTopSolidHostInstance |  TopSolid host instance.  |\n",
+  "markdown": "markdown/electrode/98f1b73b9edd7306096f8cb8.md",
+  "originalHtml": "html/electrode/98f1b73b9edd7306096f8cb8.html"
+}

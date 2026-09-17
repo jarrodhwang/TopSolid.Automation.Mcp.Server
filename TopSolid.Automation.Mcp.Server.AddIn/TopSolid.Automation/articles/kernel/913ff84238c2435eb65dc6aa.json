@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IGeometries3D.GetPlaneGeometry.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IGeometries3D.GetPlaneGeometry.html",
+  "sha256": "48adfd6cb756f523603391d635b54006ccbb75e588debc452f393eda63f9f229",
+  "text": "# Method GetPlaneGeometry\n\n#### GetPlaneGeometry(ElementId)\n\nGets the geometry of a plane entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nPlane3D GetPlaneGeometry(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the plane entity to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Plane3D |  Plane geometry.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/913ff84238c2435eb65dc6aa.md",
+  "originalHtml": "html/kernel/913ff84238c2435eb65dc6aa.html"
+}

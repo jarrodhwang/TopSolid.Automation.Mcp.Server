@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IParts.SetCoating.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IParts.SetCoating.html",
+  "sha256": "318b4dd51f3070b7cbcaccd496b37b1ea65b59f881fc62448316198fb4c71e82",
+  "text": "# Method SetCoating\n\n#### SetCoating(DocumentId, DocumentId)\n\nSets the coating of a part.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 301, 40)]\nvoid SetCoating(DocumentId inDocumentId, DocumentId inCoatingDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the part document to modify.  |  \n \n|  DocumentId |  inCoatingDocumentId |  Coating document identifier, or empty if the part does not have a coating.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.6.301.40.\n",
+  "markdown": "markdown/cad/e0ac18459febdb849413b5d5.md",
+  "originalHtml": "html/cad/e0ac18459febdb849413b5d5.html"
+}

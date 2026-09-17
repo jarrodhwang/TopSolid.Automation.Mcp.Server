@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IBoms.GetRootRow.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IBoms.GetRootRow.html",
+  "sha256": "b5a579e698359ab45552264360571050f19dc922c61e43e1767736a0c03368ba",
+  "text": "# Method GetRootRow\n\n#### GetRootRow(DocumentId)\n\nGets the identifier of the root row of a BOM.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 12, 0, 0)]\nint GetRootRow(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the BOM document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  int |  Identifier of the root row, or 0 if the BOM is empty.  |  \n\n##### Remarks\n\nThis method is available since v7.12.\n",
+  "markdown": "markdown/cad/e66fc03e05111e46bfb558b2.md",
+  "originalHtml": "html/cad/e66fc03e05111e46bfb558b2.html"
+}

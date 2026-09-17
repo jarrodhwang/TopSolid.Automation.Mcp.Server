@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.ExportPackage.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.ExportPackage.html",
+  "sha256": "a66dd0d8ad5adc30122e7f70127c27d802a0d5f32186b2cc09ab7071b9a5a59e",
+  "text": "# Method ExportPackage\n\n#### ExportPackage(List<PdmObjectId>, bool, bool, string)\n\nExports a package.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nvoid ExportPackage(List<PdmObjectId> inObjectIds, bool inExportsForDelivery, bool inExportsIncrementalPackage, string inFileFullPath)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  List<PdmObjectId> |  inObjectIds |  PDM object identifiers.  |  \n \n|  bool |  inExportsForDelivery |  Whether exports for delivery.  |  \n \n|  bool |  inExportsIncrementalPackage |  Whether exports an incremental package.  |  \n \n|  string |  inFileFullPath |  Full path of the exported package, with \".TopPkg\" extension.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/pdmexplorer/a7d1d61b7e1dc9ea1ef30de7.md",
+  "originalHtml": "html/pdmexplorer/a7d1d61b7e1dc9ea1ef30de7.html"
+}

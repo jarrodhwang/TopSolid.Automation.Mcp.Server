@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IOperations.GetFinalStage.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IOperations.GetFinalStage.html",
+  "sha256": "42cc98b62a148739c0c13d79a2b8274e2e67eb0354919fe905d695d160323185",
+  "text": "# Method GetFinalStage\n\n#### GetFinalStage(DocumentId)\n\nGets the final stage operation of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nElementId GetFinalStage(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the final stage operation.  |  \n\n##### Remarks\n\nThis method is available since v7.8.\n",
+  "markdown": "markdown/kernel/a7a089a87482823b32285c4d.md",
+  "originalHtml": "html/kernel/a7a089a87482823b32285c4d.html"
+}

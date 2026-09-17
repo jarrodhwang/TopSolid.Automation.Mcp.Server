@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IEntities.GetOccurrenceSource.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IEntities.GetOccurrenceSource.html",
+  "sha256": "4be8756b19e8871abe94a0b5056ced37ce7feb377dfb69cf7c17516b84216fcd",
+  "text": "# Method GetOccurrenceSource\n\n#### GetOccurrenceSource(ElementId)\n\nGets the source entity of an occurrence entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nElementId GetOccurrenceSource(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the entity to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the source entity of the occurrence.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/799d3160756ea51bc776a6d9.md",
+  "originalHtml": "html/kernel/799d3160756ea51bc776a6d9.html"
+}

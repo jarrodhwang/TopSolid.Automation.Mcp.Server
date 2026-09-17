@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IUnits.SearchUnit.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IUnits.SearchUnit.html",
+  "sha256": "e37db6912cbe9f40aad87fec585b6f77eab7206fe0a95b6f3e378b9d36016932",
+  "text": "# Method SearchUnit\n\n#### SearchUnit(UnitType, string)\n\nSearches for a unit of a specified type and symbol.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nint SearchUnit(UnitType inUnitType, string inSymbol)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  UnitType |  inUnitType |  Unit type.  |  \n \n|  string |  inSymbol |  Unit symbol in English.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  int |  Index of the unit found or -1 if not found.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/db237fb1a1d892cc206d782e.md",
+  "originalHtml": "html/kernel/db237fb1a1d892cc206d782e.html"
+}

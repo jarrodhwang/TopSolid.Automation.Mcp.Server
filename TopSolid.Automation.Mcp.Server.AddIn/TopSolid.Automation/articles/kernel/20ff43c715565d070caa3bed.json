@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.AvailableSinceVersionAttribute.VersionText.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.AvailableSinceVersionAttribute.VersionText.html",
+  "sha256": "0d196cdc1f80e706c728bfb11b4acb0b61cad1907d9bee591d3eadf00afb178c",
+  "text": "# Property VersionText\n\n#### VersionText\n\nGets the version, as \"[Major].[Minor].[Build].[Revision]\".\n\n##### Declaration\n\n```\npublic string VersionText { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |   |\n",
+  "markdown": "markdown/kernel/20ff43c715565d070caa3bed.md",
+  "originalHtml": "html/kernel/20ff43c715565d070caa3bed.html"
+}

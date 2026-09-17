@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.TopSolidHostInstance.Sketches3D.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.TopSolidHostInstance.Sketches3D.html",
+  "sha256": "53bd439617d00b59a8ddc20a1cebb1b3a996e56bea12799ad77f0078090e443b",
+  "text": "# Property Sketches3D\n\n#### Sketches3D\n\nGets access to 3D sketches, or null if not available.\n\n##### Declaration\n\n```\npublic ISketches3D Sketches3D { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ISketches3D |   |\n",
+  "markdown": "markdown/kernel/b46019c66b148a91dbc558ce.md",
+  "originalHtml": "html/kernel/b46019c66b148a91dbc558ce.html"
+}

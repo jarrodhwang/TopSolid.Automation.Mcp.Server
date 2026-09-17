@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ICoatings.SetTransmissionScatteringColor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ICoatings.SetTransmissionScatteringColor.html",
+  "sha256": "5d4eabad15f34c9dbd4216fa4b2706df7e7f079659057089737cfbde8ec6c996",
+  "text": "# Method SetTransmissionScatteringColor\n\n#### SetTransmissionScatteringColor(DocumentId, Color)\n\nSets the Transmission Scattering color.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 0, 0)]\nvoid SetTransmissionScatteringColor(DocumentId inDocumentId, Color inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  Color |  inValue |  Wanted color.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.16.\n",
+  "markdown": "markdown/cad/bc0434cf27e0a2cfa65eb664.md",
+  "originalHtml": "html/cad/bc0434cf27e0a2cfa65eb664.html"
+}

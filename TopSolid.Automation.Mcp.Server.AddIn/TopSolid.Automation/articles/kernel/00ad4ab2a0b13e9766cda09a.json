@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IElements.GetFriendlyName.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IElements.GetFriendlyName.html",
+  "sha256": "3b398a7bde633caf7593c9c1371a9d80df35e0f436185f2db3203718dfd262ed",
+  "text": "# Method GetFriendlyName\n\n#### GetFriendlyName(ElementId)\n\nGets the friendly name of an element.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nstring GetFriendlyName(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  Friendly name of the element.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/00ad4ab2a0b13e9766cda09a.md",
+  "originalHtml": "html/kernel/00ad4ab2a0b13e9766cda09a.html"
+}

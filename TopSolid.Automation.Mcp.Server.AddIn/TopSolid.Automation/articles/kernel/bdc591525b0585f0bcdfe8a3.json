@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.GetParameterType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.GetParameterType.html",
+  "sha256": "5ed75ae6992150252af2b7028023c85502e4272293bcd3653f6f104c852b2b62",
+  "text": "# Method GetParameterType\n\n#### GetParameterType(ElementId)\n\nGets the type of a parameter entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nParameterType GetParameterType(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ParameterType |  Type of the parameter, or None if the element is not a parameter entity.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/bdc591525b0585f0bcdfe8a3.md",
+  "originalHtml": "html/kernel/bdc591525b0585f0bcdfe8a3.html"
+}

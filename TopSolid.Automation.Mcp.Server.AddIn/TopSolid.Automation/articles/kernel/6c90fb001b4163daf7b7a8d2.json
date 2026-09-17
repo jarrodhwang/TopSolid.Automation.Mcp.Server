@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.TopSolidHost.Licenses.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.TopSolidHost.Licenses.html",
+  "sha256": "723280a030dc7f46d6156141e404e30de067f90e4777ca3106fe55b1f74eb7b7",
+  "text": "# Property Licenses\n\n#### Licenses\n\nGets access to licenses, or null if not available.\n\n##### Declaration\n\n```\npublic static ILicenses Licenses { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ILicenses |   |\n",
+  "markdown": "markdown/kernel/6c90fb001b4163daf7b7a8d2.md",
+  "originalHtml": "html/kernel/6c90fb001b4163daf7b7a8d2.html"
+}

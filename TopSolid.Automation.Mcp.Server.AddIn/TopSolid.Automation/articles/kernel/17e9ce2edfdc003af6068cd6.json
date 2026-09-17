@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.TopSolidHostInstance.PipeName.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.TopSolidHostInstance.PipeName.html",
+  "sha256": "3b2b55e8cadb7c25a7955e9206be8f53a374dfde4ffb94bd74edc1ee54d22a52",
+  "text": "# Property PipeName\n\n#### PipeName\n\nGets or sets the name used to make named pipe, or null for default.\n\n##### Declaration\n\n```\npublic string PipeName { get; set; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |   |  \n\n##### Remarks\n\nThis property can be changed before connecting to a TopSolid host on the same machine using named pipes if the default name is not convenient (in particular when several TopSolid processes are running at the same time), it is not needed to change it otherwise.\n \nThis property cannot be set once connected to TopSolid, i.e. when IsConnected is true.\n",
+  "markdown": "markdown/kernel/17e9ce2edfdc003af6068cd6.md",
+  "originalHtml": "html/kernel/17e9ce2edfdc003af6068cd6.html"
+}

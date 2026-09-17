@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.DrillingHolePrimitive.TaperAngle.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.DrillingHolePrimitive.TaperAngle.html",
+  "sha256": "2181cd493f43b1a3520057e1dae38f73a6508f238562570ee139be7dbad489eb",
+  "text": "# Field TaperAngle\n\nPrimitive Taper Angle.\n\n###### Namespace: TopSolid.Cad.Design.Automating\n\n###### Assembly: TopSolid.Cad.Design.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic SmartReal TaperAngle\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartReal |  Primitive Taper Angle. |\n",
+  "markdown": "markdown/cad/013a26a93591c476922d004f.md",
+  "originalHtml": "html/cad/013a26a93591c476922d004f.html"
+}

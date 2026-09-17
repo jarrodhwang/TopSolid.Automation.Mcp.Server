@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.GeometryType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.GeometryType.html",
+  "sha256": "fb67d19254782013ca828f49873220960e05a1dfc21c8182a26678989a11aa10",
+  "text": "# Enum GeometryType\n\nDefines the various types of geometric entities.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\npublic enum GeometryType\n```\n\n##### Remarks\n\nThis enum is available since v7.6.\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  Axis |  Axis.  |  \n \n|  Deformation |  Deformation.  |  \n \n|  Frame |  Frame.  |  \n \n|  None |  Not a geometric entity.  |  \n \n|  Pattern |  Pattern.  |  \n \n|  Plane |  Plane.  |  \n \n|  Point |  Point.  |  \n \n|  Shape |  Shape.  |  \n \n|  Sketch |  Sketch.  |  \n \n|  Transform |  Transform.  |  \n \n|  Unclassified |  Unclassified type.  |\n",
+  "markdown": "markdown/kernel/b78d63c14da94c7d078e4454.md",
+  "originalHtml": "html/kernel/b78d63c14da94c7d078e4454.html"
+}

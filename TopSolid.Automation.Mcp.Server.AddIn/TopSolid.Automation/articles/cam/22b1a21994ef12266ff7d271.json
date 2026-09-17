@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IParameters.ToStringValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IParameters.ToStringValue.html",
+  "sha256": "c93e75df6e2273c5b690bd252d1bc15b42b52ecb1ed2799fa844540614e31bbb",
+  "text": "# Method ToStringValue\n\n#### ToStringValue(ParameterId)\n\nGets the localized text corresponding to the parameter value.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nstring ToStringValue(ParameterId inParameterId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ParameterId |  inParameterId |  Identifier of the parameter to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  Localized text corresponding to the parameter value. The TopSolid culture is used for the translation.  |\n",
+  "markdown": "markdown/cam/22b1a21994ef12266ff7d271.md",
+  "originalHtml": "html/cam/22b1a21994ef12266ff7d271.html"
+}

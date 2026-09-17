@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IGeometries3D.GetAbsoluteFrame.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IGeometries3D.GetAbsoluteFrame.html",
+  "sha256": "860070a6d44d832d0df203b3e63dfdb197ce9543a452f36832b02ebcb1776c32",
+  "text": "# Method GetAbsoluteFrame\n\n#### GetAbsoluteFrame(DocumentId)\n\nGets the absolute frame entity of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nElementId GetAbsoluteFrame(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the absolute frame entity found.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/86301c6a6f67192767fa196e.md",
+  "originalHtml": "html/kernel/86301c6a6f67192767fa196e.html"
+}

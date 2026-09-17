@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.OpenMinorRevision.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.OpenMinorRevision.html",
+  "sha256": "3e4a636b249d1f6a7f8e3f52f9c64fcad96a839b7e2e0504bc3e309de37ce8ad",
+  "text": "# Method OpenMinorRevision\n\n#### OpenMinorRevision(PdmMinorRevisionId, bool)\n\nOpens a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nvoid OpenMinorRevision(PdmMinorRevisionId inMinorRevisionId, bool inReadOnly)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmMinorRevisionId |  inMinorRevisionId |  Identifier of document minor revision.  |  \n \n|  bool |  inReadOnly |  Open in read-only mode.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/kernel/b704697038c73b3cbfe0db4d.md",
+  "originalHtml": "html/kernel/b704697038c73b3cbfe0db4d.html"
+}

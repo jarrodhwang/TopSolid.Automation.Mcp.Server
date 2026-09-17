@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.SmartDesignObject.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.SmartDesignObject.html",
+  "sha256": "edac18b1784bd1286f096a5fd73436b7f9349f69290c8ef574240d8f7bd2c89d",
+  "text": "# Class SmartDesignObject\n\nRepresents a general design smart object.\n\n##### Inheritance\n \nobject\n \nSmartDesignObject\n \nSmartDocument\n\n##### Inherited Members\n \n object.ToString() \n \n object.Equals(object) \n \n object.Equals(object, object) \n \n object.ReferenceEquals(object, object) \n \n object.GetHashCode() \n \n object.GetType() \n \n object.MemberwiseClone() \n\n###### Namespace: TopSolid.Cad.Design.Automating\n\n###### Assembly: TopSolid.Cad.Design.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 17, 0, 0)]\n[KnownType(typeof(SmartDocument))]\npublic abstract class SmartDesignObject\n```\n\n##### Remarks\n\nThis class is available since v7.17.\n\n### Constructors \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   SmartDesignObject()  |   |\n",
+  "markdown": "markdown/cad/2980a4bbba914afeb20680db.md",
+  "originalHtml": "html/cad/2980a4bbba914afeb20680db.html"
+}

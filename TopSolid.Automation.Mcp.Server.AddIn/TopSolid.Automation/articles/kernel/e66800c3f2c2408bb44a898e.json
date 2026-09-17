@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartAxis3D.OZ.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartAxis3D.OZ.html",
+  "sha256": "ecf4bd9c4200f8fda5cb099428c697844c8f67ad766e77b2f4dd99d2ff695d84",
+  "text": "# Field OZ\n\n(O,+Z) absolute axis.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\npublic static readonly SmartAxis3D OZ\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartAxis3D |  (O,+Z) absolute axis. |\n",
+  "markdown": "markdown/kernel/e66800c3f2c2408bb44a898e.md",
+  "originalHtml": "html/kernel/e66800c3f2c2408bb44a898e.html"
+}

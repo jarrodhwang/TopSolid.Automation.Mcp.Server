@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.IDraftings.GetViewTitle.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.IDraftings.GetViewTitle.html",
+  "sha256": "eb2951525913499011a9a38e20414ed29dac3e5002c01963800fd4d01531a7b0",
+  "text": "# Method GetViewTitle\n\n#### GetViewTitle(ElementId)\n\nGets the view title text\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 255, 0)]\nstring GetViewTitle(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  The view  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  the title text  |\n",
+  "markdown": "markdown/drafting/4f67a656d4d711293901ae42.md",
+  "originalHtml": "html/drafting/4f67a656d4d711293901ae42.html"
+}

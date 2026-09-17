@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IStaticOperations.New.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IStaticOperations.New.html",
+  "sha256": "a1946b0daf7c7a4ba8605bdfb5fdb14205590573bc57e5f202a34ea5aa2fdf33",
+  "text": "# Method New\n\n#### New(DocumentId, SmartText, ElementId, ElementId, ElementId, MotionType)\n\nAllocates a new Static Operation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nElementExId New(DocumentId inDocumentId, SmartText inDescription, ElementId inPartId, ElementId inWCSId, ElementId inToolId, MotionType inType)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  SmartText |  inDescription |  Description.  |  \n \n|  ElementId |  inPartId |  Part to machine.  |  \n \n|  ElementId |  inWCSId |  World coordinate system.  |  \n \n|  ElementId |  inToolId |  Mounted tool.  |  \n \n|  MotionType |  inType |  Type of motion in the operation (three, four or five axis, etc...)  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementExId |  Identifier of the created operation.  |\n",
+  "markdown": "markdown/cam/22f8848638ee5c4121ebe074.md",
+  "originalHtml": "html/cam/22f8848638ee5c4121ebe074.html"
+}

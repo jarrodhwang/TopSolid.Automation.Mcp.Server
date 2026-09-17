@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IWorldCoordinateSystems.GetWCSs.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IWorldCoordinateSystems.GetWCSs.html",
+  "sha256": "cf31f1afbf3789d6b6bbe6525308554e99bbc63a83d3b1a5d15aae25833ce0df",
+  "text": "# Method GetWCSs\n\n#### GetWCSs(DocumentId)\n\nGets the wcs in a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 400, 80)]\nList<ElementId> GetWCSs(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementId> |  The WCS entities of the document.  |\n",
+  "markdown": "markdown/cam/7f6d86cc2ea698f44b88bac3.md",
+  "originalHtml": "html/cam/7f6d86cc2ea698f44b88bac3.html"
+}

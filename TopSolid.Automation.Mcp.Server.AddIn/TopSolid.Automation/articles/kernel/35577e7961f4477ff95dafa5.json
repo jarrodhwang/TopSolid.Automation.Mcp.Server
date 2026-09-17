@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.SaveAll.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.SaveAll.html",
+  "sha256": "fda6f7c1d78470396e4d2a5450f991017b48f5297d9fb77e3635e522f67c6179",
+  "text": "# Method SaveAll\n\n#### SaveAll()\n\nSave all documents.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 100, 0)]\nvoid SaveAll()\n```\n",
+  "markdown": "markdown/kernel/35577e7961f4477ff95dafa5.md",
+  "originalHtml": "html/kernel/35577e7961f4477ff95dafa5.html"
+}

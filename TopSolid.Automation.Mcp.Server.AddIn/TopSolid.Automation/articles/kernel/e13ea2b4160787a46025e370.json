@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Point2D.X.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Point2D.X.html",
+  "sha256": "12f53f6e582bc254b3e80534730f002afa1eab9ac0c69b7fe3354a621a9869a0",
+  "text": "# Field X\n\nX coordinate.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic double X\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double |  X coordinate. |\n",
+  "markdown": "markdown/kernel/e13ea2b4160787a46025e370.md",
+  "originalHtml": "html/kernel/e13ea2b4160787a46025e370.html"
+}

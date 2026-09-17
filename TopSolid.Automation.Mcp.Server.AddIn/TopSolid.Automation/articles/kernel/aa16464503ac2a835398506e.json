@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IDocuments.Unfreeze.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IDocuments.Unfreeze.html",
+  "sha256": "41bba7399147821b7e0cd39ea41d26754cbfcc7c9cd9bb9ed132cb97a88777d7",
+  "text": "# Method Unfreeze\n\n#### Unfreeze(DocumentId)\n\nUnfreezes a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 12, 0, 0)]\nvoid Unfreeze(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.12.\n",
+  "markdown": "markdown/kernel/aa16464503ac2a835398506e.md",
+  "originalHtml": "html/kernel/aa16464503ac2a835398506e.html"
+}

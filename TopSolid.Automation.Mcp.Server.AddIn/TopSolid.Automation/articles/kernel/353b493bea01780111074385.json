@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartFrame2D.Geometry.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartFrame2D.Geometry.html",
+  "sha256": "0e02631701c3711130145fcbb93a4aa1c7c73bd078245ffcfd9584c13028ab81",
+  "text": "# Field Geometry\n\nGeometry, or null if unknown.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic Frame2D? Geometry\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Frame2D? |  Geometry, or null if unknown. |\n",
+  "markdown": "markdown/kernel/353b493bea01780111074385.md",
+  "originalHtml": "html/kernel/353b493bea01780111074385.html"
+}

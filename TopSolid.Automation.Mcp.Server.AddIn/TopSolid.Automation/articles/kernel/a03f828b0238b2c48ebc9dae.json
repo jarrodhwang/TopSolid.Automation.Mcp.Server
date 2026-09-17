@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.TextureImage.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.TextureImage.html",
+  "sha256": "d9b365fc2eae56e884f5bc58f492ba3272592b7dbdae70da146036d7b5e63246",
+  "text": "# Struct TextureImage\n\nRepresents a texture image.\n\n##### Inherited Members\n \n ValueType.Equals(object) \n \n ValueType.GetHashCode() \n \n ValueType.ToString() \n \n object.Equals(object, object) \n \n object.ReferenceEquals(object, object) \n \n object.GetType() \n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 17, 400, 0)]\npublic struct TextureImage\n```\n\n##### Remarks\n\nThis structure is available since v7.17.\n\n### Constructors \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   TextureImage(string, string, string, bool)  |  Initializes a new instance of the TextureImage structure.  |  \n\n### Properties \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   ImageFilePath  |  Gets the image.  |  \n \n|   IsGrayscale  |  Tells whether the image is in grey colors (grayscale).  |  \n \n|   MinorRevisionId  |  Gets the texture document minor revision identifier.  |  \n \n|   Signature  |  Gets the image signature.  |\n",
+  "markdown": "markdown/kernel/a03f828b0238b2c48ebc9dae.md",
+  "originalHtml": "html/kernel/a03f828b0238b2c48ebc9dae.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IOptions.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IOptions.html",
+  "sha256": "4c697d3619ff0240e6b28ce902872a7c54ee89fbd729d330a39ca6fd539abdcb",
+  "text": "# Interface IOptions\n\nGives access to the options of a document.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[ServiceContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\npublic interface IOptions\n```\n\n##### Remarks\n\nThis interface is available since v7.8.\n\n### Methods \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   GetFileCompressionType(DocumentId)  |  Gets the compression type of a document file.  |  \n \n|   GetModelingTolerances(DocumentId, out double, out double)  |  Gets the modeling tolerances of a document.  |  \n \n|   GetUpdateModes(DocumentId, out bool, out bool)  |  Gets the update modes of a document.  |  \n \n|   GetVisualizationTolerances(DocumentId, out double, out double)  |  Gets the visualization tolerances of a document.  |  \n \n|   SetFileCompressionType(DocumentId, CompressionType)  |  Sets the compression type of a document file.  |  \n \n|   SetModelingTolerances(DocumentId, double, double)  |  Sets the modeling tolerances of a document.  |  \n \n|   SetUpdateModes(DocumentId, bool, bool)  |  Sets the update modes of a document.  |  \n \n|   SetVisualizationTolerances(DocumentId, double, double)  |  Sets the visualization tolerances of a document.  |\n",
+  "markdown": "markdown/kernel/f6fb90d14b2ec716f4e268ee.md",
+  "originalHtml": "html/kernel/f6fb90d14b2ec716f4e268ee.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Vector2D.op_Addition.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Vector2D.op_Addition.html",
+  "sha256": "6d3cf418fe13b7e38c7a3fc85364bea6e2bd7ed3bdc9937c01865d7ea2e9c107",
+  "text": "# Operator operator +\n\n#### operator +(Vector2D, Vector2D)\n\nAdds two vectors.\n\n##### Declaration\n\n```\npublic static Vector2D operator +(Vector2D inVector1, Vector2D inVector2)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  Vector2D |  inVector1 |  Left hand side vector.  |  \n \n|  Vector2D |  inVector2 |  Right hand side vector.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Vector2D |  Vectors' sum.  |\n",
+  "markdown": "markdown/kernel/c4bf2326642cc6b0090893f2.md",
+  "originalHtml": "html/kernel/c4bf2326642cc6b0090893f2.html"
+}

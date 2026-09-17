@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMultiLayer.GetBottomFinishing.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMultiLayer.GetBottomFinishing.html",
+  "sha256": "fa9cfcf4f50aedca7832377e4e09c6c3f3e56ab9c986603120f07d6e965da2ef",
+  "text": "# Method GetBottomFinishing\n\n#### GetBottomFinishing(DocumentId)\n\nGets the multi layer bottom finishing\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 0, 0)]\nSmartFinishing GetBottomFinishing(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartFinishing |  Null if not set or bottom as top  |  \n\n##### Remarks\n\nThis method is available since v7.19.\n",
+  "markdown": "markdown/cad/960024760904a1eb9d21285f.md",
+  "originalHtml": "html/cad/960024760904a1eb9d21285f.html"
+}

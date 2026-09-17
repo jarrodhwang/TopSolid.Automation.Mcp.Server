@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ITools.IsMirror.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ITools.IsMirror.html",
+  "sha256": "cbdb42cbe3b89d128bd0dc15f1f97ad68778b53e8aa50b979a721e7cc73fe05e",
+  "text": "# Method IsMirror\n\n#### IsMirror(DocumentId)\n\nTells whether part or assembly is a derived mirror.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nbool IsMirror(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the part or assembly document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  The part or assembly is a derived mirror.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/cad/5450fe56da15ea8343599877.md",
+  "originalHtml": "html/cad/5450fe56da15ea8343599877.html"
+}

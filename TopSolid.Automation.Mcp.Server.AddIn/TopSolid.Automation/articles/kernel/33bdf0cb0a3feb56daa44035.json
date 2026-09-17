@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ItemLabel.Frame3DYZPlane.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ItemLabel.Frame3DYZPlane.html",
+  "sha256": "19f8445eafb72030e565d0fa504993a7895e0d7e2969aaf02e9548207594b963",
+  "text": "# Field Frame3DYZPlane\n\nLabel of 3D frame YZ plane.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\npublic static readonly ItemLabel Frame3DYZPlane\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ItemLabel |  Label of 3D frame YZ plane. |\n",
+  "markdown": "markdown/kernel/33bdf0cb0a3feb56daa44035.md",
+  "originalHtml": "html/kernel/33bdf0cb0a3feb56daa44035.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IEntities.Basify.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IEntities.Basify.html",
+  "sha256": "a2b5385f662507193a0ebf9ca9366b4ac63ce0f15cb6c87ef17c98fbd2b394da",
+  "text": "# Method Basify\n\n#### Basify(ElementId)\n\nBasifies an entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 201, 200)]\nvoid Basify(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the entity to basify.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.7.201.200.\n",
+  "markdown": "markdown/kernel/2a3b703414e16d68f02b6206.md",
+  "originalHtml": "html/kernel/2a3b703414e16d68f02b6206.html"
+}

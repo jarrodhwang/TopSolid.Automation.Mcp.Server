@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ITools.SetPlaneSymmetry.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ITools.SetPlaneSymmetry.html",
+  "sha256": "3721bf62d53a527dd2ff38103c203ee9f4a9b0ddb89bd034581526d45adcd1c0",
+  "text": "# Method SetPlaneSymmetry\n\n#### SetPlaneSymmetry(ElementId, SmartPlane3D)\n\nSets a plane symmetry.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nvoid SetPlaneSymmetry(ElementId inElementId, SmartPlane3D inPlane)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the symmetry to modify.  |  \n \n|  SmartPlane3D |  inPlane |  Symmetry plane.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.10.\n",
+  "markdown": "markdown/cad/21b433e32ca0b2e4d58f6881.md",
+  "originalHtml": "html/cad/21b433e32ca0b2e4d58f6881.html"
+}

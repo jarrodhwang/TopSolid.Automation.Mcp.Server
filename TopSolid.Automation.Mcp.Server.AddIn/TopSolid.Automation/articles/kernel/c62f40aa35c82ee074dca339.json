@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ItemLabel.Frame2DYAxis.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ItemLabel.Frame2DYAxis.html",
+  "sha256": "e081ed996042bd91b8660a8146d0098c72ef7f432b1257fc08cfb584dec067a5",
+  "text": "# Field Frame2DYAxis\n\nLabel of 2D frame Y axis.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\npublic static readonly ItemLabel Frame2DYAxis\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ItemLabel |  Label of 2D frame Y axis. |\n",
+  "markdown": "markdown/kernel/c62f40aa35c82ee074dca339.md",
+  "originalHtml": "html/kernel/c62f40aa35c82ee074dca339.html"
+}

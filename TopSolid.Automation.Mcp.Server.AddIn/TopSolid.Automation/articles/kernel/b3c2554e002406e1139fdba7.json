@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IOperations.IsDeactivable.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IOperations.IsDeactivable.html",
+  "sha256": "fab7964702dc5327f52c956b6ad8d43ddd38d2e29c924de77deb15ca4ccee772",
+  "text": "# Method IsDeactivable\n\n#### IsDeactivable(ElementId)\n\nTells whether an operation may be deactivated.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 12, 0, 0)]\nbool IsDeactivable(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the operation to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  The operation may be deactivated.  |  \n\n##### Remarks\n\nThis method is available since v7.12.\n",
+  "markdown": "markdown/kernel/b3c2554e002406e1139fdba7.md",
+  "originalHtml": "html/kernel/b3c2554e002406e1139fdba7.html"
+}

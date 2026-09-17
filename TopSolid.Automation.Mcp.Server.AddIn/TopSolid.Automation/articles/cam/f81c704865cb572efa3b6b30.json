@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IStaticOperations.Create.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IStaticOperations.Create.html",
+  "sha256": "653fdd47c0bbb7c9be86104a37d6c5eb39175b2fd2e6d9173a0f7765802a2662",
+  "text": "# Method Create\n\n#### Create(ref ElementExId)\n\nCreates a static operation in a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nvoid Create(ref ElementExId ioOperation)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementExId |  ioOperation |  New operation to create.  |\n",
+  "markdown": "markdown/cam/f81c704865cb572efa3b6b30.md",
+  "originalHtml": "html/cam/f81c704865cb572efa3b6b30.html"
+}

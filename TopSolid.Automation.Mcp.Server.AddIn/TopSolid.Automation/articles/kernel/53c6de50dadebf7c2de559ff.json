@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IDocuments.GetOpenDocuments.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IDocuments.GetOpenDocuments.html",
+  "sha256": "00d2cd0d79e00d609b7785a14e1fce86f90b8c05aa06d4837ac5b57b0446eb16",
+  "text": "# Method GetOpenDocuments\n\n#### GetOpenDocuments()\n\nGets the open documents.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nList<DocumentId> GetOpenDocuments()\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<DocumentId> |  Documents found.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/53c6de50dadebf7c2de559ff.md",
+  "originalHtml": "html/kernel/53c6de50dadebf7c2de559ff.html"
+}

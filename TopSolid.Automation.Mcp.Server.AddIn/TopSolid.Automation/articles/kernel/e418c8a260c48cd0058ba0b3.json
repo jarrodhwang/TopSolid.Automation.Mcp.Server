@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.OpenMinorRevisionInAnalysisMode.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.OpenMinorRevisionInAnalysisMode.html",
+  "sha256": "f2361bc835ceb504705954eebdcdfbc76d965ee1c69d8130d7cdd747c4aa165f",
+  "text": "# Method OpenMinorRevisionInAnalysisMode\n\n#### OpenMinorRevisionInAnalysisMode(PdmMinorRevisionId)\n\nOpens a document in analysis mode.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 14, 300, 280)]\nvoid OpenMinorRevisionInAnalysisMode(PdmMinorRevisionId inMinorRevisionId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmMinorRevisionId |  inMinorRevisionId |  Identifier of document minor revision.  |  \n\n##### Remarks\n\nThis method is available since v7.14.300.200.\n",
+  "markdown": "markdown/kernel/e418c8a260c48cd0058ba0b3.md",
+  "originalHtml": "html/kernel/e418c8a260c48cd0058ba0b3.html"
+}

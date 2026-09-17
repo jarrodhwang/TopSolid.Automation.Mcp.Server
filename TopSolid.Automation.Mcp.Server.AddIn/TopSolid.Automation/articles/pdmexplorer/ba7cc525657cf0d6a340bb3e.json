@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.ErpPdmId.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.ErpPdmId.html",
+  "sha256": "14e24b0aa557bc014ea191f0dcd262538447230b6317391bbda7ff81365ba673",
+  "text": "# Struct ErpPdmId\n\nRepresents a PDM Erp Object\n\n##### Inherited Members\n \n ValueType.Equals(object) \n \n ValueType.GetHashCode() \n \n ValueType.ToString() \n \n object.Equals(object, object) \n \n object.ReferenceEquals(object, object) \n \n object.GetType() \n\n###### Namespace: TopSolid.Pdm.Explorer.Automating\n\n###### Assembly: TopSolid.Pdm.Explorer.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 20, 222, 0)]\npublic struct ErpPdmId\n```\n\n##### Remarks\n\nThis structure is available since v7.20.\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   Empty  |  Empty identifier.  |  \n\n### Properties \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   IsEmpty  |  Tells whether the object is empty.  |  \n \n|   MajorRevisionId  |  Gets the PDM object major revision Id  |  \n \n|   MajorRevisionIndex  |  Gets the PDM object major revision index  |  \n \n|   MinorRevisionId  |  Gets the PDM object minor revision Id  |  \n \n|   MinorRevisionIndex  |  Gets the PDM object major revision index  |  \n \n|   ObjectId  |  Gets object string identifier.  |  \n \n|   ObjectKey  |  Gets/Sets object key.  |\n",
+  "markdown": "markdown/pdmexplorer/ba7cc525657cf0d6a340bb3e.md",
+  "originalHtml": "html/pdmexplorer/ba7cc525657cf0d6a340bb3e.html"
+}

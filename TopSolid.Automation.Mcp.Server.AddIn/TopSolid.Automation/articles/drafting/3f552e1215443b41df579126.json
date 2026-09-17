@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.IDraftings.GetMainProjectionSet.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.IDraftings.GetMainProjectionSet.html",
+  "sha256": "5fec351015455acbe52805a46a047cb38977839cce32469137bbe5beaa08cc93",
+  "text": "# Method GetMainProjectionSet\n\n#### GetMainProjectionSet(DocumentId, out DocumentId, out ElementId)\n\nGets drafting main projection set\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 255, 0)]\nElementId GetMainProjectionSet(DocumentId inDocumentId, out DocumentId outMainProjectionSet, out ElementId outRepresentationId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  The drafting document  |  \n \n|  DocumentId |  outMainProjectionSet |  drawing set document used or empty  |  \n \n|  ElementId |  outRepresentationId |  representation used or empty  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  the main projection set  |\n",
+  "markdown": "markdown/drafting/3f552e1215443b41df579126.md",
+  "originalHtml": "html/drafting/3f552e1215443b41df579126.html"
+}

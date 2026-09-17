@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IGeometries2D.SetAxisGeometry.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IGeometries2D.SetAxisGeometry.html",
+  "sha256": "94b960b0902ccb529b4dbac2445ca5b57cde2e69f2a538294c71418dfb6e4046",
+  "text": "# Method SetAxisGeometry\n\n#### SetAxisGeometry(ElementId, Axis2D)\n\nSets the geometry of an axis entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nvoid SetAxisGeometry(ElementId inElementId, Axis2D inGeometry)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the axis entity to modify.  |  \n \n|  Axis2D |  inGeometry |  New axis geometry.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/d4eb9aa513e70e65db031178.md",
+  "originalHtml": "html/kernel/d4eb9aa513e70e65db031178.html"
+}

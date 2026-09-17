@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMaterials.GetPlasticStrainRatio.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMaterials.GetPlasticStrainRatio.html",
+  "sha256": "f4789e9fe1b6f94f0cf6fec8fd6392fc31b6de565d87ce95d348df8726fcd529",
+  "text": "# Method GetPlasticStrainRatio\n\n#### GetPlasticStrainRatio(DocumentId, out double)\n\nGets Plastic Strain Ratio\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 400, 120)]\nbool GetPlasticStrainRatio(DocumentId inDocumentId, out double outValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Id of the container document  |  \n \n|  double |  outValue |  The value  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  true if a parameter has been fetched with success  |\n",
+  "markdown": "markdown/cad/a9b7cc35c8e7a3d10744b29b.md",
+  "originalHtml": "html/cad/a9b7cc35c8e7a3d10744b29b.html"
+}

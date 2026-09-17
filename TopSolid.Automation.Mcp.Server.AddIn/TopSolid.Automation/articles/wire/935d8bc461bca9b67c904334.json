@@ -1,0 +1,8 @@
+{
+  "path": "api/wire/TopSolid.Cam.NC.Wire.Automating.IWireTechnologies.IsWireTechnology.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/wire/TopSolid.Cam.NC.Wire.Automating.IWireTechnologies.IsWireTechnology.html",
+  "sha256": "00a0a91481b00ffc7d38a500a56b8f4b09315982715471199d41b9e0fc207108",
+  "text": "# Method IsWireTechnology\n\n#### IsWireTechnology(ElementId)\n\nTells whether an element is an wire technology.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 160)]\nbool IsWireTechnology(ElementId inTechnologyId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inTechnologyId |  Identifier of the technology to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  True if the element is an origin.  |\n",
+  "markdown": "markdown/wire/935d8bc461bca9b67c904334.md",
+  "originalHtml": "html/wire/935d8bc461bca9b67c904334.html"
+}

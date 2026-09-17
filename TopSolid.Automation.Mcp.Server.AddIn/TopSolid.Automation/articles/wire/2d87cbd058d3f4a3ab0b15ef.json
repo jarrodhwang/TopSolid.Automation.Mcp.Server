@@ -1,0 +1,8 @@
+{
+  "path": "api/wire/TopSolid.Cam.NC.Wire.Automating.TopSolidWireTechnologyHost.Connect.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/wire/TopSolid.Cam.NC.Wire.Automating.TopSolidWireTechnologyHost.Connect.html",
+  "sha256": "02eab202bd077bb74d3d8473bf8c40e9491128db0628c87c8ac1bd5da07fceac",
+  "text": "# Method Connect\n\n#### Connect()\n\nConnects to TopSolid Cam application.\n\n##### Declaration\n\n```\npublic static void Connect()\n```\n",
+  "markdown": "markdown/wire/2d87cbd058d3f4a3ab0b15ef.md",
+  "originalHtml": "html/wire/2d87cbd058d3f4a3ab0b15ef.html"
+}

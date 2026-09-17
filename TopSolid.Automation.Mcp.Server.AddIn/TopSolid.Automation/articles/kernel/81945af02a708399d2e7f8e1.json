@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IElements.HasDescription.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IElements.HasDescription.html",
+  "sha256": "6d324047096d5f6d519e5a5e72a4c11c597092b01bd2662b5b612cd47c2da7c0",
+  "text": "# Method HasDescription\n\n#### HasDescription(ElementId)\n\nTells whether an element has a description.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nbool HasDescription(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Whether the element has a description.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/81945af02a708399d2e7f8e1.md",
+  "originalHtml": "html/kernel/81945af02a708399d2e7f8e1.html"
+}

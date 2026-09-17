@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IVerify.OpenOne.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IVerify.OpenOne.html",
+  "sha256": "d3d6e18440d4ca027b02dbafee2c480f340d33c711888b0c5addfadedf5da4b4",
+  "text": "# Method OpenOne\n\n#### OpenOne(ElementId)\n\nVerify only the given operation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nvoid OpenOne(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the operation to verify.  |\n",
+  "markdown": "markdown/cam/6b2d776d8bb865294edb208e.md",
+  "originalHtml": "html/cam/6b2d776d8bb865294edb208e.html"
+}

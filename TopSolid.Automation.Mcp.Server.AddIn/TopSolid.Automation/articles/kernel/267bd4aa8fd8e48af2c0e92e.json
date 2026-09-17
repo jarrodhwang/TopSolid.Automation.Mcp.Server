@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.IncludePackageAsDistinctCopy.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.IncludePackageAsDistinctCopy.html",
+  "sha256": "d2b70f77331694c7eb70fccaacf92fa68aabf9de690b7de8a7af94d370c31da2",
+  "text": "# Method IncludePackageAsDistinctCopy\n\n#### IncludePackageAsDistinctCopy(string, bool, bool, PdmObjectId)\n\nImports a package as disctinct copy into an existing project.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 303, 200)]\nvoid IncludePackageAsDistinctCopy(string inFileFullPath, bool inResetsCreationProperties, bool inAllowsPartNumbering, PdmObjectId inOwnerId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  string |  inFileFullPath |  Full path of the package file, with \".TopPkg\" extension.  |  \n \n|  bool |  inResetsCreationProperties |  Whether to reset creation properties (author, creation date, major/minor revision text).  |  \n \n|  bool |  inAllowsPartNumbering |  Whether to allow automatic part numbering.  |  \n \n|  PdmObjectId |  inOwnerId |  PDM object identifier of project or folder owner where imported documents are to be stored.  |  \n\n##### Remarks\n\nThis method must not be called between StartModification(string, bool) and EndModification(bool, bool) methods calls.\n \nThis method is available since v7.8.303.200.\n",
+  "markdown": "markdown/kernel/267bd4aa8fd8e48af2c0e92e.md",
+  "originalHtml": "html/kernel/267bd4aa8fd8e48af2c0e92e.html"
+}

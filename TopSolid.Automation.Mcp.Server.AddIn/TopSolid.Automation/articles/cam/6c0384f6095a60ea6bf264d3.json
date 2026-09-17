@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IPockets.IsPocket.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IPockets.IsPocket.html",
+  "sha256": "6500d50b64afc32a81ebe53dcf46b268badeec3249f171c850d3d80b15b90b6e",
+  "text": "# Method IsPocket\n\n#### IsPocket(ElementId)\n\nTells whether an element is a tool.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nbool IsPocket(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  True if the element is a tool.  |\n",
+  "markdown": "markdown/cam/6c0384f6095a60ea6bf264d3.md",
+  "originalHtml": "html/cam/6c0384f6095a60ea6bf264d3.html"
+}

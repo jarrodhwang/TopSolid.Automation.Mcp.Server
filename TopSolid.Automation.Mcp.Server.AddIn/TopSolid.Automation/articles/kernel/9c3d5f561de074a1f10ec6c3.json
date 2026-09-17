@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.CreateRealParameter.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.CreateRealParameter.html",
+  "sha256": "d5e883ae2eedb34f1ef5bdb94c23005d845a17b0ce3be8f906feca3036aeea0f",
+  "text": "# Method CreateRealParameter\n\n#### CreateRealParameter(DocumentId, UnitType, double)\n\nCreates a real parameter entity in a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nElementId CreateRealParameter(DocumentId inDocumentId, UnitType inUnitType, double inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  UnitType |  inUnitType |  Type of units.  |  \n \n|  double |  inValue |  Value in SI units.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the created parameter entity.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/9c3d5f561de074a1f10ec6c3.md",
+  "originalHtml": "html/kernel/9c3d5f561de074a1f10ec6c3.html"
+}

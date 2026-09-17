@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.PropertyType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.PropertyType.html",
+  "sha256": "8899f01ada4c17a8aa2d7a9e99138c3c7025ef38fc2e2f191f57e1641dd80ef3",
+  "text": "# Enum PropertyType\n\nDefines the various types of properties.\n\n###### Namespace: TopSolid.Pdm.Explorer.Automating\n\n###### Assembly: TopSolid.Pdm.Explorer.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 20, 222, 0)]\npublic enum PropertyType\n```\n\n##### Remarks\n\nThis enum is available since v7.20.\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  Boolean |  Boolean.  |  \n \n|  DateTime |  Date and time.  |  \n \n|  Numeric |  Numeric  |  \n \n|  String |  String  |  \n \n|  Unclassified |  Unclassified.  |\n",
+  "markdown": "markdown/pdmexplorer/c98a0da31e9af58794d44153.md",
+  "originalHtml": "html/pdmexplorer/c98a0da31e9af58794d44153.html"
+}

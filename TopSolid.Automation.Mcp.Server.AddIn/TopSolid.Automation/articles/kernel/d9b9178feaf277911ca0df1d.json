@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IGeometries3D.GetPlanarProfilePublishingDefinition.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IGeometries3D.GetPlanarProfilePublishingDefinition.html",
+  "sha256": "49c8c5f37513591876f37cfea4133e964916ca7399c3225f5c0bf03a095ff961",
+  "text": "# Method GetPlanarProfilePublishingDefinition\n\n#### GetPlanarProfilePublishingDefinition(ElementId)\n\nGets the definition of a planar profile publishing entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 400, 180)]\nSmartPlanarProfile3D GetPlanarProfilePublishingDefinition(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the publishing entity to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartPlanarProfile3D |  The smart planar profile.  |\n",
+  "markdown": "markdown/kernel/d9b9178feaf277911ca0df1d.md",
+  "originalHtml": "html/kernel/d9b9178feaf277911ca0df1d.html"
+}

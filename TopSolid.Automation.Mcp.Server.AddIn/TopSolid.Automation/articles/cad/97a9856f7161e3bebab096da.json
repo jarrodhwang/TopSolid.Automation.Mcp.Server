@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IRepresentations.AddRepresentationConstituent.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IRepresentations.AddRepresentationConstituent.html",
+  "sha256": "8393a80fec905eec0b320dfffa67b5ddcf1ffc101891bbca20e89ce266131005",
+  "text": "# Method AddRepresentationConstituent\n\n#### AddRepresentationConstituent(ElementId, ElementId)\n\nAdds a constituent to a representation entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 201, 100)]\nvoid AddRepresentationConstituent(ElementId inElementId, ElementId inConstituentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the representation entity to modify.  |  \n \n|  ElementId |  inConstituentId |  Identifier of the entity to add to the representation.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.7.201.100.\n",
+  "markdown": "markdown/cad/97a9856f7161e3bebab096da.md",
+  "originalHtml": "html/cad/97a9856f7161e3bebab096da.html"
+}

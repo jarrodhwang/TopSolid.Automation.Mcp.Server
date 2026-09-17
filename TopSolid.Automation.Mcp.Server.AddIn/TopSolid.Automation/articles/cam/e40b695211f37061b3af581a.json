@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.BlockStockType.Xminus.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.BlockStockType.Xminus.html",
+  "sha256": "f99e4a88b5ea825a55ab55ee41045521a6a5e459d7733f1cef46118f13873b0d",
+  "text": "# Field Xminus\n\nX-.\n\n###### Namespace: TopSolid.Cam.NC.Kernel.Automating\n\n###### Assembly: TopSolid.Cam.NC.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic SmartReal Xminus\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartReal |  X-. |\n",
+  "markdown": "markdown/cam/e40b695211f37061b3af581a.md",
+  "originalHtml": "html/cam/e40b695211f37061b3af581a.html"
+}

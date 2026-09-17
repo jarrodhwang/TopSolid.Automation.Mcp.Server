@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.TextureImage.MinorRevisionId.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.TextureImage.MinorRevisionId.html",
+  "sha256": "c27c73914ff74ae294732e2d73e91d00fdd94b240f73e0699cab6b1905c1c44a",
+  "text": "# Property MinorRevisionId\n\n#### MinorRevisionId\n\nGets the texture document minor revision identifier.\n\n##### Declaration\n\n```\npublic string MinorRevisionId { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |   |\n",
+  "markdown": "markdown/kernel/1f9a9716c18eca8a5c7781fb.md",
+  "originalHtml": "html/kernel/1f9a9716c18eca8a5c7781fb.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.TopSolidDesignHostInstance.Assemblies.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.TopSolidDesignHostInstance.Assemblies.html",
+  "sha256": "48308e408c16ac926f6dc0930f37e37e6c8de6c9185c944adf085a5bbbe8f0dc",
+  "text": "# Property Assemblies\n\n#### Assemblies\n\nGets access to assemblies, or null if not connected.\n\n##### Declaration\n\n```\npublic IAssemblies Assemblies { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  IAssemblies |   |\n",
+  "markdown": "markdown/cad/8a07ed55f9f4419f131a516f.md",
+  "originalHtml": "html/cad/8a07ed55f9f4419f131a516f.html"
+}

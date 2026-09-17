@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMaterials.GetDensity.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMaterials.GetDensity.html",
+  "sha256": "012a9618b615785b52df2b602d7fb5a01134c5a87a7c0311d2a746c7628df713",
+  "text": "# Method GetDensity\n\n#### GetDensity(DocumentId)\n\nGets the material density.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 400, 100)]\ndouble GetDensity(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double |   |  \n\n##### Remarks\n\nThis method is available since v7.16.\n",
+  "markdown": "markdown/cad/268eaeaecd80734e5733f8ff.md",
+  "originalHtml": "html/cad/268eaeaecd80734e5733f8ff.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IDocuments.GetPropertyRealValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IDocuments.GetPropertyRealValue.html",
+  "sha256": "4c9060cc69523494035e0436d2bb32f39df78e150303bf26521520d8d8508d64",
+  "text": "# Method GetPropertyRealValue\n\n#### GetPropertyRealValue(DocumentId, string)\n\nGets the value of a document real property.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 300, 60)]\ndouble GetPropertyRealValue(DocumentId inDocumentId, string inFullName)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n \n|  string |  inFullName |  Full name of the document real property to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double |  Value of the property.  |  \n\n##### Remarks\n\nThis method is available since v7.8.300.60.\n",
+  "markdown": "markdown/kernel/9d9b090ace4f049efa292926.md",
+  "originalHtml": "html/kernel/9d9b090ace4f049efa292926.html"
+}

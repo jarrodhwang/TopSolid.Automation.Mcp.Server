@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.CurveParametricApproximationType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.CurveParametricApproximationType.html",
+  "sha256": "faf6cdb607d6ff14d8787bf577a1fd2a4d9f4601981de640e161e63cc760f1e5",
+  "text": "# Enum CurveParametricApproximationType\n\nDefines the various types of curve parametric approximations.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 10, 301, 180)]\npublic enum CurveParametricApproximationType\n```\n\n##### Remarks\n\nThis enum is available since v7.10.301.180.\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  ArcLength |  Parametric approximation sticks to arc length curve parametrization.  |  \n \n|  Free |  Free parametric approximation.  |  \n \n|  Local |  Parametric approximation sticks to local curve parametrization.  |  \n \n|  None |  No approximation.  |\n",
+  "markdown": "markdown/kernel/cd81d897c7999b11db08f072.md",
+  "originalHtml": "html/kernel/cd81d897c7999b11db08f072.html"
+}

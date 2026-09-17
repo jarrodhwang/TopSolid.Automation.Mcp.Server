@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdmSecurity.DeactivateSecurity.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdmSecurity.DeactivateSecurity.html",
+  "sha256": "a1bd558c6e51051b4176f07b9a0259755b577bf691733942a1b21cf6faf82b4a",
+  "text": "# Method DeactivateSecurity\n\n#### DeactivateSecurity()\n\nDeactivates system security.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 12, 0, 0)]\nvoid DeactivateSecurity()\n```\n\n##### Remarks\n\nThis method is available since v7.12.\n",
+  "markdown": "markdown/kernel/699e26bc35359828b4aaba43.md",
+  "originalHtml": "html/kernel/699e26bc35359828b4aaba43.html"
+}

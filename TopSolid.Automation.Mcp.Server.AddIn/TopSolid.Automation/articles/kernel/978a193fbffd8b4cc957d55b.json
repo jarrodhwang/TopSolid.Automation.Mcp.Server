@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.AvailableSinceVersionAttribute.-ctor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.AvailableSinceVersionAttribute.-ctor.html",
+  "sha256": "5a4e9dc252df73fb321b807bcc28632d4d62ce71b74d46fb6267473f94f500f4",
+  "text": "# Constructor AvailableSinceVersionAttribute\n\n#### AvailableSinceVersionAttribute(int, int, int, int)\n\nInitializes a new instance of the AvailableSinceVersionAttribute class.\n\n##### Declaration\n\n```\npublic AvailableSinceVersionAttribute(int inMajor, int inMinor, int inBuild, int inRevision)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  int |  inMajor |  Major number must be within [0,20].  |  \n \n|  int |  inMinor |  Minor number must be within [0,99].  |  \n \n|  int |  inBuild |  Build number must be within [0,999].  |  \n \n|  int |  inRevision |  Revision number must be within [0,999].  |\n",
+  "markdown": "markdown/kernel/978a193fbffd8b4cc957d55b.md",
+  "originalHtml": "html/kernel/978a193fbffd8b4cc957d55b.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IDocuments.GetPdmObject.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IDocuments.GetPdmObject.html",
+  "sha256": "e715948128d19eab0e64947111122be124ff966a270cef0e794ad5816eb26332",
+  "text": "# Method GetPdmObject\n\n#### GetPdmObject(DocumentId)\n\nGets the PDM object corresponding to a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nPdmObjectId GetPdmObject(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  PdmObjectId |  Identifier of the corresponding PDM object.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/f7dd609774188492e09e1a53.md",
+  "originalHtml": "html/kernel/f7dd609774188492e09e1a53.html"
+}

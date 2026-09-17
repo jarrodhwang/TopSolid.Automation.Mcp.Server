@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IShapes.GetEdgeVertices.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IShapes.GetEdgeVertices.html",
+  "sha256": "414c9617d4b121208f67f8fbf590729f50120f38c160d612a77c1f7cbda170cb",
+  "text": "# Method GetEdgeVertices\n\n#### GetEdgeVertices(ElementItemId, out ElementItemId, out ElementItemId)\n\nGets the start and end vertices of an edge.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nvoid GetEdgeVertices(ElementItemId inEdgeId, out ElementItemId outStartVertexId, out ElementItemId outEndVertexId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementItemId |  inEdgeId |  Identifier of the edge to analyze.  |  \n \n|  ElementItemId |  outStartVertexId |  Identifier of the start vertex, or Empty if none.  |  \n \n|  ElementItemId |  outEndVertexId |  Identifier of the end vertex, or Empty if none.  |  \n\n##### Remarks\n\nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/43680ff348f06dfa127d6ce2.md",
+  "originalHtml": "html/kernel/43680ff348f06dfa127d6ce2.html"
+}

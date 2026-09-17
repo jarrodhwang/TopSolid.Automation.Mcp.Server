@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.GetColorValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.GetColorValue.html",
+  "sha256": "5a26459c0531211903f87a71e565986961ef868f307a92e00b35834b71f30660",
+  "text": "# Method GetColorValue\n\n#### GetColorValue(ElementId)\n\nGets the value of a Color parameter.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 15, 400, 100)]\nColor GetColorValue(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the parameter to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Color |  Value of the parameter.  |  \n\n##### Remarks\n\nThis method is available since v7.15.400.100.\n",
+  "markdown": "markdown/kernel/9bb96c3fce86dcd5948019ed.md",
+  "originalHtml": "html/kernel/9bb96c3fce86dcd5948019ed.html"
+}

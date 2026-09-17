@@ -1,0 +1,8 @@
+{
+  "path": "api/wire/TopSolid.Cam.NC.Wire.Automating.IWireCc.GetFeedrate.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/wire/TopSolid.Cam.NC.Wire.Automating.IWireCc.GetFeedrate.html",
+  "sha256": "1178a62a337ffccb222ff259c225d27b958157cac40525f272e1e73d03f1c70b",
+  "text": "# Method GetFeedrate\n\n#### GetFeedrate(ElementId)\n\nGet feedrate.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 160)]\nSmartReal GetFeedrate(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to modify.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartReal |  Feedrate in SI units.  |\n",
+  "markdown": "markdown/wire/aca3d007f20a64b282540ed5.md",
+  "originalHtml": "html/wire/aca3d007f20a64b282540ed5.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IGeometries2D.GetFrameGeometry.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IGeometries2D.GetFrameGeometry.html",
+  "sha256": "22c043ff46b64c1bcb7343045a2288d4a7b5a365af1638225c66216d4bc16289",
+  "text": "# Method GetFrameGeometry\n\n#### GetFrameGeometry(ElementId)\n\nGets the geometry of a frame entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nFrame2D GetFrameGeometry(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the frame entity to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Frame2D |  Frame geometry.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/9f9eb88ce810fc98eb251aa6.md",
+  "originalHtml": "html/kernel/9f9eb88ce810fc98eb251aa6.html"
+}

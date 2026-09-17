@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMultiLayer.SetBottomCoatingOrientationValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMultiLayer.SetBottomCoatingOrientationValue.html",
+  "sha256": "d4960c5caa63c4d218c18e7de096ce0d8a52722c9f27483e106e2a467bd9bc9e",
+  "text": "# Method SetBottomCoatingOrientationValue\n\n#### SetBottomCoatingOrientationValue(DocumentId, Real)\n\nSets the multi layer bottom coating orientation value\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 0, 0)]\nbool SetBottomCoatingOrientationValue(DocumentId inDocumentId, Real inReal)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify  |  \n \n|  Real |  inReal |  Value in SI Units  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  True if value is correctly set.  |  \n\n##### Remarks\n\nThis method is available since v7.19.\n",
+  "markdown": "markdown/cad/8ffb4d5889c142dfe238b69c.md",
+  "originalHtml": "html/cad/8ffb4d5889c142dfe238b69c.html"
+}

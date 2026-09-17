@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.TextureCategoryType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.TextureCategoryType.html",
+  "sha256": "f0860930f215e3eef36274a9a384e6b0b8b4896ec2ee6889c6420d839e3a7838",
+  "text": "# Enum TextureCategoryType\n\nDefines the various types of texture categories.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 16, 0, 0)]\npublic enum TextureCategoryType\n```\n\n##### Remarks\n\nThis enum is available since v7.16. Nota - Albedo is corresponding to Color.\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  ARM |  ARM.  |  \n \n|  Albedo |  Albedo.  |  \n \n|  AmbientOcclusion |  Ambient Occlusion.  |  \n \n|  AnisotropyAngle |  AnisotropyAngle.  |  \n \n|  Decal |  Decal.  |  \n \n|  Displacement |  Displacement.  |  \n \n|  Gloss |  Gloss.  |  \n \n|  Iron |  Iron.  |  \n \n|  Metalness |  Metalness.  |  \n \n|  None |  No category.  |  \n \n|  Normal |  Normal.  |  \n \n|  Opacity |  Opacity.  |  \n \n|  Redway |  Redway.  |  \n \n|  Roughness |  Roughness.  |  \n \n|  ShadowCatcher |  ShadowCatcher.  |  \n \n|  Specularity |  Specularity.  |  \n \n|  Substance |  Substance.  |  \n \n|  Transmission |  Transmission.  |  \n \n|  TransmissionGlossiness |  Transmission Glossiness.  |  \n \n|  Unclassified |  Unclassified type.  |  \n \n|  Wood |  Wood.  |\n",
+  "markdown": "markdown/kernel/7e993988b97e0d4063dae545.md",
+  "originalHtml": "html/kernel/7e993988b97e0d4063dae545.html"
+}

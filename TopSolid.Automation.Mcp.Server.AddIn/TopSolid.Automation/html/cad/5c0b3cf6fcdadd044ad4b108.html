@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Interface ITools | TopSolid Automation website </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Interface ITools | TopSolid Automation website ">
+    
+    <meta name="description" content="Gives access to various tools.">
+      <link rel="shortcut icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../../styles/docfx.css">
+      <link rel="stylesheet" href="../../styles/main.css">
+      <meta property="docfx:navrel" content="../../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../img/AutomationIcon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="TopSolid.Cad.Design.Automating.ITools">
+
+
+
+  <h1 id="TopSolid_Cad_Design_Automating_ITools" data-uid="TopSolid.Cad.Design.Automating.ITools" class="text-break">Interface ITools</h1>
+  <div class="markdown level0 summary"><p>Gives access to various tools.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="TopSolid.html">TopSolid</a>.<a class="xref" href="TopSolid.Cad.html">Cad</a>.<a class="xref" href="TopSolid.Cad.Design.html">Design</a>.<a class="xref" href="TopSolid.Cad.Design.Automating.html">Automating</a></h6>
+  <h6><strong>Assembly</strong>: TopSolid.Cad.Design.Automating.dll</h6>
+  <h5 id="TopSolid_Cad_Design_Automating_ITools_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ServiceContract]
+[AvailableSinceVersion(7, 10, 0, 0)]
+public interface ITools</code></pre>
+  </div>
+  <h5 id="TopSolid_Cad_Design_Automating_ITools_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>This interface is available since v7.10.</p>
+</div>
+  <h3 id="methods">Methods
+</h3>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_ITools_CreateAuxiliairyElement_TopSolid_Kernel_Automating_DocumentId_System_Collections_Generic_List_TopSolid_Kernel_Automating_ElementId__" data-uid="TopSolid.Cad.Design.Automating.ITools.CreateAuxiliairyElement(TopSolid.Kernel.Automating.DocumentId,System.Collections.Generic.List{TopSolid.Kernel.Automating.ElementId})">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.ITools.CreateAuxiliairyElement.html#TopSolid_Cad_Design_Automating_ITools_CreateAuxiliairyElement_TopSolid_Kernel_Automating_DocumentId_System_Collections_Generic_List_TopSolid_Kernel_Automating_ElementId__">CreateAuxiliairyElement(DocumentId, List&lt;ElementId&gt;)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Creates an auxiliairy element in a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_ITools_CreateDerivedDocument_TopSolid_Kernel_Automating_PdmObjectId_TopSolid_Kernel_Automating_DocumentId_System_Boolean_" data-uid="TopSolid.Cad.Design.Automating.ITools.CreateDerivedDocument(TopSolid.Kernel.Automating.PdmObjectId,TopSolid.Kernel.Automating.DocumentId,System.Boolean)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.ITools.CreateDerivedDocument.html#TopSolid_Cad_Design_Automating_ITools_CreateDerivedDocument_TopSolid_Kernel_Automating_PdmObjectId_TopSolid_Kernel_Automating_DocumentId_System_Boolean_">CreateDerivedDocument(PdmObjectId, DocumentId, bool)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Creates a new derived part or assembly of a specified part or assembly.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_ITools_CreateMirrorDocument_TopSolid_Kernel_Automating_PdmObjectId_TopSolid_Kernel_Automating_DocumentId_System_Boolean_" data-uid="TopSolid.Cad.Design.Automating.ITools.CreateMirrorDocument(TopSolid.Kernel.Automating.PdmObjectId,TopSolid.Kernel.Automating.DocumentId,System.Boolean)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.ITools.CreateMirrorDocument.html#TopSolid_Cad_Design_Automating_ITools_CreateMirrorDocument_TopSolid_Kernel_Automating_PdmObjectId_TopSolid_Kernel_Automating_DocumentId_System_Boolean_">CreateMirrorDocument(PdmObjectId, DocumentId, bool)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Creates the derived mirror part or assembly of a specified part or assembly.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_ITools_CreatePlaneSymmetry_TopSolid_Kernel_Automating_DocumentId_TopSolid_Kernel_Automating_SmartPlane3D_" data-uid="TopSolid.Cad.Design.Automating.ITools.CreatePlaneSymmetry(TopSolid.Kernel.Automating.DocumentId,TopSolid.Kernel.Automating.SmartPlane3D)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.ITools.CreatePlaneSymmetry.html#TopSolid_Cad_Design_Automating_ITools_CreatePlaneSymmetry_TopSolid_Kernel_Automating_DocumentId_TopSolid_Kernel_Automating_SmartPlane3D_">CreatePlaneSymmetry(DocumentId, SmartPlane3D)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Creates a plane symmetry.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_ITools_CreateRevolutionSymmetry_TopSolid_Kernel_Automating_DocumentId_TopSolid_Kernel_Automating_SmartAxis3D_" data-uid="TopSolid.Cad.Design.Automating.ITools.CreateRevolutionSymmetry(TopSolid.Kernel.Automating.DocumentId,TopSolid.Kernel.Automating.SmartAxis3D)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.ITools.CreateRevolutionSymmetry.html#TopSolid_Cad_Design_Automating_ITools_CreateRevolutionSymmetry_TopSolid_Kernel_Automating_DocumentId_TopSolid_Kernel_Automating_SmartAxis3D_">CreateRevolutionSymmetry(DocumentId, SmartAxis3D)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Creates a revolution symmetry.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_ITools_GetBaseDocument_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Cad.Design.Automating.ITools.GetBaseDocument(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.ITools.GetBaseDocument.html#TopSolid_Cad_Design_Automating_ITools_GetBaseDocument_TopSolid_Kernel_Automating_DocumentId_">GetBaseDocument(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the base part or assembly of a derived part or assembly.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_ITools_GetCatalogCellCoatingValue_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_ElementId_" data-uid="TopSolid.Cad.Design.Automating.ITools.GetCatalogCellCoatingValue(TopSolid.Kernel.Automating.ElementId,TopSolid.Kernel.Automating.ElementId)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.ITools.GetCatalogCellCoatingValue.html#TopSolid_Cad_Design_Automating_ITools_GetCatalogCellCoatingValue_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_ElementId_">GetCatalogCellCoatingValue(ElementId, ElementId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the coating value of the catalog cell.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_ITools_GetCatalogCellFinishingValue_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_ElementId_" data-uid="TopSolid.Cad.Design.Automating.ITools.GetCatalogCellFinishingValue(TopSolid.Kernel.Automating.ElementId,TopSolid.Kernel.Automating.ElementId)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.ITools.GetCatalogCellFinishingValue.html#TopSolid_Cad_Design_Automating_ITools_GetCatalogCellFinishingValue_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_ElementId_">GetCatalogCellFinishingValue(ElementId, ElementId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the finishing value of the catalog cell.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_ITools_GetCatalogCellMaterialValue_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_ElementId_" data-uid="TopSolid.Cad.Design.Automating.ITools.GetCatalogCellMaterialValue(TopSolid.Kernel.Automating.ElementId,TopSolid.Kernel.Automating.ElementId)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.ITools.GetCatalogCellMaterialValue.html#TopSolid_Cad_Design_Automating_ITools_GetCatalogCellMaterialValue_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_ElementId_">GetCatalogCellMaterialValue(ElementId, ElementId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the material value of the catalog cell.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_ITools_GetDerivationInheritances_TopSolid_Kernel_Automating_DocumentId_System_Boolean__System_Boolean__System_Boolean__System_Boolean__System_Boolean__System_Boolean__System_Boolean__System_Boolean__System_Collections_Generic_List_TopSolid_Kernel_Automating_ElementId___System_Boolean__System_Boolean__System_Boolean__System_Boolean__System_Boolean__System_Boolean__System_Boolean__System_Boolean__System_Boolean__System_Boolean__System_Boolean__System_Boolean__System_Boolean__System_Boolean__" data-uid="TopSolid.Cad.Design.Automating.ITools.GetDerivationInheritances(TopSolid.Kernel.Automating.DocumentId,System.Boolean@,System.Boolean@,System.Boolean@,System.Boolean@,System.Boolean@,System.Boolean@,System.Boolean@,System.Boolean@,System.Collections.Generic.List{TopSolid.Kernel.Automating.ElementId}@,System.Boolean@,System.Boolean@,System.Boolean@,System.Boolean@,System.Boolean@,System.Boolean@,System.Boolean@,System.Boolean@,System.Boolean@,System.Boolean@,System.Boolean@,System.Boolean@,System.Boolean@,System.Boolean@)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.ITools.GetDerivationInheritances.html#TopSolid_Cad_Design_Automating_ITools_GetDerivationInheritances_TopSolid_Kernel_Automating_DocumentId_System_Boolean__System_Boolean__System_Boolean__System_Boolean__System_Boolean__System_Boolean__System_Boolean__System_Boolean__System_Collections_Generic_List_TopSolid_Kernel_Automating_ElementId___System_Boolean__System_Boolean__System_Boolean__System_Boolean__System_Boolean__System_Boolean__System_Boolean__System_Boolean__System_Boolean__System_Boolean__System_Boolean__System_Boolean__System_Boolean__System_Boolean__">GetDerivationInheritances(DocumentId, out bool, out bool, out bool, out bool, out bool, out bool, out bool, out bool, out List&lt;ElementId&gt;, out bool, out bool, out bool, out bool, out bool, out bool, out bool, out bool, out bool, out bool, out bool, out bool, out bool, out bool)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the derivation inheritances of a derived part or assembly.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_ITools_GetInstanceFamilyDocument_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Cad.Design.Automating.ITools.GetInstanceFamilyDocument(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.ITools.GetInstanceFamilyDocument.html#TopSolid_Cad_Design_Automating_ITools_GetInstanceFamilyDocument_TopSolid_Kernel_Automating_DocumentId_">GetInstanceFamilyDocument(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the family document of an instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_ITools_GetPlaneSymmetry_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_SmartPlane3D__" data-uid="TopSolid.Cad.Design.Automating.ITools.GetPlaneSymmetry(TopSolid.Kernel.Automating.ElementId,TopSolid.Kernel.Automating.SmartPlane3D@)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.ITools.GetPlaneSymmetry.html#TopSolid_Cad_Design_Automating_ITools_GetPlaneSymmetry_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_SmartPlane3D__">GetPlaneSymmetry(ElementId, out SmartPlane3D)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets a plane symmetry.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_ITools_GetRevolutionSymmetry_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_SmartAxis3D__" data-uid="TopSolid.Cad.Design.Automating.ITools.GetRevolutionSymmetry(TopSolid.Kernel.Automating.ElementId,TopSolid.Kernel.Automating.SmartAxis3D@)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.ITools.GetRevolutionSymmetry.html#TopSolid_Cad_Design_Automating_ITools_GetRevolutionSymmetry_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_SmartAxis3D__">GetRevolutionSymmetry(ElementId, out SmartAxis3D)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets a revolution symmetry.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_ITools_GetStockManagement_TopSolid_Kernel_Automating_DocumentId_TopSolid_Cad_Design_Automating_StockManagementType__TopSolid_Kernel_Automating_DocumentId__TopSolid_Kernel_Automating_ElementId__TopSolid_Kernel_Automating_SmartText__TopSolid_Kernel_Automating_SmartText__TopSolid_Kernel_Automating_SmartText__TopSolid_Kernel_Automating_SmartText__" data-uid="TopSolid.Cad.Design.Automating.ITools.GetStockManagement(TopSolid.Kernel.Automating.DocumentId,TopSolid.Cad.Design.Automating.StockManagementType@,TopSolid.Kernel.Automating.DocumentId@,TopSolid.Kernel.Automating.ElementId@,TopSolid.Kernel.Automating.SmartText@,TopSolid.Kernel.Automating.SmartText@,TopSolid.Kernel.Automating.SmartText@,TopSolid.Kernel.Automating.SmartText@)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.ITools.GetStockManagement.html#TopSolid_Cad_Design_Automating_ITools_GetStockManagement_TopSolid_Kernel_Automating_DocumentId_TopSolid_Cad_Design_Automating_StockManagementType__TopSolid_Kernel_Automating_DocumentId__TopSolid_Kernel_Automating_ElementId__TopSolid_Kernel_Automating_SmartText__TopSolid_Kernel_Automating_SmartText__TopSolid_Kernel_Automating_SmartText__TopSolid_Kernel_Automating_SmartText__">GetStockManagement(DocumentId, out StockManagementType, out DocumentId, out ElementId, out SmartText, out SmartText, out SmartText, out SmartText)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Superseeded by <a class="xref" href="TopSolid.Cad.Design.Automating.ITools.GetStockManagement2.html#TopSolid_Cad_Design_Automating_ITools_GetStockManagement2_TopSolid_Kernel_Automating_DocumentId_TopSolid_Cad_Design_Automating_StockManagementType__TopSolid_Kernel_Automating_DocumentId__TopSolid_Kernel_Automating_ElementId__TopSolid_Kernel_Automating_SmartText__TopSolid_Kernel_Automating_SmartText__TopSolid_Kernel_Automating_SmartText__TopSolid_Kernel_Automating_SmartText__TopSolid_Kernel_Automating_SmartText__">GetStockManagement2(DocumentId, out StockManagementType, out DocumentId, out ElementId, out SmartText, out SmartText, out SmartText, out SmartText, out SmartText)</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_ITools_GetStockManagement2_TopSolid_Kernel_Automating_DocumentId_TopSolid_Cad_Design_Automating_StockManagementType__TopSolid_Kernel_Automating_DocumentId__TopSolid_Kernel_Automating_ElementId__TopSolid_Kernel_Automating_SmartText__TopSolid_Kernel_Automating_SmartText__TopSolid_Kernel_Automating_SmartText__TopSolid_Kernel_Automating_SmartText__TopSolid_Kernel_Automating_SmartText__" data-uid="TopSolid.Cad.Design.Automating.ITools.GetStockManagement2(TopSolid.Kernel.Automating.DocumentId,TopSolid.Cad.Design.Automating.StockManagementType@,TopSolid.Kernel.Automating.DocumentId@,TopSolid.Kernel.Automating.ElementId@,TopSolid.Kernel.Automating.SmartText@,TopSolid.Kernel.Automating.SmartText@,TopSolid.Kernel.Automating.SmartText@,TopSolid.Kernel.Automating.SmartText@,TopSolid.Kernel.Automating.SmartText@)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.ITools.GetStockManagement2.html#TopSolid_Cad_Design_Automating_ITools_GetStockManagement2_TopSolid_Kernel_Automating_DocumentId_TopSolid_Cad_Design_Automating_StockManagementType__TopSolid_Kernel_Automating_DocumentId__TopSolid_Kernel_Automating_ElementId__TopSolid_Kernel_Automating_SmartText__TopSolid_Kernel_Automating_SmartText__TopSolid_Kernel_Automating_SmartText__TopSolid_Kernel_Automating_SmartText__TopSolid_Kernel_Automating_SmartText__">GetStockManagement2(DocumentId, out StockManagementType, out DocumentId, out ElementId, out SmartText, out SmartText, out SmartText, out SmartText, out SmartText)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the stock management of a part or assembly.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_ITools_GetStockParameters_TopSolid_Kernel_Automating_DocumentId_TopSolid_Kernel_Automating_ElementId__TopSolid_Kernel_Automating_ElementId__TopSolid_Kernel_Automating_ElementId__TopSolid_Kernel_Automating_ElementId__" data-uid="TopSolid.Cad.Design.Automating.ITools.GetStockParameters(TopSolid.Kernel.Automating.DocumentId,TopSolid.Kernel.Automating.ElementId@,TopSolid.Kernel.Automating.ElementId@,TopSolid.Kernel.Automating.ElementId@,TopSolid.Kernel.Automating.ElementId@)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.ITools.GetStockParameters.html#TopSolid_Cad_Design_Automating_ITools_GetStockParameters_TopSolid_Kernel_Automating_DocumentId_TopSolid_Kernel_Automating_ElementId__TopSolid_Kernel_Automating_ElementId__TopSolid_Kernel_Automating_ElementId__TopSolid_Kernel_Automating_ElementId__">GetStockParameters(DocumentId, out ElementId, out ElementId, out ElementId, out ElementId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Superseeded by <a class="xref" href="TopSolid.Cad.Design.Automating.ITools.GetStockParameters2.html#TopSolid_Cad_Design_Automating_ITools_GetStockParameters2_TopSolid_Kernel_Automating_DocumentId_TopSolid_Kernel_Automating_ElementId__TopSolid_Kernel_Automating_ElementId__TopSolid_Kernel_Automating_ElementId__TopSolid_Kernel_Automating_ElementId__TopSolid_Kernel_Automating_ElementId__">GetStockParameters2(DocumentId, out ElementId, out ElementId, out ElementId, out ElementId, out ElementId)</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_ITools_GetStockParameters2_TopSolid_Kernel_Automating_DocumentId_TopSolid_Kernel_Automating_ElementId__TopSolid_Kernel_Automating_ElementId__TopSolid_Kernel_Automating_ElementId__TopSolid_Kernel_Automating_ElementId__TopSolid_Kernel_Automating_ElementId__" data-uid="TopSolid.Cad.Design.Automating.ITools.GetStockParameters2(TopSolid.Kernel.Automating.DocumentId,TopSolid.Kernel.Automating.ElementId@,TopSolid.Kernel.Automating.ElementId@,TopSolid.Kernel.Automating.ElementId@,TopSolid.Kernel.Automating.ElementId@,TopSolid.Kernel.Automating.ElementId@)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.ITools.GetStockParameters2.html#TopSolid_Cad_Design_Automating_ITools_GetStockParameters2_TopSolid_Kernel_Automating_DocumentId_TopSolid_Kernel_Automating_ElementId__TopSolid_Kernel_Automating_ElementId__TopSolid_Kernel_Automating_ElementId__TopSolid_Kernel_Automating_ElementId__TopSolid_Kernel_Automating_ElementId__">GetStockParameters2(DocumentId, out ElementId, out ElementId, out ElementId, out ElementId, out ElementId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the stock parameters of a part or assembly.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_ITools_GetSymmetries_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Cad.Design.Automating.ITools.GetSymmetries(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.ITools.GetSymmetries.html#TopSolid_Cad_Design_Automating_ITools_GetSymmetries_TopSolid_Kernel_Automating_DocumentId_">GetSymmetries(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the symmetry entities that are in the symmetries folder of a part or assembly document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_ITools_GetSymmetryType_TopSolid_Kernel_Automating_ElementId_" data-uid="TopSolid.Cad.Design.Automating.ITools.GetSymmetryType(TopSolid.Kernel.Automating.ElementId)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.ITools.GetSymmetryType.html#TopSolid_Cad_Design_Automating_ITools_GetSymmetryType_TopSolid_Kernel_Automating_ElementId_">GetSymmetryType(ElementId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the type of a symmetry entity.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_ITools_InheritDetailingsElements_TopSolid_Kernel_Automating_ElementId_TopSolid_Cad_Design_Automating_EntityCopyNameMode_System_String_" data-uid="TopSolid.Cad.Design.Automating.ITools.InheritDetailingsElements(TopSolid.Kernel.Automating.ElementId,TopSolid.Cad.Design.Automating.EntityCopyNameMode,System.String)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.ITools.InheritDetailingsElements.html#TopSolid_Cad_Design_Automating_ITools_InheritDetailingsElements_TopSolid_Kernel_Automating_ElementId_TopSolid_Cad_Design_Automating_EntityCopyNameMode_System_String_">InheritDetailingsElements(ElementId, EntityCopyNameMode, string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Inherits the detailings elements of a node enttiy.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_ITools_IsDerived_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Cad.Design.Automating.ITools.IsDerived(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.ITools.IsDerived.html#TopSolid_Cad_Design_Automating_ITools_IsDerived_TopSolid_Kernel_Automating_DocumentId_">IsDerived(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Tells whether part or assembly is a derived part or assembly.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_ITools_IsMirror_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Cad.Design.Automating.ITools.IsMirror(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.ITools.IsMirror.html#TopSolid_Cad_Design_Automating_ITools_IsMirror_TopSolid_Kernel_Automating_DocumentId_">IsMirror(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Tells whether part or assembly is a derived mirror.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_ITools_IsSymmetrical_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Cad.Design.Automating.ITools.IsSymmetrical(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.ITools.IsSymmetrical.html#TopSolid_Cad_Design_Automating_ITools_IsSymmetrical_TopSolid_Kernel_Automating_DocumentId_">IsSymmetrical(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Tells whether part or assembly is symmetrical.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_ITools_SearchMirrorDocument_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Cad.Design.Automating.ITools.SearchMirrorDocument(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.ITools.SearchMirrorDocument.html#TopSolid_Cad_Design_Automating_ITools_SearchMirrorDocument_TopSolid_Kernel_Automating_DocumentId_">SearchMirrorDocument(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Searches for the derived mirror part or assembly of a specified part or assembly.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_ITools_SearchSymmetricalDocument_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Cad.Design.Automating.ITools.SearchSymmetricalDocument(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.ITools.SearchSymmetricalDocument.html#TopSolid_Cad_Design_Automating_ITools_SearchSymmetricalDocument_TopSolid_Kernel_Automating_DocumentId_">SearchSymmetricalDocument(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Searches for the symmetrical part or assembly of a specified part or assembly.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_ITools_SetCatalogCellCoatingValue_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_PdmMinorRevisionId_" data-uid="TopSolid.Cad.Design.Automating.ITools.SetCatalogCellCoatingValue(TopSolid.Kernel.Automating.ElementId,TopSolid.Kernel.Automating.ElementId,TopSolid.Kernel.Automating.PdmMinorRevisionId)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.ITools.SetCatalogCellCoatingValue.html#TopSolid_Cad_Design_Automating_ITools_SetCatalogCellCoatingValue_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_PdmMinorRevisionId_">SetCatalogCellCoatingValue(ElementId, ElementId, PdmMinorRevisionId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the coating value of the catalog cell.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_ITools_SetCatalogCellFinishingValue_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_PdmMinorRevisionId_" data-uid="TopSolid.Cad.Design.Automating.ITools.SetCatalogCellFinishingValue(TopSolid.Kernel.Automating.ElementId,TopSolid.Kernel.Automating.ElementId,TopSolid.Kernel.Automating.PdmMinorRevisionId)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.ITools.SetCatalogCellFinishingValue.html#TopSolid_Cad_Design_Automating_ITools_SetCatalogCellFinishingValue_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_PdmMinorRevisionId_">SetCatalogCellFinishingValue(ElementId, ElementId, PdmMinorRevisionId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the finishing value of the catalog cell.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_ITools_SetCatalogCellMaterialValue_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_PdmMinorRevisionId_" data-uid="TopSolid.Cad.Design.Automating.ITools.SetCatalogCellMaterialValue(TopSolid.Kernel.Automating.ElementId,TopSolid.Kernel.Automating.ElementId,TopSolid.Kernel.Automating.PdmMinorRevisionId)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.ITools.SetCatalogCellMaterialValue.html#TopSolid_Cad_Design_Automating_ITools_SetCatalogCellMaterialValue_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_PdmMinorRevisionId_">SetCatalogCellMaterialValue(ElementId, ElementId, PdmMinorRevisionId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the material value of the catalog cell.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_ITools_SetDerivationInheritances_TopSolid_Kernel_Automating_DocumentId_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Collections_Generic_List_TopSolid_Kernel_Automating_ElementId__System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_" data-uid="TopSolid.Cad.Design.Automating.ITools.SetDerivationInheritances(TopSolid.Kernel.Automating.DocumentId,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Collections.Generic.List{TopSolid.Kernel.Automating.ElementId},System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.ITools.SetDerivationInheritances.html#TopSolid_Cad_Design_Automating_ITools_SetDerivationInheritances_TopSolid_Kernel_Automating_DocumentId_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Collections_Generic_List_TopSolid_Kernel_Automating_ElementId__System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_">SetDerivationInheritances(DocumentId, bool, bool, bool, bool, bool, bool, bool, bool, List&lt;ElementId&gt;, bool, bool, bool, bool, bool, bool, bool, bool, bool, bool, bool, bool, bool, bool)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the derivation inheritances of a derived part or assembly.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_ITools_SetPlaneSymmetry_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_SmartPlane3D_" data-uid="TopSolid.Cad.Design.Automating.ITools.SetPlaneSymmetry(TopSolid.Kernel.Automating.ElementId,TopSolid.Kernel.Automating.SmartPlane3D)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.ITools.SetPlaneSymmetry.html#TopSolid_Cad_Design_Automating_ITools_SetPlaneSymmetry_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_SmartPlane3D_">SetPlaneSymmetry(ElementId, SmartPlane3D)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets a plane symmetry.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_ITools_SetRevolutionSymmetry_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_SmartAxis3D_" data-uid="TopSolid.Cad.Design.Automating.ITools.SetRevolutionSymmetry(TopSolid.Kernel.Automating.ElementId,TopSolid.Kernel.Automating.SmartAxis3D)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.ITools.SetRevolutionSymmetry.html#TopSolid_Cad_Design_Automating_ITools_SetRevolutionSymmetry_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_SmartAxis3D_">SetRevolutionSymmetry(ElementId, SmartAxis3D)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets a revolution symmetry.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_ITools_SetStockManagement_TopSolid_Kernel_Automating_DocumentId_TopSolid_Cad_Design_Automating_StockManagementType_TopSolid_Kernel_Automating_DocumentId_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_SmartText_TopSolid_Kernel_Automating_SmartText_TopSolid_Kernel_Automating_SmartText_TopSolid_Kernel_Automating_SmartText_" data-uid="TopSolid.Cad.Design.Automating.ITools.SetStockManagement(TopSolid.Kernel.Automating.DocumentId,TopSolid.Cad.Design.Automating.StockManagementType,TopSolid.Kernel.Automating.DocumentId,TopSolid.Kernel.Automating.ElementId,TopSolid.Kernel.Automating.SmartText,TopSolid.Kernel.Automating.SmartText,TopSolid.Kernel.Automating.SmartText,TopSolid.Kernel.Automating.SmartText)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.ITools.SetStockManagement.html#TopSolid_Cad_Design_Automating_ITools_SetStockManagement_TopSolid_Kernel_Automating_DocumentId_TopSolid_Cad_Design_Automating_StockManagementType_TopSolid_Kernel_Automating_DocumentId_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_SmartText_TopSolid_Kernel_Automating_SmartText_TopSolid_Kernel_Automating_SmartText_TopSolid_Kernel_Automating_SmartText_">SetStockManagement(DocumentId, StockManagementType, DocumentId, ElementId, SmartText, SmartText, SmartText, SmartText)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Superseeded by <a class="xref" href="TopSolid.Cad.Design.Automating.ITools.SetStockManagement2.html#TopSolid_Cad_Design_Automating_ITools_SetStockManagement2_TopSolid_Kernel_Automating_DocumentId_TopSolid_Cad_Design_Automating_StockManagementType_TopSolid_Kernel_Automating_DocumentId_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_SmartText_TopSolid_Kernel_Automating_SmartText_TopSolid_Kernel_Automating_SmartText_TopSolid_Kernel_Automating_SmartText_TopSolid_Kernel_Automating_SmartText_">SetStockManagement2(DocumentId, StockManagementType, DocumentId, ElementId, SmartText, SmartText, SmartText, SmartText, SmartText)</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_ITools_SetStockManagement2_TopSolid_Kernel_Automating_DocumentId_TopSolid_Cad_Design_Automating_StockManagementType_TopSolid_Kernel_Automating_DocumentId_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_SmartText_TopSolid_Kernel_Automating_SmartText_TopSolid_Kernel_Automating_SmartText_TopSolid_Kernel_Automating_SmartText_TopSolid_Kernel_Automating_SmartText_" data-uid="TopSolid.Cad.Design.Automating.ITools.SetStockManagement2(TopSolid.Kernel.Automating.DocumentId,TopSolid.Cad.Design.Automating.StockManagementType,TopSolid.Kernel.Automating.DocumentId,TopSolid.Kernel.Automating.ElementId,TopSolid.Kernel.Automating.SmartText,TopSolid.Kernel.Automating.SmartText,TopSolid.Kernel.Automating.SmartText,TopSolid.Kernel.Automating.SmartText,TopSolid.Kernel.Automating.SmartText)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.ITools.SetStockManagement2.html#TopSolid_Cad_Design_Automating_ITools_SetStockManagement2_TopSolid_Kernel_Automating_DocumentId_TopSolid_Cad_Design_Automating_StockManagementType_TopSolid_Kernel_Automating_DocumentId_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_SmartText_TopSolid_Kernel_Automating_SmartText_TopSolid_Kernel_Automating_SmartText_TopSolid_Kernel_Automating_SmartText_TopSolid_Kernel_Automating_SmartText_">SetStockManagement2(DocumentId, StockManagementType, DocumentId, ElementId, SmartText, SmartText, SmartText, SmartText, SmartText)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the stock management of a part or assembly.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div id="footer-alt">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      			<div id="footer-alt-bottom">
+                      <ul>
+                          <li><a href="https://www.topsolid.com/en/terms-of-use">Term of use</a></li>
+                          <li><a href="https://www.topsolid.com/en/corporate-information">Corporate information</a></li>
+                          <li><a href="https://www.topsolid.com/en/privacy-policy-gdpr">Privacy Policy - GDPR</a></li>
+                      </ul>
+                      <p>Copyright ©2025 TopSolid - All rights reserved.</p>
+                  </div>
+          </div>
+        </div>
+      </footer>    </div>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

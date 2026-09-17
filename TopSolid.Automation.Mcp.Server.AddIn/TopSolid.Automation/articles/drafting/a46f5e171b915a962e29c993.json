@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.ITables.SetDraftTableCellText.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.ITables.SetDraftTableCellText.html",
+  "sha256": "01f42971169b733512934478491129deefcf55275f47e6e095d95487b00798f7",
+  "text": "# Method SetDraftTableCellText\n\n#### SetDraftTableCellText(ElementId, int, int, int, string)\n\nSets the text value of a cell.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 14, 300, 140)]\nvoid SetDraftTableCellText(ElementId inElementId, int inColumnIdx, int inRowIdx, int inSplitColumnIdx, string inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the entity to modify.  |  \n \n|  int |  inColumnIdx |  Index of the column.  |  \n \n|  int |  inRowIdx |  Index of the row.  |  \n \n|  int |  inSplitColumnIdx |  Index of the split column. 0 if default.  |  \n \n|  string |  inValue |  Text value of the cell.  |  \n\n##### Remarks\n\nThis method is available since v7.14.300.140.\n",
+  "markdown": "markdown/drafting/a46f5e171b915a962e29c993.md",
+  "originalHtml": "html/drafting/a46f5e171b915a962e29c993.html"
+}

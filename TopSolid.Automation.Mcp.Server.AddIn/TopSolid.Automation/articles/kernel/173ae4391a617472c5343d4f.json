@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.ExportViewerPackage.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.ExportViewerPackage.html",
+  "sha256": "3b8109700a6acec9eee09595511de0a4b014aae7a121be7d8dd9c8c2e59c82cc",
+  "text": "# Method ExportViewerPackage\n\n#### ExportViewerPackage(List<PdmObjectId>, bool, bool, bool, string)\n\nExports a viewer package.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 303, 200)]\nvoid ExportViewerPackage(List<PdmObjectId> inObjectIds, bool inExportsForDelivery, bool inExportsIncrementalPackage, bool inAllowsMeasurement, string inFileFullPath)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  List<PdmObjectId> |  inObjectIds |  PDM object identifiers.  |  \n \n|  bool |  inExportsForDelivery |  Whether exports for delivery.  |  \n \n|  bool |  inExportsIncrementalPackage |  Whether exports an incremental package.  |  \n \n|  bool |  inAllowsMeasurement |  Whether allows measurement.  |  \n \n|  string |  inFileFullPath |  Full path of the exported package, with \".TopPkgViw\" extension.  |  \n\n##### Remarks\n\nThe package produced by this method may be imported in TopSolid'Viewer.\n \nThis method must not be called between StartModification(string, bool) and EndModification(bool, bool) methods calls.\n \nThis method is available since v7.8.303.200.\n",
+  "markdown": "markdown/kernel/173ae4391a617472c5343d4f.md",
+  "originalHtml": "html/kernel/173ae4391a617472c5343d4f.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Direction2D.op_ExclusiveOr.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Direction2D.op_ExclusiveOr.html",
+  "sha256": "490a2b7bba526207d5f225043ef32835c6a749f6588dac2766aedaef2bc4cdf2",
+  "text": "# Operator operator ^\n\n#### operator ^(Direction2D, Direction2D)\n\nComputes the cross product of two directions.\n\n##### Declaration\n\n```\npublic static double operator ^(Direction2D inDirection1, Direction2D inDirection2)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  Direction2D |  inDirection1 |  Left hand side direction.  |  \n \n|  Direction2D |  inDirection2 |  Right hand side direction.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double |  Directions' cross product \"Z\" component.  |\n",
+  "markdown": "markdown/kernel/4029888c33f02f3305774377.md",
+  "originalHtml": "html/kernel/4029888c33f02f3305774377.html"
+}

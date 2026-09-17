@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMaterials.GetIsotropicParameterValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMaterials.GetIsotropicParameterValue.html",
+  "sha256": "ffd7e90ac7b54b4c53f543a54b10e8e141b3f97b9c3769c2119cfd944c5146f8",
+  "text": "# Method GetIsotropicParameterValue\n\n#### GetIsotropicParameterValue(DocumentId, out bool?)\n\nGets the Isotropic Parameter\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 400, 120)]\nvoid GetIsotropicParameterValue(DocumentId inDocumentId, out bool? outValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document.  |  \n \n|  bool? |  outValue |  Value  |  \n\n##### Remarks\n\nThis method is available since v7.20.\n",
+  "markdown": "markdown/cad/f095b5f8036fdd4923b600fd.md",
+  "originalHtml": "html/cad/f095b5f8036fdd4923b600fd.html"
+}

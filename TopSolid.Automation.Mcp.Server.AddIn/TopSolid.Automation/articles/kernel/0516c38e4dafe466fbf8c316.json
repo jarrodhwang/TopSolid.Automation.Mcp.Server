@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IApplication.PrinterNames.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IApplication.PrinterNames.html",
+  "sha256": "12c17e0de44351c7c256d3f1935dd488d123cf310a2267bba7ebd9c3a570c660",
+  "text": "# Property PrinterNames\n\n#### PrinterNames\n\nGets the names of the available printers.\n\n##### Declaration\n\n```\n[AvailableSinceVersion(7, 6, 0, 0)]\nList<string> PrinterNames { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<string> |   |  \n\n##### Remarks\n\nThis property is available since v7.6.\n",
+  "markdown": "markdown/kernel/0516c38e4dafe466fbf8c316.md",
+  "originalHtml": "html/kernel/0516c38e4dafe466fbf8c316.html"
+}

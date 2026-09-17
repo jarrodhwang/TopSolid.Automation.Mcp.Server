@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ItemLabel.Frame3DZAxis.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ItemLabel.Frame3DZAxis.html",
+  "sha256": "7fdbf4d6033cf734ccc27ad120090f378d2e6f73d453b50e5b18c42cf21e5a28",
+  "text": "# Field Frame3DZAxis\n\nLabel of 3D frame Z axis.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\npublic static readonly ItemLabel Frame3DZAxis\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ItemLabel |  Label of 3D frame Z axis. |\n",
+  "markdown": "markdown/kernel/886ed7dbe8a403b572878b1b.md",
+  "originalHtml": "html/kernel/886ed7dbe8a403b572878b1b.html"
+}

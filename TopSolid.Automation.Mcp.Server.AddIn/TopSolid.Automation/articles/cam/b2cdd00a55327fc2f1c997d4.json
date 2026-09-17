@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IOrigins.GetOriginFrameGeometry.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IOrigins.GetOriginFrameGeometry.html",
+  "sha256": "5156b986742d4443312ffa4496675016633a70ffe5b815f65808bbea95b42168",
+  "text": "# Method GetOriginFrameGeometry\n\n#### GetOriginFrameGeometry(ElementId)\n\nGets the origin frame geometry.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 400, 80)]\nFrame3D GetOriginFrameGeometry(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the origin to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Frame3D |  The frame geometry.  |\n",
+  "markdown": "markdown/cam/b2cdd00a55327fc2f1c997d4.md",
+  "originalHtml": "html/cam/b2cdd00a55327fc2f1c997d4.html"
+}

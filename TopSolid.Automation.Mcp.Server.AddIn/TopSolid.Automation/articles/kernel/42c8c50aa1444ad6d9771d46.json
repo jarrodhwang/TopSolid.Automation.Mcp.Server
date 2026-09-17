@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IHealing.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IHealing.html",
+  "sha256": "7c91b0d1cddfc736a97d72c03f8e1c2022031c83b6181b0aa65533eb84fdc5b6",
+  "text": "# Interface IHealing\n\nGives access to parameter entities.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[ServiceContract]\n[AvailableSinceVersion(7, 20, 205, 0)]\npublic interface IHealing\n```\n\n##### Remarks\n\nThis interface is available since v7.20.\n\n### Methods \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   CheckShape(ElementId, out List<ElementItemId>)  |  Checks shape.  |  \n \n|   CleanShape(ElementId, double, double, bool, double, bool, double, bool, bool, bool, double, bool, out List<ElementId>)  |  Cleans a shape (exact or faceted)  |  \n \n|   HealShape(ElementId, double, double, double, bool, double, bool, double, bool, bool, bool, bool, double, bool, bool, bool)  |  Method to heal a shape  |  \n \n|   SimplifyShape(ElementId, double, bool, bool, bool, bool, bool, double, bool, bool, double)  |  Method to simplify a shape  |\n",
+  "markdown": "markdown/kernel/42c8c50aa1444ad6d9771d46.md",
+  "originalHtml": "html/kernel/42c8c50aa1444ad6d9771d46.html"
+}

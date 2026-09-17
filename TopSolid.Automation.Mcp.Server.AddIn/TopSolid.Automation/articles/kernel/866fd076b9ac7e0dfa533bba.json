@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IGeometries3D.GetPlanesFolder.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IGeometries3D.GetPlanesFolder.html",
+  "sha256": "4d8d31b66b638891acdff680733380b603f92b411dbf863cddca09d3280173b5",
+  "text": "# Method GetPlanesFolder\n\n#### GetPlanesFolder(DocumentId)\n\nGets the planes folder entity of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nElementId GetPlanesFolder(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the planes folder entity found.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/kernel/866fd076b9ac7e0dfa533bba.md",
+  "originalHtml": "html/kernel/866fd076b9ac7e0dfa533bba.html"
+}

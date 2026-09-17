@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IAssemblies.GetNodeProperties.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IAssemblies.GetNodeProperties.html",
+  "sha256": "f40c54c647e7d9eab62dea8201314ea11a0c95519c2a6730f17fbe42bfba9ce9",
+  "text": "# Method GetNodeProperties\n\n#### GetNodeProperties(ElementId, out List<PropertyDefinition>, out List<Property>)\n\nGets the properties attached to a specified assembly node entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 12, 0, 0)]\nvoid GetNodeProperties(ElementId inNodeId, out List<PropertyDefinition> outDefinitions, out List<Property> outProperties)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inNodeId |  Identifier of the assembly node entity (assembly or part occurrence, local part, ...) to analyze.  |  \n \n|  List<PropertyDefinition> |  outDefinitions |  Definitions of the properties attached to the specified node, or empty if none.  |  \n \n|  List<Property> |  outProperties |  Properties attached to the specified node, or empty if none.  |  \n\n##### Remarks\n\nThis method is available since v7.12.\n",
+  "markdown": "markdown/cad/c30933cbbfa39f96160ccaf2.md",
+  "originalHtml": "html/cad/c30933cbbfa39f96160ccaf2.html"
+}

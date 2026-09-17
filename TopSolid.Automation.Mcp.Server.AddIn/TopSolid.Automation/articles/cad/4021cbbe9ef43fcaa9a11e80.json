@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ICoatings.GetOpacityTextureDocument.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ICoatings.GetOpacityTextureDocument.html",
+  "sha256": "88322dca5fc896fa39261520a8979d8a6be5d6e30881c2c36ca5c57d3947ab60",
+  "text": "# Method GetOpacityTextureDocument\n\n#### GetOpacityTextureDocument(DocumentId)\n\nGets the Opacity texture document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 400, 100)]\nDocumentId GetOpacityTextureDocument(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  DocumentId |   |  \n\n##### Remarks\n\nThis method is available since v7.16.\n",
+  "markdown": "markdown/cad/4021cbbe9ef43fcaa9a11e80.md",
+  "originalHtml": "html/cad/4021cbbe9ef43fcaa9a11e80.html"
+}

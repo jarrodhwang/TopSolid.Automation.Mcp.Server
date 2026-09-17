@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IShapes.GetVertexCount.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IShapes.GetVertexCount.html",
+  "sha256": "2edeebc84d3501b1277ea5f7b62c84813621029577b8c6ba6d0d92e0fd0ea32d",
+  "text": "# Method GetVertexCount\n\n#### GetVertexCount(ElementId)\n\nGets the number of vertices of a shape.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nint GetVertexCount(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the shape entity to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  int |  Number of vertices of the shape.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/676fb4c97d1ab119896ecb15.md",
+  "originalHtml": "html/kernel/676fb4c97d1ab119896ecb15.html"
+}

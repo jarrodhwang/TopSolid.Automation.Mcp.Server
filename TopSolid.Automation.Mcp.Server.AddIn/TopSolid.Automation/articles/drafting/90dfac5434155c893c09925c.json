@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.IDraftings.GetDraftingDimensions.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.IDraftings.GetDraftingDimensions.html",
+  "sha256": "b4ebf6733c48957a154a4e4f29b91e6367dd6178aeda05c6613185afbd353aa4",
+  "text": "# Method GetDraftingDimensions\n\n#### GetDraftingDimensions(ElementId)\n\nOBSOLETE - Gets dimensions from a drafting document view.\n\n##### Declaration\n\n```\n[Obsolete(\"Since v7.20.255.0, access to dimensions is done using IDimensions interface.\")]\nList<ElementId> GetDraftingDimensions(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Drafting view.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementId> |   |  \n\n##### Remarks\n\nThis method is available since v7.19.\n",
+  "markdown": "markdown/drafting/90dfac5434155c893c09925c.md",
+  "originalHtml": "html/drafting/90dfac5434155c893c09925c.html"
+}

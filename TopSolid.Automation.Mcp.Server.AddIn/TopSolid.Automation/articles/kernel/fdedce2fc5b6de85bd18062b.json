@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ISketches2D.GetSegmentRange.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ISketches2D.GetSegmentRange.html",
+  "sha256": "8c2999b429bce84e6cad403d544aa0e9706b9998e13dab54773da77b294b78f1",
+  "text": "# Method GetSegmentRange\n\n#### GetSegmentRange(ElementItemId, out double, out double)\n\nGets the parametric range of a segment.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nvoid GetSegmentRange(ElementItemId inSegmentId, out double outTMin, out double outTMax)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementItemId |  inSegmentId |  Identifier of the segment to analyze.  |  \n \n|  double |  outTMin |  Minimum parametric value.  |  \n \n|  double |  outTMax |  Maximum parametric value.  |  \n\n##### Remarks\n\nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/fdedce2fc5b6de85bd18062b.md",
+  "originalHtml": "html/kernel/fdedce2fc5b6de85bd18062b.html"
+}

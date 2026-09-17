@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.RealParameterDiscretizationMode.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.RealParameterDiscretizationMode.html",
+  "sha256": "770de8e383d70ec4613795ce9f70b162d5f8787e61846f70cb62643850319430",
+  "text": "# Enum RealParameterDiscretizationMode\n\nDefines the various modes of real parameter constraints.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 17, 0, 0)]\npublic enum RealParameterDiscretizationMode\n```\n\n##### Remarks\n\nThis enum is available since v7.17.000.000.\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  InferiorValue |  Use inferior discrete value.  |  \n \n|  NearestValue |  Use nearest discrete value.  |  \n \n|  None |  No discretization.  |  \n \n|  SuperiorValue |  Use superior discrete value.  |\n",
+  "markdown": "markdown/kernel/890872d8e336692ad90ac3a2.md",
+  "originalHtml": "html/kernel/890872d8e336692ad90ac3a2.html"
+}

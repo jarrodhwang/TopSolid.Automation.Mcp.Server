@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ISketches3D.GetBuildingOperation.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ISketches3D.GetBuildingOperation.html",
+  "sha256": "013a03cc4b16bb0612ea8b3c3ade10757d072e37466137a8e94d0e0491298a15",
+  "text": "# Method GetBuildingOperation\n\n#### GetBuildingOperation(ElementId)\n\nGets the building operation of a sketch entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 201, 80)]\nElementId GetBuildingOperation(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the sketch entity to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the building operation, or Empty if the sketch does not have a building operation.  |  \n\n##### Remarks\n\nThis method is available since v7.7.201.80.\n",
+  "markdown": "markdown/kernel/622049818d2d2daa0d6f7dd6.md",
+  "originalHtml": "html/kernel/622049818d2d2daa0d6f7dd6.html"
+}

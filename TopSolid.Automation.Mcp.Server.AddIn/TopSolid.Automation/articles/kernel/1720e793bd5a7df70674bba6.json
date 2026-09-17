@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.TopSolidHostInstance.Disconnect.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.TopSolidHostInstance.Disconnect.html",
+  "sha256": "8a1767082f002da4787303607f17abf7c0d735a02b7faafae05a29ce4f64eb64",
+  "text": "# Method Disconnect\n\n#### Disconnect()\n\nDisconnects from TopSolid application.\n\n##### Declaration\n\n```\npublic void Disconnect()\n```\n",
+  "markdown": "markdown/kernel/1720e793bd5a7df70674bba6.md",
+  "originalHtml": "html/kernel/1720e793bd5a7df70674bba6.html"
+}

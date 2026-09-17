@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IApplication.ImporterCount.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IApplication.ImporterCount.html",
+  "sha256": "bc2bba4491830c41e152758e6c6d8d14eb3c677cb913473a0a17ec7c5991f8a3",
+  "text": "# Property ImporterCount\n\n#### ImporterCount\n\nGets the number of available document importers.\n\n##### Declaration\n\n```\n[AvailableSinceVersion(7, 6, 0, 0)]\nint ImporterCount { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  int |   |  \n\n##### Remarks\n\nThis property is available since v7.6.\n",
+  "markdown": "markdown/kernel/0e33eef4154dfed2fad6ee18.md",
+  "originalHtml": "html/kernel/0e33eef4154dfed2fad6ee18.html"
+}

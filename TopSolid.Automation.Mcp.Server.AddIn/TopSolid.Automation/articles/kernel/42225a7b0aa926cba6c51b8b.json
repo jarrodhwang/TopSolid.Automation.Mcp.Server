@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.CreateIntegerRelayedParameter.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.CreateIntegerRelayedParameter.html",
+  "sha256": "115cfd8bbd6755eb33b8bd80ebc736c08c645d3fe7d8d36bb5649b01c1375a0f",
+  "text": "# Method CreateIntegerRelayedParameter\n\n#### CreateIntegerRelayedParameter(DocumentId, ElementId, ParameterRelayType)\n\nCreates an integer relayed parameter entity in a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 18, 400, 100)]\nElementId CreateIntegerRelayedParameter(DocumentId inDocumentId, ElementId inElementId, ParameterRelayType inRelayParameterType)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  ElementId |  inElementId |  Identifier of the integer parameter entity to relay.  |  \n \n|  ParameterRelayType |  inRelayParameterType |  Type of relay.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |   |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.18.400.100.\n",
+  "markdown": "markdown/kernel/42225a7b0aa926cba6c51b8b.md",
+  "originalHtml": "html/kernel/42225a7b0aa926cba6c51b8b.html"
+}

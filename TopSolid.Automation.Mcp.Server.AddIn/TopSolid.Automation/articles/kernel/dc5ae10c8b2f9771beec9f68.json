@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IElements.GetPropertyDateTimeValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IElements.GetPropertyDateTimeValue.html",
+  "sha256": "b0d28d20feaab8567c1efe97abfea4fa823d5e9bdafc1a4c71e3f6c0f0fb5964",
+  "text": "# Method GetPropertyDateTimeValue\n\n#### GetPropertyDateTimeValue(ElementId, string)\n\nGets the value of an element date and time property.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 300, 60)]\nDateTime GetPropertyDateTimeValue(ElementId inElementId, string inFullName)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to analyze.  |  \n \n|  string |  inFullName |  Full name of the element date and time property to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  DateTime |  Value of the property.  |  \n\n##### Remarks\n\nThis method is available since v7.8.300.60.\n",
+  "markdown": "markdown/kernel/dc5ae10c8b2f9771beec9f68.md",
+  "originalHtml": "html/kernel/dc5ae10c8b2f9771beec9f68.html"
+}

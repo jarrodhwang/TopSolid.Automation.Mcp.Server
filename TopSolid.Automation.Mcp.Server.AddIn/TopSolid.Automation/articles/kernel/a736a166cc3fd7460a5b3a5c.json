@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.GetIntegerPublishingDefinition.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.GetIntegerPublishingDefinition.html",
+  "sha256": "fc48ef236d8f3f8b23ec87b4a365ddd6f46b152f06e51d09fd6b107eedf1ae32",
+  "text": "# Method GetIntegerPublishingDefinition\n\n#### GetIntegerPublishingDefinition(ElementId)\n\nGets the definition of an integer publishing entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nSmartInteger GetIntegerPublishingDefinition(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the publishing entity to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartInteger |   |  \n\n##### Remarks\n\nThe value of the publishing entity may be obtained with the GetIntegerValue(ElementId) method.\n \nThis method is available since v7.8.\n",
+  "markdown": "markdown/kernel/a736a166cc3fd7460a5b3a5c.md",
+  "originalHtml": "html/kernel/a736a166cc3fd7460a5b3a5c.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IAssemblies.SetCollisionsManagementInvalidWhenColliding.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IAssemblies.SetCollisionsManagementInvalidWhenColliding.html",
+  "sha256": "3230023bf6dfaa08429cef2759b9dcd13bba4666b5876e8648d8ce87335e2aa2",
+  "text": "# Method SetCollisionsManagementInvalidWhenColliding\n\n#### SetCollisionsManagementInvalidWhenColliding(DocumentId, bool)\n\nSets whether the collisions management of an assembly is invalid if collisions are found between rigid groups of articulated subassemblies.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 18, 400, 240)]\nvoid SetCollisionsManagementInvalidWhenColliding(DocumentId inDocumentId, bool isInvalidWhenColliding)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of assembly document to modify.  |  \n \n|  bool |  isInvalidWhenColliding |  Whether the collisions management of the assembly becomes invalid if therer are collisions between rigid groups of articulated subassemblies.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.10.\n",
+  "markdown": "markdown/cad/30e40c654492d5adf6bcc38c.md",
+  "originalHtml": "html/cad/30e40c654492d5adf6bcc38c.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.TopSolidCamHost.Pockets.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.TopSolidCamHost.Pockets.html",
+  "sha256": "aa41245c256c615a5a698cb5207ac76aa91beac99b486edeff535036c945ad5e",
+  "text": "# Property Pockets\n\n#### Pockets\n\nGets access to tools pockets, or null if not connected.\n\n##### Declaration\n\n```\npublic static IPockets Pockets { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  IPockets |   |\n",
+  "markdown": "markdown/cam/b2f143a01b08d99c44204f6c.md",
+  "originalHtml": "html/cam/b2f143a01b08d99c44204f6c.html"
+}

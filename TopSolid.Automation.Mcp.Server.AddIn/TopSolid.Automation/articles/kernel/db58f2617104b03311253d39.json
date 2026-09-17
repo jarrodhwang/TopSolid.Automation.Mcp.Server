@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.TopSolidHost.PdmAdmin.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.TopSolidHost.PdmAdmin.html",
+  "sha256": "00c2207932bc85e9b8066759a6e5bd849758da6f4a52583069936a411e1e1d1a",
+  "text": "# Property PdmAdmin\n\n#### PdmAdmin\n\nGets access to the PDM administration, or null if not available.\n\n##### Declaration\n\n```\npublic static IPdmAdmin PdmAdmin { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  IPdmAdmin |   |\n",
+  "markdown": "markdown/kernel/db58f2617104b03311253d39.md",
+  "originalHtml": "html/kernel/db58f2617104b03311253d39.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.MethodExecutionOptions.ReuseAnswers.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.MethodExecutionOptions.ReuseAnswers.html",
+  "sha256": "f5a9d027641f5cece3eaf744d8c13d26df3080c0625c9f6183985d6cf519182e",
+  "text": "# Field ReuseAnswers\n\nRe-use previous answers to the last execution in the session/document.\n\n###### Namespace: TopSolid.Cam.NC.Kernel.Automating\n\n###### Assembly: TopSolid.Cam.NC.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic bool ReuseAnswers\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Re-use previous answers to the last execution in the session/document. |\n",
+  "markdown": "markdown/cam/19a325f5b9f0a056913d63e5.md",
+  "originalHtml": "html/cam/19a325f5b9f0a056913d63e5.html"
+}

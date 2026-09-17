@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IPockets.GetTool.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IPockets.GetTool.html",
+  "sha256": "8e076a56c62c19f84d09e066a887c35926cb9d23f0a9150c5e9c283835de6594",
+  "text": "# Method GetTool\n\n#### GetTool(ElementId)\n\nGets tool in given pocket.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nList<ElementId> GetTool(ElementId inPocketId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inPocketId |  Pocket identifier.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementId> |  Tool found or empty.  |\n",
+  "markdown": "markdown/cam/af1a7c0950a68f1fee04b347.md",
+  "originalHtml": "html/cam/af1a7c0950a68f1fee04b347.html"
+}

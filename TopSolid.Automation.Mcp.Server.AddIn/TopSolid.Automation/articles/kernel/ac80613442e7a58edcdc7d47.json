@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IElements.GetPropertyBooleanValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IElements.GetPropertyBooleanValue.html",
+  "sha256": "38e19c6e43913ec958886b673fd39a8cb1cf8b66189fb0385e9812b589ec71cb",
+  "text": "# Method GetPropertyBooleanValue\n\n#### GetPropertyBooleanValue(ElementId, string)\n\nGets the value of an element Boolean property.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 300, 60)]\nbool GetPropertyBooleanValue(ElementId inElementId, string inFullName)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to analyze.  |  \n \n|  string |  inFullName |  Full name of the element Boolean property to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Value of the property.  |  \n\n##### Remarks\n\nThis method is available since v7.8.300.60.\n",
+  "markdown": "markdown/kernel/ac80613442e7a58edcdc7d47.md",
+  "originalHtml": "html/kernel/ac80613442e7a58edcdc7d47.html"
+}

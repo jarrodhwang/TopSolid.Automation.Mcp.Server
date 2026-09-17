@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Axis3D.Direction.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Axis3D.Direction.html",
+  "sha256": "46b011886959d1c4fde753afc6e2c42c0929669cb881bad19c35058b5c3fc295",
+  "text": "# Field Direction\n\nAxis direction.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic Direction3D Direction\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Direction3D |  Axis direction. |\n",
+  "markdown": "markdown/kernel/ec0f70d856bec4975b65fcf2.md",
+  "originalHtml": "html/kernel/ec0f70d856bec4975b65fcf2.html"
+}

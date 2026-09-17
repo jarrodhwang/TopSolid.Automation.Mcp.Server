@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.PropertyDefinition.Domain.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.PropertyDefinition.Domain.html",
+  "sha256": "b78a02a17320e3ea855bc1a0076240c2c4e10f1e618fe8d86d3fdeb88a535a4e",
+  "text": "# Field Domain\n\nProperty domain, or null if empty.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic string Domain\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  Property domain, or null if empty. |\n",
+  "markdown": "markdown/kernel/3605a20218e4f3a1b567276b.md",
+  "originalHtml": "html/kernel/3605a20218e4f3a1b567276b.html"
+}

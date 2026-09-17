@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IUnits.GetUnitCount.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IUnits.GetUnitCount.html",
+  "sha256": "f82bc652939a2ca8cb090d1641b3c5358cb4304306db99512d9673481c7137be",
+  "text": "# Method GetUnitCount\n\n#### GetUnitCount(UnitType)\n\nGets the number of units of a specified type.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nint GetUnitCount(UnitType inUnitType)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  UnitType |  inUnitType |  Unit type.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  int |  Number of available units.  |  \n\n##### Remarks\n\nThe indexes of the available units go from 0 to Count-1.\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/895d911078d7ade9adff67f5.md",
+  "originalHtml": "html/kernel/895d911078d7ade9adff67f5.html"
+}

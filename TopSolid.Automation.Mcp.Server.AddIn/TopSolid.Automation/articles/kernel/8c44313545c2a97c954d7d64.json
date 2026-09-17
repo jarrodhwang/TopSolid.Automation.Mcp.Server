@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.SetTextValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.SetTextValue.html",
+  "sha256": "6646f91e593d993143a7d01abdf7bd7a7b0ec9556adf6095dbaebefb0ea35ce3",
+  "text": "# Method SetTextValue\n\n#### SetTextValue(ElementId, string)\n\nSets the value of a text parameter.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nvoid SetTextValue(ElementId inElementId, string inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the parameter to modify.  |  \n \n|  string |  inValue |  New value.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/8c44313545c2a97c954d7d64.md",
+  "originalHtml": "html/kernel/8c44313545c2a97c954d7d64.html"
+}

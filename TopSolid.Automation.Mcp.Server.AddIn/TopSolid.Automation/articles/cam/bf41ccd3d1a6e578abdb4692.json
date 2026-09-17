@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IParameters.SetValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IParameters.SetValue.html",
+  "sha256": "d152e759fc2a2765fef5b8d552ee93437fee9ecde23136ed20cfd9435b88fdf4",
+  "text": "# Method SetValue\n\n#### SetValue(ParameterId, SmartObject)\n\nSets the value of the given parameter. The kind of SmartObject is fixed by the ParameterType: SmartInteger for integer parameter, SmartReal for real parameter, et caetera... Bound parameters must be set by the according functions.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 13, 0, 0)]\nbool SetValue(ParameterId inParameterId, SmartObject inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ParameterId |  inParameterId |  Parameter to fix.  |  \n \n|  SmartObject |  inValue |  New value.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  True if the value has been changed. False if the value have not changed.  |  \n\n##### Remarks\n\nWarning : this function is only usable for Real, Int, Bool and Text parameters types. All other types are not available here.\n",
+  "markdown": "markdown/cam/bf41ccd3d1a6e578abdb4692.md",
+  "originalHtml": "html/cam/bf41ccd3d1a6e578abdb4692.html"
+}

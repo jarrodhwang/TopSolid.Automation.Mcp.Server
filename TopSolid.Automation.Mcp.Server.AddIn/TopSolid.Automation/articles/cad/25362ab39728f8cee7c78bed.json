@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ICoatings.SetOpacityTextureDocument.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ICoatings.SetOpacityTextureDocument.html",
+  "sha256": "ad9ae11d432de794cb5c8883743f45944653b716185d72f2115c725f451e02c1",
+  "text": "# Method SetOpacityTextureDocument\n\n#### SetOpacityTextureDocument(DocumentId, DocumentId)\n\nSets the Opacity texture document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 0, 0)]\nvoid SetOpacityTextureDocument(DocumentId inDocumentId, DocumentId inTextureDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  DocumentId |  inTextureDocumentId |  Texture document.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.16.\n",
+  "markdown": "markdown/cad/25362ab39728f8cee7c78bed.md",
+  "originalHtml": "html/cad/25362ab39728f8cee7c78bed.html"
+}

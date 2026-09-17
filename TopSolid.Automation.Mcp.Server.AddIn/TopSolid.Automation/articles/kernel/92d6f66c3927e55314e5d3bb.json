@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.WorkflowActionState.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.WorkflowActionState.html",
+  "sha256": "4f7fae5a51382ac3ca6220f9cbd5ef0248a4db4ad0d2ccd8218d3f8c63d9f8d9",
+  "text": "# Enum WorkflowActionState\n\nDefines the various workflow action states.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 14, 248, 0)]\npublic enum WorkflowActionState\n```\n\n##### Remarks\n\nThis enum is available since v7.14.\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  Accepted |  Accepted.  |  \n \n|  Cancelled |  Cancelled.  |  \n \n|  None |  None.  |  \n \n|  Pending |  Pending.  |  \n \n|  Refused |  Refused.  |\n",
+  "markdown": "markdown/kernel/92d6f66c3927e55314e5d3bb.md",
+  "originalHtml": "html/kernel/92d6f66c3927e55314e5d3bb.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ISimulations.CreateGripChangeTask.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ISimulations.CreateGripChangeTask.html",
+  "sha256": "f4a563b7eb02d0db95a2a6b7ac1cd27cf44f7a56cd886bb42a659f788ad7d2bb",
+  "text": "# Method CreateGripChangeTask\n\n#### CreateGripChangeTask(DocumentId, bool, ElementId, List<ElementId>)\n\nCreates a grip change task in a specified document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nElementId CreateGripChangeTask(DocumentId inDocumentId, bool inIsGripping, ElementId inGrippingRigidGroupId, List<ElementId> inRigidGroupIds)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  bool |  inIsGripping |  Whether the task is gripping, or otherwise dropping.  |  \n \n|  ElementId |  inGrippingRigidGroupId |  Identifier of gripping rigid group.  |  \n \n|  List<ElementId> |  inRigidGroupIds |  Identifiers of rigid groups that are gripped or dropped.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the created task.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/cad/5d72c93caf7b2184cda19423.md",
+  "originalHtml": "html/cad/5d72c93caf7b2184cda19423.html"
+}

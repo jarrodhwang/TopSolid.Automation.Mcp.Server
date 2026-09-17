@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.TopSolidPdmExplorerHost.IsConnected.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.TopSolidPdmExplorerHost.IsConnected.html",
+  "sha256": "7da89cf8f54d06f23a076d4b580cbb9a3fbbc678d59b6dae888e9c6cedac7752",
+  "text": "# Property IsConnected\n\n#### IsConnected\n\nTells whether TopSolid is connected.\n\n##### Declaration\n\n```\npublic static bool IsConnected { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |   |\n",
+  "markdown": "markdown/pdmexplorer/a70c9e570b704392e5375b31.md",
+  "originalHtml": "html/pdmexplorer/a70c9e570b704392e5375b31.html"
+}

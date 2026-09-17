@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartTexture.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartTexture.html",
+  "sha256": "181ba3eb6950ee6a4b31ef2e60d293a0959df57892d29ce30b8a5546aa45cc68",
+  "text": "# Class SmartTexture\n\nRepresents a smart texture.\n\n##### Inheritance\n \nobject\n \nSmartObject\n \nSmartDocument\n \nSmartTexture\n\n##### Inherited Members\n \n SmartDocument.Type \n \n SmartDocument.Document \n \n SmartDocument.ElementId \n \n SmartDocument.ReferenceType \n \n object.ToString() \n \n object.Equals(object) \n \n object.Equals(object, object) \n \n object.ReferenceEquals(object, object) \n \n object.GetHashCode() \n \n object.GetType() \n \n object.MemberwiseClone() \n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 17, 0, 0)]\npublic class SmartTexture : SmartDocument\n```\n\n##### Remarks\n\nThis class is available since v7.17.\n\n### Constructors \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   SmartTexture(DocumentId)  |  Initializes a new instance of the SmartTexture class of type Basic  |  \n \n|   SmartTexture(DocumentId, DocumentReferenceType)  |  Initializes a new instance of the SmartTexture class of type Basic  |  \n \n|   SmartTexture(ElementId)  |  Initializes a new instance of the SmartTexture class of type Element.  |  \n \n|   SmartTexture(ElementId, DocumentReferenceType)  |  Initializes a new instance of the SmartTexture class of type Element.  |\n",
+  "markdown": "markdown/kernel/4cf320c0cf0dcaf9464264ba.md",
+  "originalHtml": "html/kernel/4cf320c0cf0dcaf9464264ba.html"
+}

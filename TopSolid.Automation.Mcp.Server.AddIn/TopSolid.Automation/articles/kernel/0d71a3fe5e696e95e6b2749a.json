@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IFamilies.AddCatalogNewRow.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IFamilies.AddCatalogNewRow.html",
+  "sha256": "3d7b536a089e6b4c847958845c3a5641724beb9a161604c4bbb15874e0454bc3",
+  "text": "# Method AddCatalogNewRow\n\n#### AddCatalogNewRow(DocumentId)\n\nAdd a new row to the catalog cell.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 15, 0, 60)]\nElementId AddCatalogNewRow(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the family document to modify.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Row identifier.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.15.\n",
+  "markdown": "markdown/kernel/0d71a3fe5e696e95e6b2749a.md",
+  "originalHtml": "html/kernel/0d71a3fe5e696e95e6b2749a.html"
+}

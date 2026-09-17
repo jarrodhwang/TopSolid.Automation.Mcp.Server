@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.CreateTextTableParameter.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.CreateTextTableParameter.html",
+  "sha256": "bd7129f5120f59fc4a8dd1a05488fac3a3cbf3168a06f9bf7b52322dd63df109",
+  "text": "# Method CreateTextTableParameter\n\n#### CreateTextTableParameter(DocumentId, SmartReal, List<SmartReal>, List<SmartText>)\n\nCreates a smart text table parameter creation operation in a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 18, 0, 0)]\nElementId CreateTextTableParameter(DocumentId inDocumentId, SmartReal inSmartReal, List<SmartReal> inSourceSmartRealList, List<SmartText> inResultSmartTextList)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  SmartReal |  inSmartReal |  Smart real value.  |  \n \n|  List<SmartReal> |  inSourceSmartRealList |  Smart real source values.  |  \n \n|  List<SmartText> |  inResultSmartTextList |  Smart text result values.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the created operation  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.18.\n",
+  "markdown": "markdown/kernel/f6b97c3a013690be9813633a.md",
+  "originalHtml": "html/kernel/f6b97c3a013690be9813633a.html"
+}

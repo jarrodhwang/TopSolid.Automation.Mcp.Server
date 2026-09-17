@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.PdmSecurityUserOrGroupPermissions.-ctor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.PdmSecurityUserOrGroupPermissions.-ctor.html",
+  "sha256": "f1ad7c1b94a937062bc05c58ea4bd5e1fd600a47a5576f0ee0b2ed29e02f90d4",
+  "text": "# Constructor PdmSecurityUserOrGroupPermissions\n\n#### PdmSecurityUserOrGroupPermissions(string)\n\nInitializes a new instance of the PdmSecurityUserOrGroupPermissions structure with a specified user.\n\n##### Declaration\n\n```\npublic PdmSecurityUserOrGroupPermissions(string inAccountId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  string |  inAccountId |  User account identifier to create permissions on.  |  \n\n#### PdmSecurityUserOrGroupPermissions(PdmObjectId)\n\nInitializes a new instance of the PdmSecurityUserOrGroupPermissions structure with a specified user group.\n\n##### Declaration\n\n```\npublic PdmSecurityUserOrGroupPermissions(PdmObjectId inUserGroupId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inUserGroupId |  User group identifier to create permissions on.  |\n",
+  "markdown": "markdown/pdmexplorer/e9dee18452d00fd9974e44ac.md",
+  "originalHtml": "html/pdmexplorer/e9dee18452d00fd9974e44ac.html"
+}

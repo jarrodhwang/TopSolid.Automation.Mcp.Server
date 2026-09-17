@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ItemLabel.Frame2DOrigin.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ItemLabel.Frame2DOrigin.html",
+  "sha256": "470ea4982b81b777c9d458d2afddffa090331bb24fc7790dd900070308232a76",
+  "text": "# Field Frame2DOrigin\n\nLabel of 2D frame origin.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\npublic static readonly ItemLabel Frame2DOrigin\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ItemLabel |  Label of 2D frame origin. |\n",
+  "markdown": "markdown/kernel/6e154c33f7ddeb73f0b2a81d.md",
+  "originalHtml": "html/kernel/6e154c33f7ddeb73f0b2a81d.html"
+}

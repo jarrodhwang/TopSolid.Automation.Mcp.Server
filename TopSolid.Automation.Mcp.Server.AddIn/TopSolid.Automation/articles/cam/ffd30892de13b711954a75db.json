@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IVerify.SetIncrement.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IVerify.SetIncrement.html",
+  "sha256": "0f5e04c3b30e85454db99fb6db395cdd379086ef74ff3a46f238013416c6b080",
+  "text": "# Method SetIncrement\n\n#### SetIncrement(int)\n\nSet the move increment. Between 0 and 100. This is a factor to an absolute increment in millimeters (or inch).\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nvoid SetIncrement(int inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  int |  inValue |   |\n",
+  "markdown": "markdown/cam/ffd30892de13b711954a75db.md",
+  "originalHtml": "html/cam/ffd30892de13b711954a75db.html"
+}

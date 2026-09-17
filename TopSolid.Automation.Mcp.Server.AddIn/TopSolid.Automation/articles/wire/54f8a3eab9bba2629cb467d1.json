@@ -1,0 +1,8 @@
+{
+  "path": "api/wire/TopSolid.Cam.NC.Wire.Automating.IWireTechnologies.RemoveAllWireCuttingConditions.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/wire/TopSolid.Cam.NC.Wire.Automating.IWireTechnologies.RemoveAllWireCuttingConditions.html",
+  "sha256": "2ef7c8a5355a3ead4c23c730323cf3c1cfcaae580ef1a5a63fbc8ea09b29debe",
+  "text": "# Method RemoveAllWireCuttingConditions\n\n#### RemoveAllWireCuttingConditions(ElementId)\n\nAdd a wire cutting conditions entity in a wire technology.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 160)]\nvoid RemoveAllWireCuttingConditions(ElementId inTechnologyId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inTechnologyId |  Identifier of the wire technology to modify.  |\n",
+  "markdown": "markdown/wire/54f8a3eab9bba2629cb467d1.md",
+  "originalHtml": "html/wire/54f8a3eab9bba2629cb467d1.html"
+}

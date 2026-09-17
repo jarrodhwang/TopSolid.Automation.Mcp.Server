@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.PropertyDefinition.Equals.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.PropertyDefinition.Equals.html",
+  "sha256": "0c4b4196bdb5c0f287c99a5dd3e385aaebe91576145f0da4f184219792c91b9f",
+  "text": "# Method Equals\n\n#### Equals(object)\n\n##### Declaration\n\n```\npublic override bool Equals(object inObject)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  object |  inObject |   |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |   |  \n\n##### Overrides\n \nValueType.Equals(object)\n\n#### Equals(PropertyDefinition)\n\n##### Declaration\n\n```\npublic bool Equals(PropertyDefinition other)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PropertyDefinition |  other |   |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |   |  \n\n##### Implements\n \nIEquatable<T>.Equals(T)\n",
+  "markdown": "markdown/kernel/a43a3ef81d39bc05f86c80a7.md",
+  "originalHtml": "html/kernel/a43a3ef81d39bc05f86c80a7.html"
+}

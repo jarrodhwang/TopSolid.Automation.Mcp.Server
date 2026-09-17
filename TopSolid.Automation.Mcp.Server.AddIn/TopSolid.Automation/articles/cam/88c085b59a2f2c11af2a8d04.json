@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IDocuments.GetParts.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IDocuments.GetParts.html",
+  "sha256": "066ce48be1b7d9ee9bf47c723adca6b60ca3957b5d0337f0acbbb001f7ccef04",
+  "text": "# Method GetParts\n\n#### GetParts(DocumentId)\n\nGet the list of machining parts in the document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nList<ElementId> GetParts(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementId> |  List of all machining parts.  |\n",
+  "markdown": "markdown/cam/88c085b59a2f2c11af2a8d04.md",
+  "originalHtml": "html/cam/88c085b59a2f2c11af2a8d04.html"
+}

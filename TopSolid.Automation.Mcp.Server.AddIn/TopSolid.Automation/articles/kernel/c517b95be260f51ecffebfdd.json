@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ItemLabel.Equals.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ItemLabel.Equals.html",
+  "sha256": "003d307e875e7ceb4f78f2fc82690bf2e0d6451adc32d9457fb834c1ef6d5021",
+  "text": "# Method Equals\n\n#### Equals(object)\n\n##### Declaration\n\n```\npublic override bool Equals(object inObject)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  object |  inObject |   |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |   |  \n\n##### Overrides\n \nValueType.Equals(object)\n\n#### Equals(ItemLabel)\n\n##### Declaration\n\n```\npublic bool Equals(ItemLabel other)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ItemLabel |  other |   |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |   |  \n\n##### Implements\n \nIEquatable<T>.Equals(T)\n",
+  "markdown": "markdown/kernel/c517b95be260f51ecffebfdd.md",
+  "originalHtml": "html/kernel/c517b95be260f51ecffebfdd.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.TopSolidCamHost.ToolPath.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.TopSolidCamHost.ToolPath.html",
+  "sha256": "ab65ecee80f0a024c316c9c2aab2823c3eaba6b167160fc21634d046e32c60d2",
+  "text": "# Property ToolPath\n\n#### ToolPath\n\nGets access to operation tool path, or null if not connected.\n\n##### Declaration\n\n```\npublic static IToolPath ToolPath { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  IToolPath |   |\n",
+  "markdown": "markdown/cam/443d8a496b55d30f6c8bcbee.md",
+  "originalHtml": "html/cam/443d8a496b55d30f6c8bcbee.html"
+}

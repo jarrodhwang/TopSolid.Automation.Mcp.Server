@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IOperations.SetInsertionOperation.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IOperations.SetInsertionOperation.html",
+  "sha256": "c1c4f652b202600e5368d278267faae879912cbf15e857e5b03df69dbe7a83a8",
+  "text": "# Method SetInsertionOperation\n\n#### SetInsertionOperation(ElementId)\n\nSets the insertion operation of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nvoid SetInsertionOperation(ElementId inOperationId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inOperationId |  Identifier of new insertion operation.  |  \n\n##### Remarks\n\nNew operations are created before the insertion operation.\n \nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.8.\n",
+  "markdown": "markdown/kernel/a13f1c5127f7303f5c1fe54c.md",
+  "originalHtml": "html/kernel/a13f1c5127f7303f5c1fe54c.html"
+}

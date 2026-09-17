@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IParameters.GetFullName.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IParameters.GetFullName.html",
+  "sha256": "d2364ff5f4391e65110a67cc3efa4db648b6206690b6d63e6e268299a481a6cd",
+  "text": "# Method GetFullName\n\n#### GetFullName(ParameterId)\n\nGets the full name with categories, of a Cam operation parameter.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nstring GetFullName(ParameterId inParameterId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ParameterId |  inParameterId |  Identifier of the parameter to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  Full name of the parameter, with categories. The type of the operation is added as a new category.  |\n",
+  "markdown": "markdown/cam/d1bfc26599e41fe7100ed816.md",
+  "originalHtml": "html/cam/d1bfc26599e41fe7100ed816.html"
+}

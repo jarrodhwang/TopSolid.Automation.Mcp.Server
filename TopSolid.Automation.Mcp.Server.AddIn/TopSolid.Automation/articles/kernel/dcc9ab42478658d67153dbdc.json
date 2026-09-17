@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartEnumeration.EnumGuid.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartEnumeration.EnumGuid.html",
+  "sha256": "81c7921393cfe3e626c5a8dd640140100f4c88c15b992a7a657fd93d515be1c3",
+  "text": "# Field EnumGuid\n\nEnumeration GUID.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic Guid EnumGuid\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Guid |  Enumeration GUID. |\n",
+  "markdown": "markdown/kernel/dcc9ab42478658d67153dbdc.md",
+  "originalHtml": "html/kernel/dcc9ab42478658d67153dbdc.html"
+}

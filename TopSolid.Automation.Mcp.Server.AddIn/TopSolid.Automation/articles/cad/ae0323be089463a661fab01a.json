@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IParts.SetMachiningProcessOperationToleranceDriverValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IParts.SetMachiningProcessOperationToleranceDriverValue.html",
+  "sha256": "9059dc91fbbff045bc13e11be42ffa1e4750113be48017aa11646653ae63465b",
+  "text": "# Method SetMachiningProcessOperationToleranceDriverValue\n\n#### SetMachiningProcessOperationToleranceDriverValue(ElementId, string, ElementId)\n\nSets a machining process point driver value\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 0, 0)]\nvoid SetMachiningProcessOperationToleranceDriverValue(ElementId inElementId, string inDesignation, ElementId inTolerance)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Existing machining Process Operation  |  \n \n|  string |  inDesignation |  Driver designations  |  \n \n|  ElementId |  inTolerance |  Tolerance  |  \n\n##### Remarks\n\nThis method is available since v7.19.\n",
+  "markdown": "markdown/cad/ae0323be089463a661fab01a.md",
+  "originalHtml": "html/cad/ae0323be089463a661fab01a.html"
+}

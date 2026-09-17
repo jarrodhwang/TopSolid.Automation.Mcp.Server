@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ISketches2D.MakeSegmentNotConstruction.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ISketches2D.MakeSegmentNotConstruction.html",
+  "sha256": "bc2615dffb20369191c69aa9d4b349125907736770173a6da8c7d609d35dedb0",
+  "text": "# Method MakeSegmentNotConstruction\n\n#### MakeSegmentNotConstruction(ElementItemId)\n\nMakes a segment not construction in the ModifiedSketch.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 201, 80)]\nvoid MakeSegmentNotConstruction(ElementItemId inSegmentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementItemId |  inSegmentId |  Identifier of the segment to modify.  |  \n\n##### Remarks\n\nStartModification(ElementId) must be called before calling this method.\n \nThis method is available since v7.7.201.80.\n",
+  "markdown": "markdown/kernel/a8a70611f9980c1b364a3745.md",
+  "originalHtml": "html/kernel/a8a70611f9980c1b364a3745.html"
+}

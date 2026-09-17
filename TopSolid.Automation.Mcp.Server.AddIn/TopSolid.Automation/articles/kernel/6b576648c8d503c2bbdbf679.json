@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IApplication.ExporterCount.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IApplication.ExporterCount.html",
+  "sha256": "b05c7c3497ea951030eb3c54f98d2a7608002a5b9b3406c0e82649c1b1bf3e98",
+  "text": "# Property ExporterCount\n\n#### ExporterCount\n\nGets the number of available document exporters.\n\n##### Declaration\n\n```\n[AvailableSinceVersion(7, 6, 0, 0)]\nint ExporterCount { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  int |   |  \n\n##### Remarks\n\nThis property is available since v7.6.\n",
+  "markdown": "markdown/kernel/6b576648c8d503c2bbdbf679.md",
+  "originalHtml": "html/kernel/6b576648c8d503c2bbdbf679.html"
+}

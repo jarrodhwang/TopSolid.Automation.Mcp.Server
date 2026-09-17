@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IErp.GetReferencingDraftDocuments.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IErp.GetReferencingDraftDocuments.html",
+  "sha256": "4685c54bdc8af961fa8a3a3c85e8f0e8a0a70855c54cb140054e1cc065b27bcc",
+  "text": "# Method GetReferencingDraftDocuments\n\n#### GetReferencingDraftDocuments(ErpPdmId)\n\nGets referencing drafting documents of an erp pdm object\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 222, 80)]\nList<ErpPdmId> GetReferencingDraftDocuments(ErpPdmId inPdmId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ErpPdmId |  inPdmId |  Erp identifier of the object  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ErpPdmId> |  referecing draft documents, as Erp pdm Objects.  |\n",
+  "markdown": "markdown/pdmexplorer/edde20eebc282267a8d6b86f.md",
+  "originalHtml": "html/pdmexplorer/edde20eebc282267a8d6b86f.html"
+}

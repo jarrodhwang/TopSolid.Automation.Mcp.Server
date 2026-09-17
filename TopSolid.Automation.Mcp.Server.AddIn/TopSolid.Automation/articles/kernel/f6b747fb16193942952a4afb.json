@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.SetName.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.SetName.html",
+  "sha256": "8ce9ef6a8b79a3cd1908040eaf4c7aad2547ecf34a85f2606f393c4366f0dad6",
+  "text": "# Method SetName\n\n#### SetName(PdmObjectId, string)\n\nSets the name of an object.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 303, 100)]\nvoid SetName(PdmObjectId inObjectId, string inName)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  Object identifier.  |  \n \n|  string |  inName |  Name.  |  \n\n##### Remarks\n\nThis method is available since v7.8.303.100.\n",
+  "markdown": "markdown/kernel/f6b747fb16193942952a4afb.md",
+  "originalHtml": "html/kernel/f6b747fb16193942952a4afb.html"
+}

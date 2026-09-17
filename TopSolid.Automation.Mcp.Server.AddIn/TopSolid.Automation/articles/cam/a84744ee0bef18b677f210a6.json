@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.MethodExecutionOptions.-ctor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.MethodExecutionOptions.-ctor.html",
+  "sha256": "10a645a6f060aabfdd7b9892b26044f00c098ac6e2c9abfd3e982c1dedb49386",
+  "text": "# Constructor MethodExecutionOptions\n\n#### MethodExecutionOptions(bool, bool, bool, bool, bool)\n\nInitializes a new instance of a MethodExecutionOptions class.\n\n##### Declaration\n\n```\npublic MethodExecutionOptions(bool inLaunchDeferred, bool inKeepAssociativity, bool inManualExecution, bool inUseCuttingConditions, bool inReuseAnswers)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  bool |  inLaunchDeferred |  if set to true [in launch deferred].  |  \n \n|  bool |  inKeepAssociativity |  if set to true [in keep associativity].  |  \n \n|  bool |  inManualExecution |  if set to true [in manual execution].  |  \n \n|  bool |  inUseCuttingConditions |  if set to true [in use cutting conditions].  |  \n \n|  bool |  inReuseAnswers |  if set to true [in reuse answers].  |\n",
+  "markdown": "markdown/cam/a84744ee0bef18b677f210a6.md",
+  "originalHtml": "html/cam/a84744ee0bef18b677f210a6.html"
+}

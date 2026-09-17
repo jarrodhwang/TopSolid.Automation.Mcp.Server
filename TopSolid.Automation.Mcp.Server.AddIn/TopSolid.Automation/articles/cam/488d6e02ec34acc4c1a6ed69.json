@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IStaticOperations.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IStaticOperations.html",
+  "sha256": "c4e2d87df9d6bf07fe45434310db4fad81204fb008d7bee97188dd5ab1199931",
+  "text": "# Interface IStaticOperations\n\nManages creation of static operations.\n\n###### Namespace: TopSolid.Cam.NC.Kernel.Automating\n\n###### Assembly: TopSolid.Cam.NC.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[ServiceContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\npublic interface IStaticOperations\n```\n\n### Methods \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   AddPoint(ElementExId, PathPoint)  |  Adds one point to the tool path.  |  \n \n|   AddPointRange(ElementExId, List<PathPoint>)  |  Adds a point list to the tool path  |  \n \n|   Create(ref ElementExId)  |  Creates a static operation in a document.  |  \n \n|   IsStaticOperation(ElementExId)  |  Tells whether an operation is a Static operation.  |  \n \n|   New(DocumentId, SmartText, ElementId, ElementId, ElementId, MotionType)  |  Allocates a new Static Operation.  |  \n \n|   SetStartingCuttingConditions(ElementExId, SmartReal, SmartReal)  |  Sets the starting cutting conditions.  |\n",
+  "markdown": "markdown/cam/488d6e02ec34acc4c1a6ed69.md",
+  "originalHtml": "html/cam/488d6e02ec34acc4c1a6ed69.html"
+}

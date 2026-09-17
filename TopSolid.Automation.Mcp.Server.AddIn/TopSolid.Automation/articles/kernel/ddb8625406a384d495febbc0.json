@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IApplication.IsWindowMinimized.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IApplication.IsWindowMinimized.html",
+  "sha256": "4cf6e56e3317166de092018c4b3279d1dcb0cb25faeddc48bc6e03a967eb6bf5",
+  "text": "# Property IsWindowMinimized\n\n#### IsWindowMinimized\n\nTells whether the application window is minimized.\n\n##### Declaration\n\n```\n[AvailableSinceVersion(7, 7, 0, 0)]\nbool IsWindowMinimized { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |   |  \n\n##### Remarks\n\nThis property is available since v7.7.\n",
+  "markdown": "markdown/kernel/ddb8625406a384d495febbc0.md",
+  "originalHtml": "html/kernel/ddb8625406a384d495febbc0.html"
+}

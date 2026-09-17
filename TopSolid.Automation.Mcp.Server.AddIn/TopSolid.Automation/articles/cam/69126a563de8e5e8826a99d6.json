@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IMachineTools.IsMachineTool.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IMachineTools.IsMachineTool.html",
+  "sha256": "7f67e28b6dd5410a7234d41add71f0ce6653d1e3311ce6383ad30cfc5e885a95",
+  "text": "# Method IsMachineTool\n\n#### IsMachineTool(ElementId)\n\nTells whether an element is a machine.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nbool IsMachineTool(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  True if the element is a machine tool.  |\n",
+  "markdown": "markdown/cam/69126a563de8e5e8826a99d6.md",
+  "originalHtml": "html/cam/69126a563de8e5e8826a99d6.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.DocumentProperty.-ctor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.DocumentProperty.-ctor.html",
+  "sha256": "163acfa6f2520b9de40f48d136aaa1c3ab468e39ecc139eb532db6e54a617741",
+  "text": "# Constructor DocumentProperty\n\n#### DocumentProperty(DocumentId)\n\nInitializes a new instance of the DocumentProperty class.\n\n##### Declaration\n\n```\npublic DocumentProperty(DocumentId inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inValue |  Value.  |\n",
+  "markdown": "markdown/kernel/2f47cbc3e1a51f40f7341a53.md",
+  "originalHtml": "html/kernel/2f47cbc3e1a51f40f7341a53.html"
+}

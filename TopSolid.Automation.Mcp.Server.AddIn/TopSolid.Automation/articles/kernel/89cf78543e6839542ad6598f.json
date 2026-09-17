@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.GetLatestRevision.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.GetLatestRevision.html",
+  "sha256": "662c4a4c5c15bffb53cf070204cec28c76ac7e05c927a9d8b854e1132c6ce6ed",
+  "text": "# Method GetLatestRevision\n\n#### GetLatestRevision(PdmObjectId)\n\nGets latest revision of specified object and of its children.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 201, 180)]\nvoid GetLatestRevision(PdmObjectId inObjectId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  Identifier of object to update.  |  \n\n##### Remarks\n\nThis method must not be called between StartModification(string, bool) and EndModification(bool, bool) methods calls.\n \nThis method is available since v7.7.201.180.\n",
+  "markdown": "markdown/kernel/89cf78543e6839542ad6598f.md",
+  "originalHtml": "html/kernel/89cf78543e6839542ad6598f.html"
+}

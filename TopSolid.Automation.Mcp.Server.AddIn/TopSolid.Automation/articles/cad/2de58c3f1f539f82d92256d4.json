@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ICoatings.SetCoatingApperanceInfo.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ICoatings.SetCoatingApperanceInfo.html",
+  "sha256": "526cb51496d0bcc0648753f3fb0bad0364e8b01dc77a026fcc17c41168672ec0",
+  "text": "# Method SetCoatingApperanceInfo\n\n#### SetCoatingApperanceInfo(DocumentId, bool, bool, bool, bool)\n\nSets the coating apperance information.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 0, 0)]\nvoid SetCoatingApperanceInfo(DocumentId inDocumentId, bool inReceiveShadows, bool inCastShadows, bool inFresnelReflection, bool inTransparentReflection)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  bool |  inReceiveShadows |  Tells wether the coating receive shadows.  |  \n \n|  bool |  inCastShadows |  Tells wether the coating cast shadows.  |  \n \n|  bool |  inFresnelReflection |  Tells wether the coating has a frenesl reflection.  |  \n \n|  bool |  inTransparentReflection |  Tells wether the coating has transparent reflection.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.16.\n",
+  "markdown": "markdown/cad/2de58c3f1f539f82d92256d4.md",
+  "originalHtml": "html/cad/2de58c3f1f539f82d92256d4.html"
+}

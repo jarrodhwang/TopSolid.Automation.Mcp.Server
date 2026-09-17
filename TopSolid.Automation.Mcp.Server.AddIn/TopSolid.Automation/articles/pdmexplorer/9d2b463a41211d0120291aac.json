@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdmVisualization.GetViews.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdmVisualization.GetViews.html",
+  "sha256": "6537ca76351bcfbf26df39c1ec3d9c29f0b10fdc1452b5fbce35ea477c6cb3b1",
+  "text": "# Method GetViews\n\n#### GetViews(PdmMinorRevisionId)\n\nGets the graphic views of a PdmObject.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 222, 0)]\nList<int> GetViews(PdmMinorRevisionId inMinorRevisionId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmMinorRevisionId |  inMinorRevisionId |  Identifier of the Minor revision to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<int> |  Identifiers of the graphic views of the document.  |  \n\n##### Remarks\n\nThis method is available since v7.20.\n",
+  "markdown": "markdown/pdmexplorer/9d2b463a41211d0120291aac.md",
+  "originalHtml": "html/pdmexplorer/9d2b463a41211d0120291aac.html"
+}

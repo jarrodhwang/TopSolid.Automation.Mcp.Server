@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMaterials.SetGlossinessFactor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMaterials.SetGlossinessFactor.html",
+  "sha256": "52814012f643650ff75000edb576d626a5280900f3950173e0811d4721cf0ca5",
+  "text": "# Method SetGlossinessFactor\n\n#### SetGlossinessFactor(DocumentId, double)\n\nSets Glossiness Factor\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 400, 120)]\nvoid SetGlossinessFactor(DocumentId inDocumentId, double inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Id of the container document  |  \n \n|  double |  inValue |  The value to use  |\n",
+  "markdown": "markdown/cad/23dff96264e625b5b012ebd2.md",
+  "originalHtml": "html/cad/23dff96264e625b5b012ebd2.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Vector3D.op_Explicit.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Vector3D.op_Explicit.html",
+  "sha256": "70f134024914e4a3e081aa720d8805b4c4a89200046c0465b1b0b22b9e9a66c4",
+  "text": "# Operator explicit operator\n\n#### explicit operator Direction3D(Vector3D)\n\nCasts a vector into a direction.\n\n##### Declaration\n\n```\npublic static explicit operator Direction3D(Vector3D inVector)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  Vector3D |  inVector |   |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Direction3D |   |\n",
+  "markdown": "markdown/kernel/4c871b6f445322d2af23a0e8.md",
+  "originalHtml": "html/kernel/4c871b6f445322d2af23a0e8.html"
+}

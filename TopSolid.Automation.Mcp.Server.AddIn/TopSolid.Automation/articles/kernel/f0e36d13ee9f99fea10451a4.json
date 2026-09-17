@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Color.Violet.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Color.Violet.html",
+  "sha256": "65b776393d7d21ab2963156c3361bf70bfa408a0d3f5794db8219ca5f2833e03",
+  "text": "# Field Violet\n\nViolet color.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\npublic static readonly Color Violet\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Color |  Violet color. |\n",
+  "markdown": "markdown/kernel/f0e36d13ee9f99fea10451a4.md",
+  "originalHtml": "html/kernel/f0e36d13ee9f99fea10451a4.html"
+}

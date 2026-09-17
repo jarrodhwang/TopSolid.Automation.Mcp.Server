@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.TopSolidCamHostInstance.NCPostProcessor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.TopSolidCamHostInstance.NCPostProcessor.html",
+  "sha256": "f93a119b118aaad7734b2df5311d8a5f05c4fa1a96ab9a92246759a5e92c6434",
+  "text": "# Property NCPostProcessor\n\n#### NCPostProcessor\n\nGets access to NC post-processor, or null if not connected.\n\n##### Declaration\n\n```\npublic INCPostProcessor NCPostProcessor { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  INCPostProcessor |   |\n",
+  "markdown": "markdown/cam/7bd76c3f533859b9b6efae10.md",
+  "originalHtml": "html/cam/7bd76c3f533859b9b6efae10.html"
+}

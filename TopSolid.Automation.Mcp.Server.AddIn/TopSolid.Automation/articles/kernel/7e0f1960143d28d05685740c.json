@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IOperations.GetInitialStage.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IOperations.GetInitialStage.html",
+  "sha256": "6be4d1b393dccfb2dee8e9bfa44d718eaf987f95f41a18f29cb1a46c2f0ca836",
+  "text": "# Method GetInitialStage\n\n#### GetInitialStage(DocumentId)\n\nGets the initial stage operation of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nElementId GetInitialStage(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the initial stage operation.  |  \n\n##### Remarks\n\nThis method is available since v7.8.\n",
+  "markdown": "markdown/kernel/7e0f1960143d28d05685740c.md",
+  "originalHtml": "html/kernel/7e0f1960143d28d05685740c.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Property.-ctor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Property.-ctor.html",
+  "sha256": "fb917c6213bc672be57679b1b2705403d6d337c0971baa32b9da431d79182471",
+  "text": "# Constructor Property\n\n#### Property()\n\n##### Declaration\n\n```\nprotected Property()\n```\n",
+  "markdown": "markdown/kernel/e129b8702c3a539ed19ea350.md",
+  "originalHtml": "html/kernel/e129b8702c3a539ed19ea350.html"
+}

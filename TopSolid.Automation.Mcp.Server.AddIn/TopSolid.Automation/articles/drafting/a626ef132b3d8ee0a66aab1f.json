@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.ITables.GetDraftTableSplitCellColumnCount.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.ITables.GetDraftTableSplitCellColumnCount.html",
+  "sha256": "8f77bb9c0484a6993cad142b03524861261f719900b2ca2f524ec73cf0c768f8",
+  "text": "# Method GetDraftTableSplitCellColumnCount\n\n#### GetDraftTableSplitCellColumnCount(ElementId, int, int)\n\nGets the split cell column count.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 14, 300, 140)]\nint GetDraftTableSplitCellColumnCount(ElementId inElementId, int inColumnIdx, int inRowIdx)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the entity to analyze.  |  \n \n|  int |  inColumnIdx |  Index of the column.  |  \n \n|  int |  inRowIdx |  Index of the row.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  int |  Count of cell of a split cell.  |  \n\n##### Remarks\n\nThis method is available since v7.14.300.140.\n",
+  "markdown": "markdown/drafting/a626ef132b3d8ee0a66aab1f.md",
+  "originalHtml": "html/drafting/a626ef132b3d8ee0a66aab1f.html"
+}

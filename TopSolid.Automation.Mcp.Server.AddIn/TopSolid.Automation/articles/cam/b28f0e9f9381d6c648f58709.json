@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.TopSolidCamHostInstance.Operations.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.TopSolidCamHostInstance.Operations.html",
+  "sha256": "bfcf1dc7cd39f160bfa3a94bb712c0c10a8ecda79595f4925f720b29bb248248",
+  "text": "# Property Operations\n\n#### Operations\n\nGets access to operations, or null if not connected.\n\n##### Declaration\n\n```\npublic IOperations Operations { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  IOperations |   |\n",
+  "markdown": "markdown/cam/b28f0e9f9381d6c648f58709.md",
+  "originalHtml": "html/cam/b28f0e9f9381d6c648f58709.html"
+}

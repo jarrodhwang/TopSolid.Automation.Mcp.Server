@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMechanisms.GetForces.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMechanisms.GetForces.html",
+  "sha256": "98027d0c6218008dded457d23f32b204043f5d6ee557da473516867d99169ccd",
+  "text": "# Method GetForces\n\n#### GetForces(DocumentId)\n\nGets the forces entities that are in the forces folder of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nList<ElementId> GetForces(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementId> |  Forces entities found.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/cad/f86c9dac017f38dd16bac298.md",
+  "originalHtml": "html/cad/f86c9dac017f38dd16bac298.html"
+}

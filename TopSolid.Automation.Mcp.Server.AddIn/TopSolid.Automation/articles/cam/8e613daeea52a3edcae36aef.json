@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.SolidType.-ctor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.SolidType.-ctor.html",
+  "sha256": "f7d0b2a449e566108f4b6136206df49e5953ec1de5a57addb5a72aefad6d65ff",
+  "text": "# Constructor SolidType\n\n#### SolidType()\n\n##### Declaration\n\n```\nprotected SolidType()\n```\n",
+  "markdown": "markdown/cam/8e613daeea52a3edcae36aef.md",
+  "originalHtml": "html/cam/8e613daeea52a3edcae36aef.html"
+}

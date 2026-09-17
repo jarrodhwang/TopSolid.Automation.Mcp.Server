@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IClassifications.CreateSubclass.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IClassifications.CreateSubclass.html",
+  "sha256": "1a263e1b91a68d3fc912890a1bad9e70df243367a303b2ffc2e96a26fe78d1e2",
+  "text": "# Method CreateSubclass\n\n#### CreateSubclass(ElementId, string, string, string)\n\nCreates a class entity as a subclass of a higher level class entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nElementId CreateSubclass(ElementId inElementId, string inDescription, string inCode, string inComment)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the higher level class entity to modify.  |  \n \n|  string |  inDescription |  Class description.  |  \n \n|  string |  inCode |  Class code, or empty string if none.  |  \n \n|  string |  inComment |  Class comment, or empty string if none.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the created class entity.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThe classification document must contain enough level entities otherwise an exception is thrown.\n \nThis method is available since v7.10.\n",
+  "markdown": "markdown/kernel/11320a5381360845d7d80a9e.md",
+  "originalHtml": "html/kernel/11320a5381360845d7d80a9e.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.TopSolidPdmExplorerHostInstance.Arguments.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.TopSolidPdmExplorerHostInstance.Arguments.html",
+  "sha256": "636c7270f513d67e4f51b363e1eff0d7b9abe4ef1eaceac7a7b42cd180c5b277",
+  "text": "# Property Arguments\n\n#### Arguments\n\nGets or sets the arguments to declare to the process when the process needs to be started. To set before the call to the Connect() methods.\n\n##### Declaration\n\n```\npublic string Arguments { get; set; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |   |\n",
+  "markdown": "markdown/pdmexplorer/c50914a1bc86489eb920cd97.md",
+  "originalHtml": "html/pdmexplorer/c50914a1bc86489eb920cd97.html"
+}

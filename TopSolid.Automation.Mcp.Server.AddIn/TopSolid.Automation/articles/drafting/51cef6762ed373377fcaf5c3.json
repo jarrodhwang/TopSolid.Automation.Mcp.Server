@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.IAnnotations.GetSurfaceFinishItemTextValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.IAnnotations.GetSurfaceFinishItemTextValue.html",
+  "sha256": "2a3220a1c7d711474980deecdf99e35ffadb3cd7454174ee30a5e93ebcbc6844",
+  "text": "# Method GetSurfaceFinishItemTextValue\n\n#### GetSurfaceFinishItemTextValue(ElementItemId)\n\nGets the surface finish item text value of an item of a surface finish annotation entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 17, 0, 0)]\nstring GetSurfaceFinishItemTextValue(ElementItemId inElementItemId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementItemId |  inElementItemId |  Identifier of the element item to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  The text value.  |  \n\n##### Remarks\n\nThis method is available since v7.17.\n",
+  "markdown": "markdown/drafting/51cef6762ed373377fcaf5c3.md",
+  "originalHtml": "html/drafting/51cef6762ed373377fcaf5c3.html"
+}

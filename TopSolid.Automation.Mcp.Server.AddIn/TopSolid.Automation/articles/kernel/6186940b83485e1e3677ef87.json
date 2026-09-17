@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IGeometries3D.GetPlanePublishingDefinition.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IGeometries3D.GetPlanePublishingDefinition.html",
+  "sha256": "b1566cc17d6bd97122fe3e1c4b7cac257aa7e6997ff059f1cff5520d1b42f633",
+  "text": "# Method GetPlanePublishingDefinition\n\n#### GetPlanePublishingDefinition(ElementId)\n\nGets the definition of a plane publishing entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nSmartPlane3D GetPlanePublishingDefinition(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the publishing entity to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartPlane3D |   |  \n\n##### Remarks\n\nThe geometry of the publishing entity may be obtained with the GetPlaneGeometry(ElementId) method.\n \nThis method is available since v7.8.\n",
+  "markdown": "markdown/kernel/6186940b83485e1e3677ef87.md",
+  "originalHtml": "html/kernel/6186940b83485e1e3677ef87.html"
+}

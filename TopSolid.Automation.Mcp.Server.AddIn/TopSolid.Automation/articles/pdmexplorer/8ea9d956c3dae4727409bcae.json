@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.GetState.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.GetState.html",
+  "sha256": "f2a4894f1d87d0e33d22ec3dda68a955032b3bd92be522dc756047fe3ef11975",
+  "text": "# Method GetState\n\n#### GetState(PdmObjectId)\n\nGets the state of an object.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nPdmObjectState GetState(PdmObjectId inObjectId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  Object identifier.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  PdmObjectState |  Object state.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/pdmexplorer/8ea9d956c3dae4727409bcae.md",
+  "originalHtml": "html/pdmexplorer/8ea9d956c3dae4727409bcae.html"
+}

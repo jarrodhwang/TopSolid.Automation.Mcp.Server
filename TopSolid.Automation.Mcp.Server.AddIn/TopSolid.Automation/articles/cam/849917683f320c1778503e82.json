@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IStaticOperations.IsStaticOperation.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IStaticOperations.IsStaticOperation.html",
+  "sha256": "b1772efd6b1c6b7691b75a8957c440da95d2369c8f887d95eeba0f3dd209b0e8",
+  "text": "# Method IsStaticOperation\n\n#### IsStaticOperation(ElementExId)\n\nTells whether an operation is a Static operation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nbool IsStaticOperation(ElementExId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementExId |  inElementId |  Identifier of the operation to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  True if the operation is a Static operation.  |\n",
+  "markdown": "markdown/cam/849917683f320c1778503e82.md",
+  "originalHtml": "html/cam/849917683f320c1778503e82.html"
+}

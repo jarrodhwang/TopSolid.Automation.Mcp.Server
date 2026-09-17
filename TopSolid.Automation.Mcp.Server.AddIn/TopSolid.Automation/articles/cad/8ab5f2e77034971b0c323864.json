@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMultiLayer.GetBottomCoating.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMultiLayer.GetBottomCoating.html",
+  "sha256": "5a9d3f8583e797ee6bc5e30ba742b888f292b33874cc0a545814e93d0a7e25f6",
+  "text": "# Method GetBottomCoating\n\n#### GetBottomCoating(DocumentId)\n\nGets the multi layer bottom coating\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 0, 0)]\nSmartCoating GetBottomCoating(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartCoating |  Null if not set or bottom as top  |  \n\n##### Remarks\n\nThis method is available since v7.19.\n",
+  "markdown": "markdown/cad/8ab5f2e77034971b0c323864.md",
+  "originalHtml": "html/cad/8ab5f2e77034971b0c323864.html"
+}

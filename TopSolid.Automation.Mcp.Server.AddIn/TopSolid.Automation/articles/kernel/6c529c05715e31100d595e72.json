@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IGeometries2D.CreatePoint.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IGeometries2D.CreatePoint.html",
+  "sha256": "e2607d1b563855d6cacda3e07e685a0522b03d122f340aaa3e321c6cdc923e72",
+  "text": "# Method CreatePoint\n\n#### CreatePoint(DocumentId, Point2D)\n\nCreates a point entity in a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nElementId CreatePoint(DocumentId inDocumentId, Point2D inGeometry)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  Point2D |  inGeometry |  Point geometry.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the created point entity.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/6c529c05715e31100d595e72.md",
+  "originalHtml": "html/kernel/6c529c05715e31100d595e72.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.MoveSeveral.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.MoveSeveral.html",
+  "sha256": "9d198e7ca68d2e9286ae7ee76928bf0d2e747b838fd7209efb03c5cb8ac9a8fb",
+  "text": "# Method MoveSeveral\n\n#### MoveSeveral(List<PdmObjectId>, PdmObjectId)\n\nMoves several objects.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 303, 140)]\nvoid MoveSeveral(List<PdmObjectId> inObjectIds, PdmObjectId inOwnerId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  List<PdmObjectId> |  inObjectIds |  Identifiers of objects to move.  |  \n \n|  PdmObjectId |  inOwnerId |  Identifier of project or folder owner where to move objects.  |  \n\n##### Remarks\n\nThe objects to move must belong to the same project.\n \nThe objects must stay in the same project, therefore when specifying a project owner it must be that project, and when specifying a folder owner it must belong to that project.\n \nThis method must not be called between StartModification(string, bool) and EndModification(bool, bool) methods calls.\n \nThis method is available since v7.8.303.140.\n",
+  "markdown": "markdown/kernel/13f08c68605871d7ceec7910.md",
+  "originalHtml": "html/kernel/13f08c68605871d7ceec7910.html"
+}

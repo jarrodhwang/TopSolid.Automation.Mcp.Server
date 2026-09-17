@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.PdmObjectId.-ctor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.PdmObjectId.-ctor.html",
+  "sha256": "212cf9c3221b4b2c74bebc3b39eced66e10c4b3bb97964f274bade1ac0954f92",
+  "text": "# Constructor PdmObjectId\n\n#### PdmObjectId(string)\n\nInitializes a new instance of the PdmObjectId structure.\n\n##### Declaration\n\n```\npublic PdmObjectId(string inPdmObjectId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  string |  inPdmObjectId |  PDM object identifier, or null if empty.  |\n",
+  "markdown": "markdown/pdmexplorer/8298df19adc08973182bd6a6.md",
+  "originalHtml": "html/pdmexplorer/8298df19adc08973182bd6a6.html"
+}

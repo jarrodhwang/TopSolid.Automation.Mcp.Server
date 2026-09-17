@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IUnits.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IUnits.html",
+  "sha256": "5210989dd19661d7dfa83c2a33a95186dabcd4f42acbf8cd7cda02c9248d0aaa",
+  "text": "# Interface IUnits\n\nGives access to units.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[ServiceContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\npublic interface IUnits\n```\n\n##### Remarks\n\nThis interface is available since v7.6.\n\n### Methods \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   ConvertFromSI(UnitType, int, double)  |  Converts a value from SI unit to a specified unit.  |  \n \n|   ConvertToSI(UnitType, int, double)  |  Converts a value from a specified unit to SI unit.  |  \n \n|   GetUnitCount(UnitType)  |  Gets the number of units of a specified type.  |  \n \n|   GetUnitSymbol(UnitType, int)  |  Gets the symbol of a unit in English.  |  \n \n|   SearchUnit(UnitType, string)  |  Searches for a unit of a specified type and symbol.  |\n",
+  "markdown": "markdown/kernel/ecc5729024b05e0885b8d447.md",
+  "originalHtml": "html/kernel/ecc5729024b05e0885b8d447.html"
+}

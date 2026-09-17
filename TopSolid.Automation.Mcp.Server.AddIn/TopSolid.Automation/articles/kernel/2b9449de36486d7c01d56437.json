@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ItemLabel.IsEmpty.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ItemLabel.IsEmpty.html",
+  "sha256": "ec8687670681d3ddd83e911b39637604b4127cf9db60f2b16002764f6d811c01",
+  "text": "# Property IsEmpty\n\n#### IsEmpty\n\nTells whether the item label is empty.\n\n##### Declaration\n\n```\npublic bool IsEmpty { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |   |\n",
+  "markdown": "markdown/kernel/2b9449de36486d7c01d56437.md",
+  "originalHtml": "html/kernel/2b9449de36486d7c01d56437.html"
+}

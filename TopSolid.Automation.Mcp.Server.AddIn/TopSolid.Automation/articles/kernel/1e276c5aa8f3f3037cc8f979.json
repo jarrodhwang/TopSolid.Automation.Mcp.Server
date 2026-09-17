@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Color.-ctor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Color.-ctor.html",
+  "sha256": "f9e242a39f3ad4555724eb78b3d9e4a329068b88e6a436b7ea1d546f404e7d5d",
+  "text": "# Constructor Color\n\n#### Color(byte, byte, byte)\n\nInitializes a new instance of the Color structure with its RGB intensities.\n\n##### Declaration\n\n```\npublic Color(byte inR, byte inG, byte inB)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  byte |  inR |  Red intensity.  |  \n \n|  byte |  inG |  Green intensity.  |  \n \n|  byte |  inB |  Blue intensity.  |\n",
+  "markdown": "markdown/kernel/1e276c5aa8f3f3037cc8f979.md",
+  "originalHtml": "html/kernel/1e276c5aa8f3f3037cc8f979.html"
+}

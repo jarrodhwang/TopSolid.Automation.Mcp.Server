@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.DrillingTappedHolePrimitive.PrimitiveType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.DrillingTappedHolePrimitive.PrimitiveType.html",
+  "sha256": "1d068735fe49f4915863c09f2a1ab9b90735af441dda65f30b5d034b84899df8",
+  "text": "# Property PrimitiveType\n\n#### PrimitiveType\n\nPrimitive Type.\n\n##### Declaration\n\n```\npublic override DrillingPrimitiveType PrimitiveType { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  DrillingPrimitiveType |   |  \n\n##### Overrides\n \nDrillingPrimitive.PrimitiveType\n",
+  "markdown": "markdown/cad/915bb3b8638b8249651f6ea3.md",
+  "originalHtml": "html/cad/915bb3b8638b8249651f6ea3.html"
+}

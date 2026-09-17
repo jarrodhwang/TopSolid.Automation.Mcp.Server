@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.IAnnotations.GetGeometricToleranceFrameToleranceValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.IAnnotations.GetGeometricToleranceFrameToleranceValue.html",
+  "sha256": "e07f1658891118e672d86200327c69263919e450c97d2a45055acee104ebbc59",
+  "text": "# Method GetGeometricToleranceFrameToleranceValue\n\n#### GetGeometricToleranceFrameToleranceValue(ElementId, int)\n\nGets the tolerance value of a geometric tolerance frame.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 17, 0, 0)]\nReal GetGeometricToleranceFrameToleranceValue(ElementId inGeometricTolerance, int inToleranceFrameIndex)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inGeometricTolerance |  Identifier of the element to analyze.  |  \n \n|  int |  inToleranceFrameIndex |  Index of the tolerance frame.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Real |  The value of the tolerance frame.  |  \n\n##### Remarks\n\nThis method is available since v7.17.\n",
+  "markdown": "markdown/drafting/d3d57ed5b9c407efe23fad84.md",
+  "originalHtml": "html/drafting/d3d57ed5b9c407efe23fad84.html"
+}

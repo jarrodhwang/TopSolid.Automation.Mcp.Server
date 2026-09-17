@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IOperations.GetSetupOperation.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IOperations.GetSetupOperation.html",
+  "sha256": "ba54667e5f82bdb75b789857f7500d7d5157f9ae7dd954735c278a913c39187a",
+  "text": "# Method GetSetupOperation\n\n#### GetSetupOperation(ElementExId)\n\nGets the geometry setup operation from the given operation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nElementExId GetSetupOperation(ElementExId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementExId |  inElementId |  Identifier of the operation to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementExId |  Geometry setup operation found.  |\n",
+  "markdown": "markdown/cam/6cb7d6a939c46d7fc8d0e808.md",
+  "originalHtml": "html/cam/6cb7d6a939c46d7fc8d0e808.html"
+}

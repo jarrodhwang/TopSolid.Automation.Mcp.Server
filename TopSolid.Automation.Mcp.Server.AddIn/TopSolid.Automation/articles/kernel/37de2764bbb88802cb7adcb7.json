@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.License.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.License.html",
+  "sha256": "6bfef3f5262cc1ead53d67db82536ac93b75c09369ceecd3ce342c4ccd4d33d0",
+  "text": "# Struct License\n\nRepresents a license.\n\n##### Inherited Members\n \n ValueType.Equals(object) \n \n ValueType.GetHashCode() \n \n ValueType.ToString() \n \n object.Equals(object, object) \n \n object.ReferenceEquals(object, object) \n \n object.GetType() \n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 16, 400, 20)]\npublic struct License\n```\n\n##### Remarks\n\nThis structure is available since v7.16.\n\n### Constructors \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   License(LicenseType, string, string, string, bool, string, uint, uint)  |  Initializes a new instance of the License structure.  |  \n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   ExpirationDate  |  Expiration date.  |  \n \n|   Group  |  Group number.  |  \n \n|   IsActive  |  Is license active.  |  \n \n|   LicenseType  |  License type (Standalone, floating, user).  |  \n \n|   LicenseUser  |  License user (for floating).  |  \n \n|   LicensedTo  |  Licensed to.  |  \n \n|   Module  |  Module number.  |  \n \n|   Name  |  Name.  |  \n \n|   Provider  |  Provider.  |  \n \n|   Status  |  Status.  |  \n \n|   Version  |  Version.  |\n",
+  "markdown": "markdown/kernel/37de2764bbb88802cb7adcb7.md",
+  "originalHtml": "html/kernel/37de2764bbb88802cb7adcb7.html"
+}

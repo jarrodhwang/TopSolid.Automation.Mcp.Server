@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Color.B.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Color.B.html",
+  "sha256": "c05c2f2b1e4e1ea7734faa643c0c14b15e6ea80589cbf207aa279b99b1ef9cb4",
+  "text": "# Property B\n\n#### B\n\nGets the color blue intensity.\n\n##### Declaration\n\n```\npublic byte B { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  byte |   |\n",
+  "markdown": "markdown/kernel/0dca47640411c8f63be6e9e7.md",
+  "originalHtml": "html/kernel/0dca47640411c8f63be6e9e7.html"
+}

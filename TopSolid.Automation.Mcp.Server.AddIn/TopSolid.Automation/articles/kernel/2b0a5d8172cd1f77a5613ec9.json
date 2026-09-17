@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.Save.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.Save.html",
+  "sha256": "8d04a9a998f9be1123b5c7cf35a468821af4177a5acf4d8b69886e21a91e05eb",
+  "text": "# Method Save\n\n#### Save(PdmObjectId, bool)\n\nSaves an object.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nvoid Save(PdmObjectId inObjectId, bool inRecurses)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  PDM object identifier.  |  \n \n|  bool |  inRecurses |  Tells if to recurse on objects contained.  |  \n\n##### Remarks\n\nThis method must not be called between StartModification(string, bool) and EndModification(bool, bool) methods calls.\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/2b0a5d8172cd1f77a5613ec9.md",
+  "originalHtml": "html/kernel/2b0a5d8172cd1f77a5613ec9.html"
+}

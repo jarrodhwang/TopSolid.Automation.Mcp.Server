@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Generic.HostChannel-1.Dispose.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Generic.HostChannel-1.Dispose.html",
+  "sha256": "79771cab4626991d00543787e75359f029c6114881d8ce9b52b591fc9db4a653",
+  "text": "# Method Dispose\n\n#### Dispose()\n\n##### Declaration\n\n```\npublic void Dispose()\n```\n\n##### Implements\n \nIDisposable.Dispose()\n",
+  "markdown": "markdown/kernel/c5b39deaff47673438926110.md",
+  "originalHtml": "html/kernel/c5b39deaff47673438926110.html"
+}

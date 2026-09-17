@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.SetTextTableParameterCreation.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.SetTextTableParameterCreation.html",
+  "sha256": "4e91d5137bf48ee59b11474cb1b22fce480b859a35698f54028c2798def32969",
+  "text": "# Method SetTextTableParameterCreation\n\n#### SetTextTableParameterCreation(ElementId, SmartReal)\n\nSets a smart text table parameter creation operation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 18, 0, 0)]\nvoid SetTextTableParameterCreation(ElementId inElementId, SmartReal inSmartReal)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the smart text table parameter creation operation to modify.  |  \n \n|  SmartReal |  inSmartReal |  Smart real value.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.18.\n",
+  "markdown": "markdown/kernel/46a26af74c03690d2623cad1.md",
+  "originalHtml": "html/kernel/46a26af74c03690d2623cad1.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMaterials.GetTransmissionScatteringColor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMaterials.GetTransmissionScatteringColor.html",
+  "sha256": "43f3b6f9b88bf01277a9d6e581438184ba2ad38cfa55d6dfa38c647513d59989",
+  "text": "# Method GetTransmissionScatteringColor\n\n#### GetTransmissionScatteringColor(DocumentId)\n\nGets the Transmission Scattering color.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 400, 100)]\nColor GetTransmissionScatteringColor(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Color |   |  \n\n##### Remarks\n\nThis method is available since v7.16.\n",
+  "markdown": "markdown/cad/a0545c8bd6cdaff8a8c5eb0b.md",
+  "originalHtml": "html/cad/a0545c8bd6cdaff8a8c5eb0b.html"
+}

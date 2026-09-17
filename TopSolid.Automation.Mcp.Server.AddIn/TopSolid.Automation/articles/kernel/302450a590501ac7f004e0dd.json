@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Transform2D.Py.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Transform2D.Py.html",
+  "sha256": "6d4bb2e5875681d7dbfafdbca5bebadbb0c70acfc6fa44b81414a5cb1d84c2e0",
+  "text": "# Field Py\n\nPerspective factor along Y.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic double Py\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double |  Perspective factor along Y. |\n",
+  "markdown": "markdown/kernel/302450a590501ac7f004e0dd.md",
+  "originalHtml": "html/kernel/302450a590501ac7f004e0dd.html"
+}

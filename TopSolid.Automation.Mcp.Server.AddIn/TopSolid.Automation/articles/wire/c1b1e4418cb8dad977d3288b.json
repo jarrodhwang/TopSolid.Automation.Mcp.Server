@@ -1,0 +1,8 @@
+{
+  "path": "api/wire/TopSolid.Cam.NC.Wire.Automating.IWireTechnologyDocuments.GetWireMaterial.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/wire/TopSolid.Cam.NC.Wire.Automating.IWireTechnologyDocuments.GetWireMaterial.html",
+  "sha256": "733462d3eaf39419da022164af539c6cc5db7a65df43a2f64adf7bba14187f9f",
+  "text": "# Method GetWireMaterial\n\n#### GetWireMaterial(DocumentId)\n\nGet wire material name.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 160)]\nPdmObjectId GetWireMaterial(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  PdmObjectId |  Identifier of wire material document.  |\n",
+  "markdown": "markdown/wire/c1b1e4418cb8dad977d3288b.md",
+  "originalHtml": "html/wire/c1b1e4418cb8dad977d3288b.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IEntities.IsEntity.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IEntities.IsEntity.html",
+  "sha256": "15ee4c2dcb93c470b7cd0ea0203b4839b80563b66c6f1e14812714149bd145ba",
+  "text": "# Method IsEntity\n\n#### IsEntity(ElementId)\n\nTells whether an element is an entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nbool IsEntity(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  The element is an entity.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/33cc5a9f74c6db4fae8c960b.md",
+  "originalHtml": "html/kernel/33cc5a9f74c6db4fae8c960b.html"
+}

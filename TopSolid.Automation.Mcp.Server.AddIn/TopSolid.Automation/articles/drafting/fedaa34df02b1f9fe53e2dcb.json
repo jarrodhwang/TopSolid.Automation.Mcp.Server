@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.TopSolidDraftingHost.IsConnected.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.TopSolidDraftingHost.IsConnected.html",
+  "sha256": "101f8519794c2ed1f9f6f42b0d5f514b26954b89b0b642b54088a27553888eee",
+  "text": "# Property IsConnected\n\n#### IsConnected\n\nTells whether TopSolid is connected.\n\n##### Declaration\n\n```\npublic static bool IsConnected { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |   |\n",
+  "markdown": "markdown/drafting/fedaa34df02b1f9fe53e2dcb.md",
+  "originalHtml": "html/drafting/fedaa34df02b1f9fe53e2dcb.html"
+}

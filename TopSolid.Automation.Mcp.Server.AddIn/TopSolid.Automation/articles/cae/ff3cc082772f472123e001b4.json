@@ -1,0 +1,8 @@
+{
+  "path": "api/cae/TopSolid.Cae.Kernel.Automating.IResults.GetDisplacementMinAndMaxResults.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cae/TopSolid.Cae.Kernel.Automating.IResults.GetDisplacementMinAndMaxResults.html",
+  "sha256": "e0e18a3624bddddba177a0881fe76806ab3c611f27a583ac5455198306ed2a62",
+  "text": "# Method GetDisplacementMinAndMaxResults\n\n#### GetDisplacementMinAndMaxResults(DocumentId, out double, out double)\n\nGets the displacement minimum and maximum results in a result document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 15, 0)]\nvoid GetDisplacementMinAndMaxResults(DocumentId inDocumentId, out double outMinValue, out double outMaxValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n \n|  double |  outMinValue |  Minimum value.  |  \n \n|  double |  outMaxValue |  Maximum value.  |  \n\n##### Remarks\n\nThis method is available since v7.19.\n\n##### Examples\n \n```\nDocumentId docId = TopSolidHost.Documents.EditedDocument;\nTopSolidCaeHost.Results.GetDisplacementMinAndMaxResults(docId, out double minValue, out double maxValue);\n```\n",
+  "markdown": "markdown/cae/ff3cc082772f472123e001b4.md",
+  "originalHtml": "html/cae/ff3cc082772f472123e001b4.html"
+}

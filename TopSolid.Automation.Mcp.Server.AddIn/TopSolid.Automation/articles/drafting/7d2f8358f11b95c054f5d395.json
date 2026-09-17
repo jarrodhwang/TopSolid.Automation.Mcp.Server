@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.IAnnotations.GetSurfaceFinishItemSymbolValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.IAnnotations.GetSurfaceFinishItemSymbolValue.html",
+  "sha256": "84545a9bfa944b2d5357a5d29817ba6c8f64d2bbbc0247b34563c65f0707186b",
+  "text": "# Method GetSurfaceFinishItemSymbolValue\n\n#### GetSurfaceFinishItemSymbolValue(ElementItemId)\n\nGets the surface finish item symbol value type of an item of a surface finish annotation entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 17, 0, 0)]\nSurfaceFinishSymbolType GetSurfaceFinishItemSymbolValue(ElementItemId inElementItemId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementItemId |  inElementItemId |  Identifier of the element item to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SurfaceFinishSymbolType |  The symbol value type.  |  \n\n##### Remarks\n\nThis method is available since v7.17.\n",
+  "markdown": "markdown/drafting/7d2f8358f11b95c054f5d395.md",
+  "originalHtml": "html/drafting/7d2f8358f11b95c054f5d395.html"
+}

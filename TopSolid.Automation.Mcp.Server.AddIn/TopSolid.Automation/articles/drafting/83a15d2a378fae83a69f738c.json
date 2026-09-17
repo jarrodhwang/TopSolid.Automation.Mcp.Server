@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.IDraftings.SetDraftingFormatDimensions.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.IDraftings.SetDraftingFormatDimensions.html",
+  "sha256": "dc4c847512fe29e8c55d7fe91c2433b8429849bd48912ce75c7ae2490f6e1499",
+  "text": "# Method SetDraftingFormatDimensions\n\n#### SetDraftingFormatDimensions(DocumentId, Real, Real)\n\nSet dimensions of a drafting document format\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 255, 0)]\nvoid SetDraftingFormatDimensions(DocumentId inDocumentId, Real inWidth, Real inHeight)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  The drafting document  |  \n \n|  Real |  inWidth |  width  |  \n \n|  Real |  inHeight |  height  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n",
+  "markdown": "markdown/drafting/83a15d2a378fae83a69f738c.md",
+  "originalHtml": "html/drafting/83a15d2a378fae83a69f738c.html"
+}

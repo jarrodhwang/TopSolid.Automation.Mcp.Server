@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ILicenses.ActivateLicense.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ILicenses.ActivateLicense.html",
+  "sha256": "3586693751ad795218780a2dee155b6564dfc8525723150f2811d766bd2849b5",
+  "text": "# Method ActivateLicense\n\n#### ActivateLicense(License)\n\nActivates a license.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 400, 20)]\nvoid ActivateLicense(License inLicense)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  License |  inLicense |  License to activate.  |  \n\n##### Remarks\n\nThis method is available since v7.16.\n",
+  "markdown": "markdown/kernel/af4cd37d20fca02fb6a79c80.md",
+  "originalHtml": "html/kernel/af4cd37d20fca02fb6a79c80.html"
+}

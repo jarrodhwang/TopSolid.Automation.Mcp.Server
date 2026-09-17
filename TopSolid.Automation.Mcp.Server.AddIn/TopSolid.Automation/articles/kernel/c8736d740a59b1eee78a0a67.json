@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.MoveProject.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.MoveProject.html",
+  "sha256": "b5ccc5c44b94cc0b81305f89cd8778fe0df834cc6f9ab8a12bbaa85718f8feaf",
+  "text": "# Method MoveProject\n\n#### MoveProject(PdmObjectId, PdmProjectFolderId)\n\nMoves a project into a specified project folder.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 9, 0, 0)]\nvoid MoveProject(PdmObjectId inProjectId, PdmProjectFolderId inDestinationFolderId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inProjectId |  Project object identifier.  |  \n \n|  PdmProjectFolderId |  inDestinationFolderId |  Identifier of the destination project folder.  |  \n\n##### Remarks\n\nThis method must not be called between StartModification(string, bool) and EndModification(bool, bool) methods calls.\n \nThis method is available since v7.9.\n",
+  "markdown": "markdown/kernel/c8736d740a59b1eee78a0a67.md",
+  "originalHtml": "html/kernel/c8736d740a59b1eee78a0a67.html"
+}

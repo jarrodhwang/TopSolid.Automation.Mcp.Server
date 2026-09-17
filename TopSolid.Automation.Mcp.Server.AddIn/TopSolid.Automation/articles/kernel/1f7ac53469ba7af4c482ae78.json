@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ElementId.op_Equality.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ElementId.op_Equality.html",
+  "sha256": "ea31170a34db73e50da93e4874a625cd16d4a229a6f7a39e5a513c77f9797fe6",
+  "text": "# Operator operator ==\n\n#### operator ==(ElementId, ElementId)\n\nTells whether two element identifiers are equal.\n\n##### Declaration\n\n```\npublic static bool operator ==(ElementId inElementId1, ElementId inElementId2)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId1 |  First element identifier.  |  \n \n|  ElementId |  inElementId2 |  Second element identifier.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Element identifiers are equal.  |\n",
+  "markdown": "markdown/kernel/1f7ac53469ba7af4c482ae78.md",
+  "originalHtml": "html/kernel/1f7ac53469ba7af4c482ae78.html"
+}

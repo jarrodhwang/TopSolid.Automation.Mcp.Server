@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.TopSolidHostInstance.Elements.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.TopSolidHostInstance.Elements.html",
+  "sha256": "6986d0bf24454a0dd5bc56d38e56f09f9d618af801da41cf74988dc7119607d3",
+  "text": "# Property Elements\n\n#### Elements\n\nGets access to elements, or null if not available.\n\n##### Declaration\n\n```\npublic IElements Elements { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  IElements |   |\n",
+  "markdown": "markdown/kernel/f666aa0223c63550f804d695.md",
+  "originalHtml": "html/kernel/f666aa0223c63550f804d695.html"
+}

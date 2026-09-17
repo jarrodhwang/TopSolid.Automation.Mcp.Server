@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ISubstitutions.ExcludeLocalComponent.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ISubstitutions.ExcludeLocalComponent.html",
+  "sha256": "59fd1b8c64ea45a2226ecb685d556985ecf778f7cd8985613e2f978ea4849f60",
+  "text": "# Method ExcludeLocalComponent\n\n#### ExcludeLocalComponent(ElementId, ElementId)\n\nExclude a sub component from substitution\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 0, 0)]\nvoid ExcludeLocalComponent(ElementId inOperationId, ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inOperationId |  Identifier of the top inclusion operation holding sub-component to substitute.  |  \n \n|  ElementId |  inElementId |  Identifier of the element to exclude from substitution.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.19.\n",
+  "markdown": "markdown/cad/3e376810f9754c06287b949b.md",
+  "originalHtml": "html/cad/3e376810f9754c06287b949b.html"
+}

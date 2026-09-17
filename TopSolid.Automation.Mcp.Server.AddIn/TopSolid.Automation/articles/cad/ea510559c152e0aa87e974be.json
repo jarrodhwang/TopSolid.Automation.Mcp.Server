@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.TopSolidDesignHostInstance.Unfoldings.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.TopSolidDesignHostInstance.Unfoldings.html",
+  "sha256": "39407851a189054d088cba3bf532692bd3b76a04fb6f0e3b4db57f390ec812e6",
+  "text": "# Property Unfoldings\n\n#### Unfoldings\n\nGets access to unfoldings, or null if not connected.\n\n##### Declaration\n\n```\npublic IUnfoldings Unfoldings { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  IUnfoldings |   |\n",
+  "markdown": "markdown/cad/ea510559c152e0aa87e974be.md",
+  "originalHtml": "html/cad/ea510559c152e0aa87e974be.html"
+}

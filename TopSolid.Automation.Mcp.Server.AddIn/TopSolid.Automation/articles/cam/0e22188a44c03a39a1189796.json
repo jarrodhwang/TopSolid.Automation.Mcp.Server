@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.ParameterId.Equals.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.ParameterId.Equals.html",
+  "sha256": "46fb74cbb9c7f2a0d730f54b3251812300cdc553676699a0845f64708476fb3f",
+  "text": "# Method Equals\n\n#### Equals(object)\n\nImplements Equals(T).\n\n##### Declaration\n\n```\npublic override bool Equals(object inObject)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  object |  inObject |   |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |   |  \n\n##### Overrides\n \nValueType.Equals(object)\n\n#### Equals(ParameterId)\n\nImplements Equals(object).\n\n##### Declaration\n\n```\npublic bool Equals(ParameterId other)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ParameterId |  other |   |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |   |  \n\n##### Implements\n \nIEquatable<T>.Equals(T)\n",
+  "markdown": "markdown/cam/0e22188a44c03a39a1189796.md",
+  "originalHtml": "html/cam/0e22188a44c03a39a1189796.html"
+}

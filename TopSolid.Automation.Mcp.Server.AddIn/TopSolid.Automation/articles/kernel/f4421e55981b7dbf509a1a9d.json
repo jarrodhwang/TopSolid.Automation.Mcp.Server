@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.GetMajorRevisionLifeCycleSubState.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.GetMajorRevisionLifeCycleSubState.html",
+  "sha256": "7519f55ecdb3bd4862a8dd2ac6a42a019e1d71667e0aab1123ad5bb18ec210c2",
+  "text": "# Method GetMajorRevisionLifeCycleSubState\n\n#### GetMajorRevisionLifeCycleSubState(PdmMajorRevisionId)\n\nGets the life cycle sub state of a major revision.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 14, 248, 0)]\nPdmObjectId GetMajorRevisionLifeCycleSubState(PdmMajorRevisionId inMajorRevisionId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmMajorRevisionId |  inMajorRevisionId |  Identifier of major revision to get life cycle sub state.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  PdmObjectId |   |\n",
+  "markdown": "markdown/kernel/f4421e55981b7dbf509a1a9d.md",
+  "originalHtml": "html/kernel/f4421e55981b7dbf509a1a9d.html"
+}

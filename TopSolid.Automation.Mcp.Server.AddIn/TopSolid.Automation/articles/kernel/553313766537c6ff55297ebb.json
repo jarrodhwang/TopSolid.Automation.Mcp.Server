@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IShapes.GetShapesFolder.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IShapes.GetShapesFolder.html",
+  "sha256": "09e12e81e24d6c4370df8f375e47abbd16568dc4ce0985a2163ad61376e0bc14",
+  "text": "# Method GetShapesFolder\n\n#### GetShapesFolder(DocumentId)\n\nGets the shapes folder entity of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nElementId GetShapesFolder(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the shapes folder entity found.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/kernel/553313766537c6ff55297ebb.md",
+  "originalHtml": "html/kernel/553313766537c6ff55297ebb.html"
+}

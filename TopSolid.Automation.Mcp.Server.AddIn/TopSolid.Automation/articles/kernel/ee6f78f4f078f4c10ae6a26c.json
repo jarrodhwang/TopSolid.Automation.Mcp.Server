@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IGeometries2D.GetAxesFolder.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IGeometries2D.GetAxesFolder.html",
+  "sha256": "b935ea0e80bd620bee9c5753054acc50613a34978134b2c59854f9615335d705",
+  "text": "# Method GetAxesFolder\n\n#### GetAxesFolder(DocumentId)\n\nGets the axes folder entity of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nElementId GetAxesFolder(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the axes folder entity found.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/kernel/ee6f78f4f078f4c10ae6a26c.md",
+  "originalHtml": "html/kernel/ee6f78f4f078f4c10ae6a26c.html"
+}

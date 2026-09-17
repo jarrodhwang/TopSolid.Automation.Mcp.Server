@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IFamilies.SetGenericDocument.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IFamilies.SetGenericDocument.html",
+  "sha256": "52a1e70a8321202c2b8a826370143016ee5d9cdcc00ce18c144b3c7058a6c6f6",
+  "text": "# Method SetGenericDocument\n\n#### SetGenericDocument(DocumentId, DocumentId, DocumentId)\n\nSets the generic document of a family.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 18, 400, 160)]\nvoid SetGenericDocument(DocumentId inDocumentId, DocumentId inGenericDocumentId, DocumentId inFamilyBaseId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the family document to analyze.  |  \n \n|  DocumentId |  inGenericDocumentId |  Identifier of the document to use as Generic Document.  |  \n \n|  DocumentId |  inFamilyBaseId |  Identifier of the base family to use, or null if none..  |  \n\n##### Remarks\n\nThis method is available since v7.18.\n",
+  "markdown": "markdown/kernel/8b54b5b6a6074b262e61b08d.md",
+  "originalHtml": "html/kernel/8b54b5b6a6074b262e61b08d.html"
+}

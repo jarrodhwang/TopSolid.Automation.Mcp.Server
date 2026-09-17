@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ICoatings.SetIsotropicParameterValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ICoatings.SetIsotropicParameterValue.html",
+  "sha256": "f9ed8fc3b8ea0105fe83dd5a2fb8beba2c37c07b5463844a33e02386bf30dbcd",
+  "text": "# Method SetIsotropicParameterValue\n\n#### SetIsotropicParameterValue(DocumentId, bool?)\n\nSets the Isotropic Parameter\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 400, 100)]\nbool SetIsotropicParameterValue(DocumentId inDocumentId, bool? inBool)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  bool? |  inBool |  Value  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  True if value is correctly set.  |  \n\n##### Remarks\n\nThis method is available since v7.20.\n",
+  "markdown": "markdown/cad/e4c12f9a06ef0ae446f7b8a1.md",
+  "originalHtml": "html/cad/e4c12f9a06ef0ae446f7b8a1.html"
+}

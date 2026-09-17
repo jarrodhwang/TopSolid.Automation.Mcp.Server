@@ -1,0 +1,8 @@
+{
+  "path": "api/electrode/TopSolid.Cad.Electrode.Automating.TopSolidElectrodeHost.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/electrode/TopSolid.Cad.Electrode.Automating.TopSolidElectrodeHost.html",
+  "sha256": "14a78a136f3bafa1c178602a232277ce1dda484fdf81de0c7517542547d20c6a",
+  "text": "# Class TopSolidElectrodeHost\n\nRepresents TopSolid'Electrode host providing WCF services for automating.\n\n##### Inheritance\n \nobject\n \nTopSolidElectrodeHost\n\n##### Inherited Members\n \n object.ToString() \n \n object.Equals(object) \n \n object.Equals(object, object) \n \n object.ReferenceEquals(object, object) \n \n object.GetHashCode() \n \n object.GetType() \n \n object.MemberwiseClone() \n\n###### Namespace: TopSolid.Cad.Electrode.Automating\n\n###### Assembly: TopSolid.Cad.Electrode.Automating.dll\n\n##### Syntax\n\n```\n[AvailableSinceVersion(7, 12, 0, 0)]\npublic static class TopSolidElectrodeHost\n```\n\n##### Remarks\n\nThis class is available since v7.12.\n\n### Properties \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   Electrodes  |  Gets access to electrodes, or null if not connected.  |  \n \n|   HostInstance  |  Gets the host instance.  |  \n \n|   IsConnected  |  Tells whether TopSolid is connected.  |  \n\n### Methods \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   Connect()  |  Connects to TopSolid application.  |  \n \n|   Disconnect()  |  Disconnect from TopSolid application.  |\n",
+  "markdown": "markdown/electrode/c33cfad53de6f7e335e5f962.md",
+  "originalHtml": "html/electrode/c33cfad53de6f7e335e5f962.html"
+}

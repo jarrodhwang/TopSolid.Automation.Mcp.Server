@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ICoatings.SetVerticalAngularScale.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ICoatings.SetVerticalAngularScale.html",
+  "sha256": "45e380205f8850d7641bf0dd1743ac99c368ea1be37a9651e322868cb1512f0e",
+  "text": "# Method SetVerticalAngularScale\n\n#### SetVerticalAngularScale(DocumentId, double)\n\nSets the vertical angular scale.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 0, 0)]\nvoid SetVerticalAngularScale(DocumentId inDocumentId, double inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  double |  inValue |  Wanted value.  |  \n\n##### Remarks\n\nThis method must be called for Cylindrical or Spherical type.\n \nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.16.\n",
+  "markdown": "markdown/cad/d1a624c7b341cdf3cea47919.md",
+  "originalHtml": "html/cad/d1a624c7b341cdf3cea47919.html"
+}

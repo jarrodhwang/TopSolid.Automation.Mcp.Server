@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.TopSolidDesignHostInstance.Materials.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.TopSolidDesignHostInstance.Materials.html",
+  "sha256": "b97f1d65a0aa2b021a8965a5380c424943211d672a781efc7b022505ef36dc34",
+  "text": "# Property Materials\n\n#### Materials\n\nGets access to materials, or null if not connected.\n\n##### Declaration\n\n```\npublic IMaterials Materials { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  IMaterials |   |\n",
+  "markdown": "markdown/cad/4069b5d729108b7c3996c9a7.md",
+  "originalHtml": "html/cad/4069b5d729108b7c3996c9a7.html"
+}

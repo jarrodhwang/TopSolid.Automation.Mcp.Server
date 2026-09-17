@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.SaveSeveral.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.SaveSeveral.html",
+  "sha256": "fbbfac020ee63e6031177ebef853fd9c663a5dce631d94f698d61fa3ce9b90cf",
+  "text": "# Method SaveSeveral\n\n#### SaveSeveral(List<PdmObjectId>, bool)\n\nSaves several objects.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nvoid SaveSeveral(List<PdmObjectId> inObjectIds, bool inRecurses)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  List<PdmObjectId> |  inObjectIds |  PDM object identifiers.  |  \n \n|  bool |  inRecurses |  Tells if to recurse on objects contained.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/pdmexplorer/f2503455434b7f555a3cb833.md",
+  "originalHtml": "html/pdmexplorer/f2503455434b7f555a3cb833.html"
+}

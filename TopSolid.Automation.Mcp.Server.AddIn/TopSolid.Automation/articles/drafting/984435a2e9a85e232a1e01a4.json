@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.IDraftings.ModifyMainProjectionSet.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.IDraftings.ModifyMainProjectionSet.html",
+  "sha256": "92c280b67f340785d00918d725aa0384eb722f96cfe693955570add983cbaed8",
+  "text": "# Method ModifyMainProjectionSet\n\n#### ModifyMainProjectionSet(DocumentId, DocumentId, ElementId)\n\nModify main projection set\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 255, 0)]\nvoid ModifyMainProjectionSet(DocumentId inDraftingDocumentId, DocumentId inDocumentId, ElementId inRepresentationId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDraftingDocumentId |  the drafting document  |  \n \n|  DocumentId |  inDocumentId |  Source document to use  |  \n \n|  ElementId |  inRepresentationId |  Representation to use, taken from new source document  |\n",
+  "markdown": "markdown/drafting/984435a2e9a85e232a1e01a4.md",
+  "originalHtml": "html/drafting/984435a2e9a85e232a1e01a4.html"
+}

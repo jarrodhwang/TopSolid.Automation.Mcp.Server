@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.GetSmartBooleanParameterCreation.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.GetSmartBooleanParameterCreation.html",
+  "sha256": "85d88e5cb4863f555d92a67a7fc1aa58d6870f724c97f19ce9936853e5a56a12",
+  "text": "# Method GetSmartBooleanParameterCreation\n\n#### GetSmartBooleanParameterCreation(ElementId, out SmartBoolean)\n\nGets a smart boolean parameter creation operation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 17, 400, 220)]\nvoid GetSmartBooleanParameterCreation(ElementId inElementId, out SmartBoolean outSmartBoolean)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the smart boolean parameter creation operation to analyze.  |  \n \n|  SmartBoolean |  outSmartBoolean |  Smart boolean value.  |  \n\n##### Remarks\n\nThis method is available since v7.17.\n",
+  "markdown": "markdown/kernel/b1fd746b53d76c22f65a62a4.md",
+  "originalHtml": "html/kernel/b1fd746b53d76c22f65a62a4.html"
+}

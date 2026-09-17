@@ -1,0 +1,8 @@
+{
+  "path": "api/wire/TopSolid.Cam.NC.Wire.Automating.IWireTechnologyDocuments.RemoveAllTechnologies.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/wire/TopSolid.Cam.NC.Wire.Automating.IWireTechnologyDocuments.RemoveAllTechnologies.html",
+  "sha256": "232f5b49b6a9061fb70baa0b24798c707d03e972f4559db25008cfac8ad492a7",
+  "text": "# Method RemoveAllTechnologies\n\n#### RemoveAllTechnologies(DocumentId)\n\nRemove all wire technology entity in a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 160)]\nvoid RemoveAllTechnologies(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |\n",
+  "markdown": "markdown/wire/5e4603c325eb570a7d71fcd9.md",
+  "originalHtml": "html/wire/5e4603c325eb570a7d71fcd9.html"
+}

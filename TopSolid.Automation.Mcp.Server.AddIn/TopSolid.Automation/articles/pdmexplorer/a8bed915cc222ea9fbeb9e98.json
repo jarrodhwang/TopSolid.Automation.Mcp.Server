@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.MoveProject.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.MoveProject.html",
+  "sha256": "6d7f66d61d3f677c8f3082c6b994bda634d65966e5ed3e602736174ac67c4dc2",
+  "text": "# Method MoveProject\n\n#### MoveProject(PdmObjectId, PdmProjectFolderId)\n\nMoves a project into a specified project folder.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nvoid MoveProject(PdmObjectId inProjectId, PdmProjectFolderId inDestinationFolderId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inProjectId |  Project object identifier.  |  \n \n|  PdmProjectFolderId |  inDestinationFolderId |  Identifier of the destination project folder.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/pdmexplorer/a8bed915cc222ea9fbeb9e98.md",
+  "originalHtml": "html/pdmexplorer/a8bed915cc222ea9fbeb9e98.html"
+}

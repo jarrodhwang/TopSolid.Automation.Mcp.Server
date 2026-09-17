@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IOperations.GetDefinitionStage.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IOperations.GetDefinitionStage.html",
+  "sha256": "69c58b2fd71bbb5632abd8286d6c99411e9c6c11579f81e1fbf3989401a86591",
+  "text": "# Method GetDefinitionStage\n\n#### GetDefinitionStage(DocumentId)\n\nGets the definition stage operation of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nElementId GetDefinitionStage(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the definition stage operation found, or Empty if none.  |  \n\n##### Remarks\n\nThis method is available since v7.8.\n",
+  "markdown": "markdown/kernel/948442fe6d03a372a7ffa303.md",
+  "originalHtml": "html/kernel/948442fe6d03a372a7ffa303.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdmAdmin.IsUserActive.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdmAdmin.IsUserActive.html",
+  "sha256": "2a9bd2797ccd835cdee20127141d3caef20afd0c09218539fedf7dd5648e9ac9",
+  "text": "# Method IsUserActive\n\n#### IsUserActive(string)\n\nTells whether a user is active.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 301, 160)]\nbool IsUserActive(string inAccountId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  string |  inAccountId |  User account identifier.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  The user is active.  |  \n\n##### Remarks\n\nThis method is available since v7.6.301.160.\n",
+  "markdown": "markdown/kernel/8f7561f2ff55582b8ae13f3e.md",
+  "originalHtml": "html/kernel/8f7561f2ff55582b8ae13f3e.html"
+}

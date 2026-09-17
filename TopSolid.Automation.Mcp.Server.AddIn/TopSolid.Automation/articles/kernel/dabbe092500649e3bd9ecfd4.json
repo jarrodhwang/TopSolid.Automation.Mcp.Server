@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.HasColorParameterPossibleValues.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.HasColorParameterPossibleValues.html",
+  "sha256": "29f3a3237712c37b2fc64f7ba64a0924bdb42efa4869400582b53e1f974d080c",
+  "text": "# Method HasColorParameterPossibleValues\n\n#### HasColorParameterPossibleValues(ElementId)\n\nTells wether the color parameter has possible values.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 18, 0, 0)]\nbool HasColorParameterPossibleValues(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the parameter.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Wether the parameter has possible values.  |  \n\n##### Remarks\n\nThis method is available since v7.18\n",
+  "markdown": "markdown/kernel/dabbe092500649e3bd9ecfd4.md",
+  "originalHtml": "html/kernel/dabbe092500649e3bd9ecfd4.html"
+}

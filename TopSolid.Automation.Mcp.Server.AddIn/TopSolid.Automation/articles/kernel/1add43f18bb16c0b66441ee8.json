@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ISketches2D.IsProfileClosed.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ISketches2D.IsProfileClosed.html",
+  "sha256": "422bd02ba39e780f800db4e150fa2acee2af3496d40ea7285157133809788c63",
+  "text": "# Method IsProfileClosed\n\n#### IsProfileClosed(ElementItemId)\n\nTells whether a profile is closed.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nbool IsProfileClosed(ElementItemId inProfileId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementItemId |  inProfileId |  Identifier of the profile to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Whether the profile is closed.  |  \n\n##### Remarks\n\nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/1add43f18bb16c0b66441ee8.md",
+  "originalHtml": "html/kernel/1add43f18bb16c0b66441ee8.html"
+}

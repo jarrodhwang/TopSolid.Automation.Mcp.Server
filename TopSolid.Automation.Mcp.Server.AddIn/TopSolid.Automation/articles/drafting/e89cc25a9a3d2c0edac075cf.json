@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.IDimensions.SetCurrentDimensionStyle.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.IDimensions.SetCurrentDimensionStyle.html",
+  "sha256": "380eceb9d5f3b05f293115004e73039b85fea184c2725c8c9922304aef7cc076",
+  "text": "# Method SetCurrentDimensionStyle\n\n#### SetCurrentDimensionStyle(DocumentId, ElementId)\n\nSets current dimension style of a dimension\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 255, 0)]\nvoid SetCurrentDimensionStyle(DocumentId inDocumentId, ElementId inStyleElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  The document  |  \n \n|  ElementId |  inStyleElementId |  the style to use  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.19.\n",
+  "markdown": "markdown/drafting/e89cc25a9a3d2c0edac075cf.md",
+  "originalHtml": "html/drafting/e89cc25a9a3d2c0edac075cf.html"
+}

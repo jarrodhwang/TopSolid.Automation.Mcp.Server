@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ItemLabel.Name.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ItemLabel.Name.html",
+  "sha256": "43b347730e8679e4ca37baa6f155c384086b8ca7ad68189f08842f116f2105cd",
+  "text": "# Property Name\n\n#### Name\n\nGets the item name.\n\n##### Declaration\n\n```\npublic string Name { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |   |\n",
+  "markdown": "markdown/kernel/40e35fd86e088cb4672001f3.md",
+  "originalHtml": "html/kernel/40e35fd86e088cb4672001f3.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ItemLabel.Moniker.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ItemLabel.Moniker.html",
+  "sha256": "b490795344eda097d58e60c73d7e81448a44c386f4853fae69594bf264196578",
+  "text": "# Property Moniker\n\n#### Moniker\n\nGets the moniker associated to the item.\n\n##### Declaration\n\n```\npublic string Moniker { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |   |\n",
+  "markdown": "markdown/kernel/1fc9fe3f7d36588f9c7cae62.md",
+  "originalHtml": "html/kernel/1fc9fe3f7d36588f9c7cae62.html"
+}

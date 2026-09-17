@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.TopSolidCamHostInstance.NCFiles.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.TopSolidCamHostInstance.NCFiles.html",
+  "sha256": "2d928cae62a3076eca32ce38ee0b1ad95ece59dd2ac57afc7fb7759c19abfc69",
+  "text": "# Property NCFiles\n\n#### NCFiles\n\nGets access to NC Files, or null if not connected.\n\n##### Declaration\n\n```\npublic INCFiles NCFiles { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  INCFiles |   |\n",
+  "markdown": "markdown/cam/e1ced3faeba0953227408ef1.md",
+  "originalHtml": "html/cam/e1ced3faeba0953227408ef1.html"
+}

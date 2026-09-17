@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IDocuments.GetPropertyRealUnit.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IDocuments.GetPropertyRealUnit.html",
+  "sha256": "8c5c820373e73ac39456274e57e4546f6e2eb9c172d8153f8ddc06626f66d2fe",
+  "text": "# Method GetPropertyRealUnit\n\n#### GetPropertyRealUnit(DocumentId, string, out UnitType, out string)\n\nGets the unit of a document real property.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 300, 60)]\nvoid GetPropertyRealUnit(DocumentId inDocumentId, string inFullName, out UnitType outUnitType, out string outUnitSymbol)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n \n|  string |  inFullName |  Full name of the document real property to analyze.  |  \n \n|  UnitType |  outUnitType |  Unit type.  |  \n \n|  string |  outUnitSymbol |  Unit symbol in English.  |  \n\n##### Remarks\n\nThis method is available since v7.8.300.60.\n",
+  "markdown": "markdown/kernel/a66507a4636aab8334876e2c.md",
+  "originalHtml": "html/kernel/a66507a4636aab8334876e2c.html"
+}

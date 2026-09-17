@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.GetManufacturerPartNumber.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.GetManufacturerPartNumber.html",
+  "sha256": "0bfbcb97d1741cf0e78c3add1e8835da0f91c72338531c553ff55155098ead2d",
+  "text": "# Method GetManufacturerPartNumber\n\n#### GetManufacturerPartNumber(PdmObjectId)\n\nGets the manufacturer part number of an object.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 303, 100)]\nstring GetManufacturerPartNumber(PdmObjectId inObjectId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  Object identifier.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  Object manufacturer part number.  |  \n\n##### Remarks\n\nThis method is available since v7.8.303.100.\n",
+  "markdown": "markdown/kernel/a3d87d4b95e871e19a67ec94.md",
+  "originalHtml": "html/kernel/a3d87d4b95e871e19a67ec94.html"
+}

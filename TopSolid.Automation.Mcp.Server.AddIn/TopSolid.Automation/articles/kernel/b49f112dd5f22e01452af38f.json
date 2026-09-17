@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.DateTimeProperty.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.DateTimeProperty.html",
+  "sha256": "bce684e7386e6fcc971c8235dd4b3dc2e4bbc323a1f3bbd39e088ecad77822a9",
+  "text": "# Class DateTimeProperty\n\nRepresents a date and time property.\n\n##### Inheritance\n \nobject\n \nProperty\n \nDateTimeProperty\n\n##### Inherited Members\n \n object.ToString() \n \n object.Equals(object) \n \n object.Equals(object, object) \n \n object.ReferenceEquals(object, object) \n \n object.GetHashCode() \n \n object.GetType() \n \n object.MemberwiseClone() \n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 12, 0, 0)]\npublic class DateTimeProperty : Property\n```\n\n##### Remarks\n\nThis class is available since v7.12.\n\n### Constructors \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   DateTimeProperty(DateTime)  |  Initializes a new instance of the DateTimeProperty class.  |  \n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   Value  |  Value.  |  \n\n### Properties \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   Type  |  Gets the property type.  |\n",
+  "markdown": "markdown/kernel/b49f112dd5f22e01452af38f.md",
+  "originalHtml": "html/kernel/b49f112dd5f22e01452af38f.html"
+}

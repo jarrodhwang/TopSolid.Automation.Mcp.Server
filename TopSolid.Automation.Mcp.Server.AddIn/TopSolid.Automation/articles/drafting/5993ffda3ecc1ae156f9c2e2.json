@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.IDraftings.SetScaleFactorParameterValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.IDraftings.SetScaleFactorParameterValue.html",
+  "sha256": "45fd356bb5343ac8c8c2917b8c626cb1509b35fab3f353acace212d60f9226da",
+  "text": "# Method SetScaleFactorParameterValue\n\n#### SetScaleFactorParameterValue(DocumentId, double)\n\nSets the scale factor parameter entity value of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 15, 400, 240)]\nvoid SetScaleFactorParameterValue(DocumentId inDocumentId, double inAbsoluteValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  double |  inAbsoluteValue |  Value of the scale factor.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.15.400.240.\n",
+  "markdown": "markdown/drafting/5993ffda3ecc1ae156f9c2e2.md",
+  "originalHtml": "html/drafting/5993ffda3ecc1ae156f9c2e2.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ItemLabel.op_Inequality.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ItemLabel.op_Inequality.html",
+  "sha256": "92efec4aecfbf01def7b9e099628c94ffd2f1ca25b2a039b6e2e1cdedb6182d1",
+  "text": "# Operator operator !=\n\n#### operator !=(ItemLabel, ItemLabel)\n\nTells whether two item labels are different.\n\n##### Declaration\n\n```\npublic static bool operator !=(ItemLabel inItemLabel1, ItemLabel inItemLabel2)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ItemLabel |  inItemLabel1 |  First item label.  |  \n \n|  ItemLabel |  inItemLabel2 |  Second item label.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Item labels are different.  |\n",
+  "markdown": "markdown/kernel/575f7dd5fdd65df47215318e.md",
+  "originalHtml": "html/kernel/575f7dd5fdd65df47215318e.html"
+}

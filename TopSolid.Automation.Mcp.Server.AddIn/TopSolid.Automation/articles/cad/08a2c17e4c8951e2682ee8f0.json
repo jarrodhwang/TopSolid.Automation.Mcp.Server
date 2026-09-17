@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IFinishings.GetFinishingParameterValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IFinishings.GetFinishingParameterValue.html",
+  "sha256": "0acdf613b3dd0d03dd56fcd03aa40da3aa900fdba074440ce0766d8da2dcb474",
+  "text": "# Method GetFinishingParameterValue\n\n#### GetFinishingParameterValue(ElementId, out DocumentId, out FinishingCategoryType)\n\nGets Document and Category from a finishing Parameter\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 296, 0)]\nvoid GetFinishingParameterValue(ElementId inParameterId, out DocumentId outDocumentId, out FinishingCategoryType outFinishingType)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inParameterId |  The Id of the parameter  |  \n \n|  DocumentId |  outDocumentId |  finishing Document  |  \n \n|  FinishingCategoryType |  outFinishingType |  finishing category type of the document  |\n",
+  "markdown": "markdown/cad/08a2c17e4c8951e2682ee8f0.md",
+  "originalHtml": "html/cad/08a2c17e4c8951e2682ee8f0.html"
+}

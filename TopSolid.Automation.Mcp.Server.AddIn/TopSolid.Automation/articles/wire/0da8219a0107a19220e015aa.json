@@ -1,0 +1,8 @@
+{
+  "path": "api/wire/TopSolid.Cam.NC.Wire.Automating.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/wire/TopSolid.Cam.NC.Wire.Automating.html",
+  "sha256": "fd278fa62940a208e6a70af96ea4724055a709b527cc312383a3e7d7822ac20a",
+  "text": "# Namespace TopSolid.Cam.NC.Wire.Automating\n\n###  Classes \n\n#### TopSolidWireTechnologyHost\n \nRepresents TopSolid'Wire host providing WCF services for automating.\n\n#### TopSolidWireTechnologyHostInstance\n \nRepresents a TopSolid'Wire host instance providing WCF services for automating.\n\n###  Interfaces \n\n#### IWireCc\n \nGives access to wire wire cutting condition.\n\n#### IWireTechnologies\n \nGives access to wire technologies.\n\n#### IWireTechnologyDocuments\n \nGives access to wire technology documents.\n\n###  Enums \n\n#### TechnologyType\n \nDefines the various technology type.\n",
+  "markdown": "markdown/wire/0da8219a0107a19220e015aa.md",
+  "originalHtml": "html/wire/0da8219a0107a19220e015aa.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IEntities.SetCurrentSet.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IEntities.SetCurrentSet.html",
+  "sha256": "1c78ffe9f4900cadea68bd4c0adecf04775919b2d211e1576384e8779d0fe5b9",
+  "text": "# Method SetCurrentSet\n\n#### SetCurrentSet(DocumentId, ElementId)\n\nSets the current set definition entity in a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 14, 300, 140)]\nvoid SetCurrentSet(DocumentId inDocumentId, ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to set the current set.  |  \n \n|  ElementId |  inElementId |  Identifiers of the set definition entity.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.14.300.140.\n",
+  "markdown": "markdown/kernel/c8fa0faae27dfe3dd8eb1d4a.md",
+  "originalHtml": "html/kernel/c8fa0faae27dfe3dd8eb1d4a.html"
+}

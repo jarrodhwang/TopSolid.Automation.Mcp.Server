@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IOperations.GetAllCuttingConditionsDocuments.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IOperations.GetAllCuttingConditionsDocuments.html",
+  "sha256": "426839dc7f0cc91f6f1e8b9ddd6e88f35c687f6b1ab08013eecff4906c105119",
+  "text": "# Method GetAllCuttingConditionsDocuments\n\n#### GetAllCuttingConditionsDocuments(ElementId)\n\nGets all cutting condition documents available for an operation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 14, 300, 144)]\nList<DocumentId> GetAllCuttingConditionsDocuments(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the operation to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<DocumentId> |  All cutting condition documents.  |\n",
+  "markdown": "markdown/cam/fc1b04db95681f31d31f1fc1.md",
+  "originalHtml": "html/cam/fc1b04db95681f31d31f1fc1.html"
+}

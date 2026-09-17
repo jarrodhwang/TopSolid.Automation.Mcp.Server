@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.GetMinorRevisionFileVersion.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.GetMinorRevisionFileVersion.html",
+  "sha256": "c7325cd76cf350373459c9c536213c04e7981498d999bc330f1e00a1af468101",
+  "text": "# Method GetMinorRevisionFileVersion\n\n#### GetMinorRevisionFileVersion(PdmMinorRevisionId)\n\nGets the version of the application used to save the file of a minor revision.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 9, 0, 0)]\nint GetMinorRevisionFileVersion(PdmMinorRevisionId inMinorRevisionId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmMinorRevisionId |  inMinorRevisionId |  Identifier of the minor revision.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  int |  Application version used to save the file of the minor revision.  |  \n\n##### Remarks\n\nThe value returned is defined by: Major * 100000000 + Minor * 1000000 + Build * 1000 + Revision.\n \nFor example, v7.5.200.100 is returned as: 705200100.\n \nThis method returns 0 if the version of the application is not known.\n \nThis method is available since v7.9.\n",
+  "markdown": "markdown/kernel/9bd55db4820415554ef4bd71.md",
+  "originalHtml": "html/kernel/9bd55db4820415554ef4bd71.html"
+}

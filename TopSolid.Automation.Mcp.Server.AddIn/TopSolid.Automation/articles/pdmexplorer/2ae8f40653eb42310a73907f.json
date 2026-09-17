@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.AvailableSinceVersionAttribute.-ctor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.AvailableSinceVersionAttribute.-ctor.html",
+  "sha256": "7c7b851820cc8e31c2acfe3b5129109f7ef18599a8986393ef5a9a0f176827f2",
+  "text": "# Constructor AvailableSinceVersionAttribute\n\n#### AvailableSinceVersionAttribute(int, int, int, int)\n\nInitializes a new instance of the AvailableSinceVersionAttribute class.\n\n##### Declaration\n\n```\npublic AvailableSinceVersionAttribute(int inMajor, int inMinor, int inBuild, int inRevision)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  int |  inMajor |  Major number must be within [0,20].  |  \n \n|  int |  inMinor |  Minor number must be within [0,99].  |  \n \n|  int |  inBuild |  Build number must be within [0,999].  |  \n \n|  int |  inRevision |  Revision number must be within [0,999].  |\n",
+  "markdown": "markdown/pdmexplorer/2ae8f40653eb42310a73907f.md",
+  "originalHtml": "html/pdmexplorer/2ae8f40653eb42310a73907f.html"
+}

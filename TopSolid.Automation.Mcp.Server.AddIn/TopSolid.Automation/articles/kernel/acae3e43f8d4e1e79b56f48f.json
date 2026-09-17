@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.SetTextTableParameterPossibleValues.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.SetTextTableParameterPossibleValues.html",
+  "sha256": "a1cb88ddad5dd0f6e54985ce0b7572ddd303b962d3055b1d767303f24b74b1f5",
+  "text": "# Method SetTextTableParameterPossibleValues\n\n#### SetTextTableParameterPossibleValues(ElementId, DocumentId, List<SmartReal>, List<SmartText>)\n\nSets possible values for text table parameter creation operation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 18, 0, 0)]\nvoid SetTextTableParameterPossibleValues(ElementId inElementId, DocumentId inDocumentId, List<SmartReal> inSourceSmartRealList, List<SmartText> inResultSmartTextList)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the smart text table parameter creation operation to modify.  |  \n \n|  DocumentId |  inDocumentId |  Identifier of the document.  |  \n \n|  List<SmartReal> |  inSourceSmartRealList |  Source values.  |  \n \n|  List<SmartText> |  inResultSmartTextList |  Result values.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.18.\n",
+  "markdown": "markdown/kernel/acae3e43f8d4e1e79b56f48f.md",
+  "originalHtml": "html/kernel/acae3e43f8d4e1e79b56f48f.html"
+}

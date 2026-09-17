@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IGeometries3D.GetProfilePublishingDefinition.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IGeometries3D.GetProfilePublishingDefinition.html",
+  "sha256": "6b589d3a00ea5e109da27a31ad8ebf844aa75f5bfccf36a3d47041f81399155f",
+  "text": "# Method GetProfilePublishingDefinition\n\n#### GetProfilePublishingDefinition(ElementId)\n\nGets the definition of a profile publishing entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 400, 180)]\nSmartProfile3D GetProfilePublishingDefinition(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the publishing entity to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartProfile3D |  The smart profile.  |\n",
+  "markdown": "markdown/kernel/c0f9302bf01a59fdbbe8aef2.md",
+  "originalHtml": "html/kernel/c0f9302bf01a59fdbbe8aef2.html"
+}

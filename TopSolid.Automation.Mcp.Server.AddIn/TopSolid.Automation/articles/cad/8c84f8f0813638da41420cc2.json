@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.SymmetryType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.SymmetryType.html",
+  "sha256": "5f1d25ddad7e79255a1064854a19d38b3cc9ff518cd79d4fb46c4b1086e6b35b",
+  "text": "# Enum SymmetryType\n\nDefines the various types of symmetries entities.\n\n###### Namespace: TopSolid.Cad.Design.Automating\n\n###### Assembly: TopSolid.Cad.Design.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\npublic enum SymmetryType\n```\n\n##### Remarks\n\nThis enum is available since v7.10.\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  None |  Not a symmetry.  |  \n \n|  Plane |  Plane symmetry.  |  \n \n|  Revolution |  Revolution symmetry.  |  \n \n|  Unclassified |  Unclassified type.  |\n",
+  "markdown": "markdown/cad/8c84f8f0813638da41420cc2.md",
+  "originalHtml": "html/cad/8c84f8f0813638da41420cc2.html"
+}

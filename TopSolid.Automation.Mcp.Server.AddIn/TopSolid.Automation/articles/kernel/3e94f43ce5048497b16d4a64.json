@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.TopSolidHostInstance.Healing.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.TopSolidHostInstance.Healing.html",
+  "sha256": "86916237646721e7faaab2688c0a43d88ab7d20678ade5efed6c988369eeb24f",
+  "text": "# Property Healing\n\n#### Healing\n\nGets access to healing, or null if not available.\n\n##### Declaration\n\n```\npublic IHealing Healing { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  IHealing |   |\n",
+  "markdown": "markdown/kernel/3e94f43ce5048497b16d4a64.md",
+  "originalHtml": "html/kernel/3e94f43ce5048497b16d4a64.html"
+}

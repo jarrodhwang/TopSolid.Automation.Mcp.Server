@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IDocuments.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IDocuments.html",
+  "sha256": "f67cfd6f9565e2e1630827667a590bb93458c3032e2d5a56e5e573ea1b0cdc7e",
+  "text": "# Interface IDocuments\n\nGives access to Cam documents.\n\n###### Namespace: TopSolid.Cam.NC.Kernel.Automating\n\n###### Assembly: TopSolid.Cam.NC.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[ServiceContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\npublic interface IDocuments\n```\n\n### Methods \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   CreateNCPartInclusion(DocumentId, DocumentId, SolidType, ElementId)  |  Creates an NC part inside the target millturn document  |  \n \n|   DoDiagnostic(Guid, out string)  |  Check TopSolid Cam application. Do not use. Internal purpose only.  |  \n \n|   GetMachine(DocumentId)  |  Get the machine in the document.  |  \n \n|   GetParts(DocumentId)  |  Get the list of machining parts in the document.  |  \n \n|   GetTools(DocumentId, bool)  |  Get the list of mounted tools in the document.  |  \n \n|   GetWCSs(DocumentId)  |  Get the list of WCSs in the document.  |  \n \n|   IsCam(DocumentId)  |  Tells whether a document is a Cam document.  |  \n \n|   SetMachine(DocumentId, DocumentId)  |  Sets the machine in the document.  |\n",
+  "markdown": "markdown/cam/bea08f58a259924a3a6c2652.md",
+  "originalHtml": "html/cam/bea08f58a259924a3a6c2652.html"
+}

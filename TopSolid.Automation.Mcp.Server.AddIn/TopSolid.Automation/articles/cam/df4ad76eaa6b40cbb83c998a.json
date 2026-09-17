@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.CylinderStockType.IsManagingDrilling.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.CylinderStockType.IsManagingDrilling.html",
+  "sha256": "4cf7518646b9718620b289c4ead0518ebd10a32bfe694988a983acd02f2b4ee3",
+  "text": "# Field IsManagingDrilling\n\nManage Drilling.\n\n###### Namespace: TopSolid.Cam.NC.Kernel.Automating\n\n###### Assembly: TopSolid.Cam.NC.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic SmartBoolean IsManagingDrilling\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartBoolean |  Manage Drilling. |\n",
+  "markdown": "markdown/cam/df4ad76eaa6b40cbb83c998a.md",
+  "originalHtml": "html/cam/df4ad76eaa6b40cbb83c998a.html"
+}

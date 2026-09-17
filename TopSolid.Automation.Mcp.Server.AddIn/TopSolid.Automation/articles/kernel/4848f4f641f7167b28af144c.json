@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IDocuments.GetDocuments.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IDocuments.GetDocuments.html",
+  "sha256": "83b8e9744a2d82d6d2a931c09bffb87be9e8783b15a910ef8a2e24bcc7771458",
+  "text": "# Method GetDocuments\n\n#### GetDocuments()\n\nGets all the documents loaded into memory.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nList<DocumentId> GetDocuments()\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<DocumentId> |  Documents found.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/4848f4f641f7167b28af144c.md",
+  "originalHtml": "html/kernel/4848f4f641f7167b28af144c.html"
+}

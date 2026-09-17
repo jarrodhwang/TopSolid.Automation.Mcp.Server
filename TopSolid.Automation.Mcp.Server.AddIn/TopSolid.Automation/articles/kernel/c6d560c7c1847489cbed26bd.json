@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IDocuments.UnsubscribeFromEvents.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IDocuments.UnsubscribeFromEvents.html",
+  "sha256": "58822359466e388ca1e13b356f6f61a296009d330b4d21c7f93680ab6fbc46cd",
+  "text": "# Method UnsubscribeFromEvents\n\n#### UnsubscribeFromEvents(string)\n\nUnsubscribes from documents events.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nvoid UnsubscribeFromEvents(string inClientName)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  string |  inClientName |  Client name.  |  \n\n##### Remarks\n\nThis method is available since v7.8.\n",
+  "markdown": "markdown/kernel/c6d560c7c1847489cbed26bd.md",
+  "originalHtml": "html/kernel/c6d560c7c1847489cbed26bd.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Vector3D.Y.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Vector3D.Y.html",
+  "sha256": "0020670fe8e602e7c2f6af7388a1bdbe70149059bf991d8db7e64c8ccbdc3a7c",
+  "text": "# Field Y\n\nY component.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic double Y\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double |  Y component. |\n",
+  "markdown": "markdown/kernel/14b9b35e1606e5bff354df2b.md",
+  "originalHtml": "html/kernel/14b9b35e1606e5bff354df2b.html"
+}

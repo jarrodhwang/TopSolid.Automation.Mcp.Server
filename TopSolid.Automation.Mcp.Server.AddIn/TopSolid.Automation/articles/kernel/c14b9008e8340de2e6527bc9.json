@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.KeyValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.KeyValue.html",
+  "sha256": "b64d00d7252cd62ec6102140358a29c3602c44c604e8d0eee436a080cbb13392",
+  "text": "# Struct KeyValue\n\nRepresents a key-value string pair.\n\n##### Inherited Members\n \n ValueType.Equals(object) \n \n ValueType.GetHashCode() \n \n ValueType.ToString() \n \n object.Equals(object, object) \n \n object.ReferenceEquals(object, object) \n \n object.GetType() \n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\npublic struct KeyValue\n```\n\n##### Remarks\n\nThis structure is available since v7.8.\n\n### Constructors \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   KeyValue(string, string)  |  Initializes a new instance of the KeyValue structure.  |  \n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   Empty  |  Empty key-value pair.  |  \n \n|   Key  |  Key, or null if empty.  |  \n \n|   Value  |  Value, or null if empty.  |  \n\n### Properties \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   IsEmpty  |  Tells whether the key-value pair is empty.  |\n",
+  "markdown": "markdown/kernel/c14b9008e8340de2e6527bc9.md",
+  "originalHtml": "html/kernel/c14b9008e8340de2e6527bc9.html"
+}

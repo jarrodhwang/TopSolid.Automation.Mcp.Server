@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.ISimulation.IsSimulationComplete.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.ISimulation.IsSimulationComplete.html",
+  "sha256": "491c5cccaca81631dde1af2d051bcef9f17a12cc7913d35ae950fb3bfb8e4f26",
+  "text": "# Method IsSimulationComplete\n\n#### IsSimulationComplete()\n\nTells wether the simulation is complete.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 15, 0, 0)]\nbool IsSimulationComplete()\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  True if the simulation is complete.  |\n",
+  "markdown": "markdown/cam/07f75e1693fab2c2eece2cb6.md",
+  "originalHtml": "html/cam/07f75e1693fab2c2eece2cb6.html"
+}

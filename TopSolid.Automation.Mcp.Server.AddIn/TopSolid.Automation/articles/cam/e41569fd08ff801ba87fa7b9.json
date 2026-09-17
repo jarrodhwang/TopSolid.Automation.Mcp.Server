@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.SolidType.EliminateWeakPortionsOfStock.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.SolidType.EliminateWeakPortionsOfStock.html",
+  "sha256": "cc30a5cf799b53742616739d760be76c74e260e36178287879e054002d222335",
+  "text": "# Field EliminateWeakPortionsOfStock\n\nEliminate Weak Portions Of Stock.\n\n###### Namespace: TopSolid.Cam.NC.Kernel.Automating\n\n###### Assembly: TopSolid.Cam.NC.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic bool EliminateWeakPortionsOfStock\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Eliminate Weak Portions Of Stock. |\n",
+  "markdown": "markdown/cam/e41569fd08ff801ba87fa7b9.md",
+  "originalHtml": "html/cam/e41569fd08ff801ba87fa7b9.html"
+}

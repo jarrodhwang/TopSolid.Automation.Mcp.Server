@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.RenderMode.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.RenderMode.html",
+  "sha256": "3bd4e0f06306b004bfe9194b9ece8d765f5048fd89f06585506439553b055a9a",
+  "text": "# Enum RenderMode\n\nDefines the various types of graphic views render modes.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\npublic enum RenderMode\n```\n\n##### Remarks\n\nThis enum is available since v7.7.\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  Constant |  Constant shading.  |  \n \n|  DashedHiddenEdges |  Hidden-line rendering with dashed hidden edges.  |  \n \n|  Gouraud |  Gouraud shading.  |  \n \n|  GouraudWithDashedHiddenEdges |  Gouraud shading with dashed hidden edges.  |  \n \n|  GouraudWithEdges |  Gouraud shading with edges and wireframe.  |  \n \n|  GouraudWithEdgesAndSilhouettes |  Gouraud shading with edges and silhouettes.  |  \n \n|  GouraudWithHiddenWireframe |  Gouraud shading with hidden wireframe.  |  \n \n|  HiddenEdges |  Hidden-line rendering.  |  \n \n|  Realistic |  Realistic rendering.  |  \n \n|  RealisticWithEdges |  Realistic rendering with edges.  |  \n \n|  RealisticWithEffects |  Realistic rendering with effects.  |  \n \n|  RealisticWithEffectsAndEdges |  Realistic rendering with effects and edges.  |  \n \n|  Wireframe |  Wireframe rendering.  |  \n \n|  Zebra |  Zebra analysis.  |\n",
+  "markdown": "markdown/kernel/9dd535d1b39a12ccb3b75ee1.md",
+  "originalHtml": "html/kernel/9dd535d1b39a12ccb3b75ee1.html"
+}

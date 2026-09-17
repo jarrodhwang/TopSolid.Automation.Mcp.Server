@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.PdmSecurityUserOrGroupPermissions.UserAccountId.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.PdmSecurityUserOrGroupPermissions.UserAccountId.html",
+  "sha256": "167ac5a00d9b2bea19c089eb97976b532f500457932137012a30f97b69c48d3d",
+  "text": "# Field UserAccountId\n\nUser account identifier, string empty when user group is selected.\n\n###### Namespace: TopSolid.Pdm.Explorer.Automating\n\n###### Assembly: TopSolid.Pdm.Explorer.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic string UserAccountId\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  User account identifier, string empty when user group is selected. |\n",
+  "markdown": "markdown/pdmexplorer/ce7f7e3dca4dd2b6e5521d2f.md",
+  "originalHtml": "html/pdmexplorer/ce7f7e3dca4dd2b6e5521d2f.html"
+}

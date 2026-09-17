@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.IDraftings.IsDrafting.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.IDraftings.IsDrafting.html",
+  "sha256": "e6dc790596058ecf4991b04d1270fe94c63f2f8efe3be62214387dc84aab9855",
+  "text": "# Method IsDrafting\n\n#### IsDrafting(DocumentId)\n\nTells whether a document is a drafting document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nbool IsDrafting(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  The document is a drafting document.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/drafting/2fc44fc37af000750087c7fb.md",
+  "originalHtml": "html/drafting/2fc44fc37af000750087c7fb.html"
+}

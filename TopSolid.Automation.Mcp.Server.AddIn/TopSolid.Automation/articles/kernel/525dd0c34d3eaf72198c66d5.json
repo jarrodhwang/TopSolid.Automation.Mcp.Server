@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IFamilies.SetCatalogCellCodeValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IFamilies.SetCatalogCellCodeValue.html",
+  "sha256": "465caab9f52b10a30b3d6c0af661d98c00a4e7a83904efaeac8c0189c01d839f",
+  "text": "# Method SetCatalogCellCodeValue\n\n#### SetCatalogCellCodeValue(ElementId, ElementId, string)\n\nSets the code value of the catalog cell.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 15, 0, 60)]\nvoid SetCatalogCellCodeValue(ElementId inRow, ElementId inParameterId, string inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inRow |  Identifier of the row.  |  \n \n|  ElementId |  inParameterId |  Identifier of the parameter of the column.  |  \n \n|  string |  inValue |  Value of the cell.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.15.\n",
+  "markdown": "markdown/kernel/525dd0c34d3eaf72198c66d5.md",
+  "originalHtml": "html/kernel/525dd0c34d3eaf72198c66d5.html"
+}

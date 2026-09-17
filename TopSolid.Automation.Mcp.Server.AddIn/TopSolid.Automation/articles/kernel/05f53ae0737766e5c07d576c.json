@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ItemLabel.Frame3DXAxis.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ItemLabel.Frame3DXAxis.html",
+  "sha256": "6528006e7f41d7366ce85d8fcd69fa0312038dce25c41a9a02a0b0d0767230db",
+  "text": "# Field Frame3DXAxis\n\nLabel of 3D frame X axis.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\npublic static readonly ItemLabel Frame3DXAxis\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ItemLabel |  Label of 3D frame X axis. |\n",
+  "markdown": "markdown/kernel/05f53ae0737766e5c07d576c.md",
+  "originalHtml": "html/kernel/05f53ae0737766e5c07d576c.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/wire/TopSolid.Cam.NC.Wire.Automating.IWireTechnologyDocuments.SetMachines.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/wire/TopSolid.Cam.NC.Wire.Automating.IWireTechnologyDocuments.SetMachines.html",
+  "sha256": "139b6f6c56a0637e32ce5b92523b9eb0b8bb4acfc1e2a9eb29fdcb7bb8bd92e3",
+  "text": "# Method SetMachines\n\n#### SetMachines(DocumentId, List<DocumentId>)\n\nSet machine list.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 160)]\nvoid SetMachines(DocumentId inDocumentId, List<DocumentId> inMachinesDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  List<DocumentId> |  inMachinesDocumentId |  Identifier list of machine document.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n",
+  "markdown": "markdown/wire/14f1c1b7f42cb531e4de30db.md",
+  "originalHtml": "html/wire/14f1c1b7f42cb531e4de30db.html"
+}

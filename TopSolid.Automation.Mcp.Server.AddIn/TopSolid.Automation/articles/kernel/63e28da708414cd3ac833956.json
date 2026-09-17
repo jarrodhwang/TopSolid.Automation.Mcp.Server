@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.SetUserEnumerationValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.SetUserEnumerationValue.html",
+  "sha256": "89defcd7db127ab3782d93b74d925b6e18927c426724e60add337706455867b5",
+  "text": "# Method SetUserEnumerationValue\n\n#### SetUserEnumerationValue(ElementId, int)\n\nSets the value of a user enumeration parameter.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nvoid SetUserEnumerationValue(ElementId inElementId, int inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the parameter to modify.  |  \n \n|  int |  inValue |  New value.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/63e28da708414cd3ac833956.md",
+  "originalHtml": "html/kernel/63e28da708414cd3ac833956.html"
+}

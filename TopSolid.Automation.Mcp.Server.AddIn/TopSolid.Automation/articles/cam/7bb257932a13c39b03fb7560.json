@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IMachineTools.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IMachineTools.html",
+  "sha256": "b4147c5d9e2f26804da04b42519d378a6979dfc7cb7007d0bb22c3d8143a7bff",
+  "text": "# Interface IMachineTools\n\nGives access to machine tool.\n\n###### Namespace: TopSolid.Cam.NC.Kernel.Automating\n\n###### Assembly: TopSolid.Cam.NC.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[ServiceContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\npublic interface IMachineTools\n```\n\n### Methods \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   GetBodyRigidGroup(ElementId)  |  Get the body rigid group of the given machine.  |  \n \n|   GetMagazines(ElementId)  |  Get the list of magazines of the given machine.  |  \n \n|   GetParameters(ElementId)  |  Gets the parameters of the given machine tool.  |  \n \n|   GetPartHolders(ElementId)  |  Get the list of part holders of the given machine.  |  \n \n|   GetPockets(ElementId)  |  Get pockets of machine element (spindle, turret, magazine).  |  \n \n|   GetToolHolders(ElementId)  |  Get the list of tool holders of the given machine.  |  \n \n|   IsMachineTool(ElementId)  |  Tells whether an element is a machine.  |  \n \n|   SetPartHolder(ElementId, ElementId)  |  Set the part to the part holder on the current machine.  |\n",
+  "markdown": "markdown/cam/7bb257932a13c39b03fb7560.md",
+  "originalHtml": "html/cam/7bb257932a13c39b03fb7560.html"
+}

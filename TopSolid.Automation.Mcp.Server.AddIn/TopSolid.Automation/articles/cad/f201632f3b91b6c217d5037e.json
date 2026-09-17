@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.TopSolidDesignHost.IsConnected.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.TopSolidDesignHost.IsConnected.html",
+  "sha256": "ddcb3d6666048d9663394f2c76ac7f0c8aa15d4fd59753ad55a05de21aeb2cbf",
+  "text": "# Property IsConnected\n\n#### IsConnected\n\nTells whether TopSolid is connected.\n\n##### Declaration\n\n```\npublic static bool IsConnected { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |   |\n",
+  "markdown": "markdown/cad/f201632f3b91b6c217d5037e.md",
+  "originalHtml": "html/cad/f201632f3b91b6c217d5037e.html"
+}

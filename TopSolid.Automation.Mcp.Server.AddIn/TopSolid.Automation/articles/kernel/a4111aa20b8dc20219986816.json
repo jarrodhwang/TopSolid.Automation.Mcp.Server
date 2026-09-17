@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Point3D.op_BitwiseOr.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Point3D.op_BitwiseOr.html",
+  "sha256": "0f750e1e9a5f3dc69944f47f0e2c0c6fcbe6f691b98be4439a7dc8de42e50836",
+  "text": "# Operator operator |\n\n#### operator |(Point3D, Point3D)\n\nComputes the vector from one point to another point.\n\n##### Declaration\n\n```\npublic static Vector3D operator |(Point3D inPoint1, Point3D inPoint2)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  Point3D |  inPoint1 |  First point.  |  \n \n|  Point3D |  inPoint2 |  Second point.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Vector3D |  Vector from first point to second point.  |\n",
+  "markdown": "markdown/kernel/a4111aa20b8dc20219986816.md",
+  "originalHtml": "html/kernel/a4111aa20b8dc20219986816.html"
+}

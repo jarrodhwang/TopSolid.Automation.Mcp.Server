@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Color.Pink.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Color.Pink.html",
+  "sha256": "efe9ec7f7f5c8a58b4eafba7be90097a9ade469b0617c731c9fe64152539362c",
+  "text": "# Field Pink\n\nPink color.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\npublic static readonly Color Pink\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Color |  Pink color. |\n",
+  "markdown": "markdown/kernel/4dc84376f8aa0bf71640a200.md",
+  "originalHtml": "html/kernel/4dc84376f8aa0bf71640a200.html"
+}

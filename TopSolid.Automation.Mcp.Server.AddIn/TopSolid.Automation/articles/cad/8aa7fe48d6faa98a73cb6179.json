@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.DrillingPrimitive.-ctor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.DrillingPrimitive.-ctor.html",
+  "sha256": "55370b15ef43ad91baa309a7913f22f8e54068ea6bdb0826c82bfb0537a7324f",
+  "text": "# Constructor DrillingPrimitive\n\n#### DrillingPrimitive()\n\nInitializes a new instance of the DrillingPrimitive class.\n\n##### Declaration\n\n```\npublic DrillingPrimitive()\n```\n",
+  "markdown": "markdown/cad/8aa7fe48d6faa98a73cb6179.md",
+  "originalHtml": "html/cad/8aa7fe48d6faa98a73cb6179.html"
+}

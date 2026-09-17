@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMaterials.GetBulkModulus.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMaterials.GetBulkModulus.html",
+  "sha256": "38501341ab04a791cc9b7cf0df92099d92daeac484baa4eb9471fef64f135003",
+  "text": "# Method GetBulkModulus\n\n#### GetBulkModulus(DocumentId, out double)\n\nGets Bulk Modulus\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 400, 120)]\nbool GetBulkModulus(DocumentId inDocumentId, out double outValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Id of the container document  |  \n \n|  double |  outValue |  The value  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  true if a parameter has been fetched with success  |\n",
+  "markdown": "markdown/cad/6c0d62988a00d2cd70eb3b77.md",
+  "originalHtml": "html/cad/6c0d62988a00d2cd70eb3b77.html"
+}

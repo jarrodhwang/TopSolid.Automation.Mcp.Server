@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IAssemblies.GetOptionalDriverDefaultValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IAssemblies.GetOptionalDriverDefaultValue.html",
+  "sha256": "13cae0da4192fdf448403c25ed0e4b76b4d657226aa69e370e1e03851b24387f",
+  "text": "# Method GetOptionalDriverDefaultValue\n\n#### GetOptionalDriverDefaultValue(ElementId, string)\n\nGets optional driver default value\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 400, 80)]\nSmartObject GetOptionalDriverDefaultValue(ElementId inOperationId, string inDriverName)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inOperationId |  inclusion operation  |  \n \n|  string |  inDriverName |  name of the optional driver to consider  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartObject |   |\n",
+  "markdown": "markdown/cad/3e8c703b603ed76871c6ab24.md",
+  "originalHtml": "html/cad/3e8c703b603ed76871c6ab24.html"
+}

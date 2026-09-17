@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IElements.IsTransparencyModifiable.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IElements.IsTransparencyModifiable.html",
+  "sha256": "6875eb82b993f8495606b3713a011b217897d43b4e4189a888443938b828bc1d",
+  "text": "# Method IsTransparencyModifiable\n\n#### IsTransparencyModifiable(ElementId)\n\nTells whether the transparency of an element is modifiable.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nbool IsTransparencyModifiable(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  The transparency of the element is modifiable.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/075ba46ab8ff2eb37d9d0097.md",
+  "originalHtml": "html/kernel/075ba46ab8ff2eb37d9d0097.html"
+}

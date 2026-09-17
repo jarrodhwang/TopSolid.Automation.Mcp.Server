@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IElements.DeleteSeveral.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IElements.DeleteSeveral.html",
+  "sha256": "f3cf03c94562ca852b62a50ec1425617c2097e0eff72bb59328628c1c82dbb7e",
+  "text": "# Method DeleteSeveral\n\n#### DeleteSeveral(List<ElementId>)\n\nDeletes several elements.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nvoid DeleteSeveral(List<ElementId> inElementIds)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  List<ElementId> |  inElementIds |  Identifiers of the elements to delete.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/b6eeee080dae1b81e7a147e4.md",
+  "originalHtml": "html/kernel/b6eeee080dae1b81e7a147e4.html"
+}

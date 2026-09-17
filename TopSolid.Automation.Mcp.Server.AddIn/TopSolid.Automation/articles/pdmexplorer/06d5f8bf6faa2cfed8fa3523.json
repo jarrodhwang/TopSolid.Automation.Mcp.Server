@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.GetCustomer.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.GetCustomer.html",
+  "sha256": "140eef043f56e00dce8bf1a20820120666125690da0fd4d49566b865f6fbe024",
+  "text": "# Method GetCustomer\n\n#### GetCustomer(PdmObjectId)\n\nGets the customer of an object.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nstring GetCustomer(PdmObjectId inObjectId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  Object identifier.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  Object customer.  |  \n\n##### Remarks\n\nThis method is available since v7.10.300.120.\n",
+  "markdown": "markdown/pdmexplorer/06d5f8bf6faa2cfed8fa3523.md",
+  "originalHtml": "html/pdmexplorer/06d5f8bf6faa2cfed8fa3523.html"
+}

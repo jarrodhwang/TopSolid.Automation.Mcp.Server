@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IOperations.SetOperationLinkInMovementsMethod.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IOperations.SetOperationLinkInMovementsMethod.html",
+  "sha256": "b1397bb246f0714b8092b8d48335de137ed910635dbb467055f54f3a5b6efe9a",
+  "text": "# Method SetOperationLinkInMovementsMethod\n\n#### SetOperationLinkInMovementsMethod(ElementExId, LinkMovementsMethod, DocumentId)\n\nSet given operation link-in movement method. If method is manual, load given document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 160, 0)]\nbool SetOperationLinkInMovementsMethod(ElementExId inElementExId, LinkMovementsMethod inLinkMethod, DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementExId |  inElementExId |  Identifier of the operation to modify  |  \n \n|  LinkMovementsMethod |  inLinkMethod |  Link-in movement method to set  |  \n \n|  DocumentId |  inDocumentId |  Identifier of the document to load in case of manual method  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  True if link method has been set  |\n",
+  "markdown": "markdown/cam/6c304fc44fcb1035164dc3d1.md",
+  "originalHtml": "html/cam/6c304fc44fcb1035164dc3d1.html"
+}

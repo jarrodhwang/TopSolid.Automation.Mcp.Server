@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IParts.GetSurfaceAreaPropertyManagement.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IParts.GetSurfaceAreaPropertyManagement.html",
+  "sha256": "e58da9cfc0dd07ccbfd68f87d9c9635330c941432140aee26d8354a4368b23c7",
+  "text": "# Method GetSurfaceAreaPropertyManagement\n\n#### GetSurfaceAreaPropertyManagement(DocumentId, out bool, out SmartReal)\n\nGets the surface area property management of a part.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 13, 300, 220)]\nvoid GetSurfaceAreaPropertyManagement(DocumentId inDocumentId, out bool outIsSurfaceManaged, out SmartReal outManualSurfaceArea)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of part document to analyze.  |  \n \n|  bool |  outIsSurfaceManaged |  Whether the surface area is managed. True for automatic or manual, false for not managed.  |  \n \n|  SmartReal |  outManualSurfaceArea |  Manual surface area, or null if no manual surface area.  |  \n\n##### Remarks\n\nThis method is available since v7.13.300.220.\n",
+  "markdown": "markdown/cad/940ae6038d5e1bb0e51f5600.md",
+  "originalHtml": "html/cad/940ae6038d5e1bb0e51f5600.html"
+}

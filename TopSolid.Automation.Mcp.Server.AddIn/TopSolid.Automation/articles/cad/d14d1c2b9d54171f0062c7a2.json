@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMaterials.SetMeltingTemperature.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMaterials.SetMeltingTemperature.html",
+  "sha256": "6fbab3ab50176df5692e386d8aa70f1f02a559b9f2375bb63da1ca86f82842e0",
+  "text": "# Method SetMeltingTemperature\n\n#### SetMeltingTemperature(DocumentId, double)\n\nSets Melting Temperature\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 400, 120)]\nvoid SetMeltingTemperature(DocumentId inDocumentId, double inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Id of the container document  |  \n \n|  double |  inValue |  The value to use  |\n",
+  "markdown": "markdown/cad/d14d1c2b9d54171f0062c7a2.md",
+  "originalHtml": "html/cad/d14d1c2b9d54171f0062c7a2.html"
+}

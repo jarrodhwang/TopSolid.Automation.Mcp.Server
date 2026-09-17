@@ -1,0 +1,8 @@
+{
+  "path": "api/cae/TopSolid.Cae.Kernel.Automating.MeasureResults.Displacements.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cae/TopSolid.Cae.Kernel.Automating.MeasureResults.Displacements.html",
+  "sha256": "7ba9865625ba60a97499feb91bb9bb72c093597ad3e3c7460c7a4ffd62e45ce7",
+  "text": "# Property Displacements\n\n#### Displacements\n\nGets the Displacements\n\n##### Declaration\n\n```\npublic string[] Displacements { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string[] |   |\n",
+  "markdown": "markdown/cae/4ced22a66fb45dc453d320c4.md",
+  "originalHtml": "html/cae/4ced22a66fb45dc453d320c4.html"
+}

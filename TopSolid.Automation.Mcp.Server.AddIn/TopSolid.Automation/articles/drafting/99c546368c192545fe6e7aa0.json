@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.SurfaceFinishTools.SurfaceFinishStriaOrientation.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.SurfaceFinishTools.SurfaceFinishStriaOrientation.html",
+  "sha256": "242f84a879bcc7cb8c90bbb4b759c1a914900021fa0ea272694dddb444e25d1c",
+  "text": "# Enum SurfaceFinishStriaOrientation\n\nDefines the various types of items of a surface finish entity.\n\n###### Namespace: TopSolid.Cad.Drafting.Automating.SurfaceFinishTools\n\n###### Assembly: TopSolid.Cad.Drafting.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 17, 0, 0)]\npublic enum SurfaceFinishStriaOrientation\n```\n\n##### Remarks\n\nThis enum is available since v7.17.000.000.\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  ApproximatelyCircular |  Stria orientation is in circular configuration.  |  \n \n|  ApproximatelyRadial |  Stria orientation is in radial configuration.  |  \n \n|  InTwoCrossedDirections |  Stria orientation is in two crossed directions.  |  \n \n|  MultiDirectional |  Stria orientation is in multidirectional configuration.  |  \n \n|  NoSpecificDirection |  Stria orientation doesn't have a specific direction.  |  \n \n|  None |  No stria orientation.  |  \n \n|  ParallelToProjectionPlane |  Stria orientation is parallel to projection plane.  |  \n \n|  PerpendicularToProjectionPlane |  Stria orientation is perpendicular to projection plane.  |\n",
+  "markdown": "markdown/drafting/99c546368c192545fe6e7aa0.md",
+  "originalHtml": "html/drafting/99c546368c192545fe6e7aa0.html"
+}

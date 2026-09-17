@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.SaveSeveral.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.SaveSeveral.html",
+  "sha256": "a08520b0e47c0eac0a930d0f2df615940401c3f57e4b28d759aa33e232e64b97",
+  "text": "# Method SaveSeveral\n\n#### SaveSeveral(List<PdmObjectId>, bool)\n\nSaves several objects.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nvoid SaveSeveral(List<PdmObjectId> inObjectIds, bool inRecurses)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  List<PdmObjectId> |  inObjectIds |  PDM object identifiers.  |  \n \n|  bool |  inRecurses |  Tells if to recurse on objects contained.  |  \n\n##### Remarks\n\nThis method must not be called between StartModification(string, bool) and EndModification(bool, bool) methods calls.\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/e637f04e17a5581d2740a8b5.md",
+  "originalHtml": "html/kernel/e637f04e17a5581d2740a8b5.html"
+}

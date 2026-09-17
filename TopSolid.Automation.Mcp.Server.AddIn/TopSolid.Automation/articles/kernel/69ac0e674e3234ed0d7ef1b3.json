@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.SetBooleanPublishingDefinition.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.SetBooleanPublishingDefinition.html",
+  "sha256": "3e0c88d837f3131472d315459bc26fed0f3984ec302e0350faa24e232040582d",
+  "text": "# Method SetBooleanPublishingDefinition\n\n#### SetBooleanPublishingDefinition(ElementId, SmartBoolean)\n\nSets the definition of a Boolean publishing entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nvoid SetBooleanPublishingDefinition(ElementId inElementId, SmartBoolean inDefinition)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the publishing entity to modify.  |  \n \n|  SmartBoolean |  inDefinition |  Publishing new definition.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.8.\n",
+  "markdown": "markdown/kernel/69ac0e674e3234ed0d7ef1b3.md",
+  "originalHtml": "html/kernel/69ac0e674e3234ed0d7ef1b3.html"
+}

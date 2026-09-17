@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IFamilies.GetBaseDocument.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IFamilies.GetBaseDocument.html",
+  "sha256": "702f1e041440424a5b77dfb2da27db3741fa8be304f3b48b47b8b0384e0c597e",
+  "text": "# Method GetBaseDocument\n\n#### GetBaseDocument(DocumentId)\n\nGets the base family of a derived family.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nDocumentId GetBaseDocument(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the derived family document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  DocumentId |  Base family document identifier, or empty if the family is not derived.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/kernel/037b23b0a0b70979aea88f92.md",
+  "originalHtml": "html/kernel/037b23b0a0b70979aea88f92.html"
+}

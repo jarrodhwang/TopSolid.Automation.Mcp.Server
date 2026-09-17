@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartDirection3D.HelpPoint.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartDirection3D.HelpPoint.html",
+  "sha256": "19e5b11d6d42a4841253e9565a64576377a33d17b247e87457e3f8b3d07b7d0f",
+  "text": "# Field HelpPoint\n\nHelp point, or null if unknown.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic Point3D? HelpPoint\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Point3D? |  Help point, or null if unknown. |\n",
+  "markdown": "markdown/kernel/54296f0c2a88c40b9436f1d4.md",
+  "originalHtml": "html/kernel/54296f0c2a88c40b9436f1d4.html"
+}

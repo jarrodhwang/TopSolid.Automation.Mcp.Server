@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IParts.SetMachiningProcessOperationPointDriverValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IParts.SetMachiningProcessOperationPointDriverValue.html",
+  "sha256": "21b5b097f7b4e58ad2ddd46632a4d172175f0ab9179ecf144bd359b6fcdd9c5c",
+  "text": "# Method SetMachiningProcessOperationPointDriverValue\n\n#### SetMachiningProcessOperationPointDriverValue(ElementId, string, SmartPoint3D)\n\nSets a machining process point driver value\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 0, 0)]\nvoid SetMachiningProcessOperationPointDriverValue(ElementId inElementId, string inDesignation, SmartPoint3D inSmartPoint3D)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Existing machining Process Operation  |  \n \n|  string |  inDesignation |  Driver designations  |  \n \n|  SmartPoint3D |  inSmartPoint3D |  Smart 3DPoint  |  \n\n##### Remarks\n\nThis method is available since v7.19.\n",
+  "markdown": "markdown/cad/e19946061543a11415bd7b53.md",
+  "originalHtml": "html/cad/e19946061543a11415bd7b53.html"
+}

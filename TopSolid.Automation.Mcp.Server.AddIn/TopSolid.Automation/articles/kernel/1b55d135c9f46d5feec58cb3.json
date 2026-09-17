@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.OpenProject.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.OpenProject.html",
+  "sha256": "a220df3ee498ddda5d7262c5d38a36d8562e2fd2ecb08b34b17efcac6126d9d8",
+  "text": "# Method OpenProject\n\n#### OpenProject(PdmObjectId)\n\nOpens a project.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 9, 300, 100)]\nvoid OpenProject(PdmObjectId inProjectId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inProjectId |  Project identifier.  |  \n\n##### Remarks\n\nThis method is available since v7.9.300.100.\n",
+  "markdown": "markdown/kernel/1b55d135c9f46d5feec58cb3.md",
+  "originalHtml": "html/kernel/1b55d135c9f46d5feec58cb3.html"
+}

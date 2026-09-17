@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IPrograms.GetHeader.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IPrograms.GetHeader.html",
+  "sha256": "298ee367795255ee87d8d2a9a7e2e9929b2328eb52633690815a2a83c293ae2d",
+  "text": "# Method GetHeader\n\n#### GetHeader(ElementId)\n\nGet program header.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 180)]\nSmartText GetHeader(ElementId inProgramId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inProgramId |  Identifier of the NC program to modify.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartText |  Program header.  |\n",
+  "markdown": "markdown/cam/2df0b0b54c7e8e84bf77de84.md",
+  "originalHtml": "html/cam/2df0b0b54c7e8e84bf77de84.html"
+}

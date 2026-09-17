@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMaterials.GetRoughnessFactor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMaterials.GetRoughnessFactor.html",
+  "sha256": "f1b2a8d75cd3a08941e6bed9151dddce4355d9e5b7158c04b5f37b97a2b75df5",
+  "text": "# Method GetRoughnessFactor\n\n#### GetRoughnessFactor(DocumentId)\n\nGets the Roughness factor.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 400, 100)]\ndouble GetRoughnessFactor(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double |   |  \n\n##### Remarks\n\nThis method is available since v7.16.\n",
+  "markdown": "markdown/cad/16b55628035f7fa49ecbb978.md",
+  "originalHtml": "html/cad/16b55628035f7fa49ecbb978.html"
+}

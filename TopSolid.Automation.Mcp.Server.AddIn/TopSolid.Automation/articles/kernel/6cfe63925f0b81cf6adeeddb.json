@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ITextures.GetRedWayRotationAngle.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ITextures.GetRedWayRotationAngle.html",
+  "sha256": "e1bd298928f914b0eb4b3077cebc14aa9acc430771abcdbf7f296d3771f7e418",
+  "text": "# Method GetRedWayRotationAngle\n\n#### GetRedWayRotationAngle(DocumentId)\n\nGets the RedWay rotation angle.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 400, 100)]\ndouble GetRedWayRotationAngle(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyse.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double |   |  \n\n##### Remarks\n\nThis method is available since v7.16.\n",
+  "markdown": "markdown/kernel/6cfe63925f0b81cf6adeeddb.md",
+  "originalHtml": "html/kernel/6cfe63925f0b81cf6adeeddb.html"
+}

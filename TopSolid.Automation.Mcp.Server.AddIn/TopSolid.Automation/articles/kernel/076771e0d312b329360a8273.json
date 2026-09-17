@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Plane3D.YDirection.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Plane3D.YDirection.html",
+  "sha256": "32d1dc228657444e61e096fc2dcff4d5819477d5ccc9adae322cde68c06e20b7",
+  "text": "# Field YDirection\n\nPlane Y direction, orthogonal to XDirection.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic Direction3D YDirection\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Direction3D |  Plane Y direction, orthogonal to XDirection. |\n",
+  "markdown": "markdown/kernel/076771e0d312b329360a8273.md",
+  "originalHtml": "html/kernel/076771e0d312b329360a8273.html"
+}

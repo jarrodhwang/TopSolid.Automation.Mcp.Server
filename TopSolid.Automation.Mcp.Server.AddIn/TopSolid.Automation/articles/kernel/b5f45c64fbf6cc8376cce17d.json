@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.PropertyDefinition.IsEmpty.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.PropertyDefinition.IsEmpty.html",
+  "sha256": "cc162365028d4b636a24ebc6bde3da7172a349f5564bf9e0012e135f75ec761a",
+  "text": "# Property IsEmpty\n\n#### IsEmpty\n\nTells whether the property definition is empty.\n\n##### Declaration\n\n```\npublic bool IsEmpty { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |   |\n",
+  "markdown": "markdown/kernel/b5f45c64fbf6cc8376cce17d.md",
+  "originalHtml": "html/kernel/b5f45c64fbf6cc8376cce17d.html"
+}

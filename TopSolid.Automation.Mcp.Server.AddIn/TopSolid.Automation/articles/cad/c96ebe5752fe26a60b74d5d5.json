@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IRepresentations.SetCurrentRepresentation.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IRepresentations.SetCurrentRepresentation.html",
+  "sha256": "1ed7b475bdd7b3c99c3671b2d2ab4fce438ae7594a5f75a8d45e4c222597e8aa",
+  "text": "# Method SetCurrentRepresentation\n\n#### SetCurrentRepresentation(ElementId)\n\nSets the current representation entity of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nvoid SetCurrentRepresentation(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the representation entity to become current.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.10.\n",
+  "markdown": "markdown/cad/c96ebe5752fe26a60b74d5d5.md",
+  "originalHtml": "html/cad/c96ebe5752fe26a60b74d5d5.html"
+}

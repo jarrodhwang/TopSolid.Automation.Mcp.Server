@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IAssemblies.IsLocalPartOrLocalAssembly.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IAssemblies.IsLocalPartOrLocalAssembly.html",
+  "sha256": "0b6b28a44b385495a4d6ce786a1d48a58bf532a6ca01cf7963be911dea1d868f",
+  "text": "# Method IsLocalPartOrLocalAssembly\n\n#### IsLocalPartOrLocalAssembly(ElementId)\n\nTells whether an element is a local part or a local assembly entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 17, 0, 0)]\nbool IsLocalPartOrLocalAssembly(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  The element is a local part or a local assemby entity.  |  \n\n##### Remarks\n\nThis method is available since v7.17.\n",
+  "markdown": "markdown/cad/dcd6e44e325f2d64ca3c980f.md",
+  "originalHtml": "html/cad/dcd6e44e325f2d64ca3c980f.html"
+}

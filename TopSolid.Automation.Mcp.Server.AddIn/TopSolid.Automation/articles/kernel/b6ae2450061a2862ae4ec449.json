@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IDocuments.Save.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IDocuments.Save.html",
+  "sha256": "8cfaaa676bfcd8b3cb313e3e874cb451b71186aadbfbe02efba0c2908a3c7eab",
+  "text": "# Method Save\n\n#### Save(DocumentId)\n\nSaves a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nvoid Save(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to save.  |  \n\n##### Remarks\n\nThis method must not be called between StartModification(string, bool) and EndModification(bool, bool) methods calls.\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/b6ae2450061a2862ae4ec449.md",
+  "originalHtml": "html/kernel/b6ae2450061a2862ae4ec449.html"
+}

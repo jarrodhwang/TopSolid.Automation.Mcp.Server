@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdmAdmin.DeactivateUser.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdmAdmin.DeactivateUser.html",
+  "sha256": "a9783963fed59e4b7e61637e023c2fb64e59803d323b7a19c210f0a31df584df",
+  "text": "# Method DeactivateUser\n\n#### DeactivateUser(string)\n\nDeactivate an active user.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 301, 160)]\nvoid DeactivateUser(string inAccountId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  string |  inAccountId |  User account identifier.  |  \n\n##### Remarks\n\nIf the IsAdmin property returns false, this method cannot be called (an exception will be thrown otherwise).\n \nThis method is available since v7.6.301.160.\n",
+  "markdown": "markdown/kernel/63909b9d526cdb3f64ae70af.md",
+  "originalHtml": "html/kernel/63909b9d526cdb3f64ae70af.html"
+}

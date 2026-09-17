@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.INCFiles.UpdateOtherNCFileBufferPartial.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.INCFiles.UpdateOtherNCFileBufferPartial.html",
+  "sha256": "20db6d4e1ab19efa90bb3d361e0138714cd71cb5037c666c35a99e72b549319b",
+  "text": "# Method UpdateOtherNCFileBufferPartial\n\n#### UpdateOtherNCFileBufferPartial(PdmMinorRevisionId, bool, char[], int)\n\nUpdate other NC file using buffer.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nvoid UpdateOtherNCFileBufferPartial(PdmMinorRevisionId inMinorRevisionId, bool inClear, char[] inBuffer, int inBufferSize)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmMinorRevisionId |  inMinorRevisionId |  Identifier of the minor revision.  |  \n \n|  bool |  inClear |   |  \n \n|  char[] |  inBuffer |   |  \n \n|  int |  inBufferSize |   |\n",
+  "markdown": "markdown/cam/b5d40707bbb27ac824f5a066.md",
+  "originalHtml": "html/cam/b5d40707bbb27ac824f5a066.html"
+}

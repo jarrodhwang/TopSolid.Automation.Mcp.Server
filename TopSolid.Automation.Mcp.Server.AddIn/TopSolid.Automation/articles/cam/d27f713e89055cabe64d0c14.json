@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.ICamSketch.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.ICamSketch.html",
+  "sha256": "d8356e358b8307b735c6e06c3ca36e1e90032d24a99f798011694954545e005d",
+  "text": "# Interface ICamSketch\n\nGives access to Cam sketches.\n\n###### Namespace: TopSolid.Cam.NC.Kernel.Automating\n\n###### Assembly: TopSolid.Cam.NC.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[ServiceContract]\n[AvailableSinceVersion(7, 18, 400, 200)]\npublic interface ICamSketch\n```\n\n### Methods \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   ExecuteDeferredSketch(ElementId)  |  Gets the deferred sketches  |  \n \n|   GetDeferredSketches(DocumentId)  |  Gets the deferred sketches  |  \n \n|   IsSketchDeferred(ElementId)  |  Checks if the sketch operation is deferred.  |\n",
+  "markdown": "markdown/cam/d27f713e89055cabe64d0c14.md",
+  "originalHtml": "html/cam/d27f713e89055cabe64d0c14.html"
+}

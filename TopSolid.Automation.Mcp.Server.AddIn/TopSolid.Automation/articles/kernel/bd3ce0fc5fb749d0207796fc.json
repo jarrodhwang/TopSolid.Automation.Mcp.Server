@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IApplication.StartJournaling.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IApplication.StartJournaling.html",
+  "sha256": "e2ece886deebda297a5a4ebaafdab716dc8568659adab483fcf1ea3dc9c93fa9",
+  "text": "# Method StartJournaling\n\n#### StartJournaling(string)\n\nStarts journaling.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nvoid StartJournaling(string inFilePath)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  string |  inFilePath |  Full path of the journal file to create without its \".TopAJ\" suffix.  |  \n\n##### Remarks\n\nTopSolid can record every call to Automation performing an action in an external file called the journal file.\n \nThis is a record of each Automation method called, with the arguments supplied to and results returned from those methods.\n \nThis helps to debug applications that use Automation. The journal is text-based, to make it easy to examine in order to find out where problems are caused.\n \nThis method is available since v7.8.\n",
+  "markdown": "markdown/kernel/bd3ce0fc5fb749d0207796fc.md",
+  "originalHtml": "html/kernel/bd3ce0fc5fb749d0207796fc.html"
+}

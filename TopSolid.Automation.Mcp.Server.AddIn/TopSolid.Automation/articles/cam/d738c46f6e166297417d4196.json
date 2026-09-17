@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.ParameterId.IsEmpty.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.ParameterId.IsEmpty.html",
+  "sha256": "68f2788f343d6b3d3fae72dffe90e4f397505cc6aba8352807d0d3c78e21c4ca",
+  "text": "# Property IsEmpty\n\n#### IsEmpty\n\nTells whether the parameter identifier is empty.\n\n##### Declaration\n\n```\npublic bool IsEmpty { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |   |\n",
+  "markdown": "markdown/cam/d738c46f6e166297417d4196.md",
+  "originalHtml": "html/cam/d738c46f6e166297417d4196.html"
+}

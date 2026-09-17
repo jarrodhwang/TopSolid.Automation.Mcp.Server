@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IOperations.SetCuttingConditionsAbacus.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IOperations.SetCuttingConditionsAbacus.html",
+  "sha256": "0551851767d6503a1e6b5d1a7b5258bf1a5e93348c0c92e39dab91f19239387e",
+  "text": "# Method SetCuttingConditionsAbacus\n\n#### SetCuttingConditionsAbacus(ElementId, ElementId)\n\nSets the cutting condition abacus for an operation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 14, 300, 144)]\nvoid SetCuttingConditionsAbacus(ElementId inElementId, ElementId inAbacusId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the operation to modify.  |  \n \n|  ElementId |  inAbacusId |  Identifier of the abacus to use.  |\n",
+  "markdown": "markdown/cam/cb724bba4a967dfdddf58b43.md",
+  "originalHtml": "html/cam/cb724bba4a967dfdddf58b43.html"
+}

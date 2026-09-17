@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMechanisms.GetGroundRigidGroup.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMechanisms.GetGroundRigidGroup.html",
+  "sha256": "d2aa3e9d0d58e0a95b282c374e9de17e18f84a8cd7db9cfd449954da88cfc0dc",
+  "text": "# Method GetGroundRigidGroup\n\n#### GetGroundRigidGroup(DocumentId)\n\nGets the ground rigid group entity of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nElementId GetGroundRigidGroup(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the ground rigid group entity found.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/cad/320b2dc5330ec0a64de9f8d8.md",
+  "originalHtml": "html/cad/320b2dc5330ec0a64de9f8d8.html"
+}

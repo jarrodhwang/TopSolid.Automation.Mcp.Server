@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.BomNode.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.BomNode.html",
+  "sha256": "346c89acb46015bef65bb19b1d80babff4ae1e177db7370a6c7a1459d93d5e05",
+  "text": "# Struct BomNode\n\nRepresents the node of a BOM.\n\n##### Inherited Members\n \n ValueType.Equals(object) \n \n ValueType.GetHashCode() \n \n ValueType.ToString() \n \n object.Equals(object, object) \n \n object.ReferenceEquals(object, object) \n \n object.GetType() \n\n###### Namespace: TopSolid.Pdm.Explorer.Automating\n\n###### Assembly: TopSolid.Pdm.Explorer.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\npublic struct BomNode\n```\n\n##### Remarks\n\nThis structure is available since v7.11.\n\n### Constructors \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   BomNode(int, string, IList<string>, IList<int>, IList<Bitmap>)  |  Initializes a new instance of the BomNode class.  |  \n\n### Properties \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   ForcedValues  |  Gets the indexes of the forced values.  |  \n \n|   Images  |  Gets the images.  |  \n \n|   Level  |  Gets the level.  |  \n \n|   Name  |  Gets the name.  |  \n \n|   Values  |  Gets the values.  |\n",
+  "markdown": "markdown/pdmexplorer/97e7d3f916f9311d821caae4.md",
+  "originalHtml": "html/pdmexplorer/97e7d3f916f9311d821caae4.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.PublishInteger.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.PublishInteger.html",
+  "sha256": "e5592bb918147e6f122f598e508eae4de7c711ec0c671716f830c09451452fe9",
+  "text": "# Method PublishInteger\n\n#### PublishInteger(DocumentId, string, SmartInteger)\n\nCreates an integer publishing entity in a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nElementId PublishInteger(DocumentId inDocumentId, string inDescription, SmartInteger inDefinition)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  string |  inDescription |  Publishing description.  |  \n \n|  SmartInteger |  inDefinition |  Publishing definition.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the created publishing entity.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.8.\n",
+  "markdown": "markdown/kernel/ca895b2e2edc7fba3ef363aa.md",
+  "originalHtml": "html/kernel/ca895b2e2edc7fba3ef363aa.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMaterials.GetYoungModulus.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMaterials.GetYoungModulus.html",
+  "sha256": "6b6595cc8893c7ddcc69b09b486d81134be4cbb384c555798338cb878a7830cd",
+  "text": "# Method GetYoungModulus\n\n#### GetYoungModulus(DocumentId, out double)\n\nGets Young Modulus\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 400, 120)]\nbool GetYoungModulus(DocumentId inDocumentId, out double outValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Id of the container document  |  \n \n|  double |  outValue |  The value  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  true if a parameter has been fetched with success  |\n",
+  "markdown": "markdown/cad/bf42a89f64ed7aeacaac5965.md",
+  "originalHtml": "html/cad/bf42a89f64ed7aeacaac5965.html"
+}

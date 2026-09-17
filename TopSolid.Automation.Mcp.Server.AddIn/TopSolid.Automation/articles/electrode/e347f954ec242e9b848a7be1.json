@@ -1,0 +1,8 @@
+{
+  "path": "api/electrode/TopSolid.Cad.Electrode.Automating.IElectrodes.GetElectrodeInitialZPosition.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/electrode/TopSolid.Cad.Electrode.Automating.IElectrodes.GetElectrodeInitialZPosition.html",
+  "sha256": "f931446c64f40ddb8a96743acbf674323624120fa58ca2f02238db36231b4b3a",
+  "text": "# Method GetElectrodeInitialZPosition\n\n#### GetElectrodeInitialZPosition(ElementId, int)\n\nGet the Z initial position of an electrode at a given position index.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 14, 0, 0)]\ndouble GetElectrodeInitialZPosition(ElementId inElementId, int inPositionIndex)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the electrode to analyze.  |  \n \n|  int |  inPositionIndex |  Position index.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double |  Initial Z position.  |  \n\n##### Remarks\n\nThis method is available since v7.14.\n",
+  "markdown": "markdown/electrode/e347f954ec242e9b848a7be1.md",
+  "originalHtml": "html/electrode/e347f954ec242e9b848a7be1.html"
+}

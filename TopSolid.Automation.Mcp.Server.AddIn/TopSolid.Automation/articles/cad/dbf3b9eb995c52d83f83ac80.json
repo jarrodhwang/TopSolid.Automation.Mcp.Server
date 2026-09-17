@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ISimulations.SetCurrentSimulation.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ISimulations.SetCurrentSimulation.html",
+  "sha256": "7fbbe0418d8dac5367d9b27262ed1544afe615c4955b75677576ecd967a9be29",
+  "text": "# Method SetCurrentSimulation\n\n#### SetCurrentSimulation(DocumentId, ElementId)\n\nSets the current simulation entity of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nvoid SetCurrentSimulation(DocumentId inDocumentId, ElementId inSimulationId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  ElementId |  inSimulationId |  Identifier of the new current simulation entity.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/cad/dbf3b9eb995c52d83f83ac80.md",
+  "originalHtml": "html/cad/dbf3b9eb995c52d83f83ac80.html"
+}

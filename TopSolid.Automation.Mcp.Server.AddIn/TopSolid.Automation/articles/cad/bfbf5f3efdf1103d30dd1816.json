@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IAssemblies.RedirectInclusion.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IAssemblies.RedirectInclusion.html",
+  "sha256": "7dd0797234fd6d1f2a7ee8508229c0a371f4a59f761a64adf26f092573cbaa8f",
+  "text": "# Method RedirectInclusion\n\n#### RedirectInclusion(ElementId, DocumentId)\n\nRedirects an inclusion operation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 201, 100)]\nvoid RedirectInclusion(ElementId inElementId, DocumentId inDefinitionId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the inclusion operation to modify.  |  \n \n|  DocumentId |  inDefinitionId |  Identifier of the new definition document of the part or assembly to include.  |  \n\n##### Remarks\n\nThe previous definition document must be a part or an assembly, not a family.\n \nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.7.201.100.\n",
+  "markdown": "markdown/cad/bfbf5f3efdf1103d30dd1816.md",
+  "originalHtml": "html/cad/bfbf5f3efdf1103d30dd1816.html"
+}

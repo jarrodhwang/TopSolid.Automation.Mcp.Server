@@ -1,0 +1,8 @@
+{
+  "path": "api/electrode/TopSolid.Cad.Electrode.Automating.TopSolidElectrodeHost.Disconnect.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/electrode/TopSolid.Cad.Electrode.Automating.TopSolidElectrodeHost.Disconnect.html",
+  "sha256": "6d6c3e7523acaeb790d89151b4ed50afa0ae4c9b021407f9dfb8bfac989087a6",
+  "text": "# Method Disconnect\n\n#### Disconnect()\n\nDisconnect from TopSolid application.\n\n##### Declaration\n\n```\npublic static void Disconnect()\n```\n",
+  "markdown": "markdown/electrode/9ab2590ce911ed5f31c69213.md",
+  "originalHtml": "html/electrode/9ab2590ce911ed5f31c69213.html"
+}

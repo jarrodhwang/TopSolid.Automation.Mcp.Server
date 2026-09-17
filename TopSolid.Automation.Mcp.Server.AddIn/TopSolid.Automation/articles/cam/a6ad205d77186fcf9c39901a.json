@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IParts.GetParameters.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IParts.GetParameters.html",
+  "sha256": "af84660b690ef97b66d5fdf5de2444168586f7c598f61903a6b0e8077e4ff31f",
+  "text": "# Method GetParameters\n\n#### GetParameters(ElementId)\n\nGets the parameters of the given Cam part.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nList<ParameterId> GetParameters(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the Cam part to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ParameterId> |  Cam part parameters found.  |\n",
+  "markdown": "markdown/cam/a6ad205d77186fcf9c39901a.md",
+  "originalHtml": "html/cam/a6ad205d77186fcf9c39901a.html"
+}

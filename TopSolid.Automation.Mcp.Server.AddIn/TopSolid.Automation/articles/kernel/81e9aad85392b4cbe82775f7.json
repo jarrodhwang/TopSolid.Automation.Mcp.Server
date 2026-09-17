@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IFamilies.GetOrderedConstrainedDrivers.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IFamilies.GetOrderedConstrainedDrivers.html",
+  "sha256": "4bba8f6c0f9d91e162d7b21df920ff7689dcefd7cb3821959a9d4b71c52d72a1",
+  "text": "# Method GetOrderedConstrainedDrivers\n\n#### GetOrderedConstrainedDrivers(ElementId)\n\nGet the Driver entities constrained by a constraint entity\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 0, 0)]\nList<ElementId> GetOrderedConstrainedDrivers(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the constraint entity.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementId> |  List of driver entities by order of priority  |  \n\n##### Remarks\n\nThis method is available since v7.19.\n",
+  "markdown": "markdown/kernel/81e9aad85392b4cbe82775f7.md",
+  "originalHtml": "html/kernel/81e9aad85392b4cbe82775f7.html"
+}

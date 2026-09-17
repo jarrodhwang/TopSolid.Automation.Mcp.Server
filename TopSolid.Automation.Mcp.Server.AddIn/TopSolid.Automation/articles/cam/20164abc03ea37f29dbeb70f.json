@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IPrograms.SetFileName.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IPrograms.SetFileName.html",
+  "sha256": "bc15411fea7ab82e0cfdc1058c9497bbc084c540284a543f0df34b560b7d03d5",
+  "text": "# Method SetFileName\n\n#### SetFileName(ElementId, SmartText)\n\nSet program file name.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 180)]\nvoid SetFileName(ElementId inProgramId, SmartText inFileName)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inProgramId |  Identifier of the NC program to modify.  |  \n \n|  SmartText |  inFileName |  Program file name.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n",
+  "markdown": "markdown/cam/20164abc03ea37f29dbeb70f.md",
+  "originalHtml": "html/cam/20164abc03ea37f29dbeb70f.html"
+}

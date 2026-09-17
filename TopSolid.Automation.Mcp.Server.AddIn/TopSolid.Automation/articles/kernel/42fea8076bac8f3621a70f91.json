@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.BooleanProperty.-ctor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.BooleanProperty.-ctor.html",
+  "sha256": "18ca464ede3cd9ba0af638d29cafd587ef88cc48f63ea350b7c7bec0384dc665",
+  "text": "# Constructor BooleanProperty\n\n#### BooleanProperty(bool)\n\nInitializes a new instance of the BooleanProperty class.\n\n##### Declaration\n\n```\npublic BooleanProperty(bool inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  bool |  inValue |  Value.  |\n",
+  "markdown": "markdown/kernel/42fea8076bac8f3621a70f91.md",
+  "originalHtml": "html/kernel/42fea8076bac8f3621a70f91.html"
+}

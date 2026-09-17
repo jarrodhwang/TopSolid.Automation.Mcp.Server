@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IGeometries2D.SetProfilePublishingDefinition.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IGeometries2D.SetProfilePublishingDefinition.html",
+  "sha256": "af7c81641f9a18352edcce755ae0af042fefc75a4d40df7514d08075065eb70a",
+  "text": "# Method SetProfilePublishingDefinition\n\n#### SetProfilePublishingDefinition(ElementId, SmartProfile2D)\n\nSets the definition of a profile publishing entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 400, 180)]\nvoid SetProfilePublishingDefinition(ElementId inElementId, SmartProfile2D inDefinition)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the publishing entity to analyze.  |  \n \n|  SmartProfile2D |  inDefinition |  The definition to use.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n",
+  "markdown": "markdown/kernel/514c7f1780e05f13492734f8.md",
+  "originalHtml": "html/kernel/514c7f1780e05f13492734f8.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IOperations.MoveOperation.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IOperations.MoveOperation.html",
+  "sha256": "3049f87b8e4a525922726e7ae69e6e615ac001cdc42ff702b1cbb7e071e822f1",
+  "text": "# Method MoveOperation\n\n#### MoveOperation(ElementId, ElementId, int)\n\nMoves an operation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 201, 80)]\nvoid MoveOperation(ElementId inElementId, ElementId inOwnerId, int inIndex)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the operation to move.  |  \n \n|  ElementId |  inOwnerId |  Identifier of the new owner operation.  |  \n \n|  int |  inIndex |  Index of the operation in the new owner.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.7.201.80.\n",
+  "markdown": "markdown/kernel/b4b808d577a4c8afa92be16d.md",
+  "originalHtml": "html/kernel/b4b808d577a4c8afa92be16d.html"
+}

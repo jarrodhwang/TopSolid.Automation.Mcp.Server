@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IShapes.GetEdgeCurveParameter.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IShapes.GetEdgeCurveParameter.html",
+  "sha256": "d285af7777177e14fa7a85f9244a5e76ef266cb1871bebc16e81a1040cbf372d",
+  "text": "# Method GetEdgeCurveParameter\n\n#### GetEdgeCurveParameter(ElementItemId, Point3D, out double)\n\nGets the parametric value of a specified point on the curve attached to an edge.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 300, 60)]\nPoint3D GetEdgeCurveParameter(ElementItemId inEdgeId, Point3D inPoint, out double outT)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementItemId |  inEdgeId |  Identifier of the edge to analyze.  |  \n \n|  Point3D |  inPoint |  Point near edge curve.  |  \n \n|  double |  outT |  Parameter of nearest point on edge curve.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Point3D |  Nearest point to specified point on edge curve.  |  \n\n##### Remarks\n\nThis method is available since v7.10.300.60.\n",
+  "markdown": "markdown/kernel/65eb16ef6803181057bffd46.md",
+  "originalHtml": "html/kernel/65eb16ef6803181057bffd46.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.ElementExId.IsCreated.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.ElementExId.IsCreated.html",
+  "sha256": "36268e8e80d3f9ed4c14aa971f48debc8e355755422ea22087e02b5e3a400ac7",
+  "text": "# Property IsCreated\n\n#### IsCreated\n\nChecks if the operation is created, and defined by an ElementId.\n\n##### Declaration\n\n```\npublic bool IsCreated { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |   |\n",
+  "markdown": "markdown/cam/051e1eded42825d8c4705024.md",
+  "originalHtml": "html/cam/051e1eded42825d8c4705024.html"
+}

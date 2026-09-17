@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IApplication.EndModification.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IApplication.EndModification.html",
+  "sha256": "62c8481953cc4507c617b1edaad09617533abf3974945709e5fe7025cdd308eb",
+  "text": "# Method EndModification\n\n#### EndModification(bool, bool)\n\nEnds performing modifications.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nvoid EndModification(bool inIsOk, bool inUpdates)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  bool |  inIsOk |  Whether the modifications have been successful.  |  \n \n|  bool |  inUpdates |  Whether to perform an update.  |  \n\n##### Remarks\n\nThis method must be called after the StartModification(string, bool) method has been called and has returned true.\n \nIf the modifications have not been successful, they are undone when possible.\n \nThis method is available since v7.6.\n\n##### Examples\n \n```\nif (TopSolidHost.Application.StartModification(\"My Modification\", false)) \n{\n\ttry\n\t{\n\t\t// Perform my modification.\n\n\t\tTopSolidHost.Application.EndModification(true, true);\n\t}\n\tcatch\n\t{\n\t\tTopSolidHost.Application.EndModification(false, false);\n\t}\n}\n```\n",
+  "markdown": "markdown/kernel/971b66bf373c4b2c6a107048.md",
+  "originalHtml": "html/kernel/971b66bf373c4b2c6a107048.html"
+}

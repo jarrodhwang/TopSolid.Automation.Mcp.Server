@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IUser.SelectSelection.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IUser.SelectSelection.html",
+  "sha256": "2b55dfa92d14c781a60144702f6541e37aa3ee99a9dc96b48667b925063ec1c5",
+  "text": "# Method SelectSelection\n\n#### SelectSelection(ElementId)\n\nSelects a selection entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 0, 0)]\nvoid SelectSelection(ElementId inSelection)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inSelection |  The selection entity to select.  |\n",
+  "markdown": "markdown/kernel/bd05b7f5f033104b4c6cb962.md",
+  "originalHtml": "html/kernel/bd05b7f5f033104b4c6cb962.html"
+}

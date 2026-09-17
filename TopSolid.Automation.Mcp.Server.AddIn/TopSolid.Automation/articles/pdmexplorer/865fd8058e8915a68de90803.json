@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.GetCustomerEmailAddress.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.GetCustomerEmailAddress.html",
+  "sha256": "12cb04f5e11a4520e55441822a1c34a26285c3b0d19a526ae48389076a69e5d1",
+  "text": "# Method GetCustomerEmailAddress\n\n#### GetCustomerEmailAddress(PdmObjectId)\n\nGets the customer email address of an object.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nstring GetCustomerEmailAddress(PdmObjectId inObjectId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  Object identifier.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  Object customer email address.  |  \n\n##### Remarks\n\nThis method is available since v7.10.300.120.\n",
+  "markdown": "markdown/pdmexplorer/865fd8058e8915a68de90803.md",
+  "originalHtml": "html/pdmexplorer/865fd8058e8915a68de90803.html"
+}

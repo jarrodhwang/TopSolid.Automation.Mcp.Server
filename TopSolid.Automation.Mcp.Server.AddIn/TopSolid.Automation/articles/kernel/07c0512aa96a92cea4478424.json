@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Color.DarkGreen.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Color.DarkGreen.html",
+  "sha256": "75cb5ee8a13e3acafb1316f36d001e4e45769333989051bcb023955200e2a1d8",
+  "text": "# Field DarkGreen\n\nDark green color.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\npublic static readonly Color DarkGreen\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Color |  Dark green color. |\n",
+  "markdown": "markdown/kernel/07c0512aa96a92cea4478424.md",
+  "originalHtml": "html/kernel/07c0512aa96a92cea4478424.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IFamilies.SetCatalogCellBooleanValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IFamilies.SetCatalogCellBooleanValue.html",
+  "sha256": "c8c2167efd0cccf7c605d0edfe3a805ef0e633a143ef1d32dbf1457af9cef006",
+  "text": "# Method SetCatalogCellBooleanValue\n\n#### SetCatalogCellBooleanValue(ElementId, ElementId, bool)\n\nSets the boolean value of the catalog cell.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 15, 0, 60)]\nvoid SetCatalogCellBooleanValue(ElementId inRow, ElementId inParameterId, bool inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inRow |  Identifier of the row.  |  \n \n|  ElementId |  inParameterId |  Identifier of the parameter of the column.  |  \n \n|  bool |  inValue |  Value of the cell.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.15.\n",
+  "markdown": "markdown/kernel/62b45e0dc174bfda6e7019b7.md",
+  "originalHtml": "html/kernel/62b45e0dc174bfda6e7019b7.html"
+}

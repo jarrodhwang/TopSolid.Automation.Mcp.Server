@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ColorProperty.Type.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ColorProperty.Type.html",
+  "sha256": "f5b000ea41ea54605b97b53330f5e0e063004de7419ce84efadf649ff806a982",
+  "text": "# Property Type\n\n#### Type\n\nGets the property type.\n\n##### Declaration\n\n```\npublic override PropertyType Type { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  PropertyType |   |  \n\n##### Overrides\n \nProperty.Type\n",
+  "markdown": "markdown/kernel/d1c0b220acbd3f7c7394795d.md",
+  "originalHtml": "html/kernel/d1c0b220acbd3f7c7394795d.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.ElementExId.Id.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.ElementExId.Id.html",
+  "sha256": "43a9d6a5a11ac39460fb9f1d14fa0c8213b936c1673dd69b93ddaad64fea060b",
+  "text": "# Property Id\n\n#### Id\n\nGets the Id of a prepared operation. ElementId is empty in this Id is not empty.\n\n##### Declaration\n\n```\npublic Guid Id { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Guid |   |\n",
+  "markdown": "markdown/cam/be2f5d10ea23a385408ce5e8.md",
+  "originalHtml": "html/cam/be2f5d10ea23a385408ce5e8.html"
+}

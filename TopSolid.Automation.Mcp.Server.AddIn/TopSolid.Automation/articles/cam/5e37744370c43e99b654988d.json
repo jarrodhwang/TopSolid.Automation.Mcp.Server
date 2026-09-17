@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IToolPath.NextToolPathItem.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IToolPath.NextToolPathItem.html",
+  "sha256": "145f6d024914d5922fb3a4916f6d3efd3db90d6b126bd335ad9dc2706f3ff210",
+  "text": "# Method NextToolPathItem\n\n#### NextToolPathItem(ElementId)\n\nGets the next tool path item values of the given operation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nDictionary<string, object> NextToolPathItem(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the Cam operation to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Dictionary<string, object> |  Tool path item values or null if no more item is available. The dictionary contains column name as key, and basic class for values (int, double, string...). All doubles are in Standard unit: distance in meters, angle in radians, linear speed like feedrate in meter/second, revolution speed in revolution/minute...  |\n",
+  "markdown": "markdown/cam/5e37744370c43e99b654988d.md",
+  "originalHtml": "html/cam/5e37744370c43e99b654988d.html"
+}

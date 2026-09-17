@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.DrillingTappedHolePrimitive.TappingDiameter.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.DrillingTappedHolePrimitive.TappingDiameter.html",
+  "sha256": "3f3a87807dfaf9f99303eac0f9672e115d529e15b8936dfeac77ad3c867f341d",
+  "text": "# Field TappingDiameter\n\nPrimitive Tapping Diameter.\n\n###### Namespace: TopSolid.Cad.Design.Automating\n\n###### Assembly: TopSolid.Cad.Design.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic SmartReal TappingDiameter\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartReal |  Primitive Tapping Diameter. |\n",
+  "markdown": "markdown/cad/5abb6653763e16d2c2f8f50a.md",
+  "originalHtml": "html/cad/5abb6653763e16d2c2f8f50a.html"
+}

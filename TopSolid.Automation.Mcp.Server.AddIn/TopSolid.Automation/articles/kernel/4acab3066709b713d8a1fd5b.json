@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IShapes.GetVertices.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IShapes.GetVertices.html",
+  "sha256": "f7b3dc0c47b03eb76f2bb392d8c9ba3115d7ff5a15adf597f1556743274b876e",
+  "text": "# Method GetVertices\n\n#### GetVertices(ElementId)\n\nGets the vertices of a shape.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nList<ElementItemId> GetVertices(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the shape entity to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementItemId> |  Identifiers of the vertices of the shape.  |  \n\n##### Remarks\n\nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/4acab3066709b713d8a1fd5b.md",
+  "originalHtml": "html/kernel/4acab3066709b713d8a1fd5b.html"
+}

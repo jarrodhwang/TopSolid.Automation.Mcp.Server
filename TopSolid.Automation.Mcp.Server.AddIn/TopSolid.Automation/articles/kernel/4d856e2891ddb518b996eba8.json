@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ISketches3D.IsSketch.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ISketches3D.IsSketch.html",
+  "sha256": "b7ea214550b0ebef614cfa7cd8d5439876d371031da277a4335f5881a4d77880",
+  "text": "# Method IsSketch\n\n#### IsSketch(ElementId)\n\nTells whether an element is a sketch entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nbool IsSketch(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  The element a sketch entity.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/4d856e2891ddb518b996eba8.md",
+  "originalHtml": "html/kernel/4d856e2891ddb518b996eba8.html"
+}

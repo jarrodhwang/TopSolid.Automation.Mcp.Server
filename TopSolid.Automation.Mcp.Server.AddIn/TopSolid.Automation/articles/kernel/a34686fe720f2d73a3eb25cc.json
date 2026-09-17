@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.ReimportFile.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.ReimportFile.html",
+  "sha256": "c7022535d8c4dcfabad2e597d22d3490babc9a1b4e4d2b0f4ba341362e51127e",
+  "text": "# Method ReimportFile\n\n#### ReimportFile(string, PdmObjectId)\n\nReimports a file without conversion.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nPdmMinorRevisionId ReimportFile(string inFullName, PdmObjectId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  string |  inFullName |  Full name of the file to import.  |  \n \n|  PdmObjectId |  inDocumentId |  PDM object identifier of the document containing previous revisions of the file.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  PdmMinorRevisionId |  Identifier of the created new revision.  |  \n\n##### Remarks\n\nThis method must not be called between StartModification(string, bool) and EndModification(bool, bool) methods calls.\n \nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/a34686fe720f2d73a3eb25cc.md",
+  "originalHtml": "html/kernel/a34686fe720f2d73a3eb25cc.html"
+}

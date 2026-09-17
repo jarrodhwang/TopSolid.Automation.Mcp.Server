@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ConstraintDriverData.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ConstraintDriverData.html",
+  "sha256": "6acb7910c2ec4d984e07065fdcc5bb39db7351a06598b3fa6d7d601305618fda",
+  "text": "# Class ConstraintDriverData\n\nRepresents constraint data\n\n##### Inheritance\n \nobject\n \nConstraintDriverData\n\n##### Inherited Members\n \n object.ToString() \n \n object.Equals(object) \n \n object.Equals(object, object) \n \n object.ReferenceEquals(object, object) \n \n object.GetHashCode() \n \n object.GetType() \n \n object.MemberwiseClone() \n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 19, 171, 0)]\npublic class ConstraintDriverData\n```\n\n##### Remarks\n\nThis structure is available since v7.19\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   Empty  |  Empty key-value pair.  |  \n\n### Properties \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   Children  |  Gets the Children  |  \n \n|   Driver  |  Gets the Property  |  \n \n|   IsEmpty  |  Tells whether the Constraint data is empty (no possible property).  |  \n \n|   Value  |  Gets the Property  |\n",
+  "markdown": "markdown/kernel/dbc6793e28ccb80d85d212f5.md",
+  "originalHtml": "html/kernel/dbc6793e28ccb80d85d212f5.html"
+}

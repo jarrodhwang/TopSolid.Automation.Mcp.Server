@@ -1,0 +1,8 @@
+{
+  "path": "api/wire/TopSolid.Cam.NC.Wire.Automating.IWireTechnologies.SetDepthCutting.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/wire/TopSolid.Cam.NC.Wire.Automating.IWireTechnologies.SetDepthCutting.html",
+  "sha256": "e39124b0ad920bad656da7d34ba4e663b2e16def45c6b5969336d6a0a7328fb3",
+  "text": "# Method SetDepthCutting\n\n#### SetDepthCutting(ElementId, SmartReal)\n\nSet depth cutting.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 160)]\nvoid SetDepthCutting(ElementId inTechnologyId, SmartReal inDepthCutting)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inTechnologyId |  Identifier of the element to modify.  |  \n \n|  SmartReal |  inDepthCutting |  Depth cutting in SI units.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n",
+  "markdown": "markdown/wire/eb9318f45aaa35794a6fc93b.md",
+  "originalHtml": "html/wire/eb9318f45aaa35794a6fc93b.html"
+}

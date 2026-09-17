@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.CreateUserEnumParameter.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.CreateUserEnumParameter.html",
+  "sha256": "d026a6f6810e10c7dc5989ea7cf79fa08305cb4d949957d29bda485108932911",
+  "text": "# Method CreateUserEnumParameter\n\n#### CreateUserEnumParameter(DocumentId, DocumentId)\n\nCreates a user enumeration parameter entity in a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 400, 100)]\nElementId CreateUserEnumParameter(DocumentId inDocumentId, DocumentId inUserEnumDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  DocumentId |  inUserEnumDocumentId |  Identifier of the enum document to use.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the created parameter entity.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.20.400.100.\n",
+  "markdown": "markdown/kernel/4efafd26f2069cf7017691f5.md",
+  "originalHtml": "html/kernel/4efafd26f2069cf7017691f5.html"
+}

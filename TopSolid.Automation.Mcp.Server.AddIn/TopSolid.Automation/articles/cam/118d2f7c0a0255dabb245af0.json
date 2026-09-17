@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IPrograms.GetEnding.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IPrograms.GetEnding.html",
+  "sha256": "24badd9a95bcb015fe2a381e84f4049b026237c56fecc435cc4ea017191a2e10",
+  "text": "# Method GetEnding\n\n#### GetEnding(ElementId)\n\nGet program ending.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 180)]\nSmartText GetEnding(ElementId inProgramId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inProgramId |  Identifier of the NC program to modify.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartText |  Program ending.  |\n",
+  "markdown": "markdown/cam/118d2f7c0a0255dabb245af0.md",
+  "originalHtml": "html/cam/118d2f7c0a0255dabb245af0.html"
+}

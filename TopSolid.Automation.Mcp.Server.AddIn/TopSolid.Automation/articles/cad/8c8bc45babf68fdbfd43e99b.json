@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.DrillingTappedHolePrimitive.IsCompleteTapping.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.DrillingTappedHolePrimitive.IsCompleteTapping.html",
+  "sha256": "e89e0392f9db287d613a210d81a7a37bca011ed180badb15a836e02617467adc",
+  "text": "# Field IsCompleteTapping\n\nTells wether the tapping is complete.\n\n###### Namespace: TopSolid.Cad.Design.Automating\n\n###### Assembly: TopSolid.Cad.Design.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic SmartBoolean IsCompleteTapping\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartBoolean |  Tells wether the tapping is complete. |\n",
+  "markdown": "markdown/cad/8c8bc45babf68fdbfd43e99b.md",
+  "originalHtml": "html/cad/8c8bc45babf68fdbfd43e99b.html"
+}

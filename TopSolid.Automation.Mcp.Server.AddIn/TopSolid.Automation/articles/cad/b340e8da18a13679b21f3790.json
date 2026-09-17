@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IParts.ResetMachiningProcessOperationDriverValues.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IParts.ResetMachiningProcessOperationDriverValues.html",
+  "sha256": "973aae3464dbee3ef9b7f092c755f6d8f865dd46ca199951db78b54535b9352d",
+  "text": "# Method ResetMachiningProcessOperationDriverValues\n\n#### ResetMachiningProcessOperationDriverValues(ElementId)\n\nClears all machining process drivers value\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 0, 0)]\nvoid ResetMachiningProcessOperationDriverValues(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Existing machining Process Operation  |  \n\n##### Remarks\n\nThis method is available since v7.19.\n",
+  "markdown": "markdown/cad/b340e8da18a13679b21f3790.md",
+  "originalHtml": "html/cad/b340e8da18a13679b21f3790.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IFamilies.RemoveCatalogColumn.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IFamilies.RemoveCatalogColumn.html",
+  "sha256": "46706007c0870d5894d92fc77a11cec61fe9c83ae81d30a44544ecaa40cb45bc",
+  "text": "# Method RemoveCatalogColumn\n\n#### RemoveCatalogColumn(DocumentId, int)\n\nRemoves catalog column at a specified index.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 18, 400, 160)]\nvoid RemoveCatalogColumn(DocumentId inDocumentId, int inColumnIndex)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  int |  inColumnIndex |  Index of the column to remove.  |  \n\n##### Remarks\n\nThis method is available since v7.18.\n",
+  "markdown": "markdown/kernel/bb131fee144a77e1268e7d61.md",
+  "originalHtml": "html/kernel/bb131fee144a77e1268e7d61.html"
+}

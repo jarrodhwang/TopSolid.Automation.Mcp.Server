@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IApplication.StartModification.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IApplication.StartModification.html",
+  "sha256": "228bc06240f86a41d570f7a0a6c333449cb34802b9c7aaac5e84a9974c946605",
+  "text": "# Method StartModification\n\n#### StartModification(string, bool)\n\nStarts performing modifications.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nbool StartModification(string inUndoSequenceName, bool inIsUndoSequenceGhost)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  string |  inUndoSequenceName |  Name of the undo sequence.  |  \n \n|  bool |  inIsUndoSequenceGhost |  Whether the undo sequence is hidden from the user.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Modifications can be performed.  |  \n\n##### Remarks\n\nThis method must be called before any modification is attempted.\n \nThis method is available since v7.6.\n\n##### Examples\n \n```\nif (TopSolidHost.Application.StartModification(\"My Modification\", false)) \n{\n\ttry\n\t{\n\t\t// Perform my modification.\n\n\t\tTopSolidHost.Application.EndModification(true, true);\n\t}\n\tcatch\n\t{\n\t\tTopSolidHost.Application.EndModification(false, false);\n\t}\n}\n```\n",
+  "markdown": "markdown/kernel/ff1ac1ff38bc4772c5354261.md",
+  "originalHtml": "html/kernel/ff1ac1ff38bc4772c5354261.html"
+}

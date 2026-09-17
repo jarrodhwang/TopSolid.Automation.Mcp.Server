@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ISimulations.SetGripChangeTask.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ISimulations.SetGripChangeTask.html",
+  "sha256": "d0eff7710d10c46445c57bf58b1fd9e5441e72cdab97e89b629265eadd181bd7",
+  "text": "# Method SetGripChangeTask\n\n#### SetGripChangeTask(ElementId, bool, ElementId, List<ElementId>)\n\nSets a grip change task.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nvoid SetGripChangeTask(ElementId inElementId, bool inIsGripping, ElementId inGrippingRigidGroupId, List<ElementId> inRigidGroupIds)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the task to modify.  |  \n \n|  bool |  inIsGripping |  Whether the task is gripping, or otherwise dropping.  |  \n \n|  ElementId |  inGrippingRigidGroupId |  Identifier of gripping rigid group.  |  \n \n|  List<ElementId> |  inRigidGroupIds |  Identifiers of rigid groups that are gripped or dropped.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/cad/cda08cc6f69addb20d669703.md",
+  "originalHtml": "html/cad/cda08cc6f69addb20d669703.html"
+}

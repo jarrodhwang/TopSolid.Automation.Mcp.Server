@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.GetRealPublishingDefinition.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.GetRealPublishingDefinition.html",
+  "sha256": "348e5be9738157bb0420d2b0ea824930c95af1c83078ed7af5d45107657758a2",
+  "text": "# Method GetRealPublishingDefinition\n\n#### GetRealPublishingDefinition(ElementId)\n\nGets the definition of a real publishing entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nSmartReal GetRealPublishingDefinition(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the publishing entity to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartReal |   |  \n\n##### Remarks\n\nThe value of the publishing entity may be obtained with the GetRealValue(ElementId) method.\n \nThis method is available since v7.8.\n",
+  "markdown": "markdown/kernel/df35d5b2882d4e12852b7288.md",
+  "originalHtml": "html/kernel/df35d5b2882d4e12852b7288.html"
+}

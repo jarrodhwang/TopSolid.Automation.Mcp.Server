@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ITools.SetCatalogCellFinishingValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ITools.SetCatalogCellFinishingValue.html",
+  "sha256": "043b53cf0255595907b90b2bd89890d791c86f44fbe958da65e49b4e02870987",
+  "text": "# Method SetCatalogCellFinishingValue\n\n#### SetCatalogCellFinishingValue(ElementId, ElementId, PdmMinorRevisionId)\n\nSets the finishing value of the catalog cell.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 18, 400, 160)]\nvoid SetCatalogCellFinishingValue(ElementId inRow, ElementId inParameterId, PdmMinorRevisionId inValueId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inRow |  Identifier of the row.  |  \n \n|  ElementId |  inParameterId |  Identifier of the parameter of the column.  |  \n \n|  PdmMinorRevisionId |  inValueId |  Value of the cell.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.18.\n",
+  "markdown": "markdown/cad/b369f576208c386194c28df4.md",
+  "originalHtml": "html/cad/b369f576208c386194c28df4.html"
+}

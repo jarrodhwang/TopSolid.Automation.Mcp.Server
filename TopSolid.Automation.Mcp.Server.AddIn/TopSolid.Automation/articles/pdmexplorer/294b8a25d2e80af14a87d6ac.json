@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.ErpProperty.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.ErpProperty.html",
+  "sha256": "347f4c0ecc461bdb0b3c7a4bc5a15928a85e7200e52a4c1ff3a7961faf789524",
+  "text": "# Struct ErpProperty\n\nRepresents a Property data\n\n##### Inherited Members\n \n ValueType.Equals(object) \n \n ValueType.GetHashCode() \n \n object.Equals(object, object) \n \n object.ReferenceEquals(object, object) \n \n object.GetType() \n\n###### Namespace: TopSolid.Pdm.Explorer.Automating\n\n###### Assembly: TopSolid.Pdm.Explorer.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 20, 222, 0)]\npublic struct ErpProperty\n```\n\n##### Remarks\n\nThis structure is available since v7.20.\n\n### Properties \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   FullName  |  Gets or sets property full name.  |  \n \n|   LocalizedName  |  Gets or sets property localized name.  |  \n \n|   PropertyType  |  Gets the PDM Property type  |  \n \n|   Value  |  Gets or sets property value (as string format).  |  \n\n### Methods \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   ToString()  |   |\n",
+  "markdown": "markdown/pdmexplorer/294b8a25d2e80af14a87d6ac.md",
+  "originalHtml": "html/pdmexplorer/294b8a25d2e80af14a87d6ac.html"
+}

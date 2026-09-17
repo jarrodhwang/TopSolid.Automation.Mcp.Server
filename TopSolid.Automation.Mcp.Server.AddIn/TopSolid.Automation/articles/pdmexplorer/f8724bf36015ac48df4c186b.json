@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IErp.NotifyDocumentsPublishingCanceled.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IErp.NotifyDocumentsPublishingCanceled.html",
+  "sha256": "0fab56f78058cc43283b596f1b895ae3c57c82041283560e42d6feff089d6bfd",
+  "text": "# Method NotifyDocumentsPublishingCanceled\n\n#### NotifyDocumentsPublishingCanceled(List<ErpPdmId>)\n\nNotifies documents publishing is canceled.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 222, 80)]\nbool NotifyDocumentsPublishingCanceled(List<ErpPdmId> inPdmIds)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  List<ErpPdmId> |  inPdmIds |  documents which publishing is canceled  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Success or failure.  |\n",
+  "markdown": "markdown/pdmexplorer/f8724bf36015ac48df4c186b.md",
+  "originalHtml": "html/pdmexplorer/f8724bf36015ac48df4c186b.html"
+}

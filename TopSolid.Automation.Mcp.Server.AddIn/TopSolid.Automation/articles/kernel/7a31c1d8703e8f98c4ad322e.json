@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.AreRealParameterPossibleValuesStrict.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.AreRealParameterPossibleValuesStrict.html",
+  "sha256": "5c22fe753496cbc2f61cf521486e8719f6c3550039065fa02be7f33d4068bd36",
+  "text": "# Method AreRealParameterPossibleValuesStrict\n\n#### AreRealParameterPossibleValuesStrict(ElementId)\n\nTells wether the possible values of the real parameter are strict.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 17, 0, 0)]\nbool AreRealParameterPossibleValuesStrict(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the parameter.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Wether the parameter has strict possible values.  |  \n\n##### Remarks\n\nThis method is available since v7.17.000.000.\n",
+  "markdown": "markdown/kernel/7a31c1d8703e8f98c4ad322e.md",
+  "originalHtml": "html/kernel/7a31c1d8703e8f98c4ad322e.html"
+}

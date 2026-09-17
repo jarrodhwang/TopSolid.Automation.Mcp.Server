@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.TopSolidHostInstance.HostPort.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.TopSolidHostInstance.HostPort.html",
+  "sha256": "d996527f8621ef3ccc7c6a22476d48567de99f433a4e3a84d34789b0c5d3b4fa",
+  "text": "# Property HostPort\n\n#### HostPort\n\nGets the host port, or 0 if not using TCP.\n\n##### Declaration\n\n```\npublic int HostPort { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  int |   |\n",
+  "markdown": "markdown/kernel/9ac34af17a6393ae8e523e73.md",
+  "originalHtml": "html/kernel/9ac34af17a6393ae8e523e73.html"
+}

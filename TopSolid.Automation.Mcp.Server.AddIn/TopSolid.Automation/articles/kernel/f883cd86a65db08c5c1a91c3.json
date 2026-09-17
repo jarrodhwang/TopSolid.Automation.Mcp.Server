@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.SetProjectMainDocument.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.SetProjectMainDocument.html",
+  "sha256": "f9d45b7077af89c7b927235999d04978520e7251d07839885128454757f40184",
+  "text": "# Method SetProjectMainDocument\n\n#### SetProjectMainDocument(PdmObjectId, PdmObjectId)\n\nSets the main document of a specified project.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 0, 0)]\nvoid SetProjectMainDocument(PdmObjectId inProjectId, PdmObjectId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inProjectId |  Project object identifier.  |  \n \n|  PdmObjectId |  inDocumentId |  Main document object identifier or Empty for none.  |  \n\n##### Remarks\n\nThis method must not be called between StartModification(string, bool) and EndModification(bool, bool) methods calls.\n \nEnsureIsDirty(PdmObjectId) must be called on the project before calling this method.\n \nThis method is available since v7.11.\n",
+  "markdown": "markdown/kernel/f883cd86a65db08c5c1a91c3.md",
+  "originalHtml": "html/kernel/f883cd86a65db08c5c1a91c3.html"
+}

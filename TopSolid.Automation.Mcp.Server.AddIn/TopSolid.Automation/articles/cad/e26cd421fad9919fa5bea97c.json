@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.DrillingCounterSinkingPrimitive.PrimitiveType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.DrillingCounterSinkingPrimitive.PrimitiveType.html",
+  "sha256": "ee4f8b67c78fa86ea65c38eb0ab8ca54f8068fef9749e749807159fc5920c025",
+  "text": "# Property PrimitiveType\n\n#### PrimitiveType\n\nPrimitive Type.\n\n##### Declaration\n\n```\npublic override DrillingPrimitiveType PrimitiveType { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  DrillingPrimitiveType |   |  \n\n##### Overrides\n \nDrillingPrimitive.PrimitiveType\n",
+  "markdown": "markdown/cad/e26cd421fad9919fa5bea97c.md",
+  "originalHtml": "html/cad/e26cd421fad9919fa5bea97c.html"
+}

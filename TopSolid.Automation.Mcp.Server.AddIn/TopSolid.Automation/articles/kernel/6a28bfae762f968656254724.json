@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.PdmSecurityUserOrGroupPermissions.IsUserGroup.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.PdmSecurityUserOrGroupPermissions.IsUserGroup.html",
+  "sha256": "acfb0ecee62c75bc4a62851c57dc71f2deee32530fc8fe55c3e7442e13f98be5",
+  "text": "# Method IsUserGroup\n\n#### IsUserGroup()\n\nTells if user group security is defined, opposite would be user security.\n\n##### Declaration\n\n```\n[OperationContract]\npublic bool IsUserGroup()\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  User group security used.  |\n",
+  "markdown": "markdown/kernel/6a28bfae762f968656254724.md",
+  "originalHtml": "html/kernel/6a28bfae762f968656254724.html"
+}

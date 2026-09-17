@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.PdmSecurityUserOrGroupPermissions.ExportForDeliveryPermission.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.PdmSecurityUserOrGroupPermissions.ExportForDeliveryPermission.html",
+  "sha256": "3a220dde998f81f361ad9d1414d7a2b1fdcfae9ed2ee662e930203d15655b20d",
+  "text": "# Field ExportForDeliveryPermission\n\nEnable to export for delivery a project, folder or document.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic PdmSecurityPermission ExportForDeliveryPermission\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  PdmSecurityPermission |  Enable to export for delivery a project, folder or document. |\n",
+  "markdown": "markdown/kernel/d6611d949c9623df90266442.md",
+  "originalHtml": "html/kernel/d6611d949c9623df90266442.html"
+}

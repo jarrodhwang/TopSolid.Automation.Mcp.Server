@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IElements.HasTransparency.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IElements.HasTransparency.html",
+  "sha256": "02e5f5b05fcd7f4b45a8ea03cf5e86eb2433613724a64cf2b26b3a50a0be13d8",
+  "text": "# Method HasTransparency\n\n#### HasTransparency(ElementId)\n\nTells whether an element has a transparency.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nbool HasTransparency(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Whether the element has a transparency.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/ff3367497403a42bb3b66c1c.md",
+  "originalHtml": "html/kernel/ff3367497403a42bb3b66c1c.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IElements.SetComment.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IElements.SetComment.html",
+  "sha256": "6c02c1ce1f8b10d5db5659cd329a425a84b1a0b23ad4bfdb513d809aa391cb0c",
+  "text": "# Method SetComment\n\n#### SetComment(ElementId, string)\n\nSets the comment of an element.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nvoid SetComment(ElementId inElementId, string inComment)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to modify.  |  \n \n|  string |  inComment |  New comment of the element.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/76de460aebe110a32826377f.md",
+  "originalHtml": "html/kernel/76de460aebe110a32826377f.html"
+}

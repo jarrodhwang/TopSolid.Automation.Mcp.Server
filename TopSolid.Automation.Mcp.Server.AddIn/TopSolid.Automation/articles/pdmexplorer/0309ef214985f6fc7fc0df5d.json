@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.TopSolidPdmExplorerHost.PdmVisualization.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.TopSolidPdmExplorerHost.PdmVisualization.html",
+  "sha256": "9115c45ff21c3d938a0d172aff99e78cf5ae161d4e0535715273c5d19ae30cc4",
+  "text": "# Property PdmVisualization\n\n#### PdmVisualization\n\nGets access to the Visualization, or null if not available.\n\n##### Declaration\n\n```\npublic static IPdmVisualization PdmVisualization { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  IPdmVisualization |   |\n",
+  "markdown": "markdown/pdmexplorer/0309ef214985f6fc7fc0df5d.md",
+  "originalHtml": "html/pdmexplorer/0309ef214985f6fc7fc0df5d.html"
+}

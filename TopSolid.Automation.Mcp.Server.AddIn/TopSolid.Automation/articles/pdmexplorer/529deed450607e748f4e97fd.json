@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdmAdmin.UserAccountId.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdmAdmin.UserAccountId.html",
+  "sha256": "ee88c16a2ba147a4768a226f09ae86a82fe61ee2da036d3738061a3da8ca1849",
+  "text": "# Property UserAccountId\n\n#### UserAccountId\n\nGets connected user account identifier.\n\n##### Declaration\n\n```\n[AvailableSinceVersion(7, 15, 186, 0)]\nstring UserAccountId { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |   |  \n\n##### Remarks\n\nThis property is available since v7.15.186.0.\n",
+  "markdown": "markdown/pdmexplorer/529deed450607e748f4e97fd.md",
+  "originalHtml": "html/pdmexplorer/529deed450607e748f4e97fd.html"
+}

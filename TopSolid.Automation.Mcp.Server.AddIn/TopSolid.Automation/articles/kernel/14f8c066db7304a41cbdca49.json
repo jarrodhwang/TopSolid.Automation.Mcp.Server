@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.TopSolidHostInstance.Visualization3D.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.TopSolidHostInstance.Visualization3D.html",
+  "sha256": "40c70752126eab8a1bf517b79c7df65be5161294ed7d1cc05bf25cb0c7ea690d",
+  "text": "# Property Visualization3D\n\n#### Visualization3D\n\nGets access to 3D visualization, or null if not available.\n\n##### Declaration\n\n```\npublic IVisualization3D Visualization3D { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  IVisualization3D |   |\n",
+  "markdown": "markdown/kernel/14f8c066db7304a41cbdca49.md",
+  "originalHtml": "html/kernel/14f8c066db7304a41cbdca49.html"
+}

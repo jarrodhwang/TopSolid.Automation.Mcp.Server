@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.INCPostProcessor.GenerateNCCodesForSelectionWithOptions.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.INCPostProcessor.GenerateNCCodesForSelectionWithOptions.html",
+  "sha256": "616eaed70da829bac5128d6fef752a42ed10b7dbbcd294630b3f2b3e2a599507",
+  "text": "# Method GenerateNCCodesForSelectionWithOptions\n\n#### GenerateNCCodesForSelectionWithOptions(DocumentId, string, List<KeyValue>, List<ElementExId>, out List<string>)\n\nGet the NC codes from the given CAM operations of given CAM document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 18, 400, 240)]\nList<string> GenerateNCCodesForSelectionWithOptions(DocumentId inCAMDocumentId, string inNCPostProcessorId, List<KeyValue> inOptions, List<ElementExId> inCamOperations, out List<string> outLog)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inCAMDocumentId |  Identifier of the CAM document.  |  \n \n|  string |  inNCPostProcessorId |  Identifier of the post-processor or string.empty for use post-processor selected in CAM document.  |  \n \n|  List<KeyValue> |  inOptions |  Post-processor options to use.  |  \n \n|  List<ElementExId> |  inCamOperations |  Cam operations to consider  |  \n \n|  List<string> |  outLog |  List of string describing the result.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<string> |  List of fullname files of NC Codes post-processing CAM document.  |\n",
+  "markdown": "markdown/cam/b4595111bbf9936af5588dd5.md",
+  "originalHtml": "html/cam/b4595111bbf9936af5588dd5.html"
+}

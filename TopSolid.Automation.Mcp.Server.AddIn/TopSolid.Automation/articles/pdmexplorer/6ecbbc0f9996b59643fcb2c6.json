@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdmAdmin.GetUserGroups.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdmAdmin.GetUserGroups.html",
+  "sha256": "3deb41d1d4d58020bc9c7764991b8e02a1bec69e17aa2f45e819db2af2b799a2",
+  "text": "# Method GetUserGroups\n\n#### GetUserGroups(bool, bool)\n\nGets all the users groups.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nList<PdmObjectId> GetUserGroups(bool inGetsActiveUserGroups, bool inGetsInactiveUserGroups)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  bool |  inGetsActiveUserGroups |  Gets active user groups.  |  \n \n|  bool |  inGetsInactiveUserGroups |  Gets inactive user groups.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<PdmObjectId> |  User group identifiers.  |  \n\n##### Remarks\n\nThis method is available since v7.8.302.060.\n",
+  "markdown": "markdown/pdmexplorer/6ecbbc0f9996b59643fcb2c6.md",
+  "originalHtml": "html/pdmexplorer/6ecbbc0f9996b59643fcb2c6.html"
+}

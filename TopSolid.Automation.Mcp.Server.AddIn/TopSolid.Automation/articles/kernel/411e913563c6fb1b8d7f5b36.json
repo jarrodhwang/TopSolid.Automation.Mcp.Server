@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IShapes.GetEdgeCurveRange.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IShapes.GetEdgeCurveRange.html",
+  "sha256": "35a6c61c3046480148cd2ddabcb6a7ede8a48abc78c1e3f09db1aae9a008d8d5",
+  "text": "# Method GetEdgeCurveRange\n\n#### GetEdgeCurveRange(ElementItemId, out bool, out double, out double)\n\nGets the parametric range of the curve attached to an edge.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 300, 60)]\nvoid GetEdgeCurveRange(ElementItemId inEdgeId, out bool outIsPeriodic, out double outTMin, out double outTMax)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementItemId |  inEdgeId |  Identifier of the edge to analyze.  |  \n \n|  bool |  outIsPeriodic |  Whether the curve parameterization in periodic.  |  \n \n|  double |  outTMin |  Minimum parametric value, or main period start if periodic.  |  \n \n|  double |  outTMax |  Maximum parametric value, or main period end if periodic.  |  \n\n##### Remarks\n\nThis method is available since v7.10.300.60.\n",
+  "markdown": "markdown/kernel/411e913563c6fb1b8d7f5b36.md",
+  "originalHtml": "html/kernel/411e913563c6fb1b8d7f5b36.html"
+}

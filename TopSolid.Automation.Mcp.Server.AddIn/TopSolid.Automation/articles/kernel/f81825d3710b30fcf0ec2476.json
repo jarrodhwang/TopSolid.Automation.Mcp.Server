@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IOptions.SetVisualizationTolerances.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IOptions.SetVisualizationTolerances.html",
+  "sha256": "df1a6300fb84c23f5153d0ffa475301af673abc1888e912b6c77daf715e0f3fa",
+  "text": "# Method SetVisualizationTolerances\n\n#### SetVisualizationTolerances(DocumentId, double, double)\n\nSets the visualization tolerances of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nvoid SetVisualizationTolerances(DocumentId inDocumentId, double inLinearTolerance, double inAngularTolerance)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  double |  inLinearTolerance |  Linear tolerance (in meters, within [0.001mm,10mm]).  |  \n \n|  double |  inAngularTolerance |  Angular tolerance (in radians, within [1°,90°]).  |  \n\n##### Remarks\n\nThe document is automatically updated to take into account the new tolerances.\n \nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.8.\n",
+  "markdown": "markdown/kernel/f81825d3710b30fcf0ec2476.md",
+  "originalHtml": "html/kernel/f81825d3710b30fcf0ec2476.html"
+}

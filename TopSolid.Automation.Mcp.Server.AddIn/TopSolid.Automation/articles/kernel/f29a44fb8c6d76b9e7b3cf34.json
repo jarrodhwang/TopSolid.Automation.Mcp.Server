@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.PdmProjectFolderId.-ctor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.PdmProjectFolderId.-ctor.html",
+  "sha256": "a88eea196f8eff06d170422c729f52a275b26ef5ae5f1d79f4aa6d038149c632",
+  "text": "# Constructor PdmProjectFolderId\n\n#### PdmProjectFolderId(string)\n\nInitializes a new instance of the PdmProjectFolderId structure.\n\n##### Declaration\n\n```\npublic PdmProjectFolderId(string pdmProjectFolderId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  string |  pdmProjectFolderId |  PDM project folder identifier, or null if empty.  |\n",
+  "markdown": "markdown/kernel/f29a44fb8c6d76b9e7b3cf34.md",
+  "originalHtml": "html/kernel/f29a44fb8c6d76b9e7b3cf34.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IUser.AskPoint3D.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IUser.AskPoint3D.html",
+  "sha256": "8135d83be7827c9be94de740858385d59dcd30d1f7bd02e16ab024d481f24c19",
+  "text": "# Method AskPoint3D\n\n#### AskPoint3D(UserQuestion, SmartPoint3D, out SmartPoint3D)\n\nAsks the user for a 3D point.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nUserAnswerType AskPoint3D(UserQuestion inQuestion, SmartPoint3D inSuggestion, out SmartPoint3D outAnswer)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  UserQuestion |  inQuestion |  Question asked to the user.  |  \n \n|  SmartPoint3D |  inSuggestion |  Suggested answer, or null if none.  |  \n \n|  SmartPoint3D |  outAnswer |  User answer, or null if none.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  UserAnswerType |  Type of user answer.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) may be called before calling this method to allow the user to create or modify entities during the interaction.\n \nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/6eac15c22527d923087a048d.md",
+  "originalHtml": "html/kernel/6eac15c22527d923087a048d.html"
+}

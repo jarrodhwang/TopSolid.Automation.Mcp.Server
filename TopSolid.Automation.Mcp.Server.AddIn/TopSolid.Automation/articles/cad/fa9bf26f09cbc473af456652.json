@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IAssemblies.GetOccurrencePublishing.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IAssemblies.GetOccurrencePublishing.html",
+  "sha256": "6cc5b39525a5f40880110800a05019ea90f5e97079ef0d171bcbaf91bfaff339",
+  "text": "# Method GetOccurrencePublishing\n\n#### GetOccurrencePublishing(ElementId, ElementId)\n\nGets the constituent of an occurrence corresponding to a specified publishing entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nElementId GetOccurrencePublishing(ElementId inOccurrenceId, ElementId inPublishingId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inOccurrenceId |  Identifier of the part or assembly occurrence to analyze.  |  \n \n|  ElementId |  inPublishingId |  Identifier of the specified publishing entity in the occurrence definition document.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the corresponding constituent entity of the occurrence.  |  \n\n##### Remarks\n\nThis method is available since v7.8.\n",
+  "markdown": "markdown/cad/fa9bf26f09cbc473af456652.md",
+  "originalHtml": "html/cad/fa9bf26f09cbc473af456652.html"
+}

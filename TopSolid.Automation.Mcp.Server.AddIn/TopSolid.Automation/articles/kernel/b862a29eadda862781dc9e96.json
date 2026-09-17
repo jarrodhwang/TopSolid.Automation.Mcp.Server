@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IElements.Delete.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IElements.Delete.html",
+  "sha256": "2f56a49dcb7f52a724755e207ea7c6f50d43bca2899b0119313995768685b459",
+  "text": "# Method Delete\n\n#### Delete(ElementId)\n\nDeletes an element.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nvoid Delete(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to delete.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/b862a29eadda862781dc9e96.md",
+  "originalHtml": "html/kernel/b862a29eadda862781dc9e96.html"
+}

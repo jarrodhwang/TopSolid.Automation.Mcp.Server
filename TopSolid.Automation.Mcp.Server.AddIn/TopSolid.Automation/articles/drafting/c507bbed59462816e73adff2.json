@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.TopSolidDraftingHostInstance.Disconnect.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.TopSolidDraftingHostInstance.Disconnect.html",
+  "sha256": "a50c23b62ae8decf212055a61138c22758b49f4a15f936d81f17e621191815e3",
+  "text": "# Method Disconnect\n\n#### Disconnect()\n\nDisconnect from TopSolid application.\n\n##### Declaration\n\n```\npublic void Disconnect()\n```\n",
+  "markdown": "markdown/drafting/c507bbed59462816e73adff2.md",
+  "originalHtml": "html/drafting/c507bbed59462816e73adff2.html"
+}

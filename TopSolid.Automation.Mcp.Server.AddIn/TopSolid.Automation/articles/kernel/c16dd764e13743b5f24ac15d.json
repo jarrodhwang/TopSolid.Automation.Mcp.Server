@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IApplication.SearchEnumerationLocalizedText.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IApplication.SearchEnumerationLocalizedText.html",
+  "sha256": "81d8140cf88b45ca74f1a13619d0db9864ac6557118f4889d975d55cf8c19636",
+  "text": "# Method SearchEnumerationLocalizedText\n\n#### SearchEnumerationLocalizedText(EnumerationProperty)\n\nSearches for the localized text corresponding to a specified enumeration property.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 12, 0, 0)]\nstring SearchEnumerationLocalizedText(EnumerationProperty inProperty)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  EnumerationProperty |  inProperty |  Property to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  Corresponding localized text, or null if not found.  |  \n\n##### Remarks\n\nThis method is available since v7.12.\n",
+  "markdown": "markdown/kernel/c16dd764e13743b5f24ac15d.md",
+  "originalHtml": "html/kernel/c16dd764e13743b5f24ac15d.html"
+}

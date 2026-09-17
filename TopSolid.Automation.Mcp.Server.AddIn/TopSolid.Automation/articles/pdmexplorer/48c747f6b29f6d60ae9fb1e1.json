@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.TopSolidPdmExplorerHost.Exited.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.TopSolidPdmExplorerHost.Exited.html",
+  "sha256": "9ca70cd8b326469753d10b1a8e78121fe00338148ce94833b13a52634e35604c",
+  "text": "# Event Exited\n\nThis event is raised when TopSolid has exited.\n\n###### Namespace: TopSolid.Pdm.Explorer.Automating\n\n###### Assembly: TopSolid.Pdm.Explorer.Automating.dll\n\n##### Syntax\n\n```\npublic static event EventHandler Exited\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  EventHandler |  This event is raised when TopSolid has exited. |\n",
+  "markdown": "markdown/pdmexplorer/48c747f6b29f6d60ae9fb1e1.md",
+  "originalHtml": "html/pdmexplorer/48c747f6b29f6d60ae9fb1e1.html"
+}

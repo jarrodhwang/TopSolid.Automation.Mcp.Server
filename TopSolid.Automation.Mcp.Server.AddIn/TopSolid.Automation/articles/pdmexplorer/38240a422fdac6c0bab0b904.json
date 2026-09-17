@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdmWorkflow.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdmWorkflow.html",
+  "sha256": "5fd2a018ef5f1b4e316870522d7ad6924e750f56df85d79c8e866a8b7dbc5682",
+  "text": "# Interface IPdmWorkflow\n\nGives access to the PDM workflow.\n\n###### Namespace: TopSolid.Pdm.Explorer.Automating\n\n###### Assembly: TopSolid.Pdm.Explorer.Automating.dll\n\n##### Syntax\n\n```\n[ServiceContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\npublic interface IPdmWorkflow\n```\n\n##### Remarks\n\nThis interface is available since v7.10.0.0.\n\n### Methods \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   GetPossibleActions(PdmMajorRevisionId, out List<PdmObjectId>, out List<string>)  |  Get all workflow actions possible of a major revision.  |  \n \n|   HasWorkflow(PdmObjectId)  |  Tells if a project has a workflow set.  |  \n \n|   StartAction(PdmMajorRevisionId, PdmObjectId)  |  Starts a workflow action of a major revision.  |\n",
+  "markdown": "markdown/pdmexplorer/38240a422fdac6c0bab0b904.md",
+  "originalHtml": "html/pdmexplorer/38240a422fdac6c0bab0b904.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMechanisms.AddRigidGroupConstituent.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMechanisms.AddRigidGroupConstituent.html",
+  "sha256": "f73a03d0ff479f8ffa7b25586ad49e5790bbda5220592433a3bda206d2781e30",
+  "text": "# Method AddRigidGroupConstituent\n\n#### AddRigidGroupConstituent(ElementId, ElementId)\n\nAdds a constituent to a rigid group entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nvoid AddRigidGroupConstituent(ElementId inElementId, ElementId inConstituentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the rigid group entity to modify.  |  \n \n|  ElementId |  inConstituentId |  Identifier of the entity to add to the rigid group.  |  \n\n##### Remarks\n\nIf the entity to add was already in another rigid group, it is automatically removed from it.\n \nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.8.\n",
+  "markdown": "markdown/cad/7aec5d144e67c92f6d854168.md",
+  "originalHtml": "html/cad/7aec5d144e67c92f6d854168.html"
+}

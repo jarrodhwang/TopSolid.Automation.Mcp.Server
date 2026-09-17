@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ITextures.GetTransparentColor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ITextures.GetTransparentColor.html",
+  "sha256": "8aef8bd034791a41272986001b35d8c16c3c38e2faec6d37f157067317d6f69e",
+  "text": "# Method GetTransparentColor\n\n#### GetTransparentColor(DocumentId)\n\nGets the texture transparent color.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 400, 100)]\nColor GetTransparentColor(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyse.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Color |   |  \n\n##### Remarks\n\nThis method is available since v7.16.\n",
+  "markdown": "markdown/kernel/f928595e9992c807be102339.md",
+  "originalHtml": "html/kernel/f928595e9992c807be102339.html"
+}

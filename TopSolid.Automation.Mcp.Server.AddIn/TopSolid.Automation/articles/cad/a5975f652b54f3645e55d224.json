@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IAssemblies.RedirectInclusionWithCodeAndDrivers.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IAssemblies.RedirectInclusionWithCodeAndDrivers.html",
+  "sha256": "fd73d840284d1190c4ad0f5cfd03ebedb2ac48f5ab2a7c270fba660570af2801",
+  "text": "# Method RedirectInclusionWithCodeAndDrivers\n\n#### RedirectInclusionWithCodeAndDrivers(ElementId, DocumentId, string, List<string>, List<SmartObject>)\n\nRedirects an inclusion operation to a family with specified code and drivers.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 12, 300, 80)]\nvoid RedirectInclusionWithCodeAndDrivers(ElementId inElementId, DocumentId inDefinitionId, string inCode, List<string> inDriverNames, List<SmartObject> inDriverValues)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the inclusion operation to modify.  |  \n \n|  DocumentId |  inDefinitionId |  Identifier of the new family definition document to include.  |  \n \n|  string |  inCode |  Instance code, or null if none.  |  \n \n|  List<string> |  inDriverNames |  Instance driver names, or null if none.  |  \n \n|  List<SmartObject> |  inDriverValues |  Instance driver values, or null if none.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.12.300.080.\n",
+  "markdown": "markdown/cad/a5975f652b54f3645e55d224.md",
+  "originalHtml": "html/cad/a5975f652b54f3645e55d224.html"
+}

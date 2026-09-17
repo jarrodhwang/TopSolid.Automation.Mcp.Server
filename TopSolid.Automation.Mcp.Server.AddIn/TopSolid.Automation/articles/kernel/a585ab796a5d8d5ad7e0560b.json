@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IDocuments.IsUnmovableDocument.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IDocuments.IsUnmovableDocument.html",
+  "sha256": "d6a13b56ca9cb1f683ae6c66bdb5ced0b24a6bd0a6d551824c37c4040c52b9a2",
+  "text": "# Method IsUnmovableDocument\n\n#### IsUnmovableDocument(DocumentId)\n\nDetermines whether the document is movable.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 400, 180)]\nbool IsUnmovableDocument(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyse.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Tells wether the document is movable.  |  \n\n##### Remarks\n\nThis method is available since v7.19.\n",
+  "markdown": "markdown/kernel/a585ab796a5d8d5ad7e0560b.md",
+  "originalHtml": "html/kernel/a585ab796a5d8d5ad7e0560b.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.TopSolidPdmExplorerHost.HostInstance.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.TopSolidPdmExplorerHost.HostInstance.html",
+  "sha256": "66ddf159e0a1e46f7b9dfdaa6b2d462b7b4bcd98c4eca8e3a41ea7af23c71326",
+  "text": "# Property HostInstance\n\n#### HostInstance\n\nGets the TopSolid'Pdm Client host instance.\n\n##### Declaration\n\n```\npublic static TopSolidPdmExplorerHostInstance HostInstance { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  TopSolidPdmExplorerHostInstance |   |\n",
+  "markdown": "markdown/pdmexplorer/14b1db1a933bc4c5b02220ed.md",
+  "originalHtml": "html/pdmexplorer/14b1db1a933bc4c5b02220ed.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMechanisms.IsMechanism.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMechanisms.IsMechanism.html",
+  "sha256": "230aa1c05c06c3edfbce6295a3c3d4429de3cde6d8ec7a72fb3b8203f41ccc27",
+  "text": "# Method IsMechanism\n\n#### IsMechanism(DocumentId)\n\nTells whether an assembly document is a mechanism.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nbool IsMechanism(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  The assembly document is a mechanism.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/cad/3ddca618f8ecffb8a3f01582.md",
+  "originalHtml": "html/cad/3ddca618f8ecffb8a3f01582.html"
+}

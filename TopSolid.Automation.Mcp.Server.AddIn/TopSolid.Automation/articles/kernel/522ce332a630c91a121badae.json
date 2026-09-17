@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Point3D.op_Division.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Point3D.op_Division.html",
+  "sha256": "dbf714338c91aba6424ad31ac385a4158c018414a951007a4f1c467839f10fe4",
+  "text": "# Operator operator /\n\n#### operator /(Point3D, double)\n\nDivides a point by a double value.\n\n##### Declaration\n\n```\npublic static Point3D operator /(Point3D inPoint, double inD)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  Point3D |  inPoint |  Left hand side point.  |  \n \n|  double |  inD |  Right hand side double value.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Point3D |  Scaled point.  |\n",
+  "markdown": "markdown/kernel/522ce332a630c91a121badae.md",
+  "originalHtml": "html/kernel/522ce332a630c91a121badae.html"
+}

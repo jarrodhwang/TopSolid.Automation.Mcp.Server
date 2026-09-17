@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IDocuments.SetUnexportableDocumentMode.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IDocuments.SetUnexportableDocumentMode.html",
+  "sha256": "c19a8ea4bab9f95ff9fb9c8c3993e9f6bb4fc4552a428cadb8da935912bb706a",
+  "text": "# Method SetUnexportableDocumentMode\n\n#### SetUnexportableDocumentMode(DocumentId, bool)\n\nSets the unexportable document mode.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 400, 180)]\nvoid SetUnexportableDocumentMode(DocumentId inDocumentId, bool inIsOn)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  bool |  inIsOn |  Tells wether the document is unexportable.  |  \n\n##### Remarks\n\nThis method is available since v7.19.\n",
+  "markdown": "markdown/kernel/402b9d163cf49237e0ccbf90.md",
+  "originalHtml": "html/kernel/402b9d163cf49237e0ccbf90.html"
+}

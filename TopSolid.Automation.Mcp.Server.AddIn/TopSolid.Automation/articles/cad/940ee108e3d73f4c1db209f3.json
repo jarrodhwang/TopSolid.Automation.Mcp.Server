@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IAssemblies.GetInclusionCodeAndDrivers.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IAssemblies.GetInclusionCodeAndDrivers.html",
+  "sha256": "10f41df2f66d21295df9622fe304277aadf1875911dc0b12a3071c2c501c7419",
+  "text": "# Method GetInclusionCodeAndDrivers\n\n#### GetInclusionCodeAndDrivers(ElementId, out string, out List<string>, out List<SmartObject>)\n\nGets the code and drivers of a family inclusion operation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nvoid GetInclusionCodeAndDrivers(ElementId inElementId, out string outCode, out List<string> outDriverNames, out List<SmartObject> outDriverValues)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the inclusion operation to analyze.  |  \n \n|  string |  outCode |  Instance code, or null if none.  |  \n \n|  List<string> |  outDriverNames |  Instance driver names, or null if none.  |  \n \n|  List<SmartObject> |  outDriverValues |  Instance driver values, or null if none.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/cad/940ee108e3d73f4c1db209f3.md",
+  "originalHtml": "html/cad/940ee108e3d73f4c1db209f3.html"
+}

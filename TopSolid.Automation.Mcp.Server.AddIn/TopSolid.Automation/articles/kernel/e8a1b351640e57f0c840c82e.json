@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IOperations.IsFreezable.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IOperations.IsFreezable.html",
+  "sha256": "8817f67a45fcb89352bb169295436457f3a317612aa74d28d73a9c6f0dad6062",
+  "text": "# Method IsFreezable\n\n#### IsFreezable(ElementId)\n\nTells whether an operation may be frozen.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 12, 0, 0)]\nbool IsFreezable(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the operation to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  The operation may be frozen.  |  \n\n##### Remarks\n\nThis method is available since v7.12.\n",
+  "markdown": "markdown/kernel/e8a1b351640e57f0c840c82e.md",
+  "originalHtml": "html/kernel/e8a1b351640e57f0c840c82e.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IApplication.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IApplication.html",
+  "sha256": "73ff3fbb99aeb925c750aecabeef1c97de57c6ec01898346507996689f35de1f",
+  "text": "# Interface IApplication\n\nGives access to the application.\n\n###### Namespace: TopSolid.Pdm.Explorer.Automating\n\n###### Assembly: TopSolid.Pdm.Explorer.Automating.dll\n\n##### Syntax\n\n```\n[ServiceContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\npublic interface IApplication\n```\n\n##### Remarks\n\nThis interface is available since v7.10.\n\n### Properties \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   ProcessId  |  Gets the identifier of application process.  |  \n \n|   Version  |  Gets the version of the application.  |  \n\n### Methods \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   BringToFrontWindow()  |  Brings the application window to the front.  |  \n \n|   CloseAllDocumentWindows()  |  Close all documents windows.  |  \n \n|   EndModification(bool, bool)  |  Ends performing modifications.  |  \n \n|   IsLicenseValid(int)  |  Tells whether a valid TopSolid license is available.  |  \n \n|   MaximizeWindow()  |  Maximizes the application window.  |  \n \n|   MinimizeWindow()  |  Minimizes the application window.  |  \n \n|   Quit()  |  Terminates the applicaton.  |  \n \n|   RestoreWindow()  |  Restores the application window that has been minimized or maximized.  |  \n \n|   StartModification(string, bool)  |  Starts performing modifications.  |\n",
+  "markdown": "markdown/pdmexplorer/5cb7f209582f51cab885602f.md",
+  "originalHtml": "html/pdmexplorer/5cb7f209582f51cab885602f.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/electrode/TopSolid.Cad.Electrode.Automating.IElectrodes.GetElectrodeYPosition.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/electrode/TopSolid.Cad.Electrode.Automating.IElectrodes.GetElectrodeYPosition.html",
+  "sha256": "e65eed314ad25e28eab4754a2ccda94038e93df1eaaa94cc98c8d5d607e9bda9",
+  "text": "# Method GetElectrodeYPosition\n\n#### GetElectrodeYPosition(ElementId, int)\n\nGet the Y position of an electrode at a given position index.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 12, 0, 0)]\ndouble GetElectrodeYPosition(ElementId inElementId, int inPositionIndex)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the electrode to analyze.  |  \n \n|  int |  inPositionIndex |  Position index.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double |  Y position.  |  \n\n##### Remarks\n\nThis method is available since v7.12.\n",
+  "markdown": "markdown/electrode/ae00bdfffbfae07a0394b01d.md",
+  "originalHtml": "html/electrode/ae00bdfffbfae07a0394b01d.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/wire/TopSolid.Cam.NC.Wire.Automating.IWireTechnologies.GetRegimeNumber.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/wire/TopSolid.Cam.NC.Wire.Automating.IWireTechnologies.GetRegimeNumber.html",
+  "sha256": "21a133988c41d3ae8ad1629b80bcc58a791db7ffb5f098594be89a7b546c8e5c",
+  "text": "# Method GetRegimeNumber\n\n#### GetRegimeNumber(ElementId)\n\nGet regime number.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 160)]\nSmartInteger GetRegimeNumber(ElementId inTechnologyId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inTechnologyId |  Identifier of the technology to modify.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartInteger |  Regime number.  |\n",
+  "markdown": "markdown/wire/b849646ef9f4af75ab9981c8.md",
+  "originalHtml": "html/wire/b849646ef9f4af75ab9981c8.html"
+}

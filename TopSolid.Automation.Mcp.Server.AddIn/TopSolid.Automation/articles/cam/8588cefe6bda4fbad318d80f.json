@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IMachineTools.GetPockets.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IMachineTools.GetPockets.html",
+  "sha256": "768dff8d55db6b1bc53c40a914257c8b3e86273d3ac81af57076b29e536a2a98",
+  "text": "# Method GetPockets\n\n#### GetPockets(ElementId)\n\nGet pockets of machine element (spindle, turret, magazine).\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nList<ElementId> GetPockets(ElementId inMachineElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inMachineElementId |  Machine element identifier.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementId> |  List of pockets.  |\n",
+  "markdown": "markdown/cam/8588cefe6bda4fbad318d80f.md",
+  "originalHtml": "html/cam/8588cefe6bda4fbad318d80f.html"
+}

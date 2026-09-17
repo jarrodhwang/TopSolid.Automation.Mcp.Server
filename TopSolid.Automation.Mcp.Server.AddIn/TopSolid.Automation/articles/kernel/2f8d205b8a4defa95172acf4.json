@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ILicenses.GetUsedFloatingLicenses.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ILicenses.GetUsedFloatingLicenses.html",
+  "sha256": "95a2ef22804c6dc1694d7186d13d3904a23ec51d7438eac71572b7fc5a61d414",
+  "text": "# Method GetUsedFloatingLicenses\n\n#### GetUsedFloatingLicenses()\n\nGets used floating licenses.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 400, 20)]\nList<License> GetUsedFloatingLicenses()\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<License> |  Used floating licenses.  |  \n\n##### Remarks\n\nThis method is available since v7.16.\n",
+  "markdown": "markdown/kernel/2f8d205b8a4defa95172acf4.md",
+  "originalHtml": "html/kernel/2f8d205b8a4defa95172acf4.html"
+}

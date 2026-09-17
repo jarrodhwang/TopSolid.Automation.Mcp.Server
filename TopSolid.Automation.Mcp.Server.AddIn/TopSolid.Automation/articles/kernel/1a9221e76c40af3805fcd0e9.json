@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartText.Type.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartText.Type.html",
+  "sha256": "f092b785f6f68b36831d83f9004392284681cd557023e764f9f965d26e5c036a",
+  "text": "# Field Type\n\nType of smart text.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic SmartTextType Type\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartTextType |  Type of smart text. |\n",
+  "markdown": "markdown/kernel/1a9221e76c40af3805fcd0e9.md",
+  "originalHtml": "html/kernel/1a9221e76c40af3805fcd0e9.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.PropertyDefinition.op_Equality.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.PropertyDefinition.op_Equality.html",
+  "sha256": "58d934179937a38db52a8f1628b96114ac20d479e60d886d4cd5b3b16a90c130",
+  "text": "# Operator operator ==\n\n#### operator ==(PropertyDefinition, PropertyDefinition)\n\nTells whether two property definitions are equal.\n\n##### Declaration\n\n```\npublic static bool operator ==(PropertyDefinition inPropertyDefinition1, PropertyDefinition inPropertyDefinition2)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PropertyDefinition |  inPropertyDefinition1 |  First property definition.  |  \n \n|  PropertyDefinition |  inPropertyDefinition2 |  Second property definition.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Property definitions are equal.  |\n",
+  "markdown": "markdown/kernel/1e7f1701a799fd26c2f33882.md",
+  "originalHtml": "html/kernel/1e7f1701a799fd26c2f33882.html"
+}

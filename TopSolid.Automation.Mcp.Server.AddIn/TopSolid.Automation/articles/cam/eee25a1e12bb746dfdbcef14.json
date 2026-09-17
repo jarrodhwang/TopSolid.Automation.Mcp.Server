@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.CylinderStockType.InnerRadius.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.CylinderStockType.InnerRadius.html",
+  "sha256": "fbf00fcd3e1ad1342fc1b8aed2ae0988542f3e4871c1ddb6fb745368cb307dfc",
+  "text": "# Field InnerRadius\n\nInner Radius.\n\n###### Namespace: TopSolid.Cam.NC.Kernel.Automating\n\n###### Assembly: TopSolid.Cam.NC.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic SmartReal InnerRadius\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartReal |  Inner Radius. |\n",
+  "markdown": "markdown/cam/eee25a1e12bb746dfdbcef14.md",
+  "originalHtml": "html/cam/eee25a1e12bb746dfdbcef14.html"
+}

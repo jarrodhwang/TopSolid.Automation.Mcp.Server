@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.GetProjectFolderConstituents.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.GetProjectFolderConstituents.html",
+  "sha256": "10aacccaed4b2b481fd143cc0109104cd8e986c2cc4be513bd71e8d90c0da7bc",
+  "text": "# Method GetProjectFolderConstituents\n\n#### GetProjectFolderConstituents(PdmProjectFolderId, out List<PdmProjectFolderId>, out List<PdmObjectId>)\n\nGets the constituents of a project folder.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nvoid GetProjectFolderConstituents(PdmProjectFolderId inProjectFolderdId, out List<PdmProjectFolderId> outFolderIds, out List<PdmObjectId> outProjectIds)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmProjectFolderId |  inProjectFolderdId |  Project folder identifier.  |  \n \n|  List<PdmProjectFolderId> |  outFolderIds |  List of folders identifiers.  |  \n \n|  List<PdmObjectId> |  outProjectIds |  List of documents identifiers.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/pdmexplorer/7e6e73299af2454b54aa67d4.md",
+  "originalHtml": "html/pdmexplorer/7e6e73299af2454b54aa67d4.html"
+}

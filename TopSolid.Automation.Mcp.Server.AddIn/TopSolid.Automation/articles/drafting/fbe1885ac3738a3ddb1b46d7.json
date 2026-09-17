@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.IAnnotations.GetGeometricToleranceFrameGroupDatumFeatureCount.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.IAnnotations.GetGeometricToleranceFrameGroupDatumFeatureCount.html",
+  "sha256": "39121f710161a6256213e20dd13a80d8adb4a5246a856feaf77f9ca849712732",
+  "text": "# Method GetGeometricToleranceFrameGroupDatumFeatureCount\n\n#### GetGeometricToleranceFrameGroupDatumFeatureCount(ElementId, int, int)\n\nGets the datum feature count of a datum feature system.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 17, 0, 0)]\nint GetGeometricToleranceFrameGroupDatumFeatureCount(ElementId inGeometricTolerance, int inToleranceFrameIndex, int inDatumSystemGroupIndex)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inGeometricTolerance |  Identifier of the element to analyze.  |  \n \n|  int |  inToleranceFrameIndex |  Index of the tolerance frame.  |  \n \n|  int |  inDatumSystemGroupIndex |  Index of the datum feature system.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  int |  The count of datum feature.  |  \n\n##### Remarks\n\nThis method is available since v7.17.\n",
+  "markdown": "markdown/drafting/fbe1885ac3738a3ddb1b46d7.md",
+  "originalHtml": "html/drafting/fbe1885ac3738a3ddb1b46d7.html"
+}

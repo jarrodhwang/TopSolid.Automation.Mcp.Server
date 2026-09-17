@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.CreateSmartBooleanParameter.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.CreateSmartBooleanParameter.html",
+  "sha256": "0917e24690b69d50e46ff57bcef141cb750471d5e608a69336bf790daeba305e",
+  "text": "# Method CreateSmartBooleanParameter\n\n#### CreateSmartBooleanParameter(DocumentId, SmartBoolean)\n\nCreates a smart boolean parameter creation operation in a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 17, 400, 220)]\nElementId CreateSmartBooleanParameter(DocumentId inDocumentId, SmartBoolean inSmartBoolean)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  SmartBoolean |  inSmartBoolean |  Smart boolean value.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the created operation child parameter entity.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.17.\n",
+  "markdown": "markdown/kernel/d35326d9e861c6bec82c5c7c.md",
+  "originalHtml": "html/kernel/d35326d9e861c6bec82c5c7c.html"
+}

@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Interface IPdm | TopSolid Automation website </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Interface IPdm | TopSolid Automation website ">
+    
+    <meta name="description" content="Gives access to the PDM.">
+      <link rel="shortcut icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../../styles/docfx.css">
+      <link rel="stylesheet" href="../../styles/main.css">
+      <meta property="docfx:navrel" content="../../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../img/AutomationIcon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="TopSolid.Kernel.Automating.IPdm">
+
+
+
+  <h1 id="TopSolid_Kernel_Automating_IPdm" data-uid="TopSolid.Kernel.Automating.IPdm" class="text-break">Interface IPdm</h1>
+  <div class="markdown level0 summary"><p>Gives access to the PDM.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="TopSolid.html">TopSolid</a>.<a class="xref" href="TopSolid.Kernel.html">Kernel</a>.<a class="xref" href="TopSolid.Kernel.Automating.html">Automating</a></h6>
+  <h6><strong>Assembly</strong>: TopSolid.Kernel.Automating.dll</h6>
+  <h5 id="TopSolid_Kernel_Automating_IPdm_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ServiceContract]
+[AvailableSinceVersion(7, 6, 0, 0)]
+public interface IPdm</code></pre>
+  </div>
+  <h5 id="TopSolid_Kernel_Automating_IPdm_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>This interface is available since v7.6.</p>
+</div>
+  <h3 id="properties">Properties
+</h3>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_LibraryProjectsRootFolder" data-uid="TopSolid.Kernel.Automating.IPdm.LibraryProjectsRootFolder">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.LibraryProjectsRootFolder.html#TopSolid_Kernel_Automating_IPdm_LibraryProjectsRootFolder">LibraryProjectsRootFolder</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the library projects root folder.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_Name" data-uid="TopSolid.Kernel.Automating.IPdm.Name">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.Name.html#TopSolid_Kernel_Automating_IPdm_Name">Name</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the name of PDM (i.e. the localized name of PDM connection).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_WorkingProjectsRootFolder" data-uid="TopSolid.Kernel.Automating.IPdm.WorkingProjectsRootFolder">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.WorkingProjectsRootFolder.html#TopSolid_Kernel_Automating_IPdm_WorkingProjectsRootFolder">WorkingProjectsRootFolder</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the working projects root folder.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_AddReferencedProjects_TopSolid_Kernel_Automating_PdmObjectId_System_Collections_Generic_List_TopSolid_Kernel_Automating_PdmObjectId__" data-uid="TopSolid.Kernel.Automating.IPdm.AddReferencedProjects(TopSolid.Kernel.Automating.PdmObjectId,System.Collections.Generic.List{TopSolid.Kernel.Automating.PdmObjectId})">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.AddReferencedProjects.html#TopSolid_Kernel_Automating_IPdm_AddReferencedProjects_TopSolid_Kernel_Automating_PdmObjectId_System_Collections_Generic_List_TopSolid_Kernel_Automating_PdmObjectId__">AddReferencedProjects(PdmObjectId, List&lt;PdmObjectId&gt;)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Adds referenced projects to a project.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_CheckIn_TopSolid_Kernel_Automating_PdmObjectId_System_Boolean_" data-uid="TopSolid.Kernel.Automating.IPdm.CheckIn(TopSolid.Kernel.Automating.PdmObjectId,System.Boolean)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.CheckIn.html#TopSolid_Kernel_Automating_IPdm_CheckIn_TopSolid_Kernel_Automating_PdmObjectId_System_Boolean_">CheckIn(PdmObjectId, bool)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Checks-in an object.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_CheckInSeveral_System_Collections_Generic_List_TopSolid_Kernel_Automating_PdmObjectId__System_Boolean_" data-uid="TopSolid.Kernel.Automating.IPdm.CheckInSeveral(System.Collections.Generic.List{TopSolid.Kernel.Automating.PdmObjectId},System.Boolean)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.CheckInSeveral.html#TopSolid_Kernel_Automating_IPdm_CheckInSeveral_System_Collections_Generic_List_TopSolid_Kernel_Automating_PdmObjectId__System_Boolean_">CheckInSeveral(List&lt;PdmObjectId&gt;, bool)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Checks-in several objects.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_CheckOut_TopSolid_Kernel_Automating_PdmObjectId_" data-uid="TopSolid.Kernel.Automating.IPdm.CheckOut(TopSolid.Kernel.Automating.PdmObjectId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.CheckOut.html#TopSolid_Kernel_Automating_IPdm_CheckOut_TopSolid_Kernel_Automating_PdmObjectId_">CheckOut(PdmObjectId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Checks-out an object.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_CloseProject_TopSolid_Kernel_Automating_PdmObjectId_" data-uid="TopSolid.Kernel.Automating.IPdm.CloseProject(TopSolid.Kernel.Automating.PdmObjectId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.CloseProject.html#TopSolid_Kernel_Automating_IPdm_CloseProject_TopSolid_Kernel_Automating_PdmObjectId_">CloseProject(PdmObjectId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Closes a project.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_CopySeveral_System_Collections_Generic_List_TopSolid_Kernel_Automating_PdmObjectId__TopSolid_Kernel_Automating_PdmObjectId_" data-uid="TopSolid.Kernel.Automating.IPdm.CopySeveral(System.Collections.Generic.List{TopSolid.Kernel.Automating.PdmObjectId},TopSolid.Kernel.Automating.PdmObjectId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.CopySeveral.html#TopSolid_Kernel_Automating_IPdm_CopySeveral_System_Collections_Generic_List_TopSolid_Kernel_Automating_PdmObjectId__TopSolid_Kernel_Automating_PdmObjectId_">CopySeveral(List&lt;PdmObjectId&gt;, PdmObjectId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Copies several objects.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_CopySeveral2_System_Collections_Generic_List_TopSolid_Kernel_Automating_PdmObjectId__TopSolid_Kernel_Automating_PdmObjectId_System_Boolean_" data-uid="TopSolid.Kernel.Automating.IPdm.CopySeveral2(System.Collections.Generic.List{TopSolid.Kernel.Automating.PdmObjectId},TopSolid.Kernel.Automating.PdmObjectId,System.Boolean)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.CopySeveral2.html#TopSolid_Kernel_Automating_IPdm_CopySeveral2_System_Collections_Generic_List_TopSolid_Kernel_Automating_PdmObjectId__TopSolid_Kernel_Automating_PdmObjectId_System_Boolean_">CopySeveral2(List&lt;PdmObjectId&gt;, PdmObjectId, bool)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Copies several objects.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_CopySeveralWithOptions_System_Collections_Generic_List_TopSolid_Kernel_Automating_PdmObjectId__TopSolid_Kernel_Automating_PdmObjectId_System_Boolean_System_Boolean_" data-uid="TopSolid.Kernel.Automating.IPdm.CopySeveralWithOptions(System.Collections.Generic.List{TopSolid.Kernel.Automating.PdmObjectId},TopSolid.Kernel.Automating.PdmObjectId,System.Boolean,System.Boolean)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.CopySeveralWithOptions.html#TopSolid_Kernel_Automating_IPdm_CopySeveralWithOptions_System_Collections_Generic_List_TopSolid_Kernel_Automating_PdmObjectId__TopSolid_Kernel_Automating_PdmObjectId_System_Boolean_System_Boolean_">CopySeveralWithOptions(List&lt;PdmObjectId&gt;, PdmObjectId, bool, bool)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Copies several objects.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_CreateDocument_TopSolid_Kernel_Automating_PdmObjectId_System_String_System_Boolean_" data-uid="TopSolid.Kernel.Automating.IPdm.CreateDocument(TopSolid.Kernel.Automating.PdmObjectId,System.String,System.Boolean)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.CreateDocument.html#TopSolid_Kernel_Automating_IPdm_CreateDocument_TopSolid_Kernel_Automating_PdmObjectId_System_String_System_Boolean_">CreateDocument(PdmObjectId, string, bool)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Creates a TopSolid document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_CreateDocumentWithTemplate_TopSolid_Kernel_Automating_PdmObjectId_TopSolid_Kernel_Automating_PdmObjectId_" data-uid="TopSolid.Kernel.Automating.IPdm.CreateDocumentWithTemplate(TopSolid.Kernel.Automating.PdmObjectId,TopSolid.Kernel.Automating.PdmObjectId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.CreateDocumentWithTemplate.html#TopSolid_Kernel_Automating_IPdm_CreateDocumentWithTemplate_TopSolid_Kernel_Automating_PdmObjectId_TopSolid_Kernel_Automating_PdmObjectId_">CreateDocumentWithTemplate(PdmObjectId, PdmObjectId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Creates a TopSolid document with a template.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_CreateFolder_TopSolid_Kernel_Automating_PdmObjectId_System_String_" data-uid="TopSolid.Kernel.Automating.IPdm.CreateFolder(TopSolid.Kernel.Automating.PdmObjectId,System.String)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.CreateFolder.html#TopSolid_Kernel_Automating_IPdm_CreateFolder_TopSolid_Kernel_Automating_PdmObjectId_System_String_">CreateFolder(PdmObjectId, string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Creates a folder.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_CreateLifeCycleSubState_TopSolid_Kernel_Automating_PdmLifeCycleMainState_System_String_" data-uid="TopSolid.Kernel.Automating.IPdm.CreateLifeCycleSubState(TopSolid.Kernel.Automating.PdmLifeCycleMainState,System.String)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.CreateLifeCycleSubState.html#TopSolid_Kernel_Automating_IPdm_CreateLifeCycleSubState_TopSolid_Kernel_Automating_PdmLifeCycleMainState_System_String_">CreateLifeCycleSubState(PdmLifeCycleMainState, string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Creates new life cycle sub state.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_CreateProject_System_String_System_Boolean_" data-uid="TopSolid.Kernel.Automating.IPdm.CreateProject(System.String,System.Boolean)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.CreateProject.html#TopSolid_Kernel_Automating_IPdm_CreateProject_System_String_System_Boolean_">CreateProject(string, bool)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Creates a project.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_CreateProjectFolder_TopSolid_Kernel_Automating_PdmProjectFolderId_System_String_" data-uid="TopSolid.Kernel.Automating.IPdm.CreateProjectFolder(TopSolid.Kernel.Automating.PdmProjectFolderId,System.String)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.CreateProjectFolder.html#TopSolid_Kernel_Automating_IPdm_CreateProjectFolder_TopSolid_Kernel_Automating_PdmProjectFolderId_System_String_">CreateProjectFolder(PdmProjectFolderId, string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Creates a project folder.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_CreateProjectWithTemplate_System_String_TopSolid_Kernel_Automating_PdmObjectId_" data-uid="TopSolid.Kernel.Automating.IPdm.CreateProjectWithTemplate(System.String,TopSolid.Kernel.Automating.PdmObjectId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.CreateProjectWithTemplate.html#TopSolid_Kernel_Automating_IPdm_CreateProjectWithTemplate_System_String_TopSolid_Kernel_Automating_PdmObjectId_">CreateProjectWithTemplate(string, PdmObjectId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Creates a project with a template.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_DeleteProjectFolder_TopSolid_Kernel_Automating_PdmProjectFolderId_" data-uid="TopSolid.Kernel.Automating.IPdm.DeleteProjectFolder(TopSolid.Kernel.Automating.PdmProjectFolderId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.DeleteProjectFolder.html#TopSolid_Kernel_Automating_IPdm_DeleteProjectFolder_TopSolid_Kernel_Automating_PdmProjectFolderId_">DeleteProjectFolder(PdmProjectFolderId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Deletes an empty project folder.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_DeleteSeveral_System_Collections_Generic_List_TopSolid_Kernel_Automating_PdmObjectId__" data-uid="TopSolid.Kernel.Automating.IPdm.DeleteSeveral(System.Collections.Generic.List{TopSolid.Kernel.Automating.PdmObjectId})">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.DeleteSeveral.html#TopSolid_Kernel_Automating_IPdm_DeleteSeveral_System_Collections_Generic_List_TopSolid_Kernel_Automating_PdmObjectId__">DeleteSeveral(List&lt;PdmObjectId&gt;)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Deletes several objects.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_EnsureIsDirty_TopSolid_Kernel_Automating_PdmObjectId_" data-uid="TopSolid.Kernel.Automating.IPdm.EnsureIsDirty(TopSolid.Kernel.Automating.PdmObjectId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.EnsureIsDirty.html#TopSolid_Kernel_Automating_IPdm_EnsureIsDirty_TopSolid_Kernel_Automating_PdmObjectId_">EnsureIsDirty(PdmObjectId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Ensures that an object is dirty to allow further modifications.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_Exists_TopSolid_Kernel_Automating_PdmObjectId_" data-uid="TopSolid.Kernel.Automating.IPdm.Exists(TopSolid.Kernel.Automating.PdmObjectId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.Exists.html#TopSolid_Kernel_Automating_IPdm_Exists_TopSolid_Kernel_Automating_PdmObjectId_">Exists(PdmObjectId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Tells whether a PDM object still exists.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_ExportDictionaries_System_Collections_Generic_List_TopSolid_Kernel_Automating_PdmObjectId__System_Globalization_CultureInfo___System_String___" data-uid="TopSolid.Kernel.Automating.IPdm.ExportDictionaries(System.Collections.Generic.List{TopSolid.Kernel.Automating.PdmObjectId},System.Globalization.CultureInfo[],System.String[])">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.ExportDictionaries.html#TopSolid_Kernel_Automating_IPdm_ExportDictionaries_System_Collections_Generic_List_TopSolid_Kernel_Automating_PdmObjectId__System_Globalization_CultureInfo___System_String___">ExportDictionaries(List&lt;PdmObjectId&gt;, CultureInfo[], string[])</a>
+        </td>
+        <td class="markdown level1 summary"><p>Exports dictionaries (.TopDic file).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_ExportDictionaryPackage_TopSolid_Kernel_Automating_PdmObjectId_System_Boolean_System_Globalization_CultureInfo_System_String_System_String_" data-uid="TopSolid.Kernel.Automating.IPdm.ExportDictionaryPackage(TopSolid.Kernel.Automating.PdmObjectId,System.Boolean,System.Globalization.CultureInfo,System.String,System.String)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.ExportDictionaryPackage.html#TopSolid_Kernel_Automating_IPdm_ExportDictionaryPackage_TopSolid_Kernel_Automating_PdmObjectId_System_Boolean_System_Globalization_CultureInfo_System_String_System_String_">ExportDictionaryPackage(PdmObjectId, bool, CultureInfo, string, string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Export dictionary package (.TopDicPkg).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_ExportExecutablePackage_System_Collections_Generic_List_TopSolid_Kernel_Automating_PdmObjectId__System_Boolean_System_Boolean_System_Boolean_System_String_" data-uid="TopSolid.Kernel.Automating.IPdm.ExportExecutablePackage(System.Collections.Generic.List{TopSolid.Kernel.Automating.PdmObjectId},System.Boolean,System.Boolean,System.Boolean,System.String)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.ExportExecutablePackage.html#TopSolid_Kernel_Automating_IPdm_ExportExecutablePackage_System_Collections_Generic_List_TopSolid_Kernel_Automating_PdmObjectId__System_Boolean_System_Boolean_System_Boolean_System_String_">ExportExecutablePackage(List&lt;PdmObjectId&gt;, bool, bool, bool, string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Exports an executable package.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_ExportLocalizations_System_Collections_Generic_List_TopSolid_Kernel_Automating_PdmObjectId__System_Globalization_CultureInfo___System_String_System_String_System_Boolean_" data-uid="TopSolid.Kernel.Automating.IPdm.ExportLocalizations(System.Collections.Generic.List{TopSolid.Kernel.Automating.PdmObjectId},System.Globalization.CultureInfo[],System.String,System.String,System.Boolean)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.ExportLocalizations.html#TopSolid_Kernel_Automating_IPdm_ExportLocalizations_System_Collections_Generic_List_TopSolid_Kernel_Automating_PdmObjectId__System_Globalization_CultureInfo___System_String_System_String_System_Boolean_">ExportLocalizations(List&lt;PdmObjectId&gt;, CultureInfo[], string, string, bool)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Exports localizations (.TopDic or .xliff file).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_ExportMinorRevisionFile_TopSolid_Kernel_Automating_PdmMinorRevisionId_System_String_" data-uid="TopSolid.Kernel.Automating.IPdm.ExportMinorRevisionFile(TopSolid.Kernel.Automating.PdmMinorRevisionId,System.String)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.ExportMinorRevisionFile.html#TopSolid_Kernel_Automating_IPdm_ExportMinorRevisionFile_TopSolid_Kernel_Automating_PdmMinorRevisionId_System_String_">ExportMinorRevisionFile(PdmMinorRevisionId, string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Exports a non TopSolid document minor revision to a file without conversion.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_ExportPackage_System_Collections_Generic_List_TopSolid_Kernel_Automating_PdmObjectId__System_Boolean_System_Boolean_System_String_" data-uid="TopSolid.Kernel.Automating.IPdm.ExportPackage(System.Collections.Generic.List{TopSolid.Kernel.Automating.PdmObjectId},System.Boolean,System.Boolean,System.String)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.ExportPackage.html#TopSolid_Kernel_Automating_IPdm_ExportPackage_System_Collections_Generic_List_TopSolid_Kernel_Automating_PdmObjectId__System_Boolean_System_Boolean_System_String_">ExportPackage(List&lt;PdmObjectId&gt;, bool, bool, string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Exports a package.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_ExportToBabylon_TopSolid_Kernel_Automating_PdmObjectId_System_String_System_String_" data-uid="TopSolid.Kernel.Automating.IPdm.ExportToBabylon(TopSolid.Kernel.Automating.PdmObjectId,System.String,System.String)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.ExportToBabylon.html#TopSolid_Kernel_Automating_IPdm_ExportToBabylon_TopSolid_Kernel_Automating_PdmObjectId_System_String_System_String_">ExportToBabylon(PdmObjectId, string, string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Export a document to a Babylon file.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_ExportViewerPackage_System_Collections_Generic_List_TopSolid_Kernel_Automating_PdmObjectId__System_Boolean_System_Boolean_System_Boolean_System_String_" data-uid="TopSolid.Kernel.Automating.IPdm.ExportViewerPackage(System.Collections.Generic.List{TopSolid.Kernel.Automating.PdmObjectId},System.Boolean,System.Boolean,System.Boolean,System.String)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.ExportViewerPackage.html#TopSolid_Kernel_Automating_IPdm_ExportViewerPackage_System_Collections_Generic_List_TopSolid_Kernel_Automating_PdmObjectId__System_Boolean_System_Boolean_System_Boolean_System_String_">ExportViewerPackage(List&lt;PdmObjectId&gt;, bool, bool, bool, string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Exports a viewer package.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_GetAuthor_TopSolid_Kernel_Automating_PdmObjectId_" data-uid="TopSolid.Kernel.Automating.IPdm.GetAuthor(TopSolid.Kernel.Automating.PdmObjectId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.GetAuthor.html#TopSolid_Kernel_Automating_IPdm_GetAuthor_TopSolid_Kernel_Automating_PdmObjectId_">GetAuthor(PdmObjectId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the author of an object.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_GetAvailablePdmConnections" data-uid="TopSolid.Kernel.Automating.IPdm.GetAvailablePdmConnections">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.GetAvailablePdmConnections.html#TopSolid_Kernel_Automating_IPdm_GetAvailablePdmConnections">GetAvailablePdmConnections()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets all available Pdms connections.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_GetComment_TopSolid_Kernel_Automating_PdmObjectId_" data-uid="TopSolid.Kernel.Automating.IPdm.GetComment(TopSolid.Kernel.Automating.PdmObjectId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.GetComment.html#TopSolid_Kernel_Automating_IPdm_GetComment_TopSolid_Kernel_Automating_PdmObjectId_">GetComment(PdmObjectId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the comment of an object.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_GetComplementaryPartNumber_TopSolid_Kernel_Automating_PdmObjectId_" data-uid="TopSolid.Kernel.Automating.IPdm.GetComplementaryPartNumber(TopSolid.Kernel.Automating.PdmObjectId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.GetComplementaryPartNumber.html#TopSolid_Kernel_Automating_IPdm_GetComplementaryPartNumber_TopSolid_Kernel_Automating_PdmObjectId_">GetComplementaryPartNumber(PdmObjectId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the complementary part number of an object.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_GetConstituents_TopSolid_Kernel_Automating_PdmObjectId_System_Collections_Generic_List_TopSolid_Kernel_Automating_PdmObjectId___System_Collections_Generic_List_TopSolid_Kernel_Automating_PdmObjectId___" data-uid="TopSolid.Kernel.Automating.IPdm.GetConstituents(TopSolid.Kernel.Automating.PdmObjectId,System.Collections.Generic.List{TopSolid.Kernel.Automating.PdmObjectId}@,System.Collections.Generic.List{TopSolid.Kernel.Automating.PdmObjectId}@)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.GetConstituents.html#TopSolid_Kernel_Automating_IPdm_GetConstituents_TopSolid_Kernel_Automating_PdmObjectId_System_Collections_Generic_List_TopSolid_Kernel_Automating_PdmObjectId___System_Collections_Generic_List_TopSolid_Kernel_Automating_PdmObjectId___">GetConstituents(PdmObjectId, out List&lt;PdmObjectId&gt;, out List&lt;PdmObjectId&gt;)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the constituents of an object.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_GetCurrentProject" data-uid="TopSolid.Kernel.Automating.IPdm.GetCurrentProject">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.GetCurrentProject.html#TopSolid_Kernel_Automating_IPdm_GetCurrentProject">GetCurrentProject()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the current projects.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_GetDescription_TopSolid_Kernel_Automating_PdmObjectId_" data-uid="TopSolid.Kernel.Automating.IPdm.GetDescription(TopSolid.Kernel.Automating.PdmObjectId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.GetDescription.html#TopSolid_Kernel_Automating_IPdm_GetDescription_TopSolid_Kernel_Automating_PdmObjectId_">GetDescription(PdmObjectId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the description of an object.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_GetExportedObjectIds_System_String_" data-uid="TopSolid.Kernel.Automating.IPdm.GetExportedObjectIds(System.String)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.GetExportedObjectIds.html#TopSolid_Kernel_Automating_IPdm_GetExportedObjectIds_System_String_">GetExportedObjectIds(string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Get the list of the object identifiers selected during the export of given package file.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_GetFinalMinorRevision_TopSolid_Kernel_Automating_PdmObjectId_" data-uid="TopSolid.Kernel.Automating.IPdm.GetFinalMinorRevision(TopSolid.Kernel.Automating.PdmObjectId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.GetFinalMinorRevision.html#TopSolid_Kernel_Automating_IPdm_GetFinalMinorRevision_TopSolid_Kernel_Automating_PdmObjectId_">GetFinalMinorRevision(PdmObjectId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the last minor revision contained in the last major revision contained in a PDM object.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_GetLastMajorRevision_TopSolid_Kernel_Automating_PdmObjectId_" data-uid="TopSolid.Kernel.Automating.IPdm.GetLastMajorRevision(TopSolid.Kernel.Automating.PdmObjectId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.GetLastMajorRevision.html#TopSolid_Kernel_Automating_IPdm_GetLastMajorRevision_TopSolid_Kernel_Automating_PdmObjectId_">GetLastMajorRevision(PdmObjectId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the last major revision contained in a PDM object.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_GetLastMinorRevision_TopSolid_Kernel_Automating_PdmMajorRevisionId_" data-uid="TopSolid.Kernel.Automating.IPdm.GetLastMinorRevision(TopSolid.Kernel.Automating.PdmMajorRevisionId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.GetLastMinorRevision.html#TopSolid_Kernel_Automating_IPdm_GetLastMinorRevision_TopSolid_Kernel_Automating_PdmMajorRevisionId_">GetLastMinorRevision(PdmMajorRevisionId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the last minor revision contained in a major revision.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_GetLatestRevision_TopSolid_Kernel_Automating_PdmObjectId_" data-uid="TopSolid.Kernel.Automating.IPdm.GetLatestRevision(TopSolid.Kernel.Automating.PdmObjectId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.GetLatestRevision.html#TopSolid_Kernel_Automating_IPdm_GetLatestRevision_TopSolid_Kernel_Automating_PdmObjectId_">GetLatestRevision(PdmObjectId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets latest revision of specified object and of its children.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_GetLifeCycleMainState_TopSolid_Kernel_Automating_PdmObjectId_" data-uid="TopSolid.Kernel.Automating.IPdm.GetLifeCycleMainState(TopSolid.Kernel.Automating.PdmObjectId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.GetLifeCycleMainState.html#TopSolid_Kernel_Automating_IPdm_GetLifeCycleMainState_TopSolid_Kernel_Automating_PdmObjectId_">GetLifeCycleMainState(PdmObjectId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the life cycle main state of an object.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_GetLifeCycleSubStates_TopSolid_Kernel_Automating_PdmLifeCycleMainState_System_Collections_Generic_List_TopSolid_Kernel_Automating_PdmObjectId___System_Collections_Generic_List_System_String___" data-uid="TopSolid.Kernel.Automating.IPdm.GetLifeCycleSubStates(TopSolid.Kernel.Automating.PdmLifeCycleMainState,System.Collections.Generic.List{TopSolid.Kernel.Automating.PdmObjectId}@,System.Collections.Generic.List{System.String}@)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.GetLifeCycleSubStates.html#TopSolid_Kernel_Automating_IPdm_GetLifeCycleSubStates_TopSolid_Kernel_Automating_PdmLifeCycleMainState_System_Collections_Generic_List_TopSolid_Kernel_Automating_PdmObjectId___System_Collections_Generic_List_System_String___">GetLifeCycleSubStates(PdmLifeCycleMainState, out List&lt;PdmObjectId&gt;, out List&lt;string&gt;)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets sub states of specified main state.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_GetMajorRevision_TopSolid_Kernel_Automating_PdmMinorRevisionId_" data-uid="TopSolid.Kernel.Automating.IPdm.GetMajorRevision(TopSolid.Kernel.Automating.PdmMinorRevisionId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.GetMajorRevision.html#TopSolid_Kernel_Automating_IPdm_GetMajorRevision_TopSolid_Kernel_Automating_PdmMinorRevisionId_">GetMajorRevision(PdmMinorRevisionId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the major revision containing a specified minor revision.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_GetMajorRevisionLifeCycleMainState_TopSolid_Kernel_Automating_PdmMajorRevisionId_" data-uid="TopSolid.Kernel.Automating.IPdm.GetMajorRevisionLifeCycleMainState(TopSolid.Kernel.Automating.PdmMajorRevisionId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.GetMajorRevisionLifeCycleMainState.html#TopSolid_Kernel_Automating_IPdm_GetMajorRevisionLifeCycleMainState_TopSolid_Kernel_Automating_PdmMajorRevisionId_">GetMajorRevisionLifeCycleMainState(PdmMajorRevisionId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the life cycle main state of a major revision.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_GetMajorRevisionLifeCycleSubState_TopSolid_Kernel_Automating_PdmMajorRevisionId_" data-uid="TopSolid.Kernel.Automating.IPdm.GetMajorRevisionLifeCycleSubState(TopSolid.Kernel.Automating.PdmMajorRevisionId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.GetMajorRevisionLifeCycleSubState.html#TopSolid_Kernel_Automating_IPdm_GetMajorRevisionLifeCycleSubState_TopSolid_Kernel_Automating_PdmMajorRevisionId_">GetMajorRevisionLifeCycleSubState(PdmMajorRevisionId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the life cycle sub state of a major revision.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_GetMajorRevisionText_TopSolid_Kernel_Automating_PdmMajorRevisionId_" data-uid="TopSolid.Kernel.Automating.IPdm.GetMajorRevisionText(TopSolid.Kernel.Automating.PdmMajorRevisionId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.GetMajorRevisionText.html#TopSolid_Kernel_Automating_IPdm_GetMajorRevisionText_TopSolid_Kernel_Automating_PdmMajorRevisionId_">GetMajorRevisionText(PdmMajorRevisionId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the text of a major revision.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_GetMajorRevisions_TopSolid_Kernel_Automating_PdmObjectId_" data-uid="TopSolid.Kernel.Automating.IPdm.GetMajorRevisions(TopSolid.Kernel.Automating.PdmObjectId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.GetMajorRevisions.html#TopSolid_Kernel_Automating_IPdm_GetMajorRevisions_TopSolid_Kernel_Automating_PdmObjectId_">GetMajorRevisions(PdmObjectId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the major revisions contained in a PDM object.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_GetManufacturer_TopSolid_Kernel_Automating_PdmObjectId_" data-uid="TopSolid.Kernel.Automating.IPdm.GetManufacturer(TopSolid.Kernel.Automating.PdmObjectId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.GetManufacturer.html#TopSolid_Kernel_Automating_IPdm_GetManufacturer_TopSolid_Kernel_Automating_PdmObjectId_">GetManufacturer(PdmObjectId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the manufacturer of an object.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_GetManufacturerPartNumber_TopSolid_Kernel_Automating_PdmObjectId_" data-uid="TopSolid.Kernel.Automating.IPdm.GetManufacturerPartNumber(TopSolid.Kernel.Automating.PdmObjectId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.GetManufacturerPartNumber.html#TopSolid_Kernel_Automating_IPdm_GetManufacturerPartNumber_TopSolid_Kernel_Automating_PdmObjectId_">GetManufacturerPartNumber(PdmObjectId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the manufacturer part number of an object.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_GetMinorRevisionFileSize_TopSolid_Kernel_Automating_PdmMinorRevisionId_" data-uid="TopSolid.Kernel.Automating.IPdm.GetMinorRevisionFileSize(TopSolid.Kernel.Automating.PdmMinorRevisionId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.GetMinorRevisionFileSize.html#TopSolid_Kernel_Automating_IPdm_GetMinorRevisionFileSize_TopSolid_Kernel_Automating_PdmMinorRevisionId_">GetMinorRevisionFileSize(PdmMinorRevisionId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the size of the file of a minor revision.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_GetMinorRevisionFileVersion_TopSolid_Kernel_Automating_PdmMinorRevisionId_" data-uid="TopSolid.Kernel.Automating.IPdm.GetMinorRevisionFileVersion(TopSolid.Kernel.Automating.PdmMinorRevisionId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.GetMinorRevisionFileVersion.html#TopSolid_Kernel_Automating_IPdm_GetMinorRevisionFileVersion_TopSolid_Kernel_Automating_PdmMinorRevisionId_">GetMinorRevisionFileVersion(PdmMinorRevisionId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the version of the application used to save the file of a minor revision.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_GetMinorRevisionPreviewBitmap_TopSolid_Kernel_Automating_PdmMinorRevisionId_" data-uid="TopSolid.Kernel.Automating.IPdm.GetMinorRevisionPreviewBitmap(TopSolid.Kernel.Automating.PdmMinorRevisionId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.GetMinorRevisionPreviewBitmap.html#TopSolid_Kernel_Automating_IPdm_GetMinorRevisionPreviewBitmap_TopSolid_Kernel_Automating_PdmMinorRevisionId_">GetMinorRevisionPreviewBitmap(PdmMinorRevisionId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the preview bitmap of a minor revision.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_GetMinorRevisionText_TopSolid_Kernel_Automating_PdmMinorRevisionId_" data-uid="TopSolid.Kernel.Automating.IPdm.GetMinorRevisionText(TopSolid.Kernel.Automating.PdmMinorRevisionId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.GetMinorRevisionText.html#TopSolid_Kernel_Automating_IPdm_GetMinorRevisionText_TopSolid_Kernel_Automating_PdmMinorRevisionId_">GetMinorRevisionText(PdmMinorRevisionId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the text of a minor revision.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_GetMinorRevisions_TopSolid_Kernel_Automating_PdmMajorRevisionId_" data-uid="TopSolid.Kernel.Automating.IPdm.GetMinorRevisions(TopSolid.Kernel.Automating.PdmMajorRevisionId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.GetMinorRevisions.html#TopSolid_Kernel_Automating_IPdm_GetMinorRevisions_TopSolid_Kernel_Automating_PdmMajorRevisionId_">GetMinorRevisions(PdmMajorRevisionId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the minor revisions contained in a major revision.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_GetName_TopSolid_Kernel_Automating_PdmObjectId_" data-uid="TopSolid.Kernel.Automating.IPdm.GetName(TopSolid.Kernel.Automating.PdmObjectId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.GetName.html#TopSolid_Kernel_Automating_IPdm_GetName_TopSolid_Kernel_Automating_PdmObjectId_">GetName(PdmObjectId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the name of an object.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_GetObjectsFromRecycleBin_TopSolid_Kernel_Automating_PdmObjectId_" data-uid="TopSolid.Kernel.Automating.IPdm.GetObjectsFromRecycleBin(TopSolid.Kernel.Automating.PdmObjectId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.GetObjectsFromRecycleBin.html#TopSolid_Kernel_Automating_IPdm_GetObjectsFromRecycleBin_TopSolid_Kernel_Automating_PdmObjectId_">GetObjectsFromRecycleBin(PdmObjectId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the objects from the recycle bin.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_GetOpenProjects_System_Boolean_System_Boolean_" data-uid="TopSolid.Kernel.Automating.IPdm.GetOpenProjects(System.Boolean,System.Boolean)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.GetOpenProjects.html#TopSolid_Kernel_Automating_IPdm_GetOpenProjects_System_Boolean_System_Boolean_">GetOpenProjects(bool, bool)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets all opened projects.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_GetOwner_TopSolid_Kernel_Automating_PdmObjectId_" data-uid="TopSolid.Kernel.Automating.IPdm.GetOwner(TopSolid.Kernel.Automating.PdmObjectId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.GetOwner.html#TopSolid_Kernel_Automating_IPdm_GetOwner_TopSolid_Kernel_Automating_PdmObjectId_">GetOwner(PdmObjectId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the owner of an object.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_GetPartNumber_TopSolid_Kernel_Automating_PdmObjectId_" data-uid="TopSolid.Kernel.Automating.IPdm.GetPartNumber(TopSolid.Kernel.Automating.PdmObjectId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.GetPartNumber.html#TopSolid_Kernel_Automating_IPdm_GetPartNumber_TopSolid_Kernel_Automating_PdmObjectId_">GetPartNumber(PdmObjectId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the part number of an object.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_GetPdmObject_TopSolid_Kernel_Automating_PdmMajorRevisionId_" data-uid="TopSolid.Kernel.Automating.IPdm.GetPdmObject(TopSolid.Kernel.Automating.PdmMajorRevisionId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.GetPdmObject.html#TopSolid_Kernel_Automating_IPdm_GetPdmObject_TopSolid_Kernel_Automating_PdmMajorRevisionId_">GetPdmObject(PdmMajorRevisionId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the PDM object containing a specified major revision.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_GetProject_TopSolid_Kernel_Automating_PdmObjectId_" data-uid="TopSolid.Kernel.Automating.IPdm.GetProject(TopSolid.Kernel.Automating.PdmObjectId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.GetProject.html#TopSolid_Kernel_Automating_IPdm_GetProject_TopSolid_Kernel_Automating_PdmObjectId_">GetProject(PdmObjectId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the project of an object.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_GetProjectFolderConstituents_TopSolid_Kernel_Automating_PdmProjectFolderId_System_Collections_Generic_List_TopSolid_Kernel_Automating_PdmProjectFolderId___System_Collections_Generic_List_TopSolid_Kernel_Automating_PdmObjectId___" data-uid="TopSolid.Kernel.Automating.IPdm.GetProjectFolderConstituents(TopSolid.Kernel.Automating.PdmProjectFolderId,System.Collections.Generic.List{TopSolid.Kernel.Automating.PdmProjectFolderId}@,System.Collections.Generic.List{TopSolid.Kernel.Automating.PdmObjectId}@)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.GetProjectFolderConstituents.html#TopSolid_Kernel_Automating_IPdm_GetProjectFolderConstituents_TopSolid_Kernel_Automating_PdmProjectFolderId_System_Collections_Generic_List_TopSolid_Kernel_Automating_PdmProjectFolderId___System_Collections_Generic_List_TopSolid_Kernel_Automating_PdmObjectId___">GetProjectFolderConstituents(PdmProjectFolderId, out List&lt;PdmProjectFolderId&gt;, out List&lt;PdmObjectId&gt;)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the constituents of a project folder.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_GetProjectFolderName_TopSolid_Kernel_Automating_PdmProjectFolderId_" data-uid="TopSolid.Kernel.Automating.IPdm.GetProjectFolderName(TopSolid.Kernel.Automating.PdmProjectFolderId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.GetProjectFolderName.html#TopSolid_Kernel_Automating_IPdm_GetProjectFolderName_TopSolid_Kernel_Automating_PdmProjectFolderId_">GetProjectFolderName(PdmProjectFolderId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the name of a project folder.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_GetProjectFolderOwner_TopSolid_Kernel_Automating_PdmProjectFolderId_" data-uid="TopSolid.Kernel.Automating.IPdm.GetProjectFolderOwner(TopSolid.Kernel.Automating.PdmProjectFolderId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.GetProjectFolderOwner.html#TopSolid_Kernel_Automating_IPdm_GetProjectFolderOwner_TopSolid_Kernel_Automating_PdmProjectFolderId_">GetProjectFolderOwner(PdmProjectFolderId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the project folder containing a specified project folder.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_GetProjectMainDocument_TopSolid_Kernel_Automating_PdmObjectId_" data-uid="TopSolid.Kernel.Automating.IPdm.GetProjectMainDocument(TopSolid.Kernel.Automating.PdmObjectId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.GetProjectMainDocument.html#TopSolid_Kernel_Automating_IPdm_GetProjectMainDocument_TopSolid_Kernel_Automating_PdmObjectId_">GetProjectMainDocument(PdmObjectId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the main document of a specified project.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_GetProjectOwner_TopSolid_Kernel_Automating_PdmObjectId_" data-uid="TopSolid.Kernel.Automating.IPdm.GetProjectOwner(TopSolid.Kernel.Automating.PdmObjectId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.GetProjectOwner.html#TopSolid_Kernel_Automating_IPdm_GetProjectOwner_TopSolid_Kernel_Automating_PdmObjectId_">GetProjectOwner(PdmObjectId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the project folder containing a specified project.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_GetProjectTemplates_TopSolid_Kernel_Automating_PdmObjectId_TopSolid_Kernel_Automating_PdmObjectId__TopSolid_Kernel_Automating_PdmObjectId__" data-uid="TopSolid.Kernel.Automating.IPdm.GetProjectTemplates(TopSolid.Kernel.Automating.PdmObjectId,TopSolid.Kernel.Automating.PdmObjectId@,TopSolid.Kernel.Automating.PdmObjectId@)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.GetProjectTemplates.html#TopSolid_Kernel_Automating_IPdm_GetProjectTemplates_TopSolid_Kernel_Automating_PdmObjectId_TopSolid_Kernel_Automating_PdmObjectId__TopSolid_Kernel_Automating_PdmObjectId__">GetProjectTemplates(PdmObjectId, out PdmObjectId, out PdmObjectId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the &quot;Templates&quot; and &quot;Templates/Defaults&quot; folders of a project.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_GetProjects_System_Boolean_System_Boolean_" data-uid="TopSolid.Kernel.Automating.IPdm.GetProjects(System.Boolean,System.Boolean)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.GetProjects.html#TopSolid_Kernel_Automating_IPdm_GetProjects_System_Boolean_System_Boolean_">GetProjects(bool, bool)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets all the projects.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_GetRealUserProperty_TopSolid_Kernel_Automating_PdmObjectId_TopSolid_Kernel_Automating_PdmObjectId_" data-uid="TopSolid.Kernel.Automating.IPdm.GetRealUserProperty(TopSolid.Kernel.Automating.PdmObjectId,TopSolid.Kernel.Automating.PdmObjectId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.GetRealUserProperty.html#TopSolid_Kernel_Automating_IPdm_GetRealUserProperty_TopSolid_Kernel_Automating_PdmObjectId_TopSolid_Kernel_Automating_PdmObjectId_">GetRealUserProperty(PdmObjectId, PdmObjectId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the value of a specified real user property of an object.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_GetReferencedProjects_TopSolid_Kernel_Automating_PdmObjectId_" data-uid="TopSolid.Kernel.Automating.IPdm.GetReferencedProjects(TopSolid.Kernel.Automating.PdmObjectId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.GetReferencedProjects.html#TopSolid_Kernel_Automating_IPdm_GetReferencedProjects_TopSolid_Kernel_Automating_PdmObjectId_">GetReferencedProjects(PdmObjectId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the referenced projects of a project.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_GetRevisionTexts_TopSolid_Kernel_Automating_PdmObjectId_System_String__System_String__" data-uid="TopSolid.Kernel.Automating.IPdm.GetRevisionTexts(TopSolid.Kernel.Automating.PdmObjectId,System.String@,System.String@)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.GetRevisionTexts.html#TopSolid_Kernel_Automating_IPdm_GetRevisionTexts_TopSolid_Kernel_Automating_PdmObjectId_System_String__System_String__">GetRevisionTexts(PdmObjectId, out string, out string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the major and minor revision texts of an object.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_GetSavingDate_TopSolid_Kernel_Automating_PdmObjectId_" data-uid="TopSolid.Kernel.Automating.IPdm.GetSavingDate(TopSolid.Kernel.Automating.PdmObjectId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.GetSavingDate.html#TopSolid_Kernel_Automating_IPdm_GetSavingDate_TopSolid_Kernel_Automating_PdmObjectId_">GetSavingDate(PdmObjectId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the modification date of an object.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_GetSelectedPdmObjectIds" data-uid="TopSolid.Kernel.Automating.IPdm.GetSelectedPdmObjectIds">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.GetSelectedPdmObjectIds.html#TopSolid_Kernel_Automating_IPdm_GetSelectedPdmObjectIds">GetSelectedPdmObjectIds()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets selected PDM objects ids of the current project.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_GetState_TopSolid_Kernel_Automating_PdmObjectId_" data-uid="TopSolid.Kernel.Automating.IPdm.GetState(TopSolid.Kernel.Automating.PdmObjectId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.GetState.html#TopSolid_Kernel_Automating_IPdm_GetState_TopSolid_Kernel_Automating_PdmObjectId_">GetState(PdmObjectId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the state of an object.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_GetTemplates_TopSolid_Kernel_Automating_PdmObjectId__TopSolid_Kernel_Automating_PdmObjectId__TopSolid_Kernel_Automating_PdmObjectId__TopSolid_Kernel_Automating_PdmObjectId__" data-uid="TopSolid.Kernel.Automating.IPdm.GetTemplates(TopSolid.Kernel.Automating.PdmObjectId@,TopSolid.Kernel.Automating.PdmObjectId@,TopSolid.Kernel.Automating.PdmObjectId@,TopSolid.Kernel.Automating.PdmObjectId@)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.GetTemplates.html#TopSolid_Kernel_Automating_IPdm_GetTemplates_TopSolid_Kernel_Automating_PdmObjectId__TopSolid_Kernel_Automating_PdmObjectId__TopSolid_Kernel_Automating_PdmObjectId__TopSolid_Kernel_Automating_PdmObjectId__">GetTemplates(out PdmObjectId, out PdmObjectId, out PdmObjectId, out PdmObjectId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets all the templates.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_GetTextUserProperty_TopSolid_Kernel_Automating_PdmObjectId_TopSolid_Kernel_Automating_PdmObjectId_" data-uid="TopSolid.Kernel.Automating.IPdm.GetTextUserProperty(TopSolid.Kernel.Automating.PdmObjectId,TopSolid.Kernel.Automating.PdmObjectId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.GetTextUserProperty.html#TopSolid_Kernel_Automating_IPdm_GetTextUserProperty_TopSolid_Kernel_Automating_PdmObjectId_TopSolid_Kernel_Automating_PdmObjectId_">GetTextUserProperty(PdmObjectId, PdmObjectId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the value of a specified text user property of an object.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_GetType_TopSolid_Kernel_Automating_PdmObjectId_System_String__" data-uid="TopSolid.Kernel.Automating.IPdm.GetType(TopSolid.Kernel.Automating.PdmObjectId,System.String@)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.GetType.html#TopSolid_Kernel_Automating_IPdm_GetType_TopSolid_Kernel_Automating_PdmObjectId_System_String__">GetType(PdmObjectId, out string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the type of an object.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_HasConstituents_TopSolid_Kernel_Automating_PdmObjectId_" data-uid="TopSolid.Kernel.Automating.IPdm.HasConstituents(TopSolid.Kernel.Automating.PdmObjectId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.HasConstituents.html#TopSolid_Kernel_Automating_IPdm_HasConstituents_TopSolid_Kernel_Automating_PdmObjectId_">HasConstituents(PdmObjectId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Tells whether an object has constituents.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_HasProjectFolderConstituents_TopSolid_Kernel_Automating_PdmProjectFolderId_" data-uid="TopSolid.Kernel.Automating.IPdm.HasProjectFolderConstituents(TopSolid.Kernel.Automating.PdmProjectFolderId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.HasProjectFolderConstituents.html#TopSolid_Kernel_Automating_IPdm_HasProjectFolderConstituents_TopSolid_Kernel_Automating_PdmProjectFolderId_">HasProjectFolderConstituents(PdmProjectFolderId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Tells whether a project folder has constituents.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_ImportDictionaryPackage_System_String_" data-uid="TopSolid.Kernel.Automating.IPdm.ImportDictionaryPackage(System.String)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.ImportDictionaryPackage.html#TopSolid_Kernel_Automating_IPdm_ImportDictionaryPackage_System_String_">ImportDictionaryPackage(string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Import dictionary package (.TopDicPkg).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_ImportDictionnaries_System_Collections_Generic_List_TopSolid_Kernel_Automating_PdmObjectId__System_String___System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="TopSolid.Kernel.Automating.IPdm.ImportDictionnaries(System.Collections.Generic.List{TopSolid.Kernel.Automating.PdmObjectId},System.String[],System.Collections.Generic.Dictionary{System.String,System.String})">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.ImportDictionnaries.html#TopSolid_Kernel_Automating_IPdm_ImportDictionnaries_System_Collections_Generic_List_TopSolid_Kernel_Automating_PdmObjectId__System_String___System_Collections_Generic_Dictionary_System_String_System_String__">ImportDictionnaries(List&lt;PdmObjectId&gt;, string[], Dictionary&lt;string, string&gt;)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Imports dictionnaries documents from specified files if they correspond to specified project identifiers.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_ImportFile_System_String_TopSolid_Kernel_Automating_PdmObjectId_System_String_" data-uid="TopSolid.Kernel.Automating.IPdm.ImportFile(System.String,TopSolid.Kernel.Automating.PdmObjectId,System.String)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.ImportFile.html#TopSolid_Kernel_Automating_IPdm_ImportFile_System_String_TopSolid_Kernel_Automating_PdmObjectId_System_String_">ImportFile(string, PdmObjectId, string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Imports a file without conversion.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_ImportLocalizations_System_String_System_String_System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="TopSolid.Kernel.Automating.IPdm.ImportLocalizations(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.ImportLocalizations.html#TopSolid_Kernel_Automating_IPdm_ImportLocalizations_System_String_System_String_System_Collections_Generic_Dictionary_System_String_System_String__">ImportLocalizations(string, string, Dictionary&lt;string, string&gt;)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Imports all localization files (.TopDic or .xliff) contained into given directory.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_ImportPackageAsDistinctCopy_System_String_System_Boolean_System_Boolean_" data-uid="TopSolid.Kernel.Automating.IPdm.ImportPackageAsDistinctCopy(System.String,System.Boolean,System.Boolean)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.ImportPackageAsDistinctCopy.html#TopSolid_Kernel_Automating_IPdm_ImportPackageAsDistinctCopy_System_String_System_Boolean_System_Boolean_">ImportPackageAsDistinctCopy(string, bool, bool)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Imports a package as disctinct copy.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_ImportPackageAsReplication_System_String_" data-uid="TopSolid.Kernel.Automating.IPdm.ImportPackageAsReplication(System.String)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.ImportPackageAsReplication.html#TopSolid_Kernel_Automating_IPdm_ImportPackageAsReplication_System_String_">ImportPackageAsReplication(string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Imports a package with replication.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_IncludePackageAsDistinctCopy_System_String_System_Boolean_System_Boolean_TopSolid_Kernel_Automating_PdmObjectId_" data-uid="TopSolid.Kernel.Automating.IPdm.IncludePackageAsDistinctCopy(System.String,System.Boolean,System.Boolean,TopSolid.Kernel.Automating.PdmObjectId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.IncludePackageAsDistinctCopy.html#TopSolid_Kernel_Automating_IPdm_IncludePackageAsDistinctCopy_System_String_System_Boolean_System_Boolean_TopSolid_Kernel_Automating_PdmObjectId_">IncludePackageAsDistinctCopy(string, bool, bool, PdmObjectId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Imports a package as disctinct copy into an existing project.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_IncludePackageAsReplication_System_String_TopSolid_Kernel_Automating_PdmObjectId_System_Boolean_" data-uid="TopSolid.Kernel.Automating.IPdm.IncludePackageAsReplication(System.String,TopSolid.Kernel.Automating.PdmObjectId,System.Boolean)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.IncludePackageAsReplication.html#TopSolid_Kernel_Automating_IPdm_IncludePackageAsReplication_System_String_TopSolid_Kernel_Automating_PdmObjectId_System_Boolean_">IncludePackageAsReplication(string, PdmObjectId, bool)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Imports a package with replication into an existing folder.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_IsDirty_TopSolid_Kernel_Automating_PdmObjectId_" data-uid="TopSolid.Kernel.Automating.IPdm.IsDirty(TopSolid.Kernel.Automating.PdmObjectId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.IsDirty.html#TopSolid_Kernel_Automating_IPdm_IsDirty_TopSolid_Kernel_Automating_PdmObjectId_">IsDirty(PdmObjectId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Tells whether an object is dirty.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_IsExternal_TopSolid_Kernel_Automating_PdmObjectId_" data-uid="TopSolid.Kernel.Automating.IPdm.IsExternal(TopSolid.Kernel.Automating.PdmObjectId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.IsExternal.html#TopSolid_Kernel_Automating_IPdm_IsExternal_TopSolid_Kernel_Automating_PdmObjectId_">IsExternal(PdmObjectId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Tells whether an object is external (i.e. item is a non TopSolid V7 document: .docx, .xlsx, .pdf, .png etc...).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_IsLibraryProject_TopSolid_Kernel_Automating_PdmObjectId_" data-uid="TopSolid.Kernel.Automating.IPdm.IsLibraryProject(TopSolid.Kernel.Automating.PdmObjectId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.IsLibraryProject.html#TopSolid_Kernel_Automating_IPdm_IsLibraryProject_TopSolid_Kernel_Automating_PdmObjectId_">IsLibraryProject(PdmObjectId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Tells if a project is a library.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_MoveProject_TopSolid_Kernel_Automating_PdmObjectId_TopSolid_Kernel_Automating_PdmProjectFolderId_" data-uid="TopSolid.Kernel.Automating.IPdm.MoveProject(TopSolid.Kernel.Automating.PdmObjectId,TopSolid.Kernel.Automating.PdmProjectFolderId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.MoveProject.html#TopSolid_Kernel_Automating_IPdm_MoveProject_TopSolid_Kernel_Automating_PdmObjectId_TopSolid_Kernel_Automating_PdmProjectFolderId_">MoveProject(PdmObjectId, PdmProjectFolderId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Moves a project into a specified project folder.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_MoveProjectFolder_TopSolid_Kernel_Automating_PdmProjectFolderId_TopSolid_Kernel_Automating_PdmProjectFolderId_" data-uid="TopSolid.Kernel.Automating.IPdm.MoveProjectFolder(TopSolid.Kernel.Automating.PdmProjectFolderId,TopSolid.Kernel.Automating.PdmProjectFolderId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.MoveProjectFolder.html#TopSolid_Kernel_Automating_IPdm_MoveProjectFolder_TopSolid_Kernel_Automating_PdmProjectFolderId_TopSolid_Kernel_Automating_PdmProjectFolderId_">MoveProjectFolder(PdmProjectFolderId, PdmProjectFolderId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Moves a project folder into a specified project folder.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_MoveSeveral_System_Collections_Generic_List_TopSolid_Kernel_Automating_PdmObjectId__TopSolid_Kernel_Automating_PdmObjectId_" data-uid="TopSolid.Kernel.Automating.IPdm.MoveSeveral(System.Collections.Generic.List{TopSolid.Kernel.Automating.PdmObjectId},TopSolid.Kernel.Automating.PdmObjectId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.MoveSeveral.html#TopSolid_Kernel_Automating_IPdm_MoveSeveral_System_Collections_Generic_List_TopSolid_Kernel_Automating_PdmObjectId__TopSolid_Kernel_Automating_PdmObjectId_">MoveSeveral(List&lt;PdmObjectId&gt;, PdmObjectId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Moves several objects.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_NeedsGettingLatestRevision_TopSolid_Kernel_Automating_PdmObjectId_" data-uid="TopSolid.Kernel.Automating.IPdm.NeedsGettingLatestRevision(TopSolid.Kernel.Automating.PdmObjectId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.NeedsGettingLatestRevision.html#TopSolid_Kernel_Automating_IPdm_NeedsGettingLatestRevision_TopSolid_Kernel_Automating_PdmObjectId_">NeedsGettingLatestRevision(PdmObjectId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Tells whether specified object or its children need getting latest revision.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_NeedsUpdating_TopSolid_Kernel_Automating_PdmObjectId_" data-uid="TopSolid.Kernel.Automating.IPdm.NeedsUpdating(TopSolid.Kernel.Automating.PdmObjectId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.NeedsUpdating.html#TopSolid_Kernel_Automating_IPdm_NeedsUpdating_TopSolid_Kernel_Automating_PdmObjectId_">NeedsUpdating(PdmObjectId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Tells whether specified object needs updating.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_OpenMinorRevision_TopSolid_Kernel_Automating_PdmMinorRevisionId_System_Boolean_" data-uid="TopSolid.Kernel.Automating.IPdm.OpenMinorRevision(TopSolid.Kernel.Automating.PdmMinorRevisionId,System.Boolean)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.OpenMinorRevision.html#TopSolid_Kernel_Automating_IPdm_OpenMinorRevision_TopSolid_Kernel_Automating_PdmMinorRevisionId_System_Boolean_">OpenMinorRevision(PdmMinorRevisionId, bool)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Opens a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_OpenMinorRevisionInAnalysisMode_TopSolid_Kernel_Automating_PdmMinorRevisionId_" data-uid="TopSolid.Kernel.Automating.IPdm.OpenMinorRevisionInAnalysisMode(TopSolid.Kernel.Automating.PdmMinorRevisionId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.OpenMinorRevisionInAnalysisMode.html#TopSolid_Kernel_Automating_IPdm_OpenMinorRevisionInAnalysisMode_TopSolid_Kernel_Automating_PdmMinorRevisionId_">OpenMinorRevisionInAnalysisMode(PdmMinorRevisionId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Opens a document in analysis mode.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_OpenProject_TopSolid_Kernel_Automating_PdmObjectId_" data-uid="TopSolid.Kernel.Automating.IPdm.OpenProject(TopSolid.Kernel.Automating.PdmObjectId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.OpenProject.html#TopSolid_Kernel_Automating_IPdm_OpenProject_TopSolid_Kernel_Automating_PdmObjectId_">OpenProject(PdmObjectId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Opens a project.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_PurgeRevisions_System_Collections_Generic_List_TopSolid_Kernel_Automating_PdmObjectId__System_Int32_System_Boolean_System_Int32_System_Int32_System_Int64__System_Int32__" data-uid="TopSolid.Kernel.Automating.IPdm.PurgeRevisions(System.Collections.Generic.List{TopSolid.Kernel.Automating.PdmObjectId},System.Int32,System.Boolean,System.Int32,System.Int32,System.Int64@,System.Int32@)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.PurgeRevisions.html#TopSolid_Kernel_Automating_IPdm_PurgeRevisions_System_Collections_Generic_List_TopSolid_Kernel_Automating_PdmObjectId__System_Int32_System_Boolean_System_Int32_System_Int32_System_Int64__System_Int32__">PurgeRevisions(List&lt;PdmObjectId&gt;, int, bool, int, int, out long, out int)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Purges the revisions of PDM objects.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_PurgeSeveral_System_Collections_Generic_List_TopSolid_Kernel_Automating_PdmObjectId__" data-uid="TopSolid.Kernel.Automating.IPdm.PurgeSeveral(System.Collections.Generic.List{TopSolid.Kernel.Automating.PdmObjectId})">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.PurgeSeveral.html#TopSolid_Kernel_Automating_IPdm_PurgeSeveral_System_Collections_Generic_List_TopSolid_Kernel_Automating_PdmObjectId__">PurgeSeveral(List&lt;PdmObjectId&gt;)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Purges several deleted objects.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_ReimportFile_System_String_TopSolid_Kernel_Automating_PdmObjectId_" data-uid="TopSolid.Kernel.Automating.IPdm.ReimportFile(System.String,TopSolid.Kernel.Automating.PdmObjectId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.ReimportFile.html#TopSolid_Kernel_Automating_IPdm_ReimportFile_System_String_TopSolid_Kernel_Automating_PdmObjectId_">ReimportFile(string, PdmObjectId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Reimports a file without conversion.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_Restore_TopSolid_Kernel_Automating_PdmObjectId_" data-uid="TopSolid.Kernel.Automating.IPdm.Restore(TopSolid.Kernel.Automating.PdmObjectId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.Restore.html#TopSolid_Kernel_Automating_IPdm_Restore_TopSolid_Kernel_Automating_PdmObjectId_">Restore(PdmObjectId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Restores a deleted object.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_RestoreLastSave_TopSolid_Kernel_Automating_PdmObjectId_" data-uid="TopSolid.Kernel.Automating.IPdm.RestoreLastSave(TopSolid.Kernel.Automating.PdmObjectId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.RestoreLastSave.html#TopSolid_Kernel_Automating_IPdm_RestoreLastSave_TopSolid_Kernel_Automating_PdmObjectId_">RestoreLastSave(PdmObjectId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Cancels the modification of an object.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_RestoreMinorRevision_TopSolid_Kernel_Automating_PdmMinorRevisionId_" data-uid="TopSolid.Kernel.Automating.IPdm.RestoreMinorRevision(TopSolid.Kernel.Automating.PdmMinorRevisionId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.RestoreMinorRevision.html#TopSolid_Kernel_Automating_IPdm_RestoreMinorRevision_TopSolid_Kernel_Automating_PdmMinorRevisionId_">RestoreMinorRevision(PdmMinorRevisionId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Restores a minor revision as the last minor revision.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_Save_TopSolid_Kernel_Automating_PdmObjectId_System_Boolean_" data-uid="TopSolid.Kernel.Automating.IPdm.Save(TopSolid.Kernel.Automating.PdmObjectId,System.Boolean)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.Save.html#TopSolid_Kernel_Automating_IPdm_Save_TopSolid_Kernel_Automating_PdmObjectId_System_Boolean_">Save(PdmObjectId, bool)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Saves an object.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_SaveAll" data-uid="TopSolid.Kernel.Automating.IPdm.SaveAll">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.SaveAll.html#TopSolid_Kernel_Automating_IPdm_SaveAll">SaveAll()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Save all documents.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_SaveSeveral_System_Collections_Generic_List_TopSolid_Kernel_Automating_PdmObjectId__System_Boolean_" data-uid="TopSolid.Kernel.Automating.IPdm.SaveSeveral(System.Collections.Generic.List{TopSolid.Kernel.Automating.PdmObjectId},System.Boolean)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.SaveSeveral.html#TopSolid_Kernel_Automating_IPdm_SaveSeveral_System_Collections_Generic_List_TopSolid_Kernel_Automating_PdmObjectId__System_Boolean_">SaveSeveral(List&lt;PdmObjectId&gt;, bool)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Saves several objects.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_SearchDocumentByName_TopSolid_Kernel_Automating_PdmObjectId_System_String_" data-uid="TopSolid.Kernel.Automating.IPdm.SearchDocumentByName(TopSolid.Kernel.Automating.PdmObjectId,System.String)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.SearchDocumentByName.html#TopSolid_Kernel_Automating_IPdm_SearchDocumentByName_TopSolid_Kernel_Automating_PdmObjectId_System_String_">SearchDocumentByName(PdmObjectId, string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Searches for a document by its name.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_SearchDocumentByNameWithWildcards_TopSolid_Kernel_Automating_PdmObjectId_System_String_" data-uid="TopSolid.Kernel.Automating.IPdm.SearchDocumentByNameWithWildcards(TopSolid.Kernel.Automating.PdmObjectId,System.String)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.SearchDocumentByNameWithWildcards.html#TopSolid_Kernel_Automating_IPdm_SearchDocumentByNameWithWildcards_TopSolid_Kernel_Automating_PdmObjectId_System_String_">SearchDocumentByNameWithWildcards(PdmObjectId, string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Searches for a document by its name using wildcards.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_SearchDocumentByPartNumber_TopSolid_Kernel_Automating_PdmObjectId_System_String_" data-uid="TopSolid.Kernel.Automating.IPdm.SearchDocumentByPartNumber(TopSolid.Kernel.Automating.PdmObjectId,System.String)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.SearchDocumentByPartNumber.html#TopSolid_Kernel_Automating_IPdm_SearchDocumentByPartNumber_TopSolid_Kernel_Automating_PdmObjectId_System_String_">SearchDocumentByPartNumber(PdmObjectId, string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Searches for a document by its part number.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_SearchDocumentByPartNumberWithWildcards_TopSolid_Kernel_Automating_PdmObjectId_System_String_" data-uid="TopSolid.Kernel.Automating.IPdm.SearchDocumentByPartNumberWithWildcards(TopSolid.Kernel.Automating.PdmObjectId,System.String)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.SearchDocumentByPartNumberWithWildcards.html#TopSolid_Kernel_Automating_IPdm_SearchDocumentByPartNumberWithWildcards_TopSolid_Kernel_Automating_PdmObjectId_System_String_">SearchDocumentByPartNumberWithWildcards(PdmObjectId, string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Searches for a document by its part number using wildcards.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_SearchDocumentByUniversalId_TopSolid_Kernel_Automating_PdmObjectId_System_String_System_String_" data-uid="TopSolid.Kernel.Automating.IPdm.SearchDocumentByUniversalId(TopSolid.Kernel.Automating.PdmObjectId,System.String,System.String)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.SearchDocumentByUniversalId.html#TopSolid_Kernel_Automating_IPdm_SearchDocumentByUniversalId_TopSolid_Kernel_Automating_PdmObjectId_System_String_System_String_">SearchDocumentByUniversalId(PdmObjectId, string, string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Searches for a document by its universal identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_SearchDocumentsProvidingFunction_TopSolid_Kernel_Automating_PdmMinorRevisionId_System_Collections_Generic_List_TopSolid_Kernel_Automating_PdmObjectId__System_Boolean_System_Collections_Generic_List_System_String__System_Boolean_System_Int32_" data-uid="TopSolid.Kernel.Automating.IPdm.SearchDocumentsProvidingFunction(TopSolid.Kernel.Automating.PdmMinorRevisionId,System.Collections.Generic.List{TopSolid.Kernel.Automating.PdmObjectId},System.Boolean,System.Collections.Generic.List{System.String},System.Boolean,System.Int32)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.SearchDocumentsProvidingFunction.html#TopSolid_Kernel_Automating_IPdm_SearchDocumentsProvidingFunction_TopSolid_Kernel_Automating_PdmMinorRevisionId_System_Collections_Generic_List_TopSolid_Kernel_Automating_PdmObjectId__System_Boolean_System_Collections_Generic_List_System_String__System_Boolean_System_Int32_">SearchDocumentsProvidingFunction(PdmMinorRevisionId, List&lt;PdmObjectId&gt;, bool, List&lt;string&gt;, bool, int)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Searches for documents which provide specified function.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_SearchExternalObjectsWithProperties_System_Collections_Generic_List_TopSolid_Kernel_Automating_PdmObjectId__System_Boolean_System_Collections_Generic_List_System_String__System_Boolean_System_Int32_" data-uid="TopSolid.Kernel.Automating.IPdm.SearchExternalObjectsWithProperties(System.Collections.Generic.List{TopSolid.Kernel.Automating.PdmObjectId},System.Boolean,System.Collections.Generic.List{System.String},System.Boolean,System.Int32)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.SearchExternalObjectsWithProperties.html#TopSolid_Kernel_Automating_IPdm_SearchExternalObjectsWithProperties_System_Collections_Generic_List_TopSolid_Kernel_Automating_PdmObjectId__System_Boolean_System_Collections_Generic_List_System_String__System_Boolean_System_Int32_">SearchExternalObjectsWithProperties(List&lt;PdmObjectId&gt;, bool, List&lt;string&gt;, bool, int)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Searches external PDM objects with several properties.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_SearchFolderByName_TopSolid_Kernel_Automating_PdmObjectId_System_String_" data-uid="TopSolid.Kernel.Automating.IPdm.SearchFolderByName(TopSolid.Kernel.Automating.PdmObjectId,System.String)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.SearchFolderByName.html#TopSolid_Kernel_Automating_IPdm_SearchFolderByName_TopSolid_Kernel_Automating_PdmObjectId_System_String_">SearchFolderByName(PdmObjectId, string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Searches for a folder by its name.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_SearchMajorRevisionBackReferences_TopSolid_Kernel_Automating_PdmObjectId_TopSolid_Kernel_Automating_PdmMajorRevisionId_" data-uid="TopSolid.Kernel.Automating.IPdm.SearchMajorRevisionBackReferences(TopSolid.Kernel.Automating.PdmObjectId,TopSolid.Kernel.Automating.PdmMajorRevisionId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.SearchMajorRevisionBackReferences.html#TopSolid_Kernel_Automating_IPdm_SearchMajorRevisionBackReferences_TopSolid_Kernel_Automating_PdmObjectId_TopSolid_Kernel_Automating_PdmMajorRevisionId_">SearchMajorRevisionBackReferences(PdmObjectId, PdmMajorRevisionId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Searches all back references of a document major revision.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_SearchMinorRevisionBackReferences_TopSolid_Kernel_Automating_PdmObjectId_TopSolid_Kernel_Automating_PdmMinorRevisionId_" data-uid="TopSolid.Kernel.Automating.IPdm.SearchMinorRevisionBackReferences(TopSolid.Kernel.Automating.PdmObjectId,TopSolid.Kernel.Automating.PdmMinorRevisionId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.SearchMinorRevisionBackReferences.html#TopSolid_Kernel_Automating_IPdm_SearchMinorRevisionBackReferences_TopSolid_Kernel_Automating_PdmObjectId_TopSolid_Kernel_Automating_PdmMinorRevisionId_">SearchMinorRevisionBackReferences(PdmObjectId, PdmMinorRevisionId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Searches all back references of a document minor revision.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_SearchMinorRevisionReferences_TopSolid_Kernel_Automating_PdmMinorRevisionId_" data-uid="TopSolid.Kernel.Automating.IPdm.SearchMinorRevisionReferences(TopSolid.Kernel.Automating.PdmMinorRevisionId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.SearchMinorRevisionReferences.html#TopSolid_Kernel_Automating_IPdm_SearchMinorRevisionReferences_TopSolid_Kernel_Automating_PdmMinorRevisionId_">SearchMinorRevisionReferences(PdmMinorRevisionId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Searches all references of a document minor revision.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_SearchObjectsWithProperties_System_Collections_Generic_List_TopSolid_Kernel_Automating_PdmObjectId__System_Boolean_System_Collections_Generic_List_System_String__System_Boolean_System_Int32_" data-uid="TopSolid.Kernel.Automating.IPdm.SearchObjectsWithProperties(System.Collections.Generic.List{TopSolid.Kernel.Automating.PdmObjectId},System.Boolean,System.Collections.Generic.List{System.String},System.Boolean,System.Int32)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.SearchObjectsWithProperties.html#TopSolid_Kernel_Automating_IPdm_SearchObjectsWithProperties_System_Collections_Generic_List_TopSolid_Kernel_Automating_PdmObjectId__System_Boolean_System_Collections_Generic_List_System_String__System_Boolean_System_Int32_">SearchObjectsWithProperties(List&lt;PdmObjectId&gt;, bool, List&lt;string&gt;, bool, int)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Searches PDM objects with several properties.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_SearchProjectByName_System_String_" data-uid="TopSolid.Kernel.Automating.IPdm.SearchProjectByName(System.String)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.SearchProjectByName.html#TopSolid_Kernel_Automating_IPdm_SearchProjectByName_System_String_">SearchProjectByName(string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Searches for a project by its name.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_SearchPropertyDefinitionInfo_TopSolid_Kernel_Automating_PropertyDefinition_System_String__System_String__TopSolid_Kernel_Automating_PropertyType__" data-uid="TopSolid.Kernel.Automating.IPdm.SearchPropertyDefinitionInfo(TopSolid.Kernel.Automating.PropertyDefinition,System.String@,System.String@,TopSolid.Kernel.Automating.PropertyType@)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.SearchPropertyDefinitionInfo.html#TopSolid_Kernel_Automating_IPdm_SearchPropertyDefinitionInfo_TopSolid_Kernel_Automating_PropertyDefinition_System_String__System_String__TopSolid_Kernel_Automating_PropertyType__">SearchPropertyDefinitionInfo(PropertyDefinition, out string, out string, out PropertyType)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Searches for a specified property definition information.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_SearchUserEnumerationLocalizedText_TopSolid_Kernel_Automating_PropertyDefinition_System_Int32_" data-uid="TopSolid.Kernel.Automating.IPdm.SearchUserEnumerationLocalizedText(TopSolid.Kernel.Automating.PropertyDefinition,System.Int32)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.SearchUserEnumerationLocalizedText.html#TopSolid_Kernel_Automating_IPdm_SearchUserEnumerationLocalizedText_TopSolid_Kernel_Automating_PropertyDefinition_System_Int32_">SearchUserEnumerationLocalizedText(PropertyDefinition, int)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Searches for the localized text corresponding to a specified user enumeration property value.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_SetAuthor_TopSolid_Kernel_Automating_PdmObjectId_System_String_" data-uid="TopSolid.Kernel.Automating.IPdm.SetAuthor(TopSolid.Kernel.Automating.PdmObjectId,System.String)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.SetAuthor.html#TopSolid_Kernel_Automating_IPdm_SetAuthor_TopSolid_Kernel_Automating_PdmObjectId_System_String_">SetAuthor(PdmObjectId, string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the author of an object.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_SetComment_TopSolid_Kernel_Automating_PdmObjectId_System_String_" data-uid="TopSolid.Kernel.Automating.IPdm.SetComment(TopSolid.Kernel.Automating.PdmObjectId,System.String)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.SetComment.html#TopSolid_Kernel_Automating_IPdm_SetComment_TopSolid_Kernel_Automating_PdmObjectId_System_String_">SetComment(PdmObjectId, string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the comment of an object.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_SetComplementaryPartNumber_TopSolid_Kernel_Automating_PdmObjectId_System_String_" data-uid="TopSolid.Kernel.Automating.IPdm.SetComplementaryPartNumber(TopSolid.Kernel.Automating.PdmObjectId,System.String)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.SetComplementaryPartNumber.html#TopSolid_Kernel_Automating_IPdm_SetComplementaryPartNumber_TopSolid_Kernel_Automating_PdmObjectId_System_String_">SetComplementaryPartNumber(PdmObjectId, string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the complementary part number of an object.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_SetDescription_TopSolid_Kernel_Automating_PdmObjectId_System_String_" data-uid="TopSolid.Kernel.Automating.IPdm.SetDescription(TopSolid.Kernel.Automating.PdmObjectId,System.String)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.SetDescription.html#TopSolid_Kernel_Automating_IPdm_SetDescription_TopSolid_Kernel_Automating_PdmObjectId_System_String_">SetDescription(PdmObjectId, string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the description of an object.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_SetLifeCycleMainState_TopSolid_Kernel_Automating_PdmObjectId_TopSolid_Kernel_Automating_PdmLifeCycleMainState_" data-uid="TopSolid.Kernel.Automating.IPdm.SetLifeCycleMainState(TopSolid.Kernel.Automating.PdmObjectId,TopSolid.Kernel.Automating.PdmLifeCycleMainState)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.SetLifeCycleMainState.html#TopSolid_Kernel_Automating_IPdm_SetLifeCycleMainState_TopSolid_Kernel_Automating_PdmObjectId_TopSolid_Kernel_Automating_PdmLifeCycleMainState_">SetLifeCycleMainState(PdmObjectId, PdmLifeCycleMainState)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Changes the life cycle main state of an object.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_SetMajorRevisionLifeCycleMainState_TopSolid_Kernel_Automating_PdmMajorRevisionId_TopSolid_Kernel_Automating_PdmLifeCycleMainState_" data-uid="TopSolid.Kernel.Automating.IPdm.SetMajorRevisionLifeCycleMainState(TopSolid.Kernel.Automating.PdmMajorRevisionId,TopSolid.Kernel.Automating.PdmLifeCycleMainState)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.SetMajorRevisionLifeCycleMainState.html#TopSolid_Kernel_Automating_IPdm_SetMajorRevisionLifeCycleMainState_TopSolid_Kernel_Automating_PdmMajorRevisionId_TopSolid_Kernel_Automating_PdmLifeCycleMainState_">SetMajorRevisionLifeCycleMainState(PdmMajorRevisionId, PdmLifeCycleMainState)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Changes the life cycle main state of a major revision.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_SetMajorRevisionLifeCycleSubState_TopSolid_Kernel_Automating_PdmMajorRevisionId_TopSolid_Kernel_Automating_PdmObjectId_" data-uid="TopSolid.Kernel.Automating.IPdm.SetMajorRevisionLifeCycleSubState(TopSolid.Kernel.Automating.PdmMajorRevisionId,TopSolid.Kernel.Automating.PdmObjectId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.SetMajorRevisionLifeCycleSubState.html#TopSolid_Kernel_Automating_IPdm_SetMajorRevisionLifeCycleSubState_TopSolid_Kernel_Automating_PdmMajorRevisionId_TopSolid_Kernel_Automating_PdmObjectId_">SetMajorRevisionLifeCycleSubState(PdmMajorRevisionId, PdmObjectId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Change the life cycle sub state of a major revision.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_SetManufacturer_TopSolid_Kernel_Automating_PdmObjectId_System_String_" data-uid="TopSolid.Kernel.Automating.IPdm.SetManufacturer(TopSolid.Kernel.Automating.PdmObjectId,System.String)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.SetManufacturer.html#TopSolid_Kernel_Automating_IPdm_SetManufacturer_TopSolid_Kernel_Automating_PdmObjectId_System_String_">SetManufacturer(PdmObjectId, string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the manufacturer of an object.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_SetManufacturerPartNumber_TopSolid_Kernel_Automating_PdmObjectId_System_String_" data-uid="TopSolid.Kernel.Automating.IPdm.SetManufacturerPartNumber(TopSolid.Kernel.Automating.PdmObjectId,System.String)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.SetManufacturerPartNumber.html#TopSolid_Kernel_Automating_IPdm_SetManufacturerPartNumber_TopSolid_Kernel_Automating_PdmObjectId_System_String_">SetManufacturerPartNumber(PdmObjectId, string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the manufacturer part number of an object.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_SetName_TopSolid_Kernel_Automating_PdmObjectId_System_String_" data-uid="TopSolid.Kernel.Automating.IPdm.SetName(TopSolid.Kernel.Automating.PdmObjectId,System.String)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.SetName.html#TopSolid_Kernel_Automating_IPdm_SetName_TopSolid_Kernel_Automating_PdmObjectId_System_String_">SetName(PdmObjectId, string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the name of an object.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_SetPartNumber_TopSolid_Kernel_Automating_PdmObjectId_System_String_" data-uid="TopSolid.Kernel.Automating.IPdm.SetPartNumber(TopSolid.Kernel.Automating.PdmObjectId,System.String)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.SetPartNumber.html#TopSolid_Kernel_Automating_IPdm_SetPartNumber_TopSolid_Kernel_Automating_PdmObjectId_System_String_">SetPartNumber(PdmObjectId, string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the part number of an object.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_SetProjectFolderName_TopSolid_Kernel_Automating_PdmProjectFolderId_System_String_" data-uid="TopSolid.Kernel.Automating.IPdm.SetProjectFolderName(TopSolid.Kernel.Automating.PdmProjectFolderId,System.String)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.SetProjectFolderName.html#TopSolid_Kernel_Automating_IPdm_SetProjectFolderName_TopSolid_Kernel_Automating_PdmProjectFolderId_System_String_">SetProjectFolderName(PdmProjectFolderId, string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the name of a project folder.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_SetProjectMainDocument_TopSolid_Kernel_Automating_PdmObjectId_TopSolid_Kernel_Automating_PdmObjectId_" data-uid="TopSolid.Kernel.Automating.IPdm.SetProjectMainDocument(TopSolid.Kernel.Automating.PdmObjectId,TopSolid.Kernel.Automating.PdmObjectId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.SetProjectMainDocument.html#TopSolid_Kernel_Automating_IPdm_SetProjectMainDocument_TopSolid_Kernel_Automating_PdmObjectId_TopSolid_Kernel_Automating_PdmObjectId_">SetProjectMainDocument(PdmObjectId, PdmObjectId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the main document of a specified project.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_SetRealUserProperty_TopSolid_Kernel_Automating_PdmObjectId_TopSolid_Kernel_Automating_PdmObjectId_TopSolid_Kernel_Automating_Real_" data-uid="TopSolid.Kernel.Automating.IPdm.SetRealUserProperty(TopSolid.Kernel.Automating.PdmObjectId,TopSolid.Kernel.Automating.PdmObjectId,TopSolid.Kernel.Automating.Real)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.SetRealUserProperty.html#TopSolid_Kernel_Automating_IPdm_SetRealUserProperty_TopSolid_Kernel_Automating_PdmObjectId_TopSolid_Kernel_Automating_PdmObjectId_TopSolid_Kernel_Automating_Real_">SetRealUserProperty(PdmObjectId, PdmObjectId, Real)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the value of a specified real user property of an object.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_SetRevisionTexts_TopSolid_Kernel_Automating_PdmObjectId_System_String_System_String_" data-uid="TopSolid.Kernel.Automating.IPdm.SetRevisionTexts(TopSolid.Kernel.Automating.PdmObjectId,System.String,System.String)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.SetRevisionTexts.html#TopSolid_Kernel_Automating_IPdm_SetRevisionTexts_TopSolid_Kernel_Automating_PdmObjectId_System_String_System_String_">SetRevisionTexts(PdmObjectId, string, string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the major and minor revision texts of an object.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_SetTextUserProperty_TopSolid_Kernel_Automating_PdmObjectId_TopSolid_Kernel_Automating_PdmObjectId_System_String_" data-uid="TopSolid.Kernel.Automating.IPdm.SetTextUserProperty(TopSolid.Kernel.Automating.PdmObjectId,TopSolid.Kernel.Automating.PdmObjectId,System.String)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.SetTextUserProperty.html#TopSolid_Kernel_Automating_IPdm_SetTextUserProperty_TopSolid_Kernel_Automating_PdmObjectId_TopSolid_Kernel_Automating_PdmObjectId_System_String_">SetTextUserProperty(PdmObjectId, PdmObjectId, string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the value of a specified text user property of an object.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_ShowInProjectTree_TopSolid_Kernel_Automating_PdmObjectId_" data-uid="TopSolid.Kernel.Automating.IPdm.ShowInProjectTree(TopSolid.Kernel.Automating.PdmObjectId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.ShowInProjectTree.html#TopSolid_Kernel_Automating_IPdm_ShowInProjectTree_TopSolid_Kernel_Automating_PdmObjectId_">ShowInProjectTree(PdmObjectId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Show the object in the project tree.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_UndoCheckOut_TopSolid_Kernel_Automating_PdmObjectId_" data-uid="TopSolid.Kernel.Automating.IPdm.UndoCheckOut(TopSolid.Kernel.Automating.PdmObjectId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.UndoCheckOut.html#TopSolid_Kernel_Automating_IPdm_UndoCheckOut_TopSolid_Kernel_Automating_PdmObjectId_">UndoCheckOut(PdmObjectId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Undoes the check-out of an object.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IPdm_UpdateDocumentReferences_TopSolid_Kernel_Automating_PdmMinorRevisionId_" data-uid="TopSolid.Kernel.Automating.IPdm.UpdateDocumentReferences(TopSolid.Kernel.Automating.PdmMinorRevisionId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IPdm.UpdateDocumentReferences.html#TopSolid_Kernel_Automating_IPdm_UpdateDocumentReferences_TopSolid_Kernel_Automating_PdmMinorRevisionId_">UpdateDocumentReferences(PdmMinorRevisionId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Updates the references of a document minor revision.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div id="footer-alt">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      			<div id="footer-alt-bottom">
+                      <ul>
+                          <li><a href="https://www.topsolid.com/en/terms-of-use">Term of use</a></li>
+                          <li><a href="https://www.topsolid.com/en/corporate-information">Corporate information</a></li>
+                          <li><a href="https://www.topsolid.com/en/privacy-policy-gdpr">Privacy Policy - GDPR</a></li>
+                      </ul>
+                      <p>Copyright ©2025 TopSolid - All rights reserved.</p>
+                  </div>
+          </div>
+        </div>
+      </footer>    </div>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

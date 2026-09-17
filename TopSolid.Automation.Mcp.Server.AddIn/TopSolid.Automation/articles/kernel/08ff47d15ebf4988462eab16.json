@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IVisualization3D.SetActiveView.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IVisualization3D.SetActiveView.html",
+  "sha256": "5dc0d8198e900edbe489084023ff9ac7294fc5e39478386791c6e76778738745",
+  "text": "# Method SetActiveView\n\n#### SetActiveView(DocumentId, int)\n\nSets the active graphic view of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nvoid SetActiveView(DocumentId inDocumentId, int inViewId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  int |  inViewId |  Identifier of the active graphic view of the document.  |  \n\n##### Remarks\n\nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/08ff47d15ebf4988462eab16.md",
+  "originalHtml": "html/kernel/08ff47d15ebf4988462eab16.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdmAdmin.CreateUser.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdmAdmin.CreateUser.html",
+  "sha256": "4adc451b7818b899b2d7bed7aeaa728c4845eefe773cfa19198927099b170648",
+  "text": "# Method CreateUser\n\n#### CreateUser(string, string, string, string, string)\n\nCreates a new user.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nvoid CreateUser(string inFirstName, string inLastName, string inInitials, string inAccountId, string inPassword)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  string |  inFirstName |  User first name.  |  \n \n|  string |  inLastName |  User last name.  |  \n \n|  string |  inInitials |  User initials.  |  \n \n|  string |  inAccountId |  User account identifier.  |  \n \n|  string |  inPassword |  User password.  |  \n\n##### Remarks\n\nIf the IsAdmin property returns false, this method cannot be called (an exception will be thrown otherwise).\n \nThis method is available since v7.10.\n",
+  "markdown": "markdown/pdmexplorer/94d7fb180d2a906205fbea28.md",
+  "originalHtml": "html/pdmexplorer/94d7fb180d2a906205fbea28.html"
+}

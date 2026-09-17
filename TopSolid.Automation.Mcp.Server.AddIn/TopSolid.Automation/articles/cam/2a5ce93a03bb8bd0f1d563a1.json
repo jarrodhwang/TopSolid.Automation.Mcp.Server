@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IParameters.IsReadOnly.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IParameters.IsReadOnly.html",
+  "sha256": "27cd2650ae7b555eae08bcf6d62b682e9aadbf4f4a3990897e8ce5b86b967f3f",
+  "text": "# Method IsReadOnly\n\n#### IsReadOnly(ParameterId)\n\nChecks if the given parameter can be modified or not. \n \nSome parameters are computed and only readable. Others can be modified to change the element owner behavior. If modifiable, a parameter value can be changed with SetValue functions. \n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nbool IsReadOnly(ParameterId inParameterId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ParameterId |  inParameterId |  Parameter to check.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  True if a SetValue function can be called to change its value.  |\n",
+  "markdown": "markdown/cam/2a5ce93a03bb8bd0f1d563a1.md",
+  "originalHtml": "html/cam/2a5ce93a03bb8bd0f1d563a1.html"
+}

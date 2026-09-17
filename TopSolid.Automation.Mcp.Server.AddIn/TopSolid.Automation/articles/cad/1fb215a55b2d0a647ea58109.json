@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ITools.IsDerived.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ITools.IsDerived.html",
+  "sha256": "59e5e050dcfc44bf6fc6dcc204f669246b1f5eef292ad0b923ba184819705a91",
+  "text": "# Method IsDerived\n\n#### IsDerived(DocumentId)\n\nTells whether part or assembly is a derived part or assembly.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nbool IsDerived(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the part or assembly document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  The part or assembly is a derived part or assembly.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/cad/1fb215a55b2d0a647ea58109.md",
+  "originalHtml": "html/cad/1fb215a55b2d0a647ea58109.html"
+}

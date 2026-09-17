@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ISketches3D.GetSegmentLineCurve.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ISketches3D.GetSegmentLineCurve.html",
+  "sha256": "26e037ea6ffc952b31d98b44754e43abc53957669c05f6f9ab5a5e4bc0af1ba6",
+  "text": "# Method GetSegmentLineCurve\n\n#### GetSegmentLineCurve(ElementItemId, out Axis3D)\n\nGets the line curve attached to a segment.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nvoid GetSegmentLineCurve(ElementItemId inSegmentId, out Axis3D outAxis)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementItemId |  inSegmentId |  Identifier of the segment to analyze.  |  \n \n|  Axis3D |  outAxis |  Line axis.  |  \n\n##### Remarks\n\nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/768b62dc806c96dfa309b4dc.md",
+  "originalHtml": "html/kernel/768b62dc806c96dfa309b4dc.html"
+}

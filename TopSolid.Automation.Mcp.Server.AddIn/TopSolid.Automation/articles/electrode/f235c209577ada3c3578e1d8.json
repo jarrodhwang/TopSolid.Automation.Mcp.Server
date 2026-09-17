@@ -1,0 +1,8 @@
+{
+  "path": "api/electrode/TopSolid.Cad.Electrode.Automating.IElectrodes.GetElectrodeDivingDistance.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/electrode/TopSolid.Cad.Electrode.Automating.IElectrodes.GetElectrodeDivingDistance.html",
+  "sha256": "24ac00f04e2ed51036fc230b6a86a99253379991b0b7133fcc8aad44459ee72b",
+  "text": "# Method GetElectrodeDivingDistance\n\n#### GetElectrodeDivingDistance(ElementId, int)\n\nGet the diving distance of an electrode at a given position index.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 14, 0, 0)]\ndouble GetElectrodeDivingDistance(ElementId inElementId, int inPositionIndex)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the electrode to analyze.  |  \n \n|  int |  inPositionIndex |  Position index.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double |  Diving distance.  |  \n\n##### Remarks\n\nThis method is available since v7.14.\n",
+  "markdown": "markdown/electrode/f235c209577ada3c3578e1d8.md",
+  "originalHtml": "html/electrode/f235c209577ada3c3578e1d8.html"
+}

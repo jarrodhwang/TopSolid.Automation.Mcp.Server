@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.DrillingTappedHolePrimitive.-ctor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.DrillingTappedHolePrimitive.-ctor.html",
+  "sha256": "88d632c6f318e404ce36776aa893fbbe1d5009eb443774cf2fc731f626fe80ce",
+  "text": "# Constructor DrillingTappedHolePrimitive\n\n#### DrillingTappedHolePrimitive(SmartReal, SmartReal, DrillingHolePrimitiveBottomType, SmartReal, SmartReal, string)\n\nInitializes a new instance of a blind DrillingTappedHolePrimitive class.\n\n##### Declaration\n\n```\npublic DrillingTappedHolePrimitive(SmartReal inDiameter, SmartReal inDepth, DrillingHolePrimitiveBottomType inBottomType, SmartReal inTappingDiameter, SmartReal inTappingPitch, string inDescription)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  SmartReal |  inDiameter |   |  \n \n|  SmartReal |  inDepth |   |  \n \n|  DrillingHolePrimitiveBottomType |  inBottomType |   |  \n \n|  SmartReal |  inTappingDiameter |   |  \n \n|  SmartReal |  inTappingPitch |   |  \n \n|  string |  inDescription |   |\n",
+  "markdown": "markdown/cad/90ddb7264267e2211a998151.md",
+  "originalHtml": "html/cad/90ddb7264267e2211a998151.html"
+}

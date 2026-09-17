@@ -1,0 +1,8 @@
+{
+  "path": "api/cae/TopSolid.Cae.Kernel.Automating.MeasureResults.Measure.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cae/TopSolid.Cae.Kernel.Automating.MeasureResults.Measure.html",
+  "sha256": "2ac433c1773a75a039f8a35a168991bce6a1816a6ab1415978cfe42f4a756a43",
+  "text": "# Property Measure\n\n#### Measure\n\nGets the Measure\n\n##### Declaration\n\n```\npublic ElementId Measure { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |   |\n",
+  "markdown": "markdown/cae/df4101451858c49ff8ba57e1.md",
+  "originalHtml": "html/cae/df4101451858c49ff8ba57e1.html"
+}

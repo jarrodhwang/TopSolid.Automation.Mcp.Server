@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.SmartDocument.Document.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.SmartDocument.Document.html",
+  "sha256": "d3d8842155a630376215ad78b74f73c1daaecba74a727ef1cb10df526ccb47d4",
+  "text": "# Field Document\n\nDocument of the smart object.\n\n###### Namespace: TopSolid.Cad.Design.Automating\n\n###### Assembly: TopSolid.Cad.Design.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic DocumentId Document\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  DocumentId |  Document of the smart object. |\n",
+  "markdown": "markdown/cad/53a2678c61380af64f71311b.md",
+  "originalHtml": "html/cad/53a2678c61380af64f71311b.html"
+}

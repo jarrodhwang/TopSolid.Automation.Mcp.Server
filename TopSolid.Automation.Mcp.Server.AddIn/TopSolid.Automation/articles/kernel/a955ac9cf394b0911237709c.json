@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.SetUserEnumerationValues.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.SetUserEnumerationValues.html",
+  "sha256": "184e853dba204f9d6239cb673686c7d3e6e584e0d59975f2ba76e19774fd728c",
+  "text": "# Method SetUserEnumerationValues\n\n#### SetUserEnumerationValues(DocumentId, List<int>, List<string>)\n\nSets the possible values of a user enumeration.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nvoid SetUserEnumerationValues(DocumentId inDocumentId, List<int> inValues, List<string> inTexts)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the user enumeration definition document to modify.  |  \n \n|  List<int> |  inValues |  Possible values.  |  \n \n|  List<string> |  inTexts |  Texts of the possible values.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/kernel/a955ac9cf394b0911237709c.md",
+  "originalHtml": "html/kernel/a955ac9cf394b0911237709c.html"
+}

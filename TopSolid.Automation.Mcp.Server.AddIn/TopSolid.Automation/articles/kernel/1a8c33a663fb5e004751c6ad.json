@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.UserQuestion.-ctor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.UserQuestion.-ctor.html",
+  "sha256": "45d82b46cbd33d0cd32c3d38c03eeb4e54af0ccb4545415b13fde8d8957c40c4",
+  "text": "# Constructor UserQuestion\n\n#### UserQuestion(string, string, string, UserQuestionFlags)\n\nInitializes a new instance of the UserQuestion structure.\n\n##### Declaration\n\n```\npublic UserQuestion(string inTitle, string inLabel, string inPrompt, UserQuestionFlags inFlags)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  string |  inTitle |  Title.  |  \n \n|  string |  inLabel |  Label.  |  \n \n|  string |  inPrompt |  Prompt.  |  \n \n|  UserQuestionFlags |  inFlags |  Flags.  |  \n\n#### UserQuestion(string, string, string)\n\nInitializes a new instance of the UserQuestion structure.\n\n##### Declaration\n\n```\npublic UserQuestion(string inTitle, string inLabel, string inPrompt)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  string |  inTitle |  Title.  |  \n \n|  string |  inLabel |  Label.  |  \n \n|  string |  inPrompt |  Prompt.  |  \n\n#### UserQuestion(string, string)\n\nInitializes a new instance of the UserQuestion structure.\n\n##### Declaration\n\n```\npublic UserQuestion(string inTitle, string inLabel)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  string |  inTitle |  Title.  |  \n \n|  string |  inLabel |  Label.  |\n",
+  "markdown": "markdown/kernel/1a8c33a663fb5e004751c6ad.md",
+  "originalHtml": "html/kernel/1a8c33a663fb5e004751c6ad.html"
+}

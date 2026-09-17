@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.INCFiles.UpdateOtherNCFileCodesPartial.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.INCFiles.UpdateOtherNCFileCodesPartial.html",
+  "sha256": "082b16114c8c988ce6c31f60ac1599668e60f5a66011c63d46f19370b5fd8188",
+  "text": "# Method UpdateOtherNCFileCodesPartial\n\n#### UpdateOtherNCFileCodesPartial(PdmMinorRevisionId, bool, List<string>)\n\nUpdate other NC file using list of strings.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nvoid UpdateOtherNCFileCodesPartial(PdmMinorRevisionId inMinorRevisionId, bool inClear, List<string> inNCCodes)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmMinorRevisionId |  inMinorRevisionId |  Identifier of the minor revision.  |  \n \n|  bool |  inClear |   |  \n \n|  List<string> |  inNCCodes |   |\n",
+  "markdown": "markdown/cam/5f3c5cf12b8fb0b63594202d.md",
+  "originalHtml": "html/cam/5f3c5cf12b8fb0b63594202d.html"
+}

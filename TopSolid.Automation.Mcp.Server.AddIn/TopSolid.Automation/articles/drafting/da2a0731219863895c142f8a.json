@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.IStyles.ApplyStyle.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.IStyles.ApplyStyle.html",
+  "sha256": "b166e7304f34d1f7029b158e8c51e9121f51ac1e8e61888e4fbb698e5cf8fc66",
+  "text": "# Method ApplyStyle\n\n#### ApplyStyle(DocumentId, ElementId)\n\nMethod to apply a style to a drafting document\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 255, 0)]\nvoid ApplyStyle(DocumentId inDocumentId, ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  the drafting document  |  \n \n|  ElementId |  inElementId |  the style to apply to all concerned elements.  |\n",
+  "markdown": "markdown/drafting/da2a0731219863895c142f8a.md",
+  "originalHtml": "html/drafting/da2a0731219863895c142f8a.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.TopSolidDraftingHostInstance.Styles.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.TopSolidDraftingHostInstance.Styles.html",
+  "sha256": "d4dac2b30b265eae32ee31e65cac2ca5ab2e274489c0de72268d4cf6ef05b5c7",
+  "text": "# Property Styles\n\n#### Styles\n\nGets access to drafting documents, or null if not connected.\n\n##### Declaration\n\n```\npublic IStyles Styles { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  IStyles |   |\n",
+  "markdown": "markdown/drafting/7469fcf61991fa7a0acedfd4.md",
+  "originalHtml": "html/drafting/7469fcf61991fa7a0acedfd4.html"
+}

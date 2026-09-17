@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ElementItemId.IsEmpty.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ElementItemId.IsEmpty.html",
+  "sha256": "7b289590acff2e075a18a47033a4fc1727c50521835d247b3ced752c98c7fac1",
+  "text": "# Property IsEmpty\n\n#### IsEmpty\n\nTells whether the element item identifier is empty.\n\n##### Declaration\n\n```\npublic bool IsEmpty { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |   |\n",
+  "markdown": "markdown/kernel/a2215588c07bcd588b457230.md",
+  "originalHtml": "html/kernel/a2215588c07bcd588b457230.html"
+}

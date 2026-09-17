@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ISimulations.GetScenario.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ISimulations.GetScenario.html",
+  "sha256": "d3f3cbb113a7586e0b5f072d97bccc23765671a2a6d1368dc93e209f5e56919b",
+  "text": "# Method GetScenario\n\n#### GetScenario(ElementId, out List<byte>, out List<string>, out List<ElementId>, out List<bool>, out List<SmartReal>, out List<byte>)\n\nGets a scenario.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nvoid GetScenario(ElementId inElementId, out List<byte> outTrackIds, out List<string> outTrackNames, out List<ElementId> outTaskIds, out List<bool> outTaskIsActives, out List<SmartReal> outTaskStartTimes, out List<byte> outTaskTrackIds)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the scenario to analyze.  |  \n \n|  List<byte> |  outTrackIds |  Tracks identifiers.  |  \n \n|  List<string> |  outTrackNames |  Tracks names, or null for automatic.  |  \n \n|  List<ElementId> |  outTaskIds |  Tasks identifiers.  |  \n \n|  List<bool> |  outTaskIsActives |  Whether the tasks are active.  |  \n \n|  List<SmartReal> |  outTaskStartTimes |  Tasks start times.  |  \n \n|  List<byte> |  outTaskTrackIds |  Tasks tracks identifiers.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/cad/5bad3071ab805b8dfeae99b3.md",
+  "originalHtml": "html/cad/5bad3071ab805b8dfeae99b3.html"
+}

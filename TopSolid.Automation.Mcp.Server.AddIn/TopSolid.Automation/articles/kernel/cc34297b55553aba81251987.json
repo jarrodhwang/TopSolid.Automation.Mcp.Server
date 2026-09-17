@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IFamilies.GetCatalogCellIntegerValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IFamilies.GetCatalogCellIntegerValue.html",
+  "sha256": "eda6b3a6b006c4a7d3f2deb014ca4186f1054591f95eb849516885e72de325bc",
+  "text": "# Method GetCatalogCellIntegerValue\n\n#### GetCatalogCellIntegerValue(ElementId, ElementId)\n\nGets the integer value of the catalog cell.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 15, 0, 60)]\nint GetCatalogCellIntegerValue(ElementId inRow, ElementId inParameterId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inRow |  Identifier of the row.  |  \n \n|  ElementId |  inParameterId |  Identifier of the parameter of the column.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  int |  Value of the cell.  |  \n\n##### Remarks\n\nThis method is available since v7.15.\n",
+  "markdown": "markdown/kernel/cc34297b55553aba81251987.md",
+  "originalHtml": "html/kernel/cc34297b55553aba81251987.html"
+}

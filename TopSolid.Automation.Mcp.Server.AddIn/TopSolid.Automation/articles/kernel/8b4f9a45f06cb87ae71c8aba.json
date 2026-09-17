@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IElements.HasName.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IElements.HasName.html",
+  "sha256": "05caf7c69d80b244d402ac91df639cf816f56dbe09b7f5252d01088aa833c888",
+  "text": "# Method HasName\n\n#### HasName(ElementId)\n\nTells whether an element has a name.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nbool HasName(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Whether the element has a name.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/8b4f9a45f06cb87ae71c8aba.md",
+  "originalHtml": "html/kernel/8b4f9a45f06cb87ae71c8aba.html"
+}

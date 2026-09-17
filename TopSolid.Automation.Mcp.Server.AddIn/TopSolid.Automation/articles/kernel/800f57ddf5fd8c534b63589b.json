@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IFamilies.GetCatalogCellTextValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IFamilies.GetCatalogCellTextValue.html",
+  "sha256": "7a011ce725cf64f74dcb474c7fc1295ceae6275fb0a1c764917a0323c8158870",
+  "text": "# Method GetCatalogCellTextValue\n\n#### GetCatalogCellTextValue(ElementId, ElementId)\n\nGets the text value of the catalog cell.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 15, 0, 60)]\nstring GetCatalogCellTextValue(ElementId inRow, ElementId inParameterId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inRow |  Identifier of the row.  |  \n \n|  ElementId |  inParameterId |  Identifier of the parameter of the column.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  Value of the cell.  |  \n\n##### Remarks\n\nThis method is available since v7.15.\n",
+  "markdown": "markdown/kernel/800f57ddf5fd8c534b63589b.md",
+  "originalHtml": "html/kernel/800f57ddf5fd8c534b63589b.html"
+}

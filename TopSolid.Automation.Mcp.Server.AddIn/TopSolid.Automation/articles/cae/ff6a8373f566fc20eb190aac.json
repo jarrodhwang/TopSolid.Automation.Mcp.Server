@@ -1,0 +1,8 @@
+{
+  "path": "api/cae/TopSolid.Cae.Kernel.Automating.IResults.GetMeasures.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cae/TopSolid.Cae.Kernel.Automating.IResults.GetMeasures.html",
+  "sha256": "0b3acbd87c54433dc095592849d9702d185dd5b41a68a8ea57077bb57a06c6d7",
+  "text": "# Method GetMeasures\n\n#### GetMeasures(DocumentId)\n\nGets measures from Analysis Result Document\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 212, 0)]\nList<ElementId> GetMeasures(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Id of the document  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementId> |  List of measures of the document  |\n",
+  "markdown": "markdown/cae/ff6a8373f566fc20eb190aac.md",
+  "originalHtml": "html/cae/ff6a8373f566fc20eb190aac.html"
+}

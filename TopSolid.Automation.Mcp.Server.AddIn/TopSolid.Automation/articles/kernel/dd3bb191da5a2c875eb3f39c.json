@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.GetLastMajorRevision.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.GetLastMajorRevision.html",
+  "sha256": "c877c52489644958c6cd07e674ddaf112d690abd246b613a96636679cc840a04",
+  "text": "# Method GetLastMajorRevision\n\n#### GetLastMajorRevision(PdmObjectId)\n\nGets the last major revision contained in a PDM object.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nPdmMajorRevisionId GetLastMajorRevision(PdmObjectId inObjectId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  Identifier of the PDM object.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  PdmMajorRevisionId |  Identifier of the contained last major revision.  |  \n\n##### Remarks\n\nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/dd3bb191da5a2c875eb3f39c.md",
+  "originalHtml": "html/kernel/dd3bb191da5a2c875eb3f39c.html"
+}

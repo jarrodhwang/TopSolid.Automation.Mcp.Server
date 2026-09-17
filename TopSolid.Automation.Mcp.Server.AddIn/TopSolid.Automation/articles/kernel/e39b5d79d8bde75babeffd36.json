@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.IsDirty.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.IsDirty.html",
+  "sha256": "c541249d4f008ac5d9588bf88d8be95de9c3cdc41279f1f35ed6efe59b6a2366",
+  "text": "# Method IsDirty\n\n#### IsDirty(PdmObjectId)\n\nTells whether an object is dirty.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 9, 300, 80)]\nbool IsDirty(PdmObjectId inObjectId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  PDM object identifier.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  The object is dirty.  |  \n\n##### Remarks\n\nAn object is said dirty when it has been modified since it was last saved.\n \nThis method is available since v7.9.300.80.\n",
+  "markdown": "markdown/kernel/e39b5d79d8bde75babeffd36.md",
+  "originalHtml": "html/kernel/e39b5d79d8bde75babeffd36.html"
+}

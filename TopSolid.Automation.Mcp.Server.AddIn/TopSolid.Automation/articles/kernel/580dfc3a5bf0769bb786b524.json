@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IFamilies.GetDriversFolderImage.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IFamilies.GetDriversFolderImage.html",
+  "sha256": "5e5c33c323698cd231ff5792b2afb864ac6ac2b716a59dae4990ebb0119e4054",
+  "text": "# Method GetDriversFolderImage\n\n#### GetDriversFolderImage(ElementId)\n\nGets the drivers folder image.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 17, 0, 0)]\nBitmap GetDriversFolderImage(ElementId inDriverFolder)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inDriverFolder |  Identifier of the drivers folder.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Bitmap |  The driver image.  |  \n\n##### Remarks\n\nThis method is available since v7.17.\n",
+  "markdown": "markdown/kernel/580dfc3a5bf0769bb786b524.md",
+  "originalHtml": "html/kernel/580dfc3a5bf0769bb786b524.html"
+}

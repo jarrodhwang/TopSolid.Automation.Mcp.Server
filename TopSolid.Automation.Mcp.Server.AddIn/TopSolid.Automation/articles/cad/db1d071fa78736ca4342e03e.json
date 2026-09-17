@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.StockManagementType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.StockManagementType.html",
+  "sha256": "876cad30adfd9ae3d8f3dde9b83e0b677bd90f51ddc5245deda7a7ec90669f61",
+  "text": "# Enum StockManagementType\n\nDefines the various types of stock managements.\n\n###### Namespace: TopSolid.Cad.Design.Automating\n\n###### Assembly: TopSolid.Cad.Design.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\npublic enum StockManagementType\n```\n\n##### Remarks\n\nThis enum is available since v7.8.\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  DerivationBase |  Stock is the derivation base document.  |  \n \n|  Document |  Specified stock document.  |  \n \n|  Manual |  Specified stock parameters.  |  \n \n|  None |  No stock management.  |  \n \n|  Occurrence |  Specified stock occurrence.  |  \n \n|  SameThanDerivationBase |  Stock is the same than the stock of the derivation base document.  |\n",
+  "markdown": "markdown/cad/db1d071fa78736ca4342e03e.md",
+  "originalHtml": "html/cad/db1d071fa78736ca4342e03e.html"
+}

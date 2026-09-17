@@ -1,0 +1,8 @@
+{
+  "path": "api/wire/TopSolid.Cam.NC.Wire.Automating.TopSolidWireTechnologyHost.WireCuttingConditions.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/wire/TopSolid.Cam.NC.Wire.Automating.TopSolidWireTechnologyHost.WireCuttingConditions.html",
+  "sha256": "333f99e389541e2c80fbb2917b689e1102ee27951dc11e60a79badd37bbe7775",
+  "text": "# Property WireCuttingConditions\n\n#### WireCuttingConditions\n\nGets access to wire technologies, or null if not connected.\n\n##### Declaration\n\n```\npublic static IWireCc WireCuttingConditions { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  IWireCc |   |\n",
+  "markdown": "markdown/wire/060505b9346fea8d60e266b5.md",
+  "originalHtml": "html/wire/060505b9346fea8d60e266b5.html"
+}

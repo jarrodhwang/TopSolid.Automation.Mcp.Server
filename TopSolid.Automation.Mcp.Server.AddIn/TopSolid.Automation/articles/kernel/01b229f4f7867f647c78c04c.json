@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ElementItemId.op_Inequality.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ElementItemId.op_Inequality.html",
+  "sha256": "3b10b6e3ee7e6b273f7e274833557dc6d3c6e2de2a1c912b2eb60204c3358653",
+  "text": "# Operator operator !=\n\n#### operator !=(ElementItemId, ElementItemId)\n\nTells whether two element item identifiers are different.\n\n##### Declaration\n\n```\npublic static bool operator !=(ElementItemId inElementItemId1, ElementItemId inElementItemId2)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementItemId |  inElementItemId1 |  First element item identifier.  |  \n \n|  ElementItemId |  inElementItemId2 |  Second element item identifier.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Element item identifiers are different.  |\n",
+  "markdown": "markdown/kernel/01b229f4f7867f647c78c04c.md",
+  "originalHtml": "html/kernel/01b229f4f7867f647c78c04c.html"
+}

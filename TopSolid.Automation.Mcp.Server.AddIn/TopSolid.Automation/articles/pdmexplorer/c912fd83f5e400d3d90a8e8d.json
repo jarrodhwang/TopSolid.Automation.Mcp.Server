@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.PdmSecurityUserOrGroupPermissions.DeletePermission.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.PdmSecurityUserOrGroupPermissions.DeletePermission.html",
+  "sha256": "8ed6f22b509bec9b93aaf45fef240f6abdce9a3cd8d418b2375b3a13336bf2f6",
+  "text": "# Field DeletePermission\n\nEnable user to delete a project, folder or document.\n\n###### Namespace: TopSolid.Pdm.Explorer.Automating\n\n###### Assembly: TopSolid.Pdm.Explorer.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic PdmSecurityPermission DeletePermission\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  PdmSecurityPermission |  Enable user to delete a project, folder or document. |\n",
+  "markdown": "markdown/pdmexplorer/c912fd83f5e400d3d90a8e8d.md",
+  "originalHtml": "html/pdmexplorer/c912fd83f5e400d3d90a8e8d.html"
+}

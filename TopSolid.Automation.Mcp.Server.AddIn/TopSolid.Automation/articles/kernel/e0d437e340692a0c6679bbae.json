@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.UserEnumerationProperty.Value.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.UserEnumerationProperty.Value.html",
+  "sha256": "224a16443fbe90b38aab5bb1789dea83594a78a8c7598b54a4d91d352edbdf96",
+  "text": "# Field Value\n\nValue.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic int Value\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  int |  Value. |\n",
+  "markdown": "markdown/kernel/e0d437e340692a0c6679bbae.md",
+  "originalHtml": "html/kernel/e0d437e340692a0c6679bbae.html"
+}

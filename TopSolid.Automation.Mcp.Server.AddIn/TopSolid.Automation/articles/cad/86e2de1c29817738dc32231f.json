@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IAssemblies.GetInclusionCodeAndDrivers2.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IAssemblies.GetInclusionCodeAndDrivers2.html",
+  "sha256": "b7069dff7eef1bd01accc143b8ec5366c869b2d0e4f8d16d2d42f5a27667c3a7",
+  "text": "# Method GetInclusionCodeAndDrivers2\n\n#### GetInclusionCodeAndDrivers2(ElementId, out string, out List<string>, out List<SmartObject>, out List<string>, out List<SmartDesignObject>)\n\nGets the code and drivers of a family inclusion operation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 17, 0, 0)]\nvoid GetInclusionCodeAndDrivers2(ElementId inElementId, out string outCode, out List<string> outKernelDriverNames, out List<SmartObject> outKernelDriverValues, out List<string> outDesignDriverNames, out List<SmartDesignObject> outDesignDriverValues)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the inclusion operation to analyze.  |  \n \n|  string |  outCode |  Instance code, or null if none.  |  \n \n|  List<string> |  outKernelDriverNames |  Instance kernel driver names, or null if none.  |  \n \n|  List<SmartObject> |  outKernelDriverValues |  Instance kernel driver values, or null if none.  |  \n \n|  List<string> |  outDesignDriverNames |  Instance design driver names, or null if none.  |  \n \n|  List<SmartDesignObject> |  outDesignDriverValues |  Instance design driver values, or null if none.  |  \n\n##### Remarks\n\nThis method is available since v7.17.\n",
+  "markdown": "markdown/cad/86e2de1c29817738dc32231f.md",
+  "originalHtml": "html/cad/86e2de1c29817738dc32231f.html"
+}

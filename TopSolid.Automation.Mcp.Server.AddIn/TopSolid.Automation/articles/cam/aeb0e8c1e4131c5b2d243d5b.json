@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IOperations.GetStockUpdateOperation.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IOperations.GetStockUpdateOperation.html",
+  "sha256": "bf24604f380c5306d34fd45091744c6657d70cf24c1c3aa0d6fe90f58731325f",
+  "text": "# Method GetStockUpdateOperation\n\n#### GetStockUpdateOperation(ElementExId)\n\nGets the stock update operation from the given operation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nElementExId GetStockUpdateOperation(ElementExId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementExId |  inElementId |  Identifier of the operation to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementExId |  Stock update operation found.  |\n",
+  "markdown": "markdown/cam/aeb0e8c1e4131c5b2d243d5b.md",
+  "originalHtml": "html/cam/aeb0e8c1e4131c5b2d243d5b.html"
+}

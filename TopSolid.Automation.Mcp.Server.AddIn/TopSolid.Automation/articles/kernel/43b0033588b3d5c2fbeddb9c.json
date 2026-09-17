@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IDocuments.Export.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IDocuments.Export.html",
+  "sha256": "8def8dbe3fa39790d574a2aa975a76b239f6a1d7bb9292ea5a301e6ee5686d9e",
+  "text": "# Method Export\n\n#### Export(int, DocumentId, string)\n\nExports a document to a file with conversion.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nvoid Export(int inExporterIx, DocumentId inDocumentId, string inFullName)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  int |  inExporterIx |  Index of exporter to use, within [0, ExporterCount-1].  |  \n \n|  DocumentId |  inDocumentId |  Identifier of document to export.  |  \n \n|  string |  inFullName |  Full name of the file to create.  |  \n\n##### Remarks\n\nThis method must not be called between StartModification(string, bool) and EndModification(bool, bool) methods calls.\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/43b0033588b3d5c2fbeddb9c.md",
+  "originalHtml": "html/kernel/43b0033588b3d5c2fbeddb9c.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.PdmMajorRevisionId.IsEmpty.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.PdmMajorRevisionId.IsEmpty.html",
+  "sha256": "0f5c6878a3b679636fe36e52c798d3c3b9ab319bf4045ec2c2904ef8923ea432",
+  "text": "# Property IsEmpty\n\n#### IsEmpty\n\nTells whether the major revision identifier is empty.\n\n##### Declaration\n\n```\npublic bool IsEmpty { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |   |\n",
+  "markdown": "markdown/pdmexplorer/b3355fb3b9dcc98f2e00f2c4.md",
+  "originalHtml": "html/pdmexplorer/b3355fb3b9dcc98f2e00f2c4.html"
+}

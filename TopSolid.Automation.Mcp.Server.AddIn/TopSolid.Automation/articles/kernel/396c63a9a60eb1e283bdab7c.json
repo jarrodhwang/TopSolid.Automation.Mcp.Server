@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.License.IsActive.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.License.IsActive.html",
+  "sha256": "d94b189fbe924646282a291153561667ebe90a5f1deedc6461f692382cce1c56",
+  "text": "# Field IsActive\n\nIs license active.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic bool IsActive\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Is license active. |\n",
+  "markdown": "markdown/kernel/396c63a9a60eb1e283bdab7c.md",
+  "originalHtml": "html/kernel/396c63a9a60eb1e283bdab7c.html"
+}

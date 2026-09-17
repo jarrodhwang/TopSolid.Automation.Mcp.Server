@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.ClearValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.ClearValue.html",
+  "sha256": "dc833999bffdd742d1cd418d5e19b0b32bf322712633b661a026eebab99ef293",
+  "text": "# Method ClearValue\n\n#### ClearValue(ElementId)\n\nClears the value of a parameter.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nvoid ClearValue(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the parameter to modify.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/3118c5d8ff5537f5258e4177.md",
+  "originalHtml": "html/kernel/3118c5d8ff5537f5258e4177.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ITools.SetRevolutionSymmetry.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ITools.SetRevolutionSymmetry.html",
+  "sha256": "699bb4498a78726d3511a0bd8d92f51d087881ffe658bfc4f0f4ff7cbd5c3430",
+  "text": "# Method SetRevolutionSymmetry\n\n#### SetRevolutionSymmetry(ElementId, SmartAxis3D)\n\nSets a revolution symmetry.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nvoid SetRevolutionSymmetry(ElementId inElementId, SmartAxis3D inAxis)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the symmetry to modify.  |  \n \n|  SmartAxis3D |  inAxis |  Symmetry axis.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.10.\n",
+  "markdown": "markdown/cad/02af80abbfa8859204adb834.md",
+  "originalHtml": "html/cad/02af80abbfa8859204adb834.html"
+}

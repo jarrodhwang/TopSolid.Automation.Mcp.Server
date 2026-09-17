@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMaterials.SetCuttingForce.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMaterials.SetCuttingForce.html",
+  "sha256": "ee7c35f1e5ac2c9e83be29f64c9dc44609e3a015d3c861bc17cf3ff1f469e22d",
+  "text": "# Method SetCuttingForce\n\n#### SetCuttingForce(DocumentId, double)\n\nSets Cutting Force\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 400, 120)]\nvoid SetCuttingForce(DocumentId inDocumentId, double inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Id of the container document  |  \n \n|  double |  inValue |  The value to use  |\n",
+  "markdown": "markdown/cad/26d41132af774b5c257fd2f1.md",
+  "originalHtml": "html/cad/26d41132af774b5c257fd2f1.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.ITables.SetDraftTableCellBackgroundColor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.ITables.SetDraftTableCellBackgroundColor.html",
+  "sha256": "3240355f7278cb25be8ce1e9f2fd8dcf6ec80a986105f61e6cf9a1ee885426a8",
+  "text": "# Method SetDraftTableCellBackgroundColor\n\n#### SetDraftTableCellBackgroundColor(ElementId, int, int, Color)\n\nSets draft table background color\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 255, 0)]\nvoid SetDraftTableCellBackgroundColor(ElementId inElementId, int inColumnIdx, int inRowIdx, Color inColorValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Table to modify  |  \n \n|  int |  inColumnIdx |  index of column  |  \n \n|  int |  inRowIdx |  index of row  |  \n \n|  Color |  inColorValue |  color to use  |\n",
+  "markdown": "markdown/drafting/4be81fce8baca48bb369d1a8.md",
+  "originalHtml": "html/drafting/4be81fce8baca48bb369d1a8.html"
+}

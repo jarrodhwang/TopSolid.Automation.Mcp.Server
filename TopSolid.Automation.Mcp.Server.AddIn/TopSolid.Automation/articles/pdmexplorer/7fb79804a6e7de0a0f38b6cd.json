@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdmSecurity.IsProjectSecurityActive.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdmSecurity.IsProjectSecurityActive.html",
+  "sha256": "9d906a91ed18d5e4b2180157db6561ac454f3afe7cd28b81c3a8e79ee85d1e9b",
+  "text": "# Method IsProjectSecurityActive\n\n#### IsProjectSecurityActive(PdmObjectId)\n\nTells if a security is activated on a project.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nbool IsProjectSecurityActive(PdmObjectId inProjectId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inProjectId |  Project identifier to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  The project securityis activated.  |  \n\n##### Remarks\n\nThis method is available since v7.8.302.060.\n",
+  "markdown": "markdown/pdmexplorer/7fb79804a6e7de0a0f38b6cd.md",
+  "originalHtml": "html/pdmexplorer/7fb79804a6e7de0a0f38b6cd.html"
+}

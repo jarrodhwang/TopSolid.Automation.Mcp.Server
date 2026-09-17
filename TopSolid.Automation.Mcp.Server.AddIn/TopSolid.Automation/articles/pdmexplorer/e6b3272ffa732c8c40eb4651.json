@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.AvailableSinceVersionAttribute.Version.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.AvailableSinceVersionAttribute.Version.html",
+  "sha256": "3098d911591c32ae1c41ae661819e2b6b8a9b5f8cd68d4c99d1bd4e89b4efdf9",
+  "text": "# Property Version\n\n#### Version\n\nGets the version, as ((Major * 100 + Minor) * 1000 + Build) * 1000 + Revision.\n\n##### Declaration\n\n```\npublic int Version { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  int |   |\n",
+  "markdown": "markdown/pdmexplorer/e6b3272ffa732c8c40eb4651.md",
+  "originalHtml": "html/pdmexplorer/e6b3272ffa732c8c40eb4651.html"
+}

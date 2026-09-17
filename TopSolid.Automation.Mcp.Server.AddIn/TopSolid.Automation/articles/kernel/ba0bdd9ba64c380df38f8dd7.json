@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.TopSolidHostInstance.-ctor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.TopSolidHostInstance.-ctor.html",
+  "sha256": "dfe9487069a9834fa73fdfd9016d7e54a22a0263c6ff9304a7446a3a145c2793",
+  "text": "# Constructor TopSolidHostInstance\n\n#### TopSolidHostInstance()\n\nInitializes a new instance of the TopSolidHostInstance class.\n\n##### Declaration\n\n```\npublic TopSolidHostInstance()\n```\n",
+  "markdown": "markdown/kernel/ba0bdd9ba64c380df38f8dd7.md",
+  "originalHtml": "html/kernel/ba0bdd9ba64c380df38f8dd7.html"
+}

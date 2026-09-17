@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ItemLabel.Empty.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ItemLabel.Empty.html",
+  "sha256": "15d220bf9a8d8a74de40cf4adcb215214b691bfa87442b9c066abb610bd99880",
+  "text": "# Field Empty\n\nEmpty label.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\npublic static readonly ItemLabel Empty\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ItemLabel |  Empty label. |\n",
+  "markdown": "markdown/kernel/206e474f8e25b5b947558e15.md",
+  "originalHtml": "html/kernel/206e474f8e25b5b947558e15.html"
+}

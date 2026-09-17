@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.TopSolidPdmExplorerHostInstance.PdmAdmin.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.TopSolidPdmExplorerHostInstance.PdmAdmin.html",
+  "sha256": "96385897fecd176272625bcf3472b63e4d428ee485d165dc2adbe914ef0cf774",
+  "text": "# Property PdmAdmin\n\n#### PdmAdmin\n\nGets access to the PDM administration, or null if not available.\n\n##### Declaration\n\n```\npublic IPdmAdmin PdmAdmin { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  IPdmAdmin |   |\n",
+  "markdown": "markdown/pdmexplorer/f2de1fb0201a2d36c8ab1fc1.md",
+  "originalHtml": "html/pdmexplorer/f2de1fb0201a2d36c8ab1fc1.html"
+}

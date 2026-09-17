@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ISketches2D.GetVertexCount.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ISketches2D.GetVertexCount.html",
+  "sha256": "22c0fc0aa40fba3848acb47a10977eb8dce611665f489f3ace1ef993ba21fd95",
+  "text": "# Method GetVertexCount\n\n#### GetVertexCount(ElementId)\n\nGets the number of vertices of a sketch.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nint GetVertexCount(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the sketch entity to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  int |  Number of vertices of the sketch.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/23c895d1b9a3117becfee811.md",
+  "originalHtml": "html/kernel/23c895d1b9a3117becfee811.html"
+}

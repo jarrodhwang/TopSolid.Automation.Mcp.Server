@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Transform3D.Tz.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Transform3D.Tz.html",
+  "sha256": "4309076bb386aaced4049cf402db7a560400261359d7753291d63a1ab469f4d3",
+  "text": "# Field Tz\n\nTranslation along Z.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic double Tz\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double |  Translation along Z. |\n",
+  "markdown": "markdown/kernel/65f27a70d0ac476d34489b01.md",
+  "originalHtml": "html/kernel/65f27a70d0ac476d34489b01.html"
+}

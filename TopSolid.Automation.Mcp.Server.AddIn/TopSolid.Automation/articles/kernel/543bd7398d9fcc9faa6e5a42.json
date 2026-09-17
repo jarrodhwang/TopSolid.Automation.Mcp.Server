@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdmAdmin.UserOldLogin.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdmAdmin.UserOldLogin.html",
+  "sha256": "e8e35cf05d9fcfaa4ea55601a2d728126f6f34ebca733f9864af9eb5d6ee41a6",
+  "text": "# Property UserOldLogin\n\n#### UserOldLogin\n\nGets connected user old login.\n\n##### Declaration\n\n```\n[AvailableSinceVersion(7, 15, 186, 0)]\nstring UserOldLogin { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |   |  \n\n##### Remarks\n\nThis property is available since v7.15.186.000.\n",
+  "markdown": "markdown/kernel/543bd7398d9fcc9faa6e5a42.md",
+  "originalHtml": "html/kernel/543bd7398d9fcc9faa6e5a42.html"
+}

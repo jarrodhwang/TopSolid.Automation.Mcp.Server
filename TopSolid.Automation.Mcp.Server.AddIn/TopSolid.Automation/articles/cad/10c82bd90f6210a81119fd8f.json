@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMaterials.GetHatchingDocument.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMaterials.GetHatchingDocument.html",
+  "sha256": "9975420a94f54f3bd38994e5ab924be69bc092cfa79cdfd683488f3e080e7570",
+  "text": "# Method GetHatchingDocument\n\n#### GetHatchingDocument(DocumentId)\n\nGets the hatching document to a material document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 400, 100)]\nDocumentId GetHatchingDocument(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  DocumentId |   |  \n\n##### Remarks\n\nThis method is available since v7.16.\n",
+  "markdown": "markdown/cad/10c82bd90f6210a81119fd8f.md",
+  "originalHtml": "html/cad/10c82bd90f6210a81119fd8f.html"
+}

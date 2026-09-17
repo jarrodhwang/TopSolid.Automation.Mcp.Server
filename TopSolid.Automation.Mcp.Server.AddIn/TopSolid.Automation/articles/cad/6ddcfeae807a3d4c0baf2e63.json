@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IAssemblies.IsWizardInclusion.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IAssemblies.IsWizardInclusion.html",
+  "sha256": "66bddc361734684b6636a9fa7741195d318ea99efbba07c960a6ba84f81f087b",
+  "text": "# Method IsWizardInclusion\n\n#### IsWizardInclusion(ElementId)\n\nTells whether an element is a wizard operation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 0, 0)]\nbool IsWizardInclusion(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  The element is an inclusion operation.  |  \n\n##### Remarks\n\nThis method is available since v7.19.\n",
+  "markdown": "markdown/cad/6ddcfeae807a3d4c0baf2e63.md",
+  "originalHtml": "html/cad/6ddcfeae807a3d4c0baf2e63.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.OffsetStockType.-ctor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.OffsetStockType.-ctor.html",
+  "sha256": "ff491e9360cf699c02bd0c69bca5ab5274f92bf6e34c1a215680f79254bbd856",
+  "text": "# Constructor OffsetStockType\n\n#### OffsetStockType(SmartReal)\n\nInitializes a new instance of a OffsetStockType class.\n\n##### Declaration\n\n```\npublic OffsetStockType(SmartReal inOffset)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  SmartReal |  inOffset |  The offset.  |\n",
+  "markdown": "markdown/cam/f4ab92271a2b9e3e81015034.md",
+  "originalHtml": "html/cam/f4ab92271a2b9e3e81015034.html"
+}

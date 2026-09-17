@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.PdmSecurityUserOrGroupPermissions.ReadPermission.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.PdmSecurityUserOrGroupPermissions.ReadPermission.html",
+  "sha256": "25c69211e43dbfb0a8d6c1101c784857f200f3d788befaabc6b341b852acac2d",
+  "text": "# Field ReadPermission\n\nEnable user to read a project, folder or document.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic PdmSecurityPermission ReadPermission\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  PdmSecurityPermission |  Enable user to read a project, folder or document. |\n",
+  "markdown": "markdown/kernel/186398098e6c0ed3eda8b4da.md",
+  "originalHtml": "html/kernel/186398098e6c0ed3eda8b4da.html"
+}

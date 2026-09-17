@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IDocuments.GetDocument.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IDocuments.GetDocument.html",
+  "sha256": "d3982f0238b0ab2bcbbb068237e7a6fdcdec8d620b0341698e25e247128dde33",
+  "text": "# Method GetDocument\n\n#### GetDocument(PdmObjectId)\n\nGets the document corresponding to the last minor revision of a document PDM object.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nDocumentId GetDocument(PdmObjectId inPdmObjectId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inPdmObjectId |  Identifier of the document PDM object.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  DocumentId |  Identifier of the document corresponding to the last minor revision.  |  \n\n##### Remarks\n\nIf the PDM object is not a TopSolid document, this method returns Empty.\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/c61e39181d06798e0f8fc246.md",
+  "originalHtml": "html/kernel/c61e39181d06798e0f8fc246.html"
+}

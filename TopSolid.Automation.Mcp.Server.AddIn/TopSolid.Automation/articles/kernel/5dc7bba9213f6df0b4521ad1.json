@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IOperations.GetModelingStage.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IOperations.GetModelingStage.html",
+  "sha256": "066e3c7520379c3507c886fd82ce748c09cd12cf64048c613eeb2bf248f00a10",
+  "text": "# Method GetModelingStage\n\n#### GetModelingStage(DocumentId)\n\nGets the modeling stage operation of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nElementId GetModelingStage(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the modeling stage operation found, or Empty if none.  |  \n\n##### Remarks\n\nThis method is available since v7.8.\n",
+  "markdown": "markdown/kernel/5dc7bba9213f6df0b4521ad1.md",
+  "originalHtml": "html/kernel/5dc7bba9213f6df0b4521ad1.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.HasConstituents.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.HasConstituents.html",
+  "sha256": "eed5134a02cfbb77c67155c4ffcc9791a2a5b245b3ca71f3eef6a1f30f950230",
+  "text": "# Method HasConstituents\n\n#### HasConstituents(PdmObjectId)\n\nTells whether an object has constituents.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 9, 0, 0)]\nbool HasConstituents(PdmObjectId inObjectId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  PDM object identifier of a project, a folder or a document.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  The object has constituents, i.e. GetConstituents(PdmObjectId, out List<PdmObjectId>, out List<PdmObjectId>) would not return only empty lists.  |  \n\n##### Remarks\n\nThis method is available since v7.9.\n",
+  "markdown": "markdown/kernel/ffac41bc8472aa35ff3aca80.md",
+  "originalHtml": "html/kernel/ffac41bc8472aa35ff3aca80.html"
+}

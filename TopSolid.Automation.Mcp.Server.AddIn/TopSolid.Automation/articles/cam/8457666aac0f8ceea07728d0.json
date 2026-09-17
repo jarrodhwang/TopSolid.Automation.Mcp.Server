@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.CylinderStockType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.CylinderStockType.html",
+  "sha256": "b4a7fde2cce21a9f302ed1af771cc6e2edfe8c2f79bff8dcf2d6afdc85ea0993",
+  "text": "# Class CylinderStockType\n\nRepresents a Cylinder Stock Type.\n\n##### Inheritance\n \nobject\n \nStockType\n \nCylinderStockType\n\n##### Inherited Members\n \n object.ToString() \n \n object.Equals(object) \n \n object.Equals(object, object) \n \n object.ReferenceEquals(object, object) \n \n object.GetHashCode() \n \n object.GetType() \n \n object.MemberwiseClone() \n\n###### Namespace: TopSolid.Cam.NC.Kernel.Automating\n\n###### Assembly: TopSolid.Cam.NC.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 15, 0, 0)]\npublic class CylinderStockType : StockType\n```\n\n##### Remarks\n\nThis class is available since v7.15.\n\n### Constructors \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   CylinderStockType(SmartAxis3D, SmartReal, SmartReal, SmartReal)  |  Initializes a new instance of a CylinderStockType class.  |  \n \n|   CylinderStockType(SmartAxis3D, SmartReal, SmartReal, SmartReal, SmartBoolean, SmartReal)  |  Initializes a new instance of a CylinderStockType class.  |  \n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   Axis  |  Axis.  |  \n \n|   Diameter  |  Radius.  |  \n \n|   InnerRadius  |  Inner Radius.  |  \n \n|   IsManagingDrilling  |  Manage Drilling.  |  \n \n|   Zminus  |  Z-.  |  \n \n|   Zplus  |  Z+.  |\n",
+  "markdown": "markdown/cam/8457666aac0f8ceea07728d0.md",
+  "originalHtml": "html/cam/8457666aac0f8ceea07728d0.html"
+}

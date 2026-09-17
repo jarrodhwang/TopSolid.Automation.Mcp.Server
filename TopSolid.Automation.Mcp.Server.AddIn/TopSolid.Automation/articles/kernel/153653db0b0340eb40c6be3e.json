@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.SetRealUserProperty.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.SetRealUserProperty.html",
+  "sha256": "a46eed4b0d203fd5dcde26a2dc56445bb93a28759f175a45e64203b1695c893a",
+  "text": "# Method SetRealUserProperty\n\n#### SetRealUserProperty(PdmObjectId, PdmObjectId, Real)\n\nSets the value of a specified real user property of an object.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 9, 300, 40)]\nvoid SetRealUserProperty(PdmObjectId inObjectId, PdmObjectId inPropertyObjectId, Real inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  Object identifier.  |  \n \n|  PdmObjectId |  inPropertyObjectId |  Object identifier of property definition document to assign.  |  \n \n|  Real |  inValue |  Value to assign.  |  \n\n##### Remarks\n\nThis method must not be called between StartModification(string, bool) and EndModification(bool, bool) methods calls.\n \nThis method is available since v7.9.300.040.\n",
+  "markdown": "markdown/kernel/153653db0b0340eb40c6be3e.md",
+  "originalHtml": "html/kernel/153653db0b0340eb40c6be3e.html"
+}

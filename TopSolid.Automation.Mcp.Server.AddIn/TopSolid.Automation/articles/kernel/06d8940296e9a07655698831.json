@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SurfaceType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SurfaceType.html",
+  "sha256": "74bfd18eb82ed80933c5e7b70a043658d813ab2ee6aa3acefdec33c4d3f5a8fb",
+  "text": "# Enum SurfaceType\n\nDefines the various types of surfaces attached to shape faces.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\npublic enum SurfaceType\n```\n\n##### Remarks\n\nThis enum is available since v7.6.\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  BSpline |  B-spline.  |  \n \n|  Cone |  Cone.  |  \n \n|  Cylinder |  Cylinder.  |  \n \n|  Extruded |  Extruded surface.  |  \n \n|  Faceted |  Faceted (available since v7.12).  |  \n \n|  Fillet |  Rolling ball fillet (available since v7.12).  |  \n \n|  None |  No surface attached.  |  \n \n|  Offset |  Offset surface.  |  \n \n|  Plane |  Plane.  |  \n \n|  Revolved |  Revolved surface.  |  \n \n|  Sphere |  Sphere.  |  \n \n|  Torus |  Torus.  |  \n \n|  Unclassified |  Unclassified type.  |\n",
+  "markdown": "markdown/kernel/06d8940296e9a07655698831.md",
+  "originalHtml": "html/kernel/06d8940296e9a07655698831.html"
+}

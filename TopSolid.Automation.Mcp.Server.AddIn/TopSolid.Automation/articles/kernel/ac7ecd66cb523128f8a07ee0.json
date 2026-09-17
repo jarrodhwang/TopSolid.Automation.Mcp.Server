@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Plane3D.Origin.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Plane3D.Origin.html",
+  "sha256": "ece76733eeca9126b6b6fa8df10444ae7d2bef21c78bfb4c064e162a52dc9808",
+  "text": "# Field Origin\n\nPlane origin.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic Point3D Origin\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Point3D |  Plane origin. |\n",
+  "markdown": "markdown/kernel/ac7ecd66cb523128f8a07ee0.md",
+  "originalHtml": "html/kernel/ac7ecd66cb523128f8a07ee0.html"
+}

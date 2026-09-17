@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.IAnnotations.GetTolerancingAnnotations.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.IAnnotations.GetTolerancingAnnotations.html",
+  "sha256": "8c0e7c2a82c023acb6e69e945e98aced687c6fdb8ccd1d51d3a2f00d86f7fcc4",
+  "text": "# Method GetTolerancingAnnotations\n\n#### GetTolerancingAnnotations(ElementId)\n\nGets tolerancing annotations from a drawing view\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 255, 0)]\nList<ElementId> GetTolerancingAnnotations(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |   |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementId> |  The list of tolerancing annotations.  |\n",
+  "markdown": "markdown/drafting/42498a6fdb1f7fb8870aada5.md",
+  "originalHtml": "html/drafting/42498a6fdb1f7fb8870aada5.html"
+}

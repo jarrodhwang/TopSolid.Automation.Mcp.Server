@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.GetModificationDateParameter.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.GetModificationDateParameter.html",
+  "sha256": "6c27dacc3f2ed307d10e4910c3d2af8efadc207823f02c2b5b1760375d5968aa",
+  "text": "# Method GetModificationDateParameter\n\n#### GetModificationDateParameter(DocumentId)\n\nGets the modification date parameter entity of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nElementId GetModificationDateParameter(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the modification date parameter entity found.  |  \n\n##### Remarks\n\nThe modification date parameter is a date parameter, its value may be obtained and modified using the GetDateTimeValue(ElementId) and SetDateTimeValue(ElementId, DateTime) methods.\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/4a25fe996afa6b558de98f89.md",
+  "originalHtml": "html/kernel/4a25fe996afa6b558de98f89.html"
+}

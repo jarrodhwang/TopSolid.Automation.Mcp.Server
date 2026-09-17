@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMultiLayer.SetBottomFinishingLikeTop.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMultiLayer.SetBottomFinishingLikeTop.html",
+  "sha256": "66f32fe747cd1ae1796606a31a5ff8f8753f5a2350d6e45934f8a727667e6f8a",
+  "text": "# Method SetBottomFinishingLikeTop\n\n#### SetBottomFinishingLikeTop(DocumentId, bool)\n\nSets bottom finishing as top boolean value\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 0, 0)]\nbool SetBottomFinishingLikeTop(DocumentId inDocumentId, bool inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document  |  \n \n|  bool |  inValue |  Value to use  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  True if value has been set with success.  |  \n\n##### Remarks\n\nThis method is available since v7.19.\n",
+  "markdown": "markdown/cad/db9497c8811cd5930808fe74.md",
+  "originalHtml": "html/cad/db9497c8811cd5930808fe74.html"
+}

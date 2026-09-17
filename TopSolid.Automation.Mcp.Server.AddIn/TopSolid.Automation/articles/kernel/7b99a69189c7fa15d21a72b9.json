@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IGeometries3D.GetPoints.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IGeometries3D.GetPoints.html",
+  "sha256": "c9f59db34cc269ace07ecc7d3141d9684a155754fe495daa6cddbd2f832c074d",
+  "text": "# Method GetPoints\n\n#### GetPoints(DocumentId)\n\nGets the points entities that are in the points folder of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nList<ElementId> GetPoints(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementId> |  Points entities found.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/7b99a69189c7fa15d21a72b9.md",
+  "originalHtml": "html/kernel/7b99a69189c7fa15d21a72b9.html"
+}

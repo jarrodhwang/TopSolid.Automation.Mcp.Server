@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IShapes.PublishShape.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IShapes.PublishShape.html",
+  "sha256": "9fe1a8a200c41da5cbffb59bec10fcdf54ae57def0da751e592b4984b3e1b29a",
+  "text": "# Method PublishShape\n\n#### PublishShape(DocumentId, string, SmartShape)\n\nCreates a shape publishing entity in a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 302, 80)]\nElementId PublishShape(DocumentId inDocumentId, string inDescription, SmartShape inDefinition)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  string |  inDescription |  Publishing description.  |  \n \n|  SmartShape |  inDefinition |  Publishing definition.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the created publishing entity.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.8.302.80.\n",
+  "markdown": "markdown/kernel/6ffcac47bdaf20e4187246f5.md",
+  "originalHtml": "html/kernel/6ffcac47bdaf20e4187246f5.html"
+}

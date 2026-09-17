@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IBoms.GetColumnPropertyDefinition.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IBoms.GetColumnPropertyDefinition.html",
+  "sha256": "3cb90b083f45251d34c1a71e65312269b4e3581711acccc6e8a80baca2e314a9",
+  "text": "# Method GetColumnPropertyDefinition\n\n#### GetColumnPropertyDefinition(DocumentId, int)\n\nGets the property definition of a column of a BOM.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 12, 0, 0)]\nPropertyDefinition GetColumnPropertyDefinition(DocumentId inDocumentId, int inColumnIx)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the BOM document to analyze.  |  \n \n|  int |  inColumnIx |  Index of the column to analyze, within [0,GetColumnCount(DocumentId)-1].  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  PropertyDefinition |  Property definition of the column.  |  \n\n##### Remarks\n\nThis method is available since v7.12.\n",
+  "markdown": "markdown/cad/1eb5ab57a7db00aa27fa8747.md",
+  "originalHtml": "html/cad/1eb5ab57a7db00aa27fa8747.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Vector2D.op_ExclusiveOr.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Vector2D.op_ExclusiveOr.html",
+  "sha256": "167d2ea9d67e41a2d167dd914ceacbac17d4c86ba27303350f8371f184b22db0",
+  "text": "# Operator operator ^\n\n#### operator ^(Vector2D, Vector2D)\n\nComputes the cross product of two vectors.\n\n##### Declaration\n\n```\npublic static double operator ^(Vector2D inVector1, Vector2D inVector2)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  Vector2D |  inVector1 |  Left hand side vector.  |  \n \n|  Vector2D |  inVector2 |  Right hand side vector.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double |  Vectors' cross product \"Z\" component.  |\n",
+  "markdown": "markdown/kernel/7e3e0a091165846f36f890de.md",
+  "originalHtml": "html/kernel/7e3e0a091165846f36f890de.html"
+}

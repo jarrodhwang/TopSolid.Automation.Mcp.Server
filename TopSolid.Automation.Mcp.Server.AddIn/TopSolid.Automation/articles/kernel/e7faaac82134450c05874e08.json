@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IFamilies.AddCatalogColumn.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IFamilies.AddCatalogColumn.html",
+  "sha256": "9dc1250ac4a754419f3b62441e96c97f96ad0dbb5e6b5ce47d2ee5c20ff8dbbc",
+  "text": "# Method AddCatalogColumn\n\n#### AddCatalogColumn(DocumentId, ElementId)\n\nAdd a new column to a family document\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 18, 400, 160)]\nvoid AddCatalogColumn(DocumentId inDocumentId, ElementId inParameter)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  ElementId |  inParameter |  Parameter to use for the new column  |  \n\n##### Remarks\n\nThis method is available since v7.18.\n",
+  "markdown": "markdown/kernel/e7faaac82134450c05874e08.md",
+  "originalHtml": "html/kernel/e7faaac82134450c05874e08.html"
+}

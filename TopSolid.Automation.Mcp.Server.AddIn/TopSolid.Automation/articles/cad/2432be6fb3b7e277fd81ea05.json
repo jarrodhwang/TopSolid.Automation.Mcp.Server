@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ISimulations.GetScenarios.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ISimulations.GetScenarios.html",
+  "sha256": "89aec9e5bd6582c66b53d7af1a9810c4321e1fcec9bcbd3354bb136534f10ce7",
+  "text": "# Method GetScenarios\n\n#### GetScenarios(DocumentId)\n\nGets the scenarios entities that are in the scenarios folder of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nList<ElementId> GetScenarios(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementId> |  Scenarios entities found.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/cad/2432be6fb3b7e277fd81ea05.md",
+  "originalHtml": "html/cad/2432be6fb3b7e277fd81ea05.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ITextures.SetWoodColor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ITextures.SetWoodColor.html",
+  "sha256": "0c6a0514fa6f7fcb5e8541bd22a575f7a4b32fc72d8549214cef54578ffd0f3f",
+  "text": "# Method SetWoodColor\n\n#### SetWoodColor(DocumentId, Color)\n\nSets the wood color.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 0, 0)]\nvoid SetWoodColor(DocumentId inDocumentId, Color inColor)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  Color |  inColor |  Wanted color.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.16.\n",
+  "markdown": "markdown/kernel/0ff7511b6275b123e3a84a6a.md",
+  "originalHtml": "html/kernel/0ff7511b6275b123e3a84a6a.html"
+}

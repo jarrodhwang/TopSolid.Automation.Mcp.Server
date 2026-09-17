@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.GetColorParameterPossibleValues.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.GetColorParameterPossibleValues.html",
+  "sha256": "99195f31db206b9d4e2c25d5b5cdfd9882ed55fff0cfc11cfdfb2b436408f063",
+  "text": "# Method GetColorParameterPossibleValues\n\n#### GetColorParameterPossibleValues(ElementId)\n\nGets the color parameter possibles values.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 18, 0, 0)]\nList<ColorWithDescriptionProperty> GetColorParameterPossibleValues(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the parameter.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ColorWithDescriptionProperty> |  The possibles values.  |  \n\n##### Remarks\n\nThis method is available since v7.18\n",
+  "markdown": "markdown/kernel/221e827119507c6744297b58.md",
+  "originalHtml": "html/kernel/221e827119507c6744297b58.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ISimulations.SetForcesDrivingTask.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ISimulations.SetForcesDrivingTask.html",
+  "sha256": "f7da67330494ee917886328171553781a0220126dd78141e03ff61540d4c7f70",
+  "text": "# Method SetForcesDrivingTask\n\n#### SetForcesDrivingTask(ElementId, ForceDrivingInterpolationType, List<SmartReal>, List<ElementId>, List<List<SmartReal>>)\n\nSets a forces driving task.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nvoid SetForcesDrivingTask(ElementId inElementId, ForceDrivingInterpolationType inInterpolationType, List<SmartReal> inTimes, List<ElementId> inForceIds, List<List<SmartReal>> inValues)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the task to modify.  |  \n \n|  ForceDrivingInterpolationType |  inInterpolationType |  Interpolation type.  |  \n \n|  List<SmartReal> |  inTimes |  Times.  |  \n \n|  List<ElementId> |  inForceIds |  Identifiers of forces to drive.  |  \n \n|  List<List<SmartReal>> |  inValues |  Forces driving values.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/cad/0165865b3ab28c1a766ad209.md",
+  "originalHtml": "html/cad/0165865b3ab28c1a766ad209.html"
+}

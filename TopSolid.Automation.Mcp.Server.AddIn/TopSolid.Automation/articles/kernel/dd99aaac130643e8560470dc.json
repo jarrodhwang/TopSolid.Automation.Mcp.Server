@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IDocuments.GetReferencedDocuments.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IDocuments.GetReferencedDocuments.html",
+  "sha256": "674b6a118a56cb78989d83e8be8508181ab5487a9095758c375cded71370d4b4",
+  "text": "# Method GetReferencedDocuments\n\n#### GetReferencedDocuments(DocumentId, bool)\n\nGets the documents referenced by a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nList<DocumentId> GetReferencedDocuments(DocumentId inDocumentId, bool inRequiresDependence)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n \n|  bool |  inRequiresDependence |  Whether to only return documents on which the document to analyze depends on, and ignore logical references, like for instance background documents.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<DocumentId> |  Referenced documents found.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/dd99aaac130643e8560470dc.md",
+  "originalHtml": "html/kernel/dd99aaac130643e8560470dc.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IDocuments.GetTypeFullName.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IDocuments.GetTypeFullName.html",
+  "sha256": "504332420068209b58c6d4e5cb09cba3215e5d550ad1fedd6a660e8d07d521d7",
+  "text": "# Method GetTypeFullName\n\n#### GetTypeFullName(DocumentId)\n\nGets the full name of the type of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nstring GetTypeFullName(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  Full name of the type of the document.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/0d9681236740a05c42f5949f.md",
+  "originalHtml": "html/kernel/0d9681236740a05c42f5949f.html"
+}

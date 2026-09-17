@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IApplication.IsImporterValid.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IApplication.IsImporterValid.html",
+  "sha256": "68456438d84482063b49c4c97a299488c3b6ba76466371b9659ca4016bd22193",
+  "text": "# Method IsImporterValid\n\n#### IsImporterValid(int)\n\nTells whether a valid license is available for an importer.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nbool IsImporterValid(int inImporterIx)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  int |  inImporterIx |  Index of importer to analyze, within [0, ImporterCount-1].  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Whether a valid license is available for the importer.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/15fc59f8e6b7bde274ea3679.md",
+  "originalHtml": "html/kernel/15fc59f8e6b7bde274ea3679.html"
+}

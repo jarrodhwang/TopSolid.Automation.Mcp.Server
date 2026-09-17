@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMultiLayer.GetMultiLayerMaterialDocumentEnveloppeBitmap.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMultiLayer.GetMultiLayerMaterialDocumentEnveloppeBitmap.html",
+  "sha256": "8a0af90ef9f9164f3e38009bcac0da70828efbf059f10cc98ba08e0858d5d2ea",
+  "text": "# Method GetMultiLayerMaterialDocumentEnveloppeBitmap\n\n#### GetMultiLayerMaterialDocumentEnveloppeBitmap(DocumentId, int, int)\n\nGets multi layer document layer enveloppe bitmap\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 0, 0)]\nBitmap GetMultiLayerMaterialDocumentEnveloppeBitmap(DocumentId inDocumentId, int inWidth, int inHeight)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document  |  \n \n|  int |  inWidth |  Bitmap width in pixels  |  \n \n|  int |  inHeight |  Bitmap height in pixels  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Bitmap |  enveloppe bitmap.  |  \n\n##### Remarks\n\nThis method is available since v7.19.\n",
+  "markdown": "markdown/cad/443ca452263e280d20843b01.md",
+  "originalHtml": "html/cad/443ca452263e280d20843b01.html"
+}

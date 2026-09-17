@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ITextures.GetTextureScale.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ITextures.GetTextureScale.html",
+  "sha256": "e2f82a48017a941db001b944c46cd5f4dcc4447857b32b6bca49ca84ff393226",
+  "text": "# Method GetTextureScale\n\n#### GetTextureScale(DocumentId)\n\nGets the texture scale.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 400, 100)]\ndouble GetTextureScale(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyse.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double |   |  \n\n##### Remarks\n\nThis method is available since v7.16.\n",
+  "markdown": "markdown/kernel/95f0655f810187afab24bee6.md",
+  "originalHtml": "html/kernel/95f0655f810187afab24bee6.html"
+}

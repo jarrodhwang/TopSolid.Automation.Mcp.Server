@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartDirection2D.DX.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartDirection2D.DX.html",
+  "sha256": "861ba2c850494b22d85fc2a135136e124f89738478dfc0a86ff0b8c432488ead",
+  "text": "# Field DX\n\nPositive X direction, i.e. (1,0).\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\npublic static readonly SmartDirection2D DX\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartDirection2D |  Positive X direction, i.e. (1,0). |\n",
+  "markdown": "markdown/kernel/0843b8bda3dfa48c9b9eb66d.md",
+  "originalHtml": "html/kernel/0843b8bda3dfa48c9b9eb66d.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IEntities.GetFunctionPublishings.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IEntities.GetFunctionPublishings.html",
+  "sha256": "49a81158bcc7ab8c92d72fbddd56114b2b35f453e44aada8b3b23483bfcc24fe",
+  "text": "# Method GetFunctionPublishings\n\n#### GetFunctionPublishings(ElementId)\n\nGets the publishing entities that are in a specified function of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nList<ElementId> GetFunctionPublishings(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the function entity to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementId> |  Publishing entities found.  |  \n\n##### Remarks\n\nThis method is available since v7.8.\n",
+  "markdown": "markdown/kernel/1f3dda8368be57827a6bf501.md",
+  "originalHtml": "html/kernel/1f3dda8368be57827a6bf501.html"
+}

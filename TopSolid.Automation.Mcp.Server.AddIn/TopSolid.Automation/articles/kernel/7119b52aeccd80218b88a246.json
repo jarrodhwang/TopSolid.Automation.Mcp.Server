@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IFamilies.SetCatalogCellIntegerValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IFamilies.SetCatalogCellIntegerValue.html",
+  "sha256": "c998a36245dbdd99c1f78af44a3fa887b2c490f3e5dde3c84c29ccac8f3eae84",
+  "text": "# Method SetCatalogCellIntegerValue\n\n#### SetCatalogCellIntegerValue(ElementId, ElementId, int)\n\nSets the integer value of the catalog cell.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 15, 0, 60)]\nvoid SetCatalogCellIntegerValue(ElementId inRow, ElementId inParameterId, int inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inRow |  Identifier of the row.  |  \n \n|  ElementId |  inParameterId |  Identifier of the parameter of the column.  |  \n \n|  int |  inValue |  Value of the cell.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.15.\n",
+  "markdown": "markdown/kernel/7119b52aeccd80218b88a246.md",
+  "originalHtml": "html/kernel/7119b52aeccd80218b88a246.html"
+}

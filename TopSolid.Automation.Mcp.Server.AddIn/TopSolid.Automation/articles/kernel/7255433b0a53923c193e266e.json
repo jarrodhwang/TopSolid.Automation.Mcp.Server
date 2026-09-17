@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.PdmSecurityUserOrGroupPermissions.ExportPermission.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.PdmSecurityUserOrGroupPermissions.ExportPermission.html",
+  "sha256": "a7ccafdf3a25e7e928684f6f33617365e7a693f31cc1b6c9d30db079ea97e0b4",
+  "text": "# Field ExportPermission\n\nEnable user to export a document.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic PdmSecurityPermission ExportPermission\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  PdmSecurityPermission |  Enable user to export a document. |\n",
+  "markdown": "markdown/kernel/7255433b0a53923c193e266e.md",
+  "originalHtml": "html/kernel/7255433b0a53923c193e266e.html"
+}

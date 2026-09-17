@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.TopSolidHostInstance.Arguments.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.TopSolidHostInstance.Arguments.html",
+  "sha256": "388ac8e5ebf503cc9c496e56cd565972cb1d399fbd64ff8099ae260894ba7713",
+  "text": "# Property Arguments\n\n#### Arguments\n\nGets or sets the arguments to declare to the TopSolid process when the process needs to be started. To set before the call to the Connect() methods.\n\n##### Declaration\n\n```\npublic string Arguments { get; set; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |   |\n",
+  "markdown": "markdown/kernel/54f3993a58320804ef9a02c4.md",
+  "originalHtml": "html/kernel/54f3993a58320804ef9a02c4.html"
+}

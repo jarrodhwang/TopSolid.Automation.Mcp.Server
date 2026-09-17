@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ISubstitutions.GetSubstitutableElements.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ISubstitutions.GetSubstitutableElements.html",
+  "sha256": "6a1c4ca2718326f627339873b07554d29aa4bf5260d50368b005390d2663d557",
+  "text": "# Method GetSubstitutableElements\n\n#### GetSubstitutableElements(ElementId)\n\nGets the sub-components substitutable elements from a top inclusion operation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 0, 0)]\nList<ElementId> GetSubstitutableElements(ElementId inOperationId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inOperationId |  Identifier of the parent inclusion operation to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementId> |  Part or assembly entities found.  |  \n\n##### Remarks\n\nThis method is available since v7.19.\n",
+  "markdown": "markdown/cad/df789cf8461c28bb04c358be.md",
+  "originalHtml": "html/cad/df789cf8461c28bb04c358be.html"
+}

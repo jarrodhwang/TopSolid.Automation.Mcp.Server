@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ITools.GetSymmetryType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ITools.GetSymmetryType.html",
+  "sha256": "69dc3683edd38666fff7e57ef04c116d1efcf58aabdac4536aa943ca0aff9b92",
+  "text": "# Method GetSymmetryType\n\n#### GetSymmetryType(ElementId)\n\nGets the type of a symmetry entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nSymmetryType GetSymmetryType(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SymmetryType |  Type of the symmetry, or None if the element is not a symmetry entity.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/cad/c50de78119343e83a1a3bca6.md",
+  "originalHtml": "html/cad/c50de78119343e83a1a3bca6.html"
+}

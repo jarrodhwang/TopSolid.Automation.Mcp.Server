@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.LoopType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.LoopType.html",
+  "sha256": "123195dc04384b36528c85c4900c258905fe889a5347f08ea284c9b7f0c27bba",
+  "text": "# Enum LoopType\n\nDefines the various types loops.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\npublic enum LoopType\n```\n\n##### Remarks\n\nThis enum is available since v7.6.\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  Inner |  Loop is a simple hole.  |  \n \n|  LikelyInner |  An apparent hole in a doubly closed surface.  |  \n \n|  LikelyOuter |  An apparently peripheral loop on a doubly closed surface.  |  \n \n|  None |  Not a loop.  |  \n \n|  Outer |  Simple peripheral loop.  |  \n \n|  Unclassified |  Unclassified type.  |\n",
+  "markdown": "markdown/kernel/3257d50557a19beefb7159af.md",
+  "originalHtml": "html/kernel/3257d50557a19beefb7159af.html"
+}

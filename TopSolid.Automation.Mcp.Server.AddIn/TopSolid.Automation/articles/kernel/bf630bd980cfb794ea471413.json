@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IGeometries3D.CreateFrame.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IGeometries3D.CreateFrame.html",
+  "sha256": "5043628f10efdd00d0cfd9b68024c2730de20ed35be3cc8e4e91d5ceb60a7a44",
+  "text": "# Method CreateFrame\n\n#### CreateFrame(DocumentId, Frame3D)\n\nCreates a frame entity in a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nElementId CreateFrame(DocumentId inDocumentId, Frame3D inGeometry)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  Frame3D |  inGeometry |  Frame geometry.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the created frame entity.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/bf630bd980cfb794ea471413.md",
+  "originalHtml": "html/kernel/bf630bd980cfb794ea471413.html"
+}

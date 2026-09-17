@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.CanPrintDirect.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.CanPrintDirect.html",
+  "sha256": "7ebf38e4ba6c2ca156c0a681025dd8d297054c193f99c85e5cdb819ae4e6ee47",
+  "text": "# Method CanPrintDirect\n\n#### CanPrintDirect(PdmObjectId)\n\nTells whether a document can be printed directly without user interaction.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nbool CanPrintDirect(PdmObjectId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inDocumentId |  Document identifier.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |   |  \n\n##### Remarks\n\nThis method is available since v7.10.300.080.\n",
+  "markdown": "markdown/pdmexplorer/8dcdca0f745379595aa5c804.md",
+  "originalHtml": "html/pdmexplorer/8dcdca0f745379595aa5c804.html"
+}

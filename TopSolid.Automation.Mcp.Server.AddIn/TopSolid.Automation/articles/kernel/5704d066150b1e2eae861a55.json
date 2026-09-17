@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IApplication.IsWindowMaximized.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IApplication.IsWindowMaximized.html",
+  "sha256": "7d7d9e5dd14852f69432741c1368a642a8f1522db2b82c71de38ed12b348b3cb",
+  "text": "# Property IsWindowMaximized\n\n#### IsWindowMaximized\n\nTells whether the application window is maximized.\n\n##### Declaration\n\n```\n[AvailableSinceVersion(7, 7, 0, 0)]\nbool IsWindowMaximized { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |   |  \n\n##### Remarks\n\nThis property is available since v7.7.\n",
+  "markdown": "markdown/kernel/5704d066150b1e2eae861a55.md",
+  "originalHtml": "html/kernel/5704d066150b1e2eae861a55.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cae/TopSolid.Cae.Kernel.Automating.IResults.GetTrescaMinAndMaxResults.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cae/TopSolid.Cae.Kernel.Automating.IResults.GetTrescaMinAndMaxResults.html",
+  "sha256": "cc6662ba1fe27bf581617613bc46e1a3e84020504431ec881406935edca3c29d",
+  "text": "# Method GetTrescaMinAndMaxResults\n\n#### GetTrescaMinAndMaxResults(DocumentId, out double, out double)\n\nGets theTresca minimum and maximum results in a result document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 15, 0)]\nvoid GetTrescaMinAndMaxResults(DocumentId inDocumentId, out double outMinValue, out double outMaxValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n \n|  double |  outMinValue |  Minimum value.  |  \n \n|  double |  outMaxValue |  Maximum value.  |  \n\n##### Remarks\n\nThis method is available since v7.19.\n\n##### Examples\n \n```\nDocumentId docId = TopSolidHost.Documents.EditedDocument;\nTopSolidCaeHost.Results.GetTrescaMinAndMaxResults(docId, out double minValue, out double maxValue);\n```\n",
+  "markdown": "markdown/cae/deebe19773958302f5e3a320.md",
+  "originalHtml": "html/cae/deebe19773958302f5e3a320.html"
+}

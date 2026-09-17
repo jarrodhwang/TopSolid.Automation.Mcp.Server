@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IDocumentsEvents.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IDocumentsEvents.html",
+  "sha256": "cc890094e606dd75bf96eb336e00a74fee9134e3a3d0aa96eed8d9acebb20998",
+  "text": "# Interface IDocumentsEvents\n\nImplemented by clients wishing to receive documents events.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[ServiceContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\npublic interface IDocumentsEvents\n```\n\n##### Remarks\n\nThis interface is available since v7.8.\n\n### Methods \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   OnDocumentEditingEnded(DocumentId)  |  Called when the editing of a document has been ended.  |  \n \n|   OnDocumentEditingStarted(DocumentId)  |  Called when the editing of a document has been started.  |\n",
+  "markdown": "markdown/kernel/14f7980a23b5003b29168117.md",
+  "originalHtml": "html/kernel/14f7980a23b5003b29168117.html"
+}

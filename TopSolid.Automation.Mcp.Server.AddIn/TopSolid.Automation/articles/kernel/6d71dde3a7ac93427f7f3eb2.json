@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ISketches3D.IsItemInternal.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ISketches3D.IsItemInternal.html",
+  "sha256": "194ec4d08d3174b2be00da1457c0ee98d7e4addad087641605c13b2fc33113de",
+  "text": "# Method IsItemInternal\n\n#### IsItemInternal(ElementItemId)\n\nTells whether a segment or a vertex is internal.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 201, 80)]\nbool IsItemInternal(ElementItemId inItemId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementItemId |  inItemId |  Identifier of the segment or the vertex to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Whether the segment or the vertex is internal.  |  \n\n##### Remarks\n\nThis method is available since v7.7.201.80.\n",
+  "markdown": "markdown/kernel/6d71dde3a7ac93427f7f3eb2.md",
+  "originalHtml": "html/kernel/6d71dde3a7ac93427f7f3eb2.html"
+}

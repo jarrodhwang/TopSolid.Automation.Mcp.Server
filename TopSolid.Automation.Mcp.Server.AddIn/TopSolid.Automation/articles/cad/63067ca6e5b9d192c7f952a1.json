@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMaterials.SetAmbientOcclusionTextureDocument.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMaterials.SetAmbientOcclusionTextureDocument.html",
+  "sha256": "9025c7bb5aa0eec0cb66c9492390e70e6d5bace4045612640575f21990f46f20",
+  "text": "# Method SetAmbientOcclusionTextureDocument\n\n#### SetAmbientOcclusionTextureDocument(DocumentId, DocumentId)\n\nSets the Ambient Occlusion texture document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 0, 0)]\nvoid SetAmbientOcclusionTextureDocument(DocumentId inDocumentId, DocumentId inTextureDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  DocumentId |  inTextureDocumentId |  Texture document.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.16.\n",
+  "markdown": "markdown/cad/63067ca6e5b9d192c7f952a1.md",
+  "originalHtml": "html/cad/63067ca6e5b9d192c7f952a1.html"
+}

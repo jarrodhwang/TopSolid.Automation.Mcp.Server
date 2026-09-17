@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ISubstitutions.ClearLocalSubstitutions.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ISubstitutions.ClearLocalSubstitutions.html",
+  "sha256": "da34dfdbb3a9fd550166525ceb268924596110ddc73b60be531b20863c3be9f5",
+  "text": "# Method ClearLocalSubstitutions\n\n#### ClearLocalSubstitutions(ElementId)\n\nClears local substitutions (rules excepted)\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 0, 0)]\nvoid ClearLocalSubstitutions(ElementId inOperationId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inOperationId |  Identifier of the operation holding substitutions.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.19.\n",
+  "markdown": "markdown/cad/6d12d3c99c37fd7be5b69181.md",
+  "originalHtml": "html/cad/6d12d3c99c37fd7be5b69181.html"
+}

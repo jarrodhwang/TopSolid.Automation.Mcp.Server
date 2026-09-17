@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.INCFiles.ExportNCCodes.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.INCFiles.ExportNCCodes.html",
+  "sha256": "d22012f57358d141b795107f110e441fb7ef0efb43d774cb279834892b6dc56b",
+  "text": "# Method ExportNCCodes\n\n#### ExportNCCodes(ElementId, string)\n\nSave the NC codes of the given file.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 9, 0, 0)]\nvoid ExportNCCodes(ElementId inElementId, string inFileName)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the NC file entity to analyze.  |  \n \n|  string |  inFileName |  File to create.  |\n",
+  "markdown": "markdown/cam/83632bab8c12089ec98265ca.md",
+  "originalHtml": "html/cam/83632bab8c12089ec98265ca.html"
+}

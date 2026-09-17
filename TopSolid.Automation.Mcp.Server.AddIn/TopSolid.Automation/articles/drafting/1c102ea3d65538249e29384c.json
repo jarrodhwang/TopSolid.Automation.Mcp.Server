@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.IAnnotations.GetGeometricToleranceFrameModifierType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.IAnnotations.GetGeometricToleranceFrameModifierType.html",
+  "sha256": "0dcfa4df2247f05f635d6aafbc578a8e93d6bcd4ce37d802a700a1f6a8593188",
+  "text": "# Method GetGeometricToleranceFrameModifierType\n\n#### GetGeometricToleranceFrameModifierType(ElementId, int)\n\nGets the modifier type of a geometric tolerance frame.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 17, 0, 0)]\nModifierType GetGeometricToleranceFrameModifierType(ElementId inGeometricTolerance, int inToleranceFrameIndex)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inGeometricTolerance |  Identifier of the element to analyze.  |  \n \n|  int |  inToleranceFrameIndex |  Index of the tolerance frame.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ModifierType |  The modifier type.  |  \n\n##### Remarks\n\nThis method is available since v7.17.\n",
+  "markdown": "markdown/drafting/1c102ea3d65538249e29384c.md",
+  "originalHtml": "html/drafting/1c102ea3d65538249e29384c.html"
+}

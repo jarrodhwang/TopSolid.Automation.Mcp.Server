@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IUser.AskShape.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IUser.AskShape.html",
+  "sha256": "ac125236394a5003b0124f4162c3ce56d07c3a0e38d8084e08f3718a6358ef2f",
+  "text": "# Method AskShape\n\n#### AskShape(UserQuestion, ElementId, out ElementId)\n\nAsks the user for a shape.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 300, 60)]\nUserAnswerType AskShape(UserQuestion inQuestion, ElementId inSuggestion, out ElementId outAnswer)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  UserQuestion |  inQuestion |  Question asked to the user.  |  \n \n|  ElementId |  inSuggestion |  Suggested answer, or Empty if none.  |  \n \n|  ElementId |  outAnswer |  User answer, or Empty if none.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  UserAnswerType |  Type of user answer.  |  \n\n##### Remarks\n\nThis method is available since v7.10.300.60.\n",
+  "markdown": "markdown/kernel/2387db7b01d94d4681a725ef.md",
+  "originalHtml": "html/kernel/2387db7b01d94d4681a725ef.html"
+}

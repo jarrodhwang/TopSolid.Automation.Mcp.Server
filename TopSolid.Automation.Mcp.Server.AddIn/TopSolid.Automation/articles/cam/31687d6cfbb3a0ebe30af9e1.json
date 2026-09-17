@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.SolidType.CheckGeometryOfStock.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.SolidType.CheckGeometryOfStock.html",
+  "sha256": "69d7b127ec9523bafe74046c1817c4e08a2dab99f134731b45e4d70217e6f013",
+  "text": "# Field CheckGeometryOfStock\n\nCheck Geometry Of Stock.\n\n###### Namespace: TopSolid.Cam.NC.Kernel.Automating\n\n###### Assembly: TopSolid.Cam.NC.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic bool CheckGeometryOfStock\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Check Geometry Of Stock. |\n",
+  "markdown": "markdown/cam/31687d6cfbb3a0ebe30af9e1.md",
+  "originalHtml": "html/cam/31687d6cfbb3a0ebe30af9e1.html"
+}

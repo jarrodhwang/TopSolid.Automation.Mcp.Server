@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IErp.GetExternalDocumentIds.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IErp.GetExternalDocumentIds.html",
+  "sha256": "176c8d5134d3cc149a5b5f78dbb85180ef88b12b4b909497901aef544b133ca9",
+  "text": "# Method GetExternalDocumentIds\n\n#### GetExternalDocumentIds(ErpPdmId)\n\nGets external document references ids from a erp pdm object\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 222, 80)]\nList<ErpPdmId> GetExternalDocumentIds(ErpPdmId inPdmId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ErpPdmId |  inPdmId |  Erp identifier of the object  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ErpPdmId> |  Ids of external references.  |\n",
+  "markdown": "markdown/pdmexplorer/0affdd9b2fe5ecf7405910e8.md",
+  "originalHtml": "html/pdmexplorer/0affdd9b2fe5ecf7405910e8.html"
+}

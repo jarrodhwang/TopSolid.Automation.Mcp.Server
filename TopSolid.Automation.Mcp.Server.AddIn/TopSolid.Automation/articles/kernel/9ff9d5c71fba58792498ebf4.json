@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartPlanarProfile3D.PlaneItemLabel.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartPlanarProfile3D.PlaneItemLabel.html",
+  "sha256": "1ba2cb226bc82d8c3a31e7fcef435fb759f11d45cf2dcde9cecd711e286e73d8",
+  "text": "# Field PlaneItemLabel\n\nProviding element plane item label, or empty if none.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic ItemLabel PlaneItemLabel\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ItemLabel |  Providing element plane item label, or empty if none. |\n",
+  "markdown": "markdown/kernel/9ff9d5c71fba58792498ebf4.md",
+  "originalHtml": "html/kernel/9ff9d5c71fba58792498ebf4.html"
+}

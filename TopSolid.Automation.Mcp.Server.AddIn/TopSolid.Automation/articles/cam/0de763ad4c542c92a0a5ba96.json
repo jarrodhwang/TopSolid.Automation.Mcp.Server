@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.TopSolidCamHostInstance.-ctor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.TopSolidCamHostInstance.-ctor.html",
+  "sha256": "732cc0cc90d063755a89baf2ae936dcb6461a90e4651f541df74516671c4d63f",
+  "text": "# Constructor TopSolidCamHostInstance\n\n#### TopSolidCamHostInstance(TopSolidHostInstance)\n\nInitializes a new instance of the TopSolidCamHostInstance class.\n\n##### Declaration\n\n```\npublic TopSolidCamHostInstance(TopSolidHostInstance inTopSolidHostInstance)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  TopSolidHostInstance |  inTopSolidHostInstance |  TopSolid host instance.  |\n",
+  "markdown": "markdown/cam/0de763ad4c542c92a0a5ba96.md",
+  "originalHtml": "html/cam/0de763ad4c542c92a0a5ba96.html"
+}

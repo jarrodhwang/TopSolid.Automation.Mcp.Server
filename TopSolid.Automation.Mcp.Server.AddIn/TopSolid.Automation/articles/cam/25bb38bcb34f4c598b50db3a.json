@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.BlockStockType.Frame.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.BlockStockType.Frame.html",
+  "sha256": "78afca2db96e8dfb9c042118edf653e4cacfaf0b1b1c6a0adc09814e76be20e3",
+  "text": "# Field Frame\n\nFrame.\n\n###### Namespace: TopSolid.Cam.NC.Kernel.Automating\n\n###### Assembly: TopSolid.Cam.NC.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic SmartFrame3D Frame\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartFrame3D |  Frame. |\n",
+  "markdown": "markdown/cam/25bb38bcb34f4c598b50db3a.md",
+  "originalHtml": "html/cam/25bb38bcb34f4c598b50db3a.html"
+}

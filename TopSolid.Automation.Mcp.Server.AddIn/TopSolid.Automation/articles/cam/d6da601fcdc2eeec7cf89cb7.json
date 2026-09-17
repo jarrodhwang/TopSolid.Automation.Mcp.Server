@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IToolPath.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IToolPath.html",
+  "sha256": "51ca5588889e0aef0c3f4f3b4002347a55e9fada8123787a8c4c16d5f3b96c51",
+  "text": "# Interface IToolPath\n\nGives access to operation tool path. A tool path is a list of lines in a table. Because a lot of possibilities is available to define a tool path item, TopSolid'Cam creates columns for all capabilities in the table, and each item only fill relevant columns.\n \nEvent | X | Y | Z | Fr | ...\n \nMove | 10 | 10 | 20 | 150 | ...\n\n###### Namespace: TopSolid.Cam.NC.Kernel.Automating\n\n###### Assembly: TopSolid.Cam.NC.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[ServiceContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\npublic interface IToolPath\n```\n\n### Methods \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   EndToolPath(ElementId)  |  Ends the scan of the given operation.  |  \n \n|   NextToolPathItem(ElementId)  |  Gets the next tool path item values of the given operation.  |  \n \n|   StartToolPath(ElementId)  |  Gets the tool path table columns of the given operation.  |\n",
+  "markdown": "markdown/cam/d6da601fcdc2eeec7cf89cb7.md",
+  "originalHtml": "html/cam/d6da601fcdc2eeec7cf89cb7.html"
+}

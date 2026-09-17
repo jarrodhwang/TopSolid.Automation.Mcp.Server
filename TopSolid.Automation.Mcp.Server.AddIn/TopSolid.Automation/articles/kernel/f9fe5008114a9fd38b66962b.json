@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Vector3D.VY.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Vector3D.VY.html",
+  "sha256": "975a53e7ee97f650de4cf4ea7da2102e5e62e4622bf5c34db82a822cf20488bd",
+  "text": "# Field VY\n\nPositive Y unit vector, i.e. (0,1,0).\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\npublic static readonly Vector3D VY\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Vector3D |  Positive Y unit vector, i.e. (0,1,0). |\n",
+  "markdown": "markdown/kernel/f9fe5008114a9fd38b66962b.md",
+  "originalHtml": "html/kernel/f9fe5008114a9fd38b66962b.html"
+}

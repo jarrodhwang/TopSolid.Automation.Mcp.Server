@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IShapes.IsEdgeReversed.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IShapes.IsEdgeReversed.html",
+  "sha256": "d913ace7ad50feda7c589a8d9670399bb595c3548da52643bb03a77f62921686",
+  "text": "# Method IsEdgeReversed\n\n#### IsEdgeReversed(ElementItemId)\n\nTells whether an edge is reversed.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nbool IsEdgeReversed(ElementItemId inEdgeId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementItemId |  inEdgeId |  Identifier of the edge to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Whether the orientation of the edge is the opposite to the parametric orientation of its attached curve.  |  \n\n##### Remarks\n\nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/0068d3d3265c7557dc5f7923.md",
+  "originalHtml": "html/kernel/0068d3d3265c7557dc5f7923.html"
+}

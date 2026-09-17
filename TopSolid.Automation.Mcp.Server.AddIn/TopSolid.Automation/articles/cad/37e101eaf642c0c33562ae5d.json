@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IAssemblies.IsPartOccurrence.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IAssemblies.IsPartOccurrence.html",
+  "sha256": "654694b52579fdda0cfd4393b31a2709da59bc6e4018e650f986f02f9ad66ad5",
+  "text": "# Method IsPartOccurrence\n\n#### IsPartOccurrence(ElementId)\n\nTells whether an element is a part occurrence entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nbool IsPartOccurrence(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  The element is a part occurrence entity.  |  \n\n##### Remarks\n\nThis method is available since v7.8.\n",
+  "markdown": "markdown/cad/37e101eaf642c0c33562ae5d.md",
+  "originalHtml": "html/cad/37e101eaf642c0c33562ae5d.html"
+}

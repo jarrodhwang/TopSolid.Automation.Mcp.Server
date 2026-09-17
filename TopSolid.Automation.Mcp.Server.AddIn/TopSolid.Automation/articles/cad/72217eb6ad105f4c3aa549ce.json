@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IFinishings.SetFinishingParameterValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IFinishings.SetFinishingParameterValue.html",
+  "sha256": "a00cfe0b67df47181cc945e14ec7d8a757c1d0595fc8374396d5a1a63250e12c",
+  "text": "# Method SetFinishingParameterValue\n\n#### SetFinishingParameterValue(ElementId, PdmMinorRevisionId)\n\nSets value of a finishing Parameter\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 296, 0)]\nvoid SetFinishingParameterValue(ElementId inParameterId, PdmMinorRevisionId inPdmMinorRevisionId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inParameterId |  The Id of the parameter  |  \n \n|  PdmMinorRevisionId |  inPdmMinorRevisionId |  MinorRevision of the document to use  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.20\n",
+  "markdown": "markdown/cad/72217eb6ad105f4c3aa549ce.md",
+  "originalHtml": "html/cad/72217eb6ad105f4c3aa549ce.html"
+}

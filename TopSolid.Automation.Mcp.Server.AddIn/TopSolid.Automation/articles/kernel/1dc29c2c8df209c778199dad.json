@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.GetBooleanPublishingDefinition.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.GetBooleanPublishingDefinition.html",
+  "sha256": "8b5ec891dee54d07cade53916fe3deae6f5295c5954f74a857b080c36959d9ff",
+  "text": "# Method GetBooleanPublishingDefinition\n\n#### GetBooleanPublishingDefinition(ElementId)\n\nGets the definition of a Boolean publishing entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nSmartBoolean GetBooleanPublishingDefinition(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the publishing entity to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartBoolean |   |  \n\n##### Remarks\n\nThe value of the publishing entity may be obtained with the GetBooleanValue(ElementId) method.\n \nThis method is available since v7.8.\n",
+  "markdown": "markdown/kernel/1dc29c2c8df209c778199dad.md",
+  "originalHtml": "html/kernel/1dc29c2c8df209c778199dad.html"
+}

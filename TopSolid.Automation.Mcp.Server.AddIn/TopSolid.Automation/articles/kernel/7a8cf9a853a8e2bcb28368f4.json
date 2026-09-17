@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ConstraintDriverData.Empty.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ConstraintDriverData.Empty.html",
+  "sha256": "010dc77a1f257c9f4fa23b78ce6eb9f2465e3158b9b785a03923de7d11a221fc",
+  "text": "# Field Empty\n\nEmpty key-value pair.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\npublic static readonly ConstraintDriverData Empty\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ConstraintDriverData |  Empty key-value pair. |\n",
+  "markdown": "markdown/kernel/7a8cf9a853a8e2bcb28368f4.md",
+  "originalHtml": "html/kernel/7a8cf9a853a8e2bcb28368f4.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IOperations.GetInsertionOperation.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IOperations.GetInsertionOperation.html",
+  "sha256": "c74d4d55c05ed8c6cfead0bf120fda15b2ed3c10f28ddbff6ba3e95dbab5f855",
+  "text": "# Method GetInsertionOperation\n\n#### GetInsertionOperation(DocumentId)\n\nGets the insertion operation of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nElementId GetInsertionOperation(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the insertion operation.  |  \n\n##### Remarks\n\nNew operations are created before the insertion operation.\n \nThis method is available since v7.8.\n",
+  "markdown": "markdown/kernel/b6c10e154e7de1dda029aa81.md",
+  "originalHtml": "html/kernel/b6c10e154e7de1dda029aa81.html"
+}

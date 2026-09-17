@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.PropertyDefinition.Empty.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.PropertyDefinition.Empty.html",
+  "sha256": "a7181bd77bab8e63380c199e03daa3187dd9a807b589464f5795a592b5b85686",
+  "text": "# Field Empty\n\nEmpty definition.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\npublic static readonly PropertyDefinition Empty\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  PropertyDefinition |  Empty definition. |\n",
+  "markdown": "markdown/kernel/35b1f651b2bb7a8317241aa1.md",
+  "originalHtml": "html/kernel/35b1f651b2bb7a8317241aa1.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IAssemblies.GetOccurrenceDefinition.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IAssemblies.GetOccurrenceDefinition.html",
+  "sha256": "b8d421ad15840dae920fe400b9383000e38db3f99b46c93cc1f0819cfd6e3896",
+  "text": "# Method GetOccurrenceDefinition\n\n#### GetOccurrenceDefinition(ElementId)\n\nGets the definition document of a part or assembly occurrence entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nDocumentId GetOccurrenceDefinition(ElementId inOccurrenceId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inOccurrenceId |  Identifier of the part or assembly occurrence to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  DocumentId |  Identifier of the definition document of the occurrence.  |  \n\n##### Remarks\n\nThis method is available since v7.8.\n",
+  "markdown": "markdown/cad/e8673b319ee22e44e3fbbb65.md",
+  "originalHtml": "html/cad/e8673b319ee22e44e3fbbb65.html"
+}

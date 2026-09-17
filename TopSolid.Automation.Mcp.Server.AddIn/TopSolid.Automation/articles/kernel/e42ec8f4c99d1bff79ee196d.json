@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.CreateSmartIntegerParameter.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.CreateSmartIntegerParameter.html",
+  "sha256": "b023a5159f34f0bbf1444df50ed1b85ba83f7b31524b030155c933e58b95c221",
+  "text": "# Method CreateSmartIntegerParameter\n\n#### CreateSmartIntegerParameter(DocumentId, SmartInteger)\n\nCreates a smart integer parameter creation operation in a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 17, 400, 220)]\nElementId CreateSmartIntegerParameter(DocumentId inDocumentId, SmartInteger inSmartInteger)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  SmartInteger |  inSmartInteger |  Smart integer value.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the created operation child parameter entity.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.17.\n",
+  "markdown": "markdown/kernel/e42ec8f4c99d1bff79ee196d.md",
+  "originalHtml": "html/kernel/e42ec8f4c99d1bff79ee196d.html"
+}

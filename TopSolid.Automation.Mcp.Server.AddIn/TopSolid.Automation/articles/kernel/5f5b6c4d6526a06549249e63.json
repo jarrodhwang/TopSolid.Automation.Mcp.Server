@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IElements.GetPropertyType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IElements.GetPropertyType.html",
+  "sha256": "6721e19ff257491a263215dfebbba4368c95bd9008292e45f7ef2e9182373953",
+  "text": "# Method GetPropertyType\n\n#### GetPropertyType(ElementId, string)\n\nGets the type of an element property.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 300, 60)]\nPropertyType GetPropertyType(ElementId inElementId, string inFullName)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to analyze.  |  \n \n|  string |  inFullName |  Full name of the element property to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  PropertyType |  Type of the property, or None if the element does not have the property.  |  \n\n##### Remarks\n\nThis method is available since v7.8.300.60.\n",
+  "markdown": "markdown/kernel/5f5b6c4d6526a06549249e63.md",
+  "originalHtml": "html/kernel/5f5b6c4d6526a06549249e63.html"
+}

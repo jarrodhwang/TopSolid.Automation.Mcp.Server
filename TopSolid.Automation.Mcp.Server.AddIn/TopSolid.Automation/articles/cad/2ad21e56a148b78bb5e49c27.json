@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IParts.GetEnclosingBoxFrame.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IParts.GetEnclosingBoxFrame.html",
+  "sha256": "48799076b9515e210eb3b767f32cca19ba107b550f70707d5d982d76b2ca87f7",
+  "text": "# Method GetEnclosingBoxFrame\n\n#### GetEnclosingBoxFrame(DocumentId)\n\nGets the enclosing box frame entity of a part.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nElementId GetEnclosingBoxFrame(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of part document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the enclosing box frame entity found, or empty if not managed.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/cad/2ad21e56a148b78bb5e49c27.md",
+  "originalHtml": "html/cad/2ad21e56a148b78bb5e49c27.html"
+}

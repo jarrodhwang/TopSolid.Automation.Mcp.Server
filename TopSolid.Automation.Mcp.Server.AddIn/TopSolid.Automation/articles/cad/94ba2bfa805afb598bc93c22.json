@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMultiLayer.GetBottomFinishingOrientationValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMultiLayer.GetBottomFinishingOrientationValue.html",
+  "sha256": "735ccadf6ef1875d1855900df4d3ef0b0674521c11039508ffdf51c4e47dbb2e",
+  "text": "# Method GetBottomFinishingOrientationValue\n\n#### GetBottomFinishingOrientationValue(DocumentId, Real)\n\nGets the multi layer bottom finishing orientation value\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 0, 0)]\nbool GetBottomFinishingOrientationValue(DocumentId inDocumentId, Real outReal)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document  |  \n \n|  Real |  outReal |  Value in SI Units  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |   |  \n\n##### Remarks\n\nThis method is available since v7.19.\n",
+  "markdown": "markdown/cad/94ba2bfa805afb598bc93c22.md",
+  "originalHtml": "html/cad/94ba2bfa805afb598bc93c22.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ISketches3D.GetSegmentEllipseCurve.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ISketches3D.GetSegmentEllipseCurve.html",
+  "sha256": "f1af108c2521aa02d4085525b9a3f450c97e585568e868b4c762ab180caa213e",
+  "text": "# Method GetSegmentEllipseCurve\n\n#### GetSegmentEllipseCurve(ElementItemId, out Plane3D, out double, out double)\n\nGets the ellipse curve attached to a segment.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 201, 80)]\nvoid GetSegmentEllipseCurve(ElementItemId inSegmentId, out Plane3D outPlane, out double outRadiusX, out double outRadiusY)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementItemId |  inSegmentId |  Identifier of the segment to analyze.  |  \n \n|  Plane3D |  outPlane |  Ellipse plane.  |  \n \n|  double |  outRadiusX |  Ellipse radius along plane X axis.  |  \n \n|  double |  outRadiusY |  Ellipse radius along plane Y axis.  |  \n\n##### Remarks\n\nThis method is available since v7.7.201.80.\n",
+  "markdown": "markdown/kernel/5a724181d632b00b0ed6398d.md",
+  "originalHtml": "html/kernel/5a724181d632b00b0ed6398d.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.GetCodeValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.GetCodeValue.html",
+  "sha256": "f45046bb56dcf805ed559ec51784932fb8b2ad0ce2aa428d5aecd6c2d6bec007",
+  "text": "# Method GetCodeValue\n\n#### GetCodeValue(ElementId)\n\nGets the value of a code parameter.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nstring GetCodeValue(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the parameter to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  Value of the parameter.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/8346fc4910871f809cbda790.md",
+  "originalHtml": "html/kernel/8346fc4910871f809cbda790.html"
+}

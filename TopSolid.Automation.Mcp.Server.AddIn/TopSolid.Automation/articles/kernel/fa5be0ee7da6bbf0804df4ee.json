@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IVisualization3D.SetViewRenderMode.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IVisualization3D.SetViewRenderMode.html",
+  "sha256": "e4c5111501cf9e8e3c73f6e518535fd0fdb6494206d592307056a79104137b5b",
+  "text": "# Method SetViewRenderMode\n\n#### SetViewRenderMode(DocumentId, int, RenderMode)\n\nSets the render mode of a graphic view of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nvoid SetViewRenderMode(DocumentId inDocumentId, int inViewId, RenderMode inRenderMode)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  int |  inViewId |  Identifier of the graphic view to modify.  |  \n \n|  RenderMode |  inRenderMode |  View render mode.  |  \n\n##### Remarks\n\nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/fa5be0ee7da6bbf0804df4ee.md",
+  "originalHtml": "html/kernel/fa5be0ee7da6bbf0804df4ee.html"
+}

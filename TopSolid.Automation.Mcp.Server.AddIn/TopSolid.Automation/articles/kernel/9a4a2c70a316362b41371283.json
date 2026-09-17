@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.GetEnumerationValues.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.GetEnumerationValues.html",
+  "sha256": "526ab76e36ef51a316323e87dbcb069ad8aa6d77c24b3a29011d459cd82308b2",
+  "text": "# Method GetEnumerationValues\n\n#### GetEnumerationValues(Guid, out List<int>, out List<string>)\n\nGets the possible values of an enumeration.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nvoid GetEnumerationValues(Guid inGuid, out List<int> outValues, out List<string> outTexts)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  Guid |  inGuid |  GUID of the enumeration definition to analyze.  |  \n \n|  List<int> |  outValues |  Possible values.  |  \n \n|  List<string> |  outTexts |  Texts of the possible values.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/9a4a2c70a316362b41371283.md",
+  "originalHtml": "html/kernel/9a4a2c70a316362b41371283.html"
+}

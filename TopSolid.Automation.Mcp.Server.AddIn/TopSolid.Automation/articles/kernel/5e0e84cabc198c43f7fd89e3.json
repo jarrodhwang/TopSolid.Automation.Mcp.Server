@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IElements.GetConstituents.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IElements.GetConstituents.html",
+  "sha256": "2c66dda9a5b636244818b1d2cb9d917aa5e2b9cf58243dd61273cc05416f5522",
+  "text": "# Method GetConstituents\n\n#### GetConstituents(ElementId)\n\nGets the constituent elements of a composite element.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nList<ElementId> GetConstituents(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementId> |  Contituent elements found.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/5e0e84cabc198c43f7fd89e3.md",
+  "originalHtml": "html/kernel/5e0e84cabc198c43f7fd89e3.html"
+}

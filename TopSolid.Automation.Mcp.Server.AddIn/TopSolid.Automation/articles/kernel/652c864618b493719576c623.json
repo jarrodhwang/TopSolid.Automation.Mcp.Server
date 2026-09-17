@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ISketches3D.SetSegmentMiddle.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ISketches3D.SetSegmentMiddle.html",
+  "sha256": "f5b93ba9b5356530706a90f24aa476cade65097d1a2a16218cfbd2fbfe395a44",
+  "text": "# Method SetSegmentMiddle\n\n#### SetSegmentMiddle(ElementItemId, ElementItemId)\n\nSets the middle of a segment in the ModifiedSketch.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 201, 80)]\nvoid SetSegmentMiddle(ElementItemId inSegmentId, ElementItemId inVertexId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementItemId |  inSegmentId |  Identifier of the segment to modify.  |  \n \n|  ElementItemId |  inVertexId |  Identifier of the vertex defined as being the middle of the segment, or Empty if none.  |  \n\n##### Remarks\n\nA middle may only be defined when the segment curve is a line.\n \nStartModification(ElementId) must be called before calling this method.\n \nThis method is available since v7.7.201.80.\n",
+  "markdown": "markdown/kernel/652c864618b493719576c623.md",
+  "originalHtml": "html/kernel/652c864618b493719576c623.html"
+}

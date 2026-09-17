@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IUser.AskInteger.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IUser.AskInteger.html",
+  "sha256": "ec1609fc71335835be224284c5bedb3773303703340d13be92385779f5f33655",
+  "text": "# Method AskInteger\n\n#### AskInteger(UserQuestion, int, int, SmartInteger, out SmartInteger)\n\nAsks the user for an integer value.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nUserAnswerType AskInteger(UserQuestion inQuestion, int inMinValue, int inMaxValue, SmartInteger inSuggestion, out SmartInteger outAnswer)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  UserQuestion |  inQuestion |  Question asked to the user.  |  \n \n|  int |  inMinValue |  Minimum value.  |  \n \n|  int |  inMaxValue |  Maximum value.  |  \n \n|  SmartInteger |  inSuggestion |  Suggested answer, or null if none.  |  \n \n|  SmartInteger |  outAnswer |  User answer, or null if none.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  UserAnswerType |  Type of user answer.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) may be called before calling this method to allow the user to create or modify entities during the interaction.\n \nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/9d10ffd93ccdfb21d92e3835.md",
+  "originalHtml": "html/kernel/9d10ffd93ccdfb21d92e3835.html"
+}

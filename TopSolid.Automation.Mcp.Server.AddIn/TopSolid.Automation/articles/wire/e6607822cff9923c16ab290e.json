@@ -1,0 +1,8 @@
+{
+  "path": "api/wire/TopSolid.Cam.NC.Wire.Automating.IWireCc.AddParameterReal.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/wire/TopSolid.Cam.NC.Wire.Automating.IWireCc.AddParameterReal.html",
+  "sha256": "8278e9b37b27d2e4e08a064a27b79b72b9fecab6fff996a67a5fbb642657c5a2",
+  "text": "# Method AddParameterReal\n\n#### AddParameterReal(ElementId, string, SmartReal)\n\nAdd parameter real.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 160)]\nvoid AddParameterReal(ElementId inElementId, string inParameterName, SmartReal inParameterValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to modify.  |  \n \n|  string |  inParameterName |  Parameter name.  |  \n \n|  SmartReal |  inParameterValue |  Parameter value.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n",
+  "markdown": "markdown/wire/e6607822cff9923c16ab290e.md",
+  "originalHtml": "html/wire/e6607822cff9923c16ab290e.html"
+}

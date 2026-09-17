@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMaterials.GetAnisotropyAngleFactor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMaterials.GetAnisotropyAngleFactor.html",
+  "sha256": "2ba870a4da1c342d2bb40ddcf587567eb985b509c334881f1a210c3b6d8cd286",
+  "text": "# Method GetAnisotropyAngleFactor\n\n#### GetAnisotropyAngleFactor(DocumentId)\n\nGets Anisotropy Angle Factor\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 400, 120)]\ndouble GetAnisotropyAngleFactor(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Id of the container document  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double |  the value of the parameter  |\n",
+  "markdown": "markdown/cad/6aad17926e83aefd23b421e8.md",
+  "originalHtml": "html/cad/6aad17926e83aefd23b421e8.html"
+}

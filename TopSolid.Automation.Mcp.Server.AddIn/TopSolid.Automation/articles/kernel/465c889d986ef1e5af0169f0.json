@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IDocumentsEvents.OnDocumentEditingEnded.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IDocumentsEvents.OnDocumentEditingEnded.html",
+  "sha256": "7257272255b439fa81dba7f15cb190510f312ace8871ef3c267de95c29085633",
+  "text": "# Method OnDocumentEditingEnded\n\n#### OnDocumentEditingEnded(DocumentId)\n\nCalled when the editing of a document has been ended.\n\n##### Declaration\n\n```\n[OperationContract(IsOneWay = true)]\n[AvailableSinceVersion(7, 8, 0, 0)]\nvoid OnDocumentEditingEnded(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document which editing has been ended.  |  \n\n##### Remarks\n\nThis method is available since v7.8.\n",
+  "markdown": "markdown/kernel/465c889d986ef1e5af0169f0.md",
+  "originalHtml": "html/kernel/465c889d986ef1e5af0169f0.html"
+}

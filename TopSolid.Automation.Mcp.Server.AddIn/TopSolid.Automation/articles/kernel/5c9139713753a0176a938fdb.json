@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.SetSmartRealParameterCreationUnitAuto.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.SetSmartRealParameterCreationUnitAuto.html",
+  "sha256": "676f961ae15e063bb154e20befdda69102e8044a04af71d1dc48b58136343794",
+  "text": "# Method SetSmartRealParameterCreationUnitAuto\n\n#### SetSmartRealParameterCreationUnitAuto(ElementId, bool)\n\nSets a smart real parameter creation operation unit auto mode.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nvoid SetSmartRealParameterCreationUnitAuto(ElementId inElementId, bool inIsUnitAuto)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the smart real parameter creation operation to modify.  |  \n \n|  bool |  inIsUnitAuto |  Whether the unit of the child parameter entity is automatically set to the unit of the smart real.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.8.\n",
+  "markdown": "markdown/kernel/5c9139713753a0176a938fdb.md",
+  "originalHtml": "html/kernel/5c9139713753a0176a938fdb.html"
+}

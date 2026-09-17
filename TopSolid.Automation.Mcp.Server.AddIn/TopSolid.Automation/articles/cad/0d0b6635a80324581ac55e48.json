@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMaterials.GetPoissonRatio.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMaterials.GetPoissonRatio.html",
+  "sha256": "771d33a93536d662c93baccf787afd4eda2358bf02fba02fd8d8a0758f3c09ec",
+  "text": "# Method GetPoissonRatio\n\n#### GetPoissonRatio(DocumentId, out double)\n\nGets Poisson Ratio\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 400, 120)]\nbool GetPoissonRatio(DocumentId inDocumentId, out double outValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Id of the container document  |  \n \n|  double |  outValue |  The value  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  true if a parameter has been fetched with success  |\n",
+  "markdown": "markdown/cad/0d0b6635a80324581ac55e48.md",
+  "originalHtml": "html/cad/0d0b6635a80324581ac55e48.html"
+}

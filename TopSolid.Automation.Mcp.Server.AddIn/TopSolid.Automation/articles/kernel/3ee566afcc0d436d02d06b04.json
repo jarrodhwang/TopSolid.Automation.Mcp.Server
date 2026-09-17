@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IShapes.GetFaceCylinderLength.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IShapes.GetFaceCylinderLength.html",
+  "sha256": "21979428e542b0cfbb34819dda9f7e9998ad21e90f8421963e477a8f6b0f66e0",
+  "text": "# Method GetFaceCylinderLength\n\n#### GetFaceCylinderLength(ElementItemId)\n\nGets the length of a cylinder face.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 14, 0, 0)]\ndouble GetFaceCylinderLength(ElementItemId inFaceId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementItemId |  inFaceId |  Identifier of the face to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double |  Length of the specified cylinder face.  |  \n\n##### Remarks\n\nThis method is available since v7.14.\n",
+  "markdown": "markdown/kernel/3ee566afcc0d436d02d06b04.md",
+  "originalHtml": "html/kernel/3ee566afcc0d436d02d06b04.html"
+}

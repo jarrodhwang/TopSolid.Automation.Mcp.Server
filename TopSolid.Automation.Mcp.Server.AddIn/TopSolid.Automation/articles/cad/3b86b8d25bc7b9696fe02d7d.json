@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.JointDrivingType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.JointDrivingType.html",
+  "sha256": "4f3d3f1087173a5d0deff291c3ba9f82ac0318e030e78293dbc954ac5c509a05",
+  "text": "# Enum JointDrivingType\n\nDefines the various types of joint drivings.\n\n###### Namespace: TopSolid.Cad.Design.Automating\n\n###### Assembly: TopSolid.Cad.Design.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\npublic enum JointDrivingType\n```\n\n##### Remarks\n\nThis enum is available since v7.6.\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  None |  No driving.  |  \n \n|  Position |  Position driving.  |  \n \n|  Velocity |  Velocity driving.  |\n",
+  "markdown": "markdown/cad/3b86b8d25bc7b9696fe02d7d.md",
+  "originalHtml": "html/cad/3b86b8d25bc7b9696fe02d7d.html"
+}

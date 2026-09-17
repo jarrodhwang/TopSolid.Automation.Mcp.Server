@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IFeatures.GetFeatures.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IFeatures.GetFeatures.html",
+  "sha256": "6dc398322f660411b08bcf88adca585046bac4132b8c7babf57d9d4bdf5f4665",
+  "text": "# Method GetFeatures\n\n#### GetFeatures(DocumentId)\n\nGets the features entities that are in the features folder of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 14, 0, 0)]\nList<ElementId> GetFeatures(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementId> |  Features entities found.  |  \n\n##### Remarks\n\nThis method is available since v7.14.\n",
+  "markdown": "markdown/cad/e50183f4be27cfe2493ce6b5.md",
+  "originalHtml": "html/cad/e50183f4be27cfe2493ce6b5.html"
+}

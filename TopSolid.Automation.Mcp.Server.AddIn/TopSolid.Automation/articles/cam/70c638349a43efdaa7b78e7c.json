@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.PathPoint.FeedrateFactor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.PathPoint.FeedrateFactor.html",
+  "sha256": "74c709529251fce4147c22a806c6b255ebe3c9cff6cb557d12c3bf65ea13ed92",
+  "text": "# Property FeedrateFactor\n\n#### FeedrateFactor\n\nGets the feedrate to reach the point.\n\n##### Declaration\n\n```\npublic double FeedrateFactor { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double |   |\n",
+  "markdown": "markdown/cam/70c638349a43efdaa7b78e7c.md",
+  "originalHtml": "html/cam/70c638349a43efdaa7b78e7c.html"
+}

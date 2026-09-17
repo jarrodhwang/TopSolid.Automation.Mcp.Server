@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ITextures.GetWoodRingColor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ITextures.GetWoodRingColor.html",
+  "sha256": "947ca02536775808b042bafa5a8160b900c3831222337fed7eca0920da51fea7",
+  "text": "# Method GetWoodRingColor\n\n#### GetWoodRingColor(DocumentId)\n\nGets the wood ring color.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 400, 100)]\nColor GetWoodRingColor(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyse.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Color |   |  \n\n##### Remarks\n\nThis method is available since v7.16.\n",
+  "markdown": "markdown/kernel/a85fa4b73d912b35993436c6.md",
+  "originalHtml": "html/kernel/a85fa4b73d912b35993436c6.html"
+}

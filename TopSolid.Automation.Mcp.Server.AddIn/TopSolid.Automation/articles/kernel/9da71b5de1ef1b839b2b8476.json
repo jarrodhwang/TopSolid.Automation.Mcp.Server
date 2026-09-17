@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IFamilies.GetExplicitInstances.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IFamilies.GetExplicitInstances.html",
+  "sha256": "698ff9a4433309f1dd542bdb8ba763bd4c9d25360eb4eeaf650edcadf9bdf9be",
+  "text": "# Method GetExplicitInstances\n\n#### GetExplicitInstances(DocumentId, out List<string>, out List<PdmObjectId>)\n\nGets explicit family instances\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 18, 400, 200)]\nvoid GetExplicitInstances(DocumentId inDocumentId, out List<string> outCodes, out List<PdmObjectId> outInstances)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Family document  |  \n \n|  List<string> |  outCodes |  codes found  |  \n \n|  List<PdmObjectId> |  outInstances |  corresponding PDM objects  |\n",
+  "markdown": "markdown/kernel/9da71b5de1ef1b839b2b8476.md",
+  "originalHtml": "html/kernel/9da71b5de1ef1b839b2b8476.html"
+}

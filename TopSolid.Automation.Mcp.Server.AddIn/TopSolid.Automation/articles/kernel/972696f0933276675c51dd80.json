@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IGeometries2D.CreateAxisWithExtent.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IGeometries2D.CreateAxisWithExtent.html",
+  "sha256": "164f7feaadf6d33cba6af1c619466360677154f2f8e2ead0d1db3a23474a7dc8",
+  "text": "# Method CreateAxisWithExtent\n\n#### CreateAxisWithExtent(DocumentId, Axis2D, double, double)\n\nCreates an axis entity with specified extent in a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 201, 100)]\nElementId CreateAxisWithExtent(DocumentId inDocumentId, Axis2D inGeometry, double inXMin, double inXMax)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  Axis2D |  inGeometry |  Axis geometry.  |  \n \n|  double |  inXMin |  Minimum X axis coordinate of extent.  |  \n \n|  double |  inXMax |  Maximum X axis coordinate of extent.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the created axis entity.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.7.201.100.\n",
+  "markdown": "markdown/kernel/972696f0933276675c51dd80.md",
+  "originalHtml": "html/kernel/972696f0933276675c51dd80.html"
+}

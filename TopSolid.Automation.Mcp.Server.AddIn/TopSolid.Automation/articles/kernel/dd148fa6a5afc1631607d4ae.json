@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.CodeProperty.Value.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.CodeProperty.Value.html",
+  "sha256": "1a73bc43d78290f464044d88b60d94510b9a1afa761a187fecc099f7bfc48572",
+  "text": "# Field Value\n\nThe value\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic string Value\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  The value |\n",
+  "markdown": "markdown/kernel/dd148fa6a5afc1631607d4ae.md",
+  "originalHtml": "html/kernel/dd148fa6a5afc1631607d4ae.html"
+}

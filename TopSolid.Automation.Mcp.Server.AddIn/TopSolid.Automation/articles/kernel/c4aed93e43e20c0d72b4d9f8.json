@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartCode.Type.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartCode.Type.html",
+  "sha256": "66a7ffa500bfae5d99ae281b8784935b8e51079873987de695629cde46e14499",
+  "text": "# Field Type\n\nType of code.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic SmartCodeType Type\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartCodeType |  Type of code. |\n",
+  "markdown": "markdown/kernel/c4aed93e43e20c0d72b4d9f8.md",
+  "originalHtml": "html/kernel/c4aed93e43e20c0d72b4d9f8.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ISketches2D.GetFrame.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ISketches2D.GetFrame.html",
+  "sha256": "7f17302308e9ef6d6db51ba2815eff4bbb211a0e0bae87f88a3d198941e8de70",
+  "text": "# Method GetFrame\n\n#### GetFrame(ElementId)\n\nGets the definition frame of a sketch in a 2D document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nFrame2D GetFrame(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the sketch entity to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Frame2D |  Definition frame of the sketch.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/bcfc671aaaebe8076688add2.md",
+  "originalHtml": "html/kernel/bcfc671aaaebe8076688add2.html"
+}

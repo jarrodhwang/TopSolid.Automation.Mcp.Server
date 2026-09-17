@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartProfile2DType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartProfile2DType.html",
+  "sha256": "e377269994ed615e784cc1ea237a4020a06a98718eb6fab09d886a083ef1e782",
+  "text": "# Enum SmartProfile2DType\n\nDefines the various types of 2D smart profiles.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 17, 0, 0)]\npublic enum SmartProfile2DType\n```\n\n##### Remarks\n\nThis enum is available since v7.17.\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  Basic |  Basic.  |  \n \n|  Element |  Provided by an element.  |  \n \n|  Item |  Provided by an element item.  |  \n \n|  None |  Not used.  |  \n \n|  Unclassified |  Unclassified type.  |\n",
+  "markdown": "markdown/kernel/6b4e838ca86a785a4d7ca7f8.md",
+  "originalHtml": "html/kernel/6b4e838ca86a785a4d7ca7f8.html"
+}

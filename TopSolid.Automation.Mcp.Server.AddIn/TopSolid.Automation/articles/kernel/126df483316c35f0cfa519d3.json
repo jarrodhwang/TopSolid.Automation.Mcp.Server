@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.SetColorTableParameterPossibleValues.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.SetColorTableParameterPossibleValues.html",
+  "sha256": "50c8dd9829dd662c1234c1b90da71d9d0a26fb18693a96be7baf315f0c1f336f",
+  "text": "# Method SetColorTableParameterPossibleValues\n\n#### SetColorTableParameterPossibleValues(ElementId, DocumentId, List<SmartReal>, List<SmartColor>)\n\nSets possible values for color table parameter creation operation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 18, 0, 0)]\nvoid SetColorTableParameterPossibleValues(ElementId inElementId, DocumentId inDocumentId, List<SmartReal> inSourceSmartRealList, List<SmartColor> inResultSmartColorList)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the smart color table parameter creation operation to modify.  |  \n \n|  DocumentId |  inDocumentId |  Identifier of the document.  |  \n \n|  List<SmartReal> |  inSourceSmartRealList |  Source values.  |  \n \n|  List<SmartColor> |  inResultSmartColorList |  Result values.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.18.\n",
+  "markdown": "markdown/kernel/126df483316c35f0cfa519d3.md",
+  "originalHtml": "html/kernel/126df483316c35f0cfa519d3.html"
+}

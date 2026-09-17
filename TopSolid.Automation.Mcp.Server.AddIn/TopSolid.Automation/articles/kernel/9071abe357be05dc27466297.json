@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.PurgeSeveral.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.PurgeSeveral.html",
+  "sha256": "58000561607d77723a46cd907375ed5e752a341396d2f60768d14bd0303019ec",
+  "text": "# Method PurgeSeveral\n\n#### PurgeSeveral(List<PdmObjectId>)\n\nPurges several deleted objects.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 201, 140)]\nvoid PurgeSeveral(List<PdmObjectId> inObjectIds)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  List<PdmObjectId> |  inObjectIds |  Identifiers of objects to purge.  |  \n\n##### Remarks\n\nThis method must not be called between StartModification(string, bool) and EndModification(bool, bool) methods calls.\n \nThis method is available since v7.7.201.140.\n",
+  "markdown": "markdown/kernel/9071abe357be05dc27466297.md",
+  "originalHtml": "html/kernel/9071abe357be05dc27466297.html"
+}

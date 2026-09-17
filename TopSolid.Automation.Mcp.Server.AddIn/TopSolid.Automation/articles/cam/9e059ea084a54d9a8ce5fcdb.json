@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.LinkMovementsMethod.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.LinkMovementsMethod.html",
+  "sha256": "156ebda1597b3d39b2e6c60101c51151f7b06272d9b1331e94925d87df6f00d3",
+  "text": "# Enum LinkMovementsMethod\n\nDefines the various methods of link movements\n\n###### Namespace: TopSolid.Cam.NC.Kernel.Automating\n\n###### Assembly: TopSolid.Cam.NC.Kernel.Automating.dll\n\n##### Syntax\n\n```\npublic enum LinkMovementsMethod\n```\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  Automatic |  Automatic method  |  \n \n|  Machine |  Machine method  |  \n \n|  Manual |  Manual method  |  \n \n|  Unknown |  Unknown  |\n",
+  "markdown": "markdown/cam/9e059ea084a54d9a8ce5fcdb.md",
+  "originalHtml": "html/cam/9e059ea084a54d9a8ce5fcdb.html"
+}

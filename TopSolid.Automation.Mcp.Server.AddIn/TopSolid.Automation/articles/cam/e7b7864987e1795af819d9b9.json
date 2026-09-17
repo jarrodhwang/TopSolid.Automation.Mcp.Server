@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.INCFiles.GetOtherNCFileCodes.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.INCFiles.GetOtherNCFileCodes.html",
+  "sha256": "7b496c2b808e0cfe04161de5afaf70fdb952863223d4f4399a92aa25a188aff9",
+  "text": "# Method GetOtherNCFileCodes\n\n#### GetOtherNCFileCodes(PdmMinorRevisionId)\n\nGet all NC Code lines of the given other NC file document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nList<string> GetOtherNCFileCodes(PdmMinorRevisionId inMinorRevisionId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmMinorRevisionId |  inMinorRevisionId |  Identifier of the minor revision.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<string> |  The NC codes of the document.  |\n",
+  "markdown": "markdown/cam/e7b7864987e1795af819d9b9.md",
+  "originalHtml": "html/cam/e7b7864987e1795af819d9b9.html"
+}

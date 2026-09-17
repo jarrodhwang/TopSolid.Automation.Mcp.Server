@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdmVisualization.ZoomToFit.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdmVisualization.ZoomToFit.html",
+  "sha256": "a2e3eb9f33936fd86aa0769b9a51a7f018dbd538873e3469355b463ab14201e7",
+  "text": "# Method ZoomToFit\n\n#### ZoomToFit(PdmMinorRevisionId, int)\n\nMethod to zoom to fit view\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 222, 0)]\nvoid ZoomToFit(PdmMinorRevisionId inMinorRevisionId, int viewId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmMinorRevisionId |  inMinorRevisionId |  document minor revision identifier  |  \n \n|  int |  viewId |  id of the view  |\n",
+  "markdown": "markdown/pdmexplorer/fcec1f6bb53458d73cad1370.md",
+  "originalHtml": "html/pdmexplorer/fcec1f6bb53458d73cad1370.html"
+}

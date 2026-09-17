@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartFrame3D.ExtentXMax.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartFrame3D.ExtentXMax.html",
+  "sha256": "53e196d66bb9fe26e595b36f3fd4b6e3e8b30aa459774302edc560b2310acd9f",
+  "text": "# Field ExtentXMax\n\nMaximum X frame coordinate of extent, or null if unknown.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic double? ExtentXMax\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double? |  Maximum X frame coordinate of extent, or null if unknown. |\n",
+  "markdown": "markdown/kernel/b028bde2e9c5b658dedf7275.md",
+  "originalHtml": "html/kernel/b028bde2e9c5b658dedf7275.html"
+}

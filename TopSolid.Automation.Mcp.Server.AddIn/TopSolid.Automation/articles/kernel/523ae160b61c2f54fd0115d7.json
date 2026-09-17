@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IDocumentsEvents.OnDocumentEditingStarted.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IDocumentsEvents.OnDocumentEditingStarted.html",
+  "sha256": "9cc9d2389aacba8a83da8b77fb5a785d994dac0d64ad7009b477bdb55ffe7d7b",
+  "text": "# Method OnDocumentEditingStarted\n\n#### OnDocumentEditingStarted(DocumentId)\n\nCalled when the editing of a document has been started.\n\n##### Declaration\n\n```\n[OperationContract(IsOneWay = true)]\n[AvailableSinceVersion(7, 8, 0, 0)]\nvoid OnDocumentEditingStarted(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document which editing has been started.  |  \n\n##### Remarks\n\nThis method is available since v7.8.\n",
+  "markdown": "markdown/kernel/523ae160b61c2f54fd0115d7.md",
+  "originalHtml": "html/kernel/523ae160b61c2f54fd0115d7.html"
+}

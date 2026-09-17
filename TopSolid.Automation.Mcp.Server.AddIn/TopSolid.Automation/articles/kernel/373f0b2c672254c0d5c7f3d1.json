@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Point3D.op_Subtraction.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Point3D.op_Subtraction.html",
+  "sha256": "362590954a7efc27772b02d04830fe0ba2a5564fed2cf406d4a4892d9a8a6309",
+  "text": "# Operator operator -\n\n#### operator -(Point3D, Vector3D)\n\nSubtracts a point and a vector.\n\n##### Declaration\n\n```\npublic static Point3D operator -(Point3D inPoint, Vector3D inVector)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  Point3D |  inPoint |  Left hand side point.  |  \n \n|  Vector3D |  inVector |  Right hand side vector.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Point3D |  Translated point.  |\n",
+  "markdown": "markdown/kernel/373f0b2c672254c0d5c7f3d1.md",
+  "originalHtml": "html/kernel/373f0b2c672254c0d5c7f3d1.html"
+}

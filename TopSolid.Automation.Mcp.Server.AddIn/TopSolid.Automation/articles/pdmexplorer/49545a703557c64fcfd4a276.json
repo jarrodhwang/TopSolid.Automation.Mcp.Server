@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.ExportMinorRevisionFile.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.ExportMinorRevisionFile.html",
+  "sha256": "b452098c770e75cf1e0103d5f5ade35b00b80154cd2e12694cb7e6bce2732aad",
+  "text": "# Method ExportMinorRevisionFile\n\n#### ExportMinorRevisionFile(PdmMinorRevisionId, string)\n\nExports a non TopSolid document minor revision to a file without conversion.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nvoid ExportMinorRevisionFile(PdmMinorRevisionId inMinorRevisionId, string inFullName)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmMinorRevisionId |  inMinorRevisionId |  Identifier of document minor revision to export.  |  \n \n|  string |  inFullName |  Full name of the file to create.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/pdmexplorer/49545a703557c64fcfd4a276.md",
+  "originalHtml": "html/pdmexplorer/49545a703557c64fcfd4a276.html"
+}

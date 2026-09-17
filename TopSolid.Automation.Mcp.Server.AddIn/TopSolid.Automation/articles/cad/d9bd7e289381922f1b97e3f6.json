@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.FeatureType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.FeatureType.html",
+  "sha256": "129031c7b3896a3c0ca8e2196f2f3e097c43d9185e997db4742ee89f883ed72e",
+  "text": "# Enum FeatureType\n\nDefines the various types of features entities.\n\n###### Namespace: TopSolid.Cad.Design.Automating\n\n###### Assembly: TopSolid.Cad.Design.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 14, 0, 0)]\npublic enum FeatureType\n```\n\n##### Remarks\n\nThis enum is available since v7.14.\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  Countouring |  Countouring.  |  \n \n|  Drilling |  Drilling.  |  \n \n|  None |  Not a feature.  |  \n \n|  Pocket |  Pocket.  |  \n \n|  Unclassified |  Unclassified type.  |\n",
+  "markdown": "markdown/cad/d9bd7e289381922f1b97e3f6.md",
+  "originalHtml": "html/cad/d9bd7e289381922f1b97e3f6.html"
+}

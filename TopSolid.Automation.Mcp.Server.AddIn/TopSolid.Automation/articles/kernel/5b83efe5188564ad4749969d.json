@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Plane3D.Normal.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Plane3D.Normal.html",
+  "sha256": "83fdb7664075662888e50697bf575613b140b44ade65969e2f6358a09823335a",
+  "text": "# Property Normal\n\n#### Normal\n\nGets the plane normal direction.\n\n##### Declaration\n\n```\npublic Direction3D Normal { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Direction3D |   |  \n\n##### Remarks\n\nThe plane normal direction is equal to the cross product of the plane X and Y directions.\n",
+  "markdown": "markdown/kernel/5b83efe5188564ad4749969d.md",
+  "originalHtml": "html/kernel/5b83efe5188564ad4749969d.html"
+}

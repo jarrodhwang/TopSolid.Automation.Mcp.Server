@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IGeometries3D.GetAxisGeometry.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IGeometries3D.GetAxisGeometry.html",
+  "sha256": "e644f7481ff195b6205f7953649499c102921b65414b3a21bfb229bb8c02524e",
+  "text": "# Method GetAxisGeometry\n\n#### GetAxisGeometry(ElementId)\n\nGets the geometry of an axis entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nAxis3D GetAxisGeometry(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the axis entity to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Axis3D |  Axis geometry.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/0e377876f26fafaf1b0b4ea3.md",
+  "originalHtml": "html/kernel/0e377876f26fafaf1b0b4ea3.html"
+}

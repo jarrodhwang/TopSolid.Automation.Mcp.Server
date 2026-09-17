@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IOperations.GetChildren.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IOperations.GetChildren.html",
+  "sha256": "de139eef2ef50d37193403c59d748bf367f2b6688f70126bc444639e94d02145",
+  "text": "# Method GetChildren\n\n#### GetChildren(ElementId)\n\nGets the children elements of a an operation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nList<ElementId> GetChildren(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the operation to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementId> |  Identifiers of the children elements found.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/d9cc6ccfdf17913f62a3420f.md",
+  "originalHtml": "html/kernel/d9cc6ccfdf17913f62a3420f.html"
+}

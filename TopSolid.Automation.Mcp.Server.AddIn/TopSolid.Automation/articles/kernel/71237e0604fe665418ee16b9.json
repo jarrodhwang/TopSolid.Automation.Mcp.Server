@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.TextProperty.-ctor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.TextProperty.-ctor.html",
+  "sha256": "74e07b99af8c93980a254aacd2158866beec83e553e17d1ae1255c67f41340e3",
+  "text": "# Constructor TextProperty\n\n#### TextProperty(string)\n\nInitializes a new instance of the TextProperty class.\n\n##### Declaration\n\n```\npublic TextProperty(string inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  string |  inValue |  Value.  |\n",
+  "markdown": "markdown/kernel/71237e0604fe665418ee16b9.md",
+  "originalHtml": "html/kernel/71237e0604fe665418ee16b9.html"
+}

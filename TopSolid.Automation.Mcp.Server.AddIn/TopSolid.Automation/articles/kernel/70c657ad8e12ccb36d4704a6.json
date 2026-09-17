@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IVisualization3D.ZoomToFitView.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IVisualization3D.ZoomToFitView.html",
+  "sha256": "03c28371a605ef3caf456b265b256b17909335ad595d0fb1f50a8b6157877de7",
+  "text": "# Method ZoomToFitView\n\n#### ZoomToFitView(DocumentId, int)\n\nPerforms a \"Zoom to Fit\" on a graphic view of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nvoid ZoomToFitView(DocumentId inDocumentId, int inViewId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  int |  inViewId |  Identifier of the graphic view to modify.  |  \n\n##### Remarks\n\nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/70c657ad8e12ccb36d4704a6.md",
+  "originalHtml": "html/kernel/70c657ad8e12ccb36d4704a6.html"
+}

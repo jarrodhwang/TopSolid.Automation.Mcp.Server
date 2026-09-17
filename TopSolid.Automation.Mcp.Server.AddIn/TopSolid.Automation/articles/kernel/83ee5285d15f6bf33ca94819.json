@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ShapeType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ShapeType.html",
+  "sha256": "b7bb5403fa90605c577c4b13f61dbe85a074c4eb513925573acf0f98bf912de5",
+  "text": "# Enum ShapeType\n\nDefines the various types of shapes.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\npublic enum ShapeType\n```\n\n##### Remarks\n\nThis enum is available since v7.6.\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  Empty |  Empty.  |  \n \n|  Sheet |  Sheet.  |  \n \n|  Solid |  Solid.  |  \n \n|  Unclassified |  Unclassified type.  |\n",
+  "markdown": "markdown/kernel/83ee5285d15f6bf33ca94819.md",
+  "originalHtml": "html/kernel/83ee5285d15f6bf33ca94819.html"
+}

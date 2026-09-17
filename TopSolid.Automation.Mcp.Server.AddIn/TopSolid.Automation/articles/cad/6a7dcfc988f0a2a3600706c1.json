@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IAssemblies.GetInclusionDefinitionDocument.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IAssemblies.GetInclusionDefinitionDocument.html",
+  "sha256": "8f86b158b45e27cb26a336b5265d41fcbbfc1c789cc28e6138dd7c585aa4301a",
+  "text": "# Method GetInclusionDefinitionDocument\n\n#### GetInclusionDefinitionDocument(ElementId)\n\nGets the definition document of an inclusion operation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nDocumentId GetInclusionDefinitionDocument(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the inclusion operation to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  DocumentId |  Identifier of the definition document of the inluded part or assembly.  |  \n\n##### Remarks\n\nThis method is available since v7.8.\n",
+  "markdown": "markdown/cad/6a7dcfc988f0a2a3600706c1.md",
+  "originalHtml": "html/cad/6a7dcfc988f0a2a3600706c1.html"
+}

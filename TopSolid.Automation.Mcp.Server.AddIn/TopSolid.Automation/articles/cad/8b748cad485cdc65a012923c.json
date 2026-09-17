@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IFinishings.IsFinishingParameter.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IFinishings.IsFinishingParameter.html",
+  "sha256": "409626ac0189ccc395e639004cff876833df7a00d5637fa73e3e57ffbcb2dc2e",
+  "text": "# Method IsFinishingParameter\n\n#### IsFinishingParameter(ElementId)\n\nTells if an element is a finishing Parameter\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 296, 0)]\nbool IsFinishingParameter(ElementId inParameterId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inParameterId |  The Id of the parameter  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  true if it is a finishing parameter  |\n",
+  "markdown": "markdown/cad/8b748cad485cdc65a012923c.md",
+  "originalHtml": "html/cad/8b748cad485cdc65a012923c.html"
+}

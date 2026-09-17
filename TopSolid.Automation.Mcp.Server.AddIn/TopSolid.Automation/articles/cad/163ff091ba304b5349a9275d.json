@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.SmartDocument.ReferenceType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.SmartDocument.ReferenceType.html",
+  "sha256": "79a1b9e40e4b77efe30483eab808602dfca66d3e8de9da5c46caa894671c410c",
+  "text": "# Field ReferenceType\n\nProviding element item label, or empty if none.\n\n###### Namespace: TopSolid.Cad.Design.Automating\n\n###### Assembly: TopSolid.Cad.Design.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic DocumentReferenceType ReferenceType\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  DocumentReferenceType |  Providing element item label, or empty if none. |\n",
+  "markdown": "markdown/cad/163ff091ba304b5349a9275d.md",
+  "originalHtml": "html/cad/163ff091ba304b5349a9275d.html"
+}

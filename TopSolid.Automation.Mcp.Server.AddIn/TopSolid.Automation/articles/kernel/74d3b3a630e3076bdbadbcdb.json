@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IEntities.CreateFolder.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IEntities.CreateFolder.html",
+  "sha256": "dcbc43a3acdcbd5216599661b4f10dea2f2342aec9382a8926bc8983e51c04c9",
+  "text": "# Method CreateFolder\n\n#### CreateFolder(ElementId)\n\nCreates a folder entity inside a specified folder entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nElementId CreateFolder(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the folder entity to modify.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Folder entity created identifier.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.10.\n",
+  "markdown": "markdown/kernel/74d3b3a630e3076bdbadbcdb.md",
+  "originalHtml": "html/kernel/74d3b3a630e3076bdbadbcdb.html"
+}

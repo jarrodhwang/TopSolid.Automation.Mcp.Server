@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IVisualization3D.SaveScreenShotBitmap.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IVisualization3D.SaveScreenShotBitmap.html",
+  "sha256": "8e0d68ed2db5cdd6fd7da218aefec1fda69955db9f25e994bf95290b4d836769",
+  "text": "# Method SaveScreenShotBitmap\n\n#### SaveScreenShotBitmap(DocumentId, int, string)\n\nMakes a screenshot from document graphic view, with a white background\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 326, 0)]\nvoid SaveScreenShotBitmap(DocumentId inDocumentId, int inViewId, string outFileName)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Target document  |  \n \n|  int |  inViewId |  Id of the view  |  \n \n|  string |  outFileName |  Bitmap full path  |  \n\n##### Remarks\n\nThis method is available since v7.20.326.000.\n",
+  "markdown": "markdown/kernel/faf4702d9c96407b4579b15e.md",
+  "originalHtml": "html/kernel/faf4702d9c96407b4579b15e.html"
+}

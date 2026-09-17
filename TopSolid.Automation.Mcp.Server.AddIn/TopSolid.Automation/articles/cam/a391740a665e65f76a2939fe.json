@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.TopSolidCamHost.WorldCoordinateSystems.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.TopSolidCamHost.WorldCoordinateSystems.html",
+  "sha256": "b87be5d0d284a71eea7e12c5ce2eba8c2199d40fbdbdb7d6c248c618f6fb6271",
+  "text": "# Property WorldCoordinateSystems\n\n#### WorldCoordinateSystems\n\nGets access to WCSs, or null if not connected.\n\n##### Declaration\n\n```\npublic static IWorldCoordinateSystems WorldCoordinateSystems { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  IWorldCoordinateSystems |   |\n",
+  "markdown": "markdown/cam/a391740a665e65f76a2939fe.md",
+  "originalHtml": "html/cam/a391740a665e65f76a2939fe.html"
+}

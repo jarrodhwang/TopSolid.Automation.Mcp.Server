@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IEntities.GetClassifyings.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IEntities.GetClassifyings.html",
+  "sha256": "7c1febf4952e5f9f9b43fdbf645d1c17c872927ce244f947396d8cbcf6ecb9a4",
+  "text": "# Method GetClassifyings\n\n#### GetClassifyings(DocumentId)\n\nGets the classifying entities that are in the classifyings folder of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nList<ElementId> GetClassifyings(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementId> |  Classifying entities found.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/kernel/fcd3d7febd149387b441e5fd.md",
+  "originalHtml": "html/kernel/fcd3d7febd149387b441e5fd.html"
+}

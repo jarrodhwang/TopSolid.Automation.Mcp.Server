@@ -1,0 +1,8 @@
+{
+  "path": "api/wire/TopSolid.Cam.NC.Wire.Automating.IWireCc.SetOffset.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/wire/TopSolid.Cam.NC.Wire.Automating.IWireCc.SetOffset.html",
+  "sha256": "2ca61e9bab792a29c616ff32e3e613c3da5453966020906c0f6812fdd48a70d4",
+  "text": "# Method SetOffset\n\n#### SetOffset(ElementId, SmartReal)\n\nSet offset.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 160)]\nvoid SetOffset(ElementId inElementId, SmartReal inOffset)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to modify.  |  \n \n|  SmartReal |  inOffset |  Offset in SI units.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n",
+  "markdown": "markdown/wire/238406c5a6ea3833fe08ed37.md",
+  "originalHtml": "html/wire/238406c5a6ea3833fe08ed37.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cae/TopSolid.Cae.Kernel.Automating.LoadFactorResult.CriticalLoad.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cae/TopSolid.Cae.Kernel.Automating.LoadFactorResult.CriticalLoad.html",
+  "sha256": "bf3c628e65e0a966bacaef15e2651febb68f3e4436e198e25aa15c9c30396794",
+  "text": "# Property CriticalLoad\n\n#### CriticalLoad\n\nGets the Critical Load\n\n##### Declaration\n\n```\npublic double CriticalLoad { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double |   |\n",
+  "markdown": "markdown/cae/2edaaf15048454a812667f0c.md",
+  "originalHtml": "html/cae/2edaaf15048454a812667f0c.html"
+}

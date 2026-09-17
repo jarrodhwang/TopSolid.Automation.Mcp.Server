@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IGeometries3D.SetOffsetPointCreation.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IGeometries3D.SetOffsetPointCreation.html",
+  "sha256": "90841a7944c073f451a610666968c95c26d5628eafd6f1f4a09cf0b591a55541",
+  "text": "# Method SetOffsetPointCreation\n\n#### SetOffsetPointCreation(ElementId, SmartPoint3D, SmartDirection3D, SmartReal)\n\nSets an offset point creation operation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nvoid SetOffsetPointCreation(ElementId inElementId, SmartPoint3D inOrigin, SmartDirection3D inDirection, SmartReal inDistance)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the offset point creation operation to modify.  |  \n \n|  SmartPoint3D |  inOrigin |  Origin point.  |  \n \n|  SmartDirection3D |  inDirection |  Offset direction.  |  \n \n|  SmartReal |  inDistance |  Offset distance.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.8.\n",
+  "markdown": "markdown/kernel/9f63d1a34935989f53272b98.md",
+  "originalHtml": "html/kernel/9f63d1a34935989f53272b98.html"
+}

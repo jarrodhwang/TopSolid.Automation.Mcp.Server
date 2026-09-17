@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartDocument.ReferenceType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartDocument.ReferenceType.html",
+  "sha256": "a3a8027a26f1b4d181e200580fea86ff5f1e0f83318a66bb53865d245863ebd6",
+  "text": "# Field ReferenceType\n\nProviding element item label, or empty if none.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic DocumentReferenceType ReferenceType\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  DocumentReferenceType |  Providing element item label, or empty if none. |\n",
+  "markdown": "markdown/kernel/b49353b45b3ff670a7351707.md",
+  "originalHtml": "html/kernel/b49353b45b3ff670a7351707.html"
+}

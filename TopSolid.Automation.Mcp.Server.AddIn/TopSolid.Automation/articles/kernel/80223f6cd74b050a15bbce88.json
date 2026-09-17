@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.NeedsGettingLatestRevision.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.NeedsGettingLatestRevision.html",
+  "sha256": "138006b1bd883503d9ca6fece61d4dbbef03c3ac9d71445397450d528a848e7a",
+  "text": "# Method NeedsGettingLatestRevision\n\n#### NeedsGettingLatestRevision(PdmObjectId)\n\nTells whether specified object or its children need getting latest revision.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 201, 180)]\nbool NeedsGettingLatestRevision(PdmObjectId inObjectId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  Identifier of object to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Specified object or its children need getting latest revision.  |  \n\n##### Remarks\n\nThis method is available since v7.7.201.180.\n",
+  "markdown": "markdown/kernel/80223f6cd74b050a15bbce88.md",
+  "originalHtml": "html/kernel/80223f6cd74b050a15bbce88.html"
+}

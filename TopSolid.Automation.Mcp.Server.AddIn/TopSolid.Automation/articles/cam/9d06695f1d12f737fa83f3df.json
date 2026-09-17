@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IWorldCoordinateSystems.GetParameters.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IWorldCoordinateSystems.GetParameters.html",
+  "sha256": "008aea760f58e89c61deb3ff8ab3d14fe65996d0f8365e500074954591b2cbde",
+  "text": "# Method GetParameters\n\n#### GetParameters(ElementId)\n\nGets the parameters of the given WCS.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nList<ParameterId> GetParameters(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the WCS to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ParameterId> |  WCS parameters found.  |\n",
+  "markdown": "markdown/cam/9d06695f1d12f737fa83f3df.md",
+  "originalHtml": "html/cam/9d06695f1d12f737fa83f3df.html"
+}

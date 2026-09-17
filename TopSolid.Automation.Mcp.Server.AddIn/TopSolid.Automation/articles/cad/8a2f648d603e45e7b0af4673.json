@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.TopSolidDesignHost.Boms.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.TopSolidDesignHost.Boms.html",
+  "sha256": "9f8a279fca2bb552f11a4156efa9fa3b183838284be63fe297c01a8022067fdf",
+  "text": "# Property Boms\n\n#### Boms\n\nGets access to bill of materials (BOMs), or null if not connected.\n\n##### Declaration\n\n```\npublic static IBoms Boms { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  IBoms |   |\n",
+  "markdown": "markdown/cad/8a2f648d603e45e7b0af4673.md",
+  "originalHtml": "html/cad/8a2f648d603e45e7b0af4673.html"
+}

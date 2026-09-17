@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.SetRealParameterPossibleValues.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.SetRealParameterPossibleValues.html",
+  "sha256": "58dd46ad252ec2f6cf73b4286f66092e831db1198949dfb5e5e7b14005f7136a",
+  "text": "# Method SetRealParameterPossibleValues\n\n#### SetRealParameterPossibleValues(ElementId, List<RealProperty>)\n\nSets the real parameter possibles values.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 17, 0, 0)]\nvoid SetRealParameterPossibleValues(ElementId inElementId, List<RealProperty> inProperties)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the parameter.  |  \n \n|  List<RealProperty> |  inProperties |  The wanted possibles values.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.17.000.000.\n",
+  "markdown": "markdown/kernel/e58e19f24708a07e85870f9b.md",
+  "originalHtml": "html/kernel/e58e19f24708a07e85870f9b.html"
+}

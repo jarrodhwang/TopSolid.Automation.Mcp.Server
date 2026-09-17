@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.GetProjectMainDocument.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.GetProjectMainDocument.html",
+  "sha256": "577c4b46dcda1c9c507a8700cf618faa8d5ee06a73212414dc2668c94e3f01df",
+  "text": "# Method GetProjectMainDocument\n\n#### GetProjectMainDocument(PdmObjectId)\n\nGets the main document of a specified project.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 0, 0)]\nPdmObjectId GetProjectMainDocument(PdmObjectId inProjectId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inProjectId |  Project object identifier.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  PdmObjectId |  Identifier of the main document of the project or Empty if not defined.  |  \n\n##### Remarks\n\nThis method is available since v7.11.\n",
+  "markdown": "markdown/kernel/46ae5985be7bd4c5482f4060.md",
+  "originalHtml": "html/kernel/46ae5985be7bd4c5482f4060.html"
+}

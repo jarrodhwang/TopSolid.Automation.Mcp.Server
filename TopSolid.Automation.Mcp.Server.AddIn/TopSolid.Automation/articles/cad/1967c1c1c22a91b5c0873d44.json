@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMaterials.GetBrinellHardnessFactor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMaterials.GetBrinellHardnessFactor.html",
+  "sha256": "2e0c189bf00eb27393f79a34e1e718abef654e258861f4566ff375bef68669d8",
+  "text": "# Method GetBrinellHardnessFactor\n\n#### GetBrinellHardnessFactor(DocumentId)\n\nGet Brinell Hardness factor\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 400, 120)]\ndouble GetBrinellHardnessFactor(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Id of the container document  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double |  The value  |\n",
+  "markdown": "markdown/cad/1967c1c1c22a91b5c0873d44.md",
+  "originalHtml": "html/cad/1967c1c1c22a91b5c0873d44.html"
+}

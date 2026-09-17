@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IDocuments.GetWCSs.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IDocuments.GetWCSs.html",
+  "sha256": "5116ac6d57c8ddee7b87b15f32bcca061ad53b92581ba1938ffb372524114976",
+  "text": "# Method GetWCSs\n\n#### GetWCSs(DocumentId)\n\nGet the list of WCSs in the document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nList<ElementId> GetWCSs(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementId> |  List of all WCSs.  |\n",
+  "markdown": "markdown/cam/a540d76e4b7a4b213eeb07ce.md",
+  "originalHtml": "html/cam/a540d76e4b7a4b213eeb07ce.html"
+}

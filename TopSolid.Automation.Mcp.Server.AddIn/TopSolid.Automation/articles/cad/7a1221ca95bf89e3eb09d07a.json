@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IProcesses.GetProcessDefinitionDocument.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IProcesses.GetProcessDefinitionDocument.html",
+  "sha256": "6e34982302f04377fb386c969959f0d3158a97cd3289bcadcac2aa0c3dd02315",
+  "text": "# Method GetProcessDefinitionDocument\n\n#### GetProcessDefinitionDocument(ElementId)\n\nGets process definition document\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 400, 140)]\nDocumentId GetProcessDefinitionDocument(ElementId inProcessId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inProcessId |  process from host document  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  DocumentId |  process definition document  |\n",
+  "markdown": "markdown/cad/7a1221ca95bf89e3eb09d07a.md",
+  "originalHtml": "html/cad/7a1221ca95bf89e3eb09d07a.html"
+}

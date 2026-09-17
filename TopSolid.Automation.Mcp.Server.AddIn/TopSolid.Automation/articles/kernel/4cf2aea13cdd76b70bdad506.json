@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ISketches2D.GetSegmentCurveType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ISketches2D.GetSegmentCurveType.html",
+  "sha256": "d9a0aa6252979e3907441b4b771c9bc2920514226279975a9afdb2b1b7a8810d",
+  "text": "# Method GetSegmentCurveType\n\n#### GetSegmentCurveType(ElementItemId)\n\nGets the type of the curve attached to a segment.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nCurveType GetSegmentCurveType(ElementItemId inSegmentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementItemId |  inSegmentId |  Identifier of the segment to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  CurveType |  Type of the curve attached to the segment.  |  \n\n##### Remarks\n\nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/4cf2aea13cdd76b70bdad506.md",
+  "originalHtml": "html/kernel/4cf2aea13cdd76b70bdad506.html"
+}

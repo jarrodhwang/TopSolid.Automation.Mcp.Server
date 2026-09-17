@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IVisualization3D.GetIsometricCamera.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IVisualization3D.GetIsometricCamera.html",
+  "sha256": "b029a15806d362f6fb51d16447c02a9116b50b373fcb43fa5e182420438254bc",
+  "text": "# Method GetIsometricCamera\n\n#### GetIsometricCamera(DocumentId)\n\nGets the isometric camera entity of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nElementId GetIsometricCamera(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the isometric camera entity found.  |  \n\n##### Remarks\n\nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/6a3bb794470ccde5f885fddf.md",
+  "originalHtml": "html/kernel/6a3bb794470ccde5f885fddf.html"
+}

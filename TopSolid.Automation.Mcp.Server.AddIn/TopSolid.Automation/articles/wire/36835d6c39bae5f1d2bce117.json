@@ -1,0 +1,8 @@
+{
+  "path": "api/wire/TopSolid.Cam.NC.Wire.Automating.IWireTechnologies.SetMaterialDepthMaxi.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/wire/TopSolid.Cam.NC.Wire.Automating.IWireTechnologies.SetMaterialDepthMaxi.html",
+  "sha256": "d61ff70a54e8766520a34a74f86fc3abe87dc23251d15a758001a57a04f29711",
+  "text": "# Method SetMaterialDepthMaxi\n\n#### SetMaterialDepthMaxi(ElementId, SmartReal)\n\nSet material depth maxi.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 160)]\nvoid SetMaterialDepthMaxi(ElementId inTechnologyId, SmartReal inMaterialDepthMaxi)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inTechnologyId |  Identifier of the technology to modify.  |  \n \n|  SmartReal |  inMaterialDepthMaxi |  Material depth maxi in SI units.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n",
+  "markdown": "markdown/wire/36835d6c39bae5f1d2bce117.md",
+  "originalHtml": "html/wire/36835d6c39bae5f1d2bce117.html"
+}

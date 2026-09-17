@@ -1,0 +1,8 @@
+{
+  "path": "api/cae/TopSolid.Cae.Kernel.Automating.MeasureResults.Fatigue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cae/TopSolid.Cae.Kernel.Automating.MeasureResults.Fatigue.html",
+  "sha256": "d98aa3caf0d80c5eae1c292a3edf590429b77e681a4ad2c17a98a31c3ac4fb73",
+  "text": "# Property Fatigue\n\n#### Fatigue\n\nGets the Fatigue Values\n\n##### Declaration\n\n```\npublic string[] Fatigue { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string[] |   |\n",
+  "markdown": "markdown/cae/b549cdabfba0f91ce3de7dec.md",
+  "originalHtml": "html/cae/b549cdabfba0f91ce3de7dec.html"
+}

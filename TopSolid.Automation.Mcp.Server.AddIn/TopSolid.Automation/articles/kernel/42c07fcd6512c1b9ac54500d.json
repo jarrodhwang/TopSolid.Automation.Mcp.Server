@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ISketches3D.CreateVertex.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ISketches3D.CreateVertex.html",
+  "sha256": "ede5989f37ee5f999256636d66a1b5b953ad048cbcfe1e5e32e0624f7d1ab7b9",
+  "text": "# Method CreateVertex\n\n#### CreateVertex(Point3D)\n\nCreates a new vertex into the ModifiedSketch.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 201, 80)]\nElementItemId CreateVertex(Point3D inPoint)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  Point3D |  inPoint |  Vertex point.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementItemId |  Identifier of the created vertex.  |  \n\n##### Remarks\n\nStartModification(ElementId) must be called before calling this method.\n \nThis method is available since v7.7.201.80.\n",
+  "markdown": "markdown/kernel/42c07fcd6512c1b9ac54500d.md",
+  "originalHtml": "html/kernel/42c07fcd6512c1b9ac54500d.html"
+}

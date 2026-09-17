@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IAssemblies.CreateFixedConstraint.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IAssemblies.CreateFixedConstraint.html",
+  "sha256": "78964f06855bf4aab3325967036458a16881a64999d057964aae28266596e1ce",
+  "text": "# Method CreateFixedConstraint\n\n#### CreateFixedConstraint(ElementId)\n\nCreates a fixed constraint of a positioning.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 15, 400, 120)]\nElementId CreateFixedConstraint(ElementId inOccurrenceId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inOccurrenceId |  Identifier of the occurrence of the part or assembly to fix.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the created constraint.  |  \n\n##### Remarks\n\nThis method is available since v7.15.400.120.\n",
+  "markdown": "markdown/cad/be8d50af88436cfff7693b96.md",
+  "originalHtml": "html/cad/be8d50af88436cfff7693b96.html"
+}

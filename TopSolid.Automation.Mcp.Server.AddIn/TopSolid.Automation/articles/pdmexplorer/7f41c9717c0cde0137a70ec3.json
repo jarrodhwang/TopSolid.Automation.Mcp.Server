@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdmSecurity.HasRight.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdmSecurity.HasRight.html",
+  "sha256": "e7032c01e380cb5fccc1d8c82e9a3e43466010a1779e6eef911d54440d7478f1",
+  "text": "# Method HasRight\n\n#### HasRight(PdmObjectId, PdmRight)\n\nTells whether the current user has a specific right on an object.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nbool HasRight(PdmObjectId inObjectId, PdmRight inRight)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  Identifier of project, folder or document.  |  \n \n|  PdmRight |  inRight |  Right.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Has right.  |\n",
+  "markdown": "markdown/pdmexplorer/7f41c9717c0cde0137a70ec3.md",
+  "originalHtml": "html/pdmexplorer/7f41c9717c0cde0137a70ec3.html"
+}

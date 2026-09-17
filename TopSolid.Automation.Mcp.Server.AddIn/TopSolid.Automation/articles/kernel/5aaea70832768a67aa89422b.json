@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IElements.GetPropertyRealUnit.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IElements.GetPropertyRealUnit.html",
+  "sha256": "88895402aff04b77a9502e15ebb0134d7b99c935a44f6323ccb48cc8339d6f71",
+  "text": "# Method GetPropertyRealUnit\n\n#### GetPropertyRealUnit(ElementId, string, out UnitType, out string)\n\nGets the unit of an element real property.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 300, 60)]\nvoid GetPropertyRealUnit(ElementId inElementId, string inFullName, out UnitType outUnitType, out string outUnitSymbol)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to analyze.  |  \n \n|  string |  inFullName |  Full name of the element real property to analyze.  |  \n \n|  UnitType |  outUnitType |  Unit type.  |  \n \n|  string |  outUnitSymbol |  Unit symbol in English.  |  \n\n##### Remarks\n\nThis method is available since v7.8.300.60.\n",
+  "markdown": "markdown/kernel/5aaea70832768a67aa89422b.md",
+  "originalHtml": "html/kernel/5aaea70832768a67aa89422b.html"
+}

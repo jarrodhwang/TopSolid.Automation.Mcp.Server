@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IElements.SetName.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IElements.SetName.html",
+  "sha256": "c7c64b3cf8de823f01ef454e33d4bd5740e5676a006651f6d439635b9a1d1e1c",
+  "text": "# Method SetName\n\n#### SetName(ElementId, string)\n\nSets the name of an element.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nvoid SetName(ElementId inElementId, string inName)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to modify.  |  \n \n|  string |  inName |  New name of the element.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/f9ac8cb4413aa66d46a3ca8a.md",
+  "originalHtml": "html/kernel/f9ac8cb4413aa66d46a3ca8a.html"
+}

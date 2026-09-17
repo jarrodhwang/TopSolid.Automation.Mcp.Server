@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IApplication.MinimizeWindow.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IApplication.MinimizeWindow.html",
+  "sha256": "19024ee25d40d032024cc06b884264824cbd83d85a6c26f453531b17a4f59ce4",
+  "text": "# Method MinimizeWindow\n\n#### MinimizeWindow()\n\nMinimizes the application window.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nvoid MinimizeWindow()\n```\n\n##### Remarks\n\nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/770ccaff61db09a2fd1c88a1.md",
+  "originalHtml": "html/kernel/770ccaff61db09a2fd1c88a1.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IDocuments.Rebuild.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IDocuments.Rebuild.html",
+  "sha256": "75b8a762496ea0c9893e8792bacbbd036fe609887e0f315609a0ca38665f112b",
+  "text": "# Method Rebuild\n\n#### Rebuild(DocumentId)\n\nRebuilds a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nvoid Rebuild(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to rebuild.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.8.\n",
+  "markdown": "markdown/kernel/ad9992e731196c946fbe7491.md",
+  "originalHtml": "html/kernel/ad9992e731196c946fbe7491.html"
+}

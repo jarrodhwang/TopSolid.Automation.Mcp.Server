@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.MethodExecutionOptions.UseCuttingConditions.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.MethodExecutionOptions.UseCuttingConditions.html",
+  "sha256": "bf9c1fba015eeb880f54269fabfc10ab432b1adacad00931ba5fd4e6c798deed",
+  "text": "# Field UseCuttingConditions\n\nUse cutting conditions from method.\n\n###### Namespace: TopSolid.Cam.NC.Kernel.Automating\n\n###### Assembly: TopSolid.Cam.NC.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic bool UseCuttingConditions\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Use cutting conditions from method. |\n",
+  "markdown": "markdown/cam/0568cefbc645c9c600238b02.md",
+  "originalHtml": "html/cam/0568cefbc645c9c600238b02.html"
+}

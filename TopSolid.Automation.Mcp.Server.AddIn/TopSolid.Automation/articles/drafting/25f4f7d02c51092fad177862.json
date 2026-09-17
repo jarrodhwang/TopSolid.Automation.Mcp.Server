@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.IDraftings.GetProjectionMode.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.IDraftings.GetProjectionMode.html",
+  "sha256": "bd38a9343c0a1bbcddfd974eca083a04cc8f5de9b748740b835eaa9382987f14",
+  "text": "# Method GetProjectionMode\n\n#### GetProjectionMode(DocumentId)\n\nGets the projection mode of a drafting document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nProjectionMode GetProjectionMode(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ProjectionMode |  Projection mode.  |  \n\n##### Remarks\n\nThis method is available since v7.8.303.120.\n",
+  "markdown": "markdown/drafting/25f4f7d02c51092fad177862.md",
+  "originalHtml": "html/drafting/25f4f7d02c51092fad177862.html"
+}

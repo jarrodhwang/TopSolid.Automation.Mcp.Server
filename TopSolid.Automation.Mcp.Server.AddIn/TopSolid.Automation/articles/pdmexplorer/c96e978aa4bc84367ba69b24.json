@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.GetMajorRevision.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.GetMajorRevision.html",
+  "sha256": "2354f6abce97455724dd5180e56083974cd2119a6764f672f4c251fb70d02d26",
+  "text": "# Method GetMajorRevision\n\n#### GetMajorRevision(PdmMinorRevisionId)\n\nGets the major revision containing a specified minor revision.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nPdmMajorRevisionId GetMajorRevision(PdmMinorRevisionId inMinorRevisionId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmMinorRevisionId |  inMinorRevisionId |  Identifier of the minor revision.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  PdmMajorRevisionId |  Identifier of the containing major revision.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/pdmexplorer/c96e978aa4bc84367ba69b24.md",
+  "originalHtml": "html/pdmexplorer/c96e978aa4bc84367ba69b24.html"
+}

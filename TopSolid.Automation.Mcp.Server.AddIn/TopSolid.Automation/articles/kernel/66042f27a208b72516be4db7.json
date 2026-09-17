@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.GetAvailablePdmConnections.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.GetAvailablePdmConnections.html",
+  "sha256": "97230dd012f01f1e1a98771a1ed8703f636889ceb2ccfe81b282e09e3681051f",
+  "text": "# Method GetAvailablePdmConnections\n\n#### GetAvailablePdmConnections()\n\nGets all available Pdms connections.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 180, 80)]\nList<string> GetAvailablePdmConnections()\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<string> |  Available connection names.  |  \n\n##### Remarks\n\nThis method is available since v7.18.400.080.\n",
+  "markdown": "markdown/kernel/66042f27a208b72516be4db7.md",
+  "originalHtml": "html/kernel/66042f27a208b72516be4db7.html"
+}

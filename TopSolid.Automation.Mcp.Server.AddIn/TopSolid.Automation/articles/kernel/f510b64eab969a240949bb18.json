@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.TopSolidHost.LinearPrecision.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.TopSolidHost.LinearPrecision.html",
+  "sha256": "fc4ebe68729bf05bb465ea893a26c88aab8ca1375605fcc6127eddbd5992f2ae",
+  "text": "# Field LinearPrecision\n\nGeometric linear precision (in meters): two points which are less than this distance apart are considered coincident.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\npublic const double LinearPrecision = 1E-08\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double |  Geometric linear precision (in meters): two points which are less than this distance apart are considered coincident. |\n",
+  "markdown": "markdown/kernel/f510b64eab969a240949bb18.md",
+  "originalHtml": "html/kernel/f510b64eab969a240949bb18.html"
+}

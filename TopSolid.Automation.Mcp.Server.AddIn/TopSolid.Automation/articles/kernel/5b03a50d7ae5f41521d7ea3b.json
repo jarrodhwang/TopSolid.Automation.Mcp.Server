@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ISketches2D.UnfixItem.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ISketches2D.UnfixItem.html",
+  "sha256": "a539a3b32cbf76bb6bde7f554e40756a72e1a7614176f4ec5ff964e2531a898a",
+  "text": "# Method UnfixItem\n\n#### UnfixItem(ElementItemId)\n\nUnfix a segment or a vertex in the ModifiedSketch.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 201, 80)]\nvoid UnfixItem(ElementItemId inItemId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementItemId |  inItemId |  Identifier of the segment or the vertex to unfix.  |  \n\n##### Remarks\n\nStartModification(ElementId) must be called before calling this method.\n \nThis method is available since v7.7.201.80.\n",
+  "markdown": "markdown/kernel/5b03a50d7ae5f41521d7ea3b.md",
+  "originalHtml": "html/kernel/5b03a50d7ae5f41521d7ea3b.html"
+}

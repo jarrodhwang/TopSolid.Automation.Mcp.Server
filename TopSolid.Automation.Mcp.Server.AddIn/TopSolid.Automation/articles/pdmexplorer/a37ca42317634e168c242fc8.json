@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IApplication.Quit.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IApplication.Quit.html",
+  "sha256": "1030563bcade573cca05ee3808c13dc49d41badc42cdc1086e6c03f15a5983d5",
+  "text": "# Method Quit\n\n#### Quit()\n\nTerminates the applicaton.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nvoid Quit()\n```\n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/pdmexplorer/a37ca42317634e168c242fc8.md",
+  "originalHtml": "html/pdmexplorer/a37ca42317634e168c242fc8.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ITextures.SetWoodRingFuzzOut.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ITextures.SetWoodRingFuzzOut.html",
+  "sha256": "9d9dbfe23bb4bcd9444b6b8248ba7b4005bab7178e150930777e590e5cea21e0",
+  "text": "# Method SetWoodRingFuzzOut\n\n#### SetWoodRingFuzzOut(DocumentId, double)\n\nSets the wood ring Fuzz-Out.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 0, 0)]\nvoid SetWoodRingFuzzOut(DocumentId inDocumentId, double inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  double |  inValue |  Wanted value.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.16.\n",
+  "markdown": "markdown/kernel/38f39e14ac9d09fac26184c1.md",
+  "originalHtml": "html/kernel/38f39e14ac9d09fac26184c1.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ISketches3D.GetProfileSegments.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ISketches3D.GetProfileSegments.html",
+  "sha256": "f0b542904843af246d8d2e22a155a9369367f7e9f1854e036cbcbbcd3d2be744",
+  "text": "# Method GetProfileSegments\n\n#### GetProfileSegments(ElementItemId)\n\nGets the segments of a profile.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nList<ElementItemId> GetProfileSegments(ElementItemId inProfileId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementItemId |  inProfileId |  Identifier of the profile to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementItemId> |  Identifiers of the segments of the profile.  |  \n\n##### Remarks\n\nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/00073be2a9bb1c90e4a55ab8.md",
+  "originalHtml": "html/kernel/00073be2a9bb1c90e4a55ab8.html"
+}

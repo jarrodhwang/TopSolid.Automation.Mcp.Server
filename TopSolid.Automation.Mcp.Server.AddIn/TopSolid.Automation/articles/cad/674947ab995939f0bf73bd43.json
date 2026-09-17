@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IBoms.IsColumnTitleForced.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IBoms.IsColumnTitleForced.html",
+  "sha256": "4e0bef360e271990e86b6d974d81e04af84ab9a03cef692b74b08cc39a367c25",
+  "text": "# Method IsColumnTitleForced\n\n#### IsColumnTitleForced(DocumentId, int)\n\nTells whether the title of a column of a BOM is forced.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 12, 0, 0)]\nbool IsColumnTitleForced(DocumentId inDocumentId, int inColumnIx)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the BOM document to analyze.  |  \n \n|  int |  inColumnIx |  Index of the column to analyze, within [0,GetColumnCount(DocumentId)-1].  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Whether the title of the column is forced.  |  \n\n##### Remarks\n\nThis method is available since v7.12.\n",
+  "markdown": "markdown/cad/674947ab995939f0bf73bd43.md",
+  "originalHtml": "html/cad/674947ab995939f0bf73bd43.html"
+}

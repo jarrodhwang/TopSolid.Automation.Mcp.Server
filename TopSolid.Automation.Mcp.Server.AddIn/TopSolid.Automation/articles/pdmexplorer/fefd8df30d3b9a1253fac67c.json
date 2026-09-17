@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.TopSolidPdmExplorerHostInstance.PdmSecurity.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.TopSolidPdmExplorerHostInstance.PdmSecurity.html",
+  "sha256": "9b20f8f6c1d184ffeab1c8cb6f90fec5dbe53f24bfa747944d724af4de7c0452",
+  "text": "# Property PdmSecurity\n\n#### PdmSecurity\n\nGets access to the PDM security, or null if not available.\n\n##### Declaration\n\n```\npublic IPdmSecurity PdmSecurity { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  IPdmSecurity |   |\n",
+  "markdown": "markdown/pdmexplorer/fefd8df30d3b9a1253fac67c.md",
+  "originalHtml": "html/pdmexplorer/fefd8df30d3b9a1253fac67c.html"
+}

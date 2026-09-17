@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Vector2D.op_Explicit.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Vector2D.op_Explicit.html",
+  "sha256": "34468d9b15f5c2fd994157df6c7e9c01cfc098d35dc7caa492cb62ddd686ea4e",
+  "text": "# Operator explicit operator\n\n#### explicit operator Direction2D(Vector2D)\n\nCasts a vector into a direction.\n\n##### Declaration\n\n```\npublic static explicit operator Direction2D(Vector2D inVector)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  Vector2D |  inVector |   |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Direction2D |   |\n",
+  "markdown": "markdown/kernel/878ee45462a08c64b357ef77.md",
+  "originalHtml": "html/kernel/878ee45462a08c64b357ef77.html"
+}

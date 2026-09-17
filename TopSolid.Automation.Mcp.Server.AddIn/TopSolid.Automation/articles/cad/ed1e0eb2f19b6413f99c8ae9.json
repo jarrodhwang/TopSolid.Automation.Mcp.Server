@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IProcesses.DefineProcess.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IProcesses.DefineProcess.html",
+  "sha256": "dd7786af6434674ce13d76ee653477c4161b93159ca150efb87e805b4d86300c",
+  "text": "# Method DefineProcess\n\n#### DefineProcess(DocumentId, ElementId, DocumentId, bool)\n\nMethod to define a process\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 400, 140)]\nvoid DefineProcess(DocumentId inDocument, ElementId inFunctionId, DocumentId inPartProcessDocument, bool inMakesSubComponentProcesses)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocument |  the main document  |  \n \n|  ElementId |  inFunctionId |  the function in current document  |  \n \n|  DocumentId |  inPartProcessDocument |  the part process document  |  \n \n|  bool |  inMakesSubComponentProcesses |  whether to treat subcomponent processes  |\n",
+  "markdown": "markdown/cad/ed1e0eb2f19b6413f99c8ae9.md",
+  "originalHtml": "html/cad/ed1e0eb2f19b6413f99c8ae9.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Generic.HostChannel-1.Service.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Generic.HostChannel-1.Service.html",
+  "sha256": "1a772436b3eb2ff57a868f38829ec9320f60a684e5310e46f94a718afb5c2e67",
+  "text": "# Property Service\n\n#### Service\n\nGets the service, or null if none.\n\n##### Declaration\n\n```\npublic TService Service { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  TService |   |\n",
+  "markdown": "markdown/kernel/1b62d01ad3d928b0c5448067.md",
+  "originalHtml": "html/kernel/1b62d01ad3d928b0c5448067.html"
+}

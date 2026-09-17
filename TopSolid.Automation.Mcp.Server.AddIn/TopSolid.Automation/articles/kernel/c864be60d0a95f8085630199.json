@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IntegerProperty.-ctor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IntegerProperty.-ctor.html",
+  "sha256": "dab1da39f448935923db11c99551514fe999f10954b2a1962f4e7dd0c4a99cb5",
+  "text": "# Constructor IntegerProperty\n\n#### IntegerProperty(int)\n\nInitializes a new instance of the IntegerProperty class.\n\n##### Declaration\n\n```\npublic IntegerProperty(int inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  int |  inValue |  Value.  |\n",
+  "markdown": "markdown/kernel/c864be60d0a95f8085630199.md",
+  "originalHtml": "html/kernel/c864be60d0a95f8085630199.html"
+}

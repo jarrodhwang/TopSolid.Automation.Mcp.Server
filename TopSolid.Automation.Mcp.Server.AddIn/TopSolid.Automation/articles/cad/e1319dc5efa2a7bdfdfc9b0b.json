@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMaterials.GetAmbientOcclusionFactor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMaterials.GetAmbientOcclusionFactor.html",
+  "sha256": "9cca39ceae1c860acb4f434bee80077192bd2835c13916525dad2f3ea8df1b32",
+  "text": "# Method GetAmbientOcclusionFactor\n\n#### GetAmbientOcclusionFactor(DocumentId)\n\nGets the Ambient Occlusion factor.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 400, 100)]\ndouble GetAmbientOcclusionFactor(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double |   |  \n\n##### Remarks\n\nThis method is available since v7.16.\n",
+  "markdown": "markdown/cad/e1319dc5efa2a7bdfdfc9b0b.md",
+  "originalHtml": "html/cad/e1319dc5efa2a7bdfdfc9b0b.html"
+}

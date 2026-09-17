@@ -1,0 +1,8 @@
+{
+  "path": "api/electrode/TopSolid.Cad.Electrode.Automating.IElectrodes.GetElectrodes.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/electrode/TopSolid.Cad.Electrode.Automating.IElectrodes.GetElectrodes.html",
+  "sha256": "9d1b3734bc61a72d652e1e8b3d37a243526c638b88ec2da3afa5beab9be9d44d",
+  "text": "# Method GetElectrodes\n\n#### GetElectrodes(DocumentId, bool)\n\nGets all electrode entities that are in the electrode set an electrodes document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 12, 0, 0)]\nList<ElementId> GetElectrodes(DocumentId inDocumentId, bool inIncludeTheoreticalElectrodes)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the electrodes document to analyze.  |  \n \n|  bool |  inIncludeTheoreticalElectrodes |  Whether to include theoretical electrodes.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementId> |  Electrode entities found.  |  \n\n##### Remarks\n\nThis method is available since v7.12.\n",
+  "markdown": "markdown/electrode/4d731860454de22ee6249785.md",
+  "originalHtml": "html/electrode/4d731860454de22ee6249785.html"
+}

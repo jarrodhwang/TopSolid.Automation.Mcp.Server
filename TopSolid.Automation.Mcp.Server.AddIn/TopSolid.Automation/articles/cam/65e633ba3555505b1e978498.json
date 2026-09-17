@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IParameters.GetValueBoundElement.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IParameters.GetValueBoundElement.html",
+  "sha256": "171c7395dd895c2c703fb55049a5f34eb77a8d72365ae22f402f68a8cae83a1b",
+  "text": "# Method GetValueBoundElement\n\n#### GetValueBoundElement(ParameterId)\n\nFrom a bound parameter, get a ElementId with the bound limitation element. Use GetValue(ParameterId) to get the bound type, and GetValueBoundValue(ParameterId) to get the limitation value.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nElementId GetValueBoundElement(ParameterId inParameterId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ParameterId |  inParameterId |  Parameter to get.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  The element id or empty id.  |\n",
+  "markdown": "markdown/cam/65e633ba3555505b1e978498.md",
+  "originalHtml": "html/cam/65e633ba3555505b1e978498.html"
+}

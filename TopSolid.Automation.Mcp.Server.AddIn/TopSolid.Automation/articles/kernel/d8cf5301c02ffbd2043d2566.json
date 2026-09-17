@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Point3D.PY.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Point3D.PY.html",
+  "sha256": "cd62a7a9394bea8489fdfe0e088066588b9cc080312025c972ff4a914f39102e",
+  "text": "# Field PY\n\nY unit point, i.e. (0,1,0).\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\npublic static readonly Point3D PY\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Point3D |  Y unit point, i.e. (0,1,0). |\n",
+  "markdown": "markdown/kernel/d8cf5301c02ffbd2043d2566.md",
+  "originalHtml": "html/kernel/d8cf5301c02ffbd2043d2566.html"
+}

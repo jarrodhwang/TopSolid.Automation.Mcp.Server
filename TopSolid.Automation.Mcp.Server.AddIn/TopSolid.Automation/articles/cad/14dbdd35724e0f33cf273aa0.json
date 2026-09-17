@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ICoatings.GetAmbientOcclusionTextureDocument.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ICoatings.GetAmbientOcclusionTextureDocument.html",
+  "sha256": "c26cce6e44d321058251f04cb98980b9cdc027ecf73487445bffa96e7f5b7e27",
+  "text": "# Method GetAmbientOcclusionTextureDocument\n\n#### GetAmbientOcclusionTextureDocument(DocumentId)\n\nGets the Ambient Occlusion texture document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 400, 100)]\nDocumentId GetAmbientOcclusionTextureDocument(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  DocumentId |   |  \n\n##### Remarks\n\nThis method is available since v7.16.\n",
+  "markdown": "markdown/cad/14dbdd35724e0f33cf273aa0.md",
+  "originalHtml": "html/cad/14dbdd35724e0f33cf273aa0.html"
+}

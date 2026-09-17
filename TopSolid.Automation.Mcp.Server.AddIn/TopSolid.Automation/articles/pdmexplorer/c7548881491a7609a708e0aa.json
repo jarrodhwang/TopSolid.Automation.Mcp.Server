@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.PdmObjectId.Id.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.PdmObjectId.Id.html",
+  "sha256": "f570e6fdca4f8344adb036ad99839528f85f5616113d9ac5aa776ccb6b9ade0c",
+  "text": "# Property Id\n\n#### Id\n\nGets the PDM object identifier.\n\n##### Declaration\n\n```\npublic string Id { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |   |\n",
+  "markdown": "markdown/pdmexplorer/c7548881491a7609a708e0aa.md",
+  "originalHtml": "html/pdmexplorer/c7548881491a7609a708e0aa.html"
+}

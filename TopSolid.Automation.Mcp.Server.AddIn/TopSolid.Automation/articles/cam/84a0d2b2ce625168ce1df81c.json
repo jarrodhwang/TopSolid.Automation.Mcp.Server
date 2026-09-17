@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IWorldCoordinateSystems.CreateWorldCoordinateSystem.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IWorldCoordinateSystems.CreateWorldCoordinateSystem.html",
+  "sha256": "6680a534f8f89c29555975bdfe065017e3f2232c370ac5ce1b92c367d1994659",
+  "text": "# Method CreateWorldCoordinateSystem\n\n#### CreateWorldCoordinateSystem(DocumentId, ElementId, ElementId, ElementId, ElementId, SmartBoolean)\n\nCreates a WCS entity in a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nElementId CreateWorldCoordinateSystem(DocumentId inDocumentId, ElementId inFrameId, ElementId inPartId, ElementId inToolHolderId, ElementId inOriginId, SmartBoolean inInclinedPlanesMatrixUsed)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  ElementId |  inFrameId |  Base frame.  |  \n \n|  ElementId |  inPartId |   |  \n \n|  ElementId |  inToolHolderId |  Associated tool holder.  |  \n \n|  ElementId |  inOriginId |   |  \n \n|  SmartBoolean |  inInclinedPlanesMatrixUsed |   |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the created WCS entity.  |\n",
+  "markdown": "markdown/cam/84a0d2b2ce625168ce1df81c.md",
+  "originalHtml": "html/cam/84a0d2b2ce625168ce1df81c.html"
+}

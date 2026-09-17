@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Axis3D.OZ.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Axis3D.OZ.html",
+  "sha256": "5af1795bfd5d0d56c04ca26ebcc96718f51472690f279c0e4305cfb90f2621eb",
+  "text": "# Field OZ\n\n(O,+Z) absolute axis.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\npublic static readonly Axis3D OZ\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Axis3D |  (O,+Z) absolute axis. |\n",
+  "markdown": "markdown/kernel/024315146aff25d47c89c675.md",
+  "originalHtml": "html/kernel/024315146aff25d47c89c675.html"
+}

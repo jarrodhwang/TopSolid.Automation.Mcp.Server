@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IParameters.GetValueSpindleRateValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IParameters.GetValueSpindleRateValue.html",
+  "sha256": "1505f5ab0fe332b2bef848e77cbc9d3686419d4ff2515298258d96bcab0d4d1b",
+  "text": "# Method GetValueSpindleRateValue\n\n#### GetValueSpindleRateValue(ParameterId)\n\nFrom a spindle rate parameter, get a SmartReal with the type value. Use GetValue(ParameterId) to get the spindle rate type.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 15, 400, 200)]\nSmartReal GetValueSpindleRateValue(ParameterId inParameterId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ParameterId |  inParameterId |  Parameter to get.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartReal |  A new SmartReal with the current value of the parameter.  |\n",
+  "markdown": "markdown/cam/fc370c38ef7ec00adbf25b59.md",
+  "originalHtml": "html/cam/fc370c38ef7ec00adbf25b59.html"
+}

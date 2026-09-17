@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ILicenses.AddFloatingLicense.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ILicenses.AddFloatingLicense.html",
+  "sha256": "91a0393e1bb17efe262e24cd6511f06450c69f84415f9d15e658854e1bb463ec",
+  "text": "# Method AddFloatingLicense\n\n#### AddFloatingLicense(License)\n\nAdds a floating license.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 400, 20)]\nvoid AddFloatingLicense(License inLicense)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  License |  inLicense |  Floating license to add.  |  \n\n##### Remarks\n\nThis method is available since v7.16.\n",
+  "markdown": "markdown/kernel/cba85a272c5e2bca8a1d280e.md",
+  "originalHtml": "html/kernel/cba85a272c5e2bca8a1d280e.html"
+}

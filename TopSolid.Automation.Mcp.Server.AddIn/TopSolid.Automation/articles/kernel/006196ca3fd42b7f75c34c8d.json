@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.PdmSecurityUserOrGroupPermissions.CreatePermission.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.PdmSecurityUserOrGroupPermissions.CreatePermission.html",
+  "sha256": "e890c53d4a62e1f8d3171a56c3b194f8017bf352f7b0d5b2c854ca62aee63e28",
+  "text": "# Field CreatePermission\n\nEnable user to create news folders or documents, Unspecified must be left for document permissions.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic PdmSecurityPermission CreatePermission\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  PdmSecurityPermission |  Enable user to create news folders or documents, must be left for document permissions. |\n",
+  "markdown": "markdown/kernel/006196ca3fd42b7f75c34c8d.md",
+  "originalHtml": "html/kernel/006196ca3fd42b7f75c34c8d.html"
+}

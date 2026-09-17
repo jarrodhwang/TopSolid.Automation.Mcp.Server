@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IGeometries3D.CreateFrameByPointAndTwoDirections.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IGeometries3D.CreateFrameByPointAndTwoDirections.html",
+  "sha256": "27d7e1ee034fe2a4f3327faa3f8dd8379d95673704eafca2381222a0a82eae19",
+  "text": "# Method CreateFrameByPointAndTwoDirections\n\n#### CreateFrameByPointAndTwoDirections(DocumentId, SmartPoint3D, SmartDirection3D, SmartDirection3D, bool)\n\nCreates a frame entity in a document by point and two directions.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 18, 400, 600)]\nElementId CreateFrameByPointAndTwoDirections(DocumentId inDocumentId, SmartPoint3D inOrigin, SmartDirection3D inFirstDirection, SmartDirection3D inSecondDirection, bool isSecondDirectionOY)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  SmartPoint3D |  inOrigin |  Frame origin.  |  \n \n|  SmartDirection3D |  inFirstDirection |  First direction.  |  \n \n|  SmartDirection3D |  inSecondDirection |  Second direction.  |  \n \n|  bool |  isSecondDirectionOY |  whether second direction is OY.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the created frame entity.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/8b5b1611bd21d7d384e11b1b.md",
+  "originalHtml": "html/kernel/8b5b1611bd21d7d384e11b1b.html"
+}

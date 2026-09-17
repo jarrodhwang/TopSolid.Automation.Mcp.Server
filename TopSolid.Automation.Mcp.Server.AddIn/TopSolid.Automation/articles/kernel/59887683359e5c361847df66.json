@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.CreateColorParameter.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.CreateColorParameter.html",
+  "sha256": "fe86843fded857edbbeb48b6ca4abcab720a11f101fa429589648f2b39ecf49e",
+  "text": "# Method CreateColorParameter\n\n#### CreateColorParameter(DocumentId, Color)\n\nCreates a color parameter entity in a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 18, 0, 0)]\nElementId CreateColorParameter(DocumentId inDocumentId, Color inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  Color |  inValue |  Color  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the created parameter entity.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.18.\n",
+  "markdown": "markdown/kernel/59887683359e5c361847df66.md",
+  "originalHtml": "html/kernel/59887683359e5c361847df66.html"
+}

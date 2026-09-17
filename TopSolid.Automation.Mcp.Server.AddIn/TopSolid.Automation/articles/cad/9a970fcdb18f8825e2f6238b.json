@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ForceDrivingInterpolationType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ForceDrivingInterpolationType.html",
+  "sha256": "63fc0f7a4321712d6988af03670461d9eb0ad8ba57e182ac68cd6315ccf4fa36",
+  "text": "# Enum ForceDrivingInterpolationType\n\nDefines the various types of interpolation for force driving.\n\n###### Namespace: TopSolid.Cad.Design.Automating\n\n###### Assembly: TopSolid.Cad.Design.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\npublic enum ForceDrivingInterpolationType\n```\n\n##### Remarks\n\nThis enum is available since v7.6.\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  Constant |  Constant.  |  \n \n|  Linear |  Linear.  |  \n \n|  None |  No interpolation.  |\n",
+  "markdown": "markdown/cad/9a970fcdb18f8825e2f6238b.md",
+  "originalHtml": "html/cad/9a970fcdb18f8825e2f6238b.html"
+}

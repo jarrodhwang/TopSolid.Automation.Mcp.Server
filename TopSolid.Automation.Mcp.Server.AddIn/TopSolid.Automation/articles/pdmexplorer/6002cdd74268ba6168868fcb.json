@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.ErpPdmId.ObjectKey.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.ErpPdmId.ObjectKey.html",
+  "sha256": "40507de528ebdad9eac4ddffd63b38e643ad7469b7afcadaaa3680755c0d55c9",
+  "text": "# Property ObjectKey\n\n#### ObjectKey\n\nGets/Sets object key.\n\n##### Declaration\n\n```\npublic string ObjectKey { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |   |\n",
+  "markdown": "markdown/pdmexplorer/6002cdd74268ba6168868fcb.md",
+  "originalHtml": "html/pdmexplorer/6002cdd74268ba6168868fcb.html"
+}

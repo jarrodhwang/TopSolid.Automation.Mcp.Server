@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartReal.Type.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartReal.Type.html",
+  "sha256": "fe257b3e76d9b44de89235d79ba5bd24a1c4511ce5471717abead2b5852fbeb9",
+  "text": "# Field Type\n\nType of smart real.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic SmartRealType Type\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartRealType |  Type of smart real. |\n",
+  "markdown": "markdown/kernel/def3426e3580cafcc36a5f85.md",
+  "originalHtml": "html/kernel/def3426e3580cafcc36a5f85.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.SetManufacturer.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.SetManufacturer.html",
+  "sha256": "695bbfc0d0a0ab9524ecaaabb1408fa33325cf9b21e63f686121b000be482a9a",
+  "text": "# Method SetManufacturer\n\n#### SetManufacturer(PdmObjectId, string)\n\nSets the manufacturer of an object.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nvoid SetManufacturer(PdmObjectId inObjectId, string inManufacturer)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  Object identifier.  |  \n \n|  string |  inManufacturer |  Manufacturer.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/pdmexplorer/f7537aed316bcc40cd49361a.md",
+  "originalHtml": "html/pdmexplorer/f7537aed316bcc40cd49361a.html"
+}

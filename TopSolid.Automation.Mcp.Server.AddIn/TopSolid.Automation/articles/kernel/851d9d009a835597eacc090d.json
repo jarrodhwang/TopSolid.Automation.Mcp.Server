@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ColorProperty.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ColorProperty.html",
+  "sha256": "0d6ee5738e7121f442417ddd5c31a47cc3e7549f8ad4176b98b2dbbe6c4d82a1",
+  "text": "# Class ColorProperty\n\nRepresents a Document property.\n\n##### Inheritance\n \nobject\n \nProperty\n \nColorProperty\n \nColorWithDescriptionProperty\n\n##### Inherited Members\n \n object.ToString() \n \n object.Equals(object) \n \n object.Equals(object, object) \n \n object.ReferenceEquals(object, object) \n \n object.GetHashCode() \n \n object.GetType() \n \n object.MemberwiseClone() \n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 18, 0, 0)]\npublic class ColorProperty : Property\n```\n\n##### Remarks\n\nThis class is available since v7.17.\n\n### Constructors \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   ColorProperty()  |  Initializes a new instance of the DocumentProperty class.  |  \n \n|   ColorProperty(byte, byte, byte)  |  Initializes a new instance of the DocumentProperty class.  |  \n \n|   ColorProperty(Color)  |  Initializes a new instance of the DocumentProperty class.  |  \n \n|   ColorProperty(Color)  |  Initializes a new instance of the DocumentProperty class.  |  \n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   Value  |  The value  |  \n\n### Properties \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   Type  |  Gets the property type.  |\n",
+  "markdown": "markdown/kernel/851d9d009a835597eacc090d.md",
+  "originalHtml": "html/kernel/851d9d009a835597eacc090d.html"
+}

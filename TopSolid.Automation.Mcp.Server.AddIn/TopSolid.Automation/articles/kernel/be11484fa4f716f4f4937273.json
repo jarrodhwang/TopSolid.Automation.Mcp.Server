@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Transform2D.-ctor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Transform2D.-ctor.html",
+  "sha256": "53808ff754e061f2c593b7a02e9bcd8b7007274ef76f0df211d5dc149a72f1dc",
+  "text": "# Constructor Transform2D\n\n#### Transform2D(double, double, double, double, double, double, double, double, double)\n\nInitializes a new instance of the Transform2D structure.\n\n##### Declaration\n\n```\npublic Transform2D(double inR00, double inR01, double inTx, double inR10, double inR11, double inTy, double inPx, double inPy, double inSi)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  double |  inR00 |   |  \n \n|  double |  inR01 |   |  \n \n|  double |  inTx |   |  \n \n|  double |  inR10 |   |  \n \n|  double |  inR11 |   |  \n \n|  double |  inTy |   |  \n \n|  double |  inPx |   |  \n \n|  double |  inPy |   |  \n \n|  double |  inSi |   |\n",
+  "markdown": "markdown/kernel/be11484fa4f716f4f4937273.md",
+  "originalHtml": "html/kernel/be11484fa4f716f4f4937273.html"
+}

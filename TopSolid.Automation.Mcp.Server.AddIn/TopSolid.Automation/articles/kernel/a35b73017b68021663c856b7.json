@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IEntities.RemoveSetTargets.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IEntities.RemoveSetTargets.html",
+  "sha256": "ca07c2b8eb630070bf1cbf765d682fe5954df780f222097c94a7da48a9b7a240",
+  "text": "# Method RemoveSetTargets\n\n#### RemoveSetTargets(ElementId, List<ElementId>)\n\nRemove targets to the set definition entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 14, 300, 140)]\nvoid RemoveSetTargets(ElementId inElementId, List<ElementId> inTargetIds)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifiers of the set definition entity.  |  \n \n|  List<ElementId> |  inTargetIds |  Identifiers of targets to add to the set definition entity.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.14.300.140.\n",
+  "markdown": "markdown/kernel/a35b73017b68021663c856b7.md",
+  "originalHtml": "html/kernel/a35b73017b68021663c856b7.html"
+}

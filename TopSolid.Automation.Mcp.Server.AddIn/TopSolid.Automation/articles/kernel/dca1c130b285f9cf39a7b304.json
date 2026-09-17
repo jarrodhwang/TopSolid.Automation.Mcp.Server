@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IElements.GetTypeFullName.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IElements.GetTypeFullName.html",
+  "sha256": "68f154c351e13bac09b0507772224ba7d2fae287069611e811a31314b7c78edf",
+  "text": "# Method GetTypeFullName\n\n#### GetTypeFullName(ElementId)\n\nGets the full name of the type of an element.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nstring GetTypeFullName(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  Full name of the type of the element.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/dca1c130b285f9cf39a7b304.md",
+  "originalHtml": "html/kernel/dca1c130b285f9cf39a7b304.html"
+}

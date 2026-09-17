@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IFamilies.GetCatalogCellBooleanValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IFamilies.GetCatalogCellBooleanValue.html",
+  "sha256": "ce8e81e7206178765c057c1ae29ebd830629e543d1911b67ec4e30fb8ca65b4b",
+  "text": "# Method GetCatalogCellBooleanValue\n\n#### GetCatalogCellBooleanValue(ElementId, ElementId)\n\nGets the boolean value of the catalog cell.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 15, 0, 60)]\nbool GetCatalogCellBooleanValue(ElementId inRow, ElementId inParameterId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inRow |  Identifier of the row.  |  \n \n|  ElementId |  inParameterId |  Identifier of the parameter of the column.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Value of the cell.  |  \n\n##### Remarks\n\nThis method is available since v7.15.\n",
+  "markdown": "markdown/kernel/0bb22a4d125245084ff9cc16.md",
+  "originalHtml": "html/kernel/0bb22a4d125245084ff9cc16.html"
+}

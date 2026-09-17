@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IVerify.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IVerify.html",
+  "sha256": "ee41f66c3c10f7511c289bb4a57d2e15fd39142cfae2ccf53cac554e1c509b52",
+  "text": "# Interface IVerify\n\nGives access to verification screen.\n\n###### Namespace: TopSolid.Cam.NC.Kernel.Automating\n\n###### Assembly: TopSolid.Cam.NC.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[ServiceContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\npublic interface IVerify\n```\n\n### Methods \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   Close()  |  Closes the verification view.  |  \n \n|   OpenAll(DocumentId)  |  Verifies all the operations.  |  \n \n|   OpenOne(ElementId)  |  Verify only the given operation.  |  \n \n|   SetIncrement(int)  |  Set the move increment. Between 0 and 100. This is a factor to an absolute increment in millimeters (or inch).  |  \n \n|   StartAnimation()  |  Run the animation on operations.  |\n",
+  "markdown": "markdown/cam/e7491f3c91b9e32234387fb3.md",
+  "originalHtml": "html/cam/e7491f3c91b9e32234387fb3.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.MaterialModelType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.MaterialModelType.html",
+  "sha256": "a1c9187dfc7b5a30426204619ddd8132f606f42aad9abcdaac3871a56f70532b",
+  "text": "# Enum MaterialModelType\n\nDefines the various types of material.\n\n###### Namespace: TopSolid.Cad.Design.Automating\n\n###### Assembly: TopSolid.Cad.Design.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 16, 0, 0)]\npublic enum MaterialModelType\n```\n\n##### Remarks\n\nThis enum is available since v7.16.\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  None |  No material model defined.  |  \n \n|  PBRMetallic |  PBR metalness/roughness.  |  \n \n|  PBRSpecular |  PBR specular/gloss.  |  \n \n|  RedWay |  RedWay.  |  \n \n|  Unclassified |  Unclassified material model.  |\n",
+  "markdown": "markdown/cad/b563f1a05bb676db48c3f465.md",
+  "originalHtml": "html/cad/b563f1a05bb676db48c3f465.html"
+}

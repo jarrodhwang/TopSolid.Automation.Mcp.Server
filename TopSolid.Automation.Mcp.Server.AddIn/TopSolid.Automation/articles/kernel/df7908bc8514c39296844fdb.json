@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IGeometries2D.GetPointPublishingDefinition.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IGeometries2D.GetPointPublishingDefinition.html",
+  "sha256": "2e7466c61538c61a8b7cdaa0cc3a024110426c8e940c7e6b93cc1eca3eca6b03",
+  "text": "# Method GetPointPublishingDefinition\n\n#### GetPointPublishingDefinition(ElementId)\n\nGets the definition of a point publishing entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nSmartPoint2D GetPointPublishingDefinition(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the publishing entity to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartPoint2D |   |  \n\n##### Remarks\n\nThe geometry of the publishing entity may be obtained with the GetPointGeometry(ElementId) method.\n \nThis method is available since v7.8.\n",
+  "markdown": "markdown/kernel/df7908bc8514c39296844fdb.md",
+  "originalHtml": "html/kernel/df7908bc8514c39296844fdb.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IShapes.GetFaceSurfaceType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IShapes.GetFaceSurfaceType.html",
+  "sha256": "77141bd0b8f5a56354602e18488626191c8465f45df5b43d3435fdafdaee3b55",
+  "text": "# Method GetFaceSurfaceType\n\n#### GetFaceSurfaceType(ElementItemId)\n\nGets the type of the surface attached to a face.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nSurfaceType GetFaceSurfaceType(ElementItemId inFaceId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementItemId |  inFaceId |  Identifier of the face to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SurfaceType |  Type of the surface attached to the face.  |  \n\n##### Remarks\n\nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/71d617b342f3e5f7c4810819.md",
+  "originalHtml": "html/kernel/71d617b342f3e5f7c4810819.html"
+}

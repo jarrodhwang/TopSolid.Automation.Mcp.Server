@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Interface IGeometries3D | TopSolid Automation website </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Interface IGeometries3D | TopSolid Automation website ">
+    
+    <meta name="description" content="Gives access to 3D geometric entities.">
+      <link rel="shortcut icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../../styles/docfx.css">
+      <link rel="stylesheet" href="../../styles/main.css">
+      <meta property="docfx:navrel" content="../../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../img/AutomationIcon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="TopSolid.Kernel.Automating.IGeometries3D">
+
+
+
+  <h1 id="TopSolid_Kernel_Automating_IGeometries3D" data-uid="TopSolid.Kernel.Automating.IGeometries3D" class="text-break">Interface IGeometries3D</h1>
+  <div class="markdown level0 summary"><p>Gives access to 3D geometric entities.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="TopSolid.html">TopSolid</a>.<a class="xref" href="TopSolid.Kernel.html">Kernel</a>.<a class="xref" href="TopSolid.Kernel.Automating.html">Automating</a></h6>
+  <h6><strong>Assembly</strong>: TopSolid.Kernel.Automating.dll</h6>
+  <h5 id="TopSolid_Kernel_Automating_IGeometries3D_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ServiceContract]
+[AvailableSinceVersion(7, 6, 0, 0)]
+public interface IGeometries3D</code></pre>
+  </div>
+  <h5 id="TopSolid_Kernel_Automating_IGeometries3D_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>This interface is available since v7.6.</p>
+</div>
+  <h3 id="methods">Methods
+</h3>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_CreateAxis_TopSolid_Kernel_Automating_DocumentId_TopSolid_Kernel_Automating_Axis3D_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.CreateAxis(TopSolid.Kernel.Automating.DocumentId,TopSolid.Kernel.Automating.Axis3D)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.CreateAxis.html#TopSolid_Kernel_Automating_IGeometries3D_CreateAxis_TopSolid_Kernel_Automating_DocumentId_TopSolid_Kernel_Automating_Axis3D_">CreateAxis(DocumentId, Axis3D)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Creates an axis entity in a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_CreateAxisByTwoPoints_TopSolid_Kernel_Automating_DocumentId_TopSolid_Kernel_Automating_SmartPoint3D_TopSolid_Kernel_Automating_SmartPoint3D_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.CreateAxisByTwoPoints(TopSolid.Kernel.Automating.DocumentId,TopSolid.Kernel.Automating.SmartPoint3D,TopSolid.Kernel.Automating.SmartPoint3D)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.CreateAxisByTwoPoints.html#TopSolid_Kernel_Automating_IGeometries3D_CreateAxisByTwoPoints_TopSolid_Kernel_Automating_DocumentId_TopSolid_Kernel_Automating_SmartPoint3D_TopSolid_Kernel_Automating_SmartPoint3D_">CreateAxisByTwoPoints(DocumentId, SmartPoint3D, SmartPoint3D)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Creates an axis in a document from two points.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_CreateAxisWithExtent_TopSolid_Kernel_Automating_DocumentId_TopSolid_Kernel_Automating_Axis3D_System_Double_System_Double_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.CreateAxisWithExtent(TopSolid.Kernel.Automating.DocumentId,TopSolid.Kernel.Automating.Axis3D,System.Double,System.Double)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.CreateAxisWithExtent.html#TopSolid_Kernel_Automating_IGeometries3D_CreateAxisWithExtent_TopSolid_Kernel_Automating_DocumentId_TopSolid_Kernel_Automating_Axis3D_System_Double_System_Double_">CreateAxisWithExtent(DocumentId, Axis3D, double, double)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Creates an axis entity with specified extent in a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_CreateFrame_TopSolid_Kernel_Automating_DocumentId_TopSolid_Kernel_Automating_Frame3D_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.CreateFrame(TopSolid.Kernel.Automating.DocumentId,TopSolid.Kernel.Automating.Frame3D)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.CreateFrame.html#TopSolid_Kernel_Automating_IGeometries3D_CreateFrame_TopSolid_Kernel_Automating_DocumentId_TopSolid_Kernel_Automating_Frame3D_">CreateFrame(DocumentId, Frame3D)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Creates a frame entity in a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_CreateFrameByPointAndTwoDirections_TopSolid_Kernel_Automating_DocumentId_TopSolid_Kernel_Automating_SmartPoint3D_TopSolid_Kernel_Automating_SmartDirection3D_TopSolid_Kernel_Automating_SmartDirection3D_System_Boolean_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.CreateFrameByPointAndTwoDirections(TopSolid.Kernel.Automating.DocumentId,TopSolid.Kernel.Automating.SmartPoint3D,TopSolid.Kernel.Automating.SmartDirection3D,TopSolid.Kernel.Automating.SmartDirection3D,System.Boolean)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.CreateFrameByPointAndTwoDirections.html#TopSolid_Kernel_Automating_IGeometries3D_CreateFrameByPointAndTwoDirections_TopSolid_Kernel_Automating_DocumentId_TopSolid_Kernel_Automating_SmartPoint3D_TopSolid_Kernel_Automating_SmartDirection3D_TopSolid_Kernel_Automating_SmartDirection3D_System_Boolean_">CreateFrameByPointAndTwoDirections(DocumentId, SmartPoint3D, SmartDirection3D, SmartDirection3D, bool)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Creates a frame entity in a document by point and two directions.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_CreateFrameWithOffset_TopSolid_Kernel_Automating_DocumentId_TopSolid_Kernel_Automating_SmartFrame3D_TopSolid_Kernel_Automating_SmartDirection3D_TopSolid_Kernel_Automating_SmartReal_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.CreateFrameWithOffset(TopSolid.Kernel.Automating.DocumentId,TopSolid.Kernel.Automating.SmartFrame3D,TopSolid.Kernel.Automating.SmartDirection3D,TopSolid.Kernel.Automating.SmartReal)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.CreateFrameWithOffset.html#TopSolid_Kernel_Automating_IGeometries3D_CreateFrameWithOffset_TopSolid_Kernel_Automating_DocumentId_TopSolid_Kernel_Automating_SmartFrame3D_TopSolid_Kernel_Automating_SmartDirection3D_TopSolid_Kernel_Automating_SmartReal_">CreateFrameWithOffset(DocumentId, SmartFrame3D, SmartDirection3D, SmartReal)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Creates a frame entity in a document by offset.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_CreateOffsetPoint_TopSolid_Kernel_Automating_DocumentId_TopSolid_Kernel_Automating_SmartPoint3D_TopSolid_Kernel_Automating_SmartDirection3D_TopSolid_Kernel_Automating_SmartReal_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.CreateOffsetPoint(TopSolid.Kernel.Automating.DocumentId,TopSolid.Kernel.Automating.SmartPoint3D,TopSolid.Kernel.Automating.SmartDirection3D,TopSolid.Kernel.Automating.SmartReal)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.CreateOffsetPoint.html#TopSolid_Kernel_Automating_IGeometries3D_CreateOffsetPoint_TopSolid_Kernel_Automating_DocumentId_TopSolid_Kernel_Automating_SmartPoint3D_TopSolid_Kernel_Automating_SmartDirection3D_TopSolid_Kernel_Automating_SmartReal_">CreateOffsetPoint(DocumentId, SmartPoint3D, SmartDirection3D, SmartReal)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Creates an offset point creation operation in a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_CreatePlane_TopSolid_Kernel_Automating_DocumentId_TopSolid_Kernel_Automating_Plane3D_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.CreatePlane(TopSolid.Kernel.Automating.DocumentId,TopSolid.Kernel.Automating.Plane3D)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.CreatePlane.html#TopSolid_Kernel_Automating_IGeometries3D_CreatePlane_TopSolid_Kernel_Automating_DocumentId_TopSolid_Kernel_Automating_Plane3D_">CreatePlane(DocumentId, Plane3D)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Creates a plane entity in a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_CreatePlaneWithExtent_TopSolid_Kernel_Automating_DocumentId_TopSolid_Kernel_Automating_Plane3D_System_Double_System_Double_System_Double_System_Double_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.CreatePlaneWithExtent(TopSolid.Kernel.Automating.DocumentId,TopSolid.Kernel.Automating.Plane3D,System.Double,System.Double,System.Double,System.Double)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.CreatePlaneWithExtent.html#TopSolid_Kernel_Automating_IGeometries3D_CreatePlaneWithExtent_TopSolid_Kernel_Automating_DocumentId_TopSolid_Kernel_Automating_Plane3D_System_Double_System_Double_System_Double_System_Double_">CreatePlaneWithExtent(DocumentId, Plane3D, double, double, double, double)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Creates a plane entity with specified extent in a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_CreatePoint_TopSolid_Kernel_Automating_DocumentId_TopSolid_Kernel_Automating_Point3D_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.CreatePoint(TopSolid.Kernel.Automating.DocumentId,TopSolid.Kernel.Automating.Point3D)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.CreatePoint.html#TopSolid_Kernel_Automating_IGeometries3D_CreatePoint_TopSolid_Kernel_Automating_DocumentId_TopSolid_Kernel_Automating_Point3D_">CreatePoint(DocumentId, Point3D)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Creates a point entity in a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_CreateSmartFrame_TopSolid_Kernel_Automating_DocumentId_TopSolid_Kernel_Automating_SmartFrame3D_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.CreateSmartFrame(TopSolid.Kernel.Automating.DocumentId,TopSolid.Kernel.Automating.SmartFrame3D)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.CreateSmartFrame.html#TopSolid_Kernel_Automating_IGeometries3D_CreateSmartFrame_TopSolid_Kernel_Automating_DocumentId_TopSolid_Kernel_Automating_SmartFrame3D_">CreateSmartFrame(DocumentId, SmartFrame3D)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Creates a frame entity with a provided smart frame in a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_GetAbsoluteFrame_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.GetAbsoluteFrame(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.GetAbsoluteFrame.html#TopSolid_Kernel_Automating_IGeometries3D_GetAbsoluteFrame_TopSolid_Kernel_Automating_DocumentId_">GetAbsoluteFrame(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the absolute frame entity of a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_GetAbsoluteOriginPoint_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.GetAbsoluteOriginPoint(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.GetAbsoluteOriginPoint.html#TopSolid_Kernel_Automating_IGeometries3D_GetAbsoluteOriginPoint_TopSolid_Kernel_Automating_DocumentId_">GetAbsoluteOriginPoint(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the absolute origin point entity of a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_GetAbsoluteXAxis_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.GetAbsoluteXAxis(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.GetAbsoluteXAxis.html#TopSolid_Kernel_Automating_IGeometries3D_GetAbsoluteXAxis_TopSolid_Kernel_Automating_DocumentId_">GetAbsoluteXAxis(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the absolute X axis entity of a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_GetAbsoluteXYPlane_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.GetAbsoluteXYPlane(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.GetAbsoluteXYPlane.html#TopSolid_Kernel_Automating_IGeometries3D_GetAbsoluteXYPlane_TopSolid_Kernel_Automating_DocumentId_">GetAbsoluteXYPlane(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the absolute XY plane entity of a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_GetAbsoluteXZPlane_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.GetAbsoluteXZPlane(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.GetAbsoluteXZPlane.html#TopSolid_Kernel_Automating_IGeometries3D_GetAbsoluteXZPlane_TopSolid_Kernel_Automating_DocumentId_">GetAbsoluteXZPlane(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the absolute XZ plane entity of a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_GetAbsoluteYAxis_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.GetAbsoluteYAxis(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.GetAbsoluteYAxis.html#TopSolid_Kernel_Automating_IGeometries3D_GetAbsoluteYAxis_TopSolid_Kernel_Automating_DocumentId_">GetAbsoluteYAxis(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the absolute Y axis entity of a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_GetAbsoluteYZPlane_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.GetAbsoluteYZPlane(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.GetAbsoluteYZPlane.html#TopSolid_Kernel_Automating_IGeometries3D_GetAbsoluteYZPlane_TopSolid_Kernel_Automating_DocumentId_">GetAbsoluteYZPlane(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the absolute YZ plane entity of a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_GetAbsoluteZAxis_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.GetAbsoluteZAxis(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.GetAbsoluteZAxis.html#TopSolid_Kernel_Automating_IGeometries3D_GetAbsoluteZAxis_TopSolid_Kernel_Automating_DocumentId_">GetAbsoluteZAxis(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the absolute Z axis entity of a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_GetAxes_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.GetAxes(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.GetAxes.html#TopSolid_Kernel_Automating_IGeometries3D_GetAxes_TopSolid_Kernel_Automating_DocumentId_">GetAxes(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the axes entities that are in the axes folder of a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_GetAxesFolder_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.GetAxesFolder(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.GetAxesFolder.html#TopSolid_Kernel_Automating_IGeometries3D_GetAxesFolder_TopSolid_Kernel_Automating_DocumentId_">GetAxesFolder(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the axes folder entity of a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_GetAxisByTwoPointsCreation_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_SmartPoint3D__TopSolid_Kernel_Automating_SmartPoint3D__" data-uid="TopSolid.Kernel.Automating.IGeometries3D.GetAxisByTwoPointsCreation(TopSolid.Kernel.Automating.ElementId,TopSolid.Kernel.Automating.SmartPoint3D@,TopSolid.Kernel.Automating.SmartPoint3D@)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.GetAxisByTwoPointsCreation.html#TopSolid_Kernel_Automating_IGeometries3D_GetAxisByTwoPointsCreation_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_SmartPoint3D__TopSolid_Kernel_Automating_SmartPoint3D__">GetAxisByTwoPointsCreation(ElementId, out SmartPoint3D, out SmartPoint3D)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets points from an axis by two points creation operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_GetAxisGeometry_TopSolid_Kernel_Automating_ElementId_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.GetAxisGeometry(TopSolid.Kernel.Automating.ElementId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.GetAxisGeometry.html#TopSolid_Kernel_Automating_IGeometries3D_GetAxisGeometry_TopSolid_Kernel_Automating_ElementId_">GetAxisGeometry(ElementId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the geometry of an axis entity.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_GetAxisGeometryWithExtent_TopSolid_Kernel_Automating_ElementId_System_Double__System_Double__" data-uid="TopSolid.Kernel.Automating.IGeometries3D.GetAxisGeometryWithExtent(TopSolid.Kernel.Automating.ElementId,System.Double@,System.Double@)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.GetAxisGeometryWithExtent.html#TopSolid_Kernel_Automating_IGeometries3D_GetAxisGeometryWithExtent_TopSolid_Kernel_Automating_ElementId_System_Double__System_Double__">GetAxisGeometryWithExtent(ElementId, out double, out double)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the geometry and the extent of an axis entity.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_GetAxisPublishingDefinition_TopSolid_Kernel_Automating_ElementId_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.GetAxisPublishingDefinition(TopSolid.Kernel.Automating.ElementId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.GetAxisPublishingDefinition.html#TopSolid_Kernel_Automating_IGeometries3D_GetAxisPublishingDefinition_TopSolid_Kernel_Automating_ElementId_">GetAxisPublishingDefinition(ElementId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the definition of an axis publishing entity.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_GetFrameByPointAndTwoDirectionsCreation_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_SmartPoint3D__TopSolid_Kernel_Automating_SmartDirection3D__TopSolid_Kernel_Automating_SmartDirection3D__System_Boolean__" data-uid="TopSolid.Kernel.Automating.IGeometries3D.GetFrameByPointAndTwoDirectionsCreation(TopSolid.Kernel.Automating.ElementId,TopSolid.Kernel.Automating.SmartPoint3D@,TopSolid.Kernel.Automating.SmartDirection3D@,TopSolid.Kernel.Automating.SmartDirection3D@,System.Boolean@)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.GetFrameByPointAndTwoDirectionsCreation.html#TopSolid_Kernel_Automating_IGeometries3D_GetFrameByPointAndTwoDirectionsCreation_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_SmartPoint3D__TopSolid_Kernel_Automating_SmartDirection3D__TopSolid_Kernel_Automating_SmartDirection3D__System_Boolean__">GetFrameByPointAndTwoDirectionsCreation(ElementId, out SmartPoint3D, out SmartDirection3D, out SmartDirection3D, out bool)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets a frame by point and two directions creation operation</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_GetFrameGeometry_TopSolid_Kernel_Automating_ElementId_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.GetFrameGeometry(TopSolid.Kernel.Automating.ElementId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.GetFrameGeometry.html#TopSolid_Kernel_Automating_IGeometries3D_GetFrameGeometry_TopSolid_Kernel_Automating_ElementId_">GetFrameGeometry(ElementId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the geometry of a frame entity.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_GetFramePublishingDefinition_TopSolid_Kernel_Automating_ElementId_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.GetFramePublishingDefinition(TopSolid.Kernel.Automating.ElementId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.GetFramePublishingDefinition.html#TopSolid_Kernel_Automating_IGeometries3D_GetFramePublishingDefinition_TopSolid_Kernel_Automating_ElementId_">GetFramePublishingDefinition(ElementId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the definition of a frame publishing entity.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_GetFrameWithOffsetCreation_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_SmartFrame3D__TopSolid_Kernel_Automating_SmartDirection3D__TopSolid_Kernel_Automating_SmartReal__" data-uid="TopSolid.Kernel.Automating.IGeometries3D.GetFrameWithOffsetCreation(TopSolid.Kernel.Automating.ElementId,TopSolid.Kernel.Automating.SmartFrame3D@,TopSolid.Kernel.Automating.SmartDirection3D@,TopSolid.Kernel.Automating.SmartReal@)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.GetFrameWithOffsetCreation.html#TopSolid_Kernel_Automating_IGeometries3D_GetFrameWithOffsetCreation_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_SmartFrame3D__TopSolid_Kernel_Automating_SmartDirection3D__TopSolid_Kernel_Automating_SmartReal__">GetFrameWithOffsetCreation(ElementId, out SmartFrame3D, out SmartDirection3D, out SmartReal)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets a frame with offset creation operation</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_GetFrames_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.GetFrames(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.GetFrames.html#TopSolid_Kernel_Automating_IGeometries3D_GetFrames_TopSolid_Kernel_Automating_DocumentId_">GetFrames(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the frames entities that are in the frames folder of a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_GetFramesFolder_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.GetFramesFolder(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.GetFramesFolder.html#TopSolid_Kernel_Automating_IGeometries3D_GetFramesFolder_TopSolid_Kernel_Automating_DocumentId_">GetFramesFolder(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the frames folder entity of a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_GetGeometryType_TopSolid_Kernel_Automating_ElementId_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.GetGeometryType(TopSolid.Kernel.Automating.ElementId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.GetGeometryType.html#TopSolid_Kernel_Automating_IGeometries3D_GetGeometryType_TopSolid_Kernel_Automating_ElementId_">GetGeometryType(ElementId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the type of a geometric entity.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_GetOccurrenceDefinitionTransform_TopSolid_Kernel_Automating_ElementId_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.GetOccurrenceDefinitionTransform(TopSolid.Kernel.Automating.ElementId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.GetOccurrenceDefinitionTransform.html#TopSolid_Kernel_Automating_IGeometries3D_GetOccurrenceDefinitionTransform_TopSolid_Kernel_Automating_ElementId_">GetOccurrenceDefinitionTransform(ElementId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the definition transform of an occurrence entity.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_GetOccurrenceSourceTransform_TopSolid_Kernel_Automating_ElementId_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.GetOccurrenceSourceTransform(TopSolid.Kernel.Automating.ElementId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.GetOccurrenceSourceTransform.html#TopSolid_Kernel_Automating_IGeometries3D_GetOccurrenceSourceTransform_TopSolid_Kernel_Automating_ElementId_">GetOccurrenceSourceTransform(ElementId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the source transform of an occurrence entity.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_GetOffsetPointCreation_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_SmartPoint3D__TopSolid_Kernel_Automating_SmartDirection3D__TopSolid_Kernel_Automating_SmartReal__" data-uid="TopSolid.Kernel.Automating.IGeometries3D.GetOffsetPointCreation(TopSolid.Kernel.Automating.ElementId,TopSolid.Kernel.Automating.SmartPoint3D@,TopSolid.Kernel.Automating.SmartDirection3D@,TopSolid.Kernel.Automating.SmartReal@)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.GetOffsetPointCreation.html#TopSolid_Kernel_Automating_IGeometries3D_GetOffsetPointCreation_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_SmartPoint3D__TopSolid_Kernel_Automating_SmartDirection3D__TopSolid_Kernel_Automating_SmartReal__">GetOffsetPointCreation(ElementId, out SmartPoint3D, out SmartDirection3D, out SmartReal)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets an offset point creation operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_GetPatternPublishingDefinition_TopSolid_Kernel_Automating_ElementId_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.GetPatternPublishingDefinition(TopSolid.Kernel.Automating.ElementId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.GetPatternPublishingDefinition.html#TopSolid_Kernel_Automating_IGeometries3D_GetPatternPublishingDefinition_TopSolid_Kernel_Automating_ElementId_">GetPatternPublishingDefinition(ElementId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the definition of a pattern publishing entity.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_GetPatterns_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.GetPatterns(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.GetPatterns.html#TopSolid_Kernel_Automating_IGeometries3D_GetPatterns_TopSolid_Kernel_Automating_DocumentId_">GetPatterns(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the pattern entities that are in the pattern folder of a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_GetPlanarProfilePublishingDefinition_TopSolid_Kernel_Automating_ElementId_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.GetPlanarProfilePublishingDefinition(TopSolid.Kernel.Automating.ElementId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.GetPlanarProfilePublishingDefinition.html#TopSolid_Kernel_Automating_IGeometries3D_GetPlanarProfilePublishingDefinition_TopSolid_Kernel_Automating_ElementId_">GetPlanarProfilePublishingDefinition(ElementId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the definition of a planar profile publishing entity.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_GetPlaneGeometry_TopSolid_Kernel_Automating_ElementId_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.GetPlaneGeometry(TopSolid.Kernel.Automating.ElementId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.GetPlaneGeometry.html#TopSolid_Kernel_Automating_IGeometries3D_GetPlaneGeometry_TopSolid_Kernel_Automating_ElementId_">GetPlaneGeometry(ElementId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the geometry of a plane entity.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_GetPlaneGeometryWithExtent_TopSolid_Kernel_Automating_ElementId_System_Double__System_Double__System_Double__System_Double__" data-uid="TopSolid.Kernel.Automating.IGeometries3D.GetPlaneGeometryWithExtent(TopSolid.Kernel.Automating.ElementId,System.Double@,System.Double@,System.Double@,System.Double@)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.GetPlaneGeometryWithExtent.html#TopSolid_Kernel_Automating_IGeometries3D_GetPlaneGeometryWithExtent_TopSolid_Kernel_Automating_ElementId_System_Double__System_Double__System_Double__System_Double__">GetPlaneGeometryWithExtent(ElementId, out double, out double, out double, out double)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the geometry and the extent of a plane entity.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_GetPlanePublishingDefinition_TopSolid_Kernel_Automating_ElementId_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.GetPlanePublishingDefinition(TopSolid.Kernel.Automating.ElementId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.GetPlanePublishingDefinition.html#TopSolid_Kernel_Automating_IGeometries3D_GetPlanePublishingDefinition_TopSolid_Kernel_Automating_ElementId_">GetPlanePublishingDefinition(ElementId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the definition of a plane publishing entity.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_GetPlanes_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.GetPlanes(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.GetPlanes.html#TopSolid_Kernel_Automating_IGeometries3D_GetPlanes_TopSolid_Kernel_Automating_DocumentId_">GetPlanes(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the planes entities that are in the planes folder of a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_GetPlanesFolder_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.GetPlanesFolder(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.GetPlanesFolder.html#TopSolid_Kernel_Automating_IGeometries3D_GetPlanesFolder_TopSolid_Kernel_Automating_DocumentId_">GetPlanesFolder(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the planes folder entity of a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_GetPointGeometry_TopSolid_Kernel_Automating_ElementId_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.GetPointGeometry(TopSolid.Kernel.Automating.ElementId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.GetPointGeometry.html#TopSolid_Kernel_Automating_IGeometries3D_GetPointGeometry_TopSolid_Kernel_Automating_ElementId_">GetPointGeometry(ElementId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the geometry of a point entity.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_GetPointPublishingDefinition_TopSolid_Kernel_Automating_ElementId_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.GetPointPublishingDefinition(TopSolid.Kernel.Automating.ElementId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.GetPointPublishingDefinition.html#TopSolid_Kernel_Automating_IGeometries3D_GetPointPublishingDefinition_TopSolid_Kernel_Automating_ElementId_">GetPointPublishingDefinition(ElementId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the definition of a point publishing entity.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_GetPoints_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.GetPoints(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.GetPoints.html#TopSolid_Kernel_Automating_IGeometries3D_GetPoints_TopSolid_Kernel_Automating_DocumentId_">GetPoints(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the points entities that are in the points folder of a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_GetPointsFolder_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.GetPointsFolder(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.GetPointsFolder.html#TopSolid_Kernel_Automating_IGeometries3D_GetPointsFolder_TopSolid_Kernel_Automating_DocumentId_">GetPointsFolder(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the points folder entity of a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_GetProfilePublishingDefinition_TopSolid_Kernel_Automating_ElementId_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.GetProfilePublishingDefinition(TopSolid.Kernel.Automating.ElementId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.GetProfilePublishingDefinition.html#TopSolid_Kernel_Automating_IGeometries3D_GetProfilePublishingDefinition_TopSolid_Kernel_Automating_ElementId_">GetProfilePublishingDefinition(ElementId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the definition of a profile publishing entity.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_GetProfiles_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.GetProfiles(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.GetProfiles.html#TopSolid_Kernel_Automating_IGeometries3D_GetProfiles_TopSolid_Kernel_Automating_DocumentId_">GetProfiles(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the profile entities that are in the profile folder of a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_GetProfilesFolder_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.GetProfilesFolder(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.GetProfilesFolder.html#TopSolid_Kernel_Automating_IGeometries3D_GetProfilesFolder_TopSolid_Kernel_Automating_DocumentId_">GetProfilesFolder(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the profile folder entity of a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_GetSectionPublishingDefinition_TopSolid_Kernel_Automating_ElementId_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.GetSectionPublishingDefinition(TopSolid.Kernel.Automating.ElementId)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.GetSectionPublishingDefinition.html#TopSolid_Kernel_Automating_IGeometries3D_GetSectionPublishingDefinition_TopSolid_Kernel_Automating_ElementId_">GetSectionPublishingDefinition(ElementId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the definition of a section publishing entity.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_Publish3DProfile_TopSolid_Kernel_Automating_DocumentId_System_String_TopSolid_Kernel_Automating_SmartProfile3D_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.Publish3DProfile(TopSolid.Kernel.Automating.DocumentId,System.String,TopSolid.Kernel.Automating.SmartProfile3D)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.Publish3DProfile.html#TopSolid_Kernel_Automating_IGeometries3D_Publish3DProfile_TopSolid_Kernel_Automating_DocumentId_System_String_TopSolid_Kernel_Automating_SmartProfile3D_">Publish3DProfile(DocumentId, string, SmartProfile3D)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Creates a 3d profile publishing entity in a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_PublishAxis_TopSolid_Kernel_Automating_DocumentId_System_String_TopSolid_Kernel_Automating_SmartAxis3D_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.PublishAxis(TopSolid.Kernel.Automating.DocumentId,System.String,TopSolid.Kernel.Automating.SmartAxis3D)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.PublishAxis.html#TopSolid_Kernel_Automating_IGeometries3D_PublishAxis_TopSolid_Kernel_Automating_DocumentId_System_String_TopSolid_Kernel_Automating_SmartAxis3D_">PublishAxis(DocumentId, string, SmartAxis3D)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Creates an axis publishing entity in a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_PublishFrame_TopSolid_Kernel_Automating_DocumentId_System_String_TopSolid_Kernel_Automating_SmartFrame3D_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.PublishFrame(TopSolid.Kernel.Automating.DocumentId,System.String,TopSolid.Kernel.Automating.SmartFrame3D)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.PublishFrame.html#TopSolid_Kernel_Automating_IGeometries3D_PublishFrame_TopSolid_Kernel_Automating_DocumentId_System_String_TopSolid_Kernel_Automating_SmartFrame3D_">PublishFrame(DocumentId, string, SmartFrame3D)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Creates a frame publishing entity in a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_PublishPattern_TopSolid_Kernel_Automating_DocumentId_System_String_TopSolid_Kernel_Automating_SmartPattern3D_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.PublishPattern(TopSolid.Kernel.Automating.DocumentId,System.String,TopSolid.Kernel.Automating.SmartPattern3D)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.PublishPattern.html#TopSolid_Kernel_Automating_IGeometries3D_PublishPattern_TopSolid_Kernel_Automating_DocumentId_System_String_TopSolid_Kernel_Automating_SmartPattern3D_">PublishPattern(DocumentId, string, SmartPattern3D)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Creates a pattern publishing entity in a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_PublishPlanar3DProfile_TopSolid_Kernel_Automating_DocumentId_System_String_TopSolid_Kernel_Automating_SmartPlanarProfile3D_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.PublishPlanar3DProfile(TopSolid.Kernel.Automating.DocumentId,System.String,TopSolid.Kernel.Automating.SmartPlanarProfile3D)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.PublishPlanar3DProfile.html#TopSolid_Kernel_Automating_IGeometries3D_PublishPlanar3DProfile_TopSolid_Kernel_Automating_DocumentId_System_String_TopSolid_Kernel_Automating_SmartPlanarProfile3D_">PublishPlanar3DProfile(DocumentId, string, SmartPlanarProfile3D)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Creates a planar profile publishing entity in a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_PublishPlane_TopSolid_Kernel_Automating_DocumentId_System_String_TopSolid_Kernel_Automating_SmartPlane3D_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.PublishPlane(TopSolid.Kernel.Automating.DocumentId,System.String,TopSolid.Kernel.Automating.SmartPlane3D)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.PublishPlane.html#TopSolid_Kernel_Automating_IGeometries3D_PublishPlane_TopSolid_Kernel_Automating_DocumentId_System_String_TopSolid_Kernel_Automating_SmartPlane3D_">PublishPlane(DocumentId, string, SmartPlane3D)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Creates a plane publishing entity in a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_PublishPoint_TopSolid_Kernel_Automating_DocumentId_System_String_TopSolid_Kernel_Automating_SmartPoint3D_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.PublishPoint(TopSolid.Kernel.Automating.DocumentId,System.String,TopSolid.Kernel.Automating.SmartPoint3D)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.PublishPoint.html#TopSolid_Kernel_Automating_IGeometries3D_PublishPoint_TopSolid_Kernel_Automating_DocumentId_System_String_TopSolid_Kernel_Automating_SmartPoint3D_">PublishPoint(DocumentId, string, SmartPoint3D)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Creates a point publishing entity in a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_PublishSection_TopSolid_Kernel_Automating_DocumentId_System_String_TopSolid_Kernel_Automating_SmartSection3D_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.PublishSection(TopSolid.Kernel.Automating.DocumentId,System.String,TopSolid.Kernel.Automating.SmartSection3D)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.PublishSection.html#TopSolid_Kernel_Automating_IGeometries3D_PublishSection_TopSolid_Kernel_Automating_DocumentId_System_String_TopSolid_Kernel_Automating_SmartSection3D_">PublishSection(DocumentId, string, SmartSection3D)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Creates a section publishing entity in a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_SetAxisByTwoPointsCreation_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_SmartPoint3D_TopSolid_Kernel_Automating_SmartPoint3D_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.SetAxisByTwoPointsCreation(TopSolid.Kernel.Automating.ElementId,TopSolid.Kernel.Automating.SmartPoint3D,TopSolid.Kernel.Automating.SmartPoint3D)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.SetAxisByTwoPointsCreation.html#TopSolid_Kernel_Automating_IGeometries3D_SetAxisByTwoPointsCreation_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_SmartPoint3D_TopSolid_Kernel_Automating_SmartPoint3D_">SetAxisByTwoPointsCreation(ElementId, SmartPoint3D, SmartPoint3D)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets points of an axis by two points creation operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_SetAxisGeometry_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_Axis3D_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.SetAxisGeometry(TopSolid.Kernel.Automating.ElementId,TopSolid.Kernel.Automating.Axis3D)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.SetAxisGeometry.html#TopSolid_Kernel_Automating_IGeometries3D_SetAxisGeometry_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_Axis3D_">SetAxisGeometry(ElementId, Axis3D)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the geometry of an axis entity.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_SetAxisGeometryWithExtent_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_Axis3D_System_Double_System_Double_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.SetAxisGeometryWithExtent(TopSolid.Kernel.Automating.ElementId,TopSolid.Kernel.Automating.Axis3D,System.Double,System.Double)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.SetAxisGeometryWithExtent.html#TopSolid_Kernel_Automating_IGeometries3D_SetAxisGeometryWithExtent_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_Axis3D_System_Double_System_Double_">SetAxisGeometryWithExtent(ElementId, Axis3D, double, double)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the geometry and the extent of an axis entity.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_SetAxisPublishingDefinition_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_SmartAxis3D_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.SetAxisPublishingDefinition(TopSolid.Kernel.Automating.ElementId,TopSolid.Kernel.Automating.SmartAxis3D)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.SetAxisPublishingDefinition.html#TopSolid_Kernel_Automating_IGeometries3D_SetAxisPublishingDefinition_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_SmartAxis3D_">SetAxisPublishingDefinition(ElementId, SmartAxis3D)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the definition of an axis publishing entity.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_SetFrameByPointAndTwoDirectionsCreation_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_SmartPoint3D_TopSolid_Kernel_Automating_SmartDirection3D_TopSolid_Kernel_Automating_SmartDirection3D_System_Boolean_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.SetFrameByPointAndTwoDirectionsCreation(TopSolid.Kernel.Automating.ElementId,TopSolid.Kernel.Automating.SmartPoint3D,TopSolid.Kernel.Automating.SmartDirection3D,TopSolid.Kernel.Automating.SmartDirection3D,System.Boolean)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.SetFrameByPointAndTwoDirectionsCreation.html#TopSolid_Kernel_Automating_IGeometries3D_SetFrameByPointAndTwoDirectionsCreation_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_SmartPoint3D_TopSolid_Kernel_Automating_SmartDirection3D_TopSolid_Kernel_Automating_SmartDirection3D_System_Boolean_">SetFrameByPointAndTwoDirectionsCreation(ElementId, SmartPoint3D, SmartDirection3D, SmartDirection3D, bool)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets data of a frame by point and two frame creation operation</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_SetFrameGeometry_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_Frame3D_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.SetFrameGeometry(TopSolid.Kernel.Automating.ElementId,TopSolid.Kernel.Automating.Frame3D)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.SetFrameGeometry.html#TopSolid_Kernel_Automating_IGeometries3D_SetFrameGeometry_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_Frame3D_">SetFrameGeometry(ElementId, Frame3D)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the geometry of a frame entity.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_SetFramePublishingDefinition_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_SmartFrame3D_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.SetFramePublishingDefinition(TopSolid.Kernel.Automating.ElementId,TopSolid.Kernel.Automating.SmartFrame3D)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.SetFramePublishingDefinition.html#TopSolid_Kernel_Automating_IGeometries3D_SetFramePublishingDefinition_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_SmartFrame3D_">SetFramePublishingDefinition(ElementId, SmartFrame3D)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the definition of a frame publishing entity.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_SetFrameWithOffsetCreation_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_SmartFrame3D_TopSolid_Kernel_Automating_SmartDirection3D_TopSolid_Kernel_Automating_SmartReal_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.SetFrameWithOffsetCreation(TopSolid.Kernel.Automating.ElementId,TopSolid.Kernel.Automating.SmartFrame3D,TopSolid.Kernel.Automating.SmartDirection3D,TopSolid.Kernel.Automating.SmartReal)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.SetFrameWithOffsetCreation.html#TopSolid_Kernel_Automating_IGeometries3D_SetFrameWithOffsetCreation_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_SmartFrame3D_TopSolid_Kernel_Automating_SmartDirection3D_TopSolid_Kernel_Automating_SmartReal_">SetFrameWithOffsetCreation(ElementId, SmartFrame3D, SmartDirection3D, SmartReal)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets data of a frame with offset creation operation</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_SetOffsetPointCreation_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_SmartPoint3D_TopSolid_Kernel_Automating_SmartDirection3D_TopSolid_Kernel_Automating_SmartReal_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.SetOffsetPointCreation(TopSolid.Kernel.Automating.ElementId,TopSolid.Kernel.Automating.SmartPoint3D,TopSolid.Kernel.Automating.SmartDirection3D,TopSolid.Kernel.Automating.SmartReal)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.SetOffsetPointCreation.html#TopSolid_Kernel_Automating_IGeometries3D_SetOffsetPointCreation_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_SmartPoint3D_TopSolid_Kernel_Automating_SmartDirection3D_TopSolid_Kernel_Automating_SmartReal_">SetOffsetPointCreation(ElementId, SmartPoint3D, SmartDirection3D, SmartReal)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets an offset point creation operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_SetPatternPublishingDefinition_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_SmartPattern3D_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.SetPatternPublishingDefinition(TopSolid.Kernel.Automating.ElementId,TopSolid.Kernel.Automating.SmartPattern3D)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.SetPatternPublishingDefinition.html#TopSolid_Kernel_Automating_IGeometries3D_SetPatternPublishingDefinition_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_SmartPattern3D_">SetPatternPublishingDefinition(ElementId, SmartPattern3D)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the definition of a pattern publishing entity.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_SetPlanarProfilePublishingDefinition_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_SmartPlanarProfile3D_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.SetPlanarProfilePublishingDefinition(TopSolid.Kernel.Automating.ElementId,TopSolid.Kernel.Automating.SmartPlanarProfile3D)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.SetPlanarProfilePublishingDefinition.html#TopSolid_Kernel_Automating_IGeometries3D_SetPlanarProfilePublishingDefinition_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_SmartPlanarProfile3D_">SetPlanarProfilePublishingDefinition(ElementId, SmartPlanarProfile3D)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the definition of a planar profile publishing entity.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_SetPlaneGeometry_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_Plane3D_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.SetPlaneGeometry(TopSolid.Kernel.Automating.ElementId,TopSolid.Kernel.Automating.Plane3D)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.SetPlaneGeometry.html#TopSolid_Kernel_Automating_IGeometries3D_SetPlaneGeometry_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_Plane3D_">SetPlaneGeometry(ElementId, Plane3D)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the geometry of a plane entity.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_SetPlaneGeometryWithExtent_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_Plane3D_System_Double_System_Double_System_Double_System_Double_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.SetPlaneGeometryWithExtent(TopSolid.Kernel.Automating.ElementId,TopSolid.Kernel.Automating.Plane3D,System.Double,System.Double,System.Double,System.Double)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.SetPlaneGeometryWithExtent.html#TopSolid_Kernel_Automating_IGeometries3D_SetPlaneGeometryWithExtent_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_Plane3D_System_Double_System_Double_System_Double_System_Double_">SetPlaneGeometryWithExtent(ElementId, Plane3D, double, double, double, double)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the geometry and the extent of a plane entity.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_SetPlanePublishingDefinition_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_SmartPlane3D_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.SetPlanePublishingDefinition(TopSolid.Kernel.Automating.ElementId,TopSolid.Kernel.Automating.SmartPlane3D)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.SetPlanePublishingDefinition.html#TopSolid_Kernel_Automating_IGeometries3D_SetPlanePublishingDefinition_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_SmartPlane3D_">SetPlanePublishingDefinition(ElementId, SmartPlane3D)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the definition of a plane publishing entity.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_SetPointGeometry_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_Point3D_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.SetPointGeometry(TopSolid.Kernel.Automating.ElementId,TopSolid.Kernel.Automating.Point3D)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.SetPointGeometry.html#TopSolid_Kernel_Automating_IGeometries3D_SetPointGeometry_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_Point3D_">SetPointGeometry(ElementId, Point3D)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the geometry of a point entity.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_SetPointPublishingDefinition_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_SmartPoint3D_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.SetPointPublishingDefinition(TopSolid.Kernel.Automating.ElementId,TopSolid.Kernel.Automating.SmartPoint3D)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.SetPointPublishingDefinition.html#TopSolid_Kernel_Automating_IGeometries3D_SetPointPublishingDefinition_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_SmartPoint3D_">SetPointPublishingDefinition(ElementId, SmartPoint3D)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the definition of a point publishing entity.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_SetPointPublishingDefinitionList_TopSolid_Kernel_Automating_ElementId_System_Collections_Generic_List_TopSolid_Kernel_Automating_SmartPoint3D__" data-uid="TopSolid.Kernel.Automating.IGeometries3D.SetPointPublishingDefinitionList(TopSolid.Kernel.Automating.ElementId,System.Collections.Generic.List{TopSolid.Kernel.Automating.SmartPoint3D})">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.SetPointPublishingDefinitionList.html#TopSolid_Kernel_Automating_IGeometries3D_SetPointPublishingDefinitionList_TopSolid_Kernel_Automating_ElementId_System_Collections_Generic_List_TopSolid_Kernel_Automating_SmartPoint3D__">SetPointPublishingDefinitionList(ElementId, List&lt;SmartPoint3D&gt;)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the definition of a point publishing list entity.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_SetProfilePublishingDefinition_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_SmartProfile3D_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.SetProfilePublishingDefinition(TopSolid.Kernel.Automating.ElementId,TopSolid.Kernel.Automating.SmartProfile3D)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.SetProfilePublishingDefinition.html#TopSolid_Kernel_Automating_IGeometries3D_SetProfilePublishingDefinition_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_SmartProfile3D_">SetProfilePublishingDefinition(ElementId, SmartProfile3D)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the definition of a profile publishing entity.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IGeometries3D_SetSectionPublishingDefinition_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_SmartSection3D_" data-uid="TopSolid.Kernel.Automating.IGeometries3D.SetSectionPublishingDefinition(TopSolid.Kernel.Automating.ElementId,TopSolid.Kernel.Automating.SmartSection3D)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IGeometries3D.SetSectionPublishingDefinition.html#TopSolid_Kernel_Automating_IGeometries3D_SetSectionPublishingDefinition_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_SmartSection3D_">SetSectionPublishingDefinition(ElementId, SmartSection3D)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the definition of a section publishing entity.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div id="footer-alt">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      			<div id="footer-alt-bottom">
+                      <ul>
+                          <li><a href="https://www.topsolid.com/en/terms-of-use">Term of use</a></li>
+                          <li><a href="https://www.topsolid.com/en/corporate-information">Corporate information</a></li>
+                          <li><a href="https://www.topsolid.com/en/privacy-policy-gdpr">Privacy Policy - GDPR</a></li>
+                      </ul>
+                      <p>Copyright ©2025 TopSolid - All rights reserved.</p>
+                  </div>
+          </div>
+        </div>
+      </footer>    </div>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

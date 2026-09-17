@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMaterials.SetTextureMapping.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMaterials.SetTextureMapping.html",
+  "sha256": "07dcae8d3c1020134fd142a8396e98c9d51369c14b46f6ef9275a696399b6f3f",
+  "text": "# Method SetTextureMapping\n\n#### SetTextureMapping(DocumentId, TextureMappingType)\n\nSets the texture mapping of a material document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 0, 0)]\nvoid SetTextureMapping(DocumentId inDocumentId, TextureMappingType inTextureMappingType)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  TextureMappingType |  inTextureMappingType |  The texture mapping.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.16.\n",
+  "markdown": "markdown/cad/be5690fb643632072bc3e9ab.md",
+  "originalHtml": "html/cad/be5690fb643632072bc3e9ab.html"
+}

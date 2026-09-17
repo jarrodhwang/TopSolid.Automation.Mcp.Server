@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.AreColorParameterPossibleValuesStrict.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.AreColorParameterPossibleValuesStrict.html",
+  "sha256": "fe98e76f91913942692378ed133e86662d06a99e5e88ab97acfd5120e2781938",
+  "text": "# Method AreColorParameterPossibleValuesStrict\n\n#### AreColorParameterPossibleValuesStrict(ElementId)\n\nTells wether the possible values of the color parameter are strict.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 18, 0, 0)]\nbool AreColorParameterPossibleValuesStrict(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the parameter.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Wether the parameter has strict possible values.  |  \n\n##### Remarks\n\nThis method is available since v7.18\n",
+  "markdown": "markdown/kernel/9e3db9765be76e50ae62629b.md",
+  "originalHtml": "html/kernel/9e3db9765be76e50ae62629b.html"
+}

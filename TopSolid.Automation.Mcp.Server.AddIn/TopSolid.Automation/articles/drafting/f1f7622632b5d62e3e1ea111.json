@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.IDimensions.GetDimensionStyle.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.IDimensions.GetDimensionStyle.html",
+  "sha256": "bf3ea1933ee05587ab4f6ca03ea6ad0a836134e28e55f7697a0e67264a9d132a",
+  "text": "# Method GetDimensionStyle\n\n#### GetDimensionStyle(ElementId)\n\nGets current style of a dimension\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 255, 0)]\nElementId GetDimensionStyle(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  The dimension  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Style applied to the dimension  |\n",
+  "markdown": "markdown/drafting/f1f7622632b5d62e3e1ea111.md",
+  "originalHtml": "html/drafting/f1f7622632b5d62e3e1ea111.html"
+}

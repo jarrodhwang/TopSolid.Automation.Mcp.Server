@@ -1,0 +1,8 @@
+{
+  "path": "api/cae/TopSolid.Cae.Kernel.Automating.ICAEDocuments.IsAnalysisResultsDocument.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cae/TopSolid.Cae.Kernel.Automating.ICAEDocuments.IsAnalysisResultsDocument.html",
+  "sha256": "cf94363d9ffb5667a3779f1ed73184d218d83cadf1a49037ef27bdf9ec4bd1f9",
+  "text": "# Method IsAnalysisResultsDocument\n\n#### IsAnalysisResultsDocument(DocumentId)\n\nTells whether a document is an analysis results document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 15, 0)]\nbool IsAnalysisResultsDocument(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  The document is an analysis results document.  |  \n\n##### Remarks\n\nThis method is available since v7.19.\n\n##### Examples\n \n```\nDocumentId docId = TopSolidHost.Documents.EditedDocument;\nstring isAnalysisResultsDocument = TopSolidCaeHost.Documents.IsAnalysisResultsDocument(docId);\n```\n",
+  "markdown": "markdown/cae/48268d404d7bfe775e786ee7.md",
+  "originalHtml": "html/cae/48268d404d7bfe775e786ee7.html"
+}

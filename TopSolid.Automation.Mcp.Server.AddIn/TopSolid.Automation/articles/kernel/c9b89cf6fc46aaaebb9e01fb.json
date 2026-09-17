@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IDocuments.IsDirty.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IDocuments.IsDirty.html",
+  "sha256": "858a296d31d2396ba2b21fd6319575afbf372bde7c4aee9041be2aeb48d14788",
+  "text": "# Method IsDirty\n\n#### IsDirty(DocumentId)\n\nTells whether a document is dirty.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nbool IsDirty(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  The document is dirty.  |  \n\n##### Remarks\n\nA document is said dirty when it has been modified since it was last saved.\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/c9b89cf6fc46aaaebb9e01fb.md",
+  "originalHtml": "html/kernel/c9b89cf6fc46aaaebb9e01fb.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.TopSolidHostInstance.DocumentsEventsHost.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.TopSolidHostInstance.DocumentsEventsHost.html",
+  "sha256": "f47e2b2306a1076e89334cd919bb622108e95396e9b3a4b66a8d7c30d21c2856",
+  "text": "# Property DocumentsEventsHost\n\n#### DocumentsEventsHost\n\nGets access to the documents events service host, or null if not created.\n\n##### Declaration\n\n```\npublic ServiceHost DocumentsEventsHost { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ServiceHost |   |\n",
+  "markdown": "markdown/kernel/e1c605d7e3d3387fe4942274.md",
+  "originalHtml": "html/kernel/e1c605d7e3d3387fe4942274.html"
+}

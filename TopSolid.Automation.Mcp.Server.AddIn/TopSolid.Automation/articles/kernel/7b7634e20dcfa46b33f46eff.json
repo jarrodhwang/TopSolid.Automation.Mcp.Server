@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.SetTextParameterizedValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.SetTextParameterizedValue.html",
+  "sha256": "1d48d515113444c241d7d0f4cbac5b3273cd008d44ca7ed009ea142f24909efa",
+  "text": "# Method SetTextParameterizedValue\n\n#### SetTextParameterizedValue(ElementId, string)\n\nSets the parameterized value of a parameterized text parameter.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 201, 200)]\nvoid SetTextParameterizedValue(ElementId inElementId, string inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the parameter to modify.  |  \n \n|  string |  inValue |  New parameterized value (ex: \"Hexagon Bolt ISO 4014 - [$Code]\").  |  \n\n##### Remarks\n\nThe text parameter is made parameterized if it was not already parameterized.\n \nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.7.201.200.\n",
+  "markdown": "markdown/kernel/7b7634e20dcfa46b33f46eff.md",
+  "originalHtml": "html/kernel/7b7634e20dcfa46b33f46eff.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ISketches2D.CleanSketch.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ISketches2D.CleanSketch.html",
+  "sha256": "9d2210d76ef4d187cb9a141a0b4c33e29c4b5f7f0383d0644cdb5388fe7f65ce",
+  "text": "# Method CleanSketch\n\n#### CleanSketch()\n\nCleans current sketch segments (creates profiles, etc.)\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 326, 0)]\nvoid CleanSketch()\n```\n",
+  "markdown": "markdown/kernel/a319230176c2be56c880eff1.md",
+  "originalHtml": "html/kernel/a319230176c2be56c880eff1.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IDocuments.Update.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IDocuments.Update.html",
+  "sha256": "438814752b88eaf17ad38ad5bf5aad8eeb987266c7d730fb694bf9fae6a5c831",
+  "text": "# Method Update\n\n#### Update(DocumentId, bool)\n\nUpdates a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nvoid Update(DocumentId inDocumentId, bool inUpdatesAll)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to update.  |  \n \n|  bool |  inUpdatesAll |  Udpates all the document, even operations in stages after the current stage.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.8.\n",
+  "markdown": "markdown/kernel/b0bceebc12011829e3ff7378.md",
+  "originalHtml": "html/kernel/b0bceebc12011829e3ff7378.html"
+}

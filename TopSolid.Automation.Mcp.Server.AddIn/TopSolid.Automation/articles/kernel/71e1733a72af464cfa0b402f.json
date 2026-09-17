@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.TextProperty.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.TextProperty.html",
+  "sha256": "682c2709ba68826b145dd87cf77a7a13b065f6cfdc760a3c673c6927f80f3a8b",
+  "text": "# Class TextProperty\n\nRepresents a text property.\n\n##### Inheritance\n \nobject\n \nProperty\n \nTextProperty\n\n##### Inherited Members\n \n object.ToString() \n \n object.Equals(object) \n \n object.Equals(object, object) \n \n object.ReferenceEquals(object, object) \n \n object.GetHashCode() \n \n object.GetType() \n \n object.MemberwiseClone() \n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 12, 0, 0)]\npublic class TextProperty : Property\n```\n\n##### Remarks\n\nThis class is available since v7.12.\n\n### Constructors \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   TextProperty(string)  |  Initializes a new instance of the TextProperty class.  |  \n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   Value  |  Value.  |  \n\n### Properties \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   Type  |  Gets the property type.  |\n",
+  "markdown": "markdown/kernel/71e1733a72af464cfa0b402f.md",
+  "originalHtml": "html/kernel/71e1733a72af464cfa0b402f.html"
+}

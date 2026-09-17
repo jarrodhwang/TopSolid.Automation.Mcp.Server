@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.PrintColorMapping.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.PrintColorMapping.html",
+  "sha256": "4a36535e63216e00eb8422c884f8f86718f1fca0da80826dccd4be64bb9182d6",
+  "text": "# Enum PrintColorMapping\n\nDefines the color mapping when printing.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\npublic enum PrintColorMapping\n```\n\n##### Remarks\n\nThis enum is available since v7.6.\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  BlackAndWhite |  Converts to black and white.  |  \n \n|  Color |  Prints colors.  |  \n \n|  GreyLevels |  Converts to grey levels.  |\n",
+  "markdown": "markdown/kernel/85189ff0498cf739ac62524a.md",
+  "originalHtml": "html/kernel/85189ff0498cf739ac62524a.html"
+}

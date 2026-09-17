@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IDocuments.SetUniversalId.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IDocuments.SetUniversalId.html",
+  "sha256": "d5498c76a1257256c4dae89e4a94bd383109cfae0b6a503dab4a6aaedb791081",
+  "text": "# Method SetUniversalId\n\n#### SetUniversalId(DocumentId, string, string)\n\nSets the universal identifier of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 300, 60)]\nvoid SetUniversalId(DocumentId inDocumentId, string inDomain, string inName)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  string |  inDomain |  Universal domain, or null to delete the universal identifier parameter entity.  |  \n \n|  string |  inName |  Universal name, or null to delete the universal identifier parameter entity.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.8.300.060.\n",
+  "markdown": "markdown/kernel/2f8b4e42cdda96227c2f243f.md",
+  "originalHtml": "html/kernel/2f8b4e42cdda96227c2f243f.html"
+}

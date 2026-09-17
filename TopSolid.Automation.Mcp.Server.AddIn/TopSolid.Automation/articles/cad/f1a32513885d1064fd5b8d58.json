@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMechanisms.GetRigidGroups.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMechanisms.GetRigidGroups.html",
+  "sha256": "34042c7478465444372eb3544c7d569c598c70e2471bde1661dadd7ff12c5609",
+  "text": "# Method GetRigidGroups\n\n#### GetRigidGroups(DocumentId)\n\nGets the rigid group entities that are in the rigid groups folder of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nList<ElementId> GetRigidGroups(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementId> |  Rigid group entities found.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/cad/f1a32513885d1064fd5b8d58.md",
+  "originalHtml": "html/cad/f1a32513885d1064fd5b8d58.html"
+}

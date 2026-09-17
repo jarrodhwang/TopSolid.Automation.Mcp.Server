@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IErp.GetReferencingNcIsoDocuments.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IErp.GetReferencingNcIsoDocuments.html",
+  "sha256": "452f8cc51cac0e4028b698db03338cd76c352e9a1503956e20b81c31158cd15c",
+  "text": "# Method GetReferencingNcIsoDocuments\n\n#### GetReferencingNcIsoDocuments(ErpPdmId)\n\nGets referencing NC Iso documents of an erp pdm object\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 222, 80)]\nList<ErpPdmId> GetReferencingNcIsoDocuments(ErpPdmId inPdmId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ErpPdmId |  inPdmId |  Erp identifier of the object  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ErpPdmId> |  referecing NC Iso documents, as Erp pdm Objects.  |\n",
+  "markdown": "markdown/pdmexplorer/8409f5d3c6990f4cf86a38b3.md",
+  "originalHtml": "html/pdmexplorer/8409f5d3c6990f4cf86a38b3.html"
+}

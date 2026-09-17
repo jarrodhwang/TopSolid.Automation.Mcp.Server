@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IShapes.GetFaceSurfaceRange.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IShapes.GetFaceSurfaceRange.html",
+  "sha256": "60983243d20d818ce9b2954e3e2d2eaeea9b983aa5eb3ea9fbd78a38ff3b5749",
+  "text": "# Method GetFaceSurfaceRange\n\n#### GetFaceSurfaceRange(ElementItemId, out bool, out double, out double, out bool, out double, out double)\n\nGets the parametric range of the surface attached to a face.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 300, 60)]\nvoid GetFaceSurfaceRange(ElementItemId inFaceId, out bool outIsUPeriodic, out double outUMin, out double outUMax, out bool outIsVPeriodic, out double outVMin, out double outVMax)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementItemId |  inFaceId |  Identifier of the face to analyze.  |  \n \n|  bool |  outIsUPeriodic |  Whether the surface parameterization in U-periodic.  |  \n \n|  double |  outUMin |  Minimum U parametric value, or main U-period start if U-periodic.  |  \n \n|  double |  outUMax |  Maximum U parametric value, or main U-period end if U-periodic.  |  \n \n|  bool |  outIsVPeriodic |  Whether the surface parameterization in V-periodic.  |  \n \n|  double |  outVMin |  Minimum V parametric value, or main V-period start if V-periodic.  |  \n \n|  double |  outVMax |  Maximum V parametric value, or main V-period end if V-periodic.  |  \n\n##### Remarks\n\nThis method is available since v7.10.300.60.\n",
+  "markdown": "markdown/kernel/44edb286add62d2b1d9db56a.md",
+  "originalHtml": "html/kernel/44edb286add62d2b1d9db56a.html"
+}

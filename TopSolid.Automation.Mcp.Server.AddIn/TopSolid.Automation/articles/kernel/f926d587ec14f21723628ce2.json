@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Color.LightYellow.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Color.LightYellow.html",
+  "sha256": "6a76d7301c25220a030853c84a11c0614b80f4ca0b6fe02e450196c61544f001",
+  "text": "# Field LightYellow\n\nLights yellow color.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\npublic static readonly Color LightYellow\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Color |  Lights yellow color. |\n",
+  "markdown": "markdown/kernel/f926d587ec14f21723628ce2.md",
+  "originalHtml": "html/kernel/f926d587ec14f21723628ce2.html"
+}

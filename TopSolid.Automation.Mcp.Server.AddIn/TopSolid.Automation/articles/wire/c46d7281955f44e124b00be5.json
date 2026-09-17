@@ -1,0 +1,8 @@
+{
+  "path": "api/wire/TopSolid.Cam.NC.Wire.Automating.IWireTechnologyDocuments.AddTechnology.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/wire/TopSolid.Cam.NC.Wire.Automating.IWireTechnologyDocuments.AddTechnology.html",
+  "sha256": "56d6e4706a64c82ed1413592fb7fff9af85efad9534d73a099efb6f423a99d8b",
+  "text": "# Method AddTechnology\n\n#### AddTechnology(DocumentId)\n\nAdd a wire technology entity in a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 160)]\nElementId AddTechnology(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the created wire technology entity.  |\n",
+  "markdown": "markdown/wire/c46d7281955f44e124b00be5.md",
+  "originalHtml": "html/wire/c46d7281955f44e124b00be5.html"
+}

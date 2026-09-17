@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Axis2D.-ctor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Axis2D.-ctor.html",
+  "sha256": "30d759fee29dd897a1baf4212e3890104a14f357006f99059ed6803458b9cdbf",
+  "text": "# Constructor Axis2D\n\n#### Axis2D(Point2D, Direction2D)\n\nInitializes a new instance of the Axis2D structure with a specified origin and direction.\n\n##### Declaration\n\n```\npublic Axis2D(Point2D inOrigin, Direction2D inDirection)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  Point2D |  inOrigin |  Axis origin.  |  \n \n|  Direction2D |  inDirection |  Axis direction.  |\n",
+  "markdown": "markdown/kernel/2ff8fb865e3b0a007dd62f4e.md",
+  "originalHtml": "html/kernel/2ff8fb865e3b0a007dd62f4e.html"
+}

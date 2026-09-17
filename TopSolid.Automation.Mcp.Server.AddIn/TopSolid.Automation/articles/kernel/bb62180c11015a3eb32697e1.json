@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IDocuments.GetPropertyType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IDocuments.GetPropertyType.html",
+  "sha256": "e80e50f3b9fcbb65d7da4d3a5412459acf65bc8651b8c07cca11d89c7b5ed155",
+  "text": "# Method GetPropertyType\n\n#### GetPropertyType(DocumentId, string)\n\nGets the type of a document property.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 300, 60)]\nPropertyType GetPropertyType(DocumentId inDocumentId, string inFullName)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n \n|  string |  inFullName |  Full name of the document property to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  PropertyType |  Type of the property, or None if the document does not have the property.  |  \n\n##### Remarks\n\nThis method is available since v7.8.300.60.\n",
+  "markdown": "markdown/kernel/bb62180c11015a3eb32697e1.md",
+  "originalHtml": "html/kernel/bb62180c11015a3eb32697e1.html"
+}

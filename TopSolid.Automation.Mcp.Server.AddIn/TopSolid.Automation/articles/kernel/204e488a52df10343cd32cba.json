@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IGeometries3D.GetPatternPublishingDefinition.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IGeometries3D.GetPatternPublishingDefinition.html",
+  "sha256": "8e10b5a3d427bd86015ff81bb84a02f500056aa54a8df8056a8da216895e0c29",
+  "text": "# Method GetPatternPublishingDefinition\n\n#### GetPatternPublishingDefinition(ElementId)\n\nGets the definition of a pattern publishing entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 400, 180)]\nSmartPattern3D GetPatternPublishingDefinition(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the publishing entity to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartPattern3D |  The smart planar profile.  |\n",
+  "markdown": "markdown/kernel/204e488a52df10343cd32cba.md",
+  "originalHtml": "html/kernel/204e488a52df10343cd32cba.html"
+}

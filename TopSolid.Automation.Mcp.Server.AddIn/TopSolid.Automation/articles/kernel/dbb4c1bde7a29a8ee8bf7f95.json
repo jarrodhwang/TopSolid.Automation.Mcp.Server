@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdmWorkflow.GetWorkflowActionStates.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdmWorkflow.GetWorkflowActionStates.html",
+  "sha256": "97f68fcf8c8a1659983f014a5f4c64d7a5b7709e84c82dd90a622d4bddb3407f",
+  "text": "# Method GetWorkflowActionStates\n\n#### GetWorkflowActionStates(PdmMajorRevisionId, out List<PdmObjectId>, out List<WorkflowActionState>)\n\nGet workflow action states of given major revision corresponding to returned workflow action identifiers.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 14, 248, 0)]\nvoid GetWorkflowActionStates(PdmMajorRevisionId inMajorRevisionId, out List<PdmObjectId> outWorkflowActionIds, out List<WorkflowActionState> outWorkflowActionStates)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmMajorRevisionId |  inMajorRevisionId |  Major revision identifier.  |  \n \n|  List<PdmObjectId> |  outWorkflowActionIds |  Workflow action identifiers.  |  \n \n|  List<WorkflowActionState> |  outWorkflowActionStates |  Workflow action states.  |  \n\n##### Remarks\n\nThis method is available since v7.14.248.000.\n",
+  "markdown": "markdown/kernel/dbb4c1bde7a29a8ee8bf7f95.md",
+  "originalHtml": "html/kernel/dbb4c1bde7a29a8ee8bf7f95.html"
+}

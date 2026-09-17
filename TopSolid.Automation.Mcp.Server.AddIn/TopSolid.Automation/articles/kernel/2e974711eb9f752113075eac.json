@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ISketches2D.GetSegmentCenter.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ISketches2D.GetSegmentCenter.html",
+  "sha256": "a19e47d3ed7ec87e2a2d935fe3a0f8b85f80880531f0df74ee02967cae899b13",
+  "text": "# Method GetSegmentCenter\n\n#### GetSegmentCenter(ElementItemId)\n\nGets the center of a segment.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 201, 80)]\nElementItemId GetSegmentCenter(ElementItemId inSegmentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementItemId |  inSegmentId |  Identifier of the segment to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementItemId |  Identifier of the vertex defined as being the center of the segment, or Empty if none.  |  \n\n##### Remarks\n\nA center may only be defined when the segment curve is a circle or an ellipse.\n \nThis method is available since v7.7.201.80.\n",
+  "markdown": "markdown/kernel/2e974711eb9f752113075eac.md",
+  "originalHtml": "html/kernel/2e974711eb9f752113075eac.html"
+}

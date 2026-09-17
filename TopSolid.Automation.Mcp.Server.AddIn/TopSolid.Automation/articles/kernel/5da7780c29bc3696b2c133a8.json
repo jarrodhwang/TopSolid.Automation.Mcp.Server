@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Point2D.PY.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Point2D.PY.html",
+  "sha256": "e47428d02469287fbafc5eae91bcad93a21effa7367df809c20d3b010416c4d3",
+  "text": "# Field PY\n\nY unit point, i.e. (0,1).\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\npublic static readonly Point2D PY\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Point2D |  Y unit point, i.e. (0,1). |\n",
+  "markdown": "markdown/kernel/5da7780c29bc3696b2c133a8.md",
+  "originalHtml": "html/kernel/5da7780c29bc3696b2c133a8.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/wire/TopSolid.Cam.NC.Wire.Automating.TopSolidWireTechnologyHostInstance.Documents.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/wire/TopSolid.Cam.NC.Wire.Automating.TopSolidWireTechnologyHostInstance.Documents.html",
+  "sha256": "84afaaf1ab227e37565f24fe2f89c7c35a9cb69c08a0081a43b191a72fe4c04d",
+  "text": "# Property Documents\n\n#### Documents\n\nGets access to documents, or null if not connected.\n\n##### Declaration\n\n```\npublic IWireTechnologyDocuments Documents { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  IWireTechnologyDocuments |   |\n",
+  "markdown": "markdown/wire/8dd4f39ff76ab8cc001c6fcb.md",
+  "originalHtml": "html/wire/8dd4f39ff76ab8cc001c6fcb.html"
+}

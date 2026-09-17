@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Interface IParts | TopSolid Automation website </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Interface IParts | TopSolid Automation website ">
+    
+    <meta name="description" content="Gives access to parts.">
+      <link rel="shortcut icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../../styles/docfx.css">
+      <link rel="stylesheet" href="../../styles/main.css">
+      <meta property="docfx:navrel" content="../../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../img/AutomationIcon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="TopSolid.Cad.Design.Automating.IParts">
+
+
+
+  <h1 id="TopSolid_Cad_Design_Automating_IParts" data-uid="TopSolid.Cad.Design.Automating.IParts" class="text-break">Interface IParts</h1>
+  <div class="markdown level0 summary"><p>Gives access to parts.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="TopSolid.html">TopSolid</a>.<a class="xref" href="TopSolid.Cad.html">Cad</a>.<a class="xref" href="TopSolid.Cad.Design.html">Design</a>.<a class="xref" href="TopSolid.Cad.Design.Automating.html">Automating</a></h6>
+  <h6><strong>Assembly</strong>: TopSolid.Cad.Design.Automating.dll</h6>
+  <h5 id="TopSolid_Cad_Design_Automating_IParts_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ServiceContract]
+[AvailableSinceVersion(7, 6, 0, 0)]
+public interface IParts</code></pre>
+  </div>
+  <h5 id="TopSolid_Cad_Design_Automating_IParts_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>This interface is available since v7.6.</p>
+</div>
+  <h3 id="methods">Methods
+</h3>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IParts_CreateDrillingOperation_TopSolid_Kernel_Automating_DocumentId_TopSolid_Kernel_Automating_SmartShape_TopSolid_Kernel_Automating_SmartFrame3D_System_Collections_Generic_List_TopSolid_Cad_Design_Automating_DrillingPrimitive__System_Boolean_" data-uid="TopSolid.Cad.Design.Automating.IParts.CreateDrillingOperation(TopSolid.Kernel.Automating.DocumentId,TopSolid.Kernel.Automating.SmartShape,TopSolid.Kernel.Automating.SmartFrame3D,System.Collections.Generic.List{TopSolid.Cad.Design.Automating.DrillingPrimitive},System.Boolean)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IParts.CreateDrillingOperation.html#TopSolid_Cad_Design_Automating_IParts_CreateDrillingOperation_TopSolid_Kernel_Automating_DocumentId_TopSolid_Kernel_Automating_SmartShape_TopSolid_Kernel_Automating_SmartFrame3D_System_Collections_Generic_List_TopSolid_Cad_Design_Automating_DrillingPrimitive__System_Boolean_">CreateDrillingOperation(DocumentId, SmartShape, SmartFrame3D, List&lt;DrillingPrimitive&gt;, bool)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Creates a drilling operation in a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IParts_CreateDrillingOperationWithProcess_TopSolid_Kernel_Automating_DocumentId_TopSolid_Kernel_Automating_SmartShape_TopSolid_Kernel_Automating_SmartFrame3D_System_Collections_Generic_List_TopSolid_Cad_Design_Automating_DrillingPrimitive__System_Boolean_TopSolid_Kernel_Automating_PdmObjectId_System_Int32_" data-uid="TopSolid.Cad.Design.Automating.IParts.CreateDrillingOperationWithProcess(TopSolid.Kernel.Automating.DocumentId,TopSolid.Kernel.Automating.SmartShape,TopSolid.Kernel.Automating.SmartFrame3D,System.Collections.Generic.List{TopSolid.Cad.Design.Automating.DrillingPrimitive},System.Boolean,TopSolid.Kernel.Automating.PdmObjectId,System.Int32)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IParts.CreateDrillingOperationWithProcess.html#TopSolid_Cad_Design_Automating_IParts_CreateDrillingOperationWithProcess_TopSolid_Kernel_Automating_DocumentId_TopSolid_Kernel_Automating_SmartShape_TopSolid_Kernel_Automating_SmartFrame3D_System_Collections_Generic_List_TopSolid_Cad_Design_Automating_DrillingPrimitive__System_Boolean_TopSolid_Kernel_Automating_PdmObjectId_System_Int32_">CreateDrillingOperationWithProcess(DocumentId, SmartShape, SmartFrame3D, List&lt;DrillingPrimitive&gt;, bool, PdmObjectId, int)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Creates a drilling operation using a process in a document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IParts_CreateMachiningProcessOperation_TopSolid_Kernel_Automating_PdmObjectId_System_Int32_System_Collections_Generic_List_TopSolid_Kernel_Automating_ElementItemId__" data-uid="TopSolid.Cad.Design.Automating.IParts.CreateMachiningProcessOperation(TopSolid.Kernel.Automating.PdmObjectId,System.Int32,System.Collections.Generic.List{TopSolid.Kernel.Automating.ElementItemId})">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IParts.CreateMachiningProcessOperation.html#TopSolid_Cad_Design_Automating_IParts_CreateMachiningProcessOperation_TopSolid_Kernel_Automating_PdmObjectId_System_Int32_System_Collections_Generic_List_TopSolid_Kernel_Automating_ElementItemId__">CreateMachiningProcessOperation(PdmObjectId, int, List&lt;ElementItemId&gt;)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Creates the faces machining process.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IParts_CreateMachiningProcessOperationWithDrivers_TopSolid_Kernel_Automating_PdmObjectId_System_Int32_System_Collections_Generic_List_TopSolid_Kernel_Automating_ElementItemId__System_Collections_Generic_List_System_String__System_Collections_Generic_List_TopSolid_Kernel_Automating_SmartObject__System_Collections_Generic_List_TopSolid_Kernel_Automating_ElementItemId__System_Collections_Generic_List_TopSolid_Kernel_Automating_SmartPoint3D__System_Collections_Generic_List_TopSolid_Kernel_Automating_ElementId__" data-uid="TopSolid.Cad.Design.Automating.IParts.CreateMachiningProcessOperationWithDrivers(TopSolid.Kernel.Automating.PdmObjectId,System.Int32,System.Collections.Generic.List{TopSolid.Kernel.Automating.ElementItemId},System.Collections.Generic.List{System.String},System.Collections.Generic.List{TopSolid.Kernel.Automating.SmartObject},System.Collections.Generic.List{TopSolid.Kernel.Automating.ElementItemId},System.Collections.Generic.List{TopSolid.Kernel.Automating.SmartPoint3D},System.Collections.Generic.List{TopSolid.Kernel.Automating.ElementId})">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IParts.CreateMachiningProcessOperationWithDrivers.html#TopSolid_Cad_Design_Automating_IParts_CreateMachiningProcessOperationWithDrivers_TopSolid_Kernel_Automating_PdmObjectId_System_Int32_System_Collections_Generic_List_TopSolid_Kernel_Automating_ElementItemId__System_Collections_Generic_List_System_String__System_Collections_Generic_List_TopSolid_Kernel_Automating_SmartObject__System_Collections_Generic_List_TopSolid_Kernel_Automating_ElementItemId__System_Collections_Generic_List_TopSolid_Kernel_Automating_SmartPoint3D__System_Collections_Generic_List_TopSolid_Kernel_Automating_ElementId__">CreateMachiningProcessOperationWithDrivers(PdmObjectId, int, List&lt;ElementItemId&gt;, List&lt;string&gt;, List&lt;SmartObject&gt;, List&lt;ElementItemId&gt;, List&lt;SmartPoint3D&gt;, List&lt;ElementId&gt;)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Creates the machining process with driver values.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IParts_GetCenterOfMassPropertyManagement_TopSolid_Kernel_Automating_DocumentId_System_Boolean__TopSolid_Kernel_Automating_SmartPoint3D__" data-uid="TopSolid.Cad.Design.Automating.IParts.GetCenterOfMassPropertyManagement(TopSolid.Kernel.Automating.DocumentId,System.Boolean@,TopSolid.Kernel.Automating.SmartPoint3D@)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IParts.GetCenterOfMassPropertyManagement.html#TopSolid_Cad_Design_Automating_IParts_GetCenterOfMassPropertyManagement_TopSolid_Kernel_Automating_DocumentId_System_Boolean__TopSolid_Kernel_Automating_SmartPoint3D__">GetCenterOfMassPropertyManagement(DocumentId, out bool, out SmartPoint3D)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the center of mass property management of a part.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IParts_GetCoating_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Cad.Design.Automating.IParts.GetCoating(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IParts.GetCoating.html#TopSolid_Cad_Design_Automating_IParts_GetCoating_TopSolid_Kernel_Automating_DocumentId_">GetCoating(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the coating of a part.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IParts_GetEnclosingBoxFrame_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Cad.Design.Automating.IParts.GetEnclosingBoxFrame(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IParts.GetEnclosingBoxFrame.html#TopSolid_Cad_Design_Automating_IParts_GetEnclosingBoxFrame_TopSolid_Kernel_Automating_DocumentId_">GetEnclosingBoxFrame(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the enclosing box frame entity of a part.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IParts_GetEnclosingBoxManagement_TopSolid_Kernel_Automating_DocumentId_TopSolid_Cad_Design_Automating_EnclosingBoxManagementType__TopSolid_Kernel_Automating_SmartFrame3D__TopSolid_Kernel_Automating_SmartFrame3D__TopSolid_Kernel_Automating_SmartReal__TopSolid_Kernel_Automating_SmartReal__TopSolid_Kernel_Automating_SmartReal__" data-uid="TopSolid.Cad.Design.Automating.IParts.GetEnclosingBoxManagement(TopSolid.Kernel.Automating.DocumentId,TopSolid.Cad.Design.Automating.EnclosingBoxManagementType@,TopSolid.Kernel.Automating.SmartFrame3D@,TopSolid.Kernel.Automating.SmartFrame3D@,TopSolid.Kernel.Automating.SmartReal@,TopSolid.Kernel.Automating.SmartReal@,TopSolid.Kernel.Automating.SmartReal@)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IParts.GetEnclosingBoxManagement.html#TopSolid_Cad_Design_Automating_IParts_GetEnclosingBoxManagement_TopSolid_Kernel_Automating_DocumentId_TopSolid_Cad_Design_Automating_EnclosingBoxManagementType__TopSolid_Kernel_Automating_SmartFrame3D__TopSolid_Kernel_Automating_SmartFrame3D__TopSolid_Kernel_Automating_SmartReal__TopSolid_Kernel_Automating_SmartReal__TopSolid_Kernel_Automating_SmartReal__">GetEnclosingBoxManagement(DocumentId, out EnclosingBoxManagementType, out SmartFrame3D, out SmartFrame3D, out SmartReal, out SmartReal, out SmartReal)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the enclosing box management of a part.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IParts_GetEnclosingBoxParameters_TopSolid_Kernel_Automating_DocumentId_TopSolid_Kernel_Automating_ElementId__TopSolid_Kernel_Automating_ElementId__TopSolid_Kernel_Automating_ElementId__" data-uid="TopSolid.Cad.Design.Automating.IParts.GetEnclosingBoxParameters(TopSolid.Kernel.Automating.DocumentId,TopSolid.Kernel.Automating.ElementId@,TopSolid.Kernel.Automating.ElementId@,TopSolid.Kernel.Automating.ElementId@)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IParts.GetEnclosingBoxParameters.html#TopSolid_Cad_Design_Automating_IParts_GetEnclosingBoxParameters_TopSolid_Kernel_Automating_DocumentId_TopSolid_Kernel_Automating_ElementId__TopSolid_Kernel_Automating_ElementId__TopSolid_Kernel_Automating_ElementId__">GetEnclosingBoxParameters(DocumentId, out ElementId, out ElementId, out ElementId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the enclosing box parameters of a part.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IParts_GetEnclosingCylinderAxis_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Cad.Design.Automating.IParts.GetEnclosingCylinderAxis(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IParts.GetEnclosingCylinderAxis.html#TopSolid_Cad_Design_Automating_IParts_GetEnclosingCylinderAxis_TopSolid_Kernel_Automating_DocumentId_">GetEnclosingCylinderAxis(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the enclosing cylinder axis entity of a part.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IParts_GetEnclosingCylinderCenterPoint_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Cad.Design.Automating.IParts.GetEnclosingCylinderCenterPoint(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IParts.GetEnclosingCylinderCenterPoint.html#TopSolid_Cad_Design_Automating_IParts_GetEnclosingCylinderCenterPoint_TopSolid_Kernel_Automating_DocumentId_">GetEnclosingCylinderCenterPoint(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the enclosing cylinder center point entity of a part.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IParts_GetEnclosingCylinderManagement_TopSolid_Kernel_Automating_DocumentId_TopSolid_Cad_Design_Automating_EnclosingCylinderManagementType__TopSolid_Kernel_Automating_SmartAxis3D__TopSolid_Kernel_Automating_SmartPoint3D__TopSolid_Kernel_Automating_SmartReal__TopSolid_Kernel_Automating_SmartReal__" data-uid="TopSolid.Cad.Design.Automating.IParts.GetEnclosingCylinderManagement(TopSolid.Kernel.Automating.DocumentId,TopSolid.Cad.Design.Automating.EnclosingCylinderManagementType@,TopSolid.Kernel.Automating.SmartAxis3D@,TopSolid.Kernel.Automating.SmartPoint3D@,TopSolid.Kernel.Automating.SmartReal@,TopSolid.Kernel.Automating.SmartReal@)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IParts.GetEnclosingCylinderManagement.html#TopSolid_Cad_Design_Automating_IParts_GetEnclosingCylinderManagement_TopSolid_Kernel_Automating_DocumentId_TopSolid_Cad_Design_Automating_EnclosingCylinderManagementType__TopSolid_Kernel_Automating_SmartAxis3D__TopSolid_Kernel_Automating_SmartPoint3D__TopSolid_Kernel_Automating_SmartReal__TopSolid_Kernel_Automating_SmartReal__">GetEnclosingCylinderManagement(DocumentId, out EnclosingCylinderManagementType, out SmartAxis3D, out SmartPoint3D, out SmartReal, out SmartReal)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the enclosing cylinder management of a part.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IParts_GetEnclosingCylinderParameters_TopSolid_Kernel_Automating_DocumentId_TopSolid_Kernel_Automating_ElementId__TopSolid_Kernel_Automating_ElementId__" data-uid="TopSolid.Cad.Design.Automating.IParts.GetEnclosingCylinderParameters(TopSolid.Kernel.Automating.DocumentId,TopSolid.Kernel.Automating.ElementId@,TopSolid.Kernel.Automating.ElementId@)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IParts.GetEnclosingCylinderParameters.html#TopSolid_Cad_Design_Automating_IParts_GetEnclosingCylinderParameters_TopSolid_Kernel_Automating_DocumentId_TopSolid_Kernel_Automating_ElementId__TopSolid_Kernel_Automating_ElementId__">GetEnclosingCylinderParameters(DocumentId, out ElementId, out ElementId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the enclosing cylinder parameters of a part.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IParts_GetFinishing_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Cad.Design.Automating.IParts.GetFinishing(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IParts.GetFinishing.html#TopSolid_Cad_Design_Automating_IParts_GetFinishing_TopSolid_Kernel_Automating_DocumentId_">GetFinishing(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the finishing of a part.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IParts_GetInertiaPropertyManagement_TopSolid_Kernel_Automating_DocumentId_System_Boolean__TopSolid_Kernel_Automating_SmartFrame3D__TopSolid_Kernel_Automating_SmartReal__TopSolid_Kernel_Automating_SmartReal__TopSolid_Kernel_Automating_SmartReal__" data-uid="TopSolid.Cad.Design.Automating.IParts.GetInertiaPropertyManagement(TopSolid.Kernel.Automating.DocumentId,System.Boolean@,TopSolid.Kernel.Automating.SmartFrame3D@,TopSolid.Kernel.Automating.SmartReal@,TopSolid.Kernel.Automating.SmartReal@,TopSolid.Kernel.Automating.SmartReal@)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IParts.GetInertiaPropertyManagement.html#TopSolid_Cad_Design_Automating_IParts_GetInertiaPropertyManagement_TopSolid_Kernel_Automating_DocumentId_System_Boolean__TopSolid_Kernel_Automating_SmartFrame3D__TopSolid_Kernel_Automating_SmartReal__TopSolid_Kernel_Automating_SmartReal__TopSolid_Kernel_Automating_SmartReal__">GetInertiaPropertyManagement(DocumentId, out bool, out SmartFrame3D, out SmartReal, out SmartReal, out SmartReal)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the moments of inertia property management of a part.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IParts_GetMachiningProcessOperationDrivers_TopSolid_Kernel_Automating_ElementId_System_Collections_Generic_List_System_Collections_Generic_KeyValuePair_System_String_TopSolid_Cad_Design_Automating_MachiningDriverType____System_Collections_Generic_List_TopSolid_Kernel_Automating_SmartObject___System_Collections_Generic_List_TopSolid_Kernel_Automating_ElementItemId___System_Collections_Generic_List_TopSolid_Kernel_Automating_SmartPoint3D___System_Collections_Generic_List_TopSolid_Kernel_Automating_ElementId___" data-uid="TopSolid.Cad.Design.Automating.IParts.GetMachiningProcessOperationDrivers(TopSolid.Kernel.Automating.ElementId,System.Collections.Generic.List{System.Collections.Generic.KeyValuePair{System.String,TopSolid.Cad.Design.Automating.MachiningDriverType}}@,System.Collections.Generic.List{TopSolid.Kernel.Automating.SmartObject}@,System.Collections.Generic.List{TopSolid.Kernel.Automating.ElementItemId}@,System.Collections.Generic.List{TopSolid.Kernel.Automating.SmartPoint3D}@,System.Collections.Generic.List{TopSolid.Kernel.Automating.ElementId}@)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IParts.GetMachiningProcessOperationDrivers.html#TopSolid_Cad_Design_Automating_IParts_GetMachiningProcessOperationDrivers_TopSolid_Kernel_Automating_ElementId_System_Collections_Generic_List_System_Collections_Generic_KeyValuePair_System_String_TopSolid_Cad_Design_Automating_MachiningDriverType____System_Collections_Generic_List_TopSolid_Kernel_Automating_SmartObject___System_Collections_Generic_List_TopSolid_Kernel_Automating_ElementItemId___System_Collections_Generic_List_TopSolid_Kernel_Automating_SmartPoint3D___System_Collections_Generic_List_TopSolid_Kernel_Automating_ElementId___">GetMachiningProcessOperationDrivers(ElementId, out List&lt;KeyValuePair&lt;string, MachiningDriverType&gt;&gt;, out List&lt;SmartObject&gt;, out List&lt;ElementItemId&gt;, out List&lt;SmartPoint3D&gt;, out List&lt;ElementId&gt;)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the machining process driver values.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IParts_GetMachiningProcessOperationFaces_TopSolid_Kernel_Automating_ElementId_System_Collections_Generic_List_TopSolid_Kernel_Automating_ElementItemId___" data-uid="TopSolid.Cad.Design.Automating.IParts.GetMachiningProcessOperationFaces(TopSolid.Kernel.Automating.ElementId,System.Collections.Generic.List{TopSolid.Kernel.Automating.ElementItemId}@)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IParts.GetMachiningProcessOperationFaces.html#TopSolid_Cad_Design_Automating_IParts_GetMachiningProcessOperationFaces_TopSolid_Kernel_Automating_ElementId_System_Collections_Generic_List_TopSolid_Kernel_Automating_ElementItemId___">GetMachiningProcessOperationFaces(ElementId, out List&lt;ElementItemId&gt;)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets Faces from a machining process operation</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IParts_GetMassPropertyManagement_TopSolid_Kernel_Automating_DocumentId_System_Boolean__TopSolid_Kernel_Automating_SmartReal__" data-uid="TopSolid.Cad.Design.Automating.IParts.GetMassPropertyManagement(TopSolid.Kernel.Automating.DocumentId,System.Boolean@,TopSolid.Kernel.Automating.SmartReal@)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IParts.GetMassPropertyManagement.html#TopSolid_Cad_Design_Automating_IParts_GetMassPropertyManagement_TopSolid_Kernel_Automating_DocumentId_System_Boolean__TopSolid_Kernel_Automating_SmartReal__">GetMassPropertyManagement(DocumentId, out bool, out SmartReal)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the mass property management of a part.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IParts_GetMaterial_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Cad.Design.Automating.IParts.GetMaterial(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IParts.GetMaterial.html#TopSolid_Cad_Design_Automating_IParts_GetMaterial_TopSolid_Kernel_Automating_DocumentId_">GetMaterial(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the material of a part.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IParts_GetSurfaceAreaPropertyManagement_TopSolid_Kernel_Automating_DocumentId_System_Boolean__TopSolid_Kernel_Automating_SmartReal__" data-uid="TopSolid.Cad.Design.Automating.IParts.GetSurfaceAreaPropertyManagement(TopSolid.Kernel.Automating.DocumentId,System.Boolean@,TopSolid.Kernel.Automating.SmartReal@)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IParts.GetSurfaceAreaPropertyManagement.html#TopSolid_Cad_Design_Automating_IParts_GetSurfaceAreaPropertyManagement_TopSolid_Kernel_Automating_DocumentId_System_Boolean__TopSolid_Kernel_Automating_SmartReal__">GetSurfaceAreaPropertyManagement(DocumentId, out bool, out SmartReal)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the surface area property management of a part.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IParts_GetVolumePropertyManagement_TopSolid_Kernel_Automating_DocumentId_System_Boolean__TopSolid_Kernel_Automating_SmartReal__" data-uid="TopSolid.Cad.Design.Automating.IParts.GetVolumePropertyManagement(TopSolid.Kernel.Automating.DocumentId,System.Boolean@,TopSolid.Kernel.Automating.SmartReal@)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IParts.GetVolumePropertyManagement.html#TopSolid_Cad_Design_Automating_IParts_GetVolumePropertyManagement_TopSolid_Kernel_Automating_DocumentId_System_Boolean__TopSolid_Kernel_Automating_SmartReal__">GetVolumePropertyManagement(DocumentId, out bool, out SmartReal)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the volume property management of a part.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IParts_IsCoatingDerived_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Cad.Design.Automating.IParts.IsCoatingDerived(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IParts.IsCoatingDerived.html#TopSolid_Cad_Design_Automating_IParts_IsCoatingDerived_TopSolid_Kernel_Automating_DocumentId_">IsCoatingDerived(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Tells whether the coating of a derived part is derived from the base part.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IParts_IsDerivedPart_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Cad.Design.Automating.IParts.IsDerivedPart(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IParts.IsDerivedPart.html#TopSolid_Cad_Design_Automating_IParts_IsDerivedPart_TopSolid_Kernel_Automating_DocumentId_">IsDerivedPart(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Tells whether a document is a derived part document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IParts_IsFinishingDerived_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Cad.Design.Automating.IParts.IsFinishingDerived(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IParts.IsFinishingDerived.html#TopSolid_Cad_Design_Automating_IParts_IsFinishingDerived_TopSolid_Kernel_Automating_DocumentId_">IsFinishingDerived(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Tells whether the finishing of a derived part is derived from the base part.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IParts_IsMachiningProcessOperation_TopSolid_Kernel_Automating_ElementId_" data-uid="TopSolid.Cad.Design.Automating.IParts.IsMachiningProcessOperation(TopSolid.Kernel.Automating.ElementId)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IParts.IsMachiningProcessOperation.html#TopSolid_Cad_Design_Automating_IParts_IsMachiningProcessOperation_TopSolid_Kernel_Automating_ElementId_">IsMachiningProcessOperation(ElementId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Tells whether element is a machining process operation</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IParts_IsMaterialDerived_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Cad.Design.Automating.IParts.IsMaterialDerived(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IParts.IsMaterialDerived.html#TopSolid_Cad_Design_Automating_IParts_IsMaterialDerived_TopSolid_Kernel_Automating_DocumentId_">IsMaterialDerived(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Tells whether the material of a derived part is derived from the base part.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IParts_IsPart_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Cad.Design.Automating.IParts.IsPart(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IParts.IsPart.html#TopSolid_Cad_Design_Automating_IParts_IsPart_TopSolid_Kernel_Automating_DocumentId_">IsPart(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Tells whether a document is a part document.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IParts_IsPhysicalPropertiesManagementRefreshAuto_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Cad.Design.Automating.IParts.IsPhysicalPropertiesManagementRefreshAuto(TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IParts.IsPhysicalPropertiesManagementRefreshAuto.html#TopSolid_Cad_Design_Automating_IParts_IsPhysicalPropertiesManagementRefreshAuto_TopSolid_Kernel_Automating_DocumentId_">IsPhysicalPropertiesManagementRefreshAuto(DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Tells whether the physical property management of a part is refresh auto.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IParts_ResetMachiningProcessOperationDriverValues_TopSolid_Kernel_Automating_ElementId_" data-uid="TopSolid.Cad.Design.Automating.IParts.ResetMachiningProcessOperationDriverValues(TopSolid.Kernel.Automating.ElementId)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IParts.ResetMachiningProcessOperationDriverValues.html#TopSolid_Cad_Design_Automating_IParts_ResetMachiningProcessOperationDriverValues_TopSolid_Kernel_Automating_ElementId_">ResetMachiningProcessOperationDriverValues(ElementId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Clears all machining process drivers value</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IParts_SetCenterOfMassPropertyManagement_TopSolid_Kernel_Automating_DocumentId_System_Boolean_TopSolid_Kernel_Automating_SmartPoint3D_" data-uid="TopSolid.Cad.Design.Automating.IParts.SetCenterOfMassPropertyManagement(TopSolid.Kernel.Automating.DocumentId,System.Boolean,TopSolid.Kernel.Automating.SmartPoint3D)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IParts.SetCenterOfMassPropertyManagement.html#TopSolid_Cad_Design_Automating_IParts_SetCenterOfMassPropertyManagement_TopSolid_Kernel_Automating_DocumentId_System_Boolean_TopSolid_Kernel_Automating_SmartPoint3D_">SetCenterOfMassPropertyManagement(DocumentId, bool, SmartPoint3D)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the center of mass property management of a part.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IParts_SetCoating_TopSolid_Kernel_Automating_DocumentId_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Cad.Design.Automating.IParts.SetCoating(TopSolid.Kernel.Automating.DocumentId,TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IParts.SetCoating.html#TopSolid_Cad_Design_Automating_IParts_SetCoating_TopSolid_Kernel_Automating_DocumentId_TopSolid_Kernel_Automating_DocumentId_">SetCoating(DocumentId, DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the coating of a part.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IParts_SetEnclosingBoxManagement_TopSolid_Kernel_Automating_DocumentId_TopSolid_Cad_Design_Automating_EnclosingBoxManagementType_TopSolid_Kernel_Automating_SmartFrame3D_TopSolid_Kernel_Automating_SmartFrame3D_TopSolid_Kernel_Automating_SmartReal_TopSolid_Kernel_Automating_SmartReal_TopSolid_Kernel_Automating_SmartReal_" data-uid="TopSolid.Cad.Design.Automating.IParts.SetEnclosingBoxManagement(TopSolid.Kernel.Automating.DocumentId,TopSolid.Cad.Design.Automating.EnclosingBoxManagementType,TopSolid.Kernel.Automating.SmartFrame3D,TopSolid.Kernel.Automating.SmartFrame3D,TopSolid.Kernel.Automating.SmartReal,TopSolid.Kernel.Automating.SmartReal,TopSolid.Kernel.Automating.SmartReal)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IParts.SetEnclosingBoxManagement.html#TopSolid_Cad_Design_Automating_IParts_SetEnclosingBoxManagement_TopSolid_Kernel_Automating_DocumentId_TopSolid_Cad_Design_Automating_EnclosingBoxManagementType_TopSolid_Kernel_Automating_SmartFrame3D_TopSolid_Kernel_Automating_SmartFrame3D_TopSolid_Kernel_Automating_SmartReal_TopSolid_Kernel_Automating_SmartReal_TopSolid_Kernel_Automating_SmartReal_">SetEnclosingBoxManagement(DocumentId, EnclosingBoxManagementType, SmartFrame3D, SmartFrame3D, SmartReal, SmartReal, SmartReal)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the enclosing box management of a part.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IParts_SetEnclosingCylinderManagement_TopSolid_Kernel_Automating_DocumentId_TopSolid_Cad_Design_Automating_EnclosingCylinderManagementType_TopSolid_Kernel_Automating_SmartAxis3D_TopSolid_Kernel_Automating_SmartPoint3D_TopSolid_Kernel_Automating_SmartReal_TopSolid_Kernel_Automating_SmartReal_" data-uid="TopSolid.Cad.Design.Automating.IParts.SetEnclosingCylinderManagement(TopSolid.Kernel.Automating.DocumentId,TopSolid.Cad.Design.Automating.EnclosingCylinderManagementType,TopSolid.Kernel.Automating.SmartAxis3D,TopSolid.Kernel.Automating.SmartPoint3D,TopSolid.Kernel.Automating.SmartReal,TopSolid.Kernel.Automating.SmartReal)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IParts.SetEnclosingCylinderManagement.html#TopSolid_Cad_Design_Automating_IParts_SetEnclosingCylinderManagement_TopSolid_Kernel_Automating_DocumentId_TopSolid_Cad_Design_Automating_EnclosingCylinderManagementType_TopSolid_Kernel_Automating_SmartAxis3D_TopSolid_Kernel_Automating_SmartPoint3D_TopSolid_Kernel_Automating_SmartReal_TopSolid_Kernel_Automating_SmartReal_">SetEnclosingCylinderManagement(DocumentId, EnclosingCylinderManagementType, SmartAxis3D, SmartPoint3D, SmartReal, SmartReal)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the enclosing cylinder management of a part.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IParts_SetFinishing_TopSolid_Kernel_Automating_DocumentId_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Cad.Design.Automating.IParts.SetFinishing(TopSolid.Kernel.Automating.DocumentId,TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IParts.SetFinishing.html#TopSolid_Cad_Design_Automating_IParts_SetFinishing_TopSolid_Kernel_Automating_DocumentId_TopSolid_Kernel_Automating_DocumentId_">SetFinishing(DocumentId, DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the finishing of a part.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IParts_SetInertiaPropertyManagement_TopSolid_Kernel_Automating_DocumentId_System_Boolean_TopSolid_Kernel_Automating_SmartFrame3D_TopSolid_Kernel_Automating_SmartReal_TopSolid_Kernel_Automating_SmartReal_TopSolid_Kernel_Automating_SmartReal_" data-uid="TopSolid.Cad.Design.Automating.IParts.SetInertiaPropertyManagement(TopSolid.Kernel.Automating.DocumentId,System.Boolean,TopSolid.Kernel.Automating.SmartFrame3D,TopSolid.Kernel.Automating.SmartReal,TopSolid.Kernel.Automating.SmartReal,TopSolid.Kernel.Automating.SmartReal)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IParts.SetInertiaPropertyManagement.html#TopSolid_Cad_Design_Automating_IParts_SetInertiaPropertyManagement_TopSolid_Kernel_Automating_DocumentId_System_Boolean_TopSolid_Kernel_Automating_SmartFrame3D_TopSolid_Kernel_Automating_SmartReal_TopSolid_Kernel_Automating_SmartReal_TopSolid_Kernel_Automating_SmartReal_">SetInertiaPropertyManagement(DocumentId, bool, SmartFrame3D, SmartReal, SmartReal, SmartReal)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the moments of inertia property management of a part.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IParts_SetMachiningProcessOperationDrivers_TopSolid_Kernel_Automating_ElementId_System_Collections_Generic_List_System_String__System_Collections_Generic_List_TopSolid_Kernel_Automating_SmartObject__System_Collections_Generic_List_TopSolid_Kernel_Automating_ElementItemId__System_Collections_Generic_List_TopSolid_Kernel_Automating_SmartPoint3D__System_Collections_Generic_List_TopSolid_Kernel_Automating_ElementId__" data-uid="TopSolid.Cad.Design.Automating.IParts.SetMachiningProcessOperationDrivers(TopSolid.Kernel.Automating.ElementId,System.Collections.Generic.List{System.String},System.Collections.Generic.List{TopSolid.Kernel.Automating.SmartObject},System.Collections.Generic.List{TopSolid.Kernel.Automating.ElementItemId},System.Collections.Generic.List{TopSolid.Kernel.Automating.SmartPoint3D},System.Collections.Generic.List{TopSolid.Kernel.Automating.ElementId})">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IParts.SetMachiningProcessOperationDrivers.html#TopSolid_Cad_Design_Automating_IParts_SetMachiningProcessOperationDrivers_TopSolid_Kernel_Automating_ElementId_System_Collections_Generic_List_System_String__System_Collections_Generic_List_TopSolid_Kernel_Automating_SmartObject__System_Collections_Generic_List_TopSolid_Kernel_Automating_ElementItemId__System_Collections_Generic_List_TopSolid_Kernel_Automating_SmartPoint3D__System_Collections_Generic_List_TopSolid_Kernel_Automating_ElementId__">SetMachiningProcessOperationDrivers(ElementId, List&lt;string&gt;, List&lt;SmartObject&gt;, List&lt;ElementItemId&gt;, List&lt;SmartPoint3D&gt;, List&lt;ElementId&gt;)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the machining process with driver values.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IParts_SetMachiningProcessOperationEntryPoints_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_SmartReal_TopSolid_Kernel_Automating_SmartDirection3D_System_Collections_Generic_List_TopSolid_Kernel_Automating_SmartPoint3D__" data-uid="TopSolid.Cad.Design.Automating.IParts.SetMachiningProcessOperationEntryPoints(TopSolid.Kernel.Automating.ElementId,TopSolid.Kernel.Automating.SmartReal,TopSolid.Kernel.Automating.SmartDirection3D,System.Collections.Generic.List{TopSolid.Kernel.Automating.SmartPoint3D})">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IParts.SetMachiningProcessOperationEntryPoints.html#TopSolid_Cad_Design_Automating_IParts_SetMachiningProcessOperationEntryPoints_TopSolid_Kernel_Automating_ElementId_TopSolid_Kernel_Automating_SmartReal_TopSolid_Kernel_Automating_SmartDirection3D_System_Collections_Generic_List_TopSolid_Kernel_Automating_SmartPoint3D__">SetMachiningProcessOperationEntryPoints(ElementId, SmartReal, SmartDirection3D, List&lt;SmartPoint3D&gt;)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Set Entry Points of a machining process operation</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IParts_SetMachiningProcessOperationFaceDriverValue_TopSolid_Kernel_Automating_ElementId_System_String_TopSolid_Kernel_Automating_ElementItemId_" data-uid="TopSolid.Cad.Design.Automating.IParts.SetMachiningProcessOperationFaceDriverValue(TopSolid.Kernel.Automating.ElementId,System.String,TopSolid.Kernel.Automating.ElementItemId)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IParts.SetMachiningProcessOperationFaceDriverValue.html#TopSolid_Cad_Design_Automating_IParts_SetMachiningProcessOperationFaceDriverValue_TopSolid_Kernel_Automating_ElementId_System_String_TopSolid_Kernel_Automating_ElementItemId_">SetMachiningProcessOperationFaceDriverValue(ElementId, string, ElementItemId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets a machining process face driver value</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IParts_SetMachiningProcessOperationFaces_TopSolid_Kernel_Automating_ElementId_System_Collections_Generic_List_TopSolid_Kernel_Automating_ElementItemId__" data-uid="TopSolid.Cad.Design.Automating.IParts.SetMachiningProcessOperationFaces(TopSolid.Kernel.Automating.ElementId,System.Collections.Generic.List{TopSolid.Kernel.Automating.ElementItemId})">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IParts.SetMachiningProcessOperationFaces.html#TopSolid_Cad_Design_Automating_IParts_SetMachiningProcessOperationFaces_TopSolid_Kernel_Automating_ElementId_System_Collections_Generic_List_TopSolid_Kernel_Automating_ElementItemId__">SetMachiningProcessOperationFaces(ElementId, List&lt;ElementItemId&gt;)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Set Faces to a machining process operation</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IParts_SetMachiningProcessOperationPointDriverValue_TopSolid_Kernel_Automating_ElementId_System_String_TopSolid_Kernel_Automating_SmartPoint3D_" data-uid="TopSolid.Cad.Design.Automating.IParts.SetMachiningProcessOperationPointDriverValue(TopSolid.Kernel.Automating.ElementId,System.String,TopSolid.Kernel.Automating.SmartPoint3D)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IParts.SetMachiningProcessOperationPointDriverValue.html#TopSolid_Cad_Design_Automating_IParts_SetMachiningProcessOperationPointDriverValue_TopSolid_Kernel_Automating_ElementId_System_String_TopSolid_Kernel_Automating_SmartPoint3D_">SetMachiningProcessOperationPointDriverValue(ElementId, string, SmartPoint3D)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets a machining process point driver value</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IParts_SetMachiningProcessOperationSmartDriverValue_TopSolid_Kernel_Automating_ElementId_System_String_TopSolid_Kernel_Automating_SmartObject_" data-uid="TopSolid.Cad.Design.Automating.IParts.SetMachiningProcessOperationSmartDriverValue(TopSolid.Kernel.Automating.ElementId,System.String,TopSolid.Kernel.Automating.SmartObject)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IParts.SetMachiningProcessOperationSmartDriverValue.html#TopSolid_Cad_Design_Automating_IParts_SetMachiningProcessOperationSmartDriverValue_TopSolid_Kernel_Automating_ElementId_System_String_TopSolid_Kernel_Automating_SmartObject_">SetMachiningProcessOperationSmartDriverValue(ElementId, string, SmartObject)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets a machining process smart driver value</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IParts_SetMachiningProcessOperationToleranceDriverValue_TopSolid_Kernel_Automating_ElementId_System_String_TopSolid_Kernel_Automating_ElementId_" data-uid="TopSolid.Cad.Design.Automating.IParts.SetMachiningProcessOperationToleranceDriverValue(TopSolid.Kernel.Automating.ElementId,System.String,TopSolid.Kernel.Automating.ElementId)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IParts.SetMachiningProcessOperationToleranceDriverValue.html#TopSolid_Cad_Design_Automating_IParts_SetMachiningProcessOperationToleranceDriverValue_TopSolid_Kernel_Automating_ElementId_System_String_TopSolid_Kernel_Automating_ElementId_">SetMachiningProcessOperationToleranceDriverValue(ElementId, string, ElementId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets a machining process point driver value</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IParts_SetMassPropertyManagement_TopSolid_Kernel_Automating_DocumentId_System_Boolean_TopSolid_Kernel_Automating_SmartReal_" data-uid="TopSolid.Cad.Design.Automating.IParts.SetMassPropertyManagement(TopSolid.Kernel.Automating.DocumentId,System.Boolean,TopSolid.Kernel.Automating.SmartReal)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IParts.SetMassPropertyManagement.html#TopSolid_Cad_Design_Automating_IParts_SetMassPropertyManagement_TopSolid_Kernel_Automating_DocumentId_System_Boolean_TopSolid_Kernel_Automating_SmartReal_">SetMassPropertyManagement(DocumentId, bool, SmartReal)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the mass property management of a part.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IParts_SetMaterial_TopSolid_Kernel_Automating_DocumentId_TopSolid_Kernel_Automating_DocumentId_" data-uid="TopSolid.Cad.Design.Automating.IParts.SetMaterial(TopSolid.Kernel.Automating.DocumentId,TopSolid.Kernel.Automating.DocumentId)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IParts.SetMaterial.html#TopSolid_Cad_Design_Automating_IParts_SetMaterial_TopSolid_Kernel_Automating_DocumentId_TopSolid_Kernel_Automating_DocumentId_">SetMaterial(DocumentId, DocumentId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the material of a part.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IParts_SetPhysicalPropertiesManagementRefreshAuto_TopSolid_Kernel_Automating_DocumentId_System_Boolean_" data-uid="TopSolid.Cad.Design.Automating.IParts.SetPhysicalPropertiesManagementRefreshAuto(TopSolid.Kernel.Automating.DocumentId,System.Boolean)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IParts.SetPhysicalPropertiesManagementRefreshAuto.html#TopSolid_Cad_Design_Automating_IParts_SetPhysicalPropertiesManagementRefreshAuto_TopSolid_Kernel_Automating_DocumentId_System_Boolean_">SetPhysicalPropertiesManagementRefreshAuto(DocumentId, bool)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the refresh auto of the physical property management of a part.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IParts_SetSurfaceAreaPropertyManagement_TopSolid_Kernel_Automating_DocumentId_System_Boolean_TopSolid_Kernel_Automating_SmartReal_" data-uid="TopSolid.Cad.Design.Automating.IParts.SetSurfaceAreaPropertyManagement(TopSolid.Kernel.Automating.DocumentId,System.Boolean,TopSolid.Kernel.Automating.SmartReal)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IParts.SetSurfaceAreaPropertyManagement.html#TopSolid_Cad_Design_Automating_IParts_SetSurfaceAreaPropertyManagement_TopSolid_Kernel_Automating_DocumentId_System_Boolean_TopSolid_Kernel_Automating_SmartReal_">SetSurfaceAreaPropertyManagement(DocumentId, bool, SmartReal)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the surface area property management of a part.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cad_Design_Automating_IParts_SetVolumePropertyManagement_TopSolid_Kernel_Automating_DocumentId_System_Boolean_TopSolid_Kernel_Automating_SmartReal_" data-uid="TopSolid.Cad.Design.Automating.IParts.SetVolumePropertyManagement(TopSolid.Kernel.Automating.DocumentId,System.Boolean,TopSolid.Kernel.Automating.SmartReal)">
+          <a class="xref" href="TopSolid.Cad.Design.Automating.IParts.SetVolumePropertyManagement.html#TopSolid_Cad_Design_Automating_IParts_SetVolumePropertyManagement_TopSolid_Kernel_Automating_DocumentId_System_Boolean_TopSolid_Kernel_Automating_SmartReal_">SetVolumePropertyManagement(DocumentId, bool, SmartReal)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the volume property management of a part.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div id="footer-alt">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      			<div id="footer-alt-bottom">
+                      <ul>
+                          <li><a href="https://www.topsolid.com/en/terms-of-use">Term of use</a></li>
+                          <li><a href="https://www.topsolid.com/en/corporate-information">Corporate information</a></li>
+                          <li><a href="https://www.topsolid.com/en/privacy-policy-gdpr">Privacy Policy - GDPR</a></li>
+                      </ul>
+                      <p>Copyright ©2025 TopSolid - All rights reserved.</p>
+                  </div>
+          </div>
+        </div>
+      </footer>    </div>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

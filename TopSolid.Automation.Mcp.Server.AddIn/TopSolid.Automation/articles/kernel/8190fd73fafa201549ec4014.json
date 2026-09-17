@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IFamilies.CreateDerivedDocument.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IFamilies.CreateDerivedDocument.html",
+  "sha256": "c4e7262d94c8ab452dca3bb2724a3d79233759a0995a6ba1e8155de6f0f5733b",
+  "text": "# Method CreateDerivedDocument\n\n#### CreateDerivedDocument(PdmObjectId, DocumentId, DocumentId)\n\nCreates a new derived family document of a specified family document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nDocumentId CreateDerivedDocument(PdmObjectId inOwnerId, DocumentId inDocumentId, DocumentId inGenericId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inOwnerId |  Identifier of owner.  |  \n \n|  DocumentId |  inDocumentId |  Identifier of the family document to derive.  |  \n \n|  DocumentId |  inGenericId |  Identifier of the derived generic document, or Empty if not derived.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  DocumentId |  Derived family document identifier.  |  \n\n##### Remarks\n\nThis method must not be called between StartModification(string, bool) and EndModification(bool, bool) methods calls.\n \nThis method is available since v7.10.\n",
+  "markdown": "markdown/kernel/8190fd73fafa201549ec4014.md",
+  "originalHtml": "html/kernel/8190fd73fafa201549ec4014.html"
+}

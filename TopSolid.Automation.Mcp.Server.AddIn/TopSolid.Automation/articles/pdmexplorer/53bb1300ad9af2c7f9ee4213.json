@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.SetManufacturerPartNumber.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.SetManufacturerPartNumber.html",
+  "sha256": "b86fb8585adbbbd94bcb63a318a6f240b933717c5091ef189a045ae1768fbd30",
+  "text": "# Method SetManufacturerPartNumber\n\n#### SetManufacturerPartNumber(PdmObjectId, string)\n\nSets the manufacturer part number of an object.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nvoid SetManufacturerPartNumber(PdmObjectId inObjectId, string inManufacturerPartNumber)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  Object identifier.  |  \n \n|  string |  inManufacturerPartNumber |  Manufacturer part number.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/pdmexplorer/53bb1300ad9af2c7f9ee4213.md",
+  "originalHtml": "html/pdmexplorer/53bb1300ad9af2c7f9ee4213.html"
+}

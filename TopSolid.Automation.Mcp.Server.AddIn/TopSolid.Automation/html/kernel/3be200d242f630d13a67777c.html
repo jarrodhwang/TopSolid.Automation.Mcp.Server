@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Method GetColorTableParameterPossibleValues | TopSolid Automation website </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Method GetColorTableParameterPossibleValues | TopSolid Automation website ">
+    
+    
+      <link rel="shortcut icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../../styles/docfx.css">
+      <link rel="stylesheet" href="../../styles/main.css">
+      <meta property="docfx:navrel" content="../../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../img/AutomationIcon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="TopSolid.Kernel.Automating.IParameters.GetColorTableParameterPossibleValues*">
+
+
+
+<h1 id="TopSolid_Kernel_Automating_IParameters_GetColorTableParameterPossibleValues_" data-uid="TopSolid.Kernel.Automating.IParameters.GetColorTableParameterPossibleValues*">Method GetColorTableParameterPossibleValues</h1>
+<div class="markdown level0 summary"></div>
+<div class="markdown level0 conceptual"></div>
+
+<a id="TopSolid_Kernel_Automating_IParameters_GetColorTableParameterPossibleValues_" data-uid="TopSolid.Kernel.Automating.IParameters.GetColorTableParameterPossibleValues*"></a>
+<h4 id="TopSolid_Kernel_Automating_IParameters_GetColorTableParameterPossibleValues_TopSolid_Kernel_Automating_ElementId_System_Collections_Generic_List_TopSolid_Kernel_Automating_SmartReal___System_Collections_Generic_List_TopSolid_Kernel_Automating_SmartColor___" data-uid="TopSolid.Kernel.Automating.IParameters.GetColorTableParameterPossibleValues(TopSolid.Kernel.Automating.ElementId,System.Collections.Generic.List{TopSolid.Kernel.Automating.SmartReal}@,System.Collections.Generic.List{TopSolid.Kernel.Automating.SmartColor}@)">GetColorTableParameterPossibleValues(ElementId, out List&lt;SmartReal&gt;, out List&lt;SmartColor&gt;)</h4>
+<div class="markdown level1 summary"><p>Gets possible values from color table parameter creation operation.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+<h5 class="declaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">[OperationContract]
+[AvailableSinceVersion(7, 18, 0, 0)]
+void GetColorTableParameterPossibleValues(ElementId inElementId, out List&lt;SmartReal&gt; outSourceSmartRealList, out List&lt;SmartColor&gt; outResultSmartColorList)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a class="xref" href="TopSolid.Kernel.Automating.ElementId.html">ElementId</a></td>
+      <td><span class="parametername">inElementId</span></td>
+      <td><p>Identifier of the smart color table parameter creation operation.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TopSolid.Kernel.Automating.SmartReal.html">SmartReal</a>&gt;</td>
+      <td><span class="parametername">outSourceSmartRealList</span></td>
+      <td><p>Source values.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TopSolid.Kernel.Automating.SmartColor.html">SmartColor</a>&gt;</td>
+      <td><span class="parametername">outResultSmartColorList</span></td>
+      <td><p>Result values.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 id="TopSolid_Kernel_Automating_IParameters_GetColorTableParameterPossibleValues_TopSolid_Kernel_Automating_ElementId_System_Collections_Generic_List_TopSolid_Kernel_Automating_SmartReal___System_Collections_Generic_List_TopSolid_Kernel_Automating_SmartColor____remarks">Remarks</h5>
+<div class="markdown level1 remarks"><p><a class="xref" href="TopSolid.Kernel.Automating.IApplication.StartModification.html#TopSolid_Kernel_Automating_IApplication_StartModification_System_String_System_Boolean_">StartModification(string, bool)</a> and <a class="xref" href="TopSolid.Kernel.Automating.IDocuments.EnsureIsDirty.html#TopSolid_Kernel_Automating_IDocuments_EnsureIsDirty_TopSolid_Kernel_Automating_DocumentId__">EnsureIsDirty(ref DocumentId)</a> must be called before calling this method.</p>
+<p>This method is available since v7.18.</p>
+</div>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div id="footer-alt">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      			<div id="footer-alt-bottom">
+                      <ul>
+                          <li><a href="https://www.topsolid.com/en/terms-of-use">Term of use</a></li>
+                          <li><a href="https://www.topsolid.com/en/corporate-information">Corporate information</a></li>
+                          <li><a href="https://www.topsolid.com/en/privacy-policy-gdpr">Privacy Policy - GDPR</a></li>
+                      </ul>
+                      <p>Copyright ©2025 TopSolid - All rights reserved.</p>
+                  </div>
+          </div>
+        </div>
+      </footer>    </div>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

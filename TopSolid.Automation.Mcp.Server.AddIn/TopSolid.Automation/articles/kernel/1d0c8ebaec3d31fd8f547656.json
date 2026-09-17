@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IShapes.CreateColoringOperation.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IShapes.CreateColoringOperation.html",
+  "sha256": "8f581e4384d2e1f9637ad0a28a734066828d3f1fa964a4f18b05e3b3cbe0eb83",
+  "text": "# Method CreateColoringOperation\n\n#### CreateColoringOperation(List<ElementItemId>, Color)\n\nChanges the color of the faces.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 13, 0, 0)]\nElementId CreateColoringOperation(List<ElementItemId> inFaceIds, Color inColor)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  List<ElementItemId> |  inFaceIds |  Identifier of the faces to modify color.  |  \n \n|  Color |  inColor |  Color of the face, or Empty if the face has no color.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the created coloring operation.  |  \n\n##### Remarks\n\nThis method is available since v7.13.\n",
+  "markdown": "markdown/kernel/1d0c8ebaec3d31fd8f547656.md",
+  "originalHtml": "html/kernel/1d0c8ebaec3d31fd8f547656.html"
+}

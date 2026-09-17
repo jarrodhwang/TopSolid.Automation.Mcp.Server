@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.TopSolidHost.Application.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.TopSolidHost.Application.html",
+  "sha256": "19d83719908be6392c6fea08ec73e574c0617245c13a1fd36f299ede78707c26",
+  "text": "# Property Application\n\n#### Application\n\nGets access to the application, or null if not available.\n\n##### Declaration\n\n```\npublic static IApplication Application { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  IApplication |   |\n",
+  "markdown": "markdown/kernel/cc379e54a42e7389ed4fadcf.md",
+  "originalHtml": "html/kernel/cc379e54a42e7389ed4fadcf.html"
+}

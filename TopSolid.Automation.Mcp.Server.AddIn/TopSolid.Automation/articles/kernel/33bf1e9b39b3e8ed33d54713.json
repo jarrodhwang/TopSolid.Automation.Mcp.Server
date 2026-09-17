@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.SetTextUserProperty.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.SetTextUserProperty.html",
+  "sha256": "fd8f6c2f66cba2cc5e70eaa5c7cfc7878b91b4b90925c8911574384b656b1ab5",
+  "text": "# Method SetTextUserProperty\n\n#### SetTextUserProperty(PdmObjectId, PdmObjectId, string)\n\nSets the value of a specified text user property of an object.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 9, 300, 40)]\nvoid SetTextUserProperty(PdmObjectId inObjectId, PdmObjectId inPropertyObjectId, string inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  Object identifier.  |  \n \n|  PdmObjectId |  inPropertyObjectId |  Object identifier of property definition document to assign.  |  \n \n|  string |  inValue |  Value to assign.  |  \n\n##### Remarks\n\nThis method must not be called between StartModification(string, bool) and EndModification(bool, bool) methods calls.\n \nThis method is available since v7.9.300.040.\n",
+  "markdown": "markdown/kernel/33bf1e9b39b3e8ed33d54713.md",
+  "originalHtml": "html/kernel/33bf1e9b39b3e8ed33d54713.html"
+}

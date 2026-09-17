@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IParameters.SetNamedValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IParameters.SetNamedValue.html",
+  "sha256": "473e7049e0dd09b41ff892f8ce73c7b86d3e368ccb90f624eba163132c68408f",
+  "text": "# Method SetNamedValue\n\n#### SetNamedValue(ElementExId, string, SmartObject)\n\nSets the value of the given parameter. The kind of SmartObject is fixed by the ParameterType: SmartInteger for integer parameter, SmartReal for real parameter, et caetera... Bound parameters must be set by the according functions.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 13, 0, 0)]\nbool SetNamedValue(ElementExId inElementId, string inName, SmartObject inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementExId |  inElementId |  Element owner of the parameter.  |  \n \n|  string |  inName |  Full or partial name of the parameter to fix.  |  \n \n|  SmartObject |  inValue |  New value.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  True if the value has been changed. False if the value have not changed.  |  \n\n##### Remarks\n\nWarning : this function is only usable for Real, Int, Bool and Text parameters. All other types are not available here.\n",
+  "markdown": "markdown/cam/02bd080edb340f8f915af9e6.md",
+  "originalHtml": "html/cam/02bd080edb340f8f915af9e6.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/electrode/TopSolid.Cad.Electrode.Automating.TopSolidElectrodeHost.IsConnected.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/electrode/TopSolid.Cad.Electrode.Automating.TopSolidElectrodeHost.IsConnected.html",
+  "sha256": "e0ef4fcb6f7bcb5d57b113e78a83e1d8ec2ed2beae4c4354c5dc3a131e26d582",
+  "text": "# Property IsConnected\n\n#### IsConnected\n\nTells whether TopSolid is connected.\n\n##### Declaration\n\n```\npublic static bool IsConnected { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |   |\n",
+  "markdown": "markdown/electrode/95fc171a20a2e5debf840b1a.md",
+  "originalHtml": "html/electrode/95fc171a20a2e5debf840b1a.html"
+}

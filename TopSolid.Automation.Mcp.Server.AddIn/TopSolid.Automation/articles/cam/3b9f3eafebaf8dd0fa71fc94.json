@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.PathPoint.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.PathPoint.html",
+  "sha256": "857cac201d05fc47e8e466c90eb6f8918cf862cc7b400c244ff2e6a7171c1de2",
+  "text": "# Struct PathPoint\n\nRepresents a tool path point.\n\n##### Inherited Members\n \n ValueType.Equals(object) \n \n ValueType.GetHashCode() \n \n ValueType.ToString() \n \n object.Equals(object, object) \n \n object.ReferenceEquals(object, object) \n \n object.GetType() \n\n###### Namespace: TopSolid.Cam.NC.Kernel.Automating\n\n###### Assembly: TopSolid.Cam.NC.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\npublic struct PathPoint\n```\n\n### Constructors \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   PathPoint(Point3D, Vector3D, double)  |  Initializes a new instance of the ParameterId structure.  |  \n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   Empty  |  Empty identifier.  |  \n\n### Properties \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   FeedrateFactor  |  Gets the feedrate to reach the point.  |  \n \n|   IsEmpty  |  Tells whether the parameter identifier is empty.  |  \n \n|   Normal  |  Gets the normal of this point.  |  \n \n|   Point  |  Gets the point.  |\n",
+  "markdown": "markdown/cam/3b9f3eafebaf8dd0fa71fc94.md",
+  "originalHtml": "html/cam/3b9f3eafebaf8dd0fa71fc94.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ISketches3D.MakeVertexTemporary.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ISketches3D.MakeVertexTemporary.html",
+  "sha256": "022bac827f028a487c696fc93c9e57b4351747833d798ec8dc06daf00386d29f",
+  "text": "# Method MakeVertexTemporary\n\n#### MakeVertexTemporary(ElementItemId)\n\nMakes a vertex temporary in the ModifiedSketch.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 201, 80)]\nvoid MakeVertexTemporary(ElementItemId inVertexId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementItemId |  inVertexId |  Identifier of the vertex to modify.  |  \n\n##### Remarks\n\nStartModification(ElementId) must be called before calling this method.\n \nThis method is available since v7.7.201.80.\n",
+  "markdown": "markdown/kernel/f49c1f78e78a168dc9eb76f2.md",
+  "originalHtml": "html/kernel/f49c1f78e78a168dc9eb76f2.html"
+}

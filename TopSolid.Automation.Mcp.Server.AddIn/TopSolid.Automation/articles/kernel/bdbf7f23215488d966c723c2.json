@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.CreateTextParameter.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.CreateTextParameter.html",
+  "sha256": "9cadfef37fc3fde24efd2b2891e3217a8689e351172578d29a99f52aa84c9f0d",
+  "text": "# Method CreateTextParameter\n\n#### CreateTextParameter(DocumentId, string)\n\nCreates a text parameter entity in a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 301, 40)]\nElementId CreateTextParameter(DocumentId inDocumentId, string inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  string |  inValue |  Value.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the created parameter entity.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.6.301.40.\n",
+  "markdown": "markdown/kernel/bdbf7f23215488d966c723c2.md",
+  "originalHtml": "html/kernel/bdbf7f23215488d966c723c2.html"
+}

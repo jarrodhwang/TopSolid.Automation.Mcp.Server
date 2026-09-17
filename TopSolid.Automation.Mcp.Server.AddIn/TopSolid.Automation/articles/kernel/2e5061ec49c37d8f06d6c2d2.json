@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IUser.AskFrame3DList.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IUser.AskFrame3DList.html",
+  "sha256": "e9915fb4ef66fef40f31a1f5f67e54b7555f9b452672b7f84ccc32889b0cc1ed",
+  "text": "# Method AskFrame3DList\n\n#### AskFrame3DList(UserQuestion, List<SmartFrame3D>, out List<SmartFrame3D>)\n\nAsks the user for a 3D frame list.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 13, 0, 0)]\nUserAnswerType AskFrame3DList(UserQuestion inQuestion, List<SmartFrame3D> inSuggestions, out List<SmartFrame3D> outAnswer)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  UserQuestion |  inQuestion |  Question asked to the user.  |  \n \n|  List<SmartFrame3D> |  inSuggestions |  Suggested answer, or null if none.  |  \n \n|  List<SmartFrame3D> |  outAnswer |  User answer, or null if none.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  UserAnswerType |  Type of user answer.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) may be called before calling this method to allow the user to create or modify entities during the interaction.\n \nThis method is available since v7.13.\n",
+  "markdown": "markdown/kernel/2e5061ec49c37d8f06d6c2d2.md",
+  "originalHtml": "html/kernel/2e5061ec49c37d8f06d6c2d2.html"
+}

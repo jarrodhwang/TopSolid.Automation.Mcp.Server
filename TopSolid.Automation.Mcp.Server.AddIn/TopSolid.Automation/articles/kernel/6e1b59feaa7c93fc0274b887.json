@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.TopSolidHost.ClientName.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.TopSolidHost.ClientName.html",
+  "sha256": "c73ed399bfd498987463b6346d9e0d5f5e3b3f8cc212f799a4c3ceca83bbdd40",
+  "text": "# Property ClientName\n\n#### ClientName\n\nGets the client name, or null if anonymous.\n\n##### Declaration\n\n```\npublic static string ClientName { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |   |\n",
+  "markdown": "markdown/kernel/6e1b59feaa7c93fc0274b887.md",
+  "originalHtml": "html/kernel/6e1b59feaa7c93fc0274b887.html"
+}

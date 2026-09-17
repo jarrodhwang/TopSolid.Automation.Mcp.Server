@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.PdmSecurityUserOrGroupPermissions.ExportPermission.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.PdmSecurityUserOrGroupPermissions.ExportPermission.html",
+  "sha256": "720eed572829e95d3155b59075d06e8072a13eae4a081cb5f4ea2a1994f8688a",
+  "text": "# Field ExportPermission\n\nEnable user to export a document.\n\n###### Namespace: TopSolid.Pdm.Explorer.Automating\n\n###### Assembly: TopSolid.Pdm.Explorer.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic PdmSecurityPermission ExportPermission\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  PdmSecurityPermission |  Enable user to export a document. |\n",
+  "markdown": "markdown/pdmexplorer/8164c8ec967f53a03be3a364.md",
+  "originalHtml": "html/pdmexplorer/8164c8ec967f53a03be3a364.html"
+}

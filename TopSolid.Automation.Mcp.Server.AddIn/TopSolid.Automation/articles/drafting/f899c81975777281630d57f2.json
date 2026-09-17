@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.IAnnotations.GetGeometricToleranceTolerancesFrameCount.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.IAnnotations.GetGeometricToleranceTolerancesFrameCount.html",
+  "sha256": "eafb3944c94e301c3d3b73fa7c8ccc82b0cc6069aa2c0b0a3840f8b2fd155528",
+  "text": "# Method GetGeometricToleranceTolerancesFrameCount\n\n#### GetGeometricToleranceTolerancesFrameCount(ElementId)\n\nGets the tolerance frame count of a geometric tolerance entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 17, 0, 0)]\nint GetGeometricToleranceTolerancesFrameCount(ElementId inGeometricTolerance)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inGeometricTolerance |  Identifier of the element to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  int |  Count of tolerance frames.  |  \n\n##### Remarks\n\nThis method is available since v7.17.\n",
+  "markdown": "markdown/drafting/f899c81975777281630d57f2.md",
+  "originalHtml": "html/drafting/f899c81975777281630d57f2.html"
+}

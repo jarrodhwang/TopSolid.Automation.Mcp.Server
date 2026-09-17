@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IOrigins.GetOriginRigidGroup.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IOrigins.GetOriginRigidGroup.html",
+  "sha256": "e8464735d8abc9177c6aea60af9e79103b579da9aa9516e49c9fba00ea42c214",
+  "text": "# Method GetOriginRigidGroup\n\n#### GetOriginRigidGroup(ElementId)\n\nGets the origin rigid group.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 400, 80)]\nElementId GetOriginRigidGroup(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the origin to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  The rigid group.  |\n",
+  "markdown": "markdown/cam/54665b6c5601e346ab045fdf.md",
+  "originalHtml": "html/cam/54665b6c5601e346ab045fdf.html"
+}

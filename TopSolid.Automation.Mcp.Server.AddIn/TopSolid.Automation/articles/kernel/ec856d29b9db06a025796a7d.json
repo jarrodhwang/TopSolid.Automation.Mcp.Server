@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ISketches3D.GetSegmentTangent.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ISketches3D.GetSegmentTangent.html",
+  "sha256": "2bbe59084eade97f4b584b73dd391b0bb45d5660cbdd6b2faac3a96c860b72cb",
+  "text": "# Method GetSegmentTangent\n\n#### GetSegmentTangent(ElementItemId, double)\n\nGets the tangent of a segment at a specified parametric value.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nDirection3D GetSegmentTangent(ElementItemId inSegmentId, double inT)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementItemId |  inSegmentId |  Identifier of the segment to analyze.  |  \n \n|  double |  inT |  Parameter within segment parametric range.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Direction3D |  Tangent to the segment at the specified parametric value.  |  \n\n##### Remarks\n\nIf the segment is reversed, the orientation of the tangent is the opposite to the parametric first derivative.\n \nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/ec856d29b9db06a025796a7d.md",
+  "originalHtml": "html/kernel/ec856d29b9db06a025796a7d.html"
+}

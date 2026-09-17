@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IElements.GetProperties.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IElements.GetProperties.html",
+  "sha256": "9e51ce9300537d1aca10f92be98fe04cb7837b89fe20fbdfff2dd8a686a8569c",
+  "text": "# Method GetProperties\n\n#### GetProperties(ElementId)\n\nGets the full names of the properties of an element.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 300, 60)]\nList<string> GetProperties(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<string> |  Full names of the element properties.  |  \n\n##### Remarks\n\nThis method is available since v7.8.300.60.\n",
+  "markdown": "markdown/kernel/5edae432833326c6431136fc.md",
+  "originalHtml": "html/kernel/5edae432833326c6431136fc.html"
+}

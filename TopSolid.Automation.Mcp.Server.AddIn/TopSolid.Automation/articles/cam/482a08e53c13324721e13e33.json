@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.ITools.GetPdmId.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.ITools.GetPdmId.html",
+  "sha256": "2c103cde19ba7fd63816a9e8dc7977d548f8f87a2b75fced83dd6224cea03f43",
+  "text": "# Method GetPdmId\n\n#### GetPdmId(ElementId)\n\nGets the PDM identifier.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nPdmObjectId GetPdmId(ElementId inToolId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inToolId |  The in tool identifier.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  PdmObjectId |   |\n",
+  "markdown": "markdown/cam/482a08e53c13324721e13e33.md",
+  "originalHtml": "html/cam/482a08e53c13324721e13e33.html"
+}

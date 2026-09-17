@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IGeometries3D.GetAbsoluteXYPlane.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IGeometries3D.GetAbsoluteXYPlane.html",
+  "sha256": "d5a8b39759990b37a917c63e0472a03cae9f8a4817d37e887a55304aa8813624",
+  "text": "# Method GetAbsoluteXYPlane\n\n#### GetAbsoluteXYPlane(DocumentId)\n\nGets the absolute XY plane entity of a document.\n\n##### Declaration\n\n```\n[OperationContract]\nElementId GetAbsoluteXYPlane(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the absolute XY plane entity found.  |\n",
+  "markdown": "markdown/kernel/098c81c9763a6c850c939c74.md",
+  "originalHtml": "html/kernel/098c81c9763a6c850c939c74.html"
+}

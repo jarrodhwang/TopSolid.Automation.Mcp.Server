@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Direction2D.op_Division.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Direction2D.op_Division.html",
+  "sha256": "6e49d8ecbcc9894f058ef0860bab3313612cd1297334e7df9cdf4786438d9def",
+  "text": "# Operator operator /\n\n#### operator /(Direction2D, double)\n\nDivides a direction by a double value.\n\n##### Declaration\n\n```\npublic static Vector2D operator /(Direction2D inDirection, double inD)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  Direction2D |  inDirection |  Left hand side direction.  |  \n \n|  double |  inD |  Right hand side double.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Vector2D |  Scaled vector.  |\n",
+  "markdown": "markdown/kernel/7c1cf2b918438473f8635898.md",
+  "originalHtml": "html/kernel/7c1cf2b918438473f8635898.html"
+}

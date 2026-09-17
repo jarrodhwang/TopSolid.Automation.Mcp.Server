@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IDocuments.SetVirtualDocumentMode.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IDocuments.SetVirtualDocumentMode.html",
+  "sha256": "75d53512b64c11042f5cbc78ed55c63f3dfe1046dd374c8ed486af385b0300c8",
+  "text": "# Method SetVirtualDocumentMode\n\n#### SetVirtualDocumentMode(DocumentId, bool)\n\nSets the virtual document mode.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 17, 0, 0)]\nvoid SetVirtualDocumentMode(DocumentId inDocumentId, bool inIsOn)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  bool |  inIsOn |  Tells wether the document is virtual.  |  \n\n##### Remarks\n\nThis method is available since v7.17.\n",
+  "markdown": "markdown/kernel/7bee981472d7d8a733543e91.md",
+  "originalHtml": "html/kernel/7bee981472d7d8a733543e91.html"
+}

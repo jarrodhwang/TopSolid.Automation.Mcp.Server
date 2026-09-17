@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.GetComment.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.GetComment.html",
+  "sha256": "be7653bcfee4610579723bb502a0184d0dff9389f0cc5b95246d637bc4a3621a",
+  "text": "# Method GetComment\n\n#### GetComment(PdmObjectId)\n\nGets the comment of an object.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 303, 100)]\nstring GetComment(PdmObjectId inObjectId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  Object identifier.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  Object comment.  |  \n\n##### Remarks\n\nThis method is available since v7.8.303.100.\n",
+  "markdown": "markdown/kernel/f695649fc429763336ee2201.md",
+  "originalHtml": "html/kernel/f695649fc429763336ee2201.html"
+}

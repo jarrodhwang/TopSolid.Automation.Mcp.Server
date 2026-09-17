@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.GetMinorRevisionFileSize.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.GetMinorRevisionFileSize.html",
+  "sha256": "b77d35a5014aa534e6db0caddcb1b57a911629c4001035cc387e62b0e6ec1f34",
+  "text": "# Method GetMinorRevisionFileSize\n\n#### GetMinorRevisionFileSize(PdmMinorRevisionId)\n\nGets the size of the file of a minor revision.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nlong GetMinorRevisionFileSize(PdmMinorRevisionId inMinorRevisionId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmMinorRevisionId |  inMinorRevisionId |  Identifier of the minor revision.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  long |  Size (in bytes) of the file of the minor revision.  |  \n\n##### Remarks\n\nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/05f7f224385b811891a36d48.md",
+  "originalHtml": "html/kernel/05f7f224385b811891a36d48.html"
+}

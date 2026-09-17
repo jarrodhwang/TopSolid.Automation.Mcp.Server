@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IOperations.SetCondition.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IOperations.SetCondition.html",
+  "sha256": "0655f652d9f6af43fcb006709cec86ebb4ad588670668f4ca7370283a82c62ef",
+  "text": "# Method SetCondition\n\n#### SetCondition(ElementId, SmartBoolean)\n\nSets the condition of an operation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 12, 0, 0)]\nvoid SetCondition(ElementId inElementId, SmartBoolean inCondition)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the operation to modify.  |  \n \n|  SmartBoolean |  inCondition |  Condition, or null if none.  |  \n\n##### Remarks\n\nAn exception will be thrown when trying to set a non-null condition to an operation that is not deactivable.\n \nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.12.\n",
+  "markdown": "markdown/kernel/81d26334eb89aad7e678c14a.md",
+  "originalHtml": "html/kernel/81d26334eb89aad7e678c14a.html"
+}

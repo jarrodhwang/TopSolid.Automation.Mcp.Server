@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.CreateProjectWithTemplate.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.CreateProjectWithTemplate.html",
+  "sha256": "6b308c0c5310d311ab68039772364b214c05f1c810ee6787bc85d6f76d84011c",
+  "text": "# Method CreateProjectWithTemplate\n\n#### CreateProjectWithTemplate(string, PdmObjectId)\n\nCreates a project with a template.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nPdmObjectId CreateProjectWithTemplate(string inProjectName, PdmObjectId inTemplateObjectId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  string |  inProjectName |  Project name.  |  \n \n|  PdmObjectId |  inTemplateObjectId |  PDM object identifier of the template.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  PdmObjectId |  PDM object identifier of the created project.  |  \n\n##### Remarks\n\nThis method must not be called between StartModification(string, bool) and EndModification(bool, bool) methods calls.\n \nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/8a8af8fdaf242f3f813cf6f0.md",
+  "originalHtml": "html/kernel/8a8af8fdaf242f3f813cf6f0.html"
+}

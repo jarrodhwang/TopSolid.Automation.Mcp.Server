@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IParts.SetMassPropertyManagement.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IParts.SetMassPropertyManagement.html",
+  "sha256": "f9c546c5f2cc8d589631072b3b02c42aa7af4c05006bc5897390df1c76ed6995",
+  "text": "# Method SetMassPropertyManagement\n\n#### SetMassPropertyManagement(DocumentId, bool, SmartReal)\n\nSets the mass property management of a part.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 13, 300, 220)]\nvoid SetMassPropertyManagement(DocumentId inDocumentId, bool inIsMassManaged, SmartReal inManualMass)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of part document to analyze.  |  \n \n|  bool |  inIsMassManaged |  Whether the mass is managed. True for automatic or manual, false for not managed.  |  \n \n|  SmartReal |  inManualMass |  Manual mass, or null if no manual mass.  |  \n\n##### Remarks\n\nThis method is available since v7.13.300.220.\n",
+  "markdown": "markdown/cad/5b52c9d021dbc91ce214e120.md",
+  "originalHtml": "html/cad/5b52c9d021dbc91ce214e120.html"
+}

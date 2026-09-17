@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Color.R.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Color.R.html",
+  "sha256": "cbdea027b9516fedc89df14b01c6283d2679254ab481ad03e204b0044fe0fa8a",
+  "text": "# Property R\n\n#### R\n\nGets the color red intensity.\n\n##### Declaration\n\n```\npublic byte R { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  byte |   |\n",
+  "markdown": "markdown/kernel/73de8f73d1a232f36ba24118.md",
+  "originalHtml": "html/kernel/73de8f73d1a232f36ba24118.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ISketches3D.SetSegmentCenter.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ISketches3D.SetSegmentCenter.html",
+  "sha256": "5cf91d599d2edda7ad880c2321dedfbfcf14233ab09b2926135a350270983078",
+  "text": "# Method SetSegmentCenter\n\n#### SetSegmentCenter(ElementItemId, ElementItemId)\n\nSets the center of a segment in the ModifiedSketch.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 201, 80)]\nvoid SetSegmentCenter(ElementItemId inSegmentId, ElementItemId inVertexId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementItemId |  inSegmentId |  Identifier of the segment to modify.  |  \n \n|  ElementItemId |  inVertexId |  Identifier of the vertex defined as being the center of the segment, or Empty if none.  |  \n\n##### Remarks\n\nA center may only be defined when the segment curve is a circle or an ellipse.\n \nStartModification(ElementId) must be called before calling this method.\n \nThis method is available since v7.7.201.80.\n",
+  "markdown": "markdown/kernel/4f3190ed340689751ea1fffe.md",
+  "originalHtml": "html/kernel/4f3190ed340689751ea1fffe.html"
+}

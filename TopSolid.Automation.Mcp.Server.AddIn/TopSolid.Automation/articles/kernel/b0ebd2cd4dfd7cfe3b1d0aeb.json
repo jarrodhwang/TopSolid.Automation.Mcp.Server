@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IGeometries2D.SetFrameGeometry.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IGeometries2D.SetFrameGeometry.html",
+  "sha256": "c5a586153bbb97c19a3f94137a565c2acfac6a1144c8f5a0134274c639f91fea",
+  "text": "# Method SetFrameGeometry\n\n#### SetFrameGeometry(ElementId, Frame2D)\n\nSets the geometry of a frame entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nvoid SetFrameGeometry(ElementId inElementId, Frame2D inGeometry)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the frame entity to modify.  |  \n \n|  Frame2D |  inGeometry |  New frame geometry.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/b0ebd2cd4dfd7cfe3b1d0aeb.md",
+  "originalHtml": "html/kernel/b0ebd2cd4dfd7cfe3b1d0aeb.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IClassifications.SetClassErpId.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IClassifications.SetClassErpId.html",
+  "sha256": "05b36615ef29b7b8a8a0f06630f4d00b1b59cb13efad5534c39b6bb027feff86",
+  "text": "# Method SetClassErpId\n\n#### SetClassErpId(ElementId, string)\n\nSets the ERP identifier of a specified class entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nvoid SetClassErpId(ElementId inElementId, string inErpId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the class entity to modify.  |  \n \n|  string |  inErpId |  Class ERP identifier, or empty string if none.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/kernel/1800a9a955890f9f28afb86d.md",
+  "originalHtml": "html/kernel/1800a9a955890f9f28afb86d.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IClassifications.SetClassCode.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IClassifications.SetClassCode.html",
+  "sha256": "0187d0dde39df2404be313fd2b06b785a5b6521bcf556a1396be379abec6ba7e",
+  "text": "# Method SetClassCode\n\n#### SetClassCode(ElementId, string)\n\nSets the code of a specified class entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nvoid SetClassCode(ElementId inElementId, string inCode)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the class entity to modify.  |  \n \n|  string |  inCode |  Class code, or empty string if none.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/kernel/be7d65bc0d8836f5f1653dff.md",
+  "originalHtml": "html/kernel/be7d65bc0d8836f5f1653dff.html"
+}

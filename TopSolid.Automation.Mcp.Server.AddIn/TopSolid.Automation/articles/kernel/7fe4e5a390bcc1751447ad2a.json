@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ITextures.SetWoodRingWidth.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ITextures.SetWoodRingWidth.html",
+  "sha256": "a4cc8b15417393d304f23df2fbf88df560b00628d731b893ebcb26b542351476",
+  "text": "# Method SetWoodRingWidth\n\n#### SetWoodRingWidth(DocumentId, double)\n\nSets the wood ring width.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 0, 0)]\nvoid SetWoodRingWidth(DocumentId inDocumentId, double inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  double |  inValue |  Wanted value.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.16.\n",
+  "markdown": "markdown/kernel/7fe4e5a390bcc1751447ad2a.md",
+  "originalHtml": "html/kernel/7fe4e5a390bcc1751447ad2a.html"
+}

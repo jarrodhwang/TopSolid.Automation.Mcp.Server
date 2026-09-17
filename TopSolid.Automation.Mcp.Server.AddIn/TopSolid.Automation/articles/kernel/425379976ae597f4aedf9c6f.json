@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IOptions.SetModelingTolerances.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IOptions.SetModelingTolerances.html",
+  "sha256": "e8afc11c086f159982cdb22e63623ae1ce45dda5eaa521fa872f5143c211e1c3",
+  "text": "# Method SetModelingTolerances\n\n#### SetModelingTolerances(DocumentId, double, double)\n\nSets the modeling tolerances of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nvoid SetModelingTolerances(DocumentId inDocumentId, double inLinearTolerance, double inAngularTolerance)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  double |  inLinearTolerance |  Linear tolerance (in meters, within [0.0001mm,0.1mm]).  |  \n \n|  double |  inAngularTolerance |  Angular tolerance (in radians, within [0.01°,10°]).  |  \n\n##### Remarks\n\nThe document modeling tolerances are used as default modeling tolerances for new operations, changing them has no impact on existing operations.\n \nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.8.\n",
+  "markdown": "markdown/kernel/425379976ae597f4aedf9c6f.md",
+  "originalHtml": "html/kernel/425379976ae597f4aedf9c6f.html"
+}

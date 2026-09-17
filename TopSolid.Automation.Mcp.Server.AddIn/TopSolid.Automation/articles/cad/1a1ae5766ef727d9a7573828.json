@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IFeatures.GetDrillingCounterSinkingPrimitive.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IFeatures.GetDrillingCounterSinkingPrimitive.html",
+  "sha256": "23e9d91135176cacf2f3048b14a3c79f382eb8ecf34f169cc3c22971c213ca54",
+  "text": "# Method GetDrillingCounterSinkingPrimitive\n\n#### GetDrillingCounterSinkingPrimitive(ElementId, int, out Real, out Real, out Real, out bool, out Real)\n\nGet a drilling counter sinking primitive information.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 14, 0, 0)]\nvoid GetDrillingCounterSinkingPrimitive(ElementId inFeatureId, int inIndex, out Real angle, out Real coneLength, out Real diameter, out bool isOpposed, out Real position)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inFeatureId |  Identifiers of the element of the primitive to analyse.  |  \n \n|  int |  inIndex |  Idex of the primitive to analyse.  |  \n \n|  Real |  angle |  Angle of the counter sinking primitive.  |  \n \n|  Real |  coneLength |  Cone length of the counter sinking primitive.  |  \n \n|  Real |  diameter |  Diameter of the counter sinking primitive.  |  \n \n|  bool |  isOpposed |  Tells wether the counter sinking primitive is opposed.  |  \n \n|  Real |  position |  Position of the counter sinking primitive.  |  \n\n##### Remarks\n\nThis method is available since v7.14.\n",
+  "markdown": "markdown/cad/1a1ae5766ef727d9a7573828.md",
+  "originalHtml": "html/cad/1a1ae5766ef727d9a7573828.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IParameters.GetEnumValueNames.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IParameters.GetEnumValueNames.html",
+  "sha256": "b8cf5b5f4f054f5ea5e68e2d83f651355820452a9fc1e0ce6219c6af8a76b1fb",
+  "text": "# Method GetEnumValueNames\n\n#### GetEnumValueNames(string, bool)\n\nGets the enum value names corresponding to the given enum type.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nList<string> GetEnumValueNames(string inEnumTypeName, bool inLocalized)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  string |  inEnumTypeName |  Type full name of the enum to analyze.  |  \n \n|  bool |  inLocalized |  True if the names must be localized according to TopSolid user interface culture.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<string> |  Enum value names corresponding to the enum type. The result is a list where each value of the enum is at its index in the list. For instance, an enum with 0,1,2 and 4 will return the list { zero, one, two, __, four }. Result[4] gives \"four\" !  |  \n\n##### Remarks\n\nAn integer parameter can hold a value taken from an enumeration. To know which values can be used, a user must be able to select this value in a listbox or a combo. But if a combo filled with 0,1 and 2 is not very expressive. So use this function to get the localized text corresponding to 0,1 and 2!\n",
+  "markdown": "markdown/cam/97ca0c7f2b803630fd8cebdf.md",
+  "originalHtml": "html/cam/97ca0c7f2b803630fd8cebdf.html"
+}

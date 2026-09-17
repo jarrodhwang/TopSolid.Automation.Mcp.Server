@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.TopSolidHost.HostAddress.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.TopSolidHost.HostAddress.html",
+  "sha256": "65b205f24f422ed1818979e74fe7f4189b50fc47450a63cdddf21d9b63300a76",
+  "text": "# Property HostAddress\n\n#### HostAddress\n\nGets the host IP address, or null if not using TCP.\n\n##### Declaration\n\n```\npublic static string HostAddress { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |   |\n",
+  "markdown": "markdown/kernel/100e6617172a9c68a57f9362.md",
+  "originalHtml": "html/kernel/100e6617172a9c68a57f9362.html"
+}

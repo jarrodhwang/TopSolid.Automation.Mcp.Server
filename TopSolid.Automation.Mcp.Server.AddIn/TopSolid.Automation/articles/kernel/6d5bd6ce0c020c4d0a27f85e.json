@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Vector2D.V0.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Vector2D.V0.html",
+  "sha256": "41e9bbc6514335eaf3723924a629c6f537587d962b9256014f7433c4f6b42172",
+  "text": "# Field V0\n\nNull vector, i.e. (0,0).\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\npublic static readonly Vector2D V0\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Vector2D |  Null vector, i.e. (0,0). |\n",
+  "markdown": "markdown/kernel/6d5bd6ce0c020c4d0a27f85e.md",
+  "originalHtml": "html/kernel/6d5bd6ce0c020c4d0a27f85e.html"
+}

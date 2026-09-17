@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.NeedsGettingLatestRevision.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.NeedsGettingLatestRevision.html",
+  "sha256": "ae747eab1cd24e0d16fdda62c146cb4a8194032fc24f8fb7d7160d8792bbfc2e",
+  "text": "# Method NeedsGettingLatestRevision\n\n#### NeedsGettingLatestRevision(PdmObjectId)\n\nTells whether specified object or its children need getting latest revision.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nbool NeedsGettingLatestRevision(PdmObjectId inObjectId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  Identifier of object to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Specified object or its children need getting latest revision.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/pdmexplorer/38d4c50ff498ef335a615626.md",
+  "originalHtml": "html/pdmexplorer/38d4c50ff498ef335a615626.html"
+}

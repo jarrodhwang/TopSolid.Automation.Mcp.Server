@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IElements.GetTypeGuid.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IElements.GetTypeGuid.html",
+  "sha256": "02b0e860b30d11e2f0eaf4583bf40b99f40909eaa7cc732c5cbedd63b8664968",
+  "text": "# Method GetTypeGuid\n\n#### GetTypeGuid(ElementId)\n\nGets the GUID of the type of an element.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nGuid GetTypeGuid(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Guid |  GUID of the type of the element.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/5031b6bf65f776db1ad00ab8.md",
+  "originalHtml": "html/kernel/5031b6bf65f776db1ad00ab8.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.TopSolidDesignHost.Processes.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.TopSolidDesignHost.Processes.html",
+  "sha256": "1b65cf9fd5353c69785cfde184eb6c19c984e0dbe801dd8946d5e5cdcd981400",
+  "text": "# Property Processes\n\n#### Processes\n\nGets access to processes, or null if not connected.\n\n##### Declaration\n\n```\npublic static IProcesses Processes { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  IProcesses |   |\n",
+  "markdown": "markdown/cad/819d735caa7eab67c66b7eae.md",
+  "originalHtml": "html/cad/819d735caa7eab67c66b7eae.html"
+}

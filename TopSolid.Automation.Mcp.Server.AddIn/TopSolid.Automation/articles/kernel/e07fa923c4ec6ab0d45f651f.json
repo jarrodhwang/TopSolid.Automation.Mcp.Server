@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdmAdmin.ActivateUser.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdmAdmin.ActivateUser.html",
+  "sha256": "8c25298d1bf700d129a3a245178177da1f27ad5d3002296e1a78d5591d25dc75",
+  "text": "# Method ActivateUser\n\n#### ActivateUser(string)\n\nActivates an inactive user.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 301, 160)]\nvoid ActivateUser(string inAccountId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  string |  inAccountId |  User account identifier.  |  \n\n##### Remarks\n\nIf the IsAdmin property returns false, this method cannot be called (an exception will be thrown otherwise).\n \nThis method is available since v7.6.301.160.\n",
+  "markdown": "markdown/kernel/e07fa923c4ec6ab0d45f651f.md",
+  "originalHtml": "html/kernel/e07fa923c4ec6ab0d45f651f.html"
+}

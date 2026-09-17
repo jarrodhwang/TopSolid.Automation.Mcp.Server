@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdmAdmin.GetUserName.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdmAdmin.GetUserName.html",
+  "sha256": "dd3685ae64fb0d529106d8c457a6d067efc26fbe3ba775306241ef785c3fd86f",
+  "text": "# Method GetUserName\n\n#### GetUserName(string, out string, out string, out string)\n\nGets the name of a user.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nvoid GetUserName(string inAccountId, out string outFirstName, out string outLastName, out string outInitials)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  string |  inAccountId |  User account identifier.  |  \n \n|  string |  outFirstName |  User first name.  |  \n \n|  string |  outLastName |  User last name.  |  \n \n|  string |  outInitials |  User initials.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/pdmexplorer/26a76bd8b8f47f0236d51e57.md",
+  "originalHtml": "html/pdmexplorer/26a76bd8b8f47f0236d51e57.html"
+}

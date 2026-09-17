@@ -1,0 +1,8 @@
+{
+  "path": "api/electrode/TopSolid.Cad.Electrode.Automating.TopSolidElectrodeHost.HostInstance.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/electrode/TopSolid.Cad.Electrode.Automating.TopSolidElectrodeHost.HostInstance.html",
+  "sha256": "f814e5e53bfc7d2ed050b2484ccb4ba494eaf91119aba6cc231091866d62964c",
+  "text": "# Property HostInstance\n\n#### HostInstance\n\nGets the host instance.\n\n##### Declaration\n\n```\npublic static TopSolidElectrodeHostInstance HostInstance { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  TopSolidElectrodeHostInstance |   |\n",
+  "markdown": "markdown/electrode/64df10cb8afde3e5b1aea34f.md",
+  "originalHtml": "html/electrode/64df10cb8afde3e5b1aea34f.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.ExportToPDF.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.ExportToPDF.html",
+  "sha256": "930b27002aa6d832e7019f19d9feae7fb759ceb23025ace2cb23e78a1e5e01e7",
+  "text": "# Method ExportToPDF\n\n#### ExportToPDF(PdmObjectId, string, string)\n\nExports a document to a PDF file.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nvoid ExportToPDF(PdmObjectId inDocumentId, string inFolderPath, string inFileName)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inDocumentId |  Document identifier.  |  \n \n|  string |  inFolderPath |  Path of export folder.  |  \n \n|  string |  inFileName |  File name.  |  \n\n##### Remarks\n\nThis method is available since v7.10.300.080.\n",
+  "markdown": "markdown/pdmexplorer/e8b5d02e46a811cf50a9cda5.md",
+  "originalHtml": "html/pdmexplorer/e8b5d02e46a811cf50a9cda5.html"
+}

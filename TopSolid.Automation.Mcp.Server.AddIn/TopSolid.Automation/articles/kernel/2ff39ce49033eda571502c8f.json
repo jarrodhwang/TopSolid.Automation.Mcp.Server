@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.GetRealUserProperty.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.GetRealUserProperty.html",
+  "sha256": "f9f13947eaa64be63d404c1eac1272a13ffe34a0a8f826bb3ad9819947836a19",
+  "text": "# Method GetRealUserProperty\n\n#### GetRealUserProperty(PdmObjectId, PdmObjectId)\n\nGets the value of a specified real user property of an object.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 9, 300, 40)]\nReal? GetRealUserProperty(PdmObjectId inObjectId, PdmObjectId inPropertyObjectId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  Object identifier.  |  \n \n|  PdmObjectId |  inPropertyObjectId |  Object identifier of property definition document.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Real? |  Property value, or null if none.  |  \n\n##### Remarks\n\nIf the object to analyze does not have a property corresponding to the specified type (i.e. corresponding to the specified property definition document), this method returns null without throwing any exception.\n \nThis method is available since v7.9.300.040.\n",
+  "markdown": "markdown/kernel/2ff39ce49033eda571502c8f.md",
+  "originalHtml": "html/kernel/2ff39ce49033eda571502c8f.html"
+}

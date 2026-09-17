@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IFinishings.GetCategory.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IFinishings.GetCategory.html",
+  "sha256": "d74f2074b8546e93ed0ac69929f143981eaa30ea013a85b1304b2687b84617aa",
+  "text": "# Method GetCategory\n\n#### GetCategory(DocumentId)\n\nGets the finishing category of a finishing document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 296, 0)]\nFinishingCategoryType GetCategory(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  FinishingCategoryType |  The finishing category.  |  \n\n##### Remarks\n\nThis method is available since v7.20.\n",
+  "markdown": "markdown/cad/3e043ba311d4d3fb0381bec1.md",
+  "originalHtml": "html/cad/3e043ba311d4d3fb0381bec1.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/wire/TopSolid.Cam.NC.Wire.Automating.IWireTechnologies.GetType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/wire/TopSolid.Cam.NC.Wire.Automating.IWireTechnologies.GetType.html",
+  "sha256": "43616f5724568b0d43eacadd94d7e06c2fe3d0a5609048230d7aa04bf5898bb7",
+  "text": "# Method GetType\n\n#### GetType(ElementId)\n\nGet technology type.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 160)]\nTechnologyType GetType(ElementId inTechnologyId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inTechnologyId |  Identifier of the technology to modify.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  TechnologyType |  Technology type.  |\n",
+  "markdown": "markdown/wire/9538a2b3ee2b6705364c8cd1.md",
+  "originalHtml": "html/wire/9538a2b3ee2b6705364c8cd1.html"
+}

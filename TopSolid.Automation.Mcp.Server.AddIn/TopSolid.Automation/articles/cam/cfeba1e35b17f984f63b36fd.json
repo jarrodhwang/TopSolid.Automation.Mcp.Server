@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IOrigins.CreateOrigin.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IOrigins.CreateOrigin.html",
+  "sha256": "775fadf3b347b76f3b38446dbc77f373d3c46fe654edea64b7592f0d61befe92",
+  "text": "# Method CreateOrigin\n\n#### CreateOrigin(DocumentId, SmartText, ElementId, SmartBoolean, ElementId, ElementId, SmartText)\n\nCreates an origin entity in a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nElementId CreateOrigin(DocumentId inDocumentId, SmartText inDescription, ElementId inFrameId, SmartBoolean inAutoPos, ElementId inRigidGroupId, ElementId inPartId, SmartText inType)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  SmartText |  inDescription |  Description.  |  \n \n|  ElementId |  inFrameId |  Base frame.  |  \n \n|  SmartBoolean |  inAutoPos |  Automatic positionning flag.  |  \n \n|  ElementId |  inRigidGroupId |  Machine element associated with this origin.  |  \n \n|  ElementId |  inPartId |  Part owner of the new origin.  |  \n \n|  SmartText |  inType |  Type of the origin.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the created origin entity.  |\n",
+  "markdown": "markdown/cam/cfeba1e35b17f984f63b36fd.md",
+  "originalHtml": "html/cam/cfeba1e35b17f984f63b36fd.html"
+}

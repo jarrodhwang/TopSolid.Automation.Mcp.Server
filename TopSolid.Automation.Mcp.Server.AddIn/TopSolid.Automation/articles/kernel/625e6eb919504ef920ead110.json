@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IFamilies.SetCatalogCellFamilyValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IFamilies.SetCatalogCellFamilyValue.html",
+  "sha256": "5358e6a0a7c0d6e20b9c5fc4c6945e60d8508bd5113bf78a0695d7341925014b",
+  "text": "# Method SetCatalogCellFamilyValue\n\n#### SetCatalogCellFamilyValue(ElementId, ElementId, PdmMinorRevisionId)\n\nSets the family value of the catalog cell.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 15, 0, 60)]\nvoid SetCatalogCellFamilyValue(ElementId inRow, ElementId inParameterId, PdmMinorRevisionId inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inRow |  Identifier of the row.  |  \n \n|  ElementId |  inParameterId |  Identifier of the parameter of the column.  |  \n \n|  PdmMinorRevisionId |  inValue |  Value of the cell.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.15.\n",
+  "markdown": "markdown/kernel/625e6eb919504ef920ead110.md",
+  "originalHtml": "html/kernel/625e6eb919504ef920ead110.html"
+}

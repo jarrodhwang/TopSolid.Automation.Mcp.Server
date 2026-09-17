@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.GetParameters.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.GetParameters.html",
+  "sha256": "86389a086a4c429dd6568ceba15031f3658c72452a4df53d81a5f7e44c6cf2a6",
+  "text": "# Method GetParameters\n\n#### GetParameters(DocumentId)\n\nGets the parameters entities that are in the parameters folder of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nList<ElementId> GetParameters(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementId> |  Parameters entities found.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/ef7e40a1dd4bb57a7a0981aa.md",
+  "originalHtml": "html/kernel/ef7e40a1dd4bb57a7a0981aa.html"
+}

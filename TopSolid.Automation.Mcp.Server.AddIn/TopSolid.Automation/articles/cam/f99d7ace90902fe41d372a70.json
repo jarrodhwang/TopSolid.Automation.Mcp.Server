@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IOperations.GetNCOperation.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IOperations.GetNCOperation.html",
+  "sha256": "bb8b6d79a59101214784791fb2337d5a87266af9f922d068207adffff3914ee9",
+  "text": "# Method GetNCOperation\n\n#### GetNCOperation(ElementExId)\n\nGets the NC operation from the given operation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nElementExId GetNCOperation(ElementExId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementExId |  inElementId |  Identifier of the operation to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementExId |  Path operation found.  |\n",
+  "markdown": "markdown/cam/f99d7ace90902fe41d372a70.md",
+  "originalHtml": "html/cam/f99d7ace90902fe41d372a70.html"
+}

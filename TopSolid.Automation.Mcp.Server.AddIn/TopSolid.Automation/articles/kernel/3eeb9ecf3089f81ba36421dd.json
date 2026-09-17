@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.CreateTextRelayedParameter.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.CreateTextRelayedParameter.html",
+  "sha256": "694345f59005d5214a2805d1a59a086e302bce7b7e045a15076a452b1de59dac",
+  "text": "# Method CreateTextRelayedParameter\n\n#### CreateTextRelayedParameter(DocumentId, ElementId, ParameterRelayType)\n\nCreates a text relayed parameter entity in a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 18, 400, 100)]\nElementId CreateTextRelayedParameter(DocumentId inDocumentId, ElementId inElementId, ParameterRelayType inRelayParameterType)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  ElementId |  inElementId |  Identifier of the text parameter entity to relay.  |  \n \n|  ParameterRelayType |  inRelayParameterType |  Type of relay.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |   |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.18.400.100.\n",
+  "markdown": "markdown/kernel/3eeb9ecf3089f81ba36421dd.md",
+  "originalHtml": "html/kernel/3eeb9ecf3089f81ba36421dd.html"
+}

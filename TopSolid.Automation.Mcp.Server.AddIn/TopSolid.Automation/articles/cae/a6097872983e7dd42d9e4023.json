@@ -1,0 +1,8 @@
+{
+  "path": "api/cae/TopSolid.Cae.Kernel.Automating.MeasureResults.VonMises.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cae/TopSolid.Cae.Kernel.Automating.MeasureResults.VonMises.html",
+  "sha256": "be9554a0141b46b44dbc83823ffc31ee0f3e3ce4c66cec89f687e3a00bdba6b9",
+  "text": "# Property VonMises\n\n#### VonMises\n\nGets the Von Mises\n\n##### Declaration\n\n```\npublic string[] VonMises { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string[] |   |\n",
+  "markdown": "markdown/cae/a6097872983e7dd42d9e4023.md",
+  "originalHtml": "html/cae/a6097872983e7dd42d9e4023.html"
+}

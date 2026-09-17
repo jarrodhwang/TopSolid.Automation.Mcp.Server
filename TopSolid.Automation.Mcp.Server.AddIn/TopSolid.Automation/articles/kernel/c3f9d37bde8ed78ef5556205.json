@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IElements.Hide.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IElements.Hide.html",
+  "sha256": "d8689e818ec98a155f9f673a41e8eeaefdfab4ca60c52c119c923c3ba8968c2c",
+  "text": "# Method Hide\n\n#### Hide(ElementId)\n\nHides an element.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nvoid Hide(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to hide.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/c3f9d37bde8ed78ef5556205.md",
+  "originalHtml": "html/kernel/c3f9d37bde8ed78ef5556205.html"
+}

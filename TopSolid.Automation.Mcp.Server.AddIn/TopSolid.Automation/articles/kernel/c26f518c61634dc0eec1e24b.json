@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.SetColorParameterPossibleValues.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.SetColorParameterPossibleValues.html",
+  "sha256": "9235c8851753cf4f9a9759e9399ab5e2795ec81e915c4d22d928e755b72f33bd",
+  "text": "# Method SetColorParameterPossibleValues\n\n#### SetColorParameterPossibleValues(ElementId, List<ColorWithDescriptionProperty>)\n\nSets the color parameter possibles values.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 18, 0, 0)]\nvoid SetColorParameterPossibleValues(ElementId inElementId, List<ColorWithDescriptionProperty> inProperties)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the parameter.  |  \n \n|  List<ColorWithDescriptionProperty> |  inProperties |  The wanted possibles values.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.18\n",
+  "markdown": "markdown/kernel/c26f518c61634dc0eec1e24b.md",
+  "originalHtml": "html/kernel/c26f518c61634dc0eec1e24b.html"
+}

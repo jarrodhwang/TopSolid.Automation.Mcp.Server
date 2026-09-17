@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.GetComplementaryPartNumber.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.GetComplementaryPartNumber.html",
+  "sha256": "4fcb65a686bd2b5ebe206deb07ada9fdf51b8c1eab80a59738cd9e0fb8ed7805",
+  "text": "# Method GetComplementaryPartNumber\n\n#### GetComplementaryPartNumber(PdmObjectId)\n\nGets the complementary part number of an object.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 303, 100)]\nstring GetComplementaryPartNumber(PdmObjectId inObjectId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  Object identifier.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  Object complementary part number.  |  \n\n##### Remarks\n\nThis method is available since v7.8.303.100.\n",
+  "markdown": "markdown/kernel/22f90e2ae2ad001e73dd4bfe.md",
+  "originalHtml": "html/kernel/22f90e2ae2ad001e73dd4bfe.html"
+}

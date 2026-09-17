@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.BlockStockType.Yminus.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.BlockStockType.Yminus.html",
+  "sha256": "fb50f45db70bdc5375f24a35b66af1034d4139ae4dba4f8d3718ed450879bbd7",
+  "text": "# Field Yminus\n\nY-.\n\n###### Namespace: TopSolid.Cam.NC.Kernel.Automating\n\n###### Assembly: TopSolid.Cam.NC.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic SmartReal Yminus\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartReal |  Y-. |\n",
+  "markdown": "markdown/cam/15a5c0944cb15aa3ffbbf3e5.md",
+  "originalHtml": "html/cam/15a5c0944cb15aa3ffbbf3e5.html"
+}

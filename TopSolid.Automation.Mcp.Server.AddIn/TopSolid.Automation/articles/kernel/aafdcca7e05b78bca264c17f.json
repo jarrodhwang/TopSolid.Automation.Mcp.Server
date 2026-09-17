@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartBoolean.Type.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartBoolean.Type.html",
+  "sha256": "21515e57dd499b765b8b7e0ea84c6d925c843b79197a2bf63bb427e4fb53c07b",
+  "text": "# Field Type\n\nType of smart Boolean.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic SmartBooleanType Type\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartBooleanType |  Type of smart Boolean. |\n",
+  "markdown": "markdown/kernel/aafdcca7e05b78bca264c17f.md",
+  "originalHtml": "html/kernel/aafdcca7e05b78bca264c17f.html"
+}

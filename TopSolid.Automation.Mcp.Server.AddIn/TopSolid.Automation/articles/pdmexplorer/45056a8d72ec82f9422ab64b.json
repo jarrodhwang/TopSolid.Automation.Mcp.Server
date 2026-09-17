@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.GetVerifier.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.GetVerifier.html",
+  "sha256": "eef06dcc86c779636cd8957b6c3fb9f7e973647450e4eb24013b0060598a54c7",
+  "text": "# Method GetVerifier\n\n#### GetVerifier(PdmObjectId)\n\nGets the verifier of an object.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nstring GetVerifier(PdmObjectId inObjectId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  Object identifier.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  Object verifier.  |  \n\n##### Remarks\n\nThis method is available since v7.10.300.140.\n",
+  "markdown": "markdown/pdmexplorer/45056a8d72ec82f9422ab64b.md",
+  "originalHtml": "html/pdmexplorer/45056a8d72ec82f9422ab64b.html"
+}

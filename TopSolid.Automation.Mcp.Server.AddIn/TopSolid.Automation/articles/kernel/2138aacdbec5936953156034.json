@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.SearchUserPropertyParameter.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.SearchUserPropertyParameter.html",
+  "sha256": "f9870677f69ddaa456710da561bf9394cd1a08a0cae7f22096d0b52f6c86f245",
+  "text": "# Method SearchUserPropertyParameter\n\n#### SearchUserPropertyParameter(DocumentId, DocumentId)\n\nSearches for a parameter entity corresponding to a user property in a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nElementId SearchUserPropertyParameter(DocumentId inDocumentId, DocumentId inUserPropertyDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n \n|  DocumentId |  inUserPropertyDocumentId |  Identifier of the user propserty definition document.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the parameter entity found, or Empty if not found.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/2138aacdbec5936953156034.md",
+  "originalHtml": "html/kernel/2138aacdbec5936953156034.html"
+}

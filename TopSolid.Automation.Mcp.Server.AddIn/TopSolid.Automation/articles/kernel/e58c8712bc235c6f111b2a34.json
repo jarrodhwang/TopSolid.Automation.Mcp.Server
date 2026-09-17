@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartCodeType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartCodeType.html",
+  "sha256": "f57f59a5e705a46aa09c1090d751e29ff52cf56d9d0fe75dd90f38ea067daf28",
+  "text": "# Enum SmartCodeType\n\nDefines the various types of smart codes.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 17, 0, 0)]\npublic enum SmartCodeType\n```\n\n##### Remarks\n\nThis enum is available since v7.17.\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  Basic |  Basic.  |  \n \n|  Element |  Provided by an element.  |  \n \n|  None |  Not used.  |  \n \n|  Unclassified |  Unclassified type.  |\n",
+  "markdown": "markdown/kernel/e58c8712bc235c6f111b2a34.md",
+  "originalHtml": "html/kernel/e58c8712bc235c6f111b2a34.html"
+}

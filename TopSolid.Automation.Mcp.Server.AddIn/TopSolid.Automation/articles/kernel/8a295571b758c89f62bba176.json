@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IDocuments.Drop.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IDocuments.Drop.html",
+  "sha256": "7df83c39cc0baa95d8de8721ac19fdb736beaf6c783feb398eb772b6051146df",
+  "text": "# Method Drop\n\n#### Drop(DocumentId)\n\nDrops a document into the document being edited.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nstring Drop(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to drop.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  Full name of the drag and drop command invoked, or null if none.  |  \n\n##### Remarks\n\nCalling this method is equivalent to manually dragging and dropping a document from the project tree into the document being edited.\n \nAfter this method is called, the following steps are directly managed by the user interface.\n \nThis method must not be called between StartModification(string, bool) and EndModification(bool, bool) methods calls.\n \nThis method is available since v7.8.\n",
+  "markdown": "markdown/kernel/8a295571b758c89f62bba176.md",
+  "originalHtml": "html/kernel/8a295571b758c89f62bba176.html"
+}

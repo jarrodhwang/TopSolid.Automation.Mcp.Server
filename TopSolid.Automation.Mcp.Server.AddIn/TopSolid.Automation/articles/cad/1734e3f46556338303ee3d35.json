@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.DrillingHolePrimitiveBottomType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.DrillingHolePrimitiveBottomType.html",
+  "sha256": "7f3f84b32ad5e340dc9e0eb00874a9e6e1c9de73db202d17aa06bd43507c0833",
+  "text": "# Enum DrillingHolePrimitiveBottomType\n\nDefines the various types of bottom hole of primitive of drilling features entities.\n\n###### Namespace: TopSolid.Cad.Design.Automating\n\n###### Assembly: TopSolid.Cad.Design.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 14, 0, 0)]\npublic enum DrillingHolePrimitiveBottomType\n```\n\n##### Remarks\n\nThis enum is available since v7.14.\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  Cone |  Cone.  |  \n \n|  Flat |  Flat.  |  \n \n|  None |  Not a primitive bottom hole.  |  \n \n|  Sphere |  Sphere.  |  \n \n|  Unclassified |  Unclassified type.  |\n",
+  "markdown": "markdown/cad/1734e3f46556338303ee3d35.md",
+  "originalHtml": "html/cad/1734e3f46556338303ee3d35.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IEntities.ProvideFunction.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IEntities.ProvideFunction.html",
+  "sha256": "5b3539773f2a65d1a9ae3c8b2a32442945dddff13139338d59554ff16d993cd7",
+  "text": "# Method ProvideFunction\n\n#### ProvideFunction(DocumentId, DocumentId, string)\n\nProvides a specified function in a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nElementId ProvideFunction(DocumentId inDocumentId, DocumentId inFunctionId, string inOccurrenceName)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  DocumentId |  inFunctionId |  Identifier of the function definition document.  |  \n \n|  string |  inOccurrenceName |  Provided function occurrence name, or null if this type of function cannot be provided several times.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Function entity created identifier.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.8.\n",
+  "markdown": "markdown/kernel/046c54c4d36f32ca22c8e1ee.md",
+  "originalHtml": "html/kernel/046c54c4d36f32ca22c8e1ee.html"
+}

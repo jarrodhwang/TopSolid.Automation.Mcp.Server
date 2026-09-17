@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.SetLifeCycleMainState.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.SetLifeCycleMainState.html",
+  "sha256": "9d2bc6bd1e9e92f884762dc12cd2f34a4f51ebe52442ac0c3e4b58ff71bd67fb",
+  "text": "# Method SetLifeCycleMainState\n\n#### SetLifeCycleMainState(PdmObjectId, PdmLifeCycleMainState)\n\nChanges the life cycle main state of an object.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nvoid SetLifeCycleMainState(PdmObjectId inObjectId, PdmLifeCycleMainState inLifeCycle)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  Identifier of object to change life cycle main state.  |  \n \n|  PdmLifeCycleMainState |  inLifeCycle |  Life cycle to apply (None and Design life cycles are not supported).  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/pdmexplorer/691e4d3e03c3403a7ff8ac88.md",
+  "originalHtml": "html/pdmexplorer/691e4d3e03c3403a7ff8ac88.html"
+}

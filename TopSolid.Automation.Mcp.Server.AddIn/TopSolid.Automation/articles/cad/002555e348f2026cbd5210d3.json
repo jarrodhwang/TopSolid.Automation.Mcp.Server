@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IAssemblies.SetInclusionCodeAndDrivers.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IAssemblies.SetInclusionCodeAndDrivers.html",
+  "sha256": "df586d59ad48c62b3d6c7f7a34ca9d5ed560acc0d1f3774ad8fcf69de9e65791",
+  "text": "# Method SetInclusionCodeAndDrivers\n\n#### SetInclusionCodeAndDrivers(ElementId, string, List<string>, List<SmartObject>)\n\nSets the code and drivers of a family inclusion operation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nvoid SetInclusionCodeAndDrivers(ElementId inElementId, string inCode, List<string> inDriverNames, List<SmartObject> inDriverValues)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the inclusion operation to modify.  |  \n \n|  string |  inCode |  Instance code, or null if none.  |  \n \n|  List<string> |  inDriverNames |  Instance driver names, or null if none.  |  \n \n|  List<SmartObject> |  inDriverValues |  Instance driver values, or null if none.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.10.\n",
+  "markdown": "markdown/cad/002555e348f2026cbd5210d3.md",
+  "originalHtml": "html/cad/002555e348f2026cbd5210d3.html"
+}

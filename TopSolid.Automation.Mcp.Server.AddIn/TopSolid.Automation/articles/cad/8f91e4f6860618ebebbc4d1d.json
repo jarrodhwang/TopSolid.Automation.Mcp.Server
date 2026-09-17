@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ICoatings.GetScale.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ICoatings.GetScale.html",
+  "sha256": "d10aeda21f03783d49bdb545eb9c2196e578dd8d54008b3c3baf4c1ec8a320b6",
+  "text": "# Method GetScale\n\n#### GetScale(DocumentId)\n\nGets the scale.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 400, 100)]\ndouble GetScale(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double |   |  \n\n##### Remarks\n\nThis method is available since v7.16.\n",
+  "markdown": "markdown/cad/8f91e4f6860618ebebbc4d1d.md",
+  "originalHtml": "html/cad/8f91e4f6860618ebebbc4d1d.html"
+}

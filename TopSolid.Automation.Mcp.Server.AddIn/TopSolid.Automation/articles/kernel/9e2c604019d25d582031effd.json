@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IGeometries2D.GetPointGeometry.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IGeometries2D.GetPointGeometry.html",
+  "sha256": "e86abbf4e00d2a60503a9748daaf393062488faffdcb0b6fa7c92e7fd1880480",
+  "text": "# Method GetPointGeometry\n\n#### GetPointGeometry(ElementId)\n\nGets the geometry of a point entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nPoint2D GetPointGeometry(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the point entity to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Point2D |  Point geometry.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/9e2c604019d25d582031effd.md",
+  "originalHtml": "html/kernel/9e2c604019d25d582031effd.html"
+}

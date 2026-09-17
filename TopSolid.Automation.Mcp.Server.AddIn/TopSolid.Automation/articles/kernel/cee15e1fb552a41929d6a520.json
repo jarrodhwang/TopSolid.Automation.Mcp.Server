@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IVisualization3D.GetActiveView.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IVisualization3D.GetActiveView.html",
+  "sha256": "62e5a4c11af2d533921623c204a0a5e30a051dc9371590169652da147192ff93",
+  "text": "# Method GetActiveView\n\n#### GetActiveView(DocumentId)\n\nGets the active graphic view of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nint GetActiveView(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  int |  Identifier of the active graphic view of the document.  |  \n\n##### Remarks\n\nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/cee15e1fb552a41929d6a520.md",
+  "originalHtml": "html/kernel/cee15e1fb552a41929d6a520.html"
+}

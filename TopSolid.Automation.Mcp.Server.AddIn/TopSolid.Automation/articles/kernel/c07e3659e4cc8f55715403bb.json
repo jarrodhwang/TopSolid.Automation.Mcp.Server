@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.KeyValue.-ctor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.KeyValue.-ctor.html",
+  "sha256": "3be0e8896e2a65873baaca267c8be1de86faa7137414030e460710aa5d86f08c",
+  "text": "# Constructor KeyValue\n\n#### KeyValue(string, string)\n\nInitializes a new instance of the KeyValue structure.\n\n##### Declaration\n\n```\npublic KeyValue(string inKey, string inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  string |  inKey |  Key, or null if empty.  |  \n \n|  string |  inValue |  Value, or null if empty.  |\n",
+  "markdown": "markdown/kernel/c07e3659e4cc8f55715403bb.md",
+  "originalHtml": "html/kernel/c07e3659e4cc8f55715403bb.html"
+}

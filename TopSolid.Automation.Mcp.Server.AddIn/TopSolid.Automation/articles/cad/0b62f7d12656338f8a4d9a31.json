@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IFinishings.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IFinishings.html",
+  "sha256": "23d18b4fa5dadcd1ff45aa71daf8019a130f111739e3b3ac73fce729823bbc5d",
+  "text": "# Interface IFinishings\n\nGives access to methods to read or write in a finishing document.\n\n###### Namespace: TopSolid.Cad.Design.Automating\n\n###### Assembly: TopSolid.Cad.Design.Automating.dll\n\n##### Syntax\n\n```\n[ServiceContract]\n[AvailableSinceVersion(7, 20, 296, 0)]\npublic interface IFinishings\n```\n\n##### Remarks\n\nThis interface is available since v7.20.\n\n### Methods \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   CreateFinishingParameter(DocumentId, PdmMinorRevisionId)  |  Creates a finishing parameter into a document  |  \n \n|   GetCategory(DocumentId)  |  Gets the finishing category of a finishing document.  |  \n \n|   GetFinishingParameterValue(ElementId, out DocumentId, out FinishingCategoryType)  |  Gets Document and Category from a finishing Parameter  |  \n \n|   IsFinishingParameter(ElementId)  |  Tells if an element is a finishing Parameter  |  \n \n|   SetFinishingCategory(DocumentId, FinishingCategoryType)  |  Sets the finishing category of a finishing document.  |  \n \n|   SetFinishingParameterValue(ElementId, PdmMinorRevisionId)  |  Sets value of a finishing Parameter  |\n",
+  "markdown": "markdown/cad/0b62f7d12656338f8a4d9a31.md",
+  "originalHtml": "html/cad/0b62f7d12656338f8a4d9a31.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cae/TopSolid.Cae.Kernel.Automating.ICAEDocuments.RefreshMesh.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cae/TopSolid.Cae.Kernel.Automating.ICAEDocuments.RefreshMesh.html",
+  "sha256": "b99131edd53c116c50a1fe0b23c9bf74d1681c7565d44a0128deb9cb91354456",
+  "text": "# Method RefreshMesh\n\n#### RefreshMesh(DocumentId)\n\nRefresh the mesh of an analysis preparation document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 15, 0)]\nbool RefreshMesh(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document holding mesh to refresh.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Whether mesh has actually been refreshed.  |  \n\n##### Remarks\n\nThis method is available since v7.19.\n\n##### Examples\n \n```\n   DocumentId docId = TopSolidHost.Documents.EditedDocument;\nif (TopSolidHost.Application.StartModification(\"refresh mesh\", false))\n{\n\ttry\n\t{\n\t\tif (TopSolidCaeHost.Documents.MeshNeedsRefreshing(docId))\n\t\t{\n\t\t    TopSolidCaeHost.Documents.RefreshMesh(docId);\n\t\t}\n\t\tTopSolidHost.Application.EndModification(true, true);\n\t}\n\tcatch\n\t{\n\t\tTopSolidHost.Application.EndModification(false, false);\n\t}\n}\n```\n",
+  "markdown": "markdown/cae/908dc6f1d6b0747f0a3d9b05.md",
+  "originalHtml": "html/cae/908dc6f1d6b0747f0a3d9b05.html"
+}

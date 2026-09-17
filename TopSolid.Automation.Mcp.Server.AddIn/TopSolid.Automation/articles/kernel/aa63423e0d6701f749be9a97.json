@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartPlane3D.ExtentXMax.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartPlane3D.ExtentXMax.html",
+  "sha256": "f364512e457ab5ae5b1428def56c1ef7f9a7b6f27d32f45d009c2e6882bab1d9",
+  "text": "# Field ExtentXMax\n\nMaximum X plane coordinate of extent, or null if unknown.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic double? ExtentXMax\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double? |  Maximum X plane coordinate of extent, or null if unknown. |\n",
+  "markdown": "markdown/kernel/aa63423e0d6701f749be9a97.md",
+  "originalHtml": "html/kernel/aa63423e0d6701f749be9a97.html"
+}

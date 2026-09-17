@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.TopSolidHostInstance.Textures.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.TopSolidHostInstance.Textures.html",
+  "sha256": "e6daa8f21958bc30246823aab93438094d366cfe487f5d4f303f6c08961cc854",
+  "text": "# Property Textures\n\n#### Textures\n\nGets access to textures, or null if not available.\n\n##### Declaration\n\n```\npublic ITextures Textures { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ITextures |   |\n",
+  "markdown": "markdown/kernel/11223c4e57172a6154e9d17e.md",
+  "originalHtml": "html/kernel/11223c4e57172a6154e9d17e.html"
+}

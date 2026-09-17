@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMultiLayer.GetCategory.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMultiLayer.GetCategory.html",
+  "sha256": "12a56cc5d5a1d876370e9fd2f181f45a8963cc71df0b2d7f8751af850f80a9f2",
+  "text": "# Method GetCategory\n\n#### GetCategory(DocumentId)\n\nGets the multi layer material category of a multi layer material document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 0, 0)]\nMultiLayerMaterialCategoryType GetCategory(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  MultiLayerMaterialCategoryType |  The multi layer material category.  |  \n\n##### Remarks\n\nThis method is available since v7.19.\n",
+  "markdown": "markdown/cad/6ab7ed930c783e73a17cc864.md",
+  "originalHtml": "html/cad/6ab7ed930c783e73a17cc864.html"
+}

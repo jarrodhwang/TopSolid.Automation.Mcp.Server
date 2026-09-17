@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.TopSolidDesignHost.Parts.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.TopSolidDesignHost.Parts.html",
+  "sha256": "7ff048a3888f069f03ff7111b631062066577a5d3f17547af15926e0271ac6cd",
+  "text": "# Property Parts\n\n#### Parts\n\nGets access to parts, or null if not connected.\n\n##### Declaration\n\n```\npublic static IParts Parts { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  IParts |   |\n",
+  "markdown": "markdown/cad/f9144ac2e2db933add8aba2e.md",
+  "originalHtml": "html/cad/f9144ac2e2db933add8aba2e.html"
+}

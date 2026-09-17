@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.PdmMajorRevisionId.Empty.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.PdmMajorRevisionId.Empty.html",
+  "sha256": "dd3bfb2af11cb514263e1257f1c66c00dc90be1558fe4e981971fcb39d5c168e",
+  "text": "# Field Empty\n\nEmpty identifier.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\npublic static readonly PdmMajorRevisionId Empty\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  PdmMajorRevisionId |  Empty identifier. |\n",
+  "markdown": "markdown/kernel/b714941fbcf7ce4409ff87e5.md",
+  "originalHtml": "html/kernel/b714941fbcf7ce4409ff87e5.html"
+}

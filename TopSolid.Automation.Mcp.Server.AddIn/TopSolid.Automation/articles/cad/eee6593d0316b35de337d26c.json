@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ICoatings.SetGlossinessTextureDocument.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ICoatings.SetGlossinessTextureDocument.html",
+  "sha256": "efb403702d1796cbcabb81ad6b2884b060186590761534721ded5c451746d726",
+  "text": "# Method SetGlossinessTextureDocument\n\n#### SetGlossinessTextureDocument(DocumentId, DocumentId)\n\nSets the Glossiness texture document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 18, 0, 0)]\nvoid SetGlossinessTextureDocument(DocumentId inDocumentId, DocumentId inTextureDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  DocumentId |  inTextureDocumentId |  Texture document.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.18.\n",
+  "markdown": "markdown/cad/eee6593d0316b35de337d26c.md",
+  "originalHtml": "html/cad/eee6593d0316b35de337d26c.html"
+}

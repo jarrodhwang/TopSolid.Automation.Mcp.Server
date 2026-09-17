@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.DrillingTappedHolePrimitive.HoleDepth.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.DrillingTappedHolePrimitive.HoleDepth.html",
+  "sha256": "a0fc0d3871fb38cd6d4d9bb3f459d27ffaef78dee0c06f1658e8059cfc1c5a6a",
+  "text": "# Field HoleDepth\n\nPrimitive Hole Depth.\n\n###### Namespace: TopSolid.Cad.Design.Automating\n\n###### Assembly: TopSolid.Cad.Design.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic SmartReal HoleDepth\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartReal |  Primitive Hole Depth. |\n",
+  "markdown": "markdown/cad/579db92e948d65156b8d55a4.md",
+  "originalHtml": "html/cad/579db92e948d65156b8d55a4.html"
+}

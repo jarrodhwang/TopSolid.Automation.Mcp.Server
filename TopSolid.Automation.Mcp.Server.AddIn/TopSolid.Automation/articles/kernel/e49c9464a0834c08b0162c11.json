@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.SetComment.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.SetComment.html",
+  "sha256": "53a289a97908b8592f0e0ca50005b25e948d9a7ba68705085077ab407a8459cc",
+  "text": "# Method SetComment\n\n#### SetComment(PdmObjectId, string)\n\nSets the comment of an object.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 303, 100)]\nvoid SetComment(PdmObjectId inObjectId, string inComment)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  Object identifier.  |  \n \n|  string |  inComment |  Comment.  |  \n\n##### Remarks\n\nThis method must not be called between StartModification(string, bool) and EndModification(bool, bool) methods calls.\n \nThis method is available since v7.8.303.100.\n",
+  "markdown": "markdown/kernel/e49c9464a0834c08b0162c11.md",
+  "originalHtml": "html/kernel/e49c9464a0834c08b0162c11.html"
+}

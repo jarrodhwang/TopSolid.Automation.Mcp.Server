@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IDocuments.GetUniversalId.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IDocuments.GetUniversalId.html",
+  "sha256": "4b79386622b01416aae761123ae14340aba37f18b5f289ccee1a3c948341766f",
+  "text": "# Method GetUniversalId\n\n#### GetUniversalId(DocumentId, out string, out string)\n\nGets the universal identifier of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nvoid GetUniversalId(DocumentId inDocumentId, out string outDomain, out string outName)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n \n|  string |  outDomain |  Universal domain, or null if the document does not have a universal identifier.  |  \n \n|  string |  outName |  Universal name, or null if the document does not have a universal identifier.  |  \n\n##### Remarks\n\nThis method is available since v7.8.\n",
+  "markdown": "markdown/kernel/515ca1900987bd72a3d1d489.md",
+  "originalHtml": "html/kernel/515ca1900987bd72a3d1d489.html"
+}

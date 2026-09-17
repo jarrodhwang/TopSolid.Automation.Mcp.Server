@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IStaticOperations.SetStartingCuttingConditions.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IStaticOperations.SetStartingCuttingConditions.html",
+  "sha256": "4e81050788abe17248f1c6c6d519bd499d6c9136da9e99fe76b15bb2c50d5692",
+  "text": "# Method SetStartingCuttingConditions\n\n#### SetStartingCuttingConditions(ElementExId, SmartReal, SmartReal)\n\nSets the starting cutting conditions.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nvoid SetStartingCuttingConditions(ElementExId inOperation, SmartReal inFeedRate, SmartReal inSpindleRate)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementExId |  inOperation |  Operation to modify.  |  \n \n|  SmartReal |  inFeedRate |   |  \n \n|  SmartReal |  inSpindleRate |   |\n",
+  "markdown": "markdown/cam/4014bef814bb81eb034b6cb3.md",
+  "originalHtml": "html/cam/4014bef814bb81eb034b6cb3.html"
+}

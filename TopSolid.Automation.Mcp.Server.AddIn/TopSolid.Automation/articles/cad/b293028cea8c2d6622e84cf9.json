@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IAssemblies.IsAssemblyOccurrence.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IAssemblies.IsAssemblyOccurrence.html",
+  "sha256": "5d4601f1717c3fba895642912c4b38a476f267bd76456f41284e95c087f25c11",
+  "text": "# Method IsAssemblyOccurrence\n\n#### IsAssemblyOccurrence(ElementId)\n\nTells whether an element is an assembly occurrence entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nbool IsAssemblyOccurrence(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  The element is an assembly occurrence entity.  |  \n\n##### Remarks\n\nThis method is available since v7.8.\n",
+  "markdown": "markdown/cad/b293028cea8c2d6622e84cf9.md",
+  "originalHtml": "html/cad/b293028cea8c2d6622e84cf9.html"
+}

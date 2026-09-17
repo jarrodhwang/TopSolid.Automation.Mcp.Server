@@ -1,0 +1,8 @@
+{
+  "path": "api/cae/TopSolid.Cae.Kernel.Automating.MeasureResults.Temperature.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cae/TopSolid.Cae.Kernel.Automating.MeasureResults.Temperature.html",
+  "sha256": "0e865284e6a1c43a0415ef3400e8d56ebec13eb1416684743177a5a3f9b90144",
+  "text": "# Property Temperature\n\n#### Temperature\n\nGets the Temperature Values\n\n##### Declaration\n\n```\npublic string[] Temperature { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string[] |   |\n",
+  "markdown": "markdown/cae/665201e9dbd96b8cd8490f3d.md",
+  "originalHtml": "html/cae/665201e9dbd96b8cd8490f3d.html"
+}

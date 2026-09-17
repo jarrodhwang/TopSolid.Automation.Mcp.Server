@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.DrillingTappedHolePrimitive.HoleTaperAngle.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.DrillingTappedHolePrimitive.HoleTaperAngle.html",
+  "sha256": "5147684c93b91ce21a61aaf6f70e473488c0f845a142c4b5dd4af0343506e15b",
+  "text": "# Field HoleTaperAngle\n\nPrimitive Taper Angle.\n\n###### Namespace: TopSolid.Cad.Design.Automating\n\n###### Assembly: TopSolid.Cad.Design.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic SmartReal HoleTaperAngle\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartReal |  Primitive Taper Angle. |\n",
+  "markdown": "markdown/cad/951612004a19c4e778183267.md",
+  "originalHtml": "html/cad/951612004a19c4e778183267.html"
+}

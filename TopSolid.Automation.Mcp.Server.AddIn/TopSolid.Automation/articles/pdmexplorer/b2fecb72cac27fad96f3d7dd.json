@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdmAdmin.GetUserEmailAddress.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdmAdmin.GetUserEmailAddress.html",
+  "sha256": "acdb39ba0715b5e50662d5cafa10120262a5d6d2a108fa0f022f31262a9b9149",
+  "text": "# Method GetUserEmailAddress\n\n#### GetUserEmailAddress(string)\n\nGets the e-mail address of a user.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nstring GetUserEmailAddress(string inAccountId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  string |  inAccountId |  User account identifier.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  User e-mail address.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/pdmexplorer/b2fecb72cac27fad96f3d7dd.md",
+  "originalHtml": "html/pdmexplorer/b2fecb72cac27fad96f3d7dd.html"
+}

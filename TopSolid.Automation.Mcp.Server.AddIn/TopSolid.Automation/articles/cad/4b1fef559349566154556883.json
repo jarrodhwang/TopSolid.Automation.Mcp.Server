@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IAssemblies.SetAssemblyCenterOfMassManagement.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IAssemblies.SetAssemblyCenterOfMassManagement.html",
+  "sha256": "082297761cc7ea72e1372f72ff82c59e2689717a3c0ec3421557f75021b967fa",
+  "text": "# Method SetAssemblyCenterOfMassManagement\n\n#### SetAssemblyCenterOfMassManagement(DocumentId, bool)\n\nSets the center of mass management of the physical property management of an assembly.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 13, 300, 220)]\nvoid SetAssemblyCenterOfMassManagement(DocumentId inDocumentId, bool inIsCenterOfMassManaged)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of assembly document to analyze.  |  \n \n|  bool |  inIsCenterOfMassManaged |  Tells whether the physical property management of an assembly is center of mass managed.  |  \n\n##### Remarks\n\nThis method is available since v7.13.300.220.\n",
+  "markdown": "markdown/cad/4b1fef559349566154556883.md",
+  "originalHtml": "html/cad/4b1fef559349566154556883.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartBoolean.ScriptType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartBoolean.ScriptType.html",
+  "sha256": "56bf815df13d25712efa84f4f59c8ef51631a99bb8ad04903415a045ef8bb7d5",
+  "text": "# Field ScriptType\n\nType of script.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic ScriptType ScriptType\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ScriptType |  Type of script. |\n",
+  "markdown": "markdown/kernel/06f1bc7d946639ad11dd61bf.md",
+  "originalHtml": "html/kernel/06f1bc7d946639ad11dd61bf.html"
+}

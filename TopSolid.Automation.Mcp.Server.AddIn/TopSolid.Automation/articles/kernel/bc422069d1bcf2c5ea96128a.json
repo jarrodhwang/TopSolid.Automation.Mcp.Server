@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IUser.SelectedOperation.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IUser.SelectedOperation.html",
+  "sha256": "6b986bd91128fe164001979e8dad9f5ea9e12cd4e5162e1da1d0fc2f795a1ccc",
+  "text": "# Property SelectedOperation\n\n#### SelectedOperation\n\nGets the operation selected by the user.\n\n##### Declaration\n\n```\n[AvailableSinceVersion(7, 9, 300, 80)]\nElementId SelectedOperation { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |   |  \n\n##### Remarks\n\nIf one (and only one) operation is selected by the user, this property returns its identifier, otherwise Empty is returned.\n \nThis property is available since v7.9.300.80.\n",
+  "markdown": "markdown/kernel/bc422069d1bcf2c5ea96128a.md",
+  "originalHtml": "html/kernel/bc422069d1bcf2c5ea96128a.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.GetCommentParameter.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.GetCommentParameter.html",
+  "sha256": "7dfa49e80e2008c1b2393978b0e7ff68caf5b0371b4dd290e1e40a9b0f9f2d38",
+  "text": "# Method GetCommentParameter\n\n#### GetCommentParameter(DocumentId)\n\nGets the comment parameter entity of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nElementId GetCommentParameter(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the comment parameter entity found.  |  \n\n##### Remarks\n\nThe comment parameter is a text parameter, its value may be obtained and modified using the GetTextValue(ElementId) and SetTextValue(ElementId, string) methods.\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/d389416ecc411d04fee61dac.md",
+  "originalHtml": "html/kernel/d389416ecc411d04fee61dac.html"
+}

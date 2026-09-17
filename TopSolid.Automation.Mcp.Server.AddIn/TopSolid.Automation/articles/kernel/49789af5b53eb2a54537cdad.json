@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.GetDateTimeValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.GetDateTimeValue.html",
+  "sha256": "9c466d5725a2e040fd4932c2315175a5b0c0c2b643dd8793dceaaf785337f718",
+  "text": "# Method GetDateTimeValue\n\n#### GetDateTimeValue(ElementId)\n\nGets the value of a date time parameter.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nDateTime GetDateTimeValue(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the parameter to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  DateTime |  Value of the parameter.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/49789af5b53eb2a54537cdad.md",
+  "originalHtml": "html/kernel/49789af5b53eb2a54537cdad.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IElements.IsRenamable.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IElements.IsRenamable.html",
+  "sha256": "e2adee17be7b0fd3bf3295f30619eb2d08bcc16d424782b60bfb63e704fc3d02",
+  "text": "# Method IsRenamable\n\n#### IsRenamable(ElementId)\n\nTells whether the name of an element may be modified.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nbool IsRenamable(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Whether the name of the element may be modified.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/54641975c40a6c1c85d0be8c.md",
+  "originalHtml": "html/kernel/54641975c40a6c1c85d0be8c.html"
+}

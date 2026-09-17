@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IEntities.GetCurrentSet.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IEntities.GetCurrentSet.html",
+  "sha256": "8ff2cda07a569c9fea98598daa16a1bf5d4687f8c1303fecae21108701c03c1e",
+  "text": "# Method GetCurrentSet\n\n#### GetCurrentSet(DocumentId)\n\nGets the current set definition entity in a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 14, 300, 140)]\nElementId GetCurrentSet(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to get the current set.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the current set definition entity.  |  \n\n##### Remarks\n\nThis method is available since v7.14.300.140.\n",
+  "markdown": "markdown/kernel/3374252342246d38695d2532.md",
+  "originalHtml": "html/kernel/3374252342246d38695d2532.html"
+}

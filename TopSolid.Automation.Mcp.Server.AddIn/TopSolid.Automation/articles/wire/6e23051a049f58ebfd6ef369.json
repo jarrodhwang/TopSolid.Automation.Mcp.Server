@@ -1,0 +1,8 @@
+{
+  "path": "api/wire/TopSolid.Cam.NC.Wire.Automating.IWireTechnologyDocuments.SetMachiningRange.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/wire/TopSolid.Cam.NC.Wire.Automating.IWireTechnologyDocuments.SetMachiningRange.html",
+  "sha256": "e9c921fddb78c116c488695bbf790dd0d25581c082f38b56bf44560334277446",
+  "text": "# Method SetMachiningRange\n\n#### SetMachiningRange(DocumentId, SmartBoolean)\n\nSet machining range state.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 160)]\nvoid SetMachiningRange(DocumentId inDocumentId, SmartBoolean inMachiningRange)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  SmartBoolean |  inMachiningRange |  Machining range  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n",
+  "markdown": "markdown/wire/6e23051a049f58ebfd6ef369.md",
+  "originalHtml": "html/wire/6e23051a049f58ebfd6ef369.html"
+}

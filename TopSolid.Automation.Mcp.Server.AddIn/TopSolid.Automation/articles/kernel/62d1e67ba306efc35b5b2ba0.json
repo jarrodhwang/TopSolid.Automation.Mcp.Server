@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.SetComplementaryPartNumber.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.SetComplementaryPartNumber.html",
+  "sha256": "4cca49c069a70db47acec1f71f08c61b8561113897d9b38f8e6d320f1b9a6e2b",
+  "text": "# Method SetComplementaryPartNumber\n\n#### SetComplementaryPartNumber(PdmObjectId, string)\n\nSets the complementary part number of an object.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 303, 100)]\nvoid SetComplementaryPartNumber(PdmObjectId inObjectId, string inComplementaryPartNumber)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  Object identifier.  |  \n \n|  string |  inComplementaryPartNumber |  Complementary part number.  |  \n\n##### Remarks\n\nThis method must not be called between StartModification(string, bool) and EndModification(bool, bool) methods calls.\n \nThis method is available since v7.8.303.100.\n",
+  "markdown": "markdown/kernel/62d1e67ba306efc35b5b2ba0.md",
+  "originalHtml": "html/kernel/62d1e67ba306efc35b5b2ba0.html"
+}

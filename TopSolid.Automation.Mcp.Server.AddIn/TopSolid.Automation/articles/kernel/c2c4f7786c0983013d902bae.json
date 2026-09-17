@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IDocuments.EditingContextDocument.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IDocuments.EditingContextDocument.html",
+  "sha256": "45d27cfec103ae51e98e8e396281895cf73628928ba932b486f48f40008b54b8",
+  "text": "# Property EditingContextDocument\n\n#### EditingContextDocument\n\nGets the context document in which the edited document is being edited.\n\n##### Declaration\n\n```\n[AvailableSinceVersion(7, 6, 0, 0)]\nDocumentId EditingContextDocument { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  DocumentId |   |  \n\n##### Remarks\n\nIf there is no editing context document, Empty is returned.\n \nThis property is available since v7.6.\n",
+  "markdown": "markdown/kernel/c2c4f7786c0983013d902bae.md",
+  "originalHtml": "html/kernel/c2c4f7786c0983013d902bae.html"
+}

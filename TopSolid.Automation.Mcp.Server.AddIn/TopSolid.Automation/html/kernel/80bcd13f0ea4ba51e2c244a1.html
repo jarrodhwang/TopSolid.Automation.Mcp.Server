@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Interface IApplication | TopSolid Automation website </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Interface IApplication | TopSolid Automation website ">
+    
+    <meta name="description" content="Gives access to the application.">
+      <link rel="shortcut icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../../styles/docfx.css">
+      <link rel="stylesheet" href="../../styles/main.css">
+      <meta property="docfx:navrel" content="../../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../img/AutomationIcon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="TopSolid.Kernel.Automating.IApplication">
+
+
+
+  <h1 id="TopSolid_Kernel_Automating_IApplication" data-uid="TopSolid.Kernel.Automating.IApplication" class="text-break">Interface IApplication</h1>
+  <div class="markdown level0 summary"><p>Gives access to the application.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="TopSolid.html">TopSolid</a>.<a class="xref" href="TopSolid.Kernel.html">Kernel</a>.<a class="xref" href="TopSolid.Kernel.Automating.html">Automating</a></h6>
+  <h6><strong>Assembly</strong>: TopSolid.Kernel.Automating.dll</h6>
+  <h5 id="TopSolid_Kernel_Automating_IApplication_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ServiceContract]
+[AvailableSinceVersion(7, 6, 0, 0)]
+public interface IApplication</code></pre>
+  </div>
+  <h5 id="TopSolid_Kernel_Automating_IApplication_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>This interface is available since v7.6.</p>
+</div>
+  <h3 id="properties">Properties
+</h3>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IApplication_ActiveCommandFullName" data-uid="TopSolid.Kernel.Automating.IApplication.ActiveCommandFullName">
+          <a class="xref" href="TopSolid.Kernel.Automating.IApplication.ActiveCommandFullName.html#TopSolid_Kernel_Automating_IApplication_ActiveCommandFullName">ActiveCommandFullName</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the full name of the active command (i.e. &quot;TopSolid.Kernel.UI.D3.Shapes.Creations.BlockCommand&quot;).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IApplication_ActiveCommandName" data-uid="TopSolid.Kernel.Automating.IApplication.ActiveCommandName">
+          <a class="xref" href="TopSolid.Kernel.Automating.IApplication.ActiveCommandName.html#TopSolid_Kernel_Automating_IApplication_ActiveCommandName">ActiveCommandName</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the localized name of the active command, as it appears to the user in the menu.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IApplication_CurrentPaperFormat" data-uid="TopSolid.Kernel.Automating.IApplication.CurrentPaperFormat">
+          <a class="xref" href="TopSolid.Kernel.Automating.IApplication.CurrentPaperFormat.html#TopSolid_Kernel_Automating_IApplication_CurrentPaperFormat">CurrentPaperFormat</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets or sets the name of the current paper format.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IApplication_CurrentPaperSource" data-uid="TopSolid.Kernel.Automating.IApplication.CurrentPaperSource">
+          <a class="xref" href="TopSolid.Kernel.Automating.IApplication.CurrentPaperSource.html#TopSolid_Kernel_Automating_IApplication_CurrentPaperSource">CurrentPaperSource</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets or sets the name of the current paper source.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IApplication_CurrentPrinterName" data-uid="TopSolid.Kernel.Automating.IApplication.CurrentPrinterName">
+          <a class="xref" href="TopSolid.Kernel.Automating.IApplication.CurrentPrinterName.html#TopSolid_Kernel_Automating_IApplication_CurrentPrinterName">CurrentPrinterName</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets or sets the name of the current printer.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IApplication_CurrentUICultureName" data-uid="TopSolid.Kernel.Automating.IApplication.CurrentUICultureName">
+          <a class="xref" href="TopSolid.Kernel.Automating.IApplication.CurrentUICultureName.html#TopSolid_Kernel_Automating_IApplication_CurrentUICultureName">CurrentUICultureName</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the name of the current UI culture of the application.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IApplication_ExporterCount" data-uid="TopSolid.Kernel.Automating.IApplication.ExporterCount">
+          <a class="xref" href="TopSolid.Kernel.Automating.IApplication.ExporterCount.html#TopSolid_Kernel_Automating_IApplication_ExporterCount">ExporterCount</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the number of available document exporters.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IApplication_ImporterCount" data-uid="TopSolid.Kernel.Automating.IApplication.ImporterCount">
+          <a class="xref" href="TopSolid.Kernel.Automating.IApplication.ImporterCount.html#TopSolid_Kernel_Automating_IApplication_ImporterCount">ImporterCount</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the number of available document importers.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IApplication_IsWindowMaximized" data-uid="TopSolid.Kernel.Automating.IApplication.IsWindowMaximized">
+          <a class="xref" href="TopSolid.Kernel.Automating.IApplication.IsWindowMaximized.html#TopSolid_Kernel_Automating_IApplication_IsWindowMaximized">IsWindowMaximized</a>
+        </td>
+        <td class="markdown level1 summary"><p>Tells whether the application window is maximized.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IApplication_IsWindowMinimized" data-uid="TopSolid.Kernel.Automating.IApplication.IsWindowMinimized">
+          <a class="xref" href="TopSolid.Kernel.Automating.IApplication.IsWindowMinimized.html#TopSolid_Kernel_Automating_IApplication_IsWindowMinimized">IsWindowMinimized</a>
+        </td>
+        <td class="markdown level1 summary"><p>Tells whether the application window is minimized.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IApplication_PaperFormats" data-uid="TopSolid.Kernel.Automating.IApplication.PaperFormats">
+          <a class="xref" href="TopSolid.Kernel.Automating.IApplication.PaperFormats.html#TopSolid_Kernel_Automating_IApplication_PaperFormats">PaperFormats</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the names of the available paper formats for the current printer.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IApplication_PaperSources" data-uid="TopSolid.Kernel.Automating.IApplication.PaperSources">
+          <a class="xref" href="TopSolid.Kernel.Automating.IApplication.PaperSources.html#TopSolid_Kernel_Automating_IApplication_PaperSources">PaperSources</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the names of the available paper sources for the current printer.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IApplication_PrinterNames" data-uid="TopSolid.Kernel.Automating.IApplication.PrinterNames">
+          <a class="xref" href="TopSolid.Kernel.Automating.IApplication.PrinterNames.html#TopSolid_Kernel_Automating_IApplication_PrinterNames">PrinterNames</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the names of the available printers.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IApplication_ProcessId" data-uid="TopSolid.Kernel.Automating.IApplication.ProcessId">
+          <a class="xref" href="TopSolid.Kernel.Automating.IApplication.ProcessId.html#TopSolid_Kernel_Automating_IApplication_ProcessId">ProcessId</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the identifier of application process.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IApplication_Version" data-uid="TopSolid.Kernel.Automating.IApplication.Version">
+          <a class="xref" href="TopSolid.Kernel.Automating.IApplication.Version.html#TopSolid_Kernel_Automating_IApplication_Version">Version</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the version of the application.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IApplication_BringToFrontWindow" data-uid="TopSolid.Kernel.Automating.IApplication.BringToFrontWindow">
+          <a class="xref" href="TopSolid.Kernel.Automating.IApplication.BringToFrontWindow.html#TopSolid_Kernel_Automating_IApplication_BringToFrontWindow">BringToFrontWindow()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Brings the application window to the front.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IApplication_EndJournaling" data-uid="TopSolid.Kernel.Automating.IApplication.EndJournaling">
+          <a class="xref" href="TopSolid.Kernel.Automating.IApplication.EndJournaling.html#TopSolid_Kernel_Automating_IApplication_EndJournaling">EndJournaling()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Ends journaling.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IApplication_EndModification_System_Boolean_System_Boolean_" data-uid="TopSolid.Kernel.Automating.IApplication.EndModification(System.Boolean,System.Boolean)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IApplication.EndModification.html#TopSolid_Kernel_Automating_IApplication_EndModification_System_Boolean_System_Boolean_">EndModification(bool, bool)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Ends performing modifications.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IApplication_GetCurrentPrinterConfiguration_TopSolid_Kernel_Automating_Real__TopSolid_Kernel_Automating_Real__TopSolid_Kernel_Automating_Real__TopSolid_Kernel_Automating_Real__TopSolid_Kernel_Automating_Real__TopSolid_Kernel_Automating_Real__TopSolid_Kernel_Automating_Real__TopSolid_Kernel_Automating_Real__TopSolid_Kernel_Automating_Real__TopSolid_Kernel_Automating_Real__TopSolid_Kernel_Automating_Real__" data-uid="TopSolid.Kernel.Automating.IApplication.GetCurrentPrinterConfiguration(TopSolid.Kernel.Automating.Real@,TopSolid.Kernel.Automating.Real@,TopSolid.Kernel.Automating.Real@,TopSolid.Kernel.Automating.Real@,TopSolid.Kernel.Automating.Real@,TopSolid.Kernel.Automating.Real@,TopSolid.Kernel.Automating.Real@,TopSolid.Kernel.Automating.Real@,TopSolid.Kernel.Automating.Real@,TopSolid.Kernel.Automating.Real@,TopSolid.Kernel.Automating.Real@)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IApplication.GetCurrentPrinterConfiguration.html#TopSolid_Kernel_Automating_IApplication_GetCurrentPrinterConfiguration_TopSolid_Kernel_Automating_Real__TopSolid_Kernel_Automating_Real__TopSolid_Kernel_Automating_Real__TopSolid_Kernel_Automating_Real__TopSolid_Kernel_Automating_Real__TopSolid_Kernel_Automating_Real__TopSolid_Kernel_Automating_Real__TopSolid_Kernel_Automating_Real__TopSolid_Kernel_Automating_Real__TopSolid_Kernel_Automating_Real__TopSolid_Kernel_Automating_Real__">GetCurrentPrinterConfiguration(out Real, out Real, out Real, out Real, out Real, out Real, out Real, out Real, out Real, out Real, out Real)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the current printer configuration.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IApplication_GetExporterFileType_System_Int32_System_String__System_String____" data-uid="TopSolid.Kernel.Automating.IApplication.GetExporterFileType(System.Int32,System.String@,System.String[]@)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IApplication.GetExporterFileType.html#TopSolid_Kernel_Automating_IApplication_GetExporterFileType_System_Int32_System_String__System_String____">GetExporterFileType(int, out string, out string[])</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the type of files managed by an exporter.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IApplication_GetExporterOptions_System_Int32_" data-uid="TopSolid.Kernel.Automating.IApplication.GetExporterOptions(System.Int32)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IApplication.GetExporterOptions.html#TopSolid_Kernel_Automating_IApplication_GetExporterOptions_System_Int32_">GetExporterOptions(int)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the options of an exporter.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IApplication_GetImporterFileType_System_Int32_System_String__System_String____" data-uid="TopSolid.Kernel.Automating.IApplication.GetImporterFileType(System.Int32,System.String@,System.String[]@)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IApplication.GetImporterFileType.html#TopSolid_Kernel_Automating_IApplication_GetImporterFileType_System_Int32_System_String__System_String____">GetImporterFileType(int, out string, out string[])</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the type of files managed by an importer.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IApplication_GetImporterOptions_System_Int32_" data-uid="TopSolid.Kernel.Automating.IApplication.GetImporterOptions(System.Int32)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IApplication.GetImporterOptions.html#TopSolid_Kernel_Automating_IApplication_GetImporterOptions_System_Int32_">GetImporterOptions(int)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the options of an importer.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IApplication_GetMachineIds_System_String__System_String__" data-uid="TopSolid.Kernel.Automating.IApplication.GetMachineIds(System.String@,System.String@)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IApplication.GetMachineIds.html#TopSolid_Kernel_Automating_IApplication_GetMachineIds_System_String__System_String__">GetMachineIds(out string, out string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the machine identifiers that may be used for fixed licenses.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IApplication_InvokeCommand_System_String_" data-uid="TopSolid.Kernel.Automating.IApplication.InvokeCommand(System.String)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IApplication.InvokeCommand.html#TopSolid_Kernel_Automating_IApplication_InvokeCommand_System_String_">InvokeCommand(string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Invokes a specified menu command.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IApplication_IsExporterValid_System_Int32_" data-uid="TopSolid.Kernel.Automating.IApplication.IsExporterValid(System.Int32)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IApplication.IsExporterValid.html#TopSolid_Kernel_Automating_IApplication_IsExporterValid_System_Int32_">IsExporterValid(int)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Tells whether a valid license is available for an exporter.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IApplication_IsImporterValid_System_Int32_" data-uid="TopSolid.Kernel.Automating.IApplication.IsImporterValid(System.Int32)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IApplication.IsImporterValid.html#TopSolid_Kernel_Automating_IApplication_IsImporterValid_System_Int32_">IsImporterValid(int)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Tells whether a valid license is available for an importer.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IApplication_IsLicenseValid_System_Int32_" data-uid="TopSolid.Kernel.Automating.IApplication.IsLicenseValid(System.Int32)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IApplication.IsLicenseValid.html#TopSolid_Kernel_Automating_IApplication_IsLicenseValid_System_Int32_">IsLicenseValid(int)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Tells whether a valid TopSolid license is available.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IApplication_IsProviderLicenseValid_System_String_System_String_System_Int32_System_Int32_System_Int32_" data-uid="TopSolid.Kernel.Automating.IApplication.IsProviderLicenseValid(System.String,System.String,System.Int32,System.Int32,System.Int32)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IApplication.IsProviderLicenseValid.html#TopSolid_Kernel_Automating_IApplication_IsProviderLicenseValid_System_String_System_String_System_Int32_System_Int32_System_Int32_">IsProviderLicenseValid(string, string, int, int, int)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Tells whether a valid license is available from a specified provider.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IApplication_MaximizeWindow" data-uid="TopSolid.Kernel.Automating.IApplication.MaximizeWindow">
+          <a class="xref" href="TopSolid.Kernel.Automating.IApplication.MaximizeWindow.html#TopSolid_Kernel_Automating_IApplication_MaximizeWindow">MaximizeWindow()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Maximizes the application window.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IApplication_MinimizeWindow" data-uid="TopSolid.Kernel.Automating.IApplication.MinimizeWindow">
+          <a class="xref" href="TopSolid.Kernel.Automating.IApplication.MinimizeWindow.html#TopSolid_Kernel_Automating_IApplication_MinimizeWindow">MinimizeWindow()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Minimizes the application window.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IApplication_Quit_System_Boolean_System_Boolean_" data-uid="TopSolid.Kernel.Automating.IApplication.Quit(System.Boolean,System.Boolean)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IApplication.Quit.html#TopSolid_Kernel_Automating_IApplication_Quit_System_Boolean_System_Boolean_">Quit(bool, bool)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Terminates the applicaton.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IApplication_RestoreWindow" data-uid="TopSolid.Kernel.Automating.IApplication.RestoreWindow">
+          <a class="xref" href="TopSolid.Kernel.Automating.IApplication.RestoreWindow.html#TopSolid_Kernel_Automating_IApplication_RestoreWindow">RestoreWindow()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Restores the application window that has been minimized or maximized.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IApplication_SearchEnumerationLocalizedText_TopSolid_Kernel_Automating_EnumerationProperty_" data-uid="TopSolid.Kernel.Automating.IApplication.SearchEnumerationLocalizedText(TopSolid.Kernel.Automating.EnumerationProperty)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IApplication.SearchEnumerationLocalizedText.html#TopSolid_Kernel_Automating_IApplication_SearchEnumerationLocalizedText_TopSolid_Kernel_Automating_EnumerationProperty_">SearchEnumerationLocalizedText(EnumerationProperty)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Searches for the localized text corresponding to a specified enumeration property.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IApplication_SetCurrentPrinterConfiguration_System_Nullable_TopSolid_Kernel_Automating_Real__System_Nullable_TopSolid_Kernel_Automating_Real__System_Nullable_TopSolid_Kernel_Automating_Real__System_Nullable_TopSolid_Kernel_Automating_Real__System_Nullable_TopSolid_Kernel_Automating_Real__System_Nullable_TopSolid_Kernel_Automating_Real__System_Nullable_TopSolid_Kernel_Automating_Real__System_Nullable_TopSolid_Kernel_Automating_Real__System_Nullable_TopSolid_Kernel_Automating_Real__System_Nullable_TopSolid_Kernel_Automating_Real__System_Nullable_TopSolid_Kernel_Automating_Real__" data-uid="TopSolid.Kernel.Automating.IApplication.SetCurrentPrinterConfiguration(System.Nullable{TopSolid.Kernel.Automating.Real},System.Nullable{TopSolid.Kernel.Automating.Real},System.Nullable{TopSolid.Kernel.Automating.Real},System.Nullable{TopSolid.Kernel.Automating.Real},System.Nullable{TopSolid.Kernel.Automating.Real},System.Nullable{TopSolid.Kernel.Automating.Real},System.Nullable{TopSolid.Kernel.Automating.Real},System.Nullable{TopSolid.Kernel.Automating.Real},System.Nullable{TopSolid.Kernel.Automating.Real},System.Nullable{TopSolid.Kernel.Automating.Real},System.Nullable{TopSolid.Kernel.Automating.Real})">
+          <a class="xref" href="TopSolid.Kernel.Automating.IApplication.SetCurrentPrinterConfiguration.html#TopSolid_Kernel_Automating_IApplication_SetCurrentPrinterConfiguration_System_Nullable_TopSolid_Kernel_Automating_Real__System_Nullable_TopSolid_Kernel_Automating_Real__System_Nullable_TopSolid_Kernel_Automating_Real__System_Nullable_TopSolid_Kernel_Automating_Real__System_Nullable_TopSolid_Kernel_Automating_Real__System_Nullable_TopSolid_Kernel_Automating_Real__System_Nullable_TopSolid_Kernel_Automating_Real__System_Nullable_TopSolid_Kernel_Automating_Real__System_Nullable_TopSolid_Kernel_Automating_Real__System_Nullable_TopSolid_Kernel_Automating_Real__System_Nullable_TopSolid_Kernel_Automating_Real__">SetCurrentPrinterConfiguration(Real?, Real?, Real?, Real?, Real?, Real?, Real?, Real?, Real?, Real?, Real?)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the current printer configuration.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IApplication_SetJournalingMethodCall_System_Boolean_System_Boolean_System_Boolean_" data-uid="TopSolid.Kernel.Automating.IApplication.SetJournalingMethodCall(System.Boolean,System.Boolean,System.Boolean)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IApplication.SetJournalingMethodCall.html#TopSolid_Kernel_Automating_IApplication_SetJournalingMethodCall_System_Boolean_System_Boolean_System_Boolean_">SetJournalingMethodCall(bool, bool, bool)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the format of the journaling of method calls.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IApplication_SetSilentMode_System_Boolean_" data-uid="TopSolid.Kernel.Automating.IApplication.SetSilentMode(System.Boolean)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IApplication.SetSilentMode.html#TopSolid_Kernel_Automating_IApplication_SetSilentMode_System_Boolean_">SetSilentMode(bool)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the silent mode.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IApplication_StartJournaling_System_String_" data-uid="TopSolid.Kernel.Automating.IApplication.StartJournaling(System.String)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IApplication.StartJournaling.html#TopSolid_Kernel_Automating_IApplication_StartJournaling_System_String_">StartJournaling(string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Starts journaling.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Kernel_Automating_IApplication_StartModification_System_String_System_Boolean_" data-uid="TopSolid.Kernel.Automating.IApplication.StartModification(System.String,System.Boolean)">
+          <a class="xref" href="TopSolid.Kernel.Automating.IApplication.StartModification.html#TopSolid_Kernel_Automating_IApplication_StartModification_System_String_System_Boolean_">StartModification(string, bool)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Starts performing modifications.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div id="footer-alt">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      			<div id="footer-alt-bottom">
+                      <ul>
+                          <li><a href="https://www.topsolid.com/en/terms-of-use">Term of use</a></li>
+                          <li><a href="https://www.topsolid.com/en/corporate-information">Corporate information</a></li>
+                          <li><a href="https://www.topsolid.com/en/privacy-policy-gdpr">Privacy Policy - GDPR</a></li>
+                      </ul>
+                      <p>Copyright ©2025 TopSolid - All rights reserved.</p>
+                  </div>
+          </div>
+        </div>
+      </footer>    </div>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

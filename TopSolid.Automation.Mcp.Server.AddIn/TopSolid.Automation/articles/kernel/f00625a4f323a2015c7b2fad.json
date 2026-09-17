@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.DateTimeProperty.Value.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.DateTimeProperty.Value.html",
+  "sha256": "c329f9cf0e38a5864f64f4bb74363dca7a7a85bf93480421217b323583896c4a",
+  "text": "# Field Value\n\nValue.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic DateTime Value\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  DateTime |  Value. |\n",
+  "markdown": "markdown/kernel/f00625a4f323a2015c7b2fad.md",
+  "originalHtml": "html/kernel/f00625a4f323a2015c7b2fad.html"
+}

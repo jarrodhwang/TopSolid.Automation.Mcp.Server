@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IGeometries3D.CreateAxis.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IGeometries3D.CreateAxis.html",
+  "sha256": "0ebdb5d14dc6380a74088a7e1e778534d3dd5beb9263b92731ac007b4731fa47",
+  "text": "# Method CreateAxis\n\n#### CreateAxis(DocumentId, Axis3D)\n\nCreates an axis entity in a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nElementId CreateAxis(DocumentId inDocumentId, Axis3D inGeometry)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  Axis3D |  inGeometry |  Axis geometry.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the created axis entity.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/9c9e4307ae3a316cc18deb53.md",
+  "originalHtml": "html/kernel/9c9e4307ae3a316cc18deb53.html"
+}

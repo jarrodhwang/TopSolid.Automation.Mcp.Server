@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IEntities.SetPublishingName.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IEntities.SetPublishingName.html",
+  "sha256": "cb5c27224e1073e367a67169c3295645b21f0909bfe31ba36950e17284a0e1be",
+  "text": "# Method SetPublishingName\n\n#### SetPublishingName(ElementId, string)\n\nSets a publishing entity name\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 400, 100)]\nvoid SetPublishingName(ElementId inElementId, string inName)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |   |  \n \n|  string |  inName |   |\n",
+  "markdown": "markdown/kernel/3bc2ab8849b17d34f74ae8d4.md",
+  "originalHtml": "html/kernel/3bc2ab8849b17d34f74ae8d4.html"
+}

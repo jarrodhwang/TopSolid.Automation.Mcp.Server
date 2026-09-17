@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IElements.HasColor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IElements.HasColor.html",
+  "sha256": "6263acf1111800ec1a70db1a730fef5c41dc358968cf5039c34f2e18d3543cbe",
+  "text": "# Method HasColor\n\n#### HasColor(ElementId)\n\nTells whether an element has a color.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nbool HasColor(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Whether the element has a color.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/a8c7f42234034d2ed186ecc4.md",
+  "originalHtml": "html/kernel/a8c7f42234034d2ed186ecc4.html"
+}

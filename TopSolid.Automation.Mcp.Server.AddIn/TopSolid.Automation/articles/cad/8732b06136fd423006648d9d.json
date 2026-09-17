@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.SmartMaterial.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.SmartMaterial.html",
+  "sha256": "7207831160433ecbf78dd646ffd9efde49d859f3f5eb861e665fda575f0e598c",
+  "text": "# Class SmartMaterial\n\nRepresents a smart material.\n\n##### Inheritance\n \nobject\n \nSmartDesignObject\n \nSmartDocument\n \nSmartMaterial\n\n##### Inherited Members\n \n SmartDocument.Type \n \n SmartDocument.Document \n \n SmartDocument.ElementId \n \n SmartDocument.ReferenceType \n \n object.ToString() \n \n object.Equals(object) \n \n object.Equals(object, object) \n \n object.ReferenceEquals(object, object) \n \n object.GetHashCode() \n \n object.GetType() \n \n object.MemberwiseClone() \n\n###### Namespace: TopSolid.Cad.Design.Automating\n\n###### Assembly: TopSolid.Cad.Design.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 17, 0, 0)]\npublic class SmartMaterial : SmartDocument\n```\n\n##### Remarks\n\nThis class is available since v7.17.\n\n### Constructors \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   SmartMaterial(DocumentId)  |  Initializes a new instance of the SmartMaterial class of type Basic  |  \n \n|   SmartMaterial(DocumentId, DocumentReferenceType)  |  Initializes a new instance of the SmartMaterial class of type Basic  |  \n \n|   SmartMaterial(ElementId)  |  Initializes a new instance of the SmartMaterial class of type Element.  |  \n \n|   SmartMaterial(ElementId, DocumentReferenceType)  |  Initializes a new instance of the SmartMaterial class of type Element.  |\n",
+  "markdown": "markdown/cad/8732b06136fd423006648d9d.md",
+  "originalHtml": "html/cad/8732b06136fd423006648d9d.html"
+}

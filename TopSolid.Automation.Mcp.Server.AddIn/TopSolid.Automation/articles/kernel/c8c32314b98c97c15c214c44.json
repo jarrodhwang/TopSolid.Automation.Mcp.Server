@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IDocuments.SubscribeToEventsTcp.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IDocuments.SubscribeToEventsTcp.html",
+  "sha256": "7944b7588f54780663ff58ee290fd2a728dcd09c9500aea586414b0f2e7f8edf",
+  "text": "# Method SubscribeToEventsTcp\n\n#### SubscribeToEventsTcp(int, string, string, int)\n\nSubscribes to documents events using TCP connection.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 9, 0, 0)]\nvoid SubscribeToEventsTcp(int inClientVersion, string inClientName, string inClientAddress, int inClientPort)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  int |  inClientVersion |  Version of TopSolid used to build the client application.  |  \n \n|  string |  inClientName |  Client name.  |  \n \n|  string |  inClientAddress |  Client IP address or \"localhost\" for local machine.  |  \n \n|  int |  inClientPort |  Client port used.  |  \n\n##### Remarks\n\nThe version is defined by: Major * 100000000 + Minor * 1000000 + Build * 1000 + Revision.\n \nFor example, v7.5.200.100 is represented by: 705200100.\n \nThis method is available since v7.9.\n",
+  "markdown": "markdown/kernel/c8c32314b98c97c15c214c44.md",
+  "originalHtml": "html/kernel/c8c32314b98c97c15c214c44.html"
+}

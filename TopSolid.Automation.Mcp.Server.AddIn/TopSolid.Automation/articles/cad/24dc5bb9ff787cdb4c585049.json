@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMaterials.GetMaterialParameterValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMaterials.GetMaterialParameterValue.html",
+  "sha256": "3d1ca696d7aa231f6a0cdffcce12f3cfac06f16ba5596583f5f6fe1746c83185",
+  "text": "# Method GetMaterialParameterValue\n\n#### GetMaterialParameterValue(ElementId, out DocumentId, out MaterialCategoryType)\n\nGets Document and Category from a Material Parameter\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 400, 160)]\nvoid GetMaterialParameterValue(ElementId inParameterId, out DocumentId outDocumentId, out MaterialCategoryType outMatType)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inParameterId |  The Id of the parameter  |  \n \n|  DocumentId |  outDocumentId |  Material Document  |  \n \n|  MaterialCategoryType |  outMatType |  Category type of the document  |\n",
+  "markdown": "markdown/cad/24dc5bb9ff787cdb4c585049.md",
+  "originalHtml": "html/cad/24dc5bb9ff787cdb4c585049.html"
+}

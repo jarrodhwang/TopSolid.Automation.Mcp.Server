@@ -1,0 +1,8 @@
+{
+  "path": "api/wire/TopSolid.Cam.NC.Wire.Automating.IWireCc.GetGeneratorRegulatorNumber.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/wire/TopSolid.Cam.NC.Wire.Automating.IWireCc.GetGeneratorRegulatorNumber.html",
+  "sha256": "dd243e8c7288d6d104ef265b1fc5c9543a9359c068a5e76c40a8524fe8cca1fd",
+  "text": "# Method GetGeneratorRegulatorNumber\n\n#### GetGeneratorRegulatorNumber(ElementId)\n\nGet generator regulator number.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 160)]\nSmartInteger GetGeneratorRegulatorNumber(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to modify.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartInteger |  Generator regulator number.  |\n",
+  "markdown": "markdown/wire/0bef4a2c786eccd2cdbfb028.md",
+  "originalHtml": "html/wire/0bef4a2c786eccd2cdbfb028.html"
+}

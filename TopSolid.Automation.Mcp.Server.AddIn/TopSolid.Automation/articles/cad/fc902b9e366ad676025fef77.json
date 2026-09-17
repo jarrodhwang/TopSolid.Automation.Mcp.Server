@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.SmartDesignObject.-ctor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.SmartDesignObject.-ctor.html",
+  "sha256": "88821b14271ea99e291440a9844c00c41a971d4ad69541c5115cd1b420ca5d0b",
+  "text": "# Constructor SmartDesignObject\n\n#### SmartDesignObject()\n\n##### Declaration\n\n```\nprotected SmartDesignObject()\n```\n",
+  "markdown": "markdown/cad/fc902b9e366ad676025fef77.md",
+  "originalHtml": "html/cad/fc902b9e366ad676025fef77.html"
+}

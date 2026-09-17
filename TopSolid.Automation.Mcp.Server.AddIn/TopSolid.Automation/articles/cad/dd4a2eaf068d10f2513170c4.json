@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMaterials.GetTextureMapping.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMaterials.GetTextureMapping.html",
+  "sha256": "0368aac27087430419b55f73b6fead587316f91e209e987cf8aea47a998c3093",
+  "text": "# Method GetTextureMapping\n\n#### GetTextureMapping(DocumentId, out TextureMappingType)\n\nGets Texture Mapping\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 400, 120)]\nvoid GetTextureMapping(DocumentId inDocumentId, out TextureMappingType outTextureMappingType)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Id of the container document  |  \n \n|  TextureMappingType |  outTextureMappingType |  The type of the Texture Mapping  |\n",
+  "markdown": "markdown/cad/dd4a2eaf068d10f2513170c4.md",
+  "originalHtml": "html/cad/dd4a2eaf068d10f2513170c4.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IShapes.GetFaceMachiningProcess.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IShapes.GetFaceMachiningProcess.html",
+  "sha256": "fdfa9b8620cf47f6a0e5f9f001596f7f021e92024264f3f038cc460ebfcdb9e7",
+  "text": "# Method GetFaceMachiningProcess\n\n#### GetFaceMachiningProcess(ElementItemId, out int)\n\nGets the machining process of a face.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 12, 0, 0)]\nPdmObjectId GetFaceMachiningProcess(ElementItemId inFaceId, out int outValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementItemId |  inFaceId |  Identifier of the face to analyze.  |  \n \n|  int |  outValue |  Machining process enumeration value, if the face has a machining process.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  PdmObjectId |  PDM object identifier of the machining process definition document of the face, or Empty if the face has no machining process.  |  \n\n##### Remarks\n\nThis method is available since v7.12.\n",
+  "markdown": "markdown/kernel/994317b2100b409848f3b0a1.md",
+  "originalHtml": "html/kernel/994317b2100b409848f3b0a1.html"
+}

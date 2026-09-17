@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IParts.SetVolumePropertyManagement.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IParts.SetVolumePropertyManagement.html",
+  "sha256": "f742226d2d6472e6481b446a8d0e86e5b9ef9fdad110c39e1af4e478b8632339",
+  "text": "# Method SetVolumePropertyManagement\n\n#### SetVolumePropertyManagement(DocumentId, bool, SmartReal)\n\nSets the volume property management of a part.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 13, 300, 220)]\nvoid SetVolumePropertyManagement(DocumentId inDocumentId, bool inIsVolumeManaged, SmartReal inManualVolume)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of part document to analyze.  |  \n \n|  bool |  inIsVolumeManaged |  Whether the volume is managed. True for automatic or manual, false for not managed.  |  \n \n|  SmartReal |  inManualVolume |  Manual volume, or null if no manual volume.  |  \n\n##### Remarks\n\nThis method is available since v7.13.300.220.\n",
+  "markdown": "markdown/cad/8c8f5bbc6db9481c7e0d16db.md",
+  "originalHtml": "html/cad/8c8f5bbc6db9481c7e0d16db.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMultiLayer.AddMultiMaterialLayer.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMultiLayer.AddMultiMaterialLayer.html",
+  "sha256": "4c6fc17d03f1334866636c9acc2a07ede32b5fd67475e024ffe607d0994197e9",
+  "text": "# Method AddMultiMaterialLayer\n\n#### AddMultiMaterialLayer(DocumentId, SmartMaterial, SmartReal, SmartReal)\n\nAdds one layer to the layer list of the multimaterial document\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 0, 0)]\nbool AddMultiMaterialLayer(DocumentId inDocumentId, SmartMaterial inMaterial, SmartReal inThickness, SmartReal inOrientation)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document  |  \n \n|  SmartMaterial |  inMaterial |  Material  |  \n \n|  SmartReal |  inThickness |  Thickness  |  \n \n|  SmartReal |  inOrientation |  Orientation  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  True if layer has been added.  |  \n\n##### Remarks\n\nThis method is available since v7.19.\n",
+  "markdown": "markdown/cad/cf6302c626ca193c79483b11.md",
+  "originalHtml": "html/cad/cf6302c626ca193c79483b11.html"
+}

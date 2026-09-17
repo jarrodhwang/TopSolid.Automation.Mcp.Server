@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.License.-ctor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.License.-ctor.html",
+  "sha256": "a5929d62ec367926f4cc5ac66cc89740dded3d0395b7aa6712857b878bcd407e",
+  "text": "# Constructor License\n\n#### License(LicenseType, string, string, string, bool, string, uint, uint)\n\nInitializes a new instance of the License structure.\n\n##### Declaration\n\n```\npublic License(LicenseType inLicenseType, string inProvider, string inName, string inVersion, bool inIsActive, string inLicenseUser, uint inModule, uint inGroup)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  LicenseType |  inLicenseType |  License type.  |  \n \n|  string |  inProvider |  Provider.  |  \n \n|  string |  inName |  License name.  |  \n \n|  string |  inVersion |  Version.  |  \n \n|  bool |  inIsActive |  Is license active.  |  \n \n|  string |  inLicenseUser |  User of the floating license.  |  \n \n|  uint |  inModule |  Module.  |  \n \n|  uint |  inGroup |  Group.  |\n",
+  "markdown": "markdown/kernel/2326eabdde3e63b1b636ddc5.md",
+  "originalHtml": "html/kernel/2326eabdde3e63b1b636ddc5.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.GetTextTableParameterCreation.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.GetTextTableParameterCreation.html",
+  "sha256": "050706afd247b5e7d38a309d8781a1a1e700dab19d2ae8526d7e3ef733af6db6",
+  "text": "# Method GetTextTableParameterCreation\n\n#### GetTextTableParameterCreation(ElementId, out SmartReal)\n\nGets a smart text table parameter creation operation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 18, 0, 0)]\nvoid GetTextTableParameterCreation(ElementId inElementId, out SmartReal outSmartReal)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the smart text table parameter creation operation to analyze.  |  \n \n|  SmartReal |  outSmartReal |  Smart real value.  |  \n\n##### Remarks\n\nThis method is available since v7.18.\n",
+  "markdown": "markdown/kernel/6f3a225d6690fa0f94b2ee15.md",
+  "originalHtml": "html/kernel/6f3a225d6690fa0f94b2ee15.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMechanisms.MakeMechanism.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMechanisms.MakeMechanism.html",
+  "sha256": "7c5485fb89ed3ee8a589b8d0d94fb6e46130db9eb08eb4fb3291c636f135a9a9",
+  "text": "# Method MakeMechanism\n\n#### MakeMechanism(DocumentId, bool, bool, bool)\n\nConverts a rigid assembly document into an articulated assembly document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nvoid MakeMechanism(DocumentId inDocumentId, bool inInheritsRigidGroups, bool inInheritsJoints, bool inInheritsForces)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the assembly document to modify.  |  \n \n|  bool |  inInheritsRigidGroups |  Inherits rigid groups.  |  \n \n|  bool |  inInheritsJoints |  Inherits joints.  |  \n \n|  bool |  inInheritsForces |  Inherits forces.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.8.\n",
+  "markdown": "markdown/cad/2941d5ee7148e7bc4e142111.md",
+  "originalHtml": "html/cad/2941d5ee7148e7bc4e142111.html"
+}

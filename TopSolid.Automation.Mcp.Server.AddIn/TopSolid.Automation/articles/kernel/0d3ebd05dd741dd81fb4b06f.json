@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IShapes.GetFaceNormal.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IShapes.GetFaceNormal.html",
+  "sha256": "f5c6034e22effb8375017aa906ee0e606f460e0c822ca2db65121340c7427a38",
+  "text": "# Method GetFaceNormal\n\n#### GetFaceNormal(ElementItemId, double, double)\n\nGets the normal to the surface attached to a face at specified parametric values.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nDirection3D GetFaceNormal(ElementItemId inFaceId, double inU, double inV)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementItemId |  inFaceId |  Identifier of the face to analyze.  |  \n \n|  double |  inU |  U parameter within face surface parametric range.  |  \n \n|  double |  inV |  V parameter within face surface parametric range.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Direction3D |  Normal to the face surface at the specified parametric values.  |  \n\n##### Remarks\n\nIf the face is reversed, the orientation of the normal is the opposite to the cross product of the U and V parametric first derivatives.\n \nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/0d3ebd05dd741dd81fb4b06f.md",
+  "originalHtml": "html/kernel/0d3ebd05dd741dd81fb4b06f.html"
+}

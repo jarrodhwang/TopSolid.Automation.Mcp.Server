@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IShapes.GetBoundaryEdges.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IShapes.GetBoundaryEdges.html",
+  "sha256": "34568eeb76e2ca9dafe949dd45a7161761ef9e19cc3a201773b9ae9a75a556f4",
+  "text": "# Method GetBoundaryEdges\n\n#### GetBoundaryEdges(ElementId)\n\nGets the boundary edges of a shape.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nList<List<ElementItemId>> GetBoundaryEdges(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the shape entity to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<List<ElementItemId>> |  Identifiers of the boundary edges of the shape, grouped by connected sets.  |  \n\n##### Remarks\n\nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/ed1df60e2567d62eeb4680e6.md",
+  "originalHtml": "html/kernel/ed1df60e2567d62eeb4680e6.html"
+}

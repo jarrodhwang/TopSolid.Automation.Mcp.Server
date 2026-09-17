@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Frame2D.XDirection.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Frame2D.XDirection.html",
+  "sha256": "5020fa46780283250f1bd79f393781eb9d9b2a230c7219f0f363766f13efa5d5",
+  "text": "# Field XDirection\n\nFrame X direction.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic Direction2D XDirection\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Direction2D |  Frame X direction. |\n",
+  "markdown": "markdown/kernel/ce1f2726dd5795747a7710b3.md",
+  "originalHtml": "html/kernel/ce1f2726dd5795747a7710b3.html"
+}

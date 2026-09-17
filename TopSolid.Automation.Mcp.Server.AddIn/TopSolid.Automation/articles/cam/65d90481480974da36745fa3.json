@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IParameters.GetNamedValueBoundValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IParameters.GetNamedValueBoundValue.html",
+  "sha256": "4faef5a75676053e769e4bfe4ab3605c03c0ce4d03fd71563a8f68e4c80ed0da",
+  "text": "# Method GetNamedValueBoundValue\n\n#### GetNamedValueBoundValue(ElementExId, string)\n\nFrom a bound parameter, get a SmartReal with the computed bound value. Use GetValue(ParameterId) to get the bound type, and GetValueBoundElement(ParameterId) to get the limitation element.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nSmartReal GetNamedValueBoundValue(ElementExId inElementId, string inName)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementExId |  inElementId |  Element owner of the parameter.  |  \n \n|  string |  inName |  Full or partial name of the parameter to get.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartReal |  A new SmartReal with the computed value of the parameter.  |\n",
+  "markdown": "markdown/cam/65d90481480974da36745fa3.md",
+  "originalHtml": "html/cam/65d90481480974da36745fa3.html"
+}

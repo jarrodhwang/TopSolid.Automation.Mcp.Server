@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.GetMajorRevisionParameter.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.GetMajorRevisionParameter.html",
+  "sha256": "a777d3618f2044ee169411bb5bdff562b188363ece5aa13e09348f5543891f5b",
+  "text": "# Method GetMajorRevisionParameter\n\n#### GetMajorRevisionParameter(DocumentId)\n\nGets the major revision parameter entity of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nElementId GetMajorRevisionParameter(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the major revision parameter entity found.  |  \n\n##### Remarks\n\nThe major revision parameter is a text parameter, its value may be obtained and modified using the GetTextValue(ElementId) and SetTextValue(ElementId, string) methods.\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/92a0d177da70e724a4c55c77.md",
+  "originalHtml": "html/kernel/92a0d177da70e724a4c55c77.html"
+}

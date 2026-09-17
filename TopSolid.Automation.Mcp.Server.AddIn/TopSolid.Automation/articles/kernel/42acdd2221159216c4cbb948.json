@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.BooleanProperty.Value.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.BooleanProperty.Value.html",
+  "sha256": "21063f74eea9bb48a1b6e7bcfbfa5d4884c234696a270e6c4293e7c7e9e61281",
+  "text": "# Field Value\n\nValue.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic bool Value\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Value. |\n",
+  "markdown": "markdown/kernel/42acdd2221159216c4cbb948.md",
+  "originalHtml": "html/kernel/42acdd2221159216c4cbb948.html"
+}

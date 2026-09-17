@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IShapes.GetFacePlaneSurface.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IShapes.GetFacePlaneSurface.html",
+  "sha256": "433652cbba18304efa2384bc8b5d67988de1ca0fb6b2a320ec64d17d0564c82f",
+  "text": "# Method GetFacePlaneSurface\n\n#### GetFacePlaneSurface(ElementItemId, out Plane3D)\n\nGets the plane surface attached to a face.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nvoid GetFacePlaneSurface(ElementItemId inFaceId, out Plane3D outPlane)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementItemId |  inFaceId |  Identifier of the face to analyze.  |  \n \n|  Plane3D |  outPlane |  Surface plane.  |  \n\n##### Remarks\n\nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/3f021f49f47dff6d20541edb.md",
+  "originalHtml": "html/kernel/3f021f49f47dff6d20541edb.html"
+}

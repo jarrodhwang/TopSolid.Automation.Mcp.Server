@@ -1,0 +1,84 @@
+<Window x:Class="TopSolid.Automation.AI.Studio.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:chat="clr-namespace:TopSolid.Automation.AI.Studio.Chat"
+        Title="TopSolid Automation AI 0.5.2" Width="1060" Height="820" MinWidth="780" MinHeight="660"
+        Closing="Window_Closing">
+    <Window.Resources>
+        <Style TargetType="Button"><Setter Property="Padding" Value="12,5"/><Setter Property="Margin" Value="4,0,0,0"/></Style>
+        <Style TargetType="TextBox"><Setter Property="Padding" Value="5"/><Setter Property="VerticalContentAlignment" Value="Center"/></Style>
+        <Style TargetType="ComboBox"><Setter Property="Padding" Value="5"/><Setter Property="VerticalContentAlignment" Value="Center"/></Style>
+        <Style TargetType="TextBlock"><Setter Property="VerticalAlignment" Value="Center"/></Style>
+    </Window.Resources>
+    <Grid Margin="14">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition Height="*"/>
+            <RowDefinition Height="6"/><RowDefinition Height="160"/><RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <GroupBox Header="Configuration" Padding="8" x:Name="ConfigurationPanel">
+            <Grid>
+                <Grid.ColumnDefinitions><ColumnDefinition Width="100"/><ColumnDefinition Width="*"/><ColumnDefinition Width="Auto"/></Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <TextBlock Text="Connection"/><ComboBox x:Name="ProviderBox" Grid.Column="1" SelectionChanged="Provider_Changed">
+                    <ComboBoxItem Content="Cloud API"/><ComboBoxItem Content="Ollama"/>
+                </ComboBox>
+                <StackPanel Grid.Column="2" Orientation="Horizontal">
+                    <Button Content="Save settings" Click="Save_Click"/>
+                    <Button x:Name="SaveLogButton" Content="Save log" Click="SaveLog_Click"
+                            ToolTip="Export current chat, conversations, configuration, MCP tools/results, and diagnostics; API keys are omitted"/>
+                </StackPanel>
+                <CheckBox Grid.Row="6" Grid.Column="2" x:Name="FastGptOssBox" Content="Faster GPT-OSS" VerticalAlignment="Center" Margin="8,6,0,0"
+                          ToolTip="Use Ollama's low thinking level for GPT-OSS. Uncheck to use the model default. Other model families are unchanged."/>
+                <TextBlock Grid.Row="1" x:Name="CloudServiceLabel" Text="Cloud service" Margin="0,6,0,0"/>
+                <ComboBox Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" x:Name="CloudServiceBox" DisplayMemberPath="Name" SelectedValuePath="Id" Margin="0,6,0,0" SelectionChanged="CloudService_Changed"/>
+                <TextBlock Grid.Row="2" Text="Server URL" Margin="0,6,0,0"/>
+                <TextBox Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" x:Name="EndpointBox" Margin="0,6,0,0" TextChanged="Endpoint_Changed"/>
+                <TextBlock Grid.Row="3" Text="API key" Margin="0,6,0,0"/>
+                <PasswordBox Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" x:Name="ApiKeyBox" Padding="5" Margin="0,6,0,0" PasswordChanged="ModelConfiguration_Changed"/>
+                <TextBlock Grid.Row="4" Text="Model" Margin="0,6,0,0"/>
+                <ComboBox Grid.Row="4" Grid.Column="1" x:Name="ModelBox" IsEditable="True" Margin="0,6,0,0" ToolTip="Choose a model that supports chat and function tools. A listed model may serve another purpose." TextBoxBase.TextChanged="ModelConfiguration_Changed"/>
+                <Button Grid.Row="4" Grid.Column="2" Content="List models" Click="ListModels_Click" Margin="4,6,0,0"/>
+                <TextBlock Grid.Row="5" Text="MCP server" Margin="0,6,0,0"/>
+                <TextBox Grid.Row="5" Grid.Column="1" x:Name="ServerPathBox" Margin="0,6,0,0"/>
+                <Button Grid.Row="5" Grid.Column="2" Content="Browse…" Click="Browse_Click" Margin="4,6,0,0"/>
+                <TextBlock Grid.Row="6" Text="AI wait" Margin="0,6,0,0"/>
+                <StackPanel Grid.Row="6" Grid.Column="1" Orientation="Horizontal" Margin="0,6,0,0">
+                    <ComboBox x:Name="TimeoutBox" Width="80" ToolTip="Maximum wait for each model request. Cancel remains available."/>
+                    <TextBlock Text="minutes" Margin="8,0,0,0"/>
+                </StackPanel>
+            </Grid>
+        </GroupBox>
+        <DockPanel Grid.Row="1" Margin="0,10">
+            <StackPanel Orientation="Horizontal" DockPanel.Dock="Right">
+                <Button x:Name="ConnectButton" Content="Connect MCP" Click="Connect_Click"/>
+                <Button x:Name="StatusButton" Content="Check TopSolid" Click="Status_Click"/>
+                <Button x:Name="ClearButton" Content="New chat" Click="Clear_Click"/>
+            </StackPanel>
+            <TextBlock x:Name="StatusText" Text="MCP: disconnected · Model: not tested" TextWrapping="Wrap"/>
+        </DockPanel>
+        <GroupBox Grid.Row="2" Header="Chat" Padding="6">
+            <DockPanel>
+                <TextBlock x:Name="ElapsedText" DockPanel.Dock="Top" HorizontalAlignment="Right" FontSize="12" Margin="0,0,4,4"/>
+                <chat:ChatTranscript x:Name="ChatBox" IsReadOnly="True" IsDocumentEnabled="False" VerticalScrollBarVisibility="Auto" BorderThickness="0" FontSize="14">
+                    <FlowDocument PagePadding="0"/>
+                </chat:ChatTranscript>
+            </DockPanel>
+        </GroupBox>
+        <GridSplitter Grid.Row="3" Height="6" HorizontalAlignment="Stretch"/>
+        <GroupBox Grid.Row="4" Header="MCP tools and results" Padding="6">
+            <TextBox x:Name="TraceBox" IsReadOnly="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" BorderThickness="0" FontFamily="Consolas" FontSize="12"/>
+        </GroupBox>
+        <Grid Grid.Row="5" Margin="0,10,0,0">
+            <Grid.ColumnDefinitions><ColumnDefinition Width="*"/><ColumnDefinition Width="Auto"/></Grid.ColumnDefinitions>
+            <TextBox x:Name="MessageBox" Height="70" MaxLength="32000" AcceptsReturn="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" KeyDown="Message_KeyDown" ToolTip="Ctrl+Enter to send"/>
+            <StackPanel Grid.Column="1" Margin="6,0,0,0">
+                <Button x:Name="SendButton" Content="Send" Click="Send_Click"/>
+                <Button x:Name="CancelButton" Content="Cancel" Click="Cancel_Click" IsEnabled="False" Margin="4,6,0,0"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>

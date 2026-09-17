@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ISketches2D.CreateLineSegment.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ISketches2D.CreateLineSegment.html",
+  "sha256": "152822459350c87f68b056b51bd2b6895fd6277da9c5e5444de974dd9dcd1865",
+  "text": "# Method CreateLineSegment\n\n#### CreateLineSegment(ElementItemId, ElementItemId)\n\nCreates a new line segment into the ModifiedSketch.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 201, 80)]\nElementItemId CreateLineSegment(ElementItemId inStartVertexId, ElementItemId inEndVertexId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementItemId |  inStartVertexId |  Identifier of the start vertex.  |  \n \n|  ElementItemId |  inEndVertexId |  Identifier of the end vertex.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementItemId |  Identifier of the created segment.  |  \n\n##### Remarks\n\nStartModification(ElementId) must be called before calling this method.\n \nThis method is available since v7.7.201.80.\n",
+  "markdown": "markdown/kernel/c7156bc0b4101a1ebc0b3100.md",
+  "originalHtml": "html/kernel/c7156bc0b4101a1ebc0b3100.html"
+}

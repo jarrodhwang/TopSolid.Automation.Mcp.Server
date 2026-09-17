@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.GetSystemParametersFolder.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.GetSystemParametersFolder.html",
+  "sha256": "eaee86a5a18e6d18569e95bbb2464dbdc6b18d2720ec0afbfb6e1f7388cfed42",
+  "text": "# Method GetSystemParametersFolder\n\n#### GetSystemParametersFolder(DocumentId)\n\nGets the system parameters folder entity of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nElementId GetSystemParametersFolder(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the system parameters folder entity found.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/kernel/46548145afc7023ee7a22bb2.md",
+  "originalHtml": "html/kernel/46548145afc7023ee7a22bb2.html"
+}

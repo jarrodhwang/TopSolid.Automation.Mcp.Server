@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IAssemblies.GetFamilyDriverRelatedToCodeDriver.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IAssemblies.GetFamilyDriverRelatedToCodeDriver.html",
+  "sha256": "fc8aec056c2ada068bbd59a3f92f9c2a57c28e8d265c2e1e1ec72c134edee33e",
+  "text": "# Method GetFamilyDriverRelatedToCodeDriver\n\n#### GetFamilyDriverRelatedToCodeDriver(ElementId, string, out string)\n\nThis Method fetchs the name of family driver related to a code driver.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 21, 155, 0)]\nvoid GetFamilyDriverRelatedToCodeDriver(ElementId inElementId, string inCodeDriverName, out string outFamilyDriverName)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Inclusion  |  \n \n|  string |  inCodeDriverName |  driver name to look for  |  \n \n|  string |  outFamilyDriverName |  name of related family driver  |\n",
+  "markdown": "markdown/cad/ba68f20604c3e22d5e8940b6.md",
+  "originalHtml": "html/cad/ba68f20604c3e22d5e8940b6.html"
+}

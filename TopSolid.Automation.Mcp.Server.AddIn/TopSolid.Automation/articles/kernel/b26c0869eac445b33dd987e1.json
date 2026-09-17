@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IElements.HasComment.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IElements.HasComment.html",
+  "sha256": "321e5f5ef658e6012d3a72be22ed8c1f9d9cad77bffee9d1ad1a2dc59fbb72e9",
+  "text": "# Method HasComment\n\n#### HasComment(ElementId)\n\nTells whether an element has a comment.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nbool HasComment(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Whether the element has a comment.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/b26c0869eac445b33dd987e1.md",
+  "originalHtml": "html/kernel/b26c0869eac445b33dd987e1.html"
+}

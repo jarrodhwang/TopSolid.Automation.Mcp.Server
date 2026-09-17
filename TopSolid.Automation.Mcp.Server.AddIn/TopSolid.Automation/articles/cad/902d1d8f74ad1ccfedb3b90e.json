@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMaterials.SetCategory.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMaterials.SetCategory.html",
+  "sha256": "8c25813014172018346f8741174b9f43383ed2f77fe1ed685f51a211cf76bf48",
+  "text": "# Method SetCategory\n\n#### SetCategory(DocumentId, MaterialCategoryType)\n\nSets the material category of a material document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 0, 0)]\nvoid SetCategory(DocumentId inDocumentId, MaterialCategoryType inMaterialCategoryType)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  MaterialCategoryType |  inMaterialCategoryType |  The material category.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.16.\n",
+  "markdown": "markdown/cad/902d1d8f74ad1ccfedb3b90e.md",
+  "originalHtml": "html/cad/902d1d8f74ad1ccfedb3b90e.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Vector2D.VX.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Vector2D.VX.html",
+  "sha256": "16958e6b3524ed3f19a760d705efd17d04c7eaebdfb7b58de049e6c2d426e978",
+  "text": "# Field VX\n\nPositive X unit vector, i.e. (1,0).\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\npublic static readonly Vector2D VX\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Vector2D |  Positive X unit vector, i.e. (1,0). |\n",
+  "markdown": "markdown/kernel/55947b6122cc847ea32441ac.md",
+  "originalHtml": "html/kernel/55947b6122cc847ea32441ac.html"
+}

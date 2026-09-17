@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ISketches3D.ModifiedSketch.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ISketches3D.ModifiedSketch.html",
+  "sha256": "6c0ffd6ab1936dbf2d05bb550bdf12b471d3c028e81979a0f65bb49d3ef459bd",
+  "text": "# Property ModifiedSketch\n\n#### ModifiedSketch\n\nGets the sketch being modified.\n\n##### Declaration\n\n```\n[AvailableSinceVersion(7, 7, 201, 80)]\nElementId ModifiedSketch { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |   |  \n\n##### Remarks\n\nIf there is no sketch being modified, Empty is returned.\n \nThis property is available since v7.7.201.80.\n",
+  "markdown": "markdown/kernel/b7ed5489760b801dd9c76be9.md",
+  "originalHtml": "html/kernel/b7ed5489760b801dd9c76be9.html"
+}

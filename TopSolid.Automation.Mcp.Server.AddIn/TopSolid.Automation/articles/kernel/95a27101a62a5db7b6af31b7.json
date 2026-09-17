@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IDocuments.CanExport.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IDocuments.CanExport.html",
+  "sha256": "f58c4ed3eda1d24685cb767e32b8eb6ecac84315c560e2982e8e97e78e9bc6b6",
+  "text": "# Method CanExport\n\n#### CanExport(int, DocumentId)\n\nTells whether an exporter can export a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nbool CanExport(int inExporterIx, DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  int |  inExporterIx |  Index of exporter to analyze, within [0, ExporterCount-1].  |  \n \n|  DocumentId |  inDocumentId |  Identifier of document to export.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Whether the exporter can export the specified document.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/95a27101a62a5db7b6af31b7.md",
+  "originalHtml": "html/kernel/95a27101a62a5db7b6af31b7.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.PathPoint.Normal.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.PathPoint.Normal.html",
+  "sha256": "c0f55b042c356ef5519d61fdda2a8ef3981fc7276d0df6b44da655bd6d8184f6",
+  "text": "# Property Normal\n\n#### Normal\n\nGets the normal of this point.\n\n##### Declaration\n\n```\npublic Vector3D Normal { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Vector3D |   |\n",
+  "markdown": "markdown/cam/e16a49fe713c4af4fa7599e8.md",
+  "originalHtml": "html/cam/e16a49fe713c4af4fa7599e8.html"
+}

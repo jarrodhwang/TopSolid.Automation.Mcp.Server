@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ISketches2D.CreateSection.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ISketches2D.CreateSection.html",
+  "sha256": "aac7db783965f0fc17cbacccf6ff23d663a2cdb123df5adef6ef8942734ef962",
+  "text": "# Method CreateSection\n\n#### CreateSection(List<ElementItemId>)\n\nCreates a new section into the ModifiedSketch.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 201, 80)]\nElementItemId CreateSection(List<ElementItemId> inProfileIds)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  List<ElementItemId> |  inProfileIds |  Identifiers of the profiles of the section.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementItemId |  Identifier of the created section.  |  \n\n##### Remarks\n\nStartModification(ElementId) must be called before calling this method.\n \nThis method is available since v7.7.201.80.\n",
+  "markdown": "markdown/kernel/2c782f2c07f94db2a8190e43.md",
+  "originalHtml": "html/kernel/2c782f2c07f94db2a8190e43.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMaterials.SetBumpScale.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMaterials.SetBumpScale.html",
+  "sha256": "664dc5e9fb6f1b7504de42b77bf8fa71b8c5218069982099263ae3c867e8b01b",
+  "text": "# Method SetBumpScale\n\n#### SetBumpScale(DocumentId, double)\n\nSets Bump Scale Factor\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 400, 120)]\nvoid SetBumpScale(DocumentId inDocumentId, double inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Id of the container document  |  \n \n|  double |  inValue |  The value to use  |\n",
+  "markdown": "markdown/cad/326014077294f634e2ba89fd.md",
+  "originalHtml": "html/cad/326014077294f634e2ba89fd.html"
+}

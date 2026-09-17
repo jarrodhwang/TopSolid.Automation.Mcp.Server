@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.GetDeliveryDate.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.GetDeliveryDate.html",
+  "sha256": "6069e5dbc2bd1405a0e6a00a64d6182f6eb2a0d821f04c5e1a4dd7acd4b593e5",
+  "text": "# Method GetDeliveryDate\n\n#### GetDeliveryDate(PdmObjectId)\n\nGets the delivery date of an object.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nstring GetDeliveryDate(PdmObjectId inObjectId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  Object identifier.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  Object delivery date.  |  \n\n##### Remarks\n\nThis method is available since v7.10.300.140.\n",
+  "markdown": "markdown/pdmexplorer/42bbcdd569b171efc26efb3e.md",
+  "originalHtml": "html/pdmexplorer/42bbcdd569b171efc26efb3e.html"
+}

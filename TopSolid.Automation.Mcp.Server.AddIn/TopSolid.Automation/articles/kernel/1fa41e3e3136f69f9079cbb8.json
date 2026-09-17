@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IntegerProperty.Value.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IntegerProperty.Value.html",
+  "sha256": "cd22fbc67a3e14cc726971b2cb835a1eb6066a000a2f812d8d87a9bd5e32dc88",
+  "text": "# Field Value\n\nValue.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic int Value\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  int |  Value. |\n",
+  "markdown": "markdown/kernel/1fa41e3e3136f69f9079cbb8.md",
+  "originalHtml": "html/kernel/1fa41e3e3136f69f9079cbb8.html"
+}

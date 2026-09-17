@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.PublishBoolean.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.PublishBoolean.html",
+  "sha256": "7e01070de1bc89376aee51dee209f2abcef702b77830ed0e283de401ee407c93",
+  "text": "# Method PublishBoolean\n\n#### PublishBoolean(DocumentId, string, SmartBoolean)\n\nCreates a Boolean publishing entity in a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nElementId PublishBoolean(DocumentId inDocumentId, string inDescription, SmartBoolean inDefinition)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  string |  inDescription |  Publishing description.  |  \n \n|  SmartBoolean |  inDefinition |  Publishing definition.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the created publishing entity.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.8.\n",
+  "markdown": "markdown/kernel/fc9117c11a69c7806b0a8412.md",
+  "originalHtml": "html/kernel/fc9117c11a69c7806b0a8412.html"
+}

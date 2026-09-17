@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMultiLayer.SetCategory.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMultiLayer.SetCategory.html",
+  "sha256": "20b9158e8fec75d5c344555c72a32089995f5f6e712b2b0595666bce9b32468c",
+  "text": "# Method SetCategory\n\n#### SetCategory(DocumentId, MultiLayerMaterialCategoryType)\n\nSets the multi layer material category of a material document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 0, 0)]\nvoid SetCategory(DocumentId inDocumentId, MultiLayerMaterialCategoryType inMultiLayerMaterialCategoryType)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  MultiLayerMaterialCategoryType |  inMultiLayerMaterialCategoryType |  The multi layer material category.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.19.\n",
+  "markdown": "markdown/cad/caaed3724cfeefde674c7c35.md",
+  "originalHtml": "html/cad/caaed3724cfeefde674c7c35.html"
+}

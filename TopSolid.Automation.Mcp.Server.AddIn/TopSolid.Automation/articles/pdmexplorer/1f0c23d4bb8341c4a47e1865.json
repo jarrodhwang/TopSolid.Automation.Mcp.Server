@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.PdmRight.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.PdmRight.html",
+  "sha256": "07433505ae142bce11857485302cecd04f9aa897c2c448095f5dd4ee9670e13a",
+  "text": "# Enum PdmRight\n\nDefines the various PDM rights.\n\n###### Namespace: TopSolid.Pdm.Explorer.Automating\n\n###### Assembly: TopSolid.Pdm.Explorer.Automating.dll\n\n##### Syntax\n\n```\npublic enum PdmRight\n```\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  Administrate |  Administrate right.  |  \n \n|  ChangeLifeCycleState |  Life cycle state change right  |  \n \n|  Create |  Create right.  |  \n \n|  Delete |  Delete right  |  \n \n|  Export |  Export right.  |  \n \n|  ExportForDelivery |  Export for delivery right.  |  \n \n|  Modify |  Modify right.  |  \n \n|  ModifyReferences |  Modify references right.  |  \n \n|  Print |  Print right.  |  \n \n|  PublishToPlm |  Publish to PLM right  |  \n \n|  Read |  Read right.  |\n",
+  "markdown": "markdown/pdmexplorer/1f0c23d4bb8341c4a47e1865.md",
+  "originalHtml": "html/pdmexplorer/1f0c23d4bb8341c4a47e1865.html"
+}

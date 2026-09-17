@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Point2D.PX.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Point2D.PX.html",
+  "sha256": "eed3cf54a423acae730cb2fdc65462b513812c259e01d4aaf5b2667d753bcae7",
+  "text": "# Field PX\n\nX unit point, i.e. (1,0).\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\npublic static readonly Point2D PX\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Point2D |  X unit point, i.e. (1,0). |\n",
+  "markdown": "markdown/kernel/73a6e8e7f433a972c0404794.md",
+  "originalHtml": "html/kernel/73a6e8e7f433a972c0404794.html"
+}

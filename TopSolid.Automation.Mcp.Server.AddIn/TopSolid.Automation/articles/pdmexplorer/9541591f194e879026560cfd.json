@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.GetMinorRevisionPreviewBitmap.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.GetMinorRevisionPreviewBitmap.html",
+  "sha256": "09572b5b7c1b731500d1badce2d938d34977794ef5c789ae0fb58eee26e017b7",
+  "text": "# Method GetMinorRevisionPreviewBitmap\n\n#### GetMinorRevisionPreviewBitmap(PdmMinorRevisionId)\n\nGets the preview bitmap of a minor revision.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nBitmap GetMinorRevisionPreviewBitmap(PdmMinorRevisionId inMinorRevisionId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmMinorRevisionId |  inMinorRevisionId |  Identifier of the minor revision.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Bitmap |  Preview bitmap of the minor revision, or null if none.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/pdmexplorer/9541591f194e879026560cfd.md",
+  "originalHtml": "html/pdmexplorer/9541591f194e879026560cfd.html"
+}

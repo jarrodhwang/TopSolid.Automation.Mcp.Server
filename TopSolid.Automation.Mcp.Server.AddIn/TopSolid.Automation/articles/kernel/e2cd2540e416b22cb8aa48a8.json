@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.TopSolidHostInstance.Units.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.TopSolidHostInstance.Units.html",
+  "sha256": "d9908db9d13fa5f7b020bd07426bfd1da27f60e9a3f17f2ddfa001669fe26608",
+  "text": "# Property Units\n\n#### Units\n\nGets access to units, or null if not available.\n\n##### Declaration\n\n```\npublic IUnits Units { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  IUnits |   |\n",
+  "markdown": "markdown/kernel/e2cd2540e416b22cb8aa48a8.md",
+  "originalHtml": "html/kernel/e2cd2540e416b22cb8aa48a8.html"
+}

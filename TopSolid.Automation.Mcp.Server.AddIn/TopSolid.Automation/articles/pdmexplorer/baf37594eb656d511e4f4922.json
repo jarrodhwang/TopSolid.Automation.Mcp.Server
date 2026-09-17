@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.ErpProperty.Value.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.ErpProperty.Value.html",
+  "sha256": "c7b0b6f94be40552c6d8e3666d1166d1ae333bd631a0c21cbc38ecb04489cb16",
+  "text": "# Property Value\n\n#### Value\n\nGets or sets property value (as string format).\n\n##### Declaration\n\n```\npublic string Value { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |   |\n",
+  "markdown": "markdown/pdmexplorer/baf37594eb656d511e4f4922.md",
+  "originalHtml": "html/pdmexplorer/baf37594eb656d511e4f4922.html"
+}

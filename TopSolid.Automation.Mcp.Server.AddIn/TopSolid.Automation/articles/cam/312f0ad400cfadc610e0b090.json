@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IDocuments.SetMachine.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IDocuments.SetMachine.html",
+  "sha256": "1b07720c194a4aaa287d54173ca317a494d6f3edba5698ec5175730cab6a387f",
+  "text": "# Method SetMachine\n\n#### SetMachine(DocumentId, DocumentId)\n\nSets the machine in the document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 15, 400, 100)]\nvoid SetMachine(DocumentId inDocumentId, DocumentId inMachineDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  DocumentId |  inMachineDocumentId |  Identifier of the machine document to include.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.15.400.100.\n",
+  "markdown": "markdown/cam/312f0ad400cfadc610e0b090.md",
+  "originalHtml": "html/cam/312f0ad400cfadc610e0b090.html"
+}

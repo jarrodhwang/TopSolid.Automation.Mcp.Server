@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.PdmProjectFolderId.Id.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.PdmProjectFolderId.Id.html",
+  "sha256": "b48263294f53f77188a7e3ac226cb70f8ad686ec4a78e1856dfafd17f980cb75",
+  "text": "# Property Id\n\n#### Id\n\nGets the PDM project folder identifier.\n\n##### Declaration\n\n```\npublic string Id { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |   |\n",
+  "markdown": "markdown/pdmexplorer/02a09920ee1bc2c136671ced.md",
+  "originalHtml": "html/pdmexplorer/02a09920ee1bc2c136671ced.html"
+}

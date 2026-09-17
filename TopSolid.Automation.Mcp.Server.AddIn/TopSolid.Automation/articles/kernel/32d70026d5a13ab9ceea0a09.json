@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.LicenseType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.LicenseType.html",
+  "sha256": "8e37588363b48667451eb644625bb03eec45fb9d0b06601ace8dc48202ad47c2",
+  "text": "# Enum LicenseType\n\nDefines the various types of licenses.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 16, 400, 20)]\npublic enum LicenseType\n```\n\n##### Remarks\n\nThis enum is available since v7.16.\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  ClsFloating |  Cls Floating.  |  \n \n|  ClsStandalone |  Cls Standalone.  |  \n \n|  ClsUser |  Cls User.  |  \n \n|  Floating |  Floating.  |  \n \n|  Standalone |  Standalone.  |  \n \n|  Unknown |  Unknown.  |\n",
+  "markdown": "markdown/kernel/32d70026d5a13ab9ceea0a09.md",
+  "originalHtml": "html/kernel/32d70026d5a13ab9ceea0a09.html"
+}

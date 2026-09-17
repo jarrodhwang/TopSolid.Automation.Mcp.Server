@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.SetRealParameterConstraintsMinimumLimit.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.SetRealParameterConstraintsMinimumLimit.html",
+  "sha256": "0ce1594f4bc523fcc628d97f380552e50ed00976b30ab5e437a3d22bb77f9d60",
+  "text": "# Method SetRealParameterConstraintsMinimumLimit\n\n#### SetRealParameterConstraintsMinimumLimit(ElementId, RealProperty)\n\nSets the real parameter constraint minimum limite.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 17, 0, 0)]\nvoid SetRealParameterConstraintsMinimumLimit(ElementId inElementId, RealProperty inProperty)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the parameter.  |  \n \n|  RealProperty |  inProperty |  The new value.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.17.000.000.\n",
+  "markdown": "markdown/kernel/8bce8d39d11035b2031be24f.md",
+  "originalHtml": "html/kernel/8bce8d39d11035b2031be24f.html"
+}

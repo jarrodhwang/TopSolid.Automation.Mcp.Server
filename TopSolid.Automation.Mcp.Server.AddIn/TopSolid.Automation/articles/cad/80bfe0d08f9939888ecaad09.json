@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IBoms.GetSourceSets.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IBoms.GetSourceSets.html",
+  "sha256": "8d92baa4e15f66a0a2f1f37baebd0d3c0d765284edeb2aa355e0a45fc31d6963",
+  "text": "# Method GetSourceSets\n\n#### GetSourceSets(DocumentId)\n\nGets the source sets of a BOM.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 12, 0, 0)]\nList<ElementId> GetSourceSets(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the BOM document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementId> |  Identifiers of the sets of the source assembly document, or empty if none.  |  \n\n##### Remarks\n\nThis method is available since v7.12.\n",
+  "markdown": "markdown/cad/80bfe0d08f9939888ecaad09.md",
+  "originalHtml": "html/cad/80bfe0d08f9939888ecaad09.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMaterials.GetElongationAtBreak.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMaterials.GetElongationAtBreak.html",
+  "sha256": "633386f8ff41b48febb95e68546a3e24924636f449f63c19d91a020bf76bb579",
+  "text": "# Method GetElongationAtBreak\n\n#### GetElongationAtBreak(DocumentId, out double)\n\nGets Elongation at break\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 400, 120)]\nbool GetElongationAtBreak(DocumentId inDocumentId, out double outValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Id of the container document  |  \n \n|  double |  outValue |  The value  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  true if a parameter has been fetched with success  |\n",
+  "markdown": "markdown/cad/1c4e2988bba7301225b3b6a1.md",
+  "originalHtml": "html/cad/1c4e2988bba7301225b3b6a1.html"
+}

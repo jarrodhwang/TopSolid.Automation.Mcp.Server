@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.TopSolidHost.HostInstance.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.TopSolidHost.HostInstance.html",
+  "sha256": "69468dfc241490b2a7885caf85adcce016746ced76425d6cfdd1cc14a510137c",
+  "text": "# Property HostInstance\n\n#### HostInstance\n\nGets the host instance.\n\n##### Declaration\n\n```\npublic static TopSolidHostInstance HostInstance { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  TopSolidHostInstance |   |\n",
+  "markdown": "markdown/kernel/bb74b316e81abd80f1eaf1e7.md",
+  "originalHtml": "html/kernel/bb74b316e81abd80f1eaf1e7.html"
+}

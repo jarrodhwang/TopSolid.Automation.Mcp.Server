@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.TopSolidHostInstance.MakeClientHost.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.TopSolidHostInstance.MakeClientHost.html",
+  "sha256": "82a87e400d27e07d64fbd1ff9f8b44b4b1e39ae25e3610cd43bb287456284191",
+  "text": "# Method MakeClientHost\n\n#### MakeClientHost(Type, Type)\n\nMakes a TopSolid client WCF host.\n\n##### Declaration\n\n```\npublic ServiceHost MakeClientHost(Type inClassType, Type inInterfaceType)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  Type |  inClassType |  Class type, implementing the inInterfaceType interface.  |  \n \n|  Type |  inInterfaceType |  Interface type.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ServiceHost |  Host.  |\n",
+  "markdown": "markdown/kernel/34735fb4d1e448d75f2333ac.md",
+  "originalHtml": "html/kernel/34735fb4d1e448d75f2333ac.html"
+}

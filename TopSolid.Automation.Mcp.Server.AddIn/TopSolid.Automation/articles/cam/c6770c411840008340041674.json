@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.PathPoint.-ctor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.PathPoint.-ctor.html",
+  "sha256": "e9474b62bcf72f0baffb01f5490cf57b422059ec0835f8ca651e500ece815fb9",
+  "text": "# Constructor PathPoint\n\n#### PathPoint(Point3D, Vector3D, double)\n\nInitializes a new instance of the ParameterId structure.\n\n##### Declaration\n\n```\npublic PathPoint(Point3D inPoint, Vector3D inNormal, double inFeedrateFactor)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  Point3D |  inPoint |   |  \n \n|  Vector3D |  inNormal |   |  \n \n|  double |  inFeedrateFactor |   |\n",
+  "markdown": "markdown/cam/c6770c411840008340041674.md",
+  "originalHtml": "html/cam/c6770c411840008340041674.html"
+}

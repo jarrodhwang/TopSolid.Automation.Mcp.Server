@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.BomPropertyDefinitions.Image.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.BomPropertyDefinitions.Image.html",
+  "sha256": "602ebb1edf5472c89f4bda4f8e8cff6fff378cdacfd8493fbb188b8605bb9a38",
+  "text": "# Field Image\n\nBOM image property definition (Unclassified).\n\n###### Namespace: TopSolid.Cad.Design.Automating\n\n###### Assembly: TopSolid.Cad.Design.Automating.dll\n\n##### Syntax\n\n```\npublic static readonly PropertyDefinition Image\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  PropertyDefinition |  BOM image property definition (). |\n",
+  "markdown": "markdown/cad/48bfe9b550cc2da43e722b68.md",
+  "originalHtml": "html/cad/48bfe9b550cc2da43e722b68.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/wire/TopSolid.Cam.NC.Wire.Automating.IWireTechnologyDocuments.SetPartMaterial.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/wire/TopSolid.Cam.NC.Wire.Automating.IWireTechnologyDocuments.SetPartMaterial.html",
+  "sha256": "420b15241cab12afa3f1f96ca1af5d5230f33fe42c0e3b9e984eeb3847649fd1",
+  "text": "# Method SetPartMaterial\n\n#### SetPartMaterial(DocumentId, DocumentId)\n\nSet part material.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 160)]\nvoid SetPartMaterial(DocumentId inDocumentId, DocumentId inMaterialDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  DocumentId |  inMaterialDocumentId |  Identifier of part material document.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n",
+  "markdown": "markdown/wire/1929038247858867718c84f6.md",
+  "originalHtml": "html/wire/1929038247858867718c84f6.html"
+}

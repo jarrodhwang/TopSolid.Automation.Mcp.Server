@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IOptions.SetFileCompressionType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IOptions.SetFileCompressionType.html",
+  "sha256": "30d8f151720164d6bb8cce6784d53259970767ae712133849a6e67fee4028dc2",
+  "text": "# Method SetFileCompressionType\n\n#### SetFileCompressionType(DocumentId, CompressionType)\n\nSets the compression type of a document file.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 12, 300, 160)]\nvoid SetFileCompressionType(DocumentId inDocumentId, CompressionType inCompressionType)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  CompressionType |  inCompressionType |  Compression type of the document file.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.12.300.160.\n",
+  "markdown": "markdown/kernel/754e1c48a592d486f93b705c.md",
+  "originalHtml": "html/kernel/754e1c48a592d486f93b705c.html"
+}

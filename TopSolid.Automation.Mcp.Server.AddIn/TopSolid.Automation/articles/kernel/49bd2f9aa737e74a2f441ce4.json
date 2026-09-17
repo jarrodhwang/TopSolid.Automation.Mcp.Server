@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IVisualization3D.GetTopCamera.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IVisualization3D.GetTopCamera.html",
+  "sha256": "6438d93e818ea78ed55f4ef951d7663427fed7ada346b9c4063fae9e20b56241",
+  "text": "# Method GetTopCamera\n\n#### GetTopCamera(DocumentId)\n\nGets the top camera entity of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nElementId GetTopCamera(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the top camera entity found.  |  \n\n##### Remarks\n\nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/49bd2f9aa737e74a2f441ce4.md",
+  "originalHtml": "html/kernel/49bd2f9aa737e74a2f441ce4.html"
+}

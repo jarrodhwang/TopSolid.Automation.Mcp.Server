@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartPlanarProfile3DType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartPlanarProfile3DType.html",
+  "sha256": "0ccb08f15cbba3208a739f77623a0d64aa8bd9e75acd77ef3174810cf3b2a5c6",
+  "text": "# Enum SmartPlanarProfile3DType\n\nDefines the various types of 3D smart planar profiles.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 20, 400, 100)]\npublic enum SmartPlanarProfile3DType\n```\n\n##### Remarks\n\nThis enum is available since v7.20.\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  Basic |  Basic.  |  \n \n|  Element |  Provided by an element.  |  \n \n|  Item |  Provided by an element item.  |  \n \n|  None |  Not used.  |  \n \n|  Unclassified |  Unclassified type.  |\n",
+  "markdown": "markdown/kernel/0365354c66d68803a10577ce.md",
+  "originalHtml": "html/kernel/0365354c66d68803a10577ce.html"
+}

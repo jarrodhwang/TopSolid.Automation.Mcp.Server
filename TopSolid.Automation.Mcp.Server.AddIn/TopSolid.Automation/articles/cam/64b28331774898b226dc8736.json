@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IMachineTools.GetMagazines.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IMachineTools.GetMagazines.html",
+  "sha256": "b2e93fa7cd8978a313442444634487c856d4397d139cdd8f51e49eb13b429d44",
+  "text": "# Method GetMagazines\n\n#### GetMagazines(ElementId)\n\nGet the list of magazines of the given machine.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nList<ElementId> GetMagazines(ElementId inMachineId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inMachineId |  Identifier of the machine tool to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementId> |  List of magazines.  |\n",
+  "markdown": "markdown/cam/64b28331774898b226dc8736.md",
+  "originalHtml": "html/cam/64b28331774898b226dc8736.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IFamilies.SetDriversFolderImage.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IFamilies.SetDriversFolderImage.html",
+  "sha256": "dcb687d825c56884ea560788a8db48cf08e1c2dff9f6996fe4ff53cf301c1c6a",
+  "text": "# Method SetDriversFolderImage\n\n#### SetDriversFolderImage(ElementId, string)\n\nSets the drivers folder image.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 17, 0, 0)]\nvoid SetDriversFolderImage(ElementId inDriverFolder, string inImagePath)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inDriverFolder |  Identifier of the drivers folder.  |  \n \n|  string |  inImagePath |  Image of the driver.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.17.\n",
+  "markdown": "markdown/kernel/d5e784a4f4fecc3cb0e61253.md",
+  "originalHtml": "html/kernel/d5e784a4f4fecc3cb0e61253.html"
+}

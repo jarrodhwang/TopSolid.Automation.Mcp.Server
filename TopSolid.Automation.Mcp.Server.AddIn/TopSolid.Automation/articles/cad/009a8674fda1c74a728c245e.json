@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMaterials.SetSpecularColor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMaterials.SetSpecularColor.html",
+  "sha256": "e1047da9d7078fbdb86a44c6add632c816084a39ff61bb95329e0a559c6a7e7d",
+  "text": "# Method SetSpecularColor\n\n#### SetSpecularColor(DocumentId, Color)\n\nSets Specular Scale Factor\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 400, 120)]\nvoid SetSpecularColor(DocumentId inDocumentId, Color inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Id of the container document  |  \n \n|  Color |  inValue |  The value to use  |\n",
+  "markdown": "markdown/cad/009a8674fda1c74a728c245e.md",
+  "originalHtml": "html/cad/009a8674fda1c74a728c245e.html"
+}

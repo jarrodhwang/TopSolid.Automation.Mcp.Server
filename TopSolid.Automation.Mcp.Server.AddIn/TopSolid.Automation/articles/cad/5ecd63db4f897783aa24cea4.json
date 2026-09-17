@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMultiLayer.IsBottomFinishingLikeTop.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMultiLayer.IsBottomFinishingLikeTop.html",
+  "sha256": "3764127c9127973e9663245d9163af00d71dbcde45494227ca5269861bee49f1",
+  "text": "# Method IsBottomFinishingLikeTop\n\n#### IsBottomFinishingLikeTop(DocumentId)\n\nTells if bottom finishing is like top\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 0, 0)]\nbool? IsBottomFinishingLikeTop(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool? |  True if bottom is like top, otherwise false  |  \n\n##### Remarks\n\nThis method is available since v7.19.\n",
+  "markdown": "markdown/cad/5ecd63db4f897783aa24cea4.md",
+  "originalHtml": "html/cad/5ecd63db4f897783aa24cea4.html"
+}

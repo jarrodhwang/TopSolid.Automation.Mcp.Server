@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.CreateUserPropertyParameter.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.CreateUserPropertyParameter.html",
+  "sha256": "d58e18ff76f618abea5b52fb3288fb841ab5ca1af0318bd80da856c8ae4ce3fa",
+  "text": "# Method CreateUserPropertyParameter\n\n#### CreateUserPropertyParameter(DocumentId, DocumentId)\n\nCreates a parameter entity corresponding to a user property in a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nElementId CreateUserPropertyParameter(DocumentId inDocumentId, DocumentId inUserPropertyDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  DocumentId |  inUserPropertyDocumentId |  Identifier of the user propserty definition document.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the created parameter entity.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/33a0984417df1ea43d987f2c.md",
+  "originalHtml": "html/kernel/33a0984417df1ea43d987f2c.html"
+}

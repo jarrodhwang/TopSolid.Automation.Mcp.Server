@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IBoms.ForceColumnTitle.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IBoms.ForceColumnTitle.html",
+  "sha256": "76fbeb12c9d1abcd9d1b944bb5bcf29c42be1ad65f80f6f0772c4d7e88fef92a",
+  "text": "# Method ForceColumnTitle\n\n#### ForceColumnTitle(DocumentId, int, string)\n\nForces the title of a column of a BOM.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 12, 0, 0)]\nvoid ForceColumnTitle(DocumentId inDocumentId, int inColumnIx, string inTitle)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the BOM document to modify.  |  \n \n|  int |  inColumnIx |  Index of the column to modify, within [0,GetColumnCount(DocumentId)-1].  |  \n \n|  string |  inTitle |  New forced title.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.12.\n",
+  "markdown": "markdown/cad/19b97e970124729f12e31ab0.md",
+  "originalHtml": "html/cad/19b97e970124729f12e31ab0.html"
+}

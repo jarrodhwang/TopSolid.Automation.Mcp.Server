@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IGeometries3D.GetOffsetPointCreation.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IGeometries3D.GetOffsetPointCreation.html",
+  "sha256": "eadef86f787089b122814592807bb7f0e04b7c063460d56a2b7e6e78683eaf70",
+  "text": "# Method GetOffsetPointCreation\n\n#### GetOffsetPointCreation(ElementId, out SmartPoint3D, out SmartDirection3D, out SmartReal)\n\nGets an offset point creation operation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nvoid GetOffsetPointCreation(ElementId inElementId, out SmartPoint3D outOrigin, out SmartDirection3D outDirection, out SmartReal outDistance)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the offset point creation operation to analyze.  |  \n \n|  SmartPoint3D |  outOrigin |  Origin point.  |  \n \n|  SmartDirection3D |  outDirection |  Offset direction.  |  \n \n|  SmartReal |  outDistance |  Offset distance.  |  \n\n##### Remarks\n\nThis method is available since v7.8.\n",
+  "markdown": "markdown/kernel/93f13e3de41398b1180004ca.md",
+  "originalHtml": "html/kernel/93f13e3de41398b1180004ca.html"
+}

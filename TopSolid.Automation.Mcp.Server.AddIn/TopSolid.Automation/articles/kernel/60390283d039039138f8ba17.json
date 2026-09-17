@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Point2D.Y.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Point2D.Y.html",
+  "sha256": "63f6c52dfb7a225970aef455cd541ec3199b8104cc38cec987c998ab8c782a35",
+  "text": "# Field Y\n\nY coordinate.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic double Y\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double |  Y coordinate. |\n",
+  "markdown": "markdown/kernel/60390283d039039138f8ba17.md",
+  "originalHtml": "html/kernel/60390283d039039138f8ba17.html"
+}

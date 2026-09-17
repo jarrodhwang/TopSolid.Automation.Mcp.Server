@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.FacesDivisionType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.FacesDivisionType.html",
+  "sha256": "37b8894fa054e148f63df23afdd7085e10787c6cac519e03cb2047a485814b98",
+  "text": "# Enum FacesDivisionType\n\nDefines the various types of how faces should divide up a shape passing through profiles.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 10, 301, 180)]\npublic enum FacesDivisionType\n```\n\n##### Remarks\n\nThis enum is available since v7.10.301.180.\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  Columns |  The shape has columns of faces corresponding to the section segments.  |  \n \n|  Grid |  The shape has a grid of faces corresponding to section segments (as for columns type) and path segments.  |  \n \n|  Minimum |  The shape has a minimum number of faces.  |  \n \n|  None |  No division.  |\n",
+  "markdown": "markdown/kernel/9e6b0cd5990d699658bf7eb4.md",
+  "originalHtml": "html/kernel/9e6b0cd5990d699658bf7eb4.html"
+}

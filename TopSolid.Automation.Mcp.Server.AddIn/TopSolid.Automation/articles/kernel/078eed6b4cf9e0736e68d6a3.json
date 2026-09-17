@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ILayers.SetLayer.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ILayers.SetLayer.html",
+  "sha256": "3fa597e2e64c3a151eb3dd60320387f236ef66cf2174fff71c49f834f824820f",
+  "text": "# Method SetLayer\n\n#### SetLayer(ElementId, ElementId)\n\nSets the Layer of a document\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 18, 0, 0)]\nvoid SetLayer(ElementId inElementId, ElementId inLayerId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element.  |  \n \n|  ElementId |  inLayerId |  Identifier of the layer.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.18.\n",
+  "markdown": "markdown/kernel/078eed6b4cf9e0736e68d6a3.md",
+  "originalHtml": "html/kernel/078eed6b4cf9e0736e68d6a3.html"
+}

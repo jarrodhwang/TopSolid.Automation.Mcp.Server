@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.TopSolidHostInstance.User.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.TopSolidHostInstance.User.html",
+  "sha256": "d70c0fdddaf7d55a916a6bf52c8184e4b2b5ac1e08a6857c64eb295c6a8974da",
+  "text": "# Property User\n\n#### User\n\nGets access to the user, or null if not available.\n\n##### Declaration\n\n```\npublic IUser User { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  IUser |   |\n",
+  "markdown": "markdown/kernel/834275ceddd9217935e2406a.md",
+  "originalHtml": "html/kernel/834275ceddd9217935e2406a.html"
+}

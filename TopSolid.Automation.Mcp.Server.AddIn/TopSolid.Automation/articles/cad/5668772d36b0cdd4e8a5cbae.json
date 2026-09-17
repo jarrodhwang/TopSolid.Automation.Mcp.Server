@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IAssemblies.IsCollisionsManagementCheckingMechanisms.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IAssemblies.IsCollisionsManagementCheckingMechanisms.html",
+  "sha256": "f4fe60db91321f3d99c6f08d0cef1a064759221be936d9f26c7c492d553c5f74",
+  "text": "# Method IsCollisionsManagementCheckingMechanisms\n\n#### IsCollisionsManagementCheckingMechanisms(DocumentId)\n\nTells whether the collisions management of an assembly is checking for collisions between rigid groups of articulated subassemblies.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nbool IsCollisionsManagementCheckingMechanisms(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of assembly document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Whether the collisions management of the assembly is checking for collisions between rigid groups of articulated subassemblies.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/cad/5668772d36b0cdd4e8a5cbae.md",
+  "originalHtml": "html/cad/5668772d36b0cdd4e8a5cbae.html"
+}

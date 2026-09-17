@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.DocumentReferenceType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.DocumentReferenceType.html",
+  "sha256": "586ec3b477bd7a2a1a0de96a1c071308991c00bb4f1aa5d6b43b1f2bacb7c7d0",
+  "text": "# Enum DocumentReferenceType\n\nDefines the various types of document references.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 17, 0, 0)]\npublic enum DocumentReferenceType\n```\n\n##### Remarks\n\nThis enum is available since v7.17.000.000.\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  DependenceReference |  Dependence Reference.  |  \n \n|  LogicalReference |  Logical Reference.  |  \n \n|  TrackingReference |  Tracking Reference.  |\n",
+  "markdown": "markdown/kernel/bf1a70e112b0018448e6c89b.md",
+  "originalHtml": "html/kernel/bf1a70e112b0018448e6c89b.html"
+}

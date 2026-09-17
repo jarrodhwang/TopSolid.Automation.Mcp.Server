@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.PdmPermissionArea.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.PdmPermissionArea.html",
+  "sha256": "9936acb1bdc01b95c0f3475515bbc5e1638d6c12ba3799ddac83867ef570eb80",
+  "text": "# Enum PdmPermissionArea\n\nDefines the various permissions of a security.\n\n###### Namespace: TopSolid.Pdm.Explorer.Automating\n\n###### Assembly: TopSolid.Pdm.Explorer.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\npublic enum PdmPermissionArea\n```\n\n##### Remarks\n\nThis enum is available since v7.10.\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  DefaultFolder |  Default folder.  |  \n \n|  DefaultObject |  Default object.  |  \n \n|  Object |  Object.  |\n",
+  "markdown": "markdown/pdmexplorer/cb6cc0332f17ed66005aca03.md",
+  "originalHtml": "html/pdmexplorer/cb6cc0332f17ed66005aca03.html"
+}

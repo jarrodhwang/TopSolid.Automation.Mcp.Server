@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMaterials.GetNormalTextureDocument.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMaterials.GetNormalTextureDocument.html",
+  "sha256": "cb0187e2319d4e0ede6f9aef9d1e0f2d3a13d48738db23e98e13a9aa381914cf",
+  "text": "# Method GetNormalTextureDocument\n\n#### GetNormalTextureDocument(DocumentId)\n\nGets the Normal texture document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 400, 100)]\nDocumentId GetNormalTextureDocument(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  DocumentId |   |  \n\n##### Remarks\n\nThis method is available since v7.16.\n",
+  "markdown": "markdown/cad/8a92c912422b3cb5108ff520.md",
+  "originalHtml": "html/cad/8a92c912422b3cb5108ff520.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.IsExternal.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.IsExternal.html",
+  "sha256": "3e0597b75ebd24f85019c61572871c0b12614cffa0c0afaec501207c8410763d",
+  "text": "# Method IsExternal\n\n#### IsExternal(PdmObjectId)\n\nTells whether an object is external (i.e. item is a non TopSolid V7 document: .docx, .xlsx, .pdf, .png etc...).\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 324, 0)]\nbool IsExternal(PdmObjectId inObjectId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  PDM object identifier.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  The object is external.  |\n",
+  "markdown": "markdown/kernel/1971b9c298dbfe50d9f9e38d.md",
+  "originalHtml": "html/kernel/1971b9c298dbfe50d9f9e38d.html"
+}

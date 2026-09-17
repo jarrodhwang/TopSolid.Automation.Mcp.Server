@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.HasCodePossibleValues.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.HasCodePossibleValues.html",
+  "sha256": "55ed62774d57772ae5813ac2035ef570a30847946463e771aeb192c4989bffcb",
+  "text": "# Method HasCodePossibleValues\n\n#### HasCodePossibleValues(ElementId)\n\nTells wether the code parameter has possible values.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 17, 0, 0)]\nbool HasCodePossibleValues(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the parameter.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Wether the parameter has possible values.  |  \n\n##### Remarks\n\nThis method is available since v7.17.000.000.\n",
+  "markdown": "markdown/kernel/2e1ace33b4c60d269f2eb706.md",
+  "originalHtml": "html/kernel/2e1ace33b4c60d269f2eb706.html"
+}

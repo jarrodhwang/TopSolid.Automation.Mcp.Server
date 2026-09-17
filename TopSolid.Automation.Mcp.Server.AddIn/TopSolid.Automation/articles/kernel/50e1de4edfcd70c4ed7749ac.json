@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IShapes.GetShapeVolume.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IShapes.GetShapeVolume.html",
+  "sha256": "02044bbd1d41e9d7c30ed938bbd246e83cc63b29a0bdc039bd2275ca43044a15",
+  "text": "# Method GetShapeVolume\n\n#### GetShapeVolume(ElementId)\n\nGets the volume of a shape entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 14, 0, 0)]\ndouble GetShapeVolume(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the shape entity to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double |  Type of the shape.  |  \n\n##### Remarks\n\nThis method is available since v7.14.\n",
+  "markdown": "markdown/kernel/50e1de4edfcd70c4ed7749ac.md",
+  "originalHtml": "html/kernel/50e1de4edfcd70c4ed7749ac.html"
+}

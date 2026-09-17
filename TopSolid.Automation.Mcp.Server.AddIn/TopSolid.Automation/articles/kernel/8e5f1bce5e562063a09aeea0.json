@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.SetProjectFolderName.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.SetProjectFolderName.html",
+  "sha256": "c6c2e1094255fa475dca641c7ebfba88ac80c732e75c8c67071bea26de887bdf",
+  "text": "# Method SetProjectFolderName\n\n#### SetProjectFolderName(PdmProjectFolderId, string)\n\nSets the name of a project folder.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 9, 0, 0)]\nvoid SetProjectFolderName(PdmProjectFolderId inProjectFolderId, string inName)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmProjectFolderId |  inProjectFolderId |  Project folder identifier.  |  \n \n|  string |  inName |  Name.  |  \n\n##### Remarks\n\nThis method must not be called between StartModification(string, bool) and EndModification(bool, bool) methods calls.\n \nThis method is available since v7.9.\n",
+  "markdown": "markdown/kernel/8e5f1bce5e562063a09aeea0.md",
+  "originalHtml": "html/kernel/8e5f1bce5e562063a09aeea0.html"
+}

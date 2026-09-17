@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IFamilies.GetDriverFolderCondition.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IFamilies.GetDriverFolderCondition.html",
+  "sha256": "e35ba26e5d46bd6a5e2953bc48f7d22ad16970ff5f8544672e21bf8899419790",
+  "text": "# Method GetDriverFolderCondition\n\n#### GetDriverFolderCondition(ElementId)\n\nGets condition on a driver folder, or null if no condition.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 0, 0)]\nSmartBoolean GetDriverFolderCondition(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartBoolean |  Condition as Smartboolean.  |  \n\n##### Remarks\n\nThis method is available since v7.19.\n",
+  "markdown": "markdown/kernel/a14684508c8aa876e143e313.md",
+  "originalHtml": "html/kernel/a14684508c8aa876e143e313.html"
+}

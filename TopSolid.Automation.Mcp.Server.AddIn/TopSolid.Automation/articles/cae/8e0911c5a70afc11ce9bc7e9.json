@@ -1,0 +1,8 @@
+{
+  "path": "api/cae/TopSolid.Cae.Kernel.Automating.MeasureResults.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cae/TopSolid.Cae.Kernel.Automating.MeasureResults.html",
+  "sha256": "4d3a3ab29a6415cdffebe5d7743494fc22346a67f569224693209601948bad99",
+  "text": "# Class MeasureResults\n\nRepresents measure Results\n\n##### Inheritance\n \nobject\n \nMeasureResults\n\n##### Inherited Members\n \n object.ToString() \n \n object.Equals(object) \n \n object.Equals(object, object) \n \n object.ReferenceEquals(object, object) \n \n object.GetHashCode() \n \n object.GetType() \n \n object.MemberwiseClone() \n\n###### Namespace: TopSolid.Cae.Kernel.Automating\n\n###### Assembly: TopSolid.Cae.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 19, 171, 0)]\npublic class MeasureResults\n```\n\n##### Remarks\n\nThis structure is available since v7.19\n\n### Properties \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   Coordinates  |  Gets the coordinates Values  |  \n \n|   Displacements  |  Gets the Displacements  |  \n \n|   ElementNodes  |  Gets the element node Values  |  \n \n|   Fatigue  |  Gets the Fatigue Values  |  \n \n|   InternalLoads  |  Gets the Internal Loads Values  |  \n \n|   Material  |  Gets the material Values  |  \n \n|   Measure  |  Gets the Measure  |  \n \n|   Moments  |  Gets the Moments  |  \n \n|   Reactions  |  Gets the Reactions  |  \n \n|   Structural  |  Gets the structural Values  |  \n \n|   Temperature  |  Gets the Temperature Values  |  \n \n|   VonMises  |  Gets the Von Mises  |\n",
+  "markdown": "markdown/cae/8e0911c5a70afc11ce9bc7e9.md",
+  "originalHtml": "html/cae/8e0911c5a70afc11ce9bc7e9.html"
+}

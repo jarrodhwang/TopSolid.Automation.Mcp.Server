@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ILicenses.SetFloatingLicenseServer.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ILicenses.SetFloatingLicenseServer.html",
+  "sha256": "c9957704a1686382968c03c1ff094c2e30e52bd090fa45cbf4f26b6a17844643",
+  "text": "# Method SetFloatingLicenseServer\n\n#### SetFloatingLicenseServer(string)\n\nSets the floating license server.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 400, 20)]\nvoid SetFloatingLicenseServer(string inIPAddressOrName)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  string |  inIPAddressOrName |  Server IP address or server name.  |  \n\n##### Remarks\n\nThis method is available since v7.16.\n",
+  "markdown": "markdown/kernel/82f42d40b479b4c580634e51.md",
+  "originalHtml": "html/kernel/82f42d40b479b4c580634e51.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.PdmMajorRevisionId.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.PdmMajorRevisionId.html",
+  "sha256": "28b70f62805a0b8c5fc735aa773a80037510d9627a35ea9a24b40c8da400470e",
+  "text": "# Struct PdmMajorRevisionId\n\nRepresents a PDM major revision identifier.\n\n##### Inherited Members\n \n ValueType.Equals(object) \n \n ValueType.GetHashCode() \n \n ValueType.ToString() \n \n object.Equals(object, object) \n \n object.ReferenceEquals(object, object) \n \n object.GetType() \n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\npublic struct PdmMajorRevisionId\n```\n\n##### Remarks\n\nThis structure is available since v7.6.\n\n### Constructors \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   PdmMajorRevisionId(string)  |  Initializes a new instance of the PdmMajorRevisionId structure.  |  \n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   Empty  |  Empty identifier.  |  \n\n### Properties \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   Id  |  Gets the PDM major revision identifier.  |  \n \n|   IsEmpty  |  Tells whether the major revision identifier is empty.  |\n",
+  "markdown": "markdown/kernel/a8fa4ded82f3202769d552c0.md",
+  "originalHtml": "html/kernel/a8fa4ded82f3202769d552c0.html"
+}

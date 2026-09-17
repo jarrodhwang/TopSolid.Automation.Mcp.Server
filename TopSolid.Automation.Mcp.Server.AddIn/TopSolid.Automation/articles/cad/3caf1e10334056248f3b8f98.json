@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IRepresentations.CreateSimplifiedRepresentation.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IRepresentations.CreateSimplifiedRepresentation.html",
+  "sha256": "fbe96e5db583a7f06b18da1fc7574faadf96901c2bd5798f8f56596b714f1963",
+  "text": "# Method CreateSimplifiedRepresentation\n\n#### CreateSimplifiedRepresentation(DocumentId)\n\nCreates the simplified representation entity in a specified document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 201, 100)]\nElementId CreateSimplifiedRepresentation(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the created simplified representation entity.  |  \n\n##### Remarks\n\nIf the document already has a simplified representation, its identifier is returned and no new representation is created.\n \nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.7.201.100.\n",
+  "markdown": "markdown/cad/3caf1e10334056248f3b8f98.md",
+  "originalHtml": "html/cad/3caf1e10334056248f3b8f98.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Direction2D.-ctor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Direction2D.-ctor.html",
+  "sha256": "04b7088ea44c786f6d2d0b33d95181d4b84e6b0b872bb998fb3044693a696501",
+  "text": "# Constructor Direction2D\n\n#### Direction2D(double, double)\n\nInitializes a new instance of the Direction2D structure with its coordinates.\n\n##### Declaration\n\n```\npublic Direction2D(double inX, double inY)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  double |  inX |  X component.  |  \n \n|  double |  inY |  Y component.  |\n",
+  "markdown": "markdown/kernel/75214acded01af268d2ec25b.md",
+  "originalHtml": "html/kernel/75214acded01af268d2ec25b.html"
+}

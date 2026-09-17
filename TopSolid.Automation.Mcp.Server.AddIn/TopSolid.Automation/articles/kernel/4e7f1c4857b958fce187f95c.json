@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.GetName.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.GetName.html",
+  "sha256": "99eb7cc7fdb6fe15d5e68e869df2154a3ea2ecc92c53a72b93386eb4a1af9ce4",
+  "text": "# Method GetName\n\n#### GetName(PdmObjectId)\n\nGets the name of an object.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nstring GetName(PdmObjectId inObjectId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  Object identifier.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  Object name.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/4e7f1c4857b958fce187f95c.md",
+  "originalHtml": "html/kernel/4e7f1c4857b958fce187f95c.html"
+}

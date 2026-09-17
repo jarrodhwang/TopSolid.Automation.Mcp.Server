@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.SetDescription.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.SetDescription.html",
+  "sha256": "d19305398de1d4878f731d5f3161cfd17d5d6fb53be9b876bce9724447114c71",
+  "text": "# Method SetDescription\n\n#### SetDescription(PdmObjectId, string)\n\nSets the description of an object.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 303, 100)]\nvoid SetDescription(PdmObjectId inObjectId, string inDescription)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  Object identifier.  |  \n \n|  string |  inDescription |  Description.  |  \n\n##### Remarks\n\nThis method must not be called between StartModification(string, bool) and EndModification(bool, bool) methods calls.\n \nThis method is available since v7.8.303.100.\n",
+  "markdown": "markdown/kernel/d19f7f7175e75a3aa378ec01.md",
+  "originalHtml": "html/kernel/d19f7f7175e75a3aa378ec01.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.TopSolidPdmExplorerHostInstance.Version.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.TopSolidPdmExplorerHostInstance.Version.html",
+  "sha256": "6d88291ac28514267531b669f530266ad73d31050676919e043eb3711a780329",
+  "text": "# Property Version\n\n#### Version\n\nGets the version of TopSolid host, or 0 if not connected.\n\n##### Declaration\n\n```\npublic int Version { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  int |   |  \n\n##### Remarks\n\nThe value returned is defined by: Major * 100000000 + Minor * 1000000 + Build * 1000 + Revision.\n \nFor example, v7.5.200.100 is returned as: 705200100.\n",
+  "markdown": "markdown/pdmexplorer/2ae6c52ce120e8e3aad5aebd.md",
+  "originalHtml": "html/pdmexplorer/2ae6c52ce120e8e3aad5aebd.html"
+}

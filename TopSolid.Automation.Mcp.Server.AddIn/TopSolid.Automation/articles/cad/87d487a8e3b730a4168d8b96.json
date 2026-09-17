@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMaterials.IsMaterialParameter.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMaterials.IsMaterialParameter.html",
+  "sha256": "13d458d0f0e8fdb5310149a5c0f40d8e2b942514f4a8f30a39ad2a8ddc223476",
+  "text": "# Method IsMaterialParameter\n\n#### IsMaterialParameter(ElementId)\n\nTells if an element is a Material Parameter\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 400, 160)]\nbool IsMaterialParameter(ElementId inParameterId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inParameterId |  The Id of the parameter  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  true if it is a material parameter  |\n",
+  "markdown": "markdown/cad/87d487a8e3b730a4168d8b96.md",
+  "originalHtml": "html/cad/87d487a8e3b730a4168d8b96.html"
+}

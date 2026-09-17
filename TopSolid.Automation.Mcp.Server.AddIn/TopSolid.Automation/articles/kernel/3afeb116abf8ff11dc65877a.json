@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.CreateIntegerParameter.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.CreateIntegerParameter.html",
+  "sha256": "cd33eb79b3c6c4d87e585808e22504bef8f1b5c723c983412eb0e0e65c5c6060",
+  "text": "# Method CreateIntegerParameter\n\n#### CreateIntegerParameter(DocumentId, int)\n\nCreates an integer parameter entity in a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 301, 40)]\nElementId CreateIntegerParameter(DocumentId inDocumentId, int inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  int |  inValue |  Value.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the created parameter entity.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.6.301.40.\n",
+  "markdown": "markdown/kernel/3afeb116abf8ff11dc65877a.md",
+  "originalHtml": "html/kernel/3afeb116abf8ff11dc65877a.html"
+}

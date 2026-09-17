@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMultiLayer.SetMultiMaterialLayers.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMultiLayer.SetMultiMaterialLayers.html",
+  "sha256": "25145dca7eaf9f93ba9a2a8001f4af5b042a544de5c070a355e36de692ee2bce",
+  "text": "# Method SetMultiMaterialLayers\n\n#### SetMultiMaterialLayers(DocumentId, List<SmartMaterial>, List<SmartReal>, List<SmartReal>)\n\nAdds one layer to the layer list of the multimaterial document\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 0, 0)]\nvoid SetMultiMaterialLayers(DocumentId inDocumentId, List<SmartMaterial> inMaterials, List<SmartReal> inThicknesses, List<SmartReal> inOrientations)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document  |  \n \n|  List<SmartMaterial> |  inMaterials |  List of Materials from top to bottom  |  \n \n|  List<SmartReal> |  inThicknesses |  List of Thicknesses from top to bottom  |  \n \n|  List<SmartReal> |  inOrientations |  List of Orientations from top to bottom  |  \n\n##### Remarks\n\nThis method is available since v7.19.\n",
+  "markdown": "markdown/cad/1bdd46a5dffb8a2c175c4b39.md",
+  "originalHtml": "html/cad/1bdd46a5dffb8a2c175c4b39.html"
+}

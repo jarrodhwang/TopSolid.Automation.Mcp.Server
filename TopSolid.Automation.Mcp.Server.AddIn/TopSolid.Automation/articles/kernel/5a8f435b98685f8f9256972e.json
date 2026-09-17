@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.ImportPackageAsDistinctCopy.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.ImportPackageAsDistinctCopy.html",
+  "sha256": "dc5c67f0e55a3f2dae05ec9a1f9e3fcad2cc2a225e4f7fae68a68d811de663e5",
+  "text": "# Method ImportPackageAsDistinctCopy\n\n#### ImportPackageAsDistinctCopy(string, bool, bool)\n\nImports a package as disctinct copy.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 303, 200)]\nList<PdmObjectId> ImportPackageAsDistinctCopy(string inFileFullPath, bool inResetsCreationProperties, bool inAllowsPartNumbering)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  string |  inFileFullPath |  Full path of the package file, with \".TopPkg\" extension.  |  \n \n|  bool |  inResetsCreationProperties |  Whether to reset creation properties (author, creation date, major/minor revision text).  |  \n \n|  bool |  inAllowsPartNumbering |  Whether to allow automatic part numbering.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<PdmObjectId> |  List of imported projects PDM object identifiers.  |  \n\n##### Remarks\n\nThis method must not be called between StartModification(string, bool) and EndModification(bool, bool) methods calls.\n \nThis method is available since v7.8.303.200.\n",
+  "markdown": "markdown/kernel/5a8f435b98685f8f9256972e.md",
+  "originalHtml": "html/kernel/5a8f435b98685f8f9256972e.html"
+}

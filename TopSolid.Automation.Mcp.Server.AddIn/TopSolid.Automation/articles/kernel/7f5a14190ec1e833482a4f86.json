@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.SearchDocumentByNameWithWildcards.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.SearchDocumentByNameWithWildcards.html",
+  "sha256": "9ca1bb6cd1fe043ad439d11fc430238eb950b70ab0d9139585d67ea6b6167418",
+  "text": "# Method SearchDocumentByNameWithWildcards\n\n#### SearchDocumentByNameWithWildcards(PdmObjectId, string)\n\nSearches for a document by its name using wildcards.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nList<PdmObjectId> SearchDocumentByNameWithWildcards(PdmObjectId inProjectId, string inDocumentName)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inProjectId |  Project PDM object identifier, or empty for searching in all projects.  |  \n \n|  string |  inDocumentName |  Document name, with SQL wildcards (like \"%\" being a substitute for zero or more characters).  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<PdmObjectId> |  PDM object identifiers of documents corresponding to the searched name.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/kernel/7f5a14190ec1e833482a4f86.md",
+  "originalHtml": "html/kernel/7f5a14190ec1e833482a4f86.html"
+}

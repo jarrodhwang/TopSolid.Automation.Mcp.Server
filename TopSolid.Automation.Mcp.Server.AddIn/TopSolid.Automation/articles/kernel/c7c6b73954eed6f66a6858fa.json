@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IElements.IsDeletable.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IElements.IsDeletable.html",
+  "sha256": "6e109e045872c5c60d770f73fd556060d367fcf2bf8cc27f13ebf9d0a7f49ff0",
+  "text": "# Method IsDeletable\n\n#### IsDeletable(ElementId)\n\nTells whether an element may be deleted.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nbool IsDeletable(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Whether the element may be deleted.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/c7c6b73954eed6f66a6858fa.md",
+  "originalHtml": "html/kernel/c7c6b73954eed6f66a6858fa.html"
+}

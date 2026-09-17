@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.Restore.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.Restore.html",
+  "sha256": "9447b4431006c2c2d3b8a976c2f28db460232b95b6fbd549612214ae44149206",
+  "text": "# Method Restore\n\n#### Restore(PdmObjectId)\n\nRestores a deleted object.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nvoid Restore(PdmObjectId inObjectId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  Object identifier.  |  \n\n##### Remarks\n\nThis method must not be called between StartModification(string, bool) and EndModification(bool, bool) methods calls.\n \nThis method is available since v7.10.\n",
+  "markdown": "markdown/pdmexplorer/d161916ecae9bec67df20f00.md",
+  "originalHtml": "html/pdmexplorer/d161916ecae9bec67df20f00.html"
+}

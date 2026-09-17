@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ISketches3D.GetProfiles.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ISketches3D.GetProfiles.html",
+  "sha256": "e17a738525edcc80ece842d99081bdb37bbc85f738aafd6c1d42fb17b5d4e31b",
+  "text": "# Method GetProfiles\n\n#### GetProfiles(ElementId)\n\nGets the profiles of a sketch.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nList<ElementItemId> GetProfiles(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the sketch entity to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementItemId> |  Identifiers of the profiles of the sketch.  |  \n\n##### Remarks\n\nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/1949cdc0f9fd1a742f150dba.md",
+  "originalHtml": "html/kernel/1949cdc0f9fd1a742f150dba.html"
+}

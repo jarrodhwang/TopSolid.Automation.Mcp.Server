@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Interface IParameters | TopSolid Automation website </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Interface IParameters | TopSolid Automation website ">
+    
+    <meta name="description" content="Gives access to operation parameters. A parameter is mainly defined by its name, composed of a simple name, with categories following : LeadRadius@Lead|LeadIn where LeadRadius is the simple name, &#39;@&#39; is a separator between the name and the categories. Lead and LeadIn are two categories, separated by a &#39;|&#39; character. To be sure to get the parameter  from the correct operation, insert the operation type as a new category : LeadRadius@Lead|LeadIn|NCOperation">
+      <link rel="shortcut icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../../styles/docfx.css">
+      <link rel="stylesheet" href="../../styles/main.css">
+      <meta property="docfx:navrel" content="../../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../img/AutomationIcon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="TopSolid.Cam.NC.Kernel.Automating.IParameters">
+
+
+
+  <h1 id="TopSolid_Cam_NC_Kernel_Automating_IParameters" data-uid="TopSolid.Cam.NC.Kernel.Automating.IParameters" class="text-break">Interface IParameters</h1>
+  <div class="markdown level0 summary"><p>Gives access to operation parameters.
+A parameter is mainly defined by its name, composed of a simple name, with categories following :</p>
+<p><code>LeadRadius@Lead|LeadIn</code></p>
+where LeadRadius is the simple name, '@' is a separator between the name and the categories.
+Lead and LeadIn are two categories, separated by a '|' character. To be sure to get the parameter 
+from the correct operation, insert the operation type as a new category :
+<p><code>LeadRadius@Lead|LeadIn|NCOperation</code></p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="TopSolid.html">TopSolid</a>.<a class="xref" href="TopSolid.Cam.html">Cam</a>.<a class="xref" href="TopSolid.Cam.NC.html">NC</a>.<a class="xref" href="TopSolid.Cam.NC.Kernel.html">Kernel</a>.<a class="xref" href="TopSolid.Cam.NC.Kernel.Automating.html">Automating</a></h6>
+  <h6><strong>Assembly</strong>: TopSolid.Cam.NC.Kernel.Automating.dll</h6>
+  <h5 id="TopSolid_Cam_NC_Kernel_Automating_IParameters_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ServiceContract]
+[AvailableSinceVersion(7, 8, 0, 0)]
+public interface IParameters</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="TopSolid_Cam_NC_Kernel_Automating_IParameters_GetCategories_System_String_" data-uid="TopSolid.Cam.NC.Kernel.Automating.IParameters.GetCategories(System.String)">
+          <a class="xref" href="TopSolid.Cam.NC.Kernel.Automating.IParameters.GetCategories.html#TopSolid_Cam_NC_Kernel_Automating_IParameters_GetCategories_System_String_">GetCategories(string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the categories, of a Cam operation parameter.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cam_NC_Kernel_Automating_IParameters_GetEnumTypeName_TopSolid_Cam_NC_Kernel_Automating_ParameterId_" data-uid="TopSolid.Cam.NC.Kernel.Automating.IParameters.GetEnumTypeName(TopSolid.Cam.NC.Kernel.Automating.ParameterId)">
+          <a class="xref" href="TopSolid.Cam.NC.Kernel.Automating.IParameters.GetEnumTypeName.html#TopSolid_Cam_NC_Kernel_Automating_IParameters_GetEnumTypeName_TopSolid_Cam_NC_Kernel_Automating_ParameterId_">GetEnumTypeName(ParameterId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the enum type name corresponding to the parameter.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cam_NC_Kernel_Automating_IParameters_GetEnumValueNames_System_String_System_Boolean_" data-uid="TopSolid.Cam.NC.Kernel.Automating.IParameters.GetEnumValueNames(System.String,System.Boolean)">
+          <a class="xref" href="TopSolid.Cam.NC.Kernel.Automating.IParameters.GetEnumValueNames.html#TopSolid_Cam_NC_Kernel_Automating_IParameters_GetEnumValueNames_System_String_System_Boolean_">GetEnumValueNames(string, bool)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the enum value names corresponding to the given enum type.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cam_NC_Kernel_Automating_IParameters_GetFullName_TopSolid_Cam_NC_Kernel_Automating_ParameterId_" data-uid="TopSolid.Cam.NC.Kernel.Automating.IParameters.GetFullName(TopSolid.Cam.NC.Kernel.Automating.ParameterId)">
+          <a class="xref" href="TopSolid.Cam.NC.Kernel.Automating.IParameters.GetFullName.html#TopSolid_Cam_NC_Kernel_Automating_IParameters_GetFullName_TopSolid_Cam_NC_Kernel_Automating_ParameterId_">GetFullName(ParameterId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the full name with categories, of a Cam operation parameter.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cam_NC_Kernel_Automating_IParameters_GetLocalizedName_TopSolid_Cam_NC_Kernel_Automating_ParameterId_" data-uid="TopSolid.Cam.NC.Kernel.Automating.IParameters.GetLocalizedName(TopSolid.Cam.NC.Kernel.Automating.ParameterId)">
+          <a class="xref" href="TopSolid.Cam.NC.Kernel.Automating.IParameters.GetLocalizedName.html#TopSolid_Cam_NC_Kernel_Automating_IParameters_GetLocalizedName_TopSolid_Cam_NC_Kernel_Automating_ParameterId_">GetLocalizedName(ParameterId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the translated name of a Cam operation parameter.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cam_NC_Kernel_Automating_IParameters_GetName_TopSolid_Cam_NC_Kernel_Automating_ParameterId_" data-uid="TopSolid.Cam.NC.Kernel.Automating.IParameters.GetName(TopSolid.Cam.NC.Kernel.Automating.ParameterId)">
+          <a class="xref" href="TopSolid.Cam.NC.Kernel.Automating.IParameters.GetName.html#TopSolid_Cam_NC_Kernel_Automating_IParameters_GetName_TopSolid_Cam_NC_Kernel_Automating_ParameterId_">GetName(ParameterId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the name of a Cam operation parameter.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cam_NC_Kernel_Automating_IParameters_GetNamedValue_TopSolid_Cam_NC_Kernel_Automating_ElementExId_System_String_" data-uid="TopSolid.Cam.NC.Kernel.Automating.IParameters.GetNamedValue(TopSolid.Cam.NC.Kernel.Automating.ElementExId,System.String)">
+          <a class="xref" href="TopSolid.Cam.NC.Kernel.Automating.IParameters.GetNamedValue.html#TopSolid_Cam_NC_Kernel_Automating_IParameters_GetNamedValue_TopSolid_Cam_NC_Kernel_Automating_ElementExId_System_String_">GetNamedValue(ElementExId, string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the value of the given parameter. The kind of SmartObject is fixed by the <a class="xref" href="TopSolid.Cam.NC.Kernel.Automating.ParameterType.html">ParameterType</a>.
+If the parameter is a bound, the returned object is a SmartInteger with the type.
+Use <a class="xref" href="TopSolid.Cam.NC.Kernel.Automating.IParameters.GetNamedValueBoundValue.html#TopSolid_Cam_NC_Kernel_Automating_IParameters_GetNamedValueBoundValue_TopSolid_Cam_NC_Kernel_Automating_ElementExId_System_String_">GetNamedValueBoundValue(ElementExId, string)</a> and <a class="xref" href="TopSolid.Cam.NC.Kernel.Automating.IParameters.GetNamedValueBoundElement.html#TopSolid_Cam_NC_Kernel_Automating_IParameters_GetNamedValueBoundElement_TopSolid_Cam_NC_Kernel_Automating_ElementExId_System_String_">GetNamedValueBoundElement(ElementExId, string)</a> to get other items of the bound parameter.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cam_NC_Kernel_Automating_IParameters_GetNamedValueBoundElement_TopSolid_Cam_NC_Kernel_Automating_ElementExId_System_String_" data-uid="TopSolid.Cam.NC.Kernel.Automating.IParameters.GetNamedValueBoundElement(TopSolid.Cam.NC.Kernel.Automating.ElementExId,System.String)">
+          <a class="xref" href="TopSolid.Cam.NC.Kernel.Automating.IParameters.GetNamedValueBoundElement.html#TopSolid_Cam_NC_Kernel_Automating_IParameters_GetNamedValueBoundElement_TopSolid_Cam_NC_Kernel_Automating_ElementExId_System_String_">GetNamedValueBoundElement(ElementExId, string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>From a bound parameter, get a ElementId with the bound limitation element.
+Use <a class="xref" href="TopSolid.Cam.NC.Kernel.Automating.IParameters.GetValue.html#TopSolid_Cam_NC_Kernel_Automating_IParameters_GetValue_TopSolid_Cam_NC_Kernel_Automating_ParameterId_">GetValue(ParameterId)</a> to get the bound type, and <a class="xref" href="TopSolid.Cam.NC.Kernel.Automating.IParameters.GetValueBoundValue.html#TopSolid_Cam_NC_Kernel_Automating_IParameters_GetValueBoundValue_TopSolid_Cam_NC_Kernel_Automating_ParameterId_">GetValueBoundValue(ParameterId)</a> to get the limitation value.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cam_NC_Kernel_Automating_IParameters_GetNamedValueBoundValue_TopSolid_Cam_NC_Kernel_Automating_ElementExId_System_String_" data-uid="TopSolid.Cam.NC.Kernel.Automating.IParameters.GetNamedValueBoundValue(TopSolid.Cam.NC.Kernel.Automating.ElementExId,System.String)">
+          <a class="xref" href="TopSolid.Cam.NC.Kernel.Automating.IParameters.GetNamedValueBoundValue.html#TopSolid_Cam_NC_Kernel_Automating_IParameters_GetNamedValueBoundValue_TopSolid_Cam_NC_Kernel_Automating_ElementExId_System_String_">GetNamedValueBoundValue(ElementExId, string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>From a bound parameter, get a SmartReal with the computed bound value.
+Use <a class="xref" href="TopSolid.Cam.NC.Kernel.Automating.IParameters.GetValue.html#TopSolid_Cam_NC_Kernel_Automating_IParameters_GetValue_TopSolid_Cam_NC_Kernel_Automating_ParameterId_">GetValue(ParameterId)</a> to get the bound type, and <a class="xref" href="TopSolid.Cam.NC.Kernel.Automating.IParameters.GetValueBoundElement.html#TopSolid_Cam_NC_Kernel_Automating_IParameters_GetValueBoundElement_TopSolid_Cam_NC_Kernel_Automating_ParameterId_">GetValueBoundElement(ParameterId)</a> to get the limitation element.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cam_NC_Kernel_Automating_IParameters_GetNamedValueFeedRateValue_TopSolid_Cam_NC_Kernel_Automating_ElementExId_System_String_" data-uid="TopSolid.Cam.NC.Kernel.Automating.IParameters.GetNamedValueFeedRateValue(TopSolid.Cam.NC.Kernel.Automating.ElementExId,System.String)">
+          <a class="xref" href="TopSolid.Cam.NC.Kernel.Automating.IParameters.GetNamedValueFeedRateValue.html#TopSolid_Cam_NC_Kernel_Automating_IParameters_GetNamedValueFeedRateValue_TopSolid_Cam_NC_Kernel_Automating_ElementExId_System_String_">GetNamedValueFeedRateValue(ElementExId, string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>From a feedrate parameter, get a SmartReal with the computed feedrate value.
+Use <a class="xref" href="TopSolid.Cam.NC.Kernel.Automating.IParameters.GetValue.html#TopSolid_Cam_NC_Kernel_Automating_IParameters_GetValue_TopSolid_Cam_NC_Kernel_Automating_ParameterId_">GetValue(ParameterId)</a> to get the feedrate type.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cam_NC_Kernel_Automating_IParameters_GetNamedValueSpindleRateValue_TopSolid_Cam_NC_Kernel_Automating_ElementExId_System_String_" data-uid="TopSolid.Cam.NC.Kernel.Automating.IParameters.GetNamedValueSpindleRateValue(TopSolid.Cam.NC.Kernel.Automating.ElementExId,System.String)">
+          <a class="xref" href="TopSolid.Cam.NC.Kernel.Automating.IParameters.GetNamedValueSpindleRateValue.html#TopSolid_Cam_NC_Kernel_Automating_IParameters_GetNamedValueSpindleRateValue_TopSolid_Cam_NC_Kernel_Automating_ElementExId_System_String_">GetNamedValueSpindleRateValue(ElementExId, string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>From a spindle rate parameter, get a SmartReal with the computed spindle rate value.
+Use <a class="xref" href="TopSolid.Cam.NC.Kernel.Automating.IParameters.GetValue.html#TopSolid_Cam_NC_Kernel_Automating_IParameters_GetValue_TopSolid_Cam_NC_Kernel_Automating_ParameterId_">GetValue(ParameterId)</a> to get the spindle rate type.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cam_NC_Kernel_Automating_IParameters_GetParameter_TopSolid_Cam_NC_Kernel_Automating_ElementExId_System_String_" data-uid="TopSolid.Cam.NC.Kernel.Automating.IParameters.GetParameter(TopSolid.Cam.NC.Kernel.Automating.ElementExId,System.String)">
+          <a class="xref" href="TopSolid.Cam.NC.Kernel.Automating.IParameters.GetParameter.html#TopSolid_Cam_NC_Kernel_Automating_IParameters_GetParameter_TopSolid_Cam_NC_Kernel_Automating_ElementExId_System_String_">GetParameter(ElementExId, string)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the parameter id of the first parameter with the given name. The name can be full, with all categories.
+This is the best way to find the correct parameter.
+It can also be only the simple name, with partial categories, or no categories at all.
+The first name found with the given argument is returned.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cam_NC_Kernel_Automating_IParameters_GetParameterEnumValueNames_TopSolid_Cam_NC_Kernel_Automating_ParameterId_System_Boolean_" data-uid="TopSolid.Cam.NC.Kernel.Automating.IParameters.GetParameterEnumValueNames(TopSolid.Cam.NC.Kernel.Automating.ParameterId,System.Boolean)">
+          <a class="xref" href="TopSolid.Cam.NC.Kernel.Automating.IParameters.GetParameterEnumValueNames.html#TopSolid_Cam_NC_Kernel_Automating_IParameters_GetParameterEnumValueNames_TopSolid_Cam_NC_Kernel_Automating_ParameterId_System_Boolean_">GetParameterEnumValueNames(ParameterId, bool)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the enum value names corresponding to the given enum parameter.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cam_NC_Kernel_Automating_IParameters_GetParameters_TopSolid_Cam_NC_Kernel_Automating_ElementExId_" data-uid="TopSolid.Cam.NC.Kernel.Automating.IParameters.GetParameters(TopSolid.Cam.NC.Kernel.Automating.ElementExId)">
+          <a class="xref" href="TopSolid.Cam.NC.Kernel.Automating.IParameters.GetParameters.html#TopSolid_Cam_NC_Kernel_Automating_IParameters_GetParameters_TopSolid_Cam_NC_Kernel_Automating_ElementExId_">GetParameters(ElementExId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the parameters of the given operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cam_NC_Kernel_Automating_IParameters_GetType_TopSolid_Cam_NC_Kernel_Automating_ParameterId_" data-uid="TopSolid.Cam.NC.Kernel.Automating.IParameters.GetType(TopSolid.Cam.NC.Kernel.Automating.ParameterId)">
+          <a class="xref" href="TopSolid.Cam.NC.Kernel.Automating.IParameters.GetType.html#TopSolid_Cam_NC_Kernel_Automating_IParameters_GetType_TopSolid_Cam_NC_Kernel_Automating_ParameterId_">GetType(ParameterId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the type corresponding to the parameter.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cam_NC_Kernel_Automating_IParameters_GetValue_TopSolid_Cam_NC_Kernel_Automating_ParameterId_" data-uid="TopSolid.Cam.NC.Kernel.Automating.IParameters.GetValue(TopSolid.Cam.NC.Kernel.Automating.ParameterId)">
+          <a class="xref" href="TopSolid.Cam.NC.Kernel.Automating.IParameters.GetValue.html#TopSolid_Cam_NC_Kernel_Automating_IParameters_GetValue_TopSolid_Cam_NC_Kernel_Automating_ParameterId_">GetValue(ParameterId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the value of the given parameter. The kind of SmartObject is fixed by the <a class="xref" href="TopSolid.Cam.NC.Kernel.Automating.ParameterType.html">ParameterType</a>:
+SmartInteger for integer parameter, SmartReal for real parameter, et caetera...
+If the parameter is a composite, like bound or feedrate, the returned object is a SmartInteger with the type.
+Use <a class="xref" href="TopSolid.Cam.NC.Kernel.Automating.IParameters.GetValueBoundValue.html#TopSolid_Cam_NC_Kernel_Automating_IParameters_GetValueBoundValue_TopSolid_Cam_NC_Kernel_Automating_ParameterId_">GetValueBoundValue(ParameterId)</a> and <a class="xref" href="TopSolid.Cam.NC.Kernel.Automating.IParameters.GetValueBoundElement.html#TopSolid_Cam_NC_Kernel_Automating_IParameters_GetValueBoundElement_TopSolid_Cam_NC_Kernel_Automating_ParameterId_">GetValueBoundElement(ParameterId)</a> to get other items of the bound parameter.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cam_NC_Kernel_Automating_IParameters_GetValueBoundElement_TopSolid_Cam_NC_Kernel_Automating_ParameterId_" data-uid="TopSolid.Cam.NC.Kernel.Automating.IParameters.GetValueBoundElement(TopSolid.Cam.NC.Kernel.Automating.ParameterId)">
+          <a class="xref" href="TopSolid.Cam.NC.Kernel.Automating.IParameters.GetValueBoundElement.html#TopSolid_Cam_NC_Kernel_Automating_IParameters_GetValueBoundElement_TopSolid_Cam_NC_Kernel_Automating_ParameterId_">GetValueBoundElement(ParameterId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>From a bound parameter, get a ElementId with the bound limitation element.
+Use <a class="xref" href="TopSolid.Cam.NC.Kernel.Automating.IParameters.GetValue.html#TopSolid_Cam_NC_Kernel_Automating_IParameters_GetValue_TopSolid_Cam_NC_Kernel_Automating_ParameterId_">GetValue(ParameterId)</a> to get the bound type, and <a class="xref" href="TopSolid.Cam.NC.Kernel.Automating.IParameters.GetValueBoundValue.html#TopSolid_Cam_NC_Kernel_Automating_IParameters_GetValueBoundValue_TopSolid_Cam_NC_Kernel_Automating_ParameterId_">GetValueBoundValue(ParameterId)</a> to get the limitation value.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cam_NC_Kernel_Automating_IParameters_GetValueBoundValue_TopSolid_Cam_NC_Kernel_Automating_ParameterId_" data-uid="TopSolid.Cam.NC.Kernel.Automating.IParameters.GetValueBoundValue(TopSolid.Cam.NC.Kernel.Automating.ParameterId)">
+          <a class="xref" href="TopSolid.Cam.NC.Kernel.Automating.IParameters.GetValueBoundValue.html#TopSolid_Cam_NC_Kernel_Automating_IParameters_GetValueBoundValue_TopSolid_Cam_NC_Kernel_Automating_ParameterId_">GetValueBoundValue(ParameterId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>From a bound parameter, get a SmartReal with the bound value.
+Use <a class="xref" href="TopSolid.Cam.NC.Kernel.Automating.IParameters.GetValue.html#TopSolid_Cam_NC_Kernel_Automating_IParameters_GetValue_TopSolid_Cam_NC_Kernel_Automating_ParameterId_">GetValue(ParameterId)</a> to get the bound type, and <a class="xref" href="TopSolid.Cam.NC.Kernel.Automating.IParameters.GetValueBoundElement.html#TopSolid_Cam_NC_Kernel_Automating_IParameters_GetValueBoundElement_TopSolid_Cam_NC_Kernel_Automating_ParameterId_">GetValueBoundElement(ParameterId)</a> to get the limitation element.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cam_NC_Kernel_Automating_IParameters_GetValueFeedRateValue_TopSolid_Cam_NC_Kernel_Automating_ParameterId_" data-uid="TopSolid.Cam.NC.Kernel.Automating.IParameters.GetValueFeedRateValue(TopSolid.Cam.NC.Kernel.Automating.ParameterId)">
+          <a class="xref" href="TopSolid.Cam.NC.Kernel.Automating.IParameters.GetValueFeedRateValue.html#TopSolid_Cam_NC_Kernel_Automating_IParameters_GetValueFeedRateValue_TopSolid_Cam_NC_Kernel_Automating_ParameterId_">GetValueFeedRateValue(ParameterId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>From a feedrate parameter, get a SmartReal with the type value.
+Use <a class="xref" href="TopSolid.Cam.NC.Kernel.Automating.IParameters.GetValue.html#TopSolid_Cam_NC_Kernel_Automating_IParameters_GetValue_TopSolid_Cam_NC_Kernel_Automating_ParameterId_">GetValue(ParameterId)</a> to get the feedrate type.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cam_NC_Kernel_Automating_IParameters_GetValueSpindleRateValue_TopSolid_Cam_NC_Kernel_Automating_ParameterId_" data-uid="TopSolid.Cam.NC.Kernel.Automating.IParameters.GetValueSpindleRateValue(TopSolid.Cam.NC.Kernel.Automating.ParameterId)">
+          <a class="xref" href="TopSolid.Cam.NC.Kernel.Automating.IParameters.GetValueSpindleRateValue.html#TopSolid_Cam_NC_Kernel_Automating_IParameters_GetValueSpindleRateValue_TopSolid_Cam_NC_Kernel_Automating_ParameterId_">GetValueSpindleRateValue(ParameterId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>From a spindle rate parameter, get a SmartReal with the type value.
+Use <a class="xref" href="TopSolid.Cam.NC.Kernel.Automating.IParameters.GetValue.html#TopSolid_Cam_NC_Kernel_Automating_IParameters_GetValue_TopSolid_Cam_NC_Kernel_Automating_ParameterId_">GetValue(ParameterId)</a> to get the spindle rate type.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cam_NC_Kernel_Automating_IParameters_IsReadOnly_TopSolid_Cam_NC_Kernel_Automating_ParameterId_" data-uid="TopSolid.Cam.NC.Kernel.Automating.IParameters.IsReadOnly(TopSolid.Cam.NC.Kernel.Automating.ParameterId)">
+          <a class="xref" href="TopSolid.Cam.NC.Kernel.Automating.IParameters.IsReadOnly.html#TopSolid_Cam_NC_Kernel_Automating_IParameters_IsReadOnly_TopSolid_Cam_NC_Kernel_Automating_ParameterId_">IsReadOnly(ParameterId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Checks if the given parameter can be modified or not.
+</p>
+<p>Some parameters are computed and only readable. Others can be modified to change the element owner behavior. If modifiable, a parameter value can be changed with SetValue functions.
+</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cam_NC_Kernel_Automating_IParameters_SetNamedValue_TopSolid_Cam_NC_Kernel_Automating_ElementExId_System_String_TopSolid_Kernel_Automating_SmartObject_" data-uid="TopSolid.Cam.NC.Kernel.Automating.IParameters.SetNamedValue(TopSolid.Cam.NC.Kernel.Automating.ElementExId,System.String,TopSolid.Kernel.Automating.SmartObject)">
+          <a class="xref" href="TopSolid.Cam.NC.Kernel.Automating.IParameters.SetNamedValue.html#TopSolid_Cam_NC_Kernel_Automating_IParameters_SetNamedValue_TopSolid_Cam_NC_Kernel_Automating_ElementExId_System_String_TopSolid_Kernel_Automating_SmartObject_">SetNamedValue(ElementExId, string, SmartObject)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the value of the given parameter. The kind of SmartObject is fixed by the <a class="xref" href="TopSolid.Cam.NC.Kernel.Automating.ParameterType.html">ParameterType</a>: SmartInteger for integer parameter, SmartReal for real parameter, et caetera...
+Bound parameters must be set by the according functions.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cam_NC_Kernel_Automating_IParameters_SetValue_TopSolid_Cam_NC_Kernel_Automating_ParameterId_TopSolid_Kernel_Automating_SmartObject_" data-uid="TopSolid.Cam.NC.Kernel.Automating.IParameters.SetValue(TopSolid.Cam.NC.Kernel.Automating.ParameterId,TopSolid.Kernel.Automating.SmartObject)">
+          <a class="xref" href="TopSolid.Cam.NC.Kernel.Automating.IParameters.SetValue.html#TopSolid_Cam_NC_Kernel_Automating_IParameters_SetValue_TopSolid_Cam_NC_Kernel_Automating_ParameterId_TopSolid_Kernel_Automating_SmartObject_">SetValue(ParameterId, SmartObject)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets the value of the given parameter. The kind of SmartObject is fixed by the <a class="xref" href="TopSolid.Cam.NC.Kernel.Automating.ParameterType.html">ParameterType</a>: SmartInteger for integer parameter, SmartReal for real parameter, et caetera...
+Bound parameters must be set by the according functions.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cam_NC_Kernel_Automating_IParameters_ToInvariantStringValue_TopSolid_Cam_NC_Kernel_Automating_ParameterId_" data-uid="TopSolid.Cam.NC.Kernel.Automating.IParameters.ToInvariantStringValue(TopSolid.Cam.NC.Kernel.Automating.ParameterId)">
+          <a class="xref" href="TopSolid.Cam.NC.Kernel.Automating.IParameters.ToInvariantStringValue.html#TopSolid_Cam_NC_Kernel_Automating_IParameters_ToInvariantStringValue_TopSolid_Cam_NC_Kernel_Automating_ParameterId_">ToInvariantStringValue(ParameterId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the text corresponding to the parameter value, without translation.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="TopSolid_Cam_NC_Kernel_Automating_IParameters_ToStringValue_TopSolid_Cam_NC_Kernel_Automating_ParameterId_" data-uid="TopSolid.Cam.NC.Kernel.Automating.IParameters.ToStringValue(TopSolid.Cam.NC.Kernel.Automating.ParameterId)">
+          <a class="xref" href="TopSolid.Cam.NC.Kernel.Automating.IParameters.ToStringValue.html#TopSolid_Cam_NC_Kernel_Automating_IParameters_ToStringValue_TopSolid_Cam_NC_Kernel_Automating_ParameterId_">ToStringValue(ParameterId)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the localized text corresponding to the parameter value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div id="footer-alt">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      			<div id="footer-alt-bottom">
+                      <ul>
+                          <li><a href="https://www.topsolid.com/en/terms-of-use">Term of use</a></li>
+                          <li><a href="https://www.topsolid.com/en/corporate-information">Corporate information</a></li>
+                          <li><a href="https://www.topsolid.com/en/privacy-policy-gdpr">Privacy Policy - GDPR</a></li>
+                      </ul>
+                      <p>Copyright ©2025 TopSolid - All rights reserved.</p>
+                  </div>
+          </div>
+        </div>
+      </footer>    </div>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

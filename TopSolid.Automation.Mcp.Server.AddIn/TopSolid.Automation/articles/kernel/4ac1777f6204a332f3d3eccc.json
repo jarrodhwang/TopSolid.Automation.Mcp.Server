@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.SetRealUnit.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.SetRealUnit.html",
+  "sha256": "28f8a80d21270f2a31859df5055a70ce34ce7a89e185205a8189d0bdb7a02e85",
+  "text": "# Method SetRealUnit\n\n#### SetRealUnit(ElementId, UnitType, string)\n\nSets the unit of a real parameter.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nvoid SetRealUnit(ElementId inElementId, UnitType inUnitType, string inUnitSymbol)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the parameter to modify.  |  \n \n|  UnitType |  inUnitType |  Unit type.  |  \n \n|  string |  inUnitSymbol |  Unit symbol in English.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/4ac1777f6204a332f3d3eccc.md",
+  "originalHtml": "html/kernel/4ac1777f6204a332f3d3eccc.html"
+}

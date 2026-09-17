@@ -1,0 +1,8 @@
+{
+  "path": "api/electrode/TopSolid.Cad.Electrode.Automating.IElectrodes.GetElectrodeCAngle.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/electrode/TopSolid.Cad.Electrode.Automating.IElectrodes.GetElectrodeCAngle.html",
+  "sha256": "7efdca87e13faa608af77436e08c41b6cd0df9cc12a680f113f5d16ac9ee34e5",
+  "text": "# Method GetElectrodeCAngle\n\n#### GetElectrodeCAngle(ElementId, int)\n\nGet the C angle of an electrode at a given position index.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 12, 0, 0)]\ndouble GetElectrodeCAngle(ElementId inElementId, int inPositionIndex)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the electrode to analyze.  |  \n \n|  int |  inPositionIndex |  Position index.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double |  C angle.  |  \n\n##### Remarks\n\nThis method is available since v7.12.\n",
+  "markdown": "markdown/electrode/02986b40f6273857cbec7fa5.md",
+  "originalHtml": "html/electrode/02986b40f6273857cbec7fa5.html"
+}

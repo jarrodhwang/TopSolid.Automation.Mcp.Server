@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.SetCodePossibleValues.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.SetCodePossibleValues.html",
+  "sha256": "25e4caca8c8fea51b42364a91e3c8486b563f976fbe36e3ba7372c8c74b6f4a2",
+  "text": "# Method SetCodePossibleValues\n\n#### SetCodePossibleValues(ElementId, List<CodeProperty>)\n\nSets the code parameter possibles values.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 17, 0, 0)]\nvoid SetCodePossibleValues(ElementId inElementId, List<CodeProperty> inProperties)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the parameter.  |  \n \n|  List<CodeProperty> |  inProperties |  The wanted possibles values.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.17.000.000.\n",
+  "markdown": "markdown/kernel/c8c73f3292a745397ec885b5.md",
+  "originalHtml": "html/kernel/c8c73f3292a745397ec885b5.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.IDraftings.SetDraftingFormatName.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.IDraftings.SetDraftingFormatName.html",
+  "sha256": "169be2c16b7bd6a63b412891fbfd46d8db47f292986cc56fee2f7da3d69be620",
+  "text": "# Method SetDraftingFormatName\n\n#### SetDraftingFormatName(DocumentId, string)\n\nSet friendly name of a drafting document format\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 255, 0)]\nvoid SetDraftingFormatName(DocumentId inDocumentId, string inName)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  The drafting document  |  \n \n|  string |  inName |  friendly-name  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n",
+  "markdown": "markdown/drafting/317e09999bd8f830475e68c4.md",
+  "originalHtml": "html/drafting/317e09999bd8f830475e68c4.html"
+}

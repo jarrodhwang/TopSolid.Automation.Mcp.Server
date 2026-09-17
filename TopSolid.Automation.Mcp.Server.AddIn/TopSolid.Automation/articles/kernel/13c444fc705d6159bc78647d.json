@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IOperations.GetOperationVersion.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IOperations.GetOperationVersion.html",
+  "sha256": "7200ef647f278c67c059e513db3867f2d7113a72c1daef7e97cc03b02aa8f599",
+  "text": "# Method GetOperationVersion\n\n#### GetOperationVersion(ElementId)\n\nGets the version of the algorithm used to execute the operation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 400, 121)]\nstring GetOperationVersion(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Operation Id  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  The execution version as a string.  |\n",
+  "markdown": "markdown/kernel/13c444fc705d6159bc78647d.md",
+  "originalHtml": "html/kernel/13c444fc705d6159bc78647d.html"
+}

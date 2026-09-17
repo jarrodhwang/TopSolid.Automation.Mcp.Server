@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ColorProperty.-ctor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ColorProperty.-ctor.html",
+  "sha256": "432726971fa7865f00c27c96e2e2808fb3231af091b3416bee3a297a879e21a4",
+  "text": "# Constructor ColorProperty\n\n#### ColorProperty(Color)\n\nInitializes a new instance of the DocumentProperty class.\n\n##### Declaration\n\n```\npublic ColorProperty(Color inColor)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  Color |  inColor |  Value for color.  |  \n\n#### ColorProperty(byte, byte, byte)\n\nInitializes a new instance of the DocumentProperty class.\n\n##### Declaration\n\n```\npublic ColorProperty(byte rValue, byte gValue, byte bValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  byte |  rValue |  Value for red.  |  \n \n|  byte |  gValue |  Value for red.  |  \n \n|  byte |  bValue |  Value for red.  |  \n\n#### ColorProperty(Color)\n\nInitializes a new instance of the DocumentProperty class.\n\n##### Declaration\n\n```\npublic ColorProperty(Color inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  Color |  inValue |  Value  |  \n\n#### ColorProperty()\n\nInitializes a new instance of the DocumentProperty class.\n\n##### Declaration\n\n```\npublic ColorProperty()\n```\n",
+  "markdown": "markdown/kernel/1b714ef5432774357026f810.md",
+  "originalHtml": "html/kernel/1b714ef5432774357026f810.html"
+}

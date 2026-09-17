@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Color.Cyan.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Color.Cyan.html",
+  "sha256": "12eb1fab5e4d1e297cd373e49f86c6a888af25ef22d1f0b3b30cee6f91121f0f",
+  "text": "# Field Cyan\n\nCyan color.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\npublic static readonly Color Cyan\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Color |  Cyan color. |\n",
+  "markdown": "markdown/kernel/501c6e12cac745bf0b350fbd.md",
+  "originalHtml": "html/kernel/501c6e12cac745bf0b350fbd.html"
+}

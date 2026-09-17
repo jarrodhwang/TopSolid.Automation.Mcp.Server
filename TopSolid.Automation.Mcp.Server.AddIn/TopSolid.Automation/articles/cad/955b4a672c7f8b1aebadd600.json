@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IParts.GetEnclosingCylinderCenterPoint.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IParts.GetEnclosingCylinderCenterPoint.html",
+  "sha256": "e4088c7e79069d0bd931beda0f1139e6ec34a40a31eb5135f19737964ad8fdca",
+  "text": "# Method GetEnclosingCylinderCenterPoint\n\n#### GetEnclosingCylinderCenterPoint(DocumentId)\n\nGets the enclosing cylinder center point entity of a part.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nElementId GetEnclosingCylinderCenterPoint(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of part document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the enclosing cylinder center point entity found, or empty if not managed.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/cad/955b4a672c7f8b1aebadd600.md",
+  "originalHtml": "html/cad/955b4a672c7f8b1aebadd600.html"
+}

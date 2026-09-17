@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdmWorkflow.GetPendingRequests.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdmWorkflow.GetPendingRequests.html",
+  "sha256": "ebc27d05cd8f6173c1f02d0c533c3dbc3ae37f65e9ab042fbf90c2015e75e396",
+  "text": "# Method GetPendingRequests\n\n#### GetPendingRequests()\n\nGets major revision identifiers where there is a pending request to treat.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 14, 248, 0)]\nList<PdmMajorRevisionId> GetPendingRequests()\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<PdmMajorRevisionId> |  Major revision identifiers where there is a pending request to treat.  |  \n\n##### Remarks\n\nThis method is available since v7.14.248.000.\n",
+  "markdown": "markdown/kernel/654e1d05f4655c330b129e51.md",
+  "originalHtml": "html/kernel/654e1d05f4655c330b129e51.html"
+}

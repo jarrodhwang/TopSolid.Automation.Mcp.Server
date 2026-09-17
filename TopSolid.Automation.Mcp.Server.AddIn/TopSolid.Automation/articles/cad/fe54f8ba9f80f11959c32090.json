@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ITools.IsSymmetrical.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ITools.IsSymmetrical.html",
+  "sha256": "e314d406e4a2768dc4267478abd66b9921ff09e1d75715c3b8439b547545259c",
+  "text": "# Method IsSymmetrical\n\n#### IsSymmetrical(DocumentId)\n\nTells whether part or assembly is symmetrical.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nbool IsSymmetrical(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the part or assembly document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  The part or assembly is symmetrical.  |  \n\n##### Remarks\n\nA part or assembly is symmetrical if it contains at least one symmetry entity.\n \nSymmetrical parts and assemblies are not replaced by mirror parts or assemblies when making a mirror assembly of an assembly in which they are included.\n \nThis method is available since v7.10.\n",
+  "markdown": "markdown/cad/fe54f8ba9f80f11959c32090.md",
+  "originalHtml": "html/cad/fe54f8ba9f80f11959c32090.html"
+}

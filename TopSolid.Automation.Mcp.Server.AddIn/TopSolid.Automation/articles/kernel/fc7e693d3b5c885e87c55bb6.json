@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ITextures.SetRedWayRotationAngle.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ITextures.SetRedWayRotationAngle.html",
+  "sha256": "aba2b48fbc0868b8ac86282b7e73610a4cd120cca9762dc528ba6b0860611567",
+  "text": "# Method SetRedWayRotationAngle\n\n#### SetRedWayRotationAngle(DocumentId, double)\n\nSets the RedWay rotation angle.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 0, 0)]\nvoid SetRedWayRotationAngle(DocumentId inDocumentId, double inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  double |  inValue |  Wanted value.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.16.\n",
+  "markdown": "markdown/kernel/fc7e693d3b5c885e87c55bb6.md",
+  "originalHtml": "html/kernel/fc7e693d3b5c885e87c55bb6.html"
+}

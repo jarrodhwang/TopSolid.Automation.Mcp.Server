@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IOperations.GetTool.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IOperations.GetTool.html",
+  "sha256": "c4e42434c457e1d296fc857dece88688ab29ce5db9fce3a4151067433a630caf",
+  "text": "# Method GetTool\n\n#### GetTool(ElementExId)\n\nGets the tool entity from the given operation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nElementId GetTool(ElementExId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementExId |  inElementId |  Identifier of the operation to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Tool entity.  |\n",
+  "markdown": "markdown/cam/819d528d63215318d416569a.md",
+  "originalHtml": "html/cam/819d528d63215318d416569a.html"
+}

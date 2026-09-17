@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMultiLayer.RemoveMultiMaterialLayer.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMultiLayer.RemoveMultiMaterialLayer.html",
+  "sha256": "1f2b22e305a76045d7e0a5e8127807058ffc8d726420f3dc67879493092be071",
+  "text": "# Method RemoveMultiMaterialLayer\n\n#### RemoveMultiMaterialLayer(DocumentId, int)\n\nRemove one layer from the layer list of the multimaterial document\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 0, 0)]\nbool RemoveMultiMaterialLayer(DocumentId inDocumentId, int inLayerIndex)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document  |  \n \n|  int |  inLayerIndex |  Index of the layer to remove  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  True if layer has been removed.  |  \n\n##### Remarks\n\nThis method is available since v7.19.\n",
+  "markdown": "markdown/cad/2a4dce475aae50cc6b97507c.md",
+  "originalHtml": "html/cad/2a4dce475aae50cc6b97507c.html"
+}

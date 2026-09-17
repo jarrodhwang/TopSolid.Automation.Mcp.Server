@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ISketches2D.GetSketches.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ISketches2D.GetSketches.html",
+  "sha256": "74b65cc877a0a5a6db7471829d2112cef732d837822f973318983f80e510ae2c",
+  "text": "# Method GetSketches\n\n#### GetSketches(DocumentId)\n\nGets the sketches entities that are in the sketches folder of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nList<ElementId> GetSketches(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementId> |  Sketch entities found.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/5b0a5cf11fbe1015be25778d.md",
+  "originalHtml": "html/kernel/5b0a5cf11fbe1015be25778d.html"
+}

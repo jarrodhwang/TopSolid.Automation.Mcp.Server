@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.CreateDateTimeParameter.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.CreateDateTimeParameter.html",
+  "sha256": "c7682cf44db74bf3ead700a38a88a3e761845764c6f512e5a97aee957b628781",
+  "text": "# Method CreateDateTimeParameter\n\n#### CreateDateTimeParameter(DocumentId, DateTime)\n\nCreates a date time parameter entity in a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 301, 40)]\nElementId CreateDateTimeParameter(DocumentId inDocumentId, DateTime inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  DateTime |  inValue |  Value.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the created parameter entity.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.6.301.40.\n",
+  "markdown": "markdown/kernel/b0be9203310d8dacf647bc01.md",
+  "originalHtml": "html/kernel/b0be9203310d8dacf647bc01.html"
+}

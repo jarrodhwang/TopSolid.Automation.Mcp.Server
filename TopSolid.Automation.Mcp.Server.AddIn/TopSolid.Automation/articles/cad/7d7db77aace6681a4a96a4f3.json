@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IFeatures.GetDrillingPrimitiveCount.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IFeatures.GetDrillingPrimitiveCount.html",
+  "sha256": "27d9886f3083344d4d18157087b31c775f3da90c392652d9992f9089768a552e",
+  "text": "# Method GetDrillingPrimitiveCount\n\n#### GetDrillingPrimitiveCount(ElementId)\n\nGets the number of primitives of a drilling feature entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 14, 0, 0)]\nint GetDrillingPrimitiveCount(ElementId inFeatureId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inFeatureId |  Identifier of the feature to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  int |  Count of drilling primitives found.  |  \n\n##### Remarks\n\nThis method is available since v7.14.\n",
+  "markdown": "markdown/cad/7d7db77aace6681a4a96a4f3.md",
+  "originalHtml": "html/cad/7d7db77aace6681a4a96a4f3.html"
+}

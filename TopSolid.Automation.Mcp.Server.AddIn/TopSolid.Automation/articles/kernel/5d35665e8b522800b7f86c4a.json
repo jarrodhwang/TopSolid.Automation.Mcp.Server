@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IFamilies.GetGenericDocument.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IFamilies.GetGenericDocument.html",
+  "sha256": "bc690c90811be0c4f65cde83af478fbee89a27857043ab2eb905ebd358dce2ba",
+  "text": "# Method GetGenericDocument\n\n#### GetGenericDocument(DocumentId)\n\nGets the generic document of a family.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nDocumentId GetGenericDocument(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the family document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  DocumentId |  Generic document identifier.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/kernel/5d35665e8b522800b7f86c4a.md",
+  "originalHtml": "html/kernel/5d35665e8b522800b7f86c4a.html"
+}

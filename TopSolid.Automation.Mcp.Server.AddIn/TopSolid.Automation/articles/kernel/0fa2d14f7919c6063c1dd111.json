@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.SetLifeCycleMainState.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.SetLifeCycleMainState.html",
+  "sha256": "2a75cabe33849f23c2baf51b5aed12f4c431efca5745391e24f0999908b8eb27",
+  "text": "# Method SetLifeCycleMainState\n\n#### SetLifeCycleMainState(PdmObjectId, PdmLifeCycleMainState)\n\nChanges the life cycle main state of an object.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 9, 302, 160)]\nvoid SetLifeCycleMainState(PdmObjectId inObjectId, PdmLifeCycleMainState inLifeCycle)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  Identifier of object to change life cycle main state.  |  \n \n|  PdmLifeCycleMainState |  inLifeCycle |  Life cycle to apply (None and Design life cycles are not supported).  |  \n\n##### Remarks\n\nThis method must not be called between StartModification(string, bool) and EndModification(bool, bool) methods calls.\n \nThis method is available since v7.9.302.160.\n",
+  "markdown": "markdown/kernel/0fa2d14f7919c6063c1dd111.md",
+  "originalHtml": "html/kernel/0fa2d14f7919c6063c1dd111.html"
+}

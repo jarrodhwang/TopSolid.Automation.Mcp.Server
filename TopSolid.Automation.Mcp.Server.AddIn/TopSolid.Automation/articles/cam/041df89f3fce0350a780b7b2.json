@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.UserStockType.-ctor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.UserStockType.-ctor.html",
+  "sha256": "1cbdbcebc986d9fdb922e06606f1f4c860efa330d77597d693f49a03675f86e2",
+  "text": "# Constructor UserStockType\n\n#### UserStockType(List<ElementId>)\n\nInitializes a new instance of a UserStockType class.\n\n##### Declaration\n\n```\npublic UserStockType(List<ElementId> inStocks)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  List<ElementId> |  inStocks |  The user stocks.  |\n",
+  "markdown": "markdown/cam/041df89f3fce0350a780b7b2.md",
+  "originalHtml": "html/cam/041df89f3fce0350a780b7b2.html"
+}

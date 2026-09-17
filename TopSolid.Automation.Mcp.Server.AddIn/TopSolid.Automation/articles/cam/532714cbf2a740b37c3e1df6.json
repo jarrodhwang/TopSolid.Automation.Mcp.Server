@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IOperations.GetOperations.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IOperations.GetOperations.html",
+  "sha256": "36c3085b24ec5442d48121d818914abe11de80dd5f5b14ed9fa484bddf6ad932",
+  "text": "# Method GetOperations\n\n#### GetOperations(DocumentId)\n\nGets the Cam operations of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nList<ElementId> GetOperations(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementId> |  Cam operations found.  |  \n\n##### Remarks\n\nThe operations are sorted in chronological order (i.e. first operation of the list is executed first).\n",
+  "markdown": "markdown/cam/532714cbf2a740b37c3e1df6.md",
+  "originalHtml": "html/cam/532714cbf2a740b37c3e1df6.html"
+}

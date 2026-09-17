@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdmAdmin.SetUserEmailAddress.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdmAdmin.SetUserEmailAddress.html",
+  "sha256": "6806256ffcd838802f1537aec7555dc57512b44a734297afa7612221796d2ba8",
+  "text": "# Method SetUserEmailAddress\n\n#### SetUserEmailAddress(string, string)\n\nSets the e-mail address of a user.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nvoid SetUserEmailAddress(string inAccountId, string inEmailAddress)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  string |  inAccountId |  User account identifier.  |  \n \n|  string |  inEmailAddress |  User e-mail address.  |  \n\n##### Remarks\n\nIf the IsAdmin property returns false, this method cannot be called (an exception will be thrown otherwise).\n \nThis method is available since v7.10.\n",
+  "markdown": "markdown/pdmexplorer/d3844e1ea1b82d8ce0e57907.md",
+  "originalHtml": "html/pdmexplorer/d3844e1ea1b82d8ce0e57907.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IUser.AskFrame3D.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IUser.AskFrame3D.html",
+  "sha256": "97f571c5e74d8bd9812b8242c601e03f6ddaf87e48332e4d7445eb5031ebdadf",
+  "text": "# Method AskFrame3D\n\n#### AskFrame3D(UserQuestion, bool, SmartFrame3D, out SmartFrame3D)\n\nAsks the user for a 3D frame.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nUserAnswerType AskFrame3D(UserQuestion inQuestion, bool inIsOriented, SmartFrame3D inSuggestion, out SmartFrame3D outAnswer)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  UserQuestion |  inQuestion |  Question asked to the user.  |  \n \n|  bool |  inIsOriented |  Whether to ask for orientation.  |  \n \n|  SmartFrame3D |  inSuggestion |  Suggested answer, or null if none.  |  \n \n|  SmartFrame3D |  outAnswer |  User answer, or null if none.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  UserAnswerType |  Type of user answer.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) may be called before calling this method to allow the user to create or modify entities during the interaction.\n \nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/a73a6fc780403281e6f68bb6.md",
+  "originalHtml": "html/kernel/a73a6fc780403281e6f68bb6.html"
+}

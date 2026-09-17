@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IAssemblies.SetAssemblyStrictMode.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IAssemblies.SetAssemblyStrictMode.html",
+  "sha256": "d191a2f19a3463f14d4418af957b48f662f1998ed527739774dd8c34ed302aba",
+  "text": "# Method SetAssemblyStrictMode\n\n#### SetAssemblyStrictMode(DocumentId, bool)\n\nSets the strict mode of the physical property management of an assembly.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 13, 300, 220)]\nvoid SetAssemblyStrictMode(DocumentId inDocumentId, bool inIsStrict)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of assembly document to analyze.  |  \n \n|  bool |  inIsStrict |  Tells whether the physical property management of an assembly is strict.  |  \n\n##### Remarks\n\nThis method is available since v7.13.300.220.\n",
+  "markdown": "markdown/cad/77cdda3484c3a53d4a03d735.md",
+  "originalHtml": "html/cad/77cdda3484c3a53d4a03d735.html"
+}

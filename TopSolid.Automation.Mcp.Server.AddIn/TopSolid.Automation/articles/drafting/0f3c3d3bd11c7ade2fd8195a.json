@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.IDraftings.GetAuxiliaryViews.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.IDraftings.GetAuxiliaryViews.html",
+  "sha256": "88e5974342893f971595759936f0729367e9735a0b8b8d8a69fa9c5bccfb7933",
+  "text": "# Method GetAuxiliaryViews\n\n#### GetAuxiliaryViews(ElementId)\n\nGet Auxiliary views related to a view. This method fetch main view of the set then returns auxiliaries (including the view sent, if it is an auxiliary view).\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 255, 0)]\nList<ElementId> GetAuxiliaryViews(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  The view to analyze  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementId> |  List of auxiliary views  |\n",
+  "markdown": "markdown/drafting/0f3c3d3bd11c7ade2fd8195a.md",
+  "originalHtml": "html/drafting/0f3c3d3bd11c7ade2fd8195a.html"
+}

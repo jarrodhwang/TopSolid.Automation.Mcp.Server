@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.GetRelayedParameter.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.GetRelayedParameter.html",
+  "sha256": "77f68da93b30baffddc0158a813d8936e15a10896a44ec2697d2830bd46d6305",
+  "text": "# Method GetRelayedParameter\n\n#### GetRelayedParameter(ElementId)\n\nGets the parameter entity relayed by a relay parameter entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 303, 120)]\nElementId GetRelayedParameter(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the relay parameter entity to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Parameter entity relayed by the specified relay parameter entity.  |  \n\n##### Remarks\n\nThis method is available since v7.8.303.120.\n",
+  "markdown": "markdown/kernel/ae0b108489852210074ac0bf.md",
+  "originalHtml": "html/kernel/ae0b108489852210074ac0bf.html"
+}

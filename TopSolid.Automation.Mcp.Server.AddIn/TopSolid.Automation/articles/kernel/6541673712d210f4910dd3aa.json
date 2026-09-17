@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.GetRealParameterConstraintsMaximumLimit.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.GetRealParameterConstraintsMaximumLimit.html",
+  "sha256": "97ba88312f6e5fc41c804f0ab93aec43b044f4b724654db29d78e45325b3be6a",
+  "text": "# Method GetRealParameterConstraintsMaximumLimit\n\n#### GetRealParameterConstraintsMaximumLimit(ElementId)\n\nGets the real parameter constraint maximum limit.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 17, 0, 0)]\nRealProperty GetRealParameterConstraintsMaximumLimit(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the parameter.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  RealProperty |  The minimum limit.  |  \n\n##### Remarks\n\nThis method is available since v7.17.000.000.\n",
+  "markdown": "markdown/kernel/6541673712d210f4910dd3aa.md",
+  "originalHtml": "html/kernel/6541673712d210f4910dd3aa.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IOperations.GetOperationLinkOutMovementsMethod.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IOperations.GetOperationLinkOutMovementsMethod.html",
+  "sha256": "2dc05e3ab2fef1a5637a84a6b69d8fe1765d53f872dd0031472a5f209e355f22",
+  "text": "# Method GetOperationLinkOutMovementsMethod\n\n#### GetOperationLinkOutMovementsMethod(ElementExId, out LinkMovementsMethod, out string)\n\nGet nc operation link-out movement method\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 160, 0)]\nvoid GetOperationLinkOutMovementsMethod(ElementExId inElementExId, out LinkMovementsMethod outLinkMovementsMethod, out string outDocumentName)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementExId |  inElementExId |  Identifier of the operation to analyze  |  \n \n|  LinkMovementsMethod |  outLinkMovementsMethod |  Link-out movement method to get  |  \n \n|  string |  outDocumentName |  Linked document name to get, empty if automatic method  |  \n\n##### Remarks\n\nThe document name is only for information, it may not be unique in the pdm.\n",
+  "markdown": "markdown/cam/6dd7a19dd7658fb53e199cbe.md",
+  "originalHtml": "html/cam/6dd7a19dd7658fb53e199cbe.html"
+}

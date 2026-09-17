@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdmSecurity.DeactivateProjectSecurity.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdmSecurity.DeactivateProjectSecurity.html",
+  "sha256": "d377c5bcf8e03d4845fbb3d1a78f6bba3d2c4d4bbce5a6de078ed5a2d1d6ea5a",
+  "text": "# Method DeactivateProjectSecurity\n\n#### DeactivateProjectSecurity(PdmObjectId)\n\nDeactivates security of a project.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nvoid DeactivateProjectSecurity(PdmObjectId inProjectId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inProjectId |  Project identifier to deactivate.  |  \n\n##### Remarks\n\nThis method is available since v7.8.302.060.\n",
+  "markdown": "markdown/pdmexplorer/5dc2f00d65e1a99494e0282a.md",
+  "originalHtml": "html/pdmexplorer/5dc2f00d65e1a99494e0282a.html"
+}

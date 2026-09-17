@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IUser.AskPlane3D.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IUser.AskPlane3D.html",
+  "sha256": "9bc3882c7b16ccf12eab1300bf54326e7884b69a3b6cf6a255e6ce626336545f",
+  "text": "# Method AskPlane3D\n\n#### AskPlane3D(UserQuestion, bool, SmartPlane3D, out SmartPlane3D)\n\nAsks the user for a 3D plane.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nUserAnswerType AskPlane3D(UserQuestion inQuestion, bool inIsOriented, SmartPlane3D inSuggestion, out SmartPlane3D outAnswer)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  UserQuestion |  inQuestion |  Question asked to the user.  |  \n \n|  bool |  inIsOriented |  Whether to ask for orientation.  |  \n \n|  SmartPlane3D |  inSuggestion |  Suggested answer, or null if none.  |  \n \n|  SmartPlane3D |  outAnswer |  User answer, or null if none.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  UserAnswerType |  Type of user answer.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) may be called before calling this method to allow the user to create or modify entities during the interaction.\n \nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/35c11c315d42d87a90f9d5b5.md",
+  "originalHtml": "html/kernel/35c11c315d42d87a90f9d5b5.html"
+}

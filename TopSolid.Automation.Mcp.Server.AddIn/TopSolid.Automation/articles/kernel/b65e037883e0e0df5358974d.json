@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Point2D.op_Addition.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Point2D.op_Addition.html",
+  "sha256": "f962634a5cb72f8da60302f1dcbe57f38c680c27f8973dd676d89881d2be596c",
+  "text": "# Operator operator +\n\n#### operator +(Point2D, Vector2D)\n\nAdds a point and a vector.\n\n##### Declaration\n\n```\npublic static Point2D operator +(Point2D inPoint, Vector2D inVector)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  Point2D |  inPoint |  Left hand side point.  |  \n \n|  Vector2D |  inVector |  Right hand side vector.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Point2D |  Translated point.  |  \n\n#### operator +(Point2D, Point2D)\n\nAdds two points.\n\n##### Declaration\n\n```\npublic static Point2D operator +(Point2D inPoint1, Point2D inPoint2)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  Point2D |  inPoint1 |  Left hand side point.  |  \n \n|  Point2D |  inPoint2 |  Right hand side point.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Point2D |  Sum point.  |\n",
+  "markdown": "markdown/kernel/b65e037883e0e0df5358974d.md",
+  "originalHtml": "html/kernel/b65e037883e0e0df5358974d.html"
+}

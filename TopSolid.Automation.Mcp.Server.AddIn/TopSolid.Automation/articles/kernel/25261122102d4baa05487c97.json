@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartDirection2D.IsReversed.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartDirection2D.IsReversed.html",
+  "sha256": "98d5094dbf42ac3b86352fca4aa166bd005550ec530cb347bd7882770b4e0037",
+  "text": "# Field IsReversed\n\nWhether the provided direction is to be reversed.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic bool IsReversed\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Whether the provided direction is to be reversed. |\n",
+  "markdown": "markdown/kernel/25261122102d4baa05487c97.md",
+  "originalHtml": "html/kernel/25261122102d4baa05487c97.html"
+}

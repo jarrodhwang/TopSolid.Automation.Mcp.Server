@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.GetUserPropertyDefinition.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.GetUserPropertyDefinition.html",
+  "sha256": "7b8bbab3ec360931ef78f5dd28e0c73babf2a260c06e35b469011a7d750e3984",
+  "text": "# Method GetUserPropertyDefinition\n\n#### GetUserPropertyDefinition(ElementId)\n\nGets the user property definition of a parameter entity corresponding to a user property.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nDocumentId GetUserPropertyDefinition(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the parameter to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  DocumentId |  Identifier of the user propserty definition document, or Empty if the parameter does not correspond to a user property.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/fc519956d012255d97928e95.md",
+  "originalHtml": "html/kernel/fc519956d012255d97928e95.html"
+}

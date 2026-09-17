@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IDocuments.IsFrozen.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IDocuments.IsFrozen.html",
+  "sha256": "67103ac81ca0bed0b9f25a135c51716005cb9f23db71cf349d67fc95e68fd9f5",
+  "text": "# Method IsFrozen\n\n#### IsFrozen(DocumentId)\n\nTells whether a document is frozen.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 12, 0, 0)]\nbool IsFrozen(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  The document is frozen.  |  \n\n##### Remarks\n\nThis method is available since v7.12.\n",
+  "markdown": "markdown/kernel/58ed9cf00dbe2767fa054f1b.md",
+  "originalHtml": "html/kernel/58ed9cf00dbe2767fa054f1b.html"
+}

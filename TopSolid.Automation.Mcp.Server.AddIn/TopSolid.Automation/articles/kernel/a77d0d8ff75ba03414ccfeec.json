@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ISketches2D.IsItemFixed.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ISketches2D.IsItemFixed.html",
+  "sha256": "ba4942b139a8550f088ce2d26677d31406a14075f09e388665135cce307d1c80",
+  "text": "# Method IsItemFixed\n\n#### IsItemFixed(ElementItemId)\n\nTells whether a segment or a vertex is fixed.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 201, 80)]\nbool IsItemFixed(ElementItemId inItemId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementItemId |  inItemId |  Identifier of the segment or the vertex to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Whether the segment or the vertex is fixed.  |  \n\n##### Remarks\n\nThis method is available since v7.7.201.80.\n",
+  "markdown": "markdown/kernel/a77d0d8ff75ba03414ccfeec.md",
+  "originalHtml": "html/kernel/a77d0d8ff75ba03414ccfeec.html"
+}

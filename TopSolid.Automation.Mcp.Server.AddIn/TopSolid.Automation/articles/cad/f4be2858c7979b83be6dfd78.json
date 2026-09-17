@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ICoatings.SetMetalnessTextureDocument.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ICoatings.SetMetalnessTextureDocument.html",
+  "sha256": "ba851ac273e5ccd240cd23a1cab2ea6c9f36e942fe2ff6021d0ee1c6bc8f7a91",
+  "text": "# Method SetMetalnessTextureDocument\n\n#### SetMetalnessTextureDocument(DocumentId, DocumentId)\n\nSets the Metalness texture document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 0, 0)]\nvoid SetMetalnessTextureDocument(DocumentId inDocumentId, DocumentId inTextureDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  DocumentId |  inTextureDocumentId |  Texture document.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.16.\n",
+  "markdown": "markdown/cad/f4be2858c7979b83be6dfd78.md",
+  "originalHtml": "html/cad/f4be2858c7979b83be6dfd78.html"
+}

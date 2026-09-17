@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ISimulations.GetTasks.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ISimulations.GetTasks.html",
+  "sha256": "4c51bcd966f1ac17c28cf92af22f052d448f8d9653468e98bdd60e2544d634a1",
+  "text": "# Method GetTasks\n\n#### GetTasks(DocumentId)\n\nGets the tasks entities that are in the tasks folder of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nList<ElementId> GetTasks(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementId> |  Tasks entities found.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/cad/321bacef82e9131bd0a15605.md",
+  "originalHtml": "html/cad/321bacef82e9131bd0a15605.html"
+}

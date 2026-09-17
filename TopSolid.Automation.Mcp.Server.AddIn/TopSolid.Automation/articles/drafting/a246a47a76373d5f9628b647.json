@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.IDimensions.GetCurrentDimensionStyle.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.IDimensions.GetCurrentDimensionStyle.html",
+  "sha256": "4a77d2a96ac32887c3d594b149bd116869cca61810cfa4b2077d4f2887c56844",
+  "text": "# Method GetCurrentDimensionStyle\n\n#### GetCurrentDimensionStyle(DocumentId)\n\nGets current dimension style of a document\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 255, 0)]\nElementId GetCurrentDimensionStyle(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  The drafting document  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Current dimension style of the document  |\n",
+  "markdown": "markdown/drafting/a246a47a76373d5f9628b647.md",
+  "originalHtml": "html/drafting/a246a47a76373d5f9628b647.html"
+}

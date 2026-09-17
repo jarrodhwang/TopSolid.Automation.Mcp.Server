@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.GetManufacturer.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.GetManufacturer.html",
+  "sha256": "0fced651ea3bab512eeca9d5d6c363ce74ddce89bce7f9658fb6522aab2778f6",
+  "text": "# Method GetManufacturer\n\n#### GetManufacturer(PdmObjectId)\n\nGets the manufacturer of an object.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nstring GetManufacturer(PdmObjectId inObjectId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  Object identifier.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  Object manufacturer.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/pdmexplorer/1e61256fff867f3c4b56f898.md",
+  "originalHtml": "html/pdmexplorer/1e61256fff867f3c4b56f898.html"
+}

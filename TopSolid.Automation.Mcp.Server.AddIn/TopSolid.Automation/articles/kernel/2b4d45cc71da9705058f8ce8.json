@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ITextures.SetWoodPerturbation.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ITextures.SetWoodPerturbation.html",
+  "sha256": "47c8fd5b132908ccb2a75619f8e4f5d45cf0e38a29c2bef4b80cbf72c15d380b",
+  "text": "# Method SetWoodPerturbation\n\n#### SetWoodPerturbation(DocumentId, double)\n\nSets the wood perturbation or also called Gnarl.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 0, 0)]\nvoid SetWoodPerturbation(DocumentId inDocumentId, double inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  double |  inValue |  Wanted value.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.16.\n",
+  "markdown": "markdown/kernel/2b4d45cc71da9705058f8ce8.md",
+  "originalHtml": "html/kernel/2b4d45cc71da9705058f8ce8.html"
+}

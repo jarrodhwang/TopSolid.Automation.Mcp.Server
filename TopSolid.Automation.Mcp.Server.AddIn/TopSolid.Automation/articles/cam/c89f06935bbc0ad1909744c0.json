@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.SolidType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.SolidType.html",
+  "sha256": "81e430f9140f8b69a262bae06f5fce6a1682beb51c78d5eecefc4301b9a0a850",
+  "text": "# Class SolidType\n\nRepresents a Solid Type for the part creation in a machining document.\n\n##### Inheritance\n \nobject\n \nSolidType\n \nExactSolidType\n \nMachineWorksSolidType\n\n##### Inherited Members\n \n object.ToString() \n \n object.Equals(object) \n \n object.Equals(object, object) \n \n object.ReferenceEquals(object, object) \n \n object.GetHashCode() \n \n object.GetType() \n \n object.MemberwiseClone() \n\n###### Namespace: TopSolid.Cam.NC.Kernel.Automating\n\n###### Assembly: TopSolid.Cam.NC.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[KnownType(typeof(ExactSolidType))]\n[KnownType(typeof(MachineWorksSolidType))]\n[AvailableSinceVersion(7, 15, 0, 0)]\npublic abstract class SolidType\n```\n\n##### Remarks\n\nThis class is available since v7.15.\n\n### Constructors \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   SolidType()  |   |  \n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|   CheckGeometryOfStock  |  Check Geometry Of Stock.  |  \n \n|   EliminateWeakPortionsOfStock  |  Eliminate Weak Portions Of Stock.  |\n",
+  "markdown": "markdown/cam/c89f06935bbc0ad1909744c0.md",
+  "originalHtml": "html/cam/c89f06935bbc0ad1909744c0.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ITextures.SetMapping.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ITextures.SetMapping.html",
+  "sha256": "382ced7bca773b23f81df37f907863958a61bcf018010b5f81684a461dbc72d5",
+  "text": "# Method SetMapping\n\n#### SetMapping(DocumentId, TextureMappingType)\n\nSets the texture mapping type of a texture document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 0, 0)]\nvoid SetMapping(DocumentId inDocumentId, TextureMappingType inMappingType)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  TextureMappingType |  inMappingType |  Type of the mapping.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.16.\n",
+  "markdown": "markdown/kernel/38bc87137ed28cbd48a2684d.md",
+  "originalHtml": "html/kernel/38bc87137ed28cbd48a2684d.html"
+}

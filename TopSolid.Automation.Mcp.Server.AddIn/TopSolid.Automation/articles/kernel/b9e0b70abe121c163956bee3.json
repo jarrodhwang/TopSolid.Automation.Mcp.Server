@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.HasRealParameterPossibleValues.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.HasRealParameterPossibleValues.html",
+  "sha256": "4a81cc41c861187160bdc8f6943126a0e2cf83aa7f9b4bb3dc8a73c6c6593cbe",
+  "text": "# Method HasRealParameterPossibleValues\n\n#### HasRealParameterPossibleValues(ElementId)\n\nTells wether the real parameter has possible values.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 17, 0, 0)]\nbool HasRealParameterPossibleValues(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the parameter.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Wether the parameter has possible values.  |  \n\n##### Remarks\n\nThis method is available since v7.17.000.000.\n",
+  "markdown": "markdown/kernel/b9e0b70abe121c163956bee3.md",
+  "originalHtml": "html/kernel/b9e0b70abe121c163956bee3.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartFrame3D.Geometry.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartFrame3D.Geometry.html",
+  "sha256": "44dc345715b109423141d4f65d67f2da53293232493df22046df33d067980ea4",
+  "text": "# Field Geometry\n\nGeometry, or null if unknown.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic Frame3D? Geometry\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Frame3D? |  Geometry, or null if unknown. |\n",
+  "markdown": "markdown/kernel/d76fc3245fbd3854a89d0068.md",
+  "originalHtml": "html/kernel/d76fc3245fbd3854a89d0068.html"
+}

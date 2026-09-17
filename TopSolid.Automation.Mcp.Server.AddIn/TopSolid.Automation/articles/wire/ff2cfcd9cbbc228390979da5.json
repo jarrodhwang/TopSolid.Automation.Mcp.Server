@@ -1,0 +1,8 @@
+{
+  "path": "api/wire/TopSolid.Cam.NC.Wire.Automating.IWireCc.SetFeedrate.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/wire/TopSolid.Cam.NC.Wire.Automating.IWireCc.SetFeedrate.html",
+  "sha256": "946b6eeb5d1f6cd98556015137bdc5af671077972ef08f34c3ece0062f741c54",
+  "text": "# Method SetFeedrate\n\n#### SetFeedrate(ElementId, SmartReal)\n\nSet feedrate.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 160)]\nvoid SetFeedrate(ElementId inElementId, SmartReal inFeedrate)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to modify.  |  \n \n|  SmartReal |  inFeedrate |  Feedrate in SI units.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n",
+  "markdown": "markdown/wire/ff2cfcd9cbbc228390979da5.md",
+  "originalHtml": "html/wire/ff2cfcd9cbbc228390979da5.html"
+}

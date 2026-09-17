@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IVisualization3D.SetStandardCamerasDefinitions.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IVisualization3D.SetStandardCamerasDefinitions.html",
+  "sha256": "c69bc4ec9813b50392e0930883b88dffb4ce2107a8a2cdffdfc7ce29fea74798",
+  "text": "# Method SetStandardCamerasDefinitions\n\n#### SetStandardCamerasDefinitions(DocumentId, Direction3D, Direction3D)\n\nSets the definitions of the standard cameras entities.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 0, 0)]\nvoid SetStandardCamerasDefinitions(DocumentId inDocumentId, Direction3D inHorizontalDirection, Direction3D inVerticalDirection)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  Direction3D |  inHorizontalDirection |  Horizontal direction.  |  \n \n|  Direction3D |  inVerticalDirection |  Vertical direction.  |  \n\n##### Remarks\n\nThe standard \"Top Camera\" will be set so that when applied to a view the inHorizontalDirection is actually horizontal on the screen oriented from left to right, and the inVerticalDirection is normal to the screen oriented towards the user. The other standard cameras will be set accordingly.\n \nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.11.\n",
+  "markdown": "markdown/kernel/909bdde57129b06b59b1d32e.md",
+  "originalHtml": "html/kernel/909bdde57129b06b59b1d32e.html"
+}

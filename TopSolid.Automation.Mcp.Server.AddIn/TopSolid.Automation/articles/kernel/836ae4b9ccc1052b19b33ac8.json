@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.PdmProjectFolderId.Id.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.PdmProjectFolderId.Id.html",
+  "sha256": "3060dcf829c8f86dcb5b94107e5a83578c3afe8a3f8da9e4607110b07717e245",
+  "text": "# Property Id\n\n#### Id\n\nGets the PDM project folder identifier.\n\n##### Declaration\n\n```\npublic string Id { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |   |\n",
+  "markdown": "markdown/kernel/836ae4b9ccc1052b19b33ac8.md",
+  "originalHtml": "html/kernel/836ae4b9ccc1052b19b33ac8.html"
+}

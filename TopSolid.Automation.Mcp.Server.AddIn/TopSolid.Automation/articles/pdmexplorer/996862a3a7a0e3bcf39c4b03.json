@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdmWorkflow.HasWorkflow.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdmWorkflow.HasWorkflow.html",
+  "sha256": "9af2e543225c299cb85e3e4490a2ee97fc82acd73b0fc5c3c88f5a3f46e24df6",
+  "text": "# Method HasWorkflow\n\n#### HasWorkflow(PdmObjectId)\n\nTells if a project has a workflow set.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nbool HasWorkflow(PdmObjectId inProjectId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inProjectId |  Project identifier to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  The project has a workflow.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/pdmexplorer/996862a3a7a0e3bcf39c4b03.md",
+  "originalHtml": "html/pdmexplorer/996862a3a7a0e3bcf39c4b03.html"
+}

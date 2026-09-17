@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IVisualization3D.SetViewCamera.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IVisualization3D.SetViewCamera.html",
+  "sha256": "2f99ce1449168905d4a3889fb03b25763536d4139a5b517605d9598af801ee31",
+  "text": "# Method SetViewCamera\n\n#### SetViewCamera(DocumentId, int, Point3D, Direction3D, Direction3D, double, double)\n\nSets the camera of a graphic view of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nvoid SetViewCamera(DocumentId inDocumentId, int inViewId, Point3D inEyePosition, Direction3D inLookAtDirection, Direction3D inUpDirection, double inFieldAngle, double inFieldRadius)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  int |  inViewId |  Identifier of the graphic view to modify.  |  \n \n|  Point3D |  inEyePosition |  Position of the eye.  |  \n \n|  Direction3D |  inLookAtDirection |  Eye looking direction.  |  \n \n|  Direction3D |  inUpDirection |  Vertical upwards direction.  |  \n \n|  double |  inFieldAngle |  Field angle for perspective projection, or 0 if orthographic projection.  |  \n \n|  double |  inFieldRadius |  Field radius for orthographic projection, or distance between camera origin and projection plane if perspective projection.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/6174f3c673923f972b1022c3.md",
+  "originalHtml": "html/kernel/6174f3c673923f972b1022c3.html"
+}

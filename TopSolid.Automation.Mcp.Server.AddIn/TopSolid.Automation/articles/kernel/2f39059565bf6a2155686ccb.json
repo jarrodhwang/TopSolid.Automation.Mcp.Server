@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Direction3D.op_UnaryNegation.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Direction3D.op_UnaryNegation.html",
+  "sha256": "7579f9a1accb97a35d7c60403da67ecccb1f21d8b1d9312e21cb9368da0201e1",
+  "text": "# Operator operator -\n\n#### operator -(Direction3D)\n\nNegates a direction.\n\n##### Declaration\n\n```\npublic static Direction3D operator -(Direction3D inDirection)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  Direction3D |  inDirection |  Direction to negate.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Direction3D |  Negated direction.  |\n",
+  "markdown": "markdown/kernel/2f39059565bf6a2155686ccb.md",
+  "originalHtml": "html/kernel/2f39059565bf6a2155686ccb.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdmAdmin.GetUsers.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdmAdmin.GetUsers.html",
+  "sha256": "ae52681dc955627dbe5556b94dc8d214e91bb14c053e4eb71571dfd841320cdc",
+  "text": "# Method GetUsers\n\n#### GetUsers(bool, bool)\n\nGets all the users.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nList<string> GetUsers(bool inGetsActiveUsers, bool inGetsInactiveUsers)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  bool |  inGetsActiveUsers |  Gets active users.  |  \n \n|  bool |  inGetsInactiveUsers |  Gets inactive users.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<string> |  Users account identifier.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/pdmexplorer/59f0617a149907515281f955.md",
+  "originalHtml": "html/pdmexplorer/59f0617a149907515281f955.html"
+}

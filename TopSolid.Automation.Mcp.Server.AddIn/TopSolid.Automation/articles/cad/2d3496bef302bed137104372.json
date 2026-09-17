@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.DrillingHolePrimitive.-ctor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.DrillingHolePrimitive.-ctor.html",
+  "sha256": "b3405b85ce2d3300f5d35fe498c5a9da1951822878ce1215ad4efb857b71c174",
+  "text": "# Constructor DrillingHolePrimitive\n\n#### DrillingHolePrimitive(SmartReal, SmartReal, DrillingHolePrimitiveBottomType)\n\nInitializes a new instance of a blind DrillingHolePrimitive class.\n\n##### Declaration\n\n```\npublic DrillingHolePrimitive(SmartReal inDiameter, SmartReal inDepth, DrillingHolePrimitiveBottomType inBottomType)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  SmartReal |  inDiameter |   |  \n \n|  SmartReal |  inDepth |   |  \n \n|  DrillingHolePrimitiveBottomType |  inBottomType |   |  \n\n#### DrillingHolePrimitive(SmartReal)\n\nInitializes a new instance of a through DrillingHolePrimitive class.\n\n##### Declaration\n\n```\npublic DrillingHolePrimitive(SmartReal inDiameter)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  SmartReal |  inDiameter |   |\n",
+  "markdown": "markdown/cad/2d3496bef302bed137104372.md",
+  "originalHtml": "html/cad/2d3496bef302bed137104372.html"
+}

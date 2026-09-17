@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.ExportViewerPackage.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.ExportViewerPackage.html",
+  "sha256": "5501eab540d99190d017f7ad64b3f8ea6575524e81a50f37f19933d46e8cdf7b",
+  "text": "# Method ExportViewerPackage\n\n#### ExportViewerPackage(List<PdmObjectId>, bool, bool, bool, string)\n\nExports a viewer package.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nvoid ExportViewerPackage(List<PdmObjectId> inObjectIds, bool inExportsForDelivery, bool inExportsIncrementalPackage, bool inAllowsMeasurement, string inFileFullPath)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  List<PdmObjectId> |  inObjectIds |  PDM object identifiers.  |  \n \n|  bool |  inExportsForDelivery |  Whether exports for delivery.  |  \n \n|  bool |  inExportsIncrementalPackage |  Whether exports an incremental package.  |  \n \n|  bool |  inAllowsMeasurement |  Whether allows measurement.  |  \n \n|  string |  inFileFullPath |  Full path of the exported package, with \".TopPkgViw\" extension.  |  \n\n##### Remarks\n\nThe package produced by this method may be imported in TopSolid'Viewer.\n \nThis method is available since v7.10.\n",
+  "markdown": "markdown/pdmexplorer/35bc3991e025074c08778133.md",
+  "originalHtml": "html/pdmexplorer/35bc3991e025074c08778133.html"
+}

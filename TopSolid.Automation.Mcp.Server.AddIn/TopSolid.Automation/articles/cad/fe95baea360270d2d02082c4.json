@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IUnfoldings.SetPartToUnfold.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IUnfoldings.SetPartToUnfold.html",
+  "sha256": "047688d902c223db2176e8b42bc7e54797f8ed0918555cf7217a7430eed82a1d",
+  "text": "# Method SetPartToUnfold\n\n#### SetPartToUnfold(DocumentId, ElementId, ElementId)\n\nSets the part to unfold.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 300, 60)]\nvoid SetPartToUnfold(DocumentId inDocumentId, ElementId inRepresentationId, ElementId inShapeId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the unfolding document to modify.  |  \n \n|  ElementId |  inRepresentationId |  Identifier of the representation to consider into the part document to include.  |  \n \n|  ElementId |  inShapeId |  Identifier of the shape entity to unfold, or empty for first shape entity of the representation.  |  \n\n##### Remarks\n\nThis method is available since v7.10.300.60.\n",
+  "markdown": "markdown/cad/fe95baea360270d2d02082c4.md",
+  "originalHtml": "html/cad/fe95baea360270d2d02082c4.html"
+}

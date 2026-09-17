@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMaterials.GetRefractiveIndex.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMaterials.GetRefractiveIndex.html",
+  "sha256": "3e49a65643381231fc6da24418ed0c21e3b7879e34def3fc54140f4b6cf807fd",
+  "text": "# Method GetRefractiveIndex\n\n#### GetRefractiveIndex(DocumentId)\n\nGets the refractive index.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 400, 100)]\ndouble GetRefractiveIndex(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  double |   |  \n\n##### Remarks\n\nThis method is available since v7.16.\n",
+  "markdown": "markdown/cad/e194e334c1dadd74e459fec8.md",
+  "originalHtml": "html/cad/e194e334c1dadd74e459fec8.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.IDraftings.CreateDocument.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.IDraftings.CreateDocument.html",
+  "sha256": "911e6bd9d4c268345e751b0f962cba5a780bad4a5b118d74ba491238d5280f75",
+  "text": "# Method CreateDocument\n\n#### CreateDocument(PdmObjectId, DocumentId, DocumentId)\n\nCreates a drafting document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nPdmObjectId CreateDocument(PdmObjectId inContainerId, DocumentId inTemplateId, DocumentId inSourceId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inContainerId |  Identifier of container.  |  \n \n|  DocumentId |  inTemplateId |  Template document.  |  \n \n|  DocumentId |  inSourceId |  Source document.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  PdmObjectId |   |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/drafting/c79aab4c55d99f1f5fd85ae0.md",
+  "originalHtml": "html/drafting/c79aab4c55d99f1f5fd85ae0.html"
+}

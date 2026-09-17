@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.GetPartNumberParameter.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.GetPartNumberParameter.html",
+  "sha256": "9bddc28988990a8a2d353f66da79edb056a74b9bd432049886189d5fd725eb2d",
+  "text": "# Method GetPartNumberParameter\n\n#### GetPartNumberParameter(DocumentId)\n\nGets the part number parameter entity of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nElementId GetPartNumberParameter(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the part number parameter entity found.  |  \n\n##### Remarks\n\nThe part number parameter is a text parameter, its value may be obtained and modified using the GetTextValue(ElementId) and SetTextValue(ElementId, string) methods.\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/3d54f40f137d44479349b1c2.md",
+  "originalHtml": "html/kernel/3d54f40f137d44479349b1c2.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IParameters.GetEnumTypeName.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IParameters.GetEnumTypeName.html",
+  "sha256": "ae1e1743f520c7aa5df252fcc1043b5f42fc4e25fdac99d1277ec6dd5970e6be",
+  "text": "# Method GetEnumTypeName\n\n#### GetEnumTypeName(ParameterId)\n\nGets the enum type name corresponding to the parameter.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nstring GetEnumTypeName(ParameterId inParameterId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ParameterId |  inParameterId |  Identifier of the parameter to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  Enum type name corresponding to the parameter.  |  \n\n##### Remarks\n\nAn integer parameter can hold a value taken from an enumeration. This function will give the enumeration type full name (like TopSolid.Cam.NC.Kernel.common.DrillingType) for later usage. If the parameter is not containing an enum value, the string will be empty.\n",
+  "markdown": "markdown/cam/4b7cda74aa1e64d0c3f2aed1.md",
+  "originalHtml": "html/cam/4b7cda74aa1e64d0c3f2aed1.html"
+}

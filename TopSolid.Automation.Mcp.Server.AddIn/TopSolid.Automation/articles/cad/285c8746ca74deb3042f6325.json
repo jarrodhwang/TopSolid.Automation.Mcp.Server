@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMechanisms.GetMechanismStage.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMechanisms.GetMechanismStage.html",
+  "sha256": "b5e1b58b2c102827a34937b300f9ab81f961a7be3461759572166fc044e97c89",
+  "text": "# Method GetMechanismStage\n\n#### GetMechanismStage(DocumentId)\n\nGets the mechanism stage operation of an assembly document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nElementId GetMechanismStage(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the mechanism stage operation found, or Empty if the assembly is not a mechanism.  |  \n\n##### Remarks\n\nThis method is available since v7.8.\n",
+  "markdown": "markdown/cad/285c8746ca74deb3042f6325.md",
+  "originalHtml": "html/cad/285c8746ca74deb3042f6325.html"
+}

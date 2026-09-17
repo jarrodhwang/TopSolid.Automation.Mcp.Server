@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ISketches3D.MakeItemInternal.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ISketches3D.MakeItemInternal.html",
+  "sha256": "7566a11be00b7702e9b9842d7b5fb68994bfe8c92741d2f405bde5c618793c92",
+  "text": "# Method MakeItemInternal\n\n#### MakeItemInternal(ElementItemId)\n\nMakes a segment or a vertex internal in the ModifiedSketch.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 201, 80)]\nvoid MakeItemInternal(ElementItemId inItemId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementItemId |  inItemId |  Identifier of the segment or the vertex to modify.  |  \n\n##### Remarks\n\nStartModification(ElementId) must be called before calling this method.\n \nThis method is available since v7.7.201.80.\n",
+  "markdown": "markdown/kernel/9d5ddfa31dc293288d62b2f3.md",
+  "originalHtml": "html/kernel/9d5ddfa31dc293288d62b2f3.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IShapes.GetEdgeCurveType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IShapes.GetEdgeCurveType.html",
+  "sha256": "667dc1d819d8a321b226addb62db5b0fdfaee78a5002e14ed195d621fad0709b",
+  "text": "# Method GetEdgeCurveType\n\n#### GetEdgeCurveType(ElementItemId)\n\nGets the type of the curve attached to an edge.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nCurveType GetEdgeCurveType(ElementItemId inEdgeId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementItemId |  inEdgeId |  Identifier of the edge to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  CurveType |  Type of the curve attached to the edge.  |  \n\n##### Remarks\n\nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/015e5ccbf3d055174d5397c4.md",
+  "originalHtml": "html/kernel/015e5ccbf3d055174d5397c4.html"
+}

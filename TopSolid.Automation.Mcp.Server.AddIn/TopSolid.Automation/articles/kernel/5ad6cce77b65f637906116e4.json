@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.TopSolidHost.Layers.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.TopSolidHost.Layers.html",
+  "sha256": "09813297d2058397becde958671c930e3a3e535354577b118b6aece9c4f56264",
+  "text": "# Property Layers\n\n#### Layers\n\nGets access to layer entities, or null if not available.\n\n##### Declaration\n\n```\npublic static ILayers Layers { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ILayers |   |\n",
+  "markdown": "markdown/kernel/5ad6cce77b65f637906116e4.md",
+  "originalHtml": "html/kernel/5ad6cce77b65f637906116e4.html"
+}

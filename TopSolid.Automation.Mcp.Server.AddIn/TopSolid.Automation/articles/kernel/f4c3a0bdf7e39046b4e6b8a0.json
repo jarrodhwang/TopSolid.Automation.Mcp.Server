@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IDocuments.CloseAll.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IDocuments.CloseAll.html",
+  "sha256": "8b7b35c9019d6c75ac1b610d6fb1e107ced64b981514217abc9073ea98d166bd",
+  "text": "# Method CloseAll\n\n#### CloseAll(bool, bool)\n\nCloses all documents.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nvoid CloseAll(bool inAsksUser, bool inSaves)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  bool |  inAsksUser |  Whether to ask the user for confirmation if some documents need to be saved.  |  \n \n|  bool |  inSaves |  Whether to automatically save the documents that need it when the user is not asked for confirmation.  |  \n\n##### Remarks\n\nThis method must not be called between StartModification(string, bool) and EndModification(bool, bool) methods calls.\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/f4c3a0bdf7e39046b4e6b8a0.md",
+  "originalHtml": "html/kernel/f4c3a0bdf7e39046b4e6b8a0.html"
+}

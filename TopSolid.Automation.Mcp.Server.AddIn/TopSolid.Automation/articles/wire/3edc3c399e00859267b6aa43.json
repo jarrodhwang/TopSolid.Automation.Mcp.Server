@@ -1,0 +1,8 @@
+{
+  "path": "api/wire/TopSolid.Cam.NC.Wire.Automating.IWireCc.GetCorrectorNumber.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/wire/TopSolid.Cam.NC.Wire.Automating.IWireCc.GetCorrectorNumber.html",
+  "sha256": "aabee410b5c550ec790e6eb41c4801e3c04147fe34fd0a89c205aa547c4f3a4a",
+  "text": "# Method GetCorrectorNumber\n\n#### GetCorrectorNumber(ElementId)\n\nGet corrector number.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 160)]\nSmartInteger GetCorrectorNumber(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to modify.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartInteger |  Corrector number.  |\n",
+  "markdown": "markdown/wire/3edc3c399e00859267b6aa43.md",
+  "originalHtml": "html/wire/3edc3c399e00859267b6aa43.html"
+}

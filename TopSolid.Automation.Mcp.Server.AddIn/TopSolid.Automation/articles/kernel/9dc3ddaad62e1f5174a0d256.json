@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IUser.AskAxis3D.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IUser.AskAxis3D.html",
+  "sha256": "00a3014ef93e480385b6774ea15a10a3798ba38397509407d3041f6ba8e6aef4",
+  "text": "# Method AskAxis3D\n\n#### AskAxis3D(UserQuestion, bool, SmartAxis3D, out SmartAxis3D)\n\nAsks the user for a 3D axis.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nUserAnswerType AskAxis3D(UserQuestion inQuestion, bool inIsOriented, SmartAxis3D inSuggestion, out SmartAxis3D outAnswer)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  UserQuestion |  inQuestion |  Question asked to the user.  |  \n \n|  bool |  inIsOriented |  Whether to ask for orientation.  |  \n \n|  SmartAxis3D |  inSuggestion |  Suggested answer, or null if none.  |  \n \n|  SmartAxis3D |  outAnswer |  User answer, or null if none.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  UserAnswerType |  Type of user answer.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) may be called before calling this method to allow the user to create or modify entities during the interaction.\n \nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/9dc3ddaad62e1f5174a0d256.md",
+  "originalHtml": "html/kernel/9dc3ddaad62e1f5174a0d256.html"
+}

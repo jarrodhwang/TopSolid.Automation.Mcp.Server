@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ITextures.SetVerticalAngularScale.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ITextures.SetVerticalAngularScale.html",
+  "sha256": "e978e2d6a8401ae2c17899ba5097345f11160a38c6b0c262c4a27dc1fc0e2f37",
+  "text": "# Method SetVerticalAngularScale\n\n#### SetVerticalAngularScale(DocumentId, double)\n\nSets the vertical angular scale.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 0, 0)]\nvoid SetVerticalAngularScale(DocumentId inDocumentId, double inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  double |  inValue |  Wanted value.  |  \n\n##### Remarks\n\nThis method must be called for Cylindrical or Spherical type.\n \nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.16.\n",
+  "markdown": "markdown/kernel/f83ac5218fd5a6460a04c9dd.md",
+  "originalHtml": "html/kernel/f83ac5218fd5a6460a04c9dd.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IShapes.GetFaceRange.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IShapes.GetFaceRange.html",
+  "sha256": "1eb8f6336a65de2d9725f2750dd31faab861f61d664f1b8a24310bcda0016373",
+  "text": "# Method GetFaceRange\n\n#### GetFaceRange(ElementItemId, out double, out double, out double, out double)\n\nGets the parametric range of a face.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nvoid GetFaceRange(ElementItemId inFaceId, out double outUMin, out double outUMax, out double outVMin, out double outVMax)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementItemId |  inFaceId |  Identifier of the face to analyze.  |  \n \n|  double |  outUMin |  Minimum U parametric value.  |  \n \n|  double |  outUMax |  Maximum U parametric value.  |  \n \n|  double |  outVMin |  Minimum V parametric value.  |  \n \n|  double |  outVMax |  Maximum V parametric value.  |  \n\n##### Remarks\n\nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/82e8d3904895c2350df4bb37.md",
+  "originalHtml": "html/kernel/82e8d3904895c2350df4bb37.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cae/TopSolid.Cae.Kernel.Automating.ICAEDocuments.SetMeshTargetSize.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cae/TopSolid.Cae.Kernel.Automating.ICAEDocuments.SetMeshTargetSize.html",
+  "sha256": "a9b16ec70d6ede8e073adb7ddab28200ad55c90a25cb9b9bfb644443e6af0875",
+  "text": "# Method SetMeshTargetSize\n\n#### SetMeshTargetSize(DocumentId, SmartReal)\n\nSets target size for a mesh of an analysis preparation document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 15, 0)]\nbool SetMeshTargetSize(DocumentId inDocumentId, SmartReal inTargetValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the preparation document.  |  \n \n|  SmartReal |  inTargetValue |  Target size  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Whether mesh size has been changed.  |  \n\n##### Remarks\n\nThis method is available since v7.19.\n\n##### Examples\n \n```\n   DocumentId docId = TopSolidHost.Documents.EditedDocument;\nif (TopSolidHost.Application.StartModification(\"Change mesh Size\", false))\n{\n\ttry\n\t{\n\t\tSmartReal newSize = new SmartReal(UnitType.Length, 0.010);\n\t\tTopSolidCaeHost.Documents.SetMeshTargetSize(docId, newSize);\n\t\tTopSolidHost.Application.EndModification(true, true);\n\t}\n\tcatch\n\t{\n\t\tTopSolidHost.Application.EndModification(false, false);\n\t}\n}\n```\n",
+  "markdown": "markdown/cae/f3962c719f25bece5bf35a21.md",
+  "originalHtml": "html/cae/f3962c719f25bece5bf35a21.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdmWorkflow.ApproveAction.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdmWorkflow.ApproveAction.html",
+  "sha256": "efe8531a049772dad7886dd616c99558621205569885aaf5c7e945a9f22c614c",
+  "text": "# Method ApproveAction\n\n#### ApproveAction(PdmMajorRevisionId, string, List<string>)\n\nApproves the last pending workflow action of a major revision.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 14, 248, 0)]\nvoid ApproveAction(PdmMajorRevisionId inMajorRevisionId, string inComment, List<string> inEmailAddresses)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmMajorRevisionId |  inMajorRevisionId |  Major revision to approve action on.  |  \n \n|  string |  inComment |  Comment.  |  \n \n|  List<string> |  inEmailAddresses |  Additional e-mail addresses to notify.  |  \n\n##### Remarks\n\nThis method is available since v7.14.248.000.\n",
+  "markdown": "markdown/kernel/ad55769f44554d77a39db470.md",
+  "originalHtml": "html/kernel/ad55769f44554d77a39db470.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdmSecurity.IsSecurityActive.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdmSecurity.IsSecurityActive.html",
+  "sha256": "8c6c0fe51d8ba4499854e9774312c7030c5637fd103b2986e68c1e71a7aca7f9",
+  "text": "# Method IsSecurityActive\n\n#### IsSecurityActive()\n\nTells if a security is globally activated.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nbool IsSecurityActive()\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Global security is activated.  |  \n\n##### Remarks\n\nThis method is available since v7.8.302.060.\n",
+  "markdown": "markdown/pdmexplorer/9b733fb9b3372ff9d011941e.md",
+  "originalHtml": "html/pdmexplorer/9b733fb9b3372ff9d011941e.html"
+}

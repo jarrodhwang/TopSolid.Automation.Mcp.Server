@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IDocuments.SaveAs.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IDocuments.SaveAs.html",
+  "sha256": "edf9e9c90f58c95a82f1b15c21a46c31333cb57f9a12822c1b695897acb08323",
+  "text": "# Method SaveAs\n\n#### SaveAs(DocumentId, PdmObjectId, string)\n\nSaves a document as a new document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 0, 0)]\nDocumentId SaveAs(DocumentId inDocumentId, PdmObjectId inOwnerId, string inName)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Document identifier to save as.  |  \n \n|  PdmObjectId |  inOwnerId |  Owner object identifier.  |  \n \n|  string |  inName |  Name of the created document.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  DocumentId |  Created document identifier.  |  \n\n##### Remarks\n\nThis method is available since v7.11.\n",
+  "markdown": "markdown/kernel/de92167a7f42c03f4ab470f1.md",
+  "originalHtml": "html/kernel/de92167a7f42c03f4ab470f1.html"
+}

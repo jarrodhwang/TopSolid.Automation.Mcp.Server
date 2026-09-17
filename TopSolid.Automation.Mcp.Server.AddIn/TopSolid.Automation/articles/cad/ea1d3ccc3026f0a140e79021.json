@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMultiLayer.GetPartNumber.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMultiLayer.GetPartNumber.html",
+  "sha256": "ec6b6c07d4d8f9fc2af634d927aa5c6bab49353b7909ef177a5685235da06890",
+  "text": "# Method GetPartNumber\n\n#### GetPartNumber(DocumentId)\n\nGets the multi layer material document part number\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 0, 0)]\nstring GetPartNumber(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  The multi layer material part number.  |  \n\n##### Remarks\n\nThis method is available since v7.19.\n",
+  "markdown": "markdown/cad/ea1d3ccc3026f0a140e79021.md",
+  "originalHtml": "html/cad/ea1d3ccc3026f0a140e79021.html"
+}

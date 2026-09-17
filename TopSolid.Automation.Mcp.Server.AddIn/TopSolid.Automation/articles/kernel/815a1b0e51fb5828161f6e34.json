@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.TopSolidHost.Documents.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.TopSolidHost.Documents.html",
+  "sha256": "1bf69918b969dd755dd0011f75311952184cb1c4f50838c899c7ebe0a7b281ec",
+  "text": "# Property Documents\n\n#### Documents\n\nGets access to documents, or null if not available.\n\n##### Declaration\n\n```\npublic static IDocuments Documents { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  IDocuments |   |\n",
+  "markdown": "markdown/kernel/815a1b0e51fb5828161f6e34.md",
+  "originalHtml": "html/kernel/815a1b0e51fb5828161f6e34.html"
+}

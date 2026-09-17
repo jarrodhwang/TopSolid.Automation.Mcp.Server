@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IElements.GetParent.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IElements.GetParent.html",
+  "sha256": "60e96883c2d34a678c566a832ff4e8143fbeaf2026ef20254216b1d68ed83cd8",
+  "text": "# Method GetParent\n\n#### GetParent(ElementId)\n\nGets the parent operation of an element.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nElementId GetParent(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the parent operation, or Empty if the element does not have a parent.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/feb15e62051cddcd3fd0f78d.md",
+  "originalHtml": "html/kernel/feb15e62051cddcd3fd0f78d.html"
+}

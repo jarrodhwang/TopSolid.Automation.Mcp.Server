@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.ParameterId.-ctor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.ParameterId.-ctor.html",
+  "sha256": "6dc2d8ca2bc4c3692b06e6073170abffc74df8b4a65323366d14502690658c4c",
+  "text": "# Constructor ParameterId\n\n#### ParameterId(ElementExId, string)\n\nInitializes a new instance of the ParameterId structure.\n\n##### Declaration\n\n```\npublic ParameterId(ElementExId inElementId, string inName)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementExId |  inElementId |  Element owner of the parameter.  |  \n \n|  string |  inName |  Full name of the parameter, including operation type.  |\n",
+  "markdown": "markdown/cam/0cdb5d9c54ad4e75894fae5d.md",
+  "originalHtml": "html/cam/0cdb5d9c54ad4e75894fae5d.html"
+}

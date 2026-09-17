@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.ElementExId.-ctor.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.ElementExId.-ctor.html",
+  "sha256": "9d650b650626f12286f5237f8d9c8ac0e5238d21d41a59cf6d3364ca4aa73faf",
+  "text": "# Constructor ElementExId\n\n#### ElementExId(ElementId)\n\nInitializes a new instance of the ParameterId structure.\n\n##### Declaration\n\n```\npublic ElementExId(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Element owner of the parameter.  |  \n\n#### ElementExId(Guid)\n\nInitializes a new instance of the ParameterId structure.\n\n##### Declaration\n\n```\npublic ElementExId(Guid inId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  Guid |  inId |  Id of preparation operation.  |\n",
+  "markdown": "markdown/cam/19fe90059fbc4d9c7aaf18ea.md",
+  "originalHtml": "html/cam/19fe90059fbc4d9c7aaf18ea.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.IAnnotations.GetSurfaceFinishAnnotations.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.IAnnotations.GetSurfaceFinishAnnotations.html",
+  "sha256": "1ae996a813ffe152a969e339fab77bcf5a6b7b465606cfe7966eaa0a28e1a50a",
+  "text": "# Method GetSurfaceFinishAnnotations\n\n#### GetSurfaceFinishAnnotations(ElementId)\n\nGets surface finish annotations from a drawing view\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 255, 0)]\nList<ElementId> GetSurfaceFinishAnnotations(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |   |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementId> |  The list of surface finish annotations.  |\n",
+  "markdown": "markdown/drafting/82761c043a73d82da7d8ec7e.md",
+  "originalHtml": "html/drafting/82761c043a73d82da7d8ec7e.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IGeometries3D.SetSectionPublishingDefinition.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IGeometries3D.SetSectionPublishingDefinition.html",
+  "sha256": "9e039d4e6d75a2827295307dcd91c3fa95e3ce0b1e8a8c00655f3974e9d34a2e",
+  "text": "# Method SetSectionPublishingDefinition\n\n#### SetSectionPublishingDefinition(ElementId, SmartSection3D)\n\nSets the definition of a section publishing entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 302, 80)]\nvoid SetSectionPublishingDefinition(ElementId inElementId, SmartSection3D inDefinition)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the publishing entity to modify.  |  \n \n|  SmartSection3D |  inDefinition |  Publishing new definition.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.8.302.80.\n",
+  "markdown": "markdown/kernel/33996bf60579461771b2d4db.md",
+  "originalHtml": "html/kernel/33996bf60579461771b2d4db.html"
+}

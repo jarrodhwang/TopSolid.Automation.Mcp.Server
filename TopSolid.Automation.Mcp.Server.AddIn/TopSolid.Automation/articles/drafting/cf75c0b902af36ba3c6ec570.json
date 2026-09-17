@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.IStyles.GetStyles.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.IStyles.GetStyles.html",
+  "sha256": "8cb1e611b333f7f8c80ffe499ba2c51c3f53325ddd7f4b45e0921e3847e2d25e",
+  "text": "# Method GetStyles\n\n#### GetStyles(DocumentId)\n\nFetch styles from drafting documents.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 255, 0)]\nList<ElementId> GetStyles(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Drafting document to study  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementId> |  Styles inside drafting document as a list.  |  \n\n##### Remarks\n\nThis interface is available since v7.20.\n",
+  "markdown": "markdown/drafting/cf75c0b902af36ba3c6ec570.md",
+  "originalHtml": "html/drafting/cf75c0b902af36ba3c6ec570.html"
+}

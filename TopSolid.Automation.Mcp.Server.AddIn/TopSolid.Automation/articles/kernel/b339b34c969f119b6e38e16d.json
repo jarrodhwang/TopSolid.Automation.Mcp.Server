@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.GetRealParameterPossibleValues.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.GetRealParameterPossibleValues.html",
+  "sha256": "4f714d2878d6499e4825d327ad66a0405394e5881a9a5b5e7e6583a360947091",
+  "text": "# Method GetRealParameterPossibleValues\n\n#### GetRealParameterPossibleValues(ElementId)\n\nGets the real parameter possibles values.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 17, 0, 0)]\nList<RealProperty> GetRealParameterPossibleValues(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the parameter.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<RealProperty> |  The possibles values.  |  \n\n##### Remarks\n\nThis method is available since v7.17.000.000.\n",
+  "markdown": "markdown/kernel/b339b34c969f119b6e38e16d.md",
+  "originalHtml": "html/kernel/b339b34c969f119b6e38e16d.html"
+}

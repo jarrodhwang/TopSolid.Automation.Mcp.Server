@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.GetUserEnumerationValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.GetUserEnumerationValue.html",
+  "sha256": "2c784d13f1be709bda2514b025e77360fd26349fbb7fcc50206602d092dda863",
+  "text": "# Method GetUserEnumerationValue\n\n#### GetUserEnumerationValue(ElementId)\n\nGets the value of a user enumeration parameter.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nint GetUserEnumerationValue(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the parameter to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  int |  Value of the parameter.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/63a58d72e201e71e6c35f4ab.md",
+  "originalHtml": "html/kernel/63a58d72e201e71e6c35f4ab.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.GetLifeCycleMainState.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.GetLifeCycleMainState.html",
+  "sha256": "337992378e40b68c816f77a4f87ad1caccc286a915f785943f1fd598e7f9ac0c",
+  "text": "# Method GetLifeCycleMainState\n\n#### GetLifeCycleMainState(PdmObjectId)\n\nGets the life cycle main state of an object.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 9, 302, 160)]\nPdmLifeCycleMainState GetLifeCycleMainState(PdmObjectId inObjectId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  Identifier of object to get life cycle main state.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  PdmLifeCycleMainState |  Life cycle of the document.  |  \n\n##### Remarks\n\nThis method is available since v7.9.302.160.\n",
+  "markdown": "markdown/kernel/43c5600acf4f73ef7b84704f.md",
+  "originalHtml": "html/kernel/43c5600acf4f73ef7b84704f.html"
+}

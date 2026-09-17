@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.PdmSecurityUserOrGroupPermissions.ChangeLifeCycleStatePermission.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.PdmSecurityUserOrGroupPermissions.ChangeLifeCycleStatePermission.html",
+  "sha256": "9f8850b972abeec1eec2bcea0cf2d6807047f91d06c03e4f70f2bc84aaf2b21c",
+  "text": "# Field ChangeLifeCycleStatePermission\n\nEnable user to change life cycle of a document.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic PdmSecurityPermission ChangeLifeCycleStatePermission\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  PdmSecurityPermission |  Enable user to change life cycle of a document. |\n",
+  "markdown": "markdown/kernel/3e4e1956b148af3945c95f23.md",
+  "originalHtml": "html/kernel/3e4e1956b148af3945c95f23.html"
+}

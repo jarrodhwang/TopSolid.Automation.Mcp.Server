@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMultiLayer.SetDescription.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMultiLayer.SetDescription.html",
+  "sha256": "231f19ba4252a2b1a0c395701be299712e5362877dc900f9abaee5caafca947a",
+  "text": "# Method SetDescription\n\n#### SetDescription(DocumentId, string)\n\nSets the multi layer material document description\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 0, 0)]\nbool SetDescription(DocumentId inDocumentId, string inDescription)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  string |  inDescription |  Description value.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  True if value is correctly set.  |  \n\n##### Remarks\n\nThis method is available since v7.19.\n",
+  "markdown": "markdown/cad/3a8010db594ef590856f505d.md",
+  "originalHtml": "html/cad/3a8010db594ef590856f505d.html"
+}

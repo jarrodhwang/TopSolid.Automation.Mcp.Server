@@ -1,0 +1,8 @@
+{
+  "path": "api/wire/TopSolid.Cam.NC.Wire.Automating.IWireTechnologyDocuments.SetWireTableName.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/wire/TopSolid.Cam.NC.Wire.Automating.IWireTechnologyDocuments.SetWireTableName.html",
+  "sha256": "f19bc415685d509d01d01f542064c80b009db8ba6a0871b70e74026d2d7523c2",
+  "text": "# Method SetWireTableName\n\n#### SetWireTableName(DocumentId, SmartText)\n\nSet wire table name.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 160)]\nvoid SetWireTableName(DocumentId inDocumentId, SmartText inWireTableName)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  SmartText |  inWireTableName |  Wire table name.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n",
+  "markdown": "markdown/wire/659c06a13bdf3f9ab3b86af5.md",
+  "originalHtml": "html/wire/659c06a13bdf3f9ab3b86af5.html"
+}

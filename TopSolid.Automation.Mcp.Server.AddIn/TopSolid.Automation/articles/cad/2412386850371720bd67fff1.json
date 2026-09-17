@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMaterials.SetPlasticStrainRatio.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMaterials.SetPlasticStrainRatio.html",
+  "sha256": "dac7fdbde283899b52ee6d79c94b7d34d4ebaf5916072f6269b47fcf8a657f32",
+  "text": "# Method SetPlasticStrainRatio\n\n#### SetPlasticStrainRatio(DocumentId, double)\n\nSets Plastic Strain Ratio\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 400, 120)]\nvoid SetPlasticStrainRatio(DocumentId inDocumentId, double inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Id of the container document  |  \n \n|  double |  inValue |  The value to use  |\n",
+  "markdown": "markdown/cad/2412386850371720bd67fff1.md",
+  "originalHtml": "html/cad/2412386850371720bd67fff1.html"
+}

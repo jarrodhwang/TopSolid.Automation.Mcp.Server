@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Direction2D.IsParallelTo.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Direction2D.IsParallelTo.html",
+  "sha256": "5e078f3f0a8a73104ea05082248abac986426b76f66fb5dc6a75a2a8d18b632b",
+  "text": "# Method IsParallelTo\n\n#### IsParallelTo(Direction2D, bool)\n\nTells whether this direction is parallel to another direction.\n\n##### Declaration\n\n```\npublic bool IsParallelTo(Direction2D inDirection, bool inSense)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  Direction2D |  inDirection |  Direction to compare with.  |  \n \n|  bool |  inSense |  Sense is meaningful.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  This direction is parallel to the specified direction.  |  \n\n##### Remarks\n\nTwo directions are considered parallel if they make an angle of less than AngularPrecision.\n",
+  "markdown": "markdown/kernel/fd214e45844d7e504f125070.md",
+  "originalHtml": "html/kernel/fd214e45844d7e504f125070.html"
+}

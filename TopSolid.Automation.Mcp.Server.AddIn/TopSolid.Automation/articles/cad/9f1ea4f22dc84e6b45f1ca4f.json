@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IFinishings.CreateFinishingParameter.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IFinishings.CreateFinishingParameter.html",
+  "sha256": "a7f235839c247af047d33662fbba2d62fe6be224a4d794767c6e4e8d3d9b4bce",
+  "text": "# Method CreateFinishingParameter\n\n#### CreateFinishingParameter(DocumentId, PdmMinorRevisionId)\n\nCreates a finishing parameter into a document\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 296, 0)]\nElementId CreateFinishingParameter(DocumentId inDocumentId, PdmMinorRevisionId inPdmMinorRevisionId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Id of the container document  |  \n \n|  PdmMinorRevisionId |  inPdmMinorRevisionId |  Minor revision of the finishing document to reference  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Id of the created parameter.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.19.400.160\n",
+  "markdown": "markdown/cad/9f1ea4f22dc84e6b45f1ca4f.md",
+  "originalHtml": "html/cad/9f1ea4f22dc84e6b45f1ca4f.html"
+}

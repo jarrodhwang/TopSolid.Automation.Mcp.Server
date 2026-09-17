@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.DocumentId.op_Inequality.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.DocumentId.op_Inequality.html",
+  "sha256": "17d801ac15caccf4d8a330e1873a8d83fe51460b2dcccbbc21c7481d94ffd778",
+  "text": "# Operator operator !=\n\n#### operator !=(DocumentId, DocumentId)\n\nTells whether two document identifiers are different.\n\n##### Declaration\n\n```\npublic static bool operator !=(DocumentId inDocumentId1, DocumentId inDocumentId2)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId1 |  First document identifier.  |  \n \n|  DocumentId |  inDocumentId2 |  Second document identifier.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Document identifiers are different.  |\n",
+  "markdown": "markdown/kernel/78c79ca01957021b648b17ff.md",
+  "originalHtml": "html/kernel/78c79ca01957021b648b17ff.html"
+}

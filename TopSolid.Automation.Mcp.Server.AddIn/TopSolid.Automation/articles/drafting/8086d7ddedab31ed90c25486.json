@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.IAnnotations.GetGeometricToleranceFrameToleranceZoneType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.IAnnotations.GetGeometricToleranceFrameToleranceZoneType.html",
+  "sha256": "81f0617b95092d77ffdaf087d336d2708edcd54e83e06832c213f9d8fabf7b60",
+  "text": "# Method GetGeometricToleranceFrameToleranceZoneType\n\n#### GetGeometricToleranceFrameToleranceZoneType(ElementId, int)\n\nGets the tolerance zone type of a geometric tolerance frame.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 17, 0, 0)]\nToleranceZoneType GetGeometricToleranceFrameToleranceZoneType(ElementId inGeometricTolerance, int inToleranceFrameIndex)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inGeometricTolerance |  Identifier of the element to analyze.  |  \n \n|  int |  inToleranceFrameIndex |  Index of the tolerance frame.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ToleranceZoneType |  The tolerance zone type.  |  \n\n##### Remarks\n\nThis method is available since v7.17.\n",
+  "markdown": "markdown/drafting/8086d7ddedab31ed90c25486.md",
+  "originalHtml": "html/drafting/8086d7ddedab31ed90c25486.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IAssemblies.GetNodeBomIndex.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IAssemblies.GetNodeBomIndex.html",
+  "sha256": "0454e74ceb9b4cbf6ee322d9333364a6fe2ebc383544e4049541b3c6535de354",
+  "text": "# Method GetNodeBomIndex\n\n#### GetNodeBomIndex(ElementId)\n\nGets the bill of material index attached to a specified assembly node entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 12, 0, 0)]\nstring GetNodeBomIndex(ElementId inNodeId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inNodeId |  Identifier of the assembly node entity (assembly or part occurrence, local part, ...) to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  Bill of material index attached, or null if none.  |  \n\n##### Remarks\n\nThis method is available since v7.12.\n",
+  "markdown": "markdown/cad/dea5f1e8f0f1e373e1cb0c60.md",
+  "originalHtml": "html/cad/dea5f1e8f0f1e373e1cb0c60.html"
+}

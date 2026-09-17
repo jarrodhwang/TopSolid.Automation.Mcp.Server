@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.TopSolidHostInstance.PdmSecurity.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.TopSolidHostInstance.PdmSecurity.html",
+  "sha256": "e789ab23347661c84cd67325a18fc6458be41896067b566f7344be8baa4b1518",
+  "text": "# Property PdmSecurity\n\n#### PdmSecurity\n\nGets access to the PDM security, or null if not available.\n\n##### Declaration\n\n```\npublic IPdmSecurity PdmSecurity { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  IPdmSecurity |   |\n",
+  "markdown": "markdown/kernel/f4bb12c0894483977dffb78a.md",
+  "originalHtml": "html/kernel/f4bb12c0894483977dffb78a.html"
+}

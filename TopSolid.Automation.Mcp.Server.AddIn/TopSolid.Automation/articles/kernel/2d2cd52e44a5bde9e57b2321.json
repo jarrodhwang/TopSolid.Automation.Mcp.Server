@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IGeometries3D.SetFramePublishingDefinition.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IGeometries3D.SetFramePublishingDefinition.html",
+  "sha256": "0c478a24eaaf18d37ac6cf0f2146e7b5bfc997365400888910588f5ace121dc5",
+  "text": "# Method SetFramePublishingDefinition\n\n#### SetFramePublishingDefinition(ElementId, SmartFrame3D)\n\nSets the definition of a frame publishing entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nvoid SetFramePublishingDefinition(ElementId inElementId, SmartFrame3D inDefinition)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the publishing entity to modify.  |  \n \n|  SmartFrame3D |  inDefinition |  Publishing new definition.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.8.\n",
+  "markdown": "markdown/kernel/2d2cd52e44a5bde9e57b2321.md",
+  "originalHtml": "html/kernel/2d2cd52e44a5bde9e57b2321.html"
+}

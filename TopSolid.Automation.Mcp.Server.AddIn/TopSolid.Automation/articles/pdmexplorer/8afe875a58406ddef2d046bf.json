@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IErp.GetDocumentProperties.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IErp.GetDocumentProperties.html",
+  "sha256": "90729589708282b2e185721363fbb88ff5c7ead43f8f850236a83e280020ae72",
+  "text": "# Method GetDocumentProperties\n\n#### GetDocumentProperties(ErpPdmId, string)\n\nGets document properties, in target culture.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 222, 80)]\nList<ErpProperty> GetDocumentProperties(ErpPdmId inPdmId, string inCulture)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ErpPdmId |  inPdmId |  Erp identifier of the object  |  \n \n|  string |  inCulture |  culture to use, only available : 'en' or 'fr'  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ErpProperty> |  The list of properties data  |\n",
+  "markdown": "markdown/pdmexplorer/8afe875a58406ddef2d046bf.md",
+  "originalHtml": "html/pdmexplorer/8afe875a58406ddef2d046bf.html"
+}

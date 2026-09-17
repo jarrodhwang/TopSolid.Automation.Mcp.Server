@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Vector3D.V0.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Vector3D.V0.html",
+  "sha256": "2e9b1f2beb67d2e9bbf59b2ad34325d55af04b04699b45fcb809478b6cb8b771",
+  "text": "# Field V0\n\nNull vector, i.e. (0,0,0).\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\npublic static readonly Vector3D V0\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Vector3D |  Null vector, i.e. (0,0,0). |\n",
+  "markdown": "markdown/kernel/5298438adf4013cab4273919.md",
+  "originalHtml": "html/kernel/5298438adf4013cab4273919.html"
+}

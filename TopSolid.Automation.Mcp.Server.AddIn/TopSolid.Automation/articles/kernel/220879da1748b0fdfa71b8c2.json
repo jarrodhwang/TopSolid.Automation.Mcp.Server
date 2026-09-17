@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IVisualization3D.RedrawView.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IVisualization3D.RedrawView.html",
+  "sha256": "cbe296c2181cb9c611b51e1e7cdceb23ba01e04fb2aaa78160d0eb2efdf30673",
+  "text": "# Method RedrawView\n\n#### RedrawView(DocumentId, int)\n\nRedraws a graphic view of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nvoid RedrawView(DocumentId inDocumentId, int inViewId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  int |  inViewId |  Identifier of the graphic view to redraw.  |  \n\n##### Remarks\n\nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/220879da1748b0fdfa71b8c2.md",
+  "originalHtml": "html/kernel/220879da1748b0fdfa71b8c2.html"
+}

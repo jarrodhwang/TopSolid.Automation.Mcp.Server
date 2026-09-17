@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.GetAuthorParameter.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.GetAuthorParameter.html",
+  "sha256": "f0c639655b8dee79237e6564c380d4cc88cd8e85a95d7c233216143d56d9e32b",
+  "text": "# Method GetAuthorParameter\n\n#### GetAuthorParameter(DocumentId)\n\nGets the author name parameter entity of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nElementId GetAuthorParameter(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the author name parameter entity found.  |  \n\n##### Remarks\n\nThe author name parameter is a text parameter, its value may be obtained and modified using the GetTextValue(ElementId) and SetTextValue(ElementId, string) methods.\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/c36a07e755759d59cdb199f1.md",
+  "originalHtml": "html/kernel/c36a07e755759d59cdb199f1.html"
+}

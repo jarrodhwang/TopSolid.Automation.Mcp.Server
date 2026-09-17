@@ -1,0 +1,8 @@
+{
+  "path": "api/electrode/TopSolid.Cad.Electrode.Automating.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/electrode/TopSolid.Cad.Electrode.Automating.html",
+  "sha256": "2d0282d0a41a2b498996b6b4ee5c82f77249b4fa92a64414ad78e24b4fe5cb17",
+  "text": "# Namespace TopSolid.Cad.Electrode.Automating\n\n###  Classes \n\n#### TopSolidElectrodeHost\n \nRepresents TopSolid'Electrode host providing WCF services for automating.\n\n#### TopSolidElectrodeHostInstance\n \nRepresents a TopSolid'Electrode host instance providing WCF services for automating.\n\n###  Interfaces \n\n#### IElectrodes\n \nGives access to electrodes.\n",
+  "markdown": "markdown/electrode/7862b743e2d8f2d1b1dd3b8f.md",
+  "originalHtml": "html/electrode/7862b743e2d8f2d1b1dd3b8f.html"
+}

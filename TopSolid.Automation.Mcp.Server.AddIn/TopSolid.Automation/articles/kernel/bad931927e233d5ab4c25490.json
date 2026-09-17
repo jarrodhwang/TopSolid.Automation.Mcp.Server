@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.CheckInSeveral.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.CheckInSeveral.html",
+  "sha256": "30b5af9bc19ddaa9344a41daa17c013dc2c8f0e28ad07e70f4058a34441d2799",
+  "text": "# Method CheckInSeveral\n\n#### CheckInSeveral(List<PdmObjectId>, bool)\n\nChecks-in several objects.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nvoid CheckInSeveral(List<PdmObjectId> inObjectIds, bool inRecurses)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  List<PdmObjectId> |  inObjectIds |  PDM object identifiers.  |  \n \n|  bool |  inRecurses |  Tells if to recurse on objects contained.  |  \n\n##### Remarks\n\nThis method must not be called between StartModification(string, bool) and EndModification(bool, bool) methods calls.\n \nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/bad931927e233d5ab4c25490.md",
+  "originalHtml": "html/kernel/bad931927e233d5ab4c25490.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IUser.AskFaceList.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IUser.AskFaceList.html",
+  "sha256": "32cac19b5295089886e67e9623cc34c0bb177848c8f5561dcf60b8b8ec7bc315",
+  "text": "# Method AskFaceList\n\n#### AskFaceList(UserQuestion, List<ElementItemId>, out List<ElementItemId>)\n\nAsks the user for a face list.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 13, 0, 0)]\nUserAnswerType AskFaceList(UserQuestion inQuestion, List<ElementItemId> inSuggestions, out List<ElementItemId> outAnswer)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  UserQuestion |  inQuestion |  Question asked to the user.  |  \n \n|  List<ElementItemId> |  inSuggestions |  Suggested answer, or null if none.  |  \n \n|  List<ElementItemId> |  outAnswer |  User answer, or null if none.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  UserAnswerType |  Type of user answer.  |  \n\n##### Remarks\n\nThis method is available since v7.13.\n",
+  "markdown": "markdown/kernel/f5bf4badb9cb486d1007b298.md",
+  "originalHtml": "html/kernel/f5bf4badb9cb486d1007b298.html"
+}

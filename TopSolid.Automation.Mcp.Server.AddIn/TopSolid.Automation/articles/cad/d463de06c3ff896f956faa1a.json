@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.RigidGroupDrivingType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.RigidGroupDrivingType.html",
+  "sha256": "5fe3b1d151380ab2fe1b74a051fff5f74f9aa102a9dc958ce393228f8e715130",
+  "text": "# Enum RigidGroupDrivingType\n\nDefines the various types of rigid group driving.\n\n###### Namespace: TopSolid.Cad.Design.Automating\n\n###### Assembly: TopSolid.Cad.Design.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\npublic enum RigidGroupDrivingType\n```\n\n##### Remarks\n\nThis enum is available since v7.6.\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  Absolute |  Absolute displacement driving.  |  \n \n|  Incremental |  Incremental displacement driving.  |  \n \n|  None |  No driving.  |  \n \n|  Relative |  Relative displacement driving.  |\n",
+  "markdown": "markdown/cad/d463de06c3ff896f956faa1a.md",
+  "originalHtml": "html/cad/d463de06c3ff896f956faa1a.html"
+}

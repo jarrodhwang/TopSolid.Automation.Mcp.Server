@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IShapes.GetFaceEdges.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IShapes.GetFaceEdges.html",
+  "sha256": "a3d5f0546f42fab0cd83ef5cdda32480ddeb24d58a145187df133466b7d69af3",
+  "text": "# Method GetFaceEdges\n\n#### GetFaceEdges(ElementItemId)\n\nGets the edges of a face.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nList<ElementItemId> GetFaceEdges(ElementItemId inFaceId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementItemId |  inFaceId |  Identifier of the face to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementItemId> |  Identifiers of the edges of the face.  |  \n\n##### Remarks\n\nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/2d292586139790e56bfaaebf.md",
+  "originalHtml": "html/kernel/2d292586139790e56bfaaebf.html"
+}

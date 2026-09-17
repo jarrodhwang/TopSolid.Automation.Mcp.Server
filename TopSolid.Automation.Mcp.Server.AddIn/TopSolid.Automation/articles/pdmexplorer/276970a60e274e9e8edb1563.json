@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.CameraViewOrientation.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.CameraViewOrientation.html",
+  "sha256": "5a9d1fe6278d5bcbf628788defd9d3859645262531589d383502f4e32339e54d",
+  "text": "# Enum CameraViewOrientation\n\nDefines the various camera orientations\n\n###### Namespace: TopSolid.Pdm.Explorer.Automating\n\n###### Assembly: TopSolid.Pdm.Explorer.Automating.dll\n\n##### Syntax\n\n```\npublic enum CameraViewOrientation\n```\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  Back |  Back  |  \n \n|  Bottom |  Bottom  |  \n \n|  Front |  Front  |  \n \n|  Isometric |  Isometric  |  \n \n|  JIS |  JIS  |  \n \n|  Left |  Left.  |  \n \n|  None |  None  |  \n \n|  Perspective |  Perspective  |  \n \n|  Right |  Right.  |  \n \n|  Top |  Top  |\n",
+  "markdown": "markdown/pdmexplorer/276970a60e274e9e8edb1563.md",
+  "originalHtml": "html/pdmexplorer/276970a60e274e9e8edb1563.html"
+}

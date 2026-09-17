@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IPrograms.SetHeader.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IPrograms.SetHeader.html",
+  "sha256": "5d5df5295c8f286cfd39c3a519924597add0e6c25ca1d14a46963c12f1f1bd3b",
+  "text": "# Method SetHeader\n\n#### SetHeader(ElementId, SmartText)\n\nSet program header.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 180)]\nvoid SetHeader(ElementId inProgramId, SmartText inHeader)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inProgramId |  Identifier of the NC program to modify.  |  \n \n|  SmartText |  inHeader |  Program header.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n",
+  "markdown": "markdown/cam/a0413359208c3fa63cc3d2d7.md",
+  "originalHtml": "html/cam/a0413359208c3fa63cc3d2d7.html"
+}

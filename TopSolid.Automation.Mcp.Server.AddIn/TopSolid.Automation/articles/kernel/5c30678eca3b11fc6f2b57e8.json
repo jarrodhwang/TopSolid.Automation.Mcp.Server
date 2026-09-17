@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IClassifications.GetClassErpId.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IClassifications.GetClassErpId.html",
+  "sha256": "89fd3a0a2a0b9a7ebcca6005bb92215048a9c6bc1ff035dc3bc0c509678db22f",
+  "text": "# Method GetClassErpId\n\n#### GetClassErpId(ElementId)\n\nGets the ERP identifier of a specified class entity.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nstring GetClassErpId(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the class entity to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  Class ERP identifier or empty if none.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/kernel/5c30678eca3b11fc6f2b57e8.md",
+  "originalHtml": "html/kernel/5c30678eca3b11fc6f2b57e8.html"
+}

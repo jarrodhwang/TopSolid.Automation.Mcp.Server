@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.DrillingCounterSinkingPrimitive.SetDiameterDepthMode.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.DrillingCounterSinkingPrimitive.SetDiameterDepthMode.html",
+  "sha256": "8d3c4c8495c53cdeb5bc301b9e0e85752c3f4b7faa5eddb216c29b366998a38b",
+  "text": "# Method SetDiameterDepthMode\n\n#### SetDiameterDepthMode(SmartReal, SmartReal)\n\nSet the DiameterinDepth mode.\n\n##### Declaration\n\n```\npublic void SetDiameterDepthMode(SmartReal inDiameter, SmartReal inDepth)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  SmartReal |  inDiameter |   |  \n \n|  SmartReal |  inDepth |   |\n",
+  "markdown": "markdown/cad/79802012a4abd85d318b63e7.md",
+  "originalHtml": "html/cad/79802012a4abd85d318b63e7.html"
+}

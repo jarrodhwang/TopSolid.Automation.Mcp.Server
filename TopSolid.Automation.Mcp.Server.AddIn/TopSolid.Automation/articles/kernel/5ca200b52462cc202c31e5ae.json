@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IElements.GetPropertyIntegerValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IElements.GetPropertyIntegerValue.html",
+  "sha256": "9e01298cefcde6bc020e8a7d4a8805a0dc1e98b9c0d9e3d02b270571e65378b7",
+  "text": "# Method GetPropertyIntegerValue\n\n#### GetPropertyIntegerValue(ElementId, string)\n\nGets the value of an element integer property.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 300, 60)]\nint GetPropertyIntegerValue(ElementId inElementId, string inFullName)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to analyze.  |  \n \n|  string |  inFullName |  Full name of the element integer property to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  int |  Value of the property.  |  \n\n##### Remarks\n\nThis method is available since v7.8.300.60.\n",
+  "markdown": "markdown/kernel/5ca200b52462cc202c31e5ae.md",
+  "originalHtml": "html/kernel/5ca200b52462cc202c31e5ae.html"
+}

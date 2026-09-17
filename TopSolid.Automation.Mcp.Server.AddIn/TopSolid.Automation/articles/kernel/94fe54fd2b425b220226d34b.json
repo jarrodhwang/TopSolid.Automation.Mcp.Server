@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.TopSolidHost.ClientPort.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.TopSolidHost.ClientPort.html",
+  "sha256": "39c3e4e23e7e9cdd8cd985a000fcb685fa79eb1b8b7477cff2af1f179a5a7c6b",
+  "text": "# Property ClientPort\n\n#### ClientPort\n\nGets the client port used for receiving events when using TCP, or 0 for not managing events.\n\n##### Declaration\n\n```\npublic static int ClientPort { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  int |   |\n",
+  "markdown": "markdown/kernel/94fe54fd2b425b220226d34b.md",
+  "originalHtml": "html/kernel/94fe54fd2b425b220226d34b.html"
+}

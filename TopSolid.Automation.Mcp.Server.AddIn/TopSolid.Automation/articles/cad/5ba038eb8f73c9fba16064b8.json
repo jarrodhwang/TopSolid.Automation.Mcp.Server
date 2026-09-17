@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IBoms.IsRowActive.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IBoms.IsRowActive.html",
+  "sha256": "98026941739182b6a537183bded78d0c17264f20f33ca70ae353251cc9bd3aad",
+  "text": "# Method IsRowActive\n\n#### IsRowActive(DocumentId, int)\n\nTells whether a row of a BOM is active.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 12, 0, 0)]\nbool IsRowActive(DocumentId inDocumentId, int inRowId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the BOM document to analyze.  |  \n \n|  int |  inRowId |  Identifier of the row to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Whether the row is active.  |  \n\n##### Remarks\n\nThis method is available since v7.12.\n",
+  "markdown": "markdown/cad/5ba038eb8f73c9fba16064b8.md",
+  "originalHtml": "html/cad/5ba038eb8f73c9fba16064b8.html"
+}

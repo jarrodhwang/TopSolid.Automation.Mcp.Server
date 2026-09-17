@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IGeometries2D.GetFrames.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IGeometries2D.GetFrames.html",
+  "sha256": "d6a635e67da24636ba9a08379341c8809d060250fdf8a04455af4fca472156da",
+  "text": "# Method GetFrames\n\n#### GetFrames(DocumentId)\n\nGets the frames entities that are in the frames folder of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nList<ElementId> GetFrames(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementId> |  Frames entities found.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/c7bc426f42e66e38f22d06de.md",
+  "originalHtml": "html/kernel/c7bc426f42e66e38f22d06de.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.DeleteProjectFolder.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.DeleteProjectFolder.html",
+  "sha256": "c13297d30faf730d1144f73594540d321e13464aee49d789b8cc80c0305d91e7",
+  "text": "# Method DeleteProjectFolder\n\n#### DeleteProjectFolder(PdmProjectFolderId)\n\nDeletes an empty project folder.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nvoid DeleteProjectFolder(PdmProjectFolderId inProjectFolderId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmProjectFolderId |  inProjectFolderId |  Identifier of the project folder to delete.  |  \n\n##### Remarks\n\nIf the specified project folder was not empty, an exception is thrown.\n \nThis method is available since v7.10.\n",
+  "markdown": "markdown/pdmexplorer/1f60287007d06419e7f77001.md",
+  "originalHtml": "html/pdmexplorer/1f60287007d06419e7f77001.html"
+}

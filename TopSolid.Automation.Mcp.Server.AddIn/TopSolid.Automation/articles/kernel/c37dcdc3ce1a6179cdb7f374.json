@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IFamilies.DeleteCatalogRow.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IFamilies.DeleteCatalogRow.html",
+  "sha256": "d312caab5aa211d4dffa95c0ecb893b658d33b3994813a940aded4ebe3de2b87",
+  "text": "# Method DeleteCatalogRow\n\n#### DeleteCatalogRow(ElementId)\n\nDelete the row of the catalog cell.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 15, 0, 60)]\nvoid DeleteCatalogRow(ElementId inRow)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inRow |  Identifier of the row to delete.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.15.\n",
+  "markdown": "markdown/kernel/c37dcdc3ce1a6179cdb7f374.md",
+  "originalHtml": "html/kernel/c37dcdc3ce1a6179cdb7f374.html"
+}

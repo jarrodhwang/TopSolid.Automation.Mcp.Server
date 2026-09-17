@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMultiLayer.SetBottomCoatingLikeTop.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMultiLayer.SetBottomCoatingLikeTop.html",
+  "sha256": "7c13f855998cc961c3c4353507b88ab29b00d7f090e98e90d35ea06267825958",
+  "text": "# Method SetBottomCoatingLikeTop\n\n#### SetBottomCoatingLikeTop(DocumentId, bool)\n\nSets bottom coating as top boolean value\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 0, 0)]\nbool SetBottomCoatingLikeTop(DocumentId inDocumentId, bool inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document  |  \n \n|  bool |  inValue |  Value to use  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  True if value has been set with success.  |  \n\n##### Remarks\n\nThis method is available since v7.19.\n",
+  "markdown": "markdown/cad/337689e171191064ed7cd483.md",
+  "originalHtml": "html/cad/337689e171191064ed7cd483.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.GetPdmObject.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.GetPdmObject.html",
+  "sha256": "966ef9dbb2e947a4b6a97b5903fdb0dce77c5449864204f84116f794f4bb71a2",
+  "text": "# Method GetPdmObject\n\n#### GetPdmObject(PdmMajorRevisionId)\n\nGets the PDM object containing a specified major revision.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nPdmObjectId GetPdmObject(PdmMajorRevisionId inMajorRevisionId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmMajorRevisionId |  inMajorRevisionId |  Identifier of the major revision.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  PdmObjectId |  Identifier of the containing PDM object.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/pdmexplorer/0158df1a4732c39396ddc558.md",
+  "originalHtml": "html/pdmexplorer/0158df1a4732c39396ddc558.html"
+}

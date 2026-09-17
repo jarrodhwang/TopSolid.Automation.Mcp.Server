@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IFeatures.GetDrillingSpotFacingPrimitive.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IFeatures.GetDrillingSpotFacingPrimitive.html",
+  "sha256": "9234c77e43ac43d05ae7cbc197a08d6784a291f479746f5adb5b33448e7a6115",
+  "text": "# Method GetDrillingSpotFacingPrimitive\n\n#### GetDrillingSpotFacingPrimitive(ElementId, int, out Real, out Real, out bool, out Real)\n\nGet a drilling spot facing primitive information.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 14, 0, 0)]\nvoid GetDrillingSpotFacingPrimitive(ElementId inFeatureId, int inIndex, out Real depth, out Real diameter, out bool isOpposed, out Real position)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inFeatureId |  Identifiers of the element of the primitive to analyse.  |  \n \n|  int |  inIndex |  Idex of the primitive to analyse.  |  \n \n|  Real |  depth |  Detph of the spot facing primitive.  |  \n \n|  Real |  diameter |  Diameter of the spot facing primitive.  |  \n \n|  bool |  isOpposed |  Tells wether the spot facing primitive is opposed.  |  \n \n|  Real |  position |  Position of the spot facing primitive.  |  \n\n##### Remarks\n\nThis method is available since v7.14.\n",
+  "markdown": "markdown/cad/5bc4157bdb73fd5cdff05d5e.md",
+  "originalHtml": "html/cad/5bc4157bdb73fd5cdff05d5e.html"
+}

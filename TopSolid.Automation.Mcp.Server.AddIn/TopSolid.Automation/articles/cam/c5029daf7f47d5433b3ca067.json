@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IParameters.GetLocalizedName.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IParameters.GetLocalizedName.html",
+  "sha256": "f3dae4ef0739e4c217eea8ef091cf3866160b36e6ba32fe0d67c8f288f40ad3b",
+  "text": "# Method GetLocalizedName\n\n#### GetLocalizedName(ParameterId)\n\nGets the translated name of a Cam operation parameter.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nstring GetLocalizedName(ParameterId inParameterId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ParameterId |  inParameterId |  Identifier of the parameter to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  string |  Translated name of the parameter. The TopSolid culture is used for the translation.  |\n",
+  "markdown": "markdown/cam/c5029daf7f47d5433b3ca067.md",
+  "originalHtml": "html/cam/c5029daf7f47d5433b3ca067.html"
+}

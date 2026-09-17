@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.GetRealUnit.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.GetRealUnit.html",
+  "sha256": "4f25fddd14787738d0dca368f7140d9a0e0232cff0224ee3c1f95aa7c4f79c0a",
+  "text": "# Method GetRealUnit\n\n#### GetRealUnit(ElementId, out UnitType, out string)\n\nGets the unit of a real parameter.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nvoid GetRealUnit(ElementId inElementId, out UnitType outUnitType, out string outUnitSymbol)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the parameter to analyze.  |  \n \n|  UnitType |  outUnitType |  Unit type.  |  \n \n|  string |  outUnitSymbol |  Unit symbol in English.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/kernel/aa4a4df047b64d756f2bc951.md",
+  "originalHtml": "html/kernel/aa4a4df047b64d756f2bc951.html"
+}

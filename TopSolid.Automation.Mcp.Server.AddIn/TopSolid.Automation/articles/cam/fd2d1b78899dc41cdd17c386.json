@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IOperations.GetWorldCoordinateSystem.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IOperations.GetWorldCoordinateSystem.html",
+  "sha256": "f584b08c0655a23c695efcd21bfe281984a729e63376b3ec3dc4e880f2cc6f89",
+  "text": "# Method GetWorldCoordinateSystem\n\n#### GetWorldCoordinateSystem(ElementExId)\n\nGets the WCS entity from the given operation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nElementId GetWorldCoordinateSystem(ElementExId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementExId |  inElementId |  Identifier of the operation to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  WCS entity.  |\n",
+  "markdown": "markdown/cam/fd2d1b78899dc41cdd17c386.md",
+  "originalHtml": "html/cam/fd2d1b78899dc41cdd17c386.html"
+}

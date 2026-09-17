@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.DrillingCounterSinkingPrimitive.IsOpposed.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.DrillingCounterSinkingPrimitive.IsOpposed.html",
+  "sha256": "d4110e344f568f170fe801d39f04421c6bab0da34f1e9732043a4d1b4ed00923",
+  "text": "# Field IsOpposed\n\nTells wether the counter sinking is opposed.\n\n###### Namespace: TopSolid.Cad.Design.Automating\n\n###### Assembly: TopSolid.Cad.Design.Automating.dll\n\n##### Syntax\n\n```\n[DataMember]\npublic bool IsOpposed\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Tells wether the counter sinking is opposed. |\n",
+  "markdown": "markdown/cad/ea2f73ef85262ce5d578087a.md",
+  "originalHtml": "html/cad/ea2f73ef85262ce5d578087a.html"
+}

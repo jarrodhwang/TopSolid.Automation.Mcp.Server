@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ICoatings.GetCoatingParameterValue.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ICoatings.GetCoatingParameterValue.html",
+  "sha256": "2897dbe0b2d12c6b5a94f34a69ec6986b3082acc32d83ea623cb35caeebaad94",
+  "text": "# Method GetCoatingParameterValue\n\n#### GetCoatingParameterValue(ElementId, out DocumentId, out CoatingCategoryType)\n\nGets Document and Category from a Coating Parameter\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 400, 160)]\nvoid GetCoatingParameterValue(ElementId inParameterId, out DocumentId outDocumentId, out CoatingCategoryType outCoatingType)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inParameterId |  The Id of the parameter  |  \n \n|  DocumentId |  outDocumentId |  Coating Document  |  \n \n|  CoatingCategoryType |  outCoatingType |  Coating category type of the document  |\n",
+  "markdown": "markdown/cad/049b4d0c97d7699aac840467.md",
+  "originalHtml": "html/cad/049b4d0c97d7699aac840467.html"
+}

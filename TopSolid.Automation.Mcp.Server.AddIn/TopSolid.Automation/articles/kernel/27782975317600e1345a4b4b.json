@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartEnumerationType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartEnumerationType.html",
+  "sha256": "0d63d1c0128b7eccf46441c195bdbaae9645a2257f69586607cb691d33b75c52",
+  "text": "# Enum SmartEnumerationType\n\nDefines the various types of smart enumeration values.\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\n[DataContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\npublic enum SmartEnumerationType\n```\n\n##### Remarks\n\nThis enum is available since v7.8.\n\n### Fields \n\n|  Name |  Description |  \n| --- | --- | \n   \n|  Basic |  Basic.  |  \n \n|  Element |  Provided by an element.  |  \n \n|  Item |  Provided by an element item.  |  \n \n|  None |  Not used.  |  \n \n|  Unclassified |  Unclassified type.  |\n",
+  "markdown": "markdown/kernel/27782975317600e1345a4b4b.md",
+  "originalHtml": "html/kernel/27782975317600e1345a4b4b.html"
+}

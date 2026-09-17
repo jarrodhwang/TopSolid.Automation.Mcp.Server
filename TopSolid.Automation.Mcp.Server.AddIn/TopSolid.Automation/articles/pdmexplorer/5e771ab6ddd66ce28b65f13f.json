@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.PdmProjectFolderId.Empty.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.PdmProjectFolderId.Empty.html",
+  "sha256": "dff574e327cc88fa09c6da9b1bc0d06535a405bceb6cdbc319ee122cc23152d1",
+  "text": "# Field Empty\n\nEmpty identifier.\n\n###### Namespace: TopSolid.Pdm.Explorer.Automating\n\n###### Assembly: TopSolid.Pdm.Explorer.Automating.dll\n\n##### Syntax\n\n```\npublic static readonly PdmProjectFolderId Empty\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  PdmProjectFolderId |  Empty identifier. |\n",
+  "markdown": "markdown/pdmexplorer/5e771ab6ddd66ce28b65f13f.md",
+  "originalHtml": "html/pdmexplorer/5e771ab6ddd66ce28b65f13f.html"
+}

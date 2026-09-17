@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.GetType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.GetType.html",
+  "sha256": "b056e083d8dd3040c3eeb139a5eb389a14cca1c6c162368447ae164197abe609",
+  "text": "# Method GetType\n\n#### GetType(PdmObjectId, out string)\n\nGets the type of an object.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 301, 120)]\nPdmObjectType GetType(PdmObjectId inObjectId, out string outExtension)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  Object identifier.  |  \n \n|  string |  outExtension |  Document file extension, or null if not a document.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  PdmObjectType |  Object type.  |  \n\n##### Remarks\n\nThis method is available since v7.6.301.120.\n",
+  "markdown": "markdown/kernel/a56b27219326fc79ca0cee1f.md",
+  "originalHtml": "html/kernel/a56b27219326fc79ca0cee1f.html"
+}

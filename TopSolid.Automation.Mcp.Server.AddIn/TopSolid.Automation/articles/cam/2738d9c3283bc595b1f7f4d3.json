@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.TopSolidCamHostInstance.Tools.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.TopSolidCamHostInstance.Tools.html",
+  "sha256": "3fe13eacb69d43e497b9edb80fdf20fb867eff68adecb21f90a06b5411fb173e",
+  "text": "# Property Tools\n\n#### Tools\n\nGets access to tools, or null if not connected.\n\n##### Declaration\n\n```\npublic ITools Tools { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ITools |   |\n",
+  "markdown": "markdown/cam/2738d9c3283bc595b1f7f4d3.md",
+  "originalHtml": "html/cam/2738d9c3283bc595b1f7f4d3.html"
+}

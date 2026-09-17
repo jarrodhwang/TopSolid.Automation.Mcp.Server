@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ICoatings.SetSpecularTextureDocument.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ICoatings.SetSpecularTextureDocument.html",
+  "sha256": "8e4d4e6aaee995641626494663123a173906316fc991476c3764c17a971058c7",
+  "text": "# Method SetSpecularTextureDocument\n\n#### SetSpecularTextureDocument(DocumentId, DocumentId)\n\nSets the Specular texture document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 18, 0, 0)]\nvoid SetSpecularTextureDocument(DocumentId inDocumentId, DocumentId inTextureDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  DocumentId |  inTextureDocumentId |  Texture document.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.18.\n",
+  "markdown": "markdown/cad/dd6ed41fb03887c7890316ff.md",
+  "originalHtml": "html/cad/dd6ed41fb03887c7890316ff.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ISketches2D.GetSegmentVertices.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ISketches2D.GetSegmentVertices.html",
+  "sha256": "7bfd78a213da6f2bd549e70fdc1ddd40ec6afeb9365cc2a0e3547926ed4b1a47",
+  "text": "# Method GetSegmentVertices\n\n#### GetSegmentVertices(ElementItemId, out ElementItemId, out ElementItemId)\n\nGets the vertices of a segment.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 0, 0)]\nvoid GetSegmentVertices(ElementItemId inSegmentId, out ElementItemId outStartVertexId, out ElementItemId outEndVertexId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementItemId |  inSegmentId |  Identifier of the segment to analyze.  |  \n \n|  ElementItemId |  outStartVertexId |  Identifier of the start vertex, or Empty if none.  |  \n \n|  ElementItemId |  outEndVertexId |  Identifier of the end vertex, or Empty if none.  |  \n\n##### Remarks\n\nThis method is available since v7.7.\n",
+  "markdown": "markdown/kernel/ab59faa2fdcf83900e3abf7a.md",
+  "originalHtml": "html/kernel/ab59faa2fdcf83900e3abf7a.html"
+}

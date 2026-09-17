@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.TopSolidPdmExplorerHost.Erp.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.TopSolidPdmExplorerHost.Erp.html",
+  "sha256": "d0a5563f1538b6fabc2a9feffd381fb025907af778a8664ba416574d734db57f",
+  "text": "# Property Erp\n\n#### Erp\n\nGets access to the Erp, or null if not available.\n\n##### Declaration\n\n```\npublic static IErp Erp { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  IErp |   |\n",
+  "markdown": "markdown/pdmexplorer/fc0a207951fcca169b95da21.md",
+  "originalHtml": "html/pdmexplorer/fc0a207951fcca169b95da21.html"
+}

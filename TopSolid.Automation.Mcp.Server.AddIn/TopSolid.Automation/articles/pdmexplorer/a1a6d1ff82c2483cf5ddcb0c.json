@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.TopSolidPdmExplorerHost.Pdm.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.TopSolidPdmExplorerHost.Pdm.html",
+  "sha256": "b9b743f73f1b3cfc928eb73fd9f4dd572e50dc941fff4ead445d85ec894b3c8b",
+  "text": "# Property Pdm\n\n#### Pdm\n\nGets access to the PDM, or null if not available.\n\n##### Declaration\n\n```\npublic static IPdm Pdm { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  IPdm |   |\n",
+  "markdown": "markdown/pdmexplorer/a1a6d1ff82c2483cf5ddcb0c.md",
+  "originalHtml": "html/pdmexplorer/a1a6d1ff82c2483cf5ddcb0c.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.CreateSmartTextParameter.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.CreateSmartTextParameter.html",
+  "sha256": "592b063887a8ecb2b3527dddcb1c7843240db6d57bc901b0f9268f9cf7a24d7f",
+  "text": "# Method CreateSmartTextParameter\n\n#### CreateSmartTextParameter(DocumentId, SmartText)\n\nCreates a smart text parameter creation operation in a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nElementId CreateSmartTextParameter(DocumentId inDocumentId, SmartText inSmartText)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  SmartText |  inSmartText |  Smart text value.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the created operation child parameter entity.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.10.\n\n##### Examples\n \nHow to create a text parameter made by concatenating the values of two existing text parameters named \"t1\" and \"t2\":\n \n```\nSmartText smartText = new SmartText(SmartTextType.Formula, null, ElementId.Empty, ItemLabel.Empty, \"t1 & t2\");\nElementId eltId = TopSolidHost.Parameters.CreateSmartTextParameter(docId, smartText);\n```\n",
+  "markdown": "markdown/kernel/383bb4a73da5a6a8c6a99a86.md",
+  "originalHtml": "html/kernel/383bb4a73da5a6a8c6a99a86.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IPdm.ImportLocalizations.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IPdm.ImportLocalizations.html",
+  "sha256": "86f9784257ad82e784dceedd4fcd00b1d7b9ac550ed373fbab2b08ba7fe0288f",
+  "text": "# Method ImportLocalizations\n\n#### ImportLocalizations(string, string, Dictionary<string, string>)\n\nImports all localization files (.TopDic or .xliff) contained into given directory.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 55, 0)]\nvoid ImportLocalizations(string inDirectoryPath, string inFileExtension, Dictionary<string, string> ioErrorMessages)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  string |  inDirectoryPath |  Directory path.  |  \n \n|  string |  inFileExtension |  File extension (must be .TopDic or .xliff).  |  \n \n|  Dictionary<string, string> |  ioErrorMessages |  Error messages.  |\n",
+  "markdown": "markdown/kernel/aadde3eda71137f4b8075397.md",
+  "originalHtml": "html/kernel/aadde3eda71137f4b8075397.html"
+}

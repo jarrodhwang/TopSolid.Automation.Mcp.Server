@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdmAdmin.IsUserActive.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdmAdmin.IsUserActive.html",
+  "sha256": "770a683fcbc83b98d31db2f3139ce8a25b6c6b949b66604077c5f68ca665ff4a",
+  "text": "# Method IsUserActive\n\n#### IsUserActive(string)\n\nTells whether a user is active.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nbool IsUserActive(string inAccountId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  string |  inAccountId |  User account identifier.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  The user is active.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/pdmexplorer/31d2cdce47af62b531013771.md",
+  "originalHtml": "html/pdmexplorer/31d2cdce47af62b531013771.html"
+}

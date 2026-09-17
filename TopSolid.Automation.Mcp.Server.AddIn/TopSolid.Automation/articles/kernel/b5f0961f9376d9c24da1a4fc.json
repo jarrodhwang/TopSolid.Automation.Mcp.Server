@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ElementItemId.ElementId.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ElementItemId.ElementId.html",
+  "sha256": "8f27e057d58e20f7828c7d4a9b617aba022c8a75ced2326de49fe20082668068",
+  "text": "# Property ElementId\n\n#### ElementId\n\nGets the identifier of the element.\n\n##### Declaration\n\n```\npublic ElementId ElementId { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |   |\n",
+  "markdown": "markdown/kernel/b5f0961f9376d9c24da1a4fc.md",
+  "originalHtml": "html/kernel/b5f0961f9376d9c24da1a4fc.html"
+}

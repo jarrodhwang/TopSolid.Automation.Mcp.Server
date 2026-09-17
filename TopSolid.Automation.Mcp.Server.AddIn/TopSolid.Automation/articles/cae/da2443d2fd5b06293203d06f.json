@@ -1,0 +1,8 @@
+{
+  "path": "api/cae/TopSolid.Cae.Kernel.Automating.ICAEDocuments.Solve.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cae/TopSolid.Cae.Kernel.Automating.ICAEDocuments.Solve.html",
+  "sha256": "d0337f917646e23de71d5a57fa26368e87ff22f2284981a3d012bdc7a7c82675",
+  "text": "# Method Solve\n\n#### Solve(DocumentId, out string)\n\nLaunch resolution of an analysis preparation document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 19, 15, 0)]\nbool Solve(DocumentId inDocumentId, out string outMessage)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to solve.  |  \n \n|  string |  outMessage |  Message returned by solver, or error message.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Whether mesh has actually been solved.  |  \n\n##### Remarks\n\nThis method is available since v7.19.\n\n##### Examples\n \n```\n   DocumentId docId = TopSolidHost.Documents.EditedDocument;\nif (TopSolidHost.Application.StartModification(\"Do Solve\", false))\n{\n\ttry\n\t{\n\t\tTopSolidCaeHost.Documents.Solve(docId, out string message);\n\t\tTopSolidHost.Application.EndModification(true, true);\n\t}\n\tcatch\n\t{\n\t\tTopSolidHost.Application.EndModification(false, false);\n\t}\n}\n```\n",
+  "markdown": "markdown/cae/da2443d2fd5b06293203d06f.md",
+  "originalHtml": "html/cae/da2443d2fd5b06293203d06f.html"
+}

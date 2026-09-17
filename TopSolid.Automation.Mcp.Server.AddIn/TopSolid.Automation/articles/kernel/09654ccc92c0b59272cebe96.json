@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.SmartDirection3D.DZ.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.SmartDirection3D.DZ.html",
+  "sha256": "aaa67384dcd0b334d51359fcbb42214be06754a4db034d983f0e6786f1f0c5c1",
+  "text": "# Field DZ\n\nPositive Z direction, i.e. (0,0,1).\n\n###### Namespace: TopSolid.Kernel.Automating\n\n###### Assembly: TopSolid.Kernel.Automating.dll\n\n##### Syntax\n\n```\npublic static readonly SmartDirection3D DZ\n```\n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartDirection3D |  Positive Z direction, i.e. (0,0,1). |\n",
+  "markdown": "markdown/kernel/09654ccc92c0b59272cebe96.md",
+  "originalHtml": "html/kernel/09654ccc92c0b59272cebe96.html"
+}

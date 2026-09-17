@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.IStyles.CopyStyle.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.IStyles.CopyStyle.html",
+  "sha256": "707cc866fb9103c657ed824aaf74bb519e469f12a715b9c58b418f24aa93a7d0",
+  "text": "# Method CopyStyle\n\n#### CopyStyle(DocumentId, ElementId, DocumentId)\n\nMethod to copy a style from a drafting document to another\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 255, 0)]\nElementId CopyStyle(DocumentId inSourceDocumentId, ElementId inElementId, DocumentId inDestinationDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inSourceDocumentId |  source document to copy from  |  \n \n|  ElementId |  inElementId |  style to copy  |  \n \n|  DocumentId |  inDestinationDocumentId |  destination document  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |   |\n",
+  "markdown": "markdown/drafting/33c76d0d70dc61bebb285215.md",
+  "originalHtml": "html/drafting/33c76d0d70dc61bebb285215.html"
+}

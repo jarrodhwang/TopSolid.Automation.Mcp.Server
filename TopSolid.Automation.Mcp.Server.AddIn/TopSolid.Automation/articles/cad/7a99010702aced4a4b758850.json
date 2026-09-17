@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IParts.CreateMachiningProcessOperation.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IParts.CreateMachiningProcessOperation.html",
+  "sha256": "1cf6c58c64e7b9e49dea6f2611e3548b8706814e35a5614d9b6f85760a88501c",
+  "text": "# Method CreateMachiningProcessOperation\n\n#### CreateMachiningProcessOperation(PdmObjectId, int, List<ElementItemId>)\n\nCreates the faces machining process.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 13, 0, 0)]\nElementId CreateMachiningProcessOperation(PdmObjectId inObjectId, int inValue, List<ElementItemId> inFaceIds)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inObjectId |  PDM object identifier of the machining process definition document of the face.  |  \n \n|  int |  inValue |  Machining process enumeration value, if the face has a machining process.  |  \n \n|  List<ElementItemId> |  inFaceIds |  Identifier of the face to set attribute.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |   |  \n\n##### Remarks\n\nThis method is available since v7.13.\n",
+  "markdown": "markdown/cad/7a99010702aced4a4b758850.md",
+  "originalHtml": "html/cad/7a99010702aced4a4b758850.html"
+}

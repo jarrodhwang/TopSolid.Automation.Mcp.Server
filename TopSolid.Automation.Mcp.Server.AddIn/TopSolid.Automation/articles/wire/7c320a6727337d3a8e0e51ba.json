@@ -1,0 +1,8 @@
+{
+  "path": "api/wire/TopSolid.Cam.NC.Wire.Automating.IWireCc.GetMaterialHeight.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/wire/TopSolid.Cam.NC.Wire.Automating.IWireCc.GetMaterialHeight.html",
+  "sha256": "5d26a4a0b8ae2903910fddb5041c922f8201c90a3f889f406a8d6cedc9931f86",
+  "text": "# Method GetMaterialHeight\n\n#### GetMaterialHeight(ElementId)\n\nGet material height.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 160)]\nSmartReal GetMaterialHeight(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the element to modify.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  SmartReal |  Material height in SI units.  |\n",
+  "markdown": "markdown/wire/7c320a6727337d3a8e0e51ba.md",
+  "originalHtml": "html/wire/7c320a6727337d3a8e0e51ba.html"
+}

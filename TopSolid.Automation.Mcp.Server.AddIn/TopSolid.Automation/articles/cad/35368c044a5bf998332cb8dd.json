@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMechanisms.UnmakeMechanism.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMechanisms.UnmakeMechanism.html",
+  "sha256": "dc1dfd5c5d657a3c8f5f8badee6bfbc9ff34570b6ad752aa59bbbdcea85672f7",
+  "text": "# Method UnmakeMechanism\n\n#### UnmakeMechanism(DocumentId)\n\nConverts an articulated assembly document into a rigid assembly document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nvoid UnmakeMechanism(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the assembly document to modify.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.8.\n",
+  "markdown": "markdown/cad/35368c044a5bf998332cb8dd.md",
+  "originalHtml": "html/cad/35368c044a5bf998332cb8dd.html"
+}

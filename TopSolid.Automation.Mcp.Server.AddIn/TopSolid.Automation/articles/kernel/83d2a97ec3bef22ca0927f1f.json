@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IParameters.GetColorTableParameterCreation.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IParameters.GetColorTableParameterCreation.html",
+  "sha256": "83e1a938d0606ff998ca2546597b0fd74a8e6e5faee1b158e829298b3d7d9e10",
+  "text": "# Method GetColorTableParameterCreation\n\n#### GetColorTableParameterCreation(ElementId, out SmartReal)\n\nGets a smart color table parameter creation operation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 18, 0, 0)]\nvoid GetColorTableParameterCreation(ElementId inElementId, out SmartReal outSmartReal)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the smart color table parameter creation operation to analyze.  |  \n \n|  SmartReal |  outSmartReal |  Smart real value.  |  \n\n##### Remarks\n\nThis method is available since v7.18.\n",
+  "markdown": "markdown/kernel/83d2a97ec3bef22ca0927f1f.md",
+  "originalHtml": "html/kernel/83d2a97ec3bef22ca0927f1f.html"
+}

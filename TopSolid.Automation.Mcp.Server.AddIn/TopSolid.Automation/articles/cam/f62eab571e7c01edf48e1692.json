@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IPockets.SetToolInPocket.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IPockets.SetToolInPocket.html",
+  "sha256": "42de25084fe6f8db104604b5baf1dfdc9868f2a8ff779641bfc04dd41dacaf9d",
+  "text": "# Method SetToolInPocket\n\n#### SetToolInPocket(ElementId, ElementId)\n\nSet tool in given pocket.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nvoid SetToolInPocket(ElementId inToolId, ElementId inPocketId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inToolId |  Tool identifier. Clear pocket if tool is empty.  |  \n \n|  ElementId |  inPocketId |  Pocket identifier.  |\n",
+  "markdown": "markdown/cam/f62eab571e7c01edf48e1692.md",
+  "originalHtml": "html/cam/f62eab571e7c01edf48e1692.html"
+}

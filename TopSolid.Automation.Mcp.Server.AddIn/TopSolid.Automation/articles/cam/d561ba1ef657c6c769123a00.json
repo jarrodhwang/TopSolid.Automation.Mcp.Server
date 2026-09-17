@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IOperations.Execute.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IOperations.Execute.html",
+  "sha256": "5111b3ae22213488344a16722364c3d29dcc1f3b1c36aa05fd56d2bb52215a3a",
+  "text": "# Method Execute\n\n#### Execute(ElementId)\n\nExecute only the given operation.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 8, 0, 0)]\nvoid Execute(ElementId inElementId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the operation to execute.  |\n",
+  "markdown": "markdown/cam/d561ba1ef657c6c769123a00.md",
+  "originalHtml": "html/cam/d561ba1ef657c6c769123a00.html"
+}

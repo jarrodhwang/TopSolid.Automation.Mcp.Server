@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IGeometries3D.CreateSmartFrame.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IGeometries3D.CreateSmartFrame.html",
+  "sha256": "8570993b7cf12e0cfa6e64f9f66f7ee4a626205ba6fa9051a4560d66e7542e77",
+  "text": "# Method CreateSmartFrame\n\n#### CreateSmartFrame(DocumentId, SmartFrame3D)\n\nCreates a frame entity with a provided smart frame in a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 15, 400, 120)]\nElementId CreateSmartFrame(DocumentId inDocumentId, SmartFrame3D inProvidedSmartFrame)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  SmartFrame3D |  inProvidedSmartFrame |  The provided smart frame.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the created frame entity.  |  \n\n##### Remarks\n\nThis method allows to create a frame entity associated to an operation.\n \nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.15.400.120.\n",
+  "markdown": "markdown/kernel/c74decce20f2b3c8b9c3c532.md",
+  "originalHtml": "html/kernel/c74decce20f2b3c8b9c3c532.html"
+}

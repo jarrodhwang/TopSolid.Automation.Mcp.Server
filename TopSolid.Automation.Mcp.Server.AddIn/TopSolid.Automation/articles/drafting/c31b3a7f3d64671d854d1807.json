@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.ITables.GetDraftTableCellElement.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.ITables.GetDraftTableCellElement.html",
+  "sha256": "7948df4d50b4a45a3ce99ac4034b8269fdae1785f3bcd8d7d8546cd9d5b675dd",
+  "text": "# Method GetDraftTableCellElement\n\n#### GetDraftTableCellElement(ElementId, int, int, int)\n\nGets the Element of a cell.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 17, 0, 0)]\nElementId GetDraftTableCellElement(ElementId inElementId, int inColumnIdx, int inRowIdx, int inSplitColumnIdx)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementId |  inElementId |  Identifier of the entity to analyze.  |  \n \n|  int |  inColumnIdx |  Index of the column.  |  \n \n|  int |  inRowIdx |  Index of the row.  |  \n \n|  int |  inSplitColumnIdx |  Index of the split column. 0 if default.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Element of a cell.  |  \n\n##### Remarks\n\nThis method is available since v7.17.\n",
+  "markdown": "markdown/drafting/c31b3a7f3d64671d854d1807.md",
+  "originalHtml": "html/drafting/c31b3a7f3d64671d854d1807.html"
+}

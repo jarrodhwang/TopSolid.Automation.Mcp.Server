@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.ISketches3D.IsSegmentConstruction.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.ISketches3D.IsSegmentConstruction.html",
+  "sha256": "3e2970fc388d7afef32a92a6183dc5860acafdbcfcf288882a90709c16778834",
+  "text": "# Method IsSegmentConstruction\n\n#### IsSegmentConstruction(ElementItemId)\n\nTells whether a segment is construction.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 201, 80)]\nbool IsSegmentConstruction(ElementItemId inSegmentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  ElementItemId |  inSegmentId |  Identifier of the segment to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  Whether the segment is construction.  |  \n\n##### Remarks\n\nThis method is available since v7.7.201.80.\n",
+  "markdown": "markdown/kernel/63097d1faecaac9fa886dad0.md",
+  "originalHtml": "html/kernel/63097d1faecaac9fa886dad0.html"
+}

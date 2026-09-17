@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ISimulations.GetCurrentSimulation.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ISimulations.GetCurrentSimulation.html",
+  "sha256": "024fb621df9ab61c4262a395d9162894fadb98765adb11f0cfff9c4079f51552",
+  "text": "# Method GetCurrentSimulation\n\n#### GetCurrentSimulation(DocumentId)\n\nGets the current simulation entity of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 6, 0, 0)]\nElementId GetCurrentSimulation(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the current simulation entity found, or Empty for none.  |  \n\n##### Remarks\n\nThis method is available since v7.6.\n",
+  "markdown": "markdown/cad/085bef042089a21afbcb8d74.md",
+  "originalHtml": "html/cad/085bef042089a21afbcb8d74.html"
+}

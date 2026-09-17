@@ -1,0 +1,8 @@
+{
+  "path": "api/drafting/TopSolid.Cad.Drafting.Automating.IDraftings.GetScaleFactorParameter.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/drafting/TopSolid.Cad.Drafting.Automating.IDraftings.GetScaleFactorParameter.html",
+  "sha256": "52d518bafdd09d22f083d31f37287d14b8002b766ca891fafb2a82a00061971a",
+  "text": "# Method GetScaleFactorParameter\n\n#### GetScaleFactorParameter(DocumentId)\n\nGets the scale factor parameter entity of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nElementId GetScaleFactorParameter(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the scale factor parameter entity found.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/drafting/1f08a5db872564a121c02102.md",
+  "originalHtml": "html/drafting/1f08a5db872564a121c02102.html"
+}

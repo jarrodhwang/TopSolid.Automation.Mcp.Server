@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.GetDocumentIcon.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.GetDocumentIcon.html",
+  "sha256": "667d7c3dec6380139337e4cf640b390ad17eed7fccfcd61a5ad73577576434ac",
+  "text": "# Method GetDocumentIcon\n\n#### GetDocumentIcon(string, Size)\n\nGets the icon of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\n[ServiceKnownType(typeof(Size))]\nIcon GetDocumentIcon(string inFileExtension, Size inDesiredSize)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  string |  inFileExtension |  File extension.  |  \n \n|  Size |  inDesiredSize |  Desired size.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  Icon |  The icon corresponding to the file extension.  |  \n\n##### Remarks\n\nThis method is available since v7.10.300.080.\n",
+  "markdown": "markdown/pdmexplorer/5512de5309c4a0efe44f0e1e.md",
+  "originalHtml": "html/pdmexplorer/5512de5309c4a0efe44f0e1e.html"
+}

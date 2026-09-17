@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IBoms.DeactivateRow.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IBoms.DeactivateRow.html",
+  "sha256": "c32a30ea5c6f029329a1cec9d554895c73b91b34f6962de0a54c3683fb0fc278",
+  "text": "# Method DeactivateRow\n\n#### DeactivateRow(DocumentId, int)\n\nDeactivates a row of a BOM.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 12, 0, 0)]\nvoid DeactivateRow(DocumentId inDocumentId, int inRowId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the BOM document to modify.  |  \n \n|  int |  inRowId |  Identifier of the row to deactivate.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.12.\n",
+  "markdown": "markdown/cad/7534f4bea76fd37e90fe8b9d.md",
+  "originalHtml": "html/cad/7534f4bea76fd37e90fe8b9d.html"
+}

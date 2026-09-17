@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IPrograms.GetPrograms.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IPrograms.GetPrograms.html",
+  "sha256": "2447f39daae1f19b07c833a750aba3e1eccc1bc3c249fdb9002bf5f73590d9c3",
+  "text": "# Method GetPrograms\n\n#### GetPrograms(DocumentId)\n\nGet the list of NC programs in the document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 180)]\nList<ElementId> GetPrograms(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementId> |  List of all NC programs.  |\n",
+  "markdown": "markdown/cam/d6c1f08dfea23e6c12435835.md",
+  "originalHtml": "html/cam/d6c1f08dfea23e6c12435835.html"
+}

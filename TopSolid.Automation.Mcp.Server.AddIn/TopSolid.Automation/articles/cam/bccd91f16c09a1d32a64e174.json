@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.IOrigins.GetOrigins.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IOrigins.GetOrigins.html",
+  "sha256": "cff402b58b5511faff0e279f04ec1900edbe2778bbd01616434a5813ad885bff",
+  "text": "# Method GetOrigins\n\n#### GetOrigins(DocumentId)\n\nGets the origins in a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 400, 80)]\nList<ElementId> GetOrigins(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<ElementId> |  The origin entities of the document.  |\n",
+  "markdown": "markdown/cam/bccd91f16c09a1d32a64e174.md",
+  "originalHtml": "html/cam/bccd91f16c09a1d32a64e174.html"
+}

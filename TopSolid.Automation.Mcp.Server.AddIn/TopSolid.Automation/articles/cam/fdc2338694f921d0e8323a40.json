@@ -1,0 +1,8 @@
+{
+  "path": "api/cam/TopSolid.Cam.NC.Kernel.Automating.INCFiles.GetNCFilesDocuments.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.INCFiles.GetNCFilesDocuments.html",
+  "sha256": "942863f4f4764d1ac99aac6c903d01f5c3fe628e1dfe44557411e95035b27af0",
+  "text": "# Method GetNCFilesDocuments\n\n#### GetNCFilesDocuments(DocumentId, string)\n\nGet from the Pdm the Iso files created for the given cam file.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 9, 0, 0)]\nList<DocumentId> GetNCFilesDocuments(DocumentId inCamDocumentId, string inPPId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inCamDocumentId |  Identifier of the Cam document to scan.  |  \n \n|  string |  inPPId |  Name of the PP or empty to find Isos from all PPs.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<DocumentId> |  List of Iso documents.  |\n",
+  "markdown": "markdown/cam/fdc2338694f921d0e8323a40.md",
+  "originalHtml": "html/cam/fdc2338694f921d0e8323a40.html"
+}

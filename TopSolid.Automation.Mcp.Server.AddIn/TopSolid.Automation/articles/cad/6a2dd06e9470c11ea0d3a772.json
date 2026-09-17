@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMaterials.SetMaterialApperanceInfo.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMaterials.SetMaterialApperanceInfo.html",
+  "sha256": "3b6659aa49e3338f7e746297b2be554e0faa7ada639ca9edd438840836922ca2",
+  "text": "# Method SetMaterialApperanceInfo\n\n#### SetMaterialApperanceInfo(DocumentId, bool, bool, bool, bool)\n\nSets the material apperance information.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 16, 0, 0)]\nvoid SetMaterialApperanceInfo(DocumentId inDocumentId, bool inReceiveShadows, bool inCastShadows, bool inFresnelReflection, bool inTransparentReflection)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  bool |  inReceiveShadows |  Tells wether the material receive shadows.  |  \n \n|  bool |  inCastShadows |  Tells wether the material cast shadows.  |  \n \n|  bool |  inFresnelReflection |  Tells wether the material has a frenesl reflection.  |  \n \n|  bool |  inTransparentReflection |  Tells wether the material has transparent reflection.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) must be called before calling this method.\n \nThis method is available since v7.16.\n",
+  "markdown": "markdown/cad/6a2dd06e9470c11ea0d3a772.md",
+  "originalHtml": "html/cad/6a2dd06e9470c11ea0d3a772.html"
+}

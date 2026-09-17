@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMaterials.GetSectionReductionAtBreak.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMaterials.GetSectionReductionAtBreak.html",
+  "sha256": "edbf7d0e6941cc2a40aadc2def9c02d3714035b05bd015c920770ad20c54ce72",
+  "text": "# Method GetSectionReductionAtBreak\n\n#### GetSectionReductionAtBreak(DocumentId, out double)\n\nGets Section Reduction At Break\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 400, 120)]\nbool GetSectionReductionAtBreak(DocumentId inDocumentId, out double outValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Id of the container document  |  \n \n|  double |  outValue |  The value  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  bool |  true if a parameter has been fetched with success  |\n",
+  "markdown": "markdown/cad/c5f2ee963409587a34caa456.md",
+  "originalHtml": "html/cad/c5f2ee963409587a34caa456.html"
+}

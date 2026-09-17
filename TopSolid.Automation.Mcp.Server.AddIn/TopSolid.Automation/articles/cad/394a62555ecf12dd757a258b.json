@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.TopSolidDesignHostInstance.Connect.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.TopSolidDesignHostInstance.Connect.html",
+  "sha256": "c7ce5f6cbeb862556b86535010029b14ddd9e29c08b8876aea8c0b6727eb61a8",
+  "text": "# Method Connect\n\n#### Connect()\n\nConnects to TopSolid application.\n\n##### Declaration\n\n```\npublic void Connect()\n```\n",
+  "markdown": "markdown/cad/394a62555ecf12dd757a258b.md",
+  "originalHtml": "html/cad/394a62555ecf12dd757a258b.html"
+}

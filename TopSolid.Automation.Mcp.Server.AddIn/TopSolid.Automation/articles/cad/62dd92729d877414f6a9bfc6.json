@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IMaterials.SetPoissonRatio.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IMaterials.SetPoissonRatio.html",
+  "sha256": "3bbb3563c086cb01cacf6292178f78ddd738a5cc0c4d588e80d80164e448f796",
+  "text": "# Method SetPoissonRatio\n\n#### SetPoissonRatio(DocumentId, double)\n\nSets Poisson Ratio\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 400, 120)]\nvoid SetPoissonRatio(DocumentId inDocumentId, double inValue)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Id of the container document  |  \n \n|  double |  inValue |  The value to use  |\n",
+  "markdown": "markdown/cad/62dd92729d877414f6a9bfc6.md",
+  "originalHtml": "html/cad/62dd92729d877414f6a9bfc6.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.ITools.GetBaseDocument.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ITools.GetBaseDocument.html",
+  "sha256": "2b16c0a191776adbeed7869263da4f669d5c394b3cda554d4a8abc26267005dd",
+  "text": "# Method GetBaseDocument\n\n#### GetBaseDocument(DocumentId)\n\nGets the base part or assembly of a derived part or assembly.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 10, 0, 0)]\nDocumentId GetBaseDocument(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the derived part or assembly document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  DocumentId |  Base part or assembly document identifier, or empty if the part or assembly is not derived.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/cad/853e52e9a5873a440078cf8b.md",
+  "originalHtml": "html/cad/853e52e9a5873a440078cf8b.html"
+}

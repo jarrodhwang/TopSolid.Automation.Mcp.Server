@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.Transform2D.SetTranslation.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.Transform2D.SetTranslation.html",
+  "sha256": "671db0c5d0b9dbe7612ad9bc8e18ccf368ef73172ae1b3b24f193669461e0014",
+  "text": "# Method SetTranslation\n\n#### SetTranslation(Vector2D)\n\nSets the transformation as the translation along a specified vector.\n\n##### Declaration\n\n```\npublic void SetTranslation(Vector2D inVector)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  Vector2D |  inVector |  Translation vector.  |\n",
+  "markdown": "markdown/kernel/6288fa65311c3497c26075c9.md",
+  "originalHtml": "html/kernel/6288fa65311c3497c26075c9.html"
+}

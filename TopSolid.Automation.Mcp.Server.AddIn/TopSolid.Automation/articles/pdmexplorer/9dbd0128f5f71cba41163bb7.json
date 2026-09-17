@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.ExportToBabylon.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IPdm.ExportToBabylon.html",
+  "sha256": "2bd8ef43e91ac5129a6ca90961c5aa6c15a649ffcecee0a4a592ca93a473e12c",
+  "text": "# Method ExportToBabylon\n\n#### ExportToBabylon(PdmObjectId, string, string)\n\nExports a document to a Babylon file.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 11, 300, 80)]\nvoid ExportToBabylon(PdmObjectId inDocumentId, string inFolderPath, string inFileName)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmObjectId |  inDocumentId |  Document identifier.  |  \n \n|  string |  inFolderPath |  Path of export folder.  |  \n \n|  string |  inFileName |  File name.  |  \n\n##### Remarks\n\nThis method is available since v7.10.\n",
+  "markdown": "markdown/pdmexplorer/9dbd0128f5f71cba41163bb7.md",
+  "originalHtml": "html/pdmexplorer/9dbd0128f5f71cba41163bb7.html"
+}

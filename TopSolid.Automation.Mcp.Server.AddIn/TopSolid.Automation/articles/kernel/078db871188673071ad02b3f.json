@@ -1,0 +1,8 @@
+{
+  "path": "api/kernel/TopSolid.Kernel.Automating.IUser.AskPoint3DList.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IUser.AskPoint3DList.html",
+  "sha256": "e05c8ac68067b06fc38857f74a07127ccf15caf184085749230a3318e22f79fd",
+  "text": "# Method AskPoint3DList\n\n#### AskPoint3DList(UserQuestion, List<SmartPoint3D>, out List<SmartPoint3D>)\n\nAsks the user for a 3D point list.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 13, 0, 0)]\nUserAnswerType AskPoint3DList(UserQuestion inQuestion, List<SmartPoint3D> inSuggestions, out List<SmartPoint3D> outAnswer)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  UserQuestion |  inQuestion |  Question asked to the user.  |  \n \n|  List<SmartPoint3D> |  inSuggestions |  Suggested answer, or null if none.  |  \n \n|  List<SmartPoint3D> |  outAnswer |  User answer, or null if none.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  UserAnswerType |  Type of user answer.  |  \n\n##### Remarks\n\nStartModification(string, bool) and EnsureIsDirty(ref DocumentId) may be called before calling this method to allow the user to create or modify entities during the interaction.\n \nThis method is available since v7.13.\n",
+  "markdown": "markdown/kernel/078db871188673071ad02b3f.md",
+  "originalHtml": "html/kernel/078db871188673071ad02b3f.html"
+}

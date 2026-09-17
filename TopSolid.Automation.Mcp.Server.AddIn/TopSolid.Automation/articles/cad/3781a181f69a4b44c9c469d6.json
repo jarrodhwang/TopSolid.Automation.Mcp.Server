@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.DrillingPrimitive.PrimitiveType.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.DrillingPrimitive.PrimitiveType.html",
+  "sha256": "0e882df6b63d80d2f27c9ef476445a712ce445adad32155e41b565379dc49179",
+  "text": "# Property PrimitiveType\n\n#### PrimitiveType\n\nPrimitive Type.\n\n##### Declaration\n\n```\npublic abstract DrillingPrimitiveType PrimitiveType { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  DrillingPrimitiveType |   |\n",
+  "markdown": "markdown/cad/3781a181f69a4b44c9c469d6.md",
+  "originalHtml": "html/cad/3781a181f69a4b44c9c469d6.html"
+}

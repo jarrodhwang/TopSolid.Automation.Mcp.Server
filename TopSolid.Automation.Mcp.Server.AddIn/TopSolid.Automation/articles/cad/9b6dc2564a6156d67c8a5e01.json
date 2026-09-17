@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IParts.CreateDrillingOperation.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IParts.CreateDrillingOperation.html",
+  "sha256": "bc9890a94e3083f33a33e38a1061b6114f6b6d136f66cded93f0805e6d8b1e9c",
+  "text": "# Method CreateDrillingOperation\n\n#### CreateDrillingOperation(DocumentId, SmartShape, SmartFrame3D, List<DrillingPrimitive>, bool)\n\nCreates a drilling operation in a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 14, 0, 0)]\nvoid CreateDrillingOperation(DocumentId inDocumentId, SmartShape inShape, SmartFrame3D inFrame, List<DrillingPrimitive> inDrillingPrimitives, bool inIsInoperative)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to modify.  |  \n \n|  SmartShape |  inShape |  Identifier of the shape to drill.  |  \n \n|  SmartFrame3D |  inFrame |  Frame of the drilling.  |  \n \n|  List<DrillingPrimitive> |  inDrillingPrimitives |  Primitives of the drilling.  |  \n \n|  bool |  inIsInoperative |  Tells wether the operation is Inoperative  |  \n\n##### Remarks\n\nThis method is available since v7.14.000.00.\n",
+  "markdown": "markdown/cad/9b6dc2564a6156d67c8a5e01.md",
+  "originalHtml": "html/cad/9b6dc2564a6156d67c8a5e01.html"
+}

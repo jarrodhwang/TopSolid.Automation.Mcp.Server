@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.BomNode.Level.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.BomNode.Level.html",
+  "sha256": "446351ecd0e7db1db088a10130a6cedae02d9ffebdd2e858ce90a98ec0c95811",
+  "text": "# Property Level\n\n#### Level\n\nGets the level.\n\n##### Declaration\n\n```\npublic int Level { get; }\n```\n\n##### Property Value\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  int |   |\n",
+  "markdown": "markdown/pdmexplorer/b52e5ce38709fc3f7918c9dd.md",
+  "originalHtml": "html/pdmexplorer/b52e5ce38709fc3f7918c9dd.html"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IErp.GetDisplayedMinorRevisionDocumentIds.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/pdmexplorer/TopSolid.Pdm.Explorer.Automating.IErp.GetDisplayedMinorRevisionDocumentIds.html",
+  "sha256": "88a31c0733c9af89ad3c010d55d0d5fd2222924b10d2afca9a0afa736146e81c",
+  "text": "# Method GetDisplayedMinorRevisionDocumentIds\n\n#### GetDisplayedMinorRevisionDocumentIds(PdmMinorRevisionId)\n\nGets minor revision identifiers corresponding to all displayed parts and assemblies in a minor revision\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 20, 222, 80)]\nList<PdmMinorRevisionId> GetDisplayedMinorRevisionDocumentIds(PdmMinorRevisionId inMinorRevisionId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  PdmMinorRevisionId |  inMinorRevisionId |  Identifier of the object  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  List<PdmMinorRevisionId> |  List of PdmMinorRevisionIds associated  |\n",
+  "markdown": "markdown/pdmexplorer/01d09e33366d8f90170ad464.md",
+  "originalHtml": "html/pdmexplorer/01d09e33366d8f90170ad464.html"
+}

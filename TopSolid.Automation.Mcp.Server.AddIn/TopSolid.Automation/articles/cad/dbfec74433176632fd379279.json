@@ -1,0 +1,8 @@
+{
+  "path": "api/cad/TopSolid.Cad.Design.Automating.IRepresentations.GetSimplifiedRepresentation.html",
+  "url": "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.IRepresentations.GetSimplifiedRepresentation.html",
+  "sha256": "1edc742eab4cce387bddb0abbdd9121acf00ff94e12a1e335bc7dcf82dc2f0cc",
+  "text": "# Method GetSimplifiedRepresentation\n\n#### GetSimplifiedRepresentation(DocumentId)\n\nGets the simplified representation entity of a document.\n\n##### Declaration\n\n```\n[OperationContract]\n[AvailableSinceVersion(7, 7, 201, 100)]\nElementId GetSimplifiedRepresentation(DocumentId inDocumentId)\n```\n\n##### Parameters\n\n|  Type |  Name |  Description |  \n| --- | --- | --- | \n   \n|  DocumentId |  inDocumentId |  Identifier of the document to analyze.  |  \n\n##### Returns\n\n|  Type |  Description |  \n| --- | --- | \n   \n|  ElementId |  Identifier of the simplified representation entity found, or Empty if not found.  |  \n\n##### Remarks\n\nThis method is available since v7.7.201.100.\n",
+  "markdown": "markdown/cad/dbfec74433176632fd379279.md",
+  "originalHtml": "html/cad/dbfec74433176632fd379279.html"
+}

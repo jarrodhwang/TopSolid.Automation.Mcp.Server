@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Method DefineConnection | TopSolid Automation website </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Method DefineConnection | TopSolid Automation website ">
+    
+    
+      <link rel="shortcut icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../../styles/docfx.css">
+      <link rel="stylesheet" href="../../styles/main.css">
+      <meta property="docfx:navrel" content="../../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../img/AutomationIcon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="TopSolid.Pdm.Explorer.Automating.TopSolidPdmExplorerHost.DefineConnection*">
+
+
+
+<h1 id="TopSolid_Pdm_Explorer_Automating_TopSolidPdmExplorerHost_DefineConnection_" data-uid="TopSolid.Pdm.Explorer.Automating.TopSolidPdmExplorerHost.DefineConnection*">Method DefineConnection</h1>
+<div class="markdown level0 summary"></div>
+<div class="markdown level0 conceptual"></div>
+
+<a id="TopSolid_Pdm_Explorer_Automating_TopSolidPdmExplorerHost_DefineConnection_" data-uid="TopSolid.Pdm.Explorer.Automating.TopSolidPdmExplorerHost.DefineConnection*"></a>
+<h4 id="TopSolid_Pdm_Explorer_Automating_TopSolidPdmExplorerHost_DefineConnection_System_String_System_Int32_System_String_System_Int32_" data-uid="TopSolid.Pdm.Explorer.Automating.TopSolidPdmExplorerHost.DefineConnection(System.String,System.Int32,System.String,System.Int32)">DefineConnection(string, int, string, int)</h4>
+<div class="markdown level1 summary"><p>Defines the connection between this client application and TopSolid host for remote access.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+<h5 class="declaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static void DefineConnection(string inHostAddress, int inHostPort, string inClientAddress, int inClientPort)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+      <td><span class="parametername">inHostAddress</span></td>
+      <td><p>Host IP address (or &quot;localhost&quot; for local machine) if using TCP, or null otherwize (default).</p>
+</td>
+    </tr>
+    <tr>
+      <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+      <td><span class="parametername">inHostPort</span></td>
+      <td><p>Host port used if using TCP, or 0 otherwize (default).</p>
+</td>
+    </tr>
+    <tr>
+      <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+      <td><span class="parametername">inClientAddress</span></td>
+      <td><p>Client IP address (or &quot;localhost&quot; for local machine) if using TCP and managing events, or null otherwize (default).</p>
+</td>
+    </tr>
+    <tr>
+      <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+      <td><span class="parametername">inClientPort</span></td>
+      <td><p>Client port used if using TCP and managing events, or 0 otherwize (default).</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 id="TopSolid_Pdm_Explorer_Automating_TopSolidPdmExplorerHost_DefineConnection_System_String_System_Int32_System_String_System_Int32__remarks">Remarks</h5>
+<div class="markdown level1 remarks"><p>This method must be called before connecting to a remote TopSolid host on another machine to use TCP instead of named pipes,
+it is not needed to call it otherwize.</p>
+<p>When performing remote access and using events, <code>inClientAddress</code> and <code>inClientPort</code> must be set to allow TopSolid to connect
+to this client application, otherwize they must be set to <code>null</code> and <code>0</code>.</p>
+<p>This method cannot be called once connected to TopSolid, i.e. when <a class="xref" href="TopSolid.Pdm.Explorer.Automating.TopSolidPdmExplorerHost.IsConnected.html#TopSolid_Pdm_Explorer_Automating_TopSolidPdmExplorerHost_IsConnected">IsConnected</a> is <code>true</code>.</p>
+</div>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div id="footer-alt">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      			<div id="footer-alt-bottom">
+                      <ul>
+                          <li><a href="https://www.topsolid.com/en/terms-of-use">Term of use</a></li>
+                          <li><a href="https://www.topsolid.com/en/corporate-information">Corporate information</a></li>
+                          <li><a href="https://www.topsolid.com/en/privacy-policy-gdpr">Privacy Policy - GDPR</a></li>
+                      </ul>
+                      <p>Copyright ©2025 TopSolid - All rights reserved.</p>
+                  </div>
+          </div>
+        </div>
+      </footer>    </div>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>
