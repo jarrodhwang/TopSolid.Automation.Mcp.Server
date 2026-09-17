@@ -1,0 +1,129 @@
+# TopSolid Automation AI — 0.5.5
+
+Minimal Windows desktop chat with cloud service presets, OpenAI-compatible/Anthropic/Ollama adapters, a separate MCP console server, and **171 tools in 21 categories: 121 inspection/reference tools and 50 confirmed actions**. All TopSolid access stays inside the server.
+
+**0.5.5:** native project/object check-in, one-confirmation batch saving, direct save/check-in commands without inference, server-computed stars and bounded ellipse approximations, compatible nested units, smaller model receipts, and separate tool/confirmation timings. [Log findings, scope, geometry contracts and measured performance](docs/LOG-REVIEW-0.5.5.md).
+
+**0.5.4:** empty document creation by extension is the default (`useDefaultTemplate=false`). No loaded part or template lookup is required. The local catalog covers all 101 supplied extensions; context reads include active-command readiness, and retries retain the original workflow's tools. Specific templates remain available when explicitly requested. [Log findings, creation contracts and measured performance](docs/DOCUMENT-CREATION-0.5.4.md).
+
+**0.5.3:** batch 2D sketch drawing, lines/arcs/B-splines/parabolas, explicit frames and offsets, native associative reference placement, friendly-name sketch context, coordinate conversion, and topology-label repair. Open paths stay open and sections remain opt-in. [Sketch contracts, supported reference limits and validation](docs/SKETCH2D-0.5.3.md).
+
+**0.5.0:** TopSolid object/revision identity tools, duplicate-name lookup, confirmed PDM metadata/deletion/restoration, universal identifiers, stronger element guards, and native project/library creation-date ordering. The previous PDM Explorer requirement for ordering was incorrect for this installation; verified backing-document creation parameters now supply dates. See [object model, CRUD boundaries and validation](docs/TOPSOLID-OBJECT-MODEL-0.5.0.md).
+
+**0.5.2:** configurable 15-minute AI wait, direct alphabetical PDM lists, one-call creation context, confirmed part creation, complete tool-name visibility, smaller inventory history and optional faster GPT-OSS thinking. [Log review, measurements and limits](docs/LOG-REVIEW-0.5.2.md). Sketch profiles still omit sections by default; chat retains elapsed time and blue replies.
+
+**0.4.0:** 25 new batch tools for detailed reads, parameters, element edits/deletion, 2D/3D points, multiple sketch profiles and multiple extrusion/revolution features. Pages return details together; write batches use one confirmation and one undoable transaction. Studio supplies at most 96 tool schemas per model request and can select other discovered schemas when needed. See [batch tools and validation](docs/BATCH_TOOLS.md).
+
+**0.3.2:** project/library lists return `{pdmObjectId, name}` directly, eliminating one model call per name. Gemini model IDs are normalized; provider 404 details identify model access restrictions. A live Gemini 3.6 Flash run returned all 50 project and 66 library names in two MCP calls. See [PDM name-list validation](docs/PDM_NAME_LISTS.md).
+
+```text
+User → WPF Studio → selected AI model
+                    ↕ tool requests / results
+                 MCP client → console server → TopSolid Automation → TopSolid
+```
+
+## Build and open
+
+Requires Windows x64, .NET 10 SDK/Windows Desktop runtime, .NET Framework 4.8 targeting pack/runtime, and a licensed TopSolid 7.20 installation. Initial NuGet restore requires network access or a populated package cache.
+
+```powershell
+dotnet build .\TopSolid.Automation.Mcp.Server.slnx -c Release
+& .\TopSolid.Automation.AI.Studio\bin\Release\net10.0-windows\TopSolid.Automation.AI.Studio.exe
+```
+
+The build uses the matched SDK from `C:\Program Files\TOPSOLID\TopSolid 7.20\bin`. To use another SDK folder, supply `-p:TopSolidAutomationDirectory="D:\SDK\TopSolid7.20"`. Legacy DLLs in `Server.AddIn/TopSolid.Automation` are preserved but excluded from reference resolution. Tested client and host version: **7.20.400.107**. Modeling requires host 7.20.326 or newer.
+
+A complete framework-dependent bundle is in **`artifacts/TopSolid-AI-0.5.5`**. Open `TopSolid.Automation.AI.Studio.exe` there; keep the entire folder, including `McpServer`.
+
+```powershell
+dotnet publish .\TopSolid.Automation.AI.Studio -c Release -o .\artifacts\TopSolid-AI-0.5.5
+```
+
+## Use
+
+1. Choose **Cloud API** or **Ollama**.
+2. Choose a cloud service: OpenAI, Google Gemini, Anthropic, xAI, Meta Model API, Groq / Meta Llama, Mistral, DeepSeek or OpenRouter. The API URL fills automatically; each service keeps its own protected key and model. **Custom OpenAI-compatible** permits another URL. Ollama uses its server root, such as `http://localhost:11434`. See [cloud presets and Gemini correction](docs/CLOUD_SERVICES.md).
+3. Use **List models** to retrieve model IDs, then select a model that supports tool calling. Model discovery and successful inference are separate checks.
+4. **Save settings** persists configuration. **Save log** exports the current chat, completed conversations, configuration metadata, discovered MCP tools, tool calls/results, and the current application-session diagnostics as a redacted JSON file. The session log starts when Studio starts; the separate all-history files remain available for manual inspection. Ordinary chat also works with MCP disconnected.
+5. Open TopSolid in the same Windows session, then **Connect MCP**. Discovery lists the available tools in the trace. MCP connection and actual TopSolid availability are reported separately.
+6. Ask “Am I connected to TopSolid?” or “What document is currently open?” The model calls MCP and receives the actual result before answering.
+7. Describe a document or modeling task with its dimensions. The AI resolves the PDM destination, creates an empty document by extension, opens it, and then creates geometry. Templates are used only when requested. Each change has its own confirmation. The model first obtains its exact document ID. Studio displays a **Confirm TopSolid change** dialog containing the target, units and arguments. **Cancel is the default**; only **Apply change** submits the operation.
+
+Examples: “In the active part, create a 20 mm by 10 mm rectangle on XY at the origin,” or “Create a 20 × 10 × 5 mm rectangular extrusion in this part.” A 2D drawing/sketch document uses `placement=2d`; a planar sketch in a 3D document uses `xy`, `xz` or `yz`.
+
+**Ctrl+Enter** sends. **Cancel** interrupts model requests and inspection calls. Once a confirmed CAD modification is dispatched, cancellation, disconnect and close wait for commit/rollback; forcibly terminating the server could leave TopSolid locked. Geometry changes are not saved automatically; saving is a separate confirmed action.
+
+## Implemented scope
+
+| Area | Capabilities |
+|---|---|
+| System/reference | Live connection/version; capability listing; offline search and retrieval of the complete locally bundled official API reference |
+| Documents/PDM | Inspection plus confirmed project/folder/document creation, open, single/batch save, native object/project check-in, update, rebuild and rename; template and extension discovery |
+| Entities/licenses | Inspection plus rename, visibility, translation, typed scalar parameter edits, current user selection and chronological modeling operations |
+| Sketch2D/Sketch3D | Batched circles, rectangles, lines, arcs, polylines, cubic B-splines, parabolas, stars and bounded ellipse approximations; explicit frames/offsets and native reference placement; named sketch context, topology/curve reads and coordinate conversion; 3D polyline; optional sections and fix/unfix. New native creation/regeneration remains pending approved runtime qualification. |
+| Design2D/Design3D | Shape/topology/volume inspection; rectangular extrusion, extrusion/revolution of an existing sketch or section, loft of profiles, and through drilling |
+| Assembly/tooling/drafting/electrode/CAE | Assembly insertion with fixed positioning and inclusion translation; existing occurrence/material/tool/view/page/electrode/CAE inspection |
+| CAM | Existing setup/tool/operation/NC inspection; exact scalar parameter edits, calculation of one existing operation, and bounded toolpath table reads |
+
+The new workflows follow the supplied manuals: **PDM document → native sketch/profile/section → shape → assembly**, with returned IDs carried through the model/tool loop. See [manual review and workflow mapping](docs/MANUALS_AND_WORKFLOWS.md).
+
+See [every tool, category and source contract](docs/api/COVERAGE.md), [machine-readable MCP schemas](docs/api/mcp-tools.json), and [validation evidence](VALIDATION.md). A documented API is not automatically a callable tool. A discovered tool does not prove its TopSolid module is connected or licensed.
+
+General fillet/pocket/chamfer/Boolean creation, dimensional sketch constraints, CAM strategy creation, postprocessing, simulation execution, and Wire/standalone PDM Explorer adapters remain extensions. The entire TopSolid UI is not exposed by the public Automation interfaces reviewed here; unverified commands are not advertised as tools. Technology folders for 2D/3D/4-axis/3+2/5-axis/MillTurn/Robot CAM map to the public SDK's shared services; they do not advertise invented technology-specific interfaces.
+
+## Structure
+
+```text
+TopSolid.Automation.AI.Studio/
+  AI/          provider adapters and provider-neutral messages
+  Chat/        bounded model → tool → model loop and confirmation callback
+  Mcp/         owned console process, discovery, calls, write-aware cancellation
+  Settings/    persisted settings and Windows key protection
+  Diagnostics/ flushed crash/error logging and redacted session export
+  MainWindow / ChangeConfirmationWindow
+TopSolid.Automation.Mcp.Contracts/   DTOs; no vendor references
+TopSolid.Automation.Mcp.Server.AddIn/
+  Automation/  connection, ID/value conversion and native modeling transactions
+  Protocol/    MCP JSON-RPC over stdio
+  Tools/       domain folders; explicit compiled registrations and schemas
+    System/ Documents/ Pdm/ Entities/ License/
+    Sketch2D/ Sketch3D/ Design2D/ Design3D/ Assembly/ Tooling/
+    Drafting/ Electrode/ Cae/
+    Cam/ Machine/ PartSetup/ Operation/ CuttingConditions/ Nc/ ...
+TopSolid.Automation.Tests/              provider/client/chat/UI harness
+TopSolid.Automation.Mcp.Server.Tests/   schema/approval/transaction/geometry harness
+scripts/ApiReference/                   reference cache, SDK catalog and coverage report
+```
+
+`Server.AddIn` retains its original name; it runs as a console process outside TopSolid. New providers implement `IAiProvider`. New capabilities get typed schemas, a domain registration, verified public API contracts and appropriate transaction tests. There is no generic reflection/invoke tool, database or planning framework.
+
+## Quality and trade-offs
+
+| Area | Implementation / practical limit |
+|---|---|
+| Functionality | Exact discovered names, typed arguments and live results. Unsupported parameter/property types are explicit. No guessed CAD IDs. |
+| Reliability | One STA owns Automation. Modification start/dirty revision/commit/rollback follow the guide. Single-use approvals bind exact arguments for two minutes. The target and its synchronized document group are rechecked before execution. Document-local handles are rebased after EnsureIsDirty creates a new revision. PDM partial failures retain created-object receipts. Interrupted model follow-ups retain CAD receipts. Synchronous all-history and per-application-session Studio diagnostics are flushed on every event, with WPF/global crash handlers and server fatal-error capture. |
+| Performance | 16 model rounds, 24 tool calls per turn; batch pages default to 100 and return a continuation offset when the character budget is reached. Most vendor list APIs still fetch the whole list before output pagination. At most 96 schemas are sent to the model; selecting omitted tools costs a model round. Local models still need sufficient context. |
+| Security | Saved keys use DPAPI CurrentUser and endpoint binding. Cloud redirects are rejected; HTTPS is required except loopback. No arbitrary API, file, shell or NC execution tools. The trusted local MCP client owns human confirmation. Diagnostic exports omit API keys and redact configured credentials before persistence. |
+| Compatibility / portability | WPF/.NET 10 frontend and .NET Framework 4.8 x64 server isolate vendor dependencies. Windows-only; remote MCP HTTP is not implemented. Module availability is checked when used. |
+| Usability / quality in use | Visible calls/results and exact preview; default cancellation; distinguish model discovery, inference, MCP and TopSolid states. Failure messages identify whether a change's outcome is uncertain. |
+
+Settings are in `%LOCALAPPDATA%\TopSolid.Automation.AI.Studio\settings.json`. Studio writes all-history diagnostics to `%LOCALAPPDATA%\TopSolid.Automation.AI.Studio\Logs\studio-YYYY-MM-DD.log` and each application launch to a separate `studio-current-YYYYMMDD-HHmmss-<processId>-<sessionId>.log`; the separate MCP process writes fatal/protocol errors to the all-history `mcp-server-YYYY-MM-DD.log`. If LocalAppData is unavailable, Studio falls back to `%TEMP%\TopSolid.Automation.AI.Studio\Logs`. WPF crashes, unobserved task failures, handled errors, MCP stderr and server failures are recorded automatically. **Save log** includes the complete current-session log from Studio startup to the export, plus the current in-memory chat/trace snapshot; it includes all-history file paths for manual inspection but does not embed historical daily-log contents. API keys are omitted and redacted. Chat and traces remain bounded in memory. Cloud mode transmits chat and returned TopSolid information to the configured model service. Ollama LAN HTTP is supported; use HTTPS or a trusted network. TopSolid calls cannot be safely hard-cancelled during a modification; a vendor hang remains an operational limitation.
+
+## Reference work and tests
+
+The cache includes **6,898 symbols / 3,335 API pages** from the official 7.20 reference, with source hashes and no missing indexed pages. Seven installed Automation assemblies were cataloged. Runtime MCP metadata and reference results identify bundle-relative `TopSolid.Automation/...` files; website URLs in the cache and source links are provenance only. All five supplied PDFs were indexed (**581 pages**), and their relevant PDM/sketch/shape/assembly/CAM workflows were reviewed. Their editions differ: the Design Automation guide is v7.11 (2017), the User’s Guide is v7.9 (2014), and the newer Basics tutorial is v7.20 Rev.01 (2026). Current contracts and installed assemblies remain the implementation authority. Document instructions are source material, not authorization to change workstation settings.
+
+```powershell
+dotnet run --project .\TopSolid.Automation.Tests -c Release -- --server .\artifacts\TopSolid-AI\McpServer\TopSolid.Automation.Mcp.Server.AddIn.exe --ui-smoke
+& .\TopSolid.Automation.Mcp.Server.Tests\bin\Release\net48\TopSolid.Automation.Mcp.Server.Tests.exe
+.\TopSolid.Automation.Mcp.Server.AddIn\scripts\Test-Protocol.ps1 -ServerPath .\artifacts\TopSolid-AI\McpServer\TopSolid.Automation.Mcp.Server.AddIn.exe
+```
+
+See [VALIDATION.md](VALIDATION.md) for what passed and what still needs real CAD/CAM fixtures. A concrete isolated native test is prepared in `scripts/LiveWorkflow/fixture-plan.json`; executing it requires explicit approval. See the validation report for its current execution status.
+
+## Sources
+
+- [TopSolid 7.20 Automation reference](https://help.topsolid.com/7.20/en/TopSolid%27Automation/ReferencesHomePage.html)
+- [MCP stdio](https://modelcontextprotocol.io/specification/2025-03-26/basic/transports), [lifecycle](https://modelcontextprotocol.io/specification/2025-03-26/basic/lifecycle), [tools](https://modelcontextprotocol.io/specification/2025-03-26/server/tools)
+- [OpenAI function calling](https://developers.openai.com/api/docs/guides/function-calling), [Ollama tool calling](https://docs.ollama.com/capabilities/tool-calling)
