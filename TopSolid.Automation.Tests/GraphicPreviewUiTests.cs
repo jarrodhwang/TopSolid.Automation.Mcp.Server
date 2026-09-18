@@ -79,6 +79,19 @@ internal static class GraphicPreviewUiTests
                 Check.True(pane.Scene != null && !pane.IsLoading, "Stale selection replaced the current geometry");
                 ((Button)questionWindow.FindName("ClearSelection")).RaiseEvent(new RoutedEventArgs(Button.ClickEvent));
                 Check.True(pane.Scene == null && !pane.IsLoading, "Cleared selection retained unrelated geometry");
+                list.SelectedIndex = 0;
+                questionWindow.Width = 500; questionWindow.Height = 600; await Layout(questionWindow);
+                Check.True(list.IsVisible && list.ActualHeight > 100, "Narrow preview hides the question choices");
+                var narrowTabs = Descendants<TabControl>(questionWindow).Single();
+                Check.True(((Button)questionWindow.FindName("ContinueQuestion")).IsVisible, "Narrow question lost its shared action row");
+                render(questionWindow, "graphic-question-narrow-selection.png");
+                narrowTabs.SelectedIndex = 1; await Until(() => pane.IsVisible && pane.Scene != null, questionWindow);
+                Check.True(pane.ActualHeight > 250, "Narrow preview tab clips its viewport");
+                render(questionWindow, "graphic-question-narrow-preview.png");
+                narrowTabs.SelectedIndex = 0; await Layout(questionWindow);
+                Check.Equal(0, list.SelectedIndex, "Switching preview tabs lost the exact selection");
+                questionWindow.Width = 1080; await Layout(questionWindow);
+                Check.True(list.IsVisible && pane.IsVisible && !narrowTabs.IsVisible, "Wide layout did not restore side-by-side review");
             }
             finally { questionWindow.Close(); }
             var bad = new Client { Handler = (_, _) => Task.FromResult(new JObject { ["status"] = "tooLarge" }) };

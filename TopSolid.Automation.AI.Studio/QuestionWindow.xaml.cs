@@ -37,13 +37,14 @@ public partial class QuestionWindow : Window
         if (previewClient != null && question.Kind == "select" && question.Choices.Any(c => question.PreviewTargetFor(c.Key) != null))
         {
             graphic = new GraphicPreviewPane(previewClient, null);
-            var details = (FrameworkElement)Content; Content = null; details.Margin = new Thickness(0);
-            var review = PreviewLayout.Wrap(this, details, graphic); review.Margin = new Thickness(24); Content = review;
+            BodyHost.Content = null;
+            BodyHost.Content = PreviewLayout.Wrap(this, QuestionBody, graphic, narrowTabs: true);
         }
         if (question.Kind is not ("select" or "image")) { MinHeight = 380; Height = question.Kind == "color" ? 520 : 440; EditorScroll.Visibility = Visibility.Visible; }
-        Title = StudioStrings.Get("Question.Title"); Icon = TopSolidIcons.Get("app"); TopSolidTheme.ApplyWindow(this);
+        Title = StudioStrings.Get("Question.Title"); Icon = TopSolidIcons.Get("question"); TopSolidTheme.ApplyWindow(this);
         QuestionTitle.Text = question.Title;
         QuestionIcon.Source = TopSolidIcons.Get(IconKey(question.Kind == "select" ? question.ItemKind : question.Kind));
+        CancelQuestion.Tag = TopSolidIcons.Get("cancel"); ContinueQuestion.Tag = TopSolidIcons.Get("approve"); BrowseImage.Tag = TopSolidIcons.Get("image");
         QuestionHint.Text = StudioStrings.Get(question.Kind == "select" ? question.Multiple ? "Question.MultipleHint" : "Question.SelectHint" : "Question.InputHint");
         SearchPanel.Visibility = ChoiceList.Visibility = question.Kind == "select" ? Visibility.Visible : Visibility.Collapsed;
         ChoiceList.SelectionMode = question.Multiple ? SelectionMode.Multiple : SelectionMode.Single;
@@ -73,7 +74,7 @@ public partial class QuestionWindow : Window
             {
                 var button = new Button { Width = 38, Height = 38, Margin = new Thickness(0, 0, 9, 9), Padding = new Thickness(0),
                     Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString(hex)), ToolTip = hex };
-                ControlChrome.SetCornerRadius(button, new CornerRadius(9)); AutomationProperties.SetName(button, hex);
+                button.SetResourceReference(StyleProperty, "SwatchButton"); AutomationProperties.SetName(button, hex);
                 button.Click += (_, _) => HexBox.Text = hex;
                 Swatches.Children.Add(button);
             }
@@ -98,6 +99,10 @@ public partial class QuestionWindow : Window
         try
         {
             var cards = question.Choices.Where(c => c.SearchText.Contains(SearchBox.Text.Trim(), StringComparison.CurrentCultureIgnoreCase)).Select(c => new Card(c)).ToArray();
+            // WPF can retain an equal record across ItemsSource replacement.
+            // Clear the visual selection first, then restore only the exact keys
+            // we retained; "Clear selection" must also allow reselecting that item.
+            ChoiceList.UnselectAll();
             ChoiceList.ItemsSource = cards;
             foreach (var card in cards.Where(c => selected.Contains(c.Choice.Key)))
                 if (question.Multiple) ChoiceList.SelectedItems.Add(card); else ChoiceList.SelectedItem = card;

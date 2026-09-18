@@ -22,7 +22,7 @@ public partial class MainWindow
 
     private void InitializeShell()
     {
-        AppIcon.Source = WelcomeIcon.Source = Icon = TopSolidIcons.Get("app");
+        WelcomeIcon.Source = Icon = TopSolidIcons.Get("app");
         SettingsIcon.Source = TopSolidIcons.Get("settings");
         ClearButtonIcon.Source = TopSolidIcons.Get("document");
         ChatIcon.Source = TopSolidIcons.Get("window");
@@ -53,13 +53,6 @@ public partial class MainWindow
         ThemeStatusText.ToolTip = themeFollower.Current.Source;
     }
 
-    private void Minimize_Click(object sender, RoutedEventArgs e) => SystemCommands.MinimizeWindow(this);
-    private void Maximize_Click(object sender, RoutedEventArgs e)
-    {
-        if (WindowState == WindowState.Maximized) SystemCommands.RestoreWindow(this);
-        else SystemCommands.MaximizeWindow(this);
-    }
-    private void Close_Click(object sender, RoutedEventArgs e) => Close();
     private void Settings_Click(object sender, RoutedEventArgs e)
     {
         SettingsPage.Visibility = Visibility.Visible;

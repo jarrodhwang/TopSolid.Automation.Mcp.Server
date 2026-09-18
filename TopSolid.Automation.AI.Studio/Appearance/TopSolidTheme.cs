@@ -3,6 +3,7 @@ using System.Runtime.CompilerServices;
 using System.Windows;
 using System.Windows.Interop;
 using System.Windows.Media;
+using System.Windows.Shell;
 
 namespace TopSolid.Automation.AI.Studio.Appearance;
 
@@ -64,7 +65,9 @@ public static class TopSolidTheme
             ["global_dialog_back"] = "WindowBrush", ["global_controledit_background"] = "SurfaceBrush",
             ["global_dialog_border"] = "BorderBrush", ["global_dialog_text"] = "TextBrush",
             ["global_title_top"] = "TitleTopBrush", ["global_title_bottom"] = "TitleBottomBrush",
-            ["global_title_text"] = "TitleTextBrush", ["global_treeview_activetop"] = "AccentBrush"
+            ["global_title_text"] = "TitleTextBrush", ["global_treeview_activetop"] = "AccentBrush",
+            ["global_controledit_watermarktext"] = "MutedTextBrush", ["global_activeitembackground_border"] = "HoverBorderBrush",
+            ["tabcontrol_active_border"] = "SelectedBorderBrush"
         };
         if (snapshot.Colors != null)
             foreach (var pair in names)
@@ -78,13 +81,14 @@ public static class TopSolidTheme
         }
         // Match the TopSolid title, toolbar and command highlights; the chat surfaces stay quiet.
         app.Resources["TitleGradientBrush"] = Gradient(colors["TitleTopBrush"], colors["TitleBottomBrush"]);
-        app.Resources["ToolbarGradientBrush"] = Gradient(dark ? "#373737" : "#FAFAFF", dark ? "#292929" : "#E4E4EB");
-        app.Resources["RailGradientBrush"] = Gradient(dark ? "#292929" : "#FAFAFF", dark ? "#202020" : "#E4E4EB", horizontal: true);
-        app.Resources["ButtonGradientBrush"] = Gradient(dark ? "#3D3D3D" : "#FCFCFC", dark ? "#292929" : "#D9D9D9");
+        string Palette(string name, string fallback) => snapshot.Colors?.GetValueOrDefault(name) ?? fallback;
+        app.Resources["ToolbarGradientBrush"] = Gradient(Palette("iconsbar_toolstrip_background", dark ? "#373737" : "#FAFAFF"), Palette("iconsbar_background_right", dark ? "#292929" : "#E4E4EB"));
+        app.Resources["RailGradientBrush"] = Gradient(Palette("iconsbar_background_left", dark ? "#292929" : "#FAFAFF"), Palette("iconsbar_background_right", dark ? "#202020" : "#E4E4EB"), horizontal: true);
+        app.Resources["ButtonGradientBrush"] = Gradient(Palette("tabcontrol_up", dark ? "#3D3D3D" : "#FCFCFC"), Palette("tabcontrol_down", dark ? "#292929" : "#D9D9D9"));
         // TopSolid Dark uses blue command feedback. Classic retains the native peach/orange command highlight.
         app.Resources["ToolHoverGradientBrush"] = Gradient(dark ? "#0080D7" : "#FFFFFF", dark ? "#006EBB" : "#FFD9BB");
         app.Resources["ToolPressedGradientBrush"] = Gradient(dark ? "#006EBB" : "#FFD9BB", dark ? "#005A9E" : "#FDAF5F");
-        app.Resources["SelectionGradientBrush"] = Gradient(dark ? "#0080D7" : "#EBF7FE", dark ? "#006EBB" : "#9FD1ED");
+        app.Resources["SelectionGradientBrush"] = Gradient(Palette("tabcontrol_active_up", dark ? "#0080D7" : "#EBF7FE"), Palette("tabcontrol_active_down", dark ? "#006EBB" : "#9FD1ED"));
         app.Resources["ViewportGradientBrush"] = Gradient(snapshot.Colors?.GetValueOrDefault("systemcolors_documentbackgroundtop") ?? "#4A6597",
             snapshot.Colors?.GetValueOrDefault("systemcolors_documentbackgroundbottom") ?? "#E7E4E4");
         // Native WPF popup/selection surfaces also need to use the application palette.
@@ -95,6 +99,11 @@ public static class TopSolidTheme
         app.Resources[SystemColors.HighlightBrushKey] = app.Resources["AccentBrush"];
         app.Resources[SystemColors.HighlightTextBrushKey] = app.Resources["AccentTextBrush"];
         app.Resources[SystemColors.GrayTextBrushKey] = app.Resources["MutedTextBrush"];
+        app.Resources[SystemColors.MenuBrushKey] = app.Resources["SurfaceBrush"];
+        app.Resources[SystemColors.MenuTextBrushKey] = app.Resources["TextBrush"];
+        app.Resources[SystemColors.MenuBarBrushKey] = app.Resources["WindowBrush"];
+        app.Resources[SystemColors.InactiveSelectionHighlightBrushKey] = app.Resources["PanelBrush"];
+        app.Resources[SystemColors.InactiveSelectionHighlightTextBrushKey] = app.Resources["TextBrush"];
         foreach (Window window in app.Windows) ApplyWindow(window);
     }
 
@@ -110,6 +119,14 @@ public static class TopSolidTheme
     {
         if (!TrackedWindows.TryGetValue(window, out _))
         {
+            InitializeResources(window);
+            window.SetResourceReference(FrameworkElement.StyleProperty, typeof(Window));
+            window.WindowStyle = WindowStyle.None;
+            WindowChrome.SetWindowChrome(window, new WindowChrome
+            {
+                CaptionHeight = 34, ResizeBorderThickness = window.ResizeMode == ResizeMode.NoResize ? new Thickness(0) : new Thickness(6),
+                GlassFrameThickness = new Thickness(0), CornerRadius = new CornerRadius(0), UseAeroCaptionButtons = false
+            });
             TrackedWindows.Add(window, new object());
             window.SourceInitialized += WindowSourceInitialized;
         }

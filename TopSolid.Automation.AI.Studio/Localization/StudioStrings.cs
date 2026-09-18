@@ -9,6 +9,12 @@ public static class StudioStrings
     private sealed record Entry(string Key, string English, string Korean);
     private static readonly Entry[] Entries =
     [
+        new("Window.Minimize", "Minimize", "최소화"),
+        new("Window.Maximize", "Maximize", "최대화"),
+        new("Window.Restore", "Restore", "이전 크기로"),
+        new("Window.Close", "Close", "닫기"),
+        new("Error.Title", "Unable to complete the request", "요청을 완료하지 못했습니다"),
+        new("Error.Details", "Error details", "오류 자세히 보기"),
         new("Preview.Title", "3D preview", "3D 미리보기"),
         new("Preview.Current", "Current document", "현재 문서"),
         new("Preview.Proposed", "Proposed geometry", "생성할 형상"),
@@ -37,6 +43,7 @@ public static class StudioStrings
         new("Preview.View.right", "Right", "오른쪽에서"),
         new("Activity.Question", "Waiting for your answer", "답변을 기다리는 중"),
         new("Question.Title", "Your input", "선택 및 입력"),
+        new("Question.Selection", "Selection", "선택"),
         new("Question.ChooseProject", "Which project should be used?", "어떤 프로젝트를 사용할까요?"),
         new("Question.SelectHint", "Choose an item to continue.", "계속하려면 항목을 선택하세요."),
         new("Question.MultipleHint", "Choose one or more items to continue.", "계속하려면 하나 이상의 항목을 선택하세요."),

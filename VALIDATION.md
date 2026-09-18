@@ -1,5 +1,14 @@
 # Validation — 2026-09-18, current workspace
 
+## Studio/MCP 0.5.15 — shared TopSolid dialog design
+
+- Release and Debug solution builds passed with zero warnings/errors. **39/39 application groups**, **15,256 offline server checks**, and **2,094 protocol checks** passed. The configured Debug MCP executable was rebuilt and tested; the application harness also verified a live read-only document identity/name. No CAD writes.
+- WPF fixtures passed for main, Developer/GPU, connection, approval, question and explicit error-review windows. Captures now include the shared title bar. Light/dark/Korean, minimum layouts and the existing flat review/native CAM icons were visually inspected.
+- Additional UI checks verified palette replacement on the same open window, custom TopSolid toolbar/button colors, localized accessible caption commands, cancellation through the caption, long error scrolling, no unsolicited error modal, explicit error review and cleanup after recovery.
+- Graphical question fixtures verify wide-to-narrow-to-wide layouts, visible selection lists at 500 × 600, complete preview tabs, shared footer actions and exact selection preservation. The clear/reselect regression is covered for equal choice records and filtered selections.
+- Windows shell file pickers remain native. The production hardware rendering preference and geometry budgets are unchanged; fixture screenshots are software renders. Manual mixed-DPI caption dragging and GPU throughput were not measured.
+- Evidence: `artifacts/dialog-theme-0.5.15`, `artifacts/ui-redesign`. Bundle: `artifacts/TopSolid-AI-0.5.15`. [Dialog scope and test prompts](docs/DIALOG-THEME-0.5.15.md).
+
 ## Studio/MCP 0.5.14 — TopSolid preview controls and precision
 
 - Release/Debug solution builds passed with zero warnings/errors. **39/39 application groups**, **15,256 offline server checks**, and **2,094 protocol checks** (native queries disabled) passed. The configured Debug MCP executable was rebuilt and exercised.

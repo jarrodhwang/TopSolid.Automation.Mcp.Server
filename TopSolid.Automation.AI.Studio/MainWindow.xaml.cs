@@ -400,7 +400,7 @@ public partial class MainWindow : Window
         using var active = new CancellationTokenSource();
         operation = active;
         SetBusy(true);
-        try { await work(active.Token); }
+        try { await work(active.Token); ClearErrorReview(); }
         catch (OperationCanceledException) { if (modelStatus == "listing models") modelStatus = "cancelled"; RecordTrace("Cancelled", "Request cancelled. An interrupted MCP session may need reconnecting."); if (chatClock.IsRunning) RecordChat("System", StudioStrings.Text("Request cancelled.")); }
         catch (Exception ex) { if (modelStatus == "listing models") modelStatus = "model listing failed"; ShowError(ex); }
         finally { operation = null; if (!closing) { SetBusy(false); UpdateStatus(); } }
@@ -444,6 +444,7 @@ public partial class MainWindow : Window
         responsePresenter.Clear();
         lastPresentedChatSequence = 0;
         ChatBox.Clear();
+        ClearErrorReview();
         ElapsedText.Text = "";
         TraceBox.Clear();
         attachments.Clear(); RenderAttachments();
@@ -540,6 +541,7 @@ public partial class MainWindow : Window
         diagnosticLog.WriteException("handled.error", error);
         RecordTrace("Error", error.Message);
         RecordChat("System", StudioStrings.Text(error.Message));
+        SetErrorReview(error);
         if (SettingsPage.Visibility == Visibility.Visible) SettingsFeedback.Text = responsePresenter.Present(StudioStrings.Text(error.Message), settings.DevMode);
     }
 

@@ -150,6 +150,31 @@
     "Sha256": "4C31546B895DF22DC97C164A9F3079C92143FE8332A46AACFE8EA3F4029E79B5"
   },
   {
+    "Key": "approve",
+    "Source": "Cad\\Kernel\\WX\\Dialogs\\Tools.OK.png",
+    "Sha256": "FC37A3E9D5069FCD85E6CA30F39D8B10411FD064CE7C1B31EFE6E6DA063A0E86"
+  },
+  {
+    "Key": "cancel",
+    "Source": "Cad\\Kernel\\WX\\Dialogs\\Tools.Cancel.png",
+    "Sha256": "352DF7C5F29957CD217108BB66BF85EF465DB6591B4858950C75C6592323B147"
+  },
+  {
+    "Key": "error",
+    "Source": "Cad\\Kernel\\WX\\Resources.Error.png",
+    "Sha256": "6BFF0E539FDE0A01C772A52C5669DC78017D51ED773A2E372B3C1AA65BB0FF07"
+  },
+  {
+    "Key": "warning",
+    "Source": "Cad\\Kernel\\WX\\Resources.Warning.png",
+    "Sha256": "83E18D4E61CA7EF919AFEBE6B3F7F1A470AF61C97C1468E5F10E06FE07BE6822"
+  },
+  {
+    "Key": "question",
+    "Source": "Cad\\Kernel\\WX\\Resources.Question.png",
+    "Sha256": "FE63F0AA2010D549222EA364271BCD60FDE1B6BEBD18CE7E55A63DEE5C4289A4"
+  },
+  {
     "Key": "parameter",
     "Source": "Cad\\Kernel\\DB\\Parameters\\RealParameterEntity.png",
     "Sha256": "2418968649FDD6E903AD403ADC4BAE4DCC97FE9444BBD1400608BABF211C0507"
