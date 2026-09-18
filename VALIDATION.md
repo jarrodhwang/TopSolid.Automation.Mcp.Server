@@ -1,5 +1,13 @@
 # Validation — 2026-09-18, current workspace
 
+## Studio/MCP 0.5.17 — startup license gate
+
+- Release/Debug solution builds passed without warnings/errors. **41/41 application groups**, **15,267 offline server checks**, **2,095 protocol checks**, and the WPF shell/dialog fixtures passed. Startup fixtures cover validity, wrong/missing module identity, unsupported response versions, malformed booleans/rows, lookup errors/timeouts, cancellation/late completion and no main-window creation before success.
+- The configured Debug MCP executable was rebuilt and queried live: **Kernel Base module 1000 valid**, host **7.20.400.107**, **11 license records**. Product packages can carry `Module=0`; the active-license list has no individual Kernel Base record. Startup therefore uses the dedicated vendor validity call, and package metadata is not mislabeled as Kernel Base metadata or validity.
+- Native license DTO/serializer checks preserve expiry, active state, type, user, owner, status and version. Missing expiry remains unknown. Native reads do not alter allocation or CAD state; fixtures do not revoke a real license. Startup diagnostics omit license identity details.
+- Light/dark and English/Korean license windows were rendered and visually inspected, including compact loading, blocked/unavailable startup, missing module metadata and small layouts. These are offscreen software renders; manual DPI/monitor behavior and a genuinely expired-license installation were not tested.
+- Evidence: `artifacts/license-0.5.17`, `artifacts/ui-redesign/license-*.png`. Bundle: `artifacts/TopSolid-AI-0.5.17`. [Behavior, API semantics and test prompts](docs/LICENSE-STARTUP-0.5.17.md).
+
 ## Studio/MCP 0.5.16 — main-window caption controls
 
 - Debug and Release builds passed with zero warnings/errors; the configured Debug output was rebuilt. The existing WPF UI fixture passed, including light/dark/Korean, minimum layouts and modal cancellation.

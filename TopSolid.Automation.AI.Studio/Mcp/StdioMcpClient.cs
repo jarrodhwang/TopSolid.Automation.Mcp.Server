@@ -60,7 +60,7 @@ public sealed class StdioMcpClient : IConfirmableMcpClient, IGraphicPreviewClien
             {
                 ["protocolVersion"] = ProtocolVersion,
                 ["capabilities"] = new JObject(),
-                ["clientInfo"] = new JObject { ["name"] = "TopSolid Automation AI Studio", ["version"] = "0.5.16" }
+                ["clientInfo"] = new JObject { ["name"] = "TopSolid Automation AI Studio", ["version"] = "0.5.17" }
             }, cancellationToken);
             if ((string?)response["protocolVersion"] != ProtocolVersion || response["capabilities"]?["tools"] is not JObject)
                 throw new IOException("The MCP server does not support the required protocol/tools capability.");
@@ -98,6 +98,18 @@ public sealed class StdioMcpClient : IConfirmableMcpClient, IGraphicPreviewClien
 
     public async Task<McpToolResult> CallToolAsync(string name, JObject arguments, CancellationToken cancellationToken)
         => await CallToolCoreAsync(name, arguments, null, cancellationToken);
+
+    public async Task<TopSolidLicenseStatus> GetLicenseStatusAsync(CancellationToken cancellationToken)
+    {
+        if (!IsConnected) throw new IOException("MCP is disconnected.");
+        var response = await RequestAsync("topsolid/licenseStatus", new JObject(), cancellationToken);
+        // Strictly validate the gate fields before deserialization: strings/numbers are not booleans.
+        if (response["schemaVersion"]?.Type != JTokenType.Integer || (int?)response["schemaVersion"] != 1 ||
+            response["requiredModule"]?.Type != JTokenType.Integer || (int?)response["requiredModule"] != TopSolidLicenseStatus.KernelBaseModule ||
+            response["requiredLicenseValid"]?.Type != JTokenType.Boolean || response["licenses"] is not JArray licenses || licenses.Any(l => l is not JObject))
+            throw new IOException("The MCP server returned an incomplete license verification.");
+        return response.ToObject<TopSolidLicenseStatus>() ?? throw new IOException("Invalid license status.");
+    }
 
     public async Task<JObject> GetGraphicPreviewAsync(JObject target, CancellationToken cancellationToken)
     {

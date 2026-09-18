@@ -16,10 +16,12 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
         private readonly Func<JObject, JObject> preview;
         private readonly Func<string, JObject, CreationNames> resolveCreationNames;
         private readonly Func<JObject, JObject> graphicPreview;
+        private readonly Func<JObject> licenseStatus;
         public ToolRegistry(AutomationGateway automation)
         {
             preview = automation.PreviewModeling;
             graphicPreview = automation.GraphicPreview;
+            licenseStatus = automation.GetLicenseStatus;
             resolveCreationNames = automation.ResolveCreationNames;
             Register(StatusTools.Create(automation));
             Register(DocumentTools.Active(automation));
@@ -93,6 +95,13 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
             try { return confirmations.Prepare(tool, arguments, Preview(tool, arguments, out _)); }
             catch (RpcException) { throw; }
             catch (Exception ex) { throw new RpcException(-32011, "Could not prepare this action: " + AutomationGateway.Describe(ex)); }
+        }
+        public JObject LicenseStatus()
+        {
+            if (licenseStatus == null) throw new RpcException(-32601, "License inspection is unavailable.");
+            // Do not log license user/owner data or credentials. The caller treats any read failure as unverified.
+            try { return licenseStatus(); }
+            catch { throw new RpcException(-32012, "TopSolid license verification is unavailable. Open TopSolid, wait until it is ready, then restart Studio."); }
         }
         public JObject GraphicPreview(JObject request)
         {

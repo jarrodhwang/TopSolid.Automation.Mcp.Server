@@ -69,6 +69,7 @@ internal static class MutationTransportTests
             {
                 case "initialize": result = new JObject { ["protocolVersion"] = StdioMcpClient.ProtocolVersion, ["capabilities"] = new JObject { ["tools"] = new JObject() } }; break;
                 case "tools/list": result = new JObject { ["tools"] = new JArray(new JObject { ["name"] = "fixture_change", ["inputSchema"] = new JObject { ["type"] = "object" }, ["annotations"] = new JObject { ["readOnlyHint"] = false } }) }; break;
+                case "topsolid/licenseStatus": result = JObject.Parse(Environment.GetEnvironmentVariable("TOPSOLID_LICENSE_TEST_RESPONSE") ?? "{}"); break;
                 case "topsolid/graphicPreview":
                     await Console.Error.WriteLineAsync("fixture preview started"); await Task.Delay(250);
                     result = new JObject { ["status"] = "unsupported", ["documentId"] = request["params"]!["documentId"]!.DeepClone() };

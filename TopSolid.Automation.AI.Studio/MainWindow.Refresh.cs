@@ -75,9 +75,9 @@ public partial class MainWindow
     private async void Refresh_Click(object sender, RoutedEventArgs e)
     {
         if (closing || connectionDialog != null) return;
-        if (connectionHealth.HasProblems || operation != null)
+        // Keep license details reachable even when every connection is healthy.
         {
-            var dialog = new ConnectionStatusWindow { Owner = this };
+            var dialog = new ConnectionStatusWindow(startupLicenseStatus) { Owner = this };
             connectionDialog = dialog;
             dialog.Update(connectionHealth, operation == null && !refreshRunning && !mcp.IsMutationInFlight);
             bool retry;

@@ -11517,7 +11517,7 @@
   },
   {
     "name": "topsolid_list_active_licenses",
-    "description": "List active TopSolid license modules and status. Does not change license allocation.",
+    "description": "List active TopSolid licenses with validity, expiration date, active state, type, user, status and version. Does not change license allocation. A missing expiration date means the API supplied no date.",
     "inputSchema": {
       "type": "object",
       "properties": {
@@ -11548,6 +11548,7 @@
       "topsolid/category": "License",
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/8ea2968ea9f931ef97ff8c93.md",
+        "TopSolid.Automation/markdown/kernel/b49940f2b43c657f1507fdaf.md",
         "TopSolid.Automation/markdown/kernel/37de2764bbb88802cb7adcb7.md"
       ],
       "topsolid/requiresConfirmation": false

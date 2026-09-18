@@ -90,6 +90,7 @@ internal static partial class UiShellTests
         await GraphicPreviewUiTests.Run(window, (target, name) => Render(target, Path.Combine(output, name)));
         await VerifyConnectionIndicator(window, output);
         await DialogThemeUiTests.Run(window, (target, name) => Render(target, Path.Combine(output, name)));
+        await LicenseUiTests.Run(window, (target, name) => Render(target, Path.Combine(output, name)));
         session.Clear();
         session.AddChat("You", "프로젝트 목록을 확인하고 새 2D 스케치를 준비해 주세요.");
         session.AddTrace("Model", "UI fixture request; no inference performed");

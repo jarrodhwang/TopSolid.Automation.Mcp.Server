@@ -25,7 +25,8 @@ public partial class MainWindow : Window
 {
     private readonly DiagnosticLog diagnosticLog = App.DiagnosticLog;
     private readonly SettingsStore settingsStore = new();
-    private readonly StdioMcpClient mcp = new();
+    private readonly StdioMcpClient mcp;
+    private readonly TopSolidLicenseStatus? startupLicenseStatus;
     private readonly SessionLog sessionLog = new();
     private IReadOnlyList<McpToolDefinition> lastDiscoveredTools = [];
     private AppSettings settings = new();
@@ -43,8 +44,10 @@ public partial class MainWindow : Window
 
     public MainWindow() : this(autoConnect: true) { }
 
-    internal MainWindow(bool autoConnect)
+    internal MainWindow(bool autoConnect, StdioMcpClient? connectedClient = null, TopSolidLicenseStatus? licenseStatus = null)
     {
+        mcp = connectedClient ?? new StdioMcpClient();
+        startupLicenseStatus = licenseStatus;
         TopSolidTheme.InitializeResources(this);
         settings = settingsStore.Load();
         StudioStrings.Apply(settings.InterfaceLanguage);

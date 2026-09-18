@@ -5,6 +5,8 @@ internal static class Program
     private static async Task<int> Main(string[] args)
     {
         if (Environment.GetEnvironmentVariable("TOPSOLID_MCP_TEST_FIXTURE") == "1") return await MutationTransportTests.RunFixture();
+        if (args.Length == 2 && args[0] == "--live-licenses")
+        { await LicenseTests.Live(args[1]); return 0; }
         if (args.Length is 1 or 2 && args[0] == "--ui-shell" && (args.Length == 1 || args[1] == "--no-ui-render"))
         { await UiShellTests.Run(render: args.Length == 1); return 0; }
         if (args.Length == 2 && args[0] == "--live-cam-reads")
@@ -99,6 +101,8 @@ internal static class Program
         cases.Add(("Measured developer dashboard timings and formatted details", DeveloperDashboardTests.MeasuredTurnDurationsAndReadableDetails));
         cases.Add(("Permission modes and bounded text/image attachment delivery", UiWorkflowTests.Run));
         cases.Add(("TopSolid saved and custom theme parsing", ThemeTests.Run));
+        cases.Add(("Kernel Base startup gate, rejected queries and cancellation", LicenseTests.Gate));
+        cases.Add(("License protocol fields and strict fail-closed parsing", LicenseTests.Transport));
         cases.Add(("Independent Studio and AI response languages", LocalizationTests.Run));
         cases.Add(("Friendly user responses and unchanged developer receipts, target identities and model history", ResponsePresentationTests.Run));
         cases.Add(("Connection readiness, slow/pending states, quota preservation and translated failures", ConnectionHealthTests.Run));
