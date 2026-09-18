@@ -31,8 +31,7 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Automation
                 {
                     TopSolidHost.Documents.EnsureIsDirty(ref document);
                     ElementId sketch;
-                    ElementItemId profile = ElementItemId.Empty, section = ElementItemId.Empty;
-                    var createSection = SketchSectionOptions.ForModel(operation, arguments);
+                    ElementItemId profile = ElementItemId.Empty;
                     if (operation == "polyline3d")
                     {
                         sketch = TopSolidHost.Sketches3D.CreateSketch(document, SmartPlane3D.OXY,
@@ -81,24 +80,26 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Automation
                                 for (var i = 0; i < 4; i++) segments.Add(TopSolidHost.Sketches2D.CreateLineSegment(vertices[i], vertices[(i + 1) % 4]));
                             }
                             profile = TopSolidHost.Sketches2D.CreateProfile(segments);
-                            if (createSection) section = TopSolidHost.Sketches2D.CreateSection(new List<ElementItemId> { profile });
                         }
                         finally { TopSolidHost.Sketches2D.EndModification(); }
                         RequireValid(TopSolidHost.Sketches2D.CreateBuildingOperation(sketch), "2D sketch building operation");
                     }
                     RequireValid(sketch, "sketch");
                     var segmentCount = operation == "polyline3d" ? TopSolidHost.Sketches3D.GetSegmentCount(sketch) : TopSolidHost.Sketches2D.GetSegmentCount(sketch);
-                    if (segmentCount == 0 || (operation != "polyline3d" && profile.IsEmpty) || (createSection && section.IsEmpty)) throw new InvalidOperationException("Native sketch topology is empty.");
-                    if (arguments["name"] != null) TopSolidHost.Elements.SetName(sketch, (string)arguments["name"]);
+                    if (segmentCount == 0 || (operation != "polyline3d" && profile.IsEmpty)) throw new InvalidOperationException("Native sketch topology is empty.");
+                    CreationNames.SetAndVerify(TopSolidHost.Elements, sketch, (string)arguments["name"]);
                     var result = new JObject { ["originalDocumentId"] = originalDocumentId, ["documentId"] = document.PdmDocumentId, ["sketch"] = AutomationValues.Json(sketch), ["saved"] = false, ["units"] = "metres", ["message"] = "Created native geometry in the specified document. Changes are not saved automatically." };
                     result["profile"] = AutomationValues.Json(profile);
-                    result["section"] = AutomationValues.Json(section);
-                    result["sectionCreated"] = !section.IsEmpty;
+                    result["name"] = TopSolidHost.Elements.GetName(sketch);
+                    result["friendlyName"] = TopSolidHost.Elements.GetFriendlyName(sketch);
+                    result["sectionCreated"] = false;
                     result["nativeSegmentCount"] = segmentCount;
                     result["geometryReadBack"] = true;
                     if (operation == "extruded_rectangle")
                     {
-                        var shape = TopSolidHost.Shapes.CreateExtrudedShape(document, new SmartSection3D(sketch, section.ItemLabel),
+                        // SmartSection3D(sketch) references the existing sketch. It does
+                        // not create a persistent ISketches2D section in that sketch.
+                        var shape = TopSolidHost.Shapes.CreateExtrudedShape(document, new SmartSection3D(sketch),
                             new SmartDirection3D(new Direction3D(0, 0, 1), new Point3D(Value("x"), Value("y"), Value("z"))), new SmartReal(UnitType.Length, Value("depth")), null, false, false);
                         result["shape"] = AutomationValues.Json(shape);
                         RequireValid(shape, "extruded shape");
@@ -106,6 +107,7 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Automation
                         if (!(volume > 0) || double.IsInfinity(volume)) throw new InvalidOperationException("Native extrusion has no positive solid volume.");
                         result["volumeCubicMetres"] = volume;
                     }
+                    if (operation != "polyline3d") RequireUnchangedSections(sketch, 0);
                     return result;
                 });
         }

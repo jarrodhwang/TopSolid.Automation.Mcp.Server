@@ -8,6 +8,7 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
     internal static class Schema
     {
         public static JObject Text(string description, int max = 2048) => new JObject { ["type"] = "string", ["minLength"] = 1, ["maxLength"] = max, ["description"] = description };
+        public static JObject TextValue(string description, int max = 2048) { var schema = Text(description, max); schema["minLength"] = 0; return schema; }
         public static JObject Number(string description, double minimum = -1000000, double maximum = 1000000) => new JObject { ["type"] = "number", ["minimum"] = minimum, ["maximum"] = maximum, ["description"] = description };
         public static JObject Integer(string description, int minimum = 0, int maximum = int.MaxValue) => new JObject { ["type"] = "integer", ["minimum"] = minimum, ["maximum"] = maximum, ["description"] = description };
         public static JObject Boolean(string description) => new JObject { ["type"] = "boolean", ["description"] = description };
@@ -39,7 +40,8 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
                         ((string)name == "profiles" ? " Put primitive geometry inside profiles:[{kind,...}]; keep placement/name on the sketch. Supply all required primitive dimensions." : ""));
                 foreach (var property in obj.Properties())
                 {
-                    if (!(properties[property.Name] is JObject child)) throw new RpcException(-32602, "Unexpected " + path + "." + property.Name);
+                    if (!(properties[property.Name] is JObject child)) throw new RpcException(-32602, "Unexpected " + path + "." + property.Name +
+                        (property.Name == "createSection" || property.Name == "sectionMode" ? ". Sketch tools no longer create sections. Omit this field; extrusion/revolution accept the original sketch handle directly." : ""));
                     Validate(property.Value, child, path + "." + property.Name, depth + 1);
                 }
             }
@@ -51,7 +53,7 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
             else if (type == "string")
             {
                 var text = (string)value;
-                if (string.IsNullOrWhiteSpace(text) || text.Length > ((int?)schema["maxLength"] ?? 2048)) throw new RpcException(-32602, path + " is empty or too long.");
+                if (((int?)schema["minLength"] ?? 1) > 0 && string.IsNullOrWhiteSpace(text) || text.Length > ((int?)schema["maxLength"] ?? 2048)) throw new RpcException(-32602, path + " is empty or too long.");
             }
             else if (type == "number" || type == "integer")
             {

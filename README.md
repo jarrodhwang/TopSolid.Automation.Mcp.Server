@@ -1,16 +1,30 @@
-# TopSolid Automation AI — 0.5.5
+# TopSolid Automation AI — 0.5.12
 
-Minimal Windows desktop chat with cloud service presets, OpenAI-compatible/Anthropic/Ollama adapters, a separate MCP console server, and **171 tools in 21 categories: 121 inspection/reference tools and 50 confirmed actions**. All TopSolid access stays inside the server.
+**0.5.12:** Native interactive 3D previews in approval and geometry-bearing question dialogs, using actual TopSolid glTF exports. Includes orbit/pan/zoom/fit, TopSolid colors/icons, proposed cylinder/rectangle geometry, and cancellation that preserves the MCP approval session. [Graphical review behavior and limits](docs/GRAPHIC-PREVIEW-0.5.12.md).
+
+**0.5.11:** Assistant questions use searchable icon cards and validated text, integer, decimal, image and color inputs. Object selections retain live receipt identities and scope while displaying friendly names. Cancelling stops the workflow; answering never replaces change approval. Includes the connection-status JSON-text fallback fix. [Question dialog contract](docs/QUESTION-DIALOG-0.5.11.md).
+
+**0.5.10:** User Mode resolves friendly names for numeric/opaque references; approval uses TopSolid icons and formatted change cards; visible activity covers AI and TopSolid work. CAM cutting conditions default to operation parameters, with paginated values/types/units/choices and editability checks before approval. [Contracts, log findings and API limits](docs/CAM-USER-MODE-0.5.10.md).
+
+Minimal Windows desktop chat with cloud service presets, OpenAI-compatible/Anthropic/Ollama adapters, a separate MCP console server, and **187 tools in 22 categories: 128 inspection/reference tools and 59 confirmed actions**. All TopSolid access stays inside the server.
+
+**0.5.9:** automatic sketch/shape names, unique suffixes for requested names, and a separate section action only for explicit requests. [Naming/section changes](docs/NAMING-AND-SECTIONS-0.5.9.md). Ordinary modeling needs no “no section” instruction.
+
+**0.5.8:** verified cylinder workflows (extrude/revolve), analytic 2D slots, 3D curve batches, named/RGB element and face colors, native parameter references for feature dimensions, profile checks before confirmation and faster active-document context. [Log findings, examples, measured model timings and remaining API limits](docs/MODELING-0.5.8.md).
+
+**0.5.7:** native entity/parameter concepts; typed value adapters for all 11 concrete ParameterTypes; 8 creation types; formula/reference creation and editing through verified parent operations; entity structure, property and folder tools; RGB/transparency edits; immediate compact local-model access. [Contracts, examples and validation limits](docs/ENTITIES-PARAMETERS-0.5.7.md).
+
+**0.5.6:** section creation removed from sketch tools; direct extrusion from existing sketches; a computed smooth heart; one-call named project/document context; conversation preserved across model/provider changes; bounded invalid proposals; compact local tool exposure, optional fast Gemma 4 replies and inference timing metrics. [Log findings, contracts, measurements and native validation limits](docs/SKETCH-RELIABILITY-0.5.6.md).
 
 **0.5.5:** native project/object check-in, one-confirmation batch saving, direct save/check-in commands without inference, server-computed stars and bounded ellipse approximations, compatible nested units, smaller model receipts, and separate tool/confirmation timings. [Log findings, scope, geometry contracts and measured performance](docs/LOG-REVIEW-0.5.5.md).
 
 **0.5.4:** empty document creation by extension is the default (`useDefaultTemplate=false`). No loaded part or template lookup is required. The local catalog covers all 101 supplied extensions; context reads include active-command readiness, and retries retain the original workflow's tools. Specific templates remain available when explicitly requested. [Log findings, creation contracts and measured performance](docs/DOCUMENT-CREATION-0.5.4.md).
 
-**0.5.3:** batch 2D sketch drawing, lines/arcs/B-splines/parabolas, explicit frames and offsets, native associative reference placement, friendly-name sketch context, coordinate conversion, and topology-label repair. Open paths stay open and sections remain opt-in. [Sketch contracts, supported reference limits and validation](docs/SKETCH2D-0.5.3.md).
+**0.5.3:** batch 2D sketch drawing, lines/arcs/B-splines/parabolas, explicit frames and offsets, native associative reference placement, friendly-name sketch context, coordinate conversion, and topology-label repair. Open paths stay open. Section opt-in from this earlier release was removed in 0.5.6. [Sketch contracts, supported reference limits and validation](docs/SKETCH2D-0.5.3.md).
 
 **0.5.0:** TopSolid object/revision identity tools, duplicate-name lookup, confirmed PDM metadata/deletion/restoration, universal identifiers, stronger element guards, and native project/library creation-date ordering. The previous PDM Explorer requirement for ordering was incorrect for this installation; verified backing-document creation parameters now supply dates. See [object model, CRUD boundaries and validation](docs/TOPSOLID-OBJECT-MODEL-0.5.0.md).
 
-**0.5.2:** configurable 15-minute AI wait, direct alphabetical PDM lists, one-call creation context, confirmed part creation, complete tool-name visibility, smaller inventory history and optional faster GPT-OSS thinking. [Log review, measurements and limits](docs/LOG-REVIEW-0.5.2.md). Sketch profiles still omit sections by default; chat retains elapsed time and blue replies.
+**0.5.2:** configurable 15-minute AI wait, direct alphabetical PDM lists, one-call creation context, confirmed part creation, complete tool-name visibility, smaller inventory history and optional faster GPT-OSS thinking. [Log review, measurements and limits](docs/LOG-REVIEW-0.5.2.md). Sketch tools now omit sections entirely in 0.5.6; chat retains elapsed time and blue replies.
 
 **0.4.0:** 25 new batch tools for detailed reads, parameters, element edits/deletion, 2D/3D points, multiple sketch profiles and multiple extrusion/revolution features. Pages return details together; write batches use one confirmation and one undoable transaction. Studio supplies at most 96 tool schemas per model request and can select other discovered schemas when needed. See [batch tools and validation](docs/BATCH_TOOLS.md).
 
@@ -33,10 +47,10 @@ dotnet build .\TopSolid.Automation.Mcp.Server.slnx -c Release
 
 The build uses the matched SDK from `C:\Program Files\TOPSOLID\TopSolid 7.20\bin`. To use another SDK folder, supply `-p:TopSolidAutomationDirectory="D:\SDK\TopSolid7.20"`. Legacy DLLs in `Server.AddIn/TopSolid.Automation` are preserved but excluded from reference resolution. Tested client and host version: **7.20.400.107**. Modeling requires host 7.20.326 or newer.
 
-A complete framework-dependent bundle is in **`artifacts/TopSolid-AI-0.5.5`**. Open `TopSolid.Automation.AI.Studio.exe` there; keep the entire folder, including `McpServer`.
+A complete framework-dependent bundle is in **`artifacts/TopSolid-AI-0.5.12`**. Open `TopSolid.Automation.AI.Studio.exe` there; keep the entire folder, including `McpServer`.
 
 ```powershell
-dotnet publish .\TopSolid.Automation.AI.Studio -c Release -o .\artifacts\TopSolid-AI-0.5.5
+dotnet publish .\TopSolid.Automation.AI.Studio -c Release -o .\artifacts\TopSolid-AI-0.5.12
 ```
 
 ## Use
@@ -51,6 +65,8 @@ dotnet publish .\TopSolid.Automation.AI.Studio -c Release -o .\artifacts\TopSoli
 
 Examples: “In the active part, create a 20 mm by 10 mm rectangle on XY at the origin,” or “Create a 20 × 10 × 5 mm rectangular extrusion in this part.” A 2D drawing/sketch document uses `placement=2d`; a planar sketch in a 3D document uses `xy`, `xz` or `yz`.
 
+**More thinking** is available for local Ollama only; when enabled, the model's default thinking behavior is used. When unchecked, Gemma 4 thinking is disabled and GPT-OSS uses low thinking for faster replies. The option is disabled for Cloud API. Model/provider changes preserve conversation context. **New chat** clears it.
+
 **Ctrl+Enter** sends. **Cancel** interrupts model requests and inspection calls. Once a confirmed CAD modification is dispatched, cancellation, disconnect and close wait for commit/rollback; forcibly terminating the server could leave TopSolid locked. Geometry changes are not saved automatically; saving is a separate confirmed action.
 
 ## Implemented scope
@@ -59,13 +75,14 @@ Examples: “In the active part, create a 20 mm by 10 mm rectangle on XY at the 
 |---|---|
 | System/reference | Live connection/version; capability listing; offline search and retrieval of the complete locally bundled official API reference |
 | Documents/PDM | Inspection plus confirmed project/folder/document creation, open, single/batch save, native object/project check-in, update, rebuild and rename; template and extension discovery |
-| Entities/licenses | Inspection plus rename, visibility, translation, typed scalar parameter edits, current user selection and chronological modeling operations |
-| Sketch2D/Sketch3D | Batched circles, rectangles, lines, arcs, polylines, cubic B-splines, parabolas, stars and bounded ellipse approximations; explicit frames/offsets and native reference placement; named sketch context, topology/curve reads and coordinate conversion; 3D polyline; optional sections and fix/unfix. New native creation/regeneration remains pending approved runtime qualification. |
-| Design2D/Design3D | Shape/topology/volume inspection; rectangular extrusion, extrusion/revolution of an existing sketch or section, loft of profiles, and through drilling |
+| Entities/licenses | Named collections, containment/parent operations, shortcut and occurrence targets, element properties, entity folders/moves; rename, delete, appearance and translation; selection/licenses |
+| Parameters | Typed values for Real, Integer, Boolean, Text, DateTime, Color, Tolerance, Enumeration, UserEnumeration, Code and Family; 8 creation types; batched formula/reference creation/editing, scoped lists, relay/constraint/choice inspection |
+| Sketch2D/Sketch3D | Batched circles, rectangles, lines, arcs, polylines, cubic B-splines, parabolas, stars, smooth hearts and bounded ellipse approximations; explicit frames/offsets and native reference placement; named sketch context, topology/curve reads and coordinate conversion; 3D lines/polylines/circles/arcs/B-splines; analytic 2D slots; optional colors; fix/unfix; no new sections. New native creation/regeneration remains pending approved runtime qualification. |
+| Design2D/Design3D | Shape/topology/volume inspection; cylinder creation/replacement, rectangular extrusion, profile-checked extrusion/revolution/loft, through drilling, face colors and optional native parameter references for feature dimensions |
 | Assembly/tooling/drafting/electrode/CAE | Assembly insertion with fixed positioning and inclusion translation; existing occurrence/material/tool/view/page/electrode/CAE inspection |
 | CAM | Existing setup/tool/operation/NC inspection; exact scalar parameter edits, calculation of one existing operation, and bounded toolpath table reads |
 
-The new workflows follow the supplied manuals: **PDM document → native sketch/profile/section → shape → assembly**, with returned IDs carried through the model/tool loop. See [manual review and workflow mapping](docs/MANUALS_AND_WORKFLOWS.md).
+The new workflows follow the supplied manuals: **PDM document → native sketch/profile → shape → assembly (existing sections remain readable)**, with returned IDs carried through the model/tool loop. See [manual review and workflow mapping](docs/MANUALS_AND_WORKFLOWS.md).
 
 See [every tool, category and source contract](docs/api/COVERAGE.md), [machine-readable MCP schemas](docs/api/mcp-tools.json), and [validation evidence](VALIDATION.md). A documented API is not automatically a callable tool. A discovered tool does not prove its TopSolid module is connected or licensed.
 

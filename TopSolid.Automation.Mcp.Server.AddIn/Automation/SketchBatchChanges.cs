@@ -23,7 +23,7 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Automation
                 .Where(item => item.Curve.Kind == "ellipse").Select(item => new JObject { ["inputIndex"] = item.Index, ["representation"] = "piecewise cubic ellipse approximation; not an analytic ellipse",
                     ["maximumDeviationBoundMetres"] = item.Curve.ApproximationBound, ["nativeReadbackToleranceMetres"] = 1e-8, ["segmentCount"] = item.Curve.SegmentCount }));
             return new JObject { ["name"] = p["name"], ["existingSketch"] = p["sketch"], ["placement"] = placement?.Json(),
-                ["inputUnits"] = (string)p["units"] ?? "mm", ["profiles"] = p["profiles"].DeepClone(), ["sectionMode"] = SketchSectionOptions.Mode(p),
+                ["inputUnits"] = (string)p["units"] ?? "mm", ["profiles"] = p["profiles"].DeepClone(), ["createsSections"] = false,
                 ["approximations"] = approximations,
                 ["openCurveBehavior"] = "Open paths stay native segments; no extra closing edge, profile or section is forced." };
         }
@@ -55,9 +55,9 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Automation
             var sketch = current["sketch"] != null ? Element(current, "sketch") : CreatePlacedSketch(doc, placement);
             RequireValid(sketch, "sketch");
             if (!TopSolidHost.Sketches2D.IsSketch(sketch)) throw new ArgumentException("Target must be a native 2D sketch.");
+            var initialSectionCount = current["sketch"] == null ? 0 : TopSolidHost.Sketches2D.GetSectionCount(sketch);
             var plans = ((JArray)current["profiles"]).Cast<JObject>().Select(p => SketchCurveGeometry.Parse(p, scale)).ToArray();
-            var profiles = new List<ElementItemId>(); var sections = new List<ElementItemId>(); var segmentsByInput = new List<List<ElementItemId>>();
-            var mode = SketchSectionOptions.Mode(current);
+            var profiles = new List<ElementItemId>(); var segmentsByInput = new List<List<ElementItemId>>();
             TopSolidHost.Sketches2D.StartModification(sketch);
             try
             {
@@ -69,7 +69,7 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Automation
                     {
                         var vertices = curve.Points.Select(TopSolidHost.Sketches2D.CreateVertex).ToList();
                         if (vertices.Any(v => v.IsEmpty)) throw new InvalidOperationException("Empty native sketch vertex.");
-                        if (curve.Kind == "ellipse")
+                        if (curve.Kind == "ellipse" || curve.Kind == "heart")
                         {
                             // Share each cubic endpoint with its neighbor, including
                             // closure, so native profile topology is connected.
@@ -78,20 +78,20 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Automation
                         }
                         else if (curve.Kind == "bspline" || curve.Kind == "parabola") segments.Add(TopSolidHost.Sketches2D.CreateBSplineSegment(vertices, curve.Periodic));
                         else if (curve.Kind == "arc") segments.Add(TopSolidHost.Sketches2D.CreateArcSegment(vertices[0], vertices[1], curve.Center, curve.Clockwise));
-                        else for (var i = 0; i < curve.SegmentCount; i++) segments.Add(TopSolidHost.Sketches2D.CreateLineSegment(vertices[i], vertices[(i + 1) % vertices.Count]));
+                        else for (var i = 0; i < curve.SegmentCount; i++) segments.Add(curve.Kind == "slot" && i % 2 == 1
+                            ? TopSolidHost.Sketches2D.CreateArcSegment(vertices[i], vertices[(i + 1) % vertices.Count], curve.SlotCenters[i / 2], false)
+                            : TopSolidHost.Sketches2D.CreateLineSegment(vertices[i], vertices[(i + 1) % vertices.Count]));
                     }
                     if (segments.Any(v => v.IsEmpty)) throw new InvalidOperationException("Empty native sketch segment.");
                     var profile = SketchTopology.ClosedProfile(segments, curve.Closed, TopSolidHost.Sketches2D.CreateProfile);
                     if (curve.Closed && profile.IsEmpty) throw new InvalidOperationException("Empty native closed profile.");
                     profiles.Add(profile); segmentsByInput.Add(segments);
-                    if (mode == "perProfile") sections.Add(TopSolidHost.Sketches2D.CreateSection(new List<ElementItemId> { profile }));
                 }
-                if (mode == "combined") sections.Add(TopSolidHost.Sketches2D.CreateSection(profiles));
-                if (sections.Any(v => v.IsEmpty)) throw new InvalidOperationException("Empty native section.");
             }
             finally { TopSolidHost.Sketches2D.EndModification(); }
             RequireValid(TopSolidHost.Sketches2D.CreateBuildingOperation(sketch), "sketch building operation");
-            if (current["name"] != null) TopSolidHost.Elements.SetName(sketch, (string)current["name"]);
+            RequireUnchangedSections(sketch, initialSectionCount);
+            CreationNames.SetAndVerify(TopSolidHost.Elements, sketch, (string)current["name"]);
             if (placement != null) VerifySketchPlacement(placement, ReadSketchPlacement(sketch, placement.In2D));
             var rows = new JArray();
             for (var i = 0; i < plans.Length; i++)
@@ -108,7 +108,15 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Automation
                     ["verification"] = curve.Kind == "bspline" ? "finite native samples and topology; control net is not exposed by the read API" : "placement and native curve geometry" });
             }
             return new JObject { ["sketch"] = AutomationValues.Json(sketch), ["name"] = TopSolidHost.Elements.GetName(sketch), ["friendlyName"] = TopSolidHost.Elements.GetFriendlyName(sketch), ["placement"] = placement?.Json(),
-                ["profiles"] = rows, ["sections"] = AutomationValues.Json(sections), ["geometryReadBack"] = true, ["units"] = "metres" };
+                ["profiles"] = rows, ["createdClosedProfileCount"] = profiles.Count(v => !v.IsEmpty),
+                ["profileNote"] = profiles.Any(v => !v.IsEmpty) ? "Closed native profiles are available to shape tools; use the sketch handle." : "Drawing segments only. Separate line inputs do not make a shared profile. For a solid boundary use one rectangle, closed polyline or connected contour.",
+                ["color"] = current["color"] == null ? null : ElementAppearance.Set(TopSolidHost.Elements, sketch, current["color"]),
+                ["sections"] = new JArray(), ["sectionCreated"] = false, ["geometryReadBack"] = true, ["units"] = "metres" };
+        }
+        private static void RequireUnchangedSections(ElementId sketch, int before)
+        {
+            if (TopSolidHost.Sketches2D.GetSectionCount(sketch) != before)
+                throw new InvalidOperationException("Drawing unexpectedly changed the sketch's section count. Rolling back; existing sections are not removed automatically.");
         }
         internal static void VerifySketchPlacement(SketchPlacement expected, SketchPlacement actual)
         {
@@ -124,12 +132,17 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Automation
             void Near(Point2D a, Point2D b) { var d = SketchCurveGeometry.Distance(a, b); if (double.IsNaN(d) || d > 1e-8) throw new InvalidOperationException("Native curve readback differs from requested geometry. Rolling back."); }
             for (var i = 0; i < segments.Count; i++)
             {
+                if (curve.Kind == "slot") {
+                    VerifySketchCurve(new SketchCurveGeometry { Kind = i % 2 == 1 ? "arc" : "line", Points = new[] { curve.Points[i], curve.Points[(i + 1) % 4] },
+                        Center = i % 2 == 1 ? curve.SlotCenters[i / 2] : new Point2D(0, 0), Radius = curve.Radius, Clockwise = false }, new List<ElementItemId> { segments[i] });
+                    continue;
+                }
                 var segment = segments[i]; var type = TopSolidHost.Sketches2D.GetSegmentCurveType(segment);
                 TopSolidHost.Sketches2D.GetSegmentRange(segment, out var t0, out var t1);
                 if (double.IsNaN(t0) || double.IsNaN(t1) || double.IsInfinity(t0) || double.IsInfinity(t1)) throw new InvalidOperationException("A created finite curve returned an unbounded native parameter range.");
-                if (curve.Kind == "parabola" || curve.Kind == "ellipse")
+                if (curve.Kind == "parabola" || curve.Kind == "ellipse" || curve.Kind == "heart")
                 {
-                    var controls = curve.Kind == "ellipse" ? curve.CubicSegment(i) : curve.Points;
+                    var controls = curve.Kind == "parabola" ? curve.Points : curve.CubicSegment(i);
                     for (var j = 0; j <= 16; j++) Near(TopSolidHost.Sketches2D.GetSegmentPoint(segment, t0 + (t1 - t0) * j / 16.0), SketchCurveGeometry.Cubic(controls, j / 16.0));
                 }
                 else if (curve.Kind == "circle" || curve.Kind == "arc")

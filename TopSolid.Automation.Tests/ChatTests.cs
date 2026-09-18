@@ -76,6 +76,13 @@ internal static class ChatTests
             "Tool activity should be visible in trace");
         Check.True(traces.Any(t => t.Text.Contains("TopSolid is unavailable", StringComparison.Ordinal)),
             "Tool result should be visible in trace");
+        var receipts = traces.Where(t => t.Kind == "Tool error").ToArray();
+        Check.Equal(2, receipts.Length, "Each receipt needs its own identity lookup context");
+        Check.True(receipts.All(t => t.ToolName == FakeMcpClient.StatusName && t.Arguments != null),
+            "Presentation cannot associate a scalar name receipt without its tool and arguments");
+        receipts[0].Arguments!["presentationOnly"] = true;
+        Check.True(!client.Calls[0].Arguments.ContainsKey("presentationOnly"),
+            "Display context shares mutable execution arguments");
     }
 
     public static async Task CancelDuringToolThenRecover()

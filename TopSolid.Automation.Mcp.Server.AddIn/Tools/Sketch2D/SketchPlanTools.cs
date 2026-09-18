@@ -10,16 +10,15 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
     {
         internal static readonly string[] Api = ApiRefs.Kernel("ISketches2D.CreateSketchIn2D", "ISketches2D.CreateSketchIn3D", "ISketches2D.IsSketch", "ISketches2D.GetFrame", "ISketches2D.GetPlane",
             "ISketches2D.StartModification", "ISketches2D.EndModification", "ISketches2D.CreateVertex", "ISketches2D.CreateLineSegment", "ISketches2D.CreateCircleSegment", "ISketches2D.CreateArcSegment", "ISketches2D.CreateBSplineSegment",
-            "ISketches2D.CreateProfile", "ISketches2D.CreateSection", "ISketches2D.CreateBuildingOperation", "ISketches2D.GetProfileSegments", "ISketches2D.IsProfileClosed", "ISketches2D.GetVertices", "ISketches2D.GetSegments",
+            "ISketches2D.CreateProfile", "ISketches2D.CreateBuildingOperation", "ISketches2D.GetProfileSegments", "ISketches2D.IsProfileClosed", "ISketches2D.GetVertices", "ISketches2D.GetSegments", "ISketches2D.GetSectionCount",
             "ISketches2D.GetVertexPoint", "ISketches2D.GetSegmentVertices", "ISketches2D.GetSegmentCurveType", "ISketches2D.GetSegmentCircleCurve", "ISketches2D.GetSegmentLineCurve", "ISketches2D.GetSegmentCenter", "ISketches2D.GetSegmentMiddle", "ISketches2D.GetSegmentRange", "ISketches2D.GetSegmentPoint", "ISketches2D.IsSegmentReversed", "IElements.GetName", "IElements.GetFriendlyName", "IElements.SetName",
             "IGeometries3D.CreateOffsetPoint", "IGeometries3D.GetOffsetPointCreation", "IElements.GetParent", "IElements.Hide",
-            "SmartPlane3D.-ctor", "SmartPoint3D.-ctor", "SmartDirection3D.-ctor", "SmartPoint2D.-ctor", "SmartDirection2D.-ctor", "SmartReal.-ctor");
+            "SmartPlane3D.-ctor", "SmartPoint3D.-ctor", "SmartDirection3D.-ctor", "SmartPoint2D.-ctor", "SmartDirection2D.-ctor", "SmartReal.-ctor").Concat(AppearanceTools.Api).ToArray();
         public static void Register(AutomationGateway a, Action<ToolDefinition> register)
         {
             var sketch = new JObject(); SketchPlanSchema.Placement(sketch); sketch.Remove("documentSpace");
             sketch["profiles"] = SketchPlanSchema.Profiles();
             sketch["units"] = Schema.Choice("Optional redundant units; must match root units. Prefer root units only.", "mm", "cm", "m");
-            sketch["sectionMode"] = Schema.Choice("Default none. Opt in only for requested sections/modeling requiring closed profiles.", "none", "perProfile", "combined");
             var p = DocumentActionTools.Target();
             p["documentSpace"] = Schema.Choice("Dimension of the containing document: part=3d, native 2D document=2d.", "2d", "3d");
             p["units"] = Schema.Choice("Input lengths; default mm.", "mm", "cm", "m");
@@ -27,8 +26,8 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
             p["sketches"]["description"] = "Each entry has name/placement and REQUIRED profiles:[{kind,...geometry}]. Never put primitive geometry directly on a sketch. Example: {name:'Star_XZ',placement:'xz',profiles:[{kind:'star',center:{x:0,y:0},outerRadius:50,innerRadius:20,pointCount:5,rotationDegrees:90}]}";
             register(new ToolDefinition("topsolid_create_sketches2d", "Draw several requested 2D sketches in one document with ONE confirmation and ONE undoable transaction. Up to 8 sketches, 32 primitives total, 512 segments/control vertices. Lines/arcs/circles/rectangles/polylines/B-splines/parabolas. Explicit position/rotation or associative reference plane+anchor+axes. Reference mode defaults to associative and requires an actual anchor vertex and quarter-turn rotation; 3D documents support XY offsets and quarter-turn rotation with zero normal offset. Native 2D supports zero offset/quarter turns. Local dimensions are independent; no inferred dimensional constraints. Ask for missing design data. No auto-save.",
                 p, a.CreateSketches2D, "Sketch2D", new[] { "documentId", "documentSpace", "sketches" }, false, Api, Validate,
-                a.PreviewSketches2D, defaultLengthUnits: "mm", defaults: "sectionMode=none; origin/rotation=0 only when intended by the user. Open curves stay open. Reference mode=associative: plane/anchor/axes links, independent local dimensions. Snapshot only when explicitly chosen.",
-                effect: "Create or append the listed sketches together. Associative reference placement creates native Smart links and hidden offset point helpers as required. On failure the whole modification attempts rollback. No sections unless requested; no automatic save."));
+                a.PreviewSketches2D, defaultLengthUnits: "mm", defaults: "No sections are created; origin/rotation=0 only when intended by the user. Open curves stay open. Reference mode=associative: plane/anchor/axes links, independent local dimensions. Snapshot only when explicitly chosen.",
+                effect: "Create or append the listed sketches together. Associative reference placement creates native Smart links and hidden offset point helpers as required. On failure the whole modification attempts rollback. No sections; no automatic save."));
 
             var context = DocumentActionTools.Target(); context["documentSpace"] = Schema.Choice("Containing document dimension; a part is 3d even for 2D sketches.", "2d", "3d");
             context["names"] = Schema.Array(Schema.Text("Exact sketch friendly name. Duplicate matches are all returned; choose the correct handle."), 1, 16);

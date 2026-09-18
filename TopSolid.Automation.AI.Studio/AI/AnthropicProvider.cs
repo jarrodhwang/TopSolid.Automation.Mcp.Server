@@ -52,7 +52,8 @@ public sealed class AnthropicProvider : IAiProvider
             {
                 ["name"] = t.Name, ["description"] = t.Description, ["input_schema"] = t.InputSchema.DeepClone()
             }));
-        var response = await http.SendAsync(HttpMethod.Post, "messages", body, cancellationToken).ConfigureAwait(false);
+        var response = await http.SendAsync(HttpMethod.Post, "messages", body, cancellationToken,
+            hasImageAttachments: messages.Any(message => message.Images.Count > 0)).ConfigureAwait(false);
         if (response["content"] is not JArray content) throw new AiProviderException("Anthropic returned no message content.");
         var stopReason = ProviderJson.Text(response["stop_reason"]);
         if (stopReason is "max_tokens" or "pause_turn")
@@ -88,6 +89,8 @@ public sealed class AnthropicProvider : IAiProvider
         foreach (var message in messages)
         {
             ProviderJson.ValidateRole(message.Role);
+            if (message.Images.Count > 0 && message.Role != "user")
+                throw new ArgumentException("Only user messages may contain image attachments.");
             if (message.Role == "system") continue;
             var role = message.Role == "tool" ? "user" : message.Role;
             var blocks = new JArray();
@@ -101,6 +104,9 @@ public sealed class AnthropicProvider : IAiProvider
             else
             {
                 if (message.Content.Length > 0) blocks.Add(new JObject { ["type"] = "text", ["text"] = message.Content });
+                foreach (var image in message.Images)
+                    blocks.Add(new JObject { ["type"] = "image", ["source"] = new JObject
+                        { ["type"] = "base64", ["media_type"] = image.MediaType, ["data"] = image.Base64 } });
                 foreach (var call in message.ToolCalls)
                     blocks.Add(new JObject { ["type"] = "tool_use", ["id"] = call.Id, ["name"] = call.Name, ["input"] = call.Arguments.DeepClone() });
             }

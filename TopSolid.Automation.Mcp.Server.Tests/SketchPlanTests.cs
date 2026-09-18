@@ -95,7 +95,7 @@ namespace TopSolid.Automation.Mcp.Server.Tests
                 var batch = JObject.Parse("{documentId:'rev',documentSpace:'3d',units:'mm',sketches:[{placement:'xy',name:'Circle',origin:{x:20,y:30,z:40},rotationDegrees:90,profiles:[{kind:'circle',origin:{x:0,y:0},radius:10}]},{placement:'xz',name:'Parabola',profiles:[{kind:'parabola',vertex:{x:0,y:0},focalLength:12.5,startParameter:-50,endParameter:50,rotationDegrees:0}]}]}");
                 Schema.Validate(batch, definition); SketchPlanTools.Validate(batch);
                 Check(Throws<RpcException>(() => registry.Call("topsolid_create_sketches2d", batch)).Code == -32010, "Batch creation bypassed confirmation");
-                batch["sketches"][1]["sectionMode"] = "combined"; Throws<ArgumentException>(() => SketchPlanTools.Validate(batch)); ((JObject)batch["sketches"][1]).Remove("sectionMode");
+                batch["sketches"][1]["sectionMode"] = "combined"; Throws<RpcException>(() => Schema.Validate(batch, definition)); ((JObject)batch["sketches"][1]).Remove("sectionMode");
                 var reference = JObject.Parse("{placement:'reference',referenceSketch:{documentId:'rev',id:7},origin:{x:10,y:0,z:0},anchor:{item:{element:{documentId:'rev',id:7},label:{type:1,id:1}},location:'vertex'},profiles:[{kind:'line',start:{x:0,y:0},end:{x:20,y:0}}]}");
                 batch["sketches"] = new JArray(reference); Schema.Validate(batch, definition); SketchPlanTools.Validate(batch);
                 var rebased = MutationReferences.Rebase(batch, "rev2");

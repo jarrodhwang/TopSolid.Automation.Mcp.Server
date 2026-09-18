@@ -4,6 +4,7 @@ using Newtonsoft.Json.Linq;
 using TopSolid.Automation.AI.Studio.AI;
 using TopSolid.Automation.AI.Studio.Mcp;
 using TopSolid.Automation.Mcp.Contracts;
+using TopSolid.Automation.AI.Studio.Localization;
 
 namespace TopSolid.Automation.AI.Studio.Chat;
 
@@ -19,7 +20,8 @@ internal sealed record PdmPersistenceRequest(string Operation, string? Project =
         var match = Regex.Match(text, "\\A\\s*(?:please\\s+)?check[ -]?in\\s*,?\\s*(?:the\\s+)?project\\s*(?:\\(\\s*[\"“]?(?<name>[^\"”()\\r\\n]+?)[\"”]?\\s*\\)|[\"“](?<name>[^\"”\\r\\n]+)[\"”])\\s*[.!]?\\s*\\z", options);
         return match.Success ? new("checkIn", match.Groups["name"].Value.Trim()) : null;
     }
-    internal async Task<PdmCreateRequest.Plan> Resolve(IMcpClient mcp, Action<ChatTrace> trace, CancellationToken token)
+    internal async Task<PdmCreateRequest.Plan> Resolve(IMcpClient mcp, Action<ChatTrace> trace, CancellationToken token,
+        Func<UserQuestion, CancellationToken, Task<QuestionAnswer?>>? askUser = null)
     {
         var tool = Operation == "save" ? "topsolid_save_documents" : "topsolid_check_in_pdm_objects";
         if (!mcp.IsConnected || !mcp.Tools.Any(t => t.Name == tool && t.RequiresConfirmation))
@@ -38,9 +40,16 @@ internal sealed record PdmPersistenceRequest(string Operation, string? Project =
             if (result.IsError || (bool?)data?["complete"] != true || data["projectMatches"] is not JArray rows)
                 return new(null, "The working-project lookup was incomplete. No check-in was attempted.");
             var matches = rows.Where(r => string.Equals((string?)r["name"], Project, StringComparison.OrdinalIgnoreCase)).ToArray();
+            if (matches.Length > 1 && askUser != null)
+            {
+                var answer = await askUser(QuestionSources.Projects(matches.OfType<JObject>(), Project), token);
+                token.ThrowIfCancellationRequested();
+                if (answer == null) return new(null, StudioStrings.Get("Question.Cancelled"));
+                matches = [answer.Data["selected"]![0]!["value"]!.DeepClone()];
+            }
             if (matches.Length != 1 || string.IsNullOrWhiteSpace((string?)matches[0]["pdmObjectId"]))
                 return new(null, matches.Length == 0 ? $"No working project named \"{Project}\" was found. No check-in was attempted." :
-                    $"More than one working project matches \"{Project}\". Select its exact PDM ID before checking in.");
+                    $"More than one working project matches \"{Project}\". Specify a unique project name before checking in.");
             args = new JObject { ["pdmObjectIds"] = new JArray(matches[0]["pdmObjectId"]!.DeepClone()), ["recursive"] = true };
         }
         return new(new AiToolCall { Id = "pdm-persist-" + Guid.NewGuid().ToString("N"), Name = tool, Arguments = args }, null);

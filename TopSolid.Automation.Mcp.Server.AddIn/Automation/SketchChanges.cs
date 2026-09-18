@@ -33,9 +33,10 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Automation
                         new SmartDirection3D(placement == "yz" ? new Direction3D(0, 1, 0) : new Direction3D(1, 0, 0), origin));
                 }
                 RequireValid(sketch, "sketch");
+                var initialSectionCount = append ? TopSolidHost.Sketches2D.GetSectionCount(sketch) : 0;
                 var contour = (JObject)current["contour"];
                 var segments = (JArray)contour["segments"];
-                ElementItemId profile, section = ElementItemId.Empty;
+                ElementItemId profile;
                 var created = new List<ElementItemId>();
                 TopSolidHost.Sketches2D.StartModification(sketch);
                 try
@@ -54,15 +55,11 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Automation
                     }
                     profile = SketchTopology.ClosedProfile(created, (bool)contour["closed"], TopSolidHost.Sketches2D.CreateProfile);
                     if ((bool)contour["closed"] && profile.IsEmpty) throw new InvalidOperationException("TopSolid returned an empty closed profile.");
-                    if ((bool)contour["closed"] && SketchSectionOptions.ForContour(current))
-                    {
-                        section = TopSolidHost.Sketches2D.CreateSection(new List<ElementItemId> { profile });
-                        if (section.IsEmpty) throw new InvalidOperationException("TopSolid returned an empty section.");
-                    }
                 }
                 finally { TopSolidHost.Sketches2D.EndModification(); }
                 RequireValid(TopSolidHost.Sketches2D.CreateBuildingOperation(sketch), "sketch building operation");
-                if (current["name"] != null) TopSolidHost.Elements.SetName(sketch, (string)current["name"]);
+                RequireUnchangedSections(sketch, initialSectionCount);
+                CreationNames.SetAndVerify(TopSolidHost.Elements, sketch, (string)current["name"]);
                 var actualSegments = profile.IsEmpty ? created : TopSolidHost.Sketches2D.GetProfileSegments(profile);
                 if (actualSegments.Count == 0 || (!profile.IsEmpty && !TopSolidHost.Sketches2D.IsProfileClosed(profile)))
                     throw new InvalidOperationException("Native profile topology does not match the requested contour.");
@@ -77,7 +74,8 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Automation
                 }
                 if (Math.Abs(actualLength - expectedLength) > Math.Max(1e-8, expectedLength * 1e-6))
                     throw new InvalidOperationException("Native contour length does not match the input geometry.");
-                return new JObject { ["sketch"] = AutomationValues.Json(sketch), ["profile"] = AutomationValues.Json(profile), ["section"] = AutomationValues.Json(section),
+                return new JObject { ["sketch"] = AutomationValues.Json(sketch), ["profile"] = AutomationValues.Json(profile), ["sectionCreated"] = false,
+                    ["name"] = TopSolidHost.Elements.GetName(sketch), ["friendlyName"] = TopSolidHost.Elements.GetFriendlyName(sketch),
                     ["segments"] = AutomationValues.Json(actualSegments.Take(4)), ["moreSegmentHandles"] = actualSegments.Count > 4,
                     ["nativeSegmentCount"] = actualSegments.Count, ["lengthMetres"] = actualLength, ["closed"] = contour["closed"], ["geometryReadBack"] = true };
             });

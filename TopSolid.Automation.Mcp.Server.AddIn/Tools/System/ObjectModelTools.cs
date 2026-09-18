@@ -13,6 +13,7 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
                 ["DocumentId"] = "One TopSolid document minor revision. GetDocument(PdmObjectId) selects its backing document revision; projects/libraries can resolve to metadata documents. Verify Documents.Exists and type. GetMinorRevisionDocument selects an explicit minor revision.",
                 ["ElementId"] = "DocumentId plus document-local element identifier. An element may be an entity, an operation or another kind.",
                 ["ElementItemId"] = "ElementId plus ItemLabel for a face, edge, sketch profile/section or other topology item.",
+                ["CamParameterId"] = "CAM operation parameter identity (owning element plus parameter name), not an IParameters parameter entity. Use CAM parameter tools.",
                 ["typeGuid"] = "GUID identifying a TYPE shared by many objects. Never use it to select an individual object.",
                 ["universalId"] = "Document domain/name pair used by SearchDocumentByUniversalId; separate from GUIDs and display names." },
             ["names"] = new JArray("PDM names and friendly element names can be duplicated. Keep every candidate and select by exact ID.",
@@ -23,7 +24,16 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
                 "Entity transforms require an entity; operation and entity identities are not interchangeable. Element deletion affects the document; PDM deletion affects its managed object.",
                 "Sketch edits have their own StartModification/EndModification scope inside the document transaction. Geometry is in SI; sketch coordinates are relative to the sketch frame/plane.",
                 "A created document is resolved from its returned PDM ID. Never guess a template extension, document type, ID, or unique name from real-world terminology."),
+            ["entitiesAndParameters"] = new JArray(
+                "IElements is the general document element contract. IEntities identifies entities including folders, sets, shortcuts and occurrences; not every entity is geometry. GetOwner is the containing element; GetParent is the generating operation. They are distinct.",
+                "Use list_named_elements(kind=functions/publishings/sets/classifyings/parameters/systemParameters) for named collections. list_entity_children returns constituents or operation children. Set constituents can be nested sets or shortcuts; inspect the shortcut target.",
+                "IParameters operates on parameter entities identified by ElementId. GetParameters returns the parameters folder collection, NOT every document parameter. list_parameter_values reports its folder scope; systemFolder is explicit.",
+                "A parameter can be unset. Real values and tolerance deviations use SI with UnitType. Enumeration values are native integer keys, not list indices; get_parameter_choices returns keys with display text. A Family value is a definition DocumentId.",
+                "Literal parameters, smart creation definitions, relays, element properties and CAM operation parameters need different editors. inspect_parameters exposes edit guidance. set_parameter_values refuses relayed/driven/localized/parameterized definitions.",
+                "CreateSmart... returns the CHILD PARAMETER entity, but Get/SetSmart...Creation requires its PARENT OPERATION. Expression tools resolve and verify that operation and preserve native formula/reference dependencies. Never pass an operation ID as a parameter entity.",
+                "read_element_properties reads typed properties by full name through IElements. The published IElements contract has no generic property setter. Update metadata/appearance through update_elements; parameter values through typed parameter tools.",
+                "Document entity folders use create_entity_folders/move_entities. PDM folders use the PDM tools. Rename/delete parameter entities with update_elements/delete_elements; deletion can affect dependent geometry."),
             ["guidePages"] = "Installed Design Automation Guide: printed pages 9-10, 12-15, 18-19, 22-23, 26-27, 34-38. The installed guide is EN v7.11; bindings are verified against the 7.20 contracts/SDK." }, "System",
-            api: ApiRefs.Kernel("IDocuments.GetDocument", "IDocuments.GetMinorRevisionDocument", "IDocuments.EnsureIsDirty", "IElements.GetTypeGuid", "IElements.HasUniqueName", "IElements.HasSystemName", "IElements.IsRenamable", "IElements.GetFriendlyName", "IPdm.SearchDocumentByUniversalId")));
+            api: ApiRefs.Kernel("IDocuments.GetDocument", "IDocuments.GetMinorRevisionDocument", "IDocuments.EnsureIsDirty", "IElements.GetTypeGuid", "IElements.HasUniqueName", "IElements.HasSystemName", "IElements.IsRenamable", "IElements.GetFriendlyName", "IPdm.SearchDocumentByUniversalId", "IElements", "IEntities", "IParameters", "IParameters.CreateSmartRealParameter", "IParameters.SetSmartRealParameterCreation", "IParameters.GetParameters", "IElements.GetParent", "IElements.GetOwner", "ParameterType")));
     }
 }

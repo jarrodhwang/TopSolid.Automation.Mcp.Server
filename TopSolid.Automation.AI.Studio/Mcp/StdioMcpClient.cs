@@ -9,7 +9,7 @@ using TopSolid.Automation.Mcp.Contracts;
 namespace TopSolid.Automation.AI.Studio.Mcp;
 
 /// <summary>One owned console process; newline-delimited MCP JSON-RPC on its standard streams.</summary>
-public sealed class StdioMcpClient : IConfirmableMcpClient, IAsyncDisposable
+public sealed class StdioMcpClient : IConfirmableMcpClient, IGraphicPreviewClient, IAsyncDisposable
 {
     public const string ProtocolVersion = "2025-03-26";
     private readonly SemaphoreSlim requestGate = new(1, 1);
@@ -60,7 +60,7 @@ public sealed class StdioMcpClient : IConfirmableMcpClient, IAsyncDisposable
             {
                 ["protocolVersion"] = ProtocolVersion,
                 ["capabilities"] = new JObject(),
-                ["clientInfo"] = new JObject { ["name"] = "TopSolid Automation AI Studio", ["version"] = "0.5.2" }
+                ["clientInfo"] = new JObject { ["name"] = "TopSolid Automation AI Studio", ["version"] = "0.5.12" }
             }, cancellationToken);
             if ((string?)response["protocolVersion"] != ProtocolVersion || response["capabilities"]?["tools"] is not JObject)
                 throw new IOException("The MCP server does not support the required protocol/tools capability.");
@@ -98,6 +98,21 @@ public sealed class StdioMcpClient : IConfirmableMcpClient, IAsyncDisposable
 
     public async Task<McpToolResult> CallToolAsync(string name, JObject arguments, CancellationToken cancellationToken)
         => await CallToolCoreAsync(name, arguments, null, cancellationToken);
+
+    public async Task<JObject> GetGraphicPreviewAsync(JObject target, CancellationToken cancellationToken)
+    {
+        if (!IsConnected) throw new IOException("MCP is disconnected.");
+        var request = RequestAsync("topsolid/graphicPreview", (JObject)target.DeepClone(), cancellationToken, drainAfterSend: true);
+        try { return await request.WaitAsync(cancellationToken); }
+        catch (OperationCanceledException)
+        {
+            // Switching a card/closing a dialog abandons display only. Drain the native read while holding
+            // the request gate so it cannot overtake an approved change or destroy its confirmation token.
+            _ = request.ContinueWith(t => { _ = t.Exception; }, CancellationToken.None,
+                TaskContinuationOptions.OnlyOnFaulted | TaskContinuationOptions.ExecuteSynchronously, TaskScheduler.Default);
+            throw;
+        }
+    }
 
     public async Task<JObject> PrepareToolAsync(string name, JObject arguments, CancellationToken cancellationToken)
     {
@@ -137,7 +152,7 @@ public sealed class StdioMcpClient : IConfirmableMcpClient, IAsyncDisposable
         finally { Diagnostic?.Invoke($"MCP {name}: {elapsed.Elapsed.TotalSeconds:F3} s"); }
     }
 
-    private async Task<JObject> RequestAsync(string method, JObject parameters, CancellationToken cancellationToken, bool mutation = false)
+    private async Task<JObject> RequestAsync(string method, JObject parameters, CancellationToken cancellationToken, bool mutation = false, bool drainAfterSend = false)
     {
         await requestGate.WaitAsync(cancellationToken);
         var id = Interlocked.Increment(ref nextId);
@@ -148,7 +163,7 @@ public sealed class StdioMcpClient : IConfirmableMcpClient, IAsyncDisposable
             if (child == null || child.HasExited) throw new IOException("The MCP server is not running.");
             cancellationToken.ThrowIfCancellationRequested();
             pending[id] = completion;
-            using var timeout = CancellationTokenSource.CreateLinkedTokenSource(cancellationToken);
+            using var timeout = CancellationTokenSource.CreateLinkedTokenSource(drainAfterSend ? CancellationToken.None : cancellationToken);
             timeout.CancelAfter(TimeSpan.FromSeconds(30));
             if (mutation) { mutationInFlight = true; ConnectionChanged?.Invoke(); }
             JObject envelope;

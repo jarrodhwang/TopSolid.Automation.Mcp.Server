@@ -55,29 +55,6 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
                         if (action == "translate") ObjectIdentity.RequireEntity(element);
                         target["elementName"] = TopSolidHost.Elements.GetFriendlyName(element); target["internalName"] = TopSolidHost.Elements.GetName(element); return target; }, defaultLengthUnits: kind == "translate" ? "mm" : null));
             }
-            var parameters = DocumentActionTools.Target(); parameters["element"] = Schema.Element(); parameters.Merge(ScalarInput.Properties());
-            register(new ToolDefinition("topsolid_set_parameter_value", "Set an existing scalar Design/document parameter. Query its type and units first. Real values are SI. Requires confirmation; dependent geometry updates on commit. Does not save.",
-                parameters, p => a.Modify(p, "set parameter", "kernel", (doc, current) =>
-                {
-                    var element = a.Element(current);
-                    var type = TopSolidHost.Parameters.GetParameterType(element);
-                    if (type.ToString() != (string)current["valueType"]) throw new ArgumentException("Parameter type changed or does not match valueType.");
-                    switch (type)
-                    {
-                        case ParameterType.Real:
-                            TopSolidHost.Parameters.GetRealUnit(element, out var unit, out _);
-                            if (unit.ToString() != (string)current["unitType"]) throw new ArgumentException("Real unit type does not match this parameter.");
-                            TopSolidHost.Parameters.SetRealValue(element, (double)current["realValueSI"]); break;
-                        case ParameterType.Integer: TopSolidHost.Parameters.SetIntegerValue(element, (int)current["integerValue"]); break;
-                        case ParameterType.Boolean: TopSolidHost.Parameters.SetBooleanValue(element, (bool)current["booleanValue"]); break;
-                        case ParameterType.Text: TopSolidHost.Parameters.SetTextValue(element, (string)current["textValue"]); break;
-                        default: throw new ArgumentException("Only scalar Real, Integer, Boolean and Text parameters can be modified.");
-                    }
-                    return EntityDetailsTools.Value(element);
-                }), "Entities", new[] { "documentId", "element", "valueType" }, false,
-                ApiRefs.Kernel("IParameters.SetRealValue", "IParameters.SetIntegerValue", "IParameters.SetBooleanValue", "IParameters.SetTextValue", "IParameters.GetRealUnit"),
-                ScalarInput.Validate, p => { var target = a.PreviewDocument(p); target["currentParameter"] = EntityDetailsTools.Value(a.Element(p)); return target; },
-                "Replace this scalar parameter value and update its dependent geometry in one undoable modification. SI units for real values. Does not save."));
             register(new ToolDefinition("topsolid_get_user_selection", "Read the single entity and single operation currently selected by the user in TopSolid. Empty means none or multiple; never infer an ID.", new JObject(),
                 p => a.Read("kernel", () => new JObject { ["entity"] = AutomationValues.Json(TopSolidHost.User.SelectedEntity), ["operation"] = AutomationValues.Json(TopSolidHost.User.SelectedOperation) }),
                 "Entities", api: ApiRefs.Kernel("IUser.SelectedEntity", "IUser.SelectedOperation")));

@@ -12,11 +12,12 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
         {
             var update = DocumentActionTools.Target();
             update["changes"] = Schema.Array(Schema.Object(new JObject { ["element"] = Schema.Element(), ["name"] = Schema.Text("New unique name.", 128),
-                ["description"] = Schema.Text("New description.", 1024), ["comment"] = Schema.Text("New comment.", 1024), ["visible"] = Schema.Boolean("Show or hide.") }, "element"), 1, BatchInput.MaximumChanges);
-            register(new ToolDefinition("topsolid_update_elements", "Change names, descriptions, comments and visibility for up to 32 elements in one confirmed undoable modification. Unspecified properties stay unchanged. Does not save.", update,
+                ["description"] = Schema.TextValue("New description, including empty.", 1024), ["comment"] = Schema.TextValue("New comment, including empty.", 1024), ["visible"] = Schema.Boolean("Show or hide."),
+                ["color"] = ParameterValueInput.ColorSchema(), ["transparency"] = Schema.Number("0 opaque to 1 transparent; TopSolid rounds to native discrete values.", 0, 1) }, "element"), 1, BatchInput.MaximumChanges);
+            register(new ToolDefinition("topsolid_update_elements", "Change names, descriptions, comments, visibility, RGB color and transparency for up to 32 elements in one confirmed modification. Color/transparency require native edit support; actual rounded transparency is returned. Does not save.", update,
                 p => a.Modify(p, "update elements", "kernel", (doc, current) =>
                 {
-                    var result = new JArray();
+                    PreflightUpdates(a, current); var result = new JArray();
                     foreach (JObject change in current["changes"])
                     {
                         var id = a.Element(change);
@@ -24,18 +25,24 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
                         if (change["description"] != null) TopSolidHost.Elements.SetDescription(id, (string)change["description"]);
                         if (change["comment"] != null) TopSolidHost.Elements.SetComment(id, (string)change["comment"]);
                         if (change["visible"] != null) { if ((bool)change["visible"]) TopSolidHost.Elements.Show(id); else TopSolidHost.Elements.Hide(id); }
+                        if (change["color"] != null) TopSolidHost.Elements.SetColor(id, ParameterValueInput.Color(change["color"]));
+                        if (change["transparency"] != null) TopSolidHost.Elements.SetTransparency(id, (double)change["transparency"]);
                         if (change["name"] != null && TopSolidHost.Elements.GetName(id) != (string)change["name"] ||
                             change["description"] != null && TopSolidHost.Elements.GetDescription(id) != (string)change["description"] ||
                             change["comment"] != null && TopSolidHost.Elements.GetComment(id) != (string)change["comment"] ||
-                            change["visible"] != null && TopSolidHost.Elements.IsVisible(id) != (bool)change["visible"])
+                            change["visible"] != null && TopSolidHost.Elements.IsVisible(id) != (bool)change["visible"] ||
+                            change["color"] != null && !TopSolidHost.Elements.GetColor(id).Equals(ParameterValueInput.Color(change["color"])))
                             throw new InvalidOperationException("Element property readback differs from the requested change; rolling back the batch.");
                         var row = EntityBatchReadTools.Identity(id); row["updatedProperties"] = new JArray(change.Properties().Where(prop => prop.Name != "element").Select(prop => prop.Name));
-                        row["readBackVerified"] = true; result.Add(row);
+                        row["readBackVerified"] = true;
+                        if (change["color"] != null) row["color"] = ParameterValues.Color(TopSolidHost.Elements.GetColor(id));
+                        if (change["transparency"] != null) { row["requestedTransparency"] = change["transparency"].DeepClone(); row["actualTransparency"] = TopSolidHost.Elements.GetTransparency(id); row["transparencyConvention"] = "TopSolid rounds transparency to native discrete values; readback is the actual applied value."; }
+                        result.Add(row);
                     }
                     return new JObject { ["items"] = result, ["changed"] = result.Count };
                 }), "Entities", new[] { "documentId", "changes" }, false,
-                EntityBatchReadTools.InfoApi.Concat(ApiRefs.Kernel("IElements.SetName", "IElements.SearchByName", "IElements.SetDescription", "IElements.SetComment", "IElements.GetDescription", "IElements.GetComment", "IElements.Show", "IElements.Hide")).ToArray(),
-                ValidateUpdates, p => { foreach (JObject change in p["changes"]) if (change["name"] != null) { a.ConnectModule("kernel"); ObjectIdentity.ValidateRename(a.Element(change), (string)change["name"]); } return Preview(a, p, "changes", true, Current); }));
+                EntityBatchReadTools.InfoApi.Concat(ApiRefs.Kernel("IElements.SetName", "IElements.SearchByName", "IElements.SetDescription", "IElements.SetComment", "IElements.GetDescription", "IElements.GetComment", "IElements.Show", "IElements.Hide", "IElements.HasColor", "IElements.GetColor", "IElements.IsColorModifiable", "IElements.SetColor", "IElements.HasTransparency", "IElements.GetTransparency", "IElements.IsTransparencyModifiable", "IElements.SetTransparency", "Color")).ToArray(),
+                ValidateUpdates, p => { var preview = Preview(a, p, "changes", true, Current); PreflightUpdates(a, p); return preview; }));
 
             var targets = DocumentActionTools.Target(); targets["elements"] = Schema.Array(Schema.Element(), 1, BatchInput.MaximumChanges);
             register(new ToolDefinition("topsolid_delete_elements", "Delete up to 32 explicitly selected document elements using native DeleteSeveral. Requires confirmation; dependent features can be affected. One undoable modification, no save or PDM deletion. Refresh document state after this action.", targets,
@@ -81,7 +88,19 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
         }
         internal static JObject Current(ElementId id)
         {
-            var row = EntityBatchReadTools.Info(id); row["description"] = TopSolidHost.Elements.GetDescription(id); row["comment"] = TopSolidHost.Elements.GetComment(id); return row;
+            var row = EntityBatchReadTools.Info(id); row["description"] = TopSolidHost.Elements.GetDescription(id); row["comment"] = TopSolidHost.Elements.GetComment(id);
+            if (TopSolidHost.Elements.HasColor(id)) row["color"] = ParameterValues.Color(TopSolidHost.Elements.GetColor(id));
+            if (TopSolidHost.Elements.HasTransparency(id)) row["transparency"] = TopSolidHost.Elements.GetTransparency(id); return row;
+        }
+        private static void PreflightUpdates(AutomationGateway a, JObject p)
+        {
+            foreach (JObject change in p["changes"]) {
+                var id = a.Element(change);
+                if (change["name"] != null) ObjectIdentity.ValidateRename(id, (string)change["name"]);
+                if ((change["description"] != null || change["comment"] != null) && !TopSolidHost.Elements.IsModifiable(id)) throw new ArgumentException("This element's metadata is not modifiable.");
+                if (change["color"] != null && !TopSolidHost.Elements.IsColorModifiable(id)) throw new ArgumentException("TopSolid does not allow this element's color to be modified.");
+                if (change["transparency"] != null && !TopSolidHost.Elements.IsTransparencyModifiable(id)) throw new ArgumentException("TopSolid does not allow this element's transparency to be modified.");
+            }
         }
         internal static JObject Preview(AutomationGateway a, JObject p, string array, bool entries, Func<ElementId, JObject> detail)
         {

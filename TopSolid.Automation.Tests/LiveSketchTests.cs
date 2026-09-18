@@ -50,7 +50,7 @@ internal static class LiveSketchTests
         var timer = Stopwatch.StartNew(); var preview = await client.PrepareToolAsync("topsolid_create_sketches2d", plan, timeout.Token);
         record["previewSeconds"] = timer.Elapsed.TotalSeconds; preview.Remove("confirmationToken"); record["preview"] = preview;
         Check.True(preview["target"]?["sketches"]?[0]?["placement"]?["reference"] != null, "Reference frame was omitted from the confirmation target");
-        Check.True(preview["target"]?["sketches"]?[0]?["sectionMode"]?.ToString() == "none", "Preview unexpectedly requested sections");
+        Check.True(preview["target"]?["sketches"]?[0]?["createsSections"]?.ToString() == "False", "Preview unexpectedly requested sections");
         Check.True(preview["target"]?["sketches"]?[0]?["placement"]?["associativeInputs"]?["xAxis"] != null, "Preview failed to resolve real associative sketch axes");
         if (circle != null)
         {

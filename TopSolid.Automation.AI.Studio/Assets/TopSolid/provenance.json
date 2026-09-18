@@ -1,0 +1,162 @@
+[
+  {
+    "Key": "app",
+    "Source": "Cad\\Interop\\Gmi\\Inventor\\Deployment\\Program.png",
+    "Sha256": "CB7F8CF58168AC52EDA94D2987EAFE33015933A90DA28FEFE6A1C54D2045AA40"
+  },
+  {
+    "Key": "project",
+    "Source": "Cad\\Pdm\\UI\\Projects\\NewProjectCommand.png",
+    "Sha256": "33FB2729A50C1FE5B596E730849BBD41E480A1982E9F46DF0E4A90572ADECB8E"
+  },
+  {
+    "Key": "document",
+    "Source": "Cad\\Pdm\\UI\\Items\\CreateNewDocumentCommand.png",
+    "Sha256": "0AEAE65F8977CC075626F03772E7FE79F51F743AD560B85ED8CC45B99643B05E"
+  },
+  {
+    "Key": "sketch",
+    "Source": "Cad\\Kernel\\UI.D2.Sketches\\Sketching\\CreatePositionedSketchCommand.png",
+    "Sha256": "560557E2C8443B6582C7B1A7CCEE70E7F81566A5720CA2E139A1FA3B49D07263"
+  },
+  {
+    "Key": "save",
+    "Source": "Cad\\Kernel\\WX\\Commands\\SaveCommand.png",
+    "Sha256": "28C7CAF1AD9B93547C539212A0AD67196718800755DC60AE297E37454A1F236D"
+  },
+  {
+    "Key": "delete",
+    "Source": "Cad\\Pdm\\UI\\Commands\\DeleteCommand.png",
+    "Sha256": "5D452AD257846EDBEF9A92A4CE154EE3D25F7D0C566EC94D30F54696E0E304C4"
+  },
+  {
+    "Key": "settings",
+    "Source": "Cad\\Kernel\\WX\\Options\\ApplicationOptionsCommand.png",
+    "Sha256": "C186B34FD73FDFCE2EC147868AA516FF619C23A44523BC3631FB77E1692C3581"
+  },
+  {
+    "Key": "attachment",
+    "Source": "Cad\\Pdm\\UI\\Items\\ImportWithoutConversionCommand.png",
+    "Sha256": "2297FEAE1D4A11704D39064306CD5C4F21499EFF8279FEC8E89B7BB55906AC65"
+  },
+  {
+    "Key": "folder",
+    "Source": "Cad\\Pdm\\UI\\Folders\\NewFolderCommand.png",
+    "Sha256": "252C39E9873F426FEBA93ED0A941D578176A5A3FF5B7474562CA749282C142E5"
+  },
+  {
+    "Key": "part",
+    "Source": "Cad\\Design\\DB\\Documents\\PartDocument.png",
+    "Sha256": "4C848F21060376E647CB5AD045B3BC6CF7CE0C1C41E24BEB9048809F3C90F20B"
+  },
+  {
+    "Key": "connect",
+    "Source": "Cad/Pdm/UI/Connections/ConnectionCommand.png",
+    "Sha256": "3F8D6449B1FC6A1ECEFC91C860FC46B97F7AF9676516F2B16772C3EEA0409E18"
+  },
+  {
+    "Key": "window",
+    "Source": "Cad/Kernel/WX/Commands/NewDocumentWindowCommand.png",
+    "Sha256": "4BD20DCAAFA8F6273DA7F1880A0EE62B0FEE9A26ACC46A420CBD68AB762E2486"
+  },
+  {
+    "Key": "status",
+    "Source": "Cad/Kernel/WX/Resources.Information.png",
+    "Sha256": "FA0365D20536E0ED83239844F2F0482B95A431B09913E978D6E04978315E2A39"
+  },
+  {
+    "Key": "developer",
+    "Source": "Cad/Kernel/UI/Commands/EntitySystemInformationCommand.png",
+    "Sha256": "D565DF79B27EFF3C93A721E896649A0F995000147E76D76580790101D1FA3597"
+  },
+  {
+    "Key": "refresh-warning",
+    "Source": "Cad/Kernel/WX/Pdm/RedirectReferences/Resources.RefreshWarning.png",
+    "Sha256": "ECCD698B55C59FFAE2D8D0596C498EAFE40DB3BC18F6D29C896DE7D41B7A8430"
+  },
+  {
+    "Key": "refresh-error",
+    "Source": "Quote/UI/Quotations/Controls/QuotationEdit.Warning.png",
+    "Sha256": "6BFF0E539FDE0A01C772A52C5669DC78017D51ED773A2E372B3C1AA65BB0FF07"
+  },
+  {
+    "Key": "refresh",
+    "Source": "Cad/Kernel/WX/Pdm/RedirectReferences/Resources.Refresh.png",
+    "Sha256": "E818F1E8309C5CDE63ADE58CA3B11BAA8A5A6959269F65DCAF9FC4F915739F50"
+  },
+  {
+    "Key": "operation",
+    "Source": "Cam\\NC\\Kernel\\UI.OperationManager\\Views\\OperationsManagerView.png",
+    "Sha256": "DBF64F8F6783BFB9670E50345F6A70D61A5FFC3D55B0AF5F4AF77A04EA9BEE39"
+  },
+  {
+    "Key": "parameter",
+    "Source": "Cam\\NC\\Kernel\\UI.Annex\\Resources\\Parameters.png",
+    "Sha256": "EE923878E40D5556FF2F3CCE2D9DF2E6D654AE77DBF6F6ECB00C3C478EE78AAB"
+  },
+  {
+    "Key": "library",
+    "Source": "Cam\\NC\\Kernel\\UI.Tools\\Resources\\Library.png",
+    "Sha256": "37D6C0C47CBE97699F146119B6D6943FD7037D1987EC9DD60FB59C8FE8F58022"
+  },
+  {
+    "Key": "machine",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Machine.png",
+    "Sha256": "8D33A1515DB4C9DB42C25A0DC9A53FCBF4E99DF011AAED5CF3A6A368F7347846"
+  },
+  {
+    "Key": "edge",
+    "Source": "Cad\\Kernel\\DB.D3.Shapes\\Topologies\\SmartEdge.png",
+    "Sha256": "60B5832591C10B79D9161444DDC7D1581B6ACCF6AEDF70D40B0098626D916882"
+  },
+  {
+    "Key": "point",
+    "Source": "Cad\\Kernel\\DB.D3\\Points\\PointEntity.png",
+    "Sha256": "A827393DBFFBFC85DBD4276ADD9E479E47F49FA46E090488AFA25DE3AF095C6A"
+  },
+  {
+    "Key": "curve",
+    "Source": "Cad\\Kernel\\DB.D3\\Curves\\CurveEntity.png",
+    "Sha256": "B15C91824400FF1A173D573FF95109C7D98FF5E478A4628B22D6FA1D156F5CB3"
+  },
+  {
+    "Key": "surface",
+    "Source": "Cad\\Kernel\\DB.D3\\Surfaces\\SurfaceEntity.png",
+    "Sha256": "5E384D4CBCAAC103BDDA0F1DF22DE65A86CF598C9457DF4BC6785035212CFA92"
+  },
+  {
+    "Key": "shape",
+    "Source": "Cad\\Kernel\\DB.D3.Shapes\\ShapeEntity.png",
+    "Sha256": "86A5FBD19E66F45E02E614B4E0FD3926CC12EDA08BE2F0872C562984D15E6F09"
+  },
+  {
+    "Key": "color",
+    "Source": "Cad\\Kernel\\DB\\Parameters\\ColorParameterEntity.png",
+    "Sha256": "4D5DCCCDB4D0D54D2E551617DF5D44F81D8A632893CB52A4205601884F6635B5"
+  },
+  {
+    "Key": "image",
+    "Source": "Cad\\Kernel\\DB.D2.Sketches\\Images\\ImageEntity.png",
+    "Sha256": "8A50924C1BA387F6397D11747FC83C29EAC2EF5EBE507F98F4E6B67686E74ACA"
+  },
+  {
+    "Key": "view-fit",
+    "Source": "Cad\\Kernel\\WG\\Commands\\Views\\ZoomToFitCommand.png",
+    "Sha256": "1EFECD76A0BC68B15547587C68F2C1DF87161B3D190ADB642AA7E1B7D3D31157"
+  },
+  {
+    "Key": "view-pan",
+    "Source": "Cad\\Kernel\\WG\\Commands\\Views\\PanViewCommand.png",
+    "Sha256": "60CAFBD6E682C3C5FA52B57C226802ACEB0BDDDAC86D4D6548C44997D9B87D57"
+  },
+  {
+    "Key": "view-edges",
+    "Source": "Cad\\Kernel\\WG\\Commands\\RenderModes\\RenderGouraudWithHiddenWireframeCommand.png",
+    "Sha256": "975A8735AA8FD8B05844198603CD103CF641670ECAF375962C02D858B6A31BF9"
+  },
+  {
+    "Key": "view-orbit",
+    "Source": "Cad\\Kernel\\WG\\Commands\\Views\\RotateViewCommand.png",
+    "Sha256": "4C31546B895DF22DC97C164A9F3079C92143FE8332A46AACFE8EA3F4029E79B5"
+  }
+]

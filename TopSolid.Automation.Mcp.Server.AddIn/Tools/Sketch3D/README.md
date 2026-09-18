@@ -12,5 +12,6 @@ Registered tools:
 - `topsolid_get_sketch3d_segment_curve_type` — inspection/reference.
 - `topsolid_read_sketch3d_geometry` — inspection/reference.
 - `topsolid_create_polyline3d` — requires explicit confirmation.
+- `topsolid_create_sketch3d_curves` — requires explicit confirmation.
 
 See [API coverage](../../../docs/api/COVERAGE.md) and the root validation report for source contracts and runtime limits.

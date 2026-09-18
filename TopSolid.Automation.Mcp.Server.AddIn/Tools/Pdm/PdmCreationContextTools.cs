@@ -37,6 +37,12 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
         }
         private static JObject Read(AutomationGateway a, string projectName, string extension)
         {
+            var lookup = FindProjects(projectName);
+            var result = Describe(projectName, ((JArray)lookup["projectMatches"]).Cast<JObject>(), extension, (bool)lookup["complete"]);
+            result["errors"] = lookup["errors"].DeepClone(); result["readiness"] = a.PdmCreationReadiness(); return result;
+        }
+        internal static JObject FindProjects(string projectName)
+        {
             // SearchProjectByName does not reliably return case variants on this
             // host. Compare every working-project name to preserve all duplicates.
             var ids = TopSolidHost.Pdm.GetProjects(true, false).Distinct().ToArray();
@@ -46,8 +52,8 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
                 try { projects.Add(new JObject { ["pdmObjectId"] = id.Id, ["name"] = TopSolidHost.Pdm.GetName(id) }); }
                 catch (Exception ex) { errors.Add(new JObject { ["pdmObjectId"] = id.Id, ["message"] = AutomationGateway.Describe(ex) }); }
             }
-            var result = Describe(projectName, projects, extension, ids.Length <= 1000 && errors.Count == 0);
-            result["errors"] = errors; result["readiness"] = a.PdmCreationReadiness(); return result;
+            return new JObject { ["complete"] = ids.Length <= 1000 && errors.Count == 0, ["errors"] = errors,
+                ["projectMatches"] = new JArray(projects.Where(p => string.Equals((string)p["name"], projectName, StringComparison.OrdinalIgnoreCase))) };
         }
         internal static JObject Describe(string projectName, IEnumerable<JObject> projects, string extension, bool complete)
         {

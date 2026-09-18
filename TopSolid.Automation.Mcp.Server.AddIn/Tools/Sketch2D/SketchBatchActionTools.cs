@@ -14,13 +14,11 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
         {
             var p = DocumentActionTools.Target(); SketchPlanSchema.Placement(p);
             p["units"] = Schema.Choice("Input units; default mm.", "mm", "cm", "m");
-            p["sectionMode"] = Schema.Choice("Default none. Sections are explicit opt-in for closed profiles only.", "none", "perProfile", "combined");
-            p["sectionMode"]["default"] = "none";
             p["profiles"] = SketchPlanSchema.Profiles();
             register(new ToolDefinition("topsolid_create_sketch_profiles", "Draw up to 32 native primitives in ONE sketch: circles, rectangles, lines, arcs, polylines, cubic B-splines, quadratic parabolas represented as cubic B-splines with checked readback. Open curves remain segments. New explicit placement, associative reference plane/anchor/axes, or append to existing sketch. Reference mode defaults to associative; requires a real anchor vertex and zero normal offset. Shape dimensions remain independent. One confirmation; no save.",
                 p, a.CreateSketchProfiles, "Sketch2D", new[] { "documentId", "profiles" }, false,
                 SketchPlanTools.Api, ValidateProfiles, a.PreviewSketchProfiles, defaultLengthUnits: "mm",
-                defaults: "Local sketch coordinates; origin and rotation default to zero. sectionMode=none; referenceMode=associative with explicit anchor. Native 2D linked placement requires zero offset and quarter-turn rotation. Missing dimensions must be requested from the user."));
+                defaults: "Local sketch coordinates; origin and rotation default to zero. No sections are created; referenceMode=associative with explicit anchor. Native 2D linked placement requires zero offset and quarter-turn rotation. Missing dimensions must be requested from the user."));
             foreach (var delete in new[] { false, true })
             {
                 var remove = delete;

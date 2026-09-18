@@ -17,6 +17,7 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Automation
         public bool Closed, Clockwise, Periodic;
         public int SegmentCount;
         public double ApproximationBound;
+        public Point2D[] SlotCenters;
 
         public static SketchCurveGeometry Parse(JObject input, double scale)
         {
@@ -30,6 +31,8 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Automation
                 : kind == "parabola" ? new[] { "vertex", "focalLength", "startParameter", "endParameter", "rotationDegrees" }
                 : kind == "star" ? new[] { "center", "outerRadius", "innerRadius", "pointCount", "rotationDegrees" }
                 : kind == "ellipse" ? new[] { "center", "majorRadius", "minorRadius", "rotationDegrees", "tolerance" }
+                : kind == "heart" ? new[] { "center", "width", "height", "rotationDegrees" }
+                : kind == "slot" ? new[] { "center", "length", "width", "rotationDegrees" }
                 : throw new ArgumentException("Unsupported sketch primitive. Use the exact registered kinds.");
             RequireInheritedUnits(input, scale);
             if (fields.Any(f => input[f] == null) || input.Properties().Any(p => p.Name != "kind" && p.Name != "units" && !fields.Contains(p.Name)))
@@ -42,6 +45,35 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Automation
                 var o = Point("origin"); var w = (double)input["width"] * scale; var h = (double)input["height"] * scale;
                 result.Points = new[] { o, new Point2D(o.X + w, o.Y), new Point2D(o.X + w, o.Y + h), new Point2D(o.X, o.Y + h) };
                 result.Closed = true; result.SegmentCount = 4;
+            }
+            else if (kind == "slot")
+            {
+                var length = (double)input["length"] * scale; var width = (double)input["width"] * scale;
+                if (!(length > width && width > 0)) throw new ArgumentException("A straight slot requires overall length > width > 0. For length=width use a circle.");
+                result.Center = Point("center"); result.Radius = width / 2; result.Closed = true; result.SegmentCount = 4;
+                var a = (double)input["rotationDegrees"] * Math.PI / 180; var halfCenters = (length - width) / 2;
+                Point2D Place(double x, double y) => new Point2D(result.Center.X + x * Math.Cos(a) - y * Math.Sin(a), result.Center.Y + x * Math.Sin(a) + y * Math.Cos(a));
+                result.Points = new[] { Place(-halfCenters, -width / 2), Place(halfCenters, -width / 2), Place(halfCenters, width / 2), Place(-halfCenters, width / 2) };
+                result.SlotCenters = new[] { Place(halfCenters, 0), Place(-halfCenters, 0) };
+            }
+            else if (kind == "heart")
+            {
+                // Six cubic Bezier spans with shared native endpoints. The extrema
+                // are endpoints, giving exactly the requested unrotated width/height.
+                // This is a defined decorative heart, not an inferred engineering curve.
+                var w = (double)input["width"] * scale; var h = (double)input["height"] * scale;
+                if (!(w > 0 && h > 0)) throw new ArgumentException("Heart width and height must be positive.");
+                result.Center = Point("center"); result.Closed = true; result.SegmentCount = 6;
+                var a = (double)input["rotationDegrees"] * Math.PI / 180;
+                var net = new[] {
+                    new Point2D(0, .2), new Point2D(.10, .4), new Point2D(.15, .5),
+                    new Point2D(.25, .5), new Point2D(.4, .5), new Point2D(.5, .4),
+                    new Point2D(.5, .2), new Point2D(.5, -.1), new Point2D(.15, -.35),
+                    new Point2D(0, -.5), new Point2D(-.15, -.35), new Point2D(-.5, -.1),
+                    new Point2D(-.5, .2), new Point2D(-.5, .4), new Point2D(-.4, .5),
+                    new Point2D(-.25, .5), new Point2D(-.15, .5), new Point2D(-.10, .4) };
+                result.Points = net.Select(p => new Point2D(result.Center.X + Math.Cos(a) * p.X * w - Math.Sin(a) * p.Y * h,
+                    result.Center.Y + Math.Sin(a) * p.X * w + Math.Cos(a) * p.Y * h)).ToArray();
             }
             else if (kind == "star" || kind == "ellipse")
             {
@@ -111,6 +143,8 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Automation
                 result.Points = ((JArray)input["points"]).Select(p => ContourGeometry.Point(p, scale)).ToArray();
                 result.Closed = (bool)input["closed"];
                 if (result.Closed && result.Points.Length < 3) throw new ArgumentException("A closed polyline requires at least three points.");
+                if (!result.Closed && result.Points.Length > 2 && Distance(result.Points[0], result.Points.Last()) < 1e-9)
+                    throw new ArgumentException("This polyline returns to its start but closed=false would create disconnected endpoints. For a closed outline use closed=true and omit the repeated last point; for an open path use distinct endpoints.");
                 result.SegmentCount = result.Points.Length - (result.Closed ? 0 : 1);
             }
             else

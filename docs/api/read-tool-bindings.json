@@ -188,7 +188,7 @@
     "expression": "TopSolidHost.Parameters.GetParameters(a.Document(p))",
     "shape": "doc",
     "paged": true,
-    "description": "List parameters.",
+    "description": "List parameter entity IDs from the native parameters folder only. Prefer list_parameter_values for names and typed values in one call.",
     "apis": [
       "TopSolid.Kernel.Automating.IParameters.GetParameters"
     ]
@@ -680,9 +680,11 @@
     "expression": "TopSolidCamHost.Documents.GetParts(a.Document(p))",
     "shape": "doc",
     "paged": true,
-    "description": "List cam parts.",
+    "description": "List cam parts. Includes native friendly names; keep handles internal in user mode.",
     "apis": [
-      "TopSolid.Cam.NC.Kernel.Automating.IDocuments.GetParts"
+      "TopSolid.Cam.NC.Kernel.Automating.IDocuments.GetParts",
+      "TopSolid.Kernel.Automating.IElements.GetFriendlyName",
+      "TopSolid.Kernel.Automating.IElements.GetName"
     ]
   },
   {
@@ -704,9 +706,11 @@
     "expression": "TopSolidCamHost.Documents.GetMachine(a.Document(p))",
     "shape": "doc",
     "paged": false,
-    "description": "Get cam machine.",
+    "description": "Get cam machine. Includes native friendly names; keep handles internal in user mode.",
     "apis": [
-      "TopSolid.Cam.NC.Kernel.Automating.IDocuments.GetMachine"
+      "TopSolid.Cam.NC.Kernel.Automating.IDocuments.GetMachine",
+      "TopSolid.Kernel.Automating.IElements.GetFriendlyName",
+      "TopSolid.Kernel.Automating.IElements.GetName"
     ]
   },
   {
@@ -716,9 +720,11 @@
     "expression": "TopSolidCamHost.Machines.GetToolHolders(a.Element(p))",
     "shape": "element",
     "paged": true,
-    "description": "List machine tool holders.",
+    "description": "List machine tool holders. Includes native friendly names; keep handles internal in user mode.",
     "apis": [
-      "TopSolid.Cam.NC.Kernel.Automating.IMachineTools.GetToolHolders"
+      "TopSolid.Cam.NC.Kernel.Automating.IMachineTools.GetToolHolders",
+      "TopSolid.Kernel.Automating.IElements.GetFriendlyName",
+      "TopSolid.Kernel.Automating.IElements.GetName"
     ]
   },
   {
@@ -728,9 +734,11 @@
     "expression": "TopSolidCamHost.Machines.GetPartHolders(a.Element(p))",
     "shape": "element",
     "paged": true,
-    "description": "List machine part holders.",
+    "description": "List machine part holders. Includes native friendly names; keep handles internal in user mode.",
     "apis": [
-      "TopSolid.Cam.NC.Kernel.Automating.IMachineTools.GetPartHolders"
+      "TopSolid.Cam.NC.Kernel.Automating.IMachineTools.GetPartHolders",
+      "TopSolid.Kernel.Automating.IElements.GetFriendlyName",
+      "TopSolid.Kernel.Automating.IElements.GetName"
     ]
   },
   {
@@ -740,9 +748,11 @@
     "expression": "TopSolidCamHost.Machines.GetMagazines(a.Element(p))",
     "shape": "element",
     "paged": true,
-    "description": "List machine magazines.",
+    "description": "List machine magazines. Includes native friendly names; keep handles internal in user mode.",
     "apis": [
-      "TopSolid.Cam.NC.Kernel.Automating.IMachineTools.GetMagazines"
+      "TopSolid.Cam.NC.Kernel.Automating.IMachineTools.GetMagazines",
+      "TopSolid.Kernel.Automating.IElements.GetFriendlyName",
+      "TopSolid.Kernel.Automating.IElements.GetName"
     ]
   },
   {
@@ -752,9 +762,11 @@
     "expression": "TopSolidCamHost.Machines.GetPockets(a.Element(p))",
     "shape": "element",
     "paged": true,
-    "description": "List machine pockets.",
+    "description": "List machine pockets. Includes native friendly names; keep handles internal in user mode.",
     "apis": [
-      "TopSolid.Cam.NC.Kernel.Automating.IMachineTools.GetPockets"
+      "TopSolid.Cam.NC.Kernel.Automating.IMachineTools.GetPockets",
+      "TopSolid.Kernel.Automating.IElements.GetFriendlyName",
+      "TopSolid.Kernel.Automating.IElements.GetName"
     ]
   },
   {
@@ -764,9 +776,12 @@
     "expression": "TopSolidCamHost.Operations.GetOperations(a.Document(p))",
     "shape": "doc",
     "paged": true,
-    "description": "List cam operations.",
+    "description": "List cam operations. Includes native friendly names; keep handles internal in user mode.",
     "apis": [
-      "TopSolid.Cam.NC.Kernel.Automating.IOperations.GetOperations"
+      "TopSolid.Cam.NC.Kernel.Automating.IOperations.GetOperations",
+      "TopSolid.Kernel.Automating.IElements.GetFriendlyName",
+      "TopSolid.Kernel.Automating.IElements.GetName",
+      "TopSolid.Cam.NC.Kernel.Automating.IOperations.GetDescription"
     ]
   },
   {
@@ -776,9 +791,12 @@
     "expression": "TopSolidCamHost.Operations.GetScenarioOperations(a.Document(p))",
     "shape": "doc",
     "paged": true,
-    "description": "List cam scenario.",
+    "description": "List cam scenario. Includes native friendly names; keep handles internal in user mode.",
     "apis": [
-      "TopSolid.Cam.NC.Kernel.Automating.IOperations.GetScenarioOperations"
+      "TopSolid.Cam.NC.Kernel.Automating.IOperations.GetScenarioOperations",
+      "TopSolid.Kernel.Automating.IElements.GetFriendlyName",
+      "TopSolid.Kernel.Automating.IElements.GetName",
+      "TopSolid.Cam.NC.Kernel.Automating.IOperations.GetDescription"
     ]
   },
   {
@@ -788,9 +806,28 @@
     "expression": "TopSolidCamHost.Parameters.GetParameters(a.CamElement(p))",
     "shape": "camElement",
     "paged": true,
-    "description": "List cam parameters.",
+    "description": "Inspect all parameters INSIDE a CAM operation with friendly names, category, current typed values, exact SI unit type, native enum choices and edit support. Default limit=100; follow nextOffset until hasMore=false, including when the output budget shortens a page. Optional category=CuttingConditions narrows to operation cutting conditions. Inspect every category when finding machining/tool/strategy settings; no cutting-condition document lookup is needed.",
     "apis": [
-      "TopSolid.Cam.NC.Kernel.Automating.IParameters.GetParameters"
+      "TopSolid.Cam.NC.Kernel.Automating.IParameters.GetParameters",
+      "TopSolid.Cam.NC.Kernel.Automating.IParameters.GetName",
+      "TopSolid.Cam.NC.Kernel.Automating.IParameters.GetFullName",
+      "TopSolid.Cam.NC.Kernel.Automating.IParameters.GetLocalizedName",
+      "TopSolid.Cam.NC.Kernel.Automating.IParameters.GetCategories",
+      "TopSolid.Cam.NC.Kernel.Automating.IParameters.GetType",
+      "TopSolid.Cam.NC.Kernel.Automating.IParameters.GetValue",
+      "TopSolid.Cam.NC.Kernel.Automating.IParameters.IsReadOnly",
+      "TopSolid.Cam.NC.Kernel.Automating.IParameters.ToStringValue",
+      "TopSolid.Cam.NC.Kernel.Automating.IParameters.ToInvariantStringValue",
+      "TopSolid.Cam.NC.Kernel.Automating.IParameters.GetEnumTypeName",
+      "TopSolid.Cam.NC.Kernel.Automating.IParameters.GetParameterEnumValueNames",
+      "TopSolid.Cam.NC.Kernel.Automating.IParameters.GetValueBoundValue",
+      "TopSolid.Cam.NC.Kernel.Automating.IParameters.GetValueBoundElement",
+      "TopSolid.Cam.NC.Kernel.Automating.IParameters.GetValueFeedRateValue",
+      "TopSolid.Cam.NC.Kernel.Automating.IParameters.GetValueSpindleRateValue",
+      "TopSolid.Cam.NC.Kernel.Automating.ParameterType",
+      "TopSolid.Cam.NC.Kernel.Automating.IOperations.GetDescription",
+      "TopSolid.Kernel.Automating.IElements.GetFriendlyName",
+      "TopSolid.Kernel.Automating.IElements.GetName"
     ]
   },
   {
@@ -800,7 +837,7 @@
     "expression": "TopSolidCamHost.Operations.GetCurrentCuttingConditionsDocument(a.Element(p))",
     "shape": "element",
     "paged": false,
-    "description": "Get cutting conditions document.",
+    "description": "Read the linked cutting-condition LIBRARY DOCUMENT only when explicitly requested. For ordinary cutting conditions, speeds, feeds or operation edits use list_cam_parameters and get_cam_parameter_value.",
     "apis": [
       "TopSolid.Cam.NC.Kernel.Automating.IOperations.GetCurrentCuttingConditionsDocument"
     ]
@@ -812,7 +849,7 @@
     "expression": "TopSolidCamHost.Operations.GetCurrentCuttingConditionsAbacus(a.Element(p))",
     "shape": "element",
     "paged": false,
-    "description": "Get cutting conditions abacus.",
+    "description": "Read the linked cutting-condition LIBRARY ABACUS only when explicitly requested. For ordinary operation cutting conditions use list_cam_parameters.",
     "apis": [
       "TopSolid.Cam.NC.Kernel.Automating.IOperations.GetCurrentCuttingConditionsAbacus"
     ]
@@ -824,7 +861,7 @@
     "expression": "TopSolidCamHost.Operations.GetAllCuttingConditionsDocuments(a.Element(p))",
     "shape": "element",
     "paged": true,
-    "description": "List cutting conditions documents.",
+    "description": "List available cutting-condition LIBRARY DOCUMENTS only when explicitly requested. An empty list does not mean the operation has no cutting conditions; inspect list_cam_parameters instead.",
     "apis": [
       "TopSolid.Cam.NC.Kernel.Automating.IOperations.GetAllCuttingConditionsDocuments"
     ]
@@ -872,9 +909,11 @@
     "expression": "TopSolidCamHost.Documents.GetTools(a.Document(p), false)",
     "shape": "doc",
     "paged": true,
-    "description": "List cam tools.",
+    "description": "List cam tools. Includes native friendly names; keep handles internal in user mode.",
     "apis": [
-      "TopSolid.Cam.NC.Kernel.Automating.IDocuments.GetTools"
+      "TopSolid.Cam.NC.Kernel.Automating.IDocuments.GetTools",
+      "TopSolid.Kernel.Automating.IElements.GetFriendlyName",
+      "TopSolid.Kernel.Automating.IElements.GetName"
     ]
   },
   {
@@ -884,9 +923,11 @@
     "expression": "TopSolidCamHost.Documents.GetWCSs(a.Document(p))",
     "shape": "doc",
     "paged": true,
-    "description": "List cam coordinate systems.",
+    "description": "List cam coordinate systems. Includes native friendly names; keep handles internal in user mode.",
     "apis": [
-      "TopSolid.Cam.NC.Kernel.Automating.IDocuments.GetWCSs"
+      "TopSolid.Cam.NC.Kernel.Automating.IDocuments.GetWCSs",
+      "TopSolid.Kernel.Automating.IElements.GetFriendlyName",
+      "TopSolid.Kernel.Automating.IElements.GetName"
     ]
   },
   {

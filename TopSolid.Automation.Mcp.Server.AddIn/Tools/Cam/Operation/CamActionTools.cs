@@ -26,38 +26,28 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
                 ApiRefs.Cam("IOperations.Execute", "IOperations.IsOperation", "IOperations.IsUpToDate"), MutationReferences.Validate, p => a.PreviewDocument(p, "cam"),
                 "Calculate the selected existing CAM operation and update the document. This may take time. No NC output or machine execution. Does not save."));
             var parameters = DocumentActionTools.Target(); parameters["element"] = Schema.Element(); parameters["name"] = Schema.Text("Exact parameter ID Name returned by list_cam_parameters, including its categories.", 512); parameters.Merge(ScalarInput.Properties());
-            register(new ToolDefinition("topsolid_set_cam_parameter_value", "Set one existing scalar CAM parameter using its exact listed ID name and type. No partial-name matching. Bound/feedrate/spindle/tool/geometry parameter types need dedicated adapters and are rejected. Requires confirmation.", parameters,
+            parameters["textValue"] = Schema.TextValue("New CAM text value; an empty string clears the value.", 4096);
+            register(new ToolDefinition("topsolid_set_cam_parameter_value", "Change one parameter INSIDE an existing CAM operation, including scalar cutting conditions, strategy and tool settings. First inspect list_cam_parameters or get_cam_parameter_value for exact name, valueType, unitType, readOnly and native enum choices. Real values use SI; never guess Length for cutting speed. Composite Bound/FeedRate/SpindleRate/Tool/Geometry types have no documented setter and are rejected. Requires confirmation.", parameters,
                 p => a.Modify(p, "set CAM parameter", "cam", (doc, current) =>
                 {
-                    var parameter = Resolve(a, current);
-                    var type = TopSolidCamHost.Parameters.GetType(parameter).ToString();
-                    if (type != (string)current["valueType"]) throw new ArgumentException("CAM parameter type does not match valueType.");
-                    var before = TopSolidCamHost.Parameters.GetValue(parameter);
-                    SmartObject value;
-                    switch (type)
-                    {
-                        case "Real":
-                            if (!(before is SmartReal real) || real.UnitType == UnitType.None || real.UnitType.ToString() != (string)current["unitType"])
-                                throw new ArgumentException("Query the real parameter's concrete unit type before changing it.");
-                            value = new SmartReal(real.UnitType, (double)current["realValueSI"]); break;
-                        case "Integer": value = new SmartInteger((int)current["integerValue"]); break;
-                        case "Boolean": value = new SmartBoolean((bool)current["booleanValue"]); break;
-                        case "Text": value = new SmartText((string)current["textValue"]); break;
-                        default: throw new ArgumentException("Only scalar Real, Integer, Boolean and Text CAM parameters can be changed here.");
-                    }
-                    var changed = TopSolidCamHost.Parameters.SetValue(parameter, value);
-                    return new JObject { ["parameter"] = AutomationValues.Json(parameter), ["changed"] = changed,
-                        ["value"] = AutomationValues.Json(TopSolidCamHost.Parameters.GetValue(parameter)), ["ncGenerated"] = false };
+                    var operation = a.CamElement(current); var access = CamParameterValues.Native;
+                    var parameter = access.Resolve(operation, (string)current["name"]);
+                    var result = access.Set(parameter, current);
+                    AutomationGateway.RequireValid(a.Element(current), "CAM parameter owner");
+                    result["operationName"] = CamNames.OperationName(operation); result["ncGenerated"] = false; result["recalculationMayBeRequired"] = true;
+                    return result;
                 }), "Cam/Operation", new[] { "documentId", "element", "name", "valueType" }, false,
-                ApiRefs.Cam("IParameters.SetValue", "IParameters.GetParameters", "IParameters.GetType", "IParameters.GetValue"), ScalarInput.Validate,
-                p => { var preview = a.PreviewDocument(p, "cam"); var parameter = Resolve(a, p); preview["parameterName"] = TopSolidCamHost.Parameters.GetFullName(parameter); preview["currentValue"] = AutomationValues.Json(TopSolidCamHost.Parameters.GetValue(parameter)); return preview; },
+                CamParameterValues.ReadApi.Concat(ApiRefs.Cam("IParameters.SetValue")).Concat(ApiRefs.Kernel("IElements.GetFriendlyName", "IElements.GetName", "IElements.IsInvalid")).ToArray(), ScalarInput.Validate,
+                p => {
+                    var preview = a.PreviewDocument(p, "cam"); var operation = a.CamElement(p); var access = CamParameterValues.Native;
+                    var parameter = access.Resolve(operation, (string)p["name"]); var value = access.Preflight(parameter, p, out var before);
+                    preview["operationName"] = CamNames.OperationName(operation); preview["parameterName"] = before["displayName"].DeepClone();
+                    preview["parameter"] = before; preview["currentValue"] = before["displayValue"]?.DeepClone(); preview["proposedValue"] = AutomationValues.Json(value);
+                    preview["valueType"] = before["valueType"].DeepClone(); preview["unitType"] = before["unitType"]?.DeepClone();
+                    preview["replacesDefinition"] = (string)before["smartType"] != "Basic";
+                    return preview;
+                },
                 "Change this scalar CAM parameter and update the document. Recalculation may be required. Does not generate NC code or save."));
-        }
-        private static ParameterId Resolve(AutomationGateway a, JObject p)
-        {
-            var matches = TopSolidCamHost.Parameters.GetParameters(new ElementExId(a.Element(p))).Where(v => v.Name == (string)p["name"]).ToList();
-            if (matches.Count != 1) throw new ArgumentException("Use one exact parameter ID name returned by list_cam_parameters. Partial names and unknown parameters are rejected.");
-            return matches[0];
         }
     }
 }

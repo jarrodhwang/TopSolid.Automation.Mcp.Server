@@ -17,7 +17,11 @@ internal static class ProcessTests
         Check.True(client.IsConnected, "MCP initialize did not establish a connection");
         Check.True(client.Tools.Count >= 90, "Expanded domain tools were not discovered");
         ToolExposureTests.VerifyCreationWorkflow(client.Tools.ToArray());
-        Check.Equal(50, client.Tools.Count(t => t.RequiresConfirmation), "All 50 change tools should require confirmation");
+        SketchReliabilityTests.VerifyCatalog(client.Tools.ToArray());
+        ToolExposureTests.VerifyParameterWorkflows(client.Tools.ToArray());
+        ToolExposureTests.VerifyCamWorkflows(client.Tools.ToArray());
+        ToolExposureTests.VerifyModelingWorkflows(client.Tools.ToArray());
+        Check.Equal(59, client.Tools.Count(t => t.RequiresConfirmation), "All 59 change tools should require confirmation");
         foreach (var name in new[] { "topsolid_get_status", "topsolid_get_active_document", "topsolid_get_document_info" })
             Check.True(client.Tools.Any(tool => tool.Name == name), $"Missing discovered tool: {name}");
         var status = await client.CallToolAsync("topsolid_get_status", new JObject(), timeout.Token);
@@ -25,6 +29,25 @@ internal static class ProcessTests
         Check.True(!status.IsError, "Status should report availability as data");
         var statusData = status.StructuredContent ?? JObject.Parse((string)status.Content[0]["text"]!);
         Check.True(statusData["connected"]?.Type == JTokenType.Boolean, "TopSolid status must report a boolean connection state");
+        Check.Equal(statusData["connected"]!.Value<bool>(),
+            TopSolid.Automation.AI.Studio.Connections.TopSolidConnectionStatus.IsConnected(status),
+            "Studio readiness disagrees with the live server status");
+        Console.WriteLine("Live TopSolid connection: " + statusData["connected"]);
+        if (statusData["connected"]!.Value<bool>())
+        {
+            var documentResult = await client.CallToolAsync("topsolid_get_active_document", new JObject(), timeout.Token);
+            var data = PdmInventory.Data(documentResult);
+            if (!documentResult.IsError && data?["document"] is JObject)
+            {
+                var sources = new QuestionSources();
+                sources.Capture("live-document", "topsolid_get_active_document", new JObject(), documentResult);
+                var question = sources.Create(new JObject { ["question"] = "Choose the document", ["kind"] = "select", ["itemKind"] = "document",
+                    ["sources"] = new JArray(new JObject { ["toolCallId"] = "live-document", ["path"] = "/document" }) });
+                Check.Equal((string?)data["document"]!["name"], question.Choices.Single().Label, "Live document name did not reach question card");
+                Check.True(JToken.DeepEquals(data["document"], question.Answer(selectedKeys: [question.Choices[0].Key]).Data["selected"]![0]!["value"]), "Live document choice changed its native identity");
+                Console.WriteLine("Live read-only document question: name and exact identity verified.");
+            }
+        }
         await RealToolLoop(client, ollama: false, timeout.Token);
         await RealToolLoop(client, ollama: true, timeout.Token);
         var unknown = await client.CallToolAsync("invented_cad_function", new JObject(), timeout.Token);

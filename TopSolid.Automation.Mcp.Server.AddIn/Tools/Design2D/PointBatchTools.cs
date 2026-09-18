@@ -16,7 +16,7 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
                 var point = new JObject { ["x"] = Schema.Number("X in input units."), ["y"] = Schema.Number("Y in input units.") };
                 if (d == 3) point["z"] = Schema.Number("Z in input units.");
                 var entry = new JObject { ["point"] = Schema.Object(point, d == 3 ? new[] { "x", "y", "z" } : new[] { "x", "y" }) };
-                if (create) entry["name"] = Schema.Text("Optional new point name.", 128); else entry["element"] = Schema.Element();
+                if (create) entry["name"] = Schema.Text(CreationNames.Description, 128); else entry["element"] = Schema.Element();
                 var props = DocumentActionTools.Target(); props["units"] = Schema.Choice("Length units; default mm.", "mm", "cm", "m");
                 props["points"] = Schema.Array(Schema.Object(entry, create ? new[] { "point" } : new[] { "point", "element" }), 1, BatchInput.MaximumChanges);
                 register(new ToolDefinition("topsolid_" + (create ? "create" : "update") + "_points" + d + "d",
@@ -32,7 +32,7 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
                             if (isCreate)
                             {
                                 id = d == 2 ? TopSolidHost.Geometries2D.CreatePoint(doc, point2) : TopSolidHost.Geometries3D.CreatePoint(doc, point3);
-                                AutomationGateway.RequireValid(id, "point"); if (value["name"] != null) TopSolidHost.Elements.SetName(id, (string)value["name"]);
+                                AutomationGateway.RequireValid(id, "point"); CreationNames.SetAndVerify(TopSolidHost.Elements, id, (string)value["name"]);
                             }
                             else { id = a.Element(value); if (d == 2) TopSolidHost.Geometries2D.SetPointGeometry(id, point2); else TopSolidHost.Geometries3D.SetPointGeometry(id, point3); }
                             var row = EntityBatchReadTools.Identity(id); row["pointMetres"] = Point(id, d); rows.Add(row);

@@ -37,7 +37,7 @@ internal sealed class AiHttpClient : IDisposable
     }
 
     public async Task<JObject> SendAsync(HttpMethod method, string path, JObject? body,
-        CancellationToken cancellationToken)
+        CancellationToken cancellationToken, bool hasImageAttachments = false)
     {
         using var timeout = CancellationTokenSource.CreateLinkedTokenSource(cancellationToken);
         timeout.CancelAfter(RequestTimeout);
@@ -73,8 +73,10 @@ internal sealed class AiHttpClient : IDisposable
                 }
                 var detail = response.StatusCode == HttpStatusCode.NotFound
                     ? await NotFoundDetail(response, timeout.Token).ConfigureAwait(false) : "";
+                if (hasImageAttachments && response.StatusCode is HttpStatusCode.BadRequest or HttpStatusCode.UnprocessableEntity)
+                    detail += " This request includes images. Check that the selected model supports image input; select a vision-capable model or remove the images.";
                 throw new AiProviderException(DescribeHttpError(response.StatusCode) + detail +
-                    (response.StatusCode is HttpStatusCode.Unauthorized or HttpStatusCode.Forbidden ? " " + _authenticationHint : ""));
+                    (response.StatusCode is HttpStatusCode.Unauthorized or HttpStatusCode.Forbidden ? " " + _authenticationHint : ""), response.StatusCode);
             }
             if (response.Content.Headers.ContentLength > MaximumResponseBytes)
                 throw new AiProviderException("The AI endpoint returned a response larger than 8 MB.");

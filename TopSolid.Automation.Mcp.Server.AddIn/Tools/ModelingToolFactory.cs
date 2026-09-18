@@ -15,7 +15,7 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
             {
                 ["documentId"] = Schema.Text("Explicit document revision ID to modify. Always obtain from a document tool first."),
                 ["units"] = Schema.Choice("Input length units, default mm. Converted to SI metres.", "mm", "cm", "m"),
-                ["name"] = Schema.Text("Optional name of the new sketch.", 128)
+                ["name"] = Schema.Text(CreationNames.Description, 128)
             };
             var required = new JArray("documentId");
             if (operation == "polyline3d")
@@ -31,8 +31,6 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
                 properties["z"] = Schema.Number("Origin Z in input units, default 0. Use 0 for placement=2d.");
                 if (operation != "extruded_rectangle") {
                     properties["placement"] = Schema.Choice("2d for a 2D document; xy, xz or yz for a 2D sketch in a 3D document.", "2d", "xy", "xz", "yz"); required.Add("placement");
-                    properties["createSection"] = Schema.Boolean("Default false: draw a sketch/profile only. Set true only when the user explicitly requests a section or a modeling operation needs one.");
-                    properties["createSection"]["default"] = false;
                 }
                 foreach (var dimension in operation == "circle2d" ? new[] { "radius" } : operation == "extruded_rectangle" ? new[] { "width", "height", "depth" } : new[] { "width", "height" })
                 { properties[dimension] = Schema.Number("Positive " + dimension + " in input units.", 0.001, 100000); required.Add(dimension); }
@@ -42,13 +40,13 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
             var apis = new List<string>(ApiRefs.Kernel("IApplication.StartModification", "IApplication.EndModification", "IDocuments.EnsureIsDirty"));
             foreach (var method in new[] { "StartModification", "EndModification", "CreateVertex", "CreateProfile", "CreateBuildingOperation" }) apis.Add(Root + service + "." + method + ".html");
             if (operation == "polyline3d") { apis.Add(Root + service + ".CreateSketch.html"); apis.Add(Root + service + ".CleanSketch.html"); }
-            else { apis.Add(Root + service + ".CreateSketchIn2D.html"); apis.Add(Root + service + ".CreateSketchIn3D.html"); apis.Add(Root + service + ".CreateSection.html"); }
+            else { apis.Add(Root + service + ".CreateSketchIn2D.html"); apis.Add(Root + service + ".CreateSketchIn3D.html"); apis.AddRange(ApiRefs.Kernel("ISketches2D.GetSectionCount")); }
             apis.Add(Root + service + (operation == "circle2d" ? ".CreateCircleSegment.html" : ".CreateLineSegment.html"));
-            if (operation == "extruded_rectangle") apis.Add(Root + "IShapes.CreateExtrudedShape.html");
+            if (operation == "extruded_rectangle") { apis.Add(Root + "IShapes.CreateExtrudedShape.html"); apis.AddRange(ApiRefs.Kernel("SmartSection3D.-ctor")); }
             return new ToolDefinition("topsolid_create_" + operation,
-                "Create native " + operation.Replace('_', ' ') + (category == "Sketch2D" ? ". Draws a sketch/profile without a section by default" : "") + ". Requires explicit user confirmation of a server-prepared preview. Target document must already exist. Does not save.",
+                "Create native " + operation.Replace('_', ' ') + (category == "Sketch2D" ? ". Draws a sketch/profile without sections" : "") + ". Requires explicit user confirmation of a server-prepared preview. Target document must already exist. Does not save.",
                 properties, p => a.CreateModel(operation, p), category, required.ToObject<string[]>(), false, apis.ToArray(), p => ModelingGeometry.Validate(operation, p),
-                defaults: "Omitted x/y/z are 0. Omitted closed and createSection are false. Sketch drawings do not create sections by default. The combined rectangle extrusion creates its required section and extrudes along +Z from XY.", defaultLengthUnits: "mm");
+                defaults: "Omitted x/y/z are 0. Omitted closed is false. No sections are created. The combined rectangle extrusion uses the closed sketch directly along +Z from XY.", defaultLengthUnits: "mm");
         }
     }
 }

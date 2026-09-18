@@ -1,6 +1,70 @@
-# Validation — 2026-09-16, current workspace
+# Validation — 2026-09-18, current workspace
 
-## Studio/MCP 0.5.5 — current validation
+## Studio/MCP 0.5.12 — native graphical review
+
+- Release/Debug builds passed with zero warnings/errors; configured Debug MCP output rebuilt. **39/39 application groups**, **15,225 server checks**, **2,124 protocol checks** passed.
+- Read-only native GLB export and parsing passed for the open test part; approximately 40 mm cube, 12 triangles. Document identity, dirty state and shape inventory were unchanged. Measured export 68.6 ms, parse/frozen mesh build 62.8 ms; hardware capability tier 2. No CAD writes or large-model/GPU frame-rate claim.
+- UI fixtures passed proposed/current modes, exact receipt scope, light/dark/Korean, responsive layout/refit, camera controls, stale replies, clearing selection, transport cancellation and independent approval on preview failure. Offscreen software-rendered dialogs were visually inspected.
+- Native GPU-capable WPF viewport is separate from the in-process TopSolid editor. Previews show document context; exact sub-entity picking and CAM simulation are not included. Supported proposed geometry: cylinder and extruded rectangle. [Behavior, architecture and bounds](docs/GRAPHIC-PREVIEW-0.5.12.md).
+- Evidence: `artifacts/graphic-preview-0.5.12`; bundle: `artifacts/TopSolid-AI-0.5.12`; UI images: `artifacts/ui-redesign/graphic-*.png`.
+
+## Studio/MCP 0.5.11 — question dialogs
+
+- Release and Debug solution builds succeeded with zero warnings/errors. **38/38 application groups passed**, including a real MCP handshake against the configured Debug bundle and native WPF behavior. The local server reported TopSolid connected.
+- A live, read-only active-document result was converted to a question card. Its friendly name and the exact returned document identity were verified; **no native CAD changes were made**.
+- Question regression cases cover immutable receipt-backed targets, duplicate names, rejected source paths, typed number/unit/culture and color validation, image parts and reference-data boundaries, separate change approval, cancellation, preserved answers after provider failure, direct project ambiguity, and the Ollama HTTP path where call IDs are absent from the wire.
+- Offscreen WPF fixtures passed for search, persistent single/multiple selections, visible target summaries, clearing, numeric/color validation, image preview, modal answers and MainWindow cancellation. English/Korean and light/dark renders are under `artifacts/ui-redesign/question-*.png`; card and color renders were visually inspected.
+- Framework-dependent bundle: `artifacts/TopSolid-AI-0.5.11`. Application test evidence: `artifacts/question-dialog-0.5.11/application-tests.txt`. Live AI-provider inference and native viewport geometry picking are not claimed. [Contract and limits](docs/QUESTION-DIALOG-0.5.11.md).
+
+## Studio/MCP 0.5.10 — CAM parameters and User Mode
+
+- Debug and Release builds passed with zero warnings/errors. **15,225 server checks**, **2,086 protocol checks** against the configured Debug bundled server, and **37/37 application groups** passed. The full offscreen UI suite also passed, including native-shaped CAM approval, whole-change scope, live language switching, loading phases, cancellation/failure cleanup, unchanged settings and display-only identity resolution.
+- **187 tools / 22 categories / 128 inspection-reference tools / 59 confirmed actions.** All **412 declared API source pages** resolve in the local corpus. Existing tool names and execution identifiers are retained.
+- Live read-only inspection of the already-open CAM document returned all **649 parameters** of the second operation, **zero failed inventory rows**, and eight detailed cutting-condition samples. Five native bound-value component faults remain explicit metadata errors. The largest serialized model receipt was **51,469 characters**, below the 64,000-character limit. Document identity/dirty state and operation summaries were unchanged; **no native writes were performed**.
+- Parameter editing checks exact native types/units, read-only status and enum choices before approval. Readback verifies the requested literal definition as well as type/unit/value, so retaining an equal-valued formula cannot masquerade as a successful literal replacement. Runtime native writes/regeneration remain unqualified.
+- User Mode resolves document/operation/parameter names separately, including opaque revision IDs and numeric local identities. Approval values are initially visible, with full metadata collapsed; proposed real values are explicitly labelled SI. The native-shaped approval and loading images were visually inspected in light/dark/minimum-size fixtures.
+- The matched public CAM setter supports scalar Real/Integer/Boolean/Text. Composite FeedRate/SpindleRate/Bound values are inspectable with explicit write limitations. No live model inference or provider quota test was performed; the supplied log's HTTP 429 remains a provider-side limitation.
+- Evidence: `artifacts/cam-user-mode-0.5.10` and `artifacts/ui-redesign/approval-cam-*.png`, `loading-*.png`. Local framework-dependent bundle: `artifacts/TopSolid-AI-0.5.10`. The exact configured Debug MCP path was rebuilt. [Contracts, findings and limits](docs/CAM-USER-MODE-0.5.10.md).
+
+## Naming/section source changes — build handed to the other session
+
+- Removed hard-coded cylinder/sketch names; explicit names are reserved uniquely before confirmation, including batches. Ordinary sketch tools create no sections; a separate action is exposed only for explicit section requests.
+- **14,286 server checks**, **2,004 protocol checks**, and live read-only collision/batch previews passed. No CAD writes. **187 tools**, **399 locally verified API pages**.
+- Final Studio test rerun and Debug/Release packaging are left to the other active session at the user's request. Concurrent UI edits are preserved. The last application run was **31/32**; its prompt-budget failure was shortened in source, with final integration testing still pending.
+- [Findings, behavior, measurements and build handoff](docs/NAMING-AND-SECTIONS-0.5.9.md). Evidence: `artifacts/naming-0.5.9`. No new complete bundle is claimed here.
+
+## Studio/MCP 0.5.8 — prior validation
+
+- Debug and Release built with zero warnings/errors. **14,072 offline server assertions**, **1,941 protocol checks** against the exact configured Debug bundled server, and **32/32 Release application groups** passed.
+- **186 tools / 22 categories / 128 inspection-reference tools / 58 confirmed actions.** All **398 declared API source pages** resolve in the local corpus.
+- Added cylinder creation/replacement, actual element/face colors, analytic 2D slots, 3D curve batches, a local modeling guide and native SmartReal parameter references for extrusion length, revolution angle and drilling diameter. Absolute-value modeling remains the default. Profiles are validated before confirmation; no sketch sections are created.
+- Live read-only previews succeeded in the already-open part, including rejection of a sketch without profiles. The document identity, dirty state and shape/sketch inventories were unchanged. The part had zero shapes; the live appearance preview used an existing sketch. No native writes occurred.
+- Final real-inference runs with synthetic context and declined proposals: **Gemini Flash Lite 1.14 s / 0.79 s**, **warm Gemma 4 E4B 1.17 s / 4.68 s**, for extruded/revolved red cylinders. One active-document read per run. Local Korean revolution needed two bounded schema repairs. These are planning times, not creation timings or Gemma 31B results. Earlier failures are retained in the evidence folder.
+- Gemini client-created read context uses the documented signature marker; model-generated signatures remain intact. Read context is stored as tool data. WPF behavior and unchanged saved settings passed; no raster UI claim.
+- Native geometry/coloring/replacement and dependency regeneration still require user-approved runtime qualification. 3D fillet/chamfer/Boolean/boss/pocket, surface trim and dimensional sketch constraints remain unimplemented; no corresponding verified public creation method was found in the reviewed interfaces.
+- Evidence: `artifacts/modeling-0.5.8`; bundle: `artifacts/TopSolid-AI-0.5.8`. [Detailed findings, contracts, examples and limits](docs/MODELING-0.5.8.md).
+
+## Studio/MCP 0.5.7 — prior validation
+
+- Debug and Release built with zero warnings/errors. **13,139 offline server assertions**, **1,698 protocol checks** against the configured Debug bundled executable, and **31/31 Release application groups** passed.
+- **181 tools in 22 categories: 127 inspection/reference and 54 confirmed actions.** All **387 declared API source pages** resolve in the complete local reference corpus.
+- Added entity structure/children/properties/folder tools and typed parameter context/choices/formula/reference tools. Eight literal creation types and all 11 concrete ParameterType value adapters are compiled and contract-tested. Single and batch setters share guards and readback.
+- Tests exercised injected native-interface responses for unset values, enum keys beyond page 1, type/unit/relay/parent guards, dates, colors, tolerances, codes and family references; actual installed SDK Smart constructors for all four expression types; confirmation rejection, ownership cycles and local-model schema selection.
+- The installed SmartInteger(string) constructor produced Type=Item in a test despite its documented Formula behavior. Explicit type constructors are used and verified. This is SDK object construction evidence, not live native parameter creation.
+- Both real-process status/application paths reported TopSolid unavailable while it was closed. **No native CAD writes were performed.** Formula evaluation/regeneration, parameter edits and entity-folder/appearance changes still require a user-confirmed native trial. No new live model timing or raster UI validation is claimed.
+- Existing WPF blue replies, elapsed time, provider/MCP loops, approval flow, credentials redaction and unchanged saved settings passed. Compact local workflows expose relevant entity/parameter schemas immediately without loading the full catalog.
+- Evidence: `artifacts/entity-parameters-0.5.7`; framework-dependent bundle: `artifacts/TopSolid-AI-0.5.7`. Exact configured Debug and Release outputs were rebuilt. [Concepts, methods, examples and limits](docs/ENTITIES-PARAMETERS-0.5.7.md).
+
+## Studio/MCP 0.5.6 — prior validation
+
+- Debug and Release build with zero warnings/errors. **10,966 server assertions**, **1,053 protocol checks** against the configured Debug bundle and **31/31 Release application groups** passed.
+- **172 tools: 122 inspection/reference and 50 confirmed actions.** All 275 declared source pages resolve locally.
+- Section creation and its arguments were removed. Drawing preserves native section count, failing with rollback on unexpected changes. Heart topology, dimensions, rotation, strict old-field rejection, ambiguous target refusal, context migration and the three-invalid-proposal limit passed regression checks.
+- Live **Gemma 4 e4b**, fast replies enabled: **1.853 s** and **1.038 s** to a valid declined heart proposal, each with two model requests and one synthetic document-context read. Six schemas; 1,992 initial input tokens. The model was already loaded. These are **fixture planning benchmarks, not native CAD execution timings**.
+- TopSolid was closed and the real status tool reported unavailable. **No native writes were executed.** Native heart construction, direct-sketch extrusion and combined PDM lookup remain pending live validation; no new raster UI validation is claimed. WPF behavior, blue replies, elapsed time and unchanged saved settings passed.
+- [Full findings, geometry contract, compatibility changes and limitations](docs/SKETCH-RELIABILITY-0.5.6.md). Evidence: `artifacts/sketch-reliability-0.5.6`; bundle: `artifacts/TopSolid-AI-0.5.6`. Configured Debug outputs were rebuilt too.
+
+## Studio/MCP 0.5.5 — prior validation
 
 - Debug and Release: zero warnings/errors. **9,992 server assertions**, **1,000 protocol checks** against the configured Debug bundled executable, and **31/31 final Release application groups** passed. An additional **32/32** run included the live Gemini preview.
 - **171 tools: 121 inspection/reference, 50 confirmed actions.** All **275 declared source pages** resolve locally.
