@@ -85,16 +85,6 @@
     "Sha256": "E818F1E8309C5CDE63ADE58CA3B11BAA8A5A6959269F65DCAF9FC4F915739F50"
   },
   {
-    "Key": "operation",
-    "Source": "Cam\\NC\\Kernel\\UI.OperationManager\\Views\\OperationsManagerView.png",
-    "Sha256": "DBF64F8F6783BFB9670E50345F6A70D61A5FFC3D55B0AF5F4AF77A04EA9BEE39"
-  },
-  {
-    "Key": "parameter",
-    "Source": "Cam\\NC\\Kernel\\UI.Annex\\Resources\\Parameters.png",
-    "Sha256": "EE923878E40D5556FF2F3CCE2D9DF2E6D654AE77DBF6F6ECB00C3C478EE78AAB"
-  },
-  {
     "Key": "library",
     "Source": "Cam\\NC\\Kernel\\UI.Tools\\Resources\\Library.png",
     "Sha256": "37D6C0C47CBE97699F146119B6D6943FD7037D1987EC9DD60FB59C8FE8F58022"
@@ -158,5 +148,847 @@
     "Key": "view-orbit",
     "Source": "Cad\\Kernel\\WG\\Commands\\Views\\RotateViewCommand.png",
     "Sha256": "4C31546B895DF22DC97C164A9F3079C92143FE8332A46AACFE8EA3F4029E79B5"
+  },
+  {
+    "Key": "parameter",
+    "Source": "Cad\\Kernel\\DB\\Parameters\\RealParameterEntity.png",
+    "Sha256": "2418968649FDD6E903AD403ADC4BAE4DCC97FE9444BBD1400608BABF211C0507"
+  },
+  {
+    "Key": "arguments",
+    "Source": "Cad\\Kernel\\WG\\Commands\\ShowPropertiesCommand.png",
+    "Sha256": "364B79E9C545B0572C8C6D9EE5F50950AA378DEE65239FFBC89AD595D2C9DC2C"
+  },
+  {
+    "Key": "operation",
+    "Source": "Cam\\NC\\Kernel\\DB\\Operations\\NCOperation.png",
+    "Sha256": "FC586E4BA0F1E096B742235EC7B7C2231075B0ACD3350EEB564E94CC0AE34DF6"
+  },
+  {
+    "Key": "cam-tool",
+    "Source": "Cam\\NC\\MillTurn\\UI\\Resources\\ToolEntity.png",
+    "Sha256": "CDF36D2778DC0AC7471A0542ACCFB1E80797CB0D4C5949C8C1ED949876312CD5"
+  },
+  {
+    "Key": "cam-cutting-conditions",
+    "Source": "Cam\\NC\\Kernel\\UI\\Resources\\CuttingConditionsPane.png",
+    "Sha256": "42F4FBD8680C8032A9BB9869386F4924D665D975E7A20E9AD6C53B68EF6054A7"
+  },
+  {
+    "Key": "cam-geometry",
+    "Source": "Cam\\NC\\MillTurn\\UI\\Resources\\GeometryPanel.png",
+    "Sha256": "DC3E5901B5FA5336987AA2E551A54CA95BB52888EC085694D09E303AB242FAED"
+  },
+  {
+    "Key": "cam-strategy",
+    "Source": "Cam\\NC\\MillTurn\\UI\\Resources\\Parameters.png",
+    "Sha256": "EE923878E40D5556FF2F3CCE2D9DF2E6D654AE77DBF6F6ECB00C3C478EE78AAB"
+  },
+  {
+    "Key": "cam-comment",
+    "Source": "Cam\\NC\\MillTurn\\UI\\Resources\\CommentsPane.png",
+    "Sha256": "A4949D44A5BF1EF50D24CB2BC9FAB889B42A956299715EA1191C2EE8C7307E92"
+  },
+  {
+    "Key": "cam-multi-axis",
+    "Source": "Cam\\NC\\Kernel\\UI\\Resources\\MillTurnMultiAxisPane.png",
+    "Sha256": "CDF2747BFFEBCE4426892B2620EA52F1B7FA9940AB445CBB8758A2C8C9C2AE23"
+  },
+  {
+    "Key": "cam-properties",
+    "Source": "Cam\\NC\\MillTurn\\UI\\Resources\\Properties.png",
+    "Sha256": "B239C16BB69A7A7EA9F5D0A751B2327B2EAAE2286C7682C6C002CECC877777CE"
+  },
+  {
+    "Key": "cam-op-13ce822d025a9bb3",
+    "Source": "Cam\\NC\\Kernel\\DB.Annex\\Operation\\ActivePartSetupOccurrenceOperation.png",
+    "Sha256": "13CE822D025A9BB33427D7F32373D3AF1036C99A6ECD7853B2BE98D591C18FCA",
+    "NativeType": "TopSolid.Cam.NC.Kernel.DB.Annex.Operation.ActivePartSetupOccurrenceOperation"
+  },
+  {
+    "Key": "cam-op-13571b566e767ba1",
+    "Source": "Cam\\NC\\Kernel\\DB.Annex\\Operation\\AnnexOperation.png",
+    "Sha256": "13571B566E767BA1840532AD94092C96A1564F7F1D48E89F09FCA2045545CF35",
+    "NativeType": "TopSolid.Cam.NC.Kernel.DB.Annex.Operation.AnnexOperation"
+  },
+  {
+    "Key": "cam-op-13ce822d025a9bb3",
+    "Source": "Cam\\NC\\Kernel\\DB.Annex\\Operation\\EnvironmentOperation.png",
+    "Sha256": "13CE822D025A9BB33427D7F32373D3AF1036C99A6ECD7853B2BE98D591C18FCA",
+    "NativeType": "TopSolid.Cam.NC.Kernel.DB.Annex.Operation.EnvironmentOperation"
+  },
+  {
+    "Key": "cam-op-b5a99b47321d39c9",
+    "Source": "Cam\\NC\\Kernel\\DB.Annex\\Operation\\MachineElementsActivationOperation.png",
+    "Sha256": "B5A99B47321D39C9D3576847DF245F5E3FAA0AA26AD80ED237D8B1FF118BFA3D",
+    "NativeType": "TopSolid.Cam.NC.Kernel.DB.Annex.Operation.MachineElementsActivationOperation"
+  },
+  {
+    "Key": "cam-op-cad92f1551da9aa4",
+    "Source": "Cam\\NC\\Kernel\\DB.Annex\\Operation\\StockModificationOperation.png",
+    "Sha256": "CAD92F1551DA9AA42EDB93E63268EFE46AC46CA1D884F98CC7F87DDDAA82600F",
+    "NativeType": "TopSolid.Cam.NC.Kernel.DB.Annex.Operation.StockModificationOperation"
+  },
+  {
+    "Key": "cam-op-13102c8ee0fbe0f7",
+    "Source": "Cam\\NC\\Kernel\\DB.Annex\\Operation\\SurroundOperation.png",
+    "Sha256": "13102C8EE0FBE0F7816808AE7D7C118703156DE27187EECEF204CEA359C2E56C",
+    "NativeType": "TopSolid.Cam.NC.Kernel.DB.Annex.Operation.SurroundOperation"
+  },
+  {
+    "Key": "cam-op-0379abf63cd03dab",
+    "Source": "Cam\\NC\\Kernel\\DB.Features\\Operations\\DrillingsManagementOperation.png",
+    "Sha256": "0379ABF63CD03DAB3CD9ADBB29BAE6244394EB2DA77216EABF6B0789EA395E3D",
+    "NativeType": "TopSolid.Cam.NC.Kernel.DB.Features.Operations.DrillingsManagementOperation"
+  },
+  {
+    "Key": "cam-op-204762917341a2aa",
+    "Source": "Cam\\NC\\Kernel\\DB.Machines\\Operations\\NCMachineInclusionManagementOperation.png",
+    "Sha256": "204762917341A2AA9E17E8D98AA0118F1D9555AF05E75F455DE3633280325FF3",
+    "NativeType": "TopSolid.Cam.NC.Kernel.DB.Machines.Operations.NCMachineInclusionManagementOperation"
+  },
+  {
+    "Key": "cam-op-7dc2f1d978ea753a",
+    "Source": "Cam\\NC\\Kernel\\DB.PartSetting\\DerivatedPartSettingManagementOperation.png",
+    "Sha256": "7DC2F1D978EA753A5656B1B4414FECA35032BE3AD604824B0249CBF26589EBB7",
+    "NativeType": "TopSolid.Cam.NC.Kernel.DB.PartSetting.DerivatedPartSettingManagementOperation"
+  },
+  {
+    "Key": "cam-op-63dddf1e9984203d",
+    "Source": "Cam\\NC\\Kernel\\DB.PartSetting\\Features\\PartTieFeatureFolderOperation.png",
+    "Sha256": "63DDDF1E9984203D002D27B0F60A83DFDA0366E92DEBBF3437480D66537A6072",
+    "NativeType": "TopSolid.Cam.NC.Kernel.DB.PartSetting.Features.PartTieFeatureFolderOperation"
+  },
+  {
+    "Key": "cam-op-e7b5295837dab9b0",
+    "Source": "Cam\\NC\\Kernel\\DB.PartSetting\\GrindingReserve\\GrindingReserveOperation.png",
+    "Sha256": "E7B5295837DAB9B08B77C09C9F782207CA26CF503574CA0CE8ADF3660EEE6959",
+    "NativeType": "TopSolid.Cam.NC.Kernel.DB.PartSetting.GrindingReserve.GrindingReserveOperation"
+  },
+  {
+    "Key": "cam-op-db404785030d1d52",
+    "Source": "Cam\\NC\\Kernel\\DB.PartSetting\\OldPartSettingManagementOperation.png",
+    "Sha256": "DB404785030D1D52FBEA2551D8973A3EE26DF1643761AA2734DEC2EEA5A677A0",
+    "NativeType": "TopSolid.Cam.NC.Kernel.DB.PartSetting.OldPartSettingManagementOperation"
+  },
+  {
+    "Key": "cam-op-7dc2f1d978ea753a",
+    "Source": "Cam\\NC\\Kernel\\DB.PartSetting\\PartSettingManagementOperation.png",
+    "Sha256": "7DC2F1D978EA753A5656B1B4414FECA35032BE3AD604824B0249CBF26589EBB7",
+    "NativeType": "TopSolid.Cam.NC.Kernel.DB.PartSetting.PartSettingManagementOperation"
+  },
+  {
+    "Key": "cam-op-64e99ca4e9256e1f",
+    "Source": "Cam\\NC\\Kernel\\DB.PostProcessors\\NCFiles\\NCFilesManagementOperation.png",
+    "Sha256": "64E99CA4E9256E1FEF222EC73EEB32B936F6B2336F4939401A55CC749BAB152B",
+    "NativeType": "TopSolid.Cam.NC.Kernel.DB.PostProcessors.NCFiles.NCFilesManagementOperation"
+  },
+  {
+    "Key": "cam-op-d73ab58ce050418a",
+    "Source": "Cam\\NC\\Kernel\\DB.Tools\\Operations\\ObsoleteNCToolManagementOperation.png",
+    "Sha256": "D73AB58CE050418A89A5A3F3BAE2D2ECDBBFE8FE33889FB27656804411A298B6",
+    "NativeType": "TopSolid.Cam.NC.Kernel.DB.Tools.Operations.ObsoleteNCToolManagementOperation"
+  },
+  {
+    "Key": "cam-op-1c48ae8d2e21cb72",
+    "Source": "Cam\\NC\\Kernel\\DB\\Analysis\\MachiningPropertiesManagementOperation.png",
+    "Sha256": "1C48AE8D2E21CB725D2C5CC6BEB8AAEB27FD4FBB336D8716FEE4D99700E9B260",
+    "NativeType": "TopSolid.Cam.NC.Kernel.DB.Analysis.MachiningPropertiesManagementOperation"
+  },
+  {
+    "Key": "cam-op-3b317601442d3cd5",
+    "Source": "Cam\\NC\\Kernel\\DB\\Analyzers\\AnalyzersOperation.png",
+    "Sha256": "3B317601442D3CD5BCFA1967D0A18A8066B0458B7D9344E8892F777BACF928F3",
+    "NativeType": "TopSolid.Cam.NC.Kernel.DB.Analyzers.AnalyzersOperation"
+  },
+  {
+    "Key": "cam-op-8bbd52548d2ead5e",
+    "Source": "Cam\\NC\\Kernel\\DB\\Configurations\\Operations\\AutomaticProgramsNamesByMachineDefinitionOperation.png",
+    "Sha256": "8BBD52548D2EAD5ED87765E1581162CCCEF7C9182ADFDAA1186B1E19E1D82711",
+    "NativeType": "TopSolid.Cam.NC.Kernel.DB.Configurations.Operations.AutomaticProgramsNamesByMachineDefinitionOperation"
+  },
+  {
+    "Key": "cam-op-25ec4ad2af4eb804",
+    "Source": "Cam\\NC\\Kernel\\DB\\Entities\\Shapes\\Modifications\\TrimOperation.png",
+    "Sha256": "25EC4AD2AF4EB8042361F3AF607D9FC21A63BFC3BAC8D3577FAD76018C739C6F",
+    "NativeType": "TopSolid.Cam.NC.Kernel.DB.Entities.Shapes.Modifications.TrimOperation"
+  },
+  {
+    "Key": "cam-op-73adafd1d2a02504",
+    "Source": "Cam\\NC\\Kernel\\DB\\Nesting\\StockExtractionAsNestingSupports\\StockExtractionAsNestingSupportOperation.png",
+    "Sha256": "73ADAFD1D2A02504F0C6B91CC907F30FB71C2FED095860E15B071BFDDFDF1B8A",
+    "NativeType": "TopSolid.Cam.NC.Kernel.DB.Nesting.StockExtractionAsNestingSupports.StockExtractionAsNestingSupportOperation"
+  },
+  {
+    "Key": "cam-op-ba96d26f3f2a73f2",
+    "Source": "Cam\\NC\\Kernel\\DB\\Operations\\Displays\\DisplayOperation.png",
+    "Sha256": "BA96D26F3F2A73F269DEBBA8C33BFEBFE2A653B1077EEA569873D421FA04DA7E",
+    "NativeType": "TopSolid.Cam.NC.Kernel.DB.Operations.Displays.DisplayOperation"
+  },
+  {
+    "Key": "cam-op-ba96d26f3f2a73f2",
+    "Source": "Cam\\NC\\Kernel\\DB\\Operations\\Displays\\ObsoleteDisplayOperation.png",
+    "Sha256": "BA96D26F3F2A73F269DEBBA8C33BFEBFE2A653B1077EEA569873D421FA04DA7E",
+    "NativeType": "TopSolid.Cam.NC.Kernel.DB.Operations.Displays.ObsoleteDisplayOperation"
+  },
+  {
+    "Key": "cam-op-bf1ffc05d9209af0",
+    "Source": "Cam\\NC\\Kernel\\DB\\Operations\\EntitiesCreation\\NCEntitiesCreationOperation.png",
+    "Sha256": "BF1FFC05D9209AF0D2F063CA79F9C621E087905988691B9E9A8DB180233A9BA2",
+    "NativeType": "TopSolid.Cam.NC.Kernel.DB.Operations.EntitiesCreation.NCEntitiesCreationOperation"
+  },
+  {
+    "Key": "cam-op-bc3a403cd7742b41",
+    "Source": "Cam\\NC\\Kernel\\DB\\Operations\\IsoCodeContext\\IsoCodeContextsManagementOperation.png",
+    "Sha256": "BC3A403CD7742B412A9BFFCDC955A11B97CEBEA3E0DA517517920B3709E8394E",
+    "NativeType": "TopSolid.Cam.NC.Kernel.DB.Operations.IsoCodeContext.IsoCodeContextsManagementOperation"
+  },
+  {
+    "Key": "cam-op-b239c16bb69a7a7e",
+    "Source": "Cam\\NC\\Kernel\\DB\\Operations\\Link\\LinkInOperation.png",
+    "Sha256": "B239C16BB69A7A7EA9F5D0A751B2327B2EAAE2286C7682C6C002CECC877777CE",
+    "NativeType": "TopSolid.Cam.NC.Kernel.DB.Operations.Link.LinkInOperation"
+  },
+  {
+    "Key": "cam-op-b239c16bb69a7a7e",
+    "Source": "Cam\\NC\\Kernel\\DB\\Operations\\LinkOut\\LinkOutOperation.png",
+    "Sha256": "B239C16BB69A7A7EA9F5D0A751B2327B2EAAE2286C7682C6C002CECC877777CE",
+    "NativeType": "TopSolid.Cam.NC.Kernel.DB.Operations.LinkOut.LinkOutOperation"
+  },
+  {
+    "Key": "cam-op-f5b4a86b03655ed8",
+    "Source": "Cam\\NC\\Kernel\\DB\\Operations\\Method\\MethodOperation.png",
+    "Sha256": "F5B4A86B03655ED8F662107AD928A99A1003246AA4CA82BE7B4230181B3D3D63",
+    "NativeType": "TopSolid.Cam.NC.Kernel.DB.Operations.Method.MethodOperation"
+  },
+  {
+    "Key": "cam-op-c2a19151045f7a66",
+    "Source": "Cam\\NC\\Kernel\\DB\\Operations\\NCFolderOperation.png",
+    "Sha256": "C2A19151045F7A66ACEC76DD05855CE7BAEF97BEBC249825C84E4825ADC529FC",
+    "NativeType": "TopSolid.Cam.NC.Kernel.DB.Operations.NCFolderOperation"
+  },
+  {
+    "Key": "cam-op-8d33a1515db4c9db",
+    "Source": "Cam\\NC\\Kernel\\DB\\Operations\\NCMechanism\\MachineComponentInclusionOperation.png",
+    "Sha256": "8D33A1515DB4C9DB42C25A0DC9A53FCBF4E99DF011AAED5CF3A6A368F7347846",
+    "NativeType": "TopSolid.Cam.NC.Kernel.DB.Operations.NCMechanism.MachineComponentInclusionOperation"
+  },
+  {
+    "Key": "cam-op-ed9fb26fb8dbafc0",
+    "Source": "Cam\\NC\\Kernel\\DB\\Operations\\NCMechanism\\NCMechanismJointManagementOperation.png",
+    "Sha256": "ED9FB26FB8DBAFC03B605DE528C2DE93CC7E016A02785D5E13BD1CBC74CDBF58",
+    "NativeType": "TopSolid.Cam.NC.Kernel.DB.Operations.NCMechanism.NCMechanismJointManagementOperation"
+  },
+  {
+    "Key": "cam-op-ad84a6adb41e815f",
+    "Source": "Cam\\NC\\Kernel\\DB\\Operations\\NCMechanism\\NCMechanismRigidGroupManagementOperation.png",
+    "Sha256": "AD84A6ADB41E815F875561F0BFA0B4FDFDAF5E56C4DFDDFF18FA56FBAA4F1A57",
+    "NativeType": "TopSolid.Cam.NC.Kernel.DB.Operations.NCMechanism.NCMechanismRigidGroupManagementOperation"
+  },
+  {
+    "Key": "cam-op-fc586e4ba0f1e096",
+    "Source": "Cam\\NC\\Kernel\\DB\\Operations\\NCOperation.png",
+    "Sha256": "FC586E4BA0F1E096B742235EC7B7C2231075B0ACD3350EEB564E94CC0AE34DF6",
+    "NativeType": "TopSolid.Cam.NC.Kernel.DB.Operations.NCOperation"
+  },
+  {
+    "Key": "cam-op-64e99ca4e9256e1f",
+    "Source": "Cam\\NC\\Kernel\\DB\\Operations\\NCProgram\\NCProgramManagementOperation.png",
+    "Sha256": "64E99CA4E9256E1FEF222EC73EEB32B936F6B2336F4939401A55CC749BAB152B",
+    "NativeType": "TopSolid.Cam.NC.Kernel.DB.Operations.NCProgram.NCProgramManagementOperation"
+  },
+  {
+    "Key": "cam-op-ab9671d832445b42",
+    "Source": "Cam\\NC\\Kernel\\DB\\Operations\\Optimized\\OptimizedNCOperation.png",
+    "Sha256": "AB9671D832445B42F7E1116785D658F613095C8085F3E2B6653CB99D781BFAD5",
+    "NativeType": "TopSolid.Cam.NC.Kernel.DB.Operations.Optimized.OptimizedNCOperation"
+  },
+  {
+    "Key": "cam-op-da3ff49d5090d835",
+    "Source": "Cam\\NC\\Kernel\\DB\\Operations\\Part\\PartMovingOperation.png",
+    "Sha256": "DA3FF49D5090D835479385484C447C69302853EE033D509681332F84457E01DB",
+    "NativeType": "TopSolid.Cam.NC.Kernel.DB.Operations.Part.PartMovingOperation"
+  },
+  {
+    "Key": "cam-op-7fd2dca70e870e0b",
+    "Source": "Cam\\NC\\Kernel\\DB\\Operations\\Repetitions\\RepetitionNcOperation.png",
+    "Sha256": "7FD2DCA70E870E0BB7BBB832D043822E603BE05F56F30F82F503C5FE254ADF8C",
+    "NativeType": "TopSolid.Cam.NC.Kernel.DB.Operations.Repetitions.RepetitionNcOperation"
+  },
+  {
+    "Key": "cam-op-a7eaf34acde007c5",
+    "Source": "Cam\\NC\\Kernel\\DB\\Operations\\Security\\SecurityEntitiesManagementOperation.png",
+    "Sha256": "A7EAF34ACDE007C5A7D5796A87D558F9AB668F1A2095D58F68B506DC2CBBB325",
+    "NativeType": "TopSolid.Cam.NC.Kernel.DB.Operations.Security.SecurityEntitiesManagementOperation"
+  },
+  {
+    "Key": "cam-op-ba96d26f3f2a73f2",
+    "Source": "Cam\\NC\\Kernel\\DB\\Operations\\Setup\\SetupOperation.png",
+    "Sha256": "BA96D26F3F2A73F269DEBBA8C33BFEBFE2A653B1077EEA569873D421FA04DA7E",
+    "NativeType": "TopSolid.Cam.NC.Kernel.DB.Operations.Setup.SetupOperation"
+  },
+  {
+    "Key": "cam-op-85daa62c35a8f56d",
+    "Source": "Cam\\NC\\Kernel\\DB\\Operations\\SketchToolPath\\SketchToolPathOperation.png",
+    "Sha256": "85DAA62C35A8F56D6A3DFA390E3A85C4A9C7589935C831EB89443EA2BD464C90",
+    "NativeType": "TopSolid.Cam.NC.Kernel.DB.Operations.SketchToolPath.SketchToolPathOperation"
+  },
+  {
+    "Key": "cam-op-13571b566e767ba1",
+    "Source": "Cam\\NC\\Kernel\\DB\\Operations\\StaticOperation.png",
+    "Sha256": "13571B566E767BA1840532AD94092C96A1564F7F1D48E89F09FCA2045545CF35",
+    "NativeType": "TopSolid.Cam.NC.Kernel.DB.Operations.StaticOperation"
+  },
+  {
+    "Key": "cam-op-b239c16bb69a7a7e",
+    "Source": "Cam\\NC\\Kernel\\DB\\Operations\\StockUpdate\\StockUpdateOperation.png",
+    "Sha256": "B239C16BB69A7A7EA9F5D0A751B2327B2EAAE2286C7682C6C002CECC877777CE",
+    "NativeType": "TopSolid.Cam.NC.Kernel.DB.Operations.StockUpdate.StockUpdateOperation"
+  },
+  {
+    "Key": "cam-op-ec3e189f144923cf",
+    "Source": "Cam\\NC\\Kernel\\DB\\Operations\\TaskOperation.png",
+    "Sha256": "EC3E189F144923CFF07DA3ADFF2D3B8FE0388582FED58EA4FD444446F66675B0",
+    "NativeType": "TopSolid.Cam.NC.Kernel.DB.Operations.TaskOperation"
+  },
+  {
+    "Key": "cam-op-71d8e9dde224f0df",
+    "Source": "Cam\\NC\\Kernel\\DB\\Operations\\Tuning\\StrongTuningOperation.png",
+    "Sha256": "71D8E9DDE224F0DF5B271C6273F9965B219405098A75400DADC2F805C636E59E",
+    "NativeType": "TopSolid.Cam.NC.Kernel.DB.Operations.Tuning.StrongTuningOperation"
+  },
+  {
+    "Key": "cam-op-f665a343d5319788",
+    "Source": "Cam\\NC\\Kernel\\DB\\Operations\\Tuning\\WeakTuningOperation.png",
+    "Sha256": "F665A343D5319788C84B0844D3B060C5916DF226B32E35B876BF15F47F3229FB",
+    "NativeType": "TopSolid.Cam.NC.Kernel.DB.Operations.Tuning.WeakTuningOperation"
+  },
+  {
+    "Key": "cam-op-205e6cb454b21e06",
+    "Source": "Cam\\NC\\Kernel\\DB\\Origins\\OriginsManagementOperation.png",
+    "Sha256": "205E6CB454B21E066E85FDD545E564B43582EF85FCABAA2DA4B2842F1564059C",
+    "NativeType": "TopSolid.Cam.NC.Kernel.DB.Origins.OriginsManagementOperation"
+  },
+  {
+    "Key": "cam-op-8b881ddacb168834",
+    "Source": "Cam\\NC\\Kernel\\DB\\Scenarios\\ScenariosManagementOperation.png",
+    "Sha256": "8B881DDACB1688343E2FABA132456B0F144D4C4C13F40BAC46A7E99DC238B491",
+    "NativeType": "TopSolid.Cam.NC.Kernel.DB.Scenarios.ScenariosManagementOperation"
+  },
+  {
+    "Key": "cam-op-8b881ddacb168834",
+    "Source": "Cam\\NC\\Kernel\\DB\\Stages\\MachiningFinalStageOperation.png",
+    "Sha256": "8B881DDACB1688343E2FABA132456B0F144D4C4C13F40BAC46A7E99DC238B491",
+    "NativeType": "TopSolid.Cam.NC.Kernel.DB.Stages.MachiningFinalStageOperation"
+  },
+  {
+    "Key": "cam-op-15749a633663d759",
+    "Source": "Cam\\NC\\Kernel\\DB\\Stages\\MachiningPreparationStageOperation.png",
+    "Sha256": "15749A633663D75913A92A7D834B2AB475B52CB28A2BC7112B07F53BC10BE1C9",
+    "NativeType": "TopSolid.Cam.NC.Kernel.DB.Stages.MachiningPreparationStageOperation"
+  },
+  {
+    "Key": "cam-op-a024c8d74c05e5c7",
+    "Source": "Cam\\NC\\Kernel\\DB\\Stages\\MachiningStageOperation.png",
+    "Sha256": "A024C8D74C05E5C78784ECFA439AAAC27E8E48FBDDE7AACF4014319AC575468D",
+    "NativeType": "TopSolid.Cam.NC.Kernel.DB.Stages.MachiningStageOperation"
+  },
+  {
+    "Key": "cam-op-bae7d91956f2860c",
+    "Source": "Cam\\NC\\Kernel\\DB\\Stages\\RemachiningStageOperation.png",
+    "Sha256": "BAE7D91956F2860CDCC5A2231AA1B670D3CA7250CD89715E56FD8CB338080D1C",
+    "NativeType": "TopSolid.Cam.NC.Kernel.DB.Stages.RemachiningStageOperation"
+  },
+  {
+    "Key": "cam-op-fdfdad81ec8bff8e",
+    "Source": "Cam\\NC\\MillTurn\\DB.BreakingEdges\\BreakingEdgesOperation.png",
+    "Sha256": "FDFDAD81EC8BFF8EFE9A25BC2CF9C549F3589A3BC015FA9886DF831E9580CA77",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.DB.BreakingEdges.BreakingEdgesOperation"
+  },
+  {
+    "Key": "cam-op-ddf4ad8fe77ea333",
+    "Source": "Cam\\NC\\MillTurn\\DB.Broaching\\Operation\\BroachingOperation.png",
+    "Sha256": "DDF4AD8FE77EA333BAD2FE044429920C48FEC4FA2FCEA6F385478357D9B50132",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.DB.Broaching.Operation.BroachingOperation"
+  },
+  {
+    "Key": "cam-op-abda749ad6559e03",
+    "Source": "Cam\\NC\\MillTurn\\DB.ChamferMilling\\ChamferMillingOperation.png",
+    "Sha256": "ABDA749AD6559E0393B5F879FE78E0C0A13959A600393F0619874A3B24045798",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.DB.ChamferMilling.ChamferMillingOperation"
+  },
+  {
+    "Key": "cam-op-e5510d8f67aa89bc",
+    "Source": "Cam\\NC\\MillTurn\\DB.ControlPoints\\Operation\\ControlPointsOperation.png",
+    "Sha256": "E5510D8F67AA89BC268826A952095F7DF2960645285D8DA449216096B1667160",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.DB.ControlPoints.Operation.ControlPointsOperation"
+  },
+  {
+    "Key": "cam-op-e5510d8f67aa89bc",
+    "Source": "Cam\\NC\\MillTurn\\DB.ControlPoints\\Resources\\ControlPointsOperation.png",
+    "Sha256": "E5510D8F67AA89BC268826A952095F7DF2960645285D8DA449216096B1667160",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.DB.ControlPoints.Resources.ControlPointsOperation"
+  },
+  {
+    "Key": "cam-op-54fcf2666294eea4",
+    "Source": "Cam\\NC\\MillTurn\\DB.CornerRounding\\CornerRoundingOperation.png",
+    "Sha256": "54FCF2666294EEA437379410B38821C996351919B066131560F3F704A71AC5C8",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.DB.CornerRounding.CornerRoundingOperation"
+  },
+  {
+    "Key": "cam-op-9d4d2ce69fc6f83b",
+    "Source": "Cam\\NC\\MillTurn\\DB.CuttingStone\\CuttingOperation.png",
+    "Sha256": "9D4D2CE69FC6F83B6324F03F8B875FA4F90550A64EBBB19EFF3E729786DE1CC7",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.DB.CuttingStone.CuttingOperation"
+  },
+  {
+    "Key": "cam-op-909c8f2acb28c5c4",
+    "Source": "Cam\\NC\\MillTurn\\DB.EndMilling\\EndMillingOperation.png",
+    "Sha256": "909C8F2ACB28C5C40AB40C1D18EF21EF35FC0A04B6F4191599F7FB4A9F44464D",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.DB.EndMilling.EndMillingOperation"
+  },
+  {
+    "Key": "cam-op-532bfee88cebdfc5",
+    "Source": "Cam\\NC\\MillTurn\\DB.EndMilling\\NibblingOperation.png",
+    "Sha256": "532BFEE88CEBDFC5C9A6EE5B3909DA3A0914E681B02D2A81B1416851FDE5E08D",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.DB.EndMilling.NibblingOperation"
+  },
+  {
+    "Key": "cam-op-fb29fb33f362d0c1",
+    "Source": "Cam\\NC\\MillTurn\\DB.Engraving\\EngravingOperation.png",
+    "Sha256": "FB29FB33F362D0C146F3C669069A8C4460A1A21B839BB347BB56B5BECAB7ACC9",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.DB.Engraving.EngravingOperation"
+  },
+  {
+    "Key": "cam-op-2b87f9d06bcc29ac",
+    "Source": "Cam\\NC\\MillTurn\\DB.MouseFacing\\Operations\\MouseFacingOperation.png",
+    "Sha256": "2B87F9D06BCC29AC50D92F25675512EC20A391A85103C99931E8C9908C2C849B",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.DB.MouseFacing.Operations.MouseFacingOperation"
+  },
+  {
+    "Key": "cam-op-80ee91ef7cdca024",
+    "Source": "Cam\\NC\\MillTurn\\DB.Movement\\MovementPointOperation.png",
+    "Sha256": "80EE91EF7CDCA024C8A4B3C1A024CDDA5CCA174638CB86195F235FB6FA3F5DC3",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.DB.Movement.MovementPointOperation"
+  },
+  {
+    "Key": "cam-op-4054422c1621a74e",
+    "Source": "Cam\\NC\\MillTurn\\DB.Plunge\\PlungePocketOperation.png",
+    "Sha256": "4054422C1621A74E38A5788DD367D97399DC7638CC9A3BAC1789200BE149AF5B",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.DB.Plunge.PlungePocketOperation"
+  },
+  {
+    "Key": "cam-op-d88a4a9006e932a2",
+    "Source": "Cam\\NC\\MillTurn\\DB.Plunge\\PlungeSideOperation.png",
+    "Sha256": "D88A4A9006E932A2B69329F6F695D01FBF9E2C653A615DA2AE2D603927F35A97",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.DB.Plunge.PlungeSideOperation"
+  },
+  {
+    "Key": "cam-op-cff1ed58897b785e",
+    "Source": "Cam\\NC\\MillTurn\\DB.Plunge\\PlungeStampPocketOperation.png",
+    "Sha256": "CFF1ED58897B785E4CBF0CF058D8D50C628D68DE7C94E90200DDF80FDC890B2C",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.DB.Plunge.PlungeStampPocketOperation"
+  },
+  {
+    "Key": "cam-op-80ee91ef7cdca024",
+    "Source": "Cam\\NC\\MillTurn\\DB.PointToPoint\\Operations\\HoleOperation.png",
+    "Sha256": "80EE91EF7CDCA024C8A4B3C1A024CDDA5CCA174638CB86195F235FB6FA3F5DC3",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.DB.PointToPoint.Operations.HoleOperation"
+  },
+  {
+    "Key": "cam-op-80ee91ef7cdca024",
+    "Source": "Cam\\NC\\MillTurn\\DB.PointToPoint\\Operations\\PointToPointOperation.png",
+    "Sha256": "80EE91EF7CDCA024C8A4B3C1A024CDDA5CCA174638CB86195F235FB6FA3F5DC3",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.DB.PointToPoint.Operations.PointToPointOperation"
+  },
+  {
+    "Key": "cam-op-4fb0bbabf1e9d3e9",
+    "Source": "Cam\\NC\\MillTurn\\DB.SideMilling\\SideMillingOperation.png",
+    "Sha256": "4FB0BBABF1E9D3E9A995FCA1807BF2DB7ECC86C86E750D438B4E2AED56BD9FB0",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.DB.SideMilling.SideMillingOperation"
+  },
+  {
+    "Key": "cam-op-d9562d2a6245cacd",
+    "Source": "Cam\\NC\\MillTurn\\DB.SlotMilling\\SlotMillingOperation.png",
+    "Sha256": "D9562D2A6245CACDBCED377F4C5F1FD6F8DFA9615BA22F3D14E2270C7B3E60F4",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.DB.SlotMilling.SlotMillingOperation"
+  },
+  {
+    "Key": "cam-op-7277829e0298183c",
+    "Source": "Cam\\NC\\MillTurn\\DB.ThreadMilling\\ThreadMillingOperation.png",
+    "Sha256": "7277829E0298183C5552B167CDB22EE47E6FB7D810D689FB90C9B40A40C2315F",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.DB.ThreadMilling.ThreadMillingOperation"
+  },
+  {
+    "Key": "cam-op-c6a3604919fb9267",
+    "Source": "Cam\\NC\\MillTurn\\DB.TSlotMilling\\TSlotMillingOperation.png",
+    "Sha256": "C6A3604919FB926776F4EAE4E1A4D09F6987A24D655FC83158CF6FC59FD5B577",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.DB.TSlotMilling.TSlotMillingOperation"
+  },
+  {
+    "Key": "cam-op-13571b566e767ba1",
+    "Source": "Cam\\NC\\MillTurn\\DB.VirtualJog\\Operation\\VirtualJogOperation.png",
+    "Sha256": "13571B566E767BA1840532AD94092C96A1564F7F1D48E89F09FCA2045545CF35",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.DB.VirtualJog.Operation.VirtualJogOperation"
+  },
+  {
+    "Key": "cam-op-9638dfd3f295c495",
+    "Source": "Cam\\NC\\MillTurn\\DB\\LinkMovements\\MachineLinkMovementsRulesManagementOperation.png",
+    "Sha256": "9638DFD3F295C49528F8C3EA9EF5DE2A9F13CE75ED609830B173BD2FF714D93C",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.DB.LinkMovements.MachineLinkMovementsRulesManagementOperation"
+  },
+  {
+    "Key": "cam-op-686c4b5a8ef25e7f",
+    "Source": "Cam\\NC\\MillTurn\\DB\\Operations\\Displays\\MillTurnDisplayOperation.png",
+    "Sha256": "686C4B5A8EF25E7FA004B1887D8A0082CCD3AE0C1AD1E64D358C46B9117E1424",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.DB.Operations.Displays.MillTurnDisplayOperation"
+  },
+  {
+    "Key": "cam-op-ba96d26f3f2a73f2",
+    "Source": "Cam\\NC\\MillTurn\\DB\\Operations\\Displays\\ObsoleteMillTurnDisplayOperation.png",
+    "Sha256": "BA96D26F3F2A73F269DEBBA8C33BFEBFE2A653B1077EEA569873D421FA04DA7E",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.DB.Operations.Displays.ObsoleteMillTurnDisplayOperation"
+  },
+  {
+    "Key": "cam-op-6552942a1f810d2a",
+    "Source": "Cam\\NC\\MillTurn\\DB\\Operations\\IsoparametricCurvesOnParallelOperation.png",
+    "Sha256": "6552942A1F810D2AE8FEBF8085C5C00F1AE43F633E63ECC3D63D29AE73940287",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.DB.Operations.IsoparametricCurvesOnParallelOperation"
+  },
+  {
+    "Key": "cam-op-29135e303859b78a",
+    "Source": "Cam\\NC\\MillTurn\\DB\\Operations\\SketchResidualOperation.png",
+    "Sha256": "29135E303859B78A8E983D9EDB0162A57A7DAA318CDEE9ADB865967EA7C18AD8",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.DB.Operations.SketchResidualOperation"
+  },
+  {
+    "Key": "cam-op-29135e303859b78a",
+    "Source": "Cam\\NC\\MillTurn\\DB\\Operations\\SketchResidualProfilesOperation.png",
+    "Sha256": "29135E303859B78A8E983D9EDB0162A57A7DAA318CDEE9ADB865967EA7C18AD8",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.DB.Operations.SketchResidualProfilesOperation"
+  },
+  {
+    "Key": "cam-op-72f0bcc3b72ecfbe",
+    "Source": "Cam\\NC\\MillTurn\\FiveAxis\\DB.Auto5x\\Auto5xOperation.png",
+    "Sha256": "72F0BCC3B72ECFBEF91ECA9E76C72A020774F051BEB28F3B68347577CBCD00BD",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.FiveAxis.DB.Auto5x.Auto5xOperation"
+  },
+  {
+    "Key": "cam-op-761953a48354a832",
+    "Source": "Cam\\NC\\MillTurn\\FiveAxis\\DB.Contour\\ContourOperation.png",
+    "Sha256": "761953A48354A83219A37FB867D2E226F8B106FBB11FE3CFF8984EA076A3B77F",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.FiveAxis.DB.Contour.ContourOperation"
+  },
+  {
+    "Key": "cam-op-a1596ae0f72227f4",
+    "Source": "Cam\\NC\\MillTurn\\FiveAxis\\DB.Deburring\\DeburringOperation.png",
+    "Sha256": "A1596AE0F72227F45CA2048AC1446A6A1A3F393273721BEB72F818CB36588496",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.FiveAxis.DB.Deburring.DeburringOperation"
+  },
+  {
+    "Key": "cam-op-c644aadf4a8a6f86",
+    "Source": "Cam\\NC\\MillTurn\\FiveAxis\\DB.GeodesicMachining\\GeodesicMachiningOperation.png",
+    "Sha256": "C644AADF4A8A6F8645DAA2157EC5E2A3B573345D9AC0CD7DAD3E6741F398953F",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.FiveAxis.DB.GeodesicMachining.GeodesicMachiningOperation"
+  },
+  {
+    "Key": "cam-op-989aaaab006a3d5f",
+    "Source": "Cam\\NC\\MillTurn\\FiveAxis\\DB.ModuleWorks\\ModuleWorksOperation.png",
+    "Sha256": "989AAAAB006A3D5F56814AE35CF1212B37FBEED3EE00E291CBF5E8EE73A87EB3",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.FiveAxis.DB.ModuleWorks.ModuleWorksOperation"
+  },
+  {
+    "Key": "cam-op-f8a39c62afed919c",
+    "Source": "Cam\\NC\\MillTurn\\FiveAxis\\DB.MultiAxisRoughing\\MultiAxisRoughingOperation.png",
+    "Sha256": "F8A39C62AFED919CC207ED8B9685297DEAC975560A4D56942028929894EA37ED",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.FiveAxis.DB.MultiAxisRoughing.MultiAxisRoughingOperation"
+  },
+  {
+    "Key": "cam-op-a407d0bbac57404a",
+    "Source": "Cam\\NC\\MillTurn\\FiveAxis\\DB.MultiBlade\\MultiBladeBladeFinishingOperation.png",
+    "Sha256": "A407D0BBAC57404AD9456D71079E9559998742693B22DF34A9FCF8FEF43F9C08",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.FiveAxis.DB.MultiBlade.MultiBladeBladeFinishingOperation"
+  },
+  {
+    "Key": "cam-op-01c068d6ebe35577",
+    "Source": "Cam\\NC\\MillTurn\\FiveAxis\\DB.MultiBlade\\MultiBladeFilletFinishingOperation.png",
+    "Sha256": "01C068D6EBE35577A112382D33853A490497B24CD6011F584B4492C526738764",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.FiveAxis.DB.MultiBlade.MultiBladeFilletFinishingOperation"
+  },
+  {
+    "Key": "cam-op-a714a0c2519d4e12",
+    "Source": "Cam\\NC\\MillTurn\\FiveAxis\\DB.MultiBlade\\MultiBladeHubFinishingOperation.png",
+    "Sha256": "A714A0C2519D4E12EF6BB32A9104E11C320D5A17B7B570EAC89F1C2DF621D7C1",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.FiveAxis.DB.MultiBlade.MultiBladeHubFinishingOperation"
+  },
+  {
+    "Key": "cam-op-989aaaab006a3d5f",
+    "Source": "Cam\\NC\\MillTurn\\FiveAxis\\DB.MultiBlade\\MultiBladeOperation.png",
+    "Sha256": "989AAAAB006A3D5F56814AE35CF1212B37FBEED3EE00E291CBF5E8EE73A87EB3",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.FiveAxis.DB.MultiBlade.MultiBladeOperation"
+  },
+  {
+    "Key": "cam-op-5a3aed405c5d4d1f",
+    "Source": "Cam\\NC\\MillTurn\\FiveAxis\\DB.MultiBlade\\MultiBladeRoughingOperation.png",
+    "Sha256": "5A3AED405C5D4D1F6DEC3CF75C35D3EFAC2CF94251EC9D14954B046DA8FD6264",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.FiveAxis.DB.MultiBlade.MultiBladeRoughingOperation"
+  },
+  {
+    "Key": "cam-op-5c2b75653b268531",
+    "Source": "Cam\\NC\\MillTurn\\FiveAxis\\DB.PortMachining\\PortMachiningOperation.png",
+    "Sha256": "5C2B75653B2685314EC84EE7E61C40264246314EE289ABFF4E68B80BEBA0F71C",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.FiveAxis.DB.PortMachining.PortMachiningOperation"
+  },
+  {
+    "Key": "cam-op-457a8143a8d80644",
+    "Source": "Cam\\NC\\MillTurn\\FiveAxis\\DB.RotaryMachining\\RotaryMachiningOperation.png",
+    "Sha256": "457A8143A8D80644BCF915A532406297FB8DC948491F54ED517EFCF3D37D58A5",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.FiveAxis.DB.RotaryMachining.RotaryMachiningOperation"
+  },
+  {
+    "Key": "cam-op-f4c0d963847aabb0",
+    "Source": "Cam\\NC\\MillTurn\\FiveAxis\\DB.Roughing3Plus2\\Roughing3Plus2Operation.png",
+    "Sha256": "F4C0D963847AABB0A6E60910E1C91357C209273FC5F61BD4018C67ADFDE69AD3",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.FiveAxis.DB.Roughing3Plus2.Roughing3Plus2Operation"
+  },
+  {
+    "Key": "cam-op-766c32c5d59b95cc",
+    "Source": "Cam\\NC\\MillTurn\\FiveAxis\\DB.Swarf\\SwarfOperation.png",
+    "Sha256": "766C32C5D59B95CCD23687035AEDD258BB262605E3D1106A1E9923678D1A090A",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.FiveAxis.DB.Swarf.SwarfOperation"
+  },
+  {
+    "Key": "cam-op-766c32c5d59b95cc",
+    "Source": "Cam\\NC\\MillTurn\\FiveAxis\\DB.Swarf\\SwarfSetupOperation.png",
+    "Sha256": "766C32C5D59B95CCD23687035AEDD258BB262605E3D1106A1E9923678D1A090A",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.FiveAxis.DB.Swarf.SwarfSetupOperation"
+  },
+  {
+    "Key": "cam-op-761953a48354a832",
+    "Source": "Cam\\NC\\MillTurn\\FiveAxis\\DB.Tubular\\TubularOperation.png",
+    "Sha256": "761953A48354A83219A37FB867D2E226F8B106FBB11FE3CFF8984EA076A3B77F",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.FiveAxis.DB.Tubular.TubularOperation"
+  },
+  {
+    "Key": "cam-op-5a43a2f0e2c9b969",
+    "Source": "Cam\\NC\\MillTurn\\Form\\DB.Contouring\\ContouringOperation.png",
+    "Sha256": "5A43A2F0E2C9B969D1E92DE3774AF337B33BA88161A14903E2CB90B1DE5CF711",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.Form.DB.Contouring.ContouringOperation"
+  },
+  {
+    "Key": "cam-op-c89404eb794f0526",
+    "Source": "Cam\\NC\\MillTurn\\Form\\DB.Finishing\\AutomaticRadialOperation.png",
+    "Sha256": "C89404EB794F0526C57BEE161FE426CC1107D914CCE867EE8C5FCE010A5A3EB4",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.Form.DB.Finishing.AutomaticRadialOperation"
+  },
+  {
+    "Key": "cam-op-c89404eb794f0526",
+    "Source": "Cam\\NC\\MillTurn\\Form\\DB.Finishing\\FinishingOperation.png",
+    "Sha256": "C89404EB794F0526C57BEE161FE426CC1107D914CCE867EE8C5FCE010A5A3EB4",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.Form.DB.Finishing.FinishingOperation"
+  },
+  {
+    "Key": "cam-op-c89404eb794f0526",
+    "Source": "Cam\\NC\\MillTurn\\Form\\DB.Finishing\\FiveAxisHncOperation.png",
+    "Sha256": "C89404EB794F0526C57BEE161FE426CC1107D914CCE867EE8C5FCE010A5A3EB4",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.Form.DB.Finishing.FiveAxisHncOperation"
+  },
+  {
+    "Key": "cam-op-4537db5cb8f04d6d",
+    "Source": "Cam\\NC\\MillTurn\\Form\\DB.Finishing\\UnderCuttingHncOperation.png",
+    "Sha256": "4537DB5CB8F04D6D5CBAFC3A1900DD9AA5699BCB28F545F76AA24860FAD714AF",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.Form.DB.Finishing.UnderCuttingHncOperation"
+  },
+  {
+    "Key": "cam-op-0a12c021e26206a6",
+    "Source": "Cam\\NC\\MillTurn\\Form\\DB.GreatFinish\\GreatFinishOperation.png",
+    "Sha256": "0A12C021E26206A6B89B0EBC64F486D3B5AA07B62E6C384B544495DAD5F51634",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.Form.DB.GreatFinish.GreatFinishOperation"
+  },
+  {
+    "Key": "cam-op-0b6d6547b8945bb2",
+    "Source": "Cam\\NC\\MillTurn\\Form\\DB.Matleft\\MatleftOperation.png",
+    "Sha256": "0B6D6547B8945BB21A9D004F6D7EFE837D269875EC51A4602778717C891E0734",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.Form.DB.Matleft.MatleftOperation"
+  },
+  {
+    "Key": "cam-op-5a43a2f0e2c9b969",
+    "Source": "Cam\\NC\\MillTurn\\Form\\DB.Multipocketing\\MultipocketingOperation.png",
+    "Sha256": "5A43A2F0E2C9B969D1E92DE3774AF337B33BA88161A14903E2CB90B1DE5CF711",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.Form.DB.Multipocketing.MultipocketingOperation"
+  },
+  {
+    "Key": "cam-op-cecf0fd1361ac1f0",
+    "Source": "Cam\\NC\\MillTurn\\Form\\DB.Pipe\\SweptOperation.png",
+    "Sha256": "CECF0FD1361AC1F08BAADF72F1C287C3DEDBDDF0CF2D03B7335CC5B79A9932E0",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.Form.DB.Pipe.SweptOperation"
+  },
+  {
+    "Key": "cam-op-60b93f9549149d7c",
+    "Source": "Cam\\NC\\MillTurn\\Form\\DB.Roughing\\FourAxis\\FourAxisRoughingOperation.png",
+    "Sha256": "60B93F9549149D7C30AF06A429ABF4260B97D20401FEFE99F0E3185985537BE9",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.Form.DB.Roughing.FourAxis.FourAxisRoughingOperation"
+  },
+  {
+    "Key": "cam-op-71b5590626348f66",
+    "Source": "Cam\\NC\\MillTurn\\Form\\DB.Roughing\\Planar\\PlanarRoughingOperation.png",
+    "Sha256": "71B5590626348F66C9E11B93F82790C7835A08CCA0F17BDE0662F35B09B97AEC",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.Form.DB.Roughing.Planar.PlanarRoughingOperation"
+  },
+  {
+    "Key": "cam-op-60b93f9549149d7c",
+    "Source": "Cam\\NC\\MillTurn\\Form\\DB.Roughing\\RoughingOperation.png",
+    "Sha256": "60B93F9549149D7C30AF06A429ABF4260B97D20401FEFE99F0E3185985537BE9",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.Form.DB.Roughing.RoughingOperation"
+  },
+  {
+    "Key": "cam-op-640fe2ae4b17d6bd",
+    "Source": "Cam\\NC\\MillTurn\\Form\\DB.Roughing\\UnderCutting\\UnderCuttingRoughingOperation.png",
+    "Sha256": "640FE2AE4B17D6BDD093EA2BD9BB7746A0DB508DBBC4DBAEDE94C441260D788C",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.Form.DB.Roughing.UnderCutting.UnderCuttingRoughingOperation"
+  },
+  {
+    "Key": "cam-op-e721129e393c56be",
+    "Source": "Cam\\NC\\MillTurn\\Form\\DB.ScrewMilling\\ScrewMillingOperation.png",
+    "Sha256": "E721129E393C56BE41A69853D803C9D0E4AB96FF7EDE8AA3551E28B682DC1942",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.Form.DB.ScrewMilling.ScrewMillingOperation"
+  },
+  {
+    "Key": "cam-op-9f301f6c86972ae6",
+    "Source": "Cam\\NC\\MillTurn\\Form\\DB.Stone3D\\Stone3dOperation.png",
+    "Sha256": "9F301F6C86972AE66AE01A7C11C33092B76591FD7FE542DA2F7C72F564AA127B",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.Form.DB.Stone3D.Stone3dOperation"
+  },
+  {
+    "Key": "cam-op-5c1a5c3092319b2f",
+    "Source": "Cam\\NC\\MillTurn\\Form\\DB.Stone4X\\Stone4xOperation.png",
+    "Sha256": "5C1A5C3092319B2F29916F12961923719365AC8A69C70F2E0284C88261CAEFD5",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.Form.DB.Stone4X.Stone4xOperation"
+  },
+  {
+    "Key": "cam-op-86dedad23a755c64",
+    "Source": "Cam\\NC\\MillTurn\\Form\\DB.Sweeping\\Operation\\SweepingOperation.png",
+    "Sha256": "86DEDAD23A755C6434CD6041C1628C255665A25D28AE233D155A831EBD83A40E",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.Form.DB.Sweeping.Operation.SweepingOperation"
+  },
+  {
+    "Key": "cam-op-826e15f473ad78cd",
+    "Source": "Cam\\NC\\MillTurn\\Form\\DB.VerticalRoughing\\VerticalRoughingOperation.png",
+    "Sha256": "826E15F473AD78CDC696AED53E64AA802777A4D79E1DDBFEEC60D474DDE7C53D",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.Form.DB.VerticalRoughing.VerticalRoughingOperation"
+  },
+  {
+    "Key": "cam-op-e5f73f2a1a9a74cd",
+    "Source": "Cam\\NC\\MillTurn\\Form\\DB\\SketchAngularSeparationOperation.png",
+    "Sha256": "E5F73F2A1A9A74CD3CE65E2C527946E67CC1DFC44F0F0A56637AB6B3AFC1928E",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.Form.DB.SketchAngularSeparationOperation"
+  },
+  {
+    "Key": "cam-op-cb20ed7ad2197be2",
+    "Source": "Cam\\NC\\MillTurn\\Form\\DB\\SketchContactAreaToolOperation.png",
+    "Sha256": "CB20ED7AD2197BE2482B4CDDBE460AD100BFA861BD0613A77D8F56B525CB70B8",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.Form.DB.SketchContactAreaToolOperation"
+  },
+  {
+    "Key": "cam-op-33c6a28f00401b3f",
+    "Source": "Cam\\NC\\MillTurn\\Form\\DB\\SketchPlanarFacesOperation.png",
+    "Sha256": "33C6A28F00401B3F3820BDF89C7F5907814C705E54362E70B80DDF496254EE21",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.Form.DB.SketchPlanarFacesOperation"
+  },
+  {
+    "Key": "cam-op-6c313966b950f5f5",
+    "Source": "Cam\\NC\\MillTurn\\Form\\DB\\SketchToolShapeRestAreaOperation.png",
+    "Sha256": "6C313966B950F5F5C045A98CE5107B1645390E0C8DE407F87FFBDC950CBBEB3E",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.Form.DB.SketchToolShapeRestAreaOperation"
+  },
+  {
+    "Key": "cam-op-062084032e795e72",
+    "Source": "Cam\\NC\\MillTurn\\Grinding\\DB.Contour\\ContourOperation.png",
+    "Sha256": "062084032E795E72AED0B445886B2ED4EA16D5ECBF133A1DD34E83485B03DA7C",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.Grinding.DB.Contour.ContourOperation"
+  },
+  {
+    "Key": "cam-op-798f30801d66f838",
+    "Source": "Cam\\NC\\MillTurn\\Grinding\\DB.CylindricalContouring\\CylindricalContouringOperation.png",
+    "Sha256": "798F30801D66F838A0BE6B8F4A1C260F94C5035E1EE69F4AB4DEF670F0142AF2",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.Grinding.DB.CylindricalContouring.CylindricalContouringOperation"
+  },
+  {
+    "Key": "cam-op-7637aa87bcf820b5",
+    "Source": "Cam\\NC\\MillTurn\\Grinding\\DB.CylindricalFacing\\CylindricalFacingOperation.png",
+    "Sha256": "7637AA87BCF820B56DA451C142238291BD7FA9E918E0F8DC5312379F093A656D",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.Grinding.DB.CylindricalFacing.CylindricalFacingOperation"
+  },
+  {
+    "Key": "cam-op-56ca1328ec25561a",
+    "Source": "Cam\\NC\\MillTurn\\Grinding\\DB.Facing\\FacingOperation.png",
+    "Sha256": "56CA1328EC25561AE25BAB8525AFC7F82C36A77EA4DAE45E78ABC366370F56D4",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.Grinding.DB.Facing.FacingOperation"
+  },
+  {
+    "Key": "cam-op-aaad48ba6ddc621e",
+    "Source": "Cam\\NC\\MillTurn\\Turn\\DB.AngleGrooving\\AngleGroovingOperation.png",
+    "Sha256": "AAAD48BA6DDC621E430DE11A04C9FDE8F7DCE8C649CAD445512B023724E7F553",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.Turn.DB.AngleGrooving.AngleGroovingOperation"
+  },
+  {
+    "Key": "cam-op-766ed131610be3b4",
+    "Source": "Cam\\NC\\MillTurn\\Turn\\DB.BreakingEdges\\BreakingEdgesOperation.png",
+    "Sha256": "766ED131610BE3B4D808080B6A1B9DC8A7324AF9C2C8975010E0A549C672AC3D",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.Turn.DB.BreakingEdges.BreakingEdgesOperation"
+  },
+  {
+    "Key": "cam-op-6dd0403307dd0d61",
+    "Source": "Cam\\NC\\MillTurn\\Turn\\DB.Finishing\\FinishingOperation.png",
+    "Sha256": "6DD0403307DD0D61D02107491A946761323DACE09EDFE7A29BB1AAEAB4A20BC7",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.Turn.DB.Finishing.FinishingOperation"
+  },
+  {
+    "Key": "cam-op-c153b5551189af04",
+    "Source": "Cam\\NC\\MillTurn\\Turn\\DB.Groove\\GrooveOperation.png",
+    "Sha256": "C153B5551189AF048ACCF57BC93370FA2DDA7277BB2D79B5C0865C487E166F98",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.Turn.DB.Groove.GrooveOperation"
+  },
+  {
+    "Key": "cam-op-1cfb5bbf88a23df6",
+    "Source": "Cam\\NC\\MillTurn\\Turn\\DB.Movement\\MovementOperation.png",
+    "Sha256": "1CFB5BBF88A23DF660E181F315CBB0A0516E0C301B3F094478F809DD0F3F709D",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.Turn.DB.Movement.MovementOperation"
+  },
+  {
+    "Key": "cam-op-de302df34dda3034",
+    "Source": "Cam\\NC\\MillTurn\\Turn\\DB.PolygonalTurning\\PolygonalTurningOperation.png",
+    "Sha256": "DE302DF34DDA3034D9E46878733C4C7546E2D72E5DAAE65FD4E209785C70B9C2",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.Turn.DB.PolygonalTurning.PolygonalTurningOperation"
+  },
+  {
+    "Key": "cam-op-db79e7c2bb4ee684",
+    "Source": "Cam\\NC\\MillTurn\\Turn\\DB.Roughing\\RoughingOperation.png",
+    "Sha256": "DB79E7C2BB4EE684569058C4C4D0725925031F22A7E5B48CAFA8E0B426435C26",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.Turn.DB.Roughing.RoughingOperation"
+  },
+  {
+    "Key": "cam-op-ad9b2257d569ac11",
+    "Source": "Cam\\NC\\MillTurn\\Turn\\DB.Threading\\ThreadingOperation.png",
+    "Sha256": "AD9B2257D569AC11990CE3680E5AF7A80813FF326B58F99155D660195517E8B3",
+    "NativeType": "TopSolid.Cam.NC.MillTurn.Turn.DB.Threading.ThreadingOperation"
+  },
+  {
+    "Key": "cam-op-827526a01be59418",
+    "Source": "Cam\\NC\\Wire\\DB.Centering\\CenteringOperation.png",
+    "Sha256": "827526A01BE5941815D8ADD6F97E35BFE521363A33B1EB388F279B44CE279B4F",
+    "NativeType": "TopSolid.Cam.NC.Wire.DB.Centering.CenteringOperation"
+  },
+  {
+    "Key": "cam-op-f42855ecc2db4b8e",
+    "Source": "Cam\\NC\\Wire\\DB\\Features\\FeatureManagementOperation.png",
+    "Sha256": "F42855ECC2DB4B8E353F4B4BE5D56235D5E171A7D6ECFE1DFB7BAAD6077F8F19",
+    "NativeType": "TopSolid.Cam.NC.Wire.DB.Features.FeatureManagementOperation"
+  },
+  {
+    "Key": "cam-op-5a43a2f0e2c9b969",
+    "Source": "Cam\\NC\\Wire\\DB\\Operations\\WireSetupOperation.png",
+    "Sha256": "5A43A2F0E2C9B969D1E92DE3774AF337B33BA88161A14903E2CB90B1DE5CF711",
+    "NativeType": "TopSolid.Cam.NC.Wire.DB.Operations.WireSetupOperation"
   }
 ]

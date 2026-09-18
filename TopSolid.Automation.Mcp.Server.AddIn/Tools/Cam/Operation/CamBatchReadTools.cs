@@ -14,7 +14,7 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
                 BatchRead.Paging(new JObject { ["documentId"] = Schema.Text("CAM document revision; default active.") }),
                 p => a.Read("cam", () => BatchRead.Page(TopSolidCamHost.Operations.GetOperations(a.Document(p)).Select(id => new ElementExId(id)), p,
                     id => new JObject { ["operation"] = AutomationValues.Json(id) }, CamNames.Operation)),
-                "Cam/Operation", api: ApiRefs.Cam("IOperations.GetOperations", "IOperations.GetDescription", "IOperations.IsUpToDate", "IOperations.GetTool", "IOperations.GetPart").Concat(ApiRefs.Kernel("IElements.GetFriendlyName", "IElements.GetName")).ToArray()));
+                "Cam/Operation", api: ApiRefs.Cam("IOperations.GetOperations", "IOperations.GetDescription", "IOperations.GetNCOperation", "IOperations.IsUpToDate", "IOperations.GetTool", "IOperations.GetPart").Concat(ApiRefs.Kernel("IElements.GetFriendlyName", "IElements.GetName", "IElements.GetTypeFullName")).ToArray()));
         }
     }
 }

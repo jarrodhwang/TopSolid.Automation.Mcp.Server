@@ -18,7 +18,7 @@ internal static class ApprovalActivityUiTests
     public static async Task Run(MainWindow window, Action<Window, string> capture)
     {
         var width = window.Width; var height = window.Height;
-        try { await VerifyActivity(window, capture); await VerifyCamApproval(window, capture); await VerifyNativeCamApproval(window, capture); }
+        try { await VerifyActivity(window, capture); await VerifyCamApproval(window, capture); await VerifyNativeCamApproval(window, capture); await VerifyFlatSketch(window, capture); await VerifyOperationPicker(window, capture); }
         finally { window.Width = width; window.Height = height; }
     }
 
@@ -104,7 +104,7 @@ internal static class ApprovalActivityUiTests
                     Check.True(!visible.Contains(hidden), "User approval exposed identity/JSON: " + hidden);
                 foreach (var required in new[] { "Finish pocket", "Feed per tooth", "0.08", "0.12", "mm/tooth", "unsaved", StudioStrings.Get("Approval.EntireChange") })
                     Check.True(visible.Contains(required), "User approval lost a material fact: " + required);
-                Check.True(Descendants<Border>(dialog).Count(b => b.CornerRadius.TopLeft == 8) >= 3, "Nested changes should use readable fact cards");
+                Check.True(!Descendants<Border>(dialog).Any(b => b.CornerRadius.TopLeft == 8 && Descendants<Border>(b).Any(c => c.CornerRadius.TopLeft == 8)), "Approval must not nest bordered cards");
                 var requestedValue = Descendants<TextBox>(dialog).Single(t => t.Text == "0.12");
                 var valueBottom = requestedValue.TransformToAncestor(dialog).Transform(new Point(0, requestedValue.ActualHeight));
                 var approvalTop = dialog.ApproveButton.TransformToAncestor(dialog).Transform(new Point());
@@ -148,6 +148,7 @@ internal static class ApprovalActivityUiTests
                     new JObject { ["documentId"] = "19_related-document&15_0_9", ["name"] = "Linked machining setup" }),
                 ["scopeNote"] = "All synchronized documents listed here are included in this confirmation.",
                 ["operationName"] = "Finish pocket", ["parameterName"] = "Radial stock", ["parameter"] = parameter,
+                ["operationType"] = "TopSolid.Cam.NC.MillTurn.DB.EndMilling.EndMillingOperation",
                 ["currentValue"] = "0.2 mm", ["valueType"] = "Real", ["unitType"] = "Length", ["replacesDefinition"] = true,
                 ["proposedValue"] = new JObject { ["Type"] = "Basic", ["UnitType"] = "Length", ["UnitSymbol"] = null, ["Value"] = 0.0003,
                     ["Formula"] = null, ["ElementId"] = new JObject { ["DocumentId"] = document, ["Id"] = 7899 } }
@@ -167,6 +168,9 @@ internal static class ApprovalActivityUiTests
                 var expander = Descendants<Expander>(dialog).Single();
                 Check.True(!expander.IsExpanded && expander.Content == null, "Detailed native metadata must not bury initial CAM values");
                 var initial = VisibleText(dialog);
+                Check.True(Descendants<Image>(dialog).Any(i => ReferenceEquals(i.Source, TopSolidIcons.Get(TopSolidIcons.OperationKey(proposal["target"])))), "CAM approval header lost the native operation icon");
+                Check.True(Descendants<Image>(dialog).Any(i => ReferenceEquals(i.Source, TopSolidIcons.Get("cam-strategy"))), "CAM parameter approval lost its native category icon");
+                Check.True(!initial.Contains("TopSolid.Cam.NC."), "Native type metadata should choose icons without entering user-facing facts");
                 Check.True(Descendants<TextBlock>(dialog).Any(t => t.Text == "Pocket machining"),
                     "The parameter name replaced its containing document in the approval header");
                 foreach (var required in new[] { "Finish pocket", "Radial stock", "0.2 mm", "0.0003 m (SI)", "fixed value", "Linked machining setup" })
@@ -241,6 +245,78 @@ internal static class ApprovalActivityUiTests
             try { dialog.Show(); await Layout(dialog); Check.True(VisibleText(dialog).Contains(sample.Expected), "Native scalar summary lost " + sample.Kind + " semantics"); }
             finally { dialog.Close(); }
         }
+    }
+
+    private static async Task VerifyFlatSketch(MainWindow owner, Action<Window, string> capture)
+    {
+        var language = StudioStrings.CurrentLanguage;
+        var proposal = JObject.Parse("""
+        {"toolName":"topsolid_create_sketch_profiles","confirmationToken":"private-sketch-token","inputLengthUnits":"mm",
+         "target":{"documentId":"flat-sketch-document","name":"스케치 검토 부품","sketchPlan":{
+           "placement":{"origin":{"x":0,"y":0,"z":0},"normal":{"x":0,"y":0,"z":1}},
+           "profiles":[{"kind":"circle","center":{"x":0,"y":0},"radius":20}],"createsSections":false}},
+         "arguments":{"documentId":"flat-sketch-document","origin":{"x":0,"y":0,"z":0},"units":"mm",
+           "profiles":[{"kind":"circle","center":{"x":0,"y":0},"radius":20},{"kind":"rectangle","width":60,"height":30}]},
+         "effect":"Create the reviewed profiles in one sketch. The document remains unsaved.",
+         "defaults":"Exact prepared geometry and placement are preserved."}
+        """);
+        var original = proposal.ToString();
+        try
+        {
+            StudioStrings.Apply("ko");
+            foreach (var dark in new[] { false, true })
+            {
+                TopSolidTheme.Apply(new(dark, dark ? "TopSolid Dark" : "TopSolid Classic", "Flat approval fixture"));
+                var dialog = new ChangeConfirmationWindow(proposal) { Owner = owner, ShowInTaskbar = false, ShowActivated = false,
+                    WindowStartupLocation = WindowStartupLocation.Manual, Left = -18000, Top = -18000 };
+                try
+                {
+                    dialog.Show(); await Layout(dialog);
+                    var initial = VisibleText(dialog);
+                    foreach (var value in new[] { "스케치 검토 부품", "20", "60", "30", "mm", "X 0", "Y 0", "Z 0" })
+                        Check.True(initial.Contains(value), "Flat sketch approval omitted " + value);
+                    Check.True(!Descendants<TabControl>(dialog).Any(), "User review should not add a tab frame around a single page");
+                    Check.True(Descendants<TextBox>(dialog).All(t => t.IsReadOnly), "Flat approval facts became editable");
+                    var expander = Descendants<Expander>(dialog).Single();
+                    Check.True(expander.Content == null, "Prepared details must load only when opened");
+                    Check.True(!initial.Contains("flat-sketch-document") && !initial.Contains("private-sketch-token"), "Flat approval exposed private identities");
+                    capture(dialog, dark ? "approval-sketch-flat-dark.png" : "approval-sketch-flat-light.png");
+                    expander.IsExpanded = true; await Layout(dialog);
+                    Check.True(VisibleText(dialog).Contains("Exact prepared geometry"), "Flat disclosure lost original prepared facts");
+                    Check.True(!Descendants<Border>((DependencyObject)expander.Content!).Any(b => b.CornerRadius.TopLeft > 0 && b.Child is StackPanel), "Detailed sketch facts nested another card");
+                    capture(dialog, dark ? "approval-sketch-details-dark.png" : "approval-sketch-details-light.png");
+                    dialog.Width = 480; dialog.Height = 500; expander.IsExpanded = false; await Layout(dialog);
+                    var button = dialog.ApproveButton.TransformToAncestor(dialog).Transform(new Point());
+                    Check.True(button.X >= 0 && button.X + dialog.ApproveButton.ActualWidth <= dialog.ActualWidth && button.Y < dialog.ActualHeight, "Compact review hides the approval action");
+                }
+                finally { dialog.Close(); }
+            }
+        }
+        finally { StudioStrings.Apply(language); }
+        Check.Equal(original, proposal.ToString(), "Flattening changed executable sketch facts");
+    }
+
+    private static async Task VerifyOperationPicker(MainWindow owner, Action<Window, string> capture)
+    {
+        var language = StudioStrings.CurrentLanguage; StudioStrings.Apply("ko");
+        var question = UserQuestionTests.CamQuestion();
+        var dialog = new QuestionWindow(question) { Owner = owner, ShowInTaskbar = false, ShowActivated = false,
+            WindowStartupLocation = WindowStartupLocation.Manual, Left = -18000, Top = -18000 };
+        try
+        {
+            dialog.Show(); await Layout(dialog);
+            Check.True(VisibleText(dialog).Contains("[2: 볼 동시가공") && VisibleText(dialog).Contains("[3: 동시가공"), "Actual CAM names are missing from rendered cards");
+            var icons = Descendants<Image>(dialog).Select(i => i.Source).ToArray();
+            Check.True(icons.Contains(TopSolidIcons.Get(question.Choices[0].IconKey!)) && icons.Contains(TopSolidIcons.Get(question.Choices[2].IconKey!)), "Operation cards did not bind their native type icons");
+            // Check every packaged class mapping can load an actual image, not the
+            // generic missing-resource fallback; shared icons may have multiple types.
+            using var stream = typeof(TopSolidIcons).Assembly.GetManifestResourceStream("TopSolid.Automation.AI.Studio.Assets.TopSolid.provenance.json")!;
+            using var reader = new StreamReader(stream);
+            foreach (var icon in JArray.Parse(reader.ReadToEnd()).OfType<JObject>())
+                Check.True(TopSolidIcons.Get((string)icon["Key"]!) is System.Windows.Media.Imaging.BitmapSource, "Missing packaged TopSolid icon: " + icon["Key"]);
+            capture(dialog, "question-cam-native-names-icons.png");
+        }
+        finally { dialog.Close(); StudioStrings.Apply(language); }
     }
 
     private static string VisibleText(DependencyObject root) => string.Join("\n", Descendants<TextBlock>(root).Select(t => t.Text).Concat(Descendants<TextBox>(root).Select(t => t.Text)));

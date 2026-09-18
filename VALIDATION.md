@@ -1,5 +1,13 @@
 # Validation — 2026-09-18, current workspace
 
+## Studio/MCP 0.5.13 — flat reviews and native CAM icons
+
+- Release/Debug builds passed with zero warnings/errors. **39/39 application groups**, **15,249 offline server checks**, and **2,094 protocol checks** (native queries disabled) passed.
+- Separate read-only native CAM verification: seven exact operation names/numbers and NC type icon mappings; **649 parameters**, eight cutting-condition samples, zero failed rows. Document and operation states unchanged; zero native writes.
+- WPF fixtures passed flat profile/coordinate layout, lazy detail disclosure, light/dark/Korean, compact action visibility, original operation/category images, all packaged icon resources, immutable approval/selection, cancellation and existing graphical preview behavior. Captures are offscreen software renders, not a GPU performance benchmark.
+- The source icon registry provides 132 exact native class mappings. Unknown operation types/categories use neutral fallback symbols. General arguments and CAD parameters no longer use CAM milling icons.
+- Evidence: `artifacts/cam-review-0.5.13`, `artifacts/ui-redesign/approval-sketch-flat-*.png`, and `question-cam-native-names-icons.png`. Bundle: `artifacts/TopSolid-AI-0.5.13`. [Behavior, trade-offs and test prompts](docs/REVIEW-AND-CAM-ICONS-0.5.13.md).
+
 ## Studio/MCP 0.5.12 — native graphical review
 
 - Release/Debug builds passed with zero warnings/errors; configured Debug MCP output rebuilt. **39/39 application groups**, **15,225 server checks**, **2,124 protocol checks** passed.

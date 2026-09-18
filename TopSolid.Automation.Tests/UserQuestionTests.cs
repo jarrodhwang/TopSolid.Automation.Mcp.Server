@@ -8,6 +8,7 @@ using TopSolid.Automation.AI.Studio.Chat;
 using TopSolid.Automation.AI.Studio.Localization;
 using TopSolid.Automation.AI.Studio.Mcp;
 using TopSolid.Automation.Mcp.Contracts;
+using TopSolid.Automation.AI.Studio.Appearance;
 
 namespace TopSolid.Automation.Tests;
 
@@ -35,6 +36,7 @@ internal static class UserQuestionTests
         var originalLanguage = StudioStrings.CurrentLanguage; StudioStrings.Apply("en");
         try
         {
+            VerifyCamChoices();
             var sources = new QuestionSources(); var result = Projects();
             var textSource = new QuestionSources();
             textSource.Capture("read-1", "topsolid_list_projects", new JObject(), new McpToolResult { Content = new JArray(new JObject { ["type"] = "text", ["text"] = result.StructuredContent!.ToString() }) });
@@ -81,6 +83,41 @@ internal static class UserQuestionTests
             Check.Equal("Selection received.", await ollamaSession.SendAsync("Choose a project.", CancellationToken.None), "Ollama question wire roundtrip failed");
         }
         finally { StudioStrings.Apply(originalLanguage); }
+    }
+
+    internal static UserQuestion CamQuestion()
+    {
+        const string sweep = "TopSolid.Cam.NC.MillTurn.Form.DB.Sweeping.Operation.SweepingOperation";
+        var rows = new JArray(
+            new JObject { ["operation"] = new JObject { ["element"] = new JObject { ["documentId"] = "cam-fixture-revision", ["id"] = 10990 } },
+                ["operationName"] = "[2: 볼 동시가공 커브 스위핑 (축 방향)] ", ["description"] = "[2: 볼 동시가공 커브 스위핑 (축 방향)] ",
+                ["operationType"] = sweep, ["toolName"] = "Face Mill D40 A90 L3 SD41" },
+            new JObject { ["operation"] = new JObject { ["element"] = new JObject { ["documentId"] = "cam-fixture-revision", ["id"] = 11154 } },
+                ["operationName"] = "[3: 동시가공 스위핑 (축 방향)] ", ["operationType"] = sweep, ["toolName"] = "Face Mill D40 A45 L6 SD41" },
+            new JObject { ["operationName"] = "[6: 커브따라가공]", ["operationType"] = "TopSolid.Cam.NC.MillTurn.DB.SideMilling.SideMillingOperation" });
+        var sources = new QuestionSources();
+        sources.Capture("read-1", "topsolid_list_cam_operation_summaries", new JObject { ["offset"] = 50 }, new McpToolResult { StructuredContent = new JObject { ["items"] = rows } });
+        var input = SelectionInput("operation"); input["question"] = "가공 작업을 선택하세요.";
+        return sources.Create(input);
+    }
+
+    private static void VerifyCamChoices()
+    {
+        var question = CamQuestion();
+        Check.Equal("[2: 볼 동시가공 커브 스위핑 (축 방향)]", question.Choices[0].Label, "CAM summary name and native number must survive pagination");
+        Check.Equal("[3: 동시가공 스위핑 (축 방향)]", question.Choices[1].Label, "Different sweeping names must stay distinct");
+        Check.True(!question.Choices[0].Detail.Contains("볼 동시") && question.Choices[0].Detail.Contains("Face Mill"), "Details must keep tooling context without repeating the title");
+        Check.Equal(11154, (int)question.Answer(selectedKeys: [question.Choices[1].Key]).Data["selected"]![0]!["value"]!["operation"]!["element"]!["id"]!, "Friendly labels changed the selected operation");
+        Check.True(question.Choices[0].IconKey != "operation" && question.Choices[0].IconKey != question.Choices[2].IconKey, "Sweeping and side milling need their actual native icons");
+        foreach (var type in new[] { "TopSolid.Cam.NC.MillTurn.Form.DB.Roughing.RoughingOperation", "TopSolid.Cam.NC.MillTurn.FiveAxis.DB.Contour.ContourOperation", "TopSolid.Cam.NC.MillTurn.DB.PointToPoint.Operations.HoleOperation" })
+            Check.True(TopSolidIcons.OperationKey(new JObject { ["operationType"] = type }) != "operation", "Missing native operation icon: " + type);
+        Check.Equal("operation", TopSolidIcons.OperationKey(new JObject { ["operationType"] = "UnknownOperation", ["name"] = "5 axis roughing" }), "Operation names must never guess machining type");
+        foreach (var sample in new[] { ("Tool", "cam-tool"), ("CuttingConditions|Tool", "cam-cutting-conditions"), ("Geometry", "cam-geometry"), ("First|Strategy", "cam-strategy"), ("Global|Comments", "cam-comment"), ("MultiAxis", "cam-multi-axis"), ("ToFiveAxisPrimitive", "cam-multi-axis"), ("Properties", "cam-properties"), ("UnknownCategory", "parameter") })
+        {
+            var parameter = new JObject { ["name"] = "Value@" + sample.Item1, ["displayName"] = "Native parameter", ["categories"] = new JArray(sample.Item1.Split('|')) };
+            var sources = new QuestionSources(); sources.Capture("read-1", "topsolid_list_cam_parameters", new JObject(), new McpToolResult { StructuredContent = new JObject { ["items"] = new JArray(parameter) } });
+            Check.Equal(sample.Item2, sources.Create(SelectionInput("camParameter")).Choices[0].IconKey, "CAM pane icon mismatch: " + sample.Item1);
+        }
     }
 
     private static async Task RoundTrip()
