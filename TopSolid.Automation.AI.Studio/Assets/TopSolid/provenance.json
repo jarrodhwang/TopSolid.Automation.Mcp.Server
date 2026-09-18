@@ -1077,5 +1077,413 @@
     "Sha256": "FFC315188AB33D28FCEAEB0B419DDE838F72A4D9ECFC3598F5D7BDFC0395C691",
     "DocumentExtension": ".TopDrw",
     "DocumentType": "TopSolid.Cad.Kernel.DB.D2.Modeling.Documents.DrawingDocument"
+  },
+  {
+    "Key": "cam-tool-blade",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Tools\\Blades\\Blade.png",
+    "Sha256": "232706F159C4E609C54E74E7D2708E6F1ADECDA63D041755D114752C154D7C49",
+    "ToolFunction": "Blade"
+  },
+  {
+    "Key": "cam-tool-broaching",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Tools\\Blades\\Broaching.png",
+    "Sha256": "2A78638E4C6820856952BC94143A93D5359D624970BAF6E622D1864B507DD65C",
+    "ToolFunction": "Broaching"
+  },
+  {
+    "Key": "cam-tool-circularsawblade",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Tools\\Blades\\CircularSawBlade.png",
+    "Sha256": "6008840B8E188421F26C855DDD47B630C6EEE64DA1EDCB5041B2DF8AE158693E",
+    "ToolFunction": "CircularSawBlade"
+  },
+  {
+    "Key": "cam-tool-ballenddrill",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Tools\\Drills\\BallEndDrill.png",
+    "Sha256": "D055DA0879E569AF660CFFA0A8626F17C164B2591E916ABD151751CC7CDB9EC5",
+    "ToolFunction": "BallEndDrill"
+  },
+  {
+    "Key": "cam-tool-boringholedrill",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Tools\\Drills\\BoringHoleDrill.png",
+    "Sha256": "8EDCC377B6256A34FD6644560202589799496AB344DB57B1700D35D910EF4541",
+    "ToolFunction": "BoringHoleDrill"
+  },
+  {
+    "Key": "cam-tool-centerdrill",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Tools\\Drills\\CenterDrill.png",
+    "Sha256": "AF78833137E2AB086D0CCAFD743DAC4492D001CA7962D3EF77D18299CA6FD5EC",
+    "ToolFunction": "CenterDrill"
+  },
+  {
+    "Key": "cam-tool-countersinkdrill",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Tools\\Drills\\CountersinkDrill.png",
+    "Sha256": "0B841D1986C73517AC9955DDE342943230FB0DE243ED83B329C1DC38DA72A3F7",
+    "ToolFunction": "CountersinkDrill"
+  },
+  {
+    "Key": "cam-tool-flatdrill",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Tools\\Drills\\FlatDrill.png",
+    "Sha256": "7F8368BBBA2127A053A9CE4B978316F5C25F349D5D4A4A1475B0A0E19DDD4054",
+    "ToolFunction": "FlatDrill"
+  },
+  {
+    "Key": "cam-tool-forstnerdrill",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Tools\\Drills\\ForstnerDrill.png",
+    "Sha256": "C1B5A0DC42F6D19E87C52688D6D00D9A3122B3534938D7ACA50A93623BEA26AD",
+    "ToolFunction": "ForstnerDrill"
+  },
+  {
+    "Key": "cam-tool-gundrill",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Tools\\Drills\\GunDrill.png",
+    "Sha256": "12FC4F7C73CB2AAB8C24506C2D4DC6187C6CE82D11FABB8266A4C38C1FBF1EEB",
+    "ToolFunction": "GunDrill"
+  },
+  {
+    "Key": "cam-tool-spottingdrill",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Tools\\Drills\\SpottingDrill.png",
+    "Sha256": "4620C46B385EC9A1AF991220225A546B7B11326C15F15447F1568A005A60AA01",
+    "ToolFunction": "SpottingDrill"
+  },
+  {
+    "Key": "cam-tool-throughholedrill",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Tools\\Drills\\ThroughHoleDrill.png",
+    "Sha256": "BF3E462460CD7B59944A969137F07021A5D14E3B399F7C6FEC16859A74626EB7",
+    "ToolFunction": "ThroughHoleDrill"
+  },
+  {
+    "Key": "cam-tool-twistdrill",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Tools\\Drills\\TwistDrill.png",
+    "Sha256": "6A41862EDDCF5EE1FC9A7601AD61E1ACCED30E23D790C4F7B7836E5D5D535789",
+    "ToolFunction": "TwistDrill"
+  },
+  {
+    "Key": "cam-tool-cylindricalgrinder",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Tools\\Grinders\\CylindricalGrinder.png",
+    "Sha256": "219D577E0A8FD064CC821BF3E668A69A42D4D5DAF1E3892449ECADCB065625C2",
+    "ToolFunction": "CylindricalGrinder"
+  },
+  {
+    "Key": "cam-tool-radiusedcylindricalgrinder",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Tools\\Grinders\\RadiusedCylindricalGrinder.png",
+    "Sha256": "3A247932208975A17380C53ED8D6D133FFE6ACC021FBB33C8F7F9B44764BD751",
+    "ToolFunction": "RadiusedCylindricalGrinder"
+  },
+  {
+    "Key": "cam-tool-radiusedtslotgrinder",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Tools\\Grinders\\RadiusedTSlotGrinder.png",
+    "Sha256": "C02BDFDE12555CAE869230B35AA5CE15DFC19CE5D3BFB92D75283A390D26E5F2",
+    "ToolFunction": "RadiusedTSlotGrinder"
+  },
+  {
+    "Key": "cam-tool-tslotgrinder",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Tools\\Grinders\\TSlotGrinder.png",
+    "Sha256": "AD49B7EA207A51789561AC9836D28D15E55CC8BCF08C2FBE76F1A92E969BD441",
+    "ToolFunction": "TSlotGrinder"
+  },
+  {
+    "Key": "cam-tool-backspotfacemill",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Tools\\Mills\\BackSpotFaceMill.png",
+    "Sha256": "65CE61785855E149A28E63A9AA882C58B5542DCD52EEBA6DC8423DF0FD3247B6",
+    "ToolFunction": "BackSpotFaceMill"
+  },
+  {
+    "Key": "cam-tool-ballnosemill",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Tools\\Mills\\BallNoseMill.png",
+    "Sha256": "098C4404C448B370301A464281C89CD83005D4BE40C304DEC307265755D697BB",
+    "ToolFunction": "BallNoseMill"
+  },
+  {
+    "Key": "cam-tool-barrelmill",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Tools\\Mills\\BarrelMill.png",
+    "Sha256": "B83A3AA4E2E500FF5FAE05C1515C7BDBA7F7C9C1BE7F3BB8F70B5D65FE97047C",
+    "ToolFunction": "BarrelMill"
+  },
+  {
+    "Key": "cam-tool-chamfermill",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Tools\\Mills\\ChamferMill.png",
+    "Sha256": "35709158705DAEAEE470660BD138B1360059C23DAA39FA3EB88030D8FCD117E5",
+    "ToolFunction": "ChamferMill"
+  },
+  {
+    "Key": "cam-tool-clamexdiscmill",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Tools\\Mills\\ClamexDiscMill.png",
+    "Sha256": "2F320BD1F8AACDEE3F3229DFFA2A1FAD3234FBD92CB9868649F6C7CFFD4FAEE6",
+    "ToolFunction": "ClamexDiscMill"
+  },
+  {
+    "Key": "cam-tool-clamexslotmill",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Tools\\Mills\\ClamexSlotMill.png",
+    "Sha256": "AB683255B073A91D2416F1D17745EDED6E1730F29707F46013FC722ABDB530A4",
+    "ToolFunction": "ClamexSlotMill"
+  },
+  {
+    "Key": "cam-tool-conicnoseballmill",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Tools\\Mills\\ConicNoseBallMill.png",
+    "Sha256": "A5817CB06A05344741DECF3246751D2168D3B575DB96BD8E8A5D5667CD8D63AC",
+    "ToolFunction": "ConicNoseBallMill"
+  },
+  {
+    "Key": "cam-tool-conicnosemill",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Tools\\Mills\\ConicNoseMill.png",
+    "Sha256": "E76FEB9F00560FF4CEBD3F83B22026D8FCB2F506D7D2167F059F7AD55E7E2BD1",
+    "ToolFunction": "ConicNoseMill"
+  },
+  {
+    "Key": "cam-tool-cornerroundingmill",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Tools\\Mills\\CornerRoundingMill.png",
+    "Sha256": "C4701DCF78F17180F3B6F225E72E418BC13146C2D09760894FF110B26B1857C0",
+    "ToolFunction": "CornerRoundingMill"
+  },
+  {
+    "Key": "cam-tool-counterboringmill",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Tools\\Mills\\CounterboringMill.png",
+    "Sha256": "2DE68B0587C3EA0C22551E2958FA7429EB144928A4C7A3F1FC406CFFA9BD13F8",
+    "ToolFunction": "CounterboringMill"
+  },
+  {
+    "Key": "cam-tool-discmill",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Tools\\Mills\\DiscMill.png",
+    "Sha256": "2F320BD1F8AACDEE3F3229DFFA2A1FAD3234FBD92CB9868649F6C7CFFD4FAEE6",
+    "ToolFunction": "DiscMill"
+  },
+  {
+    "Key": "cam-tool-doublechamfermill",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Tools\\Mills\\DoubleChamferMill.png",
+    "Sha256": "AB683255B073A91D2416F1D17745EDED6E1730F29707F46013FC722ABDB530A4",
+    "ToolFunction": "DoubleChamferMill"
+  },
+  {
+    "Key": "cam-tool-facemill",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Tools\\Mills\\FaceMill.png",
+    "Sha256": "15EE9169A7C10F5A9EBA11A071CF36019DC7D45C00EC5A573E5FB8EF508783B9",
+    "ToolFunction": "FaceMill"
+  },
+  {
+    "Key": "cam-tool-highspeedmill",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Tools\\Mills\\HighSpeedMill.png",
+    "Sha256": "08A7D3CAC337406CE68780932BA5796E9AC59E2948993342249DC2F433A4E679",
+    "ToolFunction": "HighSpeedMill"
+  },
+  {
+    "Key": "cam-tool-lensmill",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Tools\\Mills\\LensMill.png",
+    "Sha256": "3BAFCA804D34F9B58451BB7519BA575EE7A758003728DC480ADACEDA6AB330D0",
+    "ToolFunction": "LensMill"
+  },
+  {
+    "Key": "cam-tool-lollipopmill",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Tools\\Mills\\LollipopMill.png",
+    "Sha256": "2D72C772046902C4C2AF620FEC3DF8B381637170B02DEFD786F01BB5265CCD82",
+    "ToolFunction": "LollipopMill"
+  },
+  {
+    "Key": "cam-tool-ovalmill",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Tools\\Mills\\OvalMill.png",
+    "Sha256": "D762301C800BAA35FC3014480CFAFDE41AE9E1DC538955F980DF13AA0D0829A4",
+    "ToolFunction": "OvalMill"
+  },
+  {
+    "Key": "cam-tool-radiusedmill",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Tools\\Mills\\RadiusedMill.png",
+    "Sha256": "4AF5E1CFBBE088DD77EEC13EF625A72FBA9D536258FE68F1B0D6621ACD18FF87",
+    "ToolFunction": "RadiusedMill"
+  },
+  {
+    "Key": "cam-tool-radiusedstaggeredteethmill",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Tools\\Mills\\RadiusedStaggeredTeethMill.png",
+    "Sha256": "448C235D460EA94552ADF19BFF01FBA1225CF01A0A661841BA00B10C26222FB9",
+    "ToolFunction": "RadiusedStaggeredTeethMill"
+  },
+  {
+    "Key": "cam-tool-reversechamfermill",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Tools\\Mills\\ReverseChamferMill.png",
+    "Sha256": "1D665A66ED98CABB365EB896F9C73BD5CE88593C6F04E21D64421191857BFB86",
+    "ToolFunction": "ReverseChamferMill"
+  },
+  {
+    "Key": "cam-tool-sidemill",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Tools\\Mills\\SideMill.png",
+    "Sha256": "F32B376C0C60630095B2E8130748CDF4C5EAFC3731622F3BD68E40931A2D2DCC",
+    "ToolFunction": "SideMill"
+  },
+  {
+    "Key": "cam-tool-slotmill",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Tools\\Mills\\SlotMill.png",
+    "Sha256": "38567CCF1B5100D597138577B12D5DFF0A8899F7493B57C92A103066DEDDC977",
+    "ToolFunction": "SlotMill"
+  },
+  {
+    "Key": "cam-tool-specialmill",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Tools\\Mills\\SpecialMill.png",
+    "Sha256": "40E6D530B0B9BF895D21F56F59571FA6708ABC065D1C217FBC2153273143DA07",
+    "ToolFunction": "SpecialMill"
+  },
+  {
+    "Key": "cam-tool-spotfacemill",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Tools\\Mills\\SpotFaceMill.png",
+    "Sha256": "BA2D5828A42DB9C4FCA397A30B32880C350186CE8C667B77478A34FAE98DF853",
+    "ToolFunction": "SpotFaceMill"
+  },
+  {
+    "Key": "cam-tool-tapersphericbarrelmill",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Tools\\Mills\\TaperSphericBarrelMill.png",
+    "Sha256": "0F6EB90E8B2667D833E1E62A1FF2D9E9595F8D7176D26C4DD0A3EA9CEA7A54A8",
+    "ToolFunction": "TaperSphericBarrelMill"
+  },
+  {
+    "Key": "cam-tool-tapertoricbarrelmill",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Tools\\Mills\\TaperToricBarrelMill.png",
+    "Sha256": "0F6EB90E8B2667D833E1E62A1FF2D9E9595F8D7176D26C4DD0A3EA9CEA7A54A8",
+    "ToolFunction": "TaperToricBarrelMill"
+  },
+  {
+    "Key": "cam-tool-tslotmill",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Tools\\Mills\\TSlotMill.png",
+    "Sha256": "035CE5497DB1F2DE7080DFB2288908CAC20AD24415CD6785946520CAAE3BD7E7",
+    "ToolFunction": "TSlotMill"
+  },
+  {
+    "Key": "cam-tool-externalpolygonturnlongitudinal",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Tools\\PolygonTurnings\\ExternalPolygonTurnLongitudinal.png",
+    "Sha256": "1F48316CB55E9C654242E7E11B8C0722EB5B258B7EDC43A949FEAFAFB85526C3",
+    "ToolFunction": "ExternalPolygonTurnLongitudinal"
+  },
+  {
+    "Key": "cam-tool-externalpolygonturnplunge",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Tools\\PolygonTurnings\\ExternalPolygonTurnPlunge.png",
+    "Sha256": "7606883691F87D7F644EF9CE926183F3B71A46396DA3754C63CD1390DFE0CAEC",
+    "ToolFunction": "ExternalPolygonTurnPlunge"
+  },
+  {
+    "Key": "cam-tool-balltouch",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Tools\\Probes\\BallTouch.png",
+    "Sha256": "E3C3AB22222998C8FF532DBE154BF5C87A7718A7C91D4F2626E07E013A2ED025",
+    "ToolFunction": "BallTouch"
+  },
+  {
+    "Key": "cam-tool-cylindricaltouch",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Tools\\Probes\\CylindricalTouch.png",
+    "Sha256": "6BFF0E539FDE0A01C772A52C5669DC78017D51ED773A2E372B3C1AA65BB0FF07",
+    "ToolFunction": "CylindricalTouch"
+  },
+  {
+    "Key": "cam-tool-oblongcuttingpunch",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Tools\\Punches\\OblongCuttingPunch.png",
+    "Sha256": "7EEBF4C2258537D8495C986B8594661AD08D6C64CAEB33EB8A06B1F2D3101F88",
+    "ToolFunction": "OblongCuttingPunch"
+  },
+  {
+    "Key": "cam-tool-punch",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Tools\\Punches\\Punch.png",
+    "Sha256": "3B2403C32709937B2F573F3C8BFA8E3E0367B548AD4C637AD64137B137C3CD85",
+    "ToolFunction": "Punch"
+  },
+  {
+    "Key": "cam-tool-rectangularcuttingpunch",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Tools\\Punches\\RectangularCuttingPunch.png",
+    "Sha256": "95C4F3E96B971217C984ABFB338568D9B4E8C5BBF60EA9577D6F29329EA1873B",
+    "ToolFunction": "RectangularCuttingPunch"
+  },
+  {
+    "Key": "cam-tool-roundcuttingpunch",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Tools\\Punches\\RoundCuttingPunch.png",
+    "Sha256": "5F052F3A6BF82A49666445F2D7EA75EFE281B780D84DF0DA882C97CE0A81E46B",
+    "ToolFunction": "RoundCuttingPunch"
+  },
+  {
+    "Key": "cam-tool-squarecuttingpunch",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Tools\\Punches\\SquareCuttingPunch.png",
+    "Sha256": "3B2403C32709937B2F573F3C8BFA8E3E0367B548AD4C637AD64137B137C3CD85",
+    "ToolFunction": "SquareCuttingPunch"
+  },
+  {
+    "Key": "cam-tool-boringbar",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Tools\\Reamers\\BoringBar.png",
+    "Sha256": "3CEC2DC2A59CC4532955AECB3A99F4B8BDF52B64EA048BE2C55148D1704DE8D1",
+    "ToolFunction": "BoringBar"
+  },
+  {
+    "Key": "cam-tool-constantreamer",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Tools\\Reamers\\ConstantReamer.png",
+    "Sha256": "0CC8F27C78690E8CABDF94FAD20E9ED5AD34C388321FD04172C33F477F3A7940",
+    "ToolFunction": "ConstantReamer"
+  },
+  {
+    "Key": "cam-tool-externalthreadmill",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Tools\\Taps\\ExternalThreadMill.png",
+    "Sha256": "C52B6F75BB49CF5344485D9F421302B3437869100C5A02FEA401CC22CF8C4409",
+    "ToolFunction": "ExternalThreadMill"
+  },
+  {
+    "Key": "cam-tool-internalthreadmill",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Tools\\Taps\\InternalThreadMill.png",
+    "Sha256": "74B4129F8B36C6BDBBCC7AB980FD632ED55BEC25E421869691364FA21AEF9391",
+    "ToolFunction": "InternalThreadMill"
+  },
+  {
+    "Key": "cam-tool-tap",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Tools\\Taps\\Tap.png",
+    "Sha256": "FE116CF40FD08F7941D511219065BEE36C49E678D985182495AE2760E8DCCB6B",
+    "ToolFunction": "Tap"
+  },
+  {
+    "Key": "cam-tool-externalgroove",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Tools\\Turnings\\ExternalGroove.png",
+    "Sha256": "30D061F948691848DBC26232197C79A20A92F5CCA43BF7D8FC279AAB9B6D232F",
+    "ToolFunction": "ExternalGroove"
+  },
+  {
+    "Key": "cam-tool-externalthread",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Tools\\Turnings\\ExternalThread.png",
+    "Sha256": "6DDEE64392A3636FC5040F841D4F9A0D0F561F2B692CFC9B89A79BDD6463AC1E",
+    "ToolFunction": "ExternalThread"
+  },
+  {
+    "Key": "cam-tool-externalturn",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Tools\\Turnings\\ExternalTurn.png",
+    "Sha256": "433129C668294527FEFC5E1CF902655F3C1959C04EE10CB8863125A3CBC7050C",
+    "ToolFunction": "ExternalTurn"
+  },
+  {
+    "Key": "cam-tool-frontalgroove",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Tools\\Turnings\\FrontalGroove.png",
+    "Sha256": "495C1091E0EFB5F715AFB8959F8A9C2E0B436B87EAE49DC3F930D41844A15BE4",
+    "ToolFunction": "FrontalGroove"
+  },
+  {
+    "Key": "cam-tool-internalgroove",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Tools\\Turnings\\InternalGroove.png",
+    "Sha256": "702E789854E2198603F82E5645390B923E8A1A4911C28D06E8D5726462BD225C",
+    "ToolFunction": "InternalGroove"
+  },
+  {
+    "Key": "cam-tool-internalthread",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Tools\\Turnings\\InternalThread.png",
+    "Sha256": "1F051FFFD96DE4AC7BB6AD518F438D212968A0F1162EB0F507869140DF56FBD7",
+    "ToolFunction": "InternalThread"
+  },
+  {
+    "Key": "cam-tool-internalturn",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Tools\\Turnings\\InternalTurn.png",
+    "Sha256": "53E0FDE9644E9A2F83B82D986542AEF7012D10A011428D536A73D378A21E6994",
+    "ToolFunction": "InternalTurn"
+  },
+  {
+    "Key": "cam-tool-yaxisexternalgroove",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Tools\\Turnings\\YAxisExternalGroove.png",
+    "Sha256": "F20186CD99AFB62A58B1C76D4D0833EA8875CDE0384D1BA1FEAFCF29BACC7459",
+    "ToolFunction": "YAxisExternalGroove"
+  },
+  {
+    "Key": "cam-tool-yaxisexternalturn",
+    "Source": "Cam\\NC\\Kernel\\Common\\Resources\\Tools\\Turnings\\YAxisExternalTurn.png",
+    "Sha256": "38978F5C4E53230A0ADA5598E3342E320A466CF92B3DDEA9DE4F6AF6BB57D028",
+    "ToolFunction": "YAxisExternalTurn"
+  },
+  {
+    "Key": "cam-tool-generic",
+    "Source": "Cam\\NC\\Kernel\\UI.CuttingConditions\\Resources\\ToolFunctionEntity.png",
+    "Sha256": "7F2177EEA174E0A3CE311336236E89D842B0B1B329D7BA107B53C46E8BE4ABFB",
+    "ToolFunction": "__unknown__"
   }
 ]

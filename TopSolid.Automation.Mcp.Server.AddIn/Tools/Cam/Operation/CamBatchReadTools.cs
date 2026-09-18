@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using Newtonsoft.Json.Linq;
 using TopSolid.Automation.Mcp.Server.AddIn.Automation;
@@ -12,9 +13,13 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
         {
             register(new ToolDefinition("topsolid_list_cam_operation_summaries", "List CAM operations with description, update state, tool and part in one request. Does not calculate, simulate, postprocess or produce NC. Follow nextOffset for remaining rows.",
                 BatchRead.Paging(new JObject { ["documentId"] = Schema.Text("CAM document revision; default active.") }),
-                p => a.Read("cam", () => BatchRead.Page(TopSolidCamHost.Operations.GetOperations(a.Document(p)).Select(id => new ElementExId(id)), p,
-                    id => new JObject { ["operation"] = AutomationValues.Json(id) }, CamNames.Operation)),
-                "Cam/Operation", api: ApiRefs.Cam("IOperations.GetOperations", "IOperations.GetDescription", "IOperations.GetNCOperation", "IOperations.IsUpToDate", "IOperations.GetTool", "IOperations.GetPart").Concat(ApiRefs.Kernel("IElements.GetFriendlyName", "IElements.GetName", "IElements.GetTypeFullName")).ToArray()));
+                p => a.Read("cam", () =>
+                {
+                    var cache = new Dictionary<TopSolid.Kernel.Automating.ElementId, JObject>();
+                    return BatchRead.Page(TopSolidCamHost.Operations.GetOperations(a.Document(p)).Select(id => new ElementExId(id)), p,
+                        id => new JObject { ["operation"] = AutomationValues.Json(id) }, id => CamNames.Operation(id, cache));
+                }),
+                "Cam/Operation", api: ApiRefs.Cam("IOperations.GetOperations", "IOperations.GetDescription", "IOperations.GetNCOperation", "IOperations.IsUpToDate", "IOperations.GetTool", "IOperations.GetPart", "ITools.GetParameters", "IParameters.ToInvariantStringValue").Concat(ApiRefs.Kernel("IElements.GetFriendlyName", "IElements.GetName", "IElements.GetTypeFullName")).ToArray()));
         }
     }
 }

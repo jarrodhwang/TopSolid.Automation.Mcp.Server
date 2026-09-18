@@ -17,6 +17,14 @@ namespace TopSolid.Automation.Mcp.Server.Tests
     {
         private static void CamParameters()
         {
+            var toolFields = new Dictionary<string, string> { ["ToolDefinitionName"] = " Ball Nose Mill D10 L25 SD10 ",
+                ["PocketDescription"] = "T 1", ["ToolFunction"] = "BallNoseMill" };
+            var toolDisplay = CamToolPresentation.FromValues(toolFields);
+            Check((string)toolDisplay["toolDisplayName"] == "T 1 : Ball Nose Mill D10 L25 SD10", "Native tool pocket/specification formatting failed");
+            toolFields.Remove("PocketDescription");
+            Check((string)CamToolPresentation.FromValues(toolFields)["toolDisplayName"] == "Ball Nose Mill D10 L25 SD10", "Missing pocket invented a tool number");
+            toolFields.Clear();
+            Check(CamToolPresentation.FromValues(toolFields)["toolDisplayName"].Type == JTokenType.Null, "Missing tool metadata invented a cutter definition");
             var operation = new ElementExId(new ElementId(new DocumentId("cam-revision"), 12788));
             var id = new ParameterId(operation, "CuttingSpeed@CuttingConditions");
             var type = CamParameterType.Real; SmartObject stored = new SmartReal(UnitType.Velocity, 2);

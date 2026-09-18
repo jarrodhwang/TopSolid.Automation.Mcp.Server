@@ -17,6 +17,7 @@ public static class TopSolidIcons
     private static readonly ConcurrentDictionary<string, ImageSource> Cache = new(StringComparer.OrdinalIgnoreCase);
     private static readonly Dictionary<string, string> OperationIcons = new(StringComparer.Ordinal);
     private static readonly Dictionary<string, string> DocumentIcons = new(StringComparer.OrdinalIgnoreCase);
+    private static readonly Dictionary<string, string> ToolFunctionIcons = new(StringComparer.Ordinal);
 
     static TopSolidIcons()
     {
@@ -25,6 +26,8 @@ public static class TopSolidIcons
         using var reader = new StreamReader(stream);
         foreach (var entry in JArray.Parse(reader.ReadToEnd()).OfType<JObject>())
         {
+            if ((string?)entry["ToolFunction"] is { } toolFunction && (string?)entry["Key"] is { } toolKey)
+            { ToolFunctionIcons[toolFunction] = toolKey; Keys.Add(toolKey); }
             if ((string?)entry["NativeType"] is { } type && (string?)entry["Key"] is { } key)
             { OperationIcons[type] = key; Keys.Add(key); }
             if ((string?)entry["DocumentExtension"] is { } extension && (string?)entry["Key"] is { } documentKey)
@@ -34,6 +37,9 @@ public static class TopSolidIcons
             }
         }
     }
+
+    public static string ToolFunctionKey(JToken? row) => row is JObject obj && (string?)obj["toolFunction"] is { } function &&
+        ToolFunctionIcons.TryGetValue(function, out var key) ? key : "cam-tool-generic";
 
     // Use receipt metadata, never the AI's itemKind or user-assigned filename, to identify document artwork.
     public static string? DocumentKey(JToken? row)

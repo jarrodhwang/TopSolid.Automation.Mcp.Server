@@ -9,6 +9,7 @@ public static class StudioStrings
     private sealed record Entry(string Key, string English, string Korean);
     private static readonly Entry[] Entries =
     [
+        new("Question.ToolUnavailable", "Tool details unavailable", "공구 정보를 확인할 수 없습니다"),
         new("License.Title", "TopSolid licenses", "TopSolid 라이선스"),
         new("License.Checking", "Checking TopSolid license…", "TopSolid 라이선스 확인 중…"),
         new("License.CheckingNote", "Verifying TopSolid'Kernel Base (1000) before opening Studio.", "Studio를 열기 전에 TopSolid'Kernel Base (1000)를 확인합니다."),

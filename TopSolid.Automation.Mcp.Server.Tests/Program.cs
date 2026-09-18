@@ -19,6 +19,7 @@ namespace TopSolid.Automation.Mcp.Server.Tests
             try
             {
                 if (args.Length == 1 && args[0] == "--probe-sketch-reads") return SketchReadProbe();
+                if (args.Length == 1 && args[0] == "--probe-cam-tools") return CamToolReadProbe();
                 Confirmation(); Transactions(); Geometry(); SchemaAndCatalog(); WorkflowExpansion(); PagedNames(); BatchTools(); PdmDateSorting(); ObjectIdentityRules(); SketchPlans(); DocumentCreation(); Persistence(); SketchPrimitives(); SketchReliability(); ParameterEntities(); ModelingWorkflows(); CreationNaming(); CamParameters(); GraphicPreview(); Licenses();
                 Console.WriteLine("PASS: " + checks + " server checks. No TopSolid connection or CAD mutation was performed."); return 0;
             }

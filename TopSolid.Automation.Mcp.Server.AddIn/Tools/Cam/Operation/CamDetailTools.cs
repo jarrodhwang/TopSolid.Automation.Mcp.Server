@@ -16,7 +16,7 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
                     var id = a.CamElement(p);
                     if (!TopSolidCamHost.Operations.IsOperation(id)) throw new ArgumentException("This element is not a CAM operation.");
                     return CamNames.Operation(id);
-                }), "Cam/Operation", new[] { "element" }, true, ApiRefs.Cam("IOperations.IsOperation", "IOperations.GetDescription", "IOperations.IsUpToDate", "IOperations.GetTool", "IOperations.GetPart").Concat(ApiRefs.Kernel("IElements.GetFriendlyName", "IElements.GetName")).ToArray()));
+                }), "Cam/Operation", new[] { "element" }, true, ApiRefs.Cam("IOperations.IsOperation", "IOperations.GetDescription", "IOperations.IsUpToDate", "IOperations.GetTool", "IOperations.GetPart", "ITools.GetParameters", "IParameters.ToInvariantStringValue").Concat(ApiRefs.Kernel("IElements.GetFriendlyName", "IElements.GetName")).ToArray()));
             register(new ToolDefinition("topsolid_get_cam_parameter_value", "Inspect one parameter inside a CAM operation: friendly name, native type, value, SI unit type, read-only state, allowed enum values and edit guidance; composites include their bound/feed/spindle values. Use the exact full name from list_cam_parameters. Cutting conditions normally refer to these operation parameters.",
                 new JObject { ["element"] = Schema.Element(), ["preparationId"] = Schema.Text("Alternative preparation ID.", 36), ["name"] = Schema.Text("Exact parameter name.", 512) },
                 p => a.Read("cam", () => { var access = CamParameterValues.Native; return access.Read(access.Resolve(a.CamElement(p), (string)p["name"])); }),

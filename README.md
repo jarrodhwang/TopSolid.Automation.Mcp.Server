@@ -1,4 +1,6 @@
-# TopSolid Automation AI — 0.5.18
+# TopSolid Automation AI — 0.5.19
+
+**0.5.19:** CAM selection cards use native operation names/types even for generic question choices. A larger right-hand tool area shows the actual pocket and definition (for example `T 1 : Ball Nose Mill D10 L25 SD10`) with one of 67 native tool-function icons. Display metadata is read once per distinct tool per page; unavailable tooling stays explicit, and operations without a tool have no tool area.
 
 **0.5.18:** Document selection cards use native part, assembly, drafting, milling/turning and 2D document icons from receipt extensions/types, including when the assistant labels the choices as generic options. Unknown types use a neutral document icon; names and selected identities remain unchanged.
 
@@ -59,10 +61,10 @@ dotnet build .\TopSolid.Automation.Mcp.Server.slnx -c Release
 
 The build uses the matched SDK from `C:\Program Files\TOPSOLID\TopSolid 7.20\bin`. To use another SDK folder, supply `-p:TopSolidAutomationDirectory="D:\SDK\TopSolid7.20"`. Legacy DLLs in `Server.AddIn/TopSolid.Automation` are preserved but excluded from reference resolution. Tested client and host version: **7.20.400.107**. Modeling requires host 7.20.326 or newer.
 
-A complete framework-dependent bundle is in **`artifacts/TopSolid-AI-0.5.18`**. Open `TopSolid.Automation.AI.Studio.exe` there; keep the entire folder, including `McpServer`. TopSolid must already be running and ready in the same Windows session with a valid Kernel Base license.
+A complete framework-dependent bundle is in **`artifacts/TopSolid-AI-0.5.19`**. Open `TopSolid.Automation.AI.Studio.exe` there; keep the entire folder, including `McpServer`. TopSolid must already be running and ready in the same Windows session with a valid Kernel Base license.
 
 ```powershell
-dotnet publish .\TopSolid.Automation.AI.Studio -c Release -o .\artifacts\TopSolid-AI-0.5.18
+dotnet publish .\TopSolid.Automation.AI.Studio -c Release -o .\artifacts\TopSolid-AI-0.5.19
 ```
 
 ## Use

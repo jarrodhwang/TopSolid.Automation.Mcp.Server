@@ -107,7 +107,7 @@ for b in bindings:
         for symbol in ('TopSolid.Kernel.Automating.IElements.GetFriendlyName','TopSolid.Kernel.Automating.IElements.GetName'):
             symbols.append(symbol); texts.append(fetch('api/kernel/'+symbol+'.html'))
         if b['name'] in ('topsolid_list_cam_operations','topsolid_list_cam_scenario'):
-            for symbol in ('TopSolid.Cam.NC.Kernel.Automating.IOperations.GetDescription', 'TopSolid.Cam.NC.Kernel.Automating.IOperations.GetNCOperation', 'TopSolid.Kernel.Automating.IElements.GetTypeFullName'):
+            for symbol in ('TopSolid.Cam.NC.Kernel.Automating.IOperations.GetDescription', 'TopSolid.Cam.NC.Kernel.Automating.IOperations.GetNCOperation', 'TopSolid.Kernel.Automating.IElements.GetTypeFullName', 'TopSolid.Cam.NC.Kernel.Automating.IOperations.GetTool', 'TopSolid.Cam.NC.Kernel.Automating.ITools.GetParameters', 'TopSolid.Cam.NC.Kernel.Automating.IParameters.ToInvariantStringValue'):
                 symbols.append(symbol); texts.append(fetch('api/'+('cam' if '.Cam.' in symbol else 'kernel')+'/'+symbol+'.html'))
     if cam_parameters:
         for method in ('GetName','GetFullName','GetLocalizedName','GetCategories','GetType','GetValue','IsReadOnly','ToStringValue','ToInvariantStringValue','GetEnumTypeName','GetParameterEnumValueNames','GetValueBoundValue','GetValueBoundElement','GetValueFeedRateValue','GetValueSpindleRateValue'):
@@ -128,8 +128,10 @@ for b in bindings:
     expr=('AutomationValues.Page('+b['expression']+', p'+projection+page_default+')' if b['paged'] else 'AutomationValues.Result('+b['expression']+')')
     if named_pdm: expr='a.ListPdmProjects('+('true' if b['name']=='topsolid_list_projects' else 'false')+', p)'
     if named_cam:
-        projector='CamNames.OperationNamed' if b['name'] in ('topsolid_list_cam_operations','topsolid_list_cam_scenario') else 'CamNames.Named'
-        expr='AutomationValues.Page('+b['expression']+', p, id => '+projector+'(id))' if b['paged'] else 'AutomationValues.Result(CamNames.Named('+b['expression']+'))'
+        if b['name'] in ('topsolid_list_cam_operations','topsolid_list_cam_scenario'):
+            expr='CamNames.OperationPage('+b['expression']+', p)'
+        else:
+            expr='AutomationValues.Page('+b['expression']+', p, id => CamNames.Named(id))' if b['paged'] else 'AutomationValues.Result(CamNames.Named('+b['expression']+'))'
     if cam_parameters: expr='CamParameterValues.Native.Page(a.CamElement(p), p)'
     code='            register(new ToolDefinition('+json.dumps(b['name'])+', '+json.dumps(b['description'])+', '+props+',\n                p => a.Read('+json.dumps(b['module'])+', () => '+expr+'), '+json.dumps(b['category'])+', new[] { '+', '.join(json.dumps(s) for s in required)+' }'+', true, new[] { '+', '.join(json.dumps(t['url']) for t in texts)+' }));'
     if not required:code=code.replace('new[] {  }','new string[0]')
