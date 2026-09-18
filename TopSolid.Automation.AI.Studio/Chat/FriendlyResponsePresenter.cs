@@ -38,7 +38,7 @@ public sealed class FriendlyResponsePresenter
     private static readonly HashSet<string> HiddenKeys = new(StringComparer.OrdinalIgnoreCase)
     {
         "confirmationToken", "planId", "idKind", "valueIdKind", "identifiers", "moniker",
-        "schemaVersion", "jsonrpc", "protocolVersion"
+        "schemaVersion", "jsonrpc", "protocolVersion", "operationType", "operationTypeError", "operationTypeUnavailable"
     };
 
     public void Clear()

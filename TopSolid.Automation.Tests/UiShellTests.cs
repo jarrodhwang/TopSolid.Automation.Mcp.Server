@@ -308,8 +308,8 @@ internal static partial class UiShellTests
             try
             {
                 approval.Show(); await Layout(approval);
-                var tabs = Descendants<TabControl>(approval).Single();
-                Check.Equal(developerMode ? 2 : 1, tabs.Items.Count, "Raw approval JSON is available outside Dev Mode");
+                var tabs = Descendants<TabControl>(approval).SingleOrDefault();
+                Check.Equal(developerMode ? 2 : 0, tabs?.Items.Count ?? 0, "Only Dev Mode should expose the JSON tab frame");
                 if (developerMode) Check.True(approval.ProposalBox.Text.Contains(ResponsePresentationTests.RevisionId), "Developer approval lost exact targets");
                 else
                 {

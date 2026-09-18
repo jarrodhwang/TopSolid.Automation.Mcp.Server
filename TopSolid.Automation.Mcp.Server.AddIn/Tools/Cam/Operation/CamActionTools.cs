@@ -37,11 +37,12 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
                     result["operationName"] = CamNames.OperationName(operation); result["ncGenerated"] = false; result["recalculationMayBeRequired"] = true;
                     return result;
                 }), "Cam/Operation", new[] { "documentId", "element", "name", "valueType" }, false,
-                CamParameterValues.ReadApi.Concat(ApiRefs.Cam("IParameters.SetValue")).Concat(ApiRefs.Kernel("IElements.GetFriendlyName", "IElements.GetName", "IElements.IsInvalid")).ToArray(), ScalarInput.Validate,
+                CamParameterValues.ReadApi.Concat(ApiRefs.Cam("IParameters.SetValue", "IOperations.GetNCOperation")).Concat(ApiRefs.Kernel("IElements.GetFriendlyName", "IElements.GetName", "IElements.GetTypeFullName", "IElements.IsInvalid")).ToArray(), ScalarInput.Validate,
                 p => {
                     var preview = a.PreviewDocument(p, "cam"); var operation = a.CamElement(p); var access = CamParameterValues.Native;
                     var parameter = access.Resolve(operation, (string)p["name"]); var value = access.Preflight(parameter, p, out var before);
                     preview["operationName"] = CamNames.OperationName(operation); preview["parameterName"] = before["displayName"].DeepClone();
+                    CamNames.DescribeOperation(preview, operation);
                     preview["parameter"] = before; preview["currentValue"] = before["displayValue"]?.DeepClone(); preview["proposedValue"] = AutomationValues.Json(value);
                     preview["valueType"] = before["valueType"].DeepClone(); preview["unitType"] = before["unitType"]?.DeepClone();
                     preview["replacesDefinition"] = (string)before["smartType"] != "Basic";

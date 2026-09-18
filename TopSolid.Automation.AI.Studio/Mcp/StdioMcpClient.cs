@@ -60,7 +60,7 @@ public sealed class StdioMcpClient : IConfirmableMcpClient, IGraphicPreviewClien
             {
                 ["protocolVersion"] = ProtocolVersion,
                 ["capabilities"] = new JObject(),
-                ["clientInfo"] = new JObject { ["name"] = "TopSolid Automation AI Studio", ["version"] = "0.5.12" }
+                ["clientInfo"] = new JObject { ["name"] = "TopSolid Automation AI Studio", ["version"] = "0.5.13" }
             }, cancellationToken);
             if ((string?)response["protocolVersion"] != ProtocolVersion || response["capabilities"]?["tools"] is not JObject)
                 throw new IOException("The MCP server does not support the required protocol/tools capability.");

@@ -20,7 +20,7 @@ public partial class QuestionWindow : Window
     {
         public string Label => Choice.Label;
         public string Detail => Choice.Detail;
-        public ImageSource Icon => TopSolidIcons.Get(IconKey(Choice.Kind));
+        public ImageSource Icon => TopSolidIcons.Get(Choice.IconKey ?? IconKey(Choice.Kind));
     }
     private readonly UserQuestion question;
     private readonly HashSet<string> selected = new(StringComparer.Ordinal);

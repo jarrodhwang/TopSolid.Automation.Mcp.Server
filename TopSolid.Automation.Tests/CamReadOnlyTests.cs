@@ -2,6 +2,7 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using TopSolid.Automation.AI.Studio.Chat;
 using TopSolid.Automation.AI.Studio.Mcp;
+using TopSolid.Automation.AI.Studio.Appearance;
 
 namespace TopSolid.Automation.Tests;
 
@@ -13,7 +14,7 @@ internal static class CamReadOnlyTests
         await using var client = new StdioMcpClient();
         using var timeout = new CancellationTokenSource(TimeSpan.FromMinutes(4));
         await client.ConnectAsync(executable, timeout.Token);
-        var output = Path.GetFullPath("artifacts/cam-user-mode-0.5.10");
+        var output = Path.GetFullPath("artifacts/cam-review-0.5.13");
         Directory.CreateDirectory(output);
         var record = new JObject { ["capturedAtUtc"] = DateTimeOffset.UtcNow.ToString("O"), ["server"] = executable, ["nativeWrites"] = 0 };
         var calls = new JArray(); record["reads"] = calls;
@@ -39,6 +40,17 @@ internal static class CamReadOnlyTests
             record["operations"] = operations;
             var rows = operations["items"] as JArray ?? throw new InvalidOperationException("CAM operations were not returned.");
             Check.True(rows.Count > 0, "The active document has no CAM operations; no fixture data will be created.");
+            var sources = new QuestionSources();
+            sources.Capture("operations", "topsolid_list_cam_operation_summaries", operationArgs, new TopSolid.Automation.Mcp.Contracts.McpToolResult { StructuredContent = operations });
+            var question = sources.Create(new JObject { ["question"] = "Inspect machining operations", ["kind"] = "select", ["itemKind"] = "operation",
+                ["sources"] = new JArray(new JObject { ["toolCallId"] = "operations", ["path"] = "/items" }) });
+            record["operationChoices"] = new JArray(question.Choices.Select(c => new JObject { ["label"] = c.Label, ["icon"] = c.IconKey }));
+            for (var index = 0; index < rows.Count; index++)
+            {
+                Check.Equal(((string)rows[index]["operationName"]!).Trim(), question.Choices[index].Label, "Live CAM selection lost the native name or operation number");
+                Check.True(!string.IsNullOrWhiteSpace((string?)rows[index]["operationType"]), "Live NC operation type was not read");
+                Check.True(TopSolidIcons.OperationKey(rows[index]) != "operation", "Native fixture operation has no exact original icon mapping");
+            }
             var operation = rows[Math.Min(1, rows.Count - 1)]["operation"]!.DeepClone();
             // ElementEx identities preserve their exact server shape; the schema
             // accepts the nested element for ordinary document operations.

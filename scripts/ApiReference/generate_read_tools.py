@@ -107,8 +107,8 @@ for b in bindings:
         for symbol in ('TopSolid.Kernel.Automating.IElements.GetFriendlyName','TopSolid.Kernel.Automating.IElements.GetName'):
             symbols.append(symbol); texts.append(fetch('api/kernel/'+symbol+'.html'))
         if b['name'] in ('topsolid_list_cam_operations','topsolid_list_cam_scenario'):
-            symbol='TopSolid.Cam.NC.Kernel.Automating.IOperations.GetDescription'
-            symbols.append(symbol); texts.append(fetch('api/cam/'+symbol+'.html'))
+            for symbol in ('TopSolid.Cam.NC.Kernel.Automating.IOperations.GetDescription', 'TopSolid.Cam.NC.Kernel.Automating.IOperations.GetNCOperation', 'TopSolid.Kernel.Automating.IElements.GetTypeFullName'):
+                symbols.append(symbol); texts.append(fetch('api/'+('cam' if '.Cam.' in symbol else 'kernel')+'/'+symbol+'.html'))
     if cam_parameters:
         for method in ('GetName','GetFullName','GetLocalizedName','GetCategories','GetType','GetValue','IsReadOnly','ToStringValue','ToInvariantStringValue','GetEnumTypeName','GetParameterEnumValueNames','GetValueBoundValue','GetValueBoundElement','GetValueFeedRateValue','GetValueSpindleRateValue'):
             symbol='TopSolid.Cam.NC.Kernel.Automating.IParameters.'+method

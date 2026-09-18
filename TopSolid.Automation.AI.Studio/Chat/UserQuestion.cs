@@ -4,10 +4,11 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using TopSolid.Automation.AI.Studio.Localization;
 using TopSolid.Automation.Mcp.Contracts;
+using TopSolid.Automation.AI.Studio.Appearance;
 
 namespace TopSolid.Automation.AI.Studio.Chat;
 
-public sealed record QuestionChoice(string Key, string Label, string Detail, string Kind, string SearchText);
+public sealed record QuestionChoice(string Key, string Label, string Detail, string Kind, string SearchText, string? IconKey = null);
 
 public sealed class QuestionAnswer
 {
@@ -151,8 +152,9 @@ internal sealed class QuestionSources
                         if (sourceKind != "option" && row is not JObject) throw new ArgumentException("Read named object details before asking for a TopSolid selection.");
                         var key = "choice-" + choices.Count;
                         var label = Label(row, sourceKind, choices.Count + 1);
-                        var detail = Details(row);
-                        choices.Add(new(key, label, detail, sourceKind, label + " " + detail));
+                        var detail = Details(row, label);
+                        var icon = sourceKind == "operation" ? TopSolidIcons.OperationKey(row) : sourceKind == "camParameter" ? TopSolidIcons.CamCategoryKey(row) : null;
+                        choices.Add(new(key, label, detail, sourceKind, label + " " + detail, icon));
                         values.Add(key, new JObject { ["sourceTool"] = receipt.Tool, ["sourceArguments"] = receipt.Arguments.DeepClone(), ["value"] = row.DeepClone() });
                     }
                 }
@@ -189,10 +191,12 @@ internal sealed class QuestionSources
     private string Label(JToken row, string kind, int ordinal)
     {
         if (row is JObject obj)
-            foreach (var field in new[] { "displayName", "localizedName", "friendlyName", "label", "simpleName", "name", "Name" })
+            foreach (var field in kind == "operation"
+                ? new[] { "operationName", "displayName", "localizedName", "friendlyName", "label", "name", "Name", "description" }
+                : new[] { "displayName", "localizedName", "friendlyName", "label", "simpleName", "name", "Name" })
                 if (obj[field]?.Type == JTokenType.String && !string.IsNullOrWhiteSpace((string?)obj[field]))
                 {
-                    var name = (string)obj[field]!;
+                    var name = ((string)obj[field]!).Trim();
                     if (kind == "camParameter" && name.Contains('@')) name = name.Split('@')[0];
                     if (!long.TryParse(name, out _) && !Guid.TryParse(name, out _)) return presenter.Present(name);
                 }
@@ -200,11 +204,13 @@ internal sealed class QuestionSources
         return StudioStrings.Get("Question.Unnamed", StudioStrings.Get("Question.Kind." + kind), ordinal);
     }
 
-    private string Details(JToken row)
+    private string Details(JToken row, string label)
     {
         if (row is not JObject obj) return "";
         var fields = new[] { "projectName", "documentName", "operationName", "parentName", "toolName", "path", "extension", "revision", "displayValue", "unitSymbol", "description", "geometryType", "creationDate", "modificationDate" };
-        var parts = fields.Select(key => obj[key]).Where(v => v?.Type == JTokenType.String).Select(v => presenter.Present((string)v!)).Where(s => s.Length > 0).ToList();
+        var parts = fields.Select(key => obj[key]).Where(v => v?.Type == JTokenType.String).Select(v => presenter.Present((string)v!).Trim()).Where(s => s.Length > 0 && s != label).ToList();
+        if (obj["categories"] is JArray categories)
+            parts.Insert(0, string.Join(" / ", categories.Values<string>().OfType<string>().Select(FriendlyResponsePresenter.FriendlyLabel)));
         // Geometry measurements can distinguish unnamed topology without displaying handles.
         foreach (var field in new[] { "position", "center", "length", "radius", "area" })
             if (obj[field] is { } value && value.ToString(Formatting.None).Length < 120)
