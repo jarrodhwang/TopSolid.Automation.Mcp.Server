@@ -60,7 +60,7 @@ public sealed class StdioMcpClient : IConfirmableMcpClient, IGraphicPreviewClien
             {
                 ["protocolVersion"] = ProtocolVersion,
                 ["capabilities"] = new JObject(),
-                ["clientInfo"] = new JObject { ["name"] = "TopSolid Automation AI Studio", ["version"] = "0.5.13" }
+                ["clientInfo"] = new JObject { ["name"] = "TopSolid Automation AI Studio", ["version"] = "0.5.14" }
             }, cancellationToken);
             if ((string?)response["protocolVersion"] != ProtocolVersion || response["capabilities"]?["tools"] is not JObject)
                 throw new IOException("The MCP server does not support the required protocol/tools capability.");
@@ -205,7 +205,7 @@ public sealed class StdioMcpClient : IConfirmableMcpClient, IGraphicPreviewClien
         Exception failure = new IOException("MCP server exited. Reconnect to continue.");
         try
         {
-            await foreach (var line in ReadLinesAsync(child.StandardOutput, 4 * 1024 * 1024))
+            await foreach (var line in ReadLinesAsync(child.StandardOutput, GraphicPreviewQuality.MaximumRpcLineCharacters))
             {
                 var message = JObject.Parse(line);
                 if ((string?)message["jsonrpc"] != "2.0") throw new IOException("Invalid MCP JSON-RPC version.");

@@ -1,15 +1,19 @@
 using System.IO;
 using System.Windows.Media;
 using System.Windows.Media.Media3D;
+using TopSolid.Automation.Mcp.Contracts;
 
 namespace TopSolid.Automation.AI.Studio.Preview;
 
 internal sealed record PreviewMesh(Point3D[] Positions, int[] Indices, Color Color, Vector3D[]? Normals = null);
+internal readonly record struct PreviewEdge(Point3D A, Point3D B, Vector3D Normal, Vector3D OtherNormal, bool Feature);
 
-/// <summary>Immutable display geometry in millimetres. All expensive work is done once, off the UI thread.</summary>
+/// <summary>Immutable display geometry in millimetres. Surfaces and adjacency are prepared once, off the UI thread.</summary>
 internal sealed record PreviewScene(Model3DGroup Surfaces, Model3DGroup Edges, Rect3D Bounds, int Triangles, bool EdgesOmitted)
 {
-    internal const int MaximumTriangles = 100_000;
+    internal const int MaximumTriangles = GraphicPreviewQuality.MaximumTriangles;
+    internal const int MaximumEdges = 10_000;
+    private PreviewEdge[] edgeCandidates = [];
     internal static PreviewScene Build(IReadOnlyList<PreviewMesh> meshes, CancellationToken token)
     {
         var surfaces = new Model3DGroup(); var edges = new Model3DGroup(); var bounds = Rect3D.Empty;
@@ -19,7 +23,7 @@ internal sealed record PreviewScene(Model3DGroup Surfaces, Model3DGroup Edges, R
             token.ThrowIfCancellationRequested();
             count = checked(count + mesh.Indices.Length / 3);
             vertices = checked(vertices + mesh.Positions.Length);
-            if (vertices > 300000 || count > MaximumTriangles || mesh.Indices.Length % 3 != 0) throw new InvalidDataException("Preview geometry is too large.");
+            if (vertices > MaximumTriangles * 3 || count > MaximumTriangles || mesh.Indices.Length % 3 != 0) throw new InvalidDataException("Preview geometry is too large.");
             foreach (var p in mesh.Positions)
             {
                 if (!double.IsFinite(p.X) || !double.IsFinite(p.Y) || !double.IsFinite(p.Z) || Math.Max(Math.Abs(p.X), Math.Max(Math.Abs(p.Y), Math.Abs(p.Z))) > 1e9)
@@ -28,9 +32,8 @@ internal sealed record PreviewScene(Model3DGroup Surfaces, Model3DGroup Edges, R
             }
         }
         if (bounds.IsEmpty || count == 0) throw new InvalidDataException("No displayable solid geometry.");
-        var radius = Math.Max(1e-7, new Vector3D(bounds.SizeX, bounds.SizeY, bounds.SizeZ).Length / 1000);
         // Small frozen batches avoid enormous single WPF meshes and per-frame vertex work.
-        var edgeSegments = new List<(Point3D A, Point3D B)>();
+        var edgeSegments = new List<PreviewEdge>();
         foreach (var source in meshes)
         {
             token.ThrowIfCancellationRequested();
@@ -57,32 +60,19 @@ internal sealed record PreviewScene(Model3DGroup Surfaces, Model3DGroup Edges, R
                 geometry.Freeze();
                 var model = new GeometryModel3D(geometry, material) { BackMaterial = material }; model.Freeze(); surfaces.Children.Add(model);
             }
-            if (!omitted)
-            {
-                foreach (var segment in FeatureEdges(source, token))
-                {
-                    edgeSegments.Add(segment);
-                    if (edgeSegments.Count > 10000) { omitted = true; edgeSegments.Clear(); break; }
-                }
-            }
+            edgeSegments.AddRange(FeatureEdges(source, token));
         }
-        if (!omitted)
-        {
-            var material = new DiffuseMaterial(Brushes.Black); material.Freeze();
-            for (var start = 0; start < edgeSegments.Count; start += 1500)
-            {
-                var mesh = new MeshGeometry3D();
-                foreach (var segment in edgeSegments.Skip(start).Take(1500)) AddLine(mesh, segment.A, segment.B, radius);
-                mesh.Freeze(); var model = new GeometryModel3D(mesh, material) { BackMaterial = material }; model.Freeze(); edges.Children.Add(model);
-            }
-        }
+        omitted = edgeSegments.Count(e => e.Feature) > MaximumEdges;
         surfaces.Freeze(); edges.Freeze();
-        return new PreviewScene(surfaces, edges, bounds, count, omitted);
+        var scene = new PreviewScene(surfaces, edges, bounds, count, omitted)
+        { edgeCandidates = edgeSegments.OrderByDescending(e => e.Feature).ToArray() };
+        var extent = new Vector3D(bounds.SizeX, bounds.SizeY, bounds.SizeZ).Length;
+        return scene with { Edges = scene.CreateEdges(new Vector3D(1, -1, 1), Math.Max(1e-8, extent / 400)) };
     }
 
-    private static IEnumerable<(Point3D, Point3D)> FeatureEdges(PreviewMesh mesh, CancellationToken token)
+    private static IEnumerable<PreviewEdge> FeatureEdges(PreviewMesh mesh, CancellationToken token)
     {
-        var normals = new Dictionary<(Point3D, Point3D), (Vector3D Normal, bool Crease, int Count)>();
+        var normals = new Dictionary<(Point3D, Point3D), (Vector3D Normal, Vector3D Other, bool Crease, int Count)>();
         for (var i = 0; i < mesh.Indices.Length; i += 3)
         {
             if (i % 3000 == 0) token.ThrowIfCancellationRequested();
@@ -90,30 +80,47 @@ internal sealed record PreviewScene(Model3DGroup Surfaces, Model3DGroup Edges, R
             var normal = Vector3D.CrossProduct(b - a, c - a); if (normal.LengthSquared < 1e-24) continue; normal.Normalize();
             Add(a, b, normal); Add(b, c, normal); Add(c, a, normal);
         }
-        return normals.Where(p => p.Value.Count == 1 || p.Value.Crease).Select(p => p.Key);
+        return normals.Where(p => p.Value.Count == 1 || p.Value.Crease || Vector3D.DotProduct(p.Value.Normal, p.Value.Other) < .999999)
+            .Select(p => new PreviewEdge(p.Key.Item1, p.Key.Item2, p.Value.Normal, p.Value.Other, p.Value.Count != 2 || p.Value.Crease));
         void Add(Point3D a, Point3D b, Vector3D n)
         {
             var key = Compare(a, b) < 0 ? (a, b) : (b, a);
-            if (normals.TryGetValue(key, out var entry)) normals[key] = (entry.Normal, entry.Crease || Vector3D.DotProduct(entry.Normal, n) < .85, entry.Count + 1);
-            else normals.Add(key, (n, false, 1));
+            if (normals.TryGetValue(key, out var entry)) normals[key] = (entry.Normal, n, entry.Crease || Vector3D.DotProduct(entry.Normal, n) < Math.Cos(Math.PI / 9), entry.Count + 1);
+            else normals.Add(key, (n, n, false, 1));
         }
         static int Compare(Point3D a, Point3D b) => a.X != b.X ? a.X.CompareTo(b.X) : a.Y != b.Y ? a.Y.CompareTo(b.Y) : a.Z.CompareTo(b.Z);
     }
 
-    internal static void AddLine(MeshGeometry3D mesh, Point3D a, Point3D b, double radius)
+    /// <summary>Depth-tested black ribbons, one screen pixel wide. Only this bounded edge batch changes with the camera.</summary>
+    internal Model3DGroup CreateEdges(Vector3D towardCamera, double unitsPerPixel)
     {
-        var direction = b - a; if (direction.LengthSquared < 1e-24) return; direction.Normalize();
-        var side = Vector3D.CrossProduct(direction, Math.Abs(direction.Z) < .9 ? new Vector3D(0, 0, 1) : new Vector3D(0, 1, 0)); side.Normalize();
-        var up = Vector3D.CrossProduct(direction, side); var start = mesh.Positions.Count;
-        for (var i = 0; i < 3; i++)
+        var result = new Model3DGroup();
+        if (!double.IsFinite(unitsPerPixel) || unitsPerPixel <= 0 || towardCamera.LengthSquared < 1e-24) { result.Freeze(); return result; }
+        towardCamera.Normalize();
+        var material = new DiffuseMaterial(Brushes.Black); material.Freeze();
+        var mesh = new MeshGeometry3D(); var count = 0;
+        var seen = new HashSet<(Point3D, Point3D)>();
+        foreach (var edge in edgeCandidates)
         {
-            var offset = radius * (Math.Cos(i * Math.PI * 2 / 3) * side + Math.Sin(i * Math.PI * 2 / 3) * up);
-            mesh.Positions.Add(a + offset); mesh.Positions.Add(b + offset);
+            if (!edge.Feature && Vector3D.DotProduct(edge.Normal, towardCamera) * Vector3D.DotProduct(edge.OtherNormal, towardCamera) >= 0) continue;
+            if (!seen.Add((edge.A, edge.B))) continue;
+            var side = Vector3D.CrossProduct(edge.B - edge.A, towardCamera);
+            if (side.LengthSquared < 1e-24) continue;
+            side.Normalize(); side *= unitsPerPixel * PreviewQuality.EdgeWidth / 2;
+            var bias = towardCamera * unitsPerPixel * .08;
+            var a = edge.A + bias; var b = edge.B + bias; var start = mesh.Positions.Count;
+            mesh.Positions.Add(a - side); mesh.Positions.Add(a + side); mesh.Positions.Add(b - side); mesh.Positions.Add(b + side);
+            foreach (var index in new[] { 0, 1, 2, 2, 1, 3 }) mesh.TriangleIndices.Add(start + index);
+            count++;
+            if (count % 1500 == 0) Flush();
+            if (count >= MaximumEdges) break;
         }
-        for (var i = 0; i < 3; i++)
+        Flush(); result.Freeze(); return result;
+        void Flush()
         {
-            var x = start + i * 2; var y = start + (i + 1) % 3 * 2;
-            foreach (var index in new[] { x, y, x + 1, x + 1, y, y + 1 }) mesh.TriangleIndices.Add(index);
+            if (mesh.Positions.Count == 0) return;
+            mesh.Freeze(); var model = new GeometryModel3D(mesh, material) { BackMaterial = material }; model.Freeze(); result.Children.Add(model);
+            mesh = new MeshGeometry3D();
         }
     }
 }

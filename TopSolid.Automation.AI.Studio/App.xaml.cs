@@ -1,4 +1,6 @@
 using System.Windows;
+using System.Windows.Interop;
+using System.Windows.Media;
 using System.Windows.Threading;
 using TopSolid.Automation.AI.Studio.Diagnostics;
 
@@ -13,6 +15,9 @@ namespace TopSolid.Automation.AI.Studio
 
         public App()
         {
+            // Use the Windows-selected Direct3D adapter (NVIDIA/AMD/Intel), retaining WPF's device-loss/software fallback.
+            // Offscreen fixture applications set SoftwareOnly explicitly; production never does.
+            RenderOptions.ProcessRenderMode = RenderMode.Default;
             DispatcherUnhandledException += OnDispatcherUnhandledException;
             AppDomain.CurrentDomain.UnhandledException += OnUnhandledException;
             TaskScheduler.UnobservedTaskException += OnUnobservedTaskException;

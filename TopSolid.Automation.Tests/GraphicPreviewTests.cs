@@ -2,6 +2,7 @@ using System.Diagnostics;
 using System.Text;
 using System.Windows.Media;
 using System.Windows.Media.Media3D;
+using System.Windows.Input;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using TopSolid.Automation.AI.Studio.Mcp;
@@ -43,7 +44,8 @@ internal static class GraphicPreviewTests
         var proposal = CylinderProposal(); var snapshot = proposal.DeepClone(); var cylinder = ProposalGeometry.Build(proposal, CancellationToken.None);
         Check.True(Math.Abs(cylinder.Bounds.SizeX - 80) < .001 && Math.Abs(cylinder.Bounds.SizeZ - 160) < .001, "Proposed cylinder ignored native resolved dimension");
         Check.True(JToken.DeepEquals(proposal, snapshot), "Graphics changed an approval proposal");
-        Check.Equal(384, cylinder.Triangles, "Cylinder tessellation changed");
+        Check.Equal(288, cylinder.Triangles, "Cylinder must meet the 0.05 mm / 5 degree contract");
+        PreviewAppearanceAndPrecision();
         proposal["arguments"]!["axisDirection"] = JObject.Parse("{x:1,y:0,z:0}");
         Check.True(Math.Abs(ProposalGeometry.Build(proposal, CancellationToken.None).Bounds.SizeX - 160) < .001, "Cylinder axis not respected");
         proposal["arguments"]!["units"] = "cm"; proposal["arguments"]!["diameter"] = 8;
@@ -56,6 +58,60 @@ internal static class GraphicPreviewTests
         Check.True(PreviewTarget.FromChoice(JObject.Parse("{value:'123',sourceArguments:{}}"), "document") == null, "Numeric ID became a document handle");
         Check.True(PreviewTarget.FromChoice(JObject.Parse("{value:{documentId:'part'},sourceArguments:{documentId:'wrong'}}"), "shape")?["documentId"]?.ToString() == "part", "Selected receipt lost its document scope");
         await PreviewCancellation();
+    }
+
+    private static void PreviewAppearanceAndPrecision()
+    {
+        foreach (var radius in new[] { .01, 1d, 40, 1000, 100000 })
+        {
+            var segments = PreviewQuality.CircleSegments(radius);
+            Check.True(360d / segments <= 5 && radius * (1 - Math.Cos(Math.PI / segments)) <= .050000001,
+                "Curved preview exceeded the requested angular or chord tolerance");
+        }
+        try { PreviewQuality.CircleSegments(1e9); throw new Exception("Unachievable tolerance silently degraded"); } catch (InvalidDataException) { }
+        var scene = ProposalGeometry.Build(CylinderProposal(), CancellationToken.None);
+        Color SurfaceColor(PreviewScene s) => ((SolidColorBrush)((DiffuseMaterial)((MaterialGroup)((GeometryModel3D)s.Surfaces.Children[0]).Material).Children[0]).Brush).Color;
+        Check.Equal(Color.FromRgb(192, 192, 192), SurfaceColor(scene), "Unrequested orange preview tint returned");
+        var colored = CylinderProposal(); colored["arguments"]!["color"] = JObject.Parse("{r:12,g:96,b:180}");
+        Check.Equal(Color.FromRgb(12, 96, 180), SurfaceColor(ProposalGeometry.Build(colored, CancellationToken.None)), "Explicit requested color was lost");
+        foreach (var scale in new[] { .01, .1, 10d })
+        {
+            var edges = scene.CreateEdges(new Vector3D(1, -1, 1), scale);
+            Check.True(edges.IsFrozen, "Edge camera batch must be frozen");
+            var first = (GeometryModel3D)edges.Children[0]; var mesh = (MeshGeometry3D)first.Geometry;
+            Check.True(Math.Abs((mesh.Positions[1] - mesh.Positions[0]).Length / scale - 1) < 1e-8, "Edge grew thicker when zooming");
+            Check.Equal(Colors.Black, ((SolidColorBrush)((DiffuseMaterial)first.Material).Brush).Color, "Edges must remain black independent of lighting");
+        }
+        Check.True(scene.CreateEdges(new Vector3D(1, 0, 0), 1).Children.Count > 0, "Curved silhouette lost its outline");
+        foreach (var modifiers in new[] { ModifierKeys.None, ModifierKeys.Shift, ModifierKeys.Control })
+        {
+            Check.Equal(PreviewDrag.None, PreviewNavigation.Gesture(MouseButton.Left, modifiers), "Left drag must never move the camera");
+            Check.Equal(PreviewDrag.Orbit, PreviewNavigation.Gesture(MouseButton.Middle, modifiers), "Wheel-button drag must rotate");
+        }
+        Check.Equal(PreviewDrag.Pan, PreviewNavigation.Gesture(MouseButton.Right, ModifierKeys.None), "Right drag must pan");
+        Check.Equal(PreviewDrag.Orbit, PreviewNavigation.Gesture(MouseButton.Right, ModifierKeys.Control), "Ctrl + right drag must rotate");
+        var stl = StlPreviewReader.Read(StlFixture(), CancellationToken.None);
+        Check.True(stl.Triangles == 12 && stl.Bounds.SizeX == 40 && stl.Bounds.SizeY == 30 && stl.Bounds.SizeZ == 20, "STL millimetres/Z-up conversion changed dimensions");
+        foreach (var bytes in new[] { new byte[2], StlFixture()[..^1], new byte[StlPreviewReader.MaximumBytes + 1], StlFixture() })
+        {
+            if (bytes.Length == StlFixture().Length) BitConverter.GetBytes(float.NaN).CopyTo(bytes, 96);
+            try { StlPreviewReader.Read(bytes, CancellationToken.None); throw new Exception("Malformed STL accepted"); } catch (InvalidDataException) { }
+        }
+    }
+
+    internal static byte[] StlFixture()
+    {
+        Point3D[] points = [new(0,0,0), new(40,0,0), new(40,30,0), new(0,30,0), new(0,0,20), new(40,0,20), new(40,30,20), new(0,30,20)];
+        int[] indices = [0,2,1, 0,3,2, 4,5,6, 4,6,7, 0,1,5, 0,5,4, 1,2,6, 1,6,5, 2,3,7, 2,7,6, 3,0,4, 3,4,7];
+        using var stream = new MemoryStream(); using var writer = new BinaryWriter(stream);
+        writer.Write(new byte[80]); writer.Write(12u);
+        for (var i = 0; i < indices.Length; i += 3)
+        {
+            writer.Write(0f); writer.Write(0f); writer.Write(0f);
+            for (var v = 0; v < 3; v++) { var p = points[indices[i + v]]; writer.Write((float)p.X); writer.Write((float)p.Y); writer.Write((float)p.Z); }
+            writer.Write((ushort)0);
+        }
+        return stream.ToArray();
     }
 
     internal static JObject CylinderProposal() => JObject.Parse("""
@@ -106,9 +162,11 @@ internal static class GraphicPreviewTests
         var next = await client.GetGraphicPreviewAsync(new JObject { ["documentId"] = "next" }, CancellationToken.None);
         Check.Equal("next", (string)next["documentId"]!, "Drained preview response was reused for another selection");
         Check.True(client.IsConnected, "Transport was not usable after preview cancellation");
+        var large = await client.GetGraphicPreviewAsync(new JObject { ["documentId"] = "large-preview" }, CancellationToken.None);
+        Check.True(((string)large["data"]!).Length > 4 * 1024 * 1024 && client.IsConnected, "A bounded precision mesh exceeded the old MCP line limit");
     }
 
-    internal static async Task Live(string server)
+    internal static async Task Live(string server, string? documentId = null)
     {
         using var timeout = new CancellationTokenSource(TimeSpan.FromSeconds(55));
         await using var client = new StdioMcpClient(); await client.ConnectAsync(server, timeout.Token);
@@ -117,22 +175,35 @@ internal static class GraphicPreviewTests
             var result = await client.CallToolAsync(name, args, timeout.Token); Check.True(!result.IsError, "Native read failed");
             return JObject.Parse((string)result.Content[0]["text"]!);
         }
-        var before = await Read("topsolid_get_document_info", new JObject()); var doc = (JObject)before["document"]!;
+        var before = await Read("topsolid_get_document_info", documentId == null ? new JObject() : new JObject { ["documentId"] = documentId }); var doc = (JObject)before["document"]!;
         var target = new JObject { ["documentId"] = doc["documentId"]!.DeepClone() };
         var listArgs = (JObject)target.DeepClone(); listArgs["kind"] = "shapes"; listArgs["limit"] = 100;
         var shapes = await Read("topsolid_list_named_elements", listArgs); var watch = Stopwatch.StartNew();
         var preview = await client.GetGraphicPreviewAsync(target, timeout.Token); var exportMs = watch.Elapsed.TotalMilliseconds;
         Check.Equal("ready", (string)preview["status"]!, "Live native export was unavailable");
         var bytes = Convert.FromBase64String((string)preview["data"]!); watch.Restart();
-        var scene = await Task.Run(() => GlbPreviewReader.Read(bytes, timeout.Token)); var parseMs = watch.Elapsed.TotalMilliseconds;
+        var stl = (string?)preview["format"] == "stl";
+        var scene = await Task.Run(() => stl ? StlPreviewReader.Read(bytes, timeout.Token) : GlbPreviewReader.Read(bytes, timeout.Token)); var parseMs = watch.Elapsed.TotalMilliseconds;
         Check.True(scene.Triangles > 0 && scene.Surfaces.IsFrozen, "Live geometry did not reach the frozen renderer");
+        var edgeTimes = new List<double>();
+        for (var i = 0; i < 24; i++)
+        {
+            watch.Restart();
+            var edges = scene.CreateEdges(new Vector3D(Math.Cos(i * Math.PI / 12), Math.Sin(i * Math.PI / 12), .5), scene.Bounds.SizeX / 500);
+            Check.True(edges.IsFrozen && edges.Children.Count <= 7, "Edge batch escaped its interaction budget");
+            edgeTimes.Add(watch.Elapsed.TotalMilliseconds);
+        }
+        edgeTimes.Sort();
         var after = await Read("topsolid_get_document_info", target);
         Check.True(JToken.DeepEquals(before["document"], after["document"]), "Preview changed document identity or dirty state");
         Check.True(JToken.DeepEquals(shapes, await Read("topsolid_list_named_elements", listArgs)), "Preview changed native shape inventory");
-        var output = Path.GetFullPath("artifacts/graphic-preview-0.5.12"); Directory.CreateDirectory(output); File.WriteAllBytes(Path.Combine(output, "live-part.glb"), bytes);
+        var output = Path.GetFullPath("artifacts/graphic-preview-0.5.14"); Directory.CreateDirectory(output); File.WriteAllBytes(Path.Combine(output, "live-part." + (stl ? "stl" : "glb")), bytes);
         var report = new JObject { ["name"] = preview["name"]!.DeepClone(), ["bytes"] = bytes.Length, ["triangles"] = scene.Triangles,
             ["exportMilliseconds"] = exportMs, ["parseMilliseconds"] = parseMs, ["widthMm"] = scene.Bounds.SizeX, ["depthMm"] = scene.Bounds.SizeY,
-            ["heightMm"] = scene.Bounds.SizeZ, ["documentAndInventoryUnchanged"] = true, ["hardwareTierCapability"] = RenderCapability.Tier >> 16 };
+            ["heightMm"] = scene.Bounds.SizeZ, ["documentAndInventoryUnchanged"] = true, ["hardwareTierCapability"] = RenderCapability.Tier >> 16,
+            ["edgePreparationMedianMilliseconds"] = edgeTimes[12], ["edgePreparationP95Milliseconds"] = edgeTimes[22],
+            ["processPeakWorkingSetMiB"] = Process.GetCurrentProcess().PeakWorkingSet64 / 1048576d,
+            ["format"] = preview["format"], ["linearToleranceMm"] = preview["linearToleranceMm"], ["angularToleranceDegrees"] = preview["angularToleranceDegrees"] };
         File.WriteAllText(Path.Combine(output, "live-read-preview.json"), report.ToString()); Console.WriteLine(report);
     }
 }

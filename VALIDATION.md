@@ -1,5 +1,15 @@
 # Validation — 2026-09-18, current workspace
 
+## Studio/MCP 0.5.14 — TopSolid preview controls and precision
+
+- Release/Debug solution builds passed with zero warnings/errors. **39/39 application groups**, **15,256 offline server checks**, and **2,094 protocol checks** (native queries disabled) passed. The configured Debug MCP executable was rebuilt and exercised.
+- WPF light/dark/Korean fixtures verified Ctrl + right / wheel-button rotation, right-button pan, ignored left dragging, stable gestures/capture cancellation, explicit/default colors, proposed/native STL/GLB modes, thin black outlines and narrow layouts. Images were visually inspected; they use offscreen software rendering.
+- Preview geometry tests cover 0.05 mm chord / 5° angular limits across several radii, sharp edges with screen-stable width, malformed/oversized STL and GLB, model/approval immutability, cancellation and maximum permitted base64 transport.
+- Read-only native cube probe: 12 triangles, 684-byte binary STL, 40 × 40 × 40 mm; document identity, dirty state and shape inventory unchanged. Its existing 0.2 mm / 15° display setting remained unchanged while export options requested 0.05 mm / 5°.
+- Read-only curved-tool probe: **225,484 triangles**, 11,274,284 bytes, 63 × 63 × 108 mm. Export/transport **1.26 s**, decode/build **0.73 s**; 24-direction CPU edge preparation median **11.65 ms**, p95 **23.58 ms**. Probe peak working set **562 MiB**. Document state, inventory and its 0.2 mm / 15° display setting were unchanged. No CAD writes.
+- This host exposes NVIDIA RTX PRO 3000 Blackwell Laptop and Intel Graphics, with WPF hardware capability tier 2. Production retains the Windows-selected Direct3D hardware path; active NVIDIA/Radeon adapter use and GPU frame rate were not measured. Edge timings are CPU preparation measurements.
+- Evidence: `artifacts/graphic-preview-0.5.14`, `artifacts/ui-redesign/graphic-*.png`. Bundle: `artifacts/TopSolid-AI-0.5.14`. [Precision, memory limits, GPU behavior and test prompts](docs/PREVIEW-CONTROLS-0.5.14.md).
+
 ## Studio/MCP 0.5.13 — flat reviews and native CAM icons
 
 - Release/Debug builds passed with zero warnings/errors. **39/39 application groups**, **15,249 offline server checks**, and **2,094 protocol checks** (native queries disabled) passed.

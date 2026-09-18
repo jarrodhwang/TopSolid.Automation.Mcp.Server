@@ -1,5 +1,7 @@
 # Native graphical review — 0.5.12
 
+Historical release notes. The mouse gestures, proposed color, precision export and edge rendering below are superseded by [0.5.14 preview controls](PREVIEW-CONTROLS-0.5.14.md).
+
 Approval dialogs and receipt-backed document/element/operation questions now contain an interactive native WPF 3D viewport. It uses the supplied TopSolid blue/gray gradient, coordinate-axis colors, millimetre scale, original TopSolid toolbar icons, and the Studio light/dark palette. Wide windows show facts/cards beside the viewport; narrow windows stack them and refit the camera.
 
 ## Behavior

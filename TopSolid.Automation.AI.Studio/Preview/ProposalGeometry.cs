@@ -14,7 +14,7 @@ internal static class ProposalGeometry
         if (!Supports(proposal)) throw new InvalidDataException("No proposed geometry is available for this action.");
         var args = (JObject)proposal["arguments"]!;
         var scale = (string?)args["units"] switch { null or "mm" => 1d, "cm" => 10d, "m" => 1000d, _ => throw new InvalidDataException("Unknown proposal length units.") };
-        var color = Color.FromRgb(255, 128, 0);
+        var color = PreviewQuality.DefaultColor;
         if (args["color"] is JObject rgb && rgb["r"] != null && rgb["g"] != null && rgb["b"] != null)
             color = Color.FromRgb(checked((byte)(int)rgb["r"]!), checked((byte)(int)rgb["g"]!), checked((byte)(int)rgb["b"]!));
         var positions = new List<Point3D>(); var indices = new List<int>();
@@ -24,11 +24,10 @@ internal static class ProposalGeometry
             var radial = Math.Abs(axis.Z) < .9 ? new Vector3D(-axis.Y, axis.X, 0) : new Vector3D(axis.Z, 0, -axis.X); radial.Normalize();
             var tangent = Vector3D.CrossProduct(axis, radial); var radius = Positive((double)args["diameter"]! * scale / 2);
             var height = Positive((double?)proposal["target"]?["height"]?["currentValueSI"] * 1000 ?? (double?)args["height"] * scale ?? throw new InvalidDataException("Missing resolved cylinder height."));
-            const int segments = 96;
+            var segments = PreviewQuality.CircleSegments(radius);
             for (var i = 0; i < segments; i++)
             {
                 var a = origin + radius * (Math.Cos(2 * Math.PI * i / segments) * radial + Math.Sin(2 * Math.PI * i / segments) * tangent);
-                var b = origin + radius * (Math.Cos(2 * Math.PI * (i + 1) / segments) * radial + Math.Sin(2 * Math.PI * (i + 1) / segments) * tangent);
                 // Separate cap vertices keep cap normals flat; shared side rings preserve smooth shading.
                 positions.Add(a); positions.Add(a + height * axis);
                 var n = i * 2; var next = (i + 1) % segments * 2;
