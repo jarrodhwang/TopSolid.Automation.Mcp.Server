@@ -114,19 +114,22 @@ internal static class UserQuestionTests
         Check.True(TopSolidIcons.DocumentKey(new JObject { ["name"] = "fake.TopPrt" }) == null, "User-assigned names guessed document type");
     }
 
-    internal static UserQuestion CamQuestion()
+    internal static UserQuestion CamQuestion(string kind = "option")
     {
         const string sweep = "TopSolid.Cam.NC.MillTurn.Form.DB.Sweeping.Operation.SweepingOperation";
         var rows = new JArray(
             new JObject { ["operation"] = new JObject { ["element"] = new JObject { ["documentId"] = "cam-fixture-revision", ["id"] = 10990 } },
                 ["operationName"] = "[2: 볼 동시가공 커브 스위핑 (축 방향)] ", ["description"] = "[2: 볼 동시가공 커브 스위핑 (축 방향)] ",
-                ["operationType"] = sweep, ["toolName"] = "Face Mill D40 A90 L3 SD41" },
+                ["operationType"] = sweep, ["toolName"] = "공구 기능 1", ["hasTool"] = true,
+                ["toolDisplayName"] = "T 1 : Ball Nose Mill D10 L25 SD10", ["toolFunction"] = "BallNoseMill" },
             new JObject { ["operation"] = new JObject { ["element"] = new JObject { ["documentId"] = "cam-fixture-revision", ["id"] = 11154 } },
-                ["operationName"] = "[3: 동시가공 스위핑 (축 방향)] ", ["operationType"] = sweep, ["toolName"] = "Face Mill D40 A45 L6 SD41" },
-            new JObject { ["operationName"] = "[6: 커브따라가공]", ["operationType"] = "TopSolid.Cam.NC.MillTurn.DB.SideMilling.SideMillingOperation" });
+                ["operationName"] = "[3: 동시가공 스위핑 (축 방향)] ", ["operationType"] = sweep, ["toolName"] = "공구 기능 2",
+                ["toolDisplayName"] = "T 2 : Face Mill D40 A90 L3 SD41", ["toolFunction"] = "FaceMill" },
+            new JObject { ["operationName"] = "[6: 커브따라가공]", ["operationType"] = "TopSolid.Cam.NC.MillTurn.DB.SideMilling.SideMillingOperation" },
+            new JObject { ["operationName"] = "[1: 환경 활성]", ["operationType"] = "TopSolid.Cam.NC.Kernel.DB.Annex.Operation.EnvironmentOperation", ["hasTool"] = false });
         var sources = new QuestionSources();
         sources.Capture("read-1", "topsolid_list_cam_operation_summaries", new JObject { ["offset"] = 50 }, new McpToolResult { StructuredContent = new JObject { ["items"] = rows } });
-        var input = SelectionInput("operation"); input["question"] = "가공 작업을 선택하세요.";
+        var input = SelectionInput(kind); input["question"] = "가공 작업을 선택하세요.";
         return sources.Create(input);
     }
 
@@ -135,7 +138,26 @@ internal static class UserQuestionTests
         var question = CamQuestion();
         Check.Equal("[2: 볼 동시가공 커브 스위핑 (축 방향)]", question.Choices[0].Label, "CAM summary name and native number must survive pagination");
         Check.Equal("[3: 동시가공 스위핑 (축 방향)]", question.Choices[1].Label, "Different sweeping names must stay distinct");
-        Check.True(!question.Choices[0].Detail.Contains("볼 동시") && question.Choices[0].Detail.Contains("Face Mill"), "Details must keep tooling context without repeating the title");
+        Check.True(!question.Choices[0].Detail.Contains("볼 동시") && !question.Choices[0].Detail.Contains("공구 기능"), "Details repeated the title or exposed an internal tool-function label");
+        Check.Equal("T 1 : Ball Nose Mill D10 L25 SD10", question.Choices[0].ToolText, "Native pocket and tool definition were lost");
+        Check.Equal("cam-tool-ballnosemill", question.Choices[0].ToolIconKey, "Ball mill used an unrelated cutter icon");
+        Check.Equal("cam-tool-facemill", question.Choices[1].ToolIconKey, "Face mill used an unrelated cutter icon");
+        Check.Equal("[1: 환경 활성]", question.Choices[3].Label, "Environment operation was unnamed for generic options");
+        Check.True(question.Choices[3].ToolText == null && question.Choices[3].IconKey != "operation", "Environment operation received invented tooling or a generic icon");
+        Check.True(question.Choices.All(c => c.Kind == "operation"), "Generic item kind overrode native operation metadata");
+        Check.Equal(question.Choices[0].IconKey, CamQuestion("operation").Choices[0].IconKey, "Question kind changed native icon mapping");
+        Check.Equal("cam-tool-generic", TopSolidIcons.ToolFunctionKey(new JObject { ["toolFunction"] = "Unknown", ["toolName"] = "Ball Nose Mill" }), "Tool label guessed native function");
+        foreach (var tool in new[] { "topsolid_list_cam_operations", "topsolid_list_cam_scenario" })
+        {
+            var sources = new QuestionSources();
+            sources.Capture("read-1", tool, new JObject(), new McpToolResult { StructuredContent = new JObject { ["items"] = new JArray(
+                new JObject { ["id"] = 500, ["name"] = "환경 활성", ["hasTool"] = false },
+                new JObject { ["id"] = 501, ["name"] = "가공", ["hasTool"] = true }) } });
+            var choices = sources.Create(SelectionInput("option")).Choices;
+            Check.True(choices.All(c => c.Kind == "operation"), "Operation receipt lost its kind when optional native metadata was unavailable");
+            Check.Equal("환경 활성", choices[0].Label, "Simple list native name was hidden");
+            Check.True(choices[0].ToolText == null && choices[1].ToolText == StudioStrings.Get("Question.ToolUnavailable"), "Unavailable tooling was confused with an operation without a tool");
+        }
         Check.Equal(11154, (int)question.Answer(selectedKeys: [question.Choices[1].Key]).Data["selected"]![0]!["value"]!["operation"]!["element"]!["id"]!, "Friendly labels changed the selected operation");
         Check.True(question.Choices[0].IconKey != "operation" && question.Choices[0].IconKey != question.Choices[2].IconKey, "Sweeping and side milling need their actual native icons");
         foreach (var type in new[] { "TopSolid.Cam.NC.MillTurn.Form.DB.Roughing.RoughingOperation", "TopSolid.Cam.NC.MillTurn.FiveAxis.DB.Contour.ContourOperation", "TopSolid.Cam.NC.MillTurn.DB.PointToPoint.Operations.HoleOperation" })

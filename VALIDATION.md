@@ -1,5 +1,14 @@
 # Validation — 2026-09-18, current workspace
 
+## Studio/MCP 0.5.19 — native CAM operation and tool cards
+
+- Built only this change in an isolated checkout, preserving unrelated work in the main workspace. Release solution build: zero warnings/errors. **40/40 application checks**, **15,300 offline server checks**, **2,105 protocol checks**, and the WPF shell/dialog fixtures passed.
+- Generic-option questions now retain native operation names, numbers and NC type icons. Regression coverage includes simple/scenario lists, missing tool metadata, tool-less environment operations, unknown function fallback, unchanged selected identities, and large right-hand tool text/icons. Light/dark card renders were visually inspected; these are offscreen WPF fixtures, not a manual mixed-DPI usability session.
+- A read-only probe of the open CAM document confirmed seven operations and four tools. Operation 1 is `[1: 환경 활성]`, operation 2 is `[2: 볼 동시가공 커브 스위핑 (축 방향)]` with `T 1 : Ball Nose Mill D10 L25 SD10` / `BallNoseMill`, and operation 3 has `T 2 : Face Mill D40 A90 L3 SD41` / `FaceMill`. Simple-list tooling matched summaries; scenario enumeration succeeded. The edited document and dirty state stayed unchanged. No CAD edits, provider requests or toolpath calculation were performed.
+- Native tool fields come from `ITools.GetParameters` and `IParameters.ToInvariantStringValue`: `ToolDefinitionName` (or `ToolDescription`), `PocketDescription`, and `ToolFunction`. A page-local cache avoids rereading a shared tool. Missing metadata does not invent a tool number/type or discard the operation. The 67 exact function icons and generic fallback are embedded unchanged, with SHA-256 provenance verified against the supplied icon folder.
+- Complete release bundle: `artifacts/TopSolid-AI-0.5.19`. Studio/MCP version and published binary hashes were checked. Use this bundle, including its `McpServer` folder; the main workspace's Debug output was not replaced because it contains separate ongoing changes. Evidence: `artifacts/cam-tools/isolated-final` and `artifacts/ui-redesign/question-cam-native-names-icons*.png`.
+- Test prompt: `현재 CAM 문서의 가공 작업을 선택 대화상자로 보여줘. 실제 작업 이름과 가공 종류 아이콘, 공구 번호와 공구 사양을 표시하고 문서는 변경하지 마.` Expect the native operation name on the left and a large `T 1 : Ball Nose Mill D10 L25 SD10` with its ball-mill icon on the right. Environment activation has no invented tool. Searching for `Ball Nose` should find the matching operation.
+
 ## Studio/MCP 0.5.18 — document selection icons
 
 - Release solution build passed with zero warnings/errors; **39/39 default application groups** and WPF shell fixtures passed. Document tests cover generic-option and document questions, identical names with different types, case/whitespace normalization, unknown-format fallback and unchanged selection identities. Existing CAM operation/category icon checks still pass.

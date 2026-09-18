@@ -14,7 +14,7 @@
             <Setter Property="Padding" Value="12,10"/><Setter Property="Background" Value="{DynamicResource SurfaceBrush}"/>
             <Setter Property="BorderBrush" Value="{DynamicResource BorderBrush}"/><Setter Property="BorderThickness" Value="1"/>
             <Setter Property="AutomationProperties.Name" Value="{Binding Label}"/>
-            <Setter Property="AutomationProperties.HelpText" Value="{Binding Detail}"/>
+            <Setter Property="AutomationProperties.HelpText" Value="{Binding AccessibleDescription}"/>
             <Setter Property="Template"><Setter.Value><ControlTemplate TargetType="ListBoxItem">
                 <Border x:Name="Card" CornerRadius="3" Padding="{TemplateBinding Padding}" Background="{TemplateBinding Background}"
                         BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
@@ -58,13 +58,18 @@
             <ListBox x:Name="ChoiceList" Background="Transparent" BorderThickness="0" ItemContainerStyle="{StaticResource ChoiceCard}"
                      ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Auto"
                      ScrollViewer.CanContentScroll="True" VirtualizingPanel.IsVirtualizing="True" VirtualizingPanel.VirtualizationMode="Recycling">
-                <ListBox.ItemTemplate><DataTemplate><Grid><Grid.ColumnDefinitions><ColumnDefinition Width="42"/><ColumnDefinition Width="*"/></Grid.ColumnDefinitions>
+                <ListBox.ItemTemplate><DataTemplate><Grid><Grid.ColumnDefinitions><ColumnDefinition Width="42"/><ColumnDefinition Width="*"/><ColumnDefinition Width="{Binding ToolColumnWidth}"/></Grid.ColumnDefinitions>
                     <Image Source="{Binding Icon}" Width="28" Height="28" HorizontalAlignment="Left" VerticalAlignment="Center"/>
                     <StackPanel Grid.Column="1"><TextBlock Text="{Binding Label}" FontSize="16" FontWeight="SemiBold" TextWrapping="Wrap" Foreground="{DynamicResource TextBrush}"/>
                         <TextBlock Text="{Binding Detail}" FontSize="12" Margin="0,5,8,0" TextWrapping="Wrap" Foreground="{DynamicResource MutedTextBrush}">
                             <TextBlock.Style><Style TargetType="TextBlock"><Style.Triggers><Trigger Property="Text" Value=""><Setter Property="Visibility" Value="Collapsed"/></Trigger></Style.Triggers></Style></TextBlock.Style>
                         </TextBlock>
                     </StackPanel>
+                    <Grid Grid.Column="2" Margin="18,0,0,0" Visibility="{Binding ToolVisibility}" VerticalAlignment="Center">
+                        <Grid.ColumnDefinitions><ColumnDefinition Width="48"/><ColumnDefinition Width="*"/></Grid.ColumnDefinitions>
+                        <Image Source="{Binding ToolIcon}" Width="40" Height="40" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                        <TextBlock Grid.Column="1" Text="{Binding ToolText}" FontSize="16" FontWeight="SemiBold" TextWrapping="Wrap" VerticalAlignment="Center" Foreground="{DynamicResource TextBrush}"/>
+                    </Grid>
                 </Grid></DataTemplate></ListBox.ItemTemplate>
             </ListBox>
             <TextBlock x:Name="EmptySearch" Text="{DynamicResource Ui.Question.NoMatches}" Visibility="Collapsed" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{DynamicResource MutedTextBrush}"/>

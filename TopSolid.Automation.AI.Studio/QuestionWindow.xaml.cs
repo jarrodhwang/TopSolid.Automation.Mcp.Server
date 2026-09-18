@@ -21,6 +21,11 @@ public partial class QuestionWindow : Window
         public string Label => Choice.Label;
         public string Detail => Choice.Detail;
         public ImageSource Icon => TopSolidIcons.Get(Choice.IconKey ?? IconKey(Choice.Kind));
+        public string ToolText => Choice.ToolText ?? "";
+        public ImageSource ToolIcon => TopSolidIcons.Get(Choice.ToolIconKey ?? "cam-tool-generic");
+        public Visibility ToolVisibility => string.IsNullOrWhiteSpace(ToolText) ? Visibility.Collapsed : Visibility.Visible;
+        public GridLength ToolColumnWidth => string.IsNullOrWhiteSpace(ToolText) ? new GridLength(0) : new GridLength(1.1, GridUnitType.Star);
+        public string AccessibleDescription => string.Join(" · ", new[] { Detail, ToolText }.Where(s => !string.IsNullOrWhiteSpace(s)));
     }
     private readonly UserQuestion question;
     private readonly HashSet<string> selected = new(StringComparer.Ordinal);
@@ -34,6 +39,7 @@ public partial class QuestionWindow : Window
     {
         this.question = question;
         InitializeComponent(); StudioStrings.InitializeResources(this);
+        if (question.Choices.Any(c => !string.IsNullOrWhiteSpace(c.ToolText))) Width = 900;
         if (previewClient != null && question.Kind == "select" && question.Choices.Any(c => question.PreviewTargetFor(c.Key) != null))
         {
             graphic = new GraphicPreviewPane(previewClient, null);
@@ -45,7 +51,8 @@ public partial class QuestionWindow : Window
         QuestionTitle.Text = question.Title;
         var documentChoices = question.Kind == "select" && question.Choices.Count > 0 &&
             question.Choices.All(c => c.IconKey == "document" || c.IconKey?.StartsWith("document-", StringComparison.Ordinal) == true);
-        QuestionIcon.Source = TopSolidIcons.Get(documentChoices ? "document" : IconKey(question.Kind == "select" ? question.ItemKind : question.Kind));
+        var operationChoices = question.Kind == "select" && question.Choices.Count > 0 && question.Choices.All(c => c.Kind == "operation");
+        QuestionIcon.Source = TopSolidIcons.Get(operationChoices ? "operation" : documentChoices ? "document" : IconKey(question.Kind == "select" ? question.ItemKind : question.Kind));
         CancelQuestion.Tag = TopSolidIcons.Get("cancel"); ContinueQuestion.Tag = TopSolidIcons.Get("approve"); BrowseImage.Tag = TopSolidIcons.Get("image");
         QuestionHint.Text = StudioStrings.Get(question.Kind == "select" ? question.Multiple ? "Question.MultipleHint" : "Question.SelectHint" : "Question.InputHint");
         SearchPanel.Visibility = ChoiceList.Visibility = question.Kind == "select" ? Visibility.Visible : Visibility.Collapsed;

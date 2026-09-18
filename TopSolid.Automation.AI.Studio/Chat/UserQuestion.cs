@@ -8,7 +8,8 @@ using TopSolid.Automation.AI.Studio.Appearance;
 
 namespace TopSolid.Automation.AI.Studio.Chat;
 
-public sealed record QuestionChoice(string Key, string Label, string Detail, string Kind, string SearchText, string? IconKey = null);
+public sealed record QuestionChoice(string Key, string Label, string Detail, string Kind, string SearchText, string? IconKey = null,
+    string? ToolText = null, string? ToolIconKey = null);
 
 public sealed class QuestionAnswer
 {
@@ -137,7 +138,8 @@ internal sealed class QuestionSources
                 if (input["choices"] != null || sources.Count is < 1 or > 24) throw new ArgumentException("Use sources OR general choices.");
                 foreach (var source in sources.OfType<JObject>())
                 {
-                    if (source.Properties().Any(p => p.Name is not ("toolCallId" or "path" or "itemKind"))) throw new ArgumentException("Unknown selection source field.");
+                    if (source.Properties().Any(p => p.Name is not ("toolCallId" or "path" or "itemKind" or "editableOnly"))) throw new ArgumentException("Unknown selection source field.");
+                    if (source["editableOnly"] is { Type: not JTokenType.Boolean }) throw new ArgumentException("editableOnly must be boolean.");
                     var sourceKind = source["itemKind"] == null ? itemKind : RequiredText(source, "itemKind", 24);
                     if (!Kinds.Contains(sourceKind)) throw new ArgumentException("Unsupported source item kind.");
                     var id = RequiredText(source, "toolCallId", 256);
@@ -147,15 +149,28 @@ internal sealed class QuestionSources
                     var tokens = rows is JArray array ? array.ToArray() : [rows];
                     foreach (var row in tokens)
                     {
+                        if ((bool?)source["editableOnly"] == true && (row is not JObject editable || (bool?)editable["editSupported"] != true || (bool?)editable["readOnly"] != false)) continue;
                         if (choices.Count >= 500) throw new ArgumentException("Narrow the selection to at most 500 items.");
                         if (row.Type == JTokenType.Null || row is JObject failed && (bool?)failed["isError"] == true) continue;
                         if (sourceKind != "option" && row is not JObject) throw new ArgumentException("Read named object details before asking for a TopSolid selection.");
                         var key = "choice-" + choices.Count;
-                        var label = Label(row, sourceKind, choices.Count + 1);
-                        var detail = Details(row, label);
-                        var icon = sourceKind == "operation" ? TopSolidIcons.OperationKey(row) : sourceKind == "camParameter" ? TopSolidIcons.CamCategoryKey(row) :
-                            sourceKind is "document" or "option" ? TopSolidIcons.DocumentKey(row) : null;
-                        choices.Add(new(key, label, detail, sourceKind, label + " " + detail, icon));
+                        // A generic assistant itemKind must not erase native CAM identity. Parameter
+                        // rows may mention their parent operation, so they retain their own kind.
+                        var rowKind = row is JObject operationRow && operationRow["parameter"] == null &&
+                            (receipt.Tool is "topsolid_list_cam_operations" or "topsolid_list_cam_scenario" ||
+                             operationRow["operationType"]?.Type == JTokenType.String ||
+                             operationRow["operation"] is JObject && operationRow["operationName"]?.Type == JTokenType.String)
+                            ? "operation" : sourceKind;
+                        var label = Label(row, rowKind, choices.Count + 1);
+                        var toolText = rowKind == "operation" && row["toolDisplayName"]?.Type == JTokenType.String ?
+                            presenter.Present((string)row["toolDisplayName"]!).Trim() : null;
+                        if (rowKind == "operation" && string.IsNullOrWhiteSpace(toolText) && (bool?)row["hasTool"] == true)
+                            toolText = StudioStrings.Get("Question.ToolUnavailable");
+                        var detail = Details(row, label, rowKind == "operation");
+                        var icon = rowKind == "operation" ? TopSolidIcons.OperationKey(row) : rowKind == "camParameter" ? TopSolidIcons.CamCategoryKey(row) :
+                            rowKind is "document" or "option" ? TopSolidIcons.DocumentKey(row) : null;
+                        choices.Add(new(key, label, detail, rowKind, label + " " + detail + " " + toolText, icon, toolText,
+                            string.IsNullOrWhiteSpace(toolText) ? null : TopSolidIcons.ToolFunctionKey(row)));
                         values.Add(key, new JObject { ["sourceTool"] = receipt.Tool, ["sourceArguments"] = receipt.Arguments.DeepClone(), ["value"] = row.DeepClone() });
                     }
                 }
@@ -205,11 +220,11 @@ internal sealed class QuestionSources
         return StudioStrings.Get("Question.Unnamed", StudioStrings.Get("Question.Kind." + kind), ordinal);
     }
 
-    private string Details(JToken row, string label)
+    private string Details(JToken row, string label, bool operation = false)
     {
         if (row is not JObject obj) return "";
         var fields = new[] { "projectName", "documentName", "operationName", "parentName", "toolName", "path", "extension", "revision", "displayValue", "unitSymbol", "description", "geometryType", "creationDate", "modificationDate" };
-        var parts = fields.Select(key => obj[key]).Where(v => v?.Type == JTokenType.String).Select(v => presenter.Present((string)v!).Trim()).Where(s => s.Length > 0 && s != label).ToList();
+        var parts = fields.Where(key => !operation || key != "toolName").Select(key => obj[key]).Where(v => v?.Type == JTokenType.String).Select(v => presenter.Present((string)v!).Trim()).Where(s => s.Length > 0 && s != label).ToList();
         if (obj["categories"] is JArray categories)
             parts.Insert(0, string.Join(" / ", categories.Values<string>().OfType<string>().Select(FriendlyResponsePresenter.FriendlyLabel)));
         // Geometry measurements can distinguish unnamed topology without displaying handles.
@@ -245,7 +260,7 @@ internal sealed class QuestionSources
           "question":{"type":"string","maxLength":240},
           "kind":{"type":"string","enum":["select","text","integer","decimal","image","color"]},
           "itemKind":{"type":"string","enum":["option","project","library","document","parameter","operation","machine","camParameter","element","edge","point","curve","surface","shape"]},
-          "sources":{"type":"array","maxItems":24,"items":{"type":"object","properties":{"toolCallId":{"type":"string"},"path":{"type":"string","description":"JSON pointer to rows, an individual object, or enum choices in the unwrapped result."},"itemKind":{"type":"string","description":"Optional per-source kind for mixed project/library choices."}},"required":["toolCallId","path"],"additionalProperties":false}},
+          "sources":{"type":"array","maxItems":24,"items":{"type":"object","properties":{"toolCallId":{"type":"string"},"path":{"type":"string","description":"JSON pointer to rows, an individual object, or enum choices in the unwrapped result."},"itemKind":{"type":"string","description":"Optional per-source kind for mixed project/library choices."},"editableOnly":{"type":"boolean","description":"Only include rows with verified editSupported=true and readOnly=false."}},"required":["toolCallId","path"],"additionalProperties":false}},
           "choices":{"type":"array","maxItems":32,"items":{"type":"string"}},
           "multiple":{"type":"boolean"},"unit":{"type":"string","maxLength":32},
           "minimum":{"type":"number"},"maximum":{"type":"number"}
@@ -256,7 +271,7 @@ internal sealed class QuestionSources
     internal const string Instructions =
         "For genuinely missing user data or an ambiguous target, CALL studio_ask_user instead of asking in chat. Use the user's language. Do not ask for known data or ask again for change approval. " +
         "Read candidate objects first. Set sources.toolCallId to studioSourceId from the successful receipt in THIS turn; path is a JSON pointer into its unwrapped data, e.g. /items. Fetch all pages or narrow the list before asking; the dialog searches only supplied items. " +
-        "Each source can specify itemKind for a combined project/library picker. Read names and distinguishing parent/location/geometry context for duplicate or unnamed items. Use itemKind=camParameter for operation parameters, sources at allowedValues for native enum choices. " +
+        "Each source can specify itemKind for a combined project/library picker. Read names and distinguishing parent/location/geometry context for duplicate or unnamed items. Use itemKind=camParameter and sources.editableOnly=true to choose editable operation parameters, sources at allowedValues for native enum choices. Honor each requested selection before asking its value. " +
         "Use integer/decimal with explicit input unit and only verified limits; returned numbers remain in that unit, so convert per the action schema. Image questions attach an explicitly chosen image as reference data. " +
         "Selection answers contain original rows and scope arguments, not approval; revalidate the target through normal prepare/confirmation before changes. Ask one question per model round and never issue a dependent action in the same batch. Cancellation ends the workflow. ";
 
