@@ -11,8 +11,8 @@
   },
   {
     "Key": "document",
-    "Source": "Cad\\Pdm\\UI\\Items\\CreateNewDocumentCommand.png",
-    "Sha256": "0AEAE65F8977CC075626F03772E7FE79F51F743AD560B85ED8CC45B99643B05E"
+    "Source": "Cad\\Pdm\\UI\\Trees\\Document.png",
+    "Sha256": "C1459EACDC8173D1E0ADF1F170BB4B3E1681CB4341F8BB5CE5DE776EA64B23E1"
   },
   {
     "Key": "sketch",
@@ -1035,5 +1035,47 @@
     "Key": "license-user",
     "Source": "Cad\\Kernel\\WX\\Protection\\Commands\\LicensesDialog.User.png",
     "Sha256": "0D26E5B7058604AD981275C47031A26B7EF5B3077EB2B730E58A6838F68600BC"
+  },
+  {
+    "Key": "document-part",
+    "Source": "Cad\\Design\\DB\\Documents\\PartDocument.png",
+    "Sha256": "4C848F21060376E647CB5AD045B3BC6CF7CE0C1C41E24BEB9048809F3C90F20B",
+    "DocumentExtension": ".TopPrt",
+    "DocumentType": "TopSolid.Cad.Design.DB.Documents.PartDocument"
+  },
+  {
+    "Key": "document-assembly",
+    "Source": "Cad\\Design\\DB\\Documents\\AssemblyDocument.png",
+    "Sha256": "DD13CC562FFC6470C0CC7D8D9E7509779E0F8FE1B2B00F822227747CF3E2CB9D",
+    "DocumentExtension": ".TopAsm",
+    "DocumentType": "TopSolid.Cad.Design.DB.Documents.AssemblyDocument"
+  },
+  {
+    "Key": "document-drafting",
+    "Source": "Cad\\Drafting\\DB\\Documents\\DraftingDocument.png",
+    "Sha256": "7DB0C82C2B4D50DF9391BFDD282D12EAC196BFB3318DDE326341AB993DB98FD4",
+    "DocumentExtension": ".TopDft",
+    "DocumentType": "TopSolid.Cad.Drafting.DB.Documents.DraftingDocument"
+  },
+  {
+    "Key": "document-millturn",
+    "Source": "Cam\\NC\\MillTurn\\DB\\Documents\\MillTurnDocument.png",
+    "Sha256": "0CFAB45D22DF71AB1BA5A5035214749386AE3968DFF2E3F842388BD6139F337C",
+    "DocumentExtension": ".TopMillTurn",
+    "DocumentType": "TopSolid.Cam.NC.MillTurn.DB.Documents.MillTurnDocument"
+  },
+  {
+    "Key": "document-2d",
+    "Source": "Cad\\Kernel\\DB.D2.Modeling\\Documents\\ModelingDocument.png",
+    "Sha256": "036F59233CD0B434A08A5128266CDDEC7C58862027CD214D885F687E6C60982A",
+    "DocumentExtension": ".Top2D",
+    "DocumentType": "TopSolid.Cad.Kernel.DB.D2.Modeling.Documents.ModelingDocument"
+  },
+  {
+    "Key": "document-drawing",
+    "Source": "Cad\\Kernel\\DB.D2.Modeling\\Documents\\DrawingDocument.png",
+    "Sha256": "FFC315188AB33D28FCEAEB0B419DDE838F72A4D9ECFC3598F5D7BDFC0395C691",
+    "DocumentExtension": ".TopDrw",
+    "DocumentType": "TopSolid.Cad.Kernel.DB.D2.Modeling.Documents.DrawingDocument"
   }
 ]

@@ -16,6 +16,7 @@ public static class TopSolidIcons
           "approve", "cancel", "error", "warning", "question", "license", "license-standalone", "license-floating", "license-user" };
     private static readonly ConcurrentDictionary<string, ImageSource> Cache = new(StringComparer.OrdinalIgnoreCase);
     private static readonly Dictionary<string, string> OperationIcons = new(StringComparer.Ordinal);
+    private static readonly Dictionary<string, string> DocumentIcons = new(StringComparer.OrdinalIgnoreCase);
 
     static TopSolidIcons()
     {
@@ -23,8 +24,28 @@ public static class TopSolidIcons
         if (stream == null) return;
         using var reader = new StreamReader(stream);
         foreach (var entry in JArray.Parse(reader.ReadToEnd()).OfType<JObject>())
+        {
             if ((string?)entry["NativeType"] is { } type && (string?)entry["Key"] is { } key)
             { OperationIcons[type] = key; Keys.Add(key); }
+            if ((string?)entry["DocumentExtension"] is { } extension && (string?)entry["Key"] is { } documentKey)
+            {
+                DocumentIcons[extension] = documentKey; Keys.Add(documentKey);
+                if ((string?)entry["DocumentType"] is { } documentType) DocumentIcons[documentType] = documentKey;
+            }
+        }
+    }
+
+    // Use receipt metadata, never the AI's itemKind or user-assigned filename, to identify document artwork.
+    public static string? DocumentKey(JToken? row)
+    {
+        if (row is not JObject obj) return null;
+        foreach (var field in new[] { "extension", "typeFullName", "documentType", "type" })
+        {
+            if (obj[field]?.Type != JTokenType.String) continue;
+            var value = ((string)obj[field]!).Trim();
+            if (DocumentIcons.TryGetValue(value, out var key)) return key;
+        }
+        return obj["extension"]?.Type == JTokenType.String || obj["documentId"] != null ? "document" : null;
     }
 
     // Only exact types from server receipts select machining icons. Unknown types
