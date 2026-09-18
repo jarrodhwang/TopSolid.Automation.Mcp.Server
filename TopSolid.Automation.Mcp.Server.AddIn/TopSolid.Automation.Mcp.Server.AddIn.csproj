@@ -14,6 +14,7 @@
     <AssemblySearchPaths>{HintPathFromItem};{TargetFrameworkDirectory};{RawFileName}</AssemblySearchPaths>
   </PropertyGroup>
   <ItemGroup>
+    <ProjectReference Include="..\TopSolid.Automation.Mcp.Contracts\TopSolid.Automation.Mcp.Contracts.csproj" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.Runtime.Serialization" />

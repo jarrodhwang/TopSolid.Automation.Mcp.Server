@@ -1,4 +1,6 @@
-# TopSolid Automation AI — 0.5.13
+# TopSolid Automation AI — 0.5.14
+
+**0.5.14:** TopSolid mouse gestures (Ctrl + right or wheel-button drag to rotate; right drag to pan), neutral gray proposed geometry, thin black feature/silhouette edges and 0.05 mm / 5° preview tessellation. Native STL export supplies explicit precision without changing document settings; WPF keeps the Direct3D hardware path. [Controls, precision, GPU behavior and test prompts](docs/PREVIEW-CONTROLS-0.5.14.md).
 
 **0.5.13:** Approval reviews use flat, grouped facts with compact coordinates and one details disclosure. CAM choices preserve the native operation name/number, and 132 exact NC class mappings select original TopSolid icons. Dedicated tool, cutting-condition, geometry, strategy, comment, multi-axis and properties icons replace generic milling icons. [Review fixes and test prompts](docs/REVIEW-AND-CAM-ICONS-0.5.13.md).
 
@@ -49,10 +51,10 @@ dotnet build .\TopSolid.Automation.Mcp.Server.slnx -c Release
 
 The build uses the matched SDK from `C:\Program Files\TOPSOLID\TopSolid 7.20\bin`. To use another SDK folder, supply `-p:TopSolidAutomationDirectory="D:\SDK\TopSolid7.20"`. Legacy DLLs in `Server.AddIn/TopSolid.Automation` are preserved but excluded from reference resolution. Tested client and host version: **7.20.400.107**. Modeling requires host 7.20.326 or newer.
 
-A complete framework-dependent bundle is in **`artifacts/TopSolid-AI-0.5.13`**. Open `TopSolid.Automation.AI.Studio.exe` there; keep the entire folder, including `McpServer`.
+A complete framework-dependent bundle is in **`artifacts/TopSolid-AI-0.5.14`**. Open `TopSolid.Automation.AI.Studio.exe` there; keep the entire folder, including `McpServer`.
 
 ```powershell
-dotnet publish .\TopSolid.Automation.AI.Studio -c Release -o .\artifacts\TopSolid-AI-0.5.13
+dotnet publish .\TopSolid.Automation.AI.Studio -c Release -o .\artifacts\TopSolid-AI-0.5.14
 ```
 
 ## Use

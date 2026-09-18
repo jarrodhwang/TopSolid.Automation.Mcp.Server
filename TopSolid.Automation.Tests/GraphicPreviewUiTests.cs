@@ -2,6 +2,7 @@ using System.Diagnostics;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
+using System.Windows.Input;
 using System.Windows.Threading;
 using Newtonsoft.Json.Linq;
 using TopSolid.Automation.AI.Studio;
@@ -40,13 +41,19 @@ internal static class GraphicPreviewUiTests
                     Check.True(!pane.IsLoading && client.Calls == 0, "Proposed geometry performed an unnecessary CAD export");
                     var before = pane.Camera.Position; pane.Orbit(.25, .1); Check.True(pane.Camera.Position != before, "Orbit did not move camera");
                     var width = pane.Camera.Width; pane.Zoom(.7); Check.True(pane.Camera.Width < width, "Zoom did not change camera"); pane.SetView("iso"); pane.Fit();
-                    Check.True(pane.Scene!.Surfaces.IsFrozen && pane.Scene.Triangles == 384, "Proposed geometry was not rendered");
+                    Check.True(pane.Scene!.Surfaces.IsFrozen && pane.Scene.Triangles == 288, "Proposed geometry was not rendered");
+                    Navigation(pane);
                     Check.True(JToken.DeepEquals(snapshot, proposal), "Viewport changed approval facts or token");
                     Check.True(!dialog.ProposalBox.Text.Contains("7899") && !dialog.ProposalBox.Text.Contains("fixture-part"), "User mode exposed graphical target IDs");
                     await Layout(dialog); render(dialog, "graphic-approval-" + (dark ? "dark-ko" : "light-en") + ".png");
                     var modes = Descendants<ComboBox>(pane).First(c => c.Items.Count == 2); modes.SelectedIndex = 1;
                     await Until(() => !pane.IsLoading && client.Calls > 0 && pane.Scene != null, dialog);
                     Check.Equal(12, pane.Scene!.Triangles, "Current document export did not replace proposed geometry");
+                    client.Handler = (_, _) => Task.FromResult(new JObject { ["status"] = "ready", ["documentId"] = "fixture-part", ["name"] = "Mounting plate",
+                        ["format"] = "stl", ["units"] = "mm", ["upAxis"] = "Z", ["linearToleranceMm"] = .05, ["angularToleranceDegrees"] = 5,
+                        ["data"] = Convert.ToBase64String(GraphicPreviewTests.StlFixture()) });
+                    await pane.ReloadAsync();
+                    Check.True(pane.Scene?.Triangles == 12 && pane.Scene.Bounds.SizeZ == 20, "Native precise STL did not reach the viewport");
                     dialog.Width = 620; await Layout(dialog);
                     Check.True(pane.ActualHeight >= 230 && dialog.ApproveButton.IsVisible, "Narrow review layout lost preview/actions");
                     render(dialog, "graphic-approval-narrow-" + (dark ? "dark" : "light") + ".png");
@@ -85,6 +92,28 @@ internal static class GraphicPreviewUiTests
             finally { failed.Close(); }
         }
         finally { StudioStrings.Apply(originalLanguage); TopSolidTheme.Apply(originalTheme); }
+    }
+    private static void Navigation(GraphicPreviewPane pane)
+    {
+        var original = pane.Camera.Position;
+        Check.True(!pane.BeginDrag(MouseButton.Left, ModifierKeys.None, new Point()), "Left drag captured the view");
+        pane.MoveDrag(new Point(30, 20)); Check.Equal(original, pane.Camera.Position, "Left drag moved the view");
+        foreach (var input in new[] { (MouseButton.Right, ModifierKeys.Control), (MouseButton.Middle, ModifierKeys.None) })
+        {
+            var direction = pane.Camera.LookDirection;
+            Check.True(pane.BeginDrag(input.Item1, input.Item2, new Point()), "TopSolid rotation did not start");
+            Check.True(!pane.BeginDrag(MouseButton.Left, ModifierKeys.None, new Point(30, 20)), "Second mouse button changed the active gesture");
+            Check.True(!pane.EndDrag(MouseButton.Left), "Unrelated button release ended the drag");
+            pane.MoveDrag(new Point(30, 20)); Check.True(pane.Camera.LookDirection != direction, "TopSolid rotation did not rotate");
+            pane.EndDrag(input.Item1); var stopped = pane.Camera.Position; pane.MoveDrag(new Point(60, 50));
+            Check.Equal(stopped, pane.Camera.Position, "Camera kept moving after release");
+        }
+        var beforePan = pane.Camera.Position; var panDirection = pane.Camera.LookDirection;
+        pane.BeginDrag(MouseButton.Right, ModifierKeys.None, new Point()); pane.MoveDrag(new Point(25, 30));
+        Check.True(pane.Camera.Position != beforePan && pane.Camera.LookDirection == panDirection, "Right drag rotated instead of panning");
+        pane.CancelDrag(); var cancelled = pane.Camera.Position; pane.MoveDrag(new Point(50, 60));
+        Check.Equal(cancelled, pane.Camera.Position, "Lost mouse capture retained an active drag");
+        pane.SetView("iso"); pane.Fit();
     }
     private static T Position<T>(T dialog, Window owner) where T : Window
     { dialog.Owner = owner; dialog.ShowInTaskbar = false; dialog.ShowActivated = false; dialog.WindowStartupLocation = WindowStartupLocation.Manual; dialog.Left = -20000; dialog.Top = -20000; return dialog; }

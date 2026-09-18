@@ -9,8 +9,8 @@ internal static class Program
         { await UiShellTests.Run(render: args.Length == 1); return 0; }
         if (args.Length == 2 && args[0] == "--live-cam-reads")
         { await CamReadOnlyTests.Run(args[1]); return 0; }
-        if (args.Length == 2 && args[0] == "--live-graphic-preview")
-        { await GraphicPreviewTests.Live(args[1]); return 0; }
+        if (args.Length is 2 or 3 && args[0] == "--live-graphic-preview")
+        { await GraphicPreviewTests.Live(args[1], args.Length == 3 ? args[2] : null); return 0; }
         string? serverPath = null;
         string? liveUiOllamaModel = null;
         string? approvedNativePlan = null;
@@ -103,7 +103,7 @@ internal static class Program
         cases.Add(("Friendly user responses and unchanged developer receipts, target identities and model history", ResponsePresentationTests.Run));
         cases.Add(("Connection readiness, slow/pending states, quota preservation and translated failures", ConnectionHealthTests.Run));
         cases.Add(("Receipt-backed question choices, typed inputs, images, cancellation and separate approval", UserQuestionTests.Run));
-        cases.Add(("Native GLB geometry, bounded parsing, proposal dimensions and non-destructive preview cancellation", GraphicPreviewTests.Run));
+        cases.Add(("Native GLB/STL, 0.05 mm / 5 degree precision, neutral surfaces, thin edges, navigation and preview cancellation", GraphicPreviewTests.Run));
         if (serverPath != null)
             cases.Add(("Real MCP process initialize, discover, status, errors, disconnect",
                 () => ProcessTests.ServerHandshakeAndStatus(serverPath)));

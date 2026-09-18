@@ -5,6 +5,7 @@ using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Media3D;
+using System.Windows.Threading;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using TopSolid.Automation.AI.Studio.Appearance;
@@ -13,7 +14,7 @@ using TopSolid.Automation.AI.Studio.Mcp;
 
 namespace TopSolid.Automation.AI.Studio.Preview;
 
-/// <summary>Native WPF/Direct3D viewport. Frozen geometry, camera-only interaction, no render timer or CAD hit testing.</summary>
+/// <summary>Native WPF/Direct3D viewport. Frozen surfaces, bounded screen-width edges, no render timer or CAD hit testing.</summary>
 internal sealed class GraphicPreviewPane : Border, IDisposable
 {
     private readonly IGraphicPreviewClient? client;
@@ -29,11 +30,17 @@ internal sealed class GraphicPreviewPane : Border, IDisposable
     private readonly ComboBox mode = new() { MinWidth = 130, FontSize = 12, Margin = new Thickness(10, 0, 0, 0) };
     private readonly ViewportCompass compass = new() { IsHitTestVisible = false };
     private readonly Button refresh;
+    private readonly Border input = new() { Background = Brushes.Transparent, Focusable = true, Cursor = Cursors.Arrow };
     private CancellationTokenSource? loading;
     private Point3D center;
     private double yaw = -Math.PI / 3, pitch = Math.PI / 6, extent = 100;
-    private bool disposed, panMode, showEdges = true, dragging;
+    private bool disposed, showEdges = true, edgeUpdateQueued;
+    private PreviewDrag drag;
+    private MouseButton dragButton;
     private Point lastPointer;
+    private PreviewScene? edgeScene;
+    private Vector3D edgeDirection;
+    private double edgeScale;
     private long generation;
     internal OrthographicCamera Camera { get; } = new() { UpDirection = new Vector3D(0, 0, 1), Width = 100 };
     internal PreviewScene? Scene { get; private set; }
@@ -58,28 +65,28 @@ internal sealed class GraphicPreviewPane : Border, IDisposable
         canvas.SetResourceReference(Panel.BackgroundProperty, "ViewportGradientBrush");
         if (TryFindResource("ViewportGradientBrush") == null) canvas.Background = new LinearGradientBrush(Color.FromRgb(74, 101, 151), Color.FromRgb(231, 228, 228), 90);
         viewport.Camera = Camera; viewport.Children.Add(solid); viewport.Children.Add(edges);
+        RenderOptions.SetEdgeMode(viewport, EdgeMode.Unspecified); // Retain Direct3D multisample antialiasing.
         var lights = new Model3DGroup(); lights.Children.Add(new AmbientLight(Color.FromRgb(115, 115, 115)));
         lights.Children.Add(new DirectionalLight(Color.FromRgb(210, 210, 210), new Vector3D(-1, 1, -2)));
         lights.Children.Add(new DirectionalLight(Color.FromRgb(95, 95, 95), new Vector3D(1, -1, .5))); lights.Freeze();
         viewport.Children.Add(new ModelVisual3D { Content = lights }); canvas.Children.Add(viewport);
-        var input = new Border { Background = Brushes.Transparent, Focusable = true, Cursor = Cursors.Hand };
+        input.ToolTip = StudioStrings.Get("Preview.Controls");
         AutomationProperties.SetName(input, StudioStrings.Get("Preview.Title")); AutomationProperties.SetHelpText(input, StudioStrings.Get("Preview.Controls"));
         input.MouseDown += (_, e) =>
         {
             if (Scene == null) return;
             if (e.ChangedButton == MouseButton.Left && e.ClickCount == 2) { Fit(); e.Handled = true; return; }
-            if (e.ChangedButton is not (MouseButton.Left or MouseButton.Middle)) return;
-            input.Focus(); lastPointer = e.GetPosition(input); dragging = input.CaptureMouse(); e.Handled = true;
+            if (!BeginDrag(e.ChangedButton, Keyboard.Modifiers, e.GetPosition(input))) return;
+            input.Focus();
+            if (!input.CaptureMouse()) CancelDrag();
+            e.Handled = true;
         };
         input.MouseMove += (_, e) =>
         {
-            if (!dragging || Scene == null) return;
-            var current = e.GetPosition(input); var delta = current - lastPointer; lastPointer = current;
-            if (panMode || e.MiddleButton == MouseButtonState.Pressed || Keyboard.Modifiers.HasFlag(ModifierKeys.Shift)) Pan(delta.X, delta.Y);
-            else Orbit(delta.X * .008, delta.Y * .008);
+            MoveDrag(e.GetPosition(input));
         };
-        input.MouseUp += (_, _) => { dragging = false; input.ReleaseMouseCapture(); };
-        input.LostMouseCapture += (_, _) => dragging = false;
+        input.MouseUp += (_, e) => { if (EndDrag(e.ChangedButton)) e.Handled = true; };
+        input.LostMouseCapture += (_, _) => CancelDrag();
         input.MouseWheel += (_, e) => { Zoom(Math.Exp(-e.Delta / 1000d)); e.Handled = true; };
         input.KeyDown += (_, e) =>
         {
@@ -95,10 +102,8 @@ internal sealed class GraphicPreviewPane : Border, IDisposable
         };
         canvas.Children.Add(input); canvas.Children.Add(compass);
         var tools = new StackPanel { HorizontalAlignment = HorizontalAlignment.Right, VerticalAlignment = VerticalAlignment.Top, Margin = new Thickness(8) };
-        tools.Children.Add(Command("view-orbit", "Preview.Orbit", () => { panMode = false; input.Cursor = Cursors.Hand; input.Focus(); }));
-        tools.Children.Add(Command("view-pan", "Preview.Pan", () => { panMode = true; input.Cursor = Cursors.ScrollAll; input.Focus(); }));
         tools.Children.Add(Command("view-fit", "Preview.Fit", Fit));
-        tools.Children.Add(Command("view-edges", "Preview.Edges", () => { showEdges = !showEdges; edges.Content = showEdges ? Scene?.Edges : null; }));
+        tools.Children.Add(Command("view-edges", "Preview.Edges", () => { showEdges = !showEdges; if (showEdges) QueueEdges(); else edges.Content = null; }));
         canvas.Children.Add(tools);
         status.Foreground = Brushes.White; status.VerticalAlignment = VerticalAlignment.Center; status.IsHitTestVisible = false; canvas.Children.Add(status);
         progress.VerticalAlignment = VerticalAlignment.Bottom; canvas.Children.Add(progress); root.Children.Add(canvas);
@@ -111,10 +116,35 @@ internal sealed class GraphicPreviewPane : Border, IDisposable
         mode.Items.Add(StudioStrings.Get("Preview.Current")); mode.SelectedIndex = 0;
         mode.Visibility = this.proposal == null ? Visibility.Collapsed : Visibility.Visible;
         mode.SelectionChanged += async (_, _) => { if (IsLoaded) await ReloadAsync(); };
-        Loaded += async (_, _) => { if (!disposed) await ReloadAsync(); };
+        Loaded += async (_, _) =>
+        {
+            if (disposed) return;
+            App.DiagnosticLog.Write("info", "preview.rendering", "WPF Direct3D preference; capability does not identify the active adapter.",
+                new JObject { ["renderPreference"] = RenderOptions.ProcessRenderMode.ToString(), ["hardwareCapabilityTier"] = RenderCapability.Tier >> 16 });
+            await ReloadAsync();
+        };
         canvas.SizeChanged += (_, _) => { if (Scene != null) Fit(); else UpdateCamera(); };
         SetMessage("Preview.Choose");
     }
+
+    internal bool BeginDrag(MouseButton button, ModifierKeys modifiers, Point position)
+    {
+        if (Scene == null || drag != PreviewDrag.None) return false;
+        var gesture = PreviewNavigation.Gesture(button, modifiers);
+        if (gesture == PreviewDrag.None) return false;
+        drag = gesture; dragButton = button; lastPointer = position;
+        input.Cursor = drag == PreviewDrag.Pan ? Cursors.ScrollAll : Cursors.Hand; return true;
+    }
+    internal void MoveDrag(Point position)
+    {
+        if (drag == PreviewDrag.None || Scene == null) return;
+        var delta = position - lastPointer; lastPointer = position;
+        if (drag == PreviewDrag.Pan) Pan(delta.X, delta.Y); else Orbit(delta.X * .008, delta.Y * .008);
+    }
+    internal bool EndDrag(MouseButton button)
+    { if (drag == PreviewDrag.None || button != dragButton) return false; CancelDrag(); return true; }
+    internal void CancelDrag()
+    { drag = PreviewDrag.None; input.Cursor = Cursors.Arrow; if (input.IsMouseCaptured) input.ReleaseMouseCapture(); }
 
     private Button Command(string icon, string key, Action action)
     {
@@ -138,7 +168,7 @@ internal sealed class GraphicPreviewPane : Border, IDisposable
         ClearScene(); SetBusy(false); refresh.IsEnabled = true;
         var proposed = proposal != null && mode.SelectedIndex == 0;
         caption.Text = StudioStrings.Get(proposed ? "Preview.Proposed" : "Preview.DocumentContext");
-        hint.Text = StudioStrings.Get(proposed ? "Preview.ProposedHint" : "Preview.ContextHint");
+        hint.Text = StudioStrings.Get(proposed ? "Preview.ProposedHint" : "Preview.ContextHint") + "\n" + StudioStrings.Get("Preview.MouseHint");
         if (!proposed && target == null) { SetMessage("Preview.Choose"); return; }
         if (!proposed && client == null) { SetMessage("Preview.unavailable"); return; }
         SetMessage("Preview.Loading"); SetBusy(true);
@@ -153,13 +183,20 @@ internal sealed class GraphicPreviewPane : Border, IDisposable
                 var result = await client!.GetGraphicPreviewAsync(requested!, token);
                 if (disposed || current != generation) return;
                 if ((string?)result["status"] != "ready") { SetMessage("Preview." + ((string?)result["status"] ?? "unavailable")); return; }
-                if ((string?)result["format"] != "glb" || (string?)result["upAxis"] != "Y" || (string?)result["units"] != "m") throw new InvalidDataException("Unsupported preview format.");
+                var stl = (string?)result["format"] == "stl";
+                if (stl ? (string?)result["upAxis"] != "Z" || (string?)result["units"] != "mm" :
+                    (string?)result["format"] != "glb" || (string?)result["upAxis"] != "Y" || (string?)result["units"] != "m") throw new InvalidDataException("Unsupported preview format.");
                 if (requested?["documentId"] != null && !JToken.DeepEquals(requested["documentId"], result["documentId"])) throw new InvalidDataException("Preview document mismatch.");
                 var data = (string?)result["data"];
-                if (data == null || data.Length > (GlbPreviewReader.MaximumBytes + 2L) / 3 * 4) throw new InvalidDataException("Oversized preview.");
-                scene = await Task.Run(() => GlbPreviewReader.Read(Convert.FromBase64String(data), token), token);
+                var maximumBytes = stl ? StlPreviewReader.MaximumBytes : GlbPreviewReader.MaximumBytes;
+                if (data == null || data.Length > (maximumBytes + 2L) / 3 * 4) throw new InvalidDataException("Oversized preview.");
+                scene = await Task.Run(() => stl ? StlPreviewReader.Read(Convert.FromBase64String(data), token) : GlbPreviewReader.Read(Convert.FromBase64String(data), token), token);
                 if (disposed || current != generation) return;
                 caption.Text = StudioStrings.Get("Preview.DocumentContext") + " · " + Friendly((string?)result["name"]);
+                var precise = stl && (double?)result["linearToleranceMm"] == PreviewQuality.LinearToleranceMm &&
+                    (double?)result["angularToleranceDegrees"] == PreviewQuality.AngularToleranceDegrees;
+                hint.Text = StudioStrings.Get("Preview.ContextHint") + " · " + StudioStrings.Get(precise ? "Preview.Precision" : "Preview.NativePrecision") +
+                    "\n" + StudioStrings.Get("Preview.MouseHint");
             }
             if (disposed || current != generation) return;
             ShowScene(scene);
@@ -172,7 +209,7 @@ internal sealed class GraphicPreviewPane : Border, IDisposable
 
     internal void ShowScene(PreviewScene scene)
     {
-        Scene = scene; solid.Content = scene.Surfaces; edges.Content = showEdges ? scene.Edges : null;
+        Scene = scene; solid.Content = scene.Surfaces; edgeScene = null;
         status.Visibility = Visibility.Collapsed; compass.Visibility = Visibility.Visible;
         AutomationProperties.SetHelpText(this, StudioStrings.Get("Preview.Controls")); Fit();
     }
@@ -184,7 +221,7 @@ internal sealed class GraphicPreviewPane : Border, IDisposable
     }
     private void SetBusy(bool value)
     { progress.IsIndeterminate = value; progress.Visibility = value ? Visibility.Visible : Visibility.Collapsed; refresh.IsEnabled = !value; }
-    private void ClearScene() { Scene = null; solid.Content = edges.Content = null; }
+    private void ClearScene() { CancelDrag(); Scene = edgeScene = null; solid.Content = edges.Content = null; }
     internal void Fit()
     {
         if (Scene == null) return;
@@ -212,6 +249,20 @@ internal sealed class GraphicPreviewPane : Border, IDisposable
         var direction = Direction(); Camera.Position = center + direction * extent * 4; Camera.LookDirection = -direction;
         Camera.NearPlaneDistance = Math.Max(1e-8, extent / 10000); Camera.FarPlaneDistance = extent * 10;
         compass.Update(direction, Camera.Width);
+        QueueEdges();
+    }
+    private void QueueEdges()
+    {
+        if (edgeUpdateQueued || !showEdges || Scene == null || disposed) return;
+        edgeUpdateQueued = true;
+        Dispatcher.BeginInvoke(DispatcherPriority.Render, new Action(() =>
+        {
+            edgeUpdateQueued = false;
+            if (disposed || !showEdges || Scene == null) return;
+            var direction = Direction(); var scale = Camera.Width / Math.Max(1, canvas.ActualWidth);
+            if (edgeScene == Scene && edgeDirection == direction && edgeScale == scale && edges.Content != null) return;
+            edges.Content = Scene.CreateEdges(direction, scale); edgeScene = Scene; edgeDirection = direction; edgeScale = scale;
+        }));
     }
     private static string Friendly(string? name) => string.IsNullOrWhiteSpace(name) || name.All(char.IsDigit) ? StudioStrings.Get("Preview.DocumentContext") : name;
     public void Dispose() { if (disposed) return; disposed = true; generation++; loading?.Cancel(); loading?.Dispose(); SetBusy(false); ClearScene(); }

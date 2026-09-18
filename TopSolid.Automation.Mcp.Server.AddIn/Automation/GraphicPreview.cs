@@ -1,7 +1,9 @@
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using Newtonsoft.Json.Linq;
+using TopSolid.Automation.Mcp.Contracts;
 using TopSolid.Kernel.Automating;
 
 namespace TopSolid.Automation.Mcp.Server.AddIn.Automation
@@ -23,16 +25,20 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Automation
             if (doc.IsEmpty || !TopSolidHost.Documents.GetDocuments().Contains(doc) || !TopSolidHost.Documents.Exists(doc))
                 return new JObject { ["status"] = "notLoaded" };
             var name = TopSolidHost.Documents.GetName(doc);
-            var exporter = -1;
+            var exporter = -1; var format = "glb";
+            List<KeyValue> options = null;
             for (var i = 0; i < TopSolidHost.Application.ExporterCount; i++)
             {
                 TopSolidHost.Application.GetExporterFileType(i, out _, out var extensions);
-                if (extensions.Any(e => e.Equals(".glb", StringComparison.OrdinalIgnoreCase)) &&
-                    TopSolidHost.Application.IsExporterValid(i) && TopSolidHost.Documents.CanExport(i, doc)) { exporter = i; break; }
+                var stl = extensions.Any(e => e.Equals(".stl", StringComparison.OrdinalIgnoreCase));
+                var glb = extensions.Any(e => e.Equals(".glb", StringComparison.OrdinalIgnoreCase));
+                if ((!stl && !glb) || !TopSolidHost.Application.IsExporterValid(i) || !TopSolidHost.Documents.CanExport(i, doc)) continue;
+                if (stl && GraphicPreviewExportOptions.TryStl(TopSolidHost.Application.GetExporterOptions(i), out var preciseOptions))
+                { exporter = i; options = preciseOptions; format = "stl"; break; }
+                if (glb) { exporter = i; options = TopSolidHost.Application.GetExporterOptions(i); }
             }
             if (exporter < 0) return new JObject { ["status"] = "unsupported", ["name"] = name };
-            var options = TopSolidHost.Application.GetExporterOptions(exporter);
-            for (var i = 0; i < options.Count; i++)
+            for (var i = 0; format == "glb" && i < options.Count; i++)
             {
                 var option = options[i];
                 switch (option.Key)
@@ -46,7 +52,7 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Automation
             }
             var directory = Path.Combine(Path.GetTempPath(), "TopSolid-Studio-preview-" + Guid.NewGuid().ToString("N"));
             Directory.CreateDirectory(directory);
-            var file = Path.Combine(directory, "document.glb");
+            var file = Path.Combine(directory, "document." + format);
             try
             {
                 var dirty = TopSolidHost.Documents.IsDirty(doc);
@@ -54,11 +60,16 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Automation
                 if (!TopSolidHost.Documents.Exists(doc) || TopSolidHost.Documents.IsDirty(doc) != dirty)
                     return new JObject { ["status"] = "changed", ["name"] = name };
                 if (!File.Exists(file)) return new JObject { ["status"] = "unsupported", ["name"] = name };
-                if (new FileInfo(file).Length > 2 * 1024 * 1024)
+                if (new FileInfo(file).Length > (format == "stl" ? GraphicPreviewQuality.MaximumStlBytes : 2 * 1024 * 1024))
                     return new JObject { ["status"] = "tooLarge", ["name"] = name };
+                var data = File.ReadAllBytes(file);
+                if (format == "stl" && (data.Length < 84 || 84L + BitConverter.ToUInt32(data, 80) * 50L != data.Length || BitConverter.ToUInt32(data, 80) == 0))
+                    return new JObject { ["status"] = "unsupported", ["name"] = name };
                 return new JObject { ["status"] = "ready", ["name"] = name, ["documentId"] = doc.PdmDocumentId,
-                    ["scope"] = "document", ["format"] = "glb", ["units"] = "m", ["upAxis"] = "Y",
-                    ["capturedAt"] = DateTime.UtcNow.ToString("O"), ["data"] = Convert.ToBase64String(File.ReadAllBytes(file)) };
+                    ["scope"] = "document", ["format"] = format, ["units"] = format == "stl" ? "mm" : "m", ["upAxis"] = format == "stl" ? "Z" : "Y",
+                    ["linearToleranceMm"] = format == "stl" ? (JToken)GraphicPreviewQuality.LinearToleranceMm : JValue.CreateNull(),
+                    ["angularToleranceDegrees"] = format == "stl" ? (JToken)GraphicPreviewQuality.AngularToleranceDegrees : JValue.CreateNull(),
+                    ["capturedAt"] = DateTime.UtcNow.ToString("O"), ["data"] = Convert.ToBase64String(data) };
             }
             finally
             {
