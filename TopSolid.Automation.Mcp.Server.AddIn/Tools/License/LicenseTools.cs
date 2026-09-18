@@ -9,11 +9,11 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
     {
         public static void Register(AutomationGateway a, Action<ToolDefinition> register)
         {
-            register(new ToolDefinition("topsolid_list_active_licenses", "List active TopSolid license modules and status. Does not change license allocation.", Schema.Page(new JObject()),
+            register(new ToolDefinition("topsolid_list_active_licenses", "List active TopSolid licenses with validity, expiration date, active state, type, user, status and version. Does not change license allocation. A missing expiration date means the API supplied no date.", Schema.Page(new JObject()),
                 p => a.Read("kernel", () => AutomationValues.Page(TopSolidHost.Licenses.GetActveLicenses(), p,
-                    license => new JObject { ["name"] = license.Name, ["module"] = license.Module, ["version"] = license.Version,
-                        ["type"] = license.LicenseType.ToString(), ["active"] = license.IsActive, ["status"] = license.Status })),
-                "License", api: ApiRefs.Kernel("ILicenses.GetActveLicenses", "License")));
+                    license => JObject.FromObject(AutomationGateway.LicenseInfo(license,
+                        AutomationGateway.LicenseValidity(license.Module, TopSolidHost.Application.IsLicenseValid))))),
+                "License", api: ApiRefs.Kernel("ILicenses.GetActveLicenses", "IApplication.IsLicenseValid", "License")));
         }
     }
 }

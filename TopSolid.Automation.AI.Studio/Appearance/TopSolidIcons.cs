@@ -13,7 +13,7 @@ public static class TopSolidIcons
         { "app", "project", "document", "sketch", "save", "delete", "settings", "attachment", "folder", "part", "operation", "parameter", "connect", "status", "window", "developer", "refresh", "refresh-warning", "refresh-error",
           "library", "machine", "edge", "point", "curve", "surface", "shape", "color", "image", "view-fit", "view-orbit", "view-pan", "view-edges",
           "arguments", "cam-tool", "cam-cutting-conditions", "cam-geometry", "cam-strategy", "cam-comment", "cam-multi-axis", "cam-properties",
-          "approve", "cancel", "error", "warning", "question" };
+          "approve", "cancel", "error", "warning", "question", "license", "license-standalone", "license-floating", "license-user" };
     private static readonly ConcurrentDictionary<string, ImageSource> Cache = new(StringComparer.OrdinalIgnoreCase);
     private static readonly Dictionary<string, string> OperationIcons = new(StringComparer.Ordinal);
 
@@ -78,6 +78,7 @@ public static class TopSolidIcons
     public static ImageSource ForTool(string toolName)
     {
         var name = (toolName ?? "").ToLowerInvariant();
+        if (name.Contains("license")) return Get("license");
         // Target identity takes precedence: a project request should show the project icon.
         if (name.Contains("project")) return Get("project");
         if (name.Contains("folder")) return Get("folder");

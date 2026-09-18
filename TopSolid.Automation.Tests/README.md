@@ -12,6 +12,8 @@ failure and cancellation handling, and Windows DPAPI settings persistence. They 
 not contact an AI service or prove that a particular model supports tool calling.
 All key values are synthetic test data.
 
+License startup fixtures cover fail-closed decisions, cancellation, malformed protocol data and native metadata semantics. The separate `--ui-shell` suite renders the shared license dialog. A read-only live license probe is available with `--live-licenses <MCP-server.exe>`; it prints validity and field presence, omitting user/owner data. It never changes or deactivates a license.
+
 Cloud checks cover preset routing, Gemini thought-signature replay, Anthropic authentication/pagination/parallel tool results, encrypted per-service profiles, and migration of the old native Gemini URL. The WPF test also checks preset selection, automatic URLs and separate keys/models.
 
 To verify model discovery with the existing saved Gemini key, without inference or CAD data:

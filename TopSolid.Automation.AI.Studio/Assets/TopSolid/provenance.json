@@ -1015,5 +1015,25 @@
     "Source": "Cam\\NC\\Wire\\DB\\Operations\\WireSetupOperation.png",
     "Sha256": "5A43A2F0E2C9B969D1E92DE3774AF337B33BA88161A14903E2CB90B1DE5CF711",
     "NativeType": "TopSolid.Cam.NC.Wire.DB.Operations.WireSetupOperation"
+  },
+  {
+    "Key": "license",
+    "Source": "Cad\\Kernel\\WX\\Protection\\Commands\\LicensesCommand.png",
+    "Sha256": "A9C767456B37A7354781EA32E0E70C25656644EB43EE9A528401843B11DFE62C"
+  },
+  {
+    "Key": "license-standalone",
+    "Source": "Cad\\Kernel\\WX\\Protection\\Commands\\LicensesDialog.Standalone.png",
+    "Sha256": "BA60EA866FDD6113FB9991EE60B55327F8138EF45E137EF7660648786C542CF9"
+  },
+  {
+    "Key": "license-floating",
+    "Source": "Cad\\Kernel\\WX\\Protection\\Commands\\LicensesDialog.Floating.png",
+    "Sha256": "AD0356258A03A19797CD01BF10EE7A7456FAD2D0B711875275AC86A2A8865BC6"
+  },
+  {
+    "Key": "license-user",
+    "Source": "Cad\\Kernel\\WX\\Protection\\Commands\\LicensesDialog.User.png",
+    "Sha256": "0D26E5B7058604AD981275C47031A26B7EF5B3077EB2B730E58A6838F68600BC"
   }
 ]

@@ -3,6 +3,7 @@ using System.Windows.Controls;
 using TopSolid.Automation.AI.Studio.Appearance;
 using TopSolid.Automation.AI.Studio.Connections;
 using TopSolid.Automation.AI.Studio.Localization;
+using TopSolid.Automation.Mcp.Contracts;
 
 namespace TopSolid.Automation.AI.Studio;
 
@@ -14,8 +15,9 @@ public sealed class ConnectionStatusWindow : Window
     private readonly TextBlock note = new() { TextWrapping = TextWrapping.Wrap, Margin = new Thickness(0, 16, 0, 0) };
     private readonly Button cancel = new() { IsCancel = true, IsDefault = true, MinWidth = 100, Padding = new Thickness(12, 7, 12, 7) };
     public Button RefreshButton { get; } = new() { MinWidth = 110, Margin = new Thickness(8, 0, 0, 0), Padding = new Thickness(12, 7, 12, 7) };
+    private readonly Button licenseButton = new() { MinWidth = 110, HorizontalAlignment = HorizontalAlignment.Left };
 
-    public ConnectionStatusWindow()
+    public ConnectionStatusWindow(TopSolidLicenseStatus? licenseStatus = null)
     {
         StudioStrings.InitializeResources(this);
         Width = 560; Height = 470; MinWidth = 420; MinHeight = 340;
@@ -28,7 +30,18 @@ public sealed class ConnectionStatusWindow : Window
         cancel.Click += (_, _) => DialogResult = false;
         RefreshButton.Click += (_, _) => DialogResult = true;
         buttons.Children.Add(cancel); buttons.Children.Add(RefreshButton);
-        var footer = DialogLayout.Footer(buttons);
+        var commands = new DockPanel();
+        DialogLayout.Command(licenseButton, "license");
+        licenseButton.SetResourceReference(ContentControl.ContentProperty, "Ui.License.Title");
+        licenseButton.IsEnabled = licenseStatus != null;
+        licenseButton.Click += (_, _) =>
+        {
+            var dialog = new LicenseWindow { Owner = this, ShowInTaskbar = false, WindowStartupLocation = WindowStartupLocation.CenterOwner };
+            dialog.ShowResult(licenseStatus!);
+            dialog.ShowDialog();
+        };
+        DockPanel.SetDock(licenseButton, Dock.Left); commands.Children.Add(licenseButton); commands.Children.Add(buttons);
+        var footer = DialogLayout.Footer(commands);
         DockPanel.SetDock(footer, Dock.Bottom); layout.Children.Add(footer);
         var header = DialogLayout.Toolbar(DialogLayout.Heading(TopSolidIcons.Get("connect"), heading));
         DockPanel.SetDock(header, Dock.Top); layout.Children.Add(header);
