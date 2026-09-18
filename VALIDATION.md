@@ -1,5 +1,12 @@
 # Validation — 2026-09-18, current workspace
 
+## Studio/MCP 0.5.18 — document selection icons
+
+- Release solution build passed with zero warnings/errors; **39/39 default application groups** and WPF shell fixtures passed. Document tests cover generic-option and document questions, identical names with different types, case/whitespace normalization, unknown-format fallback and unchanged selection identities. Existing CAM operation/category icon checks still pass.
+- The document-type selection fixture was visually inspected (`artifacts/ui-redesign/question-document-types.png`). Native assets are embedded unchanged with source hashes in the provenance manifest. No provider or CAD write was needed for this fix.
+- Updating the regular Debug output was blocked by the user's running Studio process holding the contracts DLL. That process was not stopped. Use the complete separately published Release bundle at `artifacts/TopSolid-AI-0.5.18`; the running older instance does not receive this update automatically.
+- Test prompt: `열려 있는 문서를 선택 대화상자로 보여줘. 이름과 문서 종류를 표시하고 변경하지 마.` Check that `.TopPrt` and `.TopMillTurn` have different native document icons, even when their names match.
+
 ## Studio/MCP 0.5.17 — startup license gate
 
 - Release/Debug solution builds passed without warnings/errors. **41/41 application groups**, **15,267 offline server checks**, **2,095 protocol checks**, and the WPF shell/dialog fixtures passed. Startup fixtures cover validity, wrong/missing module identity, unsupported response versions, malformed booleans/rows, lookup errors/timeouts, cancellation/late completion and no main-window creation before success.

@@ -55,6 +55,16 @@ internal static class QuestionUiTests
                 finally { dialog.Close(); }
             }
             StudioStrings.Apply("en"); TopSolidTheme.Apply(new(false, "Light", "Question UI fixture"));
+            var documents = Window(owner, UserQuestionTests.DocumentQuestion());
+            try
+            {
+                documents.Show(); await Layout(documents);
+                Check.True(ReferenceEquals(Find<Image>(documents, "QuestionIcon").Source, TopSolidIcons.Get("document")), "Document picker heading used an information icon");
+                var images = Descendants<Image>(Find<ListBox>(documents, "ChoiceList")).Select(i => i.Source).ToList();
+                Check.True(images.Contains(TopSolidIcons.Get("document-part")) && images.Contains(TopSolidIcons.Get("document-millturn")), "Document cards lost native part/CAM icons");
+                render(documents, "question-document-types.png");
+            }
+            finally { documents.Close(); }
             var multiple = Window(owner, UserQuestionTests.ProjectQuestion(multiple: true));
             try
             {

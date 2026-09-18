@@ -43,7 +43,9 @@ public partial class QuestionWindow : Window
         if (question.Kind is not ("select" or "image")) { MinHeight = 380; Height = question.Kind == "color" ? 520 : 440; EditorScroll.Visibility = Visibility.Visible; }
         Title = StudioStrings.Get("Question.Title"); Icon = TopSolidIcons.Get("question"); TopSolidTheme.ApplyWindow(this);
         QuestionTitle.Text = question.Title;
-        QuestionIcon.Source = TopSolidIcons.Get(IconKey(question.Kind == "select" ? question.ItemKind : question.Kind));
+        var documentChoices = question.Kind == "select" && question.Choices.Count > 0 &&
+            question.Choices.All(c => c.IconKey == "document" || c.IconKey?.StartsWith("document-", StringComparison.Ordinal) == true);
+        QuestionIcon.Source = TopSolidIcons.Get(documentChoices ? "document" : IconKey(question.Kind == "select" ? question.ItemKind : question.Kind));
         CancelQuestion.Tag = TopSolidIcons.Get("cancel"); ContinueQuestion.Tag = TopSolidIcons.Get("approve"); BrowseImage.Tag = TopSolidIcons.Get("image");
         QuestionHint.Text = StudioStrings.Get(question.Kind == "select" ? question.Multiple ? "Question.MultipleHint" : "Question.SelectHint" : "Question.InputHint");
         SearchPanel.Visibility = ChoiceList.Visibility = question.Kind == "select" ? Visibility.Visible : Visibility.Collapsed;

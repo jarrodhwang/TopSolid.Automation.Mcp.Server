@@ -153,7 +153,8 @@ internal sealed class QuestionSources
                         var key = "choice-" + choices.Count;
                         var label = Label(row, sourceKind, choices.Count + 1);
                         var detail = Details(row, label);
-                        var icon = sourceKind == "operation" ? TopSolidIcons.OperationKey(row) : sourceKind == "camParameter" ? TopSolidIcons.CamCategoryKey(row) : null;
+                        var icon = sourceKind == "operation" ? TopSolidIcons.OperationKey(row) : sourceKind == "camParameter" ? TopSolidIcons.CamCategoryKey(row) :
+                            sourceKind is "document" or "option" ? TopSolidIcons.DocumentKey(row) : null;
                         choices.Add(new(key, label, detail, sourceKind, label + " " + detail, icon));
                         values.Add(key, new JObject { ["sourceTool"] = receipt.Tool, ["sourceArguments"] = receipt.Arguments.DeepClone(), ["value"] = row.DeepClone() });
                     }

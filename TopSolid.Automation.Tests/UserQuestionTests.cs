@@ -37,6 +37,7 @@ internal static class UserQuestionTests
         try
         {
             VerifyCamChoices();
+            VerifyDocumentChoices();
             var sources = new QuestionSources(); var result = Projects();
             var textSource = new QuestionSources();
             textSource.Capture("read-1", "topsolid_list_projects", new JObject(), new McpToolResult { Content = new JArray(new JObject { ["type"] = "text", ["text"] = result.StructuredContent!.ToString() }) });
@@ -83,6 +84,34 @@ internal static class UserQuestionTests
             Check.Equal("Selection received.", await ollamaSession.SendAsync("Choose a project.", CancellationToken.None), "Ollama question wire roundtrip failed");
         }
         finally { StudioStrings.Apply(originalLanguage); }
+    }
+
+    internal static UserQuestion DocumentQuestion(string kind = "option")
+    {
+        var sources = new QuestionSources();
+        sources.Capture("documents", "topsolid_list_documents", new JObject(), new McpToolResult { StructuredContent = new JObject
+        {
+            ["items"] = new JArray(new[] { ".TopPrt", ".TopMillTurn", ".TopAsm", ".TopDft", ".Top2D", ".TopDrw", ".TopFuture" }
+                .Select((extension, i) => new JObject { ["documentId"] = "document-" + i, ["name"] = "동일한 문서 이름", ["extension"] = extension }))
+        } });
+        return sources.Create(new JObject { ["question"] = "문서를 선택하세요.", ["kind"] = "select", ["itemKind"] = kind,
+            ["sources"] = new JArray(new JObject { ["toolCallId"] = "documents", ["path"] = "/items" }) });
+    }
+
+    private static void VerifyDocumentChoices()
+    {
+        foreach (var kind in new[] { "option", "document" })
+        {
+            var question = DocumentQuestion(kind);
+            var expected = new[] { "document-part", "document-millturn", "document-assembly", "document-drafting", "document-2d", "document-drawing", "document" };
+            for (var i = 0; i < expected.Length; i++)
+            {
+                Check.Equal(expected[i], question.Choices[i].IconKey, "Document receipt type lost through question kind " + kind);
+                Check.Equal("document-" + i, (string?)question.Answer(selectedKeys: [question.Choices[i].Key]).Data["selected"]![0]!["value"]!["documentId"], "Icon resolution changed document identity");
+            }
+        }
+        Check.Equal("document-part", TopSolidIcons.DocumentKey(new JObject { ["extension"] = " .topPRT " }), "Extension matching is not normalized");
+        Check.True(TopSolidIcons.DocumentKey(new JObject { ["name"] = "fake.TopPrt" }) == null, "User-assigned names guessed document type");
     }
 
     internal static UserQuestion CamQuestion()
