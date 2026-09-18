@@ -33,6 +33,7 @@ public sealed class DeveloperWindow : Window
     private readonly TextBlock catalogueCount = new();
     private readonly Grid gauges = new() { Margin = new Thickness(0, 0, 0, 14) };
     private readonly TextBlock footer = new();
+    private readonly Border footerBar;
     private readonly MetricCard total = new("Turn elapsed", "Includes waits and overhead");
     private readonly MetricCard model = new("Model", "Measured completed requests");
     private readonly MetricCard tool = new("MCP tools", "Excludes user approval wait");
@@ -72,13 +73,14 @@ public sealed class DeveloperWindow : Window
         RegisterName("ConnectButton", ConnectButton); RegisterName("StatusButton", StatusButton);
         Translate(this, TitleProperty, "TopSolid Automation AI · Developer");
         Width = 1120; Height = 760; MinWidth = 800; MinHeight = 560;
+        Icon = TopSolidIcons.Get("developer");
         WindowStartupLocation = WindowStartupLocation.CenterOwner;
         FontFamily = new FontFamily("Segoe UI"); FontSize = 13;
         SetResourceReference(BackgroundProperty, "WindowBrush");
         SetResourceReference(ForegroundProperty, "TextBrush");
         TopSolidTheme.ApplyWindow(this);
 
-        var root = new Grid { Margin = new Thickness(16) };
+        var root = new Grid();
         root.RowDefinitions.Add(new() { Height = GridLength.Auto });
         root.RowDefinitions.Add(new() { Height = GridLength.Auto });
         root.RowDefinitions.Add(new() { Height = GridLength.Auto });
@@ -86,25 +88,28 @@ public sealed class DeveloperWindow : Window
         root.RowDefinitions.Add(new() { Height = GridLength.Auto });
         Content = root;
 
-        var heading = new DockPanel { Margin = new Thickness(0, 0, 0, 12) };
+        var heading = new DockPanel();
         var controls = new WrapPanel { HorizontalAlignment = HorizontalAlignment.Right, VerticalAlignment = VerticalAlignment.Center, MaxWidth = 490 };
         ConnectButton.Click += (_, _) => { if (ConnectButton.IsEnabled) connectToggle?.Invoke(); };
         StatusButton.Click += (_, _) => { if (StatusButton.IsEnabled) checkStatus?.Invoke(); };
         Translate(StatusButton, ContentControl.ContentProperty, "Check TopSolid");
+        DialogLayout.Command(ConnectButton, "connect"); DialogLayout.Command(StatusButton, "refresh");
         controls.Children.Add(ConnectButton); controls.Children.Add(StatusButton);
         var export = new Button { Padding = new Thickness(14, 6, 14, 6), VerticalAlignment = VerticalAlignment.Center };
         Translate(export, ContentControl.ContentProperty, "Save log");
+        DialogLayout.Command(export, "save");
         export.Click += (_, _) => exportLog();
         controls.Children.Add(export);
         DockPanel.SetDock(controls, Dock.Right); heading.Children.Add(controls);
         var title = new StackPanel();
-        var titleText = new TextBlock { FontWeight = FontWeights.SemiBold, FontSize = 20 };
+        var titleText = new TextBlock { FontWeight = FontWeights.SemiBold, FontSize = 16 };
         Translate(titleText, TextBlock.TextProperty, "Developer"); title.Children.Add(titleText);
         title.Children.Add(sessionSummary);
         sessionSummary.SetResourceReference(TextBlock.ForegroundProperty, "MutedTextBrush");
-        heading.Children.Add(title); root.Children.Add(heading);
+        heading.Children.Add(DialogLayout.Heading(TopSolidIcons.Get("developer"), title)); root.Children.Add(DialogLayout.Toolbar(heading));
 
-        Grid.SetRow(turnLabel, 1); turnLabel.Margin = new Thickness(0, 0, 0, 6); root.Children.Add(turnLabel);
+        Grid.SetRow(turnLabel, 1); turnLabel.Margin = new Thickness(16, 12, 16, 6); root.Children.Add(turnLabel);
+        gauges.Margin = new Thickness(16, 0, 16, 14);
         foreach (var card in new[] { total, model, tool, confirmation })
         {
             var index = gauges.ColumnDefinitions.Count;
@@ -115,7 +120,7 @@ public sealed class DeveloperWindow : Window
         }
         Grid.SetRow(gauges, 2); root.Children.Add(gauges);
 
-        tabs = new TabControl { Name = "DeveloperTabs", Padding = new Thickness(10) }; RegisterName(tabs.Name, tabs);
+        tabs = new TabControl { Name = "DeveloperTabs", Padding = new Thickness(10), Margin = new Thickness(16, 12, 16, 12) }; RegisterName(tabs.Name, tabs);
         eventList = CreateList(events); responseList = CreateList(responses); toolList = CreateList(toolRows);
         eventDetail = CreateDetail(); responseDetail = CreateDetail(); toolDetail = CreateDetail();
         HookDetail(eventList, eventDetail); HookDetail(responseList, responseDetail); HookDetail(toolList, toolDetail);
@@ -139,10 +144,10 @@ public sealed class DeveloperWindow : Window
         Grid.SetRow(tabs, 3); root.Children.Add(tabs);
 
         footer.Text = "Gauges show measured latest-turn durations against elapsed time. Events and responses show the latest 400 retained entries; Save log exports the retained session.";
-        footer.TextWrapping = TextWrapping.Wrap; footer.FontSize = 11; footer.Margin = new Thickness(0, 10, 0, 0);
+        footer.TextWrapping = TextWrapping.Wrap; footer.FontSize = 11;
         footer.SetResourceReference(TextBlock.ForegroundProperty, "MutedTextBrush");
         Translate(footer, TextBlock.TextProperty, footer.Text);
-        Grid.SetRow(footer, 4); root.Children.Add(footer);
+        footerBar = DialogLayout.Footer(footer); Grid.SetRow(footerBar, 4); root.Children.Add(footerBar);
         UpdateSnapshot(new SessionLogSnapshot(), [], TimeSpan.Zero, false);
         UpdateConnectionState(false, false, false);
         StudioStrings.Changed += LanguageChanged;
@@ -152,7 +157,7 @@ public sealed class DeveloperWindow : Window
     private void UpdateGpuSampling()
     {
         var showGpu = ReferenceEquals(tabs.SelectedItem, gpuTab);
-        turnLabel.Visibility = gauges.Visibility = footer.Visibility = showGpu ? Visibility.Collapsed : Visibility.Visible;
+        turnLabel.Visibility = gauges.Visibility = footerBar.Visibility = showGpu ? Visibility.Collapsed : Visibility.Visible;
         gpuPanel.SetActive(IsVisible && WindowState != WindowState.Minimized && showGpu);
     }
 

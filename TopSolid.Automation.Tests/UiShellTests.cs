@@ -89,6 +89,7 @@ internal static partial class UiShellTests
         await QuestionUiTests.Run(window, (target, name) => Render(target, Path.Combine(output, name)));
         await GraphicPreviewUiTests.Run(window, (target, name) => Render(target, Path.Combine(output, name)));
         await VerifyConnectionIndicator(window, output);
+        await DialogThemeUiTests.Run(window, (target, name) => Render(target, Path.Combine(output, name)));
         session.Clear();
         session.AddChat("You", "프로젝트 목록을 확인하고 새 2D 스케치를 준비해 주세요.");
         session.AddTrace("Model", "UI fixture request; no inference performed");
@@ -345,9 +346,8 @@ internal static partial class UiShellTests
     private static void Render(Window window, string path)
     {
         if (!captureImages) return;
-        var content = (FrameworkElement)window.Content;
-        var width = content.ActualWidth + content.Margin.Left + content.Margin.Right;
-        var height = content.ActualHeight + content.Margin.Top + content.Margin.Bottom;
+        var width = window.ActualWidth;
+        var height = window.ActualHeight;
         var bitmap = new RenderTargetBitmap((int)Math.Ceiling(width), (int)Math.Ceiling(height), 96, 96, PixelFormats.Pbgra32);
         // Include the owning window background when its content root is transparent.
         var visual = new DrawingVisual();
@@ -357,7 +357,7 @@ internal static partial class UiShellTests
             context.DrawRectangle(window.Background ?? Brushes.White, null, bounds);
         }
         bitmap.Render(visual);
-        bitmap.Render(content);
+        bitmap.Render(window);
         var encoder = new PngBitmapEncoder(); encoder.Frames.Add(BitmapFrame.Create(bitmap));
         using var stream = File.Create(path); encoder.Save(stream);
         stream.Flush();

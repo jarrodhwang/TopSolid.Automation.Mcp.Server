@@ -44,6 +44,13 @@ internal static class QuestionUiTests
                     Check.True(Find<TextBlock>(dialog, "SelectionSummary").Text.Contains("Training"), "Hidden selection lacks visible target context");
                     Find<Button>(dialog, "ClearSelection").RaiseEvent(new RoutedEventArgs(Button.ClickEvent));
                     Check.True(!confirm.IsEnabled, "Clearing selection left an executable answer");
+                    Check.True(list.SelectedIndex == -1 && list.SelectedItems.Count == 0, "Cleared target still appears selected");
+                    search.Clear();
+                    list.SelectedIndex = 0;
+                    Find<Button>(dialog, "ClearSelection").RaiseEvent(new RoutedEventArgs(Button.ClickEvent));
+                    Check.Equal(-1, list.SelectedIndex, "Equal choice records retained a visible cleared target");
+                    list.SelectedIndex = 0;
+                    Check.True(confirm.IsEnabled, "The same target cannot be reselected after clearing");
                 }
                 finally { dialog.Close(); }
             }

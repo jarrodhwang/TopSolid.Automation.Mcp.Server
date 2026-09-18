@@ -12,7 +12,8 @@ public static class TopSolidIcons
     private static readonly HashSet<string> Keys = new(StringComparer.OrdinalIgnoreCase)
         { "app", "project", "document", "sketch", "save", "delete", "settings", "attachment", "folder", "part", "operation", "parameter", "connect", "status", "window", "developer", "refresh", "refresh-warning", "refresh-error",
           "library", "machine", "edge", "point", "curve", "surface", "shape", "color", "image", "view-fit", "view-orbit", "view-pan", "view-edges",
-          "arguments", "cam-tool", "cam-cutting-conditions", "cam-geometry", "cam-strategy", "cam-comment", "cam-multi-axis", "cam-properties" };
+          "arguments", "cam-tool", "cam-cutting-conditions", "cam-geometry", "cam-strategy", "cam-comment", "cam-multi-axis", "cam-properties",
+          "approve", "cancel", "error", "warning", "question" };
     private static readonly ConcurrentDictionary<string, ImageSource> Cache = new(StringComparer.OrdinalIgnoreCase);
     private static readonly Dictionary<string, string> OperationIcons = new(StringComparer.Ordinal);
 

@@ -10,7 +10,7 @@ public sealed class ConnectionStatusWindow : Window
 {
     private string? renderedState;
     private readonly StackPanel rows = new();
-    private readonly TextBlock heading = new() { FontSize = 20, FontWeight = FontWeights.SemiBold, Margin = new Thickness(0, 0, 0, 18) };
+    private readonly TextBlock heading = new() { FontSize = 16, FontWeight = FontWeights.SemiBold };
     private readonly TextBlock note = new() { TextWrapping = TextWrapping.Wrap, Margin = new Thickness(0, 16, 0, 0) };
     private readonly Button cancel = new() { IsCancel = true, IsDefault = true, MinWidth = 100, Padding = new Thickness(12, 7, 12, 7) };
     public Button RefreshButton { get; } = new() { MinWidth = 110, Margin = new Thickness(8, 0, 0, 0), Padding = new Thickness(12, 7, 12, 7) };
@@ -22,15 +22,19 @@ public sealed class ConnectionStatusWindow : Window
         WindowStartupLocation = WindowStartupLocation.CenterOwner; ShowInTaskbar = false;
         SetResourceReference(BackgroundProperty, "WindowBrush"); SetResourceReference(ForegroundProperty, "TextBrush");
         TopSolidTheme.ApplyWindow(this);
-        var layout = new DockPanel { Margin = new Thickness(22) };
-        var buttons = new StackPanel { Orientation = Orientation.Horizontal, HorizontalAlignment = HorizontalAlignment.Right, Margin = new Thickness(0, 18, 0, 0) };
+        var layout = new DockPanel();
+        var buttons = new StackPanel { Orientation = Orientation.Horizontal, HorizontalAlignment = HorizontalAlignment.Right };
+        DialogLayout.Command(cancel, "cancel"); DialogLayout.Command(RefreshButton, "refresh");
         cancel.Click += (_, _) => DialogResult = false;
         RefreshButton.Click += (_, _) => DialogResult = true;
         buttons.Children.Add(cancel); buttons.Children.Add(RefreshButton);
-        DockPanel.SetDock(buttons, Dock.Bottom); layout.Children.Add(buttons);
-        DockPanel.SetDock(heading, Dock.Top); layout.Children.Add(heading);
+        var footer = DialogLayout.Footer(buttons);
+        DockPanel.SetDock(footer, Dock.Bottom); layout.Children.Add(footer);
+        var header = DialogLayout.Toolbar(DialogLayout.Heading(TopSolidIcons.Get("connect"), heading));
+        DockPanel.SetDock(header, Dock.Top); layout.Children.Add(header);
         var body = new StackPanel(); body.Children.Add(rows); body.Children.Add(note);
-        layout.Children.Add(new ScrollViewer { Content = body, VerticalScrollBarVisibility = ScrollBarVisibility.Auto });
+        note.SetResourceReference(TextBlock.ForegroundProperty, "MutedTextBrush");
+        layout.Children.Add(DialogLayout.Body(new ScrollViewer { Content = body, VerticalScrollBarVisibility = ScrollBarVisibility.Auto }));
         Content = layout;
         Loaded += (_, _) => cancel.Focus();
     }

@@ -6,23 +6,17 @@
         WindowStartupLocation="CenterOwner" Background="{DynamicResource WindowBrush}" Foreground="{DynamicResource TextBrush}">
     <Window.Resources>
         <Style x:Key="QuestionInput" TargetType="TextBox" BasedOn="{StaticResource {x:Type TextBox}}">
-            <Setter Property="Padding" Value="12,10"/><Setter Property="FontSize" Value="16"/>
-            <Setter Property="MinHeight" Value="44"/><Setter Property="VerticalContentAlignment" Value="Center"/>
-            <Setter Property="Template"><Setter.Value><ControlTemplate TargetType="TextBox">
-                <Border x:Name="InputFrame" CornerRadius="8" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1">
-                    <ScrollViewer x:Name="PART_ContentHost"/>
-                </Border>
-                <ControlTemplate.Triggers><Trigger Property="IsKeyboardFocusWithin" Value="True"><Setter TargetName="InputFrame" Property="BorderBrush" Value="{DynamicResource AccentBrush}"/></Trigger></ControlTemplate.Triggers>
-            </ControlTemplate></Setter.Value></Setter>
+            <Setter Property="Padding" Value="10,7"/><Setter Property="FontSize" Value="14"/>
+            <Setter Property="MinHeight" Value="36"/><Setter Property="VerticalContentAlignment" Value="Center"/>
         </Style>
         <Style x:Key="ChoiceCard" TargetType="ListBoxItem">
             <Setter Property="HorizontalContentAlignment" Value="Stretch"/><Setter Property="Margin" Value="0,0,6,8"/>
-            <Setter Property="Padding" Value="14,12"/><Setter Property="Background" Value="{DynamicResource SurfaceBrush}"/>
+            <Setter Property="Padding" Value="12,10"/><Setter Property="Background" Value="{DynamicResource SurfaceBrush}"/>
             <Setter Property="BorderBrush" Value="{DynamicResource BorderBrush}"/><Setter Property="BorderThickness" Value="1"/>
             <Setter Property="AutomationProperties.Name" Value="{Binding Label}"/>
             <Setter Property="AutomationProperties.HelpText" Value="{Binding Detail}"/>
             <Setter Property="Template"><Setter.Value><ControlTemplate TargetType="ListBoxItem">
-                <Border x:Name="Card" CornerRadius="10" Padding="{TemplateBinding Padding}" Background="{TemplateBinding Background}"
+                <Border x:Name="Card" CornerRadius="3" Padding="{TemplateBinding Padding}" Background="{TemplateBinding Background}"
                         BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
                     <Grid><Grid.ColumnDefinitions><ColumnDefinition Width="*"/><ColumnDefinition Width="26"/></Grid.ColumnDefinitions>
                         <ContentPresenter/>
@@ -32,21 +26,26 @@
                     </Grid>
                 </Border>
                 <ControlTemplate.Triggers>
-                    <Trigger Property="IsMouseOver" Value="True"><Setter TargetName="Card" Property="BorderBrush" Value="{DynamicResource AccentBrush}"/></Trigger>
-                    <Trigger Property="IsSelected" Value="True"><Setter TargetName="Card" Property="Background" Value="{DynamicResource UserMessageBrush}"/><Setter TargetName="Card" Property="BorderBrush" Value="{DynamicResource AccentBrush}"/><Setter TargetName="SelectedBadge" Property="Visibility" Value="Visible"/></Trigger>
-                    <Trigger Property="IsKeyboardFocusWithin" Value="True"><Setter TargetName="Card" Property="BorderThickness" Value="2"/></Trigger>
+                    <Trigger Property="IsMouseOver" Value="True"><Setter TargetName="Card" Property="Background" Value="{DynamicResource ToolHoverGradientBrush}"/><Setter TargetName="Card" Property="BorderBrush" Value="{DynamicResource HoverBorderBrush}"/></Trigger>
+                    <Trigger Property="IsSelected" Value="True"><Setter TargetName="Card" Property="Background" Value="{DynamicResource SelectionGradientBrush}"/><Setter TargetName="Card" Property="BorderBrush" Value="{DynamicResource SelectedBorderBrush}"/><Setter TargetName="SelectedBadge" Property="Visibility" Value="Visible"/></Trigger>
+                    <Trigger Property="IsKeyboardFocusWithin" Value="True"><Setter TargetName="Card" Property="BorderBrush" Value="{DynamicResource AccentBrush}"/></Trigger>
                 </ControlTemplate.Triggers>
             </ControlTemplate></Setter.Value></Setter>
         </Style>
     </Window.Resources>
-    <Grid Margin="24">
-        <Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition Height="*"/><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/></Grid.RowDefinitions>
-        <Grid Margin="0,0,0,18"><Grid.ColumnDefinitions><ColumnDefinition Width="52"/><ColumnDefinition Width="*"/></Grid.ColumnDefinitions>
-            <Border Width="42" Height="42" CornerRadius="12" Background="{DynamicResource SurfaceBrush}" VerticalAlignment="Top"><Image x:Name="QuestionIcon" Width="28" Height="28"/></Border>
-            <StackPanel Grid.Column="1"><TextBlock x:Name="QuestionTitle" FontSize="21" FontWeight="SemiBold" TextWrapping="Wrap"/>
-                <TextBlock x:Name="QuestionHint" Margin="0,7,0,0" Foreground="{DynamicResource MutedTextBrush}" TextWrapping="Wrap"/></StackPanel>
-        </Grid>
-        <StackPanel x:Name="SearchPanel" Grid.Row="1" Margin="0,0,0,12">
+    <Grid>
+        <Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="*"/><RowDefinition Height="Auto"/></Grid.RowDefinitions>
+        <Border Style="{StaticResource DialogToolbar}">
+            <Grid><Grid.ColumnDefinitions><ColumnDefinition Width="38"/><ColumnDefinition Width="*"/></Grid.ColumnDefinitions>
+                <Image x:Name="QuestionIcon" Width="28" Height="28" HorizontalAlignment="Left"/>
+                <StackPanel Grid.Column="1"><TextBlock x:Name="QuestionTitle" FontSize="16" FontWeight="SemiBold" TextWrapping="Wrap"/>
+                    <TextBlock x:Name="QuestionHint" Margin="0,4,0,0" Foreground="{DynamicResource MutedTextBrush}" TextWrapping="Wrap"/></StackPanel>
+            </Grid>
+        </Border>
+        <ContentControl x:Name="BodyHost" Grid.Row="1" Margin="16" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch">
+        <Grid x:Name="QuestionBody">
+        <Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="*"/></Grid.RowDefinitions>
+        <StackPanel x:Name="SearchPanel" Margin="0,0,0,12">
             <TextBlock Text="{DynamicResource Ui.Question.Search}" Margin="0,0,0,5"/>
             <TextBox x:Name="SearchBox" Style="{StaticResource QuestionInput}" AutomationProperties.Name="{DynamicResource Ui.Question.Search}"/>
             <DockPanel Margin="0,8,0,0">
@@ -55,7 +54,7 @@
             </DockPanel>
             <TextBlock x:Name="SelectionSummary" Foreground="{DynamicResource MutedTextBrush}" Margin="0,4,0,0" TextTrimming="CharacterEllipsis" Visibility="Collapsed"/>
         </StackPanel>
-        <Grid Grid.Row="2">
+        <Grid Grid.Row="1">
             <ListBox x:Name="ChoiceList" Background="Transparent" BorderThickness="0" ItemContainerStyle="{StaticResource ChoiceCard}"
                      ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Auto"
                      ScrollViewer.CanContentScroll="True" VirtualizingPanel.IsVirtualizing="True" VirtualizingPanel.VirtualizationMode="Recycling">
@@ -77,7 +76,7 @@
                 <TextBlock x:Name="RangeLabel" Margin="0,10,0,0" Foreground="{DynamicResource MutedTextBrush}"/>
             </StackPanel>
             <StackPanel x:Name="ColorPanel" Visibility="Collapsed">
-                <Border x:Name="ColorPreview" Height="86" CornerRadius="12" BorderThickness="1" BorderBrush="{DynamicResource BorderBrush}" Margin="0,0,0,16"/>
+                <Border x:Name="ColorPreview" Height="70" CornerRadius="3" BorderThickness="1" BorderBrush="{DynamicResource BorderBrush}" Margin="0,0,0,12"/>
                 <WrapPanel x:Name="Swatches" Margin="0,0,0,14"/>
                 <Grid><Grid.ColumnDefinitions><ColumnDefinition Width="2*"/><ColumnDefinition Width="*"/><ColumnDefinition Width="*"/><ColumnDefinition Width="*"/></Grid.ColumnDefinitions>
                     <StackPanel Margin="0,0,12,0"><TextBlock Text="HEX" Margin="0,0,0,5"/><TextBox x:Name="HexBox" MaxLength="7" Style="{StaticResource QuestionInput}" AutomationProperties.Name="HEX"/></StackPanel>
@@ -89,15 +88,21 @@
             </StackPanel>
             </ScrollViewer>
             <Grid x:Name="ImagePanel" Visibility="Collapsed"><Grid.RowDefinitions><RowDefinition Height="*"/><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/></Grid.RowDefinitions>
-                <Border CornerRadius="12" BorderThickness="1" BorderBrush="{DynamicResource BorderBrush}" Background="{DynamicResource SurfaceBrush}" Padding="14"><Image x:Name="ImagePreview" Stretch="Uniform"/></Border>
+                <Border CornerRadius="3" BorderThickness="1" BorderBrush="{DynamicResource BorderBrush}" Background="{DynamicResource SurfaceBrush}" Padding="12"><Image x:Name="ImagePreview" Stretch="Uniform"/></Border>
                 <TextBlock x:Name="ImageName" Grid.Row="1" Margin="0,10" TextWrapping="Wrap"/>
-                <Button x:Name="BrowseImage" Grid.Row="2" Content="{DynamicResource Ui.Question.ChooseImage}" HorizontalAlignment="Left" Padding="16,10" appearance:ControlChrome.CornerRadius="8"/>
+                <Button x:Name="BrowseImage" Grid.Row="2" Content="{DynamicResource Ui.Question.ChooseImage}" HorizontalAlignment="Left" Style="{StaticResource NativeToolButton}"/>
             </Grid>
         </Grid>
-        <TextBlock x:Name="ValidationMessage" Grid.Row="3" Margin="0,12,0,8" MinHeight="20" Foreground="{DynamicResource DangerBrush}" TextWrapping="Wrap" AutomationProperties.LiveSetting="Polite"/>
-        <Grid Grid.Row="4" Margin="0,6,0,0"><Grid.ColumnDefinitions><ColumnDefinition Width="*"/><ColumnDefinition Width="Auto"/><ColumnDefinition Width="Auto"/></Grid.ColumnDefinitions>
-            <Button x:Name="CancelQuestion" Grid.Column="1" Content="{DynamicResource Ui.Question.Cancel}" IsCancel="True" MinWidth="100" Margin="0,0,10,0" Padding="18,10" appearance:ControlChrome.CornerRadius="8"/>
-            <Button x:Name="ContinueQuestion" Grid.Column="2" Content="{DynamicResource Ui.Question.Continue}" IsDefault="True" MinWidth="110" Padding="18,10" appearance:ControlChrome.CornerRadius="8" Background="{DynamicResource AccentBrush}" Foreground="{DynamicResource AccentTextBrush}"/>
         </Grid>
+        </ContentControl>
+        <Border Grid.Row="2" Style="{StaticResource DialogFooter}">
+        <DockPanel>
+            <StackPanel DockPanel.Dock="Right" Orientation="Horizontal" Margin="12,0,0,0">
+                <Button x:Name="CancelQuestion" Content="{DynamicResource Ui.Question.Cancel}" IsCancel="True" MinWidth="100" Margin="0,0,8,0" Style="{StaticResource NativeToolButton}"/>
+                <Button x:Name="ContinueQuestion" Content="{DynamicResource Ui.Question.Continue}" IsDefault="True" MinWidth="110" Style="{StaticResource NativeToolButton}"/>
+            </StackPanel>
+            <TextBlock x:Name="ValidationMessage" Foreground="{DynamicResource DangerBrush}" TextWrapping="Wrap" AutomationProperties.LiveSetting="Polite"/>
+        </DockPanel>
+        </Border>
     </Grid>
 </Window>

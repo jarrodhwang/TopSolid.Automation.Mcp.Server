@@ -27,7 +27,7 @@ internal sealed class GraphicPreviewPane : Border, IDisposable
     private readonly TextBlock caption = new() { TextTrimming = TextTrimming.CharacterEllipsis, FontSize = 13, Margin = new Thickness(0, 5, 0, 0) };
     private readonly TextBlock hint = new() { FontSize = 11, TextWrapping = TextWrapping.Wrap };
     private readonly ProgressBar progress = new() { Height = 3, Minimum = 0, Maximum = 100, Visibility = Visibility.Collapsed };
-    private readonly ComboBox mode = new() { MinWidth = 130, FontSize = 12, Margin = new Thickness(10, 0, 0, 0) };
+    private readonly ComboBox mode = new() { MinWidth = 130, FontSize = 12, Margin = new Thickness(10, 0, 0, 0), VerticalAlignment = VerticalAlignment.Center };
     private readonly ViewportCompass compass = new() { IsHitTestVisible = false };
     private readonly Button refresh;
     private readonly Border input = new() { Background = Brushes.Transparent, Focusable = true, Cursor = Cursors.Arrow };
@@ -51,16 +51,17 @@ internal sealed class GraphicPreviewPane : Border, IDisposable
     {
         this.client = client; this.target = (JObject?)target?.DeepClone();
         this.proposal = proposal != null && ProposalGeometry.Supports(proposal) ? (JObject)proposal.DeepClone() : null;
-        CornerRadius = new CornerRadius(12); BorderThickness = new Thickness(1); Padding = new Thickness(1); MinHeight = 270;
+        CornerRadius = new CornerRadius(3); BorderThickness = new Thickness(1); MinHeight = 270;
         SetResourceReference(BackgroundProperty, "SurfaceBrush"); SetResourceReference(BorderBrushProperty, "BorderBrush");
         var root = new Grid(); root.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto });
         root.RowDefinitions.Add(new RowDefinition()); root.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto });
-        var header = new DockPanel { Margin = new Thickness(14, 12, 14, 10) };
+        var header = new DockPanel();
         var actions = new StackPanel { Orientation = Orientation.Horizontal }; DockPanel.SetDock(actions, Dock.Right);
         actions.Children.Add(mode); refresh = Command("refresh", "Preview.Refresh", async () => await ReloadAsync()); actions.Children.Add(refresh); header.Children.Add(actions);
-        var titles = new StackPanel(); var title = new TextBlock { Text = StudioStrings.Get("Preview.Title"), FontSize = 16, FontWeight = FontWeights.SemiBold };
+        var titles = new StackPanel(); var title = new TextBlock { Text = StudioStrings.Get("Preview.Title"), FontSize = 14, FontWeight = FontWeights.SemiBold };
         title.SetResourceReference(TextBlock.ForegroundProperty, "TextBrush"); caption.SetResourceReference(TextBlock.ForegroundProperty, "MutedTextBrush");
-        titles.Children.Add(title); titles.Children.Add(caption); header.Children.Add(titles); root.Children.Add(header);
+        titles.Children.Add(title); titles.Children.Add(caption); header.Children.Add(titles);
+        var toolbar = DialogLayout.Toolbar(header); toolbar.Padding = new Thickness(10, 7, 10, 7); root.Children.Add(toolbar);
         Grid.SetRow(canvas, 1); canvas.ClipToBounds = true; canvas.MinHeight = 150;
         canvas.SetResourceReference(Panel.BackgroundProperty, "ViewportGradientBrush");
         if (TryFindResource("ViewportGradientBrush") == null) canvas.Background = new LinearGradientBrush(Color.FromRgb(74, 101, 151), Color.FromRgb(231, 228, 228), 90);
@@ -107,11 +108,12 @@ internal sealed class GraphicPreviewPane : Border, IDisposable
         canvas.Children.Add(tools);
         status.Foreground = Brushes.White; status.VerticalAlignment = VerticalAlignment.Center; status.IsHitTestVisible = false; canvas.Children.Add(status);
         progress.VerticalAlignment = VerticalAlignment.Bottom; canvas.Children.Add(progress); root.Children.Add(canvas);
-        var footer = new DockPanel { Margin = new Thickness(12, 9, 12, 10) }; Grid.SetRow(footer, 2);
-        var views = new ComboBox { MinWidth = 85, Margin = new Thickness(0, 0, 12, 0), FontSize = 11 };
+        var footer = new DockPanel();
+        var views = new ComboBox { MinWidth = 85, Margin = new Thickness(0, 0, 12, 0), FontSize = 11, VerticalAlignment = VerticalAlignment.Center };
         foreach (var view in new[] { "iso", "top", "front", "right" }) views.Items.Add(new ComboBoxItem { Content = StudioStrings.Get("Preview.View." + view), Tag = view });
         views.SelectedIndex = 0; views.SelectionChanged += (_, _) => SetView((string)((ComboBoxItem)views.SelectedItem).Tag);
-        footer.Children.Add(views); hint.SetResourceReference(TextBlock.ForegroundProperty, "MutedTextBrush"); footer.Children.Add(hint); root.Children.Add(footer); Child = root;
+        footer.Children.Add(views); hint.SetResourceReference(TextBlock.ForegroundProperty, "MutedTextBrush"); footer.Children.Add(hint);
+        var footerBar = DialogLayout.Footer(footer); footerBar.Padding = new Thickness(10, 7, 10, 7); Grid.SetRow(footerBar, 2); root.Children.Add(footerBar); Child = root;
         if (this.proposal != null) mode.Items.Add(StudioStrings.Get("Preview.Proposed"));
         mode.Items.Add(StudioStrings.Get("Preview.Current")); mode.SelectedIndex = 0;
         mode.Visibility = this.proposal == null ? Visibility.Collapsed : Visibility.Visible;
@@ -150,7 +152,7 @@ internal sealed class GraphicPreviewPane : Border, IDisposable
     {
         var button = new Button { Width = 32, Height = 32, Margin = new Thickness(2), Padding = new Thickness(3), ToolTip = StudioStrings.Get(key),
             Content = new Image { Source = TopSolidIcons.Get(icon), Width = 24, Height = 24 }, Background = Brushes.Transparent, BorderThickness = new Thickness(0) };
-        ControlChrome.SetCornerRadius(button, new CornerRadius(6)); AutomationProperties.SetName(button, StudioStrings.Get(key));
+        ControlChrome.SetCornerRadius(button, new CornerRadius(3)); AutomationProperties.SetName(button, StudioStrings.Get(key));
         button.Click += (_, _) => action(); return button;
     }
 

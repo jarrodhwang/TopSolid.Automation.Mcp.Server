@@ -42,15 +42,14 @@ public sealed class ChangeConfirmationWindow : Window
         SetResourceReference(ForegroundProperty, "TextBrush");
         TopSolidTheme.ApplyWindow(this);
 
-        var layout = new DockPanel { Margin = new Thickness(20) };
-        var footer = new DockPanel { Margin = new Thickness(0, 16, 0, 0) };
+        var layout = new DockPanel();
+        var footer = new DockPanel();
         var actions = new StackPanel { Orientation = Orientation.Horizontal, HorizontalAlignment = HorizontalAlignment.Right };
         var cancel = new Button { Content = StudioStrings.Get("Common.Cancel"), IsCancel = true, IsDefault = true, MinWidth = 100, Padding = new Thickness(14, 7, 14, 7), Margin = new Thickness(0, 0, 8, 0) };
         var approve = new Button { Content = StudioStrings.Get("Common.Approve"), MinWidth = 110, Padding = new Thickness(14, 7, 14, 7) };
         RejectButton = cancel;
         ApproveButton = approve;
-        approve.SetResourceReference(BackgroundProperty, "AccentBrush");
-        approve.SetResourceReference(ForegroundProperty, "AccentTextBrush");
+        DialogLayout.Command(cancel, "cancel"); DialogLayout.Command(approve, "approve");
         cancel.Click += (_, _) => DialogResult = false;
         approve.Click += (_, _) => DialogResult = true;
         actions.Children.Add(cancel); actions.Children.Add(approve);
@@ -62,18 +61,20 @@ public sealed class ChangeConfirmationWindow : Window
             scope.SetResourceReference(TextBlock.ForegroundProperty, "MutedTextBrush");
             footer.Children.Add(scope);
         }
-        DockPanel.SetDock(footer, Dock.Bottom); layout.Children.Add(footer);
+        var footerBar = DialogLayout.Footer(footer);
+        DockPanel.SetDock(footerBar, Dock.Bottom); layout.Children.Add(footerBar);
 
-        var header = new DockPanel { Margin = new Thickness(0, 0, 0, 16) };
+        var header = new DockPanel();
         var headerIcon = tool.Contains("cam", StringComparison.OrdinalIgnoreCase) ? TopSolidIcons.Get(TopSolidIcons.OperationKey(proposal["target"])) : TopSolidIcons.ForTool(tool);
-        header.Children.Add(new Image { Source = headerIcon, Width = 36, Height = 36,
-            Margin = new Thickness(0, 2, 14, 0), VerticalAlignment = VerticalAlignment.Top });
+        header.Children.Add(new Image { Source = headerIcon, Width = 28, Height = 28,
+            Margin = new Thickness(0, 0, 10, 0), VerticalAlignment = VerticalAlignment.Center });
         var title = new StackPanel();
-        title.Children.Add(Text(StudioStrings.CurrentLanguage == "en" ? FriendlyName(tool) : StudioStrings.Get("Approval.Title"), 20, FontWeights.SemiBold));
+        title.Children.Add(Text(StudioStrings.CurrentLanguage == "en" ? FriendlyName(tool) : StudioStrings.Get("Approval.Title"), 16, FontWeights.SemiBold));
         var target = preview["target"] as JObject;
         title.Children.Add(Text(TargetName(target), 14, FontWeights.Normal, new Thickness(0, 4, 0, 0)));
         header.Children.Add(title);
-        DockPanel.SetDock(header, Dock.Top); layout.Children.Add(header);
+        var headerBar = DialogLayout.Toolbar(header);
+        DockPanel.SetDock(headerBar, Dock.Top); layout.Children.Add(headerBar);
 
         var tabs = new TabControl();
         var summary = new StackPanel { Margin = new Thickness(0, 0, 12, 0) };
@@ -81,7 +82,7 @@ public sealed class ChangeConfirmationWindow : Window
         {
             summary.Children.Add(Section(StudioStrings.Get("Approval.Changes"), TopSolidIcons.CamCategoryKey(proposal["target"]?["parameter"]), Properties(camSummary, localizeLabels: true, friendly: true)));
             if ((bool?)target["replacesDefinition"] == true)
-                summary.Children.Add(Section(StudioStrings.Get("Approval.DefinitionChange"), "status", Text(StudioStrings.Get("Approval.ReplacesDefinition"), 13, FontWeights.SemiBold)));
+                summary.Children.Add(Section(StudioStrings.Get("Approval.DefinitionChange"), "warning", Text(StudioStrings.Get("Approval.ReplacesDefinition"), 13, FontWeights.SemiBold)));
             if (!string.IsNullOrWhiteSpace((string?)preview["effect"]))
                 summary.Children.Add(Text((string)preview["effect"]!, 12, FontWeights.Normal, new Thickness(4, 0, 4, 8)));
             if (target["affectedDocuments"] is JArray affected && affected.Count > 1)
@@ -126,9 +127,9 @@ public sealed class ChangeConfirmationWindow : Window
         if (ProposalGeometry.Supports(proposal) || previewClient != null && graphicTarget != null)
         {
             var graphic = new GraphicPreviewPane(previewClient, graphicTarget, proposal);
-            layout.Children.Add(PreviewLayout.Wrap(this, reviewContent, graphic));
+            layout.Children.Add(DialogLayout.Body(PreviewLayout.Wrap(this, reviewContent, graphic)));
         }
-        else layout.Children.Add(reviewContent);
+        else layout.Children.Add(DialogLayout.Body(reviewContent));
         Content = layout;
         Loaded += (_, _) => cancel.Focus();
     }
