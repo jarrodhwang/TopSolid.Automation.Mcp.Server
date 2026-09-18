@@ -346,6 +346,24 @@ internal static partial class UiShellTests
     private static void Render(Window window, string path)
     {
         if (!captureImages) return;
+        // The fixture opts out of the taskbar. Capture the main window's usual
+        // three caption commands without making an offscreen test window appear there.
+        var minimize = window is MainWindow ? Descendants<WindowTitleBar>(window).SelectMany(Descendants<Button>)
+            .Single(button => (string?)button.Tag == "Window.Minimize") : null;
+        var previous = minimize?.Visibility;
+        try
+        {
+            if (minimize != null) { minimize.Visibility = Visibility.Visible; window.UpdateLayout(); }
+            RenderWindow(window, path);
+        }
+        finally
+        {
+            if (minimize != null && previous.HasValue) { minimize.Visibility = previous.Value; window.UpdateLayout(); }
+        }
+    }
+
+    private static void RenderWindow(Window window, string path)
+    {
         var width = window.ActualWidth;
         var height = window.ActualHeight;
         var bitmap = new RenderTargetBitmap((int)Math.Ceiling(width), (int)Math.Ceiling(height), 96, 96, PixelFormats.Pbgra32);

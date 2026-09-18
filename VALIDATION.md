@@ -1,5 +1,12 @@
 # Validation — 2026-09-18, current workspace
 
+## Studio/MCP 0.5.16 — main-window caption controls
+
+- Debug and Release builds passed with zero warnings/errors; the configured Debug output was rebuilt. The existing WPF UI fixture passed, including light/dark/Korean, minimum layouts and modal cancellation.
+- Main-window renders were compared with the supplied TopSolid reference. The control strip uses its dominant `#E4E4EB` background and `#787878` glyph color, 36-pixel button spacing and a rounded dark title band. Caption hit testing, accessible names, maximize/restore selection and system-command handlers are retained. Other windows do not opt into this main-window-only style.
+- Captures include the main window's three caption commands even though the fixture itself stays out of the taskbar. Images are offscreen software renders, not a manual mixed-DPI window-manager test. No CAD changes or provider calls were needed.
+- Evidence: `artifacts/caption-0.5.16/ui-shell.txt`, `artifacts/ui-redesign/chat-light-1040x800.png`, `artifacts/ui-redesign/chat-dark-760x600.png`. Bundle: `artifacts/TopSolid-AI-0.5.16`.
+
 ## Studio/MCP 0.5.15 — shared TopSolid dialog design
 
 - Release and Debug solution builds passed with zero warnings/errors. **39/39 application groups**, **15,256 offline server checks**, and **2,094 protocol checks** passed. The configured Debug MCP executable was rebuilt and tested; the application harness also verified a live read-only document identity/name. No CAD writes.
