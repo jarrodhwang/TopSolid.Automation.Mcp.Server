@@ -39,16 +39,46 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Automation
             if (arguments["sketch"] != null)
             {
                 var sketch = Element(arguments, "sketch");
-                if (!TopSolidHost.Sketches2D.IsSketch(sketch) || TopSolidHost.Sketches2D.GetProfileCount(sketch) == 0)
-                    throw new ArgumentException("Choose a 2D sketch with at least one profile.");
+                ValidateShapeSketch(TopSolidHost.Sketches2D, sketch, (bool?)arguments["surface"] ?? false);
                 TopSolidHost.Sketches2D.GetPlane(sketch);
                 return new SmartSection3D(sketch);
             }
             var section = Item(new JObject { ["item"] = arguments["section"].DeepClone() });
             if (!TopSolidHost.Sketches2D.IsSketch(section.ElementId) || !TopSolidHost.Sketches2D.GetSections(section.ElementId).Contains(section))
                 throw new ArgumentException("Use a section handle returned by a native 2D sketch tool.");
+            var sectionProfiles = TopSolidHost.Sketches2D.GetSectionProfiles(section);
+            if (sectionProfiles.Count == 0 || !((bool?)arguments["surface"] ?? false) && sectionProfiles.Any(profile => !TopSolidHost.Sketches2D.IsProfileClosed(profile)))
+                throw new ArgumentException("An existing section must contain native profiles; solid features require all of them to be closed.");
             TopSolidHost.Sketches2D.GetPlane(section.ElementId); // Reject sketches in 2D documents before shape creation.
             return new SmartSection3D(section.ElementId, section.ItemLabel);
+        }
+        internal static void ValidateShapeSketch(ISketches2D sketches, ElementId sketch, bool surface)
+        {
+            if (!sketches.IsSketch(sketch)) throw new ArgumentException("A shape input must be a 2D sketch embedded in a 3D document.");
+            var profiles = sketches.GetProfiles(sketch);
+            if (profiles.Count == 0) throw new ArgumentException("This sketch has no native profile. Separate line entries do not share vertices, even when endpoints have equal coordinates. Create one rectangle, closed polyline or connected contour for a closed boundary; do not guess a section/profile label. Keep existing geometry until a replacement succeeds.");
+            if (!surface && profiles.Any(p => !sketches.IsProfileClosed(p))) throw new ArgumentException("A solid feature requires closed native profiles. Open drawing segments remain valid drawings; do not close them without the user's intended boundary.");
+        }
+        public JObject PreviewShape(string operation, JObject p, bool batch = false)
+        {
+            var preview = PreviewDocument(p); var inputs = batch ? ((JArray)p["features"]).Cast<JObject>() : new[] { p };
+            preview["features"] = new JArray(inputs.Select(input => {
+                if (operation == "loft") { ValidateLoft(input); return new JObject { ["profiles"] = input["profiles"].DeepClone() }; }
+                Section(input); // Validate topology and 3D placement BEFORE approval.
+                var dimension = operation == "extrude" ? FeatureDimension.Length(input, "length", ModelingGeometry.Scale(p)) : FeatureDimension.Angle(input);
+                return new JObject { ["sketch"] = input["sketch"]?.DeepClone(), ["section"] = input["section"]?.DeepClone(), ["dimension"] = dimension.Receipt };
+            })); return preview;
+        }
+        private global::System.Collections.Generic.List<ElementItemId> ValidateLoft(JObject p)
+        {
+            var profiles = ((JArray)p["profiles"]).Select(v => Item(new JObject { ["item"] = v.DeepClone() })).ToList();
+            if (profiles.Distinct().Count() != profiles.Count) throw new ArgumentException("Loft profiles must be distinct.");
+            foreach (var profile in profiles) {
+                if (!TopSolidHost.Sketches2D.IsSketch(profile.ElementId) || !TopSolidHost.Sketches2D.GetProfiles(profile.ElementId).Contains(profile))
+                    throw new ArgumentException("Loft currently accepts profiles from 2D sketches embedded in 3D documents.");
+                TopSolidHost.Sketches2D.GetPlane(profile.ElementId);
+                if (!((bool?)p["surface"] ?? false) && !TopSolidHost.Sketches2D.IsProfileClosed(profile)) throw new ArgumentException("A solid loft requires closed profiles.");
+            } return profiles;
         }
         public JObject CreateShape(string operation, JObject arguments)
         {
@@ -56,18 +86,10 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Automation
             {
                 var scale = ModelingGeometry.Scale(current);
                 var surface = (bool?)current["surface"] ?? false;
-                ElementId shape;
+                ElementId shape; FeatureDimension dimension = null;
                 if (operation == "loft")
                 {
-                    var profiles = ((JArray)current["profiles"]).Select(v => Item(new JObject { ["item"] = v.DeepClone() })).ToList();
-                    if (profiles.Distinct().Count() != profiles.Count) throw new ArgumentException("Loft profiles must be distinct.");
-                    foreach (var profile in profiles)
-                    {
-                        if (!TopSolidHost.Sketches2D.IsSketch(profile.ElementId) || !TopSolidHost.Sketches2D.GetProfiles(profile.ElementId).Contains(profile))
-                            throw new ArgumentException("Loft currently accepts profiles from 2D sketches embedded in 3D documents.");
-                        TopSolidHost.Sketches2D.GetPlane(profile.ElementId);
-                        if (!surface && !TopSolidHost.Sketches2D.IsProfileClosed(profile)) throw new ArgumentException("A solid loft requires closed profiles.");
-                    }
+                    var profiles = ValidateLoft(current);
                     shape = TopSolidHost.Shapes.CreateLoftedShape(doc, false, null,
                         profiles.Select(v => new SmartProfile3D(v.ElementId, v.ItemLabel, false)).ToList(), null, null,
                         CurveParametricApproximationType.ArcLength, null, CurveParametricApproximationType.ArcLength,
@@ -80,20 +102,24 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Automation
                     if (operation == "extrude")
                     {
                         var direction = SpatialInput.Direction(current["direction"]);
+                        dimension = FeatureDimension.Length(current, "length", scale);
                         shape = TopSolidHost.Shapes.CreateExtrudedShape(doc, smartSection, new SmartDirection3D(direction, new Point3D(0, 0, 0)),
-                            new SmartReal(UnitType.Length, (double)current["length"] * scale), null, centered, surface);
+                            dimension.Smart, null, centered, surface);
                     }
                     else
                     {
                         var axis = new Axis3D(SpatialInput.Point(current["axisOrigin"], scale), SpatialInput.Direction(current["axisDirection"]));
-                        var degrees = (double)current["angleDegrees"];
+                        dimension = FeatureDimension.Angle(current);
                         shape = TopSolidHost.Shapes.CreateRevolvedShape(doc, smartSection, new SmartAxis3D(axis, -1, 1),
-                            degrees == 360 ? null : new SmartReal(UnitType.Angle, degrees * Math.PI / 180), centered, surface);
+                            dimension.RevolutionAngle, centered, surface);
                     }
                 }
                 RequireValid(shape, "shape");
-                if (current["name"] != null) TopSolidHost.Elements.SetName(shape, (string)current["name"]);
+                CreationNames.SetAndVerify(TopSolidHost.Elements, shape, (string)current["name"]);
                 var result = new JObject { ["shape"] = AutomationValues.Json(shape), ["surface"] = surface, ["geometryReadBack"] = true };
+                result["name"] = TopSolidHost.Elements.GetName(shape); result["friendlyName"] = TopSolidHost.Elements.GetFriendlyName(shape);
+                if (dimension != null) result["dimension"] = dimension.Receipt;
+                if (current["color"] != null) result["color"] = ElementAppearance.Set(TopSolidHost.Elements, shape, current["color"]);
                 if (!surface)
                 {
                     var volume = TopSolidHost.Shapes.GetShapeVolume(shape);
@@ -104,6 +130,14 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Automation
             });
         }
 
+        public JObject PreviewThroughDrilling(JObject p)
+        {
+            var preview = PreviewDocument(p, "cad"); var doc = Document(p);
+            if (!TopSolidDesignHost.Parts.IsPart(doc)) throw new ArgumentException("Drilling requires a Design part document.");
+            if (!TopSolidHost.Shapes.GetShapes(doc).Contains(Element(p, "shape"))) throw new ArgumentException("The drilling target must be an existing shape in this part.");
+            preview["diameter"] = FeatureDimension.Length(p, "diameter", ModelingGeometry.Scale(p)).Receipt;
+            return preview;
+        }
         public JObject CreateThroughDrilling(JObject arguments)
         {
             return Modify(arguments, "through drilling", "cad", (doc, current) =>
@@ -114,13 +148,14 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Automation
                 var scale = ModelingGeometry.Scale(current);
                 var frame = SpatialInput.Frame((JObject)current["frame"], scale);
                 var before = TopSolidHost.Operations.GetOperations(doc);
+                var diameter = FeatureDimension.Length(current, "diameter", scale);
                 TopSolidDesignHost.Parts.CreateDrillingOperation(doc, new SmartShape(shape),
                     new SmartFrame3D(frame, -1, 1, -1, 1, -1, 1),
-                    new List<DrillingPrimitive> { new DrillingHolePrimitive(new SmartReal(UnitType.Length, (double)current["diameter"] * scale)) }, false);
+                    new List<DrillingPrimitive> { new DrillingHolePrimitive(diameter.Smart) }, false);
                 var created = TopSolidHost.Operations.GetOperations(doc).Except(before).ToList();
                 if (created.Count == 0) throw new InvalidOperationException("TopSolid created no drilling operation.");
                 foreach (var operation in created) RequireValid(operation, "drilling operation");
-                return new JObject { ["operations"] = AutomationValues.Json(created), ["shapes"] = AutomationValues.Json(TopSolidHost.Shapes.GetShapes(doc)), ["through"] = true };
+                return new JObject { ["operations"] = AutomationValues.Json(created), ["shapes"] = AutomationValues.Json(TopSolidHost.Shapes.GetShapes(doc)), ["diameter"] = diameter.Receipt, ["through"] = true };
             });
         }
     }

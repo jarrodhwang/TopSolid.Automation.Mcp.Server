@@ -51,6 +51,10 @@ public sealed class SettingsStore
                 OllamaModel = ReadString(data, "ollamaModel") ?? ""
             };
             settings.McpServerPath = ReadString(data, "mcpServerPath") ?? settings.McpServerPath;
+            settings.DevMode = data.Value<bool?>("devMode") ?? false;
+            settings.AppearanceMode = ReadChoice(data, "appearanceMode", "topsolid", "topsolid", "system", "light", "dark");
+            settings.InterfaceLanguage = ReadChoice(data, "interfaceLanguage", "system", "system", "en", "ko", "ja", "zh", "fr", "de");
+            settings.ResponseLanguage = ReadChoice(data, "responseLanguage", "auto", "auto", "en", "ko", "ja", "zh", "fr", "de", "es");
             if (data["ollamaFastGptOss"]?.Type == JTokenType.Boolean) settings.OllamaFastGptOss = (bool)data["ollamaFastGptOss"]!;
             if (data["requestTimeoutMinutes"] != null)
             {
@@ -162,6 +166,10 @@ public sealed class SettingsStore
             ["ollamaModel"] = settings.OllamaModel.Trim(),
             ["requestTimeoutMinutes"] = settings.RequestTimeoutMinutes,
             ["ollamaFastGptOss"] = settings.OllamaFastGptOss,
+            ["devMode"] = settings.DevMode,
+            ["appearanceMode"] = settings.AppearanceMode,
+            ["interfaceLanguage"] = settings.InterfaceLanguage,
+            ["responseLanguage"] = settings.ResponseLanguage,
             ["mcpServerPath"] = settings.McpServerPath.Trim(),
             ["apiKeyScope"] = keyScope,
             ["protectedApiKey"] = protectedKey
@@ -241,4 +249,10 @@ public sealed class SettingsStore
         JTokenType.String => data.Value<string>(name),
         _ => throw new InvalidDataException("Settings contain an invalid value type.")
     };
+
+    private static string ReadChoice(JObject data, string name, string fallback, params string[] allowed)
+    {
+        var value = ReadString(data, name)?.ToLowerInvariant();
+        return value != null && allowed.Contains(value, StringComparer.Ordinal) ? value : fallback;
+    }
 }

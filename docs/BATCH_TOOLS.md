@@ -64,7 +64,6 @@ After obtaining the current document revision, a model may propose:
   "documentId": "<exact revision returned by a tool>",
   "placement": "xy",
   "units": "mm",
-  "sectionMode": "perProfile",
   "profiles": [
     {"kind":"rectangle","origin":{"x":0,"y":0},"width":40,"height":20},
     {"kind":"circle","origin":{"x":60,"y":10},"radius":5}
@@ -72,11 +71,11 @@ After obtaining the current document revision, a model may propose:
 }
 ```
 
-The user reviews one preview. The returned section handles can then go into one `extrude_sections` batch with a length/direction for each feature. For a plate with holes, use non-intersecting outer/inner profiles and `sectionMode=combined`. Open polylines require `sectionMode=none`. Coordinates are local to the sketch; new sketches start at world origin on the chosen principal plane. No constraints or Boolean union are inferred.
+The user reviews one preview. Since 0.5.6 sketch drawing creates no sections. Use the returned sketch handle directly with `extrude_sketch` or the batch extrusion tool; these take the existing profiles without requiring a new section. For independent features at different lengths, create separate sketches with `create_sketches2d`. Coordinates are local to each sketch. No closure of an open path, constraints or Boolean union is inferred.
 
 ## Model-side efficiency
 
-Studio discovers the full catalog but supplies at most **96 schemas** per model request. Common status, PDM, summary/batch and action tools have priority. If a tool is omitted, the model uses `topsolid_get_capabilities` followed by the local `studio_select_tools` selector to expose its schema on the next request. Selection only accepts already discovered names and does not dispatch MCP calls, mutate TopSolid or provide approval. Other MCP clients continue to see the full 153-tool catalog.
+Studio discovers the full 172-tool catalog. Cloud models initially receive up to 24 schemas and can select up to 96. Local models initially receive at most 10 schemas and can select up to 16; category/name discovery runs locally, without a TopSolid query. Selection never executes tools or supplies approval. See [0.5.6 contracts and evidence](SKETCH-RELIABILITY-0.5.6.md). Historical validation below describes the earlier batch expansion.
 
 This reduces the initial schema payload and avoids an unbounded tool array as the server expands. A less common operation can cost an extra selection round. The existing 16-round/24-call limits remain unchanged.
 

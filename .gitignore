@@ -4,3 +4,5 @@
 *.user
 artifacts/
 TestResults/
+__pycache__/
+*.py[cod]

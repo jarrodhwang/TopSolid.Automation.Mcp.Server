@@ -20,12 +20,12 @@ internal static class TimeoutTests
         using (var http = new AiHttpClient(new Uri("https://example.test/"), null, new ScriptedHandler().PendingUntilCancelled(), requestTimeout: TimeSpan.FromMinutes(30)))
             await Check.ThrowsAsync<OperationCanceledException>(() => http.SendAsync(HttpMethod.Get, "models", null, cancel.Token));
 
-        foreach (var (model, fast, expected) in new[] { ("gpt-oss:20b", true, "low"), ("gpt-oss:20b", false, (string?)null), ("gemma4:31b", true, (string?)null) })
+        foreach (var (model, fast, expected) in new[] { ("gpt-oss:20b", true, "low"), ("gpt-oss:20b", false, (string?)null), ("gemma4:31b", true, "False"), ("gemma4:31b", false, (string?)null) })
         {
             var handler = new ScriptedHandler().Json("{done:true,message:{role:'assistant',content:'Ready'}}");
             using var provider = ProviderFactory.Create(new AppSettings { Provider = AppSettings.OllamaProvider, OllamaModel = model, RequestTimeoutMinutes = 30, OllamaFastGptOss = fast }, handler);
             await provider.CompleteAsync([new AiMessage { Role = "user", Content = "Ready?" }], [], CancellationToken.None);
-            Check.Equal(expected, (string?)handler.Requests[0].Body!["think"], "Thinking option must be family-specific and reversible");
+            Check.Equal(expected, handler.Requests[0].Body!["think"]?.ToString(), "Thinking option must be family-specific and reversible");
         }
         Check.Throws<ArgumentException>(() => ProviderFactory.Create(new AppSettings { RequestTimeoutMinutes = 0 }));
         Check.Throws<ArgumentException>(() => ProviderFactory.Create(new AppSettings { RequestTimeoutMinutes = 61 }));

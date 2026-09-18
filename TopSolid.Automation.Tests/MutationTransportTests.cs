@@ -69,6 +69,9 @@ internal static class MutationTransportTests
             {
                 case "initialize": result = new JObject { ["protocolVersion"] = StdioMcpClient.ProtocolVersion, ["capabilities"] = new JObject { ["tools"] = new JObject() } }; break;
                 case "tools/list": result = new JObject { ["tools"] = new JArray(new JObject { ["name"] = "fixture_change", ["inputSchema"] = new JObject { ["type"] = "object" }, ["annotations"] = new JObject { ["readOnlyHint"] = false } }) }; break;
+                case "topsolid/graphicPreview":
+                    await Console.Error.WriteLineAsync("fixture preview started"); await Task.Delay(250);
+                    result = new JObject { ["status"] = "unsupported", ["documentId"] = request["params"]!["documentId"]!.DeepClone() }; break;
                 case "tools/call":
                     await Console.Error.WriteLineAsync("fixture modification started");
                     if (Environment.GetEnvironmentVariable("TOPSOLID_MCP_TEST_BROKEN") == "1") await Console.Out.WriteLineAsync("{malformed-fixture-response");

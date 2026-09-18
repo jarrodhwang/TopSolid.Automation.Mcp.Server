@@ -14,6 +14,7 @@ Registered tools:
 - `topsolid_resolve_pdm_documents` — inspection/reference.
 - `topsolid_find_pdm_documents` — inspection/reference.
 - `topsolid_list_pdm_document_revisions` — inspection/reference.
+- `topsolid_get_modeling_context` — inspection/reference.
 - `topsolid_update_pdm_objects` — requires explicit confirmation.
 - `topsolid_delete_pdm_documents` — requires explicit confirmation.
 - `topsolid_restore_pdm_documents` — requires explicit confirmation.

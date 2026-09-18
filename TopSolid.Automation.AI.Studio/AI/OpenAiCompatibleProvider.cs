@@ -56,7 +56,8 @@ public sealed class OpenAiCompatibleProvider : IAiProvider
             body["tools"] = ProviderJson.Tools(tools);
             body["tool_choice"] = "auto";
         }
-        var response = await _http.SendAsync(HttpMethod.Post, "chat/completions", body, cancellationToken).ConfigureAwait(false);
+        var response = await _http.SendAsync(HttpMethod.Post, "chat/completions", body, cancellationToken,
+            hasImageAttachments: messages.Any(message => message.Images.Count > 0)).ConfigureAwait(false);
         if (response["choices"] is not JArray { Count: > 0 } choices ||
             choices[0] is not JObject choice || choice["message"] is not JObject message)
             throw new AiProviderException("The AI endpoint returned no chat message.");
@@ -76,10 +77,19 @@ public sealed class OpenAiCompatibleProvider : IAiProvider
             ExtraContent = message["extra_content"] is JObject extra ? (JObject)extra.DeepClone() : null };
     }
 
-    private static JObject ToMessage(AiMessage message)
+    private JObject ToMessage(AiMessage message)
     {
         ProviderJson.ValidateRole(message.Role);
         var result = new JObject { ["role"] = message.Role, ["content"] = message.Content };
+        if (message.Images.Count > 0)
+        {
+            if (message.Role != "user") throw new ArgumentException("Only user messages may contain image attachments.");
+            var content = new JArray(new JObject { ["type"] = "text", ["text"] = message.Content });
+            foreach (var image in message.Images)
+                content.Add(new JObject { ["type"] = "image_url", ["image_url"] = new JObject
+                    { ["url"] = "data:" + image.MediaType + ";base64," + image.Base64 } });
+            result["content"] = content;
+        }
         if (message.Role == "assistant")
         {
             if (message.Thinking != null) result["reasoning_content"] = message.Thinking;
@@ -100,7 +110,7 @@ public sealed class OpenAiCompatibleProvider : IAiProvider
         return result;
     }
 
-    private static JObject ToToolCall(AiToolCall call)
+    private JObject ToToolCall(AiToolCall call)
     {
         var result = new JObject
             {
@@ -113,6 +123,10 @@ public sealed class OpenAiCompatibleProvider : IAiProvider
                 }
             };
         if (call.ExtraContent != null) result["extra_content"] = call.ExtraContent.DeepClone();
+        else if (_gemini && call.ClientInitiated)
+            // Google's documented marker for deterministic client-created calls:
+            // https://ai.google.dev/gemini-api/docs/generate-content/thought-signatures
+            result["extra_content"] = new JObject { ["google"] = new JObject { ["thought_signature"] = "skip_thought_signature_validator" } };
         return result;
     }
 

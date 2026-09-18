@@ -14,9 +14,13 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
         private readonly Dictionary<string, ToolDefinition> tools = new Dictionary<string, ToolDefinition>(StringComparer.Ordinal);
         private readonly ConfirmationStore confirmations = new ConfirmationStore();
         private readonly Func<JObject, JObject> preview;
+        private readonly Func<string, JObject, CreationNames> resolveCreationNames;
+        private readonly Func<JObject, JObject> graphicPreview;
         public ToolRegistry(AutomationGateway automation)
         {
             preview = automation.PreviewModeling;
+            graphicPreview = automation.GraphicPreview;
+            resolveCreationNames = automation.ResolveCreationNames;
             Register(StatusTools.Create(automation));
             Register(DocumentTools.Active(automation));
             Register(DocumentTools.Info(automation));
@@ -25,9 +29,12 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
             ObjectModelTools.Register(Register);
             DocumentIdentityTools.Register(automation, Register);
             PdmIdentityTools.Register(automation, Register);
+            ModelingContextTools.Register(automation, Register);
             PdmLifecycleTools.Register(automation, Register);
             PdmPersistenceTools.Register(automation, Register);
             EntityIdentityTools.Register(automation, Register);
+            EntityStructureTools.Register(automation, Register);
+            ElementPropertyTools.Register(automation, Register);
             PdmBatchReadTools.Register(automation, Register);
             EntityBatchReadTools.Register(automation, Register);
             ShapeBatchReadTools.Register(automation, Register);
@@ -35,10 +42,14 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
             CamBatchReadTools.Register(automation, Register);
             SketchBatchReadTools.Register(automation, Register);
             EntityBatchActionTools.Register(automation, Register);
+            AppearanceTools.Register(automation, Register);
             ParameterBatchTools.Register(automation, Register);
+            ParameterReadTools.Register(automation, Register);
+            ParameterExpressionTools.Register(automation, Register);
             PointBatchTools.Register(automation, Register);
             SketchBatchActionTools.Register(automation, Register);
             SketchPlanTools.Register(automation, Register);
+            HeartSketchTools.Register(automation, Register);
             ShapeBatchActionTools.Register(automation, Register);
             PdmDetailsTools.Register(automation, Register);
             LicenseTools.Register(automation, Register);
@@ -53,17 +64,21 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
             PdmCreationContextTools.Register(automation, Register);
             EntityActionTools.Register(automation, Register);
             SketchWorkflowTools.Register(automation, Register);
+            ExplicitSectionTools.Register(automation, Register);
             ShapeWorkflowTools.Register(automation, Register);
+            CylinderTools.Register(automation, Register);
+            ModelingGuideTools.Register(Register);
             AssemblyActionTools.Register(automation, Register);
             CamActionTools.Register(automation, Register);
             CamToolPathTools.Register(automation, Register);
             Sketch2DModelingTools.Register(automation, Register);
             Sketch3DModelingTools.Register(automation, Register);
+            Sketch3DCurveTools.Register(automation, Register);
             Design3DModelingTools.Register(automation, Register);
             ReferenceTools.Register(() => tools.Values, Register);
         }
-        internal ToolRegistry(IEnumerable<ToolDefinition> definitions, Func<JObject, JObject> preview)
-        { this.preview = preview; foreach (var definition in definitions) Register(definition); }
+        internal ToolRegistry(IEnumerable<ToolDefinition> definitions, Func<JObject, JObject> preview, Func<string, JObject, CreationNames> resolveCreationNames = null)
+        { this.preview = preview; this.resolveCreationNames = resolveCreationNames; foreach (var definition in definitions) Register(definition); }
         private void Register(ToolDefinition tool) { tools.Add(tool.Name, tool); }
         public JArray List()
         {
@@ -75,9 +90,28 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
         {
             var tool = Validate(name, arguments);
             if (tool.ReadOnly) throw new RpcException(-32602, "This inspection tool does not require confirmation.");
-            try { return confirmations.Prepare(tool, arguments, (tool.Preview ?? preview)(arguments)); }
+            try { return confirmations.Prepare(tool, arguments, Preview(tool, arguments, out _)); }
             catch (RpcException) { throw; }
             catch (Exception ex) { throw new RpcException(-32011, "Could not prepare this action: " + AutomationGateway.Describe(ex)); }
+        }
+        public JObject GraphicPreview(JObject request)
+        {
+            if (graphicPreview == null) throw new RpcException(-32601, "Graphic previews are unavailable.");
+            try { return graphicPreview(request); }
+            catch (ArgumentException ex) { throw new RpcException(-32602, ex.Message); }
+            catch (Exception ex)
+            {
+                ServerDiagnosticLog.Write("warning", "preview.unavailable", "The native document graphic preview could not be exported.", ex);
+                return new JObject { ["status"] = "unavailable" };
+            }
+        }
+        private JObject Preview(ToolDefinition tool, JObject arguments, out JObject effectiveArguments)
+        {
+            var names = resolveCreationNames?.Invoke(tool.Name, arguments);
+            effectiveArguments = names?.Arguments ?? arguments;
+            var target = (tool.Preview ?? preview)(effectiveArguments);
+            if (names != null) target["naming"] = names.Receipt.DeepClone();
+            return target;
         }
         private ToolDefinition Validate(string name, JObject arguments)
         {
@@ -93,16 +127,20 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
             var approvedTarget = tool.ReadOnly ? null : confirmations.Consume(confirmationToken, name, arguments);
             try
             {
+                var effectiveArguments = arguments;
+                JObject currentTarget = null;
                 if (approvedTarget != null)
                 {
-                    var currentTarget = (tool.Preview ?? preview)(arguments);
+                    currentTarget = Preview(tool, arguments, out effectiveArguments);
                     if (!JToken.DeepEquals(approvedTarget, currentTarget))
                         throw new InvalidOperationException("The target state or synchronized document group changed after the preview. No action was executed. Review a new proposal.");
                     // Batch persistence uses this exact rechecked scope instead
                     // of enumerating a potentially larger set a third time.
-                    if (tool.ExecutePrepared != null) return Content(tool.ExecutePrepared(arguments, currentTarget), false);
+                    if (tool.ExecutePrepared != null) return Content(tool.ExecutePrepared(effectiveArguments, currentTarget), false);
                 }
-                return Content(tool.Execute(arguments), false);
+                var result = tool.Execute(effectiveArguments);
+                if (currentTarget?["naming"] != null) result["naming"] = currentTarget["naming"].DeepClone();
+                return Content(result, false);
             }
             catch (Exception ex)
             {

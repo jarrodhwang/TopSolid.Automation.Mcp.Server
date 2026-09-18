@@ -13,8 +13,9 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Automation
     {
         // ItemLabel.Name is null when absent. Empty string requests native lookup
         // by an empty name and breaks otherwise valid returned vertex/segment IDs.
+        // Moniker has the opposite contract: the SDK requires a non-null string.
         internal static ItemLabel ParseItemLabel(JToken label) => new ItemLabel((byte)label["type"], (int)label["id"],
-            (string)label["moniker"], (string)label["name"]);
+            (string)label["moniker"] ?? string.Empty, (string)label["name"]);
         public static JObject Result(object value) => new JObject { ["value"] = Json(value), ["units"] = "SI: metres, radians, kilograms; scalar values retain their API-defined unit." };
         public static JToken Json(object value)
         {

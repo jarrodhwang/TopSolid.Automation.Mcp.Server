@@ -41,7 +41,11 @@ public sealed class OllamaProvider : IAiProvider
         // https://docs.ollama.com/capabilities/thinking
         var family = _model.Split('/').Last().Split(':')[0];
         if (_fastGptOss && family.Equals("gpt-oss", StringComparison.OrdinalIgnoreCase)) body["think"] = "low";
-        var response = await _http.SendAsync(HttpMethod.Post, "api/chat", body, cancellationToken).ConfigureAwait(false);
+        // Gemma 4's native Ollama manifest advertises boolean thinking support.
+        // Keep other model families' options unchanged; this switch is reversible.
+        if (_fastGptOss && family.Equals("gemma4", StringComparison.OrdinalIgnoreCase)) body["think"] = false;
+        var response = await _http.SendAsync(HttpMethod.Post, "api/chat", body, cancellationToken,
+            hasImageAttachments: messages.Any(message => message.Images.Count > 0)).ConfigureAwait(false);
         if (response["message"] is not JObject message || response["done"]?.Type != JTokenType.Boolean ||
             response.Value<bool>("done") != true)
             throw new AiProviderException("Ollama returned an incomplete chat response. A complete non-streaming response is required.");
@@ -55,14 +59,33 @@ public sealed class OllamaProvider : IAiProvider
         {
             Content = content,
             Thinking = ProviderJson.Text(message["thinking"]),
+            Metrics = Metrics(response, _model),
             ToolCalls = calls
         };
+    }
+
+    internal static JObject Metrics(JObject response, string model)
+    {
+        var metrics = new JObject { ["provider"] = "ollama", ["model"] = model };
+        foreach (var field in new[] { "total_duration", "load_duration", "prompt_eval_duration", "eval_duration" })
+            if (response[field]?.Type is JTokenType.Integer or JTokenType.Float && (double)response[field]! >= 0)
+                metrics[field.Replace("_duration", "_seconds", StringComparison.Ordinal)] = (double)response[field]! / 1e9;
+        foreach (var field in new[] { "prompt_eval_count", "prompt_eval_cached_count", "eval_count" })
+            if (response[field]?.Type == JTokenType.Integer && (long)response[field]! >= 0) metrics[field] = response[field]!.DeepClone();
+        if (metrics["eval_seconds"] != null && (double)metrics["eval_seconds"]! > 0 && metrics["eval_count"] != null)
+            metrics["generatedTokensPerSecond"] = Math.Round((double)metrics["eval_count"]! / (double)metrics["eval_seconds"]!, 2);
+        return metrics;
     }
 
     private static JObject ToMessage(AiMessage message)
     {
         ProviderJson.ValidateRole(message.Role);
         var result = new JObject { ["role"] = message.Role, ["content"] = message.Content };
+        if (message.Images.Count > 0)
+        {
+            if (message.Role != "user") throw new ArgumentException("Only user messages may contain image attachments.");
+            result["images"] = new JArray(message.Images.Select(image => image.Base64));
+        }
         if (message.Role == "assistant" && !string.IsNullOrEmpty(message.Thinking))
             result["thinking"] = message.Thinking;
         if (message.Role == "tool")

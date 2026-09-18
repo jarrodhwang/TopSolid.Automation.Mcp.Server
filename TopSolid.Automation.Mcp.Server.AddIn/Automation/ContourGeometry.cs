@@ -41,7 +41,6 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Automation
             }
             var closed = (bool)contour["closed"];
             if (closed != (Distance(first, start) < 1e-9)) throw new ArgumentException("For closed=true, the last endpoint must equal the start. For an open contour it must differ.");
-            if (!closed && (bool?)arguments["createSection"] == true) throw new ArgumentException("A section requires a closed contour.");
             return length;
         }
     }

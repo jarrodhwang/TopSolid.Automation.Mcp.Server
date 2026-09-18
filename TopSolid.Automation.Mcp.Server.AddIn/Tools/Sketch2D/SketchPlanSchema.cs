@@ -14,7 +14,8 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
             p["sketch"] = Schema.Element();
             p["placement"] = Schema.Choice("New sketch: 2d, a principal 3D plane, explicit frame, or reference sketch. Omit all placement options when appending to sketch.", "2d", "xy", "xz", "yz", "frame", "reference");
             p["documentSpace"] = Schema.Choice("Containing document dimension. Parts contain 2D sketches but documentSpace=3d. Required for frame/reference; recommended when appending.", "2d", "3d");
-            p["name"] = Schema.Text("Optional name for a new sketch only.", 128);
+            p["name"] = Schema.Text(CreationNames.Description + " New sketch only.", 128);
+            p["color"] = AppearanceTools.ColorSchema();
             p["origin"] = Point3("Default zero. Principal placement: WORLD origin. Reference placement: offset in reference local X/Y/normal from its origin or anchor. Lengths use input units.");
             p["rotationDegrees"] = Schema.Number("In-plane rotation from placement/reference X toward Y. Default 0.", -360, 360);
             p["frame"] = Schema.Object(new JObject { ["origin"] = Point3("World origin in input units."), ["xDirection"] = Point3("World unit X direction."), ["yDirection"] = Point3("Orthogonal world unit Y direction.") }, "origin", "xDirection", "yDirection");
@@ -24,9 +25,10 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
             p["anchor"] = Schema.Object(new JObject { ["item"] = Schema.Item(), ["location"] = Schema.Choice("From referenceSketch: vertex; segment start/end; circular center; midParameter (parameter midpoint, not generally half arc length). Resolved by server, never guessed.", "vertex", "start", "end", "center", "midParameter") }, "item", "location");
         }
         internal static JObject Profiles() => Schema.Array(Schema.Object(new JObject {
-            ["kind"] = Schema.Choice("Server-computed primitive. Supply ONLY its fields: circle(origin,radius); rectangle(origin,width,height); polyline(points,closed); line(start,end); arc(start,end,center,clockwise); bspline(controlPoints,periodic); parabola(vertex,focalLength,startParameter,endParameter,rotationDegrees); star(center,outerRadius,innerRadius,pointCount,rotationDegrees); ellipse(center,majorRadius,minorRadius,rotationDegrees,tolerance). Ellipse is a bounded cubic approximation, not an analytic ellipse.", "circle", "rectangle", "polyline", "line", "arc", "bspline", "parabola", "star", "ellipse"),
+            ["kind"] = Schema.Choice("Supply ONLY fields for kind: circle(origin,radius); rectangle(origin,width,height); slot(center,length,width,rotationDegrees); polyline(points,closed); line(start,end); arc(start,end,center,clockwise); bspline(controlPoints,periodic); parabola(vertex,focalLength,startParameter,endParameter,rotationDegrees); star(center,outerRadius,innerRadius,pointCount,rotationDegrees); ellipse(center,majorRadius,minorRadius,rotationDegrees,tolerance); heart(center,width,height,rotationDegrees). For closed boundaries use ONE rectangle/polyline/contour, not independent lines. Slot has two analytic semicircles and two tangent lines. Ellipse is a bounded cubic approximation.", "circle", "rectangle", "slot", "polyline", "line", "arc", "bspline", "parabola", "star", "ellipse", "heart"),
             ["units"] = Schema.Choice("Optional redundant units; must equal the root units. Prefer units once at the request root.", "mm", "cm", "m"),
-            ["origin"] = Point2(), ["radius"] = Schema.Number("Circle radius in input units.", 0.001, 100000), ["width"] = Schema.Number("Rectangle width.", 0.001, 100000), ["height"] = Schema.Number("Rectangle height.", 0.001, 100000),
+            ["origin"] = Point2(), ["radius"] = Schema.Number("Circle radius in input units.", 0.001, 100000), ["width"] = Schema.Number("Rectangle/heart/slot width.", 0.001, 100000), ["height"] = Schema.Number("Rectangle/heart height.", 0.001, 100000),
+            ["length"] = Schema.Number("Slot overall end-to-end length, strictly greater than width. Center spacing = length - width.", .001, 100000),
             ["points"] = Schema.Array(Point2(), 2, 128), ["closed"] = Schema.Boolean("Polyline closure; omit repeated final start point."),
             ["start"] = Point2(), ["end"] = Point2(), ["center"] = Point2(), ["clockwise"] = Schema.Boolean("Arc direction in local sketch X/Y."),
             ["controlPoints"] = Schema.Array(Point2(), 4, 128), ["periodic"] = Schema.Boolean("Uniform cubic B-spline; points are controls, not interpolation points. Omit repeated first control."),
@@ -44,8 +46,8 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
         internal static int ValidateProfiles(JObject p, double scale)
         {
             SketchPlacement.Validate(p);
+            ElementAppearance.Validate(p);
             var curves = ((JArray)p["profiles"]).Cast<JObject>().Select(q => SketchCurveGeometry.Parse(q, scale)).ToArray();
-            if (SketchSectionOptions.Mode(p) != "none" && curves.Any(c => !c.Closed)) throw new ArgumentException("Open curves require sectionMode=none; no closure or section is inferred.");
             // Bound control vertices too: a spline is one native segment but not one unit of work.
             var work = curves.Sum(c => Math.Max(c.SegmentCount, c.Points.Length));
             if (work > 512) throw new ArgumentException("A sketch batch may contain at most 512 segments/control vertices.");

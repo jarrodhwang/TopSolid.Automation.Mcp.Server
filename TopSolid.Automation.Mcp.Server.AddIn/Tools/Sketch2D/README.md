@@ -17,13 +17,14 @@ Registered tools:
 - `topsolid_create_sketches2d` — requires explicit confirmation.
 - `topsolid_get_sketch2d_context` — inspection/reference.
 - `topsolid_transform_sketch2d_points` — inspection/reference.
+- `topsolid_create_heart_sketch` — requires explicit confirmation.
 - `topsolid_create_contour2d` — requires explicit confirmation.
 - `topsolid_append_sketch_contour` — requires explicit confirmation.
 - `topsolid_set_sketch_item_fixed` — requires explicit confirmation.
-- `topsolid_create_sketch_section` — requires explicit confirmation.
 - `topsolid_list_sketch2d_sections` — inspection/reference.
 - `topsolid_get_sketch2d_plane` — inspection/reference.
 - `topsolid_list_section_profiles` — inspection/reference.
+- `topsolid_create_sketch_section` — requires explicit confirmation.
 - `topsolid_create_rectangle2d` — requires explicit confirmation.
 - `topsolid_create_circle2d` — requires explicit confirmation.
 

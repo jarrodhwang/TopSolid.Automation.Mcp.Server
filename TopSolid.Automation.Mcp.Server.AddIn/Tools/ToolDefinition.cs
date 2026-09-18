@@ -1,6 +1,7 @@
 using System;
 using System.Linq;
 using Newtonsoft.Json.Linq;
+using TopSolid.Automation.Mcp.Server.AddIn.Automation;
 
 namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
 {
@@ -36,6 +37,7 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
                 },
                 ["_meta"] = new JObject { ["topsolid/category"] = category,
                     ["topsolid/api"] = new JArray((api ?? new string[0])
+                        .Concat(CreationNames.Supports(name) ? CreationNames.Api : new string[0])
                         .Concat(!readOnly && category != "Pdm" ? ApiRefs.Kernel("IDocuments.IsSynchronized", "IDocuments.GetSynchronizedDocuments", "IDocuments.GetPdmObject", "IDocuments.GetPdmMinorRevision") : new string[0])
                         .Select(ApiRefs.LocalPathForReference)
                         .Distinct()),

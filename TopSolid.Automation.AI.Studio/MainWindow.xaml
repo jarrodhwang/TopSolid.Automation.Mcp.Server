@@ -1,84 +1,304 @@
-<Window x:Class="TopSolid.Automation.AI.Studio.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:chat="clr-namespace:TopSolid.Automation.AI.Studio.Chat"
-        Title="TopSolid Automation AI 0.5.2" Width="1060" Height="820" MinWidth="780" MinHeight="660"
-        Closing="Window_Closing">
-    <Window.Resources>
-        <Style TargetType="Button"><Setter Property="Padding" Value="12,5"/><Setter Property="Margin" Value="4,0,0,0"/></Style>
-        <Style TargetType="TextBox"><Setter Property="Padding" Value="5"/><Setter Property="VerticalContentAlignment" Value="Center"/></Style>
-        <Style TargetType="ComboBox"><Setter Property="Padding" Value="5"/><Setter Property="VerticalContentAlignment" Value="Center"/></Style>
-        <Style TargetType="TextBlock"><Setter Property="VerticalAlignment" Value="Center"/></Style>
-    </Window.Resources>
-    <Grid Margin="14">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition Height="*"/>
-            <RowDefinition Height="6"/><RowDefinition Height="160"/><RowDefinition Height="Auto"/>
-        </Grid.RowDefinitions>
-        <GroupBox Header="Configuration" Padding="8" x:Name="ConfigurationPanel">
-            <Grid>
-                <Grid.ColumnDefinitions><ColumnDefinition Width="100"/><ColumnDefinition Width="*"/><ColumnDefinition Width="Auto"/></Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                </Grid.RowDefinitions>
-                <TextBlock Text="Connection"/><ComboBox x:Name="ProviderBox" Grid.Column="1" SelectionChanged="Provider_Changed">
-                    <ComboBoxItem Content="Cloud API"/><ComboBoxItem Content="Ollama"/>
-                </ComboBox>
-                <StackPanel Grid.Column="2" Orientation="Horizontal">
-                    <Button Content="Save settings" Click="Save_Click"/>
-                    <Button x:Name="SaveLogButton" Content="Save log" Click="SaveLog_Click"
-                            ToolTip="Export current chat, conversations, configuration, MCP tools/results, and diagnostics; API keys are omitted"/>
-                </StackPanel>
-                <CheckBox Grid.Row="6" Grid.Column="2" x:Name="FastGptOssBox" Content="Faster GPT-OSS" VerticalAlignment="Center" Margin="8,6,0,0"
-                          ToolTip="Use Ollama's low thinking level for GPT-OSS. Uncheck to use the model default. Other model families are unchanged."/>
-                <TextBlock Grid.Row="1" x:Name="CloudServiceLabel" Text="Cloud service" Margin="0,6,0,0"/>
-                <ComboBox Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" x:Name="CloudServiceBox" DisplayMemberPath="Name" SelectedValuePath="Id" Margin="0,6,0,0" SelectionChanged="CloudService_Changed"/>
-                <TextBlock Grid.Row="2" Text="Server URL" Margin="0,6,0,0"/>
-                <TextBox Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" x:Name="EndpointBox" Margin="0,6,0,0" TextChanged="Endpoint_Changed"/>
-                <TextBlock Grid.Row="3" Text="API key" Margin="0,6,0,0"/>
-                <PasswordBox Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" x:Name="ApiKeyBox" Padding="5" Margin="0,6,0,0" PasswordChanged="ModelConfiguration_Changed"/>
-                <TextBlock Grid.Row="4" Text="Model" Margin="0,6,0,0"/>
-                <ComboBox Grid.Row="4" Grid.Column="1" x:Name="ModelBox" IsEditable="True" Margin="0,6,0,0" ToolTip="Choose a model that supports chat and function tools. A listed model may serve another purpose." TextBoxBase.TextChanged="ModelConfiguration_Changed"/>
-                <Button Grid.Row="4" Grid.Column="2" Content="List models" Click="ListModels_Click" Margin="4,6,0,0"/>
-                <TextBlock Grid.Row="5" Text="MCP server" Margin="0,6,0,0"/>
-                <TextBox Grid.Row="5" Grid.Column="1" x:Name="ServerPathBox" Margin="0,6,0,0"/>
-                <Button Grid.Row="5" Grid.Column="2" Content="Browse…" Click="Browse_Click" Margin="4,6,0,0"/>
-                <TextBlock Grid.Row="6" Text="AI wait" Margin="0,6,0,0"/>
-                <StackPanel Grid.Row="6" Grid.Column="1" Orientation="Horizontal" Margin="0,6,0,0">
-                    <ComboBox x:Name="TimeoutBox" Width="80" ToolTip="Maximum wait for each model request. Cancel remains available."/>
-                    <TextBlock Text="minutes" Margin="8,0,0,0"/>
-                </StackPanel>
-            </Grid>
-        </GroupBox>
-        <DockPanel Grid.Row="1" Margin="0,10">
-            <StackPanel Orientation="Horizontal" DockPanel.Dock="Right">
-                <Button x:Name="ConnectButton" Content="Connect MCP" Click="Connect_Click"/>
-                <Button x:Name="StatusButton" Content="Check TopSolid" Click="Status_Click"/>
-                <Button x:Name="ClearButton" Content="New chat" Click="Clear_Click"/>
+<Window x:Class="TopSolid.Automation.AI.Studio.MainWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:shell="clr-namespace:System.Windows.Shell;assembly=PresentationFramework" xmlns:chat="clr-namespace:TopSolid.Automation.AI.Studio.Chat" xmlns:appearance="clr-namespace:TopSolid.Automation.AI.Studio.Appearance" Title="TopSolid Automation AI" Width="1040" Height="800" MinWidth="760" MinHeight="600" WindowStyle="None" ResizeMode="CanResize" WindowStartupLocation="CenterScreen" Background="{DynamicResource WindowBrush}" Foreground="{DynamicResource TextBrush}" FontFamily="Segoe UI" FontSize="13" Closing="Window_Closing">
+  <shell:WindowChrome.WindowChrome>
+    <shell:WindowChrome CaptionHeight="34" ResizeBorderThickness="6" GlassFrameThickness="0" CornerRadius="0" />
+  </shell:WindowChrome.WindowChrome>
+  <Window.Resources>
+    <Style x:Key="RailButton" TargetType="Button" BasedOn="{StaticResource {x:Type Button}}">
+      <Setter Property="Width" Value="36" />
+      <Setter Property="Height" Value="36" />
+      <Setter Property="Padding" Value="7" />
+      <Setter Property="Margin" Value="0,4" />
+      <Setter Property="Background" Value="Transparent" />
+      <Setter Property="BorderThickness" Value="1" />
+      <Setter xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Property="BorderBrush" Value="Transparent" />
+    </Style>
+    <Style x:Key="CaptionButton" TargetType="Button" BasedOn="{StaticResource {x:Type Button}}">
+      <Setter Property="Width" Value="44" />
+      <Setter Property="Height" Value="32" />
+      <Setter Property="Padding" Value="0" />
+      <Setter Property="Background" Value="Transparent" />
+      <Setter Property="Foreground" Value="{DynamicResource TitleTextBrush}" />
+      <Setter Property="BorderThickness" Value="0" />
+      <Setter Property="Margin" Value="0" />
+      <Setter Property="shell:WindowChrome.IsHitTestVisibleInChrome" Value="True" />
+    </Style>
+    <Style x:Key="FormLabel" TargetType="TextBlock">
+      <Setter Property="Margin" Value="0,16,0,6" />
+      <Setter Property="FontWeight" Value="SemiBold" />
+    </Style>
+    <Style xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Key="NativeToolButton" TargetType="Button" BasedOn="{StaticResource {x:Type Button}}">
+      <Setter Property="Padding" Value="8,4" />
+      <Setter Property="ContentTemplate">
+        <Setter.Value>
+          <DataTemplate>
+            <StackPanel Orientation="Horizontal">
+              <Image Source="{Binding Tag, RelativeSource={RelativeSource AncestorType=Button}}" Width="20" Height="20" Margin="0,0,7,0" />
+              <TextBlock Text="{Binding}" VerticalAlignment="Center" />
             </StackPanel>
-            <TextBlock x:Name="StatusText" Text="MCP: disconnected · Model: not tested" TextWrapping="Wrap"/>
+          </DataTemplate>
+        </Setter.Value>
+      </Setter>
+    </Style>
+  </Window.Resources>
+  <Border BorderBrush="{DynamicResource BorderBrush}" BorderThickness="1">
+    <Grid>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="34" />
+        <RowDefinition Height="*" />
+      </Grid.RowDefinitions>
+      <Border Background="{DynamicResource TitleGradientBrush}">
+        <DockPanel>
+          <StackPanel Orientation="Horizontal" DockPanel.Dock="Right">
+            <Button Style="{StaticResource CaptionButton}" Content="" FontFamily="Segoe MDL2 Assets" Click="Minimize_Click" ToolTip="Minimize" AutomationProperties.Name="Minimize" />
+            <Button Style="{StaticResource CaptionButton}" Content="" FontFamily="Segoe MDL2 Assets" Click="Maximize_Click" ToolTip="Maximize or restore" AutomationProperties.Name="Maximize or restore" />
+            <Button Style="{StaticResource CaptionButton}" Content="" FontFamily="Segoe MDL2 Assets" Click="Close_Click" ToolTip="Close" AutomationProperties.Name="Close" />
+          </StackPanel>
+          <StackPanel Orientation="Horizontal" Margin="10,0">
+            <Image x:Name="AppIcon" Width="22" Height="22" Margin="0,0,9,0" />
+            <TextBlock Text="TopSolid Automation AI" Foreground="{DynamicResource TitleTextBrush}" VerticalAlignment="Center" FontWeight="SemiBold" />
+          </StackPanel>
         </DockPanel>
-        <GroupBox Grid.Row="2" Header="Chat" Padding="6">
-            <DockPanel>
-                <TextBlock x:Name="ElapsedText" DockPanel.Dock="Top" HorizontalAlignment="Right" FontSize="12" Margin="0,0,4,4"/>
-                <chat:ChatTranscript x:Name="ChatBox" IsReadOnly="True" IsDocumentEnabled="False" VerticalScrollBarVisibility="Auto" BorderThickness="0" FontSize="14">
-                    <FlowDocument PagePadding="0"/>
-                </chat:ChatTranscript>
-            </DockPanel>
-        </GroupBox>
-        <GridSplitter Grid.Row="3" Height="6" HorizontalAlignment="Stretch"/>
-        <GroupBox Grid.Row="4" Header="MCP tools and results" Padding="6">
-            <TextBox x:Name="TraceBox" IsReadOnly="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" BorderThickness="0" FontFamily="Consolas" FontSize="12"/>
-        </GroupBox>
-        <Grid Grid.Row="5" Margin="0,10,0,0">
-            <Grid.ColumnDefinitions><ColumnDefinition Width="*"/><ColumnDefinition Width="Auto"/></Grid.ColumnDefinitions>
-            <TextBox x:Name="MessageBox" Height="70" MaxLength="32000" AcceptsReturn="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" KeyDown="Message_KeyDown" ToolTip="Ctrl+Enter to send"/>
-            <StackPanel Grid.Column="1" Margin="6,0,0,0">
-                <Button x:Name="SendButton" Content="Send" Click="Send_Click"/>
-                <Button x:Name="CancelButton" Content="Cancel" Click="Cancel_Click" IsEnabled="False" Margin="4,6,0,0"/>
+      </Border>
+      <Grid Grid.Row="1">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="52" />
+          <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Border Background="{DynamicResource RailGradientBrush}" BorderBrush="{DynamicResource BorderBrush}" BorderThickness="0,0,1,0">
+          <DockPanel Margin="7,8">
+            <StackPanel DockPanel.Dock="Bottom">
+              <Button x:Name="DeveloperButton" Style="{StaticResource RailButton}" Visibility="Collapsed" Click="Developer_Click" ToolTip="Developer dashboard" AutomationProperties.Name="Developer dashboard">
+                <Image x:Name="DeveloperButtonIcon" />
+              </Button>
+              <Button x:Name="SettingsButton" Style="{StaticResource RailButton}" Click="Settings_Click" ToolTip="Settings" AutomationProperties.Name="Settings">
+                <Image x:Name="SettingsIcon" />
+              </Button>
             </StackPanel>
+            <StackPanel>
+              <Button x:Name="ClearButton" Style="{StaticResource RailButton}" Click="Clear_Click" ToolTip="New chat" AutomationProperties.Name="New chat">
+                <Image x:Name="ClearButtonIcon" />
+              </Button>
+              <Button Style="{StaticResource RailButton}" Click="Chat_Click" ToolTip="Chat" AutomationProperties.Name="Chat" x:Name="ChatButton" appearance:ControlChrome.IsSelected="True">
+                <Image x:Name="ChatIcon" />
+              </Button>
+            </StackPanel>
+          </DockPanel>
+        </Border>
+        <Grid Grid.Column="1" x:Name="ChatPage" AllowDrop="True" PreviewDragOver="Files_DragOver" PreviewDrop="Files_Drop" PreviewDragLeave="Files_DragLeave">
+          <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+          </Grid.RowDefinitions>
+          <Border Padding="18,9" BorderBrush="{DynamicResource BorderBrush}" BorderThickness="0,0,0,1" Background="{DynamicResource ToolbarGradientBrush}">
+            <DockPanel>
+              <Button x:Name="RefreshButton" DockPanel.Dock="Right" Width="36" Height="34" Padding="4" Click="Refresh_Click" ToolTip="{DynamicResource Ui.Common.Refresh}" AutomationProperties.Name="{DynamicResource Ui.Common.Refresh}">
+                <Image x:Name="RefreshIcon" Width="24" Height="24" RenderTransformOrigin="0.5,0.5" />
+              </Button>
+              <TextBlock Text="Chat" FontSize="18" FontWeight="SemiBold" VerticalAlignment="Center" />
+            </DockPanel>
+          </Border>
+          <Grid Grid.Row="1" Margin="28,20" MaxWidth="900">
+            <chat:ChatTranscript x:Name="ChatBox" IsReadOnly="True" IsDocumentEnabled="False" VerticalScrollBarVisibility="Auto" BorderThickness="0" FontSize="15" Background="Transparent">
+              <FlowDocument PagePadding="4" />
+            </chat:ChatTranscript>
+            <StackPanel x:Name="EmptyState" VerticalAlignment="Center" HorizontalAlignment="Center" MaxWidth="640">
+              <Image x:Name="WelcomeIcon" Width="48" Height="48" Margin="0,0,0,18" />
+              <TextBlock Text="What would you like to build?" FontSize="26" FontWeight="SemiBold" HorizontalAlignment="Center" TextWrapping="Wrap" />
+              <WrapPanel HorizontalAlignment="Center" Margin="0,24,0,0">
+                <Button Content="Current document" Tag="Read the active TopSolid document and summarize it." Click="Suggestion_Click" Margin="4" Style="{StaticResource SuggestionButton}" />
+                <Button Content="List projects" Tag="List all TopSolid projects." Click="Suggestion_Click" Margin="4" Style="{StaticResource SuggestionButton}" />
+                <Button Content="Create a sketch" Tag="Help me create a 2D sketch in the current document." Click="Suggestion_Click" Margin="4" Style="{StaticResource SuggestionButton}" />
+              </WrapPanel>
+            </StackPanel>
+          </Grid>
+          <Border x:Name="ActivityPanel" Grid.Row="2" Margin="28,0,28,10" Padding="13,10" CornerRadius="9" BorderThickness="1" BorderBrush="{DynamicResource BorderBrush}" Background="{DynamicResource SurfaceBrush}" MaxWidth="900" Visibility="Collapsed">
+            <Grid>
+              <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+              </Grid.RowDefinitions>
+              <DockPanel>
+                <Image x:Name="ActivityIcon" Width="23" Height="23" Margin="0,0,10,0" DockPanel.Dock="Left" />
+                <TextBlock x:Name="ActivityText" FontWeight="SemiBold" VerticalAlignment="Center" TextWrapping="Wrap" AutomationProperties.LiveSetting="Polite" AutomationProperties.Name="{Binding Text, RelativeSource={RelativeSource Self}}" />
+              </DockPanel>
+              <ProgressBar x:Name="ActivityProgress" Grid.Row="1" Height="3" Margin="33,9,0,0" Minimum="0" Maximum="100" IsIndeterminate="False" Foreground="{DynamicResource AccentBrush}" Background="{DynamicResource PanelBrush}" AutomationProperties.Name="{Binding Text, ElementName=ActivityText}" />
+            </Grid>
+          </Border>
+          <Border Grid.Row="3" Margin="28,0,28,10" Padding="14" CornerRadius="22" BorderThickness="1" Background="{DynamicResource SurfaceBrush}" MaxWidth="900" x:Name="ComposerBorder">
+            <Border.Style>
+              <Style TargetType="Border">
+                <Setter Property="BorderBrush" Value="{DynamicResource BorderBrush}" />
+                <Style.Triggers>
+                  <Trigger Property="IsKeyboardFocusWithin" Value="True">
+                    <Setter Property="BorderBrush" Value="{DynamicResource SelectedBorderBrush}" />
+                  </Trigger>
+                </Style.Triggers>
+              </Style>
+            </Border.Style>
+            <Grid>
+              <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+              </Grid.RowDefinitions>
+              <WrapPanel x:Name="AttachmentsPanel" Margin="0,0,0,4" Visibility="Collapsed" />
+              <Grid Grid.Row="1">
+                <TextBox x:Name="MessageBox" MinHeight="64" MaxHeight="170" MaxLength="32000" AcceptsReturn="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" VerticalContentAlignment="Top" BorderThickness="0" Background="Transparent" Padding="7,6" FontSize="15" KeyDown="Message_KeyDown" TextChanged="Message_TextChanged" ToolTip="Enter to send · Shift+Enter for a new line" AutomationProperties.Name="Chat message" />
+                <TextBlock x:Name="ComposerPlaceholder" Text="Ask TopSolid…" Foreground="{DynamicResource MutedTextBrush}" Margin="8,8" IsHitTestVisible="False" VerticalAlignment="Top" FontSize="15" />
+              </Grid>
+              <Grid Grid.Row="2" Margin="0,6,0,0">
+                <Grid.ColumnDefinitions>
+                  <ColumnDefinition Width="Auto" />
+                  <ColumnDefinition Width="Auto" />
+                  <ColumnDefinition Width="*" />
+                  <ColumnDefinition Width="Auto" />
+                  <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <Button x:Name="AttachButton" Content="+" FontSize="22" Width="36" Height="36" Padding="0" Click="Attach_Click" ToolTip="Add files" AutomationProperties.Name="Add files" Style="{StaticResource ComposerAction}" />
+                <ComboBox x:Name="PermissionBox" Grid.Column="1" Width="162" Margin="8,0,0,0" SelectionChanged="Permission_Changed" SelectedIndex="0" AutomationProperties.Name="Permissions" Style="{StaticResource ComposerPermission}" FontSize="12">
+                  <ComboBoxItem Content="Ask for approval" ToolTip="Ask before each TopSolid change." />
+                  <ComboBoxItem Content="Approve for me" ToolTip="Automatically approve recognized reversible edits. Ask before saving, deleting, exporting, or unknown actions." />
+                  <ComboBoxItem Content="Full access" ToolTip="Automatically approve validated TopSolid tool changes for this session." />
+                </ComboBox>
+                <ComboBox x:Name="ModelBox" Grid.Column="3" Width="200" IsEditable="True" Margin="8,0" TextBoxBase.TextChanged="ModelConfiguration_Changed" ToolTip="Select a model · Configure or list models in Settings" AutomationProperties.Name="Model" Style="{StaticResource ComposerModel}" FontSize="12" />
+                <Grid Grid.Column="4">
+                  <Button x:Name="SendButton" Content="" FontFamily="Segoe MDL2 Assets" FontSize="17" Width="36" Height="36" Padding="0" Background="{DynamicResource AccentBrush}" Foreground="{DynamicResource AccentTextBrush}" Click="Send_Click" ToolTip="Send message" AutomationProperties.Name="Send message" Style="{StaticResource PrimaryComposerAction}" />
+                  <Button x:Name="CancelButton" Content="" FontFamily="Segoe MDL2 Assets" FontSize="15" Width="36" Height="36" Padding="0" Click="Cancel_Click" IsEnabled="False" Visibility="Collapsed" ToolTip="Cancel request" AutomationProperties.Name="Cancel request" Style="{StaticResource ComposerAction}" />
+                </Grid>
+              </Grid>
+            </Grid>
+          </Border>
+          <DockPanel Grid.Row="4" Margin="28,0,28,12">
+            <TextBlock x:Name="ElapsedText" DockPanel.Dock="Right" Margin="12,0,0,0" FontSize="11" Foreground="{DynamicResource MutedTextBrush}" />
+            <TextBlock x:Name="StatusText" Text="MCP: disconnected · Model: not tested" FontSize="11" Foreground="{DynamicResource MutedTextBrush}" TextTrimming="CharacterEllipsis" />
+          </DockPanel>
+          <Border xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Name="DropOverlay" Grid.RowSpan="5" Margin="24" CornerRadius="18" BorderThickness="2" BorderBrush="{DynamicResource AccentBrush}" Background="{DynamicResource SurfaceBrush}" Opacity="0.97" Visibility="Collapsed" IsHitTestVisible="False">
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+              <TextBlock Text="+" FontSize="44" Foreground="{DynamicResource AccentBrush}" HorizontalAlignment="Center" />
+              <TextBlock Text="Drop files to attach" FontSize="23" FontWeight="SemiBold" Margin="0,12,0,8" />
+              <TextBlock Text="Added to your next message" Foreground="{DynamicResource MutedTextBrush}" HorizontalAlignment="Center" />
+            </StackPanel>
+          </Border>
         </Grid>
+        <Grid Grid.Column="1" x:Name="SettingsPage" Visibility="Collapsed">
+          <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+          </Grid.RowDefinitions>
+          <Border Padding="18,9" BorderBrush="{DynamicResource BorderBrush}" BorderThickness="0,0,0,1" Background="{DynamicResource ToolbarGradientBrush}">
+            <DockPanel>
+              <Button Content="Back to chat" Click="Chat_Click" DockPanel.Dock="Right" />
+              <TextBlock Text="Settings" FontSize="18" FontWeight="SemiBold" VerticalAlignment="Center" />
+            </DockPanel>
+          </Border>
+          <Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Grid.Row="1">
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="170" />
+              <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+              <RowDefinition Height="*" />
+              <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Border Grid.RowSpan="2" Background="{DynamicResource PanelBrush}" BorderBrush="{DynamicResource BorderBrush}" BorderThickness="0,0,1,0">
+              <ListBox x:Name="SettingsNavigation" Margin="8,16" Background="Transparent" BorderThickness="0" SelectedValuePath="Tag" SelectedIndex="0" SelectionChanged="SettingsSection_Changed" HorizontalContentAlignment="Stretch">
+                <ListBoxItem Tag="ai" Content="{DynamicResource Ui.Nav.AiModel}" Padding="12,11" Margin="0,2" />
+                <ListBoxItem Tag="appearance" Content="{DynamicResource Ui.Nav.Appearance}" Padding="12,11" Margin="0,2" />
+                <ListBoxItem Tag="languages" Content="{DynamicResource Ui.Nav.Languages}" Padding="12,11" Margin="0,2" />
+                <ListBoxItem Tag="developer" Content="{DynamicResource Ui.Nav.Developer}" Padding="12,11" Margin="0,2" />
+              </ListBox>
+            </Border>
+            <ScrollViewer x:Name="SettingsScroller" Grid.Column="1" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+              <Grid Margin="24,22" MaxWidth="760">
+                <StackPanel x:Name="AiSettingsSection">
+                  <TextBlock Text="{DynamicResource Ui.Nav.AiModel}" FontSize="21" FontWeight="SemiBold" />
+                  <StackPanel x:Name="ConfigurationPanel">
+                    <TextBlock Text="Connection" Style="{StaticResource FormLabel}" />
+                    <ComboBox x:Name="ProviderBox" SelectionChanged="Provider_Changed">
+                      <ComboBoxItem Content="Cloud API" />
+                      <ComboBoxItem Content="Ollama" />
+                    </ComboBox>
+                    <TextBlock x:Name="CloudServiceLabel" Text="Cloud service" Style="{StaticResource FormLabel}" />
+                    <ComboBox x:Name="CloudServiceBox" DisplayMemberPath="Name" SelectedValuePath="Id" SelectionChanged="CloudService_Changed" />
+                    <TextBlock Text="Server URL" Style="{StaticResource FormLabel}" />
+                    <TextBox x:Name="EndpointBox" TextChanged="Endpoint_Changed" />
+                    <TextBlock Text="API key" Style="{StaticResource FormLabel}" />
+                    <PasswordBox x:Name="ApiKeyBox" Padding="8" PasswordChanged="ModelConfiguration_Changed" />
+                    <TextBlock Text="Model" Style="{StaticResource FormLabel}" />
+                    <DockPanel>
+                      <Button Content="List models" Click="ListModels_Click" DockPanel.Dock="Right" Margin="8,0,0,0" />
+                      <ComboBox x:Name="SettingsModelBox" IsEditable="True" Text="{Binding Text, ElementName=ModelBox, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" ItemsSource="{Binding ItemsSource, ElementName=ModelBox}" />
+                    </DockPanel>
+                    <TextBlock Text="AI wait" Style="{StaticResource FormLabel}" />
+                    <DockPanel>
+                      <CheckBox x:Name="FastGptOssBox" Content="More thinking" DockPanel.Dock="Right" VerticalAlignment="Center" />
+                      <StackPanel Orientation="Horizontal">
+                        <ComboBox x:Name="TimeoutBox" Width="80" />
+                        <TextBlock Text="minutes per request" Margin="10,0" VerticalAlignment="Center" />
+                      </StackPanel>
+                    </DockPanel>
+                  </StackPanel>
+                </StackPanel>
+                <StackPanel x:Name="AppearanceSettingsSection" Visibility="Collapsed">
+                  <TextBlock Text="{DynamicResource Ui.Nav.Appearance}" FontSize="21" FontWeight="SemiBold" />
+                  <TextBlock Text="{DynamicResource Ui.Appearance.Mode}" Style="{StaticResource FormLabel}" />
+                  <ComboBox x:Name="AppearanceModeBox" SelectedValuePath="Tag" SelectionChanged="Appearance_Changed" MaxWidth="400" HorizontalAlignment="Left" Width="400">
+                    <ComboBoxItem Tag="dark" Content="{DynamicResource Ui.Appearance.Dark}" />
+                    <ComboBoxItem Tag="light" Content="{DynamicResource Ui.Appearance.Light}" />
+                    <ComboBoxItem Tag="system" Content="{DynamicResource Ui.Appearance.System}" />
+                    <ComboBoxItem Tag="topsolid" Content="{DynamicResource Ui.Appearance.TopSolid}" />
+                  </ComboBox>
+                  <TextBlock x:Name="ThemeStatusText" Margin="0,16,0,0" Foreground="{DynamicResource MutedTextBrush}" TextWrapping="Wrap" />
+                </StackPanel>
+                <StackPanel x:Name="LanguageSettingsSection" Visibility="Collapsed">
+                  <TextBlock Text="{DynamicResource Ui.Nav.Languages}" FontSize="21" FontWeight="SemiBold" />
+                  <TextBlock Text="{DynamicResource Ui.Language.Interface}" Style="{StaticResource FormLabel}" />
+                  <ComboBox x:Name="InterfaceLanguageBox" SelectedValuePath="Tag" SelectionChanged="InterfaceLanguage_Changed">
+                    <ComboBoxItem Tag="system" Content="{DynamicResource Ui.Language.System}" />
+                    <ComboBoxItem Tag="en" Content="English" />
+                    <ComboBoxItem Tag="ko" Content="한국어" />
+                  </ComboBox>
+                  <TextBlock Text="{DynamicResource Ui.Language.Response}" Style="{StaticResource FormLabel}" />
+                  <ComboBox x:Name="ResponseLanguageBox" SelectedValuePath="Tag" SelectionChanged="ResponseLanguage_Changed">
+                    <ComboBoxItem Tag="auto" Content="{DynamicResource Ui.Language.Auto}" />
+                    <ComboBoxItem Tag="en" Content="English" />
+                    <ComboBoxItem Tag="ko" Content="한국어" />
+                    <ComboBoxItem Tag="ja" Content="日本語" />
+                    <ComboBoxItem Tag="zh" Content="中文" />
+                    <ComboBoxItem Tag="fr" Content="Français" />
+                    <ComboBoxItem Tag="de" Content="Deutsch" />
+                    <ComboBoxItem Tag="es" Content="Español" />
+                  </ComboBox>
+                </StackPanel>
+                <StackPanel x:Name="DeveloperSettingsSection" Visibility="Collapsed">
+                  <TextBlock Text="{DynamicResource Ui.Nav.Developer}" FontSize="21" FontWeight="SemiBold" />
+                  <DockPanel Margin="0,22,0,0">
+                    <Button x:Name="OpenDeveloperButton" Content="Open dashboard" DockPanel.Dock="Right" Click="Developer_Click" Visibility="Collapsed" />
+                    <CheckBox x:Name="DevModeBox" Content="Dev Mode" VerticalAlignment="Center" FontSize="15" Checked="DevMode_Changed" Unchecked="DevMode_Changed" />
+                  </DockPanel>
+                  <TextBlock Text="Model responses, MCP tools, results and elapsed time." Margin="0,12,0,8" Foreground="{DynamicResource MutedTextBrush}" TextWrapping="Wrap" />
+                  <TextBlock Text="MCP server" Style="{StaticResource FormLabel}" />
+                  <DockPanel>
+                    <Button Content="Browse…" Click="Browse_Click" DockPanel.Dock="Right" Margin="8,0,0,0" />
+                    <TextBox x:Name="ServerPathBox" />
+                  </DockPanel>
+                  <Button x:Name="SaveLogButton" Content="Save log" Click="SaveLog_Click" HorizontalAlignment="Left" Margin="0,20,0,0" ToolTip="Export chat, configuration and diagnostics with API keys omitted" />
+                </StackPanel>
+              </Grid>
+            </ScrollViewer>
+            <Border Grid.Column="1" Grid.Row="1" BorderBrush="{DynamicResource BorderBrush}" BorderThickness="0,1,0,0" Padding="24,14" Background="{DynamicResource PanelBrush}">
+              <DockPanel>
+                <Button x:Name="SaveSettingsButton" Content="Save settings" Click="Save_Click" DockPanel.Dock="Right" Margin="14,0,0,0" />
+                <TextBlock x:Name="SettingsFeedback" TextWrapping="Wrap" Foreground="{DynamicResource AccentBrush}" VerticalAlignment="Center" />
+              </DockPanel>
+            </Border>
+          </Grid>
+        </Grid>
+        <TextBox x:Name="TraceBox" Visibility="Collapsed" IsReadOnly="True" />
+      </Grid>
     </Grid>
+  </Border>
 </Window>

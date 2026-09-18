@@ -79,6 +79,15 @@ internal static class CloudServiceTests
             Check.True(error.Message.Contains("Google AI Studio") && error.Message.Contains("401"), "Gemini auth guidance");
             Check.True(!error.Message.Contains(gemini.ApiKey), "Authentication error leaked key");
         }
+        foreach (var host in new[] { gemini.CloudBaseUrl, "https://example.test/v1" }) {
+            var handler = new ScriptedHandler().Json("{choices:[{message:{role:'assistant',content:'Ready.'}}]}");
+            using var provider = new OpenAiCompatibleProvider(host, "synthetic-key", "test", handler);
+            await provider.CompleteAsync([new AiMessage { Role = "user", Content = "Use current part" },
+                new AiMessage { Role = "assistant", ToolCalls = [new AiToolCall { Id = "client-read", Name = ActiveDocumentContext.Tool, ClientInitiated = true }] },
+                new AiMessage { Role = "tool", ToolCallId = "client-read", Content = "{documentId:'test'}" }], [], default);
+            var marker = (string?)handler.Requests[0].Body!["messages"]![1]!["tool_calls"]![0]!["extra_content"]?["google"]?["thought_signature"];
+            Check.Equal(host == gemini.CloudBaseUrl ? "skip_thought_signature_validator" : null, marker, "Client context calls need the Gemini-only documented signature marker");
+        }
         gemini.CloudBaseUrl = "https://generativelanguage.googleapis.com/v1beta"; gemini.ApiKey = "test";
         Check.True(Check.Throws<ArgumentException>(() => ProviderFactory.Create(gemini)).Message.Contains("Cloud service"), "Native Gemini URL must give actionable correction");
         foreach (var errorBody in new[] { "{\"error\":{\"message\":\"This model is unavailable. key=synthetic-secret\"}}", "[{\"error\":{\"message\":\"This model is unavailable. key=synthetic-secret\"}}]" })

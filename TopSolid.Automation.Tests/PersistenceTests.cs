@@ -82,7 +82,7 @@ internal static class PersistenceTests
         var args = new JObject { ["documentId"] = doc["documentId"]!.DeepClone(), ["documentSpace"] = "3d", ["units"] = "mm",
             ["sketches"] = JArray.Parse("[{name:'Preview only - star',placement:'xz',units:'mm',profiles:[{kind:'star',center:{x:0,y:0},outerRadius:50,innerRadius:20,pointCount:5,rotationDegrees:90,units:'mm'}]},{name:'Preview only - ellipse',placement:'xy',profiles:[{kind:'ellipse',center:{x:10,y:20},majorRadius:60,minorRadius:40,rotationDegrees:30,tolerance:0.01}]}]") };
         var sketchTimer = Stopwatch.StartNew(); var sketchPreview = await guarded.PrepareToolAsync("topsolid_create_sketches2d", args, timeout.Token); sketchPreview.Remove("confirmationToken");
-        Check.Equal("none", (string?)sketchPreview["target"]?["sketches"]?[0]?["sectionMode"], "Star preview must not create a section");
+        Check.Equal(false, (bool?)sketchPreview["target"]?["sketches"]?[0]?["createsSections"], "Star preview must not create a section");
         Check.True((double?)sketchPreview["target"]?["sketches"]?[1]?["approximations"]?[0]?["maximumDeviationBoundMetres"] <= .00001, "Ellipse preview omits/exceeds approximation bound");
         var after = PdmInventory.Data(await guarded.CallToolAsync("topsolid_get_document_info", new JObject { ["documentId"] = doc["documentId"]!.DeepClone() }, timeout.Token));
         Check.True(JToken.DeepEquals(doc, after?["document"]), "Sketch preview changed the document identity or dirty state");

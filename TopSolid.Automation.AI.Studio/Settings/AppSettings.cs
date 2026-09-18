@@ -48,6 +48,10 @@ public sealed class AppSettings
     public const int DefaultRequestTimeoutMinutes = 15;
     public int RequestTimeoutMinutes { get; set; } = DefaultRequestTimeoutMinutes;
     public bool OllamaFastGptOss { get; set; } = true;
+    public bool DevMode { get; set; }
+    public string AppearanceMode { get; set; } = "topsolid";
+    public string InterfaceLanguage { get; set; } = "system";
+    public string ResponseLanguage { get; set; } = "auto";
 
     public TimeSpan RequestTimeout()
     {

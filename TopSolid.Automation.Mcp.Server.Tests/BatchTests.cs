@@ -56,18 +56,19 @@ namespace TopSolid.Automation.Mcp.Server.Tests
                 Check(Throws<RpcException>(() => registry.Call("topsolid_create_parameters", parameters)).Code == -32010, "Parameter creation bypassed confirmation");
                 parameter["unitType"] = "999"; Throws<ArgumentException>(() => ParameterBatchTools.Validate(parameters, true)); parameter["unitType"] = "Length";
                 parameter["textValue"] = "wrong"; Throws<ArgumentException>(() => ParameterBatchTools.Validate(parameters, true)); parameter.Remove("textValue");
-                ((JArray)parameters["parameters"]).Add(parameter.DeepClone()); Throws<ArgumentException>(() => ParameterBatchTools.Validate(parameters, true));
+                ((JArray)parameters["parameters"]).Add(parameter.DeepClone()); ParameterBatchTools.Validate(parameters, true);
+                var reserved = CreationNames.Resolve("topsolid_create_parameters", parameters, () => new string[0]);
+                Check((string)reserved.Arguments["parameters"][1]["name"] == "Length_1", "Duplicate parameter creation names must be reserved before confirmation");
                 var sketch = JObject.Parse("{\"documentId\":\"rev\",\"placement\":\"xy\",\"profiles\":[{\"kind\":\"polyline\",\"closed\":true,\"points\":[{\"x\":0,\"y\":0},{\"x\":10,\"y\":0},{\"x\":0,\"y\":10}]}]}");
                 Schema.Validate(sketch, Shape("topsolid_create_sketch_profiles")); SketchBatchActionTools.ValidateProfiles(sketch);
                 Check(Throws<RpcException>(() => registry.Call("topsolid_create_sketch_profiles", sketch)).Code == -32010, "Sketch batch bypassed confirmation");
                 sketch["profiles"][0]["closed"] = false; SketchBatchActionTools.ValidateProfiles(sketch);
-                Check(SketchSectionOptions.Mode(sketch) == "none", "Plain open sketches must not request sections");
-                sketch["sectionMode"] = "perProfile"; Throws<ArgumentException>(() => SketchBatchActionTools.ValidateProfiles(sketch)); sketch["sectionMode"] = "none"; SketchBatchActionTools.ValidateProfiles(sketch);
-                Check(!SketchSectionOptions.ForModel("circle2d", new JObject()) && !SketchSectionOptions.ForModel("rectangle2d", new JObject()), "Circle/rectangle drawings do not need sections");
-                Check(!SketchSectionOptions.ForContour(new JObject()), "Contour default must not create a section");
-                Check(SketchSectionOptions.ForModel("extruded_rectangle", new JObject()), "Combined solid creation still needs its native section");
-                Check(SketchSectionOptions.ForModel("circle2d", JObject.Parse("{createSection:true}")) && SketchSectionOptions.ForContour(JObject.Parse("{createSection:true}")), "Explicit section request must remain supported");
-                Schema.Validate(JObject.Parse("{documentId:'rev',placement:'xy',radius:10,createSection:false}"), Shape("topsolid_create_circle2d"));
+                sketch["sectionMode"] = "perProfile"; Throws<RpcException>(() => Schema.Validate(sketch, Shape("topsolid_create_sketch_profiles"))); sketch.Remove("sectionMode");
+                foreach (var flag in new[] { true, false }) {
+                    var circle = JObject.Parse("{documentId:'rev',placement:'xy',radius:10}"); circle["createSection"] = flag;
+                    Throws<RpcException>(() => Schema.Validate(circle, Shape("topsolid_create_circle2d")));
+                }
+                Check((bool)registry.List().Single(t => (string)t["name"] == "topsolid_create_sketch_section")["_meta"]["topsolid/requiresConfirmation"], "Sections need a separate confirmed tool");
                 ((JArray)sketch["profiles"][0]["points"]).Add(JObject.Parse("{\"x\":0,\"y\":10}")); Throws<ArgumentException>(() => SketchBatchActionTools.ValidateProfiles(sketch));
                 var features = new JObject { ["documentId"] = "rev", ["features"] = new JArray(new JObject { ["sketch"] = element.DeepClone(), ["direction"] = new JObject { ["x"] = 0, ["y"] = 0, ["z"] = 1 }, ["length"] = 10 }) };
                 Schema.Validate(features, Shape("topsolid_extrude_sections")); ShapeBatchActionTools.Validate(features, "extrude");

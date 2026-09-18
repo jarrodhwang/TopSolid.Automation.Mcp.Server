@@ -10,9 +10,12 @@ using Microsoft.Win32;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using TopSolid.Automation.AI.Studio.AI;
+using TopSolid.Automation.AI.Studio.Appearance;
 using TopSolid.Automation.AI.Studio.Chat;
+using TopSolid.Automation.AI.Studio.Connections;
 using TopSolid.Automation.AI.Studio.Diagnostics;
 using TopSolid.Automation.AI.Studio.Mcp;
+using TopSolid.Automation.AI.Studio.Localization;
 using TopSolid.Automation.AI.Studio.Settings;
 using TopSolid.Automation.Mcp.Contracts;
 
@@ -38,14 +41,23 @@ public partial class MainWindow : Window
     private readonly Stopwatch chatClock = new();
     private readonly DispatcherTimer elapsedTimer = new() { Interval = TimeSpan.FromMilliseconds(100) };
 
-    public MainWindow()
+    public MainWindow() : this(autoConnect: true) { }
+
+    internal MainWindow(bool autoConnect)
     {
-        InitializeComponent();
-        elapsedTimer.Tick += (_, _) => ElapsedText.Text = "Elapsed " + ChatTranscript.Elapsed(chatClock.Elapsed.TotalMilliseconds);
+        TopSolidTheme.InitializeResources(this);
         settings = settingsStore.Load();
+        StudioStrings.Apply(settings.InterfaceLanguage);
+        StudioStrings.InitializeResources(this);
+        InitializeComponent();
+        InitializeShell();
+        InitializeConnectionIndicator();
+        InitializePreferences();
+        elapsedTimer.Tick += (_, _) => ElapsedText.Text = StudioStrings.Get("Chat.Elapsed", ChatTranscript.Elapsed(chatClock.Elapsed.TotalMilliseconds));
+        DevModeBox.IsChecked = settings.DevMode;
         TimeoutBox.ItemsSource = Enumerable.Range(1, 60);
         TimeoutBox.SelectedItem = settings.RequestTimeoutMinutes;
-        FastGptOssBox.IsChecked = settings.OllamaFastGptOss;
+        FastGptOssBox.IsChecked = !settings.OllamaFastGptOss;
         CloudServiceBox.ItemsSource = CloudServices.All;
         var configuredServer = settings.McpServerPath;
         settings.McpServerPath = AppSettings.ResolveServerPath(configuredServer, AppContext.BaseDirectory);
@@ -65,7 +77,15 @@ public partial class MainWindow : Window
                 ["toolCount"] = mcp.Tools.Count,
                 ["mutationInFlight"] = mcp.IsMutationInFlight
             });
-            OnUi(UpdateStatus);
+            OnUi(() =>
+            {
+                if (!refreshRunning && !closing)
+                {
+                    connectionHealth.Set("Mcp", mcp.IsConnected ? ConnectionSeverity.Ready : ConnectionSeverity.Error, mcp.IsConnected ? "Health.McpReady" : "Health.McpUnavailable");
+                    if (!mcp.IsConnected) connectionHealth.Set("TopSolid", ConnectionSeverity.Warning, "Health.TopSolidBlocked");
+                }
+                UpdateStatus();
+            });
         };
         if (!string.IsNullOrEmpty(settingsStore.LastLoadWarning)) RecordTrace("Settings", settingsStore.LastLoadWarning);
         if (!string.Equals(configuredServer, settings.McpServerPath, StringComparison.OrdinalIgnoreCase))
@@ -80,6 +100,15 @@ public partial class MainWindow : Window
             "; all-history Studio diagnostics: " + diagnosticLog.AllLogFilePath +
             "; MCP server all-history diagnostics: " + DiagnosticLog.GetAllHistoryLogFilePath("mcp-server"));
         UpdateStatus();
+        Loaded += async (_, _) =>
+        {
+            if (DevModeBox.IsChecked == true) OpenDeveloper();
+            if (autoConnect && !startupConnectionStarted)
+            {
+                startupConnectionStarted = true;
+                await RefreshConnectionsAsync();
+            }
+        };
     }
 
     private void OnUi(Action action)
@@ -92,16 +121,17 @@ public partial class MainWindow : Window
     {
         var local = visibleProvider == "Ollama";
         FastGptOssBox.Visibility = local ? Visibility.Visible : Visibility.Collapsed;
+        FastGptOssBox.IsEnabled = local;
         CloudServiceBox.SelectedValue = settings.CloudService;
         CloudServiceBox.Visibility = CloudServiceLabel.Visibility = local ? Visibility.Collapsed : Visibility.Visible;
         EndpointBox.Text = local ? settings.OllamaServerUrl : settings.CloudBaseUrl;
         EndpointBox.IsReadOnly = !local && settings.CloudService != CloudServices.Custom;
-        EndpointBox.ToolTip = EndpointBox.IsReadOnly ? "Service URL is filled automatically. Choose Custom OpenAI-compatible to use another endpoint." : null;
+        EndpointBox.ToolTip = EndpointBox.IsReadOnly ? StudioStrings.Text("Service URL is filled automatically. Choose Custom OpenAI-compatible to use another endpoint.") : null;
         ModelBox.ItemsSource = null;
         ModelBox.Text = local ? settings.OllamaModel : settings.CloudModel;
         ApiKeyBox.Password = local ? "" : settings.ApiKey;
         ApiKeyBox.IsEnabled = !local;
-        ApiKeyBox.ToolTip = local ? null : CloudServices.Get(settings.CloudService).KeyHint;
+        ApiKeyBox.ToolTip = local ? null : StudioStrings.Text(CloudServices.Get(settings.CloudService).KeyHint);
     }
 
     private void ReadProvider()
@@ -119,7 +149,7 @@ public partial class MainWindow : Window
         }
         settings.Provider = visibleProvider;
         settings.RequestTimeoutMinutes = TimeoutBox.SelectedItem is int minutes ? minutes : AppSettings.DefaultRequestTimeoutMinutes;
-        settings.OllamaFastGptOss = FastGptOssBox.IsChecked == true;
+        settings.OllamaFastGptOss = FastGptOssBox.IsChecked != true;
         settings.McpServerPath = ServerPathBox.Text.Trim();
         UpdateLogSecrets();
     }
@@ -133,6 +163,7 @@ public partial class MainWindow : Window
         ShowProvider();
         loading = false;
         modelStatus = "not tested";
+        InvalidateAiHealth();
         UpdateStatus();
     }
 
@@ -141,6 +172,7 @@ public partial class MainWindow : Window
         if (loading || ApiKeyBox == null) return;
         if (visibleProvider != "Ollama") ApiKeyBox.Clear();
         modelStatus = "not tested";
+        InvalidateAiHealth();
         UpdateStatus();
     }
 
@@ -153,6 +185,7 @@ public partial class MainWindow : Window
         ShowProvider();
         loading = false;
         modelStatus = "not tested";
+        InvalidateAiHealth();
         UpdateStatus();
     }
 
@@ -163,6 +196,7 @@ public partial class MainWindow : Window
         if (ModelBox.Text.Trim() == configuredModel &&
             (visibleProvider == "Ollama" || ApiKeyBox.Password == settings.ApiKey)) return;
         modelStatus = "not tested";
+        InvalidateAiHealth();
         UpdateStatus();
     }
 
@@ -174,6 +208,7 @@ public partial class MainWindow : Window
             settingsStore.Save(settings);
             WriteConfigurationDiagnostic("configuration.saved");
             RecordTrace("Settings", "Saved. API key protected for this Windows user.");
+            SettingsFeedback.Text = StudioStrings.Text("Settings saved.");
         }
         catch (Exception ex) { ShowError(ex); }
     }
@@ -185,8 +220,8 @@ public partial class MainWindow : Window
             ReadProvider();
             var picker = new SaveFileDialog
             {
-                Title = "Save TopSolid Automation diagnostic log",
-                Filter = "JSON diagnostic log (*.json)|*.json",
+                Title = StudioStrings.Get("Dialog.SaveLog"),
+                Filter = StudioStrings.Get("Dialog.LogFilter"),
                 DefaultExt = ".json",
                 AddExtension = true,
                 OverwritePrompt = true,
@@ -220,24 +255,14 @@ public partial class MainWindow : Window
 
     private void Browse_Click(object sender, RoutedEventArgs e)
     {
-        var picker = new OpenFileDialog { Filter = "MCP server executable (*.exe)|*.exe", CheckFileExists = true };
+        var picker = new OpenFileDialog { Filter = StudioStrings.Get("Dialog.McpFilter"), CheckFileExists = true };
         if (picker.ShowDialog(this) == true) ServerPathBox.Text = picker.FileName;
     }
 
     private async void ListModels_Click(object sender, RoutedEventArgs e) => await RunOperation(async token =>
     {
         ReadProvider();
-        modelStatus = "listing models";
-        UpdateStatus();
-        using var candidate = ProviderFactory.Create(settings);
-        var models = await candidate.ListModelsAsync(token);
-        var selected = ModelBox.Text;
-        ModelBox.ItemsSource = models;
-        // Do not automatically pick the alphabetically first embedding/image model.
-        ModelBox.Text = selected;
-        modelStatus = $"{models.Count} models listed; inference not tested";
-        RecordTrace("Models", modelStatus);
-        _ = Dispatcher.BeginInvoke(new Action(() => { if (!closing) ModelBox.IsDropDownOpen = models.Count > 0; }));
+        await RefreshModelList(token, openSelector: true);
     });
 
     private async void Connect_Click(object sender, RoutedEventArgs e) => await RunOperation(async token =>
@@ -258,64 +283,113 @@ public partial class MainWindow : Window
     {
         var result = await mcp.CallToolAsync("topsolid_get_status", new JObject(), token);
         RecordTrace(result.IsError ? "TopSolid error" : "TopSolid status", JsonConvert.SerializeObject(result, Formatting.Indented));
+        var connected = TopSolidConnectionStatus.IsConnected(result);
+        connectionHealth.Set("TopSolid", connected ? ConnectionSeverity.Ready : ConnectionSeverity.Warning, connected ? "Health.TopSolidReady" : "Health.TopSolidStarting");
     });
 
     private void EnsureSession()
     {
         ReadProvider();
-        // Never persist or log the signature. Changing provider starts fresh history.
+        // Never persist or log the signature. Keep intent and receipts across providers.
         var signature = string.Join("\n", settings.Provider, settings.CloudService, settings.CloudBaseUrl, settings.CloudModel,
             settings.OllamaServerUrl, settings.OllamaModel, settings.ApiKey, settings.RequestTimeoutMinutes, settings.OllamaFastGptOss);
-        if (session != null && sessionConfiguration == signature) return;
+        if (session != null && sessionConfiguration == signature) { session.ResponseLanguage = settings.ResponseLanguage; session.DeveloperMode = settings.DevMode; return; }
         var nextProvider = ProviderFactory.Create(settings);
+        var history = session?.GetConversationSnapshot();
         provider?.Dispose();
         provider = nextProvider;
-        session = new ChatSession(provider, mcp);
+        session = new ChatSession(provider, mcp) { ResponseLanguage = settings.ResponseLanguage, DeveloperMode = settings.DevMode };
+        if (history != null) session.RestoreConversation(history);
         session.ConfirmChangeAsync = ConfirmChange;
+        session.AskUserAsync = AskUser;
         session.Trace += trace =>
         {
+            if (trace.Kind is "Tool result" or "Tool error" or "CAD change")
+                responsePresenter.ObserveToolResult(trace.Text, trace.Arguments, trace.ToolName);
             RecordTrace(trace.Kind, trace.Text);
             if (trace.Kind == "CAD change") RecordChat("TopSolid result", trace.Text);
         };
-        if (sessionConfiguration != null) RecordChat("System", "Configuration changed. Started a new conversation.");
+        if (sessionConfiguration != null) RecordChat("System", StudioStrings.Text("Configuration changed. Conversation preserved."));
+        RecordTrace("Model settings", settings.Provider + "; model=" + (settings.Provider == AppSettings.OllamaProvider ? settings.OllamaModel : settings.CloudModel));
         sessionConfiguration = signature;
+    }
+
+    private Task<QuestionAnswer?> AskUser(UserQuestion question, CancellationToken token)
+    {
+        token.ThrowIfCancellationRequested();
+        var dialog = new QuestionWindow(question, mcp) { Owner = this };
+        using var registration = token.Register(() => OnUi(() => { if (dialog.IsVisible) dialog.Close(); }));
+        activityAwaitingApproval = true;
+        SetActivity("Activity.Question", QuestionWindow.IconKey(question.ItemKind), waitingForUser: true);
+        try
+        {
+            var accepted = dialog.ShowDialog() == true && !token.IsCancellationRequested;
+            if (accepted) RecordChat("You", question.Title + "\n" + dialog.Answer!.Summary);
+            RecordTrace("Question", accepted ? "User answered: " + question.Kind : "User cancelled the question.");
+            return Task.FromResult(accepted ? dialog.Answer : null);
+        }
+        finally
+        {
+            activityAwaitingApproval = false;
+            SetActivity(token.IsCancellationRequested ? "Activity.Cancelling" : "Activity.PreparingResponse");
+        }
     }
 
     private Task<bool> ConfirmChange(JObject proposal, CancellationToken token)
     {
         token.ThrowIfCancellationRequested();
-        var dialog = new ChangeConfirmationWindow(proposal) { Owner = this };
-        return Task.FromResult(dialog.ShowDialog() == true && !token.IsCancellationRequested);
+        var decision = PermissionPolicy.Evaluate(permissionMode, proposal);
+        RecordTrace("Permission", $"{permissionMode}: {decision.Reason}");
+        if (!decision.RequiresApproval) return Task.FromResult(true);
+        responsePresenter.Observe(proposal);
+        var dialog = new ChangeConfirmationWindow(proposal, settings.DevMode, responsePresenter, mcp) { Owner = this };
+        using var registration = token.Register(() => OnUi(() => { if (dialog.IsVisible) dialog.Close(); }));
+        activityAwaitingApproval = true;
+        SetActivity("Activity.Approval", "status", waitingForUser: true);
+        try { return Task.FromResult(dialog.ShowDialog() == true && !token.IsCancellationRequested); }
+        finally
+        {
+            activityAwaitingApproval = false;
+            SetActivity(token.IsCancellationRequested ? "Activity.Cancelling" : "Activity.TopSolid", "document");
+        }
     }
 
     private async void Send_Click(object sender, RoutedEventArgs e) => await SendMessage();
 
     private async Task SendMessage()
     {
-        if (operation != null || string.IsNullOrWhiteSpace(MessageBox.Text)) return;
+        if (operation != null || loadingAttachments || (string.IsNullOrWhiteSpace(MessageBox.Text) && attachments.Count == 0)) return;
         var text = MessageBox.Text.Trim();
-        chatClock.Restart(); ElapsedText.Text = "Elapsed 0.0 s"; elapsedTimer.Start();
+        var submittedAttachments = attachments.ToArray();
+        chatClock.Restart(); ElapsedText.Text = StudioStrings.Get("Chat.Elapsed", "0.0 s"); elapsedTimer.Start();
         try { await RunOperation(async token =>
         {
             EnsureSession();
-            RecordChat("You", text);
+            RecordChat("You", text + (submittedAttachments.Length == 0 ? "" : "\n\n" + StudioStrings.Get("Chat.Files", string.Join(", ", submittedAttachments.Select(a => a.Name)))));
             MessageBox.Clear();
+            attachments.Clear(); RenderAttachments();
             try
             {
-                var reply = await session!.SendAsync(text, token);
+                var reply = await session!.SendAsync(text, submittedAttachments, token);
                 modelStatus = session.LastResponseUsedModel ? "response received" : "not used (direct MCP)";
+                if (session.LastResponseUsedModel)
+                {
+                    connectionHealth.Remove("AiRuntime");
+                    connectionHealth.Set("Ai", ConnectionSeverity.Ready, "Health.AiInferenceReady");
+                }
                 RecordChat("Assistant", reply);
             }
             catch
             {
                 if (string.IsNullOrEmpty(MessageBox.Text)) MessageBox.Text = text;
+                if (attachments.Count == 0) { attachments.AddRange(submittedAttachments); RenderAttachments(); }
                 modelStatus = token.IsCancellationRequested ? "cancelled" : "request failed";
                 throw;
             }
         }); }
         finally {
             chatClock.Stop(); elapsedTimer.Stop();
-            ElapsedText.Text = "Elapsed " + ChatTranscript.Elapsed(chatClock.Elapsed.TotalMilliseconds);
+            ElapsedText.Text = StudioStrings.Get("Chat.Elapsed", ChatTranscript.Elapsed(chatClock.Elapsed.TotalMilliseconds));
             RecordTrace("Timing", "Chat elapsed: " + ChatTranscript.Elapsed(chatClock.Elapsed.TotalMilliseconds) + " (includes confirmation time)");
         }
     }
@@ -327,43 +401,67 @@ public partial class MainWindow : Window
         operation = active;
         SetBusy(true);
         try { await work(active.Token); }
-        catch (OperationCanceledException) { RecordTrace("Cancelled", "Request cancelled. An interrupted MCP session may need reconnecting."); if (chatClock.IsRunning) RecordChat("System", "Request cancelled."); }
+        catch (OperationCanceledException) { if (modelStatus == "listing models") modelStatus = "cancelled"; RecordTrace("Cancelled", "Request cancelled. An interrupted MCP session may need reconnecting."); if (chatClock.IsRunning) RecordChat("System", StudioStrings.Text("Request cancelled.")); }
         catch (Exception ex) { if (modelStatus == "listing models") modelStatus = "model listing failed"; ShowError(ex); }
         finally { operation = null; if (!closing) { SetBusy(false); UpdateStatus(); } }
     }
 
     private void SetBusy(bool busy)
     {
+        activityAwaitingApproval = false;
+        SetActivity(busy ? (chatClock.IsRunning ? "Activity.Thinking" : "Activity.Working") : null);
         ConfigurationPanel.IsEnabled = !busy;
-        SendButton.IsEnabled = !busy;
-        ConnectButton.IsEnabled = !busy;
-        StatusButton.IsEnabled = !busy && mcp.IsConnected;
-        ClearButton.IsEnabled = !busy;
-        CancelButton.IsEnabled = busy && !mcp.IsMutationInFlight;
+        ModelBox.IsEnabled = !busy;
+        PermissionBox.IsEnabled = !busy;
+        AttachButton.IsEnabled = !busy && !loadingAttachments;
+        AttachmentsPanel.IsEnabled = !busy;
+        SendButton.IsEnabled = !busy && !loadingAttachments;
+        SendButton.Visibility = busy ? Visibility.Collapsed : Visibility.Visible;
+        CancelButton.Visibility = busy ? Visibility.Visible : Visibility.Collapsed;
+        UpdateConnectionIndicator();
+        ServerPathBox.IsEnabled = SaveSettingsButton.IsEnabled = !busy;
+        ResponseLanguageBox.IsEnabled = !busy;
+        developerWindow?.UpdateConnectionState(mcp.IsConnected, busy, mcp.IsMutationInFlight);
+        ClearButton.IsEnabled = !busy && !loadingAttachments;
+        CancelButton.IsEnabled = busy && !mcp.IsMutationInFlight && operation?.IsCancellationRequested != true;
     }
 
     private void UpdateStatus()
     {
-        StatusText.Text = $"MCP: {(mcp.IsConnected ? $"connected ({mcp.Tools.Count} tools)" : "disconnected")} · Model: {modelStatus}";
-        ConnectButton.Content = mcp.IsConnected ? "Disconnect MCP" : "Connect MCP";
-        StatusButton.IsEnabled = operation == null && mcp.IsConnected;
-        CancelButton.IsEnabled = operation != null && !mcp.IsMutationInFlight;
-        if (mcp.IsMutationInFlight) StatusText.Text += " · Applying CAD change; waiting for commit/rollback";
+        StatusText.Text = StudioStrings.Get("Chat.Status", mcp.IsConnected ? StudioStrings.Get("Chat.ConnectedTools", mcp.Tools.Count) : StudioStrings.Text("disconnected"), LocalizedModelStatus());
+        UpdateConnectionIndicator();
+        developerWindow?.UpdateConnectionState(mcp.IsConnected, operation != null, mcp.IsMutationInFlight);
+        CancelButton.IsEnabled = operation != null && !mcp.IsMutationInFlight && !operation.IsCancellationRequested;
+        if (mcp.IsMutationInFlight) StatusText.Text += " · " + StudioStrings.Text("Applying CAD change; waiting for commit/rollback");
+        if (operation != null && mcp.IsMutationInFlight && !activityAwaitingApproval) SetActivity("Activity.Applying", "operation");
     }
 
     private void Clear_Click(object sender, RoutedEventArgs e)
     {
+        if (operation != null || loadingAttachments) return;
         session?.Clear();
         sessionLog.Clear();
+        responsePresenter.Clear();
+        lastPresentedChatSequence = 0;
         ChatBox.Clear();
         ElapsedText.Text = "";
         TraceBox.Clear();
+        attachments.Clear(); RenderAttachments();
+        EmptyState.Visibility = Visibility.Visible;
+        ShowChat();
+        RefreshDeveloper();
         diagnosticLog.Write("info", "chat.cleared");
     }
-    private void Cancel_Click(object sender, RoutedEventArgs e) { if (!mcp.IsMutationInFlight) operation?.Cancel(); }
+    private void Cancel_Click(object sender, RoutedEventArgs e)
+    {
+        if (mcp.IsMutationInFlight || operation == null) return;
+        SetActivity("Activity.Cancelling", "status");
+        CancelButton.IsEnabled = false;
+        operation.Cancel();
+    }
     private async void Message_KeyDown(object sender, KeyEventArgs e)
     {
-        if (e.Key == Key.Enter && Keyboard.Modifiers == ModifierKeys.Control) { e.Handled = true; await SendMessage(); }
+        if (e.Key == Key.Enter && !composingText && Keyboard.Modifiers is ModifierKeys.None or ModifierKeys.Control) { e.Handled = true; await SendMessage(); }
     }
 
     private void UpdateLogSecrets()
@@ -386,6 +484,12 @@ public partial class MainWindow : Window
             ["ollamaModel"] = settings.OllamaModel,
             ["requestTimeoutMinutes"] = settings.RequestTimeoutMinutes,
             ["ollamaFastGptOss"] = settings.OllamaFastGptOss,
+            ["devMode"] = settings.DevMode,
+            ["appearanceMode"] = settings.AppearanceMode,
+            ["interfaceLanguage"] = settings.InterfaceLanguage,
+            ["responseLanguage"] = settings.ResponseLanguage,
+            ["permissionMode"] = permissionMode.ToString(),
+            ["topSolidTheme"] = themeFollower?.Current.Name,
             ["mcpServerPath"] = settings.McpServerPath,
             ["settingsFilePath"] = settingsStore.FilePath
         });
@@ -393,11 +497,20 @@ public partial class MainWindow : Window
 
     private void RecordTrace(string kind, string text)
     {
+        if (kind == "Model" && text.StartsWith("Request ", StringComparison.Ordinal))
+        {
+            Interlocked.Exchange(ref modelRequestStartedTicks, DateTimeOffset.UtcNow.UtcTicks);
+            OnUi(() => { if (!closing) { connectionTimer.Start(); UpdateConnectionIndicator(); } });
+        }
+        else if (kind == "Timing" && text.StartsWith("Model request ", StringComparison.Ordinal))
+            Interlocked.Exchange(ref modelRequestStartedTicks, 0);
         var safe = diagnosticLog.Redact(text);
+        if (kind is "Tool result" or "Tool error" or "CAD change" or "TopSolid status") responsePresenter.ObserveToolResult(safe);
         sessionLog.AddTrace(kind, safe);
         var level = kind.Contains("error", StringComparison.OrdinalIgnoreCase) ? "error" : "info";
         diagnosticLog.Write(level, "trace", data: new JObject { ["kind"] = kind, ["text"] = safe });
-        OnUi(() => AppendTraceToUi(kind, safe));
+        var activitySource = operation;
+        OnUi(() => { UpdateActivityFromTrace(kind, safe, activitySource); AppendTraceToUi(kind, safe); });
     }
 
     private void AppendTraceToUi(string kind, string safe)
@@ -405,6 +518,7 @@ public partial class MainWindow : Window
         TraceBox.AppendText($"[{DateTime.Now:HH:mm:ss}] {kind}: {safe}\n\n");
         if (TraceBox.Text.Length > 120000) TraceBox.Text = TraceBox.Text[^90000..];
         TraceBox.ScrollToEnd();
+        RefreshDeveloper();
     }
 
     private void RecordChat(string role, string text)
@@ -413,14 +527,20 @@ public partial class MainWindow : Window
         double? elapsed = chatClock.IsRunning && role != "You" ? chatClock.Elapsed.TotalMilliseconds : null;
         sessionLog.AddChat(role, safe, elapsed);
         diagnosticLog.Write("info", "chat.message", data: new JObject { ["role"] = role, ["text"] = safe, ["elapsedMilliseconds"] = elapsed });
-        OnUi(() => ChatBox.AppendMessage(role, safe, elapsed));
+        OnUi(() => { AppendPendingChat(); RefreshDeveloper(); });
     }
 
     private void ShowError(Exception error)
     {
+        if (error is AiProviderException or System.Net.Http.HttpRequestException || (chatClock.IsRunning && error is TimeoutException or ArgumentException))
+        {
+            var failure = ConnectionHealth.AiFailure(error);
+            connectionHealth.Set("AiRuntime", failure.Severity, failure.Key);
+        }
         diagnosticLog.WriteException("handled.error", error);
         RecordTrace("Error", error.Message);
-        RecordChat("System", error.Message);
+        RecordChat("System", StudioStrings.Text(error.Message));
+        if (SettingsPage.Visibility == Visibility.Visible) SettingsFeedback.Text = responsePresenter.Present(StudioStrings.Text(error.Message), settings.DevMode);
     }
 
     private async void Window_Closing(object? sender, CancelEventArgs e)
@@ -434,9 +554,12 @@ public partial class MainWindow : Window
         }
         if (closing) return;
         closing = true;
+        connectionTimer.Stop();
+        refreshRotation.BeginAnimation(System.Windows.Media.RotateTransform.AngleProperty, null);
+        connectionDialog?.Close();
         operation?.Cancel();
         try { await mcp.DisposeAsync(); }
-        finally { provider?.Dispose(); closeReady = true; _ = Dispatcher.BeginInvoke(new Action(Close)); }
+        finally { provider?.Dispose(); elapsedTimer.Stop(); developerTimer.Stop(); themeFollower?.Dispose(); developerWindow?.Close(); closeReady = true; _ = Dispatcher.BeginInvoke(new Action(Close)); }
     }
 
     private static IReadOnlyList<McpToolDefinition> CloneTools(IEnumerable<McpToolDefinition> tools)

@@ -22,7 +22,7 @@ add('Pdm','list_minor_revisions','kernel','TopSolidHost.Pdm.GetMinorRevisions(ne
 add('Pdm','resolve_pdm_document','kernel','TopSolidHost.Documents.GetDocument(a.Pdm(p))','pdm')
 add('Entities','list_elements','kernel','TopSolidHost.Elements.GetElements(a.Document(p))',paged=True)
 add('Entities','find_element','kernel','TopSolidHost.Elements.SearchByName(a.Document(p), (string)p["name"])','docname',description='Find an element with a unique name. Elements without unique names are not found by this API.')
-add('Entities','list_parameters','kernel','TopSolidHost.Parameters.GetParameters(a.Document(p))',paged=True)
+add('Entities','list_parameters','kernel','TopSolidHost.Parameters.GetParameters(a.Document(p))',paged=True,description='List parameter entity IDs from the native parameters folder only. Prefer list_parameter_values for names and typed values in one call.')
 add('Entities','list_functions','kernel','TopSolidHost.Entities.GetFunctions(a.Document(p))',paged=True)
 add('Entities','list_publishings','kernel','TopSolidHost.Entities.GetPublishings(a.Document(p))',paged=True)
 for dimension in (2,3):
@@ -56,10 +56,10 @@ for kind in ('ToolHolders','PartHolders','Magazines','Pockets'):
     add('Cam/Machine','list_machine_'+snake,'cam','TopSolidCamHost.Machines.Get'+kind+'(a.Element(p))','element',True)
 add('Cam/Operation','list_cam_operations','cam','TopSolidCamHost.Operations.GetOperations(a.Document(p))',paged=True)
 add('Cam/Operation','list_cam_scenario','cam','TopSolidCamHost.Operations.GetScenarioOperations(a.Document(p))',paged=True)
-add('Cam/Operation','list_cam_parameters','cam','TopSolidCamHost.Parameters.GetParameters(a.CamElement(p))','camElement',True)
-add('Cam/CuttingConditions','get_cutting_conditions_document','cam','TopSolidCamHost.Operations.GetCurrentCuttingConditionsDocument(a.Element(p))','element')
-add('Cam/CuttingConditions','get_cutting_conditions_abacus','cam','TopSolidCamHost.Operations.GetCurrentCuttingConditionsAbacus(a.Element(p))','element')
-add('Cam/CuttingConditions','list_cutting_conditions_documents','cam','TopSolidCamHost.Operations.GetAllCuttingConditionsDocuments(a.Element(p))','element',True)
+add('Cam/Operation','list_cam_parameters','cam','TopSolidCamHost.Parameters.GetParameters(a.CamElement(p))','camElement',True,'Inspect all parameters INSIDE a CAM operation with friendly names, category, current typed values, exact SI unit type, native enum choices and edit support. Default limit=100; follow nextOffset until hasMore=false, including when the output budget shortens a page. Optional category=CuttingConditions narrows to operation cutting conditions. Inspect every category when finding machining/tool/strategy settings; no cutting-condition document lookup is needed.')
+add('Cam/CuttingConditions','get_cutting_conditions_document','cam','TopSolidCamHost.Operations.GetCurrentCuttingConditionsDocument(a.Element(p))','element',description='Read the linked cutting-condition LIBRARY DOCUMENT only when explicitly requested. For ordinary cutting conditions, speeds, feeds or operation edits use list_cam_parameters and get_cam_parameter_value.')
+add('Cam/CuttingConditions','get_cutting_conditions_abacus','cam','TopSolidCamHost.Operations.GetCurrentCuttingConditionsAbacus(a.Element(p))','element',description='Read the linked cutting-condition LIBRARY ABACUS only when explicitly requested. For ordinary operation cutting conditions use list_cam_parameters.')
+add('Cam/CuttingConditions','list_cutting_conditions_documents','cam','TopSolidCamHost.Operations.GetAllCuttingConditionsDocuments(a.Element(p))','element',True,'List available cutting-condition LIBRARY DOCUMENTS only when explicitly requested. An empty list does not mean the operation has no cutting conditions; inspect list_cam_parameters instead.')
 add('Cam/Postprocessor','get_postprocessor_id','cam','TopSolidCamHost.NCPostProcessor.GetNCPostProcessorId(a.Document(p))')
 add('Cam/Nc','list_nc_files','cam','TopSolidCamHost.NCFiles.GetNCFiles(a.Document(p))',paged=True)
 add('Cam/Nc','list_cam_programs','cam','TopSolidCamHost.Programs.GetPrograms(a.Document(p))',paged=True)
@@ -97,20 +97,40 @@ shapes={
 groups={};contract_rows=[]
 for b in bindings:
     named_pdm=b['name'] in ('topsolid_list_projects','topsolid_list_libraries')
+    named_cam=b['name'] in ('topsolid_list_cam_parts','topsolid_list_cam_tools','topsolid_list_cam_coordinate_systems','topsolid_list_cam_operations','topsolid_list_cam_scenario','topsolid_get_cam_machine') or b['name'].startswith('topsolid_list_machine_')
+    cam_parameters=b['name']=='topsolid_list_cam_parameters'
     projection=', id => new JObject { ["pdmObjectId"] = id.Id, ["name"] = TopSolidHost.Pdm.GetName(id) }' if named_pdm else ''
     symbols=refs(b['expression']+projection); b['apis']=symbols
     texts=[fetch('api/'+b['module']+'/'+symbol+'.html') for symbol in symbols]
+    if named_cam:
+        b['description'] += ' Includes native friendly names; keep handles internal in user mode.'
+        for symbol in ('TopSolid.Kernel.Automating.IElements.GetFriendlyName','TopSolid.Kernel.Automating.IElements.GetName'):
+            symbols.append(symbol); texts.append(fetch('api/kernel/'+symbol+'.html'))
+        if b['name'] in ('topsolid_list_cam_operations','topsolid_list_cam_scenario'):
+            symbol='TopSolid.Cam.NC.Kernel.Automating.IOperations.GetDescription'
+            symbols.append(symbol); texts.append(fetch('api/cam/'+symbol+'.html'))
+    if cam_parameters:
+        for method in ('GetName','GetFullName','GetLocalizedName','GetCategories','GetType','GetValue','IsReadOnly','ToStringValue','ToInvariantStringValue','GetEnumTypeName','GetParameterEnumValueNames','GetValueBoundValue','GetValueBoundElement','GetValueFeedRateValue','GetValueSpindleRateValue'):
+            symbol='TopSolid.Cam.NC.Kernel.Automating.IParameters.'+method
+            symbols.append(symbol); texts.append(fetch('api/cam/'+symbol+'.html'))
+        for symbol in ('TopSolid.Cam.NC.Kernel.Automating.ParameterType','TopSolid.Cam.NC.Kernel.Automating.IOperations.GetDescription','TopSolid.Kernel.Automating.IElements.GetFriendlyName','TopSolid.Kernel.Automating.IElements.GetName'):
+            symbols.append(symbol); texts.append(fetch('api/'+('cam' if '.Cam.' in symbol else 'kernel')+'/'+symbol+'.html'))
     if named_pdm:
         texts += [fetch('api/kernel/TopSolid.Kernel.Automating.'+name+'.html') for name in ('IDocuments.GetDocument','IDocuments.Exists','IDocuments.GetPdmObject','IParameters.GetCreationDateParameter','IParameters.GetDateTimeValue','IParameters.GetParameterType','IElements.Exists')]
         b['description'] += ' Names only by default. Set includeCreationDates=true only when dates are requested; unavailable dates are explicit. Never group or omit rows.'
     # Documents.GetDocument belongs to kernel even when a consuming tool later uses CAD.
     for text in texts:contract_rows.append((b['name'],text['url'],text['text']))
     props,required=shapes[b['shape']]
+    if cam_parameters: props='CamParameterValues.Properties()'
     if named_pdm: props='new JObject { ["includeCreationDates"] = Schema.Boolean("Optional, default false. Query creation dates only when requested."), ["orderBy"] = Schema.Choice("Optional global name or creation-date order before pagination. Name ordering needs no dates. Missing dates block chronological ordering.", "oldestFirst", "newestFirst", "nameAscending", "nameDescending") }'
-    page_default=', 100' if named_pdm else ''
+    page_default=', 100' if named_pdm or cam_parameters else ''
     if b['paged']:props='Schema.Page('+props+page_default+')'
     expr=('AutomationValues.Page('+b['expression']+', p'+projection+page_default+')' if b['paged'] else 'AutomationValues.Result('+b['expression']+')')
     if named_pdm: expr='a.ListPdmProjects('+('true' if b['name']=='topsolid_list_projects' else 'false')+', p)'
+    if named_cam:
+        projector='CamNames.OperationNamed' if b['name'] in ('topsolid_list_cam_operations','topsolid_list_cam_scenario') else 'CamNames.Named'
+        expr='AutomationValues.Page('+b['expression']+', p, id => '+projector+'(id))' if b['paged'] else 'AutomationValues.Result(CamNames.Named('+b['expression']+'))'
+    if cam_parameters: expr='CamParameterValues.Native.Page(a.CamElement(p), p)'
     code='            register(new ToolDefinition('+json.dumps(b['name'])+', '+json.dumps(b['description'])+', '+props+',\n                p => a.Read('+json.dumps(b['module'])+', () => '+expr+'), '+json.dumps(b['category'])+', new[] { '+', '.join(json.dumps(s) for s in required)+' }'+', true, new[] { '+', '.join(json.dumps(t['url']) for t in texts)+' }));'
     if not required:code=code.replace('new[] {  }','new string[0]')
     groups.setdefault(b['category'],[]).append(code)

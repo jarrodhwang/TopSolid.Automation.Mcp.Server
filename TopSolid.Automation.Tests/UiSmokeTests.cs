@@ -1,4 +1,5 @@
 using System.Security.Cryptography;
+using System.Reflection;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
@@ -9,6 +10,7 @@ using TopSolid.Automation.AI.Studio;
 using TopSolid.Automation.AI.Studio.Chat;
 using System.Windows.Documents;
 using TopSolid.Automation.AI.Studio.Settings;
+using TopSolid.Automation.AI.Studio.Localization;
 
 namespace TopSolid.Automation.Tests;
 
@@ -16,6 +18,7 @@ internal static class UiSmokeTests
 {
     public static Task Run(string? serverPath, string? liveOllamaModel = null, string? approvedNativePlan = null, bool render = true)
     {
+        RenderOptions.ProcessRenderMode = System.Windows.Interop.RenderMode.SoftwareOnly;
         var completion = new TaskCompletionSource(TaskCreationOptions.RunContinuationsAsynchronously);
         var thread = new Thread(() =>
         {
@@ -54,9 +57,7 @@ internal static class UiSmokeTests
         // A Window that has never been shown makes its whole visual tree
         // effectively invisible. Host this test window off screen so WPF runs
         // its real layout/render pipeline without taking focus from the user.
-        var window = new MainWindow { ShowInTaskbar = false, ShowActivated = false,
-            WindowStartupLocation = WindowStartupLocation.Manual, Left = -20000, Top = -20000 };
-        window.Show();
+        var window = CreateOffscreenWindow();
         var nativeDocument = approvedNativePlan == null ? null : ApprovedFixtureDocument(approvedNativePlan);
         var closed = new TaskCompletionSource(TaskCreationOptions.RunContinuationsAsynchronously);
         window.Closed += (_, _) => closed.TrySetResult();
@@ -71,8 +72,12 @@ internal static class UiSmokeTests
             // A normal shown window creates its editable-control templates
             // before user input. Do the same for this offscreen owned window.
             LayoutWindow(window);
+            await window.Dispatcher.InvokeAsync(() => { }, DispatcherPriority.ApplicationIdle);
             T Control<T>(string name) where T : FrameworkElement => window.FindName(name) as T
                 ?? throw new InvalidOperationException("Missing UI control: " + name);
+            Control<Button>("SettingsButton").RaiseEvent(new RoutedEventArgs(Button.ClickEvent));
+            Control<ListBox>("SettingsNavigation").SelectedValue = "ai";
+            LayoutWindow(window);
             var provider = Control<ComboBox>("ProviderBox");
             var cloudService = Control<ComboBox>("CloudServiceBox");
             var endpoint = Control<TextBox>("EndpointBox");
@@ -83,9 +88,10 @@ internal static class UiSmokeTests
             wait.SelectedItem = 30;
             var faster = Control<CheckBox>("FastGptOssBox"); faster.IsChecked = false;
             var path = Control<TextBox>("ServerPathBox");
-            var connect = Control<Button>("ConnectButton");
+            var developer = OpenDeveloperFixture(window);
+            var connect = developer.ConnectButton;
             var saveLog = Control<Button>("SaveLogButton");
-            var statusButton = Control<Button>("StatusButton");
+            var statusButton = developer.StatusButton;
             var statusText = Control<TextBlock>("StatusText");
             var trace = Control<TextBox>("TraceBox");
             var chat = Control<ChatTranscript>("ChatBox");
@@ -93,6 +99,7 @@ internal static class UiSmokeTests
             Check.True(saveLog.IsEnabled && (string)saveLog.Content == "Save log", "Save log action should be available when idle");
             Check.True(statusText.Text.Contains("disconnected", StringComparison.Ordinal), "Initial MCP status should be disconnected");
             provider.SelectedIndex = 1;
+            LayoutWindow(window);
             Check.Equal(30, (int)wait.SelectedItem, "Provider switching lost the configured timeout");
             Check.True(faster.IsVisible && faster.IsChecked == false, "Ollama thinking choice should be visible and retained");
             Check.True(!key.IsEnabled, "Ollama should not accept a cloud API key");
@@ -123,7 +130,7 @@ internal static class UiSmokeTests
             Check.True(File.Exists(path.Text), "Supply --server <exe> with --ui-smoke when no server is bundled beside the test harness");
             connect.RaiseEvent(new RoutedEventArgs(Button.ClickEvent));
             await WaitUntil(() => connect.IsEnabled, "MCP Connect button did not finish");
-            Check.True(statusText.Text.Contains("connected (171 tools)", StringComparison.Ordinal), "UI did not show discovered tools: " + trace.Text);
+            Check.True(statusText.Text.Contains("connected (187 tools)", StringComparison.Ordinal), "UI did not show discovered tools: " + trace.Text);
             Check.True(trace.Text.Contains("topsolid_get_active_document", StringComparison.Ordinal), "Tool discovery should be visible in trace");
             Check.True(statusButton.IsEnabled, "Connected UI should enable the TopSolid status button");
             statusButton.RaiseEvent(new RoutedEventArgs(Button.ClickEvent));
@@ -139,12 +146,20 @@ internal static class UiSmokeTests
                 Control<TextBox>("MessageBox").Text = "List all projects name order by cretaion date (oldest to newest)";
                 var send = Control<Button>("SendButton"); send.RaiseEvent(new RoutedEventArgs(Button.ClickEvent));
                 await WaitUntil(() => send.IsEnabled, "Direct PDM UI request did not finish");
-                Check.True(chat.Text.Contains("(complete)"), "Direct PDM list not rendered in chat: " + chat.Text);
+                const string statusMarker = "TopSolid status: ";
+                using var statusReader = new Newtonsoft.Json.JsonTextReader(new StringReader(trace.Text[(trace.Text.LastIndexOf(statusMarker, StringComparison.Ordinal) + statusMarker.Length)..].TrimStart()));
+                // Trace formatting expands JSON over several lines. Read exactly
+                // one object, leaving any subsequent timestamped events untouched.
+                var statusEnvelope = JObject.Load(statusReader);
+                var statusData = statusEnvelope["structuredContent"] ?? JObject.Parse((string)statusEnvelope["content"]![0]!["text"]!);
+                var nativeAvailable = (bool)statusData["connected"]!;
+                Check.True(nativeAvailable ? chat.Text.Contains("(complete)") : chat.Text.Contains("TopSolid query failed"),
+                    "Direct PDM request must render the complete list when connected or the real connection failure when unavailable: " + chat.Text);
                 Check.True(Control<TextBlock>("ElapsedText").Text.StartsWith("Elapsed "), "Elapsed duration missing from chat");
                 var answer = chat.Document.Blocks.OfType<Paragraph>().Last();
-                Check.Equal(((SolidColorBrush)ChatTranscript.AssistantBrush).Color, ((SolidColorBrush)answer.Foreground).Color, "AI answer must be blue");
+                Check.Equal(((SolidColorBrush)window.FindResource("TextBrush")).Color, ((SolidColorBrush)answer.Foreground).Color, "AI answer must follow the readable theme text color");
                 Check.True(new TextRange(answer.ContentStart, answer.ContentEnd).Text.Contains(" s"), "Final response must retain elapsed time");
-                Check.True(chat.Document.Blocks.OfType<Paragraph>().Any(p => p.Foreground != ChatTranscript.AssistantBrush), "User/system text should retain its own color");
+                Check.True(chat.Document.Blocks.OfType<Paragraph>().Any(p => p.Tag is "You"), "User role must remain distinct in the transcript");
                 Check.True(statusText.Text.Contains("not used (direct MCP)"), "Direct MCP must not claim model inference");
                 Check.True(!trace.Text.Contains("Model: Request"), "UI list should not contact a model");
             }
@@ -166,7 +181,7 @@ internal static class UiSmokeTests
                         var dialog = window.OwnedWindows.OfType<ChangeConfirmationWindow>().FirstOrDefault(d => d.IsVisible);
                         if (dialog == null) return;
                         var panel = (DockPanel)dialog.Content;
-                        var proposal = JObject.Parse(panel.Children.OfType<TextBox>().Single().Text);
+                        var proposal = JObject.Parse(dialog.ProposalBox.Text);
                         var args = (JObject)proposal["arguments"]!;
                         var affected = proposal["target"]?["affectedDocuments"] as JArray;
                         var allowed = approvals == 0 && affected?.Count == 1 && (string?)affected[0]?["documentId"] == nativeDocument &&
@@ -179,7 +194,7 @@ internal static class UiSmokeTests
                             approvals++;
                             File.WriteAllText("artifacts/native-workflow/ai-circle-proposal.json", proposal.ToString());
                         }
-                        panel.Children.OfType<StackPanel>().Single().Children.OfType<Button>().Single(b => (string)b.Content == (allowed ? "Apply change" : "Cancel"))
+                        (allowed ? dialog.ApproveButton : dialog.RejectButton)
                             .RaiseEvent(new RoutedEventArgs(Button.ClickEvent));
                     };
                     confirmationTimer.Start();
@@ -213,11 +228,13 @@ internal static class UiSmokeTests
                 key.Clear();
                 model.Text = "";
             }
+            ((System.Windows.Controls.Grid)window.FindName("SettingsPage")).Visibility = Visibility.Collapsed;
+            ((System.Windows.Controls.Grid)window.FindName("ChatPage")).Visibility = Visibility.Visible;
             var root = LayoutWindow(window);
             if (!string.IsNullOrWhiteSpace(liveOllamaModel))
                 Check.True(statusText.Text.Contains("response received", StringComparison.Ordinal),
                     "Layout changed the status of a completed live model response");
-            Console.WriteLine("WPF controls: direct MCP Send, blue assistant text, elapsed time, role colors and unchanged saved settings checked.");
+            Console.WriteLine("WPF controls: direct MCP Send, themed replies, elapsed time, distinct roles and unchanged saved settings checked.");
             if (render) {
             const int width = 1032;
             const int height = 792;
@@ -261,6 +278,7 @@ internal static class UiSmokeTests
 
     private static void VerifyConfirmationDialog()
     {
+        StudioStrings.Apply("en");
         foreach (var approved in new[] { false, true })
         {
             var proposal = new JObject { ["toolName"] = "topsolid_create_rectangle2d", ["target"] = new JObject { ["name"] = "Test fixture part", ["documentId"] = "test-only-revision" },
@@ -269,10 +287,10 @@ internal static class UiSmokeTests
             var dialog = new ChangeConfirmationWindow(proposal) { ShowInTaskbar = false, WindowStartupLocation = WindowStartupLocation.Manual, Left = -10000, Top = -10000 };
             var root = (DockPanel)dialog.Content;
             root.Background = SystemColors.WindowBrush;
-            var buttons = root.Children.OfType<StackPanel>().Single().Children.OfType<Button>().ToArray();
+            var buttons = new[] { dialog.RejectButton, dialog.ApproveButton };
             Check.True(buttons.Single(b => (string)b.Content == "Cancel").IsDefault, "Confirmation should default to Cancel");
-            Check.True(!buttons.Single(b => (string)b.Content == "Apply change").IsDefault, "Enter must not implicitly approve a change");
-            Check.True(root.Children.OfType<TextBox>().Single().IsReadOnly, "Preview must be immutable");
+            Check.True(!buttons.Single(b => (string)b.Content == "Approve").IsDefault, "Enter must not implicitly approve a change");
+            Check.True(dialog.ProposalBox.IsReadOnly, "Preview must be immutable");
             dialog.Loaded += (_, _) => dialog.Dispatcher.BeginInvoke(() =>
             {
                 if (!approved)
@@ -282,7 +300,7 @@ internal static class UiSmokeTests
                     var encoder = new PngBitmapEncoder(); encoder.Frames.Add(BitmapFrame.Create(bitmap));
                     using var stream = File.Create(Path.GetFullPath("artifacts/confirmation-smoke.png")); encoder.Save(stream);
                 }
-                buttons.Single(b => (string)b.Content == (approved ? "Apply change" : "Cancel")).RaiseEvent(new RoutedEventArgs(Button.ClickEvent));
+                buttons.Single(b => (string)b.Content == (approved ? "Approve" : "Cancel")).RaiseEvent(new RoutedEventArgs(Button.ClickEvent));
             });
             Check.Equal(approved, dialog.ShowDialog() == true, "Confirmation button returned the wrong decision");
         }
@@ -300,13 +318,13 @@ internal static class UiSmokeTests
 
     private static async Task CloseAfterConnectFailure()
     {
-        var window = new MainWindow();
+        var window = CreateOffscreenWindow();
         var closed = new TaskCompletionSource(TaskCreationOptions.RunContinuationsAsynchronously);
         window.Closed += (_, _) => closed.TrySetResult();
         try
         {
             ((TextBox)window.FindName("ServerPathBox")).Text = Path.Combine(Path.GetTempPath(), Guid.NewGuid() + ".exe");
-            var connect = (Button)window.FindName("ConnectButton");
+            var connect = OpenDeveloperFixture(window).ConnectButton;
             connect.RaiseEvent(new RoutedEventArgs(Button.ClickEvent));
             await WaitUntil(() => connect.IsEnabled, "Failed MCP connection left the UI busy");
             Check.True(((TextBox)window.FindName("TraceBox")).Text.Contains("Error", StringComparison.Ordinal),
@@ -321,17 +339,39 @@ internal static class UiSmokeTests
 
     private static async Task CloseDuringConnect(string? serverPath)
     {
-        var window = new MainWindow();
+        var window = CreateOffscreenWindow();
         var closed = new TaskCompletionSource(TaskCreationOptions.RunContinuationsAsynchronously);
         window.Closed += (_, _) => closed.TrySetResult();
         ((TextBox)window.FindName("ServerPathBox")).Text = serverPath ?? Path.Combine(AppContext.BaseDirectory,
             "McpServer", "TopSolid.Automation.Mcp.Server.AddIn.exe");
-        ((Button)window.FindName("ConnectButton")).RaiseEvent(new RoutedEventArgs(Button.ClickEvent));
+        OpenDeveloperFixture(window).ConnectButton.RaiseEvent(new RoutedEventArgs(Button.ClickEvent));
         window.Close();
         await closed.Task.WaitAsync(TimeSpan.FromSeconds(5));
         // Allow cancellation continuations and queued status notifications to run
         // on this same dispatcher after the window has closed.
         await Task.Delay(100);
+    }
+
+    private static MainWindow CreateOffscreenWindow()
+    {
+        var window = new MainWindow(autoConnect: false) { ShowInTaskbar = false, ShowActivated = false,
+            WindowStartupLocation = WindowStartupLocation.Manual, Left = -20000, Top = -20000 };
+        // Do not let a user's saved Dev Mode open a dashboard during initial layout.
+        ((CheckBox)window.FindName("DevModeBox")).IsChecked = false;
+        ((ComboBox)window.FindName("InterfaceLanguageBox")).SelectedValue = "en";
+        window.Show();
+        LayoutWindow(window);
+        return window;
+    }
+
+    private static DeveloperWindow OpenDeveloperFixture(MainWindow window)
+    {
+        ((CheckBox)window.FindName("DevModeBox")).IsChecked = true;
+        var developer = typeof(MainWindow).GetField("developerWindow", BindingFlags.Instance | BindingFlags.NonPublic)?.GetValue(window) as DeveloperWindow
+            ?? throw new InvalidOperationException("Dev Mode did not open its diagnostic window.");
+        developer.ShowInTaskbar = false;
+        developer.Left = -20000; developer.Top = -20000;
+        return developer;
     }
 
     private static async Task WaitUntil(Func<bool> condition, string message, TimeSpan? limit = null)

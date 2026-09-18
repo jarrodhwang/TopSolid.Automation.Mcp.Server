@@ -4,6 +4,7 @@ using Newtonsoft.Json.Linq;
 using TopSolid.Automation.AI.Studio.AI;
 using TopSolid.Automation.AI.Studio.Mcp;
 using TopSolid.Automation.Mcp.Contracts;
+using TopSolid.Automation.AI.Studio.Localization;
 
 namespace TopSolid.Automation.AI.Studio.Chat;
 
@@ -22,7 +23,8 @@ internal sealed record PdmCreateRequest(string Kind, string Name, string? Projec
     }
 
     internal sealed record Plan(AiToolCall? Call, string? Answer);
-    internal async Task<Plan> Resolve(IMcpClient mcp, Action<ChatTrace> trace, CancellationToken token)
+    internal async Task<Plan> Resolve(IMcpClient mcp, Action<ChatTrace> trace, CancellationToken token,
+        Func<UserQuestion, CancellationToken, Task<QuestionAnswer?>>? askUser = null)
     {
         var partTool = Kind == "part" && mcp.Tools.Any(t => t.Name == "topsolid_create_part_document" && t.RequiresConfirmation);
         var tool = Kind == "project" ? "topsolid_create_project" : partTool ? "topsolid_create_part_document" : "topsolid_create_document";
@@ -51,8 +53,15 @@ internal sealed record PdmCreateRequest(string Kind, string Name, string? Projec
                 projects = await Rows("topsolid_list_projects", new JObject());
             }
             var matches = projects.Where(row => string.Equals((string?)row["name"], Project, StringComparison.OrdinalIgnoreCase)).ToArray();
+            if (matches.Length > 1 && askUser != null)
+            {
+                var answer = await askUser(QuestionSources.Projects(matches, Project), token);
+                token.ThrowIfCancellationRequested();
+                if (answer == null) return new(null, StudioStrings.Get("Question.Cancelled"));
+                matches = [(JObject)answer.Data["selected"]![0]!["value"]!.DeepClone()];
+            }
             if (matches.Length != 1) return new(null, matches.Length == 0 ? $"No working project named \"{Project}\" was found. No document was created." :
-                $"More than one working project matches \"{Project}\". Select its exact PDM ID before creating a document. No change was made.");
+                $"More than one working project matches \"{Project}\". Specify a unique project name before creating a document. No change was made.");
             args["ownerId"] = matches[0]["pdmObjectId"]!.DeepClone();
             // .TopPrt is the installation's verified native part extension. The
             // generic fallback also creates an empty part; no loaded sample is needed.

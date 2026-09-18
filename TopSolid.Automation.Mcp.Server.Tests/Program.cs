@@ -19,7 +19,7 @@ namespace TopSolid.Automation.Mcp.Server.Tests
             try
             {
                 if (args.Length == 1 && args[0] == "--probe-sketch-reads") return SketchReadProbe();
-                Confirmation(); Transactions(); Geometry(); SchemaAndCatalog(); WorkflowExpansion(); PagedNames(); BatchTools(); PdmDateSorting(); ObjectIdentityRules(); SketchPlans(); DocumentCreation(); Persistence(); SketchPrimitives();
+                Confirmation(); Transactions(); Geometry(); SchemaAndCatalog(); WorkflowExpansion(); PagedNames(); BatchTools(); PdmDateSorting(); ObjectIdentityRules(); SketchPlans(); DocumentCreation(); Persistence(); SketchPrimitives(); SketchReliability(); ParameterEntities(); ModelingWorkflows(); CreationNaming(); CamParameters();
                 Console.WriteLine("PASS: " + checks + " server checks. No TopSolid connection or CAD mutation was performed."); return 0;
             }
             catch (Exception e) { Console.Error.WriteLine(e); return 1; }
@@ -96,9 +96,9 @@ namespace TopSolid.Automation.Mcp.Server.Tests
             using (var gateway = new AutomationGateway())
             {
                 var registry = new ToolRegistry(gateway); var list = registry.List();
-                Check(list.Count == 171, "Domain registration is incomplete");
+                Check(list.Count == 187, "Domain registration is incomplete");
                 Check(list.Select(t => (string)t["name"]).Distinct().Count() == list.Count, "Duplicate tool names");
-                Check(list.Count(t => !(bool)t["annotations"]["readOnlyHint"]) == 50, "Unexpected write capabilities");
+                Check(list.Count(t => !(bool)t["annotations"]["readOnlyHint"]) == 59, "Unexpected write capabilities");
                 foreach (var tool in list)
                 {
                     Check((bool)tool["inputSchema"]["additionalProperties"] == false, "Open argument object");
