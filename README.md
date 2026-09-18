@@ -1,4 +1,6 @@
-# TopSolid Automation AI — 0.5.15
+# TopSolid Automation AI — 0.5.16
+
+**0.5.16:** Main-window caption controls match the supplied TopSolid reference: a light gray strip, thin gray minimize/maximize/restore/close glyphs, compact spacing and rounded ends on the dark title band. Other dialogs retain the shared 0.5.15 appearance.
 
 **0.5.15:** Shared TopSolid window chrome, toolbars and controls across approvals, questions, connection status, Developer and error review. Includes native OK/Cancel icons, live custom palettes, narrow selection/preview tabs and clear/reselect recovery. [Dialog behavior and test prompts](docs/DIALOG-THEME-0.5.15.md).
 
@@ -53,10 +55,10 @@ dotnet build .\TopSolid.Automation.Mcp.Server.slnx -c Release
 
 The build uses the matched SDK from `C:\Program Files\TOPSOLID\TopSolid 7.20\bin`. To use another SDK folder, supply `-p:TopSolidAutomationDirectory="D:\SDK\TopSolid7.20"`. Legacy DLLs in `Server.AddIn/TopSolid.Automation` are preserved but excluded from reference resolution. Tested client and host version: **7.20.400.107**. Modeling requires host 7.20.326 or newer.
 
-A complete framework-dependent bundle is in **`artifacts/TopSolid-AI-0.5.15`**. Open `TopSolid.Automation.AI.Studio.exe` there; keep the entire folder, including `McpServer`.
+A complete framework-dependent bundle is in **`artifacts/TopSolid-AI-0.5.16`**. Open `TopSolid.Automation.AI.Studio.exe` there; keep the entire folder, including `McpServer`.
 
 ```powershell
-dotnet publish .\TopSolid.Automation.AI.Studio -c Release -o .\artifacts\TopSolid-AI-0.5.15
+dotnet publish .\TopSolid.Automation.AI.Studio -c Release -o .\artifacts\TopSolid-AI-0.5.16
 ```
 
 ## Use

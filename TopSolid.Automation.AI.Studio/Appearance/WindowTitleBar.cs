@@ -18,7 +18,7 @@ public sealed class WindowTitleBar : Grid
     public WindowTitleBar()
     {
         Height = 34;
-        SetResourceReference(BackgroundProperty, "TitleGradientBrush");
+        SetResourceReference(StyleProperty, "WindowCaption");
         ColumnDefinitions.Add(new()); ColumnDefinitions.Add(new() { Width = GridLength.Auto });
         var title = new DockPanel { Margin = new Thickness(8, 0, 8, 0) };
         var icon = new Image { Width = 22, Height = 22, Margin = new Thickness(0, 0, 8, 0) };
@@ -27,7 +27,9 @@ public sealed class WindowTitleBar : Grid
         var label = new TextBlock { FontWeight = FontWeights.SemiBold, TextTrimming = TextTrimming.CharacterEllipsis, VerticalAlignment = VerticalAlignment.Center };
         label.SetResourceReference(TextBlock.ForegroundProperty, "TitleTextBrush");
         label.SetBinding(TextBlock.TextProperty, WindowBinding("Title"));
-        title.Children.Add(label); Children.Add(title);
+        title.Children.Add(label);
+        var titleSurface = new Border { Child = title };
+        titleSurface.SetResourceReference(StyleProperty, "CaptionTitleSurface"); Children.Add(titleSurface);
         var buttons = new StackPanel { Orientation = Orientation.Horizontal };
         minimize = Caption("\uE921", "Window.Minimize", w => SystemCommands.MinimizeWindow(w));
         maximize = Caption("\uE922", "Window.Maximize", w =>
@@ -37,7 +39,9 @@ public sealed class WindowTitleBar : Grid
         });
         buttons.Children.Add(minimize); buttons.Children.Add(maximize);
         buttons.Children.Add(Caption("\uE8BB", "Window.Close", w => SystemCommands.CloseWindow(w)));
-        SetColumn(buttons, 1); Children.Add(buttons);
+        var buttonSurface = new Border { Child = buttons };
+        buttonSurface.SetResourceReference(StyleProperty, "CaptionButtonSurface");
+        SetColumn(buttonSurface, 1); Children.Add(buttonSurface);
         Loaded += (_, _) =>
         {
             host = Window.GetWindow(this);
@@ -50,7 +54,7 @@ public sealed class WindowTitleBar : Grid
 
     private Button Caption(string glyph, string key, Action<Window> action)
     {
-        var button = new Button { Content = glyph, FontFamily = new FontFamily("Segoe MDL2 Assets"), FontSize = 12 };
+        var button = new Button { Content = glyph, Tag = key, FontFamily = new FontFamily("Segoe MDL2 Assets") };
         button.SetResourceReference(StyleProperty, "CaptionButton");
         button.SetResourceReference(ToolTipProperty, "Ui." + key);
         button.SetResourceReference(AutomationProperties.NameProperty, "Ui." + key);
