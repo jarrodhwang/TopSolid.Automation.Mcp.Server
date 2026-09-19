@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Newtonsoft.Json.Linq;
+using TopSolid.Automation.Mcp.Contracts;
 using TopSolid.Kernel.Automating;
 
 namespace TopSolid.Automation.Mcp.Server.AddIn.Automation
@@ -11,7 +12,7 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Automation
         public JObject PreviewModeling(JObject arguments)
         {
             var preview = PreviewDocument(arguments);
-            if (TopSolidHost.Application.Version < 720326000) throw new InvalidOperationException("Modeling requires TopSolid 7.20.326 or newer.");
+            if (TopSolidHost.Application.Version < TopSolidVersionSupport.ModelingMinimumVersion) throw new InvalidOperationException("Modeling requires TopSolid 7.20.326 or newer.");
             if (arguments["documentId"] == null) throw new ArgumentException("Modeling requires an explicit documentId.");
             return preview;
         }
@@ -19,7 +20,7 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Automation
         public JObject CreateModel(string operation, JObject arguments)
         {
             EnsureConnected();
-            if (TopSolidHost.Application.Version < 720326000) throw new InvalidOperationException("Modeling requires TopSolid 7.20.326 or newer for native sketch cleanup.");
+            if (TopSolidHost.Application.Version < TopSolidVersionSupport.ModelingMinimumVersion) throw new InvalidOperationException("Modeling requires TopSolid 7.20.326 or newer for native sketch cleanup.");
             var document = Document(arguments);
             var originalDocumentId = document.PdmDocumentId;
             var scale = ModelingGeometry.Scale(arguments);

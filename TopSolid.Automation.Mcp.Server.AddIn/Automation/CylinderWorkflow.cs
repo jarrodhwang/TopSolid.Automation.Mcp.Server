@@ -47,7 +47,9 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Automation
     {
         public JObject PreviewCylinder(JObject p)
         {
-            var preview = PreviewModeling(p); var height = FeatureDimension.Length(p, "height", ModelingGeometry.Scale(p)); var plan = CylinderPlan.Parse(p, height.ValueSI);
+            var preview = PreviewModeling(p);
+            RequireCylinderTarget((string)p["documentId"], (string)preview["type"], TopSolidHost.Documents.EditedDocument.PdmDocumentId);
+            var height = FeatureDimension.Length(p, "height", ModelingGeometry.Scale(p)); var plan = CylinderPlan.Parse(p, height.ValueSI);
             preview["method"] = plan.Method; preview["sketchPlan"] = PreviewSketchPlan(plan.SketchArguments(p)); preview["height"] = height.Receipt;
             preview["expectedVolumeCubicMetres"] = plan.ExpectedVolume;
             preview["replaceShapes"] = new JArray(ReplacementShapes(p).Select(id => new JObject { ["shape"] = AutomationValues.Json(id), ["name"] = TopSolidHost.Elements.GetFriendlyName(id) }));
@@ -62,7 +64,21 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Automation
             if (ids.Any(id => !shapes.Contains(id) || !TopSolidHost.Elements.IsDeletable(id))) throw new ArgumentException("Each replacement target must be an existing deletable shape in the target document.");
             return ids;
         }
-        public JObject CreateCylinder(JObject p) => Modify(p, "create cylinder", "kernel", (doc, current) =>
+        // A non-edited part produced a native null-reference fault in the supplied
+        // session. Keep this workflow on the reviewed active part; do not silently
+        // activate a different document during prepare or execution.
+        internal static void RequireCylinderTarget(string target, string type, string edited)
+        {
+            if (string.IsNullOrWhiteSpace(type) || !type.EndsWith(".PartDocument", StringComparison.Ordinal))
+                throw new ArgumentException("Cylinder creation requires a part document. Select and activate the intended part in TopSolid, then request the cylinder again.");
+            if (string.IsNullOrEmpty(target) || target != edited)
+                throw new ArgumentException("Activate the selected part in TopSolid before preparing a cylinder. No document was activated and no geometry was created.");
+        }
+        public JObject CreateCylinder(JObject p)
+        {
+            EnsureConnected();
+            RequireCylinderTarget((string)p["documentId"], TopSolidHost.Documents.GetTypeFullName(Document(p)), TopSolidHost.Documents.EditedDocument.PdmDocumentId);
+            return Modify(p, "create cylinder", "kernel", (doc, current) =>
         {
             var height = FeatureDimension.Length(current, "height", ModelingGeometry.Scale(current)); var plan = CylinderPlan.Parse(current, height.ValueSI);
             var replacements = ReplacementShapes(current);
@@ -89,6 +105,7 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Automation
                 ["axisOriginMetres"] = AutomationValues.Json(plan.Origin), ["axisDirection"] = AutomationValues.Json(plan.Axis), ["volumeCubicMetres"] = volume,
                 ["color"] = color, ["sectionCreated"] = false, ["geometryReadBack"] = true, ["replacedShapes"] = AutomationValues.Json(replacements),
                 ["replacementPolicy"] = "Only the explicitly listed shapes are removed after the new cylinder passes validation, in the same transaction. Old source sketches remain." };
-        });
+            });
+        }
     }
 }

@@ -90,6 +90,8 @@ internal static class GraphicPreviewTests
         }
         Check.Equal(PreviewDrag.Pan, PreviewNavigation.Gesture(MouseButton.Right, ModifierKeys.None), "Right drag must pan");
         Check.Equal(PreviewDrag.Orbit, PreviewNavigation.Gesture(MouseButton.Right, ModifierKeys.Control), "Ctrl + right drag must rotate");
+        var orbitDelta = PreviewNavigation.OrbitDelta(new System.Windows.Vector(10, -5));
+        Check.True(orbitDelta.Horizontal < 0 && orbitDelta.Vertical < 0, "Orbit must follow TopSolid's horizontal inverse and vertical screen-drag direction");
         var stl = StlPreviewReader.Read(StlFixture(), CancellationToken.None);
         Check.True(stl.Triangles == 12 && stl.Bounds.SizeX == 40 && stl.Bounds.SizeY == 30 && stl.Bounds.SizeZ == 20, "STL millimetres/Z-up conversion changed dimensions");
         foreach (var bytes in new[] { new byte[2], StlFixture()[..^1], new byte[StlPreviewReader.MaximumBytes + 1], StlFixture() })
@@ -179,9 +181,9 @@ internal static class GraphicPreviewTests
         var target = new JObject { ["documentId"] = doc["documentId"]!.DeepClone() };
         var listArgs = (JObject)target.DeepClone(); listArgs["kind"] = "shapes"; listArgs["limit"] = 100;
         var shapes = await Read("topsolid_list_named_elements", listArgs); var watch = Stopwatch.StartNew();
-        var preview = await client.GetGraphicPreviewAsync(target, timeout.Token); var exportMs = watch.Elapsed.TotalMilliseconds;
+        var payload = await client.GetGraphicPreviewDataAsync(target, timeout.Token); var preview = payload.Metadata; var exportMs = watch.Elapsed.TotalMilliseconds;
         Check.Equal("ready", (string)preview["status"]!, "Live native export was unavailable");
-        var bytes = Convert.FromBase64String((string)preview["data"]!); watch.Restart();
+        var bytes = payload.Bytes!; watch.Restart();
         var stl = (string?)preview["format"] == "stl";
         var scene = await Task.Run(() => stl ? StlPreviewReader.Read(bytes, timeout.Token) : GlbPreviewReader.Read(bytes, timeout.Token)); var parseMs = watch.Elapsed.TotalMilliseconds;
         Check.True(scene.Triangles > 0 && scene.Surfaces.IsFrozen, "Live geometry did not reach the frozen renderer");

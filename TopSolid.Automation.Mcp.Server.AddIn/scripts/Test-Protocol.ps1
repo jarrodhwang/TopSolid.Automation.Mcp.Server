@@ -50,11 +50,11 @@ try {
     Send-Json @{ jsonrpc = '2.0'; method = 'notifications/initialized' }
     $reply = Request 3 'tools/list'
     $toolNames = @($reply.result.tools | ForEach-Object { $_.name })
-    Assert-Check ($toolNames.Count -eq 187) 'Expected all 187 reviewed tools.'
+    Assert-Check ($toolNames.Count -eq 192) 'Expected all 192 reviewed tools.'
     foreach ($name in @('topsolid_get_status', 'topsolid_get_active_document', 'topsolid_get_document_info')) {
         Assert-Check ($toolNames -contains $name) "Missing tool $name."
     }
-    Assert-Check (@($reply.result.tools | Where-Object { !$_.annotations.readOnlyHint }).Count -eq 59) 'All 59 confirmed action tools should be registered.'
+    Assert-Check (@($reply.result.tools | Where-Object { !$_.annotations.readOnlyHint }).Count -eq 64) 'All 64 confirmed action tools should be registered.'
     $toolManifest = $reply.result.tools
     $apiReferences = @($toolManifest | ForEach-Object { @($_._meta.'topsolid/api') } | Where-Object { -not [string]::IsNullOrWhiteSpace([string]$_) })
     Assert-Check (@($apiReferences | Where-Object { [string]$_ -like 'https://help.topsolid.com/*' }).Count -eq 0) 'Runtime API metadata must not expose website URLs.'

@@ -58,7 +58,7 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
                     ["minimumTestedSdk"] = "7.20.400.107", ["modelingMinimumHost"] = "7.20.326.0",
                     ["referenceSymbols"] = ((JArray)Index.Value["entries"]).Count, ["referencePages"] = ((JArray)Index.Value["entries"]).Select(e => (string)e["href"]).Distinct().Count(),
                     ["limitations"] = new JArray("Module connections are checked only when called; a listed tool does not prove that its module or license is available.",
-                        "CAM 2D/3D/4-axis/3+2/5-axis/MillTurn/Robot use shared operation, parameter, machine and tool APIs. Strategy creation, postprocessing and simulation execution are not exposed.",
+                        "CAM 2D/3D/4-axis/3+2/5-axis/MillTurn/Robot use shared operation, parameter, machine and tool APIs. Simulation and verification start the documented native animation for one operation or all verification operations; strategy creation and postprocessing remain unexposed.",
                         "Wire references are indexed but its host adapter is not implemented. Project/library creation dates use verified backing-document creation-date parameters; unsupported objects explicitly report unavailable.",
                         "All PDM/document/geometry/CAM changes require a user-approved preview through the trusted client. PDM creation/open/save are outside the geometry undo transaction.",
                         "Public APIs verified here create extrusion, revolution, loft and drilling. General pocket, fillet, chamfer, Boolean shape operations and dimensional sketch constraints have no verified creation adapter.",
@@ -71,7 +71,7 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
                         "Sketch to solid: create_contour2d or rectangle2d/circle2d -> returned section -> extrude_sketch or revolve_sketch. Loft uses profile handles from different sketches.",
                         "Edit: read user selection, modeling operations and parameter values -> set_parameter_value or append_sketch_contour -> inspect current document/shape -> explicitly save_document.",
                         "Assembly: query source part/assembly revisions -> include_assembly_document -> inspect occurrences and transforms.",
-                        "CAM: inspect operations/parameters -> set_cam_parameter_value -> execute_cam_operation -> read_cam_toolpath. This does not generate NC or establish machining safety.")
+                        "CAM: inspect operations/parameters -> set_cam_parameter_value -> execute_cam_operation -> read_cam_toolpath. Simulation uses ISimulation for one operation; verification uses IVerify for one or all operations. These actions do not generate NC or establish machining safety.")
                 }, "System"));
             register(new ToolDefinition("topsolid_search_api_reference", "Search the complete official 7.20 API symbol index. Documentation matches do not imply an executable MCP tool. Works offline.",
                 Schema.Page(new JObject { ["query"] = Schema.Text("Case-insensitive words or API identifier.", 256), ["module"] = Schema.Choice("Optional reference module.", "kernel", "cad", "drafting", "cam", "pdmexplorer", "electrode", "wire", "cae") }),

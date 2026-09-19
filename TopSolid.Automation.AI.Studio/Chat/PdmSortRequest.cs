@@ -20,7 +20,7 @@ internal static class PdmSortRequest
         };
     }
     public static async Task<IReadOnlyList<AiMessage>?> Run(string text, IReadOnlyList<AiMessage>? previous,
-        IMcpClient mcp, Action<ChatTrace> trace, CancellationToken token)
+        IMcpClient mcp, Action<ChatTrace> trace, CancellationToken token, Func<UserQuestion, CancellationToken, Task>? showList = null)
     {
         var request = PdmListRequest.Parse(text);
         var order = request?.Order ?? Order(text);
@@ -31,6 +31,7 @@ internal static class PdmSortRequest
         var turn = new List<AiMessage> { new() { Role = "user", Content = text } };
         var dates = request?.Dates ?? order is "oldestFirst" or "newestFirst";
         var inventory = new PdmInventory(dates ? "list all creation dates" : "list all names");
+        var browser = new ListPresentation();
         string? error = null;
         foreach (var name in names)
         {
@@ -53,6 +54,7 @@ internal static class PdmSortRequest
                 if (result.IsError || (order != null && (bool?)data?["sortApplied"] != true) || data?["items"] is not JArray)
                 { error = (string?)data?["message"] ?? "The MCP server could not verify the requested list or ordering. No complete list was produced."; break; }
                 inventory.Capture(name, result);
+                browser.Capture(name, args, result);
                 var next = inventory.NextPage();
                 if ((bool?)data?["hasMore"] == true && (next == null || next.Value.Offset <= offset)) { error = "The server returned an invalid continuation. No complete list was produced."; break; }
                 if (next == null) break;
@@ -63,7 +65,8 @@ internal static class PdmSortRequest
         }
         var heading = order switch { "oldestFirst" => "Oldest first (creation date)", "newestFirst" => "Newest first (creation date)",
             "nameAscending" => "Alphabetical order (A–Z)", "nameDescending" => "Reverse alphabetical order (Z–A)", _ => "" };
-        turn.Add(new AiMessage { Role = "assistant", Content = error ?? ((heading.Length == 0 ? "" : heading + "\n\n") + (inventory.Render() ?? "No project or library records were returned.")) });
+        var shown = error == null && await browser.ShowAsync(mcp, showList, trace, token);
+        turn.Add(new AiMessage { Role = "assistant", Content = shown ? Localization.StudioStrings.Get("List.Shown") : error ?? ((heading.Length == 0 ? "" : heading + "\n\n") + (inventory.Render() ?? "No project or library records were returned.")) });
         trace(new ChatTrace("Inventory", "PDM list handled through MCP; no model inference required."));
         return turn;
     }

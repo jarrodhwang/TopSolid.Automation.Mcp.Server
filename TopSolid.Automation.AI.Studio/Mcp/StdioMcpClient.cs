@@ -9,7 +9,7 @@ using TopSolid.Automation.Mcp.Contracts;
 namespace TopSolid.Automation.AI.Studio.Mcp;
 
 /// <summary>One owned console process; newline-delimited MCP JSON-RPC on its standard streams.</summary>
-public sealed class StdioMcpClient : IConfirmableMcpClient, IGraphicPreviewClient, IAsyncDisposable
+public sealed class StdioMcpClient : IConfirmableMcpClient, IGraphicPreviewClient, IToolpathPreviewClient, IAsyncDisposable
 {
     public const string ProtocolVersion = "2025-03-26";
     private readonly SemaphoreSlim requestGate = new(1, 1);
@@ -22,6 +22,8 @@ public sealed class StdioMcpClient : IConfirmableMcpClient, IGraphicPreviewClien
     private volatile bool initialized;
     private volatile bool mutationInFlight;
     private volatile bool mutationOutcomeUncertain;
+    private TopSolidConnectionOptions connectionOptions = new();
+    private string gatewayToken = "";
     public event Action<string>? Diagnostic;
     public event Action? ConnectionChanged;
     public IReadOnlyList<McpToolDefinition> Tools { get; private set; } = [];
@@ -31,8 +33,27 @@ public sealed class StdioMcpClient : IConfirmableMcpClient, IGraphicPreviewClien
     public async Task ConnectAsync(string executablePath, CancellationToken cancellationToken)
     {
         await lifecycleGate.WaitAsync(cancellationToken);
-        try { await ConnectCoreAsync(executablePath, cancellationToken); }
+        try { connectionOptions = new(); gatewayToken = ""; await ConnectCoreAsync(executablePath, cancellationToken); }
         finally { lifecycleGate.Release(); }
+    }
+
+    public async Task ConnectAsync(string executablePath, TopSolidConnectionOptions options, string token, CancellationToken cancellationToken)
+    {
+        options.Validate();
+        await lifecycleGate.WaitAsync(cancellationToken);
+        try
+        {
+            connectionOptions = JsonConvert.DeserializeObject<TopSolidConnectionOptions>(JsonConvert.SerializeObject(options))!;
+            gatewayToken = token;
+            await ConnectCoreAsync(executablePath, cancellationToken);
+        }
+        finally { lifecycleGate.Release(); }
+    }
+
+    public async Task<IReadOnlyList<TopSolidInstanceInfo>> GetConnectionInstancesAsync(CancellationToken token)
+    {
+        var result = await RequestAsync("topsolid/connectionInstances", new JObject(), token);
+        return result["instances"]?.ToObject<List<TopSolidInstanceInfo>>() ?? throw new IOException("Missing TopSolid instance list.");
     }
 
     private async Task ConnectCoreAsync(string executablePath, CancellationToken cancellationToken)
@@ -49,6 +70,10 @@ public sealed class StdioMcpClient : IConfirmableMcpClient, IGraphicPreviewClien
             StandardInputEncoding = new UTF8Encoding(false), StandardOutputEncoding = Encoding.UTF8,
             StandardErrorEncoding = Encoding.UTF8, WorkingDirectory = Path.GetDirectoryName(fullPath)!
         };
+        start.Environment[TopSolidConnectionOptions.EnvironmentName] = JsonConvert.SerializeObject(connectionOptions);
+        start.Environment.Remove("TOPSOLID_GATEWAY_TOKEN");
+        start.Environment.Remove(TopSolidConnectionOptions.TokenEnvironmentName);
+        if (connectionOptions.Mode == "https") start.Environment[TopSolidConnectionOptions.TokenEnvironmentName] = gatewayToken;
         var child = Process.Start(start) ?? throw new IOException("The MCP server did not start.");
         process = child;
         child.StandardInput.AutoFlush = true;
@@ -112,9 +137,56 @@ public sealed class StdioMcpClient : IConfirmableMcpClient, IGraphicPreviewClien
     }
 
     public async Task<JObject> GetGraphicPreviewAsync(JObject target, CancellationToken cancellationToken)
+        => await DisplayRequestAsync("topsolid/graphicPreview", target, cancellationToken);
+
+    public async Task<JObject> GetToolpathPreviewAsync(JObject operation, CancellationToken token)
+        => await DisplayRequestAsync("topsolid/toolpathPreview", operation, token);
+
+    public async Task<GraphicPreviewData> GetGraphicPreviewDataAsync(JObject target, CancellationToken token)
+    {
+        var args = (JObject)target.DeepClone(); args["chunked"] = true;
+        var metadata = await GetGraphicPreviewAsync(args, token);
+        if ((string?)metadata["status"] != "ready") return new(metadata, null);
+        // Older bundled servers may still return a bounded inline payload.
+        if (metadata["transferId"] == null)
+        {
+            var inline = (string?)metadata["data"] ?? throw new InvalidDataException("Missing preview payload.");
+            if (inline.Length > GraphicPreviewQuality.MaximumRpcLineCharacters) throw new InvalidDataException("Oversized inline preview.");
+            return new(metadata, Convert.FromBase64String(inline));
+        }
+        var id = (string?)metadata["transferId"];
+        try
+        {
+            var length = (long?)metadata["byteLength"] ?? 0;
+            var max = (string?)metadata["format"] == "stl" ? GraphicPreviewQuality.MaximumStlBytes : GraphicPreviewQuality.MaximumGlbBytes;
+            if (id == null || id.Length != 32 || length <= 0 || length > max) throw new InvalidDataException("Invalid preview transfer metadata.");
+            var bytes = new byte[(int)length];
+            for (var offset = 0; offset < bytes.Length;)
+            {
+                token.ThrowIfCancellationRequested();
+                var chunk = await GetGraphicPreviewAsync(new JObject { ["action"] = "read", ["transferId"] = id, ["offset"] = offset }, token);
+                var encoded = (string?)chunk["data"];
+                if ((string?)chunk["transferId"] != id || (int?)chunk["offset"] != offset || encoded == null ||
+                    encoded.Length > (GraphicPreviewQuality.ChunkBytes + 2) / 3 * 4) throw new InvalidDataException("Invalid preview chunk.");
+                var expected = Math.Min(GraphicPreviewQuality.ChunkBytes, bytes.Length - offset);
+                if (!Convert.TryFromBase64String(encoded, bytes.AsSpan(offset, expected), out var read) || read != expected)
+                    throw new InvalidDataException("Incomplete preview chunk.");
+                offset += read;
+            }
+            return new(metadata, bytes);
+        }
+        finally
+        {
+            // A cancelled selection still releases its session-owned temporary export after the pending native read drains.
+            try { await GetGraphicPreviewAsync(new JObject { ["action"] = "release", ["transferId"] = id }, CancellationToken.None); }
+            catch (Exception error) when (error is IOException or InvalidOperationException) { Diagnostic?.Invoke("Preview transfer cleanup failed: " + error.GetType().Name); }
+        }
+    }
+
+    private async Task<JObject> DisplayRequestAsync(string method, JObject target, CancellationToken cancellationToken)
     {
         if (!IsConnected) throw new IOException("MCP is disconnected.");
-        var request = RequestAsync("topsolid/graphicPreview", (JObject)target.DeepClone(), cancellationToken, drainAfterSend: true);
+        var request = RequestAsync(method, (JObject)target.DeepClone(), cancellationToken, drainAfterSend: true);
         try { return await request.WaitAsync(cancellationToken); }
         catch (OperationCanceledException)
         {

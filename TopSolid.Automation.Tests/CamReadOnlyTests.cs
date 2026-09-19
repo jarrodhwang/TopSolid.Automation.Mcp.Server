@@ -9,12 +9,12 @@ namespace TopSolid.Automation.Tests;
 /// <summary>Opt-in reads of the active CAM document. No prepare or confirmed-call path.</summary>
 internal static class CamReadOnlyTests
 {
-    internal static async Task Run(string executable)
+    internal static async Task Run(string executable, string outputDirectory = "artifacts/cam-review-0.5.13", string? category = null)
     {
         await using var client = new StdioMcpClient();
         using var timeout = new CancellationTokenSource(TimeSpan.FromMinutes(4));
         await client.ConnectAsync(executable, timeout.Token);
-        var output = Path.GetFullPath("artifacts/cam-review-0.5.13");
+        var output = Path.GetFullPath(outputDirectory);
         Directory.CreateDirectory(output);
         var record = new JObject { ["capturedAtUtc"] = DateTimeOffset.UtcNow.ToString("O"), ["server"] = executable, ["nativeWrites"] = 0 };
         var calls = new JArray(); record["reads"] = calls;
@@ -31,7 +31,24 @@ internal static class CamReadOnlyTests
         }
         try
         {
-            var before = await Read("topsolid_get_document_info", new JObject());
+            var activeBefore = await Read("topsolid_get_active_document", new JObject());
+            var target = new JObject();
+            if (category != null && !((string?)activeBefore["document"]?["typeFullName"] ?? "").StartsWith("TopSolid.Cam.", StringComparison.Ordinal))
+            {
+                var documentOffset = 0;
+                for (var pageIndex = 0; pageIndex < 24; pageIndex++)
+                {
+                    var open = await Read("topsolid_list_document_summaries", new JObject { ["scope"] = "open", ["offset"] = documentOffset, ["limit"] = 100 });
+                    var cam = ((JArray?)open["items"])?.OfType<JObject>().FirstOrDefault(row => ((string?)row["type"] ?? "").StartsWith("TopSolid.Cam.", StringComparison.Ordinal));
+                    if (cam != null) { target["documentId"] = cam["documentId"]!.DeepClone(); break; }
+                    if ((bool?)open["hasMore"] != true) break;
+                    var next = (int?)open["nextOffset"];
+                    Check.True(next.HasValue && next > documentOffset, "Open-document continuation did not advance"); documentOffset = next!.Value;
+                }
+                Check.True(target["documentId"] != null, "No open CAM document is available for this read-only fixture.");
+                record["targetSelection"] = "First verified open CAM document; the active document was not changed.";
+            }
+            var before = await Read("topsolid_get_document_info", target);
             record["documentBefore"] = before;
             var document = before["document"] as JObject ?? throw new InvalidOperationException("Open a CAM document to run this optional read-only fixture.");
             var documentId = (string)document["documentId"]!;
@@ -62,7 +79,10 @@ internal static class CamReadOnlyTests
             while (true)
             {
                 Check.True(seen.Add(offset), "CAM parameter pagination repeated an offset");
-                var page = await Read("topsolid_list_cam_parameters", new JObject { ["element"] = element.DeepClone(), ["offset"] = offset, ["limit"] = 100 });
+                var parameterArguments = new JObject { ["element"] = element.DeepClone(), ["offset"] = offset, ["limit"] = 100 };
+                if (category != null) parameterArguments["category"] = category;
+                var page = await Read("topsolid_list_cam_parameters", parameterArguments);
+                if (category != null) Check.True(((JArray)page["items"]!).All(row => ((JArray?)row["categories"])?.Any(value => (string?)value == category) == true), "Filtered CAM read included an unrelated category");
                 total ??= (int?)page["total"];
                 Check.True(total == (int?)page["total"], "CAM parameter inventory changed during the read");
                 foreach (var row in (JArray)page["items"]!) items.Add(row.DeepClone());
@@ -88,6 +108,7 @@ internal static class CamReadOnlyTests
             var after = await Read("topsolid_get_document_info", new JObject { ["documentId"] = documentId });
             Check.True(JToken.DeepEquals(document, after["document"]), "Read-only CAM inspection changed document identity or dirty state");
             Check.True(JToken.DeepEquals(operations, await Read("topsolid_list_cam_operation_summaries", operationArgs)), "Operation state changed during read-only inspection");
+            Check.True(JToken.DeepEquals(activeBefore, await Read("topsolid_get_active_document", new JObject())), "Read-only CAM inspection changed the active document");
             record["documentAndOperationsUnchanged"] = true;
             record["passed"] = true;
             Console.WriteLine($"PASS live CAM reads: {items.Count} parameters, {details.Count} cutting-condition samples; document and operation state unchanged; zero native writes.");

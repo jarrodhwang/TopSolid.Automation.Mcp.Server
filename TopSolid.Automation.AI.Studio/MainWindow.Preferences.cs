@@ -31,7 +31,7 @@ public partial class MainWindow
             }
             if (element is TextBlock) Bind(TextBlock.TextProperty);
             if (element is ContentControl && !(element is ComboBoxItem { Tag: string language } &&
-                language is "en" or "ko" or "ja" or "zh" or "fr" or "de" or "es")) Bind(ContentControl.ContentProperty);
+                language is "en" or "ko" or "ja" or "zh" or "fr" or "de" or "es" or "pt")) Bind(ContentControl.ContentProperty);
             Bind(ToolTipProperty);
             Bind(AutomationProperties.NameProperty);
             if (element is Button { Tag: string }) Bind(TagProperty);
@@ -63,6 +63,7 @@ public partial class MainWindow
     private void ShowSettingsSection(string section)
     {
         AiSettingsSection.Visibility = section == "ai" ? Visibility.Visible : Visibility.Collapsed;
+        TopSolidSettingsSection.Visibility = section == "topsolid" ? Visibility.Visible : Visibility.Collapsed;
         AppearanceSettingsSection.Visibility = section == "appearance" ? Visibility.Visible : Visibility.Collapsed;
         LanguageSettingsSection.Visibility = section == "languages" ? Visibility.Visible : Visibility.Collapsed;
         DeveloperSettingsSection.Visibility = section == "developer" ? Visibility.Visible : Visibility.Collapsed;

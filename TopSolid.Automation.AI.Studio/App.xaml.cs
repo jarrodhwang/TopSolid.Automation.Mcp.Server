@@ -43,32 +43,40 @@ namespace TopSolid.Automation.AI.Studio
                 var settings = new SettingsStore().Load();
                 StudioStrings.Apply(settings.InterfaceLanguage);
                 startup = new LicenseWindow();
+                startup.EnableConnectionSettings(() => new Connections.TopSolidConnectionWindow(new SettingsStore().Load(), new SettingsStore()) { Owner = startup }.ShowDialog() == true);
                 theme = new TopSolidThemeFollower(startup, settings.AppearanceMode);
                 startup.Closed += (_, _) => { if (!handedOff) cancellation.Cancel(); };
                 startup.Show();
                 await Dispatcher.Yield(DispatcherPriority.ContextIdle);
-                var path = AppSettings.ResolveServerPath(settings.McpServerPath, AppContext.BaseDirectory);
-                await LicenseStartup.RunAsync(async token =>
+                var retry = false;
+                do
                 {
-                    await client.ConnectAsync(path, token);
-                    return await client.GetLicenseStatusAsync(token);
-                }, status =>
-                {
-                    DiagnosticLog.Write("info", "license.startupAllowed", "TopSolid Kernel Base validity confirmed.");
-                    var window = new MainWindow(autoConnect: true, connectedClient: client, licenseStatus: status);
-                    MainWindow = window;
-                    window.Show();
-                    handedOff = true;
-                    ShutdownMode = ShutdownMode.OnMainWindowClose;
-                    startup.Close();
-                }, async status =>
-                {
-                    DiagnosticLog.Write("warning", "license.startupBlocked", status.RequiredLicenseValid == false ? "Kernel Base license is not valid." : "Kernel Base license could not be verified.");
-                    startup.ShowResult(status, closeApplication: true);
-                    // Release the read-only helper before waiting for the user to dismiss the reason.
-                    await client.DisposeAsync();
-                    await startup.ClosedTask;
-                }, cancellation.Token);
+                    retry = false;
+                    settings = new SettingsStore().Load();
+                    startup.ShowChecking();
+                    var path = AppSettings.ResolveServerPath(settings.McpServerPath, AppContext.BaseDirectory);
+                    await LicenseStartup.RunAsync(async token =>
+                    {
+                        await client.ConnectAsync(path, settings.TopSolidConnection, settings.TopSolidGatewayToken, token);
+                        return await client.GetLicenseStatusAsync(token);
+                    }, status =>
+                    {
+                        DiagnosticLog.Write("info", "license.startupAllowed", "TopSolid Kernel Base validity confirmed.");
+                        var window = new MainWindow(autoConnect: true, connectedClient: client, licenseStatus: status);
+                        MainWindow = window;
+                        window.Show();
+                        handedOff = true;
+                        ShutdownMode = ShutdownMode.OnMainWindowClose;
+                        startup.Close();
+                    }, async status =>
+                    {
+                        DiagnosticLog.Write("warning", "license.startupBlocked", status.RequiredLicenseValid == false ? "Kernel Base license is not valid." : "Kernel Base license could not be verified.");
+                        startup.ShowResult(status, closeApplication: true);
+                        // Release the read-only helper before waiting for the user to dismiss the reason.
+                        await client.DisposeAsync();
+                        retry = await startup.WaitForRetry();
+                    }, cancellation.Token);
+                } while (retry && !cancellation.IsCancellationRequested);
             }
             catch (Exception error)
             {

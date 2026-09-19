@@ -1,6 +1,7 @@
 using System;
 using System.Linq;
 using Newtonsoft.Json.Linq;
+using TopSolid.Automation.Mcp.Contracts;
 using TopSolid.Automation.Mcp.Server.AddIn.Automation;
 
 namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
@@ -10,7 +11,7 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
         public ToolDefinition(string name, string description, JObject properties, Func<JObject, JObject> execute,
             string category = "System", string[] required = null, bool readOnly = true, string[] api = null, Action<JObject> validate = null,
             Func<JObject, JObject> preview = null, string effect = null, string defaults = null, string defaultLengthUnits = null,
-            Func<JObject, JObject, JObject> executePrepared = null)
+            Func<JObject, JObject, JObject> executePrepared = null, int? minimumTopSolidVersion = null)
         {
             Name = name;
             Execute = execute;
@@ -22,6 +23,7 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
             Effect = effect ?? "Modify the specified document in one undoable modification. Changes are not saved automatically.";
             Defaults = defaults;
             DefaultLengthUnits = defaultLengthUnits;
+            MinimumTopSolidVersion = minimumTopSolidVersion ?? MinimumVersionForCategory(category);
             Definition = new JObject
             {
                 ["name"] = name, ["description"] = description,
@@ -36,6 +38,8 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
                     ["idempotentHint"] = readOnly, ["openWorldHint"] = false
                 },
                 ["_meta"] = new JObject { ["topsolid/category"] = category,
+                    ["topsolid/minimumVersion"] = TopSolidVersionSupport.Display(MinimumTopSolidVersion),
+                    ["topsolid/minimumVersionValue"] = MinimumTopSolidVersion,
                     ["topsolid/api"] = new JArray((api ?? new string[0])
                         .Concat(CreationNames.Supports(name) ? CreationNames.Api : new string[0])
                         .Concat(!readOnly && category != "Pdm" ? ApiRefs.Kernel("IDocuments.IsSynchronized", "IDocuments.GetSynchronizedDocuments", "IDocuments.GetPdmObject", "IDocuments.GetPdmMinorRevision") : new string[0])
@@ -55,5 +59,14 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
         public string Effect { get; }
         public string Defaults { get; }
         public string DefaultLengthUnits { get; }
+        public int MinimumTopSolidVersion { get; }
+
+        private static int MinimumVersionForCategory(string category)
+        {
+            return string.Equals(category, "Cae", StringComparison.OrdinalIgnoreCase) ||
+                string.Equals(category, "Electrode", StringComparison.OrdinalIgnoreCase)
+                ? TopSolidVersionSupport.CaeAndElectrodeMinimumVersion
+                : TopSolidVersionSupport.MinimumSupportedVersion;
+        }
     }
 }

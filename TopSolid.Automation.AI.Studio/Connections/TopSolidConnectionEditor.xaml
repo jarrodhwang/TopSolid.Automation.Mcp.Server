@@ -1,0 +1,52 @@
+<UserControl x:Class="TopSolid.Automation.AI.Studio.Connections.TopSolidConnectionEditor"
+ xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+ <UserControl.Resources>
+  <Style x:Key="ConnectionLabel" TargetType="TextBlock"><Setter Property="Margin" Value="0,16,0,6"/><Setter Property="FontWeight" Value="SemiBold"/></Style>
+ </UserControl.Resources>
+ <StackPanel>
+  <StackPanel x:Name="Fields">
+   <TextBlock Text="{DynamicResource Ui.TsConnection.Mode}" Style="{StaticResource ConnectionLabel}"/>
+   <ComboBox x:Name="ModeBox" SelectedValuePath="Tag" SelectionChanged="ModeChanged" AutomationProperties.Name="{DynamicResource Ui.TsConnection.Mode}">
+    <ComboBoxItem Tag="local" Content="{DynamicResource Ui.TsConnection.Local}"/>
+    <ComboBoxItem Tag="tcp" Content="{DynamicResource Ui.TsConnection.Tcp}"/>
+    <ComboBoxItem Tag="https" Content="{DynamicResource Ui.TsConnection.Https}"/>
+   </ComboBox>
+   <Grid x:Name="RemoteFields">
+    <Grid.ColumnDefinitions><ColumnDefinition Width="*"/><ColumnDefinition Width="110"/></Grid.ColumnDefinitions>
+    <StackPanel><TextBlock Text="{DynamicResource Ui.TsConnection.Host}" Style="{StaticResource ConnectionLabel}"/><TextBox x:Name="HostBox" TextChanged="HostChanged" AutomationProperties.Name="{DynamicResource Ui.TsConnection.Host}"/></StackPanel>
+    <StackPanel Grid.Column="1" Margin="12,0,0,0"><TextBlock Text="{DynamicResource Ui.TsConnection.Port}" Style="{StaticResource ConnectionLabel}"/><TextBox x:Name="PortBox" TextChanged="HostChanged" AutomationProperties.Name="{DynamicResource Ui.TsConnection.Port}"/></StackPanel>
+   </Grid>
+   <StackPanel x:Name="HttpsFields">
+    <TextBlock Text="{DynamicResource Ui.TsConnection.Token}" Style="{StaticResource ConnectionLabel}"/>
+    <PasswordBox x:Name="TokenBox" Padding="8" PasswordChanged="FieldChanged" AutomationProperties.Name="{DynamicResource Ui.TsConnection.Token}"/>
+    <TextBlock Text="{DynamicResource Ui.TsConnection.TlsHint}" Margin="0,8,0,0" TextWrapping="Wrap" Foreground="{DynamicResource MutedTextBrush}"/>
+   </StackPanel>
+   <TextBlock x:Name="TcpHint" Text="{DynamicResource Ui.TsConnection.TcpHint}" Margin="0,12,0,0" TextWrapping="Wrap" Foreground="{DynamicResource MutedTextBrush}"/>
+   <TextBlock Text="{DynamicResource Ui.TsConnection.Version}" Style="{StaticResource ConnectionLabel}"/>
+   <ComboBox x:Name="VersionBox" IsEditable="True" TextBoxBase.TextChanged="FieldChanged" AutomationProperties.Name="{DynamicResource Ui.TsConnection.Version}"/>
+   <StackPanel x:Name="LocalFields">
+    <TextBlock Text="{DynamicResource Ui.TsConnection.Selection}" Style="{StaticResource ConnectionLabel}"/>
+    <ComboBox x:Name="SelectionBox" SelectedValuePath="Tag" SelectionChanged="SelectionChanged" AutomationProperties.Name="{DynamicResource Ui.TsConnection.Selection}">
+     <ComboBoxItem Tag="auto" Content="{DynamicResource Ui.TsConnection.Auto}"/>
+     <ComboBoxItem Tag="instance" Content="{DynamicResource Ui.TsConnection.Instance}"/>
+     <ComboBoxItem Tag="pipe" Content="{DynamicResource Ui.TsConnection.Pipe}"/>
+    </ComboBox>
+    <StackPanel x:Name="InstanceFields">
+     <TextBlock Text="{DynamicResource Ui.TsConnection.Running}" Style="{StaticResource ConnectionLabel}"/>
+     <ComboBox x:Name="InstanceBox" DisplayMemberPath="DisplayName" SelectionChanged="InstanceChanged" AutomationProperties.Name="{DynamicResource Ui.TsConnection.Running}"/>
+    </StackPanel>
+    <StackPanel x:Name="PipeFields">
+     <TextBlock Text="{DynamicResource Ui.TsConnection.PipeName}" Style="{StaticResource ConnectionLabel}"/>
+     <TextBox x:Name="PipeBox" TextChanged="FieldChanged" AutomationProperties.Name="{DynamicResource Ui.TsConnection.PipeName}"/>
+    </StackPanel>
+    <TextBlock Text="{DynamicResource Ui.TsConnection.InstanceHint}" Margin="0,10,0,0" TextWrapping="Wrap" Foreground="{DynamicResource MutedTextBrush}"/>
+   </StackPanel>
+  </StackPanel>
+  <WrapPanel Margin="0,20,0,0">
+   <Button x:Name="ScanButton" Content="{DynamicResource Ui.TsConnection.Scan}" Click="ScanClicked" Margin="0,0,10,6"/>
+   <Button x:Name="TestButton" Content="{DynamicResource Ui.TsConnection.Test}" Click="TestClicked" Margin="0,0,10,6"/>
+   <Button x:Name="CancelButton" Content="{DynamicResource Ui.Common.Cancel}" Click="CancelClicked" Visibility="Collapsed" Margin="0,0,0,6"/>
+  </WrapPanel>
+  <TextBlock x:Name="Feedback" Margin="0,6,0,0" TextWrapping="Wrap" Foreground="{DynamicResource AccentBrush}" AutomationProperties.LiveSetting="Polite"/>
+ </StackPanel>
+</UserControl>

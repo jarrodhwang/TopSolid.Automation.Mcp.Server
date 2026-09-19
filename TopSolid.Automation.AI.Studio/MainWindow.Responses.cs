@@ -22,7 +22,8 @@ public partial class MainWindow
         foreach (var entry in entries.Where(e => e.Sequence > lastPresentedChatSequence))
         {
             var userAuthored = entry.Role.Equals("You", StringComparison.OrdinalIgnoreCase) || entry.Role.Equals("User", StringComparison.OrdinalIgnoreCase);
-            ChatBox.AppendMessage(entry.Role, userAuthored ? entry.Text : responsePresenter.Present(entry.Text, settings.DevMode), entry.ElapsedMilliseconds);
+            ChatBox.AppendMessage(entry.Role, userAuthored ? entry.Text : responsePresenter.Present(
+                entry.Role == "Assistant" ? CamDisplay.Text(entry.Text) : entry.Text, settings.DevMode), entry.ElapsedMilliseconds);
             lastPresentedChatSequence = entry.Sequence;
         }
     }

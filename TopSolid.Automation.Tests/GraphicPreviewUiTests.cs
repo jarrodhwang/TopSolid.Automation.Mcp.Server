@@ -1,5 +1,6 @@
 using System.Diagnostics;
 using System.Windows;
+using System.Windows.Automation;
 using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Input;
@@ -16,12 +17,16 @@ namespace TopSolid.Automation.Tests;
 
 internal static class GraphicPreviewUiTests
 {
-    private sealed class Client : IGraphicPreviewClient
+    private sealed class Client : IGraphicPreviewClient, IToolpathPreviewClient
     {
         internal int Calls;
         internal Func<JObject, CancellationToken, Task<JObject>>? Handler;
+        internal readonly List<JObject> PathRequests = [];
+        internal Func<JObject, CancellationToken, Task<JObject>>? PathHandler;
         public Task<JObject> GetGraphicPreviewAsync(JObject target, CancellationToken token)
         { Calls++; return Handler?.Invoke(target, token) ?? Task.FromResult(GraphicPreviewTests.Result((string)target["documentId"]!)); }
+        public Task<JObject> GetToolpathPreviewAsync(JObject operation, CancellationToken token)
+        { PathRequests.Add((JObject)operation.DeepClone()); return PathHandler?.Invoke(operation, token) ?? Task.FromResult(PreviewRuntimeTests.PathResult(operation)); }
     }
 
     internal static async Task Run(Window owner, Action<Window, string> render)
@@ -36,8 +41,28 @@ internal static class GraphicPreviewUiTests
                 var dialog = Position(new ChangeConfirmationWindow(proposal, previewClient: client), owner);
                 try
                 {
-                    dialog.Show(); var pane = Descendants<GraphicPreviewPane>(dialog).Single(); await Until(() => pane.Scene != null, dialog);
+                    dialog.Show(); var pane = Descendants<GraphicPreviewPane>(dialog).Single(); await Until(() => pane.IsScenePresented && !pane.IsLoading, dialog);
+                    var background = (LinearGradientBrush)Application.Current.FindResource("ViewportGradientBrush");
+                    Check.Equal(dark ? Color.FromRgb(61, 61, 61) : Color.FromRgb(74, 101, 151), background.GradientStops[0].Color, "Preview background differs from native TopSolid theme");
+                    Check.Equal(dark ? Color.FromRgb(61, 61, 61) : Color.FromRgb(231, 228, 228), background.GradientStops[1].Color, "Preview background lower color differs from native TopSolid theme");
                     Check.True(pane.ActualWidth > 360 && pane.ActualHeight > 250, "3D viewport is clipped");
+                    var cameraButton = Descendants<Button>(pane).SingleOrDefault(button =>
+                        AutomationProperties.GetName(button) == StudioStrings.Get("Preview.CameraMenu"));
+                    Check.True(cameraButton != null, "TopSolid-style camera menu is missing from the viewport toolbar");
+                    Check.True(!Descendants<ComboBox>(pane).Any(combo => combo.Items.Count >= 7), "The old text camera-view dropdown remains in the footer");
+                    cameraButton!.RaiseEvent(new RoutedEventArgs(Button.ClickEvent));
+                    var cameraMenu = cameraButton.ContextMenu;
+                    Check.True(cameraMenu != null && cameraMenu.IsOpen, "Camera button did not open its view menu");
+                    Check.Equal(8, cameraMenu!.Items.Count, "Camera menu lost one of the standard TopSolid view directions");
+                    Check.Equal("Ctrl+Shift+T", ((MenuItem)cameraMenu.Items[0]).InputGestureText, "Top camera shortcut is missing");
+                    Check.Equal(StudioStrings.Get("Preview.View.perspective"), ((MenuItem)cameraMenu.Items[7]).Header?.ToString(), "Perspective camera entry is missing");
+                    cameraMenu.IsOpen = false;
+                    pane.SetView("top"); Check.True(pane.Camera.LookDirection.Z < 0, "Top camera direction is inverted");
+                    pane.SetView("bottom"); Check.True(pane.Camera.LookDirection.Z > 0, "Bottom camera direction is inverted");
+                    pane.SetView("front"); Check.True(pane.Camera.LookDirection.Y > 0, "Front camera direction is inverted");
+                    pane.SetView("back"); Check.True(pane.Camera.LookDirection.Y < 0, "Back camera direction is inverted");
+                    pane.SetView("perspective"); Check.True(pane.IsPerspective, "Perspective camera entry did not switch projection");
+                    pane.SetView("iso"); Check.True(!pane.IsPerspective, "Selecting an orthographic view did not leave perspective mode");
                     Check.True(!pane.IsLoading && client.Calls == 0, "Proposed geometry performed an unnecessary CAD export");
                     var before = pane.Camera.Position; pane.Orbit(.25, .1); Check.True(pane.Camera.Position != before, "Orbit did not move camera");
                     var width = pane.Camera.Width; pane.Zoom(.7); Check.True(pane.Camera.Width < width, "Zoom did not change camera"); pane.SetView("iso"); pane.Fit();
@@ -70,10 +95,11 @@ internal static class GraphicPreviewUiTests
                 questionWindow.Show(); await Layout(questionWindow); var pane = Descendants<GraphicPreviewPane>(questionWindow).Single();
                 Check.True(questionClient.Calls == 0 && pane.Scene == null, "Question auto-selected or exported a document");
                 var list = (ListBox)questionWindow.FindName("ChoiceList"); list.SelectedIndex = 0;
-                await Until(() => pane.Scene != null, questionWindow); render(questionWindow, "graphic-question-document.png");
+                await Until(() => pane.IsScenePresented && !pane.IsLoading, questionWindow); render(questionWindow, "graphic-question-document.png");
                 var first = new TaskCompletionSource<JObject>(TaskCreationOptions.RunContinuationsAsynchronously);
                 questionClient.Handler = (target, _) => (string?)target["documentId"] == "b" ? first.Task : Task.FromResult(GraphicPreviewTests.Result("a"));
                 list.SelectedIndex = 1; await Until(() => questionClient.Calls >= 2, questionWindow);
+                Check.True(pane.IsLoading && !pane.IsScenePresented, "Loading a new selection exposed partial/stale geometry");
                 list.SelectedIndex = 0; await Until(() => questionClient.Calls >= 3 && pane.Scene != null, questionWindow);
                 first.SetResult(new JObject { ["status"] = "unavailable" }); await Layout(questionWindow);
                 Check.True(pane.Scene != null && !pane.IsLoading, "Stale selection replaced the current geometry");
@@ -94,6 +120,7 @@ internal static class GraphicPreviewUiTests
                 Check.True(list.IsVisible && pane.IsVisible && !narrowTabs.IsVisible, "Wide layout did not restore side-by-side review");
             }
             finally { questionWindow.Close(); }
+            await OperationBrowser(owner, render);
             var bad = new Client { Handler = (_, _) => Task.FromResult(new JObject { ["status"] = "tooLarge" }) };
             var failed = Position(new ChangeConfirmationWindow(JObject.Parse("{toolName:'topsolid_set_cam_parameter_value',target:{documentId:'doc',name:'Face milling'},arguments:{}}"), previewClient: bad), owner);
             try
@@ -105,6 +132,39 @@ internal static class GraphicPreviewUiTests
             finally { failed.Close(); }
         }
         finally { StudioStrings.Apply(originalLanguage); TopSolidTheme.Apply(originalTheme); }
+    }
+    private static async Task OperationBrowser(Window owner, Action<Window, string> render)
+    {
+        var language = StudioStrings.CurrentLanguage;
+        StudioStrings.Apply("ko");
+        var source = CamSelectionTests.Question();
+        var question = UserQuestion.Browse([source], source.Choices.Count, false, null);
+        var client = new Client(); var dialog = Position(new QuestionWindow(question, client), owner);
+        try
+        {
+            dialog.Show(); var pane = Descendants<GraphicPreviewPane>(dialog).Single();
+            await Until(() => pane.Scene != null && !pane.IsLoading, dialog);
+            Check.True(client.Calls == 1 && client.PathRequests.Count == 0, "Operation browser did not show its document context first");
+            Check.True(((Button)dialog.FindName("ContinueQuestion")).Visibility == Visibility.Collapsed, "Read-only list asked for approval");
+            var list = (ListBox)dialog.FindName("ChoiceList"); list.SelectedIndex = 1;
+            await Until(() => pane.ToolpathSegments == 2 && !pane.IsLoading, dialog);
+            Check.True(JToken.DeepEquals(client.PathRequests[^1], question.PreviewTargetFor(question.Choices[1].Key)!["operation"]), "Toolpath used a part/tool handle instead of the selected operation");
+            pane.Orbit(.2, .1); var camera = pane.Camera.Position; var scene = pane.Scene;
+            render(dialog, "graphic-operation-list-toolpath-ko.png");
+            var delayed = new TaskCompletionSource<JObject>(TaskCreationOptions.RunContinuationsAsynchronously);
+            JObject? pendingOperation = null;
+            client.PathHandler = (op, _) => { pendingOperation = op; return delayed.Task; };
+            list.SelectedIndex = 0;
+            Check.Equal(0, pane.ToolpathSegments, "Switching operations retained the previous path");
+            await Until(() => pendingOperation != null, dialog);
+            client.PathHandler = (op, _) => Task.FromResult(new JObject { ["operation"] = op.DeepClone(), ["status"] = "coordinatesUnavailable" });
+            list.SelectedIndex = 1;
+            await Until(() => !pane.IsLoading, dialog);
+            delayed.SetResult(PreviewRuntimeTests.PathResult(pendingOperation!)); await Layout(dialog);
+            Check.True(pane.ToolpathSegments == 0 && pane.ToolpathStatus.Contains("좌표"), "Stale path replaced a newer coordinate failure");
+            Check.True(client.Calls == 1 && ReferenceEquals(scene, pane.Scene) && pane.Camera.Position == camera, "Operation selection re-exported the model or reset the camera");
+        }
+        finally { dialog.Close(); StudioStrings.Apply(language); }
     }
     private static void Navigation(GraphicPreviewPane pane)
     {

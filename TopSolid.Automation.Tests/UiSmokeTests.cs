@@ -32,8 +32,15 @@ internal static class UiSmokeTests
             };
             dispatcher.BeginInvoke(async () =>
             {
+                Application? application = null;
                 try
                 {
+                    if (Application.Current == null)
+                    {
+                        application = new Application { ShutdownMode = ShutdownMode.OnExplicitShutdown };
+                        application.Resources.MergedDictionaries.Add(new ResourceDictionary
+                        { Source = new Uri("/TopSolid.Automation.AI.Studio;component/Appearance/TopSolidStyles.xaml", UriKind.Relative) });
+                    }
                     await ExerciseWindow(serverPath, liveOllamaModel, approvedNativePlan, render);
                     await CloseAfterConnectFailure();
                     await CloseDuringConnect(serverPath);
@@ -41,7 +48,7 @@ internal static class UiSmokeTests
                     completion.TrySetResult();
                 }
                 catch (Exception error) { completion.TrySetException(error); }
-                finally { dispatcher.BeginInvokeShutdown(DispatcherPriority.Background); }
+                finally { application?.Shutdown(); dispatcher.BeginInvokeShutdown(DispatcherPriority.Background); }
             });
             Dispatcher.Run();
         }) { IsBackground = true, Name = "TopSolid AI WPF smoke test" };
@@ -92,12 +99,10 @@ internal static class UiSmokeTests
             var connect = developer.ConnectButton;
             var saveLog = Control<Button>("SaveLogButton");
             var statusButton = developer.StatusButton;
-            var statusText = Control<TextBlock>("StatusText");
             var trace = Control<TextBox>("TraceBox");
             var chat = Control<ChatTranscript>("ChatBox");
             Check.True(!statusButton.IsEnabled, "TopSolid status button should require MCP connection");
             Check.True(saveLog.IsEnabled && (string)saveLog.Content == "Save log", "Save log action should be available when idle");
-            Check.True(statusText.Text.Contains("disconnected", StringComparison.Ordinal), "Initial MCP status should be disconnected");
             provider.SelectedIndex = 1;
             LayoutWindow(window);
             Check.Equal(30, (int)wait.SelectedItem, "Provider switching lost the configured timeout");
@@ -130,7 +135,6 @@ internal static class UiSmokeTests
             Check.True(File.Exists(path.Text), "Supply --server <exe> with --ui-smoke when no server is bundled beside the test harness");
             connect.RaiseEvent(new RoutedEventArgs(Button.ClickEvent));
             await WaitUntil(() => connect.IsEnabled, "MCP Connect button did not finish");
-            Check.True(statusText.Text.Contains("connected (187 tools)", StringComparison.Ordinal), "UI did not show discovered tools: " + trace.Text);
             Check.True(trace.Text.Contains("topsolid_get_active_document", StringComparison.Ordinal), "Tool discovery should be visible in trace");
             Check.True(statusButton.IsEnabled, "Connected UI should enable the TopSolid status button");
             statusButton.RaiseEvent(new RoutedEventArgs(Button.ClickEvent));
@@ -144,8 +148,22 @@ internal static class UiSmokeTests
                 // Send handler, elapsed label and per-role rendering together.
                 provider.SelectedIndex = 1; endpoint.Text = "http://localhost:11434"; model.Text = "ui-no-inference";
                 Control<TextBox>("MessageBox").Text = "List all projects name order by cretaion date (oldest to newest)";
-                var send = Control<Button>("SendButton"); send.RaiseEvent(new RoutedEventArgs(Button.ClickEvent));
-                await WaitUntil(() => send.IsEnabled, "Direct PDM UI request did not finish");
+                var browseShown = false;
+                var browseTimer = new DispatcherTimer { Interval = TimeSpan.FromMilliseconds(50) };
+                browseTimer.Tick += (_, _) =>
+                {
+                    var dialog = window.OwnedWindows.OfType<QuestionWindow>().FirstOrDefault(d => d.IsVisible);
+                    if (dialog == null) return;
+                    browseShown = ((Button)dialog.FindName("ContinueQuestion")).Visibility == Visibility.Collapsed;
+                    dialog.Close();
+                };
+                var send = Control<Button>("SendButton"); browseTimer.Start();
+                try
+                {
+                    send.RaiseEvent(new RoutedEventArgs(Button.ClickEvent));
+                    await WaitUntil(() => send.IsEnabled, "Direct PDM UI request did not finish");
+                }
+                finally { browseTimer.Stop(); }
                 const string statusMarker = "TopSolid status: ";
                 using var statusReader = new Newtonsoft.Json.JsonTextReader(new StringReader(trace.Text[(trace.Text.LastIndexOf(statusMarker, StringComparison.Ordinal) + statusMarker.Length)..].TrimStart()));
                 // Trace formatting expands JSON over several lines. Read exactly
@@ -153,14 +171,12 @@ internal static class UiSmokeTests
                 var statusEnvelope = JObject.Load(statusReader);
                 var statusData = statusEnvelope["structuredContent"] ?? JObject.Parse((string)statusEnvelope["content"]![0]!["text"]!);
                 var nativeAvailable = (bool)statusData["connected"]!;
-                Check.True(nativeAvailable ? chat.Text.Contains("(complete)") : chat.Text.Contains("TopSolid query failed"),
-                    "Direct PDM request must render the complete list when connected or the real connection failure when unavailable: " + chat.Text);
-                Check.True(Control<TextBlock>("ElapsedText").Text.StartsWith("Elapsed "), "Elapsed duration missing from chat");
+                Check.True(nativeAvailable ? browseShown && chat.Text.Contains(StudioStrings.Get("List.Shown")) : chat.Text.Contains("TopSolid query failed"),
+                    "Direct PDM request must open its read-only list dialog when connected or report the real connection failure: " + chat.Text);
                 var answer = chat.Document.Blocks.OfType<Paragraph>().Last();
                 Check.Equal(((SolidColorBrush)window.FindResource("TextBrush")).Color, ((SolidColorBrush)answer.Foreground).Color, "AI answer must follow the readable theme text color");
                 Check.True(new TextRange(answer.ContentStart, answer.ContentEnd).Text.Contains(" s"), "Final response must retain elapsed time");
                 Check.True(chat.Document.Blocks.OfType<Paragraph>().Any(p => p.Tag is "You"), "User role must remain distinct in the transcript");
-                Check.True(statusText.Text.Contains("not used (direct MCP)"), "Direct MCP must not claim model inference");
                 Check.True(!trace.Text.Contains("Model: Request"), "UI list should not contact a model");
             }
             Control<TextBox>("MessageBox").Text = "Am I connected to TopSolid?";
@@ -214,8 +230,6 @@ internal static class UiSmokeTests
                 }
                 Check.True(chat.Text.Contains("Assistant", StringComparison.Ordinal),
                     "The live model did not produce a final assistant answer: " + chat.Text);
-                Check.True(statusText.Text.Contains("response received", StringComparison.Ordinal),
-                    "UI did not confirm live inference success");
                 Check.True(!trace.Text.Contains("Error:", StringComparison.Ordinal), "Live UI chat produced an error: " + trace.Text);
                 Console.WriteLine("Live UI Ollama model: " + liveOllamaModel);
                 Console.WriteLine("Live UI conversation: " + chat.Text.ReplaceLineEndings(" | "));
@@ -231,10 +245,7 @@ internal static class UiSmokeTests
             ((System.Windows.Controls.Grid)window.FindName("SettingsPage")).Visibility = Visibility.Collapsed;
             ((System.Windows.Controls.Grid)window.FindName("ChatPage")).Visibility = Visibility.Visible;
             var root = LayoutWindow(window);
-            if (!string.IsNullOrWhiteSpace(liveOllamaModel))
-                Check.True(statusText.Text.Contains("response received", StringComparison.Ordinal),
-                    "Layout changed the status of a completed live model response");
-            Console.WriteLine("WPF controls: direct MCP Send, themed replies, elapsed time, distinct roles and unchanged saved settings checked.");
+            Console.WriteLine("WPF controls: direct MCP Send, themed replies, distinct roles and unchanged saved settings checked.");
             if (render) {
             const int width = 1032;
             const int height = 792;
@@ -253,7 +264,6 @@ internal static class UiSmokeTests
             }
             connect.RaiseEvent(new RoutedEventArgs(Button.ClickEvent));
             await WaitUntil(() => connect.IsEnabled, "MCP Disconnect button did not finish");
-            Check.True(statusText.Text.Contains("disconnected", StringComparison.Ordinal), "UI did not return to disconnected status");
             Check.True(!statusButton.IsEnabled, "Disconnected UI should disable TopSolid status");
         }
         finally

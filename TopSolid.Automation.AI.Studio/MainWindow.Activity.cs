@@ -26,6 +26,16 @@ public partial class MainWindow
                 .RaiseAutomationEvent(AutomationEvents.LiveRegionChanged);
     }
 
+    private void ShowVersionSupportNotice(string message)
+    {
+        versionSupportNotice = message;
+        SetActivity("Activity.UnsupportedVersion", "status", waitingForUser: true);
+        ActivityText.Text = message;
+        if (AutomationPeer.ListenerExists(AutomationEvents.LiveRegionChanged))
+            (UIElementAutomationPeer.FromElement(ActivityText) ?? UIElementAutomationPeer.CreatePeerForElement(ActivityText))?
+                .RaiseAutomationEvent(AutomationEvents.LiveRegionChanged);
+    }
+
     private void UpdateActivityFromTrace(string kind, string text, CancellationTokenSource? source)
     {
         if (source == null || !ReferenceEquals(operation, source) || closing || activityAwaitingApproval) return;

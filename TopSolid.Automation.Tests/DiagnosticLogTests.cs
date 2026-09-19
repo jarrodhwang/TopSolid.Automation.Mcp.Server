@@ -88,6 +88,9 @@ internal static class DiagnosticLogTests
             Check.Equal("What happened? [redacted]", (string?)export["chat"]?[0]?["text"],
                 "Export did not redact current chat");
             Check.Equal(1234.5, (double?)export["chat"]?[1]?["elapsedMilliseconds"], "Export must retain measured response time");
+            Check.True(export["application"]?["executablePath"]?.Type == JTokenType.String, "Export omitted the running Studio executable path");
+            Check.True(export["mcp"]?["configuredServerBinary"]?["scope"] != null, "Export did not distinguish file metadata from running server version");
+            Check.True(((string?)export["chat"]?[0]?["timestampUtc"])?.EndsWith("+00:00", StringComparison.Ordinal) == true, "UTC timestamp was converted to local time during redaction");
             Check.Equal("topsolid_get_status", (string?)export["conversations"]?[0]?[0]?["toolCalls"]?[0]?["name"],
                 "Export omitted conversation tool calls");
         }

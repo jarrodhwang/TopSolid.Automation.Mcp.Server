@@ -12,12 +12,19 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Automation
     {
         // Private Studio RPC, never advertised to the model. No paths are accepted from the caller.
         // Export is outside StartModification/EndModification, as required by IDocuments.
-        public JObject GraphicPreview(JObject request) => Read("kernel", () =>
+        private readonly PreviewTransferStore previewTransfers = new PreviewTransferStore();
+        public JObject GraphicPreview(JObject request)
         {
-            if (request.Properties().Any(p => p.Name != "documentId" && p.Name != "pdmObjectId") ||
+            if (request["action"] != null) return previewTransfers.Handle(request);
+            return Read("kernel", () =>
+        {
+            if (request.Properties().Any(p => p.Name != "documentId" && p.Name != "pdmObjectId" && p.Name != "chunked" && p.Name != "fileBacked") ||
                 (request["documentId"] != null) == (request["pdmObjectId"] != null))
                 throw new ArgumentException("A preview requires exactly one explicit document or PDM document identity.");
             var identity = request["documentId"] ?? request["pdmObjectId"];
+            if (request["fileBacked"] != null && (request["fileBacked"].Type != JTokenType.Boolean || (bool?)request["chunked"] != true))
+                throw new ArgumentException("File-backed previews require chunked transport.");
+            var fileBacked = (bool?)request["fileBacked"] == true;
             if (identity.Type != JTokenType.String || ((string)identity).Length > 256 || string.IsNullOrWhiteSpace((string)identity))
                 throw new ArgumentException("Invalid preview document identity.");
             var doc = request["documentId"] != null ? new DocumentId((string)identity) : TopSolidHost.Documents.GetDocument(new PdmObjectId((string)identity));
@@ -26,6 +33,7 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Automation
                 return new JObject { ["status"] = "notLoaded" };
             var name = TopSolidHost.Documents.GetName(doc);
             var exporter = -1; var format = "glb";
+            var stlExporter = -1; List<KeyValue> stlOptions = null;
             List<KeyValue> options = null;
             for (var i = 0; i < TopSolidHost.Application.ExporterCount; i++)
             {
@@ -34,9 +42,12 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Automation
                 var glb = extensions.Any(e => e.Equals(".glb", StringComparison.OrdinalIgnoreCase));
                 if ((!stl && !glb) || !TopSolidHost.Application.IsExporterValid(i) || !TopSolidHost.Documents.CanExport(i, doc)) continue;
                 if (stl && GraphicPreviewExportOptions.TryStl(TopSolidHost.Application.GetExporterOptions(i), out var preciseOptions))
-                { exporter = i; options = preciseOptions; format = "stl"; break; }
-                if (glb) { exporter = i; options = TopSolidHost.Application.GetExporterOptions(i); }
+                { stlExporter = i; stlOptions = preciseOptions; }
+                if (glb) { exporter = i; options = TopSolidHost.Application.GetExporterOptions(i); break; }
             }
+            // STL discards every face/part color and transparency. Prefer the native
+            // material-preserving exporter even when the document needs paged geometry.
+            if (exporter < 0 && stlExporter >= 0) { exporter = stlExporter; options = stlOptions; format = "stl"; }
             if (exporter < 0) return new JObject { ["status"] = "unsupported", ["name"] = name };
             for (var i = 0; format == "glb" && i < options.Count; i++)
             {
@@ -53,31 +64,56 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Automation
             var directory = Path.Combine(Path.GetTempPath(), "TopSolid-Studio-preview-" + Guid.NewGuid().ToString("N"));
             Directory.CreateDirectory(directory);
             var file = Path.Combine(directory, "document." + format);
+            var retained = false; var toleranceScale = 1d;
             try
             {
                 var dirty = TopSolidHost.Documents.IsDirty(doc);
                 TopSolidHost.Documents.ExportWithOptions(exporter, options, doc, file);
+                // Coarser display-only tessellation for large native B-reps; no document tolerance is changed.
+                for (var retry = 0; !fileBacked && format == "stl" && File.Exists(file) && new FileInfo(file).Length > GraphicPreviewQuality.MaximumStlBytes && retry < 3; retry++)
+                {
+                    toleranceScale *= 4;
+                    GraphicPreviewExportOptions.TryStl(options, out options, toleranceScale);
+                    TopSolidHost.Documents.ExportWithOptions(exporter, options, doc, file);
+                }
                 if (!TopSolidHost.Documents.Exists(doc) || TopSolidHost.Documents.IsDirty(doc) != dirty)
                     return new JObject { ["status"] = "changed", ["name"] = name };
                 if (!File.Exists(file)) return new JObject { ["status"] = "unsupported", ["name"] = name };
-                if (new FileInfo(file).Length > (format == "stl" ? GraphicPreviewQuality.MaximumStlBytes : 2 * 1024 * 1024))
+                if (!fileBacked && new FileInfo(file).Length > (format == "stl" ? GraphicPreviewQuality.MaximumStlBytes : GraphicPreviewQuality.MaximumGlbBytes))
                     return new JObject { ["status"] = "tooLarge", ["name"] = name };
-                var data = File.ReadAllBytes(file);
-                if (format == "stl" && (data.Length < 84 || 84L + BitConverter.ToUInt32(data, 80) * 50L != data.Length || BitConverter.ToUInt32(data, 80) == 0))
-                    return new JObject { ["status"] = "unsupported", ["name"] = name };
-                return new JObject { ["status"] = "ready", ["name"] = name, ["documentId"] = doc.PdmDocumentId,
+                var length = new FileInfo(file).Length;
+                if (format == "stl")
+                {
+                    using (var reader = new BinaryReader(File.OpenRead(file)))
+                    {
+                        if (length < 84) return new JObject { ["status"] = "unsupported", ["name"] = name };
+                        reader.BaseStream.Position = 80; var triangles = reader.ReadUInt32();
+                        if (triangles == 0 || 84L + triangles * 50L != length) return new JObject { ["status"] = "unsupported", ["name"] = name };
+                    }
+                }
+                var result = new JObject { ["status"] = "ready", ["name"] = name, ["documentId"] = doc.PdmDocumentId,
                     ["scope"] = "document", ["format"] = format, ["units"] = format == "stl" ? "mm" : "m", ["upAxis"] = format == "stl" ? "Z" : "Y",
-                    ["linearToleranceMm"] = format == "stl" ? (JToken)GraphicPreviewQuality.LinearToleranceMm : JValue.CreateNull(),
-                    ["angularToleranceDegrees"] = format == "stl" ? (JToken)GraphicPreviewQuality.AngularToleranceDegrees : JValue.CreateNull(),
-                    ["capturedAt"] = DateTime.UtcNow.ToString("O"), ["data"] = Convert.ToBase64String(data) };
+                    ["appearance"] = format == "glb" ? "materials" : "neutral",
+                    // The installed TopSolid exporter writes native RGB/255 factors,
+                    // including 192/255 for the default surface, without linearization.
+                    ["colorEncoding"] = format == "glb" ? "srgb" : null,
+                    ["linearToleranceMm"] = format == "stl" ? (JToken)(GraphicPreviewQuality.LinearToleranceMm * toleranceScale) : JValue.CreateNull(),
+                    ["angularToleranceDegrees"] = format == "stl" ? (JToken)Math.Min(20, GraphicPreviewQuality.AngularToleranceDegrees * Math.Sqrt(toleranceScale)) : JValue.CreateNull(),
+                    ["capturedAt"] = DateTime.UtcNow.ToString("O") };
+                if ((bool?)request["chunked"] == true)
+                { result["transferId"] = previewTransfers.Add(file); result["byteLength"] = length; retained = true; }
+                else if (length <= 84 + 250000 * 50) result["data"] = Convert.ToBase64String(File.ReadAllBytes(file));
+                else return new JObject { ["status"] = "tooLarge", ["name"] = name };
+                return result;
             }
             finally
             {
                 // Only delete our exact owned file and empty directory, never recursively follow exporter output.
-                try { if (File.Exists(file)) File.Delete(file); Directory.Delete(directory); }
+                try { if (!retained) { if (File.Exists(file)) File.Delete(file); Directory.Delete(directory); } }
                 catch (IOException) { Console.Error.WriteLine("Preview temporary-file cleanup could not finish."); }
                 catch (UnauthorizedAccessException) { Console.Error.WriteLine("Preview temporary-file cleanup was denied."); }
             }
         });
+        }
     }
 }

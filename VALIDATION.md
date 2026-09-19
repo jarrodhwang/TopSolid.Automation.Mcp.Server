@@ -186,7 +186,7 @@
 
 ## Studio/MCP 0.4.0 batch expansion
 
-- **153 tools: 111 reads/reference tools and 42 confirmed actions**, adding 25 tools. All 229 declared API source pages were found in the official 7.20 index; the new compiled bindings target installed SDK 7.20.400.107.
+- **192 tools: 128 reads/reference tools and 64 confirmed actions**, including the 25-tool batch expansion. All 229 declared API source pages were found in the official 7.20 index; the new compiled bindings target installed SDK 7.20.400.107.
 - Release build: zero warnings/errors. **2,096 server checks**, **25 application groups**, **635 protocol checks**, and **27/27 WPF UI-smoke checks** passed. Tests include bounded schema selection, result-budget continuation, partial errors, revision rebasing, confirmation rejection, batch rollback boundaries, and local API-reference metadata/file resolution.
 - **31 live batch-read calls** passed across four already loaded document types, including mixed valid/invalid PDM handles. No document was opened or changed and no external model was called.
 - New native modeling/deletion execution and non-empty sketch/shape/assembly/CAM reads remain unverified without suitable confirmed fixtures. The final WPF smoke rendered successfully.
@@ -278,7 +278,7 @@ dotnet run --project .\TopSolid.Automation.Tests -c Release -- --server .\TopSol
 
 - Native geometry, shape readback and real rollback behavior need the approved fixture run. Through drilling, native 2D drawing sketches, arbitrary existing assemblies and populated CAM/CAE/drafting documents need representative fixtures.
 - Synchronized document metadata is rechecked before dispatch; inspection is not an atomic snapshot of the entire CAD model.
-- No arbitrary fillet/pocket/chamfer/Boolean creation, general dimensional constraint editing, CAM strategy creation, postprocessor run, simulation run, NC transmission, Wire host or standalone PDM Explorer adapter is exposed.
+- No arbitrary fillet/pocket/chamfer/Boolean creation, general dimensional constraint editing, CAM strategy creation, postprocessor run, NC transmission, Wire host or standalone PDM Explorer adapter is exposed. Simulation and verification actions are registered and statically/protocol validated; execution against a populated native CAM document and native result readback still require a connected TopSolid runtime fixture.
 - Real cloud authentication/quota/model behavior is untested; no paid cloud credentials were used. Both provider formats passed scripted HTTP contract tests.
 - Live vendor crashes and connection loss during modification were not deliberately induced. A vendor modification cannot safely be hard-killed; uncertain results require inspection.
 - Sending 128 schemas adds context and latency. Accuracy, language adherence, context limits and tool support depend on the model. The loop is bounded to 16 rounds and 24 calls.

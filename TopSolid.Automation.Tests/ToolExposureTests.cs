@@ -132,6 +132,16 @@ internal static class ToolExposureTests
     }
     internal static void VerifyCamWorkflows(McpToolDefinition[] catalog)
     {
+        foreach (var query in new[] { "Simulate the selected CAM operation", "Start verification for all operations", "가공 오퍼레이션을 시뮬레이션해줘", "오퍼레이션 검증을 시작해줘" })
+        foreach (var compact in new[] { false, true }) {
+            var exposure = new ToolExposure(catalog, query, compact);
+            foreach (var name in new[] { "topsolid_simulate_cam_operation", "topsolid_verify_cam_operation", "topsolid_verify_all_cam_operations" })
+                Check.True(exposure.Active.Any(t => t.Name == name), "CAM simulation/verification request omitted " + name + ": " + query);
+            Check.True(exposure.Active.Length <= (compact ? 10 : 24), "CAM simulation schemas exceeded the initial budget");
+        }
+        var simulationInstructions = ModelInstructions.Build(new ToolExposure(catalog, "Simulate this CAM operation", true).Active, "", true);
+        Check.True(simulationInstructions.Contains("ISimulation.Open") && simulationInstructions.Contains("IVerify.OpenAll") &&
+            simulationInstructions.Contains("collision safety"), "CAM simulation/verification instructions lost operation scope or safety boundary");
         foreach (var query in new[] { "Show cutting conditions", "절삭조건을 가져와봐", "Show all operation CAM parameters",
             "Change the second operation feedrate to 4 m/min", "두 번째 가공의 피드값을 4m/min으로 바꿔줘", "Read the spindle RPM" })
         foreach (var compact in new[] { false, true }) {

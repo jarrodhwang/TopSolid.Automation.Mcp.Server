@@ -25,8 +25,12 @@ public sealed class UserQuestion
 {
     private readonly Dictionary<string, JObject> values;
     internal UserQuestion(string title, string kind, string itemKind, bool multiple, string unit,
-        decimal? minimum, decimal? maximum, IReadOnlyList<QuestionChoice> choices, Dictionary<string, JObject> values)
-    { Title = title; Kind = kind; ItemKind = itemKind; Multiple = multiple; Unit = unit; Minimum = minimum; Maximum = maximum; Choices = choices; this.values = values; }
+        decimal? minimum, decimal? maximum, IReadOnlyList<QuestionChoice> choices, Dictionary<string, JObject> values,
+        string? context = null)
+    {
+        Title = title; Kind = kind; ItemKind = itemKind; Multiple = multiple; Unit = unit; Minimum = minimum; Maximum = maximum;
+        Choices = choices; this.values = values; Context = context ?? ContextFor(kind, itemKind, choices, values);
+    }
     public string Title { get; }
     public string Kind { get; }
     public string ItemKind { get; }
@@ -35,8 +39,78 @@ public sealed class UserQuestion
     public decimal? Minimum { get; }
     public decimal? Maximum { get; }
     public IReadOnlyList<QuestionChoice> Choices { get; }
+    /// <summary>Client-derived scope guidance for the next selection step.</summary>
+    public string Context { get; }
+    public bool IsBrowse { get; internal init; }
+    public bool HasMore { get; internal init; }
+    public int Total { get; internal init; }
+    internal Func<CancellationToken, Task<UserQuestion>>? LoadMoreAsync { get; init; }
+    private JObject? documentPreview;
+    internal JObject? DocumentPreview
+    {
+        get
+        {
+            if (documentPreview != null) return (JObject)documentPreview.DeepClone();
+            if (Choices.Count == 0 || Choices.Any(c => c.Kind != "operation")) return null;
+            var ids = Choices.Select(c => (string?)PreviewTargetFor(c.Key)?["documentId"]).Distinct().ToArray();
+            return ids is [not null] ? new JObject { ["documentId"] = ids[0] } : null;
+        }
+        init => documentPreview = value;
+    }
+    internal static UserQuestion Browse(IEnumerable<UserQuestion> pages, int total, bool more,
+        Func<CancellationToken, Task<UserQuestion>>? loadMore, bool browse = true, string? title = null,
+        bool multiple = false, string? itemKindOverride = null)
+    {
+        var choices = new List<QuestionChoice>(); var values = new Dictionary<string, JObject>();
+        foreach (var page in pages)
+            foreach (var choice in page.Choices)
+            {
+                var key = "browse-" + choices.Count;
+                choices.Add(choice with { Key = key }); values.Add(key, (JObject)page.values[choice.Key].DeepClone());
+            }
+        var kind = choices.Select(c => c.Kind).Distinct().Take(2).ToArray();
+        var targets = values.Values.Select(v => Preview.PreviewTarget.FromChoice(v, "element"))
+            .Where(v => v != null).Select(v => (string?)v!["documentId"]).Distinct().ToArray();
+        return new UserQuestion(title ?? StudioStrings.Get("List.Title"), "select", itemKindOverride ?? (kind.Length == 1 ? kind[0] : "option"), multiple, "", null, null, choices, values)
+        { IsBrowse = browse, Total = total, HasMore = more, LoadMoreAsync = loadMore,
+            DocumentPreview = kind is ["operation"] && targets is [not null] ? new JObject { ["documentId"] = targets[0] } : null };
+    }
     internal JObject? PreviewTargetFor(string? key) => key != null && values.TryGetValue(key, out var receipt)
         ? Preview.PreviewTarget.FromChoice(receipt, Choices.First(c => c.Key == key).Kind) : null;
+
+    private static string ContextFor(string kind, string itemKind, IReadOnlyList<QuestionChoice> choices,
+        IReadOnlyDictionary<string, JObject> values)
+    {
+        if (kind != "select") return "";
+        var effectiveKind = itemKind;
+        if (effectiveKind == "option")
+        {
+            var rowKinds = choices.Select(c => c.Kind).Distinct(StringComparer.Ordinal).ToArray();
+            if (rowKinds.Length == 1) effectiveKind = rowKinds[0];
+        }
+        return effectiveKind switch
+        {
+            "project" => StudioStrings.Get("Question.ProjectContext"),
+            "library" => StudioStrings.Get("Question.LibraryContext"),
+            "operation" => StudioStrings.Get("Question.OperationContext"),
+            "document" => DocumentContext(values),
+            _ => ""
+        };
+    }
+
+    private static string DocumentContext(IReadOnlyDictionary<string, JObject> values)
+    {
+        var scopes = values.Values.Select(v => v["value"] as JObject)
+            .Select(row => row == null ? null : (string?)row["projectName"] ?? (string?)row["parentName"])
+            .Where(name => !string.IsNullOrWhiteSpace(name)).Select(name => name!.Trim())
+            .Distinct(StringComparer.CurrentCultureIgnoreCase).Take(2).ToArray();
+        if (scopes.Length == 1)
+        {
+            var scope = new FriendlyResponsePresenter().Present(scopes[0]);
+            return StudioStrings.Get("Question.DocumentContext", scope);
+        }
+        return StudioStrings.Get("Question.DocumentContextGeneric");
+    }
 
     public QuestionAnswer Answer(string text = "", IEnumerable<string>? selectedKeys = null, ChatAttachment? image = null, CultureInfo? culture = null)
     {
@@ -115,7 +189,7 @@ internal sealed class QuestionSources
         if (data != null) receipts[callId] = new Source(tool, (JObject)arguments.DeepClone(), data.DeepClone());
     }
 
-    internal UserQuestion Create(JObject input)
+    internal UserQuestion Create(JObject input, bool browse = false)
     {
         var allowed = new[] { "question", "kind", "itemKind", "multiple", "unit", "minimum", "maximum", "sources", "choices" };
         if (input.Properties().Any(p => !allowed.Contains(p.Name))) throw new ArgumentException("Unknown question field.");
@@ -135,7 +209,11 @@ internal sealed class QuestionSources
         {
             if (input["sources"] is JArray sources)
             {
-                if (input["choices"] != null || sources.Count is < 1 or > 24) throw new ArgumentException("Use sources OR general choices.");
+                // Some providers materialize an omitted optional array as [] even
+                // when they correctly chose receipt-backed sources. Treat an empty
+                // choices array as omitted, but reject actual mixed choice payloads.
+                if (input["choices"] is JArray suppliedChoices && suppliedChoices.Count > 0 || sources.Count is < 1 or > 24)
+                    throw new ArgumentException("Use sources OR general choices.");
                 foreach (var source in sources.OfType<JObject>())
                 {
                     if (source.Properties().Any(p => p.Name is not ("toolCallId" or "path" or "itemKind" or "editableOnly"))) throw new ArgumentException("Unknown selection source field.");
@@ -156,18 +234,30 @@ internal sealed class QuestionSources
                         var key = "choice-" + choices.Count;
                         // A generic assistant itemKind must not erase native CAM identity. Parameter
                         // rows may mention their parent operation, so they retain their own kind.
-                        var rowKind = row is JObject operationRow && operationRow["parameter"] == null &&
-                            (receipt.Tool is "topsolid_list_cam_operations" or "topsolid_list_cam_scenario" ||
-                             operationRow["operationType"]?.Type == JTokenType.String ||
-                             operationRow["operation"] is JObject && operationRow["operationName"]?.Type == JTokenType.String)
-                            ? "operation" : sourceKind;
+                        var rowKind = receipt.Tool switch
+                        {
+                            "topsolid_list_cam_tools" => "tool",
+                            "topsolid_list_sketches2d" or "topsolid_list_sketches3d" => "sketch",
+                            "topsolid_list_document_summaries" or "topsolid_list_documents" or "topsolid_list_loaded_documents" => "document",
+                            "topsolid_list_pdm_children" when row is JObject child &&
+                                string.Equals((string?)child["kind"], "document", StringComparison.OrdinalIgnoreCase)
+                                => "document",
+                            "topsolid_list_projects" => "project",
+                            "topsolid_list_libraries" => "library",
+                            "topsolid_list_shape_summaries" => "shape",
+                            _ when row is JObject operationRow && operationRow["parameter"] == null &&
+                                (receipt.Tool is "topsolid_list_cam_operations" or "topsolid_list_cam_operation_summaries" or "topsolid_list_cam_scenario" ||
+                                 operationRow["operationType"]?.Type == JTokenType.String ||
+                                 operationRow["operation"] is JObject && operationRow["operationName"]?.Type == JTokenType.String)
+                                => "operation",
+                            _ => sourceKind
+                        };
                         var label = Label(row, rowKind, choices.Count + 1);
-                        var toolText = rowKind == "operation" && row["toolDisplayName"]?.Type == JTokenType.String ?
-                            presenter.Present((string)row["toolDisplayName"]!).Trim() : null;
+                        var toolText = rowKind == "operation" ? CamDisplay.ToolText(row) : null;
                         if (rowKind == "operation" && string.IsNullOrWhiteSpace(toolText) && (bool?)row["hasTool"] == true)
                             toolText = StudioStrings.Get("Question.ToolUnavailable");
                         var detail = Details(row, label, rowKind == "operation");
-                        var icon = rowKind == "operation" ? TopSolidIcons.OperationKey(row) : rowKind == "camParameter" ? TopSolidIcons.CamCategoryKey(row) :
+                        var icon = rowKind == "tool" ? TopSolidIcons.ToolFunctionKey(row) : rowKind == "operation" ? TopSolidIcons.OperationKey(row) : rowKind == "camParameter" ? TopSolidIcons.CamCategoryKey(row) :
                             rowKind is "document" or "option" ? TopSolidIcons.DocumentKey(row) : null;
                         choices.Add(new(key, label, detail, rowKind, label + " " + detail + " " + toolText, icon, toolText,
                             string.IsNullOrWhiteSpace(toolText) ? null : TopSolidIcons.ToolFunctionKey(row)));
@@ -187,7 +277,7 @@ internal sealed class QuestionSources
                 }
             }
             else throw new ArgumentException("Object selections require sources; general options may use choices.");
-            if (choices.Count == 0) throw new ArgumentException("No selectable items. Read valid named objects before asking.");
+                if (choices.Count == 0 && !browse) throw new ArgumentException("No selectable items. Read valid named objects before asking.");
         }
         else if (input["sources"] != null || input["choices"] != null || (bool?)input["multiple"] == true)
             throw new ArgumentException("Selection fields are only valid for select questions.");
@@ -207,8 +297,15 @@ internal sealed class QuestionSources
     private string Label(JToken row, string kind, int ordinal)
     {
         if (row is JObject obj)
+        {
+            // Tool labels are native library names, including pocket and dimensions. Do not
+            // run names such as "Tool 1" through the prose identifier-redaction rules.
+            if (kind == "tool")
+                foreach (var field in new[] { "toolDisplayName", "toolDefinitionName", "friendlyName", "name" })
+                    if (obj[field]?.Type == JTokenType.String && !string.IsNullOrWhiteSpace((string?)obj[field]))
+                        return ((string)obj[field]!).Trim();
             foreach (var field in kind == "operation"
-                ? new[] { "operationName", "displayName", "localizedName", "friendlyName", "label", "name", "Name", "description" }
+                ? new[] { "operationName", "displayName", "localizedName", "friendlyName", "sketchName", "label", "name", "Name", "description" }
                 : new[] { "displayName", "localizedName", "friendlyName", "label", "simpleName", "name", "Name" })
                 if (obj[field]?.Type == JTokenType.String && !string.IsNullOrWhiteSpace((string?)obj[field]))
                 {
@@ -216,6 +313,7 @@ internal sealed class QuestionSources
                     if (kind == "camParameter" && name.Contains('@')) name = name.Split('@')[0];
                     if (!long.TryParse(name, out _) && !Guid.TryParse(name, out _)) return presenter.Present(name);
                 }
+        }
         if (kind == "option" && row is JValue) return presenter.Present(row.ToString());
         return StudioStrings.Get("Question.Unnamed", StudioStrings.Get("Question.Kind." + kind), ordinal);
     }
@@ -223,8 +321,10 @@ internal sealed class QuestionSources
     private string Details(JToken row, string label, bool operation = false)
     {
         if (row is not JObject obj) return "";
-        var fields = new[] { "projectName", "documentName", "operationName", "parentName", "toolName", "path", "extension", "revision", "displayValue", "unitSymbol", "description", "geometryType", "creationDate", "modificationDate" };
+        var fields = new[] { "projectName", "documentName", "operationName", "sketchName", "parentName", "toolName", "path", "extension", "revision", "displayValue", "unitSymbol", "description", "geometryType", "type", "plane", "creationDate", "modificationDate" };
         var parts = fields.Where(key => !operation || key != "toolName").Select(key => obj[key]).Where(v => v?.Type == JTokenType.String).Select(v => presenter.Present((string)v!).Trim()).Where(s => s.Length > 0 && s != label).ToList();
+        if (operation && obj["operationType"]?.Type == JTokenType.String)
+            parts.Insert(0, CamDisplay.Operation((string?)obj["operationType"]));
         if (obj["categories"] is JArray categories)
             parts.Insert(0, string.Join(" / ", categories.Values<string>().OfType<string>().Select(FriendlyResponsePresenter.FriendlyLabel)));
         // Geometry measurements can distinguish unnamed topology without displaying handles.
@@ -250,7 +350,7 @@ internal sealed class QuestionSources
         return root;
     }
 
-    internal static readonly string[] Kinds = ["option", "project", "library", "document", "parameter", "operation", "machine", "camParameter", "element", "edge", "point", "curve", "surface", "shape"];
+    internal static readonly string[] Kinds = ["option", "project", "library", "document", "parameter", "operation", "machine", "camParameter", "element", "edge", "point", "curve", "surface", "shape", "part", "tool", "sketch"];
     internal static readonly McpToolDefinition Definition = new()
     {
         Name = ToolName, Description = "Ask the user one necessary question in an icon-card dialog. Selection is not authorization to modify CAD. For real objects use sources from successful tool calls in this turn: toolCallId is the receipt's studioSourceId. JSON pointer paths address the unwrapped result (e.g. /items). All selection values are preserved exactly. Text choices are only for general options, never invented object identities.",
@@ -259,9 +359,9 @@ internal sealed class QuestionSources
         {"type":"object","properties":{
           "question":{"type":"string","maxLength":240},
           "kind":{"type":"string","enum":["select","text","integer","decimal","image","color"]},
-          "itemKind":{"type":"string","enum":["option","project","library","document","parameter","operation","machine","camParameter","element","edge","point","curve","surface","shape"]},
-          "sources":{"type":"array","maxItems":24,"items":{"type":"object","properties":{"toolCallId":{"type":"string"},"path":{"type":"string","description":"JSON pointer to rows, an individual object, or enum choices in the unwrapped result."},"itemKind":{"type":"string","description":"Optional per-source kind for mixed project/library choices."},"editableOnly":{"type":"boolean","description":"Only include rows with verified editSupported=true and readOnly=false."}},"required":["toolCallId","path"],"additionalProperties":false}},
-          "choices":{"type":"array","maxItems":32,"items":{"type":"string"}},
+          "itemKind":{"type":"string","enum":["option","project","library","document","parameter","operation","machine","camParameter","element","edge","point","curve","surface","shape","part","tool","sketch"]},
+          "sources":{"type":"array","minItems":1,"maxItems":24,"items":{"type":"object","properties":{"toolCallId":{"type":"string"},"path":{"type":"string","description":"JSON pointer to rows, an individual object, or enum choices in the unwrapped result."},"itemKind":{"type":"string","description":"Optional per-source kind for mixed project/library/document choices."},"editableOnly":{"type":"boolean","description":"Only include rows with verified editSupported=true and readOnly=false."}},"required":["toolCallId","path"],"additionalProperties":false}},
+          "choices":{"type":"array","minItems":1,"maxItems":32,"items":{"type":"string"}},
           "multiple":{"type":"boolean"},"unit":{"type":"string","maxLength":32},
           "minimum":{"type":"number"},"maximum":{"type":"number"}
         },"required":["question","kind"],"additionalProperties":false}
@@ -269,9 +369,9 @@ internal sealed class QuestionSources
     };
 
     internal const string Instructions =
-        "For genuinely missing user data or an ambiguous target, CALL studio_ask_user instead of asking in chat. Use the user's language. Do not ask for known data or ask again for change approval. " +
-        "Read candidate objects first. Set sources.toolCallId to studioSourceId from the successful receipt in THIS turn; path is a JSON pointer into its unwrapped data, e.g. /items. Fetch all pages or narrow the list before asking; the dialog searches only supplied items. " +
-        "Each source can specify itemKind for a combined project/library picker. Read names and distinguishing parent/location/geometry context for duplicate or unnamed items. Use itemKind=camParameter and sources.editableOnly=true to choose editable operation parameters, sources at allowedValues for native enum choices. Honor each requested selection before asking its value. " +
+        "For genuinely missing user data or an ambiguous target, CALL studio_ask_user instead of asking in chat. Use the user's language. Do not ask for known data or ask again for change approval. For an object selection, use receipt-backed sources; never answer an explicit select/choose/pick/dialog request with raw prose or an ID. " +
+        "Read candidate objects first. Set sources.toolCallId to studioSourceId from the successful receipt in THIS turn; path is a JSON pointer into its unwrapped data, e.g. /items. Never prefix it with /structuredContent, and never append /operation to an array. Use /items for complete operation cards or /items/0 for one card. Fetch all pages or narrow the list before asking; the dialog searches only supplied items. Never claim a dialog was shown after a tool error; correct the arguments and retry. " +
+        "Each source can specify itemKind for a combined project/library/document picker. Read names and distinguishing parent/location/geometry context for duplicate or unnamed items. Use itemKind=camParameter and sources.editableOnly=true to choose editable operation parameters, sources at allowedValues for native enum choices. Honor each requested selection before asking its value. Omit choices when using sources; an empty optional choices array is tolerated but is not a general-choice payload. " +
         "Use integer/decimal with explicit input unit and only verified limits; returned numbers remain in that unit, so convert per the action schema. Image questions attach an explicitly chosen image as reference data. " +
         "Selection answers contain original rows and scope arguments, not approval; revalidate the target through normal prepare/confirmation before changes. Ask one question per model round and never issue a dependent action in the same batch. Cancellation ends the workflow. ";
 

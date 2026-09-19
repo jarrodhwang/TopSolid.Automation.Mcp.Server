@@ -9,12 +9,12 @@ internal static class DialogLayout
 {
     public static Border Toolbar(UIElement content) => StyledBorder(content, "DialogToolbar");
     public static Border Footer(UIElement content) => StyledBorder(content, "DialogFooter");
-    public static Border Body(UIElement content) => new() { Padding = new Thickness(16), Child = content };
+    public static Border Body(UIElement content) => new() { Padding = new Thickness(14), Child = content };
 
     public static DockPanel Heading(ImageSource icon, UIElement text)
     {
         var panel = new DockPanel();
-        panel.Children.Add(new Image { Source = icon, Width = 28, Height = 28, Margin = new Thickness(0, 0, 10, 0) });
+        panel.Children.Add(new Image { Source = icon, Width = 24, Height = 24, Margin = new Thickness(0, 0, 8, 0) });
         panel.Children.Add(text);
         return panel;
     }

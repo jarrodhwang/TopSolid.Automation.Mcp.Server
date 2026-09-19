@@ -11,7 +11,7 @@ public static class TopSolidIcons
 {
     private static readonly HashSet<string> Keys = new(StringComparer.OrdinalIgnoreCase)
         { "app", "project", "document", "sketch", "save", "delete", "settings", "attachment", "folder", "part", "operation", "parameter", "connect", "status", "window", "developer", "refresh", "refresh-warning", "refresh-error",
-          "library", "machine", "edge", "point", "curve", "surface", "shape", "color", "image", "view-fit", "view-orbit", "view-pan", "view-edges",
+          "library", "machine", "edge", "point", "curve", "surface", "shape", "color", "image", "view-camera", "view-fit", "view-orbit", "view-pan", "view-edges",
           "arguments", "cam-tool", "cam-cutting-conditions", "cam-geometry", "cam-strategy", "cam-comment", "cam-multi-axis", "cam-properties",
           "approve", "cancel", "error", "warning", "question", "license", "license-standalone", "license-floating", "license-user" };
     private static readonly ConcurrentDictionary<string, ImageSource> Cache = new(StringComparer.OrdinalIgnoreCase);
@@ -32,8 +32,8 @@ public static class TopSolidIcons
             { OperationIcons[type] = key; Keys.Add(key); }
             if ((string?)entry["DocumentExtension"] is { } extension && (string?)entry["Key"] is { } documentKey)
             {
-                DocumentIcons[extension] = documentKey; Keys.Add(documentKey);
-                if ((string?)entry["DocumentType"] is { } documentType) DocumentIcons[documentType] = documentKey;
+                DocumentIcons[NormalizeDocumentExtension(extension)] = documentKey; Keys.Add(documentKey);
+                if ((string?)entry["DocumentType"] is { } documentType) DocumentIcons[documentType.Trim()] = documentKey;
             }
         }
     }
@@ -49,9 +49,16 @@ public static class TopSolidIcons
         {
             if (obj[field]?.Type != JTokenType.String) continue;
             var value = ((string)obj[field]!).Trim();
-            if (DocumentIcons.TryGetValue(value, out var key)) return key;
+            if (DocumentIcons.TryGetValue(field == "extension" ? NormalizeDocumentExtension(value) : value, out var key)) return key;
         }
-        return obj["extension"]?.Type == JTokenType.String || obj["documentId"] != null ? "document" : null;
+        return obj["extension"]?.Type == JTokenType.String || obj["documentId"] != null || obj["pdmObjectId"] != null ||
+            string.Equals((string?)obj["kind"], "document", StringComparison.OrdinalIgnoreCase) ? "document" : null;
+    }
+
+    private static string NormalizeDocumentExtension(string value)
+    {
+        value = value.Trim();
+        return value.Length == 0 || value[0] == '.' ? value : "." + value;
     }
 
     // Only exact types from server receipts select machining icons. Unknown types
@@ -87,6 +94,7 @@ public static class TopSolidIcons
         key = !string.IsNullOrEmpty(key) && Keys.Contains(key) ? key.ToLowerInvariant() : "app";
         return Cache.GetOrAdd(key, static name =>
         {
+            if (name == "view-camera") return CreateCameraIcon();
             try
             {
                 var image = new BitmapImage(new Uri($"pack://application:,,,/TopSolid.Automation.AI.Studio;component/Assets/TopSolid/{name}.png", UriKind.Absolute));
@@ -100,6 +108,20 @@ public static class TopSolidIcons
                 var fallback = new DrawingImage(drawing); fallback.Freeze(); return fallback;
             }
         });
+    }
+
+    private static ImageSource CreateCameraIcon()
+    {
+        var fill = new SolidColorBrush(Color.FromRgb(205, 226, 250)); fill.Freeze();
+        var outline = new Pen(new SolidColorBrush(Color.FromRgb(0, 83, 163)), 1.1); outline.Brush.Freeze(); outline.Freeze();
+        var glass = new SolidColorBrush(Color.FromRgb(77, 153, 224)); glass.Freeze();
+        var body = Geometry.Parse("M3,7 L13,7 L20,3 L20,21 L13,17 L3,17 Z");
+        var lens = new EllipseGeometry(new System.Windows.Point(9, 12), 3.2, 3.2);
+        var group = new DrawingGroup();
+        group.Children.Add(new GeometryDrawing(fill, outline, body));
+        group.Children.Add(new GeometryDrawing(glass, outline, lens));
+        var image = new DrawingImage(group); image.Freeze();
+        return image;
     }
 
     public static ImageSource ForTool(string toolName)

@@ -1,4 +1,8 @@
-# TopSolid Automation AI — 0.5.19
+# TopSolid Automation AI — 0.5.21
+
+**0.5.21:** CAM tools use native pocket/name/type metadata and preview their referenced tool documents. Native GLB previews preserve surface colors and transparency, including large models; the viewport waits for complete initial geometry and rendered frames before displaying it. Light/dark backgrounds follow the installed TopSolid palette. Native data and regression checks passed; final live GPU/theme visual comparison remains unverified because Windows screen capture was unavailable. [Changes and validation](docs/TOOL-PREVIEW-FIX-20260918.md).
+
+**0.5.20:** List requests automatically open searchable icon dialogs with read-only paging. Direct3D 11 rendering and parallel disk-backed STL tiles support large native previews; the open blade CAM document's 2,777,626 triangles were displayed on the NVIDIA GPU. Operation selection reuses the model and requests an exact-operation toolpath overlay. The installed TopSolid 7.20 API returns empty strings for 3D toolpath points, so this document shows an explicit coordinate-unavailable status; native toolpath display remains blocked. [Behavior, measured validation and remaining limits](docs/LIST-PREVIEW-0.5.20.md).
 
 **0.5.19:** CAM selection cards use native operation names/types even for generic question choices. A larger right-hand tool area shows the actual pocket and definition (for example `T 1 : Ball Nose Mill D10 L25 SD10`) with one of 67 native tool-function icons. Display metadata is read once per distinct tool per page; unavailable tooling stays explicit, and operations without a tool have no tool area.
 
@@ -52,19 +56,19 @@ User → WPF Studio → selected AI model
 
 ## Build and open
 
-Requires Windows x64, .NET 10 SDK/Windows Desktop runtime, .NET Framework 4.8 targeting pack/runtime, and a licensed TopSolid 7.20 installation. Initial NuGet restore requires network access or a populated package cache.
+Requires Windows x64, .NET 10 SDK/Windows Desktop runtime, .NET Framework 4.8 targeting pack/runtime, and a licensed TopSolid 7.18 or newer installation. Initial NuGet restore requires network access or a populated package cache. The shipped 7.18 profile covers the common Automating assemblies; Cae/Electrode tools require 7.20 and native modeling requires 7.20.326.
 
 ```powershell
 dotnet build .\TopSolid.Automation.Mcp.Server.slnx -c Release
 & .\TopSolid.Automation.AI.Studio\bin\Release\net10.0-windows\TopSolid.Automation.AI.Studio.exe
 ```
 
-The build uses the matched SDK from `C:\Program Files\TOPSOLID\TopSolid 7.20\bin`. To use another SDK folder, supply `-p:TopSolidAutomationDirectory="D:\SDK\TopSolid7.20"`. Legacy DLLs in `Server.AddIn/TopSolid.Automation` are preserved but excluded from reference resolution. Tested client and host version: **7.20.400.107**. Modeling requires host 7.20.326 or newer.
+The build uses the matched SDK from `C:\Program Files\TOPSOLID\TopSolid 7.20\bin`. To use another SDK folder, supply `-p:TopSolidAutomationDirectory="D:\SDK\TopSolid7.20"`. Legacy DLLs in `Server.AddIn/TopSolid.Automation` are preserved but excluded from reference resolution. Tested client and host version: **7.20.400.107**. Runtime tool floors are advertised in each tool's `_meta.topsolid/minimumVersion` and enforced before execution.
 
-A complete framework-dependent bundle is in **`artifacts/TopSolid-AI-0.5.19`**. Open `TopSolid.Automation.AI.Studio.exe` there; keep the entire folder, including `McpServer`. TopSolid must already be running and ready in the same Windows session with a valid Kernel Base license.
+A complete framework-dependent bundle is in **`artifacts/TopSolid-AI-0.5.21`**. Open `TopSolid.Automation.AI.Studio.exe` there; keep the entire folder, including `McpServer`. TopSolid must already be running and ready in the same Windows session with a valid Kernel Base license.
 
 ```powershell
-dotnet publish .\TopSolid.Automation.AI.Studio -c Release -o .\artifacts\TopSolid-AI-0.5.19
+dotnet publish .\TopSolid.Automation.AI.Studio -c Release -o .\artifacts\TopSolid-AI-0.5.21
 ```
 
 ## Use
@@ -94,13 +98,13 @@ Examples: “In the active part, create a 20 mm by 10 mm rectangle on XY at the 
 | Sketch2D/Sketch3D | Batched circles, rectangles, lines, arcs, polylines, cubic B-splines, parabolas, stars, smooth hearts and bounded ellipse approximations; explicit frames/offsets and native reference placement; named sketch context, topology/curve reads and coordinate conversion; 3D lines/polylines/circles/arcs/B-splines; analytic 2D slots; optional colors; fix/unfix; no new sections. New native creation/regeneration remains pending approved runtime qualification. |
 | Design2D/Design3D | Shape/topology/volume inspection; cylinder creation/replacement, rectangular extrusion, profile-checked extrusion/revolution/loft, through drilling, face colors and optional native parameter references for feature dimensions |
 | Assembly/tooling/drafting/electrode/CAE | Assembly insertion with fixed positioning and inclusion translation; existing occurrence/material/tool/view/page/electrode/CAE inspection |
-| CAM | Existing setup/tool/operation/NC inspection; exact scalar parameter edits, calculation of one existing operation, and bounded toolpath table reads |
+| CAM | Existing setup/tool/operation/NC inspection; exact scalar parameter edits, calculation of one existing operation, bounded toolpath table reads, and confirmed NC generation/export for selected operations |
 
 The new workflows follow the supplied manuals: **PDM document → native sketch/profile → shape → assembly (existing sections remain readable)**, with returned IDs carried through the model/tool loop. See [manual review and workflow mapping](docs/MANUALS_AND_WORKFLOWS.md).
 
 See [every tool, category and source contract](docs/api/COVERAGE.md), [machine-readable MCP schemas](docs/api/mcp-tools.json), and [validation evidence](VALIDATION.md). A documented API is not automatically a callable tool. A discovered tool does not prove its TopSolid module is connected or licensed.
 
-General fillet/pocket/chamfer/Boolean creation, dimensional sketch constraints, CAM strategy creation, postprocessing, simulation execution, and Wire/standalone PDM Explorer adapters remain extensions. The entire TopSolid UI is not exposed by the public Automation interfaces reviewed here; unverified commands are not advertised as tools. Technology folders for 2D/3D/4-axis/3+2/5-axis/MillTurn/Robot CAM map to the public SDK's shared services; they do not advertise invented technology-specific interfaces.
+General fillet/pocket/chamfer/Boolean creation, dimensional sketch constraints, CAM strategy creation, and Wire/standalone PDM Explorer adapters remain extensions. Confirmed NC generation/export is limited to selected existing operations and the post-processor configured on the CAM document; the public SDK surface reviewed here does not provide a post-processor catalog, so no names are invented. CAM simulation and verification execution are exposed through the documented `ISimulation`/`IVerify` workflows; they start the native animation but do not generate NC, run a machine, or certify collision safety. The entire TopSolid UI is not exposed by the public Automation interfaces reviewed here; unverified commands are not advertised as tools. Technology folders for 2D/3D/4-axis/3+2/5-axis/MillTurn/Robot CAM map to the public SDK's shared services; they do not advertise invented technology-specific interfaces.
 
 ## Structure
 
@@ -135,7 +139,7 @@ scripts/ApiReference/                   reference cache, SDK catalog and coverag
 | Functionality | Exact discovered names, typed arguments and live results. Unsupported parameter/property types are explicit. No guessed CAD IDs. |
 | Reliability | One STA owns Automation. Modification start/dirty revision/commit/rollback follow the guide. Single-use approvals bind exact arguments for two minutes. The target and its synchronized document group are rechecked before execution. Document-local handles are rebased after EnsureIsDirty creates a new revision. PDM partial failures retain created-object receipts. Interrupted model follow-ups retain CAD receipts. Synchronous all-history and per-application-session Studio diagnostics are flushed on every event, with WPF/global crash handlers and server fatal-error capture. |
 | Performance | 16 model rounds, 24 tool calls per turn; batch pages default to 100 and return a continuation offset when the character budget is reached. Most vendor list APIs still fetch the whole list before output pagination. At most 96 schemas are sent to the model; selecting omitted tools costs a model round. Local models still need sufficient context. |
-| Security | Saved keys use DPAPI CurrentUser and endpoint binding. Cloud redirects are rejected; HTTPS is required except loopback. No arbitrary API, file, shell or NC execution tools. The trusted local MCP client owns human confirmation. Diagnostic exports omit API keys and redact configured credentials before persistence. |
+| Security | Saved keys use DPAPI CurrentUser and endpoint binding. Cloud redirects are rejected; HTTPS is required except loopback. No arbitrary API, arbitrary file, shell or machine-execution tools. Typed NC generation/export requires human confirmation and the export path is chosen explicitly by the user. Diagnostic exports omit API keys and redact configured credentials before persistence. |
 | Compatibility / portability | WPF/.NET 10 frontend and .NET Framework 4.8 x64 server isolate vendor dependencies. Windows-only; remote MCP HTTP is not implemented. Module availability is checked when used. |
 | Usability / quality in use | Visible calls/results and exact preview; default cancellation; distinguish model discovery, inference, MCP and TopSolid states. Failure messages identify whether a change's outcome is uncertain. |
 

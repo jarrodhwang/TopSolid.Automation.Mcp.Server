@@ -1,6 +1,7 @@
 using System;
 using System.Diagnostics;
 using Newtonsoft.Json.Linq;
+using TopSolid.Automation.Mcp.Contracts;
 using TopSolid.Kernel.Automating;
 
 namespace TopSolid.Automation.Mcp.Server.AddIn.Automation
@@ -10,6 +11,9 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Automation
     {
         private const int ConnectionTimeoutSeconds = 5;
         private bool touchedHost;
+        private readonly ConnectionTarget connectionTarget;
+        public AutomationGateway() : this(new TopSolid.Automation.Mcp.Contracts.TopSolidConnectionOptions()) { }
+        internal AutomationGateway(TopSolid.Automation.Mcp.Contracts.TopSolidConnectionOptions options) { connectionTarget = new ConnectionTarget(options); }
 
         public JObject GetStatus()
         {
@@ -19,6 +23,8 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Automation
                 return new JObject
                 {
                     ["connected"] = true,
+                    ["processId"] = TopSolidHost.Application.ProcessId,
+                    ["connection"] = JObject.FromObject(connectionTarget.Options),
                     ["hostVersion"] = TopSolidHost.Application.Version,
                     ["hostVersionText"] = FormatVersion(TopSolidHost.Application.Version),
                     ["clientVersion"] = TopSolidHost.ClientVersion,
@@ -34,7 +40,7 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Automation
                 {
                     ["connected"] = false,
                     ["automationAssemblyVersion"] = typeof(TopSolidHost).Assembly.GetName().Version.ToString(),
-                    ["message"] = "TopSolid Automation is unavailable. Open TopSolid in the same Windows session, wait until it is ready, and retry. TopSolid was not started by this server.",
+                    ["message"] = "Check the selected TopSolid instance and connection settings.",
                     ["detail"] = Describe(ex)
                 };
             }
@@ -59,10 +65,9 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Automation
                     };
                 if (!documents.Exists(id))
                     throw new InvalidOperationException("The requested document no longer exists. Query the active document again.");
-                var document = new JObject { ["documentId"] = id.PdmDocumentId, ["name"] = documents.GetName(id) };
+                var document = new JObject { ["documentId"] = id.PdmDocumentId, ["name"] = documents.GetName(id), ["typeFullName"] = documents.GetTypeFullName(id) };
                 if (includeDetails)
                 {
-                    document["typeFullName"] = documents.GetTypeFullName(id);
                     document["typeGuid"] = documents.GetTypeGuid(id).ToString("D");
                     document["isDirty"] = documents.IsDirty(id);
                     var pdmObject = TopSolidHost.Documents.GetPdmObject(id);
@@ -87,13 +92,22 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Automation
             touchedHost = true;
             if (!TopSolidHost.IsConnected)
             {
+                connectionTarget.Configure();
                 // The Boolean return means "automatically started", NOT "connected".
                 TopSolidHost.Connect(false, ConnectionTimeoutSeconds, "TopSolidAutomationMcp_" + Process.GetCurrentProcess().Id);
             }
             if (!TopSolidHost.IsConnected || TopSolidHost.Application == null)
                 throw new InvalidOperationException("No connection to an existing TopSolid Automation host could be established.");
-            if (TopSolidHost.Application.Version < 720000000)
-                throw new InvalidOperationException("These tools require a ready TopSolid 7.20 or newer host.");
+            if (TopSolidHost.Application.Version < TopSolidVersionSupport.MinimumSupportedVersion)
+                throw new InvalidOperationException("These tools require a ready TopSolid 7.18 or newer host.");
+            try { connectionTarget.Verify(TopSolidHost.Application.ProcessId, TopSolidHost.Application.Version); }
+            catch { Disconnect(); throw; }
+        }
+
+        internal int GetConnectedHostVersion()
+        {
+            EnsureConnected();
+            return TopSolidHost.Application.Version;
         }
 
         private void Disconnect()
@@ -105,7 +119,7 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Automation
             touchedHost = false;
         }
 
-        public void Dispose() { Disconnect(); }
+        public void Dispose() { previewTransfers.Dispose(); Disconnect(); }
         public static string FormatVersion(int version) => string.Format("{0}.{1}.{2}.{3}", version / 100000000, version / 1000000 % 100, version / 1000 % 1000, version % 1000);
         public static string Describe(Exception ex) { return ex.GetType().Name + ": " + ex.Message; }
     }

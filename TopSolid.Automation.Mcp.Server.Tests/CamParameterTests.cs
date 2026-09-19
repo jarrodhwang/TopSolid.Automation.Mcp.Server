@@ -20,6 +20,9 @@ namespace TopSolid.Automation.Mcp.Server.Tests
             var toolFields = new Dictionary<string, string> { ["ToolDefinitionName"] = " Ball Nose Mill D10 L25 SD10 ",
                 ["PocketDescription"] = "T 1", ["ToolFunction"] = "BallNoseMill" };
             var toolDisplay = CamToolPresentation.FromValues(toolFields);
+            Check(CamToolPresentation.ReferenceDocument("source_0_2:86").PdmDocumentId == "source_0_2", "Native tool reference lost its exact minor revision");
+            foreach (var reference in new[] { "", "source", "source:unknown", "source:-1" })
+                Check(CamToolPresentation.ReferenceDocument(reference).IsEmpty, "Unverified tool reference became a preview target");
             Check((string)toolDisplay["toolDisplayName"] == "T 1 : Ball Nose Mill D10 L25 SD10", "Native tool pocket/specification formatting failed");
             toolFields.Remove("PocketDescription");
             Check((string)CamToolPresentation.FromValues(toolFields)["toolDisplayName"] == "Ball Nose Mill D10 L25 SD10", "Missing pocket invented a tool number");

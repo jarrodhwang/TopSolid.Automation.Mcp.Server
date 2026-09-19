@@ -10,6 +10,8 @@ internal static class PdmListRequest
     // retain the general model workflow. Recognize the spelling in the reported log.
     public static Request? Parse(string text)
     {
+        var korean = ParseKorean(text);
+        if (korean != null) return korean;
         var words = Regex.Matches(text.ToLowerInvariant().Replace("'s", ""), @"[\p{L}\p{N}]+").Select(m => m.Value).ToArray();
         var allowed = new HashSet<string>("please can you could would list show get give me the of all every topsolid pdm project projects library libraries name names and with friendly order ordered sort sorted by creation cretaion created date dates oldest newest old new first to from ascending descending alphabetical alphabetically alphabetic reverse a z 프로젝트 프로젝트와 라이브러리 이름 이름을 전체 모든 목록 목록을 보여줘 알려줘 생성일 날짜 오래된 순으로 최신순으로 이름순 가나다순 알파벳순".Split(' '));
         if (words.Length == 0 || words.Any(w => !allowed.Contains(w)) ||
@@ -33,5 +35,34 @@ internal static class PdmListRequest
         string? order = old && recent ? normalized.Contains("oldest to newest") ? "oldestFirst" : normalized.Contains("newest to oldest") ? "newestFirst" : null : old ? "oldestFirst" : recent ? "newestFirst" : null;
         if ((old && recent && order == null) || (order == null && words.Any(w => w is "order" or "ordered" or "sort" or "sorted"))) return null;
         return names.Count == 0 ? null : new Request(names.ToArray(), order, order != null || dates);
+    }
+
+    private static Request? ParseKorean(string text)
+    {
+        var normalized = Regex.Replace(text.Trim().ToLowerInvariant(), @"\s+", " ");
+        var hasProject = normalized.Contains("프로젝트", StringComparison.Ordinal);
+        var hasLibrary = normalized.Contains("라이브러리", StringComparison.Ordinal);
+        if ((!hasProject && !hasLibrary) || !Regex.IsMatch(normalized, @"목록|리스트|보여|알려|나열|열거") ||
+            Regex.IsMatch(normalized, @"파라미터|매개변수|오퍼레이션|공구|도큐먼트|문서|스케치|요소|엔터티|엔티티|삭제|비교|생성해|만들|수정|변경|저장|찾아|검색|선택|설명|열어|추가|제거|내보내"))
+            return null;
+
+        var names = new List<string>();
+        if (hasProject) names.Add("topsolid_list_projects");
+        if (hasLibrary) names.Add("topsolid_list_libraries");
+
+        var dates = Regex.IsMatch(normalized, @"생성일|생성 날짜|생성일자|날짜");
+        var alphabetical = Regex.IsMatch(normalized, @"이름순|가나다순|알파벳순|알파벳|이름 기준|이름으로");
+        var oldest = Regex.IsMatch(normalized, @"오래된|옛날|과거");
+        var newest = Regex.IsMatch(normalized, @"최신|최근|새로운");
+        if (alphabetical && (oldest || newest) || oldest && newest) return null;
+        if (alphabetical)
+        {
+            var descending = Regex.IsMatch(normalized, @"역순|내림차순|z.?a");
+            return new Request(names.ToArray(), descending ? "nameDescending" : "nameAscending", Dates: false);
+        }
+        if (oldest || newest) dates = true;
+        var order = oldest ? "oldestFirst" : newest ? "newestFirst" : null;
+        if (order == null && Regex.IsMatch(normalized, @"순서|정렬|기준") && dates) return null;
+        return new Request(names.ToArray(), order, dates);
     }
 }

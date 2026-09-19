@@ -1,6 +1,7 @@
 // Generated from the reviewed allowlist in scripts/ApiReference/generate_read_tools.py.
 // Each call is compiled against the matched 7.20 SDK. No generic API invocation.
 using System;
+using System.Linq;
 using Newtonsoft.Json.Linq;
 using TopSolid.Automation.Mcp.Server.AddIn.Automation;
 using TopSolid.Kernel.Automating;
@@ -21,7 +22,8 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
             register(new ToolDefinition("topsolid_get_base_document", "Get base document.", new JObject { ["documentId"] = Schema.Text("Document revision ID; omit to use the active document.") },
                 p => a.Read("cad", () => AutomationValues.Result(TopSolidDesignHost.Tools.GetBaseDocument(a.Document(p)))), "Tooling", new string[0], true, new[] { "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cad/TopSolid.Cad.Design.Automating.ITools.GetBaseDocument.html" }));
             register(new ToolDefinition("topsolid_list_cam_tools", "List cam tools. Includes native friendly names; keep handles internal in user mode.", Schema.Page(new JObject { ["documentId"] = Schema.Text("Document revision ID; omit to use the active document.") }),
-                p => a.Read("cam", () => AutomationValues.Page(TopSolidCamHost.Documents.GetTools(a.Document(p), false), p, id => CamNames.Named(id))), "Tooling", new string[0], true, new[] { "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IDocuments.GetTools.html", "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IElements.GetFriendlyName.html", "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/kernel/TopSolid.Kernel.Automating.IElements.GetName.html" }));
+                p => a.Read("cam", () => AutomationValues.Page(TopSolidCamHost.Documents.GetTools(a.Document(p), false), p, id => CamNames.ToolNamed(id))), "Tooling", new string[0], true,
+                ApiRefs.Cam("IDocuments.GetTools", "ITools.GetParameters", "IParameters.ToInvariantStringValue", "ITools.GetPdmId").Concat(ApiRefs.Kernel("IElements.GetFriendlyName", "IElements.GetName", "IDocuments.GetDocument", "IDocuments.GetDocuments", "IDocuments.GetPdmObject")).ToArray()));
         }
     }
 }

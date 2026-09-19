@@ -13,6 +13,10 @@ namespace TopSolid.Automation.Mcp.Server.Tests
     {
         private static void ModelingWorkflows()
         {
+            AutomationGateway.RequireCylinderTarget("part-revision", "TopSolid.Cad.Design.DB.Documents.PartDocument", "part-revision");
+            Throws<ArgumentException>(() => AutomationGateway.RequireCylinderTarget("cam-revision", "TopSolid.Cam.NC.MillTurn.DB.Documents.MillTurnDocument", "cam-revision"));
+            Throws<ArgumentException>(() => AutomationGateway.RequireCylinderTarget("inactive-part", "TopSolid.Cad.Design.DB.Documents.PartDocument", "other-part"));
+            Throws<ArgumentException>(() => AutomationGateway.RequireCylinderTarget("part", null, "part"));
             // Omitted monikers must round-trip as empty strings; absent names stay null.
             foreach (var label in new[] { new ItemLabel(112, 1, "", null), new ItemLabel(112, 2, "p7(2)", null), new ItemLabel(112, 3, "", "Named face") }) {
                 var restored = AutomationValues.ParseItemLabel(AutomationValues.Json(label));

@@ -77,7 +77,9 @@ public sealed class FriendlyResponsePresenter
 
     public string Present(string text, bool developerMode = false)
     {
-        if (developerMode || string.IsNullOrWhiteSpace(text)) return text;
+        if (string.IsNullOrWhiteSpace(text)) return text;
+        if (developerMode) return text;
+        text = CamDisplay.Text(text);
         lock (gate)
         {
             var trimmed = text.Trim();

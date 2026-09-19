@@ -26,7 +26,7 @@ public partial class MainWindow : Window
     private readonly DiagnosticLog diagnosticLog = App.DiagnosticLog;
     private readonly SettingsStore settingsStore = new();
     private readonly StdioMcpClient mcp;
-    private readonly TopSolidLicenseStatus? startupLicenseStatus;
+    private TopSolidLicenseStatus? startupLicenseStatus;
     private readonly SessionLog sessionLog = new();
     private IReadOnlyList<McpToolDefinition> lastDiscoveredTools = [];
     private AppSettings settings = new();
@@ -39,8 +39,8 @@ public partial class MainWindow : Window
     private bool closeReady;
     private string visibleProvider = "OpenAI-compatible";
     private string modelStatus = "not tested";
+    private string? versionSupportNotice;
     private readonly Stopwatch chatClock = new();
-    private readonly DispatcherTimer elapsedTimer = new() { Interval = TimeSpan.FromMilliseconds(100) };
 
     public MainWindow() : this(autoConnect: true) { }
 
@@ -56,7 +56,6 @@ public partial class MainWindow : Window
         InitializeShell();
         InitializeConnectionIndicator();
         InitializePreferences();
-        elapsedTimer.Tick += (_, _) => ElapsedText.Text = StudioStrings.Get("Chat.Elapsed", ChatTranscript.Elapsed(chatClock.Elapsed.TotalMilliseconds));
         DevModeBox.IsChecked = settings.DevMode;
         TimeoutBox.ItemsSource = Enumerable.Range(1, 60);
         TimeoutBox.SelectedItem = settings.RequestTimeoutMinutes;
@@ -68,6 +67,9 @@ public partial class MainWindow : Window
         ProviderBox.SelectedIndex = visibleProvider == "Ollama" ? 1 : 0;
         ShowProvider();
         ServerPathBox.Text = settings.McpServerPath;
+        TopSolidEditor.Load(settings);
+        TopSolidEditor.ServerPath = () => ServerPathBox.Text.Trim();
+        TopSolidEditor.WorkingChanged += () => SaveSettingsButton.IsEnabled = operation == null && !TopSolidEditor.IsWorking;
         loading = false;
         UpdateLogSecrets();
         mcp.Diagnostic += message => RecordTrace("Server", message);
@@ -203,18 +205,31 @@ public partial class MainWindow : Window
         UpdateStatus();
     }
 
-    private void Save_Click(object sender, RoutedEventArgs e)
+    private async void Save_Click(object sender, RoutedEventArgs e) => await RunOperation(async token =>
     {
-        try
-        {
-            ReadProvider();
-            settingsStore.Save(settings);
-            WriteConfigurationDiagnostic("configuration.saved");
-            RecordTrace("Settings", "Saved. API key protected for this Windows user.");
-            SettingsFeedback.Text = StudioStrings.Text("Settings saved.");
-        }
-        catch (Exception ex) { ShowError(ex); }
-    }
+        if (TopSolidEditor.IsWorking) return;
+        var next = TopSolidEditor.Read();
+        var oldPath = settings.McpServerPath;
+        ReadProvider();
+        var old = settings.TopSolidConnection; var oldToken = settings.TopSolidGatewayToken;
+        var changed = oldPath != settings.McpServerPath || JsonConvert.SerializeObject(old) != JsonConvert.SerializeObject(next) || oldToken != TopSolidEditor.GatewayToken;
+        settings.TopSolidConnection = next; settings.TopSolidGatewayToken = TopSolidEditor.GatewayToken;
+        try { settingsStore.Save(settings); }
+        catch { settings.TopSolidConnection = old; settings.TopSolidGatewayToken = oldToken; throw; }
+        UpdateLogSecrets(); WriteConfigurationDiagnostic("configuration.saved");
+        SettingsFeedback.Text = StudioStrings.Text("Settings saved.");
+        if (!changed && mcp.IsConnected && !reconnectMcpOnRefresh) return;
+        await mcp.DisconnectAsync();
+        startupLicenseStatus = null;
+        // A different host may use identical document/element IDs. Never carry tool context or approvals across it.
+        session?.Clear(); session = null; sessionConfiguration = null; provider?.Dispose(); provider = null;
+        // Retain the visible transcript and diagnostic log; only the model's active host context is reset.
+        responsePresenter.Clear(); ClearErrorReview(); lastDiscoveredTools = [];
+        RecordChat("System", StudioStrings.Get("TsConnection.TargetChanged"));
+        connectionHealth.Set("TopSolid", ConnectionSeverity.Warning, "Health.TopSolidBlocked");
+        await ConnectConfiguredTopSolid(token);
+        SettingsFeedback.Text = StudioStrings.Get("TsConnection.SavedConnected");
+    });
 
     private void SaveLog_Click(object sender, RoutedEventArgs e)
     {
@@ -244,7 +259,7 @@ public partial class MainWindow : Window
             var export = LogExportBuilder.Build(settings, settingsStore.FilePath, settingsStore.LastLoadWarning,
                 modelStatus, mcp.IsConnected, mcp.IsMutationInFlight,
                 exportTools,
-                session?.GetConversationSnapshot() ?? [], sessionLog.Snapshot(), diagnosticLog);
+                session?.GetConversationSnapshot() ?? [], sessionLog.Snapshot(), diagnosticLog, permissionMode);
             WriteUtf8FileAtomically(path, export.ToString(Formatting.Indented));
             diagnosticLog.Write("info", "log.exported", data: new JObject
             {
@@ -272,7 +287,7 @@ public partial class MainWindow : Window
     {
         if (mcp.IsConnected) { await mcp.DisconnectAsync(); return; }
         ReadProvider();
-        await mcp.ConnectAsync(settings.McpServerPath, token);
+        await ConnectConfiguredTopSolid(token);
         lastDiscoveredTools = CloneTools(mcp.Tools);
         diagnosticLog.Write("info", "mcp.toolsDiscovered", data: new JObject
         {
@@ -305,6 +320,9 @@ public partial class MainWindow : Window
         if (history != null) session.RestoreConversation(history);
         session.ConfirmChangeAsync = ConfirmChange;
         session.AskUserAsync = AskUser;
+        session.ChooseNcDestinationAsync = ChooseNcDestination;
+        session.ShowListAsync = ShowList;
+        session.ShowGraphicPreviewAsync = ShowGraphicPreview;
         session.Trace += trace =>
         {
             if (trace.Kind is "Tool result" or "Tool error" or "CAD change")
@@ -315,6 +333,54 @@ public partial class MainWindow : Window
         if (sessionConfiguration != null) RecordChat("System", StudioStrings.Text("Configuration changed. Conversation preserved."));
         RecordTrace("Model settings", settings.Provider + "; model=" + (settings.Provider == AppSettings.OllamaProvider ? settings.OllamaModel : settings.CloudModel));
         sessionConfiguration = signature;
+    }
+
+    private Task ShowGraphicPreview(JObject target, CancellationToken token)
+    {
+        token.ThrowIfCancellationRequested();
+        using var pane = new Preview.GraphicPreviewPane(mcp, target);
+        var dialog = new Window { Owner = this, Title = StudioStrings.Get("Preview.Title"), Content = pane,
+            Width = Math.Min(1040, SystemParameters.WorkArea.Width - 40), Height = Math.Min(780, SystemParameters.WorkArea.Height - 40),
+            MinWidth = 480, MinHeight = 360, WindowStartupLocation = WindowStartupLocation.CenterOwner };
+        TopSolidTheme.ApplyWindow(dialog);
+        using var registration = token.Register(() => OnUi(() => { if (dialog.IsVisible) dialog.Close(); }));
+        SetActivity("Activity.Question", "image", waitingForUser: true);
+        try { dialog.ShowDialog(); RecordTrace("Preview", "Read-only native graphical preview displayed."); return Task.CompletedTask; }
+        finally { SetActivity(token.IsCancellationRequested ? "Activity.Cancelling" : "Activity.PreparingResponse"); }
+    }
+
+    private Task ShowList(UserQuestion question, CancellationToken token)
+    {
+        token.ThrowIfCancellationRequested();
+        var dialog = new QuestionWindow(question, mcp) { Owner = this };
+        using var registration = token.Register(() => OnUi(() => { if (dialog.IsVisible) dialog.Close(); }));
+        SetActivity("Activity.Question", QuestionWindow.IconKey(question.ItemKind), waitingForUser: true);
+        try { dialog.ShowDialog(); RecordTrace("List", "Read-only list displayed: " + question.Choices.Count); return Task.CompletedTask; }
+        finally { SetActivity(token.IsCancellationRequested ? "Activity.Cancelling" : "Activity.PreparingResponse"); }
+    }
+
+    private Task<string?> ChooseNcDestination(JObject file, CancellationToken token)
+    {
+        token.ThrowIfCancellationRequested();
+        var suggested = Path.GetFileName((string?)file["suggestedFileName"]);
+        if (string.IsNullOrWhiteSpace(suggested)) suggested = "NC-output.nc";
+        var picker = new SaveFileDialog
+        {
+            Title = StudioStrings.Get("Dialog.SaveNcFile"),
+            Filter = StudioStrings.Get("Dialog.NcFilter"),
+            DefaultExt = ".nc",
+            AddExtension = false,
+            OverwritePrompt = true,
+            FileName = suggested
+        };
+        if (picker.ShowDialog(this) != true)
+        {
+            RecordTrace("NC", "NC file save cancelled: " + suggested);
+            return Task.FromResult<string?>(null);
+        }
+        var path = Path.GetFullPath(picker.FileName);
+        RecordTrace("NC", "NC file destination selected: " + path);
+        return Task.FromResult<string?>(path);
     }
 
     private Task<QuestionAnswer?> AskUser(UserQuestion question, CancellationToken token)
@@ -364,7 +430,7 @@ public partial class MainWindow : Window
         if (operation != null || loadingAttachments || (string.IsNullOrWhiteSpace(MessageBox.Text) && attachments.Count == 0)) return;
         var text = MessageBox.Text.Trim();
         var submittedAttachments = attachments.ToArray();
-        chatClock.Restart(); ElapsedText.Text = StudioStrings.Get("Chat.Elapsed", "0.0 s"); elapsedTimer.Start();
+        chatClock.Restart();
         try { await RunOperation(async token =>
         {
             EnsureSession();
@@ -391,8 +457,7 @@ public partial class MainWindow : Window
             }
         }); }
         finally {
-            chatClock.Stop(); elapsedTimer.Stop();
-            ElapsedText.Text = StudioStrings.Get("Chat.Elapsed", ChatTranscript.Elapsed(chatClock.Elapsed.TotalMilliseconds));
+            chatClock.Stop();
             RecordTrace("Timing", "Chat elapsed: " + ChatTranscript.Elapsed(chatClock.Elapsed.TotalMilliseconds) + " (includes confirmation time)");
         }
     }
@@ -412,7 +477,9 @@ public partial class MainWindow : Window
     private void SetBusy(bool busy)
     {
         activityAwaitingApproval = false;
+        if (busy) versionSupportNotice = null;
         SetActivity(busy ? (chatClock.IsRunning ? "Activity.Thinking" : "Activity.Working") : null);
+        if (!busy && versionSupportNotice != null) ShowVersionSupportNotice(versionSupportNotice);
         ConfigurationPanel.IsEnabled = !busy;
         ModelBox.IsEnabled = !busy;
         PermissionBox.IsEnabled = !busy;
@@ -423,6 +490,8 @@ public partial class MainWindow : Window
         CancelButton.Visibility = busy ? Visibility.Visible : Visibility.Collapsed;
         UpdateConnectionIndicator();
         ServerPathBox.IsEnabled = SaveSettingsButton.IsEnabled = !busy;
+        TopSolidEditor.IsEnabled = !busy;
+        SaveSettingsButton.IsEnabled = !busy && !TopSolidEditor.IsWorking;
         ResponseLanguageBox.IsEnabled = !busy;
         developerWindow?.UpdateConnectionState(mcp.IsConnected, busy, mcp.IsMutationInFlight);
         ClearButton.IsEnabled = !busy && !loadingAttachments;
@@ -431,11 +500,9 @@ public partial class MainWindow : Window
 
     private void UpdateStatus()
     {
-        StatusText.Text = StudioStrings.Get("Chat.Status", mcp.IsConnected ? StudioStrings.Get("Chat.ConnectedTools", mcp.Tools.Count) : StudioStrings.Text("disconnected"), LocalizedModelStatus());
         UpdateConnectionIndicator();
         developerWindow?.UpdateConnectionState(mcp.IsConnected, operation != null, mcp.IsMutationInFlight);
         CancelButton.IsEnabled = operation != null && !mcp.IsMutationInFlight && !operation.IsCancellationRequested;
-        if (mcp.IsMutationInFlight) StatusText.Text += " · " + StudioStrings.Text("Applying CAD change; waiting for commit/rollback");
         if (operation != null && mcp.IsMutationInFlight && !activityAwaitingApproval) SetActivity("Activity.Applying", "operation");
     }
 
@@ -448,7 +515,8 @@ public partial class MainWindow : Window
         lastPresentedChatSequence = 0;
         ChatBox.Clear();
         ClearErrorReview();
-        ElapsedText.Text = "";
+        versionSupportNotice = null;
+        SetActivity(null);
         TraceBox.Clear();
         attachments.Clear(); RenderAttachments();
         EmptyState.Visibility = Visibility.Visible;
@@ -472,7 +540,7 @@ public partial class MainWindow : Window
     {
         var currentKey = ApiKeyBox?.Password;
         diagnosticLog.SetSecrets(settings.CloudProfiles.Values.Select(profile => profile.ApiKey)
-            .Concat(new[] { settings.ApiKey, currentKey ?? "" }));
+            .Concat(new[] { settings.ApiKey, currentKey ?? "", settings.TopSolidGatewayToken, TopSolidEditor?.GatewayToken ?? "" }));
     }
 
     private void WriteConfigurationDiagnostic(string eventName)
@@ -495,6 +563,7 @@ public partial class MainWindow : Window
             ["permissionMode"] = permissionMode.ToString(),
             ["topSolidTheme"] = themeFollower?.Current.Name,
             ["mcpServerPath"] = settings.McpServerPath,
+            ["topSolidConnection"] = JObject.FromObject(settings.TopSolidConnection),
             ["settingsFilePath"] = settingsStore.FilePath
         });
     }
@@ -514,7 +583,39 @@ public partial class MainWindow : Window
         var level = kind.Contains("error", StringComparison.OrdinalIgnoreCase) ? "error" : "info";
         diagnosticLog.Write(level, "trace", data: new JObject { ["kind"] = kind, ["text"] = safe });
         var activitySource = operation;
-        OnUi(() => { UpdateActivityFromTrace(kind, safe, activitySource); AppendTraceToUi(kind, safe); });
+        var versionNotice = TryGetUnsupportedVersionNotice(safe);
+        OnUi(() =>
+        {
+            UpdateActivityFromTrace(kind, safe, activitySource);
+            if (versionNotice != null && !closing) ShowVersionSupportNotice(versionNotice);
+            AppendTraceToUi(kind, safe);
+        });
+    }
+
+    private static string? TryGetUnsupportedVersionNotice(string text)
+    {
+        if (string.IsNullOrWhiteSpace(text)) return null;
+        // The server returns the structured marker inside an MCP text block. Normalize
+        // escaped quotes so this also works with the serialized transport receipt.
+        var normalized = text.Replace("\\\"", "\"");
+        if (normalized.IndexOf("\"unsupportedVersion\":true", StringComparison.OrdinalIgnoreCase) < 0) return null;
+        var minimum = ReadJsonString(normalized, "minimumVersion") ?? "7.18";
+        var actual = ReadJsonString(normalized, "connectedVersion") ?? "unknown";
+        return StudioStrings.Get("Version.Unsupported", minimum, actual);
+    }
+
+    private static string? ReadJsonString(string text, string property)
+    {
+        var marker = "\"" + property + "\"";
+        var start = text.IndexOf(marker, StringComparison.OrdinalIgnoreCase);
+        if (start < 0) return null;
+        start = text.IndexOf(':', start + marker.Length);
+        if (start < 0) return null;
+        start++;
+        while (start < text.Length && char.IsWhiteSpace(text[start])) start++;
+        if (start >= text.Length || text[start] != '\"') return null;
+        var end = text.IndexOf('\"', start + 1);
+        return end > start ? text.Substring(start + 1, end - start - 1) : null;
     }
 
     private void AppendTraceToUi(string kind, string safe)
@@ -564,7 +665,7 @@ public partial class MainWindow : Window
         connectionDialog?.Close();
         operation?.Cancel();
         try { await mcp.DisposeAsync(); }
-        finally { provider?.Dispose(); elapsedTimer.Stop(); developerTimer.Stop(); themeFollower?.Dispose(); developerWindow?.Close(); closeReady = true; _ = Dispatcher.BeginInvoke(new Action(Close)); }
+        finally { provider?.Dispose(); developerTimer.Stop(); themeFollower?.Dispose(); developerWindow?.Close(); closeReady = true; _ = Dispatcher.BeginInvoke(new Action(Close)); }
     }
 
     private static IReadOnlyList<McpToolDefinition> CloneTools(IEnumerable<McpToolDefinition> tools)

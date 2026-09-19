@@ -16,7 +16,7 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
     {
         public static void Register(AutomationGateway a, Action<ToolDefinition> register)
         {
-            register(new ToolDefinition("topsolid_is_simulation_complete", "Is simulation complete.", new JObject(),
+            register(new ToolDefinition("topsolid_is_simulation_complete", "Read whether the current TopSolid CAM simulation animation has completed. This does not report a verification result.", new JObject(),
                 p => a.Read("cam", () => AutomationValues.Result(TopSolidCamHost.Simulation.IsSimulationComplete())), "Cam/Simulation", new string[0], true, new[] { "https://help.topsolid.com/7.20/en/TopSolid'Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.ISimulation.IsSimulationComplete.html" }));
         }
     }

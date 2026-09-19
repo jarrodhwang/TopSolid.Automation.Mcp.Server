@@ -17,6 +17,7 @@
     <ProjectReference Include="..\TopSolid.Automation.Mcp.Contracts\TopSolid.Automation.Mcp.Contracts.csproj" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="TopSolid.Kernel.Automating">
       <HintPath>$(TopSolidAutomationDirectory)\TopSolid.Kernel.Automating.dll</HintPath>
@@ -36,6 +37,10 @@
     <EmbeddedResource Include="..\docs\api\reference-index.json" LogicalName="TopSolid.ApiReference.json" />
     <EmbeddedResource Include="..\docs\api\reference-articles.json.gz" LogicalName="TopSolid.ApiArticles.json.gz" />
     <Content Include="TopSolid.Automation\**\*.json;TopSolid.Automation\**\*.md;TopSolid.Automation\**\*.html" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+    <!-- Versioned profile copied from the installed 7.18 bin folder. It is kept
+         beside the server for deployment/reference; 7.18 has no Cae/Electrode
+         Automating assemblies, so those tools remain gated at their own floor. -->
+    <Content Include="TopSolid.Automation\v7.18\*.dll" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
   </ItemGroup>
   <Target Name="CheckTopSolidSdk" BeforeTargets="ResolveReferences">
     <Error Condition="!Exists('$(TopSolidAutomationDirectory)\TopSolid.Kernel.Automating.dll')" Text="TopSolid 7.20 Automation assemblies are required. Set TopSolidAutomationDirectory to a matched 7.20 assembly folder." />

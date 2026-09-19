@@ -13,6 +13,9 @@ internal sealed record PreviewScene(Model3DGroup Surfaces, Model3DGroup Edges, R
 {
     internal const int MaximumTriangles = GraphicPreviewQuality.MaximumTriangles;
     internal const int MaximumEdges = 10_000;
+    internal static int WorkerCount => Math.Clamp(Environment.ProcessorCount - 1, 1, 4);
+    internal GpuMesh[] GpuMeshes { get; private init; } = [];
+    internal HelixToolkit.SharpDX.LineGeometry3D? GpuEdges { get; private init; }
     private PreviewEdge[] edgeCandidates = [];
     internal static PreviewScene Build(IReadOnlyList<PreviewMesh> meshes, CancellationToken token)
     {
@@ -34,8 +37,12 @@ internal sealed record PreviewScene(Model3DGroup Surfaces, Model3DGroup Edges, R
         if (bounds.IsEmpty || count == 0) throw new InvalidDataException("No displayable solid geometry.");
         // Small frozen batches avoid enormous single WPF meshes and per-frame vertex work.
         var edgeSegments = new List<PreviewEdge>();
-        foreach (var source in meshes)
+        var groups = new Model3DGroup[meshes.Count];
+        var edgeBatches = new PreviewEdge[meshes.Count][];
+        var gpuMeshes = new GpuMesh[meshes.Count];
+        Parallel.For(0, meshes.Count, new ParallelOptions { CancellationToken = token, MaxDegreeOfParallelism = WorkerCount }, meshIndex =>
         {
+            var source = meshes[meshIndex]; var group = new Model3DGroup();
             token.ThrowIfCancellationRequested();
             var brush = new SolidColorBrush(source.Color); brush.Freeze();
             var material = new MaterialGroup(); material.Children.Add(new DiffuseMaterial(brush));
@@ -58,14 +65,20 @@ internal sealed record PreviewScene(Model3DGroup Surfaces, Model3DGroup Edges, R
                 var geometry = new MeshGeometry3D { Positions = positions, TriangleIndices = indices };
                 if (normals.Count > 0) geometry.Normals = normals;
                 geometry.Freeze();
-                var model = new GeometryModel3D(geometry, material) { BackMaterial = material }; model.Freeze(); surfaces.Children.Add(model);
+                var model = new GeometryModel3D(geometry, material) { BackMaterial = material }; model.Freeze(); group.Children.Add(model);
             }
-            edgeSegments.AddRange(FeatureEdges(source, token));
-        }
-        omitted = edgeSegments.Count(e => e.Feature) > MaximumEdges;
+            group.Freeze(); groups[meshIndex] = group;
+            // Adjacency can cost much more RAM than the surfaces; large documents use shaded GPU surfaces.
+            edgeBatches[meshIndex] = count <= 250000 ? FeatureEdges(source, token).ToArray() : [];
+            gpuMeshes[meshIndex] = GpuMesh.Build(source, token);
+        });
+        foreach (var group in groups) foreach (var child in group.Children) surfaces.Children.Add(child);
+        foreach (var batch in edgeBatches) edgeSegments.AddRange(batch);
+        omitted = count > 250000 || edgeSegments.Count(e => e.Feature) > MaximumEdges;
         surfaces.Freeze(); edges.Freeze();
         var scene = new PreviewScene(surfaces, edges, bounds, count, omitted)
-        { edgeCandidates = edgeSegments.OrderByDescending(e => e.Feature).ToArray() };
+        { edgeCandidates = edgeSegments.OrderByDescending(e => e.Feature).ToArray(), GpuMeshes = gpuMeshes,
+            GpuEdges = ToolpathPreviewScene.Lines(edgeSegments.Where(e => e.Feature).Take(MaximumEdges).Select(e => (e.A, e.B))) };
         var extent = new Vector3D(bounds.SizeX, bounds.SizeY, bounds.SizeZ).Length;
         return scene with { Edges = scene.CreateEdges(new Vector3D(1, -1, 1), Math.Max(1e-8, extent / 400)) };
     }

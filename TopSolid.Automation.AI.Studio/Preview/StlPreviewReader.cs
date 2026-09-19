@@ -15,14 +15,27 @@ internal static class StlPreviewReader
         var triangles = BinaryPrimitives.ReadUInt32LittleEndian(bytes.AsSpan(80, 4));
         if (triangles == 0 || triangles > PreviewScene.MaximumTriangles || 84L + triangles * 50L != bytes.Length)
             throw new InvalidDataException("Invalid binary STL triangle count.");
-        var points = new Point3D[checked((int)triangles * 3)]; var faceNormals = new Vector3D[triangles];
+        const int batchTriangles = 32000;
+        var meshes = new PreviewMesh[(triangles + batchTriangles - 1) / batchTriangles];
+        try
+        {
+            Parallel.For(0, meshes.Length, new ParallelOptions { CancellationToken = token, MaxDegreeOfParallelism = PreviewScene.WorkerCount }, batch =>
+                meshes[batch] = ReadMesh(batch * batchTriangles, Math.Min(batchTriangles, (int)triangles - batch * batchTriangles)));
+        }
+        catch (AggregateException error) when (error.Flatten().InnerExceptions.All(e => e is InvalidDataException))
+        { throw new InvalidDataException("Invalid STL coordinates.", error); }
+        return PreviewScene.Build(meshes, token);
+
+        PreviewMesh ReadMesh(int startTriangle, int count)
+        {
+        var points = new Point3D[checked(count * 3)]; var faceNormals = new Vector3D[count];
         var adjacency = new Dictionary<Point3D, List<Vector3D>>();
-        for (var t = 0; t < triangles; t++)
+        for (var t = 0; t < count; t++)
         {
             if (t % 1000 == 0) token.ThrowIfCancellationRequested();
             for (var v = 0; v < 3; v++)
             {
-                var offset = 84 + t * 50 + 12 + v * 12;
+                var offset = 84 + (startTriangle + t) * 50 + 12 + v * 12;
                 points[t * 3 + v] = new Point3D(Number(offset), Number(offset + 4), Number(offset + 8));
             }
             // Trust vertex winding, not unchecked per-facet normal/color extensions.
@@ -46,7 +59,8 @@ internal static class StlPreviewReader
             if (smooth.LengthSquared > 1e-24) smooth.Normalize(); else smooth = face;
             normals[i] = smooth;
         }
-        return PreviewScene.Build([new PreviewMesh(points, Enumerable.Range(0, points.Length).ToArray(), PreviewQuality.DefaultColor, normals)], token);
+        return new PreviewMesh(points, Enumerable.Range(0, points.Length).ToArray(), PreviewQuality.DefaultColor, normals);
+        }
 
         double Number(int offset)
         {
