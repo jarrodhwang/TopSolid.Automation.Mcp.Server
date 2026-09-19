@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using Newtonsoft.Json.Linq;
+using TopSolid.Automation.Mcp.Contracts;
 using TopSolid.Automation.Mcp.Server.AddIn.Automation;
 
 namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
@@ -46,7 +47,7 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
             return new ToolDefinition("topsolid_create_" + operation,
                 "Create native " + operation.Replace('_', ' ') + (category == "Sketch2D" ? ". Draws a sketch/profile without sections" : "") + ". Requires explicit user confirmation of a server-prepared preview. Target document must already exist. Does not save.",
                 properties, p => a.CreateModel(operation, p), category, required.ToObject<string[]>(), false, apis.ToArray(), p => ModelingGeometry.Validate(operation, p),
-                defaults: "Omitted x/y/z are 0. Omitted closed is false. No sections are created. The combined rectangle extrusion uses the closed sketch directly along +Z from XY.", defaultLengthUnits: "mm");
+                defaults: "Omitted x/y/z are 0. Omitted closed is false. No sections are created. The combined rectangle extrusion uses the closed sketch directly along +Z from XY.", defaultLengthUnits: "mm", minimumTopSolidVersion: TopSolidVersionSupport.ModelingMinimumVersion);
         }
     }
 }

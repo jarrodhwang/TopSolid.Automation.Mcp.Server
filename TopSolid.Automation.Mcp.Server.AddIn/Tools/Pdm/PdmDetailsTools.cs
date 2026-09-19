@@ -17,14 +17,56 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
                     var id = a.Pdm(p);
                     return ObjectIdentity.Pdm(id);
                 }), "Pdm", new[] { "pdmObjectId" }, true, ApiRefs.Kernel("IPdm.GetType", "IPdm.GetName", "IPdm.GetDescription", "IPdm.GetState", "IPdm.GetOwner")));
-            register(new ToolDefinition("topsolid_list_pdm_children", "List immediate child folders and documents with names. Does not recursively traverse or modify PDM.",
+        register(new ToolDefinition("topsolid_list_pdm_children", "List immediate child folders and documents with names. Document rows include verified native extension/type and resolved document identity when available. Does not recursively traverse or modify PDM.",
                 Schema.Page(new JObject { ["pdmObjectId"] = Schema.Text("Project or folder ID.") }),
                 p => a.Read("kernel", () =>
                 {
-                    TopSolidHost.Pdm.GetConstituents(a.Pdm(p), out var folders, out var documents);
+                    var parent = a.Pdm(p);
+                    TopSolidHost.Pdm.GetConstituents(parent, out var folders, out var documents);
+                    var parentName = TopSolidHost.Pdm.GetName(parent);
                     var values = folders.Select(id => new { id, kind = "folder" }).Concat(documents.Select(id => new { id, kind = "document" }));
-                    return AutomationValues.Page(values, p, entry => new JObject { ["pdmObjectId"] = entry.id.Id, ["kind"] = entry.kind, ["name"] = TopSolidHost.Pdm.GetName(entry.id) });
-                }), "Pdm", new[] { "pdmObjectId" }, true, ApiRefs.Kernel("IPdm.GetConstituents", "IPdm.GetName")));
+                    return AutomationValues.Page(values, p, entry => Child(entry.id, entry.kind, parentName));
+                }), "Pdm", new[] { "pdmObjectId" }, true,
+                ApiRefs.Kernel("IPdm.GetConstituents", "IPdm.GetName", "IPdm.GetType", "IDocuments.GetDocument", "IDocuments.Exists", "IDocuments.GetTypeFullName")));
+        }
+
+        private static JObject Child(PdmObjectId id, string kind, string parentName)
+        {
+            var row = new JObject { ["pdmObjectId"] = id.Id, ["kind"] = kind, ["name"] = TopSolidHost.Pdm.GetName(id) };
+            if (!string.IsNullOrWhiteSpace(parentName)) row["parentName"] = parentName;
+            if (kind != "document") return row;
+
+            // A constituent is a PDM object, not a document revision. Resolve the
+            // latest revision and native extension here so the picker can choose
+            // the correct TopSolid artwork and preview target without a second
+            // model round. This is read-only and never opens the document.
+            try
+            {
+                var pdmType = TopSolidHost.Pdm.GetType(id, out var extension);
+                if (!string.IsNullOrWhiteSpace(extension)) row["extension"] = extension;
+                row["pdmType"] = pdmType.ToString();
+            }
+            catch (Exception error) when (error is ArgumentException or InvalidOperationException or global::System.Runtime.InteropServices.COMException)
+            {
+                // Preserve the PDM row if a transient/untyped child cannot expose its extension.
+            }
+            try
+            {
+                var document = TopSolidHost.Documents.GetDocument(id);
+                if (!document.IsEmpty)
+                {
+                    row["documentId"] = document.PdmDocumentId;
+                    if (TopSolidHost.Documents.Exists(document))
+                        row["typeFullName"] = TopSolidHost.Documents.GetTypeFullName(document);
+                }
+            }
+            catch (Exception error) when (error is ArgumentException or InvalidOperationException or global::System.Runtime.InteropServices.COMException)
+            {
+                // Some PDM states have no resolvable revision yet. Keep the
+                // verified extension and PDM identity; the client will show a
+                // precise not-loaded/unavailable preview state.
+            }
+            return row;
         }
     }
 }

@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using TopSolid.Automation.Mcp.Contracts;
 using TopSolid.Automation.Mcp.Server.AddIn.Automation;
 using TopSolid.Automation.Mcp.Server.AddIn.Protocol;
 using TopSolid.Automation.Mcp.Server.AddIn.Tools.Documents;
@@ -16,11 +17,15 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
         private readonly Func<JObject, JObject> preview;
         private readonly Func<string, JObject, CreationNames> resolveCreationNames;
         private readonly Func<JObject, JObject> graphicPreview;
+        private readonly Func<JObject, JObject> toolpathPreview;
         private readonly Func<JObject> licenseStatus;
-        public ToolRegistry(AutomationGateway automation)
+        private readonly Func<int> hostVersion;
+        public ToolRegistry(AutomationGateway automation, Func<int> hostVersion = null)
         {
+            this.hostVersion = hostVersion;
             preview = automation.PreviewModeling;
             graphicPreview = automation.GraphicPreview;
+            toolpathPreview = automation.ToolpathPreview;
             licenseStatus = automation.GetLicenseStatus;
             resolveCreationNames = automation.ResolveCreationNames;
             Register(StatusTools.Create(automation));
@@ -59,6 +64,7 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
             DocumentPropertyTools.Register(automation, Register);
             CamDetailTools.Register(automation, Register);
             NcDetailsTools.Register(automation, Register);
+            CamNcActionTools.Register(automation, Register);
             DraftingDetailsTools.Register(automation, Register);
             CaeDetailsTools.Register(automation, Register);
             DocumentActionTools.Register(automation, Register);
@@ -72,6 +78,7 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
             ModelingGuideTools.Register(Register);
             AssemblyActionTools.Register(automation, Register);
             CamActionTools.Register(automation, Register);
+            CamSimulationActionTools.Register(automation, Register);
             CamToolPathTools.Register(automation, Register);
             Sketch2DModelingTools.Register(automation, Register);
             Sketch3DModelingTools.Register(automation, Register);
@@ -79,8 +86,8 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
             Design3DModelingTools.Register(automation, Register);
             ReferenceTools.Register(() => tools.Values, Register);
         }
-        internal ToolRegistry(IEnumerable<ToolDefinition> definitions, Func<JObject, JObject> preview, Func<string, JObject, CreationNames> resolveCreationNames = null)
-        { this.preview = preview; this.resolveCreationNames = resolveCreationNames; foreach (var definition in definitions) Register(definition); }
+        internal ToolRegistry(IEnumerable<ToolDefinition> definitions, Func<JObject, JObject> preview, Func<string, JObject, CreationNames> resolveCreationNames = null, Func<int> hostVersion = null)
+        { this.preview = preview; this.resolveCreationNames = resolveCreationNames; this.hostVersion = hostVersion; foreach (var definition in definitions) Register(definition); }
         private void Register(ToolDefinition tool) { tools.Add(tool.Name, tool); }
         public JArray List()
         {
@@ -90,7 +97,10 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
         }
         public JObject Prepare(string name, JObject arguments)
         {
-            var tool = Validate(name, arguments);
+            var tool = GetTool(name);
+            var versionError = VersionError(tool);
+            if (versionError != null) throw new RpcException(-32018, versionError.ToString(Formatting.None));
+            ValidateArguments(tool, arguments);
             if (tool.ReadOnly) throw new RpcException(-32602, "This inspection tool does not require confirmation.");
             try { return confirmations.Prepare(tool, arguments, Preview(tool, arguments, out _)); }
             catch (RpcException) { throw; }
@@ -102,6 +112,14 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
             // Do not log license user/owner data or credentials. The caller treats any read failure as unverified.
             try { return licenseStatus(); }
             catch { throw new RpcException(-32012, "TopSolid license verification is unavailable. Open TopSolid, wait until it is ready, then restart Studio."); }
+        }
+        public JObject ToolpathPreview(JObject request)
+        {
+            if (toolpathPreview == null) throw new RpcException(-32601, "Toolpath preview is unavailable.");
+            try { return toolpathPreview(request); }
+            catch (ArgumentException error) { throw new RpcException(-32602, error.Message); }
+            catch (Exception error)
+            { ServerDiagnosticLog.Write("warning", "preview.toolpath", "Toolpath preview failed.", error); return new JObject { ["status"] = "unavailable" }; }
         }
         public JObject GraphicPreview(JObject request)
         {
@@ -122,17 +140,46 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
             if (names != null) target["naming"] = names.Receipt.DeepClone();
             return target;
         }
-        private ToolDefinition Validate(string name, JObject arguments)
+        private ToolDefinition GetTool(string name)
         {
             if (!tools.TryGetValue(name, out var tool)) throw new RpcException(-32602, "Unknown tool: " + name);
+            return tool;
+        }
+        private static void ValidateArguments(ToolDefinition tool, JObject arguments)
+        {
             Schema.Validate(arguments, (JObject)tool.Definition["inputSchema"]);
             try { tool.ValidateArguments?.Invoke(arguments); }
             catch (ArgumentException ex) { throw new RpcException(-32602, ex.Message); }
-            return tool;
+        }
+        private JObject VersionError(ToolDefinition tool)
+        {
+            // System/status and local reference tools are deliberately usable
+            // before a TopSolid connection exists; they report availability or
+            // read the bundled corpus themselves.
+            if (hostVersion == null || string.Equals(tool.Category, "System", StringComparison.OrdinalIgnoreCase)) return null;
+            var connected = hostVersion();
+            if (TopSolidVersionSupport.IsAtLeast(connected, tool.MinimumTopSolidVersion)) return null;
+            var minimum = TopSolidVersionSupport.Display(tool.MinimumTopSolidVersion);
+            var actual = TopSolidVersionSupport.Display(connected);
+            return new JObject
+            {
+                ["unsupportedVersion"] = true,
+                ["toolName"] = tool.Name,
+                ["minimumVersion"] = minimum,
+                ["connectedVersion"] = actual,
+                ["message"] = "Unsupported TopSolid version. This tool requires TopSolid " + minimum + " or newer; the connected host is TopSolid " + actual + ". No operation was executed."
+            };
         }
         public JObject Call(string name, JObject arguments, string confirmationToken = null)
         {
-            var tool = Validate(name, arguments);
+            var tool = GetTool(name);
+            ValidateArguments(tool, arguments);
+            // Reject an unapproved write before the version gate can connect to
+            // TopSolid. This preserves the fail-closed confirmation boundary.
+            if (!tool.ReadOnly && string.IsNullOrWhiteSpace(confirmationToken))
+                confirmations.Consume(confirmationToken, name, arguments);
+            var versionError = VersionError(tool);
+            if (versionError != null) return Content(versionError, true);
             var approvedTarget = tool.ReadOnly ? null : confirmations.Consume(confirmationToken, name, arguments);
             try
             {

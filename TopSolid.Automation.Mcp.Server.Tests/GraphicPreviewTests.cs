@@ -1,6 +1,10 @@
 using System;
 using System.Globalization;
 using System.Linq;
+using System.IO;
+using System.Collections.Generic;
+using Newtonsoft.Json.Linq;
+using TopSolid.Automation.Mcp.Contracts;
 using TopSolid.Automation.Mcp.Server.AddIn.Automation;
 using TopSolid.Kernel.Automating;
 
@@ -27,6 +31,50 @@ namespace TopSolid.Automation.Mcp.Server.Tests
                 Check(!GraphicPreviewExportOptions.TryStl(source.Skip(1), out _), "Exporter without tolerance support falsely advertised precision");
             }
             finally { CultureInfo.CurrentCulture = previous; }
+            PreviewChunks();
+            ToolpathCoordinates();
+        }
+
+        private static void PreviewChunks()
+        {
+            var directory = Path.Combine(Path.GetTempPath(), "TopSolid-preview-test-" + Guid.NewGuid().ToString("N"));
+            Directory.CreateDirectory(directory);
+            var file = Path.Combine(directory, "owned.stl");
+            var data = Enumerable.Range(0, GraphicPreviewQuality.ChunkBytes + 19).Select(i => (byte)(i % 251)).ToArray();
+            File.WriteAllBytes(file, data);
+            using (var store = new PreviewTransferStore())
+            {
+                var id = store.Add(file);
+                JObject Read(long offset) => store.Handle(new JObject { ["action"] = "read", ["transferId"] = id, ["offset"] = offset });
+                Check(Convert.FromBase64String((string)Read(0)["data"]).SequenceEqual(data.Take(GraphicPreviewQuality.ChunkBytes)), "Preview chunk changed source bytes");
+                Check(Convert.FromBase64String((string)Read(GraphicPreviewQuality.ChunkBytes)["data"]).SequenceEqual(data.Skip(GraphicPreviewQuality.ChunkBytes)), "Final preview chunk lost bytes");
+                Throws<ArgumentException>(() => Read(-1)); Throws<ArgumentException>(() => Read(data.LongLength));
+                Throws<ArgumentException>(() => store.Handle(new JObject { ["action"] = "read", ["transferId"] = file, ["offset"] = 0 }));
+                Throws<ArgumentException>(() => store.Handle(new JObject { ["action"] = "read", ["transferId"] = id, ["offset"] = 0, ["path"] = file }));
+                store.Handle(new JObject { ["action"] = "release", ["transferId"] = id });
+                Check(!File.Exists(file) && !Directory.Exists(directory), "Preview capability release left its owned temporary file");
+                Throws<ArgumentException>(() => Read(0));
+            }
+        }
+
+        private static void ToolpathCoordinates()
+        {
+            var builder = new ToolpathPreviewGeometry();
+            Dictionary<string, object> Point(double x) => new Dictionary<string, object> { ["GOTO_XYZ_3D"] = new Point3D(x, .02, .03) };
+            builder.Add(Point(.001)); builder.Add(Point(.002));
+            var data = builder.Result(true); var bytes = Convert.FromBase64String((string)data["data"]);
+            Check((string)data["status"] == "ready" && (int)data["segments"] == 1 && !(bool)data["partial"], "Valid toolpath was not displayed");
+            Check(BitConverter.ToSingle(bytes, 0) == 1 && BitConverter.ToSingle(bytes, 4) == 20 && BitConverter.ToSingle(bytes, 12) == 2,
+                "Toolpath SI coordinates did not convert to the STL millimetre frame");
+            builder.Add(new Dictionary<string, object> { ["GOTO_XYZ_3D"] = "" }); builder.Add(Point(.003));
+            Check(builder.Segments == 1 && (bool)builder.Result(true)["partial"], "Missing coordinates created a phantom cutting segment");
+            builder.Add(Point(.004)); Check(builder.Segments == 2, "Valid path did not resume after a gap");
+            builder.Add(new Dictionary<string, object> { ["GOTO_XYZ_3D"] = new Point3D(.005, 0, 0), ["3D_CENTER_XYZ"] = new Point3D(0, 0, 0) });
+            builder.Add(Point(.006)); Check(builder.Segments == 2, "Unsupported arc became a straight cut");
+            builder.Add(new Dictionary<string, object> { ["FRAME_NAME"] = "unknown", ["GOTO_XYZ_3D"] = new Point3D(100, 100, 100) });
+            builder.Add(Point(.007)); Check(builder.Segments == 2, "Unresolved work frame was overlaid on the default document frame");
+            var missing = new ToolpathPreviewGeometry(); missing.Add(new Dictionary<string, object> { ["GOTO_XYZ_3D"] = "" });
+            Check((string)missing.Result(true)["status"] == "coordinatesUnavailable", "Native empty point was reported as a complete path");
         }
     }
 }

@@ -5,7 +5,7 @@ public static class ResponseLanguages
 {
     public static string Normalize(string? language) => language?.Trim().ToLowerInvariant() switch
     {
-        "en" => "en", "ko" => "ko", "ja" => "ja", "zh" => "zh", "fr" => "fr", "de" => "de", "es" => "es", _ => "auto"
+        "en" => "en", "ko" => "ko", "ja" => "ja", "zh" => "zh", "fr" => "fr", "de" => "de", "es" => "es", "pt" => "pt", _ => "auto"
     };
 
     public static string Instruction(string? language) => Normalize(language) switch
@@ -17,6 +17,7 @@ public static class ResponseLanguages
         "fr" => "Reply concisely in French. Preserve source names, code, identifiers and units verbatim.",
         "de" => "Reply concisely in German. Preserve source names, code, identifiers and units verbatim.",
         "es" => "Reply concisely in Spanish. Preserve source names, code, identifiers and units verbatim.",
+        "pt" => "Reply concisely in Portuguese. Preserve source names, code, identifiers and units verbatim.",
         _ => "Reply concisely in the user's language (Korean requests get Korean replies)."
     };
 }

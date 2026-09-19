@@ -4,15 +4,30 @@ internal static class Program
 {
     private static async Task<int> Main(string[] args)
     {
+        if (args.Length == 1 && args[0] == "--topsolid-connection-settings") { await TopSolidConnectionTests.Settings(); return 0; }
+        if (args.Length == 1 && args[0] == "--topsolid-connection-ui") { await TopSolidConnectionUiTests.Run(); return 0; }
+        if (args.Length == 2 && args[0] == "--topsolid-connection-live") { await TopSolidConnectionTests.Live(args[1]); return 0; }
         if (Environment.GetEnvironmentVariable("TOPSOLID_MCP_TEST_FIXTURE") == "1") return await MutationTransportTests.RunFixture();
+        if (args.Length == 2 && args[0] == "--live-tool-preview") { await LiveToolPreviewReview.Run(args[1]); return 0; }
+        if (args.Length == 2 && args[0] == "--live-tool-data") { await LiveToolPreviewReview.ValidateData(args[1]); return 0; }
+        if (args.Length == 2 && args[0] == "--verify-native-glb") { await ToolPreviewRegressionTests.NativeGeometry(args[1]); return 0; }
+        if (args.Length == 1 && args[0] == "--workstation-preview") { await WorkstationPreviewTests.Run(); return 0; }
         if (args.Length == 2 && args[0] == "--live-licenses")
         { await LicenseTests.Live(args[1]); return 0; }
         if (args.Length is 1 or 2 && args[0] == "--ui-shell" && (args.Length == 1 || args[1] == "--no-ui-render"))
         { await UiShellTests.Run(render: args.Length == 1); return 0; }
         if (args.Length == 2 && args[0] == "--live-cam-reads")
         { await CamReadOnlyTests.Run(args[1]); return 0; }
+        if (args.Length == 2 && args[0] == "--live-cam-selection")
+        { await CamSelectionTests.Live(args[1]); return 0; }
+        if (args.Length == 2 && args[0] == "--live-log-review-reads")
+        { await CamReadOnlyTests.Run(args[1], "artifacts/conversation-log-review-20260918", "CuttingConditions"); return 0; }
         if (args.Length is 2 or 3 && args[0] == "--live-graphic-preview")
         { await GraphicPreviewTests.Live(args[1], args.Length == 3 ? args[2] : null); return 0; }
+        if (args.Length is 1 or 3 && args[0] == "--gpu-preview")
+        { await PreviewRuntimeTests.Gpu(args.Length == 3 ? args[1] : null, args.Length == 3 ? args[2] : null); return 0; }
+        if (args.Length == 3 && args[0] == "--live-paged-preview")
+        { await PreviewRuntimeTests.LivePaged(args[1], args[2]); return 0; }
         string? serverPath = null;
         string? liveUiOllamaModel = null;
         string? approvedNativePlan = null;
@@ -75,6 +90,7 @@ internal static class Program
             ("Cloud HTTP request -> MCP tool -> tool result -> final answer", ProviderTests.OpenAiToolLoop),
             ("Ollama HTTP request -> MCP tool -> tool result -> final answer", ProviderTests.OllamaToolLoop),
             ("Cloud and Ollama model discovery", ProviderTests.ModelDiscovery),
+            ("Local and cloud model selector icon mapping preserves model IDs", ModelIconTests.Run),
             ("Cloud presets, Gemini endpoint, authentication and thought-signature replay", CloudServiceTests.PresetRoutesAndGemini),
             ("Anthropic Messages tool loop, parallel results, pagination and truncation", CloudServiceTests.AnthropicToolLoopAndPagination),
             ("Per-service encrypted credentials, model persistence and legacy migration", CloudServiceTests.ProfilePersistence),
@@ -90,6 +106,7 @@ internal static class Program
             ("Duplicate tool IDs fail before any tool executes", ChatTests.DuplicateCallIdsAreRejectedBeforeDispatch),
             ("Persistent diagnostics and structured export redact credentials", DiagnosticLogTests.PersistentLogAndExportRedaction),
             ("DPAPI settings roundtrip, no plaintext key, endpoint binding", SettingsTests.SecureRoundTrip),
+            ("TopSolid targets, encrypted gateway tokens and invalid-target recovery", TopSolidConnectionTests.Settings),
             ("Endpoint validation and cloud credential transport safety", SettingsTests.EndpointSafety)
             ,("Configurable model timeout, cancellation and GPT-OSS latency option", TimeoutTests.Run)
             ,("Modeling approval, denial, tampered preview, headless rejection", ConfirmationTests.ApprovalAndDenial)
@@ -98,6 +115,10 @@ internal static class Program
             ,("Mutation completes before cancellation/disconnect; no forced kill on broken transport", MutationTransportTests.Run)
         };
         cases.Add(("Sketch context migration, bounded repair and local latency metrics", SketchReliabilityTests.Run));
+        cases.Add(("CAM selection dialogs, display names, pagination and failed-question recovery", CamSelectionTests.Run));
+        cases.Add(("Preview disk transfer, cancellation, identity validation and toolpath coordinates", PreviewRuntimeTests.Run));
+        cases.Add(("Official CAM operation labels, module identity and source provenance", CamOperationNamesTests.Run));
+        cases.Add(("Conversation-log regression: complete CAM pages, parameter selection, exact active target and compact history", ConversationLogRegressionTests.Run));
         cases.Add(("Measured developer dashboard timings and formatted details", DeveloperDashboardTests.MeasuredTurnDurationsAndReadableDetails));
         cases.Add(("Permission modes and bounded text/image attachment delivery", UiWorkflowTests.Run));
         cases.Add(("TopSolid saved and custom theme parsing", ThemeTests.Run));
@@ -107,6 +128,11 @@ internal static class Program
         cases.Add(("Friendly user responses and unchanged developer receipts, target identities and model history", ResponsePresentationTests.Run));
         cases.Add(("Connection readiness, slow/pending states, quota preservation and translated failures", ConnectionHealthTests.Run));
         cases.Add(("Receipt-backed question choices, typed inputs, images, cancellation and separate approval", UserQuestionTests.Run));
+        cases.Add(("Automatic list dialogs, exact selection scope, empty results and read-only pagination", ListPresentationTests.Run));
+        cases.Add(("Explicit project/document/operation/tool/sketch selection dialogs use receipts without inference", SelectionRequestTests.Run));
+        cases.Add(("Operation toolpath requests resolve an operation and open the read-only preview", ToolpathPreviewTests.Run));
+        cases.Add(("Native tool names/icons/library previews and paged GLB color/transparency", ToolPreviewRegressionTests.Run));
+        cases.Add(("NC generation selects operations, configured post-processor, generates, and exports", NcGenerationTests.Run));
         cases.Add(("Native GLB/STL, 0.05 mm / 5 degree precision, neutral surfaces, thin edges, navigation and preview cancellation", GraphicPreviewTests.Run));
         if (serverPath != null)
             cases.Add(("Real MCP process initialize, discover, status, errors, disconnect",

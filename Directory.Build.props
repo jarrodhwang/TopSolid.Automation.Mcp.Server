@@ -1,0 +1,6 @@
+<Project>
+  <PropertyGroup>
+    <!-- Isolated verification output can live below projects; generated sources are never product inputs. -->
+    <DefaultItemExcludes>$(DefaultItemExcludes);**/artifacts/**</DefaultItemExcludes>
+  </PropertyGroup>
+</Project>

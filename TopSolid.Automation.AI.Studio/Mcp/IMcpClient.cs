@@ -20,4 +20,17 @@ public interface IConfirmableMcpClient : IMcpClient
 public interface IGraphicPreviewClient
 {
     Task<JObject> GetGraphicPreviewAsync(JObject target, CancellationToken cancellationToken);
+    async Task<GraphicPreviewData> GetGraphicPreviewDataAsync(JObject target, CancellationToken token)
+    {
+        var metadata = await GetGraphicPreviewAsync(target, token);
+        var data = (string?)metadata["data"];
+        if (data != null && data.Length > GraphicPreviewQuality.MaximumRpcLineCharacters) throw new System.IO.InvalidDataException("Oversized inline preview.");
+        return new GraphicPreviewData(metadata, data == null ? null : Convert.FromBase64String(data));
+    }
+}
+
+public sealed record GraphicPreviewData(JObject Metadata, byte[]? Bytes);
+public interface IToolpathPreviewClient
+{
+    Task<JObject> GetToolpathPreviewAsync(JObject operation, CancellationToken token);
 }

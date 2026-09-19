@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using Newtonsoft.Json.Linq;
 using TopSolid.Automation.Mcp.Server.AddIn.Automation;
 using TopSolid.Cam.NC.Kernel.Automating;
@@ -24,7 +25,7 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
                         {
                             var row = TopSolidCamHost.ToolPath.NextToolPathItem(id);
                             if (row == null) { exhausted = true; break; }
-                            if (i >= offset) rows.Add(JObject.FromObject(row));
+                            if (i >= offset) rows.Add(new JObject(row.Select(pair => new JProperty(pair.Key, Value(pair.Value)))));
                         }
                         var more = !exhausted && TopSolidCamHost.ToolPath.NextToolPathItem(id) != null;
                         return new JObject { ["available"] = true, ["columns"] = new JArray(columns), ["rows"] = rows, ["offset"] = offset, ["hasMore"] = more,
@@ -34,6 +35,12 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
                     }
                     finally { TopSolidCamHost.ToolPath.EndToolPath(id); }
                 }), "Cam/Operation", new[] { "element" }, true, ApiRefs.Cam("IToolPath.StartToolPath", "IToolPath.NextToolPathItem", "IToolPath.EndToolPath")));
+        }
+        private static JToken Value(object value)
+        {
+            if (value is TopSolid.Kernel.Automating.Point3D point) return new JObject { ["x"] = point.X, ["y"] = point.Y, ["z"] = point.Z };
+            if (value is TopSolid.Kernel.Automating.Vector3D vector) return new JObject { ["x"] = vector.X, ["y"] = vector.Y, ["z"] = vector.Z };
+            return value == null ? JValue.CreateNull() : JToken.FromObject(value);
         }
     }
 }

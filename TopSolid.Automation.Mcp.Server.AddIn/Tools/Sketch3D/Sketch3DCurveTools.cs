@@ -1,6 +1,7 @@
 using System;
 using System.Linq;
 using Newtonsoft.Json.Linq;
+using TopSolid.Automation.Mcp.Contracts;
 using TopSolid.Automation.Mcp.Server.AddIn.Automation;
 
 namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
@@ -19,7 +20,7 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
             register(new ToolDefinition("topsolid_create_sketch3d_curves", "Draw lines, connected polylines, circles, arcs and uniform cubic B-splines in ONE new native 3D sketch. Up to 32 curves/512 points, absolute document coordinates. Closed inputs share vertices and become profiles; open paths remain open. Optional display color. Requires confirmation, no sections, no save.", p,
                 a.CreateSketch3DCurves, "Sketch3D", new[] { "documentId", "curves" }, false,
                 ApiRefs.Kernel("ISketches3D.CreateSketch", "ISketches3D.CreateVertex", "ISketches3D.CreateLineSegment", "ISketches3D.CreateCircleSegment", "ISketches3D.CreateArcSegment", "ISketches3D.CreateBSplineSegment", "ISketches3D.CreateProfile", "ISketches3D.CreateBuildingOperation", "ISketches3D.StartModification", "ISketches3D.EndModification", "ISketches3D.IsProfileClosed", "ISketches3D.GetProfileSegments", "ISketches3D.GetSegmentCurveType", "ISketches3D.GetSegmentVertices", "ISketches3D.GetVertexPoint", "ISketches3D.GetSegmentCircleCurve", "ISketches3D.GetSegmentRange", "ISketches3D.GetSegmentPoint", "ISketches3D.IsSegmentReversed", "IElements.SetName").Concat(AppearanceTools.Api).ToArray(),
-                Validate, a.PreviewModeling, defaultLengthUnits: "mm"));
+                Validate, a.PreviewModeling, defaultLengthUnits: "mm", minimumTopSolidVersion: TopSolidVersionSupport.ModelingMinimumVersion));
         }
         internal static void Validate(JObject p)
         {

@@ -6,6 +6,8 @@ namespace TopSolid.Automation.AI.Studio.Settings;
 
 public sealed class AppSettings
 {
+    public TopSolid.Automation.Mcp.Contracts.TopSolidConnectionOptions TopSolidConnection { get; set; } = new();
+    [JsonIgnore] public string TopSolidGatewayToken { get; set; } = "";
     public const string OpenAiProvider = "OpenAI-compatible";
     public const string OllamaProvider = "Ollama";
     private string _cloudBaseUrl = "https://api.openai.com/v1";

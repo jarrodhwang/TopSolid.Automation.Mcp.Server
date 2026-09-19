@@ -1,6 +1,7 @@
 using System;
 using System.Linq;
 using Newtonsoft.Json.Linq;
+using TopSolid.Automation.Mcp.Contracts;
 using TopSolid.Automation.Mcp.Server.AddIn.Automation;
 
 namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
@@ -25,7 +26,7 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
                     "ISketches2D.CreateSketchIn3D", "ISketches2D.CreateVertex", "ISketches2D.CreateCircleSegment", "ISketches2D.CreateLineSegment", "ISketches2D.CreateProfile", "ISketches2D.StartModification", "ISketches2D.EndModification", "ISketches2D.CreateBuildingOperation", "ISketches2D.GetSectionCount", "SmartSection3D.-ctor")
                     .Concat(ShapeWorkflowTools.DimensionApi).Concat(SketchPlanTools.Api).Concat(AppearanceTools.Api).Distinct().ToArray(),
                 p2 => { MutationReferences.Validate(p2); ElementAppearance.Validate(p2); FeatureDimension.Validate(p2, "height", "heightParameter"); CylinderPlan.Parse(p2, p2["height"] == null ? 1 : (double)p2["height"] * ModelingGeometry.Scale(p2)); }, a.PreviewCylinder,
-                "Create a cylinder and optional color; remove only reviewed replacement shapes after validating the new result. Roll back all document changes on failure. Never delete source sketches or save automatically.", defaultLengthUnits: "mm"));
+                "Create a cylinder and optional color; remove only reviewed replacement shapes after validating the new result. Roll back all document changes on failure. Never delete source sketches or save automatically.", defaultLengthUnits: "mm", minimumTopSolidVersion: TopSolidVersionSupport.ModelingMinimumVersion));
         }
     }
 }

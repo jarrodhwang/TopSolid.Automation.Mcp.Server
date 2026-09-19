@@ -18,9 +18,12 @@ namespace TopSolid.Automation.Mcp.Server.Tests
         {
             try
             {
+                if (args.Length == 1 && args[0] == "--connections") { Connections(); return 0; }
+                if (args.Length == 1 && args[0] == "--version-support") { VersionSupport(); return 0; }
+                if (args.Length == 1 && args[0] == "--gateway-transport") { GatewayTransport(); return 0; }
                 if (args.Length == 1 && args[0] == "--probe-sketch-reads") return SketchReadProbe();
                 if (args.Length == 1 && args[0] == "--probe-cam-tools") return CamToolReadProbe();
-                Confirmation(); Transactions(); Geometry(); SchemaAndCatalog(); WorkflowExpansion(); PagedNames(); BatchTools(); PdmDateSorting(); ObjectIdentityRules(); SketchPlans(); DocumentCreation(); Persistence(); SketchPrimitives(); SketchReliability(); ParameterEntities(); ModelingWorkflows(); CreationNaming(); CamParameters(); GraphicPreview(); Licenses();
+                Connections(); VersionSupport(); Confirmation(); Transactions(); Geometry(); SchemaAndCatalog(); WorkflowExpansion(); PagedNames(); BatchTools(); PdmDateSorting(); ObjectIdentityRules(); SketchPlans(); DocumentCreation(); Persistence(); SketchPrimitives(); SketchReliability(); ParameterEntities(); ModelingWorkflows(); CreationNaming(); CamParameters(); GraphicPreview(); Licenses();
                 Console.WriteLine("PASS: " + checks + " server checks. No TopSolid connection or CAD mutation was performed."); return 0;
             }
             catch (Exception e) { Console.Error.WriteLine(e); return 1; }
@@ -97,9 +100,9 @@ namespace TopSolid.Automation.Mcp.Server.Tests
             using (var gateway = new AutomationGateway())
             {
                 var registry = new ToolRegistry(gateway); var list = registry.List();
-                Check(list.Count == 187, "Domain registration is incomplete");
+                Check(list.Count == 192, "Domain registration is incomplete");
                 Check(list.Select(t => (string)t["name"]).Distinct().Count() == list.Count, "Duplicate tool names");
-                Check(list.Count(t => !(bool)t["annotations"]["readOnlyHint"]) == 59, "Unexpected write capabilities");
+                Check(list.Count(t => !(bool)t["annotations"]["readOnlyHint"]) == 64, "Unexpected write capabilities");
                 foreach (var tool in list)
                 {
                     Check((bool)tool["inputSchema"]["additionalProperties"] == false, "Open argument object");

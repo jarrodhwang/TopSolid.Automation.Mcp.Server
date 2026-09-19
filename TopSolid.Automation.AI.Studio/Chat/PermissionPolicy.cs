@@ -35,7 +35,8 @@ public static class PermissionPolicy
         "topsolid_update_document", "topsolid_rebuild_document", "topsolid_rename_document",
         "topsolid_create_project", "topsolid_create_folder", "topsolid_create_document", "topsolid_create_part_document",
         "topsolid_create_through_drilling", "topsolid_include_assembly_document", "topsolid_translate_assembly_inclusion",
-        "topsolid_execute_cam_operation", "topsolid_set_cam_parameter_value"
+        "topsolid_execute_cam_operation", "topsolid_set_cam_parameter_value",
+        "topsolid_generate_nc_for_selection", "topsolid_export_nc_file"
     };
 
     public static string Label(PermissionMode mode) => StudioStrings.Text(mode switch

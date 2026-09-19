@@ -19,7 +19,7 @@ namespace TopSolid.Automation.Mcp.Server.AddIn
             {
                 // A vendor diagnostic written to Console.Out must not corrupt the MCP wire.
                 Console.SetOut(Console.Error);
-                if (args.Length != 0)
+                if (args.Length != 0 && !(args.Length == 2 && args[0] == "--https-gateway"))
                 {
                     ServerDiagnosticLog.Write("error", "server.invalidArguments",
                         "Usage: TopSolid.Automation.Mcp.Server.AddIn.exe (MCP over stdin/stdout; no arguments)");
@@ -27,9 +27,12 @@ namespace TopSolid.Automation.Mcp.Server.AddIn
                 }
                 try
                 {
+                    if (args.Length == 2) { HttpsGateway.Serve(args[1]).GetAwaiter().GetResult(); return 0; }
+                    var connection = ConnectionTarget.FromEnvironment();
+                    if (connection.Mode == "https") { HttpsGateway.Relay(connection, Console.In, protocolOutput).GetAwaiter().GetResult(); return 0; }
                     ServerDiagnosticLog.Write("info", "server.starting", "Starting TopSolid Automation MCP server.");
-                    using (var automation = new AutomationGateway())
-                        new StdioMcpServer(Console.In, protocolOutput, new ToolRegistry(automation)).Run();
+                    using (var automation = new AutomationGateway(connection))
+                        new StdioMcpServer(Console.In, protocolOutput, new ToolRegistry(automation, automation.GetConnectedHostVersion)).Run();
                     return 0;
                 }
                 catch (IOException)

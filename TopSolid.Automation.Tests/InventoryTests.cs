@@ -34,6 +34,28 @@ internal static class InventoryTests
         Check.Equal(0, provider.CompletionCount, "Simple inventory must not wait for model inference");
         Check.True(!session.LastResponseUsedModel, "Direct MCP must not claim model inference");
         Check.Equal(2, PdmListRequest.Tools("List of all projects and libraries name").Length, "Reported request is optimized");
+        var reportedKorean = PdmListRequest.Parse("현재 프로젝트와 라이브러리를 생성일 오래된 순서로 모두 보여줘.");
+        Check.Equal(2, reportedKorean?.Tools.Length ?? 0, "Reported Korean PDM request resolves both categories");
+        Check.Equal("oldestFirst", reportedKorean?.Order, "Reported Korean PDM request preserves oldest-first ordering");
+        Check.True(reportedKorean?.Dates == true, "Reported Korean PDM request includes creation dates");
+        var koreanClient = new FakeMcpClient { Tools = new[] { "topsolid_list_projects", "topsolid_list_libraries" }.Select(name => new McpToolDefinition
+        {
+            Name = name, Annotations = new JObject { ["readOnlyHint"] = true }, InputSchema = JObject.Parse("{properties:{orderBy:{type:'string'}}}")
+        }).ToArray() };
+        koreanClient.OnCall = token => Task.FromResult(new McpToolResult { StructuredContent = new JObject
+        {
+            ["sortApplied"] = true, ["total"] = 1, ["offset"] = 0, ["hasMore"] = false,
+            ["items"] = new JArray(new JObject { ["name"] = koreanClient.Calls.Last().Name.EndsWith("projects") ? "Old Project" : "Old Library", ["pdmObjectId"] = Guid.NewGuid().ToString(), ["creationDate"] = "2009-01-01" })
+        } });
+        using (var koreanModel = new FakeAiProvider())
+        {
+            var shown = 0;
+            var koreanSession = new ChatSession(koreanModel, koreanClient) { ShowListAsync = (question, _) =>
+            { shown++; Check.True(question.IsBrowse && question.HasMore == false && question.Choices.Count == 2, "Korean PDM request did not produce a combined browse dialog"); return Task.CompletedTask; } };
+            var koreanAnswer = await koreanSession.SendAsync("현재 프로젝트와 라이브러리를 생성일 오래된 순서로 모두 보여줘.", CancellationToken.None);
+            Check.True(shown == 1 && koreanAnswer.Contains("dialog", StringComparison.OrdinalIgnoreCase) && koreanModel.CompletionCount == 0, "Reported Korean PDM request used raw text or model inference");
+            Check.True(koreanClient.Calls.All(call => (string?)call.Arguments["orderBy"] == "oldestFirst" && (bool?)call.Arguments["includeCreationDates"] == true), "Korean chronological ordering was not sent to both MCP list tools");
+        }
         foreach (var query in new[] { "list projects created yesterday", "list all projects and delete them", "compare all libraries", "do not list projects", "list projects sort by name oldest first" })
             Check.Equal(0, PdmListRequest.Tools(query).Length, "Complex intent must retain normal workflow: " + query);
         Check.Equal(answer, session.GetConversationSnapshot().Last().Last().Content, "History preserves authoritative answer");

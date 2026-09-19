@@ -11,6 +11,12 @@ internal sealed class ToolExposure
     internal const string SelectorName = "studio_select_tools";
     internal const int MaximumTools = 96;
     internal const int InitialTools = 24;
+    internal static bool NeedsWorkflowHistory(string request)
+    {
+        const RegexOptions flags = RegexOptions.IgnoreCase | RegexOptions.CultureInvariant;
+        if (Regex.IsMatch(request, @"\b(it|that|those|same|previous|again|instead)\b|다시|이전|그\s", flags)) return true;
+        return !Regex.IsMatch(request, "^\\s*[\"“']?\\s*(?:please\\s+)?(?:show|list|let me|ask me|create|make|draw|read|change|set)\\b", flags);
+    }
     private readonly McpToolDefinition[] discovered;
     private readonly bool compact;
     private readonly McpToolDefinition selector;
@@ -40,10 +46,14 @@ internal sealed class ToolExposure
         // Cutting conditions normally belong to an operation. The separate
         // library documents are selected only when the user asks for them.
         var cam = Has(@"\b(cam|machining|feed[ -]?rate|feed|rpm|spindle|coolant|cutting\s+(?:conditions?|speed)|toolpath|stepover|stepdown)\b|가공|절삭|이송|피드|주축|회전수|절삭유");
+        var simulation = Has(@"\b(simulat(?:e|ion|ing)?|verif(?:y|ication|ying)?)\b|시뮬레이션|검증");
+        cam |= simulation;
         var cuttingDocument = Regex.IsMatch(currentRequest ?? request, @"\bcutting[ -]?conditions?\s+(?:documents?|abacus|library)\b|\b(?:documents?|abacus|library)\s+(?:of\s+|for\s+)?cutting[ -]?conditions?\b|절삭\s*조건\s*(?:문서|도큐먼트|라이브러리|아바커스)", RegexOptions.IgnoreCase | RegexOptions.CultureInvariant);
         cam |= cuttingDocument;
         if (cam) {
             preferred.AddRange(["topsolid_list_cam_operation_summaries", "topsolid_list_cam_parameters", "topsolid_get_cam_parameter_value", "topsolid_get_active_document"]);
+            if (simulation)
+                preferred.InsertRange(0, ["topsolid_simulate_cam_operation", "topsolid_verify_cam_operation", "topsolid_verify_all_cam_operations"]);
             if (Has(@"\b(set|change|modify|edit|update|increase|decrease|reduce)\b|수정|변경|바꿔|높여|낮춰|줄여")) preferred.Add("topsolid_set_cam_parameter_value");
             if (cuttingDocument) preferred.InsertRange(0, ["topsolid_get_cutting_conditions_document", "topsolid_list_cutting_conditions_documents", "topsolid_get_cutting_conditions_abacus"]);
             preferred.AddRange(["topsolid_get_cam_operation_info", "topsolid_get_user_selection"]);

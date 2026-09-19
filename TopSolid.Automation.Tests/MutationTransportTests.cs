@@ -74,7 +74,7 @@ internal static class MutationTransportTests
                     await Console.Error.WriteLineAsync("fixture preview started"); await Task.Delay(250);
                     result = new JObject { ["status"] = "unsupported", ["documentId"] = request["params"]!["documentId"]!.DeepClone() };
                     if ((string?)request["params"]!["documentId"] == "large-preview")
-                        result["data"] = new string('A', (TopSolid.Automation.Mcp.Contracts.GraphicPreviewQuality.MaximumStlBytes + 2) / 3 * 4);
+                        result["data"] = new string('A', (84 + 250000 * 50 + 2) / 3 * 4);
                     break;
                 case "tools/call":
                     await Console.Error.WriteLineAsync("fixture modification started");

@@ -129,7 +129,7 @@ public partial class MainWindow
             try
             {
                 if (reconnectMcpOnRefresh && mcp.IsConnected) await mcp.DisconnectAsync();
-                if (!mcp.IsConnected) await mcp.ConnectAsync(settings.McpServerPath, deadline.Token);
+                if (!mcp.IsConnected) await ConnectConfiguredTopSolid(deadline.Token);
                 reconnectMcpOnRefresh = false;
                 lastDiscoveredTools = CloneTools(mcp.Tools);
                 connectionHealth.Set("Mcp", ConnectionSeverity.Ready, "Health.McpReady");
@@ -155,6 +155,12 @@ public partial class MainWindow
                 if (TopSolidConnectionStatus.IsConnected(result))
                 {
                     connectionHealth.Set("TopSolid", ConnectionSeverity.Ready, "Health.TopSolidReady");
+                    return;
+                }
+                reconnectMcpOnRefresh = true;
+                if (settings.TopSolidConnection.Mode != "local")
+                {
+                    connectionHealth.Set("TopSolid", ConnectionSeverity.Error, "TsConnection.Failed");
                     return;
                 }
                 var availability = await Task.Run(TopSolidInstallation.Inspect, hostDeadline.Token);
@@ -218,7 +224,8 @@ public partial class MainWindow
         var models = await candidate.ListModelsAsync(token);
         token.ThrowIfCancellationRequested();
         var selected = ModelBox.Text;
-        ModelBox.ItemsSource = models;
+        ModelBox.ItemsSource = ModelIconCatalog.CreateOptions(models, visibleProvider, settings.CloudService);
+        ModelBox.SelectedValue = selected;
         ModelBox.Text = selected;
         modelStatus = $"{models.Count} models listed; inference not tested";
         RecordTrace("Models", modelStatus);

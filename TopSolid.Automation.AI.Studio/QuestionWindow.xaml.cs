@@ -27,7 +27,7 @@ public partial class QuestionWindow : Window
         public GridLength ToolColumnWidth => string.IsNullOrWhiteSpace(ToolText) ? new GridLength(0) : new GridLength(1.1, GridUnitType.Star);
         public string AccessibleDescription => string.Join(" · ", new[] { Detail, ToolText }.Where(s => !string.IsNullOrWhiteSpace(s)));
     }
-    private readonly UserQuestion question;
+    private UserQuestion question;
     private readonly HashSet<string> selected = new(StringComparer.Ordinal);
     private readonly CancellationTokenSource lifetime = new();
     private bool filtering, synchronizingColor, loadingImage, closed;
@@ -42,19 +42,19 @@ public partial class QuestionWindow : Window
         if (question.Choices.Any(c => !string.IsNullOrWhiteSpace(c.ToolText))) Width = 900;
         if (previewClient != null && question.Kind == "select" && question.Choices.Any(c => question.PreviewTargetFor(c.Key) != null))
         {
-            graphic = new GraphicPreviewPane(previewClient, null);
+            graphic = new GraphicPreviewPane(previewClient, question.DocumentPreview);
             BodyHost.Content = null;
             BodyHost.Content = PreviewLayout.Wrap(this, QuestionBody, graphic, narrowTabs: true);
         }
         if (question.Kind is not ("select" or "image")) { MinHeight = 380; Height = question.Kind == "color" ? 520 : 440; EditorScroll.Visibility = Visibility.Visible; }
         Title = StudioStrings.Get("Question.Title"); Icon = TopSolidIcons.Get("question"); TopSolidTheme.ApplyWindow(this);
-        QuestionTitle.Text = question.Title;
-        var documentChoices = question.Kind == "select" && question.Choices.Count > 0 &&
-            question.Choices.All(c => c.IconKey == "document" || c.IconKey?.StartsWith("document-", StringComparison.Ordinal) == true);
-        var operationChoices = question.Kind == "select" && question.Choices.Count > 0 && question.Choices.All(c => c.Kind == "operation");
-        QuestionIcon.Source = TopSolidIcons.Get(operationChoices ? "operation" : documentChoices ? "document" : IconKey(question.Kind == "select" ? question.ItemKind : question.Kind));
         CancelQuestion.Tag = TopSolidIcons.Get("cancel"); ContinueQuestion.Tag = TopSolidIcons.Get("approve"); BrowseImage.Tag = TopSolidIcons.Get("image");
-        QuestionHint.Text = StudioStrings.Get(question.Kind == "select" ? question.Multiple ? "Question.MultipleHint" : "Question.SelectHint" : "Question.InputHint");
+        if (question.Kind == "select" && question.LoadMoreAsync != null)
+        {
+            LoadMore.Visibility = Visibility.Visible;
+            LoadMore.Click += async (_, _) => await LoadNextPage();
+        }
+        UpdateHeader();
         SearchPanel.Visibility = ChoiceList.Visibility = question.Kind == "select" ? Visibility.Visible : Visibility.Collapsed;
         ChoiceList.SelectionMode = question.Multiple ? SelectionMode.Multiple : SelectionMode.Single;
         ChoiceList.SelectionChanged += (_, e) =>
@@ -64,7 +64,7 @@ public partial class QuestionWindow : Window
             foreach (Card card in e.RemovedItems) selected.Remove(card.Choice.Key);
             foreach (Card card in e.AddedItems) selected.Add(card.Choice.Key);
             UpdateCount(); Validate();
-            graphic?.SetTarget(question.PreviewTargetFor((e.AddedItems.OfType<Card>().LastOrDefault()?.Choice.Key) ?? selected.LastOrDefault()));
+            graphic?.SetTarget(question.PreviewTargetFor((e.AddedItems.OfType<Card>().LastOrDefault()?.Choice.Key) ?? selected.LastOrDefault()) ?? question.DocumentPreview);
         };
         SearchBox.TextChanged += (_, _) => Filter();
         ClearSelection.Click += (_, _) => { selected.Clear(); Filter(); graphic?.SetTarget(null); };
@@ -74,7 +74,7 @@ public partial class QuestionWindow : Window
         BrowseImage.Click += async (_, _) => await PickImage();
         ContinueQuestion.Click += (_, _) => { if (Validate(showError: true)) { Answer = BuildAnswer(); DialogResult = true; } };
         CancelQuestion.Click += (_, _) => Close();
-        Closed += (_, _) => { closed = true; lifetime.Cancel(); lifetime.Dispose(); };
+        Closed += (_, _) => { closed = true; lifetime.Cancel(); graphic?.Dispose(); lifetime.Dispose(); };
         if (question.Kind == "select") Filter();
         else if (question.Kind == "color")
         {
@@ -124,7 +124,9 @@ public partial class QuestionWindow : Window
 
     private void UpdateCount()
     {
-        SelectionCount.Text = StudioStrings.Get("Question.Count", ChoiceList.Items.Count, question.Choices.Count, selected.Count);
+        SelectionCount.Text = question.IsBrowse
+            ? StudioStrings.Get(question.HasMore ? "List.PartialCount" : "List.Count", ChoiceList.Items.Count, question.Choices.Count, question.Total)
+            : StudioStrings.Get("Question.Count", ChoiceList.Items.Count, question.Choices.Count, selected.Count);
         ClearSelection.IsEnabled = selected.Count > 0;
         SelectionSummary.Visibility = selected.Count > 0 ? Visibility.Visible : Visibility.Collapsed;
         SelectionSummary.Text = string.Join("; ", question.Choices.Where(c => selected.Contains(c.Key)).Take(8).Select(c => c.Label + (c.Detail.Length > 0 ? " — " + c.Detail : "")));
@@ -134,6 +136,7 @@ public partial class QuestionWindow : Window
     private bool Validate(bool showError = false)
     {
         if (ContinueQuestion == null) return false;
+        if (question.IsBrowse) return true;
         try
         {
             if (loadingImage) { ContinueQuestion.IsEnabled = false; return false; }
@@ -148,6 +151,23 @@ public partial class QuestionWindow : Window
             ValidationMessage.Text = showError || ValueBox.Text.Length > 0 || HexBox.Text.Length > 0 ? error.Message : "";
             return false;
         }
+    }
+
+    private async Task LoadNextPage()
+    {
+        if (question.LoadMoreAsync == null) return;
+        LoadMore.IsEnabled = false; ValidationMessage.Text = "";
+        try
+        {
+            var next = await question.LoadMoreAsync(lifetime.Token);
+            if (closed) return;
+            question = next; UpdateHeader(); Filter();
+            graphic?.SetTarget(question.PreviewTargetFor(selected.LastOrDefault()) ?? question.DocumentPreview);
+        }
+        catch (OperationCanceledException) when (closed) { }
+        catch (Exception error) when (error is IOException or InvalidOperationException or ArgumentException or Newtonsoft.Json.JsonException)
+        { if (!closed) ValidationMessage.Text = StudioStrings.Get("List.Incomplete"); }
+        finally { if (!closed) LoadMore.IsEnabled = true; }
     }
 
     private void ColorFromHex()
@@ -203,5 +223,32 @@ public partial class QuestionWindow : Window
     }
 
     internal static string IconKey(string kind) => kind switch
-    { "camParameter" or "integer" or "decimal" => "parameter", "select" or "option" or "text" => "status", "element" => "part", _ => kind };
+    { "camParameter" or "integer" or "decimal" => "parameter", "select" or "option" or "text" => "status", "element" or "part" or "sketch" => "part", "tool" => "cam-tool-generic", _ => kind };
+
+    private void UpdateHeader()
+    {
+        QuestionTitle.Text = question.Title;
+        var documentChoices = question.Kind == "select" && question.Choices.Count > 0 &&
+            question.Choices.All(c => c.Kind == "document" || c.IconKey == "document" || c.IconKey?.StartsWith("document-", StringComparison.Ordinal) == true);
+        var operationChoices = question.Kind == "select" && question.Choices.Count > 0 && question.Choices.All(c => c.Kind == "operation");
+        QuestionIcon.Source = TopSolidIcons.Get(operationChoices ? "operation" : documentChoices ? "document" : IconKey(question.Kind == "select" ? question.ItemKind : question.Kind));
+        QuestionHint.Text = StudioStrings.Get(question.Kind == "select" ? question.Multiple ? "Question.MultipleHint" : "Question.SelectHint" : "Question.InputHint");
+        Title = question.IsBrowse ? StudioStrings.Get("List.Title") : StudioStrings.Get("Question.Title");
+        if (question.IsBrowse)
+        {
+            QuestionHint.Text = StudioStrings.Get("List.Hint");
+            CancelQuestion.Content = StudioStrings.Get("List.Close");
+            ContinueQuestion.Visibility = Visibility.Collapsed;
+            ClearSelection.Visibility = Visibility.Collapsed;
+            LoadMore.Visibility = question.LoadMoreAsync != null ? Visibility.Visible : Visibility.Collapsed;
+        }
+        else
+        {
+            CancelQuestion.Content = StudioStrings.Get("Question.Cancel");
+            ContinueQuestion.Visibility = Visibility.Visible;
+            ClearSelection.Visibility = Visibility.Visible;
+        }
+        QuestionContext.Text = question.Context;
+        QuestionContext.Visibility = string.IsNullOrWhiteSpace(question.Context) ? Visibility.Collapsed : Visibility.Visible;
+    }
 }

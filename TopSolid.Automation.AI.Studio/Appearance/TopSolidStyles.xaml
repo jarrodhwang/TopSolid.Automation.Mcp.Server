@@ -2,6 +2,7 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:appearance="clr-namespace:TopSolid.Automation.AI.Studio.Appearance">
     <SolidColorBrush x:Key="WindowBrush" Color="#F6F6FA"/>
+    <SolidColorBrush x:Key="WindowFrameBorderBrush" Color="#233149"/>
     <SolidColorBrush x:Key="SurfaceBrush" Color="White"/>
     <SolidColorBrush x:Key="PanelBrush" Color="#E4E4EB"/>
     <SolidColorBrush x:Key="BorderBrush" Color="#C8C8C8"/>
@@ -20,9 +21,14 @@
     <SolidColorBrush x:Key="HoverBorderBrush" Color="#FDAF5F"/>
     <SolidColorBrush x:Key="SelectedBorderBrush" Color="#7DA2CE"/>
     <SolidColorBrush x:Key="SelectionTextBrush" Color="#1E1E28"/>
-    <!-- TopSolid's main caption commands sit on a fixed light strip, including in dark mode. -->
+    <!-- Caption and toolbar colors are replaced by the active TopSolid theme at runtime. -->
     <SolidColorBrush x:Key="CaptionControlBrush" Color="#E4E4EB"/>
     <SolidColorBrush x:Key="CaptionGlyphBrush" Color="#787878"/>
+    <SolidColorBrush x:Key="CaptionControlBorderBrush" Color="Transparent"/>
+    <SolidColorBrush x:Key="CaptionHoverBorderBrush" Color="#E39F58"/>
+    <SolidColorBrush x:Key="ToolbarBorderBrush" Color="#C8C8C8"/>
+    <LinearGradientBrush x:Key="CaptionHoverGradientBrush" StartPoint="0,0" EndPoint="0,1"><GradientStop Color="#FFD6B5"/><GradientStop Color="#E39F58" Offset="1"/></LinearGradientBrush>
+    <LinearGradientBrush x:Key="CaptionPressedGradientBrush" StartPoint="0,0" EndPoint="0,1"><GradientStop Color="#FEC288"/><GradientStop Color="#D2873E" Offset="1"/></LinearGradientBrush>
     <LinearGradientBrush x:Key="ViewportGradientBrush" StartPoint="0,0" EndPoint="0,1"><GradientStop Color="#4A6597"/><GradientStop Color="#E7E4E4" Offset="1"/></LinearGradientBrush>
     <LinearGradientBrush x:Key="TitleGradientBrush" StartPoint="0,0" EndPoint="0,1"><GradientStop Color="#464650"/><GradientStop Color="#1E1E28" Offset="1"/></LinearGradientBrush>
     <LinearGradientBrush x:Key="ToolbarGradientBrush" StartPoint="0,0" EndPoint="0,1"><GradientStop Color="#FAFAFF"/><GradientStop Color="#E4E4EB" Offset="1"/></LinearGradientBrush>
@@ -40,7 +46,7 @@
         <Setter Property="UseLayoutRounding" Value="True"/>
         <Setter Property="SnapsToDevicePixels" Value="True"/>
         <Setter Property="Template"><Setter.Value><ControlTemplate TargetType="Window">
-            <Border Background="{TemplateBinding Background}" BorderBrush="{DynamicResource BorderBrush}" BorderThickness="1">
+            <Border Background="{TemplateBinding Background}" BorderBrush="{DynamicResource WindowFrameBorderBrush}" BorderThickness="2" CornerRadius="3" ClipToBounds="True">
                 <Grid><Grid.RowDefinitions><RowDefinition Height="34"/><RowDefinition Height="*"/></Grid.RowDefinitions>
                     <appearance:WindowTitleBar/>
                     <AdornerDecorator Grid.Row="1"><ContentPresenter ContentSource="Content"/></AdornerDecorator>
@@ -78,33 +84,34 @@
     </Style>
     <Style x:Key="WindowCaption" TargetType="appearance:WindowTitleBar">
         <Setter Property="Background" Value="{DynamicResource TitleGradientBrush}"/>
-        <Style.Triggers><Trigger Property="appearance:ControlChrome.LightCaptionControls" Value="True"><Setter Property="Background" Value="{StaticResource CaptionControlBrush}"/></Trigger></Style.Triggers>
+        <Style.Triggers><Trigger Property="appearance:ControlChrome.LightCaptionControls" Value="True"><Setter Property="Background" Value="{DynamicResource CaptionControlBrush}"/></Trigger></Style.Triggers>
     </Style>
     <Style x:Key="CaptionTitleSurface" TargetType="Border">
         <Setter Property="Background" Value="{DynamicResource TitleGradientBrush}"/>
         <Style.Triggers><Trigger Property="appearance:ControlChrome.LightCaptionControls" Value="True">
-            <Setter Property="Margin" Value="5,0,0,6"/><Setter Property="CornerRadius" Value="0,0,4,4"/>
+            <Setter Property="Margin" Value="0,0,0,6"/><Setter Property="CornerRadius" Value="0,0,4,0"/>
         </Trigger></Style.Triggers>
     </Style>
     <Style x:Key="CaptionButtonSurface" TargetType="Border">
         <Style.Triggers><Trigger Property="appearance:ControlChrome.LightCaptionControls" Value="True">
-            <Setter Property="Background" Value="{StaticResource CaptionControlBrush}"/><Setter Property="Padding" Value="8,0,0,0"/>
+            <Setter Property="Background" Value="{DynamicResource CaptionControlBrush}"/><Setter Property="Padding" Value="8,0,0,0"/>
         </Trigger></Style.Triggers>
     </Style>
     <ControlTemplate x:Key="LightCaptionButtonTemplate" TargetType="Button">
-        <Border x:Name="Frame" Background="{TemplateBinding Background}" TextElement.Foreground="{TemplateBinding Foreground}" BorderBrush="Transparent" BorderThickness="1">
+        <Border x:Name="Frame" Background="{TemplateBinding Background}" TextElement.Foreground="{TemplateBinding Foreground}" BorderBrush="{DynamicResource CaptionControlBorderBrush}" BorderThickness="1" CornerRadius="3">
             <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
         </Border>
         <ControlTemplate.Triggers>
-            <Trigger Property="IsMouseOver" Value="True"><Setter TargetName="Frame" Property="Background" Value="#D6D6D6"/></Trigger>
-            <Trigger Property="IsPressed" Value="True"><Setter TargetName="Frame" Property="Background" Value="#C8C8C8"/></Trigger>
-            <MultiTrigger><MultiTrigger.Conditions><Condition Property="Tag" Value="Window.Close"/><Condition Property="IsMouseOver" Value="True"/></MultiTrigger.Conditions>
-                <Setter TargetName="Frame" Property="Background" Value="#C42B1C"/><Setter TargetName="Frame" Property="TextElement.Foreground" Value="White"/>
-            </MultiTrigger>
-            <MultiTrigger><MultiTrigger.Conditions><Condition Property="Tag" Value="Window.Close"/><Condition Property="IsPressed" Value="True"/></MultiTrigger.Conditions>
-                <Setter TargetName="Frame" Property="Background" Value="#A82317"/><Setter TargetName="Frame" Property="TextElement.Foreground" Value="White"/>
-            </MultiTrigger>
-            <Trigger Property="IsKeyboardFocused" Value="True"><Setter TargetName="Frame" Property="BorderBrush" Value="{StaticResource CaptionGlyphBrush}"/></Trigger>
+            <!-- TopSolid uses the same orange hover/pressed treatment for all three caption commands. -->
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter TargetName="Frame" Property="Background" Value="{DynamicResource CaptionHoverGradientBrush}"/>
+                <Setter TargetName="Frame" Property="BorderBrush" Value="{DynamicResource CaptionHoverBorderBrush}"/>
+            </Trigger>
+            <Trigger Property="IsPressed" Value="True">
+                <Setter TargetName="Frame" Property="Background" Value="{DynamicResource CaptionPressedGradientBrush}"/>
+                <Setter TargetName="Frame" Property="BorderBrush" Value="{DynamicResource CaptionHoverBorderBrush}"/>
+            </Trigger>
+            <Trigger Property="IsKeyboardFocused" Value="True"><Setter TargetName="Frame" Property="BorderBrush" Value="{DynamicResource CaptionControlBorderBrush}"/></Trigger>
             <Trigger Property="IsEnabled" Value="False"><Setter Property="Opacity" Value="0.48"/></Trigger>
         </ControlTemplate.Triggers>
     </ControlTemplate>
@@ -115,26 +122,26 @@
         <Setter Property="BorderThickness" Value="0"/><Setter Property="appearance:ControlChrome.CornerRadius" Value="0"/>
         <Style.Triggers><Trigger Property="appearance:ControlChrome.LightCaptionControls" Value="True">
             <Setter Property="Width" Value="36"/><Setter Property="FontSize" Value="14"/>
-            <Setter Property="Foreground" Value="{StaticResource CaptionGlyphBrush}"/><Setter Property="Background" Value="{StaticResource CaptionControlBrush}"/>
+            <Setter Property="Foreground" Value="{DynamicResource CaptionGlyphBrush}"/><Setter Property="Background" Value="{DynamicResource CaptionControlBrush}"/>
             <Setter Property="Template" Value="{StaticResource LightCaptionButtonTemplate}"/>
         </Trigger></Style.Triggers>
     </Style>
     <Style x:Key="NativeToolButton" TargetType="Button" BasedOn="{StaticResource {x:Type Button}}">
-        <Setter Property="Padding" Value="10,6"/>
+        <Setter Property="Padding" Value="9,5"/>
         <Setter Property="ContentTemplate"><Setter.Value><DataTemplate>
             <StackPanel Orientation="Horizontal">
-                <Image Source="{Binding Tag, RelativeSource={RelativeSource AncestorType=Button}}" Width="20" Height="20" Margin="0,0,7,0"/>
+                <Image Source="{Binding Tag, RelativeSource={RelativeSource AncestorType=Button}}" Width="18" Height="18" Margin="0,0,6,0"/>
                 <TextBlock Text="{Binding}" VerticalAlignment="Center"/>
             </StackPanel>
         </DataTemplate></Setter.Value></Setter>
     </Style>
     <Style x:Key="DialogToolbar" TargetType="Border">
         <Setter Property="Background" Value="{DynamicResource ToolbarGradientBrush}"/><Setter Property="BorderBrush" Value="{DynamicResource BorderBrush}"/>
-        <Setter Property="BorderThickness" Value="0,0,0,1"/><Setter Property="Padding" Value="16,10"/>
+        <Setter Property="BorderThickness" Value="0,0,0,1"/><Setter Property="Padding" Value="14,8"/>
     </Style>
     <Style x:Key="DialogFooter" TargetType="Border">
         <Setter Property="Background" Value="{DynamicResource WindowBrush}"/><Setter Property="BorderBrush" Value="{DynamicResource BorderBrush}"/>
-        <Setter Property="BorderThickness" Value="0,1,0,0"/><Setter Property="Padding" Value="16,10"/>
+        <Setter Property="BorderThickness" Value="0,1,0,0"/><Setter Property="Padding" Value="14,8"/>
     </Style>
     <Style x:Key="SwatchButton" TargetType="Button" BasedOn="{StaticResource {x:Type Button}}">
         <Setter Property="Template"><Setter.Value><ControlTemplate TargetType="Button">
@@ -245,7 +252,8 @@
                     </ControlTemplate></ToggleButton.Template>
                 </ToggleButton>
                 <ContentPresenter x:Name="Selected" Margin="8,3,30,3" IsHitTestVisible="False" Content="{TemplateBinding SelectionBoxItem}" ContentTemplate="{TemplateBinding SelectionBoxItemTemplate}" ContentTemplateSelector="{TemplateBinding ItemTemplateSelector}" VerticalAlignment="Center"/>
-                <TextBox x:Name="PART_EditableTextBox" Visibility="Hidden" Margin="6,2,28,2" Padding="3" Background="Transparent" Foreground="{DynamicResource TextBrush}" BorderThickness="0" IsReadOnly="{TemplateBinding IsReadOnly}" VerticalContentAlignment="Center"/>
+                <Image x:Name="SelectedIcon" Width="18" Height="18" Margin="8,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" IsHitTestVisible="False" Source="{Binding SelectedItem.IconUri, RelativeSource={RelativeSource TemplatedParent}}" Stretch="Uniform" />
+                <TextBox x:Name="PART_EditableTextBox" Visibility="Hidden" Margin="30,2,28,2" Padding="3" Background="Transparent" Foreground="{DynamicResource TextBrush}" BorderThickness="0" IsReadOnly="{TemplateBinding IsReadOnly}" VerticalContentAlignment="Center"/>
                 <Popup x:Name="PART_Popup" Placement="Bottom" IsOpen="{TemplateBinding IsDropDownOpen}" AllowsTransparency="True" Focusable="False" PopupAnimation="None">
                     <Border Background="{DynamicResource SurfaceBrush}" BorderBrush="{DynamicResource BorderBrush}" BorderThickness="1" MinWidth="{Binding ActualWidth, RelativeSource={RelativeSource TemplatedParent}}" MaxHeight="{TemplateBinding MaxDropDownHeight}">
                         <ScrollViewer CanContentScroll="True"><ItemsPresenter KeyboardNavigation.DirectionalNavigation="Contained"/></ScrollViewer>
@@ -254,6 +262,7 @@
             </Grid>
             <ControlTemplate.Triggers>
                 <Trigger Property="IsEditable" Value="True"><Setter TargetName="PART_EditableTextBox" Property="Visibility" Value="Visible"/><Setter TargetName="Selected" Property="Visibility" Value="Hidden"/></Trigger>
+                <Trigger Property="IsReadOnly" Value="True"><Setter TargetName="PART_EditableTextBox" Property="IsHitTestVisible" Value="False"/><Setter TargetName="PART_EditableTextBox" Property="Focusable" Value="False"/></Trigger>
                 <Trigger Property="IsKeyboardFocusWithin" Value="True"><Setter Property="BorderBrush" Value="{DynamicResource AccentBrush}"/></Trigger>
                 <Trigger Property="IsEnabled" Value="False"><Setter Property="Opacity" Value="0.5"/></Trigger>
             </ControlTemplate.Triggers>

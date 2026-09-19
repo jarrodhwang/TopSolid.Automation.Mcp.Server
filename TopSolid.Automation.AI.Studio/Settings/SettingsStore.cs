@@ -51,10 +51,27 @@ public sealed class SettingsStore
                 OllamaModel = ReadString(data, "ollamaModel") ?? ""
             };
             settings.McpServerPath = ReadString(data, "mcpServerPath") ?? settings.McpServerPath;
+            if (data.Property("topSolidConnection") != null)
+            {
+                try
+                {
+                    if (data["topSolidConnection"] is not JObject connection) throw new ArgumentException("Invalid TopSolid connection.");
+                    settings.TopSolidConnection = connection.ToObject<TopSolid.Automation.Mcp.Contracts.TopSolidConnectionOptions>() ?? throw new ArgumentException("Missing TopSolid connection.");
+                    settings.TopSolidConnection.Validate();
+                    if (settings.TopSolidConnection.Mode == "https" && data["topSolidGatewayCredential"] is JObject credential)
+                        settings.TopSolidGatewayToken = UnprotectProfileKey(credential, GatewayScope(settings));
+                }
+                catch (Exception error) when (error is ArgumentException or JsonException or OverflowException)
+                {
+                    // Invalid target data must never silently redirect automation to a default local host.
+                    settings.TopSolidConnection = new() { Mode = "invalid" };
+                    LastLoadWarning = "TopSolid connection settings are invalid. Select the connection target again.";
+                }
+            }
             settings.DevMode = data.Value<bool?>("devMode") ?? false;
             settings.AppearanceMode = ReadChoice(data, "appearanceMode", "topsolid", "topsolid", "system", "light", "dark");
-            settings.InterfaceLanguage = ReadChoice(data, "interfaceLanguage", "system", "system", "en", "ko", "ja", "zh", "fr", "de");
-            settings.ResponseLanguage = ReadChoice(data, "responseLanguage", "auto", "auto", "en", "ko", "ja", "zh", "fr", "de", "es");
+            settings.InterfaceLanguage = ReadChoice(data, "interfaceLanguage", "system", "system", "en", "ko", "ja", "zh", "fr", "de", "es", "pt");
+            settings.ResponseLanguage = ReadChoice(data, "responseLanguage", "auto", "auto", "en", "ko", "ja", "zh", "fr", "de", "es", "pt");
             if (data["ollamaFastGptOss"]?.Type == JTokenType.Boolean) settings.OllamaFastGptOss = (bool)data["ollamaFastGptOss"]!;
             if (data["requestTimeoutMinutes"] != null)
             {
@@ -139,6 +156,7 @@ public sealed class SettingsStore
         ArgumentNullException.ThrowIfNull(settings);
         ValidateProvider(settings.Provider);
         settings.RequestTimeout();
+        settings.TopSolidConnection.Validate();
         CloudServices.Get(settings.CloudService);
         var cloudUrl = EndpointValidator.Validate(settings.CloudBaseUrl, "Cloud base URL");
         EndpointValidator.Validate(settings.OllamaServerUrl, "Ollama server URL", allowRemoteHttp: true);
@@ -171,6 +189,7 @@ public sealed class SettingsStore
             ["interfaceLanguage"] = settings.InterfaceLanguage,
             ["responseLanguage"] = settings.ResponseLanguage,
             ["mcpServerPath"] = settings.McpServerPath.Trim(),
+            ["topSolidConnection"] = JObject.FromObject(settings.TopSolidConnection),
             ["apiKeyScope"] = keyScope,
             ["protectedApiKey"] = protectedKey
         };
@@ -187,6 +206,12 @@ public sealed class SettingsStore
             };
         }
         data["cloudProfiles"] = profiles;
+        if (settings.TopSolidConnection.Mode == "https")
+        {
+            var scope = GatewayScope(settings);
+            data["topSolidGatewayCredential"] = new JObject { ["apiKeyScope"] = scope,
+                ["protectedApiKey"] = ProtectKey(settings.TopSolidGatewayToken, scope) };
+        }
 
         Directory.CreateDirectory(Path.GetDirectoryName(_filePath)!);
         var temporaryPath = _filePath + "." + Guid.NewGuid().ToString("N") + ".tmp";
@@ -212,6 +237,9 @@ public sealed class SettingsStore
         if (provider != AppSettings.OpenAiProvider && provider != AppSettings.OllamaProvider)
             throw new ArgumentException("Choose OpenAI-compatible or Ollama.");
     }
+
+    private static string GatewayScope(AppSettings settings) =>
+        new UriBuilder("https", settings.TopSolidConnection.Host, settings.TopSolidConnection.Port, "/topsolid/").Uri.AbsoluteUri;
 
     private static byte[] Entropy(string scope) => SHA256.HashData(Encoding.UTF8.GetBytes(
         "TopSolid.Automation.AI.Studio/api-key/v1/" + scope));

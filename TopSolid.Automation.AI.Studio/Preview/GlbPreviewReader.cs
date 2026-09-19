@@ -11,8 +11,8 @@ namespace TopSolid.Automation.AI.Studio.Preview;
 /// <summary>Bounded glTF 2.0 subset emitted by TopSolid. No external buffers, textures, URLs or executable content.</summary>
 internal static class GlbPreviewReader
 {
-    internal const int MaximumBytes = 2 * 1024 * 1024;
-    internal static PreviewScene Read(byte[] bytes, CancellationToken token)
+    internal const int MaximumBytes = TopSolid.Automation.Mcp.Contracts.GraphicPreviewQuality.MaximumGlbBytes;
+    internal static PreviewScene Read(byte[] bytes, CancellationToken token, bool nativeColors = false)
     {
         if (bytes.Length is < 28 or > MaximumBytes || U32(0) != 0x46546C67 || U32(4) != 2 || U32(8) != bytes.Length)
             throw new InvalidDataException("Invalid GLB header.");
@@ -57,7 +57,7 @@ internal static class GlbPreviewReader
                     // Instancing may reuse a tiny buffer thousands of times. Bound expanded geometry,
                     // including unused positions, before allocating transformed arrays.
                     vertices = checked(vertices + positionAccessor.Count);
-                    if (vertices > 300000) throw new InvalidDataException("Expanded preview geometry is too large.");
+                    if (vertices > PreviewScene.MaximumTriangles * 3 || vertices > Math.Max(300000, binaryLength * 4L / 12)) throw new InvalidDataException("Expanded preview geometry is too large.");
                     var positions = new Point3D[positionAccessor.Count];
                     for (var i = 0; i < positions.Length; i++)
                     {
@@ -97,13 +97,7 @@ internal static class GlbPreviewReader
                             normals[i] = new Vector3D(n.X, -n.Z, n.Y);
                         }
                     }
-                    var color = Color.FromRgb(192, 192, 192);
-                    if (p["material"] != null && Entry("materials", (int)p["material"]!)["pbrMetallicRoughness"]?["baseColorFactor"] is JArray rgba)
-                    {
-                        if (rgba.Count != 4) throw new InvalidDataException("Invalid material color.");
-                        // Opaque CAD review shading; no texture fetches or transparency sorting.
-                        color = Color.FromRgb(Channel(rgba[0]), Channel(rgba[1]), Channel(rgba[2]));
-                    }
+                    var color = ReadColor(p["material"] == null ? null : Entry("materials", (int)p["material"]!), nativeColors);
                     meshes.Add(new PreviewMesh(positions, indices, color, normals));
                 }
             }
@@ -119,15 +113,26 @@ internal static class GlbPreviewReader
             var elementSize = width * (type == "VEC3" ? 3 : 1); var stride = (int?)view["byteStride"] ?? elementSize;
             var viewOffset = (int?)view["byteOffset"] ?? 0; var accessorOffset = (int?)a["byteOffset"] ?? 0; var viewLength = (int?)view["byteLength"] ?? -1;
             if ((string?)a["type"] != type || component.HasValue && kind != component || a["sparse"] != null || (bool?)a["normalized"] == true || (int?)view["buffer"] != 0 ||
-                count <= 0 || count > 300000 || stride < elementSize || stride > 252 || viewOffset < 0 || accessorOffset < 0 || viewLength < 0 ||
+                count <= 0 || count > PreviewScene.MaximumTriangles * 3 || stride < elementSize || stride > 252 || viewOffset < 0 || accessorOffset < 0 || viewLength < 0 ||
                 (long)viewOffset + viewLength > binaryLength || (long)accessorOffset + (long)(count - 1) * stride + elementSize > viewLength)
                 throw new InvalidDataException("Invalid accessor bounds.");
             return (checked(binStart + viewOffset + accessorOffset), stride, count, kind);
         }
     }
-    private static byte Channel(JToken value)
-    { var v = (double)value; if (!double.IsFinite(v) || v < 0 || v > 1) throw new InvalidDataException("Invalid color."); return (byte)Math.Round(Math.Pow(v, 1 / 2.2) * 255); }
-    private static Matrix3D Transform(JObject node)
+    internal static Color ReadColor(JObject? material, bool nativeColors)
+    {
+        if (material == null) return TopSolidPreviewPalette.Surface;
+        var rgba = material["pbrMetallicRoughness"]?["baseColorFactor"] as JArray ?? new JArray(1, 1, 1, 1);
+        if (rgba.Count != 4) throw new InvalidDataException("Invalid material color.");
+        var values = rgba.Select(v => (double)v).ToArray();
+        if (values.Any(v => !double.IsFinite(v) || v < 0 || v > 1)) throw new InvalidDataException("Invalid material color.");
+        var mode = (string?)material["alphaMode"] ?? "OPAQUE";
+        var alpha = mode switch { "OPAQUE" => 1, "BLEND" => values[3], "MASK" => values[3] >= ((double?)material["alphaCutoff"] ?? .5) ? 1 : 0,
+            _ => throw new InvalidDataException("Invalid alpha mode.") };
+        byte Channel(double v) => (byte)Math.Round(255 * (nativeColors ? v : v <= .0031308 ? 12.92 * v : 1.055 * Math.Pow(v, 1 / 2.4) - .055));
+        return Color.FromArgb((byte)Math.Round(alpha * 255), Channel(values[0]), Channel(values[1]), Channel(values[2]));
+    }
+    internal static Matrix3D Transform(JObject node)
     {
         var m = Matrix3D.Identity;
         if (node["matrix"] is JArray array)

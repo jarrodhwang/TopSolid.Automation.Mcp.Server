@@ -8,8 +8,8 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools.Documents
         public static ToolDefinition Active(AutomationGateway automation)
         {
             return new ToolDefinition("topsolid_get_active_document",
-                "Get the document currently being edited in TopSolid, including its name and documentId; explicitly reports when there is no active document. Read-only; does not open any document.",
-                new JObject(), arguments => automation.GetActiveDocument(), "Documents", api: ApiRefs.Kernel("IDocuments.EditedDocument", "IDocuments.GetName"));
+                "Get the document currently being edited in TopSolid, including its name, documentId and native typeFullName; distinguish parts from CAM documents before modeling. Explicitly reports when there is no active document. Read-only; does not open any document.",
+                new JObject(), arguments => automation.GetActiveDocument(), "Documents", api: ApiRefs.Kernel("IDocuments.EditedDocument", "IDocuments.GetName", "IDocuments.GetTypeFullName"));
         }
         public static ToolDefinition Info(AutomationGateway automation)
         {

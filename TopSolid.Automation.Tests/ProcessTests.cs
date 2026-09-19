@@ -21,7 +21,7 @@ internal static class ProcessTests
         ToolExposureTests.VerifyParameterWorkflows(client.Tools.ToArray());
         ToolExposureTests.VerifyCamWorkflows(client.Tools.ToArray());
         ToolExposureTests.VerifyModelingWorkflows(client.Tools.ToArray());
-        Check.Equal(59, client.Tools.Count(t => t.RequiresConfirmation), "All 59 change tools should require confirmation");
+        Check.Equal(64, client.Tools.Count(t => t.RequiresConfirmation), "All 64 change tools should require confirmation");
         foreach (var name in new[] { "topsolid_get_status", "topsolid_get_active_document", "topsolid_get_document_info" })
             Check.True(client.Tools.Any(tool => tool.Name == name), $"Missing discovered tool: {name}");
         var status = await client.CallToolAsync("topsolid_get_status", new JObject(), timeout.Token);

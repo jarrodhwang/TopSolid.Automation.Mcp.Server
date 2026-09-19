@@ -1,4 +1,5 @@
 using System.Runtime.InteropServices;
+using System.IO;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using TopSolid.Automation.AI.Studio.AI;
@@ -21,7 +22,8 @@ public static class LogExportBuilder
         IReadOnlyList<McpToolDefinition> tools,
         IReadOnlyList<IReadOnlyList<AiMessage>> conversations,
         SessionLogSnapshot currentSession,
-        DiagnosticLog diagnosticLog)
+        DiagnosticLog diagnosticLog,
+        PermissionMode? permissionMode = null)
     {
         ArgumentNullException.ThrowIfNull(settings);
         ArgumentNullException.ThrowIfNull(settingsFilePath);
@@ -39,19 +41,21 @@ public static class LogExportBuilder
             {
                 ["name"] = "TopSolid Automation AI Studio",
                 ["version"] = typeof(LogExportBuilder).Assembly.GetName().Version?.ToString() ?? "unknown",
+                ["executablePath"] = Environment.ProcessPath,
                 ["processId"] = Environment.ProcessId,
                 ["framework"] = RuntimeInformation.FrameworkDescription,
                 ["os"] = RuntimeInformation.OSDescription,
                 ["processArchitecture"] = RuntimeInformation.ProcessArchitecture.ToString(),
                 ["is64BitProcess"] = Environment.Is64BitProcess
             },
-            ["configuration"] = Configuration(settings, settingsFilePath, lastLoadWarning, modelStatus),
+            ["configuration"] = Configuration(settings, settingsFilePath, lastLoadWarning, modelStatus, permissionMode),
             ["chat"] = SerializeChat(currentSession.Chat),
             ["conversations"] = new JArray(conversations.Select(turn => new JArray(turn.Select(SerializeMessage)))),
             ["mcp"] = new JObject
             {
                 ["connected"] = mcpConnected,
                 ["mutationInFlight"] = mutationInFlight,
+                ["configuredServerBinary"] = ServerBinary(settings.McpServerPath),
                 ["toolCount"] = tools.Count,
                 ["tools"] = SerializeTools(tools),
                 ["trace"] = SerializeTrace(currentSession.Trace)
@@ -78,10 +82,27 @@ public static class LogExportBuilder
 
         // The structured configuration intentionally contains no key values. The
         // final pass also catches a key pasted into chat or returned by an endpoint.
-        return JObject.Parse(diagnosticLog.Redact(root.ToString(Formatting.None)));
+        using var reader = new JsonTextReader(new StringReader(diagnosticLog.Redact(root.ToString(Formatting.None)))) { DateParseHandling = DateParseHandling.None };
+        return JObject.Load(reader);
     }
 
-    private static JObject Configuration(AppSettings settings, string settingsFilePath, string? lastLoadWarning, string modelStatus)
+    private static JObject ServerBinary(string path)
+    {
+        var result = new JObject { ["path"] = path, ["scope"] = "Configured file at export time; not proof of the running server version." };
+        try
+        {
+            var file = new FileInfo(path); result["exists"] = file.Exists;
+            if (file.Exists) {
+                result["fileVersion"] = System.Diagnostics.FileVersionInfo.GetVersionInfo(file.FullName).FileVersion;
+                result["lastWriteTimeUtc"] = file.LastWriteTimeUtc; result["length"] = file.Length;
+            }
+        }
+        catch (Exception error) when (error is IOException or UnauthorizedAccessException or ArgumentException or NotSupportedException or System.ComponentModel.Win32Exception or System.Security.SecurityException)
+        { result["inspectionError"] = error.GetType().Name; }
+        return result;
+    }
+
+    private static JObject Configuration(AppSettings settings, string settingsFilePath, string? lastLoadWarning, string modelStatus, PermissionMode? permissionMode)
     {
         var profiles = new JObject();
         foreach (var profile in settings.CloudProfiles.OrderBy(entry => entry.Key, StringComparer.Ordinal))
@@ -106,10 +127,13 @@ public static class LogExportBuilder
             ["requestTimeoutMinutes"] = settings.RequestTimeoutMinutes,
             ["ollamaFastGptOss"] = settings.OllamaFastGptOss,
             ["devMode"] = settings.DevMode,
+            ["permissionMode"] = permissionMode?.ToString(),
             ["appearanceMode"] = settings.AppearanceMode,
             ["interfaceLanguage"] = settings.InterfaceLanguage,
             ["responseLanguage"] = settings.ResponseLanguage,
             ["mcpServerPath"] = settings.McpServerPath,
+            ["topSolidConnection"] = JObject.FromObject(settings.TopSolidConnection),
+            ["topSolidGatewayTokenConfigured"] = !string.IsNullOrEmpty(settings.TopSolidGatewayToken),
             ["settingsFilePath"] = settingsFilePath,
             ["modelStatus"] = modelStatus,
             ["lastLoadWarning"] = lastLoadWarning,

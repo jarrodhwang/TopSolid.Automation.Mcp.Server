@@ -66,12 +66,12 @@ public sealed class ChangeConfirmationWindow : Window
 
         var header = new DockPanel();
         var headerIcon = tool.Contains("cam", StringComparison.OrdinalIgnoreCase) ? TopSolidIcons.Get(TopSolidIcons.OperationKey(proposal["target"])) : TopSolidIcons.ForTool(tool);
-        header.Children.Add(new Image { Source = headerIcon, Width = 28, Height = 28,
-            Margin = new Thickness(0, 0, 10, 0), VerticalAlignment = VerticalAlignment.Center });
+        header.Children.Add(new Image { Source = headerIcon, Width = 24, Height = 24,
+            Margin = new Thickness(0, 0, 8, 0), VerticalAlignment = VerticalAlignment.Center });
         var title = new StackPanel();
-        title.Children.Add(Text(StudioStrings.CurrentLanguage == "en" ? FriendlyName(tool) : StudioStrings.Get("Approval.Title"), 16, FontWeights.SemiBold));
+        title.Children.Add(Text(StudioStrings.CurrentLanguage == "en" ? FriendlyName(tool) : StudioStrings.Get("Approval.Title"), 15, FontWeights.SemiBold));
         var target = preview["target"] as JObject;
-        title.Children.Add(Text(TargetName(target), 14, FontWeights.Normal, new Thickness(0, 4, 0, 0)));
+        title.Children.Add(Text(TargetName(target), 13, FontWeights.Normal, new Thickness(0, 3, 0, 0)));
         header.Children.Add(title);
         var headerBar = DialogLayout.Toolbar(header);
         DockPanel.SetDock(headerBar, Dock.Top); layout.Children.Add(headerBar);
@@ -202,9 +202,9 @@ public sealed class ChangeConfirmationWindow : Window
         var panel = new StackPanel();
         var header = new DockPanel { Margin = new Thickness(0, 0, 0, 7) };
         var image = new Image { Source = icon.StartsWith("topsolid_", StringComparison.Ordinal) ? TopSolidIcons.ForTool(icon) : TopSolidIcons.Get(icon),
-            Width = 22, Height = 22, Margin = new Thickness(0, 0, 8, 0) };
+            Width = 20, Height = 20, Margin = new Thickness(0, 0, 7, 0) };
         DockPanel.SetDock(image, Dock.Left); header.Children.Add(image);
-        var title = Text(heading, 14, FontWeights.SemiBold); title.VerticalAlignment = VerticalAlignment.Center;
+        var title = Text(heading, 13, FontWeights.SemiBold); title.VerticalAlignment = VerticalAlignment.Center;
         header.Children.Add(title);
         panel.Children.Add(header); panel.Children.Add(content);
         panel.Margin = new Thickness(0, 0, 0, 14);

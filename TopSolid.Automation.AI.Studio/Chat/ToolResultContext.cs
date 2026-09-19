@@ -10,7 +10,21 @@ internal static class ToolResultContext
     // once to the model, while diagnostics retain the full transport receipt.
     internal static string Serialize(McpToolResult result)
     {
-        if (result.StructuredContent == null) return JsonConvert.SerializeObject(result);
+        if (result.StructuredContent == null)
+        {
+            // Older server tools return one JSON object inside an escaped text
+            // block. Normalize only that unambiguous case for model context.
+            // The transport result remains unchanged in diagnostics and the UI.
+            if (result.Content.Count == 1 && result.Content[0] is JObject single && (string?)single["type"] == "text" && single["text"]?.Type == JTokenType.String)
+            {
+                try {
+                    if (JToken.Parse((string)single["text"]!) is JObject data)
+                        return JsonConvert.SerializeObject(new McpToolResult { IsError = result.IsError, StructuredContent = data, Content = new JArray() });
+                }
+                catch (JsonException) { }
+            }
+            return JsonConvert.SerializeObject(result);
+        }
         var content = new JArray();
         foreach (var block in result.Content)
         {

@@ -18,6 +18,21 @@ internal static class QuestionUiTests
         var language = StudioStrings.CurrentLanguage;
         try
         {
+            StudioStrings.Apply("ko");
+            foreach (var dark in new[] { false, true })
+            {
+                TopSolidTheme.Apply(new(dark, dark ? "Dark" : "Light", "CAM selection fixture"));
+                var cam = Window(owner, CamSelectionTests.Question());
+                try
+                {
+                    cam.Show(); await Layout(cam);
+                    var visible = string.Join("\n", Descendants<TextBlock>(cam).Select(t => t.Text));
+                    Check.True(visible.Contains("T 2") && visible.Contains("페이스밀") && visible.Contains("환경 활성") &&
+                        visible.Contains("Face Mill D40 A90 L3 SD41") && !visible.Contains("공구 기능") && !visible.Contains("TopSolid.Cam"), "CAM cards leaked native names or omitted number/spec/type");
+                    render(cam, $"question-cam-number-type-ko-{(dark ? "dark" : "light")}.png");
+                }
+                finally { cam.Close(); }
+            }
             foreach (var dark in new[] { false, true })
             foreach (var locale in new[] { "en", "ko" })
             {

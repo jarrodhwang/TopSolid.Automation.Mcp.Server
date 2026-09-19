@@ -104,6 +104,9 @@ for b in bindings:
     texts=[fetch('api/'+b['module']+'/'+symbol+'.html') for symbol in symbols]
     if named_cam:
         b['description'] += ' Includes native friendly names; keep handles internal in user mode.'
+        if b['name']=='topsolid_list_cam_tools':
+            for symbol in ('TopSolid.Cam.NC.Kernel.Automating.ITools.GetParameters', 'TopSolid.Cam.NC.Kernel.Automating.IParameters.ToInvariantStringValue', 'TopSolid.Cam.NC.Kernel.Automating.ITools.GetPdmId', 'TopSolid.Kernel.Automating.IDocuments.GetDocument', 'TopSolid.Kernel.Automating.IDocuments.GetDocuments', 'TopSolid.Kernel.Automating.IDocuments.GetPdmObject'):
+                symbols.append(symbol); texts.append(fetch('api/'+('cam' if '.Cam.' in symbol else 'kernel')+'/'+symbol+'.html'))
         for symbol in ('TopSolid.Kernel.Automating.IElements.GetFriendlyName','TopSolid.Kernel.Automating.IElements.GetName'):
             symbols.append(symbol); texts.append(fetch('api/kernel/'+symbol+'.html'))
         if b['name'] in ('topsolid_list_cam_operations','topsolid_list_cam_scenario'):
@@ -130,6 +133,8 @@ for b in bindings:
     if named_cam:
         if b['name'] in ('topsolid_list_cam_operations','topsolid_list_cam_scenario'):
             expr='CamNames.OperationPage('+b['expression']+', p)'
+        elif b['name']=='topsolid_list_cam_tools':
+            expr='AutomationValues.Page('+b['expression']+', p, id => CamNames.ToolNamed(id))'
         else:
             expr='AutomationValues.Page('+b['expression']+', p, id => CamNames.Named(id))' if b['paged'] else 'AutomationValues.Result(CamNames.Named('+b['expression']+'))'
     if cam_parameters: expr='CamParameterValues.Native.Page(a.CamElement(p), p)'

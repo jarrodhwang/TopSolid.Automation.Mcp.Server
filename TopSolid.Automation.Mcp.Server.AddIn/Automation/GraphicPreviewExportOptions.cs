@@ -10,7 +10,7 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Automation
     internal static class GraphicPreviewExportOptions
     {
         // These keys/values are exposed by the installed 7.20 STL exporter. No global exporter/document settings are written.
-        internal static bool TryStl(IEnumerable<KeyValue> source, out List<KeyValue> options)
+        internal static bool TryStl(IEnumerable<KeyValue> source, out List<KeyValue> options, double toleranceScale = 1)
         {
             var available = source.ToList(); options = available;
             if (new[] { "LINEAR_TOLERANCE", "ANGULAR_TOLERANCE", "WRITE_MODE", "USER_UNIT_SET", "USER_UNIT", "AGGREGATES_SHAPES" }
@@ -20,8 +20,8 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Automation
                 var option = options[i];
                 switch (option.Key)
                 {
-                    case "LINEAR_TOLERANCE": option.Value = (GraphicPreviewQuality.LinearToleranceMm / 1000).ToString("R", CultureInfo.InvariantCulture); break;
-                    case "ANGULAR_TOLERANCE": option.Value = (GraphicPreviewQuality.AngularToleranceDegrees * Math.PI / 180).ToString("R", CultureInfo.InvariantCulture); break;
+                    case "LINEAR_TOLERANCE": option.Value = (GraphicPreviewQuality.LinearToleranceMm * toleranceScale / 1000).ToString("R", CultureInfo.InvariantCulture); break;
+                    case "ANGULAR_TOLERANCE": option.Value = (Math.Min(20, GraphicPreviewQuality.AngularToleranceDegrees * Math.Sqrt(toleranceScale)) * Math.PI / 180).ToString("R", CultureInfo.InvariantCulture); break;
                     case "WRITE_MODE": option.Value = "0"; break; // Binary STL; installed exporter mode 1 is ASCII.
                     case "USER_UNIT_SET": case "SIMPLIFY_ASSEMBLY_STRUCTURE": case "AGGREGATES_SHAPES": option.Value = "True"; break;
                     case "USER_UNIT": option.Value = "MILLIMETER"; break;

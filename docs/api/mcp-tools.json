@@ -16,6 +16,8 @@
     },
     "_meta": {
       "topsolid/category": "System",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/85b65bf08d6720dd0949f32d.md",
         "TopSolid.Automation/markdown/kernel/9fa6eec26bad4df72ced0f40.md",
@@ -27,7 +29,7 @@
   },
   {
     "name": "topsolid_get_active_document",
-    "description": "Get the document currently being edited in TopSolid, including its name and documentId; explicitly reports when there is no active document. Read-only; does not open any document.",
+    "description": "Get the document currently being edited in TopSolid, including its name, documentId and native typeFullName; distinguish parts from CAM documents before modeling. Explicitly reports when there is no active document. Read-only; does not open any document.",
     "inputSchema": {
       "type": "object",
       "properties": {},
@@ -42,9 +44,12 @@
     },
     "_meta": {
       "topsolid/category": "Documents",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/2abe34cf098008fe864a77c3.md",
-        "TopSolid.Automation/markdown/kernel/f1e87ceb36b42da8caa9ca0b.md"
+        "TopSolid.Automation/markdown/kernel/f1e87ceb36b42da8caa9ca0b.md",
+        "TopSolid.Automation/markdown/kernel/0d9681236740a05c42f5949f.md"
       ],
       "topsolid/requiresConfirmation": false
     }
@@ -73,6 +78,8 @@
     },
     "_meta": {
       "topsolid/category": "Documents",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/0d9681236740a05c42f5949f.md",
         "TopSolid.Automation/markdown/kernel/fe665cdc794696c2100f224c.md",
@@ -114,6 +121,8 @@
     },
     "_meta": {
       "topsolid/category": "Documents",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/53c6de50dadebf7c2de559ff.md"
       ],
@@ -151,6 +160,8 @@
     },
     "_meta": {
       "topsolid/category": "Documents",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/4848f4f641f7167b28af144c.md"
       ],
@@ -194,6 +205,8 @@
     },
     "_meta": {
       "topsolid/category": "Documents",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/dd99aaac130643e8560470dc.md"
       ],
@@ -237,6 +250,8 @@
     },
     "_meta": {
       "topsolid/category": "Documents",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/dd98ca0f3cfb29198c04810e.md"
       ],
@@ -290,6 +305,8 @@
     },
     "_meta": {
       "topsolid/category": "Pdm",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/fdd3a8d973f0f908362d5c0e.md",
         "TopSolid.Automation/markdown/kernel/4e7f1c4857b958fce187f95c.md",
@@ -351,6 +368,8 @@
     },
     "_meta": {
       "topsolid/category": "Pdm",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/fdd3a8d973f0f908362d5c0e.md",
         "TopSolid.Automation/markdown/kernel/4e7f1c4857b958fce187f95c.md",
@@ -382,6 +401,8 @@
     },
     "_meta": {
       "topsolid/category": "Pdm",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/814f1ae9a28dfd5f2da4cd8d.md"
       ],
@@ -419,6 +440,8 @@
     },
     "_meta": {
       "topsolid/category": "Pdm",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/36276c871539aa4113fa28f8.md"
       ],
@@ -464,6 +487,8 @@
     },
     "_meta": {
       "topsolid/category": "Pdm",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/8d6c532c94add8bc67d290c0.md"
       ],
@@ -516,6 +541,8 @@
     },
     "_meta": {
       "topsolid/category": "Pdm",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/80a9e38ac2dd041f7d64897f.md"
       ],
@@ -561,6 +588,8 @@
     },
     "_meta": {
       "topsolid/category": "Pdm",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/2e1af19f0a35ca7020d50cff.md"
       ],
@@ -606,6 +635,8 @@
     },
     "_meta": {
       "topsolid/category": "Pdm",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/aab9070c31355025b168cc52.md"
       ],
@@ -638,6 +669,8 @@
     },
     "_meta": {
       "topsolid/category": "Pdm",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/c61e39181d06798e0f8fc246.md"
       ],
@@ -681,6 +714,8 @@
     },
     "_meta": {
       "topsolid/category": "Entities",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/a13590c0aaf5ebad889b72f3.md"
       ],
@@ -719,6 +754,8 @@
     },
     "_meta": {
       "topsolid/category": "Entities",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/0e9a79e14a77f317bc86ab7f.md"
       ],
@@ -762,6 +799,8 @@
     },
     "_meta": {
       "topsolid/category": "Entities",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/ef7e40a1dd4bb57a7a0981aa.md"
       ],
@@ -805,6 +844,8 @@
     },
     "_meta": {
       "topsolid/category": "Entities",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/993b10c27e04fa60e1690371.md"
       ],
@@ -848,6 +889,8 @@
     },
     "_meta": {
       "topsolid/category": "Entities",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/800934bba78f2b4bb9a77d24.md"
       ],
@@ -891,6 +934,8 @@
     },
     "_meta": {
       "topsolid/category": "Sketch2D",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/5b0a5cf11fbe1015be25778d.md"
       ],
@@ -952,6 +997,8 @@
     },
     "_meta": {
       "topsolid/category": "Sketch2D",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/47e18a8ee1a13729c2d4a974.md"
       ],
@@ -1013,6 +1060,8 @@
     },
     "_meta": {
       "topsolid/category": "Sketch2D",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/084598012614327c7aa92b45.md"
       ],
@@ -1074,6 +1123,8 @@
     },
     "_meta": {
       "topsolid/category": "Sketch2D",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/a4d17d01540035b23ce73972.md"
       ],
@@ -1166,6 +1217,8 @@
     },
     "_meta": {
       "topsolid/category": "Sketch2D",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/179442fcaaac04f81d2d6757.md"
       ],
@@ -1271,6 +1324,8 @@
     },
     "_meta": {
       "topsolid/category": "Sketch2D",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/96e8bd5257829cf8497294fa.md"
       ],
@@ -1363,6 +1418,8 @@
     },
     "_meta": {
       "topsolid/category": "Sketch2D",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/1add43f18bb16c0b66441ee8.md"
       ],
@@ -1455,6 +1512,8 @@
     },
     "_meta": {
       "topsolid/category": "Sketch2D",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/4cf2aea13cdd76b70bdad506.md"
       ],
@@ -1498,6 +1557,8 @@
     },
     "_meta": {
       "topsolid/category": "Design2D",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/625dfacc378b3a0f87a926a7.md"
       ],
@@ -1546,6 +1607,8 @@
     },
     "_meta": {
       "topsolid/category": "Design2D",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/9e2c604019d25d582031effd.md"
       ],
@@ -1589,6 +1652,8 @@
     },
     "_meta": {
       "topsolid/category": "Sketch3D",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/210da3e3f5aba83be5a7733a.md"
       ],
@@ -1650,6 +1715,8 @@
     },
     "_meta": {
       "topsolid/category": "Sketch3D",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/1949cdc0f9fd1a742f150dba.md"
       ],
@@ -1711,6 +1778,8 @@
     },
     "_meta": {
       "topsolid/category": "Sketch3D",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/150d2ef6732d4470cfac5146.md"
       ],
@@ -1772,6 +1841,8 @@
     },
     "_meta": {
       "topsolid/category": "Sketch3D",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/d4764297811b81276e22697c.md"
       ],
@@ -1864,6 +1935,8 @@
     },
     "_meta": {
       "topsolid/category": "Sketch3D",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/df162e5105f002b272a2bad3.md"
       ],
@@ -1969,6 +2042,8 @@
     },
     "_meta": {
       "topsolid/category": "Sketch3D",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/00073be2a9bb1c90e4a55ab8.md"
       ],
@@ -2061,6 +2136,8 @@
     },
     "_meta": {
       "topsolid/category": "Sketch3D",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/c3a37e6d7cb0531669edfced.md"
       ],
@@ -2153,6 +2230,8 @@
     },
     "_meta": {
       "topsolid/category": "Sketch3D",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/92c1c36965e3556f1cdeb827.md"
       ],
@@ -2196,6 +2275,8 @@
     },
     "_meta": {
       "topsolid/category": "Design3D",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/7b99a69189c7fa15d21a72b9.md"
       ],
@@ -2244,6 +2325,8 @@
     },
     "_meta": {
       "topsolid/category": "Design3D",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/9682539f99f5d1f56ca729a7.md"
       ],
@@ -2287,6 +2370,8 @@
     },
     "_meta": {
       "topsolid/category": "Design3D",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/84a16a8744d2fb0ffa082fe0.md"
       ],
@@ -2335,6 +2420,8 @@
     },
     "_meta": {
       "topsolid/category": "Design3D",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/50e1de4edfcd70c4ed7749ac.md"
       ],
@@ -2383,6 +2470,8 @@
     },
     "_meta": {
       "topsolid/category": "Design3D",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/99876649a557ce247c44ec14.md"
       ],
@@ -2475,6 +2564,8 @@
     },
     "_meta": {
       "topsolid/category": "Design3D",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/547e1311fcf46ba4ff7068d0.md"
       ],
@@ -2567,6 +2658,8 @@
     },
     "_meta": {
       "topsolid/category": "Design3D",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/a4d6254d41dd24b3d8ce8fdc.md"
       ],
@@ -2659,6 +2752,8 @@
     },
     "_meta": {
       "topsolid/category": "Design3D",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/015e5ccbf3d055174d5397c4.md"
       ],
@@ -2720,6 +2815,8 @@
     },
     "_meta": {
       "topsolid/category": "Design3D",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/9b1616e7fb5041d2eb68b462.md"
       ],
@@ -2781,6 +2878,8 @@
     },
     "_meta": {
       "topsolid/category": "Design3D",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/d44a21d3385b65722cc0b0a1.md"
       ],
@@ -2842,6 +2941,8 @@
     },
     "_meta": {
       "topsolid/category": "Design3D",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/4acab3066709b713d8a1fd5b.md"
       ],
@@ -2885,6 +2986,8 @@
     },
     "_meta": {
       "topsolid/category": "Assembly",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/cad/5e9f20d938b49fc673d61fae.md"
       ],
@@ -2933,6 +3036,8 @@
     },
     "_meta": {
       "topsolid/category": "Assembly",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/cad/e8673b319ee22e44e3fbbb65.md"
       ],
@@ -2981,6 +3086,8 @@
     },
     "_meta": {
       "topsolid/category": "Assembly",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/9b02d119f61625a952ba4cd1.md"
       ],
@@ -3011,6 +3118,8 @@
     },
     "_meta": {
       "topsolid/category": "Tooling",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/cad/c3bac651cbe01fb7524b24ac.md"
       ],
@@ -3041,6 +3150,8 @@
     },
     "_meta": {
       "topsolid/category": "Tooling",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/cad/853e52e9a5873a440078cf8b.md"
       ],
@@ -3084,10 +3195,18 @@
     },
     "_meta": {
       "topsolid/category": "Tooling",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/cam/ff4f9e39a21888063a175535.md",
+        "TopSolid.Automation/markdown/cam/2e01a21eb1d1b99f0c2e7a31.md",
+        "TopSolid.Automation/markdown/cam/582e79bd7ff2798fbc1bd20d.md",
+        "TopSolid.Automation/markdown/cam/482a08e53c13324721e13e33.md",
         "TopSolid.Automation/markdown/kernel/00ad4ab2a0b13e9766cda09a.md",
-        "TopSolid.Automation/markdown/kernel/39b6988cdd1a6a13e5765a61.md"
+        "TopSolid.Automation/markdown/kernel/39b6988cdd1a6a13e5765a61.md",
+        "TopSolid.Automation/markdown/kernel/c61e39181d06798e0f8fc246.md",
+        "TopSolid.Automation/markdown/kernel/4848f4f641f7167b28af144c.md",
+        "TopSolid.Automation/markdown/kernel/f7dd609774188492e09e1a53.md"
       ],
       "topsolid/requiresConfirmation": false
     }
@@ -3129,6 +3248,8 @@
     },
     "_meta": {
       "topsolid/category": "Drafting",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/drafting/f01d31eb381e9dd14451c7c9.md"
       ],
@@ -3177,6 +3298,8 @@
     },
     "_meta": {
       "topsolid/category": "Drafting",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/drafting/4f67a656d4d711293901ae42.md"
       ],
@@ -3220,6 +3343,8 @@
     },
     "_meta": {
       "topsolid/category": "Electrode",
+      "topsolid/minimumVersion": "7.20",
+      "topsolid/minimumVersionValue": 720000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/electrode/4d731860454de22ee6249785.md"
       ],
@@ -3281,6 +3406,8 @@
     },
     "_meta": {
       "topsolid/category": "Electrode",
+      "topsolid/minimumVersion": "7.20",
+      "topsolid/minimumVersionValue": 720000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/electrode/f9f7f3a7ae7ac858b6ada8dc.md"
       ],
@@ -3324,6 +3451,8 @@
     },
     "_meta": {
       "topsolid/category": "Cam/PartSetup",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/cam/88c085b59a2f2c11af2a8d04.md",
         "TopSolid.Automation/markdown/kernel/00ad4ab2a0b13e9766cda09a.md",
@@ -3356,6 +3485,8 @@
     },
     "_meta": {
       "topsolid/category": "Cam/PartSetup",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/cam/2c1ac0d726c2199f2caec3fd.md"
       ],
@@ -3399,6 +3530,8 @@
     },
     "_meta": {
       "topsolid/category": "Cam/PartSetup",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/cam/a540d76e4b7a4b213eeb07ce.md",
         "TopSolid.Automation/markdown/kernel/00ad4ab2a0b13e9766cda09a.md",
@@ -3431,6 +3564,8 @@
     },
     "_meta": {
       "topsolid/category": "Cam/Machine",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/cam/bc2e1cb66a66d4e82b5846a6.md",
         "TopSolid.Automation/markdown/kernel/00ad4ab2a0b13e9766cda09a.md",
@@ -3494,6 +3629,8 @@
     },
     "_meta": {
       "topsolid/category": "Cam/Machine",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/cam/f6e8cc0467cf89bd6fe8008b.md",
         "TopSolid.Automation/markdown/kernel/00ad4ab2a0b13e9766cda09a.md",
@@ -3557,6 +3694,8 @@
     },
     "_meta": {
       "topsolid/category": "Cam/Machine",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/cam/0eeb85a1059a5b2d111aa52d.md",
         "TopSolid.Automation/markdown/kernel/00ad4ab2a0b13e9766cda09a.md",
@@ -3620,6 +3759,8 @@
     },
     "_meta": {
       "topsolid/category": "Cam/Machine",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/cam/64b28331774898b226dc8736.md",
         "TopSolid.Automation/markdown/kernel/00ad4ab2a0b13e9766cda09a.md",
@@ -3683,6 +3824,8 @@
     },
     "_meta": {
       "topsolid/category": "Cam/Machine",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/cam/8588cefe6bda4fbad318d80f.md",
         "TopSolid.Automation/markdown/kernel/00ad4ab2a0b13e9766cda09a.md",
@@ -3728,13 +3871,18 @@
     },
     "_meta": {
       "topsolid/category": "Cam/Operation",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/cam/532714cbf2a740b37c3e1df6.md",
         "TopSolid.Automation/markdown/kernel/00ad4ab2a0b13e9766cda09a.md",
         "TopSolid.Automation/markdown/kernel/39b6988cdd1a6a13e5765a61.md",
         "TopSolid.Automation/markdown/cam/2017529c190053f14ab37ad1.md",
         "TopSolid.Automation/markdown/cam/f99d7ace90902fe41d372a70.md",
-        "TopSolid.Automation/markdown/kernel/dca1c130b285f9cf39a7b304.md"
+        "TopSolid.Automation/markdown/kernel/dca1c130b285f9cf39a7b304.md",
+        "TopSolid.Automation/markdown/cam/819d528d63215318d416569a.md",
+        "TopSolid.Automation/markdown/cam/2e01a21eb1d1b99f0c2e7a31.md",
+        "TopSolid.Automation/markdown/cam/582e79bd7ff2798fbc1bd20d.md"
       ],
       "topsolid/requiresConfirmation": false
     }
@@ -3776,13 +3924,18 @@
     },
     "_meta": {
       "topsolid/category": "Cam/Operation",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/cam/d584f025d464d7e464cb07b7.md",
         "TopSolid.Automation/markdown/kernel/00ad4ab2a0b13e9766cda09a.md",
         "TopSolid.Automation/markdown/kernel/39b6988cdd1a6a13e5765a61.md",
         "TopSolid.Automation/markdown/cam/2017529c190053f14ab37ad1.md",
         "TopSolid.Automation/markdown/cam/f99d7ace90902fe41d372a70.md",
-        "TopSolid.Automation/markdown/kernel/dca1c130b285f9cf39a7b304.md"
+        "TopSolid.Automation/markdown/kernel/dca1c130b285f9cf39a7b304.md",
+        "TopSolid.Automation/markdown/cam/819d528d63215318d416569a.md",
+        "TopSolid.Automation/markdown/cam/2e01a21eb1d1b99f0c2e7a31.md",
+        "TopSolid.Automation/markdown/cam/582e79bd7ff2798fbc1bd20d.md"
       ],
       "topsolid/requiresConfirmation": false
     }
@@ -3858,6 +4011,8 @@
     },
     "_meta": {
       "topsolid/category": "Cam/Operation",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/cam/32a0a765717079fad2de41fa.md",
         "TopSolid.Automation/markdown/cam/dcfbfea956e3650d9811d8b6.md",
@@ -3925,6 +4080,8 @@
     },
     "_meta": {
       "topsolid/category": "Cam/CuttingConditions",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/cam/f0a20778835684395482669f.md"
       ],
@@ -3973,6 +4130,8 @@
     },
     "_meta": {
       "topsolid/category": "Cam/CuttingConditions",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/cam/55bc0f196bb84369325a5946.md"
       ],
@@ -4034,6 +4193,8 @@
     },
     "_meta": {
       "topsolid/category": "Cam/CuttingConditions",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/cam/fc1b04db95681f31d31f1fc1.md"
       ],
@@ -4064,6 +4225,8 @@
     },
     "_meta": {
       "topsolid/category": "Cam/Postprocessor",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/cam/72dc951b16dd1594eced3361.md"
       ],
@@ -4107,6 +4270,8 @@
     },
     "_meta": {
       "topsolid/category": "Cam/Nc",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/cam/274b1bf471062100db364edf.md"
       ],
@@ -4150,6 +4315,8 @@
     },
     "_meta": {
       "topsolid/category": "Cam/Nc",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/cam/d6c1f08dfea23e6c12435835.md"
       ],
@@ -4158,7 +4325,7 @@
   },
   {
     "name": "topsolid_is_simulation_complete",
-    "description": "Is simulation complete.",
+    "description": "Read whether the current TopSolid CAM simulation animation has completed. This does not report a verification result.",
     "inputSchema": {
       "type": "object",
       "properties": {},
@@ -4173,6 +4340,8 @@
     },
     "_meta": {
       "topsolid/category": "Cam/Simulation",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/cam/07f75e1693fab2c2eece2cb6.md"
       ],
@@ -4216,6 +4385,8 @@
     },
     "_meta": {
       "topsolid/category": "Cae",
+      "topsolid/minimumVersion": "7.20",
+      "topsolid/minimumVersionValue": 720000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/cae/ff6a8373f566fc20eb190aac.md"
       ],
@@ -4263,6 +4434,8 @@
     },
     "_meta": {
       "topsolid/category": "Documents",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/4848f4f641f7167b28af144c.md",
         "TopSolid.Automation/markdown/kernel/53c6de50dadebf7c2de559ff.md",
@@ -4312,6 +4485,8 @@
     },
     "_meta": {
       "topsolid/category": "Documents",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/dd98ca0f3cfb29198c04810e.md",
         "TopSolid.Automation/markdown/kernel/bb62180c11015a3eb32697e1.md",
@@ -4342,6 +4517,8 @@
     },
     "_meta": {
       "topsolid/category": "System",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/c61e39181d06798e0f8fc246.md",
         "TopSolid.Automation/markdown/kernel/1828deed0278236b0ce4d57f.md",
@@ -4409,6 +4586,8 @@
     },
     "_meta": {
       "topsolid/category": "Documents",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/f5ca8708c8820a4c6b14bf0b.md",
         "TopSolid.Automation/markdown/kernel/f1e87ceb36b42da8caa9ca0b.md",
@@ -4466,6 +4645,8 @@
     },
     "_meta": {
       "topsolid/category": "Documents",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/2f8b4e42cdda96227c2f243f.md",
         "TopSolid.Automation/markdown/kernel/515ca1900987bd72a3d1d489.md",
@@ -4522,6 +4703,8 @@
     },
     "_meta": {
       "topsolid/category": "Pdm",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/d70466474440760bd6e16d44.md",
         "TopSolid.Automation/markdown/kernel/4e7f1c4857b958fce187f95c.md",
@@ -4588,6 +4771,8 @@
     },
     "_meta": {
       "topsolid/category": "Pdm",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/d70466474440760bd6e16d44.md",
         "TopSolid.Automation/markdown/kernel/4e7f1c4857b958fce187f95c.md",
@@ -4640,6 +4825,8 @@
     },
     "_meta": {
       "topsolid/category": "Pdm",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/a56b27219326fc79ca0cee1f.md",
         "TopSolid.Automation/markdown/kernel/2e1af19f0a35ca7020d50cff.md",
@@ -4684,6 +4871,8 @@
     },
     "_meta": {
       "topsolid/category": "Pdm",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/fdd3a8d973f0f908362d5c0e.md",
         "TopSolid.Automation/markdown/kernel/4e7f1c4857b958fce187f95c.md",
@@ -4749,6 +4938,8 @@
     },
     "_meta": {
       "topsolid/category": "Pdm",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/d70466474440760bd6e16d44.md",
         "TopSolid.Automation/markdown/kernel/4e7f1c4857b958fce187f95c.md",
@@ -4793,6 +4984,8 @@
     },
     "_meta": {
       "topsolid/category": "Pdm",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/d70466474440760bd6e16d44.md",
         "TopSolid.Automation/markdown/kernel/4e7f1c4857b958fce187f95c.md",
@@ -4836,6 +5029,8 @@
     },
     "_meta": {
       "topsolid/category": "Pdm",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/d70466474440760bd6e16d44.md",
         "TopSolid.Automation/markdown/kernel/4e7f1c4857b958fce187f95c.md",
@@ -4883,6 +5078,8 @@
     },
     "_meta": {
       "topsolid/category": "Pdm",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/a56b27219326fc79ca0cee1f.md",
         "TopSolid.Automation/markdown/kernel/4e7f1c4857b958fce187f95c.md",
@@ -4935,6 +5132,8 @@
     },
     "_meta": {
       "topsolid/category": "Documents",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/a56b27219326fc79ca0cee1f.md",
         "TopSolid.Automation/markdown/kernel/4e7f1c4857b958fce187f95c.md",
@@ -5010,6 +5209,8 @@
     },
     "_meta": {
       "topsolid/category": "Entities",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/39b6988cdd1a6a13e5765a61.md",
         "TopSolid.Automation/markdown/kernel/00ad4ab2a0b13e9766cda09a.md",
@@ -5087,6 +5288,8 @@
     },
     "_meta": {
       "topsolid/category": "Entities",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/39b6988cdd1a6a13e5765a61.md",
         "TopSolid.Automation/markdown/kernel/00ad4ab2a0b13e9766cda09a.md",
@@ -5173,6 +5376,8 @@
     },
     "_meta": {
       "topsolid/category": "Entities",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/39b6988cdd1a6a13e5765a61.md",
         "TopSolid.Automation/markdown/kernel/00ad4ab2a0b13e9766cda09a.md",
@@ -5274,6 +5479,8 @@
     },
     "_meta": {
       "topsolid/category": "Entities",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/39b6988cdd1a6a13e5765a61.md",
         "TopSolid.Automation/markdown/kernel/00ad4ab2a0b13e9766cda09a.md",
@@ -5390,6 +5597,8 @@
     },
     "_meta": {
       "topsolid/category": "Entities",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/39b6988cdd1a6a13e5765a61.md",
         "TopSolid.Automation/markdown/kernel/00ad4ab2a0b13e9766cda09a.md",
@@ -5492,6 +5701,8 @@
     },
     "_meta": {
       "topsolid/category": "Entities",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/5edae432833326c6431136fc.md",
         "TopSolid.Automation/markdown/kernel/5f5b6c4d6526a06549249e63.md",
@@ -5552,6 +5763,8 @@
     },
     "_meta": {
       "topsolid/category": "Pdm",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/4e7f1c4857b958fce187f95c.md",
         "TopSolid.Automation/markdown/kernel/0ed8f9293b92607dcc00f585.md",
@@ -5622,6 +5835,8 @@
     },
     "_meta": {
       "topsolid/category": "Entities",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/39b6988cdd1a6a13e5765a61.md",
         "TopSolid.Automation/markdown/kernel/00ad4ab2a0b13e9766cda09a.md",
@@ -5701,6 +5916,8 @@
     },
     "_meta": {
       "topsolid/category": "Entities",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/39b6988cdd1a6a13e5765a61.md",
         "TopSolid.Automation/markdown/kernel/00ad4ab2a0b13e9766cda09a.md",
@@ -5783,6 +6000,8 @@
     },
     "_meta": {
       "topsolid/category": "Parameters",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/9f43ddb472d516846b4751d8.md",
         "TopSolid.Automation/markdown/kernel/b0b4c8b3663e647cd606e663.md",
@@ -5865,6 +6084,8 @@
     },
     "_meta": {
       "topsolid/category": "Design3D",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/84a16a8744d2fb0ffa082fe0.md",
         "TopSolid.Automation/markdown/kernel/99876649a557ce247c44ec14.md",
@@ -5914,6 +6135,8 @@
     },
     "_meta": {
       "topsolid/category": "Assembly",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/cad/5e9f20d938b49fc673d61fae.md",
         "TopSolid.Automation/markdown/cad/e8673b319ee22e44e3fbbb65.md",
@@ -5961,6 +6184,8 @@
     },
     "_meta": {
       "topsolid/category": "Cam/Operation",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/cam/532714cbf2a740b37c3e1df6.md",
         "TopSolid.Automation/markdown/cam/2017529c190053f14ab37ad1.md",
@@ -5968,6 +6193,8 @@
         "TopSolid.Automation/markdown/cam/6dcc0f6649d4eb7ba8556442.md",
         "TopSolid.Automation/markdown/cam/819d528d63215318d416569a.md",
         "TopSolid.Automation/markdown/cam/5f31f9159fd2a1dd5c6b8a7d.md",
+        "TopSolid.Automation/markdown/cam/2e01a21eb1d1b99f0c2e7a31.md",
+        "TopSolid.Automation/markdown/cam/582e79bd7ff2798fbc1bd20d.md",
         "TopSolid.Automation/markdown/kernel/00ad4ab2a0b13e9766cda09a.md",
         "TopSolid.Automation/markdown/kernel/39b6988cdd1a6a13e5765a61.md",
         "TopSolid.Automation/markdown/kernel/dca1c130b285f9cf39a7b304.md"
@@ -6042,6 +6269,8 @@
     },
     "_meta": {
       "topsolid/category": "Sketch2D",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/6e115aebfa0a81bb5705e762.md",
         "TopSolid.Automation/markdown/kernel/a4d17d01540035b23ce73972.md",
@@ -6130,6 +6359,8 @@
     },
     "_meta": {
       "topsolid/category": "Sketch3D",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/4d856e2891ddb518b996eba8.md",
         "TopSolid.Automation/markdown/kernel/d4764297811b81276e22697c.md",
@@ -6267,6 +6498,8 @@
     },
     "_meta": {
       "topsolid/category": "Entities",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/39b6988cdd1a6a13e5765a61.md",
         "TopSolid.Automation/markdown/kernel/00ad4ab2a0b13e9766cda09a.md",
@@ -6362,6 +6595,8 @@
     },
     "_meta": {
       "topsolid/category": "Entities",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/39b6988cdd1a6a13e5765a61.md",
         "TopSolid.Automation/markdown/kernel/00ad4ab2a0b13e9766cda09a.md",
@@ -6484,6 +6719,8 @@
     },
     "_meta": {
       "topsolid/category": "Entities",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/39b6988cdd1a6a13e5765a61.md",
         "TopSolid.Automation/markdown/kernel/00ad4ab2a0b13e9766cda09a.md",
@@ -6612,6 +6849,8 @@
     },
     "_meta": {
       "topsolid/category": "Entities",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/0a9c9c9d85708a3ab48f7464.md",
         "TopSolid.Automation/markdown/kernel/a8c7f42234034d2ed186ecc4.md",
@@ -6786,6 +7025,8 @@
     },
     "_meta": {
       "topsolid/category": "Design3D",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/9b1616e7fb5041d2eb68b462.md",
         "TopSolid.Automation/markdown/kernel/7dd98aabc11d4e7dc53df031.md",
@@ -6977,6 +7218,8 @@
     },
     "_meta": {
       "topsolid/category": "Parameters",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/9f43ddb472d516846b4751d8.md",
         "TopSolid.Automation/markdown/kernel/b0b4c8b3663e647cd606e663.md",
@@ -7221,6 +7464,8 @@
     },
     "_meta": {
       "topsolid/category": "Parameters",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/9f43ddb472d516846b4751d8.md",
         "TopSolid.Automation/markdown/kernel/b0b4c8b3663e647cd606e663.md",
@@ -7477,6 +7722,8 @@
     },
     "_meta": {
       "topsolid/category": "Parameters",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/9f43ddb472d516846b4751d8.md",
         "TopSolid.Automation/markdown/kernel/b0b4c8b3663e647cd606e663.md",
@@ -7638,6 +7885,8 @@
     },
     "_meta": {
       "topsolid/category": "Parameters",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/9f43ddb472d516846b4751d8.md",
         "TopSolid.Automation/markdown/kernel/b0b4c8b3663e647cd606e663.md",
@@ -7751,6 +8000,8 @@
     },
     "_meta": {
       "topsolid/category": "Parameters",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/9f43ddb472d516846b4751d8.md",
         "TopSolid.Automation/markdown/kernel/b0b4c8b3663e647cd606e663.md",
@@ -7936,6 +8187,8 @@
     },
     "_meta": {
       "topsolid/category": "Parameters",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/5334457ed3b8d4f4ae71420c.md",
         "TopSolid.Automation/markdown/kernel/f2490c1222888e234e5e2bec.md",
@@ -8146,6 +8399,8 @@
     },
     "_meta": {
       "topsolid/category": "Parameters",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/5334457ed3b8d4f4ae71420c.md",
         "TopSolid.Automation/markdown/kernel/f2490c1222888e234e5e2bec.md",
@@ -8308,6 +8563,8 @@
     },
     "_meta": {
       "topsolid/category": "Design2D",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/6c529c05715e31100d595e72.md",
         "TopSolid.Automation/markdown/kernel/a0f1f2abd4b156753075869b.md",
@@ -8401,6 +8658,8 @@
     },
     "_meta": {
       "topsolid/category": "Design2D",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/6c529c05715e31100d595e72.md",
         "TopSolid.Automation/markdown/kernel/a0f1f2abd4b156753075869b.md",
@@ -8521,6 +8780,8 @@
     },
     "_meta": {
       "topsolid/category": "Design3D",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/8038bdb69d4fb119456012ca.md",
         "TopSolid.Automation/markdown/kernel/fd2c0e8bdc2149a6634c82e8.md",
@@ -8621,6 +8882,8 @@
     },
     "_meta": {
       "topsolid/category": "Design3D",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/8038bdb69d4fb119456012ca.md",
         "TopSolid.Automation/markdown/kernel/fd2c0e8bdc2149a6634c82e8.md",
@@ -9336,6 +9599,8 @@
     },
     "_meta": {
       "topsolid/category": "Sketch2D",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/e0f0ce41c59eba529bb8a9d5.md",
         "TopSolid.Automation/markdown/kernel/2eb9f0504e2d7746f8ffe710.md",
@@ -9519,6 +9784,8 @@
     },
     "_meta": {
       "topsolid/category": "Sketch2D",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/6e115aebfa0a81bb5705e762.md",
         "TopSolid.Automation/markdown/kernel/a4d17d01540035b23ce73972.md",
@@ -9659,6 +9926,8 @@
     },
     "_meta": {
       "topsolid/category": "Sketch2D",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/6e115aebfa0a81bb5705e762.md",
         "TopSolid.Automation/markdown/kernel/a4d17d01540035b23ce73972.md",
@@ -10404,6 +10673,8 @@
     },
     "_meta": {
       "topsolid/category": "Sketch2D",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/e0f0ce41c59eba529bb8a9d5.md",
         "TopSolid.Automation/markdown/kernel/2eb9f0504e2d7746f8ffe710.md",
@@ -10522,6 +10793,8 @@
     },
     "_meta": {
       "topsolid/category": "Sketch2D",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/5b0a5cf11fbe1015be25778d.md",
         "TopSolid.Automation/markdown/kernel/6e115aebfa0a81bb5705e762.md",
@@ -10660,6 +10933,8 @@
     },
     "_meta": {
       "topsolid/category": "Sketch2D",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/6e115aebfa0a81bb5705e762.md",
         "TopSolid.Automation/markdown/kernel/bcfc671aaaebe8076688add2.md",
@@ -10766,6 +11041,8 @@
     },
     "_meta": {
       "topsolid/category": "Sketch2D",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/e0f0ce41c59eba529bb8a9d5.md",
         "TopSolid.Automation/markdown/kernel/2eb9f0504e2d7746f8ffe710.md",
@@ -11081,6 +11358,8 @@
     },
     "_meta": {
       "topsolid/category": "Design3D",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/ab87f7b52a3c66282aebf323.md",
         "TopSolid.Automation/markdown/kernel/50e1de4edfcd70c4ed7749ac.md",
@@ -11401,6 +11680,8 @@
     },
     "_meta": {
       "topsolid/category": "Design3D",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/8de325fddc6624418d716528.md",
         "TopSolid.Automation/markdown/kernel/50e1de4edfcd70c4ed7749ac.md",
@@ -11459,6 +11740,8 @@
     },
     "_meta": {
       "topsolid/category": "Pdm",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/a56b27219326fc79ca0cee1f.md",
         "TopSolid.Automation/markdown/kernel/4e7f1c4857b958fce187f95c.md",
@@ -11508,9 +11791,15 @@
     },
     "_meta": {
       "topsolid/category": "Pdm",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/9613f7d97ce6e10e2438c8e4.md",
-        "TopSolid.Automation/markdown/kernel/4e7f1c4857b958fce187f95c.md"
+        "TopSolid.Automation/markdown/kernel/4e7f1c4857b958fce187f95c.md",
+        "TopSolid.Automation/markdown/kernel/a56b27219326fc79ca0cee1f.md",
+        "TopSolid.Automation/markdown/kernel/c61e39181d06798e0f8fc246.md",
+        "TopSolid.Automation/markdown/kernel/f5ca8708c8820a4c6b14bf0b.md",
+        "TopSolid.Automation/markdown/kernel/0d9681236740a05c42f5949f.md"
       ],
       "topsolid/requiresConfirmation": false
     }
@@ -11546,6 +11835,8 @@
     },
     "_meta": {
       "topsolid/category": "License",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/8ea2968ea9f931ef97ff8c93.md",
         "TopSolid.Automation/markdown/kernel/b49940f2b43c657f1507fdaf.md",
@@ -11596,6 +11887,8 @@
     },
     "_meta": {
       "topsolid/category": "Entities",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/39b6988cdd1a6a13e5765a61.md",
         "TopSolid.Automation/markdown/kernel/00ad4ab2a0b13e9766cda09a.md",
@@ -11659,6 +11952,8 @@
     },
     "_meta": {
       "topsolid/category": "Parameters",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/9f43ddb472d516846b4751d8.md",
         "TopSolid.Automation/markdown/kernel/b0b4c8b3663e647cd606e663.md",
@@ -11732,6 +12027,8 @@
     },
     "_meta": {
       "topsolid/category": "Documents",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/bb62180c11015a3eb32697e1.md",
         "TopSolid.Automation/markdown/kernel/9d9b090ace4f049efa292926.md",
@@ -11786,12 +12083,16 @@
     },
     "_meta": {
       "topsolid/category": "Cam/Operation",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/cam/e22a0897a9bc368c89474d6a.md",
         "TopSolid.Automation/markdown/cam/2017529c190053f14ab37ad1.md",
         "TopSolid.Automation/markdown/cam/6dcc0f6649d4eb7ba8556442.md",
         "TopSolid.Automation/markdown/cam/819d528d63215318d416569a.md",
         "TopSolid.Automation/markdown/cam/5f31f9159fd2a1dd5c6b8a7d.md",
+        "TopSolid.Automation/markdown/cam/2e01a21eb1d1b99f0c2e7a31.md",
+        "TopSolid.Automation/markdown/cam/582e79bd7ff2798fbc1bd20d.md",
         "TopSolid.Automation/markdown/kernel/00ad4ab2a0b13e9766cda09a.md",
         "TopSolid.Automation/markdown/kernel/39b6988cdd1a6a13e5765a61.md"
       ],
@@ -11852,6 +12153,8 @@
     },
     "_meta": {
       "topsolid/category": "Cam/Operation",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/cam/32a0a765717079fad2de41fa.md",
         "TopSolid.Automation/markdown/cam/dcfbfea956e3650d9811d8b6.md",
@@ -11931,11 +12234,169 @@
     },
     "_meta": {
       "topsolid/category": "Cam/Nc",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/cam/f6c7ee1e8472795f76ed86a5.md",
         "TopSolid.Automation/markdown/cam/73082d6942b9378c689da089.md"
       ],
       "topsolid/requiresConfirmation": false
+    }
+  },
+  {
+    "name": "topsolid_generate_nc_for_selection",
+    "description": "Generate NC code for the selected existing CAM operations with INCPostProcessor. The selected operations are validated first; no output is reported as successful unless TopSolid returns generated NC files. Does not save the result to a user-selected PC path.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "documentId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 2048,
+          "description": "Exact target document revision ID returned by a live tool."
+        },
+        "operations": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "element": {
+                "type": "object",
+                "properties": {
+                  "documentId": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 2048,
+                    "description": "Exact document revision ID returned by a tool."
+                  },
+                  "id": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 2147483647,
+                    "description": "Element number returned by a tool."
+                  }
+                },
+                "required": [
+                  "documentId",
+                  "id"
+                ],
+                "additionalProperties": false
+              },
+              "preparationId": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 36,
+                "description": "CAM preparation identifier for an operation that is not represented by an element."
+              }
+            },
+            "additionalProperties": false
+          },
+          "minItems": 1,
+          "maxItems": 128
+        },
+        "postProcessorId": {
+          "type": "string",
+          "minLength": 0,
+          "maxLength": 512,
+          "description": "Exact post-processor identifier. Empty uses the identifier configured in the CAM document."
+        }
+      },
+      "required": [
+        "documentId",
+        "operations"
+      ],
+      "additionalProperties": false
+    },
+    "annotations": {
+      "readOnlyHint": false,
+      "destructiveHint": true,
+      "idempotentHint": false,
+      "openWorldHint": false
+    },
+    "_meta": {
+      "topsolid/category": "Cam/Nc",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
+      "topsolid/api": [
+        "TopSolid.Automation/markdown/cam/72dc951b16dd1594eced3361.md",
+        "TopSolid.Automation/markdown/cam/b4595111bbf9936af5588dd5.md",
+        "TopSolid.Automation/markdown/cam/fdc2338694f921d0e8323a40.md",
+        "TopSolid.Automation/markdown/cam/274b1bf471062100db364edf.md",
+        "TopSolid.Automation/markdown/kernel/b2be2750dc508806ec95a1de.md",
+        "TopSolid.Automation/markdown/kernel/014b5fb003be4cdeea723ef1.md",
+        "TopSolid.Automation/markdown/kernel/f7dd609774188492e09e1a53.md",
+        "TopSolid.Automation/markdown/kernel/e6fd3d6ba30f430900aac908.md"
+      ],
+      "topsolid/requiresConfirmation": true
+    }
+  },
+  {
+    "name": "topsolid_export_nc_file",
+    "description": "Export one generated NC file entity to the exact user-selected PC path through INCFiles.ExportNCCodes.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "documentId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 2048,
+          "description": "Exact target document revision ID returned by a live tool."
+        },
+        "ncFile": {
+          "type": "object",
+          "properties": {
+            "documentId": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 2048,
+              "description": "Exact document revision ID returned by a tool."
+            },
+            "id": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 2147483647,
+              "description": "Element number returned by a tool."
+            }
+          },
+          "required": [
+            "documentId",
+            "id"
+          ],
+          "additionalProperties": false
+        },
+        "fileName": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 4096,
+          "description": "Absolute destination file path chosen by the user in the PC save dialog."
+        }
+      },
+      "required": [
+        "documentId",
+        "ncFile",
+        "fileName"
+      ],
+      "additionalProperties": false
+    },
+    "annotations": {
+      "readOnlyHint": false,
+      "destructiveHint": true,
+      "idempotentHint": false,
+      "openWorldHint": false
+    },
+    "_meta": {
+      "topsolid/category": "Cam/Nc",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
+      "topsolid/api": [
+        "TopSolid.Automation/markdown/cam/3efb150b646882c72183aa7f.md",
+        "TopSolid.Automation/markdown/cam/83632bab8c12089ec98265ca.md",
+        "TopSolid.Automation/markdown/kernel/b2be2750dc508806ec95a1de.md",
+        "TopSolid.Automation/markdown/kernel/014b5fb003be4cdeea723ef1.md",
+        "TopSolid.Automation/markdown/kernel/f7dd609774188492e09e1a53.md",
+        "TopSolid.Automation/markdown/kernel/e6fd3d6ba30f430900aac908.md"
+      ],
+      "topsolid/requiresConfirmation": true
     }
   },
   {
@@ -11962,6 +12423,8 @@
     },
     "_meta": {
       "topsolid/category": "Drafting",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/drafting/2fc44fc37af000750087c7fb.md",
         "TopSolid.Automation/markdown/drafting/260995c30b52ba6a1612d103.md",
@@ -11995,6 +12458,8 @@
     },
     "_meta": {
       "topsolid/category": "Cae",
+      "topsolid/minimumVersion": "7.20",
+      "topsolid/minimumVersionValue": 720000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/cae/d729abc3238b8e0c1a0274e6.md",
         "TopSolid.Automation/markdown/cae/ff3cc082772f472123e001b4.md"
@@ -12028,6 +12493,8 @@
     },
     "_meta": {
       "topsolid/category": "Documents",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/cc8a924dfd8582ea3b358f80.md",
         "TopSolid.Automation/markdown/kernel/b2be2750dc508806ec95a1de.md",
@@ -12064,6 +12531,8 @@
     },
     "_meta": {
       "topsolid/category": "Documents",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/b6ae2450061a2862ae4ec449.md",
         "TopSolid.Automation/markdown/kernel/b2be2750dc508806ec95a1de.md",
@@ -12104,6 +12573,8 @@
     },
     "_meta": {
       "topsolid/category": "Documents",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/ff1ac1ff38bc4772c5354261.md",
         "TopSolid.Automation/markdown/kernel/971b66bf373c4b2c6a107048.md",
@@ -12143,6 +12614,8 @@
     },
     "_meta": {
       "topsolid/category": "Documents",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/ff1ac1ff38bc4772c5354261.md",
         "TopSolid.Automation/markdown/kernel/971b66bf373c4b2c6a107048.md",
@@ -12189,6 +12662,8 @@
     },
     "_meta": {
       "topsolid/category": "Documents",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/ff1ac1ff38bc4772c5354261.md",
         "TopSolid.Automation/markdown/kernel/971b66bf373c4b2c6a107048.md",
@@ -12219,6 +12694,8 @@
     },
     "_meta": {
       "topsolid/category": "Pdm",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/63c2776a003647b3c5894373.md"
       ],
@@ -12251,6 +12728,8 @@
     },
     "_meta": {
       "topsolid/category": "Pdm",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/93272df5029c03f26e2e1e68.md",
         "TopSolid.Automation/markdown/kernel/801a8ada64aa3ec9234a264e.md",
@@ -12296,6 +12775,8 @@
     },
     "_meta": {
       "topsolid/category": "Pdm",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/8402a3c713d17d2e7ab5766a.md",
         "TopSolid.Automation/markdown/kernel/801a8ada64aa3ec9234a264e.md",
@@ -12357,6 +12838,8 @@
     },
     "_meta": {
       "topsolid/category": "Pdm",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/2f77d3f32007721896828b3d.md",
         "TopSolid.Automation/markdown/kernel/801a8ada64aa3ec9234a264e.md",
@@ -12406,6 +12889,8 @@
     },
     "_meta": {
       "topsolid/category": "Pdm",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/2f77d3f32007721896828b3d.md",
         "TopSolid.Automation/markdown/kernel/801a8ada64aa3ec9234a264e.md",
@@ -12446,6 +12931,8 @@
     },
     "_meta": {
       "topsolid/category": "Pdm",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/fdd3a8d973f0f908362d5c0e.md",
         "TopSolid.Automation/markdown/kernel/4e7f1c4857b958fce187f95c.md",
@@ -12489,6 +12976,8 @@
     },
     "_meta": {
       "topsolid/category": "Pdm",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/2f77d3f32007721896828b3d.md",
         "TopSolid.Automation/markdown/kernel/f6b747fb16193942952a4afb.md",
@@ -12558,6 +13047,8 @@
     },
     "_meta": {
       "topsolid/category": "Entities",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/f9ac8cb4413aa66d46a3ca8a.md",
         "TopSolid.Automation/markdown/kernel/39b6988cdd1a6a13e5765a61.md",
@@ -12628,6 +13119,8 @@
     },
     "_meta": {
       "topsolid/category": "Entities",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/48b3929ec7231e82777bc5d9.md",
         "TopSolid.Automation/markdown/kernel/c3f9d37bde8ed78ef5556205.md",
@@ -12730,6 +13223,8 @@
     },
     "_meta": {
       "topsolid/category": "Entities",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/33cc5a9f74c6db4fae8c960b.md",
         "TopSolid.Automation/markdown/kernel/97df11d28eb436b378e6db1a.md",
@@ -12759,6 +13254,8 @@
     },
     "_meta": {
       "topsolid/category": "Entities",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/1cb97bc6ab487fae5235436c.md",
         "TopSolid.Automation/markdown/kernel/bc422069d1bcf2c5ea96128a.md"
@@ -12803,6 +13300,8 @@
     },
     "_meta": {
       "topsolid/category": "Entities",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/f7df75c292ed3701bf36abcd.md",
         "TopSolid.Automation/markdown/kernel/00b820e598130c7565bb31a4.md",
@@ -12997,6 +13496,8 @@
     },
     "_meta": {
       "topsolid/category": "Sketch2D",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/e0f0ce41c59eba529bb8a9d5.md",
         "TopSolid.Automation/markdown/kernel/2eb9f0504e2d7746f8ffe710.md",
@@ -13195,6 +13696,8 @@
     },
     "_meta": {
       "topsolid/category": "Sketch2D",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/e0f0ce41c59eba529bb8a9d5.md",
         "TopSolid.Automation/markdown/kernel/2eb9f0504e2d7746f8ffe710.md",
@@ -13316,6 +13819,8 @@
     },
     "_meta": {
       "topsolid/category": "Sketch2D",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/795ae4d9231150d607087f08.md",
         "TopSolid.Automation/markdown/kernel/5b03a50d7ae5f41521d7ea3b.md",
@@ -13383,6 +13888,8 @@
     },
     "_meta": {
       "topsolid/category": "Sketch2D",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/e91d676370419258b3b4763b.md"
       ],
@@ -13431,6 +13938,8 @@
     },
     "_meta": {
       "topsolid/category": "Sketch2D",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/8db1416dc4b2cbea505d3d62.md"
       ],
@@ -13536,6 +14045,8 @@
     },
     "_meta": {
       "topsolid/category": "Sketch2D",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/a6ec7b724b57693fd114d150.md"
       ],
@@ -13663,6 +14174,8 @@
     },
     "_meta": {
       "topsolid/category": "Sketch2D",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/6e115aebfa0a81bb5705e762.md",
         "TopSolid.Automation/markdown/kernel/47e18a8ee1a13729c2d4a974.md",
@@ -13926,6 +14439,8 @@
     },
     "_meta": {
       "topsolid/category": "Design3D",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/ab87f7b52a3c66282aebf323.md",
         "TopSolid.Automation/markdown/kernel/50e1de4edfcd70c4ed7749ac.md",
@@ -14233,6 +14748,8 @@
     },
     "_meta": {
       "topsolid/category": "Design3D",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/8de325fddc6624418d716528.md",
         "TopSolid.Automation/markdown/kernel/50e1de4edfcd70c4ed7749ac.md",
@@ -14431,6 +14948,8 @@
     },
     "_meta": {
       "topsolid/category": "Design3D",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/1a6b834ee79f0f182c524c8d.md",
         "TopSolid.Automation/markdown/kernel/50e1de4edfcd70c4ed7749ac.md",
@@ -14651,6 +15170,8 @@
     },
     "_meta": {
       "topsolid/category": "Design3D",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/cad/9b6dc2564a6156d67c8a5e01.md",
         "TopSolid.Automation/markdown/cad/82a3beea8545d83a763b760c.md",
@@ -14893,6 +15414,8 @@
     },
     "_meta": {
       "topsolid/category": "Design3D",
+      "topsolid/minimumVersion": "7.20",
+      "topsolid/minimumVersionValue": 720326000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/ab87f7b52a3c66282aebf323.md",
         "TopSolid.Automation/markdown/kernel/8de325fddc6624418d716528.md",
@@ -14996,6 +15519,8 @@
     },
     "_meta": {
       "topsolid/category": "Design3D",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/316c317d17bebe9e68ec07b5.md",
         "TopSolid.Automation/markdown/kernel/8d21566214f85da5325533c5.md",
@@ -15090,6 +15615,8 @@
     },
     "_meta": {
       "topsolid/category": "Assembly",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/cad/27107b18ac1c449dcfc8a629.md",
         "TopSolid.Automation/markdown/cad/5e9f20d938b49fc673d61fae.md",
@@ -15193,6 +15720,8 @@
     },
     "_meta": {
       "topsolid/category": "Assembly",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/cad/96143c246be39caa9dd6fd1d.md",
         "TopSolid.Automation/markdown/kernel/b2be2750dc508806ec95a1de.md",
@@ -15252,6 +15781,8 @@
     },
     "_meta": {
       "topsolid/category": "Cam/Operation",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/cam/d561ba1ef657c6c769123a00.md",
         "TopSolid.Automation/markdown/cam/e22a0897a9bc368c89474d6a.md",
@@ -15361,6 +15892,8 @@
     },
     "_meta": {
       "topsolid/category": "Cam/Operation",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/cam/32a0a765717079fad2de41fa.md",
         "TopSolid.Automation/markdown/cam/dcfbfea956e3650d9811d8b6.md",
@@ -15386,6 +15919,206 @@
         "TopSolid.Automation/markdown/cam/f99d7ace90902fe41d372a70.md",
         "TopSolid.Automation/markdown/kernel/dca1c130b285f9cf39a7b304.md",
         "TopSolid.Automation/markdown/kernel/00b820e598130c7565bb31a4.md",
+        "TopSolid.Automation/markdown/kernel/b2be2750dc508806ec95a1de.md",
+        "TopSolid.Automation/markdown/kernel/014b5fb003be4cdeea723ef1.md",
+        "TopSolid.Automation/markdown/kernel/f7dd609774188492e09e1a53.md",
+        "TopSolid.Automation/markdown/kernel/e6fd3d6ba30f430900aac908.md"
+      ],
+      "topsolid/requiresConfirmation": true
+    }
+  },
+  {
+    "name": "topsolid_simulate_cam_operation",
+    "description": "Open TopSolid's CAM simulation for one existing operation and start its animation. Requires confirmation because the documented workflow marks the target document dirty. This does not generate NC code, run a machine or prove collision safety.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "documentId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 2048,
+          "description": "Exact target document revision ID returned by a live tool."
+        },
+        "element": {
+          "type": "object",
+          "properties": {
+            "documentId": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 2048,
+              "description": "Exact document revision ID returned by a tool."
+            },
+            "id": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 2147483647,
+              "description": "Element number returned by a tool."
+            }
+          },
+          "required": [
+            "documentId",
+            "id"
+          ],
+          "additionalProperties": false
+        },
+        "animationSpeed": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100,
+          "description": "Optional animation speed on the native [0;100] scale. Omit to retain TopSolid's current speed."
+        }
+      },
+      "required": [
+        "documentId",
+        "element"
+      ],
+      "additionalProperties": false
+    },
+    "annotations": {
+      "readOnlyHint": false,
+      "destructiveHint": true,
+      "idempotentHint": false,
+      "openWorldHint": false
+    },
+    "_meta": {
+      "topsolid/category": "Cam/Simulation",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
+      "topsolid/api": [
+        "TopSolid.Automation/markdown/cam/049ebb0d1c7bdc02a5fa9a3c.md",
+        "TopSolid.Automation/markdown/cam/ee432f186883f43b316e20a0.md",
+        "TopSolid.Automation/markdown/cam/6b640c327a62234cc050caa1.md",
+        "TopSolid.Automation/markdown/cam/9aa721aeaaa41198712534ab.md",
+        "TopSolid.Automation/markdown/cam/07f75e1693fab2c2eece2cb6.md",
+        "TopSolid.Automation/markdown/cam/e22a0897a9bc368c89474d6a.md",
+        "TopSolid.Automation/markdown/kernel/ff1ac1ff38bc4772c5354261.md",
+        "TopSolid.Automation/markdown/kernel/971b66bf373c4b2c6a107048.md",
+        "TopSolid.Automation/markdown/kernel/eb60a7a8db5f572173936a9f.md",
+        "TopSolid.Automation/markdown/kernel/b2be2750dc508806ec95a1de.md",
+        "TopSolid.Automation/markdown/kernel/014b5fb003be4cdeea723ef1.md",
+        "TopSolid.Automation/markdown/kernel/f7dd609774188492e09e1a53.md",
+        "TopSolid.Automation/markdown/kernel/e6fd3d6ba30f430900aac908.md"
+      ],
+      "topsolid/requiresConfirmation": true
+    }
+  },
+  {
+    "name": "topsolid_verify_cam_operation",
+    "description": "Open TopSolid's CAM verification for one existing operation and start its animation. The optional increment is a native [0;100] movement factor and defaults to 10. This is not an NC export, machine run or collision-safety certification.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "documentId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 2048,
+          "description": "Exact target document revision ID returned by a live tool."
+        },
+        "element": {
+          "type": "object",
+          "properties": {
+            "documentId": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 2048,
+              "description": "Exact document revision ID returned by a tool."
+            },
+            "id": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 2147483647,
+              "description": "Element number returned by a tool."
+            }
+          },
+          "required": [
+            "documentId",
+            "id"
+          ],
+          "additionalProperties": false
+        },
+        "increment": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100,
+          "description": "Movement increment factor used by IVerify.SetIncrement; defaults to 10.",
+          "default": 10
+        }
+      },
+      "required": [
+        "documentId",
+        "element"
+      ],
+      "additionalProperties": false
+    },
+    "annotations": {
+      "readOnlyHint": false,
+      "destructiveHint": true,
+      "idempotentHint": false,
+      "openWorldHint": false
+    },
+    "_meta": {
+      "topsolid/category": "Cam/Simulation",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
+      "topsolid/api": [
+        "TopSolid.Automation/markdown/cam/6b2d776d8bb865294edb208e.md",
+        "TopSolid.Automation/markdown/cam/ffd30892de13b711954a75db.md",
+        "TopSolid.Automation/markdown/cam/d1b032c5b49cfd737c46e8dd.md",
+        "TopSolid.Automation/markdown/cam/e22a0897a9bc368c89474d6a.md",
+        "TopSolid.Automation/markdown/kernel/ff1ac1ff38bc4772c5354261.md",
+        "TopSolid.Automation/markdown/kernel/971b66bf373c4b2c6a107048.md",
+        "TopSolid.Automation/markdown/kernel/eb60a7a8db5f572173936a9f.md",
+        "TopSolid.Automation/markdown/kernel/b2be2750dc508806ec95a1de.md",
+        "TopSolid.Automation/markdown/kernel/014b5fb003be4cdeea723ef1.md",
+        "TopSolid.Automation/markdown/kernel/f7dd609774188492e09e1a53.md",
+        "TopSolid.Automation/markdown/kernel/e6fd3d6ba30f430900aac908.md"
+      ],
+      "topsolid/requiresConfirmation": true
+    }
+  },
+  {
+    "name": "topsolid_verify_all_cam_operations",
+    "description": "Open TopSolid's CAM verification for every operation in the target document and start its animation. The optional increment is a native [0;100] movement factor and defaults to 10. This is not an NC export, machine run or collision-safety certification.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "documentId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 2048,
+          "description": "Exact target document revision ID returned by a live tool."
+        },
+        "increment": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100,
+          "description": "Movement increment factor used by IVerify.SetIncrement; defaults to 10.",
+          "default": 10
+        }
+      },
+      "required": [
+        "documentId"
+      ],
+      "additionalProperties": false
+    },
+    "annotations": {
+      "readOnlyHint": false,
+      "destructiveHint": true,
+      "idempotentHint": false,
+      "openWorldHint": false
+    },
+    "_meta": {
+      "topsolid/category": "Cam/Simulation",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
+      "topsolid/api": [
+        "TopSolid.Automation/markdown/cam/a0e0cfd186c76254264a3cf2.md",
+        "TopSolid.Automation/markdown/cam/ffd30892de13b711954a75db.md",
+        "TopSolid.Automation/markdown/cam/d1b032c5b49cfd737c46e8dd.md",
+        "TopSolid.Automation/markdown/cam/532714cbf2a740b37c3e1df6.md",
+        "TopSolid.Automation/markdown/kernel/ff1ac1ff38bc4772c5354261.md",
+        "TopSolid.Automation/markdown/kernel/971b66bf373c4b2c6a107048.md",
+        "TopSolid.Automation/markdown/kernel/eb60a7a8db5f572173936a9f.md",
         "TopSolid.Automation/markdown/kernel/b2be2750dc508806ec95a1de.md",
         "TopSolid.Automation/markdown/kernel/014b5fb003be4cdeea723ef1.md",
         "TopSolid.Automation/markdown/kernel/f7dd609774188492e09e1a53.md",
@@ -15448,6 +16181,8 @@
     },
     "_meta": {
       "topsolid/category": "Cam/Operation",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/cam/c989dcd3cf44121a18c4782a.md",
         "TopSolid.Automation/markdown/cam/5e37744370c43e99b654988d.md",
@@ -15544,6 +16279,8 @@
     },
     "_meta": {
       "topsolid/category": "Sketch2D",
+      "topsolid/minimumVersion": "7.20",
+      "topsolid/minimumVersionValue": 720326000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/ff1ac1ff38bc4772c5354261.md",
         "TopSolid.Automation/markdown/kernel/971b66bf373c4b2c6a107048.md",
@@ -15650,6 +16387,8 @@
     },
     "_meta": {
       "topsolid/category": "Sketch2D",
+      "topsolid/minimumVersion": "7.20",
+      "topsolid/minimumVersionValue": 720326000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/ff1ac1ff38bc4772c5354261.md",
         "TopSolid.Automation/markdown/kernel/971b66bf373c4b2c6a107048.md",
@@ -15757,6 +16496,8 @@
     },
     "_meta": {
       "topsolid/category": "Sketch3D",
+      "topsolid/minimumVersion": "7.20",
+      "topsolid/minimumVersionValue": 720326000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/ff1ac1ff38bc4772c5354261.md",
         "TopSolid.Automation/markdown/kernel/971b66bf373c4b2c6a107048.md",
@@ -16096,6 +16837,8 @@
     },
     "_meta": {
       "topsolid/category": "Sketch3D",
+      "topsolid/minimumVersion": "7.20",
+      "topsolid/minimumVersionValue": 720326000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/3da97475e4d2255a077ccd6b.md",
         "TopSolid.Automation/markdown/kernel/42c07fcd6512c1b9ac54500d.md",
@@ -16215,6 +16958,8 @@
     },
     "_meta": {
       "topsolid/category": "Design3D",
+      "topsolid/minimumVersion": "7.20",
+      "topsolid/minimumVersionValue": 720326000,
       "topsolid/api": [
         "TopSolid.Automation/markdown/kernel/ff1ac1ff38bc4772c5354261.md",
         "TopSolid.Automation/markdown/kernel/971b66bf373c4b2c6a107048.md",
@@ -16259,6 +17004,8 @@
     },
     "_meta": {
       "topsolid/category": "System",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [],
       "topsolid/requiresConfirmation": false
     }
@@ -16318,6 +17065,8 @@
     },
     "_meta": {
       "topsolid/category": "System",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [],
       "topsolid/requiresConfirmation": false
     }
@@ -16360,6 +17109,8 @@
     },
     "_meta": {
       "topsolid/category": "System",
+      "topsolid/minimumVersion": "7.18",
+      "topsolid/minimumVersionValue": 718000000,
       "topsolid/api": [],
       "topsolid/requiresConfirmation": false
     }

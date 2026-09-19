@@ -18,9 +18,9 @@ The supplied light/dark color tables define the fallback palettes. TopSolid's [T
 
 ## Chat and permissions
 
-Studio language offers System default, English and Korean. Menus, settings, permissions, approval UI, transcript role labels, diagnostics headings, GPU labels and Studio-owned feedback update immediately. Unsupported system languages fall back to English. Model IDs, project names, raw tool/provider results and existing message contents retain their original text.
+Studio language offers System default, English, Korean, French, Japanese, Spanish and Portuguese. Menus, settings, permissions, approval UI, transcript role labels, diagnostics headings, GPU labels and Studio-owned feedback update immediately; untranslated Studio-owned strings use the English source text until their locale text is added. Unsupported system languages fall back to English. Model IDs, project names, raw tool/provider results and existing message contents retain their original text.
 
-AI response language is independent: Match my message, English, Korean, Japanese, Chinese, French, German or Spanish. A fixed language mapping supplies a trusted system instruction for new model turns. The choice is held stable across tool calls within an active turn; it never interprets attachment instructions as language settings or authorization. Direct MCP receipts retain their source content.
+AI response language is independent: Match my message, English, Korean, Japanese, Chinese, French, German, Spanish or Portuguese. A fixed language mapping supplies a trusted system instruction for new model turns. The choice is held stable across tool calls within an active turn; it never interprets attachment instructions as language settings or authorization. Direct MCP receipts retain their source content.
 
 Enter or Ctrl+Enter sends; Shift+Enter inserts a line break. The send button becomes Cancel while work runs. Cancellation remains disabled during a CAD commit/rollback, preserving the existing mutation contract. A failed message restores its text and selected attachments.
 

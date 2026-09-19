@@ -18,6 +18,19 @@ public sealed class LicenseWindow : Window
     private readonly Grid details = new();
     private readonly Button close = new() { IsCancel = true, IsDefault = true, MinWidth = 110 };
     private readonly TaskCompletionSource closed = new(TaskCreationOptions.RunContinuationsAsynchronously);
+    private readonly Button connectionSettings = new() { Margin = new Thickness(0, 0, 10, 0), Visibility = Visibility.Collapsed };
+    private TaskCompletionSource<bool> retry = new(TaskCreationOptions.RunContinuationsAsynchronously);
+    internal void EnableConnectionSettings(Func<bool> configure)
+    {
+        connectionSettings.SetResourceReference(ContentProperty, "Ui.Nav.TopSolidConnection");
+        connectionSettings.Click += (_, _) => { if (configure()) retry.TrySetResult(true); };
+    }
+    internal async Task<bool> WaitForRetry() => await Task.WhenAny(retry.Task, closed.Task) == retry.Task && await retry.Task;
+    internal void ShowChecking()
+    {
+        snapshot = null; connectionSettings.Visibility = Visibility.Collapsed;
+        retry = new(TaskCreationOptions.RunContinuationsAsynchronously); Render();
+    }
     private TopSolidLicenseStatus? snapshot;
     private bool exitAfterClose;
     internal Task ClosedTask => closed.Task;
@@ -36,6 +49,7 @@ public sealed class LicenseWindow : Window
         title.SetResourceReference(TextBlock.TextProperty, "Ui.License.Title");
         var header = DialogLayout.Toolbar(DialogLayout.Heading(Icon, title)); DockPanel.SetDock(header, Dock.Top); root.Children.Add(header);
         var actions = new StackPanel { Orientation = Orientation.Horizontal, HorizontalAlignment = HorizontalAlignment.Right };
+        actions.Children.Add(connectionSettings);
         DialogLayout.Command(close, "cancel"); close.Click += (_, _) => Close(); actions.Children.Add(close);
         var footer = DialogLayout.Footer(actions); DockPanel.SetDock(footer, Dock.Bottom); root.Children.Add(footer);
         var body = new StackPanel();
@@ -64,6 +78,7 @@ public sealed class LicenseWindow : Window
             if (IsVisible) { Left = center.X - Width / 2; Top = center.Y - Height / 2; }
         }
         snapshot = status; exitAfterClose = closeApplication; Render();
+        connectionSettings.Visibility = closeApplication ? Visibility.Visible : Visibility.Collapsed;
     }
 
     private void Render()

@@ -10,6 +10,21 @@ internal static class PreviewTarget
     internal static JObject? FromChoice(JObject receipt, string kind)
     {
         if (kind is "project" or "library" or "option") return null;
+        if (kind == "tool" || (string?)receipt["sourceTool"] == "topsolid_list_cam_tools")
+        {
+            // The tool's owner is the machining document, never the tool preview target.
+            // Only the referenced library document resolved by the server is eligible.
+            return receipt["value"]?["toolPreviewDocumentId"] is JValue { Type: JTokenType.String } document &&
+                !string.IsNullOrWhiteSpace((string?)document)
+                ? new JObject { ["documentId"] = document.DeepClone() } : null;
+        }
+        if (kind == "operation" && receipt["value"] is JObject row)
+        {
+            var operation = row["operation"] as JObject;
+            var element = operation?["element"] as JObject ?? operation;
+            if (element?["documentId"]?.Type == JTokenType.String && element["id"]?.Type == JTokenType.Integer)
+                return new JObject { ["documentId"] = element["documentId"]!.DeepClone(), ["operation"] = element.DeepClone() };
+        }
         var target = FromValue(receipt["value"]);
         if (target != null) return target;
         if (kind is "document" or "machine" && receipt["value"] is JObject value)

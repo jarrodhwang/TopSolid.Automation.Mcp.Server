@@ -1,4 +1,5 @@
 using System.Windows.Input;
+using System.Windows;
 
 namespace TopSolid.Automation.AI.Studio.Preview;
 
@@ -13,4 +14,10 @@ internal static class PreviewNavigation
         MouseButton.Right => PreviewDrag.Pan,
         _ => PreviewDrag.None
     };
+
+    // TopSolid turns the viewed part with the pointer. Horizontal camera motion
+    // is inverse to the screen drag, while vertical motion follows the screen
+    // drag's Y direction (WPF Y grows down). Keep the axes explicit so a future
+    // renderer cannot silently reintroduce the old vertical inversion.
+    internal static (double Horizontal, double Vertical) OrbitDelta(Vector delta) => (-delta.X * .008, delta.Y * .008);
 }

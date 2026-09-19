@@ -70,6 +70,15 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
             catch (Exception ex) { row["operationTypeUnavailable"] = true; row["operationTypeError"] = ex.GetType().Name; }
         }
         internal static JToken Named(ElementId id) => Enrich(AutomationValues.Json(id), () => Name(id));
+        internal static JToken ToolNamed(ElementId id)
+        {
+            var row = (JObject)Named(id);
+            row["nativeName"] = row["name"]?.DeepClone();
+            row.Merge(CamToolPresentation.Read(id));
+            row["name"] = row["toolDefinitionName"]?.DeepClone();
+            row["friendlyName"] = row["toolDisplayName"]?.DeepClone();
+            return row;
+        }
         internal static JToken Named(ElementExId id) => Enrich(AutomationValues.Json(id), () => Name(id));
         private static JToken Enrich(JToken value, Func<string> read)
         {
@@ -106,6 +115,12 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
                     if (toolDisplayCache != null) toolDisplayCache[tool] = display;
                 }
                 result.Merge(display.DeepClone());
+                if (result["toolInfo"] is JObject info)
+                {
+                    info["nativeName"] = info["name"]?.DeepClone();
+                    info["name"] = display["toolDefinitionName"]?.DeepClone();
+                    info["friendlyName"] = display["toolDisplayName"]?.DeepClone();
+                }
             }
         }
     }

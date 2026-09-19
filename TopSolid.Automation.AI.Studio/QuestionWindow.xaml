@@ -6,22 +6,22 @@
         WindowStartupLocation="CenterOwner" Background="{DynamicResource WindowBrush}" Foreground="{DynamicResource TextBrush}">
     <Window.Resources>
         <Style x:Key="QuestionInput" TargetType="TextBox" BasedOn="{StaticResource {x:Type TextBox}}">
-            <Setter Property="Padding" Value="10,7"/><Setter Property="FontSize" Value="14"/>
-            <Setter Property="MinHeight" Value="36"/><Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Padding" Value="9,6"/><Setter Property="FontSize" Value="13"/>
+            <Setter Property="MinHeight" Value="34"/><Setter Property="VerticalContentAlignment" Value="Center"/>
         </Style>
         <Style x:Key="ChoiceCard" TargetType="ListBoxItem">
-            <Setter Property="HorizontalContentAlignment" Value="Stretch"/><Setter Property="Margin" Value="0,0,6,8"/>
-            <Setter Property="Padding" Value="12,10"/><Setter Property="Background" Value="{DynamicResource SurfaceBrush}"/>
+            <Setter Property="HorizontalContentAlignment" Value="Stretch"/><Setter Property="Margin" Value="0,0,6,6"/>
+            <Setter Property="Padding" Value="10,8"/><Setter Property="Background" Value="{DynamicResource SurfaceBrush}"/>
             <Setter Property="BorderBrush" Value="{DynamicResource BorderBrush}"/><Setter Property="BorderThickness" Value="1"/>
             <Setter Property="AutomationProperties.Name" Value="{Binding Label}"/>
             <Setter Property="AutomationProperties.HelpText" Value="{Binding AccessibleDescription}"/>
             <Setter Property="Template"><Setter.Value><ControlTemplate TargetType="ListBoxItem">
-                <Border x:Name="Card" CornerRadius="3" Padding="{TemplateBinding Padding}" Background="{TemplateBinding Background}"
+                <Border x:Name="Card" CornerRadius="2" Padding="{TemplateBinding Padding}" Background="{TemplateBinding Background}"
                         BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
-                    <Grid><Grid.ColumnDefinitions><ColumnDefinition Width="*"/><ColumnDefinition Width="26"/></Grid.ColumnDefinitions>
+                    <Grid><Grid.ColumnDefinitions><ColumnDefinition Width="*"/><ColumnDefinition Width="24"/></Grid.ColumnDefinitions>
                         <ContentPresenter/>
-                        <Border x:Name="SelectedBadge" Grid.Column="1" Width="22" Height="22" CornerRadius="11" Background="{DynamicResource AccentBrush}" Visibility="Hidden">
-                            <TextBlock Text="✓" FontSize="15" FontWeight="SemiBold" HorizontalAlignment="Center" Foreground="{DynamicResource AccentTextBrush}"/>
+                        <Border x:Name="SelectedBadge" Grid.Column="1" Width="20" Height="20" CornerRadius="10" Background="{DynamicResource AccentBrush}" Visibility="Hidden">
+                            <TextBlock Text="✓" FontSize="14" FontWeight="SemiBold" HorizontalAlignment="Center" Foreground="{DynamicResource AccentTextBrush}"/>
                         </Border>
                     </Grid>
                 </Border>
@@ -36,19 +36,20 @@
     <Grid>
         <Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="*"/><RowDefinition Height="Auto"/></Grid.RowDefinitions>
         <Border Style="{StaticResource DialogToolbar}">
-            <Grid><Grid.ColumnDefinitions><ColumnDefinition Width="38"/><ColumnDefinition Width="*"/></Grid.ColumnDefinitions>
-                <Image x:Name="QuestionIcon" Width="28" Height="28" HorizontalAlignment="Left"/>
-                <StackPanel Grid.Column="1"><TextBlock x:Name="QuestionTitle" FontSize="16" FontWeight="SemiBold" TextWrapping="Wrap"/>
-                    <TextBlock x:Name="QuestionHint" Margin="0,4,0,0" Foreground="{DynamicResource MutedTextBrush}" TextWrapping="Wrap"/></StackPanel>
+            <Grid><Grid.ColumnDefinitions><ColumnDefinition Width="34"/><ColumnDefinition Width="*"/></Grid.ColumnDefinitions>
+                <Image x:Name="QuestionIcon" Width="24" Height="24" HorizontalAlignment="Left"/>
+                <StackPanel Grid.Column="1"><TextBlock x:Name="QuestionTitle" FontSize="15" FontWeight="SemiBold" TextWrapping="Wrap"/>
+                    <TextBlock x:Name="QuestionHint" Margin="0,3,0,0" Foreground="{DynamicResource MutedTextBrush}" TextWrapping="Wrap"/>
+                    <TextBlock x:Name="QuestionContext" Margin="0,4,0,0" FontSize="11" Foreground="{DynamicResource AccentBrush}" TextWrapping="Wrap" Visibility="Collapsed"/></StackPanel>
             </Grid>
         </Border>
         <ContentControl x:Name="BodyHost" Grid.Row="1" Margin="16" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch">
         <Grid x:Name="QuestionBody">
         <Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="*"/></Grid.RowDefinitions>
-        <StackPanel x:Name="SearchPanel" Margin="0,0,0,12">
-            <TextBlock Text="{DynamicResource Ui.Question.Search}" Margin="0,0,0,5"/>
+        <StackPanel x:Name="SearchPanel" Margin="0,0,0,10">
+            <TextBlock Text="{DynamicResource Ui.Question.Search}" Margin="0,0,0,4"/>
             <TextBox x:Name="SearchBox" Style="{StaticResource QuestionInput}" AutomationProperties.Name="{DynamicResource Ui.Question.Search}"/>
-            <DockPanel Margin="0,8,0,0">
+            <DockPanel Margin="0,6,0,0">
                 <Button x:Name="ClearSelection" DockPanel.Dock="Right" Content="{DynamicResource Ui.Question.ClearSelection}" Padding="8,3" MinHeight="24" Background="Transparent" BorderThickness="0" HorizontalAlignment="Right"/>
                 <TextBlock x:Name="SelectionCount" Foreground="{DynamicResource MutedTextBrush}"/>
             </DockPanel>
@@ -58,16 +59,16 @@
             <ListBox x:Name="ChoiceList" Background="Transparent" BorderThickness="0" ItemContainerStyle="{StaticResource ChoiceCard}"
                      ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Auto"
                      ScrollViewer.CanContentScroll="True" VirtualizingPanel.IsVirtualizing="True" VirtualizingPanel.VirtualizationMode="Recycling">
-                <ListBox.ItemTemplate><DataTemplate><Grid><Grid.ColumnDefinitions><ColumnDefinition Width="42"/><ColumnDefinition Width="*"/><ColumnDefinition Width="{Binding ToolColumnWidth}"/></Grid.ColumnDefinitions>
-                    <Image Source="{Binding Icon}" Width="28" Height="28" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-                    <StackPanel Grid.Column="1"><TextBlock Text="{Binding Label}" FontSize="16" FontWeight="SemiBold" TextWrapping="Wrap" Foreground="{DynamicResource TextBrush}"/>
-                        <TextBlock Text="{Binding Detail}" FontSize="12" Margin="0,5,8,0" TextWrapping="Wrap" Foreground="{DynamicResource MutedTextBrush}">
+            <ListBox.ItemTemplate><DataTemplate><Grid><Grid.ColumnDefinitions><ColumnDefinition Width="34"/><ColumnDefinition Width="*"/><ColumnDefinition Width="{Binding ToolColumnWidth}"/></Grid.ColumnDefinitions>
+                    <Image Source="{Binding Icon}" Width="24" Height="24" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    <StackPanel Grid.Column="1"><TextBlock Text="{Binding Label}" FontSize="15" FontWeight="SemiBold" TextWrapping="Wrap" Foreground="{DynamicResource TextBrush}"/>
+                        <TextBlock Text="{Binding Detail}" FontSize="12" Margin="0,3,8,0" TextWrapping="Wrap" Foreground="{DynamicResource MutedTextBrush}">
                             <TextBlock.Style><Style TargetType="TextBlock"><Style.Triggers><Trigger Property="Text" Value=""><Setter Property="Visibility" Value="Collapsed"/></Trigger></Style.Triggers></Style></TextBlock.Style>
                         </TextBlock>
                     </StackPanel>
-                    <Grid Grid.Column="2" Margin="18,0,0,0" Visibility="{Binding ToolVisibility}" VerticalAlignment="Center">
-                        <Grid.ColumnDefinitions><ColumnDefinition Width="48"/><ColumnDefinition Width="*"/></Grid.ColumnDefinitions>
-                        <Image Source="{Binding ToolIcon}" Width="40" Height="40" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    <Grid Grid.Column="2" Margin="14,0,0,0" Visibility="{Binding ToolVisibility}" VerticalAlignment="Center">
+                        <Grid.ColumnDefinitions><ColumnDefinition Width="44"/><ColumnDefinition Width="*"/></Grid.ColumnDefinitions>
+                        <Image Source="{Binding ToolIcon}" Width="36" Height="36" HorizontalAlignment="Left" VerticalAlignment="Center"/>
                         <TextBlock Grid.Column="1" Text="{Binding ToolText}" FontSize="16" FontWeight="SemiBold" TextWrapping="Wrap" VerticalAlignment="Center" Foreground="{DynamicResource TextBrush}"/>
                     </Grid>
                 </Grid></DataTemplate></ListBox.ItemTemplate>
@@ -103,6 +104,7 @@
         <Border Grid.Row="2" Style="{StaticResource DialogFooter}">
         <DockPanel>
             <StackPanel DockPanel.Dock="Right" Orientation="Horizontal" Margin="12,0,0,0">
+                <Button x:Name="LoadMore" Content="{DynamicResource Ui.List.More}" Visibility="Collapsed" MinWidth="100" Margin="0,0,8,0"/>
                 <Button x:Name="CancelQuestion" Content="{DynamicResource Ui.Question.Cancel}" IsCancel="True" MinWidth="100" Margin="0,0,8,0" Style="{StaticResource NativeToolButton}"/>
                 <Button x:Name="ContinueQuestion" Content="{DynamicResource Ui.Question.Continue}" IsDefault="True" MinWidth="110" Style="{StaticResource NativeToolButton}"/>
             </StackPanel>
