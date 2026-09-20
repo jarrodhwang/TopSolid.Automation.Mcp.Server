@@ -23,29 +23,44 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
                 {
                     var operation = RequireOperation(a.Element(current));
                     TopSolidCamHost.Simulation.Open(operation);
-                    if (current["animationSpeed"] != null)
-                        TopSolidCamHost.Simulation.SetAnimationSpeed((int)current["animationSpeed"]);
-                    TopSolidCamHost.Simulation.StartAnimation();
-                    return new JObject
+                    try
                     {
-                        ["mode"] = "simulation",
-                        ["started"] = true,
-                        ["operation"] = AutomationValues.Json(operation),
-                        ["operationName"] = CamNames.OperationName(new ElementExId(operation)),
-                        ["animationSpeed"] = TopSolidCamHost.Simulation.GetAnimationSpeed(),
-                        ["simulationComplete"] = TopSolidCamHost.Simulation.IsSimulationComplete(),
-                        ["ncGenerated"] = false,
-                        ["machineStarted"] = false,
-                        ["collisionSafetyVerified"] = false
-                    };
+                        if (current["animationSpeed"] != null)
+                            TopSolidCamHost.Simulation.SetAnimationSpeed((int)current["animationSpeed"]);
+                        TopSolidCamHost.Simulation.StartAnimation();
+                        var elapsed = CamAnimationLifecycle.WaitForCompletion(TopSolidCamHost.Simulation.IsSimulationComplete);
+                        return new JObject
+                        {
+                            ["mode"] = "simulation",
+                            ["started"] = true,
+                            ["completed"] = true,
+                            ["operation"] = AutomationValues.Json(operation),
+                            ["operationName"] = CamNames.OperationName(new ElementExId(operation)),
+                            ["animationSpeed"] = TopSolidCamHost.Simulation.GetAnimationSpeed(),
+                            ["simulationComplete"] = true,
+                            ["animationElapsedMilliseconds"] = elapsed.TotalMilliseconds,
+                            ["ncGenerated"] = false,
+                            ["machineStarted"] = false,
+                            ["collisionSafetyVerified"] = false
+                        };
+                    }
+                    catch (Exception failure)
+                    {
+                        try { TopSolidCamHost.Simulation.Close(); }
+                        catch (Exception closeFailure)
+                        {
+                            throw new AggregateException("CAM simulation failed and could not be closed before the document rollback.", failure, closeFailure);
+                        }
+                        throw;
+                    }
                 }),
                 "Cam/Simulation", new[] { "documentId", "element" }, false,
-                ApiRefs.Cam("ISimulation.Open", "ISimulation.SetAnimationSpeed", "ISimulation.StartAnimation", "ISimulation.GetAnimationSpeed", "ISimulation.IsSimulationComplete", "IOperations.IsOperation")
+                ApiRefs.Cam("ISimulation.Open", "ISimulation.SetAnimationSpeed", "ISimulation.StartAnimation", "ISimulation.Close", "ISimulation.GetAnimationSpeed", "ISimulation.IsSimulationComplete", "IOperations.IsOperation")
                     .Concat(ApiRefs.Kernel("IApplication.StartModification", "IApplication.EndModification", "IDocuments.EnsureIsDirty"))
                     .ToArray(),
                 MutationReferences.Validate,
                 p => PreviewOperation(a, p),
-                "Open and animate the selected existing CAM operation. The target document is made dirty by the documented TopSolid workflow; do not save automatically."));
+                "Open and animate the selected existing CAM operation, waiting for native animation completion before committing the modification. The target document is made dirty by the documented TopSolid workflow; do not save automatically."));
 
             var verifyOne = DocumentActionTools.Target();
             verifyOne["element"] = Schema.Element();

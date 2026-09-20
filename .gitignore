@@ -6,4 +6,5 @@ artifacts/
 TestResults/
 __pycache__/
 *.py[cod]
-docs/api
+
+docs

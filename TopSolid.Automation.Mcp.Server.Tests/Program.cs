@@ -23,7 +23,7 @@ namespace TopSolid.Automation.Mcp.Server.Tests
                 if (args.Length == 1 && args[0] == "--gateway-transport") { GatewayTransport(); return 0; }
                 if (args.Length == 1 && args[0] == "--probe-sketch-reads") return SketchReadProbe();
                 if (args.Length == 1 && args[0] == "--probe-cam-tools") return CamToolReadProbe();
-                Connections(); VersionSupport(); Confirmation(); Transactions(); Geometry(); SchemaAndCatalog(); WorkflowExpansion(); PagedNames(); BatchTools(); PdmDateSorting(); ObjectIdentityRules(); SketchPlans(); DocumentCreation(); Persistence(); SketchPrimitives(); SketchReliability(); ParameterEntities(); ModelingWorkflows(); CreationNaming(); CamParameters(); GraphicPreview(); Licenses();
+                Connections(); VersionSupport(); Confirmation(); Transactions(); Geometry(); SchemaAndCatalog(); WorkflowExpansion(); PagedNames(); BatchTools(); PdmDateSorting(); ObjectIdentityRules(); SketchPlans(); DocumentCreation(); Persistence(); SketchPrimitives(); SketchReliability(); ParameterEntities(); ModelingWorkflows(); CreationNaming(); CamParameters(); CamSimulationLifecycle(); GraphicPreview(); Licenses();
                 Console.WriteLine("PASS: " + checks + " server checks. No TopSolid connection or CAD mutation was performed."); return 0;
             }
             catch (Exception e) { Console.Error.WriteLine(e); return 1; }

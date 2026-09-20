@@ -15,6 +15,16 @@ namespace TopSolid.Automation.Mcp.Server.Tests
 {
     internal static partial class Program
     {
+        private static void CamSimulationLifecycle()
+        {
+            var reads = 0;
+            var elapsed = CamAnimationLifecycle.WaitForCompletion(() => ++reads > 1, TimeSpan.FromSeconds(1));
+            Check(reads == 2 && elapsed >= TimeSpan.Zero, "Completed CAM animation was not allowed to settle before commit");
+
+            var timeout = Throws<TimeoutException>(() => CamAnimationLifecycle.WaitForCompletion(() => false, TimeSpan.FromMilliseconds(1)));
+            Check(timeout.Message.Contains("CAM animation did not complete"), "CAM animation timeout did not produce an actionable failure");
+        }
+
         private static void CamParameters()
         {
             var toolFields = new Dictionary<string, string> { ["ToolDefinitionName"] = " Ball Nose Mill D10 L25 SD10 ",
