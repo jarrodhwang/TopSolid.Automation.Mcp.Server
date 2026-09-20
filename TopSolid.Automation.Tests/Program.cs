@@ -4,7 +4,14 @@ internal static class Program
 {
     private static async Task<int> Main(string[] args)
     {
-        if (args.Length == 4 && args[0] == "--live-native-toolpath") { await NativeToolpathLiveTests.Run(args[1], args[2], int.Parse(args[3])); return 0; }
+        if (args.Length == 1 && args[0] == "--cam-automation") { await CamAutomationTests.Run(); Console.WriteLine("PASS CAM automation review, execution boundaries, persistence, and face mapping."); return 0; }
+        if (args.Length == 1 && args[0] == "--cam-automation-ui") { UiShellTests.CamAutomationOnly = true; await UiShellTests.Run(); return 0; }
+        if (args.Length == 1 && args[0] == "--cam-colors") { await CamColorTests.Run(); Console.WriteLine("PASS CAM color workflow and context modes."); return 0; }
+        if (args.Length == 1 && args[0] == "--cam-colors-ui") { UiShellTests.CamColorsOnly=true; await UiShellTests.Run(); return 0; }
+        if (args.Length == 1 && args[0] == "--cam-document-browse-ui") { UiShellTests.CamDocumentBrowseOnly = true; await UiShellTests.Run(); return 0; }
+        if (args.Length == 3 && args[0] == "--cam-document-browse-live") { await CamDocumentBrowseTests.Live(args[1], args[2]); return 0; }
+        if (args.Length == 2 && args[0] == "--cam-layers-gpu") { await CamLayersGpuTests.Run(args[1]); return 0; }
+        if (args.Length == 4 && args[0] == "--live-toolpath-geometry") { await ToolpathGeometryLiveTests.Run(args[1], args[2], int.Parse(args[3])); return 0; }
         if (args.Length == 1 && args[0] == "--toolpath-preview-ui") { UiShellTests.ToolpathOnly = true; await UiShellTests.Run(); return 0; }
         if (args.Length == 2 && args[0] == "--cam-context") { await CamWorkflowImprovementTests.Context(args[1]); return 0; }
         if (args.Length == 2 && args[0] == "--live-cam-context") { await CamWorkflowImprovementTests.LiveContext(args[1]); return 0; }
@@ -92,6 +99,8 @@ internal static class Program
         if (approvedNativePlan != null && liveUiOllamaModel == null) throw new ArgumentException("An approved native test requires an explicitly selected live Ollama model.");
         var cases = new List<(string Name, Func<Task> Run)>
         {
+            ("CAD/CAM context persistence and reviewed CAM color workflow", CamColorTests.Run),
+            ("CAM automation process planning and execution", CamAutomationTests.Run),
             ("Cloud HTTP request -> MCP tool -> tool result -> final answer", ProviderTests.OpenAiToolLoop),
             ("Ollama HTTP request -> MCP tool -> tool result -> final answer", ProviderTests.OllamaToolLoop),
             ("Cloud and Ollama model discovery", ProviderTests.ModelDiscovery),
@@ -136,6 +145,7 @@ internal static class Program
         cases.Add(("Receipt-backed question choices, typed inputs, images, cancellation and separate approval", UserQuestionTests.Run));
         cases.Add(("Automatic list dialogs, exact selection scope, empty results and read-only pagination", ListPresentationTests.Run));
         cases.Add(("Explicit project/document/operation/tool/sketch selection dialogs use receipts without inference", SelectionRequestTests.Run));
+        cases.Add(("Project to CAM document to operations: scoped receipts, paging, back, cancellation and confirmed opening", CamDocumentBrowseTests.Run));
         cases.Add(("Operation toolpath requests resolve an operation and open the read-only preview", ToolpathPreviewTests.Run));
         cases.Add(("Native tool names/icons/library previews and paged GLB color/transparency", ToolPreviewRegressionTests.Run));
         cases.Add(("NC generation selects operations, configured post-processor, generates, and exports", NcGenerationTests.Run));

@@ -5,6 +5,51 @@
         Width="690" Height="650" MinWidth="470" MinHeight="440" ShowInTaskbar="False"
         WindowStartupLocation="CenterOwner" Background="{DynamicResource WindowBrush}" Foreground="{DynamicResource TextBrush}">
     <Window.Resources>
+        <Style x:Key="OperationToolText" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="14"/><Setter Property="LineHeight" Value="20"/>
+            <Setter Property="LineStackingStrategy" Value="BlockLineHeight"/><Setter Property="TextWrapping" Value="Wrap"/>
+            <Setter Property="Foreground" Value="{DynamicResource TextBrush}"/>
+        </Style>
+        <Style x:Key="OperationSecondaryText" TargetType="TextBlock" BasedOn="{StaticResource OperationToolText}">
+            <Setter Property="FontSize" Value="12"/><Setter Property="LineHeight" Value="18"/>
+            <Setter Property="Foreground" Value="{DynamicResource MutedTextBrush}"/>
+            <Style.Triggers><Trigger Property="Text" Value=""><Setter Property="Visibility" Value="Collapsed"/></Trigger></Style.Triggers>
+        </Style>
+        <Style x:Key="OperationCardSecondaryText" TargetType="TextBlock" BasedOn="{StaticResource OperationSecondaryText}">
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding IsSelected, RelativeSource={RelativeSource AncestorType=ListBoxItem}}" Value="True">
+                    <Setter Property="Foreground" Value="{DynamicResource SelectionTextBrush}"/>
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+        <DataTemplate x:Key="OperationCardContent">
+            <Grid TextOptions.TextFormattingMode="Display" TextOptions.TextRenderingMode="ClearType" UseLayoutRounding="True">
+                <Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/></Grid.RowDefinitions>
+                <Grid.ColumnDefinitions><ColumnDefinition Width="32"/><ColumnDefinition Width="*"/></Grid.ColumnDefinitions>
+                <Image Source="{Binding Icon}" Width="24" Height="24" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,1,0,0"/>
+                <StackPanel Grid.Column="1">
+                    <TextBlock Text="{Binding Label}" FontSize="15" FontWeight="SemiBold" TextWrapping="Wrap" LineHeight="22"
+                               LineStackingStrategy="BlockLineHeight" Foreground="{DynamicResource TextBrush}"/>
+                    <TextBlock Text="{Binding Detail}" Style="{StaticResource OperationCardSecondaryText}" Margin="0,2,0,0"/>
+                </StackPanel>
+                <Border Grid.Row="1" Grid.ColumnSpan="2" Margin="0,9,0,0" Padding="0,8,0,0" BorderThickness="0,1,0,0"
+                        BorderBrush="{DynamicResource BorderBrush}" Visibility="{Binding ToolVisibility}">
+                    <Grid>
+                        <Grid.ColumnDefinitions><ColumnDefinition Width="32"/><ColumnDefinition Width="Auto"/><ColumnDefinition Width="*"/></Grid.ColumnDefinitions>
+                        <Image Source="{Binding ToolIcon}" Width="22" Height="22" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                        <Border Grid.Column="1" Padding="6,1" Margin="0,0,8,0" MinWidth="36" CornerRadius="3" VerticalAlignment="Top"
+                                Background="{DynamicResource SurfaceBrush}" BorderBrush="{DynamicResource BorderBrush}" BorderThickness="1">
+                            <Border.Style><Style TargetType="Border"><Style.Triggers><DataTrigger Binding="{Binding ToolPocket}" Value=""><Setter Property="Visibility" Value="Collapsed"/></DataTrigger></Style.Triggers></Style></Border.Style>
+                            <TextBlock Text="{Binding ToolPocket}" FontSize="13" FontWeight="SemiBold" Foreground="{DynamicResource TextBrush}" TextAlignment="Center"/>
+                        </Border>
+                        <StackPanel Grid.Column="2">
+                            <TextBlock x:Name="OperationToolName" Text="{Binding ToolName}" Style="{StaticResource OperationToolText}"/>
+                            <TextBlock Text="{Binding ToolKind}" Style="{StaticResource OperationCardSecondaryText}" Margin="0,2,0,0"/>
+                        </StackPanel>
+                    </Grid>
+                </Border>
+            </Grid>
+        </DataTemplate>
         <Style x:Key="QuestionInput" TargetType="TextBox" BasedOn="{StaticResource {x:Type TextBox}}">
             <Setter Property="Padding" Value="9,6"/><Setter Property="FontSize" Value="13"/>
             <Setter Property="MinHeight" Value="34"/><Setter Property="VerticalContentAlignment" Value="Center"/>
@@ -18,14 +63,27 @@
             <Setter Property="Template"><Setter.Value><ControlTemplate TargetType="ListBoxItem">
                 <Border x:Name="Card" CornerRadius="2" Padding="{TemplateBinding Padding}" Background="{TemplateBinding Background}"
                         BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
-                    <Grid><Grid.ColumnDefinitions><ColumnDefinition Width="*"/><ColumnDefinition Width="24"/></Grid.ColumnDefinitions>
+                    <Grid><Grid.ColumnDefinitions><ColumnDefinition Width="*"/><ColumnDefinition Width="24"/><ColumnDefinition Width="Auto"/></Grid.ColumnDefinitions>
                         <ContentPresenter/>
                         <Border x:Name="SelectedBadge" Grid.Column="1" Width="20" Height="20" CornerRadius="10" Background="{DynamicResource AccentBrush}" Visibility="Hidden">
                             <TextBlock Text="✓" FontSize="14" FontWeight="SemiBold" HorizontalAlignment="Center" Foreground="{DynamicResource AccentTextBrush}"/>
                         </Border>
+                        <Button x:Name="RowOperationDetail" Grid.Column="2" Width="30" Height="28" Margin="4,0,0,0" VerticalAlignment="Top"
+                                Visibility="Collapsed" Padding="4"
+                                ToolTip="{Binding DetailTooltip}" AutomationProperties.Name="{Binding DetailTooltip}" Click="OperationDetail_Click">
+                            <Image Source="{Binding DetailIcon}" Width="18" Height="18"/>
+                        </Button>
                     </Grid>
                 </Border>
                 <ControlTemplate.Triggers>
+                    <MultiDataTrigger>
+                        <MultiDataTrigger.Conditions>
+                            <Condition Binding="{Binding CanShowDetail}" Value="True"/>
+                            <Condition Binding="{Binding IsSelected, RelativeSource={RelativeSource Self}}" Value="True"/>
+                        </MultiDataTrigger.Conditions>
+                        <Setter TargetName="RowOperationDetail" Property="Visibility" Value="Visible"/>
+                    </MultiDataTrigger>
+                    <DataTrigger Binding="{Binding IsOperation}" Value="True"><Setter TargetName="SelectedBadge" Property="VerticalAlignment" Value="Top"/><Setter TargetName="SelectedBadge" Property="Margin" Value="0,1,0,0"/></DataTrigger>
                     <Trigger Property="IsMouseOver" Value="True"><Setter TargetName="Card" Property="Background" Value="{DynamicResource ToolHoverGradientBrush}"/><Setter TargetName="Card" Property="BorderBrush" Value="{DynamicResource HoverBorderBrush}"/></Trigger>
                     <Trigger Property="IsSelected" Value="True"><Setter TargetName="Card" Property="Background" Value="{DynamicResource SelectionGradientBrush}"/><Setter TargetName="Card" Property="BorderBrush" Value="{DynamicResource SelectedBorderBrush}"/><Setter TargetName="SelectedBadge" Property="Visibility" Value="Visible"/></Trigger>
                     <Trigger Property="IsKeyboardFocusWithin" Value="True"><Setter TargetName="Card" Property="BorderBrush" Value="{DynamicResource AccentBrush}"/></Trigger>
@@ -67,11 +125,17 @@
                      ScrollViewer.CanContentScroll="True" VirtualizingPanel.IsVirtualizing="True" VirtualizingPanel.IsVirtualizingWhenGrouping="True" VirtualizingPanel.VirtualizationMode="Recycling">
             <ListBox.GroupStyle><GroupStyle><GroupStyle.HeaderTemplate><DataTemplate>
                 <DockPanel Margin="0,10,8,6">
-                    <Image Source="{Binding Items[0].ToolIcon}" Width="24" Height="24" Margin="0,0,8,0"/>
-                    <TextBlock Text="{Binding Items[0].GroupLabel}" FontSize="14" FontWeight="SemiBold" TextWrapping="Wrap" VerticalAlignment="Center"/>
+                    <Image Source="{Binding Items[0].ToolIcon}" Width="24" Height="24" Margin="0,0,8,0" VerticalAlignment="Top"/>
+                    <StackPanel>
+                        <TextBlock Text="{Binding Items[0].ToolPocket}" Style="{StaticResource OperationSecondaryText}" FontSize="13" FontWeight="SemiBold" Foreground="{DynamicResource TextBrush}"/>
+                        <TextBlock Text="{Binding Items[0].GroupName}" Style="{StaticResource OperationToolText}"/>
+                        <TextBlock Text="{Binding Items[0].ToolKind}" Style="{StaticResource OperationSecondaryText}"/>
+                    </StackPanel>
                 </DockPanel>
             </DataTemplate></GroupStyle.HeaderTemplate></GroupStyle></ListBox.GroupStyle>
-            <ListBox.ItemTemplate><DataTemplate><Grid><Grid.ColumnDefinitions><ColumnDefinition Width="34"/><ColumnDefinition Width="*"/><ColumnDefinition Width="{Binding ToolColumnWidth}"/></Grid.ColumnDefinitions>
+            <ListBox.ItemTemplate><DataTemplate><ContentControl Content="{Binding}" HorizontalContentAlignment="Stretch">
+                <ContentControl.Style><Style TargetType="ContentControl">
+                    <Setter Property="ContentTemplate"><Setter.Value><DataTemplate><Grid><Grid.ColumnDefinitions><ColumnDefinition Width="34"/><ColumnDefinition Width="*"/><ColumnDefinition Width="{Binding ToolColumnWidth}"/></Grid.ColumnDefinitions>
                     <Image Source="{Binding Icon}" Width="24" Height="24" HorizontalAlignment="Left" VerticalAlignment="Center"/>
                     <StackPanel Grid.Column="1"><TextBlock Text="{Binding Label}" FontSize="14" FontWeight="SemiBold" TextWrapping="Wrap" Foreground="{DynamicResource TextBrush}"/>
                         <TextBlock Text="{Binding Detail}" FontSize="12" Margin="0,3,8,0" TextWrapping="Wrap" Foreground="{DynamicResource MutedTextBrush}">
@@ -83,7 +147,10 @@
                         <Image Source="{Binding ToolIcon}" Width="24" Height="24" HorizontalAlignment="Left" VerticalAlignment="Center"/>
                         <TextBlock Grid.Column="1" Text="{Binding ToolText}" FontSize="16" FontWeight="SemiBold" TextWrapping="Wrap" VerticalAlignment="Center" Foreground="{DynamicResource TextBrush}"/>
                     </Grid>
-                </Grid></DataTemplate></ListBox.ItemTemplate>
+                    </Grid></DataTemplate></Setter.Value></Setter>
+                    <Style.Triggers><DataTrigger Binding="{Binding IsOperation}" Value="True"><Setter Property="ContentTemplate" Value="{StaticResource OperationCardContent}"/></DataTrigger></Style.Triggers>
+                </Style></ContentControl.Style>
+            </ContentControl></DataTemplate></ListBox.ItemTemplate>
             </ListBox>
             <TextBlock x:Name="EmptySearch" Text="{DynamicResource Ui.Question.NoMatches}" Visibility="Collapsed" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{DynamicResource MutedTextBrush}"/>
             <ScrollViewer x:Name="EditorScroll" Visibility="Collapsed" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto">
@@ -116,6 +183,7 @@
         <Border Grid.Row="2" Style="{StaticResource DialogFooter}">
         <DockPanel>
             <StackPanel DockPanel.Dock="Right" Orientation="Horizontal" Margin="12,0,0,0">
+                <Button x:Name="PreviousStep" Content="{DynamicResource Ui.Selection.Back}" Visibility="Collapsed" MinWidth="100" Margin="0,0,8,0"/>
                 <Button x:Name="LoadMore" Content="{DynamicResource Ui.List.More}" Visibility="Collapsed" MinWidth="100" Margin="0,0,8,0"/>
                 <Button x:Name="CancelQuestion" Content="{DynamicResource Ui.Question.Cancel}" IsCancel="True" MinWidth="100" Margin="0,0,8,0" Style="{StaticResource NativeToolButton}"/>
                 <Button x:Name="ContinueQuestion" Content="{DynamicResource Ui.Question.Continue}" IsDefault="True" MinWidth="110" Style="{StaticResource NativeToolButton}"/>

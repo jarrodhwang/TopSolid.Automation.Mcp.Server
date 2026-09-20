@@ -20,10 +20,13 @@ internal static class PreviewTarget
         }
         if (kind == "operation" && receipt["value"] is JObject row)
         {
-            var operation = row["operation"] as JObject;
+            // Summary rows wrap the operation; basic/scenario lists return the
+            // operation itself (ElementId or ElementExId) with display metadata.
+            var operation = row["operation"] as JObject ?? row;
             var element = operation?["element"] as JObject ?? operation;
             if (element?["documentId"]?.Type == JTokenType.String && element["id"]?.Type == JTokenType.Integer)
-                return new JObject { ["documentId"] = element["documentId"]!.DeepClone(), ["operation"] = element.DeepClone() };
+                return new JObject { ["documentId"] = element["documentId"]!.DeepClone(),
+                    ["operation"] = new JObject { ["documentId"] = element["documentId"]!.DeepClone(), ["id"] = element["id"]!.DeepClone() } };
         }
         var target = FromValue(receipt["value"]);
         if (target != null) return target;

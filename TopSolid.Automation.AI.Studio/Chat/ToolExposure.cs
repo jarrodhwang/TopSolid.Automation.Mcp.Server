@@ -25,11 +25,11 @@ internal sealed class ToolExposure
         "topsolid_get_status", "topsolid_get_active_document", "topsolid_get_document_info", "topsolid_get_capabilities",
         "topsolid_list_projects", "topsolid_list_libraries", "topsolid_list_pdm_children", "topsolid_get_current_project", "topsolid_get_user_selection", "topsolid_get_object_model", "topsolid_find_pdm_documents", "topsolid_find_named_elements", "topsolid_resolve_pdm_documents" };
 
-    public ToolExposure(McpToolDefinition[] discovered, string request = "", bool compact = false, string? currentRequest = null)
+    public ToolExposure(McpToolDefinition[] discovered, string request = "", bool compact = false, string? currentRequest = null, StudioContextOptions? context = null)
     {
         // Sections are a separate explicit request, never an ordinary modeling prerequisite.
         var explicitSection = ExplicitSectionRequested(currentRequest ?? request);
-        this.discovered = discovered = discovered.Where(t => t.Name != "topsolid_create_sketch_section" || explicitSection).ToArray();
+        this.discovered = discovered = discovered.Where(t => (t.Name != "topsolid_create_sketch_section" || explicitSection) && t.Name != "topsolid_apply_cam_color_plan" && t.Name != CamAutomationPreparation.ExecuteMethod).ToArray();
         this.compact = compact;
         if (discovered.Any(t => t.Name == SelectorName)) throw new InvalidOperationException("MCP tool name conflicts with Studio's schema selector.");
         selector = new McpToolDefinition { Name = SelectorName,
@@ -117,6 +117,9 @@ internal sealed class ToolExposure
             preferred.AddRange(["topsolid_get_active_document", "topsolid_get_document_info"]);
             if (!compact) preferred.AddRange(["topsolid_find_pdm_documents", "topsolid_find_named_elements"]);
         }
+        // Explicit request matches were added first; context seeds never outrank them.
+        if (context?.Cam == true) preferred.AddRange(["topsolid_list_cam_operation_summaries", "topsolid_list_cam_parameters", "topsolid_list_cam_tools", "topsolid_list_cam_parts", "topsolid_inspect_cam_color_geometry"]);
+        if (context?.Cad == true) preferred.AddRange(["topsolid_get_sketch2d_context", "topsolid_get_modeling_guide", "topsolid_list_named_elements", "topsolid_list_parameter_values"]);
         int Rank(McpToolDefinition t) {
             var category = (string?)t.Metadata["topsolid/category"];
             var preferredIndex = preferred.IndexOf(t.Name);

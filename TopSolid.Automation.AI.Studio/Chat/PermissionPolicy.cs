@@ -21,6 +21,7 @@ public static class PermissionPolicy
         "topsolid_create_points2d", "topsolid_create_points3d", "topsolid_update_points2d", "topsolid_update_points3d",
         "topsolid_extrude_sections", "topsolid_revolve_sections", "topsolid_extrude_sketch", "topsolid_revolve_sketch", "topsolid_loft_sketch",
         "topsolid_set_entity_colors", "topsolid_color_shape_faces", "topsolid_set_element_visibility",
+        "topsolid_apply_cam_color_plan",
         "topsolid_rename_element", "topsolid_translate_element", "topsolid_translate_elements",
         "topsolid_set_sketch_item_fixed", "topsolid_set_sketch2d_items_fixed",
         "topsolid_create_entity_folders", "topsolid_move_entities", "topsolid_update_elements",
@@ -58,6 +59,7 @@ public static class PermissionPolicy
             proposal["target"] is not JObject { Count: > 0 })
             return new(true, "The MCP proposal is incomplete and requires review.");
         var tool = (string)proposal["toolName"]!;
+        if (tool == CamAutomationPreparation.ExecuteMethod) return new(true, "CAM method execution always requires explicit confirmation of scope, sequence and options.");
         if (mode == PermissionMode.AskForApproval || !Enum.IsDefined(mode))
             return new(true, "Ask for approval is selected.");
         if (!Reversible.Contains(tool) && !ReviewedAdditional.Contains(tool))

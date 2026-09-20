@@ -16,6 +16,7 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Automation
         public JObject GraphicPreview(JObject request)
         {
             if (request["action"] != null) return previewTransfers.Handle(request);
+            if ((bool?)request["camFaceGeometry"] == true) return CamFacePreview(request);
             return Read("kernel", () =>
         {
             if (request.Properties().Any(p => p.Name != "documentId" && p.Name != "pdmObjectId" && p.Name != "chunked" && p.Name != "fileBacked" && p.Name != "camContext") ||
@@ -66,7 +67,7 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Automation
             var directory = Path.Combine(Path.GetTempPath(), "TopSolid-Studio-preview-" + Guid.NewGuid().ToString("N"));
             Directory.CreateDirectory(directory);
             var file = Path.Combine(directory, "document." + format);
-            var retained = false; var toleranceScale = 1d;
+            var retained = false; var toleranceScale = 1d; var originalStockCount = 0;
             try
             {
                 var dirty = TopSolidHost.Documents.IsDirty(doc);
@@ -76,6 +77,9 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Automation
                     // It is display-only, outside a modification, and never changes native visibility or camera state.
                     format = "glb"; file = Path.Combine(directory, "document.glb");
                     TopSolidHost.Documents.zExportToTopglTF(doc, directory, "document", true, false, false, true, true, true, true, 0, Color.Empty);
+                    try { originalStockCount = CamStockPreview.Append(doc, file, directory); }
+                    catch (Exception error) when (error is IOException || error is InvalidOperationException || error is ArgumentException || error is System.ServiceModel.FaultException)
+                    { Console.Error.WriteLine("Original stock preview unavailable: " + error.Message); }
                 }
                 else TopSolidHost.Documents.ExportWithOptions(exporter, options, doc, file);
                 // Coarser display-only tessellation for large native B-reps; no document tolerance is changed.
@@ -101,8 +105,9 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Automation
                     }
                 }
                 var result = new JObject { ["status"] = "ready", ["name"] = name, ["documentId"] = doc.PdmDocumentId,
-                    ["scope"] = "document", ["format"] = format, ["units"] = format == "stl" ? "mm" : "m", ["upAxis"] = format == "stl" ? "Z" : "Y",
+                    ["scope"] = "document", ["format"] = format, ["units"] = format == "stl" ? "mm" : "m", ["upAxis"] = format == "stl" || camContext ? "Z" : "Y",
                     ["camContext"] = camContext,
+                    ["originalStockMeshes"] = originalStockCount,
                     ["appearance"] = format == "glb" ? "materials" : "neutral",
                     // The installed TopSolid exporter writes native RGB/255 factors,
                     // including 192/255 for the default surface, without linearization.

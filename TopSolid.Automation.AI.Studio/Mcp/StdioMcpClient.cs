@@ -186,11 +186,7 @@ public sealed class StdioMcpClient : IConfirmableMcpClient, IGraphicPreviewClien
     private async Task<JObject> DisplayRequestAsync(string method, JObject target, CancellationToken cancellationToken)
     {
         if (!IsConnected) throw new IOException("MCP is disconnected.");
-        // Native toolpath images temporarily change visibility inside an aborted transaction.
-        // Once sent, allow rollback to finish even if the dialog closes or rendering is slow.
-        var temporaryView = method == "topsolid/toolpathPreview" && target["view"] != null;
-        var request = temporaryView ? NativeViewRequestAsync((JObject)target.DeepClone(), cancellationToken)
-            : RequestAsync(method, (JObject)target.DeepClone(), cancellationToken, drainAfterSend: true);
+        var request = RequestAsync(method, (JObject)target.DeepClone(), cancellationToken, drainAfterSend: true);
         try { return await request.WaitAsync(cancellationToken); }
         catch (OperationCanceledException)
         {
@@ -200,14 +196,6 @@ public sealed class StdioMcpClient : IConfirmableMcpClient, IGraphicPreviewClien
                 TaskContinuationOptions.OnlyOnFaulted | TaskContinuationOptions.ExecuteSynchronously, TaskScheduler.Default);
             throw;
         }
-    }
-
-    private async Task<JObject> NativeViewRequestAsync(JObject target, CancellationToken cancellationToken)
-    {
-        // Hold the lifecycle gate through rollback, including after the UI abandons the result.
-        await lifecycleGate.WaitAsync(cancellationToken);
-        try { return await RequestAsync("topsolid/toolpathPreview", target, cancellationToken, mutation: true, drainAfterSend: true); }
-        finally { lifecycleGate.Release(); }
     }
 
     public async Task<JObject> PrepareToolAsync(string name, JObject arguments, CancellationToken cancellationToken)

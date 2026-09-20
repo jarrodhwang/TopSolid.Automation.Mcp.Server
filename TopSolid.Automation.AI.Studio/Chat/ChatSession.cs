@@ -27,6 +27,14 @@ public sealed class ChatSession(IAiProvider provider, IMcpClient mcp)
     private string responseLanguage = "auto";
     public string ResponseLanguage { get => responseLanguage; set => responseLanguage = ResponseLanguages.Normalize(value); }
     public bool DeveloperMode { get; set; }
+    public StudioContextOptions ContextOptions { get; set; } = new();
+    public CamColorStandard ColorStandard { get; set; } = CamColorStandard.Starter();
+    public Func<CamColorPlan, CancellationToken, Task<CamColorPlan?>>? ReviewCamColorsAsync { get; set; }
+    public IReadOnlyList<CamMethodDefinition> CamMethods { get; set; } = [];
+    public CamAutomationPlan? PreparedCamPlan { get; set; }
+    public Action<CamAutomationPlan>? SaveCamPlan { get; set; }
+    public Func<CamAutomationPlan, CancellationToken, Task<CamAutomationPlan?>>? ReviewCamAutomationAsync { get; set; }
+    public Func<CamAutomationPlan, CancellationToken, Task<CamAutomationPlan?>>? ConfirmCamMethodsAsync { get; set; }
 
     public void Clear()
     {
@@ -67,6 +75,9 @@ public sealed class ChatSession(IAiProvider provider, IMcpClient mcp)
         if (text.Length > 32000) throw new ArgumentException(StudioStrings.Get("Chat.MessageLimit"), nameof(text));
         var turnResponseLanguage = ResponseLanguage;
         var turnDeveloperMode = DeveloperMode;
+        var turnContext = ContextOptions.Snapshot();
+        var turnPalette = ColorStandard.Snapshot();
+        var turnMethods = CamMethods.Select(m => m.Snapshot()).ToArray();
         var userMessage = ChatAttachments.CreateUserMessage(text, attachments);
         await sendGate.WaitAsync(cancellationToken);
         LastResponseUsedModel = false;
@@ -77,6 +88,21 @@ public sealed class ChatSession(IAiProvider provider, IMcpClient mcp)
         var pendingQuestionImages = new List<ChatAttachment>();
         try
         {
+            var resumeCam = CamAutomationPreparation.ResumeMatches(text);
+            if (resumeCam || CamAutomationPreparation.Matches(text, turnContext))
+            {
+                if (resumeCam && PreparedCamPlan == null) { Remember([userMessage, new AiMessage { Role = "assistant", Content = StudioStrings.Get("Cam.NoPrepared") }]); return StudioStrings.Get("Cam.NoPrepared"); }
+                var result = await CamAutomationPreparation.Run(text, attachments, provider, mcp, turnMethods, resumeCam ? PreparedCamPlan : null, turnResponseLanguage,
+                    AskUserAsync, ReviewCamAutomationAsync, ConfirmCamMethodsAsync, ConfirmChangeAsync,
+                    plan => { SaveCamPlan?.Invoke(plan); PreparedCamPlan = plan.Snapshot(); }, trace => Trace?.Invoke(trace), () => LastResponseUsedModel = true, cancellationToken);
+                Remember(result); return result[^1].Content;
+            }
+            if (CamColorPreparation.Matches(text, turnContext))
+            {
+                var colors = await CamColorPreparation.Run(text, attachments, provider, mcp, turnPalette, turnResponseLanguage,
+                    AskUserAsync, ReviewCamColorsAsync, ConfirmChangeAsync, trace => Trace?.Invoke(trace), () => LastResponseUsedModel = true, cancellationToken);
+                Remember(colors); return colors[^1].Content;
+            }
             IReadOnlyList<AiMessage>? editPrevious;
             lock (historyGate) editPrevious = localPreviousTurn;
             var parameterEdit = attachments.Count == 0 ? await CamParameterEditRequest.Run(text, editPrevious, mcp, EditCamParametersAsync,
@@ -91,6 +117,10 @@ public sealed class ChatSession(IAiProvider provider, IMcpClient mcp)
             var toolpathPreview = attachments.Count == 0 ? await ToolpathPreviewRequest.Run(text, mcp, AskUserAsync, ShowGraphicPreviewAsync,
                 trace => Trace?.Invoke(trace), cancellationToken) : null;
             if (toolpathPreview != null) { Remember(toolpathPreview); return toolpathPreview[^1].Content; }
+            var documentBrowse = attachments.Count == 0
+                ? await CamDocumentBrowseRequest.Run(text, mcp, AskUserAsync, ShowListAsync, ConfirmChangeAsync,
+                    trace => Trace?.Invoke(trace), cancellationToken) : null;
+            if (documentBrowse != null) { Remember(documentBrowse); return documentBrowse[^1].Content; }
             var browse = attachments.Count == 0
                 ? await ListPresentation.RunDirect(text, mcp, ShowListAsync, trace => Trace?.Invoke(trace), cancellationToken) : null;
             if (browse != null) { Remember(browse); return browse[^1].Content; }
@@ -149,7 +179,7 @@ public sealed class ChatSession(IAiProvider provider, IMcpClient mcp)
             string workflowContext;
             lock (historyGate) workflowContext = ToolExposure.NeedsWorkflowHistory(text)
                 ? string.Join("\n", turns.TakeLast(8).SelectMany(t => t.Where(m => m.Role == "user").Select(m => m.UserIntent ?? m.Content))) : "";
-            var exposure = new ToolExposure(tools, text + "\n" + workflowContext, compact: provider is OllamaProvider, currentRequest: text);
+            var exposure = new ToolExposure(tools, text + "\n" + workflowContext, compact: provider is OllamaProvider, currentRequest: text, context: turnContext);
             var listNames = attachments.Count == 0 ? PdmListRequest.Tools(text) : [];
             if (listNames.Any(name => !tools.Any(t => t.Name == name && !t.RequiresConfirmation))) listNames = [];
             var inventory = new PdmInventory(listNames.Length > 0 ? "list all " + text : "");
@@ -158,7 +188,7 @@ public sealed class ChatSession(IAiProvider provider, IMcpClient mcp)
                 new()
                 {
                     Role = "system",
-                    Content = ModelInstructions.Build(exposure.Active, exposure.Catalog, tools.Length > 0, turnResponseLanguage, turnDeveloperMode)
+                    Content = ModelInstructions.Build(exposure.Active, exposure.Catalog, tools.Length > 0, turnResponseLanguage, turnDeveloperMode, turnContext)
                 }
             };
             IReadOnlyList<IReadOnlyList<AiMessage>> history;
@@ -198,7 +228,7 @@ public sealed class ChatSession(IAiProvider provider, IMcpClient mcp)
                     reply = new AiReply { ToolCalls = [creationPlan.Call] };
                 } else {
                     LastResponseUsedModel = true;
-                    if (listNames.Length == 0) messages[0].Content = ModelInstructions.Build(exposedTools, exposure.Catalog, tools.Length > 0, turnResponseLanguage, turnDeveloperMode);
+                    if (listNames.Length == 0) messages[0].Content = ModelInstructions.Build(exposedTools, exposure.Catalog, tools.Length > 0, turnResponseLanguage, turnDeveloperMode, turnContext);
                     if (exposedTools.Any(t => t.Name == QuestionSources.ToolName)) messages[0].Content += "\n" + QuestionSources.Instructions;
                     messages[0].Content += "\n" + camWorkflow.Instructions;
                     if (hasAttachments) messages[0].Content += "\n" + ChatAttachments.ModelBoundary;

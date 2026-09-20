@@ -29,7 +29,7 @@ internal sealed partial class GraphicPreviewPane
                 throw new InvalidDataException("Preview document mismatch.");
             var stl = (string?)result["format"] == "stl";
             if (stl ? (string?)result["units"] != "mm" || (string?)result["upAxis"] != "Z" :
-                (string?)result["format"] != "glb" || (string?)result["units"] != "m" || (string?)result["upAxis"] != "Y")
+                (string?)result["format"] != "glb" || (string?)result["units"] != "m" || (string?)result["upAxis"] != ((bool?)result["camContext"] == true ? "Z" : "Y"))
                 throw new InvalidDataException("Unsupported preview coordinates.");
             var length = new FileInfo(payload.FilePath!).Length;
             if ((bool?)result["camContext"] == true)
@@ -37,7 +37,10 @@ internal sealed partial class GraphicPreviewPane
                 var context = await CamContextPreview.ReadAsync(payload.FilePath!, token);
                 if (disposed || generation != current) return (result, null);
                 camScenes = context; machineToggle.Visibility = Visibility.Visible; machineToggle.IsEnabled = true;
-                return (result, showMachine ? context.Machine : context.Work);
+                machineToggle.ToolTip = StudioStrings.Get("Preview.Machine");
+                if (stockMode == CamStockMode.Original && context.Original == null) stockMode = CamStockMode.Remaining;
+                UpdateStockControls();
+                return (result, context.Select(showMachine, stockMode, showPart));
             }
             if (length > PagedThresholdBytes && gpu == null)
                 return (new JObject { ["status"] = "GpuRequired" }, null);

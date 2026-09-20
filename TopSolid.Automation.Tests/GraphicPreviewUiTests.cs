@@ -22,7 +22,7 @@ internal static class GraphicPreviewUiTests
         var originalLanguage = StudioStrings.CurrentLanguage; var originalTheme = TopSolidTheme.Current;
         StudioStrings.Apply("ko"); TopSolidTheme.Apply(new(false,"Light","Native CAM fixture"));
         var bytes = await System.IO.File.ReadAllBytesAsync(file);
-        var client = new Client { Handler = (_,_) => Task.FromResult(new JObject { ["status"]="ready", ["documentId"]="native-cam", ["name"]="DMU65 CAM", ["format"]="glb", ["units"]="m", ["upAxis"]="Y", ["camContext"]=true, ["data"]=Convert.ToBase64String(bytes) }) };
+        var client = new Client { Handler = (_,_) => Task.FromResult(new JObject { ["status"]="ready", ["documentId"]="native-cam", ["name"]="DMU65 CAM", ["format"]="glb", ["units"]="m", ["upAxis"]="Z", ["camContext"]=true, ["data"]=Convert.ToBase64String(bytes) }) };
         using var pane = new GraphicPreviewPane(client,new JObject { ["documentId"]="native-cam", ["operation"]=new JObject { ["documentId"]="native-cam", ["id"]=12 } });
         var window = Position(new Window { Content=pane, Width=1120, Height=850 },owner);
         TopSolidTheme.ApplyWindow(window);
@@ -31,11 +31,29 @@ internal static class GraphicPreviewUiTests
             window.Show(); await Until(()=>pane.HasMachineContext && !pane.IsLoading,window);
             Check.True(pane.ToolpathSegments>0,"Context lost the selected operation overlay");
             var calls=client.Calls; var partTriangles=pane.Scene!.Triangles;
+            Check.Equal(CamStockMode.Remaining, pane.StockMode, "Remaining stock must be the default");
+            var camera = pane.Camera.Position; var width = pane.Camera.Width;
+            pane.SetStockMode(CamStockMode.Part); await Layout(window);
+            Check.True(pane.Scene!.Triangles < partTriangles && pane.ToolpathSegments > 0, "Part-only toggle lost the operation or retained stock");
+            Check.Equal(camera, pane.Camera.Position, "Stock toggle reset the camera"); Check.Equal(width, pane.Camera.Width, "Stock toggle reset zoom");
+            render(window, "cam-native-part-only.png");
+            if (pane.HasOriginalStock)
+            {
+                pane.SetStockMode(CamStockMode.Original); await Layout(window);
+                Check.Equal(CamStockMode.Original, pane.StockMode, "Original stock toggle failed");
+                Check.True(pane.ToolpathSegments > 0, "Original stock toggle lost the operation overlay");
+                render(window, "cam-native-original-stock.png");
+            }
+            pane.SetStockMode(CamStockMode.Remaining); await Layout(window);
             render(window,"cam-native-machine-hidden.png"); pane.SetMachineVisible(true); await Layout(window);
             Check.True(pane.Scene!.Triangles>partTriangles && pane.ToolpathSegments>0,"Machine toggle lost work geometry or toolpath");
             render(window,"cam-native-machine-visible.png"); pane.SetMachineVisible(false); await Layout(window);
             Check.Equal(partTriangles,pane.Scene!.Triangles,"Machine toggle did not restore work geometry");
             Check.Equal(calls,client.Calls,"Machine toggle re-exported the document");
+            pane.SetTarget(new JObject { ["documentId"] = "native-cam", ["operation"] = new JObject { ["documentId"] = "native-cam", ["id"] = 13 } });
+            await Until(() => !pane.IsLoading && client.PathRequests.Count == 2, window);
+            Check.Equal(calls,client.Calls,"Switching operation re-exported machine/stock geometry");
+            Check.Equal(CamStockMode.Remaining,pane.StockMode,"Switching operation changed stock mode");
         }
         finally { window.Close(); StudioStrings.Apply(originalLanguage); TopSolidTheme.Apply(originalTheme); }
     }
@@ -49,7 +67,8 @@ internal static class GraphicPreviewUiTests
         { Calls++; return Handler?.Invoke(target, token) ?? Task.FromResult(GraphicPreviewTests.Result((string)target["documentId"]!)); }
         public Task<JObject> GetToolpathPreviewAsync(JObject operation, CancellationToken token)
         {
-            var identity = (JObject)operation.DeepClone(); identity.Remove("view"); identity.Remove("nativeImage");
+            Check.True(operation.Properties().All(p => p.Name is "documentId" or "id"), "Toolpath request sent viewport/image parameters");
+            var identity = (JObject)operation.DeepClone();
             PathRequests.Add((JObject)identity.DeepClone()); return PathHandler?.Invoke(identity, token) ?? Task.FromResult(PreviewRuntimeTests.PathResult(identity));
         }
     }
@@ -161,8 +180,23 @@ internal static class GraphicPreviewUiTests
     internal static async Task OperationBrowser(Window owner, Action<Window, string> render)
     {
         var language = StudioStrings.CurrentLanguage;
+        var theme = TopSolidTheme.Current;
         StudioStrings.Apply("ko");
-        var source = CamSelectionTests.Question();
+        TopSolidTheme.Apply(new(false, "Light", "Operation card fixture"));
+        var rows = new JArray(Enumerable.Range(1, 4).Select(CamSelectionTests.Row));
+        ((JObject)rows[0])["operationName"] = "[1: 환경 활성 / 환경 비활성화]";
+        foreach (var index in new[] { 1, 2, 3 })
+        {
+            var row = (JObject)rows[index];
+            row["operationName"] = $"[{index + 1}: 멀티-블레이드 {(index == 3 ? "허브 정삭" : "황삭")} (5X)]";
+            row["operationType"] = "TopSolid.Cam.NC.MillTurn.FiveAxis.DB.MultiBlade." + (index == 3 ? "MultiBladeHubFinishingOperation" : "MultiBladeRoughingOperation");
+            row["toolPocket"] = index == 1 ? "T 2" : index == 2 ? "T 3" : "T 6";
+            row["toolDefinitionName"] = index == 1 ? "Conic Nose Ball Mill D 10 d 3,81 A3 L60" : index == 2 ? "Conic Nose Ball Mill D 6 d 2,91 A2 L60" : "Ball Nose Mill D2 L5 SD4";
+            row["toolFunction"] = "BallNoseMill";
+        }
+        var sources = new QuestionSources();
+        sources.Capture("operation-layout", "topsolid_list_cam_operation_summaries", new JObject(), new TopSolid.Automation.Mcp.Contracts.McpToolResult { StructuredContent = new JObject { ["items"] = rows } });
+        var source = sources.Create(JObject.Parse("{question:'가공 작업',kind:'select',itemKind:'operation',sources:[{toolCallId:'operation-layout',path:'/items'}]}"));
         var question = UserQuestion.Browse([source], source.Choices.Count, false, null);
         var client = new Client(); var dialog = Position(new QuestionWindow(question, client), owner);
         try
@@ -192,25 +226,29 @@ internal static class GraphicPreviewUiTests
                 ["format"] = "native-view-png", ["stateRestored"] = true, ["upToDate"] = true,
                 ["data"] = "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+aLxkAAAAASUVORK5CYII=" });
             list.SelectedIndex = 0;
-            await Until(() => pane.HasNativeToolpathImage && !pane.IsLoading, dialog);
-            Check.Equal(0, pane.ToolpathSegments, "Native image was misrepresented as coordinate geometry");
-            var captures = client.PathRequests.Count;
+            await Until(() => !pane.IsLoading, dialog);
+            Check.True(pane.ToolpathSegments == 0 && ReferenceEquals(scene, pane.Scene) &&
+                pane.ToolpathStatus == StudioStrings.Get("Preview.PathUnavailable"), "Screenshot response replaced geometry or was silently accepted");
+            var requests = client.PathRequests.Count;
             pane.Orbit(.15, .05); pane.Zoom(.9);
-            await Until(() => client.PathRequests.Count > captures && pane.HasNativeToolpathImage, dialog);
-            Check.Equal(captures + 1, client.PathRequests.Count, "Camera updates were not debounced");
-            var oldImage = new TaskCompletionSource<JObject>(TaskCreationOptions.RunContinuationsAsynchronously);
-            JObject? oldIdentity = null;
-            client.PathHandler = (op, _) => { oldIdentity = op; return oldImage.Task; };
-            pane.Orbit(.1, 0); await Until(() => oldIdentity != null, dialog);
-            client.PathHandler = (op, _) => Task.FromResult(new JObject { ["status"] = "unavailable", ["operation"] = op.DeepClone() });
-            list.SelectedIndex = 1; await Until(() => !pane.IsLoading, dialog);
-            oldImage.SetResult(new JObject { ["status"] = "ready", ["operation"] = oldIdentity!.DeepClone(),
-                ["format"] = "native-view-png", ["stateRestored"] = true,
-                ["data"] = "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+aLxkAAAAASUVORK5CYII=" });
-            await Layout(dialog);
-            Check.True(!pane.HasNativeToolpathImage && client.Calls == 1, "Late native capture replaced another operation or re-exported geometry");
+            await Task.Delay(450); await Layout(dialog);
+            Check.True(client.PathRequests.Count == requests && pane.Camera.Position != camera, "Local camera requested another toolpath scan");
+            client.PathHandler = (op, _) => Task.FromResult(PreviewRuntimeTests.PathResult(op));
+            list.SelectedIndex = 1; await Until(() => pane.ToolpathSegments == 2 && !pane.IsLoading, dialog);
+            requests = client.PathRequests.Count;
+            pane.SetView("top"); pane.Zoom(.8); await Task.Delay(450); await Layout(dialog);
+            Check.True(pane.ToolpathSegments == 2 && client.PathRequests.Count == requests && client.Calls == 1 && ReferenceEquals(scene, pane.Scene),
+                "Navigating native geometry lost the path or called the backend");
+            TopSolidTheme.Apply(new(true, "Dark", "Operation card fixture")); await Layout(dialog);
+            render(dialog, "operation-list-dark.png");
+            dialog.Width = 500; await Layout(dialog);
+            render(dialog, "operation-list-narrow-dark.png");
+            TopSolidTheme.Apply(new(false, "Light", "Operation card fixture")); await Layout(dialog);
+            render(dialog, "operation-list-narrow-light.png");
+            ((System.Windows.Controls.Primitives.ToggleButton)dialog.FindName("GroupByTool")).IsChecked = true; await Layout(dialog);
+            render(dialog, "operation-list-grouped-light.png");
         }
-        finally { dialog.Close(); StudioStrings.Apply(language); }
+        finally { dialog.Close(); StudioStrings.Apply(language); TopSolidTheme.Apply(theme); }
     }
     private static void Navigation(GraphicPreviewPane pane)
     {

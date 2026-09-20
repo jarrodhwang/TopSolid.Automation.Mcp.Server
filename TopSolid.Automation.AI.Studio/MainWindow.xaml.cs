@@ -24,7 +24,7 @@ namespace TopSolid.Automation.AI.Studio;
 public partial class MainWindow : Window
 {
     private readonly DiagnosticLog diagnosticLog = App.DiagnosticLog;
-    private readonly SettingsStore settingsStore = new();
+    private readonly SettingsStore settingsStore;
     private readonly StdioMcpClient mcp;
     private TopSolidLicenseStatus? startupLicenseStatus;
     private readonly SessionLog sessionLog = new();
@@ -44,12 +44,13 @@ public partial class MainWindow : Window
 
     public MainWindow() : this(autoConnect: true) { }
 
-    internal MainWindow(bool autoConnect, StdioMcpClient? connectedClient = null, TopSolidLicenseStatus? licenseStatus = null)
+    internal MainWindow(bool autoConnect, StdioMcpClient? connectedClient = null, TopSolidLicenseStatus? licenseStatus = null, SettingsStore? settingsOverride = null)
     {
+        settingsStore = settingsOverride ?? new();
         mcp = connectedClient ?? new StdioMcpClient();
         startupLicenseStatus = licenseStatus;
         TopSolidTheme.InitializeResources(this);
-        settings = settingsStore.Load();
+        settings = this.settingsStore.Load();
         StudioStrings.Apply(settings.InterfaceLanguage);
         StudioStrings.InitializeResources(this);
         InitializeComponent();
@@ -316,6 +317,7 @@ public partial class MainWindow : Window
     {
         ReadProvider();
         // Never persist or log the signature. Keep intent and receipts across providers.
+        if (session != null) { session.ContextOptions = settings.ContextOptions.Snapshot(); session.ColorStandard = settings.CamColorStandard.Snapshot(); }
         var signature = string.Join("\n", settings.Provider, settings.CloudService, settings.CloudBaseUrl, settings.CloudModel,
             settings.OllamaServerUrl, settings.OllamaModel, settings.ApiKey, settings.RequestTimeoutMinutes, settings.OllamaFastGptOss);
         if (session != null && sessionConfiguration == signature) { session.ResponseLanguage = settings.ResponseLanguage; session.DeveloperMode = settings.DevMode; return; }
@@ -323,11 +325,14 @@ public partial class MainWindow : Window
         var history = session?.GetConversationSnapshot();
         provider?.Dispose();
         provider = nextProvider;
-        session = new ChatSession(provider, mcp) { ResponseLanguage = settings.ResponseLanguage, DeveloperMode = settings.DevMode };
+        session = new ChatSession(provider, mcp) { ResponseLanguage = settings.ResponseLanguage, DeveloperMode = settings.DevMode,
+            ContextOptions = settings.ContextOptions.Snapshot(), ColorStandard = settings.CamColorStandard.Snapshot() };
         if (history != null) session.RestoreConversation(history);
         session.ConfirmChangeAsync = ConfirmChange;
         session.AskUserAsync = AskUser;
         session.EditCamParametersAsync = EditCamParameters;
+        session.ReviewCamColorsAsync = ReviewCamColors;
+        ConfigureCamAutomation();
         session.ChooseNcDestinationAsync = ChooseNcDestination;
         session.ShowListAsync = ShowList;
         session.ShowGraphicPreviewAsync = ShowGraphicPreview;
@@ -343,9 +348,14 @@ public partial class MainWindow : Window
         sessionConfiguration = signature;
     }
 
-    private Task ShowGraphicPreview(JObject target, CancellationToken token)
+    private async Task ShowGraphicPreview(JObject target, CancellationToken token)
     {
         token.ThrowIfCancellationRequested();
+        if (target["operation"] is JObject)
+        {
+            await ShowList(await CamDialogRequest.ForPreview(target, mcp, OnDetailTrace, token), token);
+            return;
+        }
         using var pane = new Preview.GraphicPreviewPane(mcp, target);
         var dialog = new Window { Owner = this, Title = StudioStrings.Get("Preview.Title"), Content = pane,
             Width = Math.Min(1040, SystemParameters.WorkArea.Width - 40), Height = Math.Min(780, SystemParameters.WorkArea.Height - 40),
@@ -353,18 +363,26 @@ public partial class MainWindow : Window
         TopSolidTheme.ApplyWindow(dialog);
         using var registration = token.Register(() => OnUi(() => { if (dialog.IsVisible) dialog.Close(); }));
         SetActivity("Activity.Question", "image", waitingForUser: true);
-        try { dialog.ShowDialog(); RecordTrace("Preview", "Read-only native graphical preview displayed."); return Task.CompletedTask; }
+        try { dialog.ShowDialog(); RecordTrace("Preview", "Read-only native graphical preview displayed."); }
         finally { SetActivity(token.IsCancellationRequested ? "Activity.Cancelling" : "Activity.PreparingResponse"); }
     }
 
     private Task ShowList(UserQuestion question, CancellationToken token)
     {
         token.ThrowIfCancellationRequested();
-        var dialog = new QuestionWindow(question, mcp) { Owner = this };
+        var dialog = new QuestionWindow(question, mcp) { Owner = this, ConfirmDetailChange = ConfirmChange, DetailTrace = OnDetailTrace };
         using var registration = token.Register(() => OnUi(() => { if (dialog.IsVisible) dialog.Close(); }));
         SetActivity("Activity.Question", QuestionWindow.IconKey(question.ItemKind), waitingForUser: true);
-        try { dialog.ShowDialog(); RecordTrace("List", "Read-only list displayed: " + question.Choices.Count); return Task.CompletedTask; }
+        try { dialog.ShowDialog(); RecordTrace("List", "List displayed: " + question.Choices.Count); return Task.CompletedTask; }
         finally { SetActivity(token.IsCancellationRequested ? "Activity.Cancelling" : "Activity.PreparingResponse"); }
+    }
+
+    private void OnDetailTrace(ChatTrace trace)
+    {
+        if (trace.Kind is "Tool result" or "Tool error" or "CAD change")
+            responsePresenter.ObserveToolResult(trace.Text, trace.Arguments, trace.ToolName);
+        RecordTrace(trace.Kind, trace.Text);
+        if (trace.Kind == "CAD change") RecordChat("TopSolid result", trace.Text);
     }
 
     private Task<string?> ChooseNcDestination(JObject file, CancellationToken token)
@@ -404,7 +422,7 @@ public partial class MainWindow : Window
     private Task<QuestionAnswer?> AskUser(UserQuestion question, CancellationToken token)
     {
         token.ThrowIfCancellationRequested();
-        var dialog = new QuestionWindow(question, mcp) { Owner = this };
+        var dialog = new QuestionWindow(question, mcp) { Owner = this, ConfirmDetailChange = ConfirmChange, DetailTrace = OnDetailTrace };
         using var registration = token.Register(() => OnUi(() => { if (dialog.IsVisible) dialog.Close(); }));
         activityAwaitingApproval = true;
         SetActivity("Activity.Question", QuestionWindow.IconKey(question.ItemKind), waitingForUser: true);
@@ -429,7 +447,9 @@ public partial class MainWindow : Window
         RecordTrace("Permission", $"{permissionMode}: {decision.Reason}");
         if (!decision.RequiresApproval) return Task.FromResult(true);
         responsePresenter.Observe(proposal);
-        var dialog = new ChangeConfirmationWindow(proposal, settings.DevMode, responsePresenter, mcp) { Owner = this };
+        Window approvalOwner = this;
+        while (approvalOwner.OwnedWindows.OfType<Window>().LastOrDefault(w => w.IsVisible && w is QuestionWindow or CamOperationDetailWindow or CamMethodCatalogWindow or CamMethodEditorWindow or CamMethodBrowserWindow) is { } child) approvalOwner = child;
+        var dialog = new ChangeConfirmationWindow(proposal, settings.DevMode, responsePresenter, mcp) { Owner = approvalOwner };
         using var registration = token.Register(() => OnUi(() => { if (dialog.IsVisible) dialog.Close(); }));
         activityAwaitingApproval = true;
         SetActivity("Activity.Approval", "status", waitingForUser: true);
@@ -501,6 +521,9 @@ public partial class MainWindow : Window
         ConfigurationPanel.IsEnabled = !busy;
         ModelBox.IsEnabled = !busy;
         PermissionBox.IsEnabled = !busy;
+        CadModeButton.IsEnabled = CamModeButton.IsEnabled = !busy;
+        if (AttachButton.ContextMenu is { } menu) { menu.IsEnabled = !busy; if (busy) menu.IsOpen = false; }
+        CamColorsSettingsSection.IsEnabled = !busy;
         AttachButton.IsEnabled = !busy && !loadingAttachments;
         AttachmentsPanel.IsEnabled = !busy;
         SendButton.IsEnabled = !busy && !loadingAttachments;

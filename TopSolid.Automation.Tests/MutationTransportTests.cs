@@ -10,7 +10,6 @@ internal static class MutationTransportTests
 {
     public static async Task Run()
     {
-        foreach (var nativeView in new[] { false, true })
         foreach (var broken in new[] { false, true })
         {
             var receipt = Path.Combine(Path.GetTempPath(), "topsolid-mcp-fixture-" + Guid.NewGuid().ToString("N") + ".txt");
@@ -36,19 +35,12 @@ internal static class MutationTransportTests
             try
             {
                 using var cancellation = new CancellationTokenSource();
-                Task change;
-                if (nativeView) change = client.GetToolpathPreviewAsync(new JObject { ["documentId"] = "fixture", ["id"] = 1, ["view"] = new JObject() }, cancellation.Token);
-                else change = client.CallConfirmedToolAsync("fixture_change", new JObject(), "fixture-token", cancellation.Token);
+                var change = client.CallConfirmedToolAsync("fixture_change", new JObject(), "fixture-token", cancellation.Token);
                 await started.Task.WaitAsync(TimeSpan.FromSeconds(5));
                 Check.True(client.IsMutationInFlight, "Mutation state was not exposed while the fixture was active");
                 cancellation.Cancel();
                 var disconnect = client.DisconnectAsync();
-                if (nativeView)
-                {
-                    await Check.ThrowsAsync<OperationCanceledException>(() => change);
-                    if (!broken) Check.True(!disconnect.IsCompleted, "Disconnect raced native visibility rollback");
-                }
-                else if (broken)
+                if (broken)
                 {
                     var error = await Check.ThrowsAsync<IOException>(() => change);
                     Check.True(error.Message.Contains("outcome is unknown", StringComparison.Ordinal), "Broken write transport did not report uncertainty");
@@ -56,7 +48,7 @@ internal static class MutationTransportTests
                 else
                 {
                     Check.True(!disconnect.IsCompleted, "Disconnect raced the active mutation");
-                    Check.True(!(await (Task<TopSolid.Automation.Mcp.Contracts.McpToolResult>)change).IsError, "Cancellation killed a dispatched mutation");
+                    Check.True(!(await change).IsError, "Cancellation killed a dispatched mutation");
                 }
                 await disconnect;
                 Check.True(File.Exists(receipt) && File.ReadAllText(receipt) == "fixture completed", "The mutation process was killed before its cleanup completed");
@@ -84,7 +76,6 @@ internal static class MutationTransportTests
                     if ((string?)request["params"]!["documentId"] == "large-preview")
                         result["data"] = new string('A', (84 + 250000 * 50 + 2) / 3 * 4);
                     break;
-                case "topsolid/toolpathPreview":
                 case "tools/call":
                     await Console.Error.WriteLineAsync("fixture modification started");
                     if (Environment.GetEnvironmentVariable("TOPSOLID_MCP_TEST_BROKEN") == "1") await Console.Out.WriteLineAsync("{malformed-fixture-response");

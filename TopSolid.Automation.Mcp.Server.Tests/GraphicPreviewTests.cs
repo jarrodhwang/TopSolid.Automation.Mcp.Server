@@ -7,6 +7,7 @@ using Newtonsoft.Json.Linq;
 using TopSolid.Automation.Mcp.Contracts;
 using TopSolid.Automation.Mcp.Server.AddIn.Automation;
 using TopSolid.Kernel.Automating;
+using TopSolid.Cam.NC.Kernel.Automating;
 
 namespace TopSolid.Automation.Mcp.Server.Tests
 {
@@ -33,25 +34,44 @@ namespace TopSolid.Automation.Mcp.Server.Tests
             finally { CultureInfo.CurrentCulture = previous; }
             PreviewChunks();
             ToolpathCoordinates();
-            NativeToolpathCamera();
+            ToolpathInterfaceScan();
         }
 
-        private static void NativeToolpathCamera()
+        private static void ToolpathInterfaceScan()
         {
-            var view = JObject.Parse("{eye:[0,-0.4,0.2],look:[0,2,-1],up:[0,0,1],angle:0,radius:0.1}");
-            var parsed = ToolpathCaptureView.Parse(view);
-            Check(Math.Abs(parsed.Look.Y - 2 / Math.Sqrt(5)) < 1e-12 && parsed.Radius == .1, "Native capture did not preserve SI camera units");
-            Check(ToolpathCaptureView.Parse(null) == null, "Old toolpath clients unexpectedly requested native capture");
-            foreach (var change in new Action<JObject>[] { p => p["radius"] = 0, p => p["eye"] = new JArray(0, double.NaN, 0),
-                p => p["look"] = new JArray(0,0,1), p => p["file"] = "caller.png", p => p["machine"] = "true", p => p["up"] = new JArray(0,0,0) })
+            var identity = new ElementId(new DocumentId("toolpath-fixture"), 42);
+            var path = new ToolpathTable(identity);
+            var result = ToolpathPreviewReader.Read(path, identity);
+            Check(path.Ended && path.Rows == 3 && (int)result["rowsScanned"] == 2 && (int)result["segments"] == 1 &&
+                (string)result["source"] == "IToolPath" && !(bool)result["partial"], "IToolPath lifecycle or geometry was lost");
+            path = new ToolpathTable(identity) { Fail = true };
+            Throws<InvalidOperationException>(() => ToolpathPreviewReader.Read(path, identity));
+            Check(path.Ended, "Failed IToolPath scan leaked its native reader");
+            path = new ToolpathTable(identity) { EmptyPoints = true };
+            result = ToolpathPreviewReader.Read(path, identity);
+            Check(path.Ended && path.Rows == 256 && (int)result["rowsScanned"] == 256 &&
+                (string)result["status"] == "coordinatesUnavailable" && (string)result["format"] == "segments-f32",
+                "Unavailable IToolPath points were captured as an image or scanned without bounds");
+        }
+
+        private sealed class ToolpathTable : IToolPath
+        {
+            private readonly ElementId identity;
+            internal bool Fail, EmptyPoints, Ended;
+            internal int Rows;
+            internal ToolpathTable(ElementId identity) { this.identity = identity; }
+            public List<string> StartToolPath(ElementId operation)
+            { Check(operation.Equals(identity), "StartToolPath identity changed"); return new List<string> { "X", "Y", "Z" }; }
+            public Dictionary<string, object> NextToolPathItem(ElementId operation)
             {
-                var invalid = (JObject)view.DeepClone(); change(invalid); Throws<ArgumentException>(() => ToolpathCaptureView.Parse(invalid));
+                Check(operation.Equals(identity), "NextToolPathItem identity changed");
+                if (Fail) throw new InvalidOperationException("Native scan failed");
+                Rows++;
+                if (EmptyPoints) return new Dictionary<string, object> { ["GOTO_XYZ_3D"] = "" };
+                return Rows > 2 ? null : new Dictionary<string, object> { ["X"] = Rows * .001, ["Y"] = .02, ["Z"] = .03 };
             }
-            Check(!ToolpathCaptureView.IsBoundedPng(new byte[32]), "Truncated native screenshot accepted");
-            var png = new byte[33]; new byte[] {137,80,78,71,13,10,26,10}.CopyTo(png,0);
-            new byte[] {73,72,68,82}.CopyTo(png,12); png[19] = 2; png[23] = 2;
-            Check(ToolpathCaptureView.IsBoundedPng(png), "Valid bounded PNG header rejected");
-            png[16] = 127; Check(!ToolpathCaptureView.IsBoundedPng(png), "Oversized native screenshot accepted");
+            public void EndToolPath(ElementId operation)
+            { Check(operation.Equals(identity), "EndToolPath identity changed"); Ended = true; }
         }
 
         private static void PreviewChunks()
@@ -94,6 +114,15 @@ namespace TopSolid.Automation.Mcp.Server.Tests
             builder.Add(Point(.007)); Check(builder.Segments == 2, "Unresolved work frame was overlaid on the default document frame");
             var missing = new ToolpathPreviewGeometry(); missing.Add(new Dictionary<string, object> { ["GOTO_XYZ_3D"] = "" });
             Check((string)missing.Result(true)["status"] == "coordinatesUnavailable", "Native empty point was reported as a complete path");
+            var xyz = new ToolpathPreviewGeometry();
+            Dictionary<string, object> XYZ(double x) => new Dictionary<string, object> { ["GOTO_XYZ_3D"] = "", ["X"] = x, ["Y"] = .02, ["Z"] = .03 };
+            xyz.Add(XYZ(.001)); xyz.Add(XYZ(.002));
+            Check(xyz.Segments == 1, "Numeric XYZ columns were ignored when a point column was empty");
+            xyz.Add(new Dictionary<string, object> { ["X"] = .003 }); xyz.Add(XYZ(.004));
+            Check(xyz.Segments == 1 && (bool)xyz.Result(true)["partial"], "Incomplete XYZ created a false cutting segment");
+            var emptyArc = XYZ(.005); emptyArc["3D_CENTER_XYZ"] = "";
+            xyz.Add(emptyArc); xyz.Add(XYZ(.006));
+            Check(xyz.Segments == 1, "Empty arc-center data was drawn as a straight segment");
         }
     }
 }

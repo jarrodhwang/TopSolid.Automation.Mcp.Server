@@ -14,7 +14,8 @@ namespace TopSolid.Automation.Mcp.Server.Tests
         private static void ModelingWorkflows()
         {
             AutomationGateway.RequireCylinderTarget("part-revision", "TopSolid.Cad.Design.DB.Documents.PartDocument", "part-revision");
-            Throws<ArgumentException>(() => AutomationGateway.RequireCylinderTarget("cam-revision", "TopSolid.Cam.NC.MillTurn.DB.Documents.MillTurnDocument", "cam-revision"));
+            AutomationGateway.RequireCylinderTarget("cam-revision", "TopSolid.Cam.NC.MillTurn.DB.Documents.MillTurnDocument", "cam-revision");
+            Throws<ArgumentException>(() => AutomationGateway.RequireCylinderTarget("cam-method", "TopSolid.Cam.NC.MillTurn.DB.Documents.MethodDocument", "cam-method"));
             Throws<ArgumentException>(() => AutomationGateway.RequireCylinderTarget("inactive-part", "TopSolid.Cad.Design.DB.Documents.PartDocument", "other-part"));
             Throws<ArgumentException>(() => AutomationGateway.RequireCylinderTarget("part", null, "part"));
             // Omitted monikers must round-trip as empty strings; absent names stay null.

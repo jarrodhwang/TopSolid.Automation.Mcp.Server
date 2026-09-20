@@ -31,6 +31,7 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Automation
                 () =>
                 {
                     TopSolidHost.Documents.EnsureIsDirty(ref document);
+                    CamStages.Enter(this, MutationReferences.Rebase(arguments, document.PdmDocumentId), EditStage.Modeling);
                     ElementId sketch;
                     ElementItemId profile = ElementItemId.Empty;
                     if (operation == "polyline3d")

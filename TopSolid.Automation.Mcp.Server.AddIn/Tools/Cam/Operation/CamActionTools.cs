@@ -22,7 +22,7 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
                     var updated = TopSolidCamHost.Operations.IsUpToDate(extended);
                     if (!updated) throw new InvalidOperationException("The CAM operation did not become up to date.");
                     return new JObject { ["operation"] = AutomationValues.Json(id), ["upToDate"] = updated, ["ncGenerated"] = false, ["collisionSafetyVerified"] = false };
-                }), "Cam/Operation", new[] { "documentId", "element" }, false,
+                }, EditStage.Machining), "Cam/Operation", new[] { "documentId", "element" }, false,
                 ApiRefs.Cam("IOperations.Execute", "IOperations.IsOperation", "IOperations.IsUpToDate"), MutationReferences.Validate, p => a.PreviewDocument(p, "cam"),
                 "Calculate the selected existing CAM operation and update the document. This may take time. No NC output or machine execution. Does not save."));
             var parameters = DocumentActionTools.Target(); parameters["element"] = Schema.Element(); parameters["name"] = Schema.Text("Exact parameter ID Name returned by list_cam_parameters, including its categories.", 512); parameters.Merge(ScalarInput.Properties());
@@ -36,7 +36,7 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
                     AutomationGateway.RequireValid(a.Element(current), "CAM parameter owner");
                     result["operationName"] = CamNames.OperationName(operation); result["ncGenerated"] = false; result["recalculationMayBeRequired"] = true;
                     return result;
-                }), "Cam/Operation", new[] { "documentId", "element", "name", "valueType" }, false,
+                }, EditStage.Machining), "Cam/Operation", new[] { "documentId", "element", "name", "valueType" }, false,
                 CamParameterValues.ReadApi.Concat(ApiRefs.Cam("IParameters.SetValue", "IOperations.GetNCOperation")).Concat(ApiRefs.Kernel("IElements.GetFriendlyName", "IElements.GetName", "IElements.GetTypeFullName", "IElements.IsInvalid")).ToArray(), ScalarInput.Validate,
                 p => {
                     var preview = a.PreviewDocument(p, "cam"); var operation = a.CamElement(p); var access = CamParameterValues.Native;

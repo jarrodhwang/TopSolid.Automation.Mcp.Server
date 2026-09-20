@@ -12,7 +12,7 @@ namespace TopSolid.Automation.AI.Studio.Preview;
 internal static class GlbPreviewReader
 {
     internal const int MaximumBytes = TopSolid.Automation.Mcp.Contracts.GraphicPreviewQuality.MaximumGlbBytes;
-    internal static PreviewScene Read(byte[] bytes, CancellationToken token, bool nativeColors = false)
+    internal static PreviewScene Read(byte[] bytes, CancellationToken token, bool nativeColors = false, bool zUp = false, Action<int, PreviewScene>? nodeScene = null)
     {
         if (bytes.Length is < 28 or > MaximumBytes || U32(0) != 0x46546C67 || U32(4) != 2 || U32(8) != bytes.Length)
             throw new InvalidDataException("Invalid GLB header.");
@@ -32,9 +32,10 @@ internal static class GlbPreviewReader
         var nodes = root["nodes"] as JArray ?? throw new InvalidDataException("Missing scene nodes.");
         if (nodes.Count > 2048) throw new InvalidDataException("Too many scene nodes.");
         var meshes = new List<PreviewMesh>(); var visited = new HashSet<int>(); var triangles = 0; var vertices = 0;
+        var components = new List<PreviewScene>();
         var scene = Entry("scenes", (int?)root["scene"] ?? 0);
         foreach (var node in scene["nodes"] as JArray ?? throw new InvalidDataException("Missing scene roots.")) Walk((int)node, Matrix3D.Identity, 0);
-        return PreviewScene.Build(meshes, token);
+        return nodeScene == null ? PreviewScene.Build(meshes, token) : PreviewScene.Combine(components.ToArray());
 
         uint U32(int offset)
         { if (offset < 0 || offset > bytes.Length - 4) throw new InvalidDataException("Truncated GLB."); return BinaryPrimitives.ReadUInt32LittleEndian(bytes.AsSpan(offset, 4)); }
@@ -48,6 +49,7 @@ internal static class GlbPreviewReader
             if (node["skin"] != null || node["weights"] != null) throw new InvalidDataException("Unsupported deformed mesh.");
             if (node["mesh"] is JValue meshIndex)
             {
+                var firstMesh = meshes.Count;
                 var mesh = Entry("meshes", (int)meshIndex);
                 foreach (var p in mesh["primitives"] as JArray ?? throw new InvalidDataException("Missing primitives."))
                 {
@@ -63,7 +65,8 @@ internal static class GlbPreviewReader
                     {
                         var at = positionAccessor.Offset + i * positionAccessor.Stride;
                         var world = transform.Transform(new Point3D(Float(at), Float(at + 4), Float(at + 8)));
-                        positions[i] = new Point3D(world.X * 1000, -world.Z * 1000, world.Y * 1000); // glTF metres/Y up -> TopSolid mm/Z up.
+                        positions[i] = zUp ? new Point3D(world.X * 1000, world.Y * 1000, world.Z * 1000)
+                            : new Point3D(world.X * 1000, -world.Z * 1000, world.Y * 1000);
                     }
                     int[] indices;
                     if (p["indices"] != null)
@@ -94,11 +97,16 @@ internal static class GlbPreviewReader
                             var at = accessor.Offset + i * accessor.Stride; var x = Float(at); var y = Float(at + 4); var z = Float(at + 8);
                             var n = new Vector3D(x * inverse.M11 + y * inverse.M12 + z * inverse.M13, x * inverse.M21 + y * inverse.M22 + z * inverse.M23, x * inverse.M31 + y * inverse.M32 + z * inverse.M33);
                             if (n.LengthSquared < 1e-24 || !double.IsFinite(n.LengthSquared)) throw new InvalidDataException("Invalid normal."); n.Normalize();
-                            normals[i] = new Vector3D(n.X, -n.Z, n.Y);
+                            normals[i] = zUp ? n : new Vector3D(n.X, -n.Z, n.Y);
                         }
                     }
                     var color = ReadColor(p["material"] == null ? null : Entry("materials", (int)p["material"]!), nativeColors);
                     meshes.Add(new PreviewMesh(positions, indices, color, normals));
+                }
+                if (nodeScene != null && meshes.Count > firstMesh)
+                {
+                    var component = PreviewScene.Build(meshes.Skip(firstMesh).ToArray(), token);
+                    components.Add(component); nodeScene(index, component);
                 }
             }
             foreach (var child in node["children"] as JArray ?? []) Walk((int)child, transform, depth + 1);

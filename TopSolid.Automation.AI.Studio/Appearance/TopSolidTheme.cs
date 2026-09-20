@@ -50,6 +50,8 @@ public static class TopSolidTheme
             ["MutedTextBrush"] = dark ? "#BDBDBD" : "#62626C",
             ["AccentBrush"] = dark ? "#0080D7" : "#0078D7",
             ["AccentTextBrush"] = "#FFFFFF",
+            ["CadModeBrush"] = dark ? "#66B3FF" : "#0066B3",
+            ["CamModeBrush"] = dark ? "#FF8585" : "#B52222",
             ["HoverBrush"] = dark ? "#006EBB" : "#DDEBFC",
             ["TitleTopBrush"] = dark ? "#0A0A0A" : "#464650",
             ["TitleBottomBrush"] = dark ? "#0A0A0A" : "#1E1E28",

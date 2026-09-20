@@ -115,17 +115,25 @@
               <Grid Grid.Row="2" Margin="0,6,0,0">
                 <Grid.ColumnDefinitions>
                   <ColumnDefinition Width="Auto" />
-                  <ColumnDefinition Width="Auto" />
                   <ColumnDefinition Width="*" />
+                  <ColumnDefinition Width="0" />
                   <ColumnDefinition Width="Auto" />
                   <ColumnDefinition Width="Auto" />
                 </Grid.ColumnDefinitions>
-                <Button x:Name="AttachButton" Content="+" FontSize="22" Width="36" Height="36" Padding="0" Click="Attach_Click" ToolTip="Add files" AutomationProperties.Name="Add files" Style="{StaticResource ComposerAction}" />
-                <ComboBox x:Name="PermissionBox" Grid.Column="1" Width="162" Margin="8,0,0,0" SelectionChanged="Permission_Changed" SelectedIndex="0" AutomationProperties.Name="Permissions" Style="{StaticResource ComposerPermission}" FontSize="12">
+                <Button x:Name="AttachButton" Content="+" FontSize="22" Width="36" Height="36" Padding="0" Click="Add_Click" ToolTip="{DynamicResource Ui.Context.Add}" AutomationProperties.Name="{DynamicResource Ui.Context.Add}" Style="{StaticResource ComposerAction}" />
+                <WrapPanel Grid.Column="1" VerticalAlignment="Center">
+                <ComboBox x:Name="PermissionBox" Width="162" Margin="8,0,0,0" SelectionChanged="Permission_Changed" SelectedIndex="0" AutomationProperties.Name="Permissions" Style="{StaticResource ComposerPermission}" FontSize="12">
                   <ComboBoxItem Content="Ask for approval" ToolTip="Ask before each TopSolid change." />
                   <ComboBoxItem Content="Approve for me" ToolTip="Automatically approve recognized reversible edits. Ask before saving, deleting, exporting, or unknown actions." />
                   <ComboBoxItem Content="Full access" ToolTip="Automatically approve validated TopSolid tool changes for this session." />
                 </ComboBox>
+                <Button x:Name="CadModeButton" Click="CadMode_Click" Visibility="Collapsed" Margin="6,0,0,0" Padding="6,4" Foreground="{DynamicResource CadModeBrush}" Style="{StaticResource ComposerAction}" ToolTip="{DynamicResource Ui.Context.CadOff}" AutomationProperties.Name="CAD">
+                  <StackPanel Orientation="Horizontal"><Image x:Name="CadModeIcon" Width="16" Height="16" Margin="0,0,5,0" /><TextBlock Text="CAD" FontWeight="SemiBold" /></StackPanel>
+                </Button>
+                <Button x:Name="CamModeButton" Click="CamMode_Click" Visibility="Collapsed" Margin="6,0,0,0" Padding="6,4" Foreground="{DynamicResource CamModeBrush}" Style="{StaticResource ComposerAction}" ToolTip="{DynamicResource Ui.Context.CamOff}" AutomationProperties.Name="CAM">
+                  <StackPanel Orientation="Horizontal"><Image x:Name="CamModeIcon" Width="16" Height="16" Margin="0,0,5,0" /><TextBlock Text="CAM" FontWeight="SemiBold" /></StackPanel>
+                </Button>
+                </WrapPanel>
                 <ComboBox x:Name="ModelBox" Grid.Column="3" Width="200" IsEditable="True" Margin="8,0" appearance:ControlChrome.SuppressTextSelection="True" TextBoxBase.TextChanged="ModelConfiguration_Changed" ToolTip="Select a model · Configure or list models in Settings" AutomationProperties.Name="Model" Style="{StaticResource ComposerModel}" FontSize="12" ItemTemplate="{StaticResource ModelOptionTemplate}" SelectedValuePath="ModelId" TextSearch.TextPath="ModelId" />
                 <Grid Grid.Column="4">
                   <Button x:Name="SendButton" Content="" FontFamily="Segoe MDL2 Assets" FontSize="17" Width="36" Height="36" Padding="0" Background="{DynamicResource AccentBrush}" Foreground="{DynamicResource AccentTextBrush}" Click="Send_Click" ToolTip="Send message" AutomationProperties.Name="Send message" Style="{StaticResource PrimaryComposerAction}" />
@@ -170,6 +178,7 @@
                 <ListBoxItem Tag="ai" Content="{DynamicResource Ui.Nav.AiModel}" Padding="12,11" Margin="0,2" />
                 <ListBoxItem Tag="topsolid" Content="{DynamicResource Ui.Nav.TopSolidConnection}" Padding="12,11" Margin="0,2" />
                 <ListBoxItem Tag="appearance" Content="{DynamicResource Ui.Nav.Appearance}" Padding="12,11" Margin="0,2" />
+                <ListBoxItem Tag="camColors" Content="{DynamicResource Ui.Color.Settings}" Padding="12,11" Margin="0,2" />
                 <ListBoxItem Tag="languages" Content="{DynamicResource Ui.Nav.Languages}" Padding="12,11" Margin="0,2" />
                 <ListBoxItem Tag="developer" Content="{DynamicResource Ui.Nav.Developer}" Padding="12,11" Margin="0,2" />
               </ListBox>
@@ -219,6 +228,17 @@
                     <ComboBoxItem Tag="topsolid" Content="{DynamicResource Ui.Appearance.TopSolid}" />
                   </ComboBox>
                   <TextBlock x:Name="ThemeStatusText" Margin="0,16,0,0" Foreground="{DynamicResource MutedTextBrush}" TextWrapping="Wrap" />
+                  <TextBlock Text="{DynamicResource Ui.Preview.Defaults}" Style="{StaticResource FormLabel}" />
+                  <CheckBox x:Name="PreviewEdgesBox" Content="{DynamicResource Ui.Preview.DefaultEdges}" Margin="0,4" Checked="PreviewDefaults_Changed" Unchecked="PreviewDefaults_Changed"/>
+                  <CheckBox x:Name="PreviewPartBox" Content="{DynamicResource Ui.Preview.Part}" Margin="0,4" Checked="PreviewDefaults_Changed" Unchecked="PreviewDefaults_Changed"/>
+                  <CheckBox x:Name="PreviewStockBox" Content="{DynamicResource Ui.Preview.DefaultStock}" Margin="0,4" Checked="PreviewDefaults_Changed" Unchecked="PreviewDefaults_Changed"/>
+                  <CheckBox x:Name="PreviewMachineBox" Content="{DynamicResource Ui.Preview.Machine}" Margin="0,4" Checked="PreviewDefaults_Changed" Unchecked="PreviewDefaults_Changed"/>
+                </StackPanel>
+                <StackPanel x:Name="CamColorsSettingsSection" Visibility="Collapsed">
+                  <TextBlock Text="{DynamicResource Ui.Color.Settings}" FontSize="21" FontWeight="SemiBold" />
+                  <TextBlock x:Name="CamPaletteName" Margin="0,16,0,12" />
+                  <Button Content="{DynamicResource Ui.Color.EditPalette}" Click="EditCamPalette_Click" HorizontalAlignment="Left" />
+                  <Button Content="{DynamicResource Ui.Cam.Methods}" Click="EditCamMethods_Click" HorizontalAlignment="Left" Margin="0,12,0,0" />
                 </StackPanel>
                 <StackPanel x:Name="LanguageSettingsSection" Visibility="Collapsed">
                   <TextBlock Text="{DynamicResource Ui.Nav.Languages}" FontSize="21" FontWeight="SemiBold" />

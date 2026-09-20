@@ -12,6 +12,11 @@ public partial class MainWindow
         AppearanceModeBox.SelectedValue = settings.AppearanceMode;
         InterfaceLanguageBox.SelectedValue = settings.InterfaceLanguage;
         ResponseLanguageBox.SelectedValue = settings.ResponseLanguage;
+        Settings.PreviewDefaults.Current = settings.PreviewDefaults;
+        PreviewEdgesBox.IsChecked = settings.PreviewDefaults.Edges;
+        PreviewPartBox.IsChecked = settings.PreviewDefaults.Part;
+        PreviewStockBox.IsChecked = settings.PreviewDefaults.Stock;
+        PreviewMachineBox.IsChecked = settings.PreviewDefaults.Machine;
         SettingsNavigation.SelectedValue = "ai";
         ShowSettingsSection("ai");
         BindKnownStrings(this);
@@ -50,6 +55,7 @@ public partial class MainWindow
         EndpointBox.ToolTip = EndpointBox.IsReadOnly ? StudioStrings.Text("Service URL is filled automatically. Choose Custom OpenAI-compatible to use another endpoint.") : null;
         ApiKeyBox.ToolTip = visibleProvider == "Ollama" ? null : StudioStrings.Text(AI.CloudServices.Get(settings.CloudService).KeyHint);
         PermissionBox.ToolTip = Chat.PermissionPolicy.Description(permissionMode);
+        if (cadMenu != null) RefreshContextModes();
         RenderAttachments();
         RefreshChatPresentation();
     });
@@ -67,6 +73,7 @@ public partial class MainWindow
         AppearanceSettingsSection.Visibility = section == "appearance" ? Visibility.Visible : Visibility.Collapsed;
         LanguageSettingsSection.Visibility = section == "languages" ? Visibility.Visible : Visibility.Collapsed;
         DeveloperSettingsSection.Visibility = section == "developer" ? Visibility.Visible : Visibility.Collapsed;
+        CamColorsSettingsSection.Visibility = section == "camColors" ? Visibility.Visible : Visibility.Collapsed;
         SettingsScroller.ScrollToTop();
     }
 
@@ -76,6 +83,14 @@ public partial class MainWindow
         settings.AppearanceMode = mode;
         themeFollower?.SetMode(mode);
         UpdateThemeStatus();
+    }
+
+    private void PreviewDefaults_Changed(object sender, RoutedEventArgs e)
+    {
+        if (loading) return;
+        settings.PreviewDefaults = new(PreviewEdgesBox.IsChecked == true, PreviewPartBox.IsChecked == true,
+            PreviewStockBox.IsChecked == true, PreviewMachineBox.IsChecked == true);
+        Settings.PreviewDefaults.Current = settings.PreviewDefaults;
     }
 
     private void InterfaceLanguage_Changed(object sender, SelectionChangedEventArgs e)

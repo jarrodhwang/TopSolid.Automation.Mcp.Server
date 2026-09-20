@@ -78,6 +78,10 @@ internal static class CamWorkflowImprovementTests
         var scenes=await CamContextPreview.ReadAsync(path,CancellationToken.None);
         Check.True(scenes.Work.Triangles>0 && scenes.Machine.Triangles>scenes.Work.Triangles,"Native machine geometry was omitted");
         Check.True(scenes.Machine.Bounds.SizeX>scenes.Work.Bounds.SizeX,"Machine bounds did not include the machine");
+        Check.True(scenes.HasRemaining && scenes.Work.Triangles > scenes.Part.Triangles, "Remaining stock was not separated from the target part");
+        Check.True(scenes.Work.GpuMeshes.Any(m => m.Color.R == 255 && m.Color.G == 255 && m.Color.B == 0 && m.Color.A is > 0 and < 128), "Stock must be transparent yellow");
+        Check.True(scenes.Part.GpuMeshes.All(m => m.Color.A == 255), "Target part inherited the stock transparency");
+        Check.True(scenes.Part.Bounds.Z > 40 && scenes.Part.Bounds.Z < 60 && scenes.Part.Bounds.SizeZ < 80, "Native CAM Z-up placement was rotated into the wrong axis");
         Console.WriteLine($"CAM context: work {scenes.Work.Triangles} triangles, machine+work {scenes.Machine.Triangles}; bounds {scenes.Work.Bounds} / {scenes.Machine.Bounds}");
     }
 
@@ -99,10 +103,14 @@ internal static class CamWorkflowImprovementTests
         Check.Equal(true, (bool?)payload.Metadata["camContext"], "Server did not use organized CAM geometry");
         var scenes = await CamContextPreview.ReadAsync(payload.FilePath!, timeout.Token);
         Check.True(scenes.Machine.Triangles > scenes.Work.Triangles && scenes.Work.Triangles > 0, "Live context omitted machine/work geometry");
+        Check.True(scenes.HasRemaining && scenes.Original != null, "Live CAM stock layers are missing");
         var after = await ReadDocument();
         Check.True(JToken.DeepEquals(before["document"], after["document"]), "CAM export changed the active document or its dirty state");
         var directory = Path.GetFullPath("artifacts/cam-context"); Directory.CreateDirectory(directory);
+        File.Copy(payload.FilePath!, Path.Combine(directory, "live-layers.glb"), true);
         var report = new JObject { ["documentUnchanged"] = true, ["workTriangles"] = scenes.Work.Triangles,
+            ["partTriangles"] = scenes.Part.Triangles, ["originalAndPartTriangles"] = scenes.Original?.Triangles,
+            ["partBounds"] = scenes.Part.Bounds.ToString(), ["originalAndPartBounds"] = scenes.Original?.Bounds.ToString(),
             ["machineAndWorkTriangles"] = scenes.Machine.Triangles, ["metadata"] = payload.Metadata.DeepClone() };
         File.WriteAllText(Path.Combine(directory, "live-context-rpc.json"), report.ToString());
         Console.WriteLine(report);

@@ -14,6 +14,7 @@ $replacements = [ordered]@{
     'arguments' = 'Cad\Kernel\WG\Commands\ShowPropertiesCommand.png'
     'operation' = 'Cam\NC\Kernel\DB\Operations\NCOperation.png'
     'cam-tool' = 'Cam\NC\MillTurn\UI\Resources\ToolEntity.png'
+    'cam-favorites' = 'Quote\UI\Resources.Favorite.png'
     'cam-cutting-conditions' = 'Cam\NC\Kernel\UI\Resources\CuttingConditionsPane.png'
     'cam-geometry' = 'Cam\NC\MillTurn\UI\Resources\GeometryPanel.png'
     'cam-strategy' = 'Cam\NC\MillTurn\UI\Resources\Parameters.png'

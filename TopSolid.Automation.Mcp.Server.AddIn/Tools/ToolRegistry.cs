@@ -20,8 +20,10 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
         private readonly Func<JObject, JObject> toolpathPreview;
         private readonly Func<JObject> licenseStatus;
         private readonly Func<int> hostVersion;
+        private readonly AutomationGateway automation;
         public ToolRegistry(AutomationGateway automation, Func<int> hostVersion = null)
         {
+            this.automation = automation;
             this.hostVersion = hostVersion;
             preview = automation.PreviewModeling;
             graphicPreview = automation.GraphicPreview;
@@ -50,6 +52,8 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
             SketchBatchReadTools.Register(automation, Register);
             EntityBatchActionTools.Register(automation, Register);
             AppearanceTools.Register(automation, Register);
+            CamColorTools.Register(automation, Register);
+            CamMethodTools.Register(automation, Register);
             ParameterBatchTools.Register(automation, Register);
             ParameterReadTools.Register(automation, Register);
             ParameterExpressionTools.Register(automation, Register);
@@ -136,9 +140,21 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
         {
             var names = resolveCreationNames?.Invoke(tool.Name, arguments);
             effectiveArguments = names?.Arguments ?? arguments;
-            var target = (tool.Preview ?? preview)(effectiveArguments);
+            var input = effectiveArguments;
+            var target = InStage(tool, () => (tool.Preview ?? preview)(input));
             if (names != null) target["naming"] = names.Receipt.DeepClone();
             return target;
+        }
+        private JObject InStage(ToolDefinition tool, Func<JObject> action) => automation == null ? action() : automation.InEditStage(StageIntent(tool), action);
+        internal static EditStage StageIntent(ToolDefinition tool)
+        {
+            if (tool.ReadOnly) return EditStage.None;
+            if (tool.Name == "topsolid_apply_cam_color_plan" || tool.Name == "topsolid_set_entity_colors" || tool.Name == "topsolid_color_shape_faces") return EditStage.Modeling;
+            if (tool.Name == "topsolid_update_elements" || tool.Name == "topsolid_delete_elements" || tool.Name == "topsolid_rename_element" || tool.Name == "topsolid_set_element_visibility") return EditStage.Target;
+            if (tool.Category == "Cam/Operation" || tool.Category == "Cam/Simulation") return EditStage.Machining;
+            if (tool.Category == "Sketch2D" || tool.Category == "Sketch3D" || tool.Category == "Design2D" || tool.Category == "Design3D" ||
+                tool.Category == "Parameters" || tool.Name == "topsolid_translate_element" || tool.Name == "topsolid_translate_elements") return EditStage.Modeling;
+            return EditStage.None;
         }
         private ToolDefinition GetTool(string name)
         {
@@ -194,7 +210,7 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
                     // of enumerating a potentially larger set a third time.
                     if (tool.ExecutePrepared != null) return Content(tool.ExecutePrepared(effectiveArguments, currentTarget), false);
                 }
-                var result = tool.Execute(effectiveArguments);
+                var result = InStage(tool, () => tool.Execute(effectiveArguments));
                 if (currentTarget?["naming"] != null) result["naming"] = currentTarget["naming"].DeepClone();
                 return Content(result, false);
             }

@@ -19,18 +19,25 @@
     <EmbeddedResource Include="Assets\TopSolid\provenance.json" />
     <EmbeddedResource Include="Assets\Reference\cam-operation-names.json" LogicalName="TopSolid.Automation.AI.Studio.CamOperationNames.json" />
     <ProjectReference Include="..\TopSolid.Automation.Mcp.Contracts\TopSolid.Automation.Mcp.Contracts.csproj" />
+    <ProjectReference Include="..\TopSolid.Automation.CamPreview.AddIn\TopSolid.Automation.CamPreview.AddIn.csproj" ReferenceOutputAssembly="false" SkipGetTargetFrameworkProperties="true" />
+    <Content Include="..\scripts\Install-CamPreviewAddIn.ps1" Link="CamPreviewAddIn\Install-CamPreviewAddIn.ps1" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+    <Content Include="..\TopSolid.Automation.CamPreview.AddIn\README.md" Link="CamPreviewAddIn\README.md" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
     <ProjectReference Include="..\TopSolid.Automation.Mcp.Server.AddIn\TopSolid.Automation.Mcp.Server.AddIn.csproj" ReferenceOutputAssembly="false" SkipGetTargetFrameworkProperties="true" />
   </ItemGroup>
   <Target Name="CopyMcpServer" AfterTargets="Build">
     <ItemGroup>
+      <CamPreviewFiles Include="..\TopSolid.Automation.CamPreview.AddIn\bin\$(Configuration)\net48\TopSolid.Automation.CamPreview.AddIn.dll;..\TopSolid.Automation.CamPreview.AddIn\bin\$(Configuration)\net48\Newtonsoft.Json.dll" />
       <McpServerFiles Include="..\TopSolid.Automation.Mcp.Server.AddIn\bin\$(Configuration)\net48\**\*" Exclude="..\TopSolid.Automation.Mcp.Server.AddIn\bin\$(Configuration)\net48\TopSolid.Pdm.Explorer.Automating.*" />
     </ItemGroup>
+    <Copy SourceFiles="@(CamPreviewFiles)" DestinationFolder="$(OutDir)CamPreviewAddIn" SkipUnchangedFiles="true" />
     <Copy SourceFiles="@(McpServerFiles)" DestinationFiles="@(McpServerFiles->'$(OutDir)McpServer\%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true" />
   </Target>
   <Target Name="PublishMcpServer" AfterTargets="Publish">
     <ItemGroup>
+      <CamPreviewPublishFiles Include="$(OutDir)CamPreviewAddIn\*.dll" />
       <McpPublishFiles Include="$(OutDir)McpServer\**\*" Exclude="$(OutDir)McpServer\TopSolid.Pdm.Explorer.Automating.*" />
     </ItemGroup>
+    <Copy SourceFiles="@(CamPreviewPublishFiles)" DestinationFolder="$(PublishDir)CamPreviewAddIn" SkipUnchangedFiles="true" />
     <Copy SourceFiles="@(McpPublishFiles)" DestinationFiles="@(McpPublishFiles->'$(PublishDir)McpServer\%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true" />
   </Target>
 

@@ -1,5 +1,6 @@
 using System;
 using System.Linq;
+using System.Collections.Generic;
 using Newtonsoft.Json.Linq;
 using TopSolid.Automation.Mcp.Server.AddIn.Automation;
 using TopSolid.Kernel.Automating;
@@ -24,13 +25,14 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
                     var parent = a.Pdm(p);
                     TopSolidHost.Pdm.GetConstituents(parent, out var folders, out var documents);
                     var parentName = TopSolidHost.Pdm.GetName(parent);
+                    var loaded = new HashSet<DocumentId>(TopSolidHost.Documents.GetDocuments());
                     var values = folders.Select(id => new { id, kind = "folder" }).Concat(documents.Select(id => new { id, kind = "document" }));
-                    return AutomationValues.Page(values, p, entry => Child(entry.id, entry.kind, parentName));
+                    return AutomationValues.Page(values, p, entry => Child(entry.id, entry.kind, parentName, loaded));
                 }), "Pdm", new[] { "pdmObjectId" }, true,
-                ApiRefs.Kernel("IPdm.GetConstituents", "IPdm.GetName", "IPdm.GetType", "IDocuments.GetDocument", "IDocuments.Exists", "IDocuments.GetTypeFullName")));
+                ApiRefs.Kernel("IPdm.GetConstituents", "IPdm.GetName", "IPdm.GetType", "IDocuments.GetDocument", "IDocuments.GetDocuments", "IDocuments.Exists", "IDocuments.GetTypeFullName")));
         }
 
-        private static JObject Child(PdmObjectId id, string kind, string parentName)
+        private static JObject Child(PdmObjectId id, string kind, string parentName, HashSet<DocumentId> loaded)
         {
             var row = new JObject { ["pdmObjectId"] = id.Id, ["kind"] = kind, ["name"] = TopSolidHost.Pdm.GetName(id) };
             if (!string.IsNullOrWhiteSpace(parentName)) row["parentName"] = parentName;
@@ -56,6 +58,7 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
                 if (!document.IsEmpty)
                 {
                     row["documentId"] = document.PdmDocumentId;
+                    row["isLoaded"] = loaded.Contains(document);
                     if (TopSolidHost.Documents.Exists(document))
                         row["typeFullName"] = TopSolidHost.Documents.GetTypeFullName(document);
                 }

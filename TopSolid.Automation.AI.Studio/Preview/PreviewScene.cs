@@ -17,6 +17,44 @@ internal sealed record PreviewScene(Model3DGroup Surfaces, Model3DGroup Edges, R
     internal GpuMesh[] GpuMeshes { get; private init; } = [];
     internal HelixToolkit.SharpDX.LineGeometry3D? GpuEdges { get; private init; }
     private PreviewEdge[] edgeCandidates = [];
+    internal PreviewScene Recolor(Color color)
+    {
+        var brush = new SolidColorBrush(color); brush.Freeze();
+        var material = new DiffuseMaterial(brush); material.Freeze();
+        var surfaces = new Model3DGroup();
+        foreach (var model in Surfaces.Children.OfType<GeometryModel3D>())
+        {
+            var painted = new GeometryModel3D(model.Geometry, material) { BackMaterial = material }; painted.Freeze(); surfaces.Children.Add(painted);
+        }
+        surfaces.Freeze();
+        return this with { Surfaces = surfaces, GpuMeshes = GpuMeshes.Select(mesh => mesh with { Color = color }).ToArray() };
+    }
+    internal PreviewScene AsStockOverlay()
+    {
+        // Keep the native facets exact; duplicate stock edges obscure the target.
+        var empty = new Model3DGroup(); empty.Freeze();
+        return this with { Edges = empty, edgeCandidates = [], GpuEdges = null };
+    }
+    internal static PreviewScene Empty(Rect3D bounds)
+    {
+        var empty = new Model3DGroup(); empty.Freeze();
+        return new(empty, empty, bounds, 0, false);
+    }
+    internal static PreviewScene Combine(params PreviewScene?[] sources)
+    {
+        var scenes = sources.OfType<PreviewScene>().ToArray();
+        var count = scenes.Sum(s => s.Triangles);
+        if (count == 0 || count > MaximumTriangles) throw new InvalidDataException("Invalid combined preview size.");
+        var surfaces = new Model3DGroup(); var bounds = Rect3D.Empty;
+        foreach (var scene in scenes) { surfaces.Children.Add(scene.Surfaces); bounds.Union(scene.Bounds); }
+        surfaces.Freeze(); var empty = new Model3DGroup(); empty.Freeze();
+        var candidates = scenes.SelectMany(s => s.edgeCandidates).OrderByDescending(e => e.Feature).Take(MaximumEdges).ToArray();
+        return new PreviewScene(surfaces, empty, bounds, count, scenes.Any(s => s.EdgesOmitted))
+        {
+            GpuMeshes = scenes.SelectMany(s => s.GpuMeshes).ToArray(), edgeCandidates = candidates,
+            GpuEdges = ToolpathPreviewScene.Lines(candidates.Where(e => e.Feature).Select(e => (e.A, e.B)))
+        };
+    }
     internal static PreviewScene Build(IReadOnlyList<PreviewMesh> meshes, CancellationToken token)
     {
         var surfaces = new Model3DGroup(); var edges = new Model3DGroup(); var bounds = Rect3D.Empty;

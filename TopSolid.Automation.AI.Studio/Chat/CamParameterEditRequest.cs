@@ -20,15 +20,26 @@ internal static class CamParameterEditRequest
         Func<JObject, CancellationToken, Task<bool>>? confirm, Action<ChatTrace> trace, CancellationToken token)
     {
         if (!Matches(text)) return null;
+        var selection = previous?.LastOrDefault(m => m.Role == "tool" && m.ToolName == QuestionSources.ToolName);
+        JObject? answer = null;
+        try { if (selection != null) answer = JObject.Parse(selection.Content)["structuredContent"] as JObject; } catch (Newtonsoft.Json.JsonException) { }
+        var selected = (string?)answer?["status"] == "answered" && answer["selected"] is JArray { Count: > 0 and <= 100 } rows && rows.All(r => r is JObject)
+            ? rows.OfType<JObject>().ToArray() : [];
+        return await RunSelected(text, selected, mcp, edit, confirm, trace, token);
+    }
+
+    // Shared by the chat editor and operation Detail dialog; all edits retain the same
+    // receipt validation, prepare/confirm contract, revision handling and audit trail.
+    internal static async Task<IReadOnlyList<AiMessage>> RunSelected(string text, IReadOnlyList<JObject> selected, IMcpClient mcp,
+        Func<IReadOnlyList<JObject>, CancellationToken, Task<IReadOnlyList<JObject>?>>? edit,
+        Func<JObject, CancellationToken, Task<bool>>? confirm, Action<ChatTrace> trace, CancellationToken token,
+        Action<string, string>? documentChanged = null)
+    {
         var turn = new List<AiMessage> { new() { Role = "user", Content = text } }; var completed = 0;
         IReadOnlyList<AiMessage> Finish(string key, params object[] args) { turn.Add(new AiMessage { Role = "assistant", Content = StudioStrings.Get(key, args) }); return turn; }
         if (edit == null || confirm == null || mcp is not IConfirmableMcpClient client || !mcp.IsConnected ||
             !mcp.Tools.Any(t => t.Name == ReadTool && !t.RequiresConfirmation) || !mcp.Tools.Any(t => t.Name == WriteTool && t.RequiresConfirmation)) return Finish("Cam.EditUnavailable");
-        var selection = previous?.LastOrDefault(m => m.Role == "tool" && m.ToolName == QuestionSources.ToolName);
-        JObject? answer = null;
-        try { if (selection != null) answer = JObject.Parse(selection.Content)["structuredContent"] as JObject; } catch (Newtonsoft.Json.JsonException) { }
-        if ((string?)answer?["status"] != "answered" || answer["selected"] is not JArray { Count: > 0 and <= 100 } selected ||
-            selected.Any(s => s is not JObject || (string?)s["sourceTool"] != "topsolid_list_cam_parameters")) return Finish("Cam.EditUnavailable");
+        if (selected.Count == 0 || selected.Any(s => (string?)s["sourceTool"] != "topsolid_list_cam_parameters")) return Finish("Cam.EditUnavailable");
         try
         {
             var refreshed = new List<JObject>();
@@ -76,7 +87,10 @@ internal static class CamParameterEditRequest
                 completed++;
                 var data = PdmInventory.Data(result);
                 if (data?["documentId"]?.Type == JTokenType.String && (string?)data["originalDocumentId"] == (string?)args["documentId"])
+                {
                     revisions[document] = (string)data["documentId"]!;
+                    documentChanged?.Invoke((string)args["documentId"]!, revisions[document]);
+                }
                 else if (completed < changes.Count) return Finish("Cam.EditStopped",completed);
             }
             return Finish("Cam.EditComplete",completed);

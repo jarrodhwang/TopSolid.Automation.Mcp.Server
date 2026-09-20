@@ -18,6 +18,7 @@ namespace TopSolid.Automation.Tests;
 /// <summary>Run separately (--ui-shell): isolated offscreen UI fixtures, with no provider/MCP calls or settings saves.</summary>
 internal static partial class UiShellTests
 {
+    internal static bool CamDocumentBrowseOnly;
     private static bool captureImages;
     internal static string? CamContextPath;
     internal static bool ToolpathOnly;
@@ -61,13 +62,24 @@ internal static partial class UiShellTests
         Directory.CreateDirectory(output);
         var settingsPath = new SettingsStore().FilePath;
         var settingsBefore = Fingerprint(settingsPath);
+        if (CamColorsOnly) { await VerifyCamColorsUi(output); Check.Equal(settingsBefore,Fingerprint(settingsPath),"CAM color UI changed user settings"); return; }
+        if (CamAutomationOnly) { await VerifyCamAutomationUi(output); Check.Equal(settingsBefore, Fingerprint(settingsPath), "CAM automation UI changed user settings"); return; }
+        if (CamDocumentBrowseOnly)
+        {
+            var owner = new Window { Width = 1000, Height = 780, Left = -20000, Top = -20000, ShowInTaskbar = false, ShowActivated = false };
+            try { owner.Show(); await CamDocumentBrowseTests.Ui(owner, (target, name) => Render(target, Path.Combine(output, name))); }
+            finally { owner.Close(); }
+            Check.Equal(settingsBefore, Fingerprint(settingsPath), "Browse UI tests changed saved settings");
+            Console.WriteLine("PASS project/document/operation dialog rendering, back button, scoped context and unchanged settings.");
+            return;
+        }
         if (ToolpathOnly)
         {
             var owner = new Window { Width = 1000, Height = 780, Left = -20000, Top = -20000, ShowInTaskbar = false, ShowActivated = false };
             try { owner.Show(); await GraphicPreviewUiTests.OperationBrowser(owner, (target, name) => Render(target, Path.Combine(output, name))); }
             finally { owner.Close(); }
             Check.Equal(settingsBefore, Fingerprint(settingsPath), "Preview UI tests changed saved settings");
-            Console.WriteLine("PASS toolpath preview UI: operation switching, native image refresh, debounce, stale replies and unchanged geometry/settings.");
+            Console.WriteLine("PASS toolpath preview UI: geometry rendering, image rejection, local navigation, stale replies and unchanged geometry/settings.");
             return;
         }
         var window = new MainWindow(autoConnect: false) { ShowInTaskbar = false, ShowActivated = false,

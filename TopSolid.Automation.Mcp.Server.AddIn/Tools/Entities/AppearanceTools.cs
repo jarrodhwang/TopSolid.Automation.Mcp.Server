@@ -33,11 +33,14 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
                 input => a.Modify(input, "color shape faces", "kernel", (doc, current) => {
                     var ids = FaceIds(a, current); VerifyFaces(ids);
                     var requested = ElementAppearance.Parse(current["color"]);
-                    var operation = TopSolidHost.Shapes.CreateColoringOperation(ids, requested); AutomationGateway.RequireValid(operation, "face coloring operation");
+                    var operations = ids.GroupBy(id => id.ElementId).Select(group => {
+                        var operation = TopSolidHost.Shapes.CreateColoringOperation(group.ToList(), requested);
+                        AutomationGateway.RequireValid(operation, "face coloring operation"); return operation;
+                    }).ToList();
                     foreach (var id in ids) if (!TopSolidHost.Shapes.GetFaceColor(id).Equals(requested)) throw new InvalidOperationException("Face color readback differs; rolling back.");
-                    return new JObject { ["operation"] = AutomationValues.Json(operation), ["faces"] = AutomationValues.Json(ids), ["color"] = ElementAppearance.Json(requested), ["readBackVerified"] = true };
+                    return new JObject { ["operation"] = AutomationValues.Json(operations[0]), ["operations"] = AutomationValues.Json(operations), ["faces"] = AutomationValues.Json(ids), ["color"] = ElementAppearance.Json(requested), ["readBackVerified"] = true };
                 }), "Design3D", new[] { "documentId", "faces", "color" }, false,
-                ApiRefs.Kernel("IShapes.GetFaces", "IShapes.GetFaceColor", "IShapes.CreateColoringOperation", "IElements.Exists", "IElements.IsInvalid", "Color"),
+                ApiRefs.Kernel("IShapes.GetFaces", "IShapes.GetFaceColor", "IShapes.CreateColoringOperation", "IElements.Exists", "IElements.IsInvalid", "IElements.IsColorModifiable", "Color"),
                 input => { MutationReferences.Validate(input); ElementAppearance.Validate(input); }, input => {
                     var preview = a.PreviewDocument(input); var ids = FaceIds(a, input); VerifyFaces(ids);
                     preview["faces"] = new JArray(ids.Select(id => new JObject { ["face"] = AutomationValues.Json(id), ["color"] = ElementAppearance.Json(TopSolidHost.Shapes.GetFaceColor(id)) })); return preview;
@@ -51,6 +54,8 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
         private static void VerifyFaces(global::System.Collections.Generic.List<ElementItemId> faces)
         {
             foreach (var group in faces.GroupBy(f => f.ElementId)) {
+                if (!TopSolidHost.Elements.IsColorModifiable(group.Key))
+                    throw new ArgumentException("The face belongs to an unmodifiable shape. Prepare an editable native workpiece before coloring.");
                 var known = TopSolidHost.Shapes.GetFaces(group.Key);
                 if (group.Any(f => !known.Contains(f))) throw new ArgumentException("A face handle is not present on its shape. Refresh shape geometry before coloring.");
             }

@@ -51,6 +51,10 @@ public sealed class AppSettings
     public int RequestTimeoutMinutes { get; set; } = DefaultRequestTimeoutMinutes;
     public bool OllamaFastGptOss { get; set; } = true;
     public bool DevMode { get; set; }
+    public TopSolid.Automation.Mcp.Contracts.StudioContextOptions ContextOptions { get; set; } = new();
+    public TopSolid.Automation.Mcp.Contracts.CamColorStandard CamColorStandard { get; set; } = TopSolid.Automation.Mcp.Contracts.CamColorStandard.Starter();
+    public List<TopSolid.Automation.Mcp.Contracts.CamMethodDefinition> CamMethods { get; set; } = [];
+    public PreviewDefaults PreviewDefaults { get; set; } = new();
     public string AppearanceMode { get; set; } = "topsolid";
     public string InterfaceLanguage { get; set; } = "system";
     public string ResponseLanguage { get; set; } = "auto";

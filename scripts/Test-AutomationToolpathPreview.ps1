@@ -17,7 +17,7 @@ function Rpc($method,$arguments) {
     $process.StandardInput.WriteLine((@{jsonrpc='2.0';id=1;method=$method;params=$arguments}|ConvertTo-Json -Depth 15 -Compress))
     $process.StandardInput.Flush()
     $read = $process.StandardOutput.ReadLineAsync()
-    if(-not $read.Wait(60000)){throw 'Preview response timed out; leave TopSolid open so the temporary transaction can finish.'}
+    if(-not $read.Wait(60000)){throw 'IToolPath read timed out.'}
     $message=$read.Result|ConvertFrom-Json
     if($message.error){throw ($message.error|ConvertTo-Json -Compress)}
     return $message.result
@@ -25,15 +25,19 @@ function Rpc($method,$arguments) {
 try {
     $null=Rpc 'initialize' @{protocolVersion='2025-03-26';capabilities=@{};clientInfo=@{name='automation-toolpath-validation';version='1'}}
     $process.StandardInput.WriteLine('{"jsonrpc":"2.0","method":"notifications/initialized"}')
-    # Camera is in SI. This view surrounds the current impeller fixture measured in the export probe.
-    $request=@{documentId=$DocumentId;id=$OperationId;view=@{eye=@(-.35,-.35,.24);look=@(1,1,-.55);up=@(0,0,1);angle=0;radius=.14;machine=$false}}
+    $request=@{documentId=$DocumentId;id=$OperationId}
     $watch=[Diagnostics.Stopwatch]::StartNew()
     $result=Rpc 'topsolid/toolpathPreview' $request
     $elapsed=$watch.Elapsed.TotalSeconds
-    if($result.status -ne 'ready' -or $result.format -ne 'native-view-png' -or $result.stateRestored -ne $true){throw ($result|ConvertTo-Json -Depth 8)}
-    [IO.File]::WriteAllBytes((Join-Path $directory 'automation-operation-path.png'),[Convert]::FromBase64String($result.data))
+    if($result.status -notin @('ready','coordinatesUnavailable') -or $result.format -ne 'segments-f32' -or $result.source -ne 'IToolPath'){throw ($result|ConvertTo-Json -Depth 8)}
+    if($result.operation.documentId -ne $DocumentId -or $result.operation.id -ne $OperationId){throw 'Operation identity changed.'}
+    $bytes = [Convert]::FromBase64String($result.data)
+    if($bytes.Length -ne $result.segments * 24){throw 'Invalid geometry buffer size.'}
+    if($result.status -eq 'ready' -and $result.segments -le 0){throw 'Ready result has no geometry.'}
+    $result|Add-Member rawCoordinatesRetrieved ($result.status -eq 'ready')
     $result.PSObject.Properties.Remove('data'); $result|Add-Member elapsedSeconds $elapsed
-    $result|ConvertTo-Json -Depth 8|Set-Content (Join-Path $directory 'automation-operation-path.json') -Encoding UTF8
+    $result|ConvertTo-Json -Depth 8|Set-Content (Join-Path $directory 'itoolpath-operation-geometry.json') -Encoding UTF8
+    $result.PSObject.Properties.Remove('columns')
     $result|ConvertTo-Json -Depth 8
 } finally {
     $process.StandardInput.Close()

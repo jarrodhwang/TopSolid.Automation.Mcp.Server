@@ -7,6 +7,13 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Automation
 {
     internal sealed partial class AutomationGateway
     {
+        private EditStage editStage;
+        internal JObject InEditStage(EditStage stage, Func<JObject> action)
+        {
+            var previous = editStage;
+            try { editStage = stage; return action(); }
+            finally { editStage = previous; }
+        }
         public JObject PreviewDocument(JObject arguments, string module = "kernel")
         {
             ConnectModule(module);
@@ -15,9 +22,12 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Automation
             var document = Document(arguments);
             foreach (var reference in arguments.DescendantsAndSelf().OfType<JObject>().Where(o => o["documentId"] != null && o["id"] != null))
                 Element(new JObject { ["element"] = reference.DeepClone() });
-            return new JObject { ["documentId"] = document.PdmDocumentId, ["name"] = TopSolidHost.Documents.GetName(document),
+            var result = new JObject { ["documentId"] = document.PdmDocumentId, ["name"] = TopSolidHost.Documents.GetName(document),
                 ["type"] = TopSolidHost.Documents.GetTypeFullName(document), ["isDirty"] = TopSolidHost.Documents.IsDirty(document),
                 ["affectedDocuments"] = AffectedDocuments(document), ["scopeNote"] = "TopSolid updates synchronized documents together. All documents listed here are included in this confirmation." };
+            var stage = CamStages.Resolve(this, arguments, editStage);
+            if (!stage.IsEmpty) result["requiredStage"] = AutomationValues.Json(stage);
+            return result;
         }
 
         private JArray AffectedDocuments(DocumentId document)
@@ -37,17 +47,20 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Automation
 
         // Refresh ALL document-local handles after EnsureIsDirty creates a new minor revision.
         // External sourceDocumentId references (assembly definitions) deliberately retain their revision.
-        public JObject Modify(JObject arguments, string title, string module, Func<DocumentId, JObject, JObject> action)
+        public JObject Modify(JObject arguments, string title, string module, Func<DocumentId, JObject, JObject> action, EditStage stage = EditStage.None)
         {
+            if (stage == EditStage.None) stage = editStage;
             PreviewDocument(arguments, module);
             var document = Document(arguments);
             var original = document.PdmDocumentId;
+            CamStages.Resolve(this, arguments, stage);
             return ModificationScope.Run("AI: " + title,
                 name => TopSolidHost.Application.StartModification(name, false), TopSolidHost.Application.EndModification,
                 () =>
                 {
                     TopSolidHost.Documents.EnsureIsDirty(ref document);
                     var currentArguments = MutationReferences.Rebase(arguments, document.PdmDocumentId);
+                    CamStages.Enter(this, currentArguments, stage);
                     var result = action(document, currentArguments);
                     result["originalDocumentId"] = original;
                     result["documentId"] = document.PdmDocumentId;

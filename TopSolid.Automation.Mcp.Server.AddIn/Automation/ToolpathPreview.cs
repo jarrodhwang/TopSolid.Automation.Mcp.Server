@@ -14,50 +14,51 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Automation
     {
         public JObject ToolpathPreview(JObject request) => Read("cam", () =>
         {
-            if (request.Properties().Any(p => p.Name != "documentId" && p.Name != "id" && p.Name != "view" && p.Name != "nativeImage") || request["documentId"]?.Type != JTokenType.String ||
+            if (request.Properties().Any(p => p.Name != "documentId" && p.Name != "id") || request["documentId"]?.Type != JTokenType.String ||
                 request["id"]?.Type != JTokenType.Integer || ((string)request["documentId"]).Length > 256)
                 throw new ArgumentException("An explicit operation identity is required.");
-            var view = ToolpathCaptureView.Parse(request["view"]);
-            if (request["nativeImage"] != null && request["nativeImage"].Type != JTokenType.Boolean) throw new ArgumentException("Invalid preview mode.");
-            var nativeImage = (bool?)request["nativeImage"] == true;
             request = new JObject { ["documentId"] = request["documentId"], ["id"] = request["id"] };
             var operation = Element(new JObject { ["element"] = request.DeepClone() }); var doc = operation.DocumentId;
             if (!TopSolidHost.Documents.GetDocuments().Contains(doc) || !TopSolidCamHost.Operations.IsOperation(new ElementExId(operation)))
                 return new JObject { ["status"] = "notLoaded", ["operation"] = request.DeepClone() };
             var dirty = TopSolidHost.Documents.IsDirty(doc);
-            if (nativeImage) return CaptureToolpathView(operation, request, view);
-            var columns = TopSolidCamHost.ToolPath.StartToolPath(operation);
-            if (columns == null) return new JObject { ["status"] = "unavailable", ["operation"] = request.DeepClone() };
-            JObject result;
+            var result = ToolpathPreviewReader.Read(TopSolidCamHost.ToolPath, operation);
+            if (!TopSolidHost.Documents.Exists(doc) || dirty != TopSolidHost.Documents.IsDirty(doc))
+                return new JObject { ["status"] = "changed", ["operation"] = request.DeepClone() };
+            result["operation"] = request.DeepClone();
+            result["upToDate"] = TopSolidCamHost.Operations.IsUpToDate(new ElementExId(operation));
+            return result;
+        });
+    }
+
+    /// <summary>Read existing coordinates through the public Automation interface; always release a started scan.</summary>
+    internal static class ToolpathPreviewReader
+    {
+        internal static JObject Read(IToolPath toolPath, ElementId operation)
+        {
+            var columns = toolPath.StartToolPath(operation);
+            if (columns == null) return new JObject { ["status"] = "unavailable", ["source"] = "IToolPath" };
             try
             {
                 // No simulation, recalculation, selection, visibility or document state changes.
                 var builder = new ToolpathPreviewGeometry(); var timer = Stopwatch.StartNew(); var ended = false; var rows = 0;
-                for (; rows < 200000 && timer.Elapsed < TimeSpan.FromSeconds(12) && builder.Segments < ToolpathPreviewGeometry.MaximumSegments; rows++)
+                while (rows < 200000 && timer.Elapsed < TimeSpan.FromSeconds(12) && builder.Segments < ToolpathPreviewGeometry.MaximumSegments)
                 {
-                    var row = TopSolidCamHost.ToolPath.NextToolPathItem(operation);
+                    var row = toolPath.NextToolPathItem(operation);
                     if (row == null) { ended = true; break; }
+                    rows++;
                     builder.Add(row);
                     // Some 7.20 hosts expose point columns as empty strings. More scanning cannot recover those coordinates.
                     if (builder.MissingPoints >= 256 && builder.Segments == 0) break;
                 }
-                if (!TopSolidHost.Documents.Exists(doc) || dirty != TopSolidHost.Documents.IsDirty(doc))
-                    return new JObject { ["status"] = "changed", ["operation"] = request.DeepClone() };
-                result = builder.Result(ended); result["operation"] = request.DeepClone(); result["rowsScanned"] = rows;
-                result["upToDate"] = TopSolidCamHost.Operations.IsUpToDate(new ElementExId(operation));
+                var result = builder.Result(ended);
+                result["source"] = "IToolPath"; result["rowsScanned"] = rows;
+                result["columns"] = new JArray(columns);
+                // Never replace missing API coordinates with a viewport image or alter native state.
+                return result;
             }
-            finally { TopSolidCamHost.ToolPath.EndToolPath(operation); }
-            // End the table scan before the independent, reversible native-view capture.
-            // Old clients provide no view and retain the segments-only protocol.
-            if (view != null && (string)result["status"] == "coordinatesUnavailable")
-            {
-                var capture = CaptureToolpathView(operation, request, view);
-                capture["coordinateStatus"] = "coordinatesUnavailable";
-                capture["rowsScanned"] = result["rowsScanned"];
-                return capture;
-            }
-            return result;
-        });
+            finally { toolPath.EndToolPath(operation); }
+        }
     }
 
     /// <summary>Only explicit 3D coordinates form segments. Missing points and frame/arc changes break continuity.</summary>
@@ -76,16 +77,18 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Automation
             { frame = name; previous = null; }
             // An unresolved machining frame cannot be overlaid on the document's default export frame.
             if (!string.IsNullOrWhiteSpace(frame)) { previous = null; omitted = true; MissingPoints++; return; }
-            if (row.ContainsKey("3D_CENTER_XYZ") && Point(row["3D_CENTER_XYZ"], out _))
+            if (row.ContainsKey("3D_CENTER_XYZ"))
             { previous = null; omitted = true; return; } // Never replace an unsupported circular move with a straight cutting move.
             Point3D point;
-            if (row.TryGetValue("GOTO_XYZ_3D", out var value))
-            {
-                if (!Point(value, out point)) { MissingPoints++; previous = null; return; }
-            }
+            if (row.TryGetValue("GOTO_XYZ_3D", out var value) && Point(value, out point)) { }
             else if (row.TryGetValue("X", out var x) && row.TryGetValue("Y", out var y) && row.TryGetValue("Z", out var z) &&
                 Number(x, out var px) && Number(y, out var py) && Number(z, out var pz)) point = new Point3D(px, py, pz);
-            else return;
+            else
+            {
+                if (row.ContainsKey("GOTO_XYZ_3D") || row.ContainsKey("X") || row.ContainsKey("Y") || row.ContainsKey("Z"))
+                { MissingPoints++; previous = null; }
+                return;
+            }
             if (!Finite(point)) { previous = null; omitted = true; return; }
             if (previous.HasValue && Segments < MaximumSegments)
             {

@@ -69,10 +69,10 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Automation
         // activate a different document during prepare or execution.
         internal static void RequireCylinderTarget(string target, string type, string edited)
         {
-            if (string.IsNullOrWhiteSpace(type) || !type.EndsWith(".PartDocument", StringComparison.Ordinal))
-                throw new ArgumentException("Cylinder creation requires a part document. Select and activate the intended part in TopSolid, then request the cylinder again.");
+            if (string.IsNullOrWhiteSpace(type) || !type.EndsWith(".PartDocument", StringComparison.Ordinal) && type != "TopSolid.Cam.NC.MillTurn.DB.Documents.MillTurnDocument")
+                throw new ArgumentException("Cylinder creation requires a design part or CAM modeling document. Select and activate the intended document in TopSolid.");
             if (string.IsNullOrEmpty(target) || target != edited)
-                throw new ArgumentException("Activate the selected part in TopSolid before preparing a cylinder. No document was activated and no geometry was created.");
+                throw new ArgumentException("Activate the selected document in TopSolid before preparing a cylinder. No document was activated and no geometry was created.");
         }
         public JObject CreateCylinder(JObject p)
         {

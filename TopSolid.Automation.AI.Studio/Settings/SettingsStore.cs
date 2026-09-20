@@ -24,23 +24,9 @@ public sealed class SettingsStore
     public AppSettings Load()
     {
         LastLoadWarning = null;
-        if (!File.Exists(_filePath)) return new AppSettings();
         try
         {
-            if (new FileInfo(_filePath).Length > 128 * 1024)
-                throw new InvalidDataException("Settings file is too large.");
-            using var input = new JsonTextReader(new StringReader(File.ReadAllText(_filePath, Encoding.UTF8)))
-            {
-                MaxDepth = 8,
-                DateParseHandling = DateParseHandling.None
-            };
-            var data = JObject.Load(input, new JsonLoadSettings
-            {
-                DuplicatePropertyNameHandling = DuplicatePropertyNameHandling.Error
-            });
-            if (input.Read()) throw new InvalidDataException("Settings contain trailing data.");
-            if (data["version"]?.Type != JTokenType.Integer || data["version"]?.ToString(Formatting.None) != "1")
-                throw new InvalidDataException("Unsupported settings version.");
+            var data = ReadExistingData();
 
             var settings = new AppSettings
             {
@@ -69,6 +55,23 @@ public sealed class SettingsStore
                 }
             }
             settings.DevMode = data.Value<bool?>("devMode") ?? false;
+            try { settings.CamMethods = new CamMethodCatalog(Path.GetDirectoryName(_filePath)!).Load(); }
+            catch (Exception error) when (error is ArgumentException or JsonException or IOException)
+            { LastLoadWarning = "CAM method registrations could not be loaded: " + error.Message; }
+            settings.ContextOptions = data["contextOptions"]?.ToObject<TopSolid.Automation.Mcp.Contracts.StudioContextOptions>() ?? new();
+            try
+            {
+                settings.CamColorStandard = data["camColorStandard"]?.ToObject<TopSolid.Automation.Mcp.Contracts.CamColorStandard>() ?? TopSolid.Automation.Mcp.Contracts.CamColorStandard.Starter();
+                settings.CamColorStandard.Validate();
+            }
+            catch (Exception error) when (error is ArgumentException or JsonException)
+            {
+                settings.CamColorStandard = TopSolid.Automation.Mcp.Contracts.CamColorStandard.Starter();
+                LastLoadWarning = "Invalid CAM color standard; the built-in palette was loaded.";
+            }
+            if (data["previewDefaults"] is JObject preview)
+                settings.PreviewDefaults = new(preview.Value<bool?>("edges") ?? false, preview.Value<bool?>("part") ?? true,
+                    preview.Value<bool?>("stock") ?? true, preview.Value<bool?>("machine") ?? true);
             settings.AppearanceMode = ReadChoice(data, "appearanceMode", "topsolid", "topsolid", "system", "light", "dark");
             settings.InterfaceLanguage = ReadChoice(data, "interfaceLanguage", "system", "system", "en", "ko", "ja", "zh", "fr", "de", "es", "pt");
             settings.ResponseLanguage = ReadChoice(data, "responseLanguage", "auto", "auto", "en", "ko", "ja", "zh", "fr", "de", "es", "pt");
@@ -154,6 +157,7 @@ public sealed class SettingsStore
     public void Save(AppSettings settings)
     {
         ArgumentNullException.ThrowIfNull(settings);
+        settings.CamColorStandard.Validate();
         ValidateProvider(settings.Provider);
         settings.RequestTimeout();
         settings.TopSolidConnection.Validate();
@@ -185,7 +189,11 @@ public sealed class SettingsStore
             ["requestTimeoutMinutes"] = settings.RequestTimeoutMinutes,
             ["ollamaFastGptOss"] = settings.OllamaFastGptOss,
             ["devMode"] = settings.DevMode,
+            ["contextOptions"] = JObject.FromObject(settings.ContextOptions),
+            ["camColorStandard"] = JObject.FromObject(settings.CamColorStandard),
             ["appearanceMode"] = settings.AppearanceMode,
+            ["previewDefaults"] = new JObject { ["edges"] = settings.PreviewDefaults.Edges, ["part"] = settings.PreviewDefaults.Part,
+                ["stock"] = settings.PreviewDefaults.Stock, ["machine"] = settings.PreviewDefaults.Machine },
             ["interfaceLanguage"] = settings.InterfaceLanguage,
             ["responseLanguage"] = settings.ResponseLanguage,
             ["mcpServerPath"] = settings.McpServerPath.Trim(),
@@ -213,6 +221,43 @@ public sealed class SettingsStore
                 ["protectedApiKey"] = ProtectKey(settings.TopSolidGatewayToken, scope) };
         }
 
+        WriteData(data);
+    }
+
+    // Composer choices must not save unrelated, partially edited provider settings.
+    public void SaveContextOptions(TopSolid.Automation.Mcp.Contracts.StudioContextOptions options)
+    {
+        var data = ReadExistingData();
+        data["contextOptions"] = JObject.FromObject(options);
+        WriteData(data);
+    }
+
+    public void SaveCamColorStandard(TopSolid.Automation.Mcp.Contracts.CamColorStandard palette)
+    {
+        palette.Validate();
+        var data = ReadExistingData();
+        data["camColorStandard"] = JObject.FromObject(palette);
+        WriteData(data);
+    }
+
+    public void SaveCamMethods(IReadOnlyList<TopSolid.Automation.Mcp.Contracts.CamMethodDefinition> methods) =>
+        new CamMethodCatalog(Path.GetDirectoryName(_filePath)!).Save(methods);
+
+    private JObject ReadExistingData()
+    {
+        if (!File.Exists(_filePath)) return new JObject { ["version"] = 1 };
+        if (new FileInfo(_filePath).Length > 128 * 1024) throw new InvalidDataException("Settings file is too large.");
+        using var input = new JsonTextReader(new StringReader(File.ReadAllText(_filePath, Encoding.UTF8)))
+            { MaxDepth = 8, DateParseHandling = DateParseHandling.None };
+        var data = JObject.Load(input, new JsonLoadSettings { DuplicatePropertyNameHandling = DuplicatePropertyNameHandling.Error });
+        if (input.Read()) throw new InvalidDataException("Settings contain trailing data.");
+        if (data["version"]?.Type != JTokenType.Integer || data["version"]?.ToString(Formatting.None) != "1")
+            throw new InvalidDataException("Unsupported settings version.");
+        return data;
+    }
+
+    private void WriteData(JObject data)
+    {
         Directory.CreateDirectory(Path.GetDirectoryName(_filePath)!);
         var temporaryPath = _filePath + "." + Guid.NewGuid().ToString("N") + ".tmp";
         try

@@ -11,7 +11,7 @@ using TopSolid.Automation.AI.Studio.Preview;
 namespace TopSolid.Automation.Tests;
 
 // Explicit live fixture: uses an already-calculated operation. Never saves or calculates CAM.
-internal static class NativeToolpathLiveTests
+internal static class ToolpathGeometryLiveTests
 {
     internal static Task Run(string server, string document, int operation)
     {
@@ -40,12 +40,14 @@ internal static class NativeToolpathLiveTests
 
     private sealed class PreviewClient(StdioMcpClient server) : IGraphicPreviewClient, IToolpathPreviewClient
     {
-        internal readonly List<JObject> Captures = [];
-        public Task<JObject> GetGraphicPreviewAsync(JObject request, CancellationToken token) => server.GetGraphicPreviewAsync(request, token);
+        internal readonly List<JObject> Results = [];
+        internal int ModelRequests;
+        public Task<JObject> GetGraphicPreviewAsync(JObject request, CancellationToken token)
+        { ModelRequests++; return server.GetGraphicPreviewAsync(request, token); }
         public async Task<JObject> GetToolpathPreviewAsync(JObject request, CancellationToken token)
         {
             var result = await server.GetToolpathPreviewAsync(request, token);
-            Captures.Add((JObject)result.DeepClone()); return result;
+            Results.Add((JObject)result.DeepClone()); return result;
         }
     }
 
@@ -53,28 +55,44 @@ internal static class NativeToolpathLiveTests
     {
         using var timeout = new CancellationTokenSource(TimeSpan.FromMinutes(2));
         await using var server = new StdioMcpClient(); await server.ConnectAsync(serverPath, timeout.Token);
+        async Task<JObject> ReadDocument()
+        {
+            var receipt = await server.CallToolAsync("topsolid_get_document_info", new JObject { ["documentId"] = document }, timeout.Token);
+            Check.True(!receipt.IsError, "Cannot read the CAM document");
+            return receipt.StructuredContent as JObject ?? JObject.Parse((string)receipt.Content[0]["text"]!);
+        }
+        var before = await ReadDocument();
         var client = new PreviewClient(server);
         var identity = new JObject { ["documentId"] = document, ["id"] = operation };
-        using var pane = new GraphicPreviewPane(client, new JObject { ["documentId"] = document, ["operation"] = identity });
+        using var pane = new GraphicPreviewPane(client, new JObject { ["documentId"] = document, ["camContext"] = true, ["operation"] = identity });
         var window = new Window { Content = pane, Width = 1000, Height = 780, Left = -20000, Top = -20000,
             ShowInTaskbar = false, ShowActivated = false, WindowStartupLocation = WindowStartupLocation.Manual };
         var output = Path.GetFullPath("artifacts/toolpath-repair"); Directory.CreateDirectory(output);
         try
         {
-            window.Show(); await Until(() => !pane.IsLoading && pane.HasNativeToolpathImage);
-            Check.True(pane.ToolpathStatus.Contains("native rendered view"), "Native capture was not labeled accurately");
-            Render("studio-native-toolpath.png");
-            var first = (string)client.Captures[^1]["data"]!; var count = client.Captures.Count;
+            window.Show(); await Until(() => !pane.IsLoading && client.Results.Count > 0);
+            var result = client.Results.Single(); var status = (string?)result["status"];
+            Check.True(pane.Scene != null && pane.HasMachineContext, "Native model/machine geometry unavailable");
+            Check.True((string?)result["source"] == "IToolPath" && (string?)result["format"] == "segments-f32" &&
+                JToken.DeepEquals(result["operation"], identity), "Preview did not use IToolPath coordinate geometry");
+            if (status == "ready") Check.True(pane.ToolpathSegments > 0, "API coordinates were not rendered");
+            else Check.True(status == "coordinatesUnavailable" && pane.ToolpathSegments == 0 &&
+                pane.ToolpathStatus == StudioStrings.Get("Preview.PathCoordinatesUnavailable"), "Missing coordinates were not reported accurately");
+            Render("studio-itoolpath-model.png");
+            var requests = client.ModelRequests; var camera = pane.Camera.Position;
             pane.SetView("top"); pane.Zoom(.8);
-            await Until(() => client.Captures.Count > count && pane.HasNativeToolpathImage);
-            Check.True(first != (string?)client.Captures[^1]["data"], "Top camera/zoom did not change the real native capture");
-            Render("studio-native-toolpath-top.png");
-            Check.True(client.Captures.All(c => (string?)c["status"] == "ready" && (bool?)c["stateRestored"] == true && JToken.DeepEquals(c["operation"], identity)),
-                "Live UI changed operation identity or failed native state restoration");
-            var report = new JObject { ["operation"] = identity.DeepClone(), ["captures"] = client.Captures.Count, ["status"] = pane.ToolpathStatus,
-                ["allStatesRestored"] = true, ["viewChanged"] = true, ["rawCoordinatesRetrieved"] = false };
-            File.WriteAllText(Path.Combine(output, "studio-native-toolpath.json"), report.ToString());
-            Console.WriteLine("PASS live Automation toolpath UI: " + report);
+            pane.SetMachineVisible(true); await Task.Delay(500);
+            Check.True(camera != pane.Camera.Position && client.Results.Count == 1 && client.ModelRequests == requests,
+                "Local camera/machine toggle requested another scan or export");
+            Render("studio-itoolpath-machine.png");
+            var after = await ReadDocument();
+            Check.True(JToken.DeepEquals(before, after), "Preview changed document info or dirty state");
+            var metadata = (JObject)result.DeepClone(); metadata.Remove("data"); metadata.Remove("columns");
+            var report = new JObject { ["operation"] = identity.DeepClone(), ["toolpath"] = metadata, ["statusText"] = pane.ToolpathStatus,
+                ["documentUnchanged"] = true, ["navigationWithoutRequests"] = true, ["rawCoordinatesRetrieved"] = status == "ready",
+                ["validation"] = status == "ready" ? "Live IToolPath geometry rendered" : "Live API supplies no coordinates; model, machine and failure handling verified" };
+            File.WriteAllText(Path.Combine(output, "studio-itoolpath-geometry.json"), report.ToString());
+            Console.WriteLine(report);
         }
         finally { window.Close(); }
 

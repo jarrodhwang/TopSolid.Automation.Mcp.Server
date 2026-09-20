@@ -1,40 +1,39 @@
-# Automation-only toolpath display
+# Toolpath geometry through IToolPath
 
-The selected operation now falls back to TopSolid's real rendered toolpath when the Automation table cannot supply coordinates. The current impeller operation was verified live: red cutting paths and native approach, retract and linking colors are visible. No ADS API, registration certificate, native TopSolid add-in, or host binary modification is required.
+The preview uses `TopSolidCamHost.ToolPath` (`IToolPath`) directly: `StartToolPath(operation)`, repeated `NextToolPathItem(operation)`, and `EndToolPath(operation)` in `finally`. No ADS certificate or in-process add-in is required for these Automation calls.
 
-## Cause and implementation
+The screenshot fallback has been removed. The private preview protocol advertises only `segments-f32` (version 3). The client rejects image payloads, and local orbit, pan, zoom, camera selection and machine visibility do not request new toolpath data. The model and machine use exported geometry in the local 3D renderer.
 
-On installed TopSolid 7.20.400.107, operation 1221 wraps machining operation 1219 and is up to date. The Automation `IToolPath` scan returns empty strings for `GOTO_XYZ_3D` and arc-center point fields. The absence of coordinates does not mean the calculated toolpath is absent. GLB, VRML and X3D exports tested here did not export those paths as line geometry.
+## Coordinate handling
 
-The server first keeps the existing coordinate reader for compatible hosts. For this host, it finds the selected operation's generated path entities through Automation `Elements.GetConstituents` and `Operations.GetChildren`, then uses `Visualization3D.SaveScreenShotBitmap`. It found three path entities for this operation. The native renderer supplies the actual five-axis result and movement colors. The coordinate renderer's feed color is also changed to red.
+- Explicit `Point3D` values or finite numeric X/Y/Z columns become line segments, with API metres converted to the preview's millimetres.
+- Incomplete coordinate rows break continuity. Unsupported arcs and unresolved named coordinate frames are omitted and reported as partial; they are never joined with invented straight cuts.
+- Reads are bounded to 200,000 rows, 100,000 segments and 12 seconds checked between API calls. The native scan is released on completion, early exit or failure. A blocking individual host call cannot be interrupted by that deadline.
+- After 256 missing points with no segments, the scan returns `coordinatesUnavailable`. No calculation, simulation, NC generation, document save, native camera or visibility change occurs.
+- Operation switches reject stale replies and retain the loaded model and camera. The server reports actual columns and rows scanned for diagnostics.
 
-The private preview protocol adds `native-view-png`. Studio labels it **Toolpath · native rendered view**. Orbit, camera selection, pan and zoom request an updated native image after a 350 ms debounce. A separate local distance scale is hidden because native viewport dimensions can differ from the Studio canvas. This is a rendered-image fallback, not recovered XYZ segments or independently rotatable local toolpath geometry.
+## Installed-host evidence
 
-## Restoration and bounds
+Direct calls to the installed `TopSolid.Cam.NC.Kernel.Automating.dll` version **7.20.400.107** were tested against all eight operations in the open CAM document on 2026-09-20. These calls bypass MCP serialization entirely.
 
-- Temporary visibility changes occur inside an Automation modification that is always cancelled with `EndModification(false, false)`.
-- The original camera is restored and redrawn. The server verifies document identity, dirty state, active document, visibility and camera values before returning `stateRestored: true`.
-- There is no CAM calculation, NC generation, save or check-in. An active TopSolid command returns busy.
-- Requests contain an explicit document and operation identity. Operation switches and camera changes reject stale replies.
-- Once a capture is dispatched, cancellation abandons its display but allows rollback to complete. Disconnect waits for cleanup. A broken transport never forcibly terminates a server inside the temporary modification.
-- Camera values, entity traversal and image dimensions/bytes are bounded. PNG files use an application-created temporary directory and are removed after capture; callers cannot supply an output path.
+All eight scans were available and their operations reported up to date. The probe read 23 rows from operation 1839 and the first 96 rows from each of the seven machining operations. All 480 sampled `GOTO_XYZ_3D` entries were empty strings; no separate numeric X/Y/Z rows were returned. Document dirty state was unchanged.
 
-## Compatibility and trade-offs
+This proves that these sampled rows do not expose drawable coordinates through the installed interface. It does not mean the native calculated paths are absent or that every TopSolid version behaves identically. Inspection of the installed host converter also found that it converts scalar numbers and strings but returns an empty string for other CL data types, including point data. Machine-axis scalar values are not treated as document-space tool-tip coordinates.
 
-Native capture requires a local TopSolid connection and the screenshot API introduced in 7.20.326. Remote/gateway sessions and older hosts retain the coordinate-reader result. Native camera and visibility can briefly change in TopSolid while capturing, then are restored. Rendering inherits the user's native color settings; no global TopSolid colors are changed. The current job's cutting color was already red, as requested.
+Consequently, the current job's actual toolpath cannot yet be shown through these returned coordinates. The preview displays the interactive model with an explicit missing-coordinate status. A compatible API response is needed to validate actual toolpath drawing on this job; the renderer's coordinate tests use clearly identified fixtures.
 
-This avoids inaccurate reconstruction of missing five-axis coordinates. The cost is a short native capture after navigation, instead of continuous local rendering of a toolpath. Validation covered the already-dirty current CAM job; clean-document/PDM transition cases and remote capture have not been certified.
+The official interface contract is [IToolPath](https://help.topsolid.com/7.20/en/TopSolid%27Automation/api/cam/TopSolid.Cam.NC.Kernel.Automating.IToolPath.html).
 
-## Validation
+## Reproduction and validation
 
-- Release build succeeded with zero warnings/errors in an isolated output directory.
-- Server checks: 15,547 passed.
-- Studio regression groups: 51/51 passed, including cancellation and disconnect during a native capture.
-- Targeted WPF toolpath tests passed: operation identity, coordinate/image modes, camera debounce, delayed old replies, preserved part geometry and unchanged saved settings.
-- Live WPF test used the actual operation, displayed its native capture, switched to the top camera and zoomed, confirmed the image changed, and verified restoration after both captures.
-- Direct server capture initially took 0.32 seconds on this machine; this is one sample, not a performance guarantee.
-- The broader `--ui-shell` run reached a separate settings/composer model-selector assertion failure. A standalone broad preview fixture also lacked the owner state expected by its approval test. These are not reported as passing; the operation-specific fixture is independently runnable.
+Run `scripts/Inspect-IToolPathContract.ps1` with Windows PowerShell and an explicit loaded document ID. Evidence is saved in `artifacts/toolpath-repair/itoolpath-live-current.json`.
 
-Reproduce the targeted tests with `TopSolid.Automation.Tests.exe --toolpath-preview-ui`. For a live document use `--live-native-toolpath <server.exe> <documentId> <operationId>`. `scripts/Test-AutomationToolpathPreview.ps1` also verifies the RPC result using an explicit document ID; its default camera is the measured impeller fixture camera.
+`scripts/Test-AutomationToolpathPreview.ps1` validates the geometry-only RPC and records whether actual coordinates were retrieved. `TopSolid.Automation.Tests.exe --toolpath-preview-ui` tests geometry rendering, image rejection, operation switching, late replies and navigation without backend calls. `--live-toolpath-geometry <server.exe> <documentId> <operationId>` tests the live model/machine scene and records the actual API outcome separately from UI success.
 
-Outputs are in `artifacts/toolpath-repair`: `automation-operation-path.png`, `studio-native-toolpath.png`, `studio-native-toolpath-top.png`, and their JSON validation reports. The updated runnable Studio bundle is `artifacts/TopSolid-AI-toolpath-20260920`, including its matching `McpServer` folder. Launch that bundle after closing the older Studio when convenient; existing chats are not interrupted by this repair.
+Debug and Release builds succeeded. The final Release regression run passed 15,809 server checks and 51/51 Studio groups. Targeted WPF geometry checks passed. The build reported six CS8620 nullability warnings in CAM scene construction (three repeated for the WPF temporary project); these are not reported as a warning-free build.
+
+The live WPF check loaded the model and machine, changed the camera and machine visibility without additional requests, and verified unchanged document information. It correctly reported missing coordinates. Its report is `artifacts/toolpath-repair/studio-itoolpath-geometry.json`; the PNGs beside it show the local geometry renderer, not images used as toolpath data.
+
+The runnable bundle is `artifacts/TopSolid-AI-IToolPath-20260920/TopSolid.Automation.AI.Studio.exe`, including its matching `McpServer`. A final request to that packaged server scanned 263 rows from operation 1221, reported 256 missing points and zero segments, and returned in approximately 1.29 seconds. This timing is a single sample. See `itoolpath-operation-geometry.json`. Existing Studio and TopSolid sessions were left running.
+
+These results verify the geometry-only implementation and missing-data behavior. They do not claim successful retrieval or drawing of this job's actual toolpath.

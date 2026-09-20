@@ -308,12 +308,12 @@ internal static class ApprovalActivityUiTests
             Check.True(VisibleText(dialog).Contains("[2: 볼 동시가공") && VisibleText(dialog).Contains("[3: 동시가공"), "Actual CAM names are missing from rendered cards");
             var icons = Descendants<Image>(dialog).Select(i => i.Source).ToArray();
             Check.True(icons.Contains(TopSolidIcons.Get(question.Choices[0].IconKey!)) && icons.Contains(TopSolidIcons.Get(question.Choices[2].IconKey!)), "Operation cards did not bind their native type icons");
-            Check.True(VisibleText(dialog).Contains("T 1 : Ball Nose Mill D10 L25 SD10") && !VisibleText(dialog).Contains("공구 기능"), "Tool card shows a function-instance label instead of mounted tooling");
+            Check.True(VisibleText(dialog).Contains("T 1") && VisibleText(dialog).Contains("Ball Nose Mill D10 L25 SD10") && !VisibleText(dialog).Contains("공구 기능"), "Tool card shows a function-instance label instead of mounted tooling");
             Check.True(icons.Contains(TopSolidIcons.Get("cam-tool-ballnosemill")) && icons.Contains(TopSolidIcons.Get("cam-tool-facemill")), "Cutter function icons are absent");
-            var toolText = Descendants<TextBlock>(dialog).First(t => t.Text == question.Choices[0].ToolText);
+            var toolText = Descendants<TextBlock>(dialog).First(t => t.Text == "Ball Nose Mill D10 L25 SD10");
             var operationText = Descendants<TextBlock>(dialog).First(t => t.Text == question.Choices[0].Label);
-            Check.True(toolText.FontSize >= 16 && toolText.TranslatePoint(new Point(), dialog).X > operationText.TranslatePoint(new Point(), dialog).X,
-                "Tool specification must be prominent on the right of the operation card");
+            Check.True(toolText.FontSize >= 14 && toolText.TranslatePoint(new Point(), dialog).Y > operationText.TranslatePoint(new Point(), dialog).Y,
+                "Tool specification must be readable below the operation name");
             // Check every packaged class mapping can load an actual image, not the
             // generic missing-resource fallback; shared icons may have multiple types.
             using var stream = typeof(TopSolidIcons).Assembly.GetManifestResourceStream("TopSolid.Automation.AI.Studio.Assets.TopSolid.provenance.json")!;

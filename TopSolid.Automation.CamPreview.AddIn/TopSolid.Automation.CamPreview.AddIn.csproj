@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework><LangVersion>latest</LangVersion><PlatformTarget>x64</PlatformTarget>
+    <UseWindowsForms>true</UseWindowsForms><Version>1.0.0</Version>
+    <TopSolidAutomationDirectory Condition="'$(TopSolidAutomationDirectory)' == ''">$(ProgramW6432)\TOPSOLID\TopSolid 7.20\bin</TopSolidAutomationDirectory>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="$(TopSolidAutomationDirectory)\TopSolid.Kernel.SX.NetStandard.dll"><Private>false</Private></Reference>
+    <Reference Include="$(TopSolidAutomationDirectory)\TopSolid.Kernel.SX.dll;$(TopSolidAutomationDirectory)\TopSolid.Kernel.TX.dll;$(TopSolidAutomationDirectory)\TopSolid.Kernel.MX.dll;$(TopSolidAutomationDirectory)\TopSolid.Kernel.G.dll;$(TopSolidAutomationDirectory)\TopSolid.Kernel.GR.dll;$(TopSolidAutomationDirectory)\TopSolid.Kernel.G.D3.Shapes.dll;$(TopSolidAutomationDirectory)\TopSolid.Kernel.DB.dll;$(TopSolidAutomationDirectory)\TopSolid.Kernel.Automating.dll;$(TopSolidAutomationDirectory)\TopSolid.Kernel.Automating.Host.dll"><Private>false</Private></Reference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+</Project>

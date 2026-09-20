@@ -13,7 +13,7 @@ public static class TopSolidIcons
         { "app", "project", "document", "sketch", "save", "delete", "settings", "attachment", "folder", "part", "operation", "parameter", "connect", "status", "window", "developer", "refresh", "refresh-warning", "refresh-error",
           "library", "machine", "edge", "point", "curve", "surface", "shape", "color", "image", "view-camera", "view-fit", "view-orbit", "view-pan", "view-edges", "view-machine", "operation-group-tool",
           "camera-top", "camera-bottom", "camera-front", "camera-back", "camera-left", "camera-right", "camera-iso", "camera-perspective",
-          "arguments", "cam-tool", "cam-cutting-conditions", "cam-geometry", "cam-strategy", "cam-comment", "cam-multi-axis", "cam-properties",
+          "arguments", "cam-favorites", "cam-tool", "cam-cutting-conditions", "cam-geometry", "cam-strategy", "cam-comment", "cam-multi-axis", "cam-properties",
           "approve", "cancel", "error", "warning", "question", "license", "license-standalone", "license-floating", "license-user" };
     private static readonly ConcurrentDictionary<string, ImageSource> Cache = new(StringComparer.OrdinalIgnoreCase);
     private static readonly Dictionary<string, string> OperationIcons = new(StringComparer.Ordinal);
@@ -81,7 +81,7 @@ public static class TopSolidIcons
         // A pane can be nested under Global or a numbered axis. Resolve specific
         // panes first: CuttingConditions|Tool must keep the cutting-condition icon.
         if (names.Contains("CuttingConditions")) return "cam-cutting-conditions";
-        if (names.Overlaps(["Comments", "Comment", "IsoComments"])) return "cam-comment";
+        if (names.Overlaps(["Comments", "Comment", "IsoComments", "WCS", "WorkCoordinateSystem"])) return "cam-comment";
         if (names.Overlaps(["MultiAxis", "ToFiveAxisPrimitive"])) return "cam-multi-axis";
         if (names.Contains("Tool") || fullName == "Tool@Global") return "cam-tool";
         if (names.Overlaps(["Geometry", "Topology"])) return "cam-geometry";

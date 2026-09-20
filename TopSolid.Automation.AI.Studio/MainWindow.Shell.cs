@@ -28,6 +28,7 @@ public partial class MainWindow
         ChatIcon.Source = TopSolidIcons.Get("window");
         DeveloperButtonIcon.Source = TopSolidIcons.Get("developer");
         RefreshIcon.Source = TopSolidIcons.Get("refresh");
+        InitializeContextModes();
         themeFollower = new TopSolidThemeFollower(this, settings.AppearanceMode);
         themeFollower.Changed += (_, _) => UpdateThemeStatus();
         UpdateThemeStatus();

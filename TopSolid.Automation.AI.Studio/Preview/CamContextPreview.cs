@@ -11,7 +11,24 @@ internal static class CamContextPreview
 {
     internal static string WorkerPath => Path.Combine(AppContext.BaseDirectory,"DracoPreview","TopSolid.DracoPreview.exe");
     internal static bool IsAvailable => File.Exists(WorkerPath);
-    internal sealed record Scenes(PreviewScene Work, PreviewScene Machine);
+    internal sealed record Scenes(PreviewScene Part, PreviewScene Work, PreviewScene MachinePart, PreviewScene Machine,
+        PreviewScene? Original, PreviewScene? MachineOriginal, bool HasRemaining)
+    {
+        internal MachineVisibility? MachineElements { get; init; }
+        internal PreviewScene? RemainingOnly { get; init; }
+        internal PreviewScene? OriginalOnly { get; init; }
+        internal PreviewScene Select(bool machine, CamStockMode stock, bool part)
+        {
+            if (part) return Select(machine, stock);
+            var work = (stock == CamStockMode.Remaining ? RemainingOnly : stock == CamStockMode.Original ? OriginalOnly : null)
+                ?? PreviewScene.Empty(Part.Bounds);
+            return machine && MachineElements != null ? MachineElements.Compose(work) : work;
+        }
+        internal PreviewScene Select(bool machine, CamStockMode stock) => machine && MachineElements is { Hidden.Count: > 0 }
+            ? MachineElements.Compose(Select(false, stock)) : stock == CamStockMode.Original && Original != null
+            ? machine ? MachineOriginal! : Original
+            : machine ? stock == CamStockMode.Remaining ? Machine : MachinePart : stock == CamStockMode.Remaining ? Work : Part;
+    }
 
     internal static async Task<Scenes> ReadAsync(string path,CancellationToken token)
     {
@@ -43,8 +60,40 @@ internal static class CamContextPreview
         var machine=categoryIds.Where(i=>(string?)nodes[i]["name"]=="Machine").ToArray();
         var work=categoryIds.Where(i=>(string?)nodes[i]["name"] is "Environment" or "MachinedParts").ToArray();
         if(machine.Length!=1 || work.Length==0) throw new InvalidDataException("Missing native machine/work geometry groups.");
+        // Organized TopSolid exports are Z-up, unlike the standard Y-up GLB exporter.
+        // A design mesh may occur in several representations; select it only once via the CAM category.
+        var designMeshes = new HashSet<int>();
+        foreach (var representation in nodes.OfType<JObject>().Where(n => (string?)n["name"] == "Representations"))
+            CollectMeshes(representation, designMeshes, new HashSet<int>(), 0);
+        var machined = categoryIds.Where(i => (string?)nodes[i]["name"] == "MachinedParts").ToArray();
+        var machinedMeshes = new HashSet<int>();
+        foreach (var i in machined) CollectMeshes((JObject)nodes[i], machinedMeshes, new HashSet<int>(), 0);
+        var stockMeshes = machinedMeshes.Where(i => !designMeshes.Contains(i)).ToHashSet();
+        // Without a matching design representation the roles are ambiguous. Keep
+        // native geometry visible, but never falsely label every work mesh as stock.
+        if (!machinedMeshes.Overlaps(designMeshes)) stockMeshes.Clear();
+        var original = categoryIds.Where(i => (string?)nodes[i]["name"] == "OriginalStock").ToArray();
+        var originalMeshes = new HashSet<int>();
+        foreach (var i in original) CollectMeshes((JObject)nodes[i], originalMeshes, new HashSet<int>(), 0);
+        void CollectMeshes(JObject node, HashSet<int> result, HashSet<int> visitedNodes, int depth)
+        {
+            if (depth > 64) throw new InvalidDataException("Invalid CAM role hierarchy.");
+            if (node["mesh"] is JValue m) result.Add((int)m);
+            foreach (var id in node["children"] as JArray ?? [])
+            {
+                var i = (int)id;
+                if (i < 0 || i >= nodes.Count || !visitedNodes.Add(i)) throw new InvalidDataException("Invalid CAM role reference.");
+                CollectMeshes((JObject)nodes[i], result, visitedNodes, depth + 1);
+            }
+        }
+        if (root["materials"] is not JArray) root["materials"] = new JArray();
+        var materials = (JArray)root["materials"]!;
+        var stockMaterial = materials.Count;
+        materials.Add(new JObject { ["pbrMetallicRoughness"] = new JObject { ["baseColorFactor"] = new JArray(1d, 1d, 0d, .30), ["metallicFactor"] = 0, ["roughnessFactor"] = .9 }, ["alphaMode"] = "BLEND", ["doubleSided"] = true });
+        foreach (var i in stockMeshes.Concat(originalMeshes))
+            foreach (var primitive in ((JArray)meshes[i]["primitives"]!).OfType<JObject>()) primitive["material"] = stockMaterial;
         var usedMeshes=new HashSet<int>(); var visited=new HashSet<int>();
-        foreach(var node in work.Concat(machine)) Visit(node,0);
+        foreach(var node in work.Concat(machine).Concat(original)) Visit(node,0);
         void Visit(int index,int depth)
         {
             token.ThrowIfCancellationRequested();
@@ -116,7 +165,16 @@ internal static class CamContextPreview
             foreach(var material in (root["materials"] as JArray??[]).OfType<JObject>())
             {material.Remove("extensions");material.Remove("normalTexture");material.Remove("occlusionTexture");material.Remove("emissiveTexture");(material["pbrMetallicRoughness"] as JObject)?.Remove("baseColorTexture");(material["pbrMetallicRoughness"] as JObject)?.Remove("metallicRoughnessTexture");}
             root["scene"]=0;
-            var workScene=Scene(work.ToList());var fullScene=Scene(work.Concat(machine).ToList());return new Scenes(workScene,fullScene);
+            var partScene = Scene(machined, stockMeshes);
+            var stockScene = stockMeshes.Count == 0 ? null : Scene(machined, designMeshes).AsStockOverlay();
+            var components = new Dictionary<int, PreviewScene>();
+            var machineScene = Scene(machine.Concat(categoryIds.Where(i => (string?)nodes[i]["name"] == "Environment")).ToArray(), nodeScene: (i, scene) => components.Add(i, scene));
+            var visibility = MachineVisibility.FromExport(nodes, machine[0], components);
+            var originalScene = originalMeshes.Count == 0 ? null : Scene(original).AsStockOverlay();
+            return new Scenes(partScene, PreviewScene.Combine(partScene, stockScene), PreviewScene.Combine(partScene, machineScene), PreviewScene.Combine(partScene, machineScene, stockScene),
+                originalScene == null ? null : PreviewScene.Combine(partScene, originalScene),
+                originalScene == null ? null : PreviewScene.Combine(partScene, machineScene, originalScene), stockScene != null)
+                { MachineElements = visibility, RemainingOnly = stockScene, OriginalOnly = originalScene };
             int Attribute(int count,int components,int type)
             {
                 var length=checked(count*components*4);if(data.Length+length>GlbPreviewReader.MaximumBytes) throw new InvalidDataException("Decoded CAM buffer exceeds limit.");
@@ -124,15 +182,19 @@ internal static class CamContextPreview
                 var view=views.Count;views.Add(new JObject {["buffer"]=0,["byteOffset"]=data.Length,["byteLength"]=length});data.Write(bytes);
                 var accessor=accessors.Count;accessors.Add(new JObject {["bufferView"]=view,["componentType"]=type,["count"]=count,["type"]=components==1?"SCALAR":"VEC3"});return accessor;
             }
-            PreviewScene Scene(IEnumerable<int> roots)
+            PreviewScene Scene(int[] roots, HashSet<int>? excluded = null, Action<int, PreviewScene>? nodeScene = null)
             {
-                root["scenes"]=new JArray(new JObject {["nodes"]=new JArray(roots)});
-                var json=Encoding.UTF8.GetBytes(root.ToString(Formatting.None));var padded=(json.Length+3)&~3;
+                var sceneRoot = (JObject)root.DeepClone();
+                sceneRoot["scenes"]=new JArray(new JObject {["nodes"]=new JArray(roots)});
+                foreach (var i in excluded ?? []) sceneRoot["meshes"]![i]!["primitives"] = new JArray();
+                var json=Encoding.UTF8.GetBytes(sceneRoot.ToString(Formatting.None));var padded=(json.Length+3)&~3;
                 using var output=new MemoryStream();using var writer=new BinaryWriter(output);
                 writer.Write(0x46546c67);writer.Write(2);writer.Write(checked(28+padded+(int)data.Length));writer.Write(padded);writer.Write(0x4e4f534a);writer.Write(json);
                 for(var i=json.Length;i<padded;i++)writer.Write((byte)32);writer.Write((int)data.Length);writer.Write(0x004e4942);data.Position=0;data.CopyTo(output);
-                return GlbPreviewReader.Read(output.ToArray(),token,nativeColors:true);
+                return GlbPreviewReader.Read(output.ToArray(),token,nativeColors:true,zUp:true,nodeScene:nodeScene);
             }
         }
     }
 }
+
+internal enum CamStockMode { Part, Remaining, Original }

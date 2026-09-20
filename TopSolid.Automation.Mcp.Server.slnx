@@ -3,5 +3,6 @@
   <Project Path="TopSolid.Automation.Tests/TopSolid.Automation.Tests.csproj" />
   <Project Path="TopSolid.Automation.AI.Studio/TopSolid.Automation.AI.Studio.csproj" />
   <Project Path="TopSolid.Automation.Mcp.Contracts/TopSolid.Automation.Mcp.Contracts.csproj" />
+  <Project Path="TopSolid.Automation.CamPreview.AddIn/TopSolid.Automation.CamPreview.AddIn.csproj" />
   <Project Path="TopSolid.Automation.Mcp.Server.AddIn/TopSolid.Automation.Mcp.Server.AddIn.csproj" />
 </Solution>

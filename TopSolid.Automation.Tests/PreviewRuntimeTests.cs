@@ -25,13 +25,8 @@ internal static class PreviewRuntimeTests
     {
         var native = new JObject { ["format"] = "native-view-png", ["stateRestored"] = true,
             ["data"] = "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+aLxkAAAAASUVORK5CYII=" };
-        var image = NativeToolpathImage.Read(native);
-        Check.True(image.IsFrozen && image.PixelWidth == 1, "Native path image was not fully decoded and frozen");
-        foreach (var change in new Action<JObject>[] { p => p["stateRestored"] = false, p => p["format"] = "segments-f32", p => p["data"] = "AAAA" })
-        {
-            var invalid = (JObject)native.DeepClone(); change(invalid);
-            try { NativeToolpathImage.Read(invalid); throw new Exception("Invalid native path image accepted"); } catch (InvalidDataException) { }
-        }
+        try { ToolpathPreviewScene.Read(native, CancellationToken.None); throw new Exception("Screenshot accepted as toolpath geometry"); }
+        catch (InvalidDataException) { }
         var result = PathResult(new JObject { ["documentId"] = "fixture", ["id"] = 42 });
         var path = ToolpathPreviewScene.Read(result, CancellationToken.None);
         Check.True(path.Segments == 2 && path.Geometry.Positions?.Count == 4 && !path.Partial, "Validated path lost segments");

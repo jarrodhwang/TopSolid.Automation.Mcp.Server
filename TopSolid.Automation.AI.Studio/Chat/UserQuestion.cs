@@ -40,8 +40,13 @@ public sealed class UserQuestion
     public decimal? Maximum { get; }
     public IReadOnlyList<QuestionChoice> Choices { get; }
     /// <summary>Client-derived scope guidance for the next selection step.</summary>
-    public string Context { get; }
+    public string Context { get; internal init; }
+    public bool CanGoBack { get; internal init; }
+    internal bool HasNavigationContext { get; init; }
+    internal static QuestionAnswer Back() => new(new JObject { ["status"] = "back" }, "");
     public bool IsBrowse { get; internal init; }
+    // Only for an explicitly resolved operation preview, never a model-selected default.
+    internal string? InitialInspectionKey { get; set; }
     public bool HasMore { get; internal init; }
     public int Total { get; internal init; }
     internal Func<CancellationToken, Task<UserQuestion>>? LoadMoreAsync { get; init; }
@@ -59,7 +64,7 @@ public sealed class UserQuestion
     }
     internal static UserQuestion Browse(IEnumerable<UserQuestion> pages, int total, bool more,
         Func<CancellationToken, Task<UserQuestion>>? loadMore, bool browse = true, string? title = null,
-        bool multiple = false, string? itemKindOverride = null)
+        bool multiple = false, string? itemKindOverride = null, string? context = null, bool canGoBack = false)
     {
         var choices = new List<QuestionChoice>(); var values = new Dictionary<string, JObject>();
         foreach (var page in pages)
@@ -73,10 +78,21 @@ public sealed class UserQuestion
             .Where(v => v != null).Select(v => (string?)v!["documentId"]).Distinct().ToArray();
         return new UserQuestion(title ?? StudioStrings.Get("List.Title"), "select", itemKindOverride ?? (kind.Length == 1 ? kind[0] : "option"), multiple, "", null, null, choices, values)
         { IsBrowse = browse, Total = total, HasMore = more, LoadMoreAsync = loadMore,
+            Context = context ?? ContextFor("select", itemKindOverride ?? (kind.Length == 1 ? kind[0] : "option"), choices, values), CanGoBack = canGoBack, HasNavigationContext = context != null,
             DocumentPreview = kind is ["operation"] && targets is [not null] ? new JObject { ["documentId"] = targets[0] } : null };
     }
     internal JObject? PreviewTargetFor(string? key) => key != null && values.TryGetValue(key, out var receipt)
         ? Preview.PreviewTarget.FromChoice(receipt, Choices.First(c => c.Key == key).Kind) : null;
+
+    // A native edit can replace the document revision. Rebase identities only from
+    // the successful server receipt so subsequent selections still target this operation.
+    internal void RebaseDocument(string before, string after)
+    {
+        if (before == after) return;
+        foreach (var receipt in values.Values.Append(documentPreview).OfType<JObject>())
+            foreach (var property in receipt.Descendants().OfType<JProperty>().Where(p => p.Name == "documentId" && (string?)p.Value == before).ToArray())
+                property.Value = after;
+    }
 
     private static string ContextFor(string kind, string itemKind, IReadOnlyList<QuestionChoice> choices,
         IReadOnlyDictionary<string, JObject> values)
@@ -260,7 +276,8 @@ internal sealed class QuestionSources
                         if (rowKind == "operation" && string.IsNullOrWhiteSpace(toolText) && (bool?)row["hasTool"] == true)
                             toolText = StudioStrings.Get("Question.ToolUnavailable");
                         var detail = Details(row, label, rowKind == "operation");
-                        var icon = rowKind == "tool" ? TopSolidIcons.ToolFunctionKey(row) : rowKind == "operation" ? TopSolidIcons.OperationKey(row) : rowKind == "camParameter" ? TopSolidIcons.CamCategoryKey(row) :
+                        var icon = receipt.Tool == "topsolid_list_pdm_children" && (string?)row["kind"] == "folder" ? "folder" :
+                            rowKind == "tool" ? TopSolidIcons.ToolFunctionKey(row) : rowKind == "operation" ? TopSolidIcons.OperationKey(row) : rowKind == "camParameter" ? TopSolidIcons.CamCategoryKey(row) :
                             rowKind is "document" or "option" ? TopSolidIcons.DocumentKey(row) : null;
                         choices.Add(new(key, label, detail, rowKind, label + " " + detail + " " + toolText, icon, toolText,
                             string.IsNullOrWhiteSpace(toolText) ? null : TopSolidIcons.ToolFunctionKey(row),

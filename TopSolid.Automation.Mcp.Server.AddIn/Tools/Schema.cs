@@ -29,12 +29,21 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
         public static void Validate(JToken value, JObject schema, string path = "arguments", int depth = 0)
         {
             if (depth > 12) throw new RpcException(-32602, "Arguments are too deeply nested.");
+            if (schema["anyOf"] is JArray alternatives)
+            {
+                foreach (var alternative in alternatives.OfType<JObject>())
+                {
+                    try { Validate(value, alternative, path, depth + 1); return; }
+                    catch (RpcException) { }
+                }
+                throw new RpcException(-32602, path + " does not match an allowed value type.");
+            }
             var type = (string)schema["type"];
-            bool valid = type == "object" ? value is JObject : type == "array" ? value is JArray : type == "string" ? value.Type == JTokenType.String : type == "boolean" ? value.Type == JTokenType.Boolean : type == "integer" ? value.Type == JTokenType.Integer : type == "number" && (value.Type == JTokenType.Float || value.Type == JTokenType.Integer);
+            bool valid = type == "object" ? value is JObject : type == "array" ? value is JArray : type == "string" ? value.Type == JTokenType.String : type == "boolean" ? value.Type == JTokenType.Boolean : type == "integer" ? value.Type == JTokenType.Integer : type == "null" ? value.Type == JTokenType.Null : type == "number" && (value.Type == JTokenType.Float || value.Type == JTokenType.Integer);
             if (!valid) throw new RpcException(-32602, path + " must be " + type + ".");
             if (value is JObject obj)
             {
-                var properties = (JObject)schema["properties"];
+                var properties = (JObject)schema["properties"] ?? new JObject();
                 foreach (var name in (JArray)schema["required"] ?? new JArray())
                     if (obj[(string)name] == null) throw new RpcException(-32602, path + "." + name + " is required." +
                         ((string)name == "profiles" ? " Put primitive geometry inside profiles:[{kind,...}]; keep placement/name on the sketch. Supply all required primitive dimensions." : ""));
