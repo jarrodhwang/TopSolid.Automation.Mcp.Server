@@ -7,4 +7,7 @@ TestResults/
 __pycache__/
 *.py[cod]
 
-docs
+# Machine-local TopSolid documentation/API caches. These are regenerated from
+# an installed SDK and must not be committed to the public repository.
+/docs/api/
+/TopSolid.Automation.Mcp.Server.AddIn/TopSolid.Automation/

@@ -12,7 +12,7 @@ Build uses `$(ProgramW6432)\TOPSOLID\TopSolid 7.20\bin`; override with `-p:TopSo
 
 The base host must be ready and version 7.18 or newer. The catalog carries a minimum TopSolid version for every tool; calls below that floor return an explicit unsupported-version result before execution. Cae/Electrode tools require 7.20 because those Automating DLLs are not present in the installed 7.18 bin folder. Native modeling preview/creation requires 7.20.326 or newer. This is not certification of every patch level; the compiled and live-tested SDK/host is 7.20.400.107. Optional module hosts connect lazily. A listed tool does not prove a module/license is available.
 
-The project bundles the verified 7.18 common profile under `TopSolid.Automation/v7.18` (Kernel, SX, Design, Drafting, CAM NC and PDM Explorer). The build remains compiled against the matched 7.20 SDK because the 7.18 installation has no Cae/Electrode Automating assemblies; the profile is shipped for versioned deployment/reference and those missing module tools remain guarded.
+The project does not redistribute TopSolid SDK binaries. Build and runtime use the matched SDK installed on the workstation; vendor DLLs and versioned profiles stay machine-local.
 
 ## Tool organization
 
@@ -65,10 +65,7 @@ All Automation access runs serially on one STA. Inspection requests can be disca
 
 ## Evidence and reproducibility
 
-- [Full reference cache report](../docs/api/reference-cache-report.json): 6,898 symbols, 3,335 pages, zero missing indexed pages.
-- [SDK catalog](../docs/api/assemblies-7.20.json): exported signatures/fields and SHA-256 for seven Automation assemblies.
-- [Bindings](../docs/api/binding-verification.json): all declared source pages exist in the official reference.
-- `../scripts/ApiReference/cache_reference.py` rebuilds the complete index/article cache; the compressed article resource supports offline reference tools.
+- The optional API reference cache is intentionally excluded from the public repository. `../scripts/ApiReference/cache_reference.py` and `export_local_reference.py` regenerate it locally when offline reference tools are needed.
 - `../scripts/ApiReference/Export-AssemblyCatalog.ps1` refreshes installed SDK metadata using Windows PowerShell/.NET Framework.
 - `../scripts/ApiReference/generate_read_tools.py` regenerates only its reviewed allowlist of 76 simple inspection bindings. It does not wrap the entire API.
 - `../scripts/ApiReference/write_coverage_report.py` verifies declared reference URLs and rebuilds category documentation from actual MCP discovery.

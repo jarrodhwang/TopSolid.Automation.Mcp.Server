@@ -34,13 +34,11 @@
     <Reference Include="TopSolid.Cad.Electrode.Automating"><HintPath>$(TopSolidAutomationDirectory)\TopSolid.Cad.Electrode.Automating.dll</HintPath><Private>true</Private></Reference>
     <Reference Include="TopSolid.Cam.NC.Kernel.Automating"><HintPath>$(TopSolidAutomationDirectory)\TopSolid.Cam.NC.Kernel.Automating.dll</HintPath><Private>true</Private></Reference>
     <Reference Include="TopSolid.Cae.Kernel.Automating"><HintPath>$(TopSolidAutomationDirectory)\TopSolid.Cae.Kernel.Automating.dll</HintPath><Private>true</Private></Reference>
-    <EmbeddedResource Include="..\docs\api\reference-index.json" LogicalName="TopSolid.ApiReference.json" />
-    <EmbeddedResource Include="..\docs\api\reference-articles.json.gz" LogicalName="TopSolid.ApiArticles.json.gz" />
-    <Content Include="TopSolid.Automation\**\*.json;TopSolid.Automation\**\*.md;TopSolid.Automation\**\*.html" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
-    <!-- Versioned profile copied from the installed 7.18 bin folder. It is kept
-         beside the server for deployment/reference; 7.18 has no Cae/Electrode
-         Automating assemblies, so those tools remain gated at their own floor. -->
-    <Content Include="TopSolid.Automation\v7.18\*.dll" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+    <!-- Optional, machine-local reference data. Public source builds without it;
+         a developer with the private cache still gets offline reference tools. -->
+    <EmbeddedResource Include="..\docs\api\reference-index.json" LogicalName="TopSolid.ApiReference.json" Condition="Exists('..\docs\api\reference-index.json')" />
+    <EmbeddedResource Include="..\docs\api\reference-articles.json.gz" LogicalName="TopSolid.ApiArticles.json.gz" Condition="Exists('..\docs\api\reference-articles.json.gz')" />
+    <Content Include="TopSolid.Automation\**\*.json;TopSolid.Automation\**\*.md;TopSolid.Automation\**\*.html" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" Condition="Exists('TopSolid.Automation')" />
   </ItemGroup>
   <Target Name="CheckTopSolidSdk" BeforeTargets="ResolveReferences">
     <Error Condition="!Exists('$(TopSolidAutomationDirectory)\TopSolid.Kernel.Automating.dll')" Text="TopSolid 7.20 Automation assemblies are required. Set TopSolidAutomationDirectory to a matched 7.20 assembly folder." />

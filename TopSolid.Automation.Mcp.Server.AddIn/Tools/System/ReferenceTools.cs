@@ -16,7 +16,10 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
         {
             var local = Path.Combine(LocalRoot, "reference-index.json");
             if (File.Exists(local)) return JObject.Parse(File.ReadAllText(local));
-            using (var input = new StreamReader(Assembly.GetExecutingAssembly().GetManifestResourceStream("TopSolid.ApiReference.json"))) return JObject.Parse(input.ReadToEnd());
+            var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("TopSolid.ApiReference.json");
+            if (stream == null) return EmptyIndex();
+            using (stream)
+            using (var input = new StreamReader(stream)) return JObject.Parse(input.ReadToEnd());
         });
         private static readonly Lazy<Dictionary<string, JToken>> Symbols = new Lazy<Dictionary<string, JToken>>(() =>
             ((JArray)Index.Value["entries"]).ToDictionary(e => (string)e["uid"], StringComparer.Ordinal));
@@ -45,9 +48,15 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
         }
         private static readonly Lazy<Dictionary<string, JObject>> Articles = new Lazy<Dictionary<string, JObject>>(() =>
         {
-            using (var input = new StreamReader(new GZipStream(Assembly.GetExecutingAssembly().GetManifestResourceStream("TopSolid.ApiArticles.json.gz"), CompressionMode.Decompress)))
+            var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("TopSolid.ApiArticles.json.gz");
+            if (stream == null) return new Dictionary<string, JObject>(StringComparer.Ordinal);
+            using (stream)
+            using (var gzip = new GZipStream(stream, CompressionMode.Decompress))
+            using (var input = new StreamReader(gzip))
                 return JArray.Parse(input.ReadToEnd()).Cast<JObject>().ToDictionary(p => (string)p["path"], StringComparer.Ordinal);
         });
+
+        private static JObject EmptyIndex() => new JObject { ["entries"] = new JArray() };
         public static void Register(Func<IEnumerable<ToolDefinition>> available, Action<ToolDefinition> register)
         {
             register(new ToolDefinition("topsolid_get_capabilities", "List implemented MCP capabilities by category, confirmation requirements and unimplemented domains. Works without TopSolid.", new JObject(), p =>

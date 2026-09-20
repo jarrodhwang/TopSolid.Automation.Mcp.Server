@@ -63,7 +63,7 @@ dotnet build .\TopSolid.Automation.Mcp.Server.slnx -c Release
 & .\TopSolid.Automation.AI.Studio\bin\Release\net10.0-windows\TopSolid.Automation.AI.Studio.exe
 ```
 
-The build uses the matched SDK from `C:\Program Files\TOPSOLID\TopSolid 7.20\bin`. To use another SDK folder, supply `-p:TopSolidAutomationDirectory="D:\SDK\TopSolid7.20"`. Legacy DLLs in `Server.AddIn/TopSolid.Automation` are preserved but excluded from reference resolution. Tested client and host version: **7.20.400.107**. Runtime tool floors are advertised in each tool's `_meta.topsolid/minimumVersion` and enforced before execution.
+The build uses the matched SDK from `C:\Program Files\TOPSOLID\TopSolid 7.20\bin`. To use another SDK folder, supply `-p:TopSolidAutomationDirectory="D:\SDK\TopSolid7.20"`. TopSolid SDK DLLs and the optional offline API-reference cache are machine-local and intentionally excluded from this public repository. Tested client and host version: **7.20.400.107**. Runtime tool floors are advertised in each tool's `_meta.topsolid/minimumVersion` and enforced before execution.
 
 A complete framework-dependent bundle is in **`artifacts/TopSolid-AI-0.5.21`**. Open `TopSolid.Automation.AI.Studio.exe` there; keep the entire folder, including `McpServer`. TopSolid must already be running and ready in the same Windows session with a valid Kernel Base license.
 
@@ -147,7 +147,7 @@ Settings are in `%LOCALAPPDATA%\TopSolid.Automation.AI.Studio\settings.json`. St
 
 ## Reference work and tests
 
-The cache includes **6,898 symbols / 3,335 API pages** from the official 7.20 reference, with source hashes and no missing indexed pages. Seven installed Automation assemblies were cataloged. Runtime MCP metadata and reference results identify bundle-relative `TopSolid.Automation/...` files; website URLs in the cache and source links are provenance only. All five supplied PDFs were indexed (**581 pages**), and their relevant PDM/sketch/shape/assembly/CAM workflows were reviewed. Their editions differ: the Design Automation guide is v7.11 (2017), the User’s Guide is v7.9 (2014), and the newer Basics tutorial is v7.20 Rev.01 (2026). Current contracts and installed assemblies remain the implementation authority. Document instructions are source material, not authorization to change workstation settings.
+The optional offline API-reference cache is generated locally from the installed SDK/reference source and is not part of the public repository. Current contracts and installed assemblies remain the implementation authority. Documentation is source material, not authorization to change workstation settings.
 
 ```powershell
 dotnet run --project .\TopSolid.Automation.Tests -c Release -- --server .\artifacts\TopSolid-AI\McpServer\TopSolid.Automation.Mcp.Server.AddIn.exe --ui-smoke
