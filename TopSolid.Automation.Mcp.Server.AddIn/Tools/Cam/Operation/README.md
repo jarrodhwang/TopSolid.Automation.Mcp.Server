@@ -12,4 +12,4 @@ Registered tools:
 - `topsolid_set_cam_parameter_value` — requires explicit confirmation.
 - `topsolid_read_cam_toolpath` — inspection/reference.
 
-See [API coverage](../../../../docs/api/COVERAGE.md) and the root validation report for source contracts and runtime limits.
+API coverage is generated from the machine-local SDK/reference cache and is not published here. See the root [validation report](../../../../VALIDATION.md) for source contracts and runtime limits.

@@ -34,7 +34,7 @@ internal static class WorkstationPreviewTests
 
     private static async Task Exercise()
     {
-        Check.Equal(Colors.Yellow, TopSolidPreviewPalette.Toolpath(ToolpathColorRole.Feed), "Native feed palette changed");
+        Check.Equal(Colors.Red, TopSolidPreviewPalette.Toolpath(ToolpathColorRole.Feed), "Cutting feed must be red");
         Check.Equal(Colors.Lime, TopSolidPreviewPalette.Toolpath(ToolpathColorRole.Rapid), "Native rapid palette changed");
         Check.Equal(Color.FromRgb(251, 126, 20), TopSolidPreviewPalette.Toolpath(ToolpathColorRole.LeadIn), "Native lead-in palette changed");
         Check.Equal(Colors.Magenta, TopSolidPreviewPalette.Sketch(SketchColorRole.Underconstrained), "Native sketch palette changed");
@@ -42,7 +42,7 @@ internal static class WorkstationPreviewTests
         var pathResult = PreviewRuntimeTests.PathResult(new JObject { ["documentId"] = "fixture", ["id"] = 1 });
         pathResult["motionRoles"] = new JArray("Feed", "Rapid");
         var coloredPath = ToolpathPreviewScene.Read(pathResult, CancellationToken.None);
-        Check.True(coloredPath.Geometry.Colors![0].Red == 1 && coloredPath.Geometry.Colors[0].Green == 1 &&
+        Check.True(coloredPath.Geometry.Colors![0].Red == 1 && coloredPath.Geometry.Colors[0].Green == 0 &&
             coloredPath.Geometry.Colors[2].Red == 0 && coloredPath.Geometry.Colors[2].Green == 1, "Native motion palette did not reach GPU vertices");
         Check.True(coloredPath.Ribbons(new(0,0,1), 1).Children.Count == 2, "WPF fallback lost motion colors");
         Check.True(OcctPreviewImporter.IsAvailable, "OCCT worker was not bundled in the test output");

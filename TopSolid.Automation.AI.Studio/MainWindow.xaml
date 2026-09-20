@@ -193,7 +193,7 @@
                     <TextBlock Text="Model" Style="{StaticResource FormLabel}" />
                     <DockPanel>
                       <Button Content="List models" Click="ListModels_Click" DockPanel.Dock="Right" Margin="8,0,0,0" />
-                      <ComboBox x:Name="SettingsModelBox" IsEditable="True" appearance:ControlChrome.SuppressTextSelection="True" ItemTemplate="{StaticResource ModelOptionTemplate}" SelectedValuePath="ModelId" SelectedValue="{Binding SelectedValue, ElementName=ModelBox, Mode=TwoWay}" TextSearch.TextPath="ModelId" Text="{Binding Text, ElementName=ModelBox, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" ItemsSource="{Binding ItemsSource, ElementName=ModelBox}" />
+                      <ComboBox x:Name="SettingsModelBox" IsEditable="True" appearance:ControlChrome.SuppressTextSelection="True" ItemTemplate="{StaticResource ModelOptionTemplate}" SelectedValuePath="ModelId" TextSearch.TextPath="ModelId" Text="{Binding Text, ElementName=ModelBox, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" ItemsSource="{Binding ItemsSource, ElementName=ModelBox}" />
                     </DockPanel>
                     <TextBlock Text="AI wait" Style="{StaticResource FormLabel}" />
                     <DockPanel>

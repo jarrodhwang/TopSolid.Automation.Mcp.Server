@@ -3,6 +3,7 @@ using System.IO;
 using System.Windows;
 using System.Windows.Automation;
 using System.Windows.Controls;
+using System.Windows.Data;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using Microsoft.Win32;
@@ -16,15 +17,16 @@ namespace TopSolid.Automation.AI.Studio;
 
 public partial class QuestionWindow : Window
 {
-    private sealed record Card(QuestionChoice Choice)
+    private sealed record Card(QuestionChoice Choice, int Group = 0, bool Grouped = false)
     {
         public string Label => Choice.Label;
         public string Detail => Choice.Detail;
         public ImageSource Icon => TopSolidIcons.Get(Choice.IconKey ?? IconKey(Choice.Kind));
         public string ToolText => Choice.ToolText ?? "";
         public ImageSource ToolIcon => TopSolidIcons.Get(Choice.ToolIconKey ?? "cam-tool-generic");
-        public Visibility ToolVisibility => string.IsNullOrWhiteSpace(ToolText) ? Visibility.Collapsed : Visibility.Visible;
-        public GridLength ToolColumnWidth => string.IsNullOrWhiteSpace(ToolText) ? new GridLength(0) : new GridLength(1.1, GridUnitType.Star);
+        public string GroupLabel => string.IsNullOrWhiteSpace(ToolText) ? StudioStrings.Get(Choice.ToolGroupKey == "no-tool" ? "Question.NoTool" : "Question.ToolUnavailable") : ToolText.Replace('\n', ' ');
+        public Visibility ToolVisibility => Grouped || string.IsNullOrWhiteSpace(ToolText) ? Visibility.Collapsed : Visibility.Visible;
+        public GridLength ToolColumnWidth => Grouped || string.IsNullOrWhiteSpace(ToolText) ? new GridLength(0) : new GridLength(1.1, GridUnitType.Star);
         public string AccessibleDescription => string.Join(" · ", new[] { Detail, ToolText }.Where(s => !string.IsNullOrWhiteSpace(s)));
     }
     private UserQuestion question;
@@ -67,6 +69,9 @@ public partial class QuestionWindow : Window
             graphic?.SetTarget(question.PreviewTargetFor((e.AddedItems.OfType<Card>().LastOrDefault()?.Choice.Key) ?? selected.LastOrDefault()) ?? question.DocumentPreview);
         };
         SearchBox.TextChanged += (_, _) => Filter();
+        GroupByToolIcon.Source = TopSolidIcons.Get("operation-group-tool");
+        GroupByTool.Checked += (_, _) => Filter();
+        GroupByTool.Unchecked += (_, _) => Filter();
         ClearSelection.Click += (_, _) => { selected.Clear(); Filter(); graphic?.SetTarget(null); };
         ValueBox.TextChanged += (_, _) => Validate();
         HexBox.TextChanged += (_, _) => ColorFromHex();
@@ -107,12 +112,16 @@ public partial class QuestionWindow : Window
         filtering = true;
         try
         {
-            var cards = question.Choices.Where(c => c.SearchText.Contains(SearchBox.Text.Trim(), StringComparison.CurrentCultureIgnoreCase)).Select(c => new Card(c)).ToArray();
+            var grouped = GroupByTool.IsChecked == true && GroupByTool.Visibility == Visibility.Visible;
+            var runs = OperationToolGroups.Runs(question.Choices);
+            var cards = question.Choices.Where(c => c.SearchText.Contains(SearchBox.Text.Trim(), StringComparison.CurrentCultureIgnoreCase)).Select(c => new Card(c, runs[c.Key], grouped)).ToArray();
             // WPF can retain an equal record across ItemsSource replacement.
             // Clear the visual selection first, then restore only the exact keys
             // we retained; "Clear selection" must also allow reselecting that item.
             ChoiceList.UnselectAll();
-            ChoiceList.ItemsSource = cards;
+            var view = new ListCollectionView(cards);
+            if (grouped) view.GroupDescriptions.Add(new PropertyGroupDescription(nameof(Card.Group)));
+            ChoiceList.ItemsSource = view;
             foreach (var card in cards.Where(c => selected.Contains(c.Choice.Key)))
                 if (question.Multiple) ChoiceList.SelectedItems.Add(card); else ChoiceList.SelectedItem = card;
             EmptySearch.Visibility = cards.Length == 0 ? Visibility.Visible : Visibility.Collapsed;
@@ -231,6 +240,7 @@ public partial class QuestionWindow : Window
         var documentChoices = question.Kind == "select" && question.Choices.Count > 0 &&
             question.Choices.All(c => c.Kind == "document" || c.IconKey == "document" || c.IconKey?.StartsWith("document-", StringComparison.Ordinal) == true);
         var operationChoices = question.Kind == "select" && question.Choices.Count > 0 && question.Choices.All(c => c.Kind == "operation");
+        GroupByTool.Visibility = operationChoices ? Visibility.Visible : Visibility.Collapsed;
         QuestionIcon.Source = TopSolidIcons.Get(operationChoices ? "operation" : documentChoices ? "document" : IconKey(question.Kind == "select" ? question.ItemKind : question.Kind));
         QuestionHint.Text = StudioStrings.Get(question.Kind == "select" ? question.Multiple ? "Question.MultipleHint" : "Question.SelectHint" : "Question.InputHint");
         Title = question.IsBrowse ? StudioStrings.Get("List.Title") : StudioStrings.Get("Question.Title");

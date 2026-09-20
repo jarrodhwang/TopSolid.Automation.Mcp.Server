@@ -132,8 +132,15 @@ public partial class MainWindow : Window
         EndpointBox.Text = local ? settings.OllamaServerUrl : settings.CloudBaseUrl;
         EndpointBox.IsReadOnly = !local && settings.CloudService != CloudServices.Custom;
         EndpointBox.ToolTip = EndpointBox.IsReadOnly ? StudioStrings.Text("Service URL is filled automatically. Choose Custom OpenAI-compatible to use another endpoint.") : null;
-        ModelBox.ItemsSource = null;
-        ModelBox.Text = local ? settings.OllamaModel : settings.CloudModel;
+        var configuredModel = local ? settings.OllamaModel : settings.CloudModel;
+        // Keep the configured model as a real option even before discovery runs. The
+        // editable ComboBox otherwise has text but no SelectedItem, so the shared
+        // selected-model icon binding has nothing to render on startup.
+        ModelBox.ItemsSource = string.IsNullOrWhiteSpace(configuredModel)
+            ? Array.Empty<ChatModelOption>()
+            : ModelIconCatalog.CreateOptions([configuredModel], visibleProvider, settings.CloudService);
+        ModelBox.SelectedValue = configuredModel;
+        ModelBox.Text = configuredModel;
         ApiKeyBox.Password = local ? "" : settings.ApiKey;
         ApiKeyBox.IsEnabled = !local;
         ApiKeyBox.ToolTip = local ? null : StudioStrings.Text(CloudServices.Get(settings.CloudService).KeyHint);
@@ -320,6 +327,7 @@ public partial class MainWindow : Window
         if (history != null) session.RestoreConversation(history);
         session.ConfirmChangeAsync = ConfirmChange;
         session.AskUserAsync = AskUser;
+        session.EditCamParametersAsync = EditCamParameters;
         session.ChooseNcDestinationAsync = ChooseNcDestination;
         session.ShowListAsync = ShowList;
         session.ShowGraphicPreviewAsync = ShowGraphicPreview;
@@ -381,6 +389,16 @@ public partial class MainWindow : Window
         var path = Path.GetFullPath(picker.FileName);
         RecordTrace("NC", "NC file destination selected: " + path);
         return Task.FromResult<string?>(path);
+    }
+
+    private Task<IReadOnlyList<JObject>?> EditCamParameters(IReadOnlyList<JObject> receipts, CancellationToken token)
+    {
+        token.ThrowIfCancellationRequested();
+        var dialog = new CamParameterEditorWindow(receipts) { Owner = this };
+        using var registration = token.Register(() => OnUi(() => { if (dialog.IsVisible) dialog.Close(); }));
+        SetActivity("Activity.Question", "parameter", waitingForUser: true);
+        try { return Task.FromResult(dialog.ShowDialog() == true && !token.IsCancellationRequested ? dialog.Changes : null); }
+        finally { SetActivity(token.IsCancellationRequested ? "Activity.Cancelling" : "Activity.PreparingResponse"); }
     }
 
     private Task<QuestionAnswer?> AskUser(UserQuestion question, CancellationToken token)

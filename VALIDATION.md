@@ -257,7 +257,7 @@ Read-only preflight passed. The user was asked to approve this exact fixture bec
 - `artifacts/ui-smoke.png`, `confirmation-smoke.png`: latest own-window renders.
 - `artifacts/native-workflow/preflight.json`: read-only fixture preflight and exact plan hash.
 - `artifacts/manuals/manifest.json`: manual paths, page counts, hashes and outlines.
-- `docs/api/binding-verification.json`, `mcp-tools.json`, `COVERAGE.md`: actual schemas, source checks and full tool coverage.
+- The generated binding verification, tool schema and coverage files are kept in the machine-local `docs/api/` cache and are not part of the public repository.
 
 Default tests do not modify TopSolid. Confirmation/rollback tests use fake actions; transport failures use a separate fake MCP process. The WPF live status test contacts real Ollama and TopSolid but performs only inspection. UI tests verify saved application settings remain unchanged.
 

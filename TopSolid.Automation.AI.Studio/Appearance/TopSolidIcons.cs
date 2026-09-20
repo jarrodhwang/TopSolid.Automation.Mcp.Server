@@ -11,7 +11,8 @@ public static class TopSolidIcons
 {
     private static readonly HashSet<string> Keys = new(StringComparer.OrdinalIgnoreCase)
         { "app", "project", "document", "sketch", "save", "delete", "settings", "attachment", "folder", "part", "operation", "parameter", "connect", "status", "window", "developer", "refresh", "refresh-warning", "refresh-error",
-          "library", "machine", "edge", "point", "curve", "surface", "shape", "color", "image", "view-camera", "view-fit", "view-orbit", "view-pan", "view-edges",
+          "library", "machine", "edge", "point", "curve", "surface", "shape", "color", "image", "view-camera", "view-fit", "view-orbit", "view-pan", "view-edges", "view-machine", "operation-group-tool",
+          "camera-top", "camera-bottom", "camera-front", "camera-back", "camera-left", "camera-right", "camera-iso", "camera-perspective",
           "arguments", "cam-tool", "cam-cutting-conditions", "cam-geometry", "cam-strategy", "cam-comment", "cam-multi-axis", "cam-properties",
           "approve", "cancel", "error", "warning", "question", "license", "license-standalone", "license-floating", "license-user" };
     private static readonly ConcurrentDictionary<string, ImageSource> Cache = new(StringComparer.OrdinalIgnoreCase);
@@ -97,7 +98,8 @@ public static class TopSolidIcons
             if (name == "view-camera") return CreateCameraIcon();
             try
             {
-                var image = new BitmapImage(new Uri($"pack://application:,,,/TopSolid.Automation.AI.Studio;component/Assets/TopSolid/{name}.png", UriKind.Absolute));
+                var extension = name.StartsWith("camera-", StringComparison.Ordinal) ? "ico" : "png";
+                var image = new BitmapImage(new Uri($"pack://application:,,,/TopSolid.Automation.AI.Studio;component/Assets/TopSolid/{name}.{extension}", UriKind.Absolute));
                 image.Freeze();
                 return image;
             }

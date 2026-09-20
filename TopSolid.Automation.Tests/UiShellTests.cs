@@ -19,6 +19,8 @@ namespace TopSolid.Automation.Tests;
 internal static partial class UiShellTests
 {
     private static bool captureImages;
+    internal static string? CamContextPath;
+    internal static bool ToolpathOnly;
     public static Task Run(bool render = true)
     {
         captureImages = render;
@@ -59,6 +61,15 @@ internal static partial class UiShellTests
         Directory.CreateDirectory(output);
         var settingsPath = new SettingsStore().FilePath;
         var settingsBefore = Fingerprint(settingsPath);
+        if (ToolpathOnly)
+        {
+            var owner = new Window { Width = 1000, Height = 780, Left = -20000, Top = -20000, ShowInTaskbar = false, ShowActivated = false };
+            try { owner.Show(); await GraphicPreviewUiTests.OperationBrowser(owner, (target, name) => Render(target, Path.Combine(output, name))); }
+            finally { owner.Close(); }
+            Check.Equal(settingsBefore, Fingerprint(settingsPath), "Preview UI tests changed saved settings");
+            Console.WriteLine("PASS toolpath preview UI: operation switching, native image refresh, debounce, stale replies and unchanged geometry/settings.");
+            return;
+        }
         var window = new MainWindow(autoConnect: false) { ShowInTaskbar = false, ShowActivated = false,
             WindowStartupLocation = WindowStartupLocation.Manual, Left = -20000, Top = -20000 };
         var devMode = Control<CheckBox>(window, "DevModeBox");
@@ -88,6 +99,7 @@ internal static partial class UiShellTests
         await ApprovalActivityUiTests.Run(window, (target, name) => Render(target, Path.Combine(output, name)));
         await QuestionUiTests.Run(window, (target, name) => Render(target, Path.Combine(output, name)));
         await GraphicPreviewUiTests.Run(window, (target, name) => Render(target, Path.Combine(output, name)));
+        if (CamContextPath != null) await GraphicPreviewUiTests.NativeContext(window, CamContextPath, (target, name) => Render(target, Path.Combine(output, name)));
         await VerifyConnectionIndicator(window, output);
         await DialogThemeUiTests.Run(window, (target, name) => Render(target, Path.Combine(output, name)));
         await LicenseUiTests.Run(window, (target, name) => Render(target, Path.Combine(output, name)));

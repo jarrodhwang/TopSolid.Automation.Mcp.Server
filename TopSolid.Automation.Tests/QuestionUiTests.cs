@@ -1,6 +1,7 @@
 using System.Reflection;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
 using System.Windows.Media;
 using System.Windows.Threading;
 using Newtonsoft.Json.Linq;
@@ -22,7 +23,13 @@ internal static class QuestionUiTests
             foreach (var dark in new[] { false, true })
             {
                 TopSolidTheme.Apply(new(dark, dark ? "Dark" : "Light", "CAM selection fixture"));
-                var cam = Window(owner, CamSelectionTests.Question());
+                var source = new QuestionSources();
+                var rows = new[] { CamSelectionTests.Row(1), CamSelectionTests.Row(2), CamSelectionTests.Row(3) };
+                foreach (var row in rows.Skip(1)) row["tool"] = new JObject { ["documentId"] = "cam-test", ["id"] = 42 };
+                source.Capture("grouped-cam", CamSelectionRequest.Tool, new JObject(), new TopSolid.Automation.Mcp.Contracts.McpToolResult
+                    { StructuredContent = new JObject { ["items"] = new JArray(rows) } });
+                var cam = Window(owner, source.Create(new JObject { ["question"] = StudioStrings.Get("Cam.Select"), ["kind"] = "select", ["itemKind"] = "operation", ["multiple"] = true,
+                    ["sources"] = new JArray(new JObject { ["toolCallId"] = "grouped-cam", ["path"] = "/items" }) }));
                 try
                 {
                     cam.Show(); await Layout(cam);
@@ -30,8 +37,32 @@ internal static class QuestionUiTests
                     Check.True(visible.Contains("T 2") && visible.Contains("페이스밀") && visible.Contains("환경 활성") &&
                         visible.Contains("Face Mill D40 A90 L3 SD41") && !visible.Contains("공구 기능") && !visible.Contains("TopSolid.Cam"), "CAM cards leaked native names or omitted number/spec/type");
                     render(cam, $"question-cam-number-type-ko-{(dark ? "dark" : "light")}.png");
+                    var list = Find<ListBox>(cam, "ChoiceList"); list.SelectedIndex = 1;
+                    var group = Find<ToggleButton>(cam, "GroupByTool"); Check.True(group.IsChecked != true,"Tool grouping became the default");
+                    group.IsChecked = true; await Layout(cam);
+                    Check.True(list.SelectedItems.Count == 1 && list.Items.Groups?.Count == 2,"Grouping lost the selection or contiguous tool headers");
+                    render(cam, $"question-cam-grouped-ko-{(dark ? "dark" : "light")}.png");
                 }
                 finally { cam.Close(); }
+            }
+            foreach (var dark in new[] { false, true })
+            {
+                TopSolidTheme.Apply(new(dark, "Parameter editor", "fixture"));
+                var real = CamWorkflowImprovementTests.Receipt();
+                var boolean = CamWorkflowImprovementTests.Receipt("Automatic safety block", "Boolean");
+                boolean["value"]!["booleanValue"] = true; boolean["value"]!["displayValue"] = "True";
+                boolean["value"]!["allowedValues"] = new JArray(new JObject { ["value"] = false }, new JObject { ["value"] = true });
+                var enumeration = CamWorkflowImprovementTests.Receipt("Action at machine travel limit", "Integer");
+                enumeration["value"]!["integerValue"] = 0; enumeration["value"]!["displayValue"] = "Return to start";
+                enumeration["value"]!["allowedValues"] = new JArray(new JObject { ["value"] = 0, ["label"] = "Return to start" }, new JObject { ["value"] = 1, ["label"] = "Return to end" });
+                var editor = new CamParameterEditorWindow([real, boolean, enumeration]) { Owner = owner, ShowActivated = false, WindowStartupLocation = WindowStartupLocation.Manual, Left = -20000, Top = -20000 };
+                try
+                {
+                    editor.Show(); await Layout(editor);
+                    Check.True(Descendants<ComboBox>(editor).All(c => c.SelectedItem is ComboBoxItem { Content: not null }), "Native parameter choices have no selected value");
+                    render(editor, $"cam-parameter-editor-{(dark ? "dark" : "light")}.png");
+                }
+                finally { editor.Close(); }
             }
             foreach (var dark in new[] { false, true })
             foreach (var locale in new[] { "en", "ko" })

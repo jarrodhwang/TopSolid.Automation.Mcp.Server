@@ -4,6 +4,11 @@ internal static class Program
 {
     private static async Task<int> Main(string[] args)
     {
+        if (args.Length == 4 && args[0] == "--live-native-toolpath") { await NativeToolpathLiveTests.Run(args[1], args[2], int.Parse(args[3])); return 0; }
+        if (args.Length == 1 && args[0] == "--toolpath-preview-ui") { UiShellTests.ToolpathOnly = true; await UiShellTests.Run(); return 0; }
+        if (args.Length == 2 && args[0] == "--cam-context") { await CamWorkflowImprovementTests.Context(args[1]); return 0; }
+        if (args.Length == 2 && args[0] == "--live-cam-context") { await CamWorkflowImprovementTests.LiveContext(args[1]); return 0; }
+        if (args.Length == 2 && args[0] == "--cam-context-ui") { UiShellTests.CamContextPath=args[1]; await UiShellTests.Run(); return 0; }
         if (args.Length == 1 && args[0] == "--topsolid-connection-settings") { await TopSolidConnectionTests.Settings(); return 0; }
         if (args.Length == 1 && args[0] == "--topsolid-connection-ui") { await TopSolidConnectionUiTests.Run(); return 0; }
         if (args.Length == 2 && args[0] == "--topsolid-connection-live") { await TopSolidConnectionTests.Live(args[1]); return 0; }
@@ -116,6 +121,7 @@ internal static class Program
         };
         cases.Add(("Sketch context migration, bounded repair and local latency metrics", SketchReliabilityTests.Run));
         cases.Add(("CAM selection dialogs, display names, pagination and failed-question recovery", CamSelectionTests.Run));
+        cases.Add(("Local CAM parameter editing, SI units, revision continuity and ordered tool groups", CamWorkflowImprovementTests.Run));
         cases.Add(("Preview disk transfer, cancellation, identity validation and toolpath coordinates", PreviewRuntimeTests.Run));
         cases.Add(("Official CAM operation labels, module identity and source provenance", CamOperationNamesTests.Run));
         cases.Add(("Conversation-log regression: complete CAM pages, parameter selection, exact active target and compact history", ConversationLogRegressionTests.Run));

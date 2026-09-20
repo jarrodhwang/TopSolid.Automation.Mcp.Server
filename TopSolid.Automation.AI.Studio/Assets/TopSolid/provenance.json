@@ -1485,5 +1485,55 @@
     "Source": "Cam\\NC\\Kernel\\UI.CuttingConditions\\Resources\\ToolFunctionEntity.png",
     "Sha256": "7F2177EEA174E0A3CE311336236E89D842B0B1B329D7BA107B53C46E8BE4ABFB",
     "ToolFunction": "__unknown__"
+  },
+  {
+    "Key": "camera-top",
+    "Source": "TopSolid.Kernel.GR.dll!TopSolid.Kernel.GR.Cameras.Camera.TopCamera.ico",
+    "Sha256": "762F3C42D01ED4BA83BE338B71111CC7BE6A6E34803D500458AAD369F4687F54"
+  },
+  {
+    "Key": "camera-bottom",
+    "Source": "TopSolid.Kernel.GR.dll!TopSolid.Kernel.GR.Cameras.Camera.BottomCamera.ico",
+    "Sha256": "8168F888374ACCCEEC0F4781B5E84836397CA83C529BC6A873EFF75FDAD43881"
+  },
+  {
+    "Key": "camera-front",
+    "Source": "TopSolid.Kernel.GR.dll!TopSolid.Kernel.GR.Cameras.Camera.FrontCamera.ico",
+    "Sha256": "C30BE7C2807F8350CD4CF2A552869EF0D2F496EA9EF90CC60B31B8B1E5878CCD"
+  },
+  {
+    "Key": "camera-back",
+    "Source": "TopSolid.Kernel.GR.dll!TopSolid.Kernel.GR.Cameras.Camera.BackCamera.ico",
+    "Sha256": "41D373836C23DA3361B31C42091C521975864D1407E9657BE9B253891528647D"
+  },
+  {
+    "Key": "camera-left",
+    "Source": "TopSolid.Kernel.GR.dll!TopSolid.Kernel.GR.Cameras.Camera.LeftCamera.ico",
+    "Sha256": "B725DA9AD1A248ADF8D2E4E9082FAED68D9BA942D6A1D55C05B591015C3D26E5"
+  },
+  {
+    "Key": "camera-right",
+    "Source": "TopSolid.Kernel.GR.dll!TopSolid.Kernel.GR.Cameras.Camera.RightCamera.ico",
+    "Sha256": "2979F577B9297F8DDEEBC21B7A5015A53300F71518AB46A60AEC7564AD5BA0EB"
+  },
+  {
+    "Key": "camera-iso",
+    "Source": "TopSolid.Kernel.GR.dll!TopSolid.Kernel.GR.Cameras.Camera.IsometricCamera.ico",
+    "Sha256": "D9DDB917EF12B3F6B329D27B46866546724C73B2912F3A5B12FE3A587E4ACE31"
+  },
+  {
+    "Key": "camera-perspective",
+    "Source": "TopSolid.Kernel.GR.dll!TopSolid.Kernel.GR.Cameras.Camera.PerspectiveCamera.ico",
+    "Sha256": "D9DDB917EF12B3F6B329D27B46866546724C73B2912F3A5B12FE3A587E4ACE31"
+  },
+  {
+    "Key": "operation-group-tool",
+    "Source": "Cam\\NC\\Kernel\\UI.OperationManager\\Resources\\TreeViewRepresentationSorted.png",
+    "Sha256": "41143C58DA25CD81A7C51F2EAF0AD6E9730A4ABE2F84872E1168CDB0491B9AFE"
+  },
+  {
+    "Key": "view-machine",
+    "Source": "Cam\\NC\\Kernel\\UI.Machines\\Commands\\NCMachineDisplayCommand.png",
+    "Sha256": "CA9B673076074CE84E6EE24C1285E5FC3F55A45F5E75D27770A4DEBDBA899322"
   }
 ]

@@ -12,7 +12,9 @@
   <ItemGroup>
     <PackageReference Include="HelixToolkit.Wpf.SharpDX" Version="3.1.2" />
     <Content Include="..\artifacts\occt-preview\runtime\**\*" Link="OcctPreview\%(RecursiveDir)%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+    <Content Include="..\artifacts\draco-preview\runtime\**\*" Link="DracoPreview\%(RecursiveDir)%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
     <Resource Include="Assets\TopSolid\*.png" />
+    <Resource Include="Assets\TopSolid\*.ico" />
     <Resource Include="Assets\Providers\*.png" />
     <EmbeddedResource Include="Assets\TopSolid\provenance.json" />
     <EmbeddedResource Include="Assets\Reference\cam-operation-names.json" LogicalName="TopSolid.Automation.AI.Studio.CamOperationNames.json" />

@@ -17,6 +17,28 @@ namespace TopSolid.Automation.Tests;
 
 internal static class GraphicPreviewUiTests
 {
+    internal static async Task NativeContext(Window owner, string file, Action<Window,string> render)
+    {
+        var originalLanguage = StudioStrings.CurrentLanguage; var originalTheme = TopSolidTheme.Current;
+        StudioStrings.Apply("ko"); TopSolidTheme.Apply(new(false,"Light","Native CAM fixture"));
+        var bytes = await System.IO.File.ReadAllBytesAsync(file);
+        var client = new Client { Handler = (_,_) => Task.FromResult(new JObject { ["status"]="ready", ["documentId"]="native-cam", ["name"]="DMU65 CAM", ["format"]="glb", ["units"]="m", ["upAxis"]="Y", ["camContext"]=true, ["data"]=Convert.ToBase64String(bytes) }) };
+        using var pane = new GraphicPreviewPane(client,new JObject { ["documentId"]="native-cam", ["operation"]=new JObject { ["documentId"]="native-cam", ["id"]=12 } });
+        var window = Position(new Window { Content=pane, Width=1120, Height=850 },owner);
+        TopSolidTheme.ApplyWindow(window);
+        try
+        {
+            window.Show(); await Until(()=>pane.HasMachineContext && !pane.IsLoading,window);
+            Check.True(pane.ToolpathSegments>0,"Context lost the selected operation overlay");
+            var calls=client.Calls; var partTriangles=pane.Scene!.Triangles;
+            render(window,"cam-native-machine-hidden.png"); pane.SetMachineVisible(true); await Layout(window);
+            Check.True(pane.Scene!.Triangles>partTriangles && pane.ToolpathSegments>0,"Machine toggle lost work geometry or toolpath");
+            render(window,"cam-native-machine-visible.png"); pane.SetMachineVisible(false); await Layout(window);
+            Check.Equal(partTriangles,pane.Scene!.Triangles,"Machine toggle did not restore work geometry");
+            Check.Equal(calls,client.Calls,"Machine toggle re-exported the document");
+        }
+        finally { window.Close(); StudioStrings.Apply(originalLanguage); TopSolidTheme.Apply(originalTheme); }
+    }
     private sealed class Client : IGraphicPreviewClient, IToolpathPreviewClient
     {
         internal int Calls;
@@ -26,7 +48,10 @@ internal static class GraphicPreviewUiTests
         public Task<JObject> GetGraphicPreviewAsync(JObject target, CancellationToken token)
         { Calls++; return Handler?.Invoke(target, token) ?? Task.FromResult(GraphicPreviewTests.Result((string)target["documentId"]!)); }
         public Task<JObject> GetToolpathPreviewAsync(JObject operation, CancellationToken token)
-        { PathRequests.Add((JObject)operation.DeepClone()); return PathHandler?.Invoke(operation, token) ?? Task.FromResult(PreviewRuntimeTests.PathResult(operation)); }
+        {
+            var identity = (JObject)operation.DeepClone(); identity.Remove("view"); identity.Remove("nativeImage");
+            PathRequests.Add((JObject)identity.DeepClone()); return PathHandler?.Invoke(identity, token) ?? Task.FromResult(PreviewRuntimeTests.PathResult(identity));
+        }
     }
 
     internal static async Task Run(Window owner, Action<Window, string> render)
@@ -133,7 +158,7 @@ internal static class GraphicPreviewUiTests
         }
         finally { StudioStrings.Apply(originalLanguage); TopSolidTheme.Apply(originalTheme); }
     }
-    private static async Task OperationBrowser(Window owner, Action<Window, string> render)
+    internal static async Task OperationBrowser(Window owner, Action<Window, string> render)
     {
         var language = StudioStrings.CurrentLanguage;
         StudioStrings.Apply("ko");
@@ -163,6 +188,27 @@ internal static class GraphicPreviewUiTests
             delayed.SetResult(PreviewRuntimeTests.PathResult(pendingOperation!)); await Layout(dialog);
             Check.True(pane.ToolpathSegments == 0 && pane.ToolpathStatus.Contains("좌표"), "Stale path replaced a newer coordinate failure");
             Check.True(client.Calls == 1 && ReferenceEquals(scene, pane.Scene) && pane.Camera.Position == camera, "Operation selection re-exported the model or reset the camera");
+            client.PathHandler = (op, _) => Task.FromResult(new JObject { ["status"] = "ready", ["operation"] = op.DeepClone(),
+                ["format"] = "native-view-png", ["stateRestored"] = true, ["upToDate"] = true,
+                ["data"] = "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+aLxkAAAAASUVORK5CYII=" });
+            list.SelectedIndex = 0;
+            await Until(() => pane.HasNativeToolpathImage && !pane.IsLoading, dialog);
+            Check.Equal(0, pane.ToolpathSegments, "Native image was misrepresented as coordinate geometry");
+            var captures = client.PathRequests.Count;
+            pane.Orbit(.15, .05); pane.Zoom(.9);
+            await Until(() => client.PathRequests.Count > captures && pane.HasNativeToolpathImage, dialog);
+            Check.Equal(captures + 1, client.PathRequests.Count, "Camera updates were not debounced");
+            var oldImage = new TaskCompletionSource<JObject>(TaskCreationOptions.RunContinuationsAsynchronously);
+            JObject? oldIdentity = null;
+            client.PathHandler = (op, _) => { oldIdentity = op; return oldImage.Task; };
+            pane.Orbit(.1, 0); await Until(() => oldIdentity != null, dialog);
+            client.PathHandler = (op, _) => Task.FromResult(new JObject { ["status"] = "unavailable", ["operation"] = op.DeepClone() });
+            list.SelectedIndex = 1; await Until(() => !pane.IsLoading, dialog);
+            oldImage.SetResult(new JObject { ["status"] = "ready", ["operation"] = oldIdentity!.DeepClone(),
+                ["format"] = "native-view-png", ["stateRestored"] = true,
+                ["data"] = "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+aLxkAAAAASUVORK5CYII=" });
+            await Layout(dialog);
+            Check.True(!pane.HasNativeToolpathImage && client.Calls == 1, "Late native capture replaced another operation or re-exported geometry");
         }
         finally { dialog.Close(); StudioStrings.Apply(language); }
     }

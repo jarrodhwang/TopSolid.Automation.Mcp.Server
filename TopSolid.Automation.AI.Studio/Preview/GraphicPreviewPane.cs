@@ -2,6 +2,7 @@ using System.IO;
 using System.Windows;
 using System.Windows.Automation;
 using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Media3D;
@@ -31,6 +32,9 @@ internal sealed partial class GraphicPreviewPane : Border, IDisposable
     private readonly ComboBox mode = new() { MinWidth = 130, FontSize = 12, Margin = new Thickness(10, 0, 0, 0), VerticalAlignment = VerticalAlignment.Center };
     private readonly ViewportCompass compass = new() { IsHitTestVisible = false };
     private readonly Button refresh;
+    private readonly ToggleButton machineToggle;
+    private CamContextPreview.Scenes? camScenes;
+    private bool showMachine;
     private readonly Border input = new() { Background = Brushes.Transparent, Focusable = true, Cursor = Cursors.Arrow };
     private CancellationTokenSource? loading;
     private Point3D center;
@@ -128,11 +132,18 @@ internal sealed partial class GraphicPreviewPane : Border, IDisposable
             }
             e.Handled = true;
         };
-        canvas.Children.Add(input); canvas.Children.Add(compass);
+        canvas.Children.Add(nativePathSurface); canvas.Children.Add(input); canvas.Children.Add(compass);
         var tools = new StackPanel { HorizontalAlignment = HorizontalAlignment.Right, VerticalAlignment = VerticalAlignment.Top, Margin = new Thickness(8) };
         tools.Children.Add(CameraCommand());
         tools.Children.Add(Command("view-fit", "Preview.Fit", Fit));
         tools.Children.Add(Command("view-edges", "Preview.Edges", () => { showEdges = !showEdges; gpu?.SetEdges(showEdges); if (showEdges) QueueEdges(); else edges.Content = null; }));
+        machineToggle = new ToggleButton { Width = 32, Height = 32, Margin = new Thickness(2), Padding = new Thickness(3),
+            Content = new Image { Source = TopSolidIcons.Get("view-machine"), Width = 24, Height = 24 },
+            Visibility = Visibility.Collapsed, ToolTip = StudioStrings.Get("Preview.Machine") };
+        AutomationProperties.SetName(machineToggle, StudioStrings.Get("Preview.Machine"));
+        machineToggle.Checked += (_, _) => SetMachineVisible(true);
+        machineToggle.Unchecked += (_, _) => SetMachineVisible(false);
+        tools.Children.Add(machineToggle);
         canvas.Children.Add(tools);
         status.Foreground = Brushes.White; status.VerticalAlignment = VerticalAlignment.Center; status.IsHitTestVisible = false;
         loadingCover.SetResourceReference(BackgroundProperty, "ViewportGradientBrush");
@@ -204,7 +215,7 @@ internal sealed partial class GraphicPreviewPane : Border, IDisposable
         var button = new Button { Width = 32, Height = 32, Margin = new Thickness(2), Padding = new Thickness(2),
             ToolTip = StudioStrings.Get("Preview.CameraMenu"), Background = Brushes.Transparent, BorderThickness = new Thickness(0) };
         var glyph = new Grid();
-        glyph.Children.Add(new Image { Source = TopSolidIcons.Get("view-camera"), Width = 24, Height = 24 });
+        glyph.Children.Add(new Image { Source = TopSolidIcons.Get("camera-iso"), Width = 24, Height = 24 });
         glyph.Children.Add(new TextBlock { Text = "▾", FontSize = 9, FontWeight = FontWeights.Bold, HorizontalAlignment = HorizontalAlignment.Right,
             VerticalAlignment = VerticalAlignment.Bottom, Margin = new Thickness(0, 0, 0, -1), Foreground = Brushes.White, IsHitTestVisible = false });
         button.Content = glyph;
@@ -215,7 +226,7 @@ internal sealed partial class GraphicPreviewPane : Border, IDisposable
         foreach (var view in new[] { "top", "bottom", "front", "back", "left", "right", "iso", "perspective" })
         {
             var item = new MenuItem { Header = StudioStrings.Get("Preview.View." + view), Tag = view,
-                Icon = new Image { Source = TopSolidIcons.Get("view-camera"), Width = 18, Height = 18 } };
+                Icon = new Image { Source = TopSolidIcons.Get("camera-" + view), Width = 24, Height = 24 } };
             item.InputGestureText = view switch
             {
                 "top" => "Ctrl+Shift+T",
@@ -268,7 +279,21 @@ internal sealed partial class GraphicPreviewPane : Border, IDisposable
                 else
                 {
                 var documentTarget = (JObject)requested!.DeepClone(); documentTarget.Remove("operation");
-                var payload = await ReadFilePreviewAsync(documentTarget, current, token);
+                if (CamContextPreview.IsAvailable) documentTarget["camContext"] = true;
+                (JObject Metadata, PreviewScene? Scene) payload;
+                try
+                {
+                    payload = await ReadFilePreviewAsync(documentTarget, current, token);
+                    if (documentTarget["camContext"] != null && (string?)payload.Metadata["status"] is "unsupported" or "tooLarge")
+                        throw new InvalidDataException("Native CAM context export unavailable.");
+                }
+                catch (Exception error) when (documentTarget["camContext"] != null && error is IOException or InvalidDataException or InvalidOperationException or ArgumentException)
+                {
+                    App.DiagnosticLog.WriteException("preview.camContext", error, "CAM context unavailable; using the standard document preview.");
+                    camScenes = null; machineToggle.IsEnabled = false; machineToggle.Visibility = Visibility.Visible;
+                    machineToggle.ToolTip = StudioStrings.Get("Preview.MachineUnavailable");
+                    documentTarget.Remove("camContext"); payload = await ReadFilePreviewAsync(documentTarget, current, token);
+                }
                 var result = payload.Metadata;
                 if (disposed || current != generation) return;
                 if ((string?)result["status"] != "ready") { SetMessage("Preview." + ((string?)result["status"] ?? "unavailable")); return; }
@@ -336,7 +361,18 @@ internal sealed partial class GraphicPreviewPane : Border, IDisposable
     }
     private void SetBusy(bool value)
     { progress.IsIndeterminate = value; progress.Visibility = value ? Visibility.Visible : Visibility.Collapsed; refresh.IsEnabled = !value; }
-    private void ClearScene() { CancelDrag(); ClearToolpath(); ClearStreaming(); cachedDocument = null; Scene = edgeScene = null; solid.Content = edges.Content = null; gpu?.Clear(); }
+    private void ClearScene() { CancelDrag(); ClearToolpath(); ClearStreaming(); cachedDocument = null; camScenes = null; machineToggle.Visibility = Visibility.Collapsed; Scene = edgeScene = null; solid.Content = edges.Content = null; gpu?.Clear(); }
+    internal void SetMachineVisible(bool visible)
+    {
+        showMachine = visible;
+        if (machineToggle.IsChecked != visible) machineToggle.IsChecked = visible;
+        QueueNativeToolpathRefresh();
+        if (camScenes == null) return;
+        ShowScene(visible ? camScenes.Machine : camScenes.Work);
+        // ShowScene replaces GPU geometry, so restore the selected operation's overlay.
+        if (toolpathScene != null) { gpu?.ShowToolpath(toolpathScene.Geometry); UpdateCamera(); }
+    }
+    internal bool HasMachineContext => camScenes != null;
     internal void Fit()
     {
         if (Scene == null) return;
@@ -397,6 +433,7 @@ internal sealed partial class GraphicPreviewPane : Border, IDisposable
         gpu?.CameraChanged(Camera, perspectiveMode, perspectiveCamera.FieldOfView);
         pagedPreview?.CameraChanged(Camera, Math.Max(1, canvas.ActualWidth) / Math.Max(1, canvas.ActualHeight));
         if (toolpathScene != null && gpu == null) toolpathVisual.Content = toolpathScene.Ribbons(direction, Camera.Width / Math.Max(1, canvas.ActualWidth));
+        QueueNativeToolpathRefresh();
         QueueEdges();
     }
     private void QueueEdges()
@@ -427,16 +464,19 @@ internal sealed partial class GraphicPreviewPane : Border, IDisposable
         if (TryFindResource("ViewportGradientBrush") is Brush background) gpu.SetBackground(background);
     }
     private void ClearToolpath()
-    { toolpathScene = null; gpu?.ShowToolpath(null); toolpathVisual.Content = null; pathStatus.Visibility = Visibility.Collapsed; }
+    { ClearNativeToolpath(); toolpathScene = null; gpu?.ShowToolpath(null); toolpathVisual.Content = null; pathStatus.Visibility = Visibility.Collapsed; }
     private async Task LoadToolpath(JObject operation, long current, CancellationToken token)
     {
+        var cameraVersion = nativeCameraGeneration;
         pathStatus.Text = StudioStrings.Get("Preview.PathLoading"); pathStatus.Visibility = Visibility.Visible;
         try
         {
-            var result = client is IToolpathPreviewClient paths ? await paths.GetToolpathPreviewAsync(operation, token) : new JObject { ["status"] = "unavailable" };
+            var result = client is IToolpathPreviewClient paths ? await paths.GetToolpathPreviewAsync(NativeToolpathRequest(operation, false), token) : new JObject { ["status"] = "unavailable" };
             if (disposed || current != generation) return;
             if (!JToken.DeepEquals(result["operation"], operation) || (string?)result["status"] != "ready")
             { pathStatus.Text = StudioStrings.Get((string?)result["status"] == "coordinatesUnavailable" ? "Preview.PathCoordinatesUnavailable" : "Preview.PathUnavailable"); return; }
+            if ((string?)result["format"] == "native-view-png")
+            { PresentNativeToolpath(result, operation); if (cameraVersion != nativeCameraGeneration) QueueNativeToolpathRefresh(); return; }
             var path = await Task.Run(() => ToolpathPreviewScene.Read(result, token), token);
             if (disposed || current != generation) return;
             toolpathScene = path; gpu?.ShowToolpath(path.Geometry); UpdateCamera();
@@ -445,7 +485,7 @@ internal sealed partial class GraphicPreviewPane : Border, IDisposable
                 compatibilityLimit ? ToolpathPreviewScene.MaximumWpfSegments : path.Segments);
         }
         catch (OperationCanceledException) { }
-        catch (Exception error) when (error is IOException or InvalidOperationException or ArgumentException or JsonException or FormatException)
+        catch (Exception error) when (error is IOException or InvalidOperationException or ArgumentException or JsonException or FormatException or NotSupportedException)
         { if (!disposed && current == generation) pathStatus.Text = StudioStrings.Get("Preview.PathUnavailable"); }
     }
     public void Dispose() { if (disposed) return; disposed = true; TopSolidTheme.Changed -= themeChanged; generation++; loading?.Cancel(); loading?.Dispose(); SetBusy(false); ClearScene(); gpu?.Dispose(); gpu = null; }

@@ -14,11 +14,13 @@ public sealed class ChatSession(IAiProvider provider, IMcpClient mcp)
 {
     private readonly Queue<IReadOnlyList<AiMessage>> turns = new();
     private readonly object historyGate = new();
+    private IReadOnlyList<AiMessage>? localPreviousTurn;
     private readonly SemaphoreSlim sendGate = new(1, 1);
     public event Action<ChatTrace>? Trace;
     public bool LastResponseUsedModel { get; private set; }
     public Func<JObject, CancellationToken, Task<bool>>? ConfirmChangeAsync { get; set; }
     public Func<UserQuestion, CancellationToken, Task<QuestionAnswer?>>? AskUserAsync { get; set; }
+    public Func<IReadOnlyList<JObject>, CancellationToken, Task<IReadOnlyList<JObject>?>>? EditCamParametersAsync { get; set; }
     public Func<JObject, CancellationToken, Task<string?>>? ChooseNcDestinationAsync { get; set; }
     public Func<UserQuestion, CancellationToken, Task>? ShowListAsync { get; set; }
     public Func<JObject, CancellationToken, Task>? ShowGraphicPreviewAsync { get; set; }
@@ -28,13 +30,16 @@ public sealed class ChatSession(IAiProvider provider, IMcpClient mcp)
 
     public void Clear()
     {
-        lock (historyGate) turns.Clear();
+        lock (historyGate) { turns.Clear(); localPreviousTurn = null; }
     }
 
     public void RestoreConversation(IReadOnlyList<IReadOnlyList<AiMessage>> history)
     {
         Clear();
         foreach (var turn in history) Remember(ModelHistory.Portable(turn));
+        // Keep the latest structured UI receipt separate from provider-portable prose.
+        // The local editor re-reads native values before using this selection.
+        lock (historyGate) localPreviousTurn = history.LastOrDefault()?.Select(CloneMessage).ToArray();
     }
 
     /// <summary>
@@ -72,6 +77,11 @@ public sealed class ChatSession(IAiProvider provider, IMcpClient mcp)
         var pendingQuestionImages = new List<ChatAttachment>();
         try
         {
+            IReadOnlyList<AiMessage>? editPrevious;
+            lock (historyGate) editPrevious = localPreviousTurn;
+            var parameterEdit = attachments.Count == 0 ? await CamParameterEditRequest.Run(text, editPrevious, mcp, EditCamParametersAsync,
+                ConfirmChangeAsync, trace => Trace?.Invoke(trace), cancellationToken) : null;
+            if (parameterEdit != null) { Remember(parameterEdit); return parameterEdit[^1].Content; }
             var preview = attachments.Count == 0 ? await GraphicPreviewRequest.Run(text, mcp, ShowGraphicPreviewAsync,
                 trace => Trace?.Invoke(trace), cancellationToken) : null;
             if (preview != null) { Remember(preview); return preview[^1].Content; }
@@ -272,6 +282,7 @@ public sealed class ChatSession(IAiProvider provider, IMcpClient mcp)
                     McpToolResult result;
                     var declined = false;
                     var questionCancelled = false;
+                    var localParameterEditor = false;
                     var invalidProposal = false;
                     var changesDocument = tools.Any(t => t.Name == call.Name && t.RequiresConfirmation);
                     var workflowError = camWorkflow.AllCuttingConditions && changesDocument ? "This request is read-only. No change was prepared or executed." :
@@ -312,6 +323,9 @@ public sealed class ChatSession(IAiProvider provider, IMcpClient mcp)
                             questionAnswered |= answer != null;
                             if (answer != null) { camWorkflow.Answered(answer); activeTarget.Answered(answer); }
                             result = new McpToolResult { StructuredContent = answer?.Data ?? new JObject { ["status"] = "cancelled", ["message"] = "User cancelled the question; stop this workflow without further actions." } };
+                            localParameterEditor = attachments.Count == 0 && !changeAttempted && EditCamParametersAsync != null &&
+                                CamParameterEditRequest.WantsEdit(text) && answer?.Data["selected"] is JArray { Count: > 0 } chosen &&
+                                chosen.All(c => (string?)c["sourceTool"] == "topsolid_list_cam_parameters");
                             if (answer?.Image is { } image) { pendingQuestionImages.Add(image); hasAttachments = true; }
                         }
                     }
@@ -399,6 +413,17 @@ public sealed class ChatSession(IAiProvider provider, IMcpClient mcp)
                         messages.Add(new AiMessage { Role = "assistant", Content = answer });
                         Remember(messages.Skip(start).ToArray());
                         return answer;
+                    }
+                    if (localParameterEditor)
+                    {
+                        // The typed request already asked to edit. Selection and value entry are local UI steps.
+                        foreach (var pending in reply.ToolCalls.SkipWhile(c => c.Id != call.Id).Skip(1))
+                            messages.Add(new AiMessage { Role = "tool", ToolCallId = pending.Id, ToolName = pending.Name,
+                                Content = ToolResultContext.Serialize(McpToolResult.Error("Replaced by the local selected-parameter editor; not executed.")) });
+                        var edited = await CamParameterEditRequest.Run("edit selected CAM parameters", messages.Skip(start).ToArray(), mcp,
+                            EditCamParametersAsync, ConfirmChangeAsync, trace => Trace?.Invoke(trace), cancellationToken);
+                        if (edited == null) throw new InvalidOperationException("Local CAM editing was not resolved.");
+                        messages.AddRange(edited.Skip(1)); Remember(messages.Skip(start).ToArray()); return edited[^1].Content;
                     }
                 }
                 if (pendingQuestionImages.Count > 0)
@@ -491,6 +516,7 @@ public sealed class ChatSession(IAiProvider provider, IMcpClient mcp)
         lock (historyGate)
         {
             turns.Enqueue(turn);
+            localPreviousTurn = turn.Select(CloneMessage).ToArray();
             // A large latest turn must not erase its own approved change receipts.
             while (turns.Count > 1 && (turns.Count > 10 || turns.Sum(t => t.Sum(MessageSize)) > 100000 ||
                 turns.Sum(t => t.Sum(m => m.Images.Sum(i => (long)i.ByteLength))) > ChatAttachments.MaximumTotalImageBytes)) turns.Dequeue();

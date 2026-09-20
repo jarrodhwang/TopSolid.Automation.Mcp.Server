@@ -107,6 +107,7 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Tools
         private static void DescribeTool(JObject result, ElementId tool, IDictionary<ElementId, JObject> toolDisplayCache)
         {
             result["hasTool"] = !tool.IsEmpty;
+            result["tool"] = AutomationValues.Json(tool);
             if (!tool.IsEmpty)
             {
                 if (toolDisplayCache == null || !toolDisplayCache.TryGetValue(tool, out var display))

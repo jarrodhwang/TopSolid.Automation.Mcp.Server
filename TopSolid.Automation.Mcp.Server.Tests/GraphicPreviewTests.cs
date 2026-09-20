@@ -33,6 +33,25 @@ namespace TopSolid.Automation.Mcp.Server.Tests
             finally { CultureInfo.CurrentCulture = previous; }
             PreviewChunks();
             ToolpathCoordinates();
+            NativeToolpathCamera();
+        }
+
+        private static void NativeToolpathCamera()
+        {
+            var view = JObject.Parse("{eye:[0,-0.4,0.2],look:[0,2,-1],up:[0,0,1],angle:0,radius:0.1}");
+            var parsed = ToolpathCaptureView.Parse(view);
+            Check(Math.Abs(parsed.Look.Y - 2 / Math.Sqrt(5)) < 1e-12 && parsed.Radius == .1, "Native capture did not preserve SI camera units");
+            Check(ToolpathCaptureView.Parse(null) == null, "Old toolpath clients unexpectedly requested native capture");
+            foreach (var change in new Action<JObject>[] { p => p["radius"] = 0, p => p["eye"] = new JArray(0, double.NaN, 0),
+                p => p["look"] = new JArray(0,0,1), p => p["file"] = "caller.png", p => p["machine"] = "true", p => p["up"] = new JArray(0,0,0) })
+            {
+                var invalid = (JObject)view.DeepClone(); change(invalid); Throws<ArgumentException>(() => ToolpathCaptureView.Parse(invalid));
+            }
+            Check(!ToolpathCaptureView.IsBoundedPng(new byte[32]), "Truncated native screenshot accepted");
+            var png = new byte[33]; new byte[] {137,80,78,71,13,10,26,10}.CopyTo(png,0);
+            new byte[] {73,72,68,82}.CopyTo(png,12); png[19] = 2; png[23] = 2;
+            Check(ToolpathCaptureView.IsBoundedPng(png), "Valid bounded PNG header rejected");
+            png[16] = 127; Check(!ToolpathCaptureView.IsBoundedPng(png), "Oversized native screenshot accepted");
         }
 
         private static void PreviewChunks()

@@ -32,6 +32,13 @@ internal sealed partial class GraphicPreviewPane
                 (string?)result["format"] != "glb" || (string?)result["units"] != "m" || (string?)result["upAxis"] != "Y")
                 throw new InvalidDataException("Unsupported preview coordinates.");
             var length = new FileInfo(payload.FilePath!).Length;
+            if ((bool?)result["camContext"] == true)
+            {
+                var context = await CamContextPreview.ReadAsync(payload.FilePath!, token);
+                if (disposed || generation != current) return (result, null);
+                camScenes = context; machineToggle.Visibility = Visibility.Visible; machineToggle.IsEnabled = true;
+                return (result, showMachine ? context.Machine : context.Work);
+            }
             if (length > PagedThresholdBytes && gpu == null)
                 return (new JObject { ["status"] = "GpuRequired" }, null);
             if (length > PagedThresholdBytes && gpu != null)

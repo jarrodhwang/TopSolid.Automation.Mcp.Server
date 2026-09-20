@@ -14,15 +14,21 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Automation
     {
         public JObject ToolpathPreview(JObject request) => Read("cam", () =>
         {
-            if (request.Properties().Any(p => p.Name != "documentId" && p.Name != "id") || request["documentId"]?.Type != JTokenType.String ||
+            if (request.Properties().Any(p => p.Name != "documentId" && p.Name != "id" && p.Name != "view" && p.Name != "nativeImage") || request["documentId"]?.Type != JTokenType.String ||
                 request["id"]?.Type != JTokenType.Integer || ((string)request["documentId"]).Length > 256)
                 throw new ArgumentException("An explicit operation identity is required.");
+            var view = ToolpathCaptureView.Parse(request["view"]);
+            if (request["nativeImage"] != null && request["nativeImage"].Type != JTokenType.Boolean) throw new ArgumentException("Invalid preview mode.");
+            var nativeImage = (bool?)request["nativeImage"] == true;
+            request = new JObject { ["documentId"] = request["documentId"], ["id"] = request["id"] };
             var operation = Element(new JObject { ["element"] = request.DeepClone() }); var doc = operation.DocumentId;
             if (!TopSolidHost.Documents.GetDocuments().Contains(doc) || !TopSolidCamHost.Operations.IsOperation(new ElementExId(operation)))
                 return new JObject { ["status"] = "notLoaded", ["operation"] = request.DeepClone() };
             var dirty = TopSolidHost.Documents.IsDirty(doc);
+            if (nativeImage) return CaptureToolpathView(operation, request, view);
             var columns = TopSolidCamHost.ToolPath.StartToolPath(operation);
             if (columns == null) return new JObject { ["status"] = "unavailable", ["operation"] = request.DeepClone() };
+            JObject result;
             try
             {
                 // No simulation, recalculation, selection, visibility or document state changes.
@@ -37,11 +43,20 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Automation
                 }
                 if (!TopSolidHost.Documents.Exists(doc) || dirty != TopSolidHost.Documents.IsDirty(doc))
                     return new JObject { ["status"] = "changed", ["operation"] = request.DeepClone() };
-                var result = builder.Result(ended); result["operation"] = request.DeepClone(); result["rowsScanned"] = rows;
+                result = builder.Result(ended); result["operation"] = request.DeepClone(); result["rowsScanned"] = rows;
                 result["upToDate"] = TopSolidCamHost.Operations.IsUpToDate(new ElementExId(operation));
-                return result;
             }
             finally { TopSolidCamHost.ToolPath.EndToolPath(operation); }
+            // End the table scan before the independent, reversible native-view capture.
+            // Old clients provide no view and retain the segments-only protocol.
+            if (view != null && (string)result["status"] == "coordinatesUnavailable")
+            {
+                var capture = CaptureToolpathView(operation, request, view);
+                capture["coordinateStatus"] = "coordinatesUnavailable";
+                capture["rowsScanned"] = result["rowsScanned"];
+                return capture;
+            }
+            return result;
         });
     }
 

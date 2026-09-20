@@ -2,7 +2,7 @@ using System.Windows.Media;
 
 namespace TopSolid.Automation.AI.Studio.Preview;
 
-/// <summary>Exact RGB values from the user's TopSolidColor1, 2 and 4 captures.</summary>
+/// <summary>Native non-cutting colors; cutting feed is red as requested.</summary>
 internal static class TopSolidPreviewPalette
 {
     internal static readonly Color Surface = Color.FromRgb(192, 192, 192);
@@ -16,8 +16,9 @@ internal static class TopSolidPreviewPalette
 
     internal static Color Toolpath(ToolpathColorRole role) => role switch
     {
-        ToolpathColorRole.Feed => Color.FromRgb(255, 255, 0),
-        ToolpathColorRole.ReducedFeed => Color.FromRgb(255, 255, 128),
+        ToolpathColorRole.Feed => Colors.Red,
+        ToolpathColorRole.ReducedFeed => Colors.Red,
+        ToolpathColorRole.NonCutting => Color.FromRgb(145, 165, 221),
         ToolpathColorRole.LeadIn => Color.FromRgb(251, 126, 20),
         ToolpathColorRole.LeadOut => Color.FromRgb(4, 129, 235),
         ToolpathColorRole.Stock => Color.FromRgb(255, 255, 128),
@@ -43,5 +44,5 @@ internal static class TopSolidPreviewPalette
     };
 }
 
-internal enum ToolpathColorRole { Unknown, Feed, ReducedFeed, LeadIn, LeadOut, Stock, Finish, LinkIn, LinkOut, Point, Rapid, MaximumFeed }
+internal enum ToolpathColorRole { Unknown, Feed, ReducedFeed, LeadIn, LeadOut, Stock, Finish, LinkIn, LinkOut, Point, Rapid, MaximumFeed, NonCutting }
 internal enum SketchColorRole { Unknown, Overconstrained, FullyConstrained, Fixed, Unconstrainable, Preconstrained, Underconstrained }

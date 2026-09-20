@@ -9,7 +9,7 @@ using TopSolid.Automation.AI.Studio.Appearance;
 namespace TopSolid.Automation.AI.Studio.Chat;
 
 public sealed record QuestionChoice(string Key, string Label, string Detail, string Kind, string SearchText, string? IconKey = null,
-    string? ToolText = null, string? ToolIconKey = null);
+    string? ToolText = null, string? ToolIconKey = null, string? ToolGroupKey = null);
 
 public sealed class QuestionAnswer
 {
@@ -118,7 +118,10 @@ public sealed class UserQuestion
         string summary;
         if (Kind == "select")
         {
-            var keys = (selectedKeys ?? []).Distinct(StringComparer.Ordinal).ToArray();
+            var requestedKeys = (selectedKeys ?? []).ToHashSet(StringComparer.Ordinal);
+            if (requestedKeys.Any(key => !values.ContainsKey(key))) throw new ArgumentException(StudioStrings.Get("Question.SelectRequired"));
+            // Selection order follows the native list, never the order of mouse clicks or a HashSet.
+            var keys = Choices.Where(choice => requestedKeys.Contains(choice.Key)).Select(choice => choice.Key).ToArray();
             if (keys.Length == 0 || (!Multiple && keys.Length != 1) || keys.Any(key => !values.ContainsKey(key)))
                 throw new ArgumentException(StudioStrings.Get("Question.SelectRequired"));
             data["selected"] = new JArray(keys.Select(key => values[key].DeepClone()));
@@ -260,7 +263,8 @@ internal sealed class QuestionSources
                         var icon = rowKind == "tool" ? TopSolidIcons.ToolFunctionKey(row) : rowKind == "operation" ? TopSolidIcons.OperationKey(row) : rowKind == "camParameter" ? TopSolidIcons.CamCategoryKey(row) :
                             rowKind is "document" or "option" ? TopSolidIcons.DocumentKey(row) : null;
                         choices.Add(new(key, label, detail, rowKind, label + " " + detail + " " + toolText, icon, toolText,
-                            string.IsNullOrWhiteSpace(toolText) ? null : TopSolidIcons.ToolFunctionKey(row)));
+                            string.IsNullOrWhiteSpace(toolText) ? null : TopSolidIcons.ToolFunctionKey(row),
+                            rowKind == "operation" ? OperationToolGroups.Identity(row) : null));
                         values.Add(key, new JObject { ["sourceTool"] = receipt.Tool, ["sourceArguments"] = receipt.Arguments.DeepClone(), ["value"] = row.DeepClone() });
                     }
                 }

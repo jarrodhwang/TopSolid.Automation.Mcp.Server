@@ -1,6 +1,6 @@
 # TopSolid Automation AI — 0.5.21
 
-**0.5.21:** CAM tools use native pocket/name/type metadata and preview their referenced tool documents. Native GLB previews preserve surface colors and transparency, including large models; the viewport waits for complete initial geometry and rendered frames before displaying it. Light/dark backgrounds follow the installed TopSolid palette. Native data and regression checks passed; final live GPU/theme visual comparison remains unverified because Windows screen capture was unavailable. [Changes and validation](docs/TOOL-PREVIEW-FIX-20260918.md).
+**0.5.21:** CAM tools use native pocket/name/type metadata and preview their referenced tool documents. Native GLB previews preserve surface colors and transparency, including large models; the viewport waits for complete initial geometry and rendered frames before displaying it. Light/dark backgrounds follow the installed TopSolid palette. Native data and regression checks passed; the production English Studio and opened-CAM preview are captured below. [Changes and validation](docs/TOOL-PREVIEW-FIX-20260918.md).
 
 **0.5.20:** List requests automatically open searchable icon dialogs with read-only paging. Direct3D 11 rendering and parallel disk-backed STL tiles support large native previews; the open blade CAM document's 2,777,626 triangles were displayed on the NVIDIA GPU. Operation selection reuses the model and requests an exact-operation toolpath overlay. The installed TopSolid 7.20 API returns empty strings for 3D toolpath points, so this document shows an explicit coordinate-unavailable status; native toolpath display remains blocked. [Behavior, measured validation and remaining limits](docs/LIST-PREVIEW-0.5.20.md).
 
@@ -25,6 +25,27 @@
 **0.5.10:** User Mode resolves friendly names for numeric/opaque references; approval uses TopSolid icons and formatted change cards; visible activity covers AI and TopSolid work. CAM cutting conditions default to operation parameters, with paginated values/types/units/choices and editability checks before approval. [Contracts, log findings and API limits](docs/CAM-USER-MODE-0.5.10.md).
 
 Minimal Windows desktop chat with cloud service presets, OpenAI-compatible/Anthropic/Ollama adapters, a separate MCP console server, and **187 tools in 22 categories: 128 inspection/reference tools and 59 confirmed actions**. All TopSolid access stays inside the server.
+
+<p align="center">
+  <a href="README.md">English</a> ·
+  <a href="README.ko.md">한국어</a> ·
+  <a href="README.fr.md">Français</a> ·
+  <a href="README.pt.md">Português</a> ·
+  <a href="README.ja.md">日本語</a> ·
+  <a href="README.de.md">Deutsch</a>
+</p>
+
+## Production Studio preview
+
+These captures are from the published Windows application, with the Studio interface in English. The 3D view uses only the already-open TopSolid CAM document; it does not contain synthetic or invented geometry. The local-model examples intentionally show only Mistral, Gemma and GPT-OSS.
+
+<p align="center">
+  <img src="docs/images/ai-studio-main.png" alt="TopSolid Automation AI production chat window with the Mistral model icon" width="32%" />
+  <img src="docs/images/ai-studio-model-selection.png" alt="English AI model settings with Ollama and the Mistral icon" width="32%" />
+  <img src="docs/images/ai-studio-cam-preview.png" alt="English read-only 3D preview of the opened TopSolid CAM document" width="32%" />
+</p>
+
+The model selector resolves a provider icon from the selected model family and keeps that icon visible even before model discovery completes. Current local examples are **Mistral**, **Gemma** and **GPT-OSS**; Qwen and DeepSeek are not included in the public screenshots.
 
 **0.5.9:** automatic sketch/shape names, unique suffixes for requested names, and a separate section action only for explicit requests. [Naming/section changes](docs/NAMING-AND-SECTIONS-0.5.9.md). Ordinary modeling needs no “no section” instruction.
 
@@ -102,7 +123,7 @@ Examples: “In the active part, create a 20 mm by 10 mm rectangle on XY at the 
 
 The new workflows follow the supplied manuals: **PDM document → native sketch/profile → shape → assembly (existing sections remain readable)**, with returned IDs carried through the model/tool loop. See [manual review and workflow mapping](docs/MANUALS_AND_WORKFLOWS.md).
 
-See [every tool, category and source contract](docs/api/COVERAGE.md), [machine-readable MCP schemas](docs/api/mcp-tools.json), and [validation evidence](VALIDATION.md). A documented API is not automatically a callable tool. A discovered tool does not prove its TopSolid module is connected or licensed.
+The generated API-reference cache, assembly inventory and machine-readable coverage files are intentionally local-only and are excluded from this public repository. See [validation evidence](VALIDATION.md) for the public test boundary. A documented API is not automatically a callable tool. A discovered tool does not prove its TopSolid module is connected or licensed.
 
 General fillet/pocket/chamfer/Boolean creation, dimensional sketch constraints, CAM strategy creation, and Wire/standalone PDM Explorer adapters remain extensions. Confirmed NC generation/export is limited to selected existing operations and the post-processor configured on the CAM document; the public SDK surface reviewed here does not provide a post-processor catalog, so no names are invented. CAM simulation and verification execution are exposed through the documented `ISimulation`/`IVerify` workflows; they start the native animation but do not generate NC, run a machine, or certify collision safety. The entire TopSolid UI is not exposed by the public Automation interfaces reviewed here; unverified commands are not advertised as tools. Technology folders for 2D/3D/4-axis/3+2/5-axis/MillTurn/Robot CAM map to the public SDK's shared services; they do not advertise invented technology-specific interfaces.
 

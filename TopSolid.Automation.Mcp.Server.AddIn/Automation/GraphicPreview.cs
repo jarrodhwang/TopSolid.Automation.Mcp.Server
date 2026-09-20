@@ -18,13 +18,14 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Automation
             if (request["action"] != null) return previewTransfers.Handle(request);
             return Read("kernel", () =>
         {
-            if (request.Properties().Any(p => p.Name != "documentId" && p.Name != "pdmObjectId" && p.Name != "chunked" && p.Name != "fileBacked") ||
+            if (request.Properties().Any(p => p.Name != "documentId" && p.Name != "pdmObjectId" && p.Name != "chunked" && p.Name != "fileBacked" && p.Name != "camContext") ||
                 (request["documentId"] != null) == (request["pdmObjectId"] != null))
                 throw new ArgumentException("A preview requires exactly one explicit document or PDM document identity.");
             var identity = request["documentId"] ?? request["pdmObjectId"];
             if (request["fileBacked"] != null && (request["fileBacked"].Type != JTokenType.Boolean || (bool?)request["chunked"] != true))
                 throw new ArgumentException("File-backed previews require chunked transport.");
             var fileBacked = (bool?)request["fileBacked"] == true;
+            if (request["camContext"] != null && request["camContext"].Type != JTokenType.Boolean) throw new ArgumentException("Invalid CAM context flag.");
             if (identity.Type != JTokenType.String || ((string)identity).Length > 256 || string.IsNullOrWhiteSpace((string)identity))
                 throw new ArgumentException("Invalid preview document identity.");
             var doc = request["documentId"] != null ? new DocumentId((string)identity) : TopSolidHost.Documents.GetDocument(new PdmObjectId((string)identity));
@@ -32,6 +33,7 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Automation
             if (doc.IsEmpty || !TopSolidHost.Documents.GetDocuments().Contains(doc) || !TopSolidHost.Documents.Exists(doc))
                 return new JObject { ["status"] = "notLoaded" };
             var name = TopSolidHost.Documents.GetName(doc);
+            var camContext = (bool?)request["camContext"] == true && TopSolidHost.Documents.GetTypeFullName(doc).StartsWith("TopSolid.Cam.NC.", StringComparison.Ordinal);
             var exporter = -1; var format = "glb";
             var stlExporter = -1; List<KeyValue> stlOptions = null;
             List<KeyValue> options = null;
@@ -68,7 +70,14 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Automation
             try
             {
                 var dirty = TopSolidHost.Documents.IsDirty(doc);
-                TopSolidHost.Documents.ExportWithOptions(exporter, options, doc, file);
+                if (camContext)
+                {
+                    // Organized native export includes the machine and environment omitted by the ordinary representation.
+                    // It is display-only, outside a modification, and never changes native visibility or camera state.
+                    format = "glb"; file = Path.Combine(directory, "document.glb");
+                    TopSolidHost.Documents.zExportToTopglTF(doc, directory, "document", true, false, false, true, true, true, true, 0, Color.Empty);
+                }
+                else TopSolidHost.Documents.ExportWithOptions(exporter, options, doc, file);
                 // Coarser display-only tessellation for large native B-reps; no document tolerance is changed.
                 for (var retry = 0; !fileBacked && format == "stl" && File.Exists(file) && new FileInfo(file).Length > GraphicPreviewQuality.MaximumStlBytes && retry < 3; retry++)
                 {
@@ -93,6 +102,7 @@ namespace TopSolid.Automation.Mcp.Server.AddIn.Automation
                 }
                 var result = new JObject { ["status"] = "ready", ["name"] = name, ["documentId"] = doc.PdmDocumentId,
                     ["scope"] = "document", ["format"] = format, ["units"] = format == "stl" ? "mm" : "m", ["upAxis"] = format == "stl" ? "Z" : "Y",
+                    ["camContext"] = camContext,
                     ["appearance"] = format == "glb" ? "materials" : "neutral",
                     // The installed TopSolid exporter writes native RGB/255 factors,
                     // including 192/255 for the default surface, without linearization.

@@ -223,8 +223,11 @@ public partial class MainWindow
         using var candidate = ProviderFactory.Create(settings);
         var models = await candidate.ListModelsAsync(token);
         token.ThrowIfCancellationRequested();
-        var selected = ModelBox.Text;
-        ModelBox.ItemsSource = ModelIconCatalog.CreateOptions(models, visibleProvider, settings.CloudService);
+        var selected = ModelBox.Text.Trim();
+        // Preserve the configured value when a provider omits it from discovery so
+        // an editable selector continues to have a SelectedItem and icon.
+        var discoveredModels = string.IsNullOrWhiteSpace(selected) ? models : models.Append(selected);
+        ModelBox.ItemsSource = ModelIconCatalog.CreateOptions(discoveredModels, visibleProvider, settings.CloudService);
         ModelBox.SelectedValue = selected;
         ModelBox.Text = selected;
         modelStatus = $"{models.Count} models listed; inference not tested";
